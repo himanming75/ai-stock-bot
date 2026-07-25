@@ -14,9 +14,22 @@ from config import (
     STARTING_CASH,
 )
 from data.market import get_history
-from forecast.predictor import TradePlan, create_trade_plan
-from portfolio.manager import PositionPlan, create_position_plan
-from strategy.score import calculate_score, determine_signal
+from forecast.predictor import (
+    TradePlan,
+    create_trade_plan,
+)
+from ml.predictor import (
+    MLPrediction,
+    predict_stock_direction,
+)
+from portfolio.manager import (
+    PositionPlan,
+    create_position_plan,
+)
+from strategy.score import (
+    calculate_score,
+    determine_signal,
+)
 
 
 def add_scores_and_signals(
@@ -32,7 +45,9 @@ def add_scores_and_signals(
     signals: list[str] = []
 
     for _, row in analyzed_data.iterrows():
-        score_result = calculate_score(row)
+        score_result = calculate_score(
+            row
+        )
 
         score = int(
             score_result["score"]
@@ -43,8 +58,13 @@ def add_scores_and_signals(
             score,
         )
 
-        scores.append(score)
-        signals.append(signal)
+        scores.append(
+            score
+        )
+
+        signals.append(
+            signal
+        )
 
     analyzed_data["Score"] = scores
     analyzed_data["Signal"] = signals
@@ -57,7 +77,8 @@ def calculate_ai_opportunity_score(
     technical_score: int,
 ) -> float:
     """
-    AI 의견과 신뢰도를 0~100점으로 변환합니다.
+    OpenAI 의견과 신뢰도를
+    0~100 점수로 변환합니다.
     """
 
     confidence = int(
@@ -89,8 +110,8 @@ def calculate_trade_plan_score(
     trade_plan: TradePlan,
 ) -> float:
     """
-    매매계획의 Risk/Reward와 상태를
-    종목 순위에 사용할 점수로 변환합니다.
+    매매계획 상태와 Risk/Reward를
+    점수로 변환합니다.
     """
 
     status_scores = {
@@ -105,7 +126,6 @@ def calculate_trade_plan_score(
         40.0,
     )
 
-    # Risk/Reward 2가 3 이상이면 100점
     risk_reward_score = min(
         100.0,
         max(
@@ -127,18 +147,75 @@ def calculate_trade_plan_score(
     )
 
 
+def calculate_ml_score(
+    ml_prediction: MLPrediction | None,
+) -> float:
+    """
+    머신러닝 상승 확률을 점수로 변환합니다.
+
+    모델 상태가 약하면
+    50점에 가깝도록 영향력을 줄입니다.
+    """
+
+    if ml_prediction is None:
+        return 50.0
+
+    upward_probability = float(
+        ml_prediction.upward_probability
+    )
+
+    status_weights = {
+        "USABLE": 1.00,
+        "PROMISING": 0.75,
+        "EXPERIMENTAL": 0.40,
+        "WEAK": 0.15,
+        "LOW_DATA": 0.10,
+    }
+
+    status_weight = status_weights.get(
+        ml_prediction.model_status,
+        0.0,
+    )
+
+    # 50점을 중립 기준으로 두고,
+    # 모델 상태에 따라 상승 확률의 영향력을 줄입니다.
+    adjusted_score = (
+        50.0
+        + (
+            upward_probability - 50.0
+        )
+        * status_weight
+    )
+
+    return round(
+        max(
+            0.0,
+            min(
+                100.0,
+                adjusted_score,
+            ),
+        ),
+        2,
+    )
+
+
 def calculate_final_score(
     technical_score: int,
     ai_analysis: AIStockAnalysis,
     trade_plan: TradePlan,
+    ml_prediction: MLPrediction | None,
 ) -> float:
     """
-    기술점수, AI 평가, 매매계획을 합쳐
     최종 종목점수를 계산합니다.
 
-    기술점수: 50%
-    AI 점수:  30%
-    계획점수: 20%
+    구성:
+    - 기술점수: 45%
+    - OpenAI 점수: 25%
+    - Trade Plan: 20%
+    - 머신러닝: 10%
+
+    머신러닝 검증 성능이 낮으므로
+    초기에는 비중을 10%만 적용합니다.
     """
 
     ai_score = calculate_ai_opportunity_score(
@@ -150,10 +227,15 @@ def calculate_final_score(
         trade_plan=trade_plan,
     )
 
+    ml_score = calculate_ml_score(
+        ml_prediction=ml_prediction,
+    )
+
     final_score = (
-        technical_score * 0.50
-        + ai_score * 0.30
+        technical_score * 0.45
+        + ai_score * 0.25
         + plan_score * 0.20
+        + ml_score * 0.10
     )
 
     return round(
@@ -177,7 +259,7 @@ def get_latest_analysis(
     list[str],
 ]:
     """
-    최근 데이터의 점수, 신호, 이유를 반환합니다.
+    최신 기술점수, 신호와 이유를 반환합니다.
     """
 
     if data.empty:
@@ -219,7 +301,7 @@ def run_ai_analysis(
     technical_signal: str,
 ) -> AIStockAnalysis:
     """
-    최근 기술지표를 OpenAI에 전달합니다.
+    최신 기술지표를 OpenAI에 전달합니다.
     """
 
     return analyze_technical_data(
@@ -259,47 +341,125 @@ def run_ai_analysis(
     )
 
 
+def run_ml_prediction(
+    symbol: str,
+    data: pd.DataFrame,
+) -> MLPrediction | None:
+    """
+    머신러닝 예측을 실행합니다.
+
+    실패하더라도 전체 스캔은 계속 진행합니다.
+    """
+
+    try:
+        prediction = predict_stock_direction(
+            symbol=symbol,
+            data=data,
+            horizon_days=5,
+            minimum_return=0.0,
+        )
+
+        return prediction
+
+    except Exception as error:
+        print(
+            "ML prediction failed."
+        )
+
+        print(
+            f"ML error type   : "
+            f"{type(error).__name__}"
+        )
+
+        print(
+            f"ML error message: "
+            f"{error}"
+        )
+
+        return None
+
+
+def print_ml_summary(
+    prediction: MLPrediction | None,
+) -> None:
+    """
+    머신러닝 결과의 핵심값을 출력합니다.
+    """
+
+    if prediction is None:
+        print(
+            "ML prediction      : UNAVAILABLE"
+        )
+
+        return
+
+    print(
+        f"ML prediction      : "
+        f"{prediction.prediction}"
+    )
+
+    print(
+        f"ML up probability  : "
+        f"{prediction.upward_probability:.2f}%"
+    )
+
+    print(
+        f"ML balanced acc.   : "
+        f"{prediction.validation_balanced_accuracy:.2f}%"
+    )
+
+    print(
+        f"ML model status    : "
+        f"{prediction.model_status}"
+    )
+
+    print(
+        f"ML prediction date : "
+        f"{prediction.prediction_date}"
+    )
+
+
 def print_trade_plan_summary(
     trade_plan: TradePlan,
 ) -> None:
     """
-    종목 스캔 중 매매계획 핵심값을 출력합니다.
+    Trade Plan 핵심값을 출력합니다.
     """
 
     print(
-        f"Plan status      : "
+        f"Plan status        : "
         f"{trade_plan.plan_status}"
     )
 
     print(
-        f"Entry zone       : "
+        f"Entry zone         : "
         f"${trade_plan.entry_low:,.2f}"
         f" - "
         f"${trade_plan.entry_high:,.2f}"
     )
 
     print(
-        f"Stop loss        : "
+        f"Stop loss          : "
         f"${trade_plan.stop_loss:,.2f}"
     )
 
     print(
-        f"Target 1         : "
+        f"Target 1           : "
         f"${trade_plan.target_1:,.2f}"
     )
 
     print(
-        f"Target 2         : "
+        f"Target 2           : "
         f"${trade_plan.target_2:,.2f}"
     )
 
     print(
-        f"Risk/Reward 2    : "
+        f"Risk/Reward 2      : "
         f"{trade_plan.risk_reward_2:.2f}"
     )
 
     print(
-        f"Holding period   : "
+        f"Holding period     : "
         f"{trade_plan.holding_period}"
     )
 
@@ -308,46 +468,46 @@ def print_position_plan_summary(
     position_plan: PositionPlan,
 ) -> None:
     """
-    종목 스캔 중 포지션 크기와 예상 손익을 출력합니다.
+    Position Plan 핵심값을 출력합니다.
     """
 
     print(
-        f"Position status  : "
+        f"Position status    : "
         f"{position_plan.position_status}"
     )
 
     print(
-        f"Recommended shares: "
+        f"Recommended shares : "
         f"{position_plan.recommended_shares}"
     )
 
     print(
-        f"Investment amount : "
+        f"Investment amount  : "
         f"${position_plan.investment_amount:,.2f}"
     )
 
     print(
-        f"Position percent  : "
+        f"Position percent   : "
         f"{position_plan.position_percent:.2f}%"
     )
 
     print(
-        f"Expected loss     : "
+        f"Expected loss      : "
         f"${position_plan.expected_loss_amount:,.2f}"
     )
 
     print(
-        f"Expected profit 1 : "
+        f"Expected profit 1  : "
         f"${position_plan.expected_profit_1:,.2f}"
     )
 
     print(
-        f"Expected profit 2 : "
+        f"Expected profit 2  : "
         f"${position_plan.expected_profit_2:,.2f}"
     )
 
     print(
-        f"Account risk      : "
+        f"Account risk       : "
         f"{position_plan.actual_account_risk_percent:.2f}%"
     )
 
@@ -362,14 +522,15 @@ def scan_stock(
     한 종목의 전체 분석을 실행합니다.
 
     순서:
-    1. 데이터 다운로드
-    2. 기술점수와 신호
-    3. AI 분석
-    4. 백테스트
-    5. 기술적 매매계획
-    6. 포지션 크기 계산
-    7. 최종점수
-    8. 차트 저장
+    1. 시장 데이터
+    2. 기술분석
+    3. OpenAI 분석
+    4. 머신러닝 예측
+    5. 백테스트
+    6. Trade Plan
+    7. Position Plan
+    8. 최종점수
+    9. 차트 저장
     """
 
     symbol = (
@@ -388,14 +549,16 @@ def scan_stock(
     print(f"SCANNING {symbol}")
     print("=" * 60)
 
-    # 1. 시장 데이터 다운로드
+    # --------------------------------------------------------
+    # 1. 시장 데이터
+    # --------------------------------------------------------
+
     data = get_history(
         symbol=symbol,
         period=MARKET_PERIOD,
         interval=MARKET_INTERVAL,
     )
 
-    # 2. 전체 날짜에 점수와 신호 추가
     data = add_scores_and_signals(
         data
     )
@@ -415,16 +578,19 @@ def scan_stock(
     ] = technical_signal
 
     print(
-        f"Technical score : "
+        f"Technical score    : "
         f"{technical_score}/100"
     )
 
     print(
-        f"Technical signal: "
+        f"Technical signal   : "
         f"{technical_signal}"
     )
 
-    # 3. AI 분석
+    # --------------------------------------------------------
+    # 2. OpenAI 분석
+    # --------------------------------------------------------
+
     print("Running AI analysis...")
 
     ai_analysis = run_ai_analysis(
@@ -435,21 +601,39 @@ def scan_stock(
     )
 
     print(
-        f"AI signal       : "
+        f"AI signal          : "
         f"{ai_analysis.signal}"
     )
 
     print(
-        f"AI confidence   : "
+        f"AI confidence      : "
         f"{ai_analysis.confidence}%"
     )
 
     print(
-        f"Risk level      : "
+        f"Risk level         : "
         f"{ai_analysis.risk_level}"
     )
 
+    # --------------------------------------------------------
+    # 3. 머신러닝 예측
+    # --------------------------------------------------------
+
+    print("Running ML prediction...")
+
+    ml_prediction = run_ml_prediction(
+        symbol=symbol,
+        data=data,
+    )
+
+    print_ml_summary(
+        ml_prediction
+    )
+
+    # --------------------------------------------------------
     # 4. 백테스트
+    # --------------------------------------------------------
+
     print("Running backtest...")
 
     backtest_result = run_backtest(
@@ -457,7 +641,10 @@ def scan_stock(
         starting_cash=STARTING_CASH,
     )
 
-    # 5. 기술적 매매계획
+    # --------------------------------------------------------
+    # 5. Trade Plan
+    # --------------------------------------------------------
+
     print("Creating trade plan...")
 
     trade_plan = create_trade_plan(
@@ -470,7 +657,10 @@ def scan_stock(
         trade_plan
     )
 
-    # 6. 포지션 크기 계산
+    # --------------------------------------------------------
+    # 6. Position Plan
+    # --------------------------------------------------------
+
     print("Creating position plan...")
 
     position_plan = create_position_plan(
@@ -481,24 +671,31 @@ def scan_stock(
         position_plan
     )
 
+    # --------------------------------------------------------
     # 7. 최종점수
+    # --------------------------------------------------------
+
     final_score = calculate_final_score(
         technical_score=technical_score,
         ai_analysis=ai_analysis,
         trade_plan=trade_plan,
+        ml_prediction=ml_prediction,
     )
 
     print(
-        f"Final score      : "
+        f"Final score        : "
         f"{final_score:.2f}/100"
     )
 
     print(
-        f"Backtest return  : "
+        f"Backtest return    : "
         f"{backtest_result['total_return']:.2f}%"
     )
 
+    # --------------------------------------------------------
     # 8. 차트 저장
+    # --------------------------------------------------------
+
     chart_path = None
 
     if SAVE_CHARTS:
@@ -508,6 +705,62 @@ def scan_stock(
             symbol=symbol,
             show_chart=SHOW_CHARTS,
         )
+
+    # --------------------------------------------------------
+    # ML fallback 값
+    # --------------------------------------------------------
+
+    if ml_prediction is None:
+        ml_prediction_name = "UNAVAILABLE"
+        ml_up_probability = 50.0
+        ml_down_probability = 50.0
+        ml_validation_accuracy = 0.0
+        ml_balanced_accuracy = 0.0
+        ml_model_status = "UNAVAILABLE"
+        ml_prediction_date = ""
+        ml_horizon_days = 5
+        ml_feature_count = 0
+
+    else:
+        ml_prediction_name = (
+            ml_prediction.prediction
+        )
+
+        ml_up_probability = (
+            ml_prediction.upward_probability
+        )
+
+        ml_down_probability = (
+            ml_prediction.downward_probability
+        )
+
+        ml_validation_accuracy = (
+            ml_prediction.validation_accuracy
+        )
+
+        ml_balanced_accuracy = (
+            ml_prediction.validation_balanced_accuracy
+        )
+
+        ml_model_status = (
+            ml_prediction.model_status
+        )
+
+        ml_prediction_date = (
+            ml_prediction.prediction_date
+        )
+
+        ml_horizon_days = (
+            ml_prediction.prediction_horizon_days
+        )
+
+        ml_feature_count = (
+            ml_prediction.feature_count
+        )
+
+    # --------------------------------------------------------
+    # 결과 객체
+    # --------------------------------------------------------
 
     scan_result = StockScanResult(
         symbol=symbol,
@@ -523,6 +776,42 @@ def scan_stock(
         ai_signal=ai_analysis.signal,
         ai_confidence=ai_analysis.confidence,
         risk_level=ai_analysis.risk_level,
+
+        ml_prediction=ml_prediction_name,
+
+        ml_up_probability=round(
+            ml_up_probability,
+            2,
+        ),
+
+        ml_down_probability=round(
+            ml_down_probability,
+            2,
+        ),
+
+        ml_validation_accuracy=round(
+            ml_validation_accuracy,
+            2,
+        ),
+
+        ml_balanced_accuracy=round(
+            ml_balanced_accuracy,
+            2,
+        ),
+
+        ml_model_status=ml_model_status,
+
+        ml_prediction_date=(
+            ml_prediction_date
+        ),
+
+        ml_horizon_days=(
+            ml_horizon_days
+        ),
+
+        ml_feature_count=(
+            ml_feature_count
+        ),
 
         final_score=final_score,
 
@@ -562,19 +851,35 @@ def scan_stock(
         target_1=trade_plan.target_1,
         target_2=trade_plan.target_2,
 
-        expected_gain_1=trade_plan.expected_gain_1,
-        expected_gain_2=trade_plan.expected_gain_2,
-        expected_loss=trade_plan.expected_loss,
+        expected_gain_1=(
+            trade_plan.expected_gain_1
+        ),
 
-        risk_reward_1=trade_plan.risk_reward_1,
-        risk_reward_2=trade_plan.risk_reward_2,
+        expected_gain_2=(
+            trade_plan.expected_gain_2
+        ),
+
+        expected_loss=(
+            trade_plan.expected_loss
+        ),
+
+        risk_reward_1=(
+            trade_plan.risk_reward_1
+        ),
+
+        risk_reward_2=(
+            trade_plan.risk_reward_2
+        ),
 
         atr=trade_plan.atr,
+
         volatility_percent=(
             trade_plan.volatility_percent
         ),
 
-        holding_period=trade_plan.holding_period,
+        holding_period=(
+            trade_plan.holding_period
+        ),
 
         summary=ai_analysis.summary,
     )
@@ -584,6 +889,7 @@ def scan_stock(
         "latest": latest,
         "technical_reasons": reasons,
         "ai_analysis": ai_analysis,
+        "ml_prediction": ml_prediction,
         "backtest": backtest_result,
         "trade_plan": trade_plan,
         "position_plan": position_plan,
@@ -624,7 +930,7 @@ def scan_stocks(
 
     print()
     print("=" * 60)
-    print("AI STOCK BOT V3 SCANNER")
+    print("AI STOCK BOT V4.2 SCANNER")
     print("=" * 60)
 
     print(

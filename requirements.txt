@@ -8,3 +8,4 @@ matplotlib
 ta
 openai
 pydantic
+scikit-learn

@@ -41,11 +41,13 @@ class AIStockAnalysis(BaseModel):
     )
 
     positive_factors: list[str] = Field(
+        default_factory=list,
         max_length=3,
         description="긍정적인 기술 요인"
     )
 
     risk_factors: list[str] = Field(
+        default_factory=list,
         max_length=3,
         description="위험 기술 요인"
     )
@@ -59,10 +61,21 @@ class AIStockAnalysis(BaseModel):
 class StockScanResult(BaseModel):
     """
     한 종목의 전체 스캔 결과입니다.
+
+    포함 내용:
+    - 기술분석
+    - OpenAI 분석
+    - 머신러닝 예측
+    - 백테스트
+    - Trade Plan
     """
 
     symbol: str
     close: float
+
+    # --------------------------------------------------------
+    # 기술분석
+    # --------------------------------------------------------
 
     technical_score: int
 
@@ -71,6 +84,10 @@ class StockScanResult(BaseModel):
         "HOLD",
         "SELL",
     ]
+
+    # --------------------------------------------------------
+    # OpenAI 분석
+    # --------------------------------------------------------
 
     ai_signal: Literal[
         "BUY",
@@ -86,13 +103,54 @@ class StockScanResult(BaseModel):
         "HIGH",
     ]
 
+    # --------------------------------------------------------
+    # 머신러닝 예측
+    # --------------------------------------------------------
+
+    ml_prediction: Literal[
+        "BULLISH",
+        "NEUTRAL",
+        "BEARISH",
+        "UNAVAILABLE",
+    ]
+
+    ml_up_probability: float
+    ml_down_probability: float
+
+    ml_validation_accuracy: float
+    ml_balanced_accuracy: float
+
+    ml_model_status: Literal[
+        "USABLE",
+        "PROMISING",
+        "EXPERIMENTAL",
+        "WEAK",
+        "LOW_DATA",
+        "UNAVAILABLE",
+    ]
+
+    ml_prediction_date: str
+    ml_horizon_days: int
+    ml_feature_count: int
+
+    # --------------------------------------------------------
+    # 최종점수
+    # --------------------------------------------------------
+
     final_score: float
+
+    # --------------------------------------------------------
+    # 백테스트
+    # --------------------------------------------------------
 
     backtest_return: float
     max_drawdown: float
     win_rate: float
 
-    # V3 Technical Trade Plan
+    # --------------------------------------------------------
+    # Trade Plan
+    # --------------------------------------------------------
+
     plan_status: Literal[
         "ATTRACTIVE",
         "WATCH",
