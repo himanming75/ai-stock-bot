@@ -1,7 +1,9 @@
 from datetime import datetime
+from typing import Any
 
 from config import SYMBOLS
 from portfolio.allocator import (
+    PortfolioAllocation,
     build_allocation_candidate,
     create_portfolio_allocation,
     print_portfolio_allocation,
@@ -12,6 +14,7 @@ from reports.console_report import (
     print_top_opportunities,
     save_json_report,
 )
+from reports.html_dashboard import save_html_dashboard
 from scanner.stock_scanner import scan_stocks
 
 
@@ -22,7 +25,7 @@ def print_program_header() -> None:
 
     print()
     print("=" * 80)
-    print("AI STOCK BOT V3.2")
+    print("AI STOCK BOT V3.4")
     print("=" * 80)
 
     print(
@@ -72,9 +75,9 @@ def validate_symbols(
 
 
 def build_portfolio_candidates(
-    results,
-    details,
-):
+    results: list[Any],
+    details: dict[str, dict[str, Any]],
+) -> list[Any]:
     """
     종목 스캔 결과와 PositionPlan을 연결해
     Portfolio Allocation 후보 목록을 만듭니다.
@@ -112,9 +115,121 @@ def build_portfolio_candidates(
     return candidates
 
 
+def create_allocation_or_none(
+    results: list[Any],
+    details: dict[str, dict[str, Any]],
+) -> PortfolioAllocation | None:
+    """
+    스캔 결과를 바탕으로 포트폴리오 배분을 생성합니다.
+
+    사용할 후보가 없으면 None을 반환합니다.
+    """
+
+    allocation_candidates = (
+        build_portfolio_candidates(
+            results=results,
+            details=details,
+        )
+    )
+
+    if not allocation_candidates:
+        print()
+        print("=" * 80)
+        print("PORTFOLIO ALLOCATION SKIPPED")
+        print("=" * 80)
+
+        print(
+            "포트폴리오 배분에 사용할 "
+            "PositionPlan이 없습니다."
+        )
+
+        return None
+
+    portfolio_allocation = (
+        create_portfolio_allocation(
+            candidates=allocation_candidates,
+        )
+    )
+
+    print_portfolio_allocation(
+        portfolio_allocation
+    )
+
+    return portfolio_allocation
+
+
+def print_completion_summary(
+    report_path: str | None,
+    dashboard_path: str | None,
+    portfolio_allocation: PortfolioAllocation | None,
+) -> None:
+    """
+    전체 프로그램 완료 결과를 출력합니다.
+    """
+
+    print()
+    print("=" * 80)
+    print("AI STOCK BOT V3.4 COMPLETED")
+    print("=" * 80)
+
+    print(
+        "Finished at         : "
+        f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+    )
+
+    print(
+        "JSON report         : "
+        f"{report_path or 'Not created'}"
+    )
+
+    print(
+        "HTML dashboard      : "
+        f"{dashboard_path or 'Not created'}"
+    )
+
+    if portfolio_allocation is not None:
+        print(
+            "Portfolio selected  : "
+            f"{portfolio_allocation.selected_count}"
+        )
+
+        print(
+            "Total allocated     : "
+            f"${portfolio_allocation.total_allocated_amount:,.2f}"
+        )
+
+        print(
+            "Cash reserve        : "
+            f"${portfolio_allocation.cash_reserve_amount:,.2f} "
+            f"({portfolio_allocation.cash_reserve_percent:.2f}%)"
+        )
+
+        print(
+            "Total account risk  : "
+            f"{portfolio_allocation.total_account_risk_percent:.2f}%"
+        )
+
+        print(
+            "Expected profit T1  : "
+            f"${portfolio_allocation.total_expected_profit_1:,.2f}"
+        )
+
+        print(
+            "Expected profit T2  : "
+            f"${portfolio_allocation.total_expected_profit_2:,.2f}"
+        )
+
+        print(
+            "Expected loss       : "
+            f"${portfolio_allocation.total_expected_loss:,.2f}"
+        )
+
+    print("=" * 80)
+
+
 def main() -> None:
     """
-    AI Stock Bot V3.2 실행 순서:
+    AI Stock Bot V3.4 실행 순서:
 
     1. 종목 목록 정리
     2. 여러 종목 스캔
@@ -126,8 +241,9 @@ def main() -> None:
     8. 종목 순위표 출력
     9. 상위 종목 상세 출력
     10. 포트폴리오 자동 배분
-    11. JSON 리포트 저장
-    12. 실행 결과 요약
+    11. 포트폴리오 포함 JSON 리포트 저장
+    12. HTML Dashboard 생성
+    13. 실행 결과 요약
     """
 
     print_program_header()
@@ -175,90 +291,46 @@ def main() -> None:
             results=results
         )
 
-        # 상위 종목의 상세 설명
+        # 상위 종목 상세 출력
         print_top_opportunities(
             results=results
         )
 
-        # Portfolio Allocation 후보 생성
-        allocation_candidates = (
-            build_portfolio_candidates(
+        # Portfolio Allocation 생성 및 출력
+        portfolio_allocation = (
+            create_allocation_or_none(
                 results=results,
                 details=details,
             )
         )
 
-        portfolio_allocation = None
-
-        if allocation_candidates:
-            # 실제 계좌 기준 자동 자금 배분
-            portfolio_allocation = (
-                create_portfolio_allocation(
-                    candidates=allocation_candidates,
-                )
-            )
-
-            # 포트폴리오 배분 결과 출력
-            print_portfolio_allocation(
-                portfolio_allocation
-            )
-
-        else:
-            print()
-            print("=" * 80)
-            print("PORTFOLIO ALLOCATION SKIPPED")
-            print("=" * 80)
-
-            print(
-                "포트폴리오 배분에 사용할 "
-                "PositionPlan이 없습니다."
-            )
-
-        # JSON 보고서 저장
+        # 종목 분석과 포트폴리오 배분을
+        # 하나의 JSON 리포트로 저장합니다.
         report_path = save_json_report(
             results=results,
             details=details,
+            portfolio=portfolio_allocation,
         )
 
-        # 프로그램 종료 요약
+        # HTML Dashboard 저장 및 브라우저 열기
+        dashboard_path = save_html_dashboard(
+            results=results,
+            portfolio=portfolio_allocation,
+            open_browser=True,
+        )
+
+        # 기존 스캔 결과 요약
         print_report_summary(
             results=results,
             report_path=report_path,
         )
 
-        print()
-        print("=" * 80)
-        print("AI STOCK BOT V3.2 COMPLETED")
-        print("=" * 80)
-
-        print(
-            "Finished at: "
-            f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        # V3.4 전체 완료 요약
+        print_completion_summary(
+            report_path=report_path,
+            dashboard_path=dashboard_path,
+            portfolio_allocation=portfolio_allocation,
         )
-
-        if portfolio_allocation is not None:
-            print(
-                "Portfolio selected : "
-                f"{portfolio_allocation.selected_count}"
-            )
-
-            print(
-                "Total allocated    : "
-                f"${portfolio_allocation.total_allocated_amount:,.2f}"
-            )
-
-            print(
-                "Cash reserve       : "
-                f"${portfolio_allocation.cash_reserve_amount:,.2f} "
-                f"({portfolio_allocation.cash_reserve_percent:.2f}%)"
-            )
-
-            print(
-                "Total account risk : "
-                f"{portfolio_allocation.total_account_risk_percent:.2f}%"
-            )
-
-        print("=" * 80)
 
     except KeyboardInterrupt:
         print()
