@@ -7,3 +7,4 @@ schedule
 matplotlib
 ta
 openai
+pydantic

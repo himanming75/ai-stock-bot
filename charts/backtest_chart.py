@@ -1,29 +1,161 @@
 from pathlib import Path
 
+# 중요:
+# pyplot을 import하기 전에 GUI를 사용하지 않는 백엔드를 지정해야 합니다.
+import matplotlib
+
+matplotlib.use("Agg")
+
 import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def plot_backtest(data: pd.DataFrame, trades: list, symbol: str) -> None:
-    """가격, 이동평균선, 실제 매수·매도 거래를 차트로 표시합니다."""
+def plot_backtest(
+    data: pd.DataFrame,
+    trades: list[dict],
+    symbol: str,
+    show_chart: bool = False,
+) -> str:
+    """
+    백테스트 차트를 PNG 파일로 저장합니다.
 
-    plt.figure(figsize=(14, 8))
+    AI Stock Bot V2의 여러 종목 스캔에서는
+    GUI 차트 창을 열지 않고 파일만 저장합니다.
+    """
 
-    # 종가와 이동평균선
-    plt.plot(data.index, data["Close"], label="Close", linewidth=1.5)
-    plt.plot(data.index, data["MA5"], label="MA5", linewidth=1)
-    plt.plot(data.index, data["MA20"], label="MA20", linewidth=1)
+    required_columns = {
+        "Close",
+        "MA5",
+        "MA20",
+        "BB_UPPER",
+        "BB_LOWER",
+    }
 
-    # 백테스트 거래 기록 분리
-    buy_trades = [trade for trade in trades if trade["action"] == "BUY"]
-    sell_trades = [trade for trade in trades if trade["action"] == "SELL"]
+    missing_columns = (
+        required_columns
+        - set(data.columns)
+    )
 
-    # BUY 지점
-    if buy_trades:
-        buy_dates = [trade["date"] for trade in buy_trades]
-        buy_prices = [trade["price"] for trade in buy_trades]
+    if missing_columns:
+        raise ValueError(
+            "차트 생성에 필요한 컬럼이 없습니다: "
+            + ", ".join(
+                sorted(missing_columns)
+            )
+        )
 
-        plt.scatter(
+    if data.empty:
+        raise ValueError(
+            "차트로 표시할 데이터가 없습니다."
+        )
+
+    symbol = str(symbol).upper().strip()
+
+    chart_data = data.copy()
+    chart_data.index = pd.to_datetime(
+        chart_data.index
+    )
+
+    buy_dates = []
+    buy_prices = []
+
+    sell_dates = []
+    sell_prices = []
+
+    for trade in trades:
+        action = (
+            str(
+                trade.get(
+                    "action",
+                    "",
+                )
+            )
+            .upper()
+            .strip()
+        )
+
+        trade_date = pd.to_datetime(
+            trade.get("date")
+        )
+
+        trade_price = float(
+            trade.get(
+                "price",
+                0,
+            )
+        )
+
+        if action == "BUY":
+            buy_dates.append(
+                trade_date
+            )
+
+            buy_prices.append(
+                trade_price
+            )
+
+        elif action == "SELL":
+            sell_dates.append(
+                trade_date
+            )
+
+            sell_prices.append(
+                trade_price
+            )
+
+    # pyplot 전역 상태 대신 개별 Figure 객체를 만듭니다.
+    figure, axis = plt.subplots(
+        figsize=(16, 9)
+    )
+
+    axis.plot(
+        chart_data.index,
+        chart_data["Close"],
+        label="Close",
+        linewidth=1.2,
+    )
+
+    axis.plot(
+        chart_data.index,
+        chart_data["MA5"],
+        label="MA5",
+        linewidth=1.0,
+    )
+
+    axis.plot(
+        chart_data.index,
+        chart_data["MA20"],
+        label="MA20",
+        linewidth=1.0,
+    )
+
+    axis.plot(
+        chart_data.index,
+        chart_data["BB_UPPER"],
+        label="BB Upper",
+        linewidth=0.8,
+        linestyle="--",
+        alpha=0.7,
+    )
+
+    axis.plot(
+        chart_data.index,
+        chart_data["BB_LOWER"],
+        label="BB Lower",
+        linewidth=0.8,
+        linestyle="--",
+        alpha=0.7,
+    )
+
+    axis.fill_between(
+        chart_data.index,
+        chart_data["BB_LOWER"],
+        chart_data["BB_UPPER"],
+        alpha=0.08,
+    )
+
+    if buy_dates:
+        axis.scatter(
             buy_dates,
             buy_prices,
             marker="^",
@@ -32,12 +164,8 @@ def plot_backtest(data: pd.DataFrame, trades: list, symbol: str) -> None:
             zorder=5,
         )
 
-    # SELL 지점
-    if sell_trades:
-        sell_dates = [trade["date"] for trade in sell_trades]
-        sell_prices = [trade["price"] for trade in sell_trades]
-
-        plt.scatter(
+    if sell_dates:
+        axis.scatter(
             sell_dates,
             sell_prices,
             marker="v",
@@ -46,20 +174,45 @@ def plot_backtest(data: pd.DataFrame, trades: list, symbol: str) -> None:
             zorder=5,
         )
 
-    plt.title(f"{symbol} Backtest Chart")
-    plt.xlabel("Date")
-    plt.ylabel("Price ($)")
-    plt.legend()
-    plt.grid(alpha=0.3)
-    plt.tight_layout()
+    axis.set_title(
+        f"{symbol} Backtest Chart"
+    )
 
-    # output 폴더가 없으면 자동 생성
-    output_directory = Path("output")
-    output_directory.mkdir(exist_ok=True)
+    axis.set_xlabel("Date")
+    axis.set_ylabel("Price ($)")
+    axis.legend()
+    axis.grid(alpha=0.25)
 
-    output_file = output_directory / f"{symbol}_backtest.png"
-    plt.savefig(output_file, dpi=150)
+    figure.tight_layout()
 
-    print(f"Chart saved: {output_file}")
+    output_directory = Path(
+        "output"
+    )
 
-    plt.show()
+    output_directory.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    output_path = (
+        output_directory
+        / f"{symbol}_backtest.png"
+    )
+
+    figure.savefig(
+        output_path,
+        dpi=150,
+        bbox_inches="tight",
+    )
+
+    # 반드시 해당 Figure를 직접 닫습니다.
+    plt.close(figure)
+
+    # 혹시 남은 Figure가 있으면 모두 정리합니다.
+    plt.close("all")
+
+    print(
+        f"Chart saved: {output_path}"
+    )
+
+    return str(output_path)
