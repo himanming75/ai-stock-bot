@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 
 class AIStockAnalysis(BaseModel):
     """
-    OpenAI가 반환해야 하는 주식 기술분석 결과 구조입니다.
+    OpenAI가 반환하는 구조화된 기술분석 결과입니다.
     """
 
     trend: Literal[
@@ -15,7 +15,7 @@ class AIStockAnalysis(BaseModel):
         "BEARISH",
         "STRONG_BEARISH",
     ] = Field(
-        description="기술지표를 기반으로 한 현재 추세"
+        description="기술지표를 바탕으로 판단한 현재 추세"
     )
 
     signal: Literal[
@@ -29,7 +29,7 @@ class AIStockAnalysis(BaseModel):
     confidence: int = Field(
         ge=0,
         le=100,
-        description="AI 분석 신뢰도 0부터 100"
+        description="AI 분석 신뢰도"
     )
 
     risk_level: Literal[
@@ -42,12 +42,12 @@ class AIStockAnalysis(BaseModel):
 
     positive_factors: list[str] = Field(
         max_length=3,
-        description="긍정적인 기술 요인 최대 3개"
+        description="긍정적인 기술 요인"
     )
 
     risk_factors: list[str] = Field(
         max_length=3,
-        description="위험 기술 요인 최대 3개"
+        description="위험 기술 요인"
     )
 
     summary: str = Field(
@@ -58,11 +58,10 @@ class AIStockAnalysis(BaseModel):
 
 class StockScanResult(BaseModel):
     """
-    한 종목의 전체 분석 결과입니다.
+    한 종목의 전체 스캔 결과입니다.
     """
 
     symbol: str
-
     close: float
 
     technical_score: int
@@ -90,9 +89,33 @@ class StockScanResult(BaseModel):
     final_score: float
 
     backtest_return: float
-
     max_drawdown: float
-
     win_rate: float
+
+    # V3 Technical Trade Plan
+    plan_status: Literal[
+        "ATTRACTIVE",
+        "WATCH",
+        "WEAK",
+        "AVOID",
+    ]
+
+    entry_low: float
+    entry_high: float
+
+    stop_loss: float
+    target_1: float
+    target_2: float
+
+    expected_gain_1: float
+    expected_gain_2: float
+    expected_loss: float
+
+    risk_reward_1: float
+    risk_reward_2: float
+
+    atr: float
+    volatility_percent: float
+    holding_period: str
 
     summary: str

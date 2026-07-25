@@ -14,6 +14,8 @@ from config import (
     STARTING_CASH,
 )
 from data.market import get_history
+from forecast.predictor import TradePlan, create_trade_plan
+from portfolio.manager import PositionPlan, create_position_plan
 from strategy.score import calculate_score, determine_signal
 
 
@@ -32,8 +34,14 @@ def add_scores_and_signals(
     for _, row in analyzed_data.iterrows():
         score_result = calculate_score(row)
 
-        score = int(score_result["score"])
-        signal = determine_signal(row, score)
+        score = int(
+            score_result["score"]
+        )
+
+        signal = determine_signal(
+            row,
+            score,
+        )
 
         scores.append(score)
         signals.append(signal)
@@ -49,47 +57,88 @@ def calculate_ai_opportunity_score(
     technical_score: int,
 ) -> float:
     """
-    AI 의견을 종목 선별용 0~100점으로 변환합니다.
-
-    BUY:
-        AI 신뢰도를 그대로 사용
-
-    HOLD:
-        중립점수 50을 중심으로 계산
-
-    SELL:
-        신뢰도가 높을수록 종목 선별점수가 낮아짐
-
-    AI 호출 실패:
-        confidence가 0이면 기술점수를 대신 사용
+    AI 의견과 신뢰도를 0~100점으로 변환합니다.
     """
 
-    confidence = int(ai_analysis.confidence)
+    confidence = int(
+        ai_analysis.confidence
+    )
 
     if confidence <= 0:
-        return float(technical_score)
+        return float(
+            technical_score
+        )
 
     if ai_analysis.signal == "BUY":
-        return float(confidence)
+        return float(
+            confidence
+        )
 
     if ai_analysis.signal == "HOLD":
         return 50.0
 
     if ai_analysis.signal == "SELL":
-        return float(100 - confidence)
+        return float(
+            100 - confidence
+        )
 
     return 50.0
+
+
+def calculate_trade_plan_score(
+    trade_plan: TradePlan,
+) -> float:
+    """
+    매매계획의 Risk/Reward와 상태를
+    종목 순위에 사용할 점수로 변환합니다.
+    """
+
+    status_scores = {
+        "ATTRACTIVE": 100.0,
+        "WATCH": 70.0,
+        "WEAK": 40.0,
+        "AVOID": 10.0,
+    }
+
+    status_score = status_scores.get(
+        trade_plan.plan_status,
+        40.0,
+    )
+
+    # Risk/Reward 2가 3 이상이면 100점
+    risk_reward_score = min(
+        100.0,
+        max(
+            0.0,
+            trade_plan.risk_reward_2
+            / 3.0
+            * 100.0,
+        ),
+    )
+
+    plan_score = (
+        status_score * 0.60
+        + risk_reward_score * 0.40
+    )
+
+    return round(
+        plan_score,
+        2,
+    )
 
 
 def calculate_final_score(
     technical_score: int,
     ai_analysis: AIStockAnalysis,
+    trade_plan: TradePlan,
 ) -> float:
     """
-    기술점수와 AI 점수를 합쳐 최종점수를 계산합니다.
+    기술점수, AI 평가, 매매계획을 합쳐
+    최종 종목점수를 계산합니다.
 
-    기술 분석: 60%
-    AI 분석:   40%
+    기술점수: 50%
+    AI 점수:  30%
+    계획점수: 20%
     """
 
     ai_score = calculate_ai_opportunity_score(
@@ -97,22 +146,38 @@ def calculate_final_score(
         technical_score=technical_score,
     )
 
+    plan_score = calculate_trade_plan_score(
+        trade_plan=trade_plan,
+    )
+
     final_score = (
-        technical_score * 0.60
-        + ai_score * 0.40
+        technical_score * 0.50
+        + ai_score * 0.30
+        + plan_score * 0.20
     )
 
     return round(
-        max(0.0, min(100.0, final_score)),
+        max(
+            0.0,
+            min(
+                100.0,
+                final_score,
+            ),
+        ),
         2,
     )
 
 
 def get_latest_analysis(
     data: pd.DataFrame,
-) -> tuple[pd.Series, int, str, list[str]]:
+) -> tuple[
+    pd.Series,
+    int,
+    str,
+    list[str],
+]:
     """
-    가장 최근 데이터의 점수, 신호, 이유를 반환합니다.
+    최근 데이터의 점수, 신호, 이유를 반환합니다.
     """
 
     if data.empty:
@@ -122,7 +187,9 @@ def get_latest_analysis(
 
     latest = data.iloc[-1]
 
-    score_result = calculate_score(latest)
+    score_result = calculate_score(
+        latest
+    )
 
     technical_score = int(
         score_result["score"]
@@ -157,11 +224,21 @@ def run_ai_analysis(
 
     return analyze_technical_data(
         symbol=symbol,
-        close=float(latest["Close"]),
-        ma5=float(latest["MA5"]),
-        ma20=float(latest["MA20"]),
-        rsi=float(latest["RSI"]),
-        macd=float(latest["MACD"]),
+        close=float(
+            latest["Close"]
+        ),
+        ma5=float(
+            latest["MA5"]
+        ),
+        ma20=float(
+            latest["MA20"]
+        ),
+        rsi=float(
+            latest["RSI"]
+        ),
+        macd=float(
+            latest["MACD"]
+        ),
         macd_signal=float(
             latest["MACD_SIGNAL"]
         ),
@@ -182,18 +259,124 @@ def run_ai_analysis(
     )
 
 
+def print_trade_plan_summary(
+    trade_plan: TradePlan,
+) -> None:
+    """
+    종목 스캔 중 매매계획 핵심값을 출력합니다.
+    """
+
+    print(
+        f"Plan status      : "
+        f"{trade_plan.plan_status}"
+    )
+
+    print(
+        f"Entry zone       : "
+        f"${trade_plan.entry_low:,.2f}"
+        f" - "
+        f"${trade_plan.entry_high:,.2f}"
+    )
+
+    print(
+        f"Stop loss        : "
+        f"${trade_plan.stop_loss:,.2f}"
+    )
+
+    print(
+        f"Target 1         : "
+        f"${trade_plan.target_1:,.2f}"
+    )
+
+    print(
+        f"Target 2         : "
+        f"${trade_plan.target_2:,.2f}"
+    )
+
+    print(
+        f"Risk/Reward 2    : "
+        f"{trade_plan.risk_reward_2:.2f}"
+    )
+
+    print(
+        f"Holding period   : "
+        f"{trade_plan.holding_period}"
+    )
+
+
+def print_position_plan_summary(
+    position_plan: PositionPlan,
+) -> None:
+    """
+    종목 스캔 중 포지션 크기와 예상 손익을 출력합니다.
+    """
+
+    print(
+        f"Position status  : "
+        f"{position_plan.position_status}"
+    )
+
+    print(
+        f"Recommended shares: "
+        f"{position_plan.recommended_shares}"
+    )
+
+    print(
+        f"Investment amount : "
+        f"${position_plan.investment_amount:,.2f}"
+    )
+
+    print(
+        f"Position percent  : "
+        f"{position_plan.position_percent:.2f}%"
+    )
+
+    print(
+        f"Expected loss     : "
+        f"${position_plan.expected_loss_amount:,.2f}"
+    )
+
+    print(
+        f"Expected profit 1 : "
+        f"${position_plan.expected_profit_1:,.2f}"
+    )
+
+    print(
+        f"Expected profit 2 : "
+        f"${position_plan.expected_profit_2:,.2f}"
+    )
+
+    print(
+        f"Account risk      : "
+        f"{position_plan.actual_account_risk_percent:.2f}%"
+    )
+
+
 def scan_stock(
     symbol: str,
-) -> tuple[StockScanResult, dict[str, Any]]:
+) -> tuple[
+    StockScanResult,
+    dict[str, Any],
+]:
     """
     한 종목의 전체 분석을 실행합니다.
 
-    반환값:
-    1. 종목 스캔 요약 결과
-    2. 세부 데이터
+    순서:
+    1. 데이터 다운로드
+    2. 기술점수와 신호
+    3. AI 분석
+    4. 백테스트
+    5. 기술적 매매계획
+    6. 포지션 크기 계산
+    7. 최종점수
+    8. 차트 저장
     """
 
-    symbol = str(symbol).upper().strip()
+    symbol = (
+        str(symbol)
+        .upper()
+        .strip()
+    )
 
     if not symbol:
         raise ValueError(
@@ -205,7 +388,7 @@ def scan_stock(
     print(f"SCANNING {symbol}")
     print("=" * 60)
 
-    # 1. 시장 데이터 다운로드 및 기술지표 계산
+    # 1. 시장 데이터 다운로드
     data = get_history(
         symbol=symbol,
         period=MARKET_PERIOD,
@@ -213,17 +396,19 @@ def scan_stock(
     )
 
     # 2. 전체 날짜에 점수와 신호 추가
-    data = add_scores_and_signals(data)
+    data = add_scores_and_signals(
+        data
+    )
 
-    # 3. 최신 기술분석
     (
         latest,
         technical_score,
         technical_signal,
         reasons,
-    ) = get_latest_analysis(data)
+    ) = get_latest_analysis(
+        data
+    )
 
-    # 가장 최근 신호를 확실히 일치시킴
     data.loc[
         data.index[-1],
         "Signal",
@@ -233,12 +418,13 @@ def scan_stock(
         f"Technical score : "
         f"{technical_score}/100"
     )
+
     print(
         f"Technical signal: "
         f"{technical_signal}"
     )
 
-    # 4. 구조화된 AI 분석
+    # 3. AI 분석
     print("Running AI analysis...")
 
     ai_analysis = run_ai_analysis(
@@ -252,16 +438,18 @@ def scan_stock(
         f"AI signal       : "
         f"{ai_analysis.signal}"
     )
+
     print(
         f"AI confidence   : "
         f"{ai_analysis.confidence}%"
     )
+
     print(
         f"Risk level      : "
         f"{ai_analysis.risk_level}"
     )
 
-    # 5. 백테스트
+    # 4. 백테스트
     print("Running backtest...")
 
     backtest_result = run_backtest(
@@ -269,22 +457,48 @@ def scan_stock(
         starting_cash=STARTING_CASH,
     )
 
-    # 6. 최종 종합점수
+    # 5. 기술적 매매계획
+    print("Creating trade plan...")
+
+    trade_plan = create_trade_plan(
+        symbol=symbol,
+        data=data,
+        technical_signal=technical_signal,
+    )
+
+    print_trade_plan_summary(
+        trade_plan
+    )
+
+    # 6. 포지션 크기 계산
+    print("Creating position plan...")
+
+    position_plan = create_position_plan(
+        trade_plan=trade_plan,
+    )
+
+    print_position_plan_summary(
+        position_plan
+    )
+
+    # 7. 최종점수
     final_score = calculate_final_score(
         technical_score=technical_score,
         ai_analysis=ai_analysis,
+        trade_plan=trade_plan,
     )
 
     print(
-        f"Final score     : "
+        f"Final score      : "
         f"{final_score:.2f}/100"
     )
+
     print(
-        f"Backtest return : "
+        f"Backtest return  : "
         f"{backtest_result['total_return']:.2f}%"
     )
 
-    # 7. 차트 저장
+    # 8. 차트 저장
     chart_path = None
 
     if SAVE_CHARTS:
@@ -295,19 +509,23 @@ def scan_stock(
             show_chart=SHOW_CHARTS,
         )
 
-    # 8. 스캔 요약 결과 객체
     scan_result = StockScanResult(
         symbol=symbol,
+
         close=round(
             float(latest["Close"]),
             2,
         ),
+
         technical_score=technical_score,
         technical_signal=technical_signal,
+
         ai_signal=ai_analysis.signal,
         ai_confidence=ai_analysis.confidence,
         risk_level=ai_analysis.risk_level,
+
         final_score=final_score,
+
         backtest_return=round(
             float(
                 backtest_result[
@@ -316,6 +534,7 @@ def scan_stock(
             ),
             2,
         ),
+
         max_drawdown=round(
             float(
                 backtest_result[
@@ -324,6 +543,7 @@ def scan_stock(
             ),
             2,
         ),
+
         win_rate=round(
             float(
                 backtest_result[
@@ -332,20 +552,48 @@ def scan_stock(
             ),
             2,
         ),
+
+        plan_status=trade_plan.plan_status,
+
+        entry_low=trade_plan.entry_low,
+        entry_high=trade_plan.entry_high,
+
+        stop_loss=trade_plan.stop_loss,
+        target_1=trade_plan.target_1,
+        target_2=trade_plan.target_2,
+
+        expected_gain_1=trade_plan.expected_gain_1,
+        expected_gain_2=trade_plan.expected_gain_2,
+        expected_loss=trade_plan.expected_loss,
+
+        risk_reward_1=trade_plan.risk_reward_1,
+        risk_reward_2=trade_plan.risk_reward_2,
+
+        atr=trade_plan.atr,
+        volatility_percent=(
+            trade_plan.volatility_percent
+        ),
+
+        holding_period=trade_plan.holding_period,
+
         summary=ai_analysis.summary,
     )
 
-    # 9. 나중에 상세 보고서에서 사용할 데이터
     details = {
         "data": data,
         "latest": latest,
         "technical_reasons": reasons,
         "ai_analysis": ai_analysis,
         "backtest": backtest_result,
+        "trade_plan": trade_plan,
+        "position_plan": position_plan,
         "chart_path": chart_path,
     }
 
-    return scan_result, details
+    return (
+        scan_result,
+        details,
+    )
 
 
 def scan_stocks(
@@ -358,21 +606,27 @@ def scan_stocks(
     여러 종목을 순서대로 분석합니다.
 
     한 종목에서 오류가 발생해도
-    나머지 종목 분석은 계속 진행합니다.
+    나머지 종목 분석을 계속합니다.
     """
 
-    results: list[StockScanResult] = []
+    results: list[
+        StockScanResult
+    ] = []
+
     all_details: dict[
         str,
         dict[str, Any],
     ] = {}
 
-    total_symbols = len(symbols)
+    total_symbols = len(
+        symbols
+    )
 
     print()
     print("=" * 60)
-    print("AI STOCK BOT V2 SCANNER")
+    print("AI STOCK BOT V3 SCANNER")
     print("=" * 60)
+
     print(
         f"Symbols to scan: "
         f"{total_symbols}"
@@ -399,7 +653,9 @@ def scan_stocks(
                 normalized_symbol
             )
 
-            results.append(result)
+            results.append(
+                result
+            )
 
             all_details[
                 normalized_symbol
@@ -409,19 +665,23 @@ def scan_stocks(
             print(
                 f"{normalized_symbol} scan failed."
             )
+
             print(
                 f"Error type   : "
                 f"{type(error).__name__}"
             )
+
             print(
                 f"Error message: "
                 f"{error}"
             )
 
-    # 최종점수가 높은 순서로 정렬
     results.sort(
         key=lambda item: item.final_score,
         reverse=True,
     )
 
-    return results, all_details
+    return (
+        results,
+        all_details,
+    )
