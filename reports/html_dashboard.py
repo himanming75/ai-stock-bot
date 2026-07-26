@@ -1,8 +1,6 @@
 import html
-import json
 import webbrowser
 from datetime import datetime
-from pathlib import Path
 from typing import Any
 
 from ai.schemas import StockScanResult
@@ -15,21 +13,15 @@ def escape_text(value: Any) -> str:
     HTML에 안전하게 문자열을 표시합니다.
     """
 
-    return html.escape(
-        str(value)
-    )
+    return html.escape(str(value))
 
 
 def signal_class(signal: str) -> str:
     """
-    BUY, HOLD, SELL에 맞는 CSS 클래스를 반환합니다.
+    BUY, HOLD, SELL용 CSS 클래스를 반환합니다.
     """
 
-    normalized = (
-        str(signal)
-        .upper()
-        .strip()
-    )
+    normalized = str(signal).upper().strip()
 
     if normalized == "BUY":
         return "signal-buy"
@@ -45,11 +37,7 @@ def risk_class(risk_level: str) -> str:
     위험도에 맞는 CSS 클래스를 반환합니다.
     """
 
-    normalized = (
-        str(risk_level)
-        .upper()
-        .strip()
-    )
+    normalized = str(risk_level).upper().strip()
 
     if normalized == "LOW":
         return "risk-low"
@@ -62,14 +50,10 @@ def risk_class(risk_level: str) -> str:
 
 def plan_class(plan_status: str) -> str:
     """
-    Trade Plan 상태에 맞는 CSS 클래스를 반환합니다.
+    Trade Plan 상태용 CSS 클래스를 반환합니다.
     """
 
-    normalized = (
-        str(plan_status)
-        .upper()
-        .strip()
-    )
+    normalized = str(plan_status).upper().strip()
 
     if normalized == "ATTRACTIVE":
         return "plan-attractive"
@@ -83,12 +67,106 @@ def plan_class(plan_status: str) -> str:
     return "plan-weak"
 
 
+def ml_prediction_class(prediction: str) -> str:
+    """
+    머신러닝 예측용 CSS 클래스를 반환합니다.
+    """
+
+    normalized = str(prediction).upper().strip()
+
+    if normalized == "BULLISH":
+        return "ml-bullish"
+
+    if normalized == "BEARISH":
+        return "ml-bearish"
+
+    if normalized == "UNAVAILABLE":
+        return "ml-unavailable"
+
+    return "ml-neutral"
+
+
+def ml_status_class(status: str) -> str:
+    """
+    머신러닝 모델 상태용 CSS 클래스를 반환합니다.
+    """
+
+    normalized = str(status).upper().strip()
+
+    if normalized == "USABLE":
+        return "model-usable"
+
+    if normalized == "PROMISING":
+        return "model-promising"
+
+    if normalized == "EXPERIMENTAL":
+        return "model-experimental"
+
+    if normalized in {
+        "WEAK",
+        "LOW_DATA",
+    }:
+        return "model-weak"
+
+    return "model-unavailable"
+
+
+def build_ml_summary(
+    results: list[StockScanResult],
+) -> dict[str, float | int]:
+    """
+    전체 종목의 머신러닝 요약을 계산합니다.
+    """
+
+    available_results = [
+        result
+        for result in results
+        if result.ml_model_status != "UNAVAILABLE"
+    ]
+
+    if not available_results:
+        return {
+            "available_count": 0,
+            "average_up_probability": 0.0,
+            "average_balanced_accuracy": 0.0,
+            "bullish_count": 0,
+        }
+
+    average_up_probability = sum(
+        result.ml_up_probability
+        for result in available_results
+    ) / len(available_results)
+
+    average_balanced_accuracy = sum(
+        result.ml_balanced_accuracy
+        for result in available_results
+    ) / len(available_results)
+
+    bullish_count = sum(
+        result.ml_prediction == "BULLISH"
+        for result in available_results
+    )
+
+    return {
+        "available_count": len(available_results),
+        "average_up_probability": round(
+            average_up_probability,
+            2,
+        ),
+        "average_balanced_accuracy": round(
+            average_balanced_accuracy,
+            2,
+        ),
+        "bullish_count": bullish_count,
+    }
+
+
 def build_summary_cards(
     portfolio: PortfolioAllocation | None,
     results: list[StockScanResult],
 ) -> str:
     """
-    대시보드 상단의 요약 카드 HTML을 만듭니다.
+    대시보드 상단 요약 카드를 생성합니다.
     """
 
     if portfolio is None:
@@ -96,25 +174,20 @@ def build_summary_cards(
         allocated = 0.0
         cash = 0.0
         risk = 0.0
-        profit_2 = 0.0
+        expected_profit_2 = 0.0
     else:
         account_size = portfolio.account_size
         allocated = portfolio.total_allocated_amount
         cash = portfolio.cash_reserve_amount
         risk = portfolio.total_account_risk_percent
-        profit_2 = portfolio.total_expected_profit_2
+        expected_profit_2 = (
+            portfolio.total_expected_profit_2
+        )
 
-    top_symbol = (
-        results[0].symbol
-        if results
-        else "-"
-    )
+    top_symbol = results[0].symbol if results else "-"
+    top_score = results[0].final_score if results else 0.0
 
-    top_score = (
-        results[0].final_score
-        if results
-        else 0.0
-    )
+    ml_summary = build_ml_summary(results)
 
     cards = [
         (
@@ -135,11 +208,11 @@ def build_summary_cards(
         (
             "Portfolio Risk",
             f"{risk:.2f}%",
-            "Expected loss if all stop losses trigger",
+            "Expected account risk",
         ),
         (
             "Expected Profit T2",
-            f"${profit_2:,.2f}",
+            f"${expected_profit_2:,.2f}",
             "Potential profit at second targets",
         ),
         (
@@ -147,9 +220,21 @@ def build_summary_cards(
             f"{top_symbol} {top_score:.2f}",
             "Highest final score",
         ),
+        (
+            "Average ML Up",
+            f"{ml_summary['average_up_probability']:.2f}%",
+            "Average five-day upward probability",
+        ),
+        (
+            "ML Balanced Accuracy",
+            (
+                f"{ml_summary['average_balanced_accuracy']:.2f}%"
+            ),
+            "Average historical validation score",
+        ),
     ]
 
-    card_html = []
+    card_html: list[str] = []
 
     for title, value, subtitle in cards:
         card_html.append(
@@ -158,9 +243,11 @@ def build_summary_cards(
                 <div class="summary-title">
                     {escape_text(title)}
                 </div>
+
                 <div class="summary-value">
                     {escape_text(value)}
                 </div>
+
                 <div class="summary-subtitle">
                     {escape_text(subtitle)}
                 </div>
@@ -168,19 +255,17 @@ def build_summary_cards(
             """
         )
 
-    return "\n".join(
-        card_html
-    )
+    return "\n".join(card_html)
 
 
 def build_ranking_rows(
     results: list[StockScanResult],
 ) -> str:
     """
-    종목 순위표 HTML을 만듭니다.
+    머신러닝 정보를 포함한 종목 순위표를 만듭니다.
     """
 
-    rows = []
+    rows: list[str] = []
 
     for rank, result in enumerate(
         results,
@@ -190,9 +275,11 @@ def build_ranking_rows(
             f"""
             <tr>
                 <td>{rank}</td>
+
                 <td class="symbol-cell">
                     {escape_text(result.symbol)}
                 </td>
+
                 <td>${result.close:,.2f}</td>
                 <td>{result.final_score:.2f}</td>
                 <td>{result.technical_score}</td>
@@ -210,6 +297,21 @@ def build_ranking_rows(
                 </td>
 
                 <td>{result.ai_confidence}%</td>
+
+                <td>
+                    <span class="badge {ml_prediction_class(result.ml_prediction)}">
+                        {escape_text(result.ml_prediction)}
+                    </span>
+                </td>
+
+                <td>{result.ml_up_probability:.2f}%</td>
+                <td>{result.ml_balanced_accuracy:.2f}%</td>
+
+                <td>
+                    <span class="badge {ml_status_class(result.ml_model_status)}">
+                        {escape_text(result.ml_model_status)}
+                    </span>
+                </td>
 
                 <td>
                     <span class="badge {risk_class(result.risk_level)}">
@@ -239,9 +341,7 @@ def build_ranking_rows(
             """
         )
 
-    return "\n".join(
-        rows
-    )
+    return "\n".join(rows)
 
 
 def build_opportunity_cards(
@@ -249,10 +349,10 @@ def build_opportunity_cards(
     top_count: int = 5,
 ) -> str:
     """
-    상위 종목별 상세 카드 HTML을 만듭니다.
+    ML 결과가 포함된 종목별 상세 카드를 생성합니다.
     """
 
-    cards = []
+    cards: list[str] = []
 
     for rank, result in enumerate(
         results[:top_count],
@@ -261,9 +361,13 @@ def build_opportunity_cards(
         cards.append(
             f"""
             <div class="stock-card">
+
                 <div class="stock-card-header">
                     <div>
-                        <span class="stock-rank">#{rank}</span>
+                        <span class="stock-rank">
+                            #{rank}
+                        </span>
+
                         <span class="stock-symbol">
                             {escape_text(result.symbol)}
                         </span>
@@ -275,9 +379,12 @@ def build_opportunity_cards(
                 </div>
 
                 <div class="stock-grid">
+
                     <div>
                         <span>Current Price</span>
-                        <strong>${result.close:,.2f}</strong>
+                        <strong>
+                            ${result.close:,.2f}
+                        </strong>
                     </div>
 
                     <div>
@@ -296,7 +403,51 @@ def build_opportunity_cards(
 
                     <div>
                         <span>AI Confidence</span>
-                        <strong>{result.ai_confidence}%</strong>
+                        <strong>
+                            {result.ai_confidence}%
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Prediction</span>
+                        <strong class="{ml_prediction_class(result.ml_prediction)} text-badge">
+                            {escape_text(result.ml_prediction)}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Up Probability</span>
+                        <strong>
+                            {result.ml_up_probability:.2f}%
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Down Probability</span>
+                        <strong>
+                            {result.ml_down_probability:.2f}%
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Balanced Accuracy</span>
+                        <strong>
+                            {result.ml_balanced_accuracy:.2f}%
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Model Status</span>
+                        <strong class="{ml_status_class(result.ml_model_status)} text-badge">
+                            {escape_text(result.ml_model_status)}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>ML Prediction Date</span>
+                        <strong>
+                            {escape_text(result.ml_prediction_date or "N/A")}
+                        </strong>
                     </div>
 
                     <div>
@@ -310,22 +461,30 @@ def build_opportunity_cards(
 
                     <div>
                         <span>Stop Loss</span>
-                        <strong>${result.stop_loss:,.2f}</strong>
+                        <strong>
+                            ${result.stop_loss:,.2f}
+                        </strong>
                     </div>
 
                     <div>
                         <span>Target 1</span>
-                        <strong>${result.target_1:,.2f}</strong>
+                        <strong>
+                            ${result.target_1:,.2f}
+                        </strong>
                     </div>
 
                     <div>
                         <span>Target 2</span>
-                        <strong>${result.target_2:,.2f}</strong>
+                        <strong>
+                            ${result.target_2:,.2f}
+                        </strong>
                     </div>
 
                     <div>
                         <span>Risk/Reward 2</span>
-                        <strong>{result.risk_reward_2:.2f}</strong>
+                        <strong>
+                            {result.risk_reward_2:.2f}
+                        </strong>
                     </div>
 
                     <div>
@@ -334,28 +493,50 @@ def build_opportunity_cards(
                             {escape_text(result.holding_period)}
                         </strong>
                     </div>
+
+                </div>
+
+                <div class="probability-section">
+                    <div class="probability-header">
+                        <span>ML Upward Probability</span>
+                        <strong>
+                            {result.ml_up_probability:.2f}%
+                        </strong>
+                    </div>
+
+                    <div class="probability-track">
+                        <div
+                            class="probability-fill"
+                            style="width: {max(0.0, min(100.0, result.ml_up_probability)):.2f}%"
+                        ></div>
+                    </div>
                 </div>
 
                 <div class="summary-box">
                     <strong>AI Summary</strong>
+
                     <p>
                         {escape_text(result.summary)}
                     </p>
                 </div>
+
+                <div class="model-warning">
+                    ML results are experimental historical
+                    estimates and not guaranteed forecasts.
+                </div>
+
             </div>
             """
         )
 
-    return "\n".join(
-        cards
-    )
+    return "\n".join(cards)
 
 
 def build_allocation_rows(
     portfolio: PortfolioAllocation | None,
 ) -> str:
     """
-    포트폴리오 자금 배분 표 HTML을 만듭니다.
+    포트폴리오 배분 표를 만듭니다.
     """
 
     if portfolio is None:
@@ -367,23 +548,46 @@ def build_allocation_rows(
         </tr>
         """
 
-    rows = []
+    rows: list[str] = []
 
     for allocation in portfolio.allocations:
         rows.append(
             f"""
             <tr>
                 <td>{allocation.rank}</td>
+
                 <td class="symbol-cell">
                     {escape_text(allocation.symbol)}
                 </td>
-                <td>{allocation.allocation_score:.2f}</td>
-                <td>{allocation.shares}</td>
-                <td>${allocation.allocated_amount:,.2f}</td>
-                <td>{allocation.allocation_percent:.2f}%</td>
-                <td>${allocation.reference_entry:,.2f}</td>
-                <td>${allocation.expected_loss_amount:,.2f}</td>
-                <td>${allocation.expected_profit_2:,.2f}</td>
+
+                <td>
+                    {allocation.allocation_score:.2f}
+                </td>
+
+                <td>
+                    {allocation.shares}
+                </td>
+
+                <td>
+                    ${allocation.allocated_amount:,.2f}
+                </td>
+
+                <td>
+                    {allocation.allocation_percent:.2f}%
+                </td>
+
+                <td>
+                    ${allocation.reference_entry:,.2f}
+                </td>
+
+                <td>
+                    ${allocation.expected_loss_amount:,.2f}
+                </td>
+
+                <td>
+                    ${allocation.expected_profit_2:,.2f}
+                </td>
+
                 <td>
                     {escape_text(allocation.allocation_status)}
                 </td>
@@ -391,16 +595,14 @@ def build_allocation_rows(
             """
         )
 
-    return "\n".join(
-        rows
-    )
+    return "\n".join(rows)
 
 
 def build_rejected_symbols(
     portfolio: PortfolioAllocation | None,
 ) -> str:
     """
-    제외된 종목 목록 HTML을 만듭니다.
+    제외 종목 목록을 생성합니다.
     """
 
     if (
@@ -413,7 +615,7 @@ def build_rejected_symbols(
         </div>
         """
 
-    items = []
+    items: list[str] = []
 
     for rejected in portfolio.rejected_symbols:
         items.append(
@@ -422,6 +624,7 @@ def build_rejected_symbols(
                 <strong>
                     {escape_text(rejected.get("symbol", ""))}
                 </strong>
+
                 <span>
                     {escape_text(rejected.get("reason", ""))}
                 </span>
@@ -429,9 +632,7 @@ def build_rejected_symbols(
             """
         )
 
-    return "\n".join(
-        items
-    )
+    return "\n".join(items)
 
 
 def build_dashboard_html(
@@ -439,7 +640,7 @@ def build_dashboard_html(
     portfolio: PortfolioAllocation | None,
 ) -> str:
     """
-    전체 HTML 문서를 생성합니다.
+    전체 V4.3 HTML 문서를 생성합니다.
     """
 
     generated_at = datetime.now().strftime(
@@ -470,14 +671,16 @@ def build_dashboard_html(
     return f"""
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>AI Stock Bot V3.3 Dashboard</title>
+    <title>AI Stock Bot V4.3 Dashboard</title>
 
     <style>
         * {{
@@ -486,18 +689,15 @@ def build_dashboard_html(
 
         body {{
             margin: 0;
-            background: #0b1220;
+            background: #07101f;
             color: #e5e7eb;
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }}
 
         .container {{
-            width: min(1600px, 96%);
+            width: min(1800px, 96%);
             margin: 0 auto;
-            padding: 30px 0 60px;
+            padding: 28px 0 60px;
         }}
 
         .header {{
@@ -507,19 +707,19 @@ def build_dashboard_html(
                 linear-gradient(
                     135deg,
                     #111827,
-                    #1f2937
+                    #1e293b
                 );
             margin-bottom: 24px;
             border: 1px solid #334155;
         }}
 
         .header h1 {{
-            margin: 0 0 8px;
-            font-size: 32px;
+            margin: 0 0 10px;
+            font-size: 34px;
         }}
 
         .header p {{
-            margin: 4px 0;
+            margin: 5px 0;
             color: #94a3b8;
         }}
 
@@ -528,39 +728,40 @@ def build_dashboard_html(
             grid-template-columns:
                 repeat(
                     auto-fit,
-                    minmax(210px, 1fr)
+                    minmax(200px, 1fr)
                 );
-            gap: 16px;
+            gap: 15px;
             margin-bottom: 26px;
         }}
 
         .summary-card {{
-            background: #111827;
+            background: #101a2d;
             border: 1px solid #334155;
             border-radius: 16px;
-            padding: 20px;
+            padding: 19px;
         }}
 
         .summary-title {{
-            color: #94a3b8;
-            font-size: 13px;
+            color: #93c5fd;
+            font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }}
 
         .summary-value {{
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
             margin: 10px 0;
         }}
 
         .summary-subtitle {{
             color: #64748b;
-            font-size: 13px;
+            font-size: 12px;
+            line-height: 1.4;
         }}
 
         .section {{
-            background: #111827;
+            background: #101827;
             border: 1px solid #334155;
             border-radius: 18px;
             padding: 22px;
@@ -569,7 +770,7 @@ def build_dashboard_html(
 
         .section h2 {{
             margin-top: 0;
-            font-size: 22px;
+            font-size: 23px;
         }}
 
         .table-wrapper {{
@@ -579,20 +780,20 @@ def build_dashboard_html(
         table {{
             width: 100%;
             border-collapse: collapse;
-            min-width: 1200px;
+            min-width: 1700px;
         }}
 
         th,
         td {{
-            padding: 12px 10px;
-            border-bottom: 1px solid #253044;
+            padding: 12px 9px;
+            border-bottom: 1px solid #273449;
             text-align: right;
             white-space: nowrap;
         }}
 
         th {{
-            color: #94a3b8;
-            font-size: 12px;
+            color: #93c5fd;
+            font-size: 11px;
             text-transform: uppercase;
         }}
 
@@ -612,58 +813,51 @@ def build_dashboard_html(
             display: inline-block;
             padding: 5px 9px;
             border-radius: 999px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
         }}
 
-        .signal-buy {{
+        .signal-buy,
+        .ml-bullish,
+        .model-usable {{
             background: rgba(34, 197, 94, 0.18);
             color: #4ade80;
         }}
 
-        .signal-hold {{
+        .signal-hold,
+        .ml-neutral,
+        .risk-medium,
+        .plan-weak,
+        .model-experimental {{
             background: rgba(234, 179, 8, 0.18);
             color: #facc15;
         }}
 
-        .signal-sell {{
+        .signal-sell,
+        .ml-bearish,
+        .risk-high,
+        .plan-avoid,
+        .model-weak {{
             background: rgba(239, 68, 68, 0.18);
             color: #f87171;
         }}
 
-        .risk-low {{
-            background: rgba(34, 197, 94, 0.18);
-            color: #4ade80;
-        }}
-
-        .risk-medium {{
-            background: rgba(234, 179, 8, 0.18);
-            color: #facc15;
-        }}
-
-        .risk-high {{
-            background: rgba(239, 68, 68, 0.18);
-            color: #f87171;
-        }}
-
+        .risk-low,
         .plan-attractive {{
             background: rgba(34, 197, 94, 0.18);
             color: #4ade80;
         }}
 
-        .plan-watch {{
+        .plan-watch,
+        .model-promising {{
             background: rgba(59, 130, 246, 0.18);
             color: #60a5fa;
         }}
 
-        .plan-weak {{
-            background: rgba(234, 179, 8, 0.18);
-            color: #facc15;
-        }}
-
-        .plan-avoid {{
-            background: rgba(239, 68, 68, 0.18);
-            color: #f87171;
+        .ml-unavailable,
+        .model-unavailable {{
+            background: rgba(100, 116, 139, 0.18);
+            color: #94a3b8;
         }}
 
         .opportunity-grid {{
@@ -671,13 +865,13 @@ def build_dashboard_html(
             grid-template-columns:
                 repeat(
                     auto-fit,
-                    minmax(330px, 1fr)
+                    minmax(360px, 1fr)
                 );
             gap: 18px;
         }}
 
         .stock-card {{
-            background: #0f172a;
+            background: #0c1729;
             border: 1px solid #334155;
             border-radius: 16px;
             padding: 20px;
@@ -696,7 +890,7 @@ def build_dashboard_html(
         }}
 
         .stock-symbol {{
-            font-size: 24px;
+            font-size: 25px;
             font-weight: 700;
         }}
 
@@ -711,28 +905,25 @@ def build_dashboard_html(
         .stock-grid {{
             display: grid;
             grid-template-columns:
-                repeat(
-                    2,
-                    minmax(0, 1fr)
-                );
-            gap: 12px;
+                repeat(2, minmax(0, 1fr));
+            gap: 11px;
         }}
 
         .stock-grid div {{
-            background: #111827;
+            background: #111c30;
             border-radius: 10px;
             padding: 12px;
         }}
 
         .stock-grid span {{
             display: block;
-            color: #94a3b8;
-            font-size: 12px;
+            color: #93c5fd;
+            font-size: 11px;
             margin-bottom: 6px;
         }}
 
         .stock-grid strong {{
-            font-size: 15px;
+            font-size: 14px;
         }}
 
         .text-badge {{
@@ -741,23 +932,63 @@ def build_dashboard_html(
             border-radius: 999px;
         }}
 
+        .probability-section {{
+            margin-top: 16px;
+            padding: 14px;
+            background: #111c30;
+            border-radius: 10px;
+        }}
+
+        .probability-header {{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 9px;
+            font-size: 13px;
+        }}
+
+        .probability-track {{
+            width: 100%;
+            height: 10px;
+            background: #26344a;
+            border-radius: 999px;
+            overflow: hidden;
+        }}
+
+        .probability-fill {{
+            height: 100%;
+            background:
+                linear-gradient(
+                    90deg,
+                    #2563eb,
+                    #22c55e
+                );
+            border-radius: 999px;
+        }}
+
         .summary-box {{
             margin-top: 16px;
             padding: 14px;
-            background: #111827;
+            background: #111c30;
             border-radius: 10px;
         }}
 
         .summary-box p {{
             color: #cbd5e1;
-            line-height: 1.6;
+            line-height: 1.65;
+        }}
+
+        .model-warning {{
+            margin-top: 12px;
+            color: #64748b;
+            font-size: 11px;
+            line-height: 1.5;
         }}
 
         .rejected-item {{
             display: flex;
             gap: 14px;
             padding: 12px 0;
-            border-bottom: 1px solid #253044;
+            border-bottom: 1px solid #273449;
         }}
 
         .rejected-item strong {{
@@ -777,7 +1008,7 @@ def build_dashboard_html(
             color: #64748b;
             text-align: center;
             padding-top: 20px;
-            font-size: 13px;
+            font-size: 12px;
         }}
 
         @media (max-width: 700px) {{
@@ -792,14 +1023,21 @@ def build_dashboard_html(
     <div class="container">
 
         <div class="header">
-            <h1>AI Stock Bot V3.3 Dashboard</h1>
+            <h1>AI Stock Bot V4.3 Dashboard</h1>
+
             <p>
                 Generated at:
                 {escape_text(generated_at)}
             </p>
+
             <p>
-                This dashboard is a technical and
-                risk-management model, not investment advice.
+                Technical analysis, OpenAI analysis,
+                machine learning, backtesting,
+                position sizing and portfolio allocation.
+            </p>
+
+            <p>
+                This dashboard is not investment advice.
             </p>
         </div>
 
@@ -808,7 +1046,7 @@ def build_dashboard_html(
         </div>
 
         <div class="section">
-            <h2>Stock Ranking</h2>
+            <h2>Stock Ranking with Machine Learning</h2>
 
             <div class="table-wrapper">
                 <table>
@@ -821,7 +1059,11 @@ def build_dashboard_html(
                             <th>Tech</th>
                             <th>Tech Signal</th>
                             <th>AI Signal</th>
-                            <th>Confidence</th>
+                            <th>AI Conf</th>
+                            <th>ML</th>
+                            <th>ML Up</th>
+                            <th>ML Bal Acc</th>
+                            <th>ML Status</th>
                             <th>Risk</th>
                             <th>Return</th>
                             <th>Drawdown</th>
@@ -841,7 +1083,7 @@ def build_dashboard_html(
         </div>
 
         <div class="section">
-            <h2>Top Opportunities</h2>
+            <h2>Top Opportunities and ML Forecasts</h2>
 
             <div class="opportunity-grid">
                 {opportunity_cards}
@@ -881,13 +1123,14 @@ def build_dashboard_html(
         </div>
 
         <div class="footer">
-            AI Stock Bot V3.3 —
-            technical analysis, forecasting,
-            position sizing and portfolio allocation.
+            AI Stock Bot V4.3 —
+            machine-learning results are experimental and
+            do not guarantee future market performance.
         </div>
 
     </div>
 </body>
+
 </html>
 """.strip()
 
@@ -899,7 +1142,7 @@ def save_html_dashboard(
     open_browser: bool = True,
 ) -> str:
     """
-    HTML 대시보드를 저장하고 선택적으로 브라우저에서 엽니다.
+    HTML 대시보드를 저장하고 브라우저에서 엽니다.
     """
 
     OUTPUT_DIR.mkdir(
@@ -907,9 +1150,7 @@ def save_html_dashboard(
         exist_ok=True,
     )
 
-    output_path = (
-        OUTPUT_DIR / filename
-    )
+    output_path = OUTPUT_DIR / filename
 
     dashboard_html = build_dashboard_html(
         results=results,
@@ -923,7 +1164,7 @@ def save_html_dashboard(
 
     print()
     print(
-        f"HTML dashboard saved: "
+        "HTML dashboard saved: "
         f"{output_path}"
     )
 
@@ -932,12 +1173,11 @@ def save_html_dashboard(
             webbrowser.open(
                 output_path.resolve().as_uri()
             )
+
         except Exception as error:
             print(
                 "Dashboard browser open failed: "
                 f"{error}"
             )
 
-    return str(
-        output_path
-    )
+    return str(output_path)
