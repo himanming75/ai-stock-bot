@@ -12,16 +12,20 @@ from config import (
 from portfolio.allocator import PortfolioAllocation
 
 
-def format_signal(signal: str) -> str:
+def normalize_text(value: Any) -> str:
     """
-    BUY, HOLD, SELL 신호를 정리합니다.
+    문자열 값을 대문자로 정리합니다.
     """
 
-    normalized = (
-        str(signal)
-        .upper()
-        .strip()
-    )
+    return str(value).upper().strip()
+
+
+def format_signal(signal: str) -> str:
+    """
+    BUY, HOLD, SELL 값을 정리합니다.
+    """
+
+    normalized = normalize_text(signal)
 
     if normalized not in {
         "BUY",
@@ -37,14 +41,8 @@ def format_risk_level(
     risk_level: str,
 ) -> str:
     """
-    위험도 표시를 짧게 정리합니다.
+    위험도 값을 짧게 표시합니다.
     """
-
-    normalized = (
-        str(risk_level)
-        .upper()
-        .strip()
-    )
 
     mapping = {
         "LOW": "LOW",
@@ -53,8 +51,50 @@ def format_risk_level(
     }
 
     return mapping.get(
-        normalized,
+        normalize_text(risk_level),
         "HIGH",
+    )
+
+
+def format_ml_prediction(
+    prediction: str,
+) -> str:
+    """
+    머신러닝 예측값을 짧게 표시합니다.
+    """
+
+    mapping = {
+        "BULLISH": "BULL",
+        "NEUTRAL": "NEUTRAL",
+        "BEARISH": "BEAR",
+        "UNAVAILABLE": "N/A",
+    }
+
+    return mapping.get(
+        normalize_text(prediction),
+        "N/A",
+    )
+
+
+def format_ml_status(
+    model_status: str,
+) -> str:
+    """
+    머신러닝 모델 상태를 짧게 표시합니다.
+    """
+
+    mapping = {
+        "USABLE": "USABLE",
+        "PROMISING": "PROMISING",
+        "EXPERIMENTAL": "EXPERIMENT",
+        "WEAK": "WEAK",
+        "LOW_DATA": "LOW_DATA",
+        "UNAVAILABLE": "N/A",
+    }
+
+    return mapping.get(
+        normalize_text(model_status),
+        "N/A",
     )
 
 
@@ -66,9 +106,9 @@ def print_scanner_header(
     """
 
     print()
-    print("=" * 116)
-    print("AI STOCK BOT V3.4 - STOCK RANKING")
-    print("=" * 116)
+    print("=" * 158)
+    print("AI STOCK BOT V4.3 - STOCK RANKING WITH MACHINE LEARNING")
+    print("=" * 158)
 
     print(
         f"Successfully analyzed symbols: "
@@ -96,55 +136,107 @@ def print_ranking_table(
         return
 
     header = (
-        f"{'Rank':<6}"
-        f"{'Symbol':<9}"
-        f"{'Close':>12}"
-        f"{'Final':>9}"
-        f"{'Tech':>8}"
-        f"{'Tech Sig':>11}"
-        f"{'AI Sig':>9}"
-        f"{'AI Conf':>10}"
-        f"{'Risk':>8}"
-        f"{'Return':>11}"
+        f"{'Rank':<5}"
+        f"{'Symbol':<8}"
+        f"{'Close':>11}"
+        f"{'Final':>8}"
+        f"{'Tech':>7}"
+        f"{'Tech Sig':>10}"
+        f"{'AI Sig':>8}"
+        f"{'AI Conf':>9}"
+        f"{'ML':>10}"
+        f"{'ML Up':>9}"
+        f"{'ML Bal':>9}"
+        f"{'ML Status':>12}"
+        f"{'Risk':>7}"
+        f"{'Return':>10}"
         f"{'Drawdown':>11}"
         f"{'Plan':>12}"
     )
 
     print(header)
-    print("-" * 116)
+    print("-" * 158)
 
     for rank, result in enumerate(
         results,
         start=1,
     ):
-        technical_signal = format_signal(
-            result.technical_signal
-        )
-
-        ai_signal = format_signal(
-            result.ai_signal
-        )
-
-        risk_level = format_risk_level(
-            result.risk_level
-        )
-
         print(
-            f"{rank:<6}"
-            f"{result.symbol:<9}"
-            f"${result.close:>11.2f}"
-            f"{result.final_score:>9.2f}"
-            f"{result.technical_score:>8}"
-            f"{technical_signal:>11}"
-            f"{ai_signal:>9}"
-            f"{result.ai_confidence:>9}%"
-            f"{risk_level:>8}"
-            f"{result.backtest_return:>10.2f}%"
+            f"{rank:<5}"
+            f"{result.symbol:<8}"
+            f"${result.close:>10.2f}"
+            f"{result.final_score:>8.2f}"
+            f"{result.technical_score:>7}"
+            f"{format_signal(result.technical_signal):>10}"
+            f"{format_signal(result.ai_signal):>8}"
+            f"{result.ai_confidence:>8}%"
+            f"{format_ml_prediction(result.ml_prediction):>10}"
+            f"{result.ml_up_probability:>8.2f}%"
+            f"{result.ml_balanced_accuracy:>8.2f}%"
+            f"{format_ml_status(result.ml_model_status):>12}"
+            f"{format_risk_level(result.risk_level):>7}"
+            f"{result.backtest_return:>9.2f}%"
             f"{result.max_drawdown:>10.2f}%"
             f"{result.plan_status:>12}"
         )
 
-    print("=" * 116)
+    print("=" * 158)
+
+
+def print_ml_details(
+    result: StockScanResult,
+) -> None:
+    """
+    한 종목의 머신러닝 핵심 결과를 출력합니다.
+    """
+
+    print()
+    print("Machine learning:")
+
+    print(
+        f"ML prediction       : "
+        f"{result.ml_prediction}"
+    )
+
+    print(
+        f"ML up probability   : "
+        f"{result.ml_up_probability:.2f}%"
+    )
+
+    print(
+        f"ML down probability : "
+        f"{result.ml_down_probability:.2f}%"
+    )
+
+    print(
+        f"ML validation acc.  : "
+        f"{result.ml_validation_accuracy:.2f}%"
+    )
+
+    print(
+        f"ML balanced acc.    : "
+        f"{result.ml_balanced_accuracy:.2f}%"
+    )
+
+    print(
+        f"ML model status     : "
+        f"{result.ml_model_status}"
+    )
+
+    print(
+        f"ML prediction date  : "
+        f"{result.ml_prediction_date or 'N/A'}"
+    )
+
+    print(
+        f"ML horizon          : "
+        f"{result.ml_horizon_days} trading days"
+    )
+
+    print(
+        f"ML feature count    : "
+        f"{result.ml_feature_count}"
+    )
 
 
 def print_top_opportunities(
@@ -152,7 +244,8 @@ def print_top_opportunities(
     top_count: int = TOP_RESULT_COUNT,
 ) -> None:
     """
-    상위 종목의 분석과 매매계획을 출력합니다.
+    상위 종목의 분석, 머신러닝 결과와
+    매매계획을 출력합니다.
     """
 
     if not results:
@@ -163,105 +256,115 @@ def print_top_opportunities(
     ]
 
     print()
-    print("=" * 72)
+    print("=" * 80)
     print("TOP STOCK OPPORTUNITIES")
-    print("=" * 72)
+    print("=" * 80)
 
     for rank, result in enumerate(
         selected_results,
         start=1,
     ):
         print()
-        print("-" * 72)
+        print("-" * 80)
         print(
             f"#{rank} {result.symbol}"
         )
-        print("-" * 72)
+        print("-" * 80)
 
         print(
-            f"Current price      : "
+            f"Current price       : "
             f"${result.close:,.2f}"
         )
 
         print(
-            f"Final score        : "
+            f"Final score         : "
             f"{result.final_score:.2f}/100"
         )
 
         print(
-            f"Technical score    : "
+            f"Technical score     : "
             f"{result.technical_score}/100"
         )
 
         print(
-            f"Technical signal   : "
+            f"Technical signal    : "
             f"{result.technical_signal}"
         )
 
         print(
-            f"AI signal          : "
+            f"AI signal           : "
             f"{result.ai_signal}"
         )
 
         print(
-            f"AI confidence      : "
+            f"AI confidence       : "
             f"{result.ai_confidence}%"
         )
 
         print(
-            f"Risk level         : "
+            f"Risk level          : "
             f"{result.risk_level}"
         )
 
+        print_ml_details(
+            result
+        )
+
+        print()
+        print("Trade plan:")
+
         print(
-            f"Plan status        : "
+            f"Plan status         : "
             f"{result.plan_status}"
         )
 
         print(
-            f"Entry zone         : "
+            f"Entry zone          : "
             f"${result.entry_low:,.2f}"
             f" - "
             f"${result.entry_high:,.2f}"
         )
 
         print(
-            f"Stop loss          : "
+            f"Stop loss           : "
             f"${result.stop_loss:,.2f}"
         )
 
         print(
-            f"Target 1           : "
+            f"Target 1            : "
             f"${result.target_1:,.2f}"
         )
 
         print(
-            f"Target 2           : "
+            f"Target 2            : "
             f"${result.target_2:,.2f}"
         )
 
         print(
-            f"Risk/Reward 2      : "
+            f"Risk/Reward 2       : "
             f"{result.risk_reward_2:.2f}"
         )
 
         print(
-            f"Holding period     : "
+            f"Holding period      : "
             f"{result.holding_period}"
         )
 
+        print()
+        print("Backtest:")
+
         print(
-            f"Backtest return    : "
+            f"Backtest return     : "
             f"{result.backtest_return:.2f}%"
         )
 
         print(
-            f"Maximum drawdown   : "
+            f"Maximum drawdown    : "
             f"{result.max_drawdown:.2f}%"
         )
 
         print(
-            f"Backtest win rate  : "
+            f"Backtest win rate   : "
             f"{result.win_rate:.2f}%"
         )
 
@@ -270,14 +373,15 @@ def print_top_opportunities(
         print(result.summary)
 
     print()
-    print("=" * 72)
+    print("=" * 80)
 
 
 def convert_to_json_safe(
     value: Any,
 ) -> Any:
     """
-    다양한 Python 객체를 JSON 저장이 가능한 값으로 바꿉니다.
+    Python 객체를 JSON으로 저장할 수 있는
+    기본 자료형으로 변환합니다.
     """
 
     if value is None:
@@ -302,9 +406,7 @@ def convert_to_json_safe(
 
     if isinstance(value, dict):
         return {
-            str(key): convert_to_json_safe(
-                item
-            )
+            str(key): convert_to_json_safe(item)
             for key, item in value.items()
         }
 
@@ -340,13 +442,51 @@ def convert_to_json_safe(
     return str(value)
 
 
+def build_backtest_record(
+    backtest: dict[str, Any],
+) -> dict[str, Any]:
+    """
+    백테스트 핵심 통계를 JSON 구조로 정리합니다.
+    """
+
+    fields = [
+        "starting_cash",
+        "final_cash",
+        "final_value",
+        "total_return",
+        "trade_count",
+        "completed_trades",
+        "winning_trades",
+        "losing_trades",
+        "break_even_trades",
+        "win_rate",
+        "average_profit",
+        "average_loss",
+        "gross_profit",
+        "gross_loss",
+        "profit_factor",
+        "max_drawdown",
+        "open_position",
+        "open_shares",
+        "open_buy_price",
+    ]
+
+    return {
+        field: convert_to_json_safe(
+            backtest.get(field)
+        )
+        for field in fields
+    }
+
+
 def build_stock_result_record(
     rank: int,
     result: StockScanResult,
     symbol_details: dict[str, Any],
 ) -> dict[str, Any]:
     """
-    한 종목의 JSON 기록을 만듭니다.
+    한 종목의 모든 분석 결과를
+    JSON 기록으로 만듭니다.
     """
 
     result_record = result.model_dump()
@@ -372,6 +512,24 @@ def build_stock_result_record(
         ] = convert_to_json_safe(
             ai_analysis
         )
+
+    ml_prediction = symbol_details.get(
+        "ml_prediction"
+    )
+
+    if ml_prediction is not None:
+        result_record[
+            "machine_learning"
+        ] = convert_to_json_safe(
+            ml_prediction
+        )
+    else:
+        result_record[
+            "machine_learning"
+        ] = {
+            "prediction": "UNAVAILABLE",
+            "model_status": "UNAVAILABLE",
+        }
 
     trade_plan = symbol_details.get(
         "trade_plan"
@@ -402,53 +560,9 @@ def build_stock_result_record(
 
     result_record[
         "backtest_statistics"
-    ] = {
-        "starting_cash": backtest.get(
-            "starting_cash"
-        ),
-        "final_cash": backtest.get(
-            "final_cash"
-        ),
-        "final_value": backtest.get(
-            "final_value"
-        ),
-        "total_return": backtest.get(
-            "total_return"
-        ),
-        "trade_count": backtest.get(
-            "trade_count"
-        ),
-        "completed_trades": backtest.get(
-            "completed_trades"
-        ),
-        "winning_trades": backtest.get(
-            "winning_trades"
-        ),
-        "losing_trades": backtest.get(
-            "losing_trades"
-        ),
-        "win_rate": backtest.get(
-            "win_rate"
-        ),
-        "average_profit": backtest.get(
-            "average_profit"
-        ),
-        "average_loss": backtest.get(
-            "average_loss"
-        ),
-        "profit_factor": backtest.get(
-            "profit_factor"
-        ),
-        "max_drawdown": backtest.get(
-            "max_drawdown"
-        ),
-        "open_position": backtest.get(
-            "open_position"
-        ),
-        "open_shares": backtest.get(
-            "open_shares"
-        ),
-    }
+    ] = build_backtest_record(
+        backtest
+    )
 
     result_record[
         "chart_path"
@@ -467,57 +581,84 @@ def build_portfolio_record(
     portfolio: PortfolioAllocation | None,
 ) -> dict[str, Any] | None:
     """
-    포트폴리오 배분 결과를 JSON 구조로 변환합니다.
+    포트폴리오 배분 결과를 JSON으로 변환합니다.
     """
 
     if portfolio is None:
         return None
 
+    return convert_to_json_safe(
+        portfolio.to_dict()
+    )
+
+
+def build_ml_report_summary(
+    results: list[StockScanResult],
+) -> dict[str, Any]:
+    """
+    모든 종목의 머신러닝 결과를 요약합니다.
+    """
+
+    if not results:
+        return {
+            "available_count": 0,
+            "average_up_probability": 0.0,
+            "average_balanced_accuracy": 0.0,
+            "bullish_count": 0,
+            "neutral_count": 0,
+            "bearish_count": 0,
+        }
+
+    available_results = [
+        result
+        for result in results
+        if result.ml_model_status
+        != "UNAVAILABLE"
+    ]
+
+    if not available_results:
+        return {
+            "available_count": 0,
+            "average_up_probability": 0.0,
+            "average_balanced_accuracy": 0.0,
+            "bullish_count": 0,
+            "neutral_count": 0,
+            "bearish_count": 0,
+        }
+
+    average_up_probability = sum(
+        result.ml_up_probability
+        for result in available_results
+    ) / len(available_results)
+
+    average_balanced_accuracy = sum(
+        result.ml_balanced_accuracy
+        for result in available_results
+    ) / len(available_results)
+
     return {
-        "account_size": (
-            portfolio.account_size
+        "available_count": len(
+            available_results
         ),
-        "maximum_investable_amount": (
-            portfolio.maximum_investable_amount
+        "average_up_probability": round(
+            average_up_probability,
+            2,
         ),
-        "total_allocated_amount": (
-            portfolio.total_allocated_amount
+        "average_balanced_accuracy": round(
+            average_balanced_accuracy,
+            2,
         ),
-        "cash_reserve_amount": (
-            portfolio.cash_reserve_amount
+        "bullish_count": sum(
+            result.ml_prediction == "BULLISH"
+            for result in available_results
         ),
-        "cash_reserve_percent": (
-            portfolio.cash_reserve_percent
+        "neutral_count": sum(
+            result.ml_prediction == "NEUTRAL"
+            for result in available_results
         ),
-        "total_expected_loss": (
-            portfolio.total_expected_loss
-        ),
-        "total_expected_profit_1": (
-            portfolio.total_expected_profit_1
-        ),
-        "total_expected_profit_2": (
-            portfolio.total_expected_profit_2
-        ),
-        "total_account_risk_percent": (
-            portfolio.total_account_risk_percent
-        ),
-        "selected_count": (
-            portfolio.selected_count
-        ),
-        "rejected_count": (
-            portfolio.rejected_count
-        ),
-        "allocations": [
-            convert_to_json_safe(
-                allocation
-            )
-            for allocation
-            in portfolio.allocations
-        ],
-        "rejected_symbols": (
-            convert_to_json_safe(
-                portfolio.rejected_symbols
-            )
+        "bearish_count": sum(
+            result.ml_prediction == "BEARISH"
+            for result in available_results
         ),
     }
 
@@ -528,11 +669,8 @@ def build_json_report(
     portfolio: PortfolioAllocation | None = None,
 ) -> dict[str, Any]:
     """
-    종목 분석과 포트폴리오 배분을 포함한
-    전체 JSON 리포트를 만듭니다.
+    전체 V4.3 JSON 리포트를 만듭니다.
     """
-
-    generated_at = datetime.now()
 
     result_records = []
 
@@ -545,23 +683,21 @@ def build_json_report(
             {},
         )
 
-        result_record = build_stock_result_record(
-            rank=rank,
-            result=result,
-            symbol_details=symbol_details,
-        )
-
         result_records.append(
-            result_record
+            build_stock_result_record(
+                rank=rank,
+                result=result,
+                symbol_details=symbol_details,
+            )
         )
 
-    report = {
+    return {
         "report_name": (
-            "AI Stock Bot V3.4 Report"
+            "AI Stock Bot V4.3 Report"
         ),
-        "report_version": "3.4",
+        "report_version": "4.3",
         "generated_at": (
-            generated_at.isoformat()
+            datetime.now().isoformat()
         ),
         "analyzed_count": len(results),
         "top_ranked_symbol": (
@@ -574,13 +710,16 @@ def build_json_report(
             if results
             else None
         ),
+        "machine_learning_summary": (
+            build_ml_report_summary(
+                results
+            )
+        ),
         "portfolio": build_portfolio_record(
             portfolio
         ),
         "results": result_records,
     }
-
-    return report
 
 
 def save_json_report(
@@ -590,7 +729,8 @@ def save_json_report(
     filename: str = "stock_scan_report.json",
 ) -> str | None:
     """
-    전체 분석과 포트폴리오 결과를 JSON으로 저장합니다.
+    종목 분석, 머신러닝 및 포트폴리오 결과를
+    JSON 파일로 저장합니다.
     """
 
     if not SAVE_JSON_REPORT:
@@ -640,9 +780,9 @@ def print_report_summary(
     """
 
     print()
-    print("=" * 72)
+    print("=" * 80)
     print("SCAN COMPLETED")
-    print("=" * 72)
+    print("=" * 80)
 
     print(
         f"Successful results : "
@@ -667,10 +807,25 @@ def print_report_summary(
             f"{best_result.ai_signal}"
         )
 
+        print(
+            f"Top ML prediction  : "
+            f"{best_result.ml_prediction}"
+        )
+
+        print(
+            f"Top ML up prob.    : "
+            f"{best_result.ml_up_probability:.2f}%"
+        )
+
+        print(
+            f"Top ML status      : "
+            f"{best_result.ml_model_status}"
+        )
+
     if report_path:
         print(
             f"JSON report        : "
             f"{report_path}"
         )
 
-    print("=" * 72)
+    print("=" * 80)
