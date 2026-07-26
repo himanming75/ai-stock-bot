@@ -1,0 +1,20 @@
+[
+  {
+    "recorded_at": "2026-07-25T19:34:03.421606",
+    "symbol": "NVDA",
+    "model_name": "LOGISTIC_REGRESSION",
+    "balanced_accuracy": 51.35,
+    "validation_accuracy": 52.21,
+    "validation_precision": 61.09,
+    "validation_recall": 55.65,
+    "prediction": "NEUTRAL",
+    "upward_probability": 50.3,
+    "ensemble_prediction": "NEUTRAL",
+    "ensemble_upward_probability": 47.66,
+    "selection_status": "EXPERIMENTAL",
+    "training_rows": 1171,
+    "feature_count": 36,
+    "prediction_date": "2026-07-23",
+    "model_path": "C:\\stock-bot\\models\\NVDA_best_model.joblib"
+  }
+]

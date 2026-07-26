@@ -1,0 +1,38 @@
+[
+  {
+    "recorded_at": "2026-07-25T19:01:12.522449",
+    "symbol": "AAPL",
+    "model_name": "GRADIENT_BOOSTING",
+    "balanced_accuracy": 51.5,
+    "validation_accuracy": 52.72,
+    "validation_precision": 56.81,
+    "validation_recall": 62.36,
+    "prediction": "NEUTRAL",
+    "upward_probability": 60.97,
+    "ensemble_prediction": "NEUTRAL",
+    "ensemble_upward_probability": 58.13,
+    "selection_status": "EXPERIMENTAL",
+    "training_rows": 1171,
+    "feature_count": 36,
+    "prediction_date": "2026-07-23",
+    "model_path": "C:\\stock-bot\\models\\AAPL_best_model.joblib"
+  },
+  {
+    "recorded_at": "2026-07-25T19:05:44.401892",
+    "symbol": "AAPL",
+    "model_name": "RANDOM_FOREST",
+    "balanced_accuracy": 51.58,
+    "validation_accuracy": 52.51,
+    "validation_precision": 56.92,
+    "validation_recall": 59.96,
+    "prediction": "NEUTRAL",
+    "upward_probability": 55.08,
+    "ensemble_prediction": "NEUTRAL",
+    "ensemble_upward_probability": 57.65,
+    "selection_status": "EXPERIMENTAL",
+    "training_rows": 1171,
+    "feature_count": 36,
+    "prediction_date": "2026-07-23",
+    "model_path": "C:\\stock-bot\\models\\AAPL_best_model.joblib"
+  }
+]

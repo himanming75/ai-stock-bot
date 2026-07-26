@@ -1,0 +1,20 @@
+[
+  {
+    "recorded_at": "2026-07-25T19:34:47.309869",
+    "symbol": "GOOGL",
+    "model_name": "RANDOM_FOREST",
+    "balanced_accuracy": 50.43,
+    "validation_accuracy": 48.51,
+    "validation_precision": 57.02,
+    "validation_recall": 35.45,
+    "prediction": "BULLISH",
+    "upward_probability": 80.42,
+    "ensemble_prediction": "BULLISH",
+    "ensemble_upward_probability": 79.95,
+    "selection_status": "EXPERIMENTAL",
+    "training_rows": 1171,
+    "feature_count": 36,
+    "prediction_date": "2026-07-23",
+    "model_path": "C:\\stock-bot\\models\\GOOGL_best_model.joblib"
+  }
+]
