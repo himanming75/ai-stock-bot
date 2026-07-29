@@ -1,0 +1,60 @@
+{
+  "network_used": false,
+  "result": {
+    "buying_power": "89997.0000",
+    "cash_allocation": "0.897753",
+    "cash_balance": "89997.0000",
+    "cumulative_pnl": "247.0000",
+    "cumulative_return": "0.002470",
+    "daily_pnl": "147.0000",
+    "daily_return": "0.001469",
+    "decision": "snapshot",
+    "gross_exposure": "0.102247",
+    "invested_allocation": "0.102247",
+    "ledger": [
+      {
+        "cumulative_pnl": "247.0000",
+        "daily_pnl": "147.0000",
+        "entry_sha256": "76286d7235a85bc9d6555d45d88d55c1c41e625d3e7a91534578eefbe40d5345",
+        "event_type": "ACCOUNT_SNAPSHOT_CREATED",
+        "net_liquidation_value": "100247.0000",
+        "payload_sha256": "dc78cdfc2a05df58601ef60d46c0ce05cc0ec93cfa2bd93d2d8c55948cb0d105",
+        "previous_entry_sha256": "GENESIS",
+        "reconciliation_sha256": "24eb049bcc435fa0629c2d84e1c40d6f279fa5c55d17a16ab7933a8e4e46d9c0",
+        "sequence": 1,
+        "snapshot_time": "2026-07-29T21:00:00Z"
+      }
+    ],
+    "leverage_ratio": "0.102247",
+    "long_market_value": "10250.0000",
+    "net_exposure": "0.102247",
+    "net_liquidation_value": "100247.0000",
+    "network_used": false,
+    "position_count": 1,
+    "positions": [
+      {
+        "allocation": "0.102247",
+        "allocation_sha256": "3886bc41afa3db612487ad7b56193102fe181dae7f5230fd82e420aff1ea0ae4",
+        "gross_exposure_contribution": "0.102247",
+        "market_value": "10250.0000",
+        "net_exposure_contribution": "0.102247",
+        "quantity": "50",
+        "realized_pnl": "0.0000",
+        "symbol": "AAPL",
+        "unrealized_pnl": "247.0000"
+      }
+    ],
+    "prior_net_liquidation_value": "100100.0000",
+    "reconciliation_sha256": "24eb049bcc435fa0629c2d84e1c40d6f279fa5c55d17a16ab7933a8e4e46d9c0",
+    "rejection_reasons": [],
+    "schema_version": "v50.0.paper_account_snapshot.1",
+    "short_market_value": "0.0000",
+    "snapshot_sha256": "7c368d1ccd8ce93f7d08fd2b4cd9a940ad72bf45650b40ddffbf4bd0243137cb",
+    "snapshot_time": "2026-07-29T21:00:00Z",
+    "status": "PASS",
+    "total_market_value": "10250.0000",
+    "version": "50.0"
+  },
+  "schema_version": "v50.0.paper_account_snapshot_export.1",
+  "version": "50.0"
+}
