@@ -1,0 +1,39 @@
+{
+  "account": {
+    "equity": "100000.00",
+    "cash": "50000.00",
+    "buying_power": "50000.00",
+    "current_gross_exposure": "20000.00",
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "request": {
+    "request_id": "v55-sample-001",
+    "symbol": "AAPL",
+    "action": "BUY",
+    "entry_price": "200.00",
+    "method": "fixed_risk",
+    "signal_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "fixed_shares": null,
+    "fixed_dollar": null,
+    "percent_of_equity": null,
+    "risk_percent": "0.01",
+    "stop_price": "190.00",
+    "atr": null,
+    "atr_multiple": null,
+    "win_rate": null,
+    "payoff_ratio": null,
+    "kelly_fraction_cap": null,
+    "metadata": {
+      "source": "V54 sample signal"
+    }
+  },
+  "config": {
+    "allow_fractional_shares": false,
+    "lot_size": "1",
+    "min_order_notional": "100.00",
+    "max_order_notional": "25000.00",
+    "max_position_percent": "0.20",
+    "max_portfolio_exposure_percent": "0.80",
+    "reserve_cash_percent": "0.10"
+  }
+}
