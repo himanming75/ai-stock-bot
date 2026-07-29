@@ -1,0 +1,7 @@
+{
+  "error": "live mode requires --enable-live",
+  "network_used": false,
+  "schema_version": "v43.0.order_intent_error.1",
+  "status": "FAIL",
+  "version": "43.0"
+}
