@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-29T07:23:30+00:00",
+  "git_branch": "main",
+  "git_commit": "30f8312360675e4d7e1ecc9562eedc8061bfc2c2",
+  "paper_trading_only": true,
+  "platform": "win32",
+  "python_version": "3.14.6",
+  "release_name": "AI Stock Trading Bot Final Stable Release",
+  "schema_version": "v30.0.final_release_manifest.1",
+  "source_release_version": "29.6",
+  "status": "FINAL_STABLE",
+  "tag": "v30.0.0",
+  "v29_6_certificate_status": "PASS",
+  "v29_7_audit_status": "PASS",
+  "v29_7_audit_summary": {
+    "fail": 0,
+    "pass": 11,
+    "warn": 0
+  },
+  "version": "30.0.0"
+}

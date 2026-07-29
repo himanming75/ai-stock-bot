@@ -1,0 +1,16 @@
+{
+  "final_manifest_sha256": "a381d3b1510e4b487f11ed09168e159515ca69b573679e07afc700aef5970492",
+  "final_notes_sha256": "520c30796743a5b5adff43a139d1ae857eda176345283af22b391b9681b84060",
+  "generated_at": "2026-07-29T07:23:30+00:00",
+  "git_commit": "30f8312360675e4d7e1ecc9562eedc8061bfc2c2",
+  "packaged_file_count": 493,
+  "paper_trading_only": true,
+  "prerequisite_status": "PASS",
+  "schema_version": "v30.0.final_stable_release_certificate.1",
+  "status": "PASS",
+  "tag": "v30.0.0",
+  "version": "30.0.0",
+  "zip_sha256": "f8a697098c460aa3b63bf6e7c2980e160e54f9137df40c1961ab3937a9c0c93c",
+  "zip_size_bytes": 5711301,
+  "zip_verification_errors": []
+}
