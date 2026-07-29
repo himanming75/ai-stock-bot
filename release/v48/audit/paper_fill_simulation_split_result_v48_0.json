@@ -1,0 +1,192 @@
+{
+  "network_used": false,
+  "result": {
+    "decision": "simulate",
+    "fill_event_count": 3,
+    "fully_filled_count": 3,
+    "gateway_sha256": "be7011ac91fafb469c0f4d5e1d7456bbb815d6cd9aa69fe53a6fbd0bacdfe51e",
+    "ledger": [
+      {
+        "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+        "entry_sha256": "d8a63e742796684bfebbdb51abee9c724913d4fc7311aa155eef3f4784fe7929",
+        "event_at": "2026-07-29T19:00:00.000100Z",
+        "event_type": "ORDER_WORKING",
+        "fill_id": null,
+        "new_status": "WORKING",
+        "payload_sha256": "540d2e39679a0061b1990aa1d90eda6e0f1caa1ca277baf9c9eb7bc316989e4b",
+        "previous_entry_sha256": "GENESIS",
+        "prior_status": "ACCEPTED",
+        "sequence": 1
+      },
+      {
+        "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+        "entry_sha256": "f36cff2442e6fbe3476c876970894121fae3923420ed422709308093fd232751",
+        "event_at": "2026-07-29T19:00:00.000102Z",
+        "event_type": "ORDER_FILLED",
+        "fill_id": "fill-45899508359911639a54091b",
+        "new_status": "FILLED",
+        "payload_sha256": "00c99de719d3f61afd70e6498fc02bba726bca11fb4d28f51cf713db019901cf",
+        "previous_entry_sha256": "d8a63e742796684bfebbdb51abee9c724913d4fc7311aa155eef3f4784fe7929",
+        "prior_status": "WORKING",
+        "sequence": 2
+      },
+      {
+        "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+        "entry_sha256": "a86570b09f40cea028ca9b65c3008c17d7e95c235caa4aafc11b8a498d6b5033",
+        "event_at": "2026-07-29T19:00:00.000200Z",
+        "event_type": "ORDER_WORKING",
+        "fill_id": null,
+        "new_status": "WORKING",
+        "payload_sha256": "e773f95cfa80b1268a74275965cf1116797eb0d0407e3ed4da23914e82e75f0f",
+        "previous_entry_sha256": "f36cff2442e6fbe3476c876970894121fae3923420ed422709308093fd232751",
+        "prior_status": "ACCEPTED",
+        "sequence": 3
+      },
+      {
+        "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+        "entry_sha256": "9f86d761be89919db1078cfdbf356c5a608b75902188fac5e89dfd05df89802e",
+        "event_at": "2026-07-29T19:00:00.000204Z",
+        "event_type": "ORDER_FILLED",
+        "fill_id": "fill-d1c26e388d4640ec8c3e7d86",
+        "new_status": "FILLED",
+        "payload_sha256": "42ab63fec945f87d081d1391652f16c51b898c0c263a21d8a1ed39ae5b380454",
+        "previous_entry_sha256": "a86570b09f40cea028ca9b65c3008c17d7e95c235caa4aafc11b8a498d6b5033",
+        "prior_status": "WORKING",
+        "sequence": 4
+      },
+      {
+        "broker_order_id": "paper-f37b6856061124b9e4694289",
+        "entry_sha256": "e45653294f10d75a44b4212ff01105ce3b04378d2b1afa3c8d6484c0e8ccd446",
+        "event_at": "2026-07-29T19:00:00.000300Z",
+        "event_type": "ORDER_WORKING",
+        "fill_id": null,
+        "new_status": "WORKING",
+        "payload_sha256": "e00b39c14d8b1ecc2f3cc5144fd404614b8be6d7ef8573624c30c9496c176202",
+        "previous_entry_sha256": "9f86d761be89919db1078cfdbf356c5a608b75902188fac5e89dfd05df89802e",
+        "prior_status": "ACCEPTED",
+        "sequence": 5
+      },
+      {
+        "broker_order_id": "paper-f37b6856061124b9e4694289",
+        "entry_sha256": "3bc5f5bfc263f8f16c72f6fe994b25d87bb0100c7a30c0798e0330e689d15a5b",
+        "event_at": "2026-07-29T19:00:00.000306Z",
+        "event_type": "ORDER_FILLED",
+        "fill_id": "fill-eaad5f3bd6b6d757fff77a8d",
+        "new_status": "FILLED",
+        "payload_sha256": "b7e5396857eafb1acdf44e0debab98e73c66f5688a658a1f5b01bffa8a8c08ba",
+        "previous_entry_sha256": "e45653294f10d75a44b4212ff01105ce3b04378d2b1afa3c8d6484c0e8ccd446",
+        "prior_status": "WORKING",
+        "sequence": 6
+      }
+    ],
+    "network_used": false,
+    "order_count": 3,
+    "orders": [
+      {
+        "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+        "child_order_id": "v46-e256ec869f0614695b39b41d",
+        "filled_quantity": "500",
+        "fills": [
+          {
+            "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+            "commission": "2.5000",
+            "event_at": "2026-07-29T19:00:00.000102Z",
+            "fill_id": "fill-45899508359911639a54091b",
+            "fill_price": "200.0400",
+            "fill_quantity": "500",
+            "fill_sha256": "c54514905e5b60e648fe301c3818dcf231ec061ce191b85359e39da6ec3d5fb5",
+            "gross_notional": "100020.0000",
+            "network_used": false,
+            "reference_price": "200.0000",
+            "side": "buy",
+            "slippage_bps": "2.0000",
+            "symbol": "AAPL"
+          }
+        ],
+        "final_status": "FILLED",
+        "gross_notional": "100020.0000",
+        "order_result_sha256": "66b6e95ce936e039fbdea87ff1fdb45a5636d3d485cbb3fd09ba9bf43d5f1221",
+        "remaining_quantity": "0",
+        "requested_quantity": "500",
+        "side": "buy",
+        "symbol": "AAPL",
+        "total_commission": "2.5000",
+        "weighted_average_fill_price": "200.0400"
+      },
+      {
+        "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+        "child_order_id": "v46-53e30d2fddc5e0f964ed84f0",
+        "filled_quantity": "100",
+        "fills": [
+          {
+            "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+            "commission": "1.0000",
+            "event_at": "2026-07-29T19:00:00.000204Z",
+            "fill_id": "fill-d1c26e388d4640ec8c3e7d86",
+            "fill_price": "200.0400",
+            "fill_quantity": "100",
+            "fill_sha256": "5aee8c2c51fd9124c3938d30af3d1fec96e67379b5faf0e94734d990bbb0aabb",
+            "gross_notional": "20004.0000",
+            "network_used": false,
+            "reference_price": "200.0000",
+            "side": "buy",
+            "slippage_bps": "2.0000",
+            "symbol": "AAPL"
+          }
+        ],
+        "final_status": "FILLED",
+        "gross_notional": "20004.0000",
+        "order_result_sha256": "4d1b56dc9edaa2992a82eae7c63d75fece6557dec375cdee0a67e1523f2ec5eb",
+        "remaining_quantity": "0",
+        "requested_quantity": "100",
+        "side": "buy",
+        "symbol": "AAPL",
+        "total_commission": "1.0000",
+        "weighted_average_fill_price": "200.0400"
+      },
+      {
+        "broker_order_id": "paper-f37b6856061124b9e4694289",
+        "child_order_id": "v46-f0659c08a51a671b07eeca07",
+        "filled_quantity": "400",
+        "fills": [
+          {
+            "broker_order_id": "paper-f37b6856061124b9e4694289",
+            "commission": "2.0000",
+            "event_at": "2026-07-29T19:00:00.000306Z",
+            "fill_id": "fill-eaad5f3bd6b6d757fff77a8d",
+            "fill_price": "200.0400",
+            "fill_quantity": "400",
+            "fill_sha256": "0ee32761acd0dd5fa0fe62bc976c5950328fb2840e71caa6caa6dc902631ca2d",
+            "gross_notional": "80016.0000",
+            "network_used": false,
+            "reference_price": "200.0000",
+            "side": "buy",
+            "slippage_bps": "2.0000",
+            "symbol": "AAPL"
+          }
+        ],
+        "final_status": "FILLED",
+        "gross_notional": "80016.0000",
+        "order_result_sha256": "489300c674c5fc651defdbb69761b02bd04497e1149155d9b1de132629af956e",
+        "remaining_quantity": "0",
+        "requested_quantity": "400",
+        "side": "buy",
+        "symbol": "AAPL",
+        "total_commission": "2.0000",
+        "weighted_average_fill_price": "200.0400"
+      }
+    ],
+    "partially_filled_count": 0,
+    "rejection_reasons": [],
+    "schema_version": "v48.0.paper_fill_simulation.1",
+    "simulation_sha256": "63ba8491d29096c4cf68d5098c0d5f7a3470dcef8f0cf08541821fc1437ec4e4",
+    "status": "PASS",
+    "total_commission": "5.5000",
+    "total_filled_quantity": "1000",
+    "total_gross_notional": "200040.0000",
+    "unfilled_count": 0,
+    "version": "48.0"
+  },
+  "schema_version": "v48.0.paper_fill_simulation_export.1",
+  "version": "48.0"
+}

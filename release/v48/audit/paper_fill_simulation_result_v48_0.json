@@ -1,0 +1,82 @@
+{
+  "network_used": false,
+  "result": {
+    "decision": "simulate",
+    "fill_event_count": 1,
+    "fully_filled_count": 1,
+    "gateway_sha256": "4373beb6f40aa7d357251fa786899a4c18d83e486cde71fe0e319e3671115376",
+    "ledger": [
+      {
+        "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+        "entry_sha256": "2af0337fc8b73d2a84d1462b28467a2ffc7ad1906405080c81aebf5a03a88d5a",
+        "event_at": "2026-07-29T19:00:00.000100Z",
+        "event_type": "ORDER_WORKING",
+        "fill_id": null,
+        "new_status": "WORKING",
+        "payload_sha256": "4e5e8e09a7e54e15b71175a848f2137d326b4ae256c99f501a17b699b0757adf",
+        "previous_entry_sha256": "GENESIS",
+        "prior_status": "ACCEPTED",
+        "sequence": 1
+      },
+      {
+        "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+        "entry_sha256": "8bedf9f2c2eb006c8988ef935f502640ab20c8c2ca80d04e464437cb880f4d2f",
+        "event_at": "2026-07-29T19:00:00.000102Z",
+        "event_type": "ORDER_FILLED",
+        "fill_id": "fill-e77f79149ca994e659721c03",
+        "new_status": "FILLED",
+        "payload_sha256": "438dee1b1a9d4d8a7cc8852ad2cdbf290646b9caef33e1f289c0fadab55ce0a5",
+        "previous_entry_sha256": "2af0337fc8b73d2a84d1462b28467a2ffc7ad1906405080c81aebf5a03a88d5a",
+        "prior_status": "WORKING",
+        "sequence": 2
+      }
+    ],
+    "network_used": false,
+    "order_count": 1,
+    "orders": [
+      {
+        "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+        "child_order_id": "v46-5af5a7117edb435c615b5ca6",
+        "filled_quantity": "50",
+        "fills": [
+          {
+            "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+            "commission": "1.0000",
+            "event_at": "2026-07-29T19:00:00.000102Z",
+            "fill_id": "fill-e77f79149ca994e659721c03",
+            "fill_price": "200.0400",
+            "fill_quantity": "50",
+            "fill_sha256": "19137493a2bc2a15481af71168f49d9dc10823179e298121ae63378340c79cdc",
+            "gross_notional": "10002.0000",
+            "network_used": false,
+            "reference_price": "200.0000",
+            "side": "buy",
+            "slippage_bps": "2.0000",
+            "symbol": "AAPL"
+          }
+        ],
+        "final_status": "FILLED",
+        "gross_notional": "10002.0000",
+        "order_result_sha256": "8d55b221adf0cae87de237b603db2b708135548791775c5ad34f26011e01fa8f",
+        "remaining_quantity": "0",
+        "requested_quantity": "50",
+        "side": "buy",
+        "symbol": "AAPL",
+        "total_commission": "1.0000",
+        "weighted_average_fill_price": "200.0400"
+      }
+    ],
+    "partially_filled_count": 0,
+    "rejection_reasons": [],
+    "schema_version": "v48.0.paper_fill_simulation.1",
+    "simulation_sha256": "86b091d1537df8dfd5234a75f62b1a6ed989a477d44746908e5e22aee5da4b8e",
+    "status": "PASS",
+    "total_commission": "1.0000",
+    "total_filled_quantity": "50",
+    "total_gross_notional": "10002.0000",
+    "unfilled_count": 0,
+    "version": "48.0"
+  },
+  "schema_version": "v48.0.paper_fill_simulation_export.1",
+  "version": "48.0"
+}
