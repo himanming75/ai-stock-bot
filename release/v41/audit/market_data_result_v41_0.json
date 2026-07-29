@@ -1,0 +1,26 @@
+{
+  "events": [],
+  "network_used": false,
+  "receipt": {
+    "accepted_event_count": 0,
+    "ask": null,
+    "bid": null,
+    "generated_at": "2026-07-29T16:39:42+00:00",
+    "last_price": null,
+    "midpoint": null,
+    "mode": "live",
+    "network_used": false,
+    "rejected_event_count": 1,
+    "rejection_reasons": [
+      "live mode requires --enable-live and an implemented network transport"
+    ],
+    "schema_version": "v41.0.market_data_receipt.1",
+    "snapshot_sha256": "b37272eb44f73479b6486ff5ecc986de8953192e38f5463fc031c33b6ebe2ead",
+    "spread": null,
+    "status": "rejected_live_gate",
+    "symbol": "AAPL",
+    "version": "41.0"
+  },
+  "schema_version": "v41.0.market_data_feed.1",
+  "version": "41.0"
+}
