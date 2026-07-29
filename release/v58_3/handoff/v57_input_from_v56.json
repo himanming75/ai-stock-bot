@@ -1,0 +1,57 @@
+{
+  "broker_events": [
+    {
+      "event_time_utc": "2026-07-29T16:00:01Z",
+      "event_type": "ACK",
+      "fill_price": "0",
+      "filled_quantity": "0",
+      "reason": ""
+    },
+    {
+      "event_time_utc": "2026-07-29T16:00:02Z",
+      "event_type": "PARTIAL_FILL",
+      "fill_price": "199.00",
+      "filled_quantity": "40",
+      "reason": ""
+    },
+    {
+      "event_time_utc": "2026-07-29T16:00:03Z",
+      "event_type": "FILL",
+      "fill_price": "201.00",
+      "filled_quantity": "60",
+      "reason": ""
+    }
+  ],
+  "config": {
+    "allow_partial_fills": true,
+    "cancel_on_timeout": true,
+    "max_retries": 2,
+    "timeout_seconds": 60
+  },
+  "handoff": {
+    "generated_input_sha256": "4a265c9876bba4d0fcc35a3076bd5544ec0420abce1b6824f4f422a4ab60552e",
+    "handoff_sha256": "f0e38533d5b8c4cfa63742c996668a0795f59aef2142435c702a669440de0db6",
+    "handoff_type": "v56_to_v57",
+    "network_used": false,
+    "schema_version": "v58.2.handoff.1",
+    "source_sha256": "d32c7d002be6bf339986b88fa4ce649b77f05b681a32baa4a10097ecf870eec5",
+    "version": "58.2"
+  },
+  "request": {
+    "action": "BUY",
+    "execution_key": "AAPL-BUY-100-200",
+    "limit_price": "200.00",
+    "metadata": {
+      "handoff": "v56_to_v57",
+      "risk_reward_ratio": "2.500000",
+      "source": "V56 risk approval",
+      "source_request_id": "v58-v56-aapl"
+    },
+    "quantity": "100.000000",
+    "request_id": "v58-v57-aapl",
+    "risk_approval_sha256": "aee4bbe894d9be6a83aa19b11b8e415f2db23b408bebb79961e9bec2eb915902",
+    "submitted_at_utc": "2026-07-29T16:00:00Z",
+    "symbol": "AAPL"
+  },
+  "seen_execution_keys": []
+}

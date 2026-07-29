@@ -1,0 +1,124 @@
+{
+  "network_used": false,
+  "result": {
+    "action": "BUY",
+    "audit_trail": [
+      {
+        "details": {
+          "order_id": "ORD-D1165D0D220FF69A2312"
+        },
+        "event_type": "ORDER_CREATED",
+        "sequence": 1,
+        "state": "PENDING"
+      },
+      {
+        "details": {
+          "execution_id": "EXE-B07BAA70DB9C2CD02062"
+        },
+        "event_type": "ORDER_SUBMITTED",
+        "sequence": 2,
+        "state": "SUBMITTED"
+      },
+      {
+        "details": {},
+        "event_type": "BROKER_ACK",
+        "sequence": 3,
+        "state": "SUBMITTED"
+      },
+      {
+        "details": {
+          "fill_price": "199.00",
+          "filled_quantity": "40.000000",
+          "remaining_quantity": "60.000000"
+        },
+        "event_type": "ORDER_PARTIALLY_FILLED",
+        "sequence": 4,
+        "state": "PARTIALLY_FILLED"
+      },
+      {
+        "details": {
+          "fill_price": "201.00",
+          "filled_quantity": "100.000000"
+        },
+        "event_type": "ORDER_FILLED",
+        "sequence": 5,
+        "state": "FILLED"
+      }
+    ],
+    "average_fill_price": "200.20",
+    "cancel_requested": false,
+    "decision": "execution_completed",
+    "execution_id": "EXE-B07BAA70DB9C2CD02062",
+    "execution_key": "AAPL-BUY-100-200",
+    "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+    "filled_quantity": "100.000000",
+    "final_state": "FILLED",
+    "ledger": [
+      {
+        "entry_sha256": "41285ab8398016508d128d801dd8aa229b3e6de8dd62e1cc551e0a73c426b5f5",
+        "event_type": "ORDER_CREATED",
+        "payload_sha256": "ad45de712380bad2d8e6cb4c88c93a52e88403b49f8f4216cf96991bb7b583e7",
+        "previous_entry_sha256": "GENESIS",
+        "request_id": "v58-v57-aapl",
+        "sequence": 1,
+        "state": "PENDING",
+        "symbol": "AAPL"
+      },
+      {
+        "entry_sha256": "c2b1c8a0c2b499296f6043961b9abf6500523e61cf37a7c5d27062a9af5ccfcf",
+        "event_type": "ORDER_SUBMITTED",
+        "payload_sha256": "3b4a2ee388c5e391641828492af40335e142b15ae147dcca383e29f5f9dec9ae",
+        "previous_entry_sha256": "41285ab8398016508d128d801dd8aa229b3e6de8dd62e1cc551e0a73c426b5f5",
+        "request_id": "v58-v57-aapl",
+        "sequence": 2,
+        "state": "SUBMITTED",
+        "symbol": "AAPL"
+      },
+      {
+        "entry_sha256": "cf9ba8b7ddcf384eae9e94a2633e51185df020281c10b327fa788bbc41273cda",
+        "event_type": "BROKER_ACK",
+        "payload_sha256": "76cd2ce43d979b840e96ff0ab9b855565509fdf42a0eb17144da282e52f7c9c2",
+        "previous_entry_sha256": "c2b1c8a0c2b499296f6043961b9abf6500523e61cf37a7c5d27062a9af5ccfcf",
+        "request_id": "v58-v57-aapl",
+        "sequence": 3,
+        "state": "SUBMITTED",
+        "symbol": "AAPL"
+      },
+      {
+        "entry_sha256": "abdc377ff1ed1a3bdc0ebfddb1066ec32685999ac6d21f8b9992ba63d80f6b61",
+        "event_type": "ORDER_PARTIALLY_FILLED",
+        "payload_sha256": "6953a335f029d91ff60dfca46198f885e22f335d42d721a608914b974fb8d7ee",
+        "previous_entry_sha256": "cf9ba8b7ddcf384eae9e94a2633e51185df020281c10b327fa788bbc41273cda",
+        "request_id": "v58-v57-aapl",
+        "sequence": 4,
+        "state": "PARTIALLY_FILLED",
+        "symbol": "AAPL"
+      },
+      {
+        "entry_sha256": "2ee0b7fc3c13d8ef1d67236f755bc6c149f4d82b8710f691670dfd0696744fa1",
+        "event_type": "ORDER_FILLED",
+        "payload_sha256": "9034eb7e4df09ce1d723e6e4476324af0a1def619efdd6d34f284f4fd1c3c88a",
+        "previous_entry_sha256": "abdc377ff1ed1a3bdc0ebfddb1066ec32685999ac6d21f8b9992ba63d80f6b61",
+        "request_id": "v58-v57-aapl",
+        "sequence": 5,
+        "state": "FILLED",
+        "symbol": "AAPL"
+      }
+    ],
+    "network_used": false,
+    "order_id": "ORD-D1165D0D220FF69A2312",
+    "rejection_reasons": [],
+    "remaining_quantity": "0.000000",
+    "request_id": "v58-v57-aapl",
+    "request_sha256": "4a265c9876bba4d0fcc35a3076bd5544ec0420abce1b6824f4f422a4ab60552e",
+    "requested_quantity": "100.000000",
+    "retry_count": 0,
+    "schema_version": "v57.0.trade_execution_coordinator.1",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "timed_out": false,
+    "version": "57.0"
+  },
+  "schema_version": "v57.0.trade_execution_coordinator_export.1",
+  "version": "57.0"
+}

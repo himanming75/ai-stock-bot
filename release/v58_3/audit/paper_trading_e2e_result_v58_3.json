@@ -1,0 +1,527 @@
+{
+  "audit_trail": [
+    {
+      "command": [
+        "python",
+        "tools\\strategy_signal_engine_v54_0.py",
+        "--input",
+        "tools\\strategy_signal_input_sample_v54_0.json",
+        "--mode",
+        "paper",
+        "--output",
+        "release\\v58_3\\stages\\v54_signal.json"
+      ],
+      "component": "v54_signal",
+      "event_type": "STAGE_COMPLETED",
+      "network_used": false,
+      "output_path": "release\\v58_3\\stages\\v54_signal.json",
+      "output_sha256": "5ccfb36a89f16de2d0f7ed24e2ae48d438da968c9dc2c0d0b5f2b83964ce7f59",
+      "return_code": 0,
+      "sequence": 1,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "bd76d48ecea0db6c1f6f2d893d6360296e66a2101febc59011b06361fe0c8ca7"
+    },
+    {
+      "component": "v54_to_v55",
+      "event_type": "HANDOFF_COMPLETED",
+      "generated_input_sha256": "5dc02af292604284df3a5c9bcc670e0b52803de3d5b463c41dde6f9007d52526",
+      "handoff_sha256": "29fb880701273d9f474f5f0f8bc5ad7a9ae632393dc211a6a4a877e115907fad",
+      "handoff_type": "v54_to_v55",
+      "network_used": false,
+      "output_path": "release\\v58_3\\handoff\\v55_input_from_v54.json",
+      "sequence": 2,
+      "source_sha256": "5ccfb36a89f16de2d0f7ed24e2ae48d438da968c9dc2c0d0b5f2b83964ce7f59",
+      "source_stage": "v54_signal",
+      "status": "PASS",
+      "template_path": "tools\\position_sizing_input_sample_v55_0.json"
+    },
+    {
+      "command": [
+        "python",
+        "tools\\position_sizing_engine_v55_0.py",
+        "--input",
+        "release\\v58_3\\handoff\\v55_input_from_v54.json",
+        "--mode",
+        "paper",
+        "--output",
+        "release\\v58_3\\stages\\v55_sizing.json"
+      ],
+      "component": "v55_sizing",
+      "event_type": "STAGE_COMPLETED",
+      "network_used": false,
+      "output_path": "release\\v58_3\\stages\\v55_sizing.json",
+      "output_sha256": "454e5ede1c2d0a74dd665a092ac70d4d5d2cb0cca91448ac61f275d56e74aafb",
+      "return_code": 0,
+      "sequence": 3,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "42e7f0175fcdb65569f56916c95c01e1fe9c698ce79901ef13cb293048b59cce"
+    },
+    {
+      "component": "v55_to_v56",
+      "event_type": "HANDOFF_COMPLETED",
+      "generated_input_sha256": "348c128b00b09c26cd8698fa4ac5fa06077a015f8646273ee1bce9e82d712c79",
+      "handoff_sha256": "0f56824abb49b995db5b7d6ca52a3a8b66bf44dcf2a66383b6cb9edc221a1d48",
+      "handoff_type": "v55_to_v56",
+      "network_used": false,
+      "output_path": "release\\v58_3\\handoff\\v56_input_from_v55.json",
+      "sequence": 4,
+      "source_sha256": "454e5ede1c2d0a74dd665a092ac70d4d5d2cb0cca91448ac61f275d56e74aafb",
+      "source_stage": "v55_sizing",
+      "status": "PASS",
+      "template_path": "tools\\risk_management_input_sample_v56_0.json"
+    },
+    {
+      "command": [
+        "python",
+        "tools\\risk_management_engine_v56_0.py",
+        "--input",
+        "release\\v58_3\\handoff\\v56_input_from_v55.json",
+        "--mode",
+        "paper",
+        "--output",
+        "release\\v58_3\\stages\\v56_risk.json"
+      ],
+      "component": "v56_risk",
+      "event_type": "STAGE_COMPLETED",
+      "network_used": false,
+      "output_path": "release\\v58_3\\stages\\v56_risk.json",
+      "output_sha256": "d32c7d002be6bf339986b88fa4ce649b77f05b681a32baa4a10097ecf870eec5",
+      "return_code": 0,
+      "sequence": 5,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d8ffcf719a71837da2c09a09ce4cfc4e8657fd99755294db20a3f944d761419a"
+    },
+    {
+      "component": "v56_to_v57",
+      "event_type": "HANDOFF_COMPLETED",
+      "generated_input_sha256": "4a265c9876bba4d0fcc35a3076bd5544ec0420abce1b6824f4f422a4ab60552e",
+      "handoff_sha256": "f0e38533d5b8c4cfa63742c996668a0795f59aef2142435c702a669440de0db6",
+      "handoff_type": "v56_to_v57",
+      "network_used": false,
+      "output_path": "release\\v58_3\\handoff\\v57_input_from_v56.json",
+      "sequence": 6,
+      "source_sha256": "d32c7d002be6bf339986b88fa4ce649b77f05b681a32baa4a10097ecf870eec5",
+      "source_stage": "v56_risk",
+      "status": "PASS",
+      "template_path": "tools\\trade_execution_input_sample_v57_0.json"
+    },
+    {
+      "command": [
+        "python",
+        "tools\\trade_execution_coordinator_v57_0.py",
+        "--input",
+        "release\\v58_3\\handoff\\v57_input_from_v56.json",
+        "--mode",
+        "paper",
+        "--output",
+        "release\\v58_3\\stages\\v57_execution.json"
+      ],
+      "component": "v57_execution",
+      "event_type": "STAGE_COMPLETED",
+      "network_used": false,
+      "output_path": "release\\v58_3\\stages\\v57_execution.json",
+      "output_sha256": "d9e2788fca6d646112ef48d1f0361aacc8fbc02d22a0d468a0151c312b91b535",
+      "return_code": 0,
+      "sequence": 7,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "145d67b4aa177da89be2c92db1a05cd36cf42829c0a122c419aeea61d0ae7ffa"
+    }
+  ],
+  "completed_component_count": 7,
+  "decision": "pipeline_completed",
+  "error": null,
+  "expected_component_count": 7,
+  "final_average_fill_price": "200.20",
+  "final_execution_state": "FILLED",
+  "final_filled_quantity": "100.000000",
+  "ledger": [
+    {
+      "component": "v54_signal",
+      "entry_sha256": "8461b73c4baa509269f0ca6a187d8fb517bf49a51617912a45cf05c0cac1dc00",
+      "event_type": "STAGE_COMPLETED",
+      "payload_sha256": "7ca768c35996b0cee10c7f88aceacf33ee8a023c077bf3d76dec1cb8ab299242",
+      "previous_entry_sha256": "GENESIS",
+      "sequence": 1,
+      "status": "PASS"
+    },
+    {
+      "component": "v54_to_v55",
+      "entry_sha256": "e96df2bb5bee16f50e432e0640377c9624ed5884ba2d66c22c377ea8f2c2a287",
+      "event_type": "HANDOFF_COMPLETED",
+      "payload_sha256": "1024d463bd344bad6bb139039b9ce8b32906e6281b68c7a7bf88a2cf00f64ad9",
+      "previous_entry_sha256": "8461b73c4baa509269f0ca6a187d8fb517bf49a51617912a45cf05c0cac1dc00",
+      "sequence": 2,
+      "status": "PASS"
+    },
+    {
+      "component": "v55_sizing",
+      "entry_sha256": "631b7d660ca16f194336c0dbaa97290da8203794f700ddf415dbce2e29e519d6",
+      "event_type": "STAGE_COMPLETED",
+      "payload_sha256": "87a9f187b288703775605c5c3cfcee97359be82069b3b68fcd28ec1fe968c226",
+      "previous_entry_sha256": "e96df2bb5bee16f50e432e0640377c9624ed5884ba2d66c22c377ea8f2c2a287",
+      "sequence": 3,
+      "status": "PASS"
+    },
+    {
+      "component": "v55_to_v56",
+      "entry_sha256": "7f5add18bcceae1e93ee510ba129e1d517632f0bc8b9fc6b9b514c4d69a73958",
+      "event_type": "HANDOFF_COMPLETED",
+      "payload_sha256": "1dd57c0f91acbe1f84a38c9433068b4bb17b017efe458f2a0b0a442215090daa",
+      "previous_entry_sha256": "631b7d660ca16f194336c0dbaa97290da8203794f700ddf415dbce2e29e519d6",
+      "sequence": 4,
+      "status": "PASS"
+    },
+    {
+      "component": "v56_risk",
+      "entry_sha256": "b6361f2e544c80543843bfa82af99db5b86be4a5b82c65535b7f9d6075ac4d81",
+      "event_type": "STAGE_COMPLETED",
+      "payload_sha256": "9e6134a885874fa0829674474fee8d367b9e32236df61f77b5f08f780069c44a",
+      "previous_entry_sha256": "7f5add18bcceae1e93ee510ba129e1d517632f0bc8b9fc6b9b514c4d69a73958",
+      "sequence": 5,
+      "status": "PASS"
+    },
+    {
+      "component": "v56_to_v57",
+      "entry_sha256": "cdc1512cd66ea242617df0ee2693ac041c3cce1e40f8176354653d844e155386",
+      "event_type": "HANDOFF_COMPLETED",
+      "payload_sha256": "b167671e6ebdc44c5c4a082211a3b7c21fda813021b47f965c56eaa7e5bd1c42",
+      "previous_entry_sha256": "b6361f2e544c80543843bfa82af99db5b86be4a5b82c65535b7f9d6075ac4d81",
+      "sequence": 6,
+      "status": "PASS"
+    },
+    {
+      "component": "v57_execution",
+      "entry_sha256": "6d0b314ed4773797ee41b8b460a5a542ecd4a61b1a2663b37b12a3422bf1be39",
+      "event_type": "STAGE_COMPLETED",
+      "payload_sha256": "ab1457be2e89ca2f245c6608657a85e9aee0d9ebbe84c552e7b43c81b0e985a4",
+      "previous_entry_sha256": "cdc1512cd66ea242617df0ee2693ac041c3cce1e40f8176354653d844e155386",
+      "sequence": 7,
+      "status": "PASS"
+    }
+  ],
+  "network_used": false,
+  "pipeline_id": "v58-3-sample-001",
+  "pipeline_sha256": "71171bd18c88239277ec1c9263d49ef02dd5b77c880588a6306236e97b557b9a",
+  "schema_version": "v58.3.end_to_end_pipeline.1",
+  "stage_results": {
+    "v54_signal": {
+      "conflict_symbol_count": 1,
+      "decision": "signals_selected",
+      "disabled_strategy_signal_count": 0,
+      "duplicate_signal_count": 0,
+      "expired_signal_count": 0,
+      "ledger": [
+        {
+          "entry_sha256": "89ee82d5857f8165bd534566d331b5136176a677194527f3b98d0c3367c9377c",
+          "event_type": "STRATEGY_SIGNALS_PROCESSED",
+          "normalized_signal_count": 3,
+          "payload_sha256": "af0341a0d5ca83ece57a7d4fc6e9bfbaa4e0e51e4bb5be958df9dc0e51c97e14",
+          "previous_entry_sha256": "GENESIS",
+          "raw_signal_count": 3,
+          "rejected_signal_count": 0,
+          "selected_signal_count": 2,
+          "sequence": 1,
+          "strategy_count": 2
+        }
+      ],
+      "network_used": false,
+      "normalized_signal_count": 3,
+      "normalized_signals": [
+        {
+          "action": "BUY",
+          "confidence": "0.900000",
+          "created_at": "2026-07-29T18:00:00Z",
+          "duplicate_key": "55c3fe97fb644b84c77e4465870c647eba5c8e4550fe38adaa84a30d3d263b3a",
+          "expires_at": "2026-07-29T20:00:00Z",
+          "metadata": {
+            "timeframe": "1d"
+          },
+          "priority": 80,
+          "rationale": "Positive sample momentum signal",
+          "sequence": 1,
+          "signal_sha256": "14a8718b683833a50ce0c82aa243bd53f43af1135fc4cf7812a413ccffc99680",
+          "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "strategy_id": "momentum_v1",
+          "strategy_name": "Momentum",
+          "strategy_version": "1.0",
+          "symbol": "AAPL",
+          "weighted_confidence": "0.900000"
+        },
+        {
+          "action": "SELL",
+          "confidence": "0.850000",
+          "created_at": "2026-07-29T18:01:00Z",
+          "duplicate_key": "31ffc77361b0b38205dd1a342648cc092a3f0f7a611a5619f7167659a722739e",
+          "expires_at": "2026-07-29T20:00:00Z",
+          "metadata": {
+            "timeframe": "1d"
+          },
+          "priority": 60,
+          "rationale": "Sample overextension signal",
+          "sequence": 2,
+          "signal_sha256": "9d931e7813e8815d83d0161af8776c9ee00540bf94aea8087d52b9b06d5e3d67",
+          "source_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "strategy_id": "mean_reversion_v1",
+          "strategy_name": "Mean Reversion",
+          "strategy_version": "1.0",
+          "symbol": "AAPL",
+          "weighted_confidence": "0.680000"
+        },
+        {
+          "action": "HOLD",
+          "confidence": "0.650000",
+          "created_at": "2026-07-29T18:02:00Z",
+          "duplicate_key": "59e6ea23f7ea4a29d39e30286cef0781abc39807c968e9b64f30bd3d6c6cb780",
+          "expires_at": "2026-07-29T20:00:00Z",
+          "metadata": {
+            "timeframe": "1d"
+          },
+          "priority": 40,
+          "rationale": "Insufficient directional conviction",
+          "sequence": 3,
+          "signal_sha256": "05619be5c715f914af3e1ad9c36ebb16cd68377bdb4cca90595342e5f8a5e307",
+          "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "strategy_id": "momentum_v1",
+          "strategy_name": "Momentum",
+          "strategy_version": "1.0",
+          "symbol": "MSFT",
+          "weighted_confidence": "0.650000"
+        }
+      ],
+      "raw_signal_count": 3,
+      "rejected_signal_count": 0,
+      "rejected_signals": [],
+      "rejection_reasons": [],
+      "result_sha256": "326b385a6902d0f79b88f6bdbd57c5f0a5257e8126a6e7b9eab0a972ffe0d12c",
+      "schema_version": "v54.0.strategy_signal_engine.1",
+      "selected_signal_count": 2,
+      "selected_signals": [
+        {
+          "candidate_count": 2,
+          "conflict_detected": true,
+          "selected_action": "BUY",
+          "selected_priority": 80,
+          "selected_signal_sha256": "14a8718b683833a50ce0c82aa243bd53f43af1135fc4cf7812a413ccffc99680",
+          "selected_strategy_id": "momentum_v1",
+          "selected_weighted_confidence": "0.900000",
+          "selection_sha256": "6c34991f43e34aeec29a4e79eb104564c2ef2df12d2cec21b2a405ddf9185e97",
+          "symbol": "AAPL"
+        },
+        {
+          "candidate_count": 1,
+          "conflict_detected": false,
+          "selected_action": "HOLD",
+          "selected_priority": 40,
+          "selected_signal_sha256": "05619be5c715f914af3e1ad9c36ebb16cd68377bdb4cca90595342e5f8a5e307",
+          "selected_strategy_id": "momentum_v1",
+          "selected_weighted_confidence": "0.650000",
+          "selection_sha256": "feeee139eeee62516d7d87c7055fde3623abb02c6eb3f22cd2509c0e7a227cf9",
+          "symbol": "MSFT"
+        }
+      ],
+      "status": "PASS",
+      "strategy_count": 2,
+      "version": "54.0"
+    },
+    "v55_sizing": {
+      "action": "BUY",
+      "available_capital": "40000.00",
+      "decision": "size_approved",
+      "entry_price": "200.00",
+      "estimated_risk_amount": "1000.00",
+      "ledger": [
+        {
+          "decision": "size_approved",
+          "entry_sha256": "25981d1f6202d3ac70ebea855c29dcd7c884743f0d41826f9950210f7fcfa6ca",
+          "event_type": "POSITION_SIZED",
+          "payload_sha256": "7e65c9ee0ce9dd4e7731e19aa40db8b540927aea784a6de196af3cd28f813b97",
+          "previous_entry_sha256": "GENESIS",
+          "request_id": "v58-v55-aapl",
+          "sequence": 1,
+          "status": "PASS",
+          "symbol": "AAPL"
+        }
+      ],
+      "limiting_factors": [],
+      "max_portfolio_additional_notional": "60000.00",
+      "max_position_notional": "20000.00",
+      "network_used": false,
+      "position_notional": "20000.00",
+      "rejection_reasons": [],
+      "request_id": "v58-v55-aapl",
+      "request_sha256": "5dc02af292604284df3a5c9bcc670e0b52803de3d5b463c41dde6f9007d52526",
+      "schema_version": "v55.0.position_sizing_engine.1",
+      "shares": "100.000000",
+      "sizing_method": "fixed_risk",
+      "sizing_sha256": "6cd4406824aec4e204665663e559f0d0a231c8f63564b72d88ad2b265385d927",
+      "status": "PASS",
+      "symbol": "AAPL",
+      "version": "55.0"
+    },
+    "v56_risk": {
+      "action": "BUY",
+      "daily_loss_amount": "750.00",
+      "daily_loss_limit_amount": "3000.00",
+      "decision": "risk_approved",
+      "entry_price": "200.00",
+      "ledger": [
+        {
+          "decision": "risk_approved",
+          "entry_sha256": "09df67f2796f12a1453fea00431cc39bb151caba90a46999e09274991322e2d0",
+          "event_type": "RISK_EVALUATED",
+          "payload_sha256": "0a56d58578e274946cd841148ce17958163b9965e25b88402d9a5b348c0f382d",
+          "previous_entry_sha256": "GENESIS",
+          "request_id": "v58-v56-aapl",
+          "sequence": 1,
+          "status": "PASS",
+          "symbol": "AAPL"
+        }
+      ],
+      "network_used": false,
+      "portfolio_risk_after_amount": "3500.00",
+      "portfolio_risk_limit_amount": "6000.00",
+      "quantity": "100.000000",
+      "rejection_reasons": [],
+      "request_id": "v58-v56-aapl",
+      "request_sha256": "348c128b00b09c26cd8698fa4ac5fa06077a015f8646273ee1bce9e82d712c79",
+      "reward_amount": "2500.00",
+      "risk_amount": "1000.00",
+      "risk_reward_ratio": "2.500000",
+      "risk_sha256": "aee4bbe894d9be6a83aa19b11b8e415f2db23b408bebb79961e9bec2eb915902",
+      "schema_version": "v56.0.risk_management_engine.1",
+      "status": "PASS",
+      "stop_price": "190.00",
+      "symbol": "AAPL",
+      "symbol_risk_after_amount": "1500.00",
+      "symbol_risk_limit_amount": "2000.00",
+      "take_profit_price": "225.00",
+      "version": "56.0"
+    },
+    "v57_execution": {
+      "action": "BUY",
+      "audit_trail": [
+        {
+          "details": {
+            "order_id": "ORD-D1165D0D220FF69A2312"
+          },
+          "event_type": "ORDER_CREATED",
+          "sequence": 1,
+          "state": "PENDING"
+        },
+        {
+          "details": {
+            "execution_id": "EXE-B07BAA70DB9C2CD02062"
+          },
+          "event_type": "ORDER_SUBMITTED",
+          "sequence": 2,
+          "state": "SUBMITTED"
+        },
+        {
+          "details": {},
+          "event_type": "BROKER_ACK",
+          "sequence": 3,
+          "state": "SUBMITTED"
+        },
+        {
+          "details": {
+            "fill_price": "199.00",
+            "filled_quantity": "40.000000",
+            "remaining_quantity": "60.000000"
+          },
+          "event_type": "ORDER_PARTIALLY_FILLED",
+          "sequence": 4,
+          "state": "PARTIALLY_FILLED"
+        },
+        {
+          "details": {
+            "fill_price": "201.00",
+            "filled_quantity": "100.000000"
+          },
+          "event_type": "ORDER_FILLED",
+          "sequence": 5,
+          "state": "FILLED"
+        }
+      ],
+      "average_fill_price": "200.20",
+      "cancel_requested": false,
+      "decision": "execution_completed",
+      "execution_id": "EXE-B07BAA70DB9C2CD02062",
+      "execution_key": "AAPL-BUY-100-200",
+      "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+      "filled_quantity": "100.000000",
+      "final_state": "FILLED",
+      "ledger": [
+        {
+          "entry_sha256": "41285ab8398016508d128d801dd8aa229b3e6de8dd62e1cc551e0a73c426b5f5",
+          "event_type": "ORDER_CREATED",
+          "payload_sha256": "ad45de712380bad2d8e6cb4c88c93a52e88403b49f8f4216cf96991bb7b583e7",
+          "previous_entry_sha256": "GENESIS",
+          "request_id": "v58-v57-aapl",
+          "sequence": 1,
+          "state": "PENDING",
+          "symbol": "AAPL"
+        },
+        {
+          "entry_sha256": "c2b1c8a0c2b499296f6043961b9abf6500523e61cf37a7c5d27062a9af5ccfcf",
+          "event_type": "ORDER_SUBMITTED",
+          "payload_sha256": "3b4a2ee388c5e391641828492af40335e142b15ae147dcca383e29f5f9dec9ae",
+          "previous_entry_sha256": "41285ab8398016508d128d801dd8aa229b3e6de8dd62e1cc551e0a73c426b5f5",
+          "request_id": "v58-v57-aapl",
+          "sequence": 2,
+          "state": "SUBMITTED",
+          "symbol": "AAPL"
+        },
+        {
+          "entry_sha256": "cf9ba8b7ddcf384eae9e94a2633e51185df020281c10b327fa788bbc41273cda",
+          "event_type": "BROKER_ACK",
+          "payload_sha256": "76cd2ce43d979b840e96ff0ab9b855565509fdf42a0eb17144da282e52f7c9c2",
+          "previous_entry_sha256": "c2b1c8a0c2b499296f6043961b9abf6500523e61cf37a7c5d27062a9af5ccfcf",
+          "request_id": "v58-v57-aapl",
+          "sequence": 3,
+          "state": "SUBMITTED",
+          "symbol": "AAPL"
+        },
+        {
+          "entry_sha256": "abdc377ff1ed1a3bdc0ebfddb1066ec32685999ac6d21f8b9992ba63d80f6b61",
+          "event_type": "ORDER_PARTIALLY_FILLED",
+          "payload_sha256": "6953a335f029d91ff60dfca46198f885e22f335d42d721a608914b974fb8d7ee",
+          "previous_entry_sha256": "cf9ba8b7ddcf384eae9e94a2633e51185df020281c10b327fa788bbc41273cda",
+          "request_id": "v58-v57-aapl",
+          "sequence": 4,
+          "state": "PARTIALLY_FILLED",
+          "symbol": "AAPL"
+        },
+        {
+          "entry_sha256": "2ee0b7fc3c13d8ef1d67236f755bc6c149f4d82b8710f691670dfd0696744fa1",
+          "event_type": "ORDER_FILLED",
+          "payload_sha256": "9034eb7e4df09ce1d723e6e4476324af0a1def619efdd6d34f284f4fd1c3c88a",
+          "previous_entry_sha256": "abdc377ff1ed1a3bdc0ebfddb1066ec32685999ac6d21f8b9992ba63d80f6b61",
+          "request_id": "v58-v57-aapl",
+          "sequence": 5,
+          "state": "FILLED",
+          "symbol": "AAPL"
+        }
+      ],
+      "network_used": false,
+      "order_id": "ORD-D1165D0D220FF69A2312",
+      "rejection_reasons": [],
+      "remaining_quantity": "0.000000",
+      "request_id": "v58-v57-aapl",
+      "request_sha256": "4a265c9876bba4d0fcc35a3076bd5544ec0420abce1b6824f4f422a4ab60552e",
+      "requested_quantity": "100.000000",
+      "retry_count": 0,
+      "schema_version": "v57.0.trade_execution_coordinator.1",
+      "status": "PASS",
+      "symbol": "AAPL",
+      "timed_out": false,
+      "version": "57.0"
+    }
+  },
+  "status": "PASS",
+  "stopped_at": null,
+  "version": "58.3"
+}

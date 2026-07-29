@@ -1,0 +1,54 @@
+{
+  "pipeline_id": "v58-3-sample-001",
+  "python_executable": "python",
+  "mode": "paper",
+  "stages": [
+    {
+      "name": "v54_signal",
+      "script": "tools/strategy_signal_engine_v54_0.py",
+      "input": "tools/strategy_signal_input_sample_v54_0.json",
+      "output": "release/v58_3/stages/v54_signal.json"
+    },
+    {
+      "name": "v55_sizing",
+      "script": "tools/position_sizing_engine_v55_0.py",
+      "input": "release/v58_3/handoff/v55_input_from_v54.json",
+      "output": "release/v58_3/stages/v55_sizing.json"
+    },
+    {
+      "name": "v56_risk",
+      "script": "tools/risk_management_engine_v56_0.py",
+      "input": "release/v58_3/handoff/v56_input_from_v55.json",
+      "output": "release/v58_3/stages/v56_risk.json"
+    },
+    {
+      "name": "v57_execution",
+      "script": "tools/trade_execution_coordinator_v57_0.py",
+      "input": "release/v58_3/handoff/v57_input_from_v56.json",
+      "output": "release/v58_3/stages/v57_execution.json"
+    }
+  ],
+  "handoffs": [
+    {
+      "name": "v54_to_v55",
+      "handoff_type": "v54_to_v55",
+      "source_stage": "v54_signal",
+      "template": "tools/position_sizing_input_sample_v55_0.json",
+      "output": "release/v58_3/handoff/v55_input_from_v54.json"
+    },
+    {
+      "name": "v55_to_v56",
+      "handoff_type": "v55_to_v56",
+      "source_stage": "v55_sizing",
+      "template": "tools/risk_management_input_sample_v56_0.json",
+      "output": "release/v58_3/handoff/v56_input_from_v55.json"
+    },
+    {
+      "name": "v56_to_v57",
+      "handoff_type": "v56_to_v57",
+      "source_stage": "v56_risk",
+      "template": "tools/trade_execution_input_sample_v57_0.json",
+      "output": "release/v58_3/handoff/v57_input_from_v56.json"
+    }
+  ]
+}

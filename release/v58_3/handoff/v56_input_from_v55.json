@@ -1,0 +1,55 @@
+{
+  "config": {
+    "cooldown_minutes": 15,
+    "max_consecutive_losses": 3,
+    "max_daily_loss_percent": "0.03",
+    "max_open_positions": 10,
+    "max_portfolio_risk_percent": "0.06",
+    "max_symbol_risk_percent": "0.02",
+    "minimum_risk_reward_ratio": "2.0",
+    "require_stop_loss": true,
+    "require_take_profit": true,
+    "session_end_hour_utc": 21,
+    "session_start_hour_utc": 13
+  },
+  "handoff": {
+    "generated_input_sha256": "348c128b00b09c26cd8698fa4ac5fa06077a015f8646273ee1bce9e82d712c79",
+    "handoff_sha256": "0f56824abb49b995db5b7d6ca52a3a8b66bf44dcf2a66383b6cb9edc221a1d48",
+    "handoff_type": "v55_to_v56",
+    "network_used": false,
+    "schema_version": "v58.2.handoff.1",
+    "source_sha256": "454e5ede1c2d0a74dd665a092ac70d4d5d2cb0cca91448ac61f275d56e74aafb",
+    "version": "58.2"
+  },
+  "request": {
+    "action": "BUY",
+    "entry_price": "200.00",
+    "estimated_risk_amount": "1000.00",
+    "metadata": {
+      "handoff": "v55_to_v56",
+      "source": "V55 sample position",
+      "source_request_id": "v58-v55-aapl"
+    },
+    "order_key": "AAPL-BUY-100-200",
+    "position_sizing_sha256": "6cd4406824aec4e204665663e559f0d0a231c8f63564b72d88ad2b265385d927",
+    "quantity": "100.000000",
+    "request_id": "v58-v56-aapl",
+    "requested_at_utc": "2026-07-29T16:00:00Z",
+    "stop_price": "190.00",
+    "symbol": "AAPL",
+    "take_profit_price": "225.00"
+  },
+  "state": {
+    "consecutive_losses": 1,
+    "daily_realized_pnl": "-500.00",
+    "daily_unrealized_pnl": "-250.00",
+    "equity": "100000.00",
+    "kill_switch_active": false,
+    "last_trade_time_utc": "2026-07-29T15:00:00Z",
+    "open_order_keys": [],
+    "open_position_count": 3,
+    "portfolio_risk_amount": "2500.00",
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "symbol_risk_amount": "500.00"
+  }
+}

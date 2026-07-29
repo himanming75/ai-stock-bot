@@ -1,0 +1,51 @@
+{
+  "account": {
+    "buying_power": "50000.00",
+    "cash": "50000.00",
+    "current_gross_exposure": "20000.00",
+    "equity": "100000.00",
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "config": {
+    "allow_fractional_shares": false,
+    "lot_size": "1",
+    "max_order_notional": "25000.00",
+    "max_portfolio_exposure_percent": "0.80",
+    "max_position_percent": "0.20",
+    "min_order_notional": "100.00",
+    "reserve_cash_percent": "0.10"
+  },
+  "handoff": {
+    "generated_input_sha256": "5dc02af292604284df3a5c9bcc670e0b52803de3d5b463c41dde6f9007d52526",
+    "handoff_sha256": "29fb880701273d9f474f5f0f8bc5ad7a9ae632393dc211a6a4a877e115907fad",
+    "handoff_type": "v54_to_v55",
+    "network_used": false,
+    "schema_version": "v58.2.handoff.1",
+    "source_sha256": "5ccfb36a89f16de2d0f7ed24e2ae48d438da968c9dc2c0d0b5f2b83964ce7f59",
+    "version": "58.2"
+  },
+  "request": {
+    "action": "BUY",
+    "atr": null,
+    "atr_multiple": null,
+    "entry_price": "200.00",
+    "fixed_dollar": null,
+    "fixed_shares": null,
+    "kelly_fraction_cap": null,
+    "metadata": {
+      "handoff": "v54_to_v55",
+      "selection_sha256": "6c34991f43e34aeec29a4e79eb104564c2ef2df12d2cec21b2a405ddf9185e97",
+      "source": "V54 sample signal",
+      "source_version": "54.0"
+    },
+    "method": "fixed_risk",
+    "payoff_ratio": null,
+    "percent_of_equity": null,
+    "request_id": "v58-v55-aapl",
+    "risk_percent": "0.01",
+    "signal_sha256": "14a8718b683833a50ce0c82aa243bd53f43af1135fc4cf7812a413ccffc99680",
+    "stop_price": "190.00",
+    "symbol": "AAPL",
+    "win_rate": null
+  }
+}
