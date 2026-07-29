@@ -1,0 +1,70 @@
+{
+  "network_used": false,
+  "result": {
+    "average_loss": "32.5000",
+    "average_win": "95.0000",
+    "breakeven_rate": "0.166667",
+    "breakeven_trades": 1,
+    "cumulative_return": "0.002470",
+    "current_drawdown": "0.000000",
+    "current_drawdown_amount": "0.0000",
+    "decision": "metrics",
+    "ending_equity": "100247.0000",
+    "equity_curve": [
+      {
+        "cumulative_pnl": "247.0000",
+        "daily_pnl": "147.0000",
+        "drawdown_amount": "0.0000",
+        "drawdown_rate": "0.000000",
+        "net_liquidation_value": "100247.0000",
+        "peak_equity": "100247.0000",
+        "point_sha256": "90c50fe84dfa0dd8b85ce6d7865ab680d23716e69596adf730cb16012037983b",
+        "sequence": 1,
+        "snapshot_sha256": "7c368d1ccd8ce93f7d08fd2b4cd9a940ad72bf45650b40ddffbf4bd0243137cb",
+        "snapshot_time": "2026-07-29T21:00:00Z"
+      }
+    ],
+    "expectancy": "36.6667",
+    "gross_loss": "65.0000",
+    "gross_profit": "285.0000",
+    "ledger": [
+      {
+        "entry_sha256": "90974ccdbd6dee55d7140e5829946088de26d33418fe301c03ad84e5166995c5",
+        "event_type": "PERFORMANCE_METRICS_CREATED",
+        "maximum_drawdown": "0.000000",
+        "net_profit": "220.0000",
+        "payload_sha256": "b1d00aed4684e0245d61913d741a0a64e57a5b0bd7661a415e1f00837a94a714",
+        "previous_entry_sha256": "GENESIS",
+        "sequence": 1,
+        "snapshot_count": 1,
+        "trade_count": 6
+      }
+    ],
+    "losing_trades": 2,
+    "loss_rate": "0.333333",
+    "lowest_equity": "100247.0000",
+    "maximum_drawdown": "0.000000",
+    "maximum_drawdown_amount": "0.0000",
+    "metrics_sha256": "813661b8f1babd7d19be4e261f41d5cd2720e3a3cd4e5a4387825238127ab54c",
+    "net_profit": "220.0000",
+    "network_used": false,
+    "payoff_ratio": "2.923077",
+    "peak_equity": "100247.0000",
+    "profit_factor": "4.384615",
+    "profit_factor_infinite": false,
+    "recovery_factor": "Infinity",
+    "recovery_factor_infinite": true,
+    "rejection_reasons": [],
+    "schema_version": "v51.0.paper_performance_metrics.1",
+    "snapshot_count": 1,
+    "starting_equity": "100000.0000",
+    "status": "PASS",
+    "total_return": "247.0000",
+    "trade_count": 6,
+    "version": "51.0",
+    "win_rate": "0.500000",
+    "winning_trades": 3
+  },
+  "schema_version": "v51.0.paper_performance_metrics_export.1",
+  "version": "51.0"
+}
