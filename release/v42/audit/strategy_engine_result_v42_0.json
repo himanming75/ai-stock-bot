@@ -1,0 +1,7 @@
+{
+  "error": "live mode requires --enable-live",
+  "network_used": false,
+  "schema_version": "v42.0.strategy_error.1",
+  "status": "FAIL",
+  "version": "42.0"
+}
