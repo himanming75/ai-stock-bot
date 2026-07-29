@@ -1,0 +1,51 @@
+{
+  "network_used": false,
+  "result": {
+    "accepted_count": 1,
+    "decision": "accept",
+    "duplicate_count": 0,
+    "gateway_sha256": "4373beb6f40aa7d357251fa786899a4c18d83e486cde71fe0e319e3671115376",
+    "ledger": [
+      {
+        "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+        "child_order_id": "v46-5af5a7117edb435c615b5ca6",
+        "entry_sha256": "d198af64925f0cf73639095b2f8f9515790db7a29b35b9e7bae80a255b7fbc3d",
+        "event_at": "2026-07-29T18:00:00.000001Z",
+        "event_type": "ORDER_ACCEPTED",
+        "new_status": "ACCEPTED",
+        "payload_sha256": "99eafdb5d41c371a54aaa650d7c45421f54093426e5e698d050e3943639e98d9",
+        "previous_entry_sha256": "GENESIS",
+        "prior_status": null,
+        "sequence": 1
+      }
+    ],
+    "network_used": false,
+    "orders": [
+      {
+        "accepted_at": "2026-07-29T18:00:00.000001Z",
+        "broker_order_id": "paper-d5ec69bb6654d0bb36ddd478",
+        "broker_order_sha256": "36aece02d3fb266ede208b8b9b97f6ea517d1754e52a5df994caf6b3112a808c",
+        "child_order_id": "v46-5af5a7117edb435c615b5ca6",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "50",
+        "side": "buy",
+        "status": "ACCEPTED",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "updated_at": "2026-07-29T18:00:00.000001Z",
+        "venue": "PAPER_PRIMARY"
+      }
+    ],
+    "rejected_count": 0,
+    "rejection_reasons": [],
+    "route_sha256": "30136c1c776553ed0c9efb01e0b42466006783b3d6d8b25649c53578dedae632",
+    "schema_version": "v47.0.paper_broker_gateway.1",
+    "status": "PASS",
+    "version": "47.0"
+  },
+  "schema_version": "v47.0.paper_broker_gateway_export.1",
+  "version": "47.0"
+}

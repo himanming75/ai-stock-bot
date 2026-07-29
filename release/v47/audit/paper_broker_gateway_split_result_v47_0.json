@@ -1,0 +1,109 @@
+{
+  "network_used": false,
+  "result": {
+    "accepted_count": 3,
+    "decision": "accept",
+    "duplicate_count": 0,
+    "gateway_sha256": "be7011ac91fafb469c0f4d5e1d7456bbb815d6cd9aa69fe53a6fbd0bacdfe51e",
+    "ledger": [
+      {
+        "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+        "child_order_id": "v46-e256ec869f0614695b39b41d",
+        "entry_sha256": "1a4a29438bc2ba1ef89faa6bdab877bb30ac08b33a0a37e60e15f727c5ce26b1",
+        "event_at": "2026-07-29T18:00:00.000001Z",
+        "event_type": "ORDER_ACCEPTED",
+        "new_status": "ACCEPTED",
+        "payload_sha256": "f830d8505f39739a80527b3f1f70c5697956b55d25014d7c0a1293b2ad1aad57",
+        "previous_entry_sha256": "GENESIS",
+        "prior_status": null,
+        "sequence": 1
+      },
+      {
+        "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+        "child_order_id": "v46-53e30d2fddc5e0f964ed84f0",
+        "entry_sha256": "e86bd2356be90e86a817fd428480da258fd6e534186af3b600b7a807caf2cf93",
+        "event_at": "2026-07-29T18:00:00.000002Z",
+        "event_type": "ORDER_ACCEPTED",
+        "new_status": "ACCEPTED",
+        "payload_sha256": "03fa8f61664270410623ec5ec2ab79cc6da963dfdc9b7e220a2ea997b4aa3ef8",
+        "previous_entry_sha256": "1a4a29438bc2ba1ef89faa6bdab877bb30ac08b33a0a37e60e15f727c5ce26b1",
+        "prior_status": null,
+        "sequence": 2
+      },
+      {
+        "broker_order_id": "paper-f37b6856061124b9e4694289",
+        "child_order_id": "v46-f0659c08a51a671b07eeca07",
+        "entry_sha256": "4562f9a60f720e091fec2c0d374de0bb31be2f12206a1e48215b845113b560dd",
+        "event_at": "2026-07-29T18:00:00.000003Z",
+        "event_type": "ORDER_ACCEPTED",
+        "new_status": "ACCEPTED",
+        "payload_sha256": "97e01707b28c8bdbddb7517326ac315060bdc74f5afcb2913f900b8fd4c46aa2",
+        "previous_entry_sha256": "e86bd2356be90e86a817fd428480da258fd6e534186af3b600b7a807caf2cf93",
+        "prior_status": null,
+        "sequence": 3
+      }
+    ],
+    "network_used": false,
+    "orders": [
+      {
+        "accepted_at": "2026-07-29T18:00:00.000001Z",
+        "broker_order_id": "paper-f80ed450ae0cc2224282065e",
+        "broker_order_sha256": "2f787bc02f6113850128f9466fae8424807502fed4909524b5ea3e9a4975b433",
+        "child_order_id": "v46-e256ec869f0614695b39b41d",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "500",
+        "side": "buy",
+        "status": "ACCEPTED",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "updated_at": "2026-07-29T18:00:00.000001Z",
+        "venue": "PAPER_PRIMARY"
+      },
+      {
+        "accepted_at": "2026-07-29T18:00:00.000002Z",
+        "broker_order_id": "paper-0da95d0c4817b61db1e362c7",
+        "broker_order_sha256": "27c137001929755529d1c6efad5acfcf5f92c41b8a80fcd89b4448d3499687b1",
+        "child_order_id": "v46-53e30d2fddc5e0f964ed84f0",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "100",
+        "side": "buy",
+        "status": "ACCEPTED",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "updated_at": "2026-07-29T18:00:00.000002Z",
+        "venue": "PAPER_PRIMARY"
+      },
+      {
+        "accepted_at": "2026-07-29T18:00:00.000003Z",
+        "broker_order_id": "paper-f37b6856061124b9e4694289",
+        "broker_order_sha256": "215a75be0daad2a6cc4aca59c7a6f1bf4515445f8d19095451bd9173e9a1cd71",
+        "child_order_id": "v46-f0659c08a51a671b07eeca07",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "400",
+        "side": "buy",
+        "status": "ACCEPTED",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "updated_at": "2026-07-29T18:00:00.000003Z",
+        "venue": "PAPER_SECONDARY"
+      }
+    ],
+    "rejected_count": 0,
+    "rejection_reasons": [],
+    "route_sha256": "178ec535c1af490765259381bb3c4615903faebf18eed1c904027df0a9e0006c",
+    "schema_version": "v47.0.paper_broker_gateway.1",
+    "status": "PASS",
+    "version": "47.0"
+  },
+  "schema_version": "v47.0.paper_broker_gateway_export.1",
+  "version": "47.0"
+}
