@@ -1,0 +1,44 @@
+{
+  "network_used": false,
+  "result": {
+    "action": "BUY",
+    "daily_loss_amount": "750.00",
+    "daily_loss_limit_amount": "3000.00",
+    "decision": "risk_approved",
+    "entry_price": "200.00",
+    "ledger": [
+      {
+        "decision": "risk_approved",
+        "entry_sha256": "09df67f2796f12a1453fea00431cc39bb151caba90a46999e09274991322e2d0",
+        "event_type": "RISK_EVALUATED",
+        "payload_sha256": "0a56d58578e274946cd841148ce17958163b9965e25b88402d9a5b348c0f382d",
+        "previous_entry_sha256": "GENESIS",
+        "request_id": "v58-v56-aapl",
+        "sequence": 1,
+        "status": "PASS",
+        "symbol": "AAPL"
+      }
+    ],
+    "network_used": false,
+    "portfolio_risk_after_amount": "3500.00",
+    "portfolio_risk_limit_amount": "6000.00",
+    "quantity": "100.000000",
+    "rejection_reasons": [],
+    "request_id": "v58-v56-aapl",
+    "request_sha256": "348c128b00b09c26cd8698fa4ac5fa06077a015f8646273ee1bce9e82d712c79",
+    "reward_amount": "2500.00",
+    "risk_amount": "1000.00",
+    "risk_reward_ratio": "2.500000",
+    "risk_sha256": "aee4bbe894d9be6a83aa19b11b8e415f2db23b408bebb79961e9bec2eb915902",
+    "schema_version": "v56.0.risk_management_engine.1",
+    "status": "PASS",
+    "stop_price": "190.00",
+    "symbol": "AAPL",
+    "symbol_risk_after_amount": "1500.00",
+    "symbol_risk_limit_amount": "2000.00",
+    "take_profit_price": "225.00",
+    "version": "56.0"
+  },
+  "schema_version": "v56.0.risk_management_engine_export.1",
+  "version": "56.0"
+}

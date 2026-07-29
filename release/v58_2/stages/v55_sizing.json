@@ -1,0 +1,40 @@
+{
+  "network_used": false,
+  "result": {
+    "action": "BUY",
+    "available_capital": "40000.00",
+    "decision": "size_approved",
+    "entry_price": "200.00",
+    "estimated_risk_amount": "1000.00",
+    "ledger": [
+      {
+        "decision": "size_approved",
+        "entry_sha256": "25981d1f6202d3ac70ebea855c29dcd7c884743f0d41826f9950210f7fcfa6ca",
+        "event_type": "POSITION_SIZED",
+        "payload_sha256": "7e65c9ee0ce9dd4e7731e19aa40db8b540927aea784a6de196af3cd28f813b97",
+        "previous_entry_sha256": "GENESIS",
+        "request_id": "v58-v55-aapl",
+        "sequence": 1,
+        "status": "PASS",
+        "symbol": "AAPL"
+      }
+    ],
+    "limiting_factors": [],
+    "max_portfolio_additional_notional": "60000.00",
+    "max_position_notional": "20000.00",
+    "network_used": false,
+    "position_notional": "20000.00",
+    "rejection_reasons": [],
+    "request_id": "v58-v55-aapl",
+    "request_sha256": "5dc02af292604284df3a5c9bcc670e0b52803de3d5b463c41dde6f9007d52526",
+    "schema_version": "v55.0.position_sizing_engine.1",
+    "shares": "100.000000",
+    "sizing_method": "fixed_risk",
+    "sizing_sha256": "6cd4406824aec4e204665663e559f0d0a231c8f63564b72d88ad2b265385d927",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "version": "55.0"
+  },
+  "schema_version": "v55.0.position_sizing_engine_export.1",
+  "version": "55.0"
+}
