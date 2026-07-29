@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-29T07:09:53+00:00",
+  "git_commit": "9a3b2ed9991a8e4c3aa3174bb1d92337e0e85d18",
+  "manifest_sha256": "6f2f0d1090c72bdfaa3dccf4923711a4508522bcd8858a1521b2862f6f579765",
+  "paper_trading_only": true,
+  "release_version": "29.6",
+  "schema_version": "v29.6.final_release_certificate.1",
+  "sha256_manifest_sha256": "77e8d64dcb15dd8fd06622eff2ebc453bfdb91ca584289f3c0094eb241e0c3b7",
+  "status": "PASS",
+  "verification_errors": [],
+  "verified_file_count": 482
+}

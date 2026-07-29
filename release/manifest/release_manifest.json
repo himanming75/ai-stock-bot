@@ -1,10 +1,16 @@
 {
-  "version": "29.6",
-  "release_name": "AI Stock Trading Bot Final Candidate",
-  "status": "RELEASE_CANDIDATE",
-  "generator": "V29.5B",
+  "artifact_version": 1,
   "audit": "PASS",
+  "generated_at": "2026-07-29T07:09:53+00:00",
+  "generator": "V29.6 Final Release Builder",
+  "git_branch": "main",
+  "git_clean_at_build_start": false,
+  "git_commit": "9a3b2ed9991a8e4c3aa3174bb1d92337e0e85d18",
   "paper_trading": true,
-  "created_by": "AI Stock Trading Bot",
-  "artifact_version": 1
+  "platform": "win32",
+  "python_version": "3.14.6",
+  "release_name": "AI Stock Trading Bot Final Candidate",
+  "schema_version": "v29.6.release.1",
+  "status": "RELEASE_CANDIDATE",
+  "version": "29.6"
 }
