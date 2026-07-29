@@ -1,0 +1,124 @@
+{
+  "network_used": false,
+  "result": {
+    "conflict_symbol_count": 1,
+    "decision": "signals_selected",
+    "disabled_strategy_signal_count": 0,
+    "duplicate_signal_count": 0,
+    "expired_signal_count": 0,
+    "ledger": [
+      {
+        "entry_sha256": "89ee82d5857f8165bd534566d331b5136176a677194527f3b98d0c3367c9377c",
+        "event_type": "STRATEGY_SIGNALS_PROCESSED",
+        "normalized_signal_count": 3,
+        "payload_sha256": "af0341a0d5ca83ece57a7d4fc6e9bfbaa4e0e51e4bb5be958df9dc0e51c97e14",
+        "previous_entry_sha256": "GENESIS",
+        "raw_signal_count": 3,
+        "rejected_signal_count": 0,
+        "selected_signal_count": 2,
+        "sequence": 1,
+        "strategy_count": 2
+      }
+    ],
+    "network_used": false,
+    "normalized_signal_count": 3,
+    "normalized_signals": [
+      {
+        "action": "BUY",
+        "confidence": "0.900000",
+        "created_at": "2026-07-29T18:00:00Z",
+        "duplicate_key": "55c3fe97fb644b84c77e4465870c647eba5c8e4550fe38adaa84a30d3d263b3a",
+        "expires_at": "2026-07-29T20:00:00Z",
+        "metadata": {
+          "timeframe": "1d"
+        },
+        "priority": 80,
+        "rationale": "Positive sample momentum signal",
+        "sequence": 1,
+        "signal_sha256": "14a8718b683833a50ce0c82aa243bd53f43af1135fc4cf7812a413ccffc99680",
+        "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "strategy_id": "momentum_v1",
+        "strategy_name": "Momentum",
+        "strategy_version": "1.0",
+        "symbol": "AAPL",
+        "weighted_confidence": "0.900000"
+      },
+      {
+        "action": "SELL",
+        "confidence": "0.850000",
+        "created_at": "2026-07-29T18:01:00Z",
+        "duplicate_key": "31ffc77361b0b38205dd1a342648cc092a3f0f7a611a5619f7167659a722739e",
+        "expires_at": "2026-07-29T20:00:00Z",
+        "metadata": {
+          "timeframe": "1d"
+        },
+        "priority": 60,
+        "rationale": "Sample overextension signal",
+        "sequence": 2,
+        "signal_sha256": "9d931e7813e8815d83d0161af8776c9ee00540bf94aea8087d52b9b06d5e3d67",
+        "source_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "strategy_id": "mean_reversion_v1",
+        "strategy_name": "Mean Reversion",
+        "strategy_version": "1.0",
+        "symbol": "AAPL",
+        "weighted_confidence": "0.680000"
+      },
+      {
+        "action": "HOLD",
+        "confidence": "0.650000",
+        "created_at": "2026-07-29T18:02:00Z",
+        "duplicate_key": "59e6ea23f7ea4a29d39e30286cef0781abc39807c968e9b64f30bd3d6c6cb780",
+        "expires_at": "2026-07-29T20:00:00Z",
+        "metadata": {
+          "timeframe": "1d"
+        },
+        "priority": 40,
+        "rationale": "Insufficient directional conviction",
+        "sequence": 3,
+        "signal_sha256": "05619be5c715f914af3e1ad9c36ebb16cd68377bdb4cca90595342e5f8a5e307",
+        "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "strategy_id": "momentum_v1",
+        "strategy_name": "Momentum",
+        "strategy_version": "1.0",
+        "symbol": "MSFT",
+        "weighted_confidence": "0.650000"
+      }
+    ],
+    "raw_signal_count": 3,
+    "rejected_signal_count": 0,
+    "rejected_signals": [],
+    "rejection_reasons": [],
+    "result_sha256": "326b385a6902d0f79b88f6bdbd57c5f0a5257e8126a6e7b9eab0a972ffe0d12c",
+    "schema_version": "v54.0.strategy_signal_engine.1",
+    "selected_signal_count": 2,
+    "selected_signals": [
+      {
+        "candidate_count": 2,
+        "conflict_detected": true,
+        "selected_action": "BUY",
+        "selected_priority": 80,
+        "selected_signal_sha256": "14a8718b683833a50ce0c82aa243bd53f43af1135fc4cf7812a413ccffc99680",
+        "selected_strategy_id": "momentum_v1",
+        "selected_weighted_confidence": "0.900000",
+        "selection_sha256": "6c34991f43e34aeec29a4e79eb104564c2ef2df12d2cec21b2a405ddf9185e97",
+        "symbol": "AAPL"
+      },
+      {
+        "candidate_count": 1,
+        "conflict_detected": false,
+        "selected_action": "HOLD",
+        "selected_priority": 40,
+        "selected_signal_sha256": "05619be5c715f914af3e1ad9c36ebb16cd68377bdb4cca90595342e5f8a5e307",
+        "selected_strategy_id": "momentum_v1",
+        "selected_weighted_confidence": "0.650000",
+        "selection_sha256": "feeee139eeee62516d7d87c7055fde3623abb02c6eb3f22cd2509c0e7a227cf9",
+        "symbol": "MSFT"
+      }
+    ],
+    "status": "PASS",
+    "strategy_count": 2,
+    "version": "54.0"
+  },
+  "schema_version": "v54.0.strategy_signal_engine_export.1",
+  "version": "54.0"
+}

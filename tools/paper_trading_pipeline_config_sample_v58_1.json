@@ -1,0 +1,32 @@
+{
+  "pipeline_id": "v58-1-sample-001",
+  "python_executable": "python",
+  "mode": "paper",
+  "fail_fast": true,
+  "stages": [
+    {
+      "name": "v54_signal",
+      "script": "tools/strategy_signal_engine_v54_0.py",
+      "input": "tools/strategy_signal_input_sample_v54_0.json",
+      "output": "release/v58_1/stages/v54_signal.json"
+    },
+    {
+      "name": "v55_sizing",
+      "script": "tools/position_sizing_engine_v55_0.py",
+      "input": "tools/position_sizing_input_sample_v55_0.json",
+      "output": "release/v58_1/stages/v55_sizing.json"
+    },
+    {
+      "name": "v56_risk",
+      "script": "tools/risk_management_engine_v56_0.py",
+      "input": "tools/risk_management_input_sample_v56_0.json",
+      "output": "release/v58_1/stages/v56_risk.json"
+    },
+    {
+      "name": "v57_execution",
+      "script": "tools/trade_execution_coordinator_v57_0.py",
+      "input": "tools/trade_execution_input_sample_v57_0.json",
+      "output": "release/v58_1/stages/v57_execution.json"
+    }
+  ]
+}
