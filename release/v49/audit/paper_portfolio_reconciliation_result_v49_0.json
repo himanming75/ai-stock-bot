@@ -1,0 +1,61 @@
+{
+  "network_used": false,
+  "result": {
+    "decision": "reconcile",
+    "ending_cash": "89997.0000",
+    "ledger": [
+      {
+        "average_cost_after": "200.0600",
+        "average_cost_before": "0.0000",
+        "cash_after": "89997.0000",
+        "cash_before": "100000.0000",
+        "commission": "1.0000",
+        "entry_sha256": "d1b313c997c3ffb0a706f149a18f15e83291ed94810cf28f3f3bbc101e9674e1",
+        "event_at": "2026-07-29T20:00:00.000001Z",
+        "event_type": "FILL_RECONCILED",
+        "fill_id": "fill-e77f79149ca994e659721c03",
+        "payload_sha256": "b200fc9488033d68c31efe784e6a4fc718161b4ea2bdac0d2ee9c3e720e1e757",
+        "position_quantity_after": "50",
+        "position_quantity_before": "0",
+        "previous_entry_sha256": "GENESIS",
+        "price": "200.0400",
+        "quantity": "50",
+        "realized_pnl_delta": "0.0000",
+        "sequence": 1,
+        "side": "buy",
+        "symbol": "AAPL"
+      }
+    ],
+    "network_used": false,
+    "position_count": 1,
+    "positions": [
+      {
+        "average_cost": "200.0600",
+        "cost_basis": "10003.0000",
+        "market_price": "205.0000",
+        "market_value": "10250.0000",
+        "position_sha256": "50c8726a0fbadca569b7252db79de18e7314f0513e765080d77ac0cb528907eb",
+        "quantity": "50",
+        "realized_pnl": "0.0000",
+        "symbol": "AAPL",
+        "total_commission": "1.0000",
+        "unrealized_pnl": "247.0000"
+      }
+    ],
+    "reconciliation_sha256": "24eb049bcc435fa0629c2d84e1c40d6f279fa5c55d17a16ab7933a8e4e46d9c0",
+    "rejection_reasons": [],
+    "schema_version": "v49.0.paper_portfolio_reconciliation.1",
+    "simulation_sha256": "86b091d1537df8dfd5234a75f62b1a6ed989a477d44746908e5e22aee5da4b8e",
+    "starting_cash": "100000.0000",
+    "status": "PASS",
+    "total_commission": "1.0000",
+    "total_cost_basis": "10003.0000",
+    "total_equity": "100247.0000",
+    "total_market_value": "10250.0000",
+    "total_realized_pnl": "0.0000",
+    "total_unrealized_pnl": "247.0000",
+    "version": "49.0"
+  },
+  "schema_version": "v49.0.paper_portfolio_reconciliation_export.1",
+  "version": "49.0"
+}
