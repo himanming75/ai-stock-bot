@@ -1,0 +1,45 @@
+{
+  "request": {
+    "request_id": "v57-sample-001",
+    "symbol": "AAPL",
+    "action": "BUY",
+    "quantity": "100",
+    "limit_price": "200.00",
+    "risk_approval_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "submitted_at_utc": "2026-07-29T16:00:00Z",
+    "execution_key": "AAPL-BUY-100-200",
+    "metadata": {
+      "source": "V56 risk approval"
+    }
+  },
+  "config": {
+    "max_retries": 2,
+    "timeout_seconds": 60,
+    "allow_partial_fills": true,
+    "cancel_on_timeout": true
+  },
+  "broker_events": [
+    {
+      "event_type": "ACK",
+      "event_time_utc": "2026-07-29T16:00:01Z",
+      "filled_quantity": "0",
+      "fill_price": "0",
+      "reason": ""
+    },
+    {
+      "event_type": "PARTIAL_FILL",
+      "event_time_utc": "2026-07-29T16:00:02Z",
+      "filled_quantity": "40",
+      "fill_price": "199.00",
+      "reason": ""
+    },
+    {
+      "event_type": "FILL",
+      "event_time_utc": "2026-07-29T16:00:03Z",
+      "filled_quantity": "60",
+      "fill_price": "201.00",
+      "reason": ""
+    }
+  ],
+  "seen_execution_keys": []
+}
