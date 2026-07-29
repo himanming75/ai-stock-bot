@@ -1,0 +1,10 @@
+{
+  "version": "29.6",
+  "release_name": "AI Stock Trading Bot Final Candidate",
+  "status": "RELEASE_CANDIDATE",
+  "generator": "V29.5B",
+  "audit": "PASS",
+  "paper_trading": true,
+  "created_by": "AI Stock Trading Bot",
+  "artifact_version": 1
+}
