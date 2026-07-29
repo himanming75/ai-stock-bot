@@ -1,0 +1,26 @@
+{
+  "broker": "null-broker-v31",
+  "dry_run": true,
+  "gate_reasons": [
+    "Runtime --enable-live flag was not provided",
+    "No live approval file was provided"
+  ],
+  "generated_at": "2026-07-29T07:37:55+00:00",
+  "live_transport_implemented": false,
+  "mode": "live",
+  "normalized_order": {
+    "client_order_id": "v31-83b570d882dd4521a674",
+    "limit_price": null,
+    "order_type": "market",
+    "quantity": "1",
+    "side": "buy",
+    "symbol": "AAPL",
+    "time_in_force": "day"
+  },
+  "order_sha256": "ce316562e0fcf4323f842b74935148cae356c25d49e71cd455737b39bf6d17ef",
+  "receipt_id": "rcpt-07eca82606614cf5aa308892d9790872",
+  "schema_version": "v31.0.execution_receipt.1",
+  "status": "REJECTED_LIVE_GATE",
+  "validation_errors": [],
+  "version": "31.0"
+}

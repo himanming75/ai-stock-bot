@@ -1,0 +1,15 @@
+{
+  "average_fill_price": null,
+  "broker": "ibkr",
+  "broker_order_id": null,
+  "client_order_id": "not-submitted",
+  "filled_quantity": "0",
+  "generated_at": "2026-07-29T07:43:24+00:00",
+  "live_transport_used": false,
+  "mode": "live",
+  "quantity": "1",
+  "rejection_reason": "ibkr network transport is disabled in V32.0",
+  "side": "buy",
+  "status": "rejected",
+  "symbol": "AAPL"
+}

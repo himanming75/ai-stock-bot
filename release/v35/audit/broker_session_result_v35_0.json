@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-29T08:00:39+00:00",
+  "network_transport_enabled": false,
+  "ready_session_count": 1,
+  "schema_version": "v35.0.session_dashboard.1",
+  "session_count": 4,
+  "sessions": [
+    {
+      "audit_event_count": 2,
+      "authenticated": true,
+      "broker": "paper",
+      "connected": true,
+      "generated_at": "2026-07-29T08:00:39+00:00",
+      "heartbeat_timeout_seconds": 30,
+      "last_heartbeat_at": "2026-07-29T08:00:39+00:00",
+      "mode": "paper",
+      "network_transport_enabled": false,
+      "next_reconnect_delay_seconds": 2,
+      "reconnect_attempts": 0,
+      "session_id": "session-bfbaeecf54844e989df7e732dbb02a5a",
+      "state": "ready"
+    },
+    {
+      "audit_event_count": 2,
+      "authenticated": false,
+      "broker": "ibkr",
+      "connected": false,
+      "generated_at": "2026-07-29T08:00:39+00:00",
+      "heartbeat_timeout_seconds": 30,
+      "last_heartbeat_at": null,
+      "mode": "live",
+      "network_transport_enabled": false,
+      "next_reconnect_delay_seconds": 2,
+      "reconnect_attempts": 0,
+      "session_id": "session-67a37535511649499d8cf5e0ffbadd06",
+      "state": "disconnected"
+    },
+    {
+      "audit_event_count": 2,
+      "authenticated": false,
+      "broker": "alpaca",
+      "connected": false,
+      "generated_at": "2026-07-29T08:00:39+00:00",
+      "heartbeat_timeout_seconds": 30,
+      "last_heartbeat_at": null,
+      "mode": "live",
+      "network_transport_enabled": false,
+      "next_reconnect_delay_seconds": 2,
+      "reconnect_attempts": 0,
+      "session_id": "session-80a35cddf85c4cec8123eee9089593b8",
+      "state": "disconnected"
+    },
+    {
+      "audit_event_count": 2,
+      "authenticated": false,
+      "broker": "tradestation",
+      "connected": false,
+      "generated_at": "2026-07-29T08:00:39+00:00",
+      "heartbeat_timeout_seconds": 30,
+      "last_heartbeat_at": null,
+      "mode": "live",
+      "network_transport_enabled": false,
+      "next_reconnect_delay_seconds": 2,
+      "reconnect_attempts": 0,
+      "session_id": "session-e2a1b667eb7f4ca1bd78ac3eef535d0e",
+      "state": "disconnected"
+    }
+  ],
+  "status": "PASS",
+  "version": "35.0"
+}

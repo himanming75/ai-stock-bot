@@ -1,0 +1,36 @@
+{
+  "broker": "ibkr",
+  "broker_result": null,
+  "final_status": "REJECTED_LIVE_GATE",
+  "generated_at": "2026-07-29T07:47:52+00:00",
+  "live_transport_used": false,
+  "normalized_order": {
+    "client_order_id": "v31-121efebd07574d6b886c",
+    "limit_price": null,
+    "order_type": "market",
+    "quantity": "1",
+    "side": "buy",
+    "symbol": "AAPL",
+    "time_in_force": "day"
+  },
+  "pipeline": [
+    {
+      "errors": [],
+      "stage": "validation",
+      "status": "PASS"
+    },
+    {
+      "reasons": [
+        "Runtime --enable-live flag was not provided",
+        "No live approval file was provided"
+      ],
+      "stage": "live_gate",
+      "status": "FAIL"
+    }
+  ],
+  "receipt_sha256": "69797ac261a9dd6cf650e19b88e7ac30f642f1bc41fd95dfb0b41aa2071ad81a",
+  "requested_mode": "live",
+  "route_id": "route-362868da667248b19ae2388c2fa5eb69",
+  "schema_version": "v33.0.routing_receipt.1",
+  "version": "33.0"
+}
