@@ -1,0 +1,121 @@
+{
+  "decision": {
+    "checks": [
+      {
+        "check_id": "validation.status",
+        "message": "V44 order validation status must be PASS.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "validation.hash",
+        "message": "V44 validation SHA-256 verification failed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "validation.network",
+        "message": "V44 validation must report network_used=false.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.side",
+        "message": "Order side must be buy or sell.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.notional",
+        "message": "Order notional is valid.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.reference_price",
+        "message": "Reference price is valid.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.amount",
+        "message": "Estimated order risk exceeds 1000.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.percent",
+        "message": "Estimated order risk percent exceeds 1%.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "position.weight",
+        "message": "Projected position weight exceeds 20%.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "exposure.symbol",
+        "message": "Projected symbol exposure exceeds 25%.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "exposure.gross",
+        "message": "Projected gross exposure exceeds 100%.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "positions.count",
+        "message": "Projected open position count exceeds 10.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "symbol.duplicate_entry",
+        "message": "Duplicate symbol entry is not allowed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "loss.daily",
+        "message": "Daily realized loss reached the limit 2000.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "loss.consecutive",
+        "message": "Consecutive loss count reached 3.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "trades.daily_count",
+        "message": "Daily trade count reached 20.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "loss.cooldown",
+        "message": "Loss cooldown of 900 seconds is active.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "portfolio.drawdown",
+        "message": "Portfolio drawdown exceeds 10%.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "cash.reserve",
+        "message": "Projected cash reserve falls below 10%.",
+        "status": "PASS"
+      }
+    ],
+    "client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+    "decision": "approve",
+    "decision_sha256": "850e08ee41d9993200c4f1b3199f2e3a2c884c1e2f36959711d122e77d5b651a",
+    "estimated_risk_amount": "100",
+    "estimated_risk_pct": "0.1",
+    "network_used": false,
+    "order_notional": "10000",
+    "projected_cash_reserve_pct": "40",
+    "projected_gross_exposure_pct": "40",
+    "projected_position_weight_pct": "20",
+    "projected_symbol_exposure_pct": "20",
+    "rejection_reasons": [],
+    "schema_version": "v45.0.risk_policy_decision.1",
+    "side": "buy",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "version": "45.0"
+  },
+  "network_used": false,
+  "schema_version": "v45.0.risk_policy_export.1",
+  "version": "45.0"
+}

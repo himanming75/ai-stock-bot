@@ -1,0 +1,121 @@
+{
+  "network_used": false,
+  "result": {
+    "checks": [
+      {
+        "check_id": "intent.accepted",
+        "message": "Intent status must be ACCEPTED.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "symbol.present",
+        "message": "Symbol is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "side.valid",
+        "message": "Side must be buy or sell.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order_type.valid",
+        "message": "Order type must be market or limit.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "time_in_force.valid",
+        "message": "Time in force must be day or gtc.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "market.open",
+        "message": "Market is closed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "market.not_halted",
+        "message": "Symbol is halted.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "symbol.not_delisted",
+        "message": "Symbol is delisted.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.positive",
+        "message": "Quantity is valid.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.lot_size",
+        "message": "Quantity must be a multiple of lot size 1.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "market_order.no_limit_price",
+        "message": "Market orders must not include a limit price.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "price.tick_size",
+        "message": "Price must conform to tick size 0.01.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "intent.not_expired",
+        "message": "Order intent is expired.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "intent.hash",
+        "message": "Intent SHA-256 verification failed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "client_order_id.present",
+        "message": "client_order_id is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "client_order_id.unique",
+        "message": "Duplicate client_order_id was already validated.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "notional.minimum",
+        "message": "Order notional is below the minimum 1.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "notional.maximum",
+        "message": "Order notional exceeds the maximum 25000.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "account.cash",
+        "message": "Available cash is insufficient.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "account.buying_power",
+        "message": "Buying power is insufficient.",
+        "status": "PASS"
+      }
+    ],
+    "client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+    "network_used": false,
+    "order_notional": "10000",
+    "quantity": "50",
+    "reference_price": "200",
+    "rejection_reasons": [],
+    "schema_version": "v44.0.order_validation.1",
+    "side": "buy",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "validation_sha256": "79331184834d3592c48daec4cd8f5feb3df8878f40f1ddc806c67cc98db61952",
+    "version": "44.0"
+  },
+  "schema_version": "v44.0.order_validation_export.1",
+  "version": "44.0"
+}

@@ -1,7 +1,25 @@
 {
-  "error": "live mode requires --enable-live",
+  "intent": {
+    "client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+    "confidence": 90,
+    "expires_at": "2026-07-29T17:24:50+00:00",
+    "generated_at": "2026-07-29T17:19:50+00:00",
+    "intent_sha256": "963ec302f3480f57e92a0c94e470c44b694b20b0141291f2c3e363cf5c08e529",
+    "limit_price": null,
+    "network_used": false,
+    "order_type": "market",
+    "quantity": "50",
+    "rejection_reasons": [],
+    "schema_version": "v43.0.order_intent.1",
+    "side": "buy",
+    "signal_decision": "BUY",
+    "source_signal_sha256": "a1f8a80c43df190d37b13f40a6e10dd3b17111d4b07d36bfc30fbb22a3bde3ef",
+    "status": "ACCEPTED",
+    "symbol": "AAPL",
+    "time_in_force": "day",
+    "version": "43.0"
+  },
   "network_used": false,
-  "schema_version": "v43.0.order_intent_error.1",
-  "status": "FAIL",
+  "schema_version": "v43.0.order_intent_export.1",
   "version": "43.0"
 }
