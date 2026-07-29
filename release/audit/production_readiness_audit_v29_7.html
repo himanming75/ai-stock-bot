@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V29.7 Production Readiness Audit</title>
+<style>
+body{margin:0;background:#f3f5f8;color:#182230;font:14px/1.5 Arial,sans-serif}
+main{max-width:1050px;margin:0 auto;padding:30px 20px 60px}
+header{background:#172554;color:white;padding:26px;border-radius:16px}
+header h1{margin:0 0 8px} .summary{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.card{background:rgba(255,255,255,.13);padding:8px 12px;border-radius:9px}
+.check{background:white;border:1px solid #d9e0e8;border-left:6px solid #667085;border-radius:12px;padding:18px;margin-top:16px}
+.check.pass{border-left-color:#138a55} .check.fail{border-left-color:#c4322b} .check.warn{border-left-color:#c77700}
+.check-head{display:flex;justify-content:space-between;gap:15px;align-items:center}
+.check h2{font-size:17px;margin:0} .badge{font-weight:700;border-radius:999px;padding:4px 9px}
+.badge.pass{background:#dcfae6;color:#087443} .badge.fail{background:#fee4e2;color:#b42318} .badge.warn{background:#fef0c7;color:#93370d}
+pre{background:#f8fafc;border:1px solid #e4e7ec;padding:12px;overflow:auto;white-space:pre-wrap}
+footer{color:#667085;text-align:center;margin-top:20px}
+</style>
+</head>
+<body><main>
+<header>
+<h1>AI Stock Trading Bot V29.7 Production Readiness Audit</h1>
+<p>Generated 2026-07-29T07:14:35+00:00</p>
+<div class="summary">
+<div class="card">Overall: <strong>FAIL</strong></div>
+<div class="card">PASS: 10</div>
+<div class="card">WARN: 0</div>
+<div class="card">FAIL: 1</div>
+</div>
+</header>
+
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Git repository</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Project root is a Git working tree.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;stdout&quot;: &quot;true&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Release branch</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Current branch is main.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;branch&quot;: &quot;main&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Git commit identity</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Current commit SHA was resolved.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;commit&quot;: &quot;2b97f66907b1271c254bda66c339ac08b3d38552&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check fail">
+          <div class="check-head">
+            <h2>Git working tree</h2>
+            <span class="badge fail">FAIL</span>
+          </div>
+          <p>Unexpected tracked or untracked changes were found.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;allowed_generated_entries&quot;: [
+    &quot;?? dist/&quot;
+  ],
+  &quot;unexpected_entries&quot;: [
+    &quot;?? tools/production_readiness_audit_v29_7.py&quot;,
+    &quot;?? tools/test_production_readiness_audit_v29_7.py&quot;
+  ],
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Required release files</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>All required V29.5B and V29.6 files exist.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;required_count&quot;: 8,
+  &quot;missing&quot;: []
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Final release certificate</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Release certificate is PASS and paper-trading-only.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;status&quot;: &quot;PASS&quot;,
+  &quot;paper_trading_only&quot;: true,
+  &quot;verification_errors&quot;: []
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>V29.6 release verification</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>V29.6 package and SHA-256 records verified successfully.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;return_code&quot;: 0,
+  &quot;payload&quot;: {
+    &quot;errors&quot;: [],
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;verified_file_count&quot;: 482,
+    &quot;zip_sha256&quot;: &quot;b18003a822c8bbfbaf9a48f67e9f736eaa58965ca627f56ab26c96a24f8c43bf&quot;
+  },
+  &quot;parse_error&quot;: null,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>HTML Tear Sheet generator</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>V29.5B HTML generator CLI is available.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;return_code&quot;: 0,
+  &quot;stdout&quot;: &quot;usage: html_tear_sheet_final_report_v29_5b.py [-h] --input INPUT\n                                              --output OUTPUT [--title TITLE]\n                                              [--manifest-output MANIFEST_OUTPUT]\n\nHTML Tear Sheet &amp; Final Report Generator V29.5B\n\noptions:\n  -h, --help            show this help message and exit\n  --input INPUT\n  --output OUTPUT\n  --title TITLE\n  --manifest-output MANIFEST_OUTPUT\n&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>V29.5B and V29.6 regression tests</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>All targeted release regression tests passed.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;return_code&quot;: 0,
+  &quot;output_tail&quot;: &quot;test_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 1.216s\n\nOK&quot;
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Python source compilation</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Python source compilation completed without syntax errors.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;checked&quot;: [
+    &quot;backtest&quot;,
+    &quot;tools&quot;
+  ],
+  &quot;failed&quot;: []
+}</pre></details>
+        </section>
+        
+        <section class="check pass">
+          <div class="check-head">
+            <h2>Paper-trading safety mode</h2>
+            <span class="badge pass">PASS</span>
+          </div>
+          <p>Release manifest explicitly requires paper trading.</p>
+          <details><summary>Details</summary><pre>{
+  &quot;paper_trading&quot;: true
+}</pre></details>
+        </section>
+        
+<footer>V29.7 Production Readiness Audit · Paper-trading release candidate</footer>
+</main></body></html>

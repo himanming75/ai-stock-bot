@@ -1,0 +1,140 @@
+{
+  "checks": [
+    {
+      "check_id": "git.repository",
+      "details": {
+        "stderr": "",
+        "stdout": "true"
+      },
+      "status": "PASS",
+      "summary": "Project root is a Git working tree.",
+      "title": "Git repository"
+    },
+    {
+      "check_id": "git.branch",
+      "details": {
+        "branch": "main",
+        "stderr": ""
+      },
+      "status": "PASS",
+      "summary": "Current branch is main.",
+      "title": "Release branch"
+    },
+    {
+      "check_id": "git.commit",
+      "details": {
+        "commit": "2b97f66907b1271c254bda66c339ac08b3d38552",
+        "stderr": ""
+      },
+      "status": "PASS",
+      "summary": "Current commit SHA was resolved.",
+      "title": "Git commit identity"
+    },
+    {
+      "check_id": "git.working_tree",
+      "details": {
+        "allowed_generated_entries": [
+          "?? dist/"
+        ],
+        "stderr": "",
+        "unexpected_entries": [
+          "?? tools/production_readiness_audit_v29_7.py",
+          "?? tools/test_production_readiness_audit_v29_7.py"
+        ]
+      },
+      "status": "FAIL",
+      "summary": "Unexpected tracked or untracked changes were found.",
+      "title": "Git working tree"
+    },
+    {
+      "check_id": "files.required",
+      "details": {
+        "missing": [],
+        "required_count": 8
+      },
+      "status": "PASS",
+      "summary": "All required V29.5B and V29.6 files exist.",
+      "title": "Required release files"
+    },
+    {
+      "check_id": "release.certificate",
+      "details": {
+        "paper_trading_only": true,
+        "status": "PASS",
+        "verification_errors": []
+      },
+      "status": "PASS",
+      "summary": "Release certificate is PASS and paper-trading-only.",
+      "title": "Final release certificate"
+    },
+    {
+      "check_id": "release.verify",
+      "details": {
+        "parse_error": null,
+        "payload": {
+          "errors": [],
+          "status": "PASS",
+          "verified_file_count": 482,
+          "zip_sha256": "b18003a822c8bbfbaf9a48f67e9f736eaa58965ca627f56ab26c96a24f8c43bf"
+        },
+        "return_code": 0,
+        "stderr": ""
+      },
+      "status": "PASS",
+      "summary": "V29.6 package and SHA-256 records verified successfully.",
+      "title": "V29.6 release verification"
+    },
+    {
+      "check_id": "report.generator",
+      "details": {
+        "return_code": 0,
+        "stderr": "",
+        "stdout": "usage: html_tear_sheet_final_report_v29_5b.py [-h] --input INPUT\n                                              --output OUTPUT [--title TITLE]\n                                              [--manifest-output MANIFEST_OUTPUT]\n\nHTML Tear Sheet & Final Report Generator V29.5B\n\noptions:\n  -h, --help            show this help message and exit\n  --input INPUT\n  --output OUTPUT\n  --title TITLE\n  --manifest-output MANIFEST_OUTPUT\n"
+      },
+      "status": "PASS",
+      "summary": "V29.5B HTML generator CLI is available.",
+      "title": "HTML Tear Sheet generator"
+    },
+    {
+      "check_id": "tests.targeted",
+      "details": {
+        "output_tail": "test_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 1.216s\n\nOK",
+        "return_code": 0
+      },
+      "status": "PASS",
+      "summary": "All targeted release regression tests passed.",
+      "title": "V29.5B and V29.6 regression tests"
+    },
+    {
+      "check_id": "python.compile",
+      "details": {
+        "checked": [
+          "backtest",
+          "tools"
+        ],
+        "failed": []
+      },
+      "status": "PASS",
+      "summary": "Python source compilation completed without syntax errors.",
+      "title": "Python source compilation"
+    },
+    {
+      "check_id": "safety.paper_trading",
+      "details": {
+        "paper_trading": true
+      },
+      "status": "PASS",
+      "summary": "Release manifest explicitly requires paper trading.",
+      "title": "Paper-trading safety mode"
+    }
+  ],
+  "generated_at": "2026-07-29T07:14:35+00:00",
+  "schema_version": "v29.7.production_readiness_audit.1",
+  "status": "FAIL",
+  "summary": {
+    "fail": 1,
+    "pass": 10,
+    "warn": 0
+  },
+  "version": "29.7"
+}
