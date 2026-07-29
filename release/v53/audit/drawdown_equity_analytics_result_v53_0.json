@@ -1,0 +1,65 @@
+{
+  "network_used": false,
+  "result": {
+    "analytics_sha256": "a688d625a13110643adc84ae85ae1eb1998b8ad8a20710afdd447a9fa42864e6",
+    "current_drawdown": "0.000000",
+    "current_drawdown_amount": "0.0000",
+    "current_drawdown_duration_periods": 0,
+    "decision": "drawdown_analytics",
+    "drawdown_event_count": 0,
+    "drawdown_events": [],
+    "ending_equity": "100247.0000",
+    "equity_change": "0.0000",
+    "equity_curve": [
+      {
+        "drawdown_amount": "0.0000",
+        "drawdown_duration_periods": 0,
+        "drawdown_rate": "0.000000",
+        "equity": "100247.0000",
+        "point_sha256": "106002c5af2c46f3ad26227a2b148bb0175b5ae30008d2c493d8998ddb333525",
+        "rolling_low": "100247.0000",
+        "rolling_peak": "100247.0000",
+        "sequence": 1,
+        "snapshot_sha256": "7c368d1ccd8ce93f7d08fd2b4cd9a940ad72bf45650b40ddffbf4bd0243137cb",
+        "snapshot_time": "2026-07-29T21:00:00Z",
+        "underwater": false
+      }
+    ],
+    "flat_equity_periods": 0,
+    "highest_equity": "100247.0000",
+    "ledger": [
+      {
+        "drawdown_event_count": 0,
+        "entry_sha256": "e44f92175a9723d7f855a702c012aa68b48ef5d9e78868898562b71f975da13c",
+        "event_type": "DRAWDOWN_ANALYTICS_CREATED",
+        "longest_drawdown_duration_periods": 0,
+        "maximum_drawdown": "0.000000",
+        "payload_sha256": "ad5d25986c6b17940495a3c827a276298e27f17d276152bbdf242016139dd958",
+        "previous_entry_sha256": "GENESIS",
+        "sequence": 1,
+        "snapshot_count": 1
+      }
+    ],
+    "longest_drawdown_duration_periods": 0,
+    "lowest_equity": "100247.0000",
+    "maximum_drawdown": "0.000000",
+    "maximum_drawdown_amount": "0.0000",
+    "maximum_drawdown_peak_time": null,
+    "maximum_drawdown_trough_time": null,
+    "negative_equity_periods": 0,
+    "network_used": false,
+    "positive_equity_periods": 0,
+    "recovered_drawdown_events": 0,
+    "rejection_reasons": [],
+    "schema_version": "v53.0.drawdown_equity_analytics.1",
+    "snapshot_count": 1,
+    "starting_equity": "100247.0000",
+    "status": "PASS",
+    "total_return": "0.000000",
+    "underwater_now": false,
+    "unrecovered_drawdown_events": 0,
+    "version": "53.0"
+  },
+  "schema_version": "v53.0.drawdown_equity_analytics_export.1",
+  "version": "53.0"
+}
