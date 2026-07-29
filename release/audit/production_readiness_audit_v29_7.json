@@ -23,7 +23,7 @@
     {
       "check_id": "git.commit",
       "details": {
-        "commit": "2b97f66907b1271c254bda66c339ac08b3d38552",
+        "commit": "30f8312360675e4d7e1ecc9562eedc8061bfc2c2",
         "stderr": ""
       },
       "status": "PASS",
@@ -37,13 +37,10 @@
           "?? dist/"
         ],
         "stderr": "",
-        "unexpected_entries": [
-          "?? tools/production_readiness_audit_v29_7.py",
-          "?? tools/test_production_readiness_audit_v29_7.py"
-        ]
+        "unexpected_entries": []
       },
-      "status": "FAIL",
-      "summary": "Unexpected tracked or untracked changes were found.",
+      "status": "PASS",
+      "summary": "No unexpected working-tree changes were found.",
       "title": "Git working tree"
     },
     {
@@ -98,7 +95,7 @@
     {
       "check_id": "tests.targeted",
       "details": {
-        "output_tail": "test_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 1.216s\n\nOK",
+        "output_tail": "test_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 1.255s\n\nOK",
         "return_code": 0
       },
       "status": "PASS",
@@ -128,12 +125,12 @@
       "title": "Paper-trading safety mode"
     }
   ],
-  "generated_at": "2026-07-29T07:14:35+00:00",
+  "generated_at": "2026-07-29T07:18:12+00:00",
   "schema_version": "v29.7.production_readiness_audit.1",
-  "status": "FAIL",
+  "status": "PASS",
   "summary": {
-    "fail": 1,
-    "pass": 10,
+    "fail": 0,
+    "pass": 11,
     "warn": 0
   },
   "version": "29.7"
