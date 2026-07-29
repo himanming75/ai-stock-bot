@@ -1,0 +1,137 @@
+{
+  "network_used": false,
+  "result": {
+    "checks": [
+      {
+        "check_id": "risk.status",
+        "message": "V45 risk-policy status must be PASS.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.decision",
+        "message": "V45 risk-policy decision must be approve.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.hash",
+        "message": "V45 risk-policy SHA-256 verification failed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.network",
+        "message": "V45 risk-policy result must report network_used=false.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.rejections",
+        "message": "V45 risk-policy result contains rejection reasons.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.symbol",
+        "message": "Symbol is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.side",
+        "message": "Side must be buy or sell.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.client_order_id",
+        "message": "client_order_id is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.maximum",
+        "message": "Quantity exceeds router maximum 10000.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.lot_size",
+        "message": "Quantity must be a multiple of lot size 1.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.type",
+        "message": "Order type must be market or limit.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.time_in_force",
+        "message": "Time in force must be day or gtc.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.market_price",
+        "message": "Market order does not include a limit price.",
+        "status": "PASS"
+      }
+    ],
+    "child_order_count": 3,
+    "children": [
+      {
+        "child_order_id": "v46-e256ec869f0614695b39b41d",
+        "child_sha256": "791a63d6b6a2772a2efbf768e048456e0e4ca79943d7b8711a6f837992b6c294",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "500",
+        "sequence": 1,
+        "side": "buy",
+        "status": "ROUTED_PAPER",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "venue": "PAPER_PRIMARY"
+      },
+      {
+        "child_order_id": "v46-53e30d2fddc5e0f964ed84f0",
+        "child_sha256": "2da08082b9c3e19a79dcd929c1da9fadcb4a44e7cf671c9b6bc3044a997f0e4c",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "100",
+        "sequence": 2,
+        "side": "buy",
+        "status": "ROUTED_PAPER",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "venue": "PAPER_PRIMARY"
+      },
+      {
+        "child_order_id": "v46-f0659c08a51a671b07eeca07",
+        "child_sha256": "df95a5c8b9c6242fadda662be78a000aa2cce8b141db4b19246d77dcbee38958",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "400",
+        "sequence": 3,
+        "side": "buy",
+        "status": "ROUTED_PAPER",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "venue": "PAPER_SECONDARY"
+      }
+    ],
+    "limit_price": null,
+    "network_used": false,
+    "order_type": "market",
+    "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+    "rejection_reasons": [],
+    "requested_quantity": "1000",
+    "route_decision": "route",
+    "route_sha256": "178ec535c1af490765259381bb3c4615903faebf18eed1c904027df0a9e0006c",
+    "routed_quantity": "1000",
+    "schema_version": "v46.0.route_plan.1",
+    "side": "buy",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "time_in_force": "day",
+    "version": "46.0"
+  },
+  "schema_version": "v46.0.order_router_export.1",
+  "version": "46.0"
+}

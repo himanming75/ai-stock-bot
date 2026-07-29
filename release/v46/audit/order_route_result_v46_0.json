@@ -1,0 +1,107 @@
+{
+  "network_used": false,
+  "result": {
+    "checks": [
+      {
+        "check_id": "risk.status",
+        "message": "V45 risk-policy status must be PASS.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.decision",
+        "message": "V45 risk-policy decision must be approve.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.hash",
+        "message": "V45 risk-policy SHA-256 verification failed.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.network",
+        "message": "V45 risk-policy result must report network_used=false.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "risk.rejections",
+        "message": "V45 risk-policy result contains rejection reasons.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.symbol",
+        "message": "Symbol is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.side",
+        "message": "Side must be buy or sell.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.client_order_id",
+        "message": "client_order_id is required.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.maximum",
+        "message": "Quantity exceeds router maximum 10000.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "quantity.lot_size",
+        "message": "Quantity must be a multiple of lot size 1.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.type",
+        "message": "Order type must be market or limit.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.time_in_force",
+        "message": "Time in force must be day or gtc.",
+        "status": "PASS"
+      },
+      {
+        "check_id": "order.market_price",
+        "message": "Market order does not include a limit price.",
+        "status": "PASS"
+      }
+    ],
+    "child_order_count": 1,
+    "children": [
+      {
+        "child_order_id": "v46-5af5a7117edb435c615b5ca6",
+        "child_sha256": "5da55eec1b3de1e27ffc161950694077c5a1c41b5c2345e88616dec6dc0bfd51",
+        "limit_price": null,
+        "network_used": false,
+        "order_type": "market",
+        "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+        "quantity": "50",
+        "sequence": 1,
+        "side": "buy",
+        "status": "ROUTED_PAPER",
+        "symbol": "AAPL",
+        "time_in_force": "day",
+        "venue": "PAPER_PRIMARY"
+      }
+    ],
+    "limit_price": null,
+    "network_used": false,
+    "order_type": "market",
+    "parent_client_order_id": "v43-0522b8b5f365da3bf1bef21c",
+    "rejection_reasons": [],
+    "requested_quantity": "50",
+    "route_decision": "route",
+    "route_sha256": "30136c1c776553ed0c9efb01e0b42466006783b3d6d8b25649c53578dedae632",
+    "routed_quantity": "50",
+    "schema_version": "v46.0.route_plan.1",
+    "side": "buy",
+    "status": "PASS",
+    "symbol": "AAPL",
+    "time_in_force": "day",
+    "version": "46.0"
+  },
+  "schema_version": "v46.0.order_router_export.1",
+  "version": "46.0"
+}
