@@ -1,0 +1,81 @@
+{
+  "network_used": false,
+  "schema_version": "v36.1.order_lifecycle_demo.1",
+  "snapshot": {
+    "average_fill_price": "200",
+    "client_order_id": "v36-13fe4564ed394acaa8a2",
+    "event_count": 5,
+    "filled_quantity": "4",
+    "generated_at": "2026-07-29T08:04:35+00:00",
+    "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+    "quantity": "10",
+    "remaining_quantity": "6",
+    "side": "buy",
+    "state": "partially_filled",
+    "symbol": "AAPL",
+    "terminal": false
+  },
+  "timeline": [
+    {
+      "details": {},
+      "event_id": "evt-422ea2daa7b14a6996434d15611ad4f8",
+      "event_sha256": "efde5ea148cb1a3be32cfbd4edaf6fc875b13a44532413af5897e88a6337208c",
+      "event_type": "created",
+      "generated_at": "2026-07-29T08:04:35+00:00",
+      "message": "Order lifecycle created.",
+      "new_state": "created",
+      "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+      "previous_state": "created"
+    },
+    {
+      "details": {},
+      "event_id": "evt-497e4b2bb63c4b7dbd3da5bb7535814c",
+      "event_sha256": "7cb15e30aff309d336617bca4bf3c3ad8a9a3239032ba7dbe1f6b07c8206371c",
+      "event_type": "validated",
+      "generated_at": "2026-07-29T08:04:35+00:00",
+      "message": "Order validation passed.",
+      "new_state": "validated",
+      "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+      "previous_state": "created"
+    },
+    {
+      "details": {},
+      "event_id": "evt-d07533baa05b4301a5205e632942e0a3",
+      "event_sha256": "d08f3fdc975b5ea5bf5363753f5b33c1bf6205ed43d2536a174d442961c8e96d",
+      "event_type": "routed",
+      "generated_at": "2026-07-29T08:04:35+00:00",
+      "message": "Order routed to broker adapter.",
+      "new_state": "routed",
+      "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+      "previous_state": "validated"
+    },
+    {
+      "details": {},
+      "event_id": "evt-ac5aba4d3e6b472cb3299dd7046fbfa6",
+      "event_sha256": "d0b5598c9778c4d87269d7cd889ea64ebd42710b1d510df16f37f32d5927b8bb",
+      "event_type": "accepted",
+      "generated_at": "2026-07-29T08:04:35+00:00",
+      "message": "Broker accepted the order.",
+      "new_state": "accepted",
+      "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+      "previous_state": "routed"
+    },
+    {
+      "details": {
+        "cumulative_filled_quantity": "4",
+        "fill_price": "200",
+        "fill_quantity": "4",
+        "remaining_quantity": "6"
+      },
+      "event_id": "evt-c90a0b610ce044c585ff3f0e8b27fdde",
+      "event_sha256": "0d784e3307d4625c37ee0b9fc0aa3b1512077a93a70d79db17ce7e63acd81a51",
+      "event_type": "partial_fill",
+      "generated_at": "2026-07-29T08:04:35+00:00",
+      "message": "Order partially filled.",
+      "new_state": "partially_filled",
+      "order_id": "order-874136100a6a4e2889a41942c649cfa1",
+      "previous_state": "accepted"
+    }
+  ],
+  "version": "36.1"
+}
