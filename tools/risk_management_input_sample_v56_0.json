@@ -1,0 +1,44 @@
+{
+  "state": {
+    "equity": "100000.00",
+    "daily_realized_pnl": "-500.00",
+    "daily_unrealized_pnl": "-250.00",
+    "consecutive_losses": 1,
+    "open_position_count": 3,
+    "portfolio_risk_amount": "2500.00",
+    "symbol_risk_amount": "500.00",
+    "last_trade_time_utc": "2026-07-29T15:00:00Z",
+    "open_order_keys": [],
+    "kill_switch_active": false,
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "request": {
+    "request_id": "v56-sample-001",
+    "symbol": "AAPL",
+    "action": "BUY",
+    "quantity": "100",
+    "entry_price": "200.00",
+    "stop_price": "190.00",
+    "take_profit_price": "225.00",
+    "estimated_risk_amount": "1000.00",
+    "position_sizing_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "requested_at_utc": "2026-07-29T16:00:00Z",
+    "order_key": "AAPL-BUY-100-200",
+    "metadata": {
+      "source": "V55 sample position"
+    }
+  },
+  "config": {
+    "max_daily_loss_percent": "0.03",
+    "max_consecutive_losses": 3,
+    "max_open_positions": 10,
+    "max_symbol_risk_percent": "0.02",
+    "max_portfolio_risk_percent": "0.06",
+    "minimum_risk_reward_ratio": "2.0",
+    "session_start_hour_utc": 13,
+    "session_end_hour_utc": 21,
+    "cooldown_minutes": 15,
+    "require_stop_loss": true,
+    "require_take_profit": true
+  }
+}
