@@ -1,0 +1,68 @@
+{
+  "network_used": false,
+  "result": {
+    "annualization_factor": "252.000000",
+    "annualized_return": "0.447443",
+    "arithmetic_mean_return": "0.001469",
+    "best_period_return": "0.001469",
+    "calmar_ratio": "Infinity",
+    "calmar_ratio_infinite": true,
+    "cumulative_return": "0.001469",
+    "decision": "risk_metrics",
+    "downside_deviation_annualized": "0.000000",
+    "downside_deviation_periodic": "0.000000",
+    "flat_periods": 0,
+    "ledger": [
+      {
+        "annualization_factor": "252.000000",
+        "entry_sha256": "f7d2a2608c07c78e529676b7169205b6710415e2dc0f3e5d1ff9fbb0902f19fb",
+        "event_type": "RISK_ADJUSTED_METRICS_CREATED",
+        "mean_return": "0.001469",
+        "payload_sha256": "181bd1470080d85f034c523b5e1046d383ed0b3c2714d17563d600715c8e4d03",
+        "period_count": 1,
+        "previous_entry_sha256": "GENESIS",
+        "sequence": 1,
+        "sharpe_ratio": "Infinity",
+        "sortino_ratio": "Infinity",
+        "volatility": "0.000000"
+      }
+    ],
+    "maximum_drawdown": "0.000000",
+    "metrics_sha256": "6e175a4d0b4e8d83b25b361104d54e6d3765a9d4dfb6112c91adafaeb6aaf8e9",
+    "negative_periods": 0,
+    "network_used": false,
+    "period_count": 1,
+    "positive_periods": 1,
+    "rejection_reasons": [],
+    "return_points": [
+      {
+        "beginning_equity": "100100.0000",
+        "downside_return": "0.000000",
+        "ending_equity": "100247.0000",
+        "excess_return": "0.001313",
+        "period_return": "0.001469",
+        "point_sha256": "6c0df6751cec220e373a1632d2fb3629eaf73379752fb4b49d903e670ae3d064",
+        "sequence": 1,
+        "snapshot_sha256": "7c368d1ccd8ce93f7d08fd2b4cd9a940ad72bf45650b40ddffbf4bd0243137cb",
+        "snapshot_time": "2026-07-29T21:00:00Z"
+      }
+    ],
+    "risk_free_rate_annual": "0.040000",
+    "risk_free_rate_periodic": "0.000156",
+    "schema_version": "v52.0.risk_adjusted_return_metrics.1",
+    "sharpe_ratio": "Infinity",
+    "sharpe_ratio_infinite": true,
+    "snapshot_count": 1,
+    "sortino_ratio": "Infinity",
+    "sortino_ratio_infinite": true,
+    "status": "PASS",
+    "target_return_annual": "0.000000",
+    "target_return_periodic": "0.000000",
+    "version": "52.0",
+    "volatility_annualized": "0.000000",
+    "volatility_periodic": "0.000000",
+    "worst_period_return": "0.001469"
+  },
+  "schema_version": "v52.0.risk_adjusted_return_metrics_export.1",
+  "version": "52.0"
+}
