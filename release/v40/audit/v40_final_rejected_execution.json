@@ -1,0 +1,68 @@
+{
+  "audit_log": [
+    {
+      "details": {
+        "order_id": "order-a3f6c9c112364010a4a8cac5f09c598a",
+        "price": "200",
+        "quantity": "200",
+        "side": "buy",
+        "symbol": "AAPL"
+      },
+      "event_id": "evt-ce611371b9574da4a36ce1416d72a7d9",
+      "event_sha256": "15697459919879cce096b7c783688d3741d60576c3ecb5e20561b22defff4653",
+      "generated_at": "2026-07-29T16:30:10+00:00",
+      "message": "Order request created.",
+      "stage": "order_created",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "order_notional": "40000",
+        "projected_gross_exposure": "70000",
+        "projected_gross_exposure_pct": "70",
+        "projected_symbol_exposure": "50000",
+        "projected_symbol_exposure_pct": "50",
+        "rejection_reasons": [
+          "Order notional exceeds the configured maximum.",
+          "Projected symbol exposure exceeds the configured maximum."
+        ]
+      },
+      "event_id": "evt-cf4ab357175d4e55956823e27df27876",
+      "event_sha256": "f5113d8c72c88007b5a5e11eace9adff6722760fbd8b862a328bbf8d60b65f7b",
+      "generated_at": "2026-07-29T16:30:10+00:00",
+      "message": "Risk checks rejected the order.",
+      "stage": "risk_check",
+      "status": "FAIL"
+    }
+  ],
+  "network_used": false,
+  "receipt": {
+    "average_fill_price": null,
+    "event_count": 2,
+    "execution_id": "exec-3df00e748ed948fb888c261f241c6d0e",
+    "filled_quantity": "0",
+    "generated_at": "2026-07-29T16:30:10+00:00",
+    "network_used": false,
+    "order_id": "order-a3f6c9c112364010a4a8cac5f09c598a",
+    "portfolio_cash": "50000",
+    "portfolio_equity": "80000",
+    "portfolio_market_value": "30000",
+    "position_average_price": null,
+    "position_quantity": "0",
+    "receipt_sha256": "2ddab077d570c9cd4f832e3245c52bb549fa1c4e67e1c33fb0c035979975f603",
+    "rejection_reasons": [
+      "Order notional exceeds the configured maximum.",
+      "Projected symbol exposure exceeds the configured maximum."
+    ],
+    "remaining_quantity": "200",
+    "requested_quantity": "200",
+    "risk_decision": "reject",
+    "schema_version": "v40.0.execution_receipt.1",
+    "side": "buy",
+    "status": "rejected_risk",
+    "symbol": "AAPL",
+    "version": "40.0"
+  },
+  "schema_version": "v40.0.execution_simulation.1",
+  "version": "40.0"
+}

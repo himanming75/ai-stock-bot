@@ -1,0 +1,146 @@
+{
+  "audit_log": [
+    {
+      "details": {
+        "order_id": "order-1bad9f362e1a4558818e6d9e8ee4b50d",
+        "price": "200",
+        "quantity": "10",
+        "side": "buy",
+        "symbol": "AAPL"
+      },
+      "event_id": "evt-6938ea81f77e4e9c823be38d9559be9d",
+      "event_sha256": "931e82b185f432f2ce5b825e057e6525c94e6b1a679470b4782470b7ddbbec4b",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Order request created.",
+      "stage": "order_created",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "order_notional": "2000",
+        "projected_gross_exposure": "32000",
+        "projected_gross_exposure_pct": "32",
+        "projected_symbol_exposure": "12000",
+        "projected_symbol_exposure_pct": "12",
+        "rejection_reasons": []
+      },
+      "event_id": "evt-bf5ec6ebd67d41ff959a2126d4e18b91",
+      "event_sha256": "dc75bf7b1621fd5adb9a02860eb31913b69eccd44845b967f883d817e44cd90a",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Risk checks passed.",
+      "stage": "risk_check",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "event_id": "evt-7edb3817fc6e48c9ac949a71f6774edc",
+      "event_sha256": "fa94d96b4e2b2b4e0f02ade916ca199ffa678e0e260b39eb24bffc0a92b6abff",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Order validation passed.",
+      "stage": "order_validated",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "network_used": false
+      },
+      "event_id": "evt-8351f97898bb43ec89cd1715d79a9d9c",
+      "event_sha256": "ba7592fd3f20aaf11a64b50318b4930791e37882f0014a9590ea52687cb1582e",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Order routed to offline paper execution.",
+      "stage": "order_routed",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "event_id": "evt-94d9d120c00749e695a16c9244548342",
+      "event_sha256": "582bcbda2db75d7478f32ad353f1c541f346441da9fa078ebc8011774d9077ba",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Offline paper broker accepted the order.",
+      "stage": "order_accepted",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "cumulative_filled_quantity": "4",
+        "fill_price": "200",
+        "fill_quantity": "4",
+        "remaining_quantity": "6",
+        "trade_id": "trade-001"
+      },
+      "event_id": "evt-d7c34e72adfb447fab411b210a2711c5",
+      "event_sha256": "6d07d5029a26df019e858c97eacd6647d9c07f27c1d4a20f6f3c464b88164bf7",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Order partially filled.",
+      "stage": "fill",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "cumulative_filled_quantity": "10",
+        "fill_price": "210",
+        "fill_quantity": "6",
+        "remaining_quantity": "0",
+        "trade_id": "trade-002"
+      },
+      "event_id": "evt-eb6e16ccd65a483a80d8f95c925031f3",
+      "event_sha256": "691e071192ae4caea98e1ddba1bb8e7c81a4d2ba137c25e063a09b77fa1405e7",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Order fully filled.",
+      "stage": "fill",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "position_average_price": "206",
+        "position_quantity": "10"
+      },
+      "event_id": "evt-785aeb9153064888a77556258c91d07f",
+      "event_sha256": "7c37ebcec7fc404be71d7fdbfec6927a8dd9d7497fcbfe02ec2ea2eeea3740c8",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Position updated from accepted fills.",
+      "stage": "position_update",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "cash": "47940",
+        "equity": "80000",
+        "market_value": "32060"
+      },
+      "event_id": "evt-7d04788f542045688c1087102e86c57d",
+      "event_sha256": "cf3652291e48584516452fd3f04460082a82cb2a894667e8a5b46ef2156e93f5",
+      "generated_at": "2026-07-29T16:30:07+00:00",
+      "message": "Portfolio snapshot updated.",
+      "stage": "portfolio_update",
+      "status": "PASS"
+    }
+  ],
+  "network_used": false,
+  "receipt": {
+    "average_fill_price": "206",
+    "event_count": 9,
+    "execution_id": "exec-9e3bf373b4fa49d799d60a4d681e13a0",
+    "filled_quantity": "10",
+    "generated_at": "2026-07-29T16:30:07+00:00",
+    "network_used": false,
+    "order_id": "order-1bad9f362e1a4558818e6d9e8ee4b50d",
+    "portfolio_cash": "47940",
+    "portfolio_equity": "80000",
+    "portfolio_market_value": "32060",
+    "position_average_price": "206",
+    "position_quantity": "10",
+    "receipt_sha256": "cf1a08dd69fa5a2dd9b2cf603465472215899680b34e1a07a06ef2dd45b7a035",
+    "rejection_reasons": [],
+    "remaining_quantity": "0",
+    "requested_quantity": "10",
+    "risk_decision": "approve",
+    "schema_version": "v40.0.execution_receipt.1",
+    "side": "buy",
+    "status": "filled",
+    "symbol": "AAPL",
+    "version": "40.0"
+  },
+  "schema_version": "v40.0.execution_simulation.1",
+  "version": "40.0"
+}
