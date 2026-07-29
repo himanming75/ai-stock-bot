@@ -1,0 +1,198 @@
+{
+  "audited_release": "30.0.0",
+  "checks": [
+    {
+      "check_id": "git.repository",
+      "details": {
+        "stderr": "",
+        "stdout": "true"
+      },
+      "status": "PASS",
+      "summary": "Project root is a Git repository.",
+      "title": "Git repository"
+    },
+    {
+      "check_id": "git.branch",
+      "details": {
+        "branch": "main",
+        "stderr": ""
+      },
+      "status": "PASS",
+      "summary": "Current branch is main.",
+      "title": "Current branch"
+    },
+    {
+      "check_id": "git.working_tree",
+      "details": {
+        "allowed_generated_entries": [
+          "?? release/v30/audit/"
+        ],
+        "stderr": "",
+        "unexpected_entries": []
+      },
+      "status": "PASS",
+      "summary": "No unexpected working-tree changes were found.",
+      "title": "Git working tree"
+    },
+    {
+      "check_id": "git.head",
+      "details": {
+        "commit": "f67c8e576be201ca77717b64ab55d0d3c4ec4904",
+        "stderr": ""
+      },
+      "status": "PASS",
+      "summary": "HEAD commit SHA was resolved.",
+      "title": "HEAD commit"
+    },
+    {
+      "check_id": "tag.exists",
+      "details": {
+        "stderr": "",
+        "stdout": "v30.0.0"
+      },
+      "status": "PASS",
+      "summary": "Tag v30.0.0 exists.",
+      "title": "V30 Git tag"
+    },
+    {
+      "check_id": "tag.commit",
+      "details": {
+        "stderr": "",
+        "tag_commit": "a9d357f978c9b09ce5b478741f4d869d2e16d9f8"
+      },
+      "status": "PASS",
+      "summary": "Tag commit SHA was resolved.",
+      "title": "Tag commit identity"
+    },
+    {
+      "check_id": "tag.ancestry",
+      "details": {
+        "head_commit": "f67c8e576be201ca77717b64ab55d0d3c4ec4904",
+        "note": "A later .gitignore or audit-report commit may make HEAD newer than the release tag.",
+        "same_commit": false,
+        "stderr": "",
+        "tag_commit": "a9d357f978c9b09ce5b478741f4d869d2e16d9f8"
+      },
+      "status": "PASS",
+      "summary": "Tag and current HEAD commit identities are available.",
+      "title": "Tag ancestry"
+    },
+    {
+      "check_id": "artifacts.required",
+      "details": {
+        "missing": []
+      },
+      "status": "PASS",
+      "summary": "All V30 final artifacts and prerequisite audit exist.",
+      "title": "Required final artifacts"
+    },
+    {
+      "check_id": "manifest.identity",
+      "details": {
+        "status": "FINAL_STABLE",
+        "tag": "v30.0.0",
+        "version": "30.0.0"
+      },
+      "status": "PASS",
+      "summary": "Final manifest identifies V30.0.0 FINAL_STABLE.",
+      "title": "Final manifest identity"
+    },
+    {
+      "check_id": "certificate.status",
+      "details": {
+        "status": "PASS",
+        "zip_verification_errors": []
+      },
+      "status": "PASS",
+      "summary": "Final stable release certificate is PASS.",
+      "title": "Final certificate status"
+    },
+    {
+      "check_id": "safety.paper_trading",
+      "details": {
+        "certificate": true,
+        "manifest": true
+      },
+      "status": "PASS",
+      "summary": "Manifest and certificate both enforce paper-trading-only mode.",
+      "title": "Paper-trading-only safety"
+    },
+    {
+      "check_id": "audit.prerequisite",
+      "details": {
+        "status": "PASS",
+        "summary": {
+          "fail": 0,
+          "pass": 11,
+          "warn": 0
+        }
+      },
+      "status": "PASS",
+      "summary": "V29.7 prerequisite audit is PASS with zero failures.",
+      "title": "V29.7 prerequisite audit"
+    },
+    {
+      "check_id": "artifacts.hashes",
+      "details": {
+        "manifest_hash_ok": true,
+        "notes_hash_ok": true
+      },
+      "status": "PASS",
+      "summary": "Certificate hashes match the current manifest and release notes.",
+      "title": "Manifest and notes hashes"
+    },
+    {
+      "check_id": "zip.exists",
+      "details": {
+        "path": "C:\\stock-bot\\dist\\ai-stock-trading-bot-v30.0.0-final.zip"
+      },
+      "status": "PASS",
+      "summary": "Final V30 release ZIP exists.",
+      "title": "Final release ZIP"
+    },
+    {
+      "check_id": "zip.integrity",
+      "details": {
+        "errors": [],
+        "file_count": 493,
+        "sha256": "388161e6f0b4c7bda38ae8f010560eebac235745ca6f89868819e7ad35752229",
+        "size_bytes": 5711355
+      },
+      "status": "PASS",
+      "summary": "Final ZIP passed CRC and required-entry checks.",
+      "title": "Final ZIP integrity"
+    },
+    {
+      "check_id": "tests.regression",
+      "details": {
+        "output_tail": "{\n  \"status\": \"PASS\",\n  \"summary\": {\n    \"pass\": 1,\n    \"warn\": 0,\n    \"fail\": 0\n  },\n  \"json_output\": \"C:\\\\Users\\\\Public\\\\Documents\\\\ESTsoft\\\\CreatorTemp\\\\tmp43quntas\\\\audit.json\",\n  \"html_output\": \"C:\\\\Users\\\\Public\\\\Documents\\\\ESTsoft\\\\CreatorTemp\\\\tmp43quntas\\\\audit.html\"\n}\n\ntest_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\ntest_check_factory (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_check_factory) ... ok\ntest_main_writes_outputs (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_main_writes_outputs) ... ok\ntest_render_html (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_render_html) ... ok\ntest_required_files_missing (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_required_files_missing) ... ok\ntest_finalize_and_verify (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_finalize_and_verify) ... ok\ntest_prerequisite_failure (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_prerequisite_failure) ... ok\ntest_prerequisites_pass (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_prerequisites_pass) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.565s\n\nOK",
+        "return_code": 0
+      },
+      "status": "PASS",
+      "summary": "All V30 release regression tests passed.",
+      "title": "V30 regression tests"
+    },
+    {
+      "check_id": "python.compile",
+      "details": {
+        "checked": [
+          "backtest",
+          "tools"
+        ],
+        "failed": []
+      },
+      "status": "PASS",
+      "summary": "Python source compilation completed without syntax errors.",
+      "title": "Python source compilation"
+    }
+  ],
+  "expected_tag": "v30.0.0",
+  "generated_at": "2026-07-29T07:34:07+00:00",
+  "schema_version": "v30.1.release_integrity_audit.1",
+  "status": "PASS",
+  "summary": {
+    "fail": 0,
+    "pass": 17
+  },
+  "version": "30.1"
+}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V30.1 Release Integrity Audit</title>
+<style>
+body{margin:0;background:#f4f6f8;color:#182230;font:14px/1.5 Arial,sans-serif}
+main{max-width:1080px;margin:auto;padding:30px 20px 60px}
+header{background:#14213d;color:white;border-radius:16px;padding:26px}
+header h1{margin:0 0 8px}
+.summary{display:flex;gap:12px;margin-top:15px;flex-wrap:wrap}
+.card{background:rgba(255,255,255,.14);padding:8px 12px;border-radius:9px}
+.check{margin-top:16px;background:white;border:1px solid #d8dee7;border-left:6px solid #667085;border-radius:12px;padding:18px}
+.check.pass{border-left-color:#138a55} .check.fail{border-left-color:#c4322b}
+.head{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.head h2{margin:0;font-size:17px}
+.badge{padding:4px 9px;border-radius:999px;font-weight:700}
+.badge.pass{background:#dcfae6;color:#087443} .badge.fail{background:#fee4e2;color:#b42318}
+pre{background:#f8fafc;border:1px solid #e4e7ec;padding:12px;overflow:auto;white-space:pre-wrap}
+footer{color:#667085;text-align:center;margin-top:22px}
+</style>
+</head>
+<body><main>
+<header>
+<h1>AI Stock Trading Bot V30.1 Release Integrity Audit</h1>
+<p>Audited release: V30.0.0 · Generated 2026-07-29T07:34:07+00:00</p>
+<div class="summary">
+<div class="card">Overall: <strong>PASS</strong></div>
+<div class="card">PASS: 17</div>
+<div class="card">FAIL: 0</div>
+</div>
+</header>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Git repository</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Project root is a Git repository.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;stdout&quot;: &quot;true&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Current branch</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Current branch is main.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;branch&quot;: &quot;main&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Git working tree</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>No unexpected working-tree changes were found.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;allowed_generated_entries&quot;: [
+    &quot;?? release/v30/audit/&quot;
+  ],
+  &quot;unexpected_entries&quot;: [],
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>HEAD commit</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>HEAD commit SHA was resolved.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;commit&quot;: &quot;f67c8e576be201ca77717b64ab55d0d3c4ec4904&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>V30 Git tag</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Tag v30.0.0 exists.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;stdout&quot;: &quot;v30.0.0&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Tag commit identity</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Tag commit SHA was resolved.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;tag_commit&quot;: &quot;a9d357f978c9b09ce5b478741f4d869d2e16d9f8&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Tag ancestry</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Tag and current HEAD commit identities are available.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;tag_commit&quot;: &quot;a9d357f978c9b09ce5b478741f4d869d2e16d9f8&quot;,
+  &quot;head_commit&quot;: &quot;f67c8e576be201ca77717b64ab55d0d3c4ec4904&quot;,
+  &quot;same_commit&quot;: false,
+  &quot;note&quot;: &quot;A later .gitignore or audit-report commit may make HEAD newer than the release tag.&quot;,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Required final artifacts</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>All V30 final artifacts and prerequisite audit exist.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;missing&quot;: []
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Final manifest identity</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Final manifest identifies V30.0.0 FINAL_STABLE.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;version&quot;: &quot;30.0.0&quot;,
+  &quot;tag&quot;: &quot;v30.0.0&quot;,
+  &quot;status&quot;: &quot;FINAL_STABLE&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Final certificate status</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Final stable release certificate is PASS.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;status&quot;: &quot;PASS&quot;,
+  &quot;zip_verification_errors&quot;: []
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Paper-trading-only safety</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Manifest and certificate both enforce paper-trading-only mode.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;manifest&quot;: true,
+  &quot;certificate&quot;: true
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>V29.7 prerequisite audit</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>V29.7 prerequisite audit is PASS with zero failures.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;status&quot;: &quot;PASS&quot;,
+  &quot;summary&quot;: {
+    &quot;fail&quot;: 0,
+    &quot;pass&quot;: 11,
+    &quot;warn&quot;: 0
+  }
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Manifest and notes hashes</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Certificate hashes match the current manifest and release notes.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;manifest_hash_ok&quot;: true,
+  &quot;notes_hash_ok&quot;: true
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Final release ZIP</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Final V30 release ZIP exists.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;path&quot;: &quot;C:\\stock-bot\\dist\\ai-stock-trading-bot-v30.0.0-final.zip&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Final ZIP integrity</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Final ZIP passed CRC and required-entry checks.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;errors&quot;: [],
+  &quot;file_count&quot;: 493,
+  &quot;size_bytes&quot;: 5711355,
+  &quot;sha256&quot;: &quot;388161e6f0b4c7bda38ae8f010560eebac235745ca6f89868819e7ad35752229&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>V30 regression tests</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>All V30 release regression tests passed.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;return_code&quot;: 0,
+  &quot;output_tail&quot;: &quot;{\n  \&quot;status\&quot;: \&quot;PASS\&quot;,\n  \&quot;summary\&quot;: {\n    \&quot;pass\&quot;: 1,\n    \&quot;warn\&quot;: 0,\n    \&quot;fail\&quot;: 0\n  },\n  \&quot;json_output\&quot;: \&quot;C:\\\\Users\\\\Public\\\\Documents\\\\ESTsoft\\\\CreatorTemp\\\\tmp43quntas\\\\audit.json\&quot;,\n  \&quot;html_output\&quot;: \&quot;C:\\\\Users\\\\Public\\\\Documents\\\\ESTsoft\\\\CreatorTemp\\\\tmp43quntas\\\\audit.html\&quot;\n}\n\ntest_cli_and_manifest (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_cli_and_manifest) ... ok\ntest_missing_sections (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_missing_sections) ... ok\ntest_normalize_auto_drawdown (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_normalize_auto_drawdown) ... ok\ntest_self_contained_html (backtest.test_html_tear_sheet_final_report_v29_5b.Tests.test_self_contained_html) ... ok\ntest_build_and_verify (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_build_and_verify) ... ok\ntest_cli (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_cli) ... ok\ntest_tamper_detection (tools.test_build_release_v29_6.BuildReleaseV296Tests.test_tamper_detection) ... ok\ntest_check_factory (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_check_factory) ... ok\ntest_main_writes_outputs (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_main_writes_outputs) ... ok\ntest_render_html (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_render_html) ... ok\ntest_required_files_missing (tools.test_production_readiness_audit_v29_7.ProductionReadinessAuditV297Tests.test_required_files_missing) ... ok\ntest_finalize_and_verify (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_finalize_and_verify) ... ok\ntest_prerequisite_failure (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_prerequisite_failure) ... ok\ntest_prerequisites_pass (tools.test_finalize_release_v30_0.FinalizeReleaseV300Tests.test_prerequisites_pass) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.565s\n\nOK&quot;
+}</pre></details>
+</section>
+
+<section class="check pass">
+  <div class="head">
+    <h2>Python source compilation</h2>
+    <span class="badge pass">PASS</span>
+  </div>
+  <p>Python source compilation completed without syntax errors.</p>
+  <details><summary>Details</summary><pre>{
+  &quot;checked&quot;: [
+    &quot;backtest&quot;,
+    &quot;tools&quot;
+  ],
+  &quot;failed&quot;: []
+}</pre></details>
+</section>
+
+<footer>V30.1 Release Integrity Audit · Paper-trading-only final release</footer>
+</main></body></html>
