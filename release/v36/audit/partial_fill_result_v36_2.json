@@ -1,0 +1,87 @@
+{
+  "ledger": {
+    "fills": [
+      {
+        "cumulative_quantity": "4",
+        "cumulative_vwap": "200",
+        "fill_id": "fill-ca61f9caa3c4472186b6d996688c4398",
+        "fill_sha256": "f5667bde402504fb70ed00bfb5bab4ae18494ea316cd126d90eafa1d50c1570a",
+        "generated_at": "2026-07-29T08:16:03+00:00",
+        "notional": "800",
+        "order_id": "order-4f84c229b61d4cf09e52b2ee15973717",
+        "price": "200",
+        "quantity": "4",
+        "remaining_quantity": "6",
+        "side": "buy",
+        "symbol": "AAPL",
+        "trade_id": "trade-001"
+      },
+      {
+        "cumulative_quantity": "10",
+        "cumulative_vwap": "206",
+        "fill_id": "fill-586f372e06154df2bc8efc4edabe734b",
+        "fill_sha256": "6deb5f6aca25bbb56ea3378d3118574f40cef3cb866aa9620a941638eacc3187",
+        "generated_at": "2026-07-29T08:16:03+00:00",
+        "notional": "1260",
+        "order_id": "order-4f84c229b61d4cf09e52b2ee15973717",
+        "price": "210",
+        "quantity": "6",
+        "remaining_quantity": "0",
+        "side": "buy",
+        "symbol": "AAPL",
+        "trade_id": "trade-002"
+      }
+    ],
+    "network_used": false,
+    "schema_version": "v36.2.fill_ledger.1",
+    "snapshot": {
+      "complete": true,
+      "cumulative_notional": "2060",
+      "cumulative_quantity": "10",
+      "cumulative_vwap": "206",
+      "fill_count": 2,
+      "generated_at": "2026-07-29T08:16:03+00:00",
+      "order_id": "order-4f84c229b61d4cf09e52b2ee15973717",
+      "order_quantity": "10",
+      "remaining_quantity": "0",
+      "side": "buy",
+      "symbol": "AAPL"
+    },
+    "version": "36.2"
+  },
+  "network_used": false,
+  "receipts": [
+    {
+      "accepted_trade_id": "trade-001",
+      "cumulative_quantity": "4",
+      "cumulative_vwap": "200",
+      "duplicate": false,
+      "generated_at": "2026-07-29T08:16:03+00:00",
+      "ledger_size": 1,
+      "order_id": "order-4f84c229b61d4cf09e52b2ee15973717",
+      "receipt_sha256": "cc1caa1b3e403e2a51ece279a4193d271effa2b782507b3a5bcd3db95c26b1ca",
+      "rejection_reason": null,
+      "remaining_quantity": "6",
+      "schema_version": "v36.2.fill_receipt.1",
+      "status": "PARTIALLY_FILLED",
+      "version": "36.2"
+    },
+    {
+      "accepted_trade_id": "trade-002",
+      "cumulative_quantity": "10",
+      "cumulative_vwap": "206",
+      "duplicate": false,
+      "generated_at": "2026-07-29T08:16:03+00:00",
+      "ledger_size": 2,
+      "order_id": "order-4f84c229b61d4cf09e52b2ee15973717",
+      "receipt_sha256": "9cf1e2777cce3d9e7259e7bc253cf963dcf65518344c58caffd1339adf4ec902",
+      "rejection_reason": null,
+      "remaining_quantity": "0",
+      "schema_version": "v36.2.fill_receipt.1",
+      "status": "FILLED",
+      "version": "36.2"
+    }
+  ],
+  "schema_version": "v36.2.partial_fill_demo.1",
+  "version": "36.2"
+}

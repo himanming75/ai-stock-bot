@@ -1,0 +1,118 @@
+{
+  "events": [
+    {
+      "details": {
+        "buying_power_multiplier": "1",
+        "starting_cash": "100000"
+      },
+      "event_id": "evt-fc0fddcdb48d487380d3ff5b8dbec800",
+      "event_sha256": "7411e87a7c5987c02ff5c83782c91991e568a5b66ee2d9b704423ae2cdc36cec",
+      "event_type": "portfolio_created",
+      "generated_at": "2026-07-29T16:19:42+00:00",
+      "message": "Portfolio created.",
+      "symbol": null
+    },
+    {
+      "details": {
+        "average_price": "200",
+        "market_price": "212",
+        "quantity": "100",
+        "realized_pnl": "0",
+        "side": "long"
+      },
+      "event_id": "evt-6bb426cbf8a141d8a7b78bfdd9c130ae",
+      "event_sha256": "94eecaf4b3fe98abb83513664052450f8d4f4af90d65c2216aac33788bdf78d4",
+      "event_type": "position_upserted",
+      "generated_at": "2026-07-29T16:19:42+00:00",
+      "message": "Portfolio position added or updated.",
+      "symbol": "AAPL"
+    },
+    {
+      "details": {
+        "average_price": "350",
+        "market_price": "360",
+        "quantity": "50",
+        "realized_pnl": "0",
+        "side": "long"
+      },
+      "event_id": "evt-f9d6d1b012414797bd87098f45a2c85a",
+      "event_sha256": "7aab0047ebe6a91550711ab4c3e9c5a651af0fb55336dfb0aae1bea1755d0ec2",
+      "event_type": "position_upserted",
+      "generated_at": "2026-07-29T16:19:42+00:00",
+      "message": "Portfolio position added or updated.",
+      "symbol": "MSFT"
+    },
+    {
+      "details": {
+        "average_price": "900",
+        "market_price": "925",
+        "quantity": "20",
+        "realized_pnl": "0",
+        "side": "long"
+      },
+      "event_id": "evt-4e4413bc35a74bc9872b7e1b6c7f3204",
+      "event_sha256": "5d3e175d66286b712b77fa0d5053fadb51650f227cca88af06d9a4d4bc05aeed",
+      "event_type": "position_upserted",
+      "generated_at": "2026-07-29T16:19:42+00:00",
+      "message": "Portfolio position added or updated.",
+      "symbol": "NVDA"
+    }
+  ],
+  "network_used": false,
+  "schema_version": "v39.0.portfolio_ledger.1",
+  "snapshot": {
+    "buying_power": "100000",
+    "cash": "100000",
+    "equity": "157700",
+    "event_count": 4,
+    "generated_at": "2026-07-29T16:19:42+00:00",
+    "gross_exposure": "57700",
+    "gross_exposure_pct": "36.58845909955611921369689283",
+    "market_value": "57700",
+    "portfolio_id": "portfolio-93260d982d944b0485b6e13bdc32ef13",
+    "position_count": 3,
+    "positions": [
+      {
+        "average_price": "200",
+        "cost_basis": "20000",
+        "market_price": "212",
+        "market_value": "21200",
+        "quantity": "100",
+        "realized_pnl": "0",
+        "side": "long",
+        "symbol": "AAPL",
+        "unrealized_pnl": "1200",
+        "weight_pct": "13.44324667089410272669625872"
+      },
+      {
+        "average_price": "350",
+        "cost_basis": "17500",
+        "market_price": "360",
+        "market_value": "18000",
+        "quantity": "50",
+        "realized_pnl": "0",
+        "side": "long",
+        "symbol": "MSFT",
+        "unrealized_pnl": "500",
+        "weight_pct": "11.41407736207989854153455929"
+      },
+      {
+        "average_price": "900",
+        "cost_basis": "18000",
+        "market_price": "925",
+        "market_value": "18500",
+        "quantity": "20",
+        "realized_pnl": "0",
+        "side": "long",
+        "symbol": "NVDA",
+        "unrealized_pnl": "500",
+        "weight_pct": "11.73113506658211794546607483"
+      }
+    ],
+    "realized_pnl": "0",
+    "snapshot_sha256": "3f33cc1971823c6d4199e25429b8684c0813e63e1b3bc4a941e3a03c7aef3ba0",
+    "total_pnl": "2200",
+    "unrealized_pnl": "2200"
+  },
+  "version": "39.0"
+}

@@ -1,0 +1,171 @@
+{
+  "decision": {
+    "checks": [
+      {
+        "actual": "40000",
+        "check_id": "order.notional",
+        "limit": "25000",
+        "message": "Order notional exceeds the configured maximum.",
+        "status": "FAIL",
+        "title": "Maximum order notional"
+      },
+      {
+        "actual": "200",
+        "check_id": "position.quantity",
+        "limit": "1000",
+        "message": "Order quantity is within the configured limit.",
+        "status": "PASS",
+        "title": "Maximum position quantity"
+      },
+      {
+        "actual": "50",
+        "check_id": "exposure.symbol",
+        "limit": "25",
+        "message": "Projected symbol exposure exceeds the configured maximum.",
+        "status": "FAIL",
+        "title": "Maximum symbol exposure"
+      },
+      {
+        "actual": "70",
+        "check_id": "exposure.gross",
+        "limit": "100",
+        "message": "Projected gross exposure is within the configured limit.",
+        "status": "PASS",
+        "title": "Maximum gross exposure"
+      },
+      {
+        "actual": "0.7",
+        "check_id": "leverage.maximum",
+        "limit": "1",
+        "message": "Projected leverage is within the configured limit.",
+        "status": "PASS",
+        "title": "Maximum leverage"
+      },
+      {
+        "actual": "500",
+        "check_id": "loss.daily",
+        "limit": "2000",
+        "message": "Daily realized loss is below the configured limit.",
+        "status": "PASS",
+        "title": "Daily loss limit"
+      },
+      {
+        "actual": "40000",
+        "check_id": "cash.available",
+        "limit": "50000",
+        "message": "Available cash is sufficient for the order.",
+        "status": "PASS",
+        "title": "Available cash"
+      }
+    ],
+    "decision": "reject",
+    "decision_id": "risk-7a4aaaac12dd419dbc58a33f3d47fb1d",
+    "decision_sha256": "77a1f0741a0cbd15e13ae14a540780899d53f50af96be8360ec5703fd173d0a1",
+    "generated_at": "2026-07-29T16:12:16+00:00",
+    "network_used": false,
+    "order_notional": "40000",
+    "price": "200",
+    "projected_gross_exposure": "70000",
+    "projected_leverage": "0.7",
+    "projected_symbol_exposure": "50000",
+    "quantity": "200",
+    "rejection_reasons": [
+      "Order notional exceeds the configured maximum.",
+      "Projected symbol exposure exceeds the configured maximum."
+    ],
+    "schema_version": "v38.0.risk_decision.1",
+    "side": "buy",
+    "symbol": "AAPL",
+    "version": "38.0"
+  },
+  "ledger": {
+    "decision_count": 1,
+    "decisions": [
+      {
+        "checks": [
+          {
+            "actual": "40000",
+            "check_id": "order.notional",
+            "limit": "25000",
+            "message": "Order notional exceeds the configured maximum.",
+            "status": "FAIL",
+            "title": "Maximum order notional"
+          },
+          {
+            "actual": "200",
+            "check_id": "position.quantity",
+            "limit": "1000",
+            "message": "Order quantity is within the configured limit.",
+            "status": "PASS",
+            "title": "Maximum position quantity"
+          },
+          {
+            "actual": "50",
+            "check_id": "exposure.symbol",
+            "limit": "25",
+            "message": "Projected symbol exposure exceeds the configured maximum.",
+            "status": "FAIL",
+            "title": "Maximum symbol exposure"
+          },
+          {
+            "actual": "70",
+            "check_id": "exposure.gross",
+            "limit": "100",
+            "message": "Projected gross exposure is within the configured limit.",
+            "status": "PASS",
+            "title": "Maximum gross exposure"
+          },
+          {
+            "actual": "0.7",
+            "check_id": "leverage.maximum",
+            "limit": "1",
+            "message": "Projected leverage is within the configured limit.",
+            "status": "PASS",
+            "title": "Maximum leverage"
+          },
+          {
+            "actual": "500",
+            "check_id": "loss.daily",
+            "limit": "2000",
+            "message": "Daily realized loss is below the configured limit.",
+            "status": "PASS",
+            "title": "Daily loss limit"
+          },
+          {
+            "actual": "40000",
+            "check_id": "cash.available",
+            "limit": "50000",
+            "message": "Available cash is sufficient for the order.",
+            "status": "PASS",
+            "title": "Available cash"
+          }
+        ],
+        "decision": "reject",
+        "decision_id": "risk-7a4aaaac12dd419dbc58a33f3d47fb1d",
+        "decision_sha256": "77a1f0741a0cbd15e13ae14a540780899d53f50af96be8360ec5703fd173d0a1",
+        "generated_at": "2026-07-29T16:12:16+00:00",
+        "network_used": false,
+        "order_notional": "40000",
+        "price": "200",
+        "projected_gross_exposure": "70000",
+        "projected_leverage": "0.7",
+        "projected_symbol_exposure": "50000",
+        "quantity": "200",
+        "rejection_reasons": [
+          "Order notional exceeds the configured maximum.",
+          "Projected symbol exposure exceeds the configured maximum."
+        ],
+        "schema_version": "v38.0.risk_decision.1",
+        "side": "buy",
+        "symbol": "AAPL",
+        "version": "38.0"
+      }
+    ],
+    "network_used": false,
+    "schema_version": "v38.0.risk_ledger.1",
+    "version": "38.0"
+  },
+  "network_used": false,
+  "schema_version": "v38.0.risk_demo.1",
+  "version": "38.0"
+}
