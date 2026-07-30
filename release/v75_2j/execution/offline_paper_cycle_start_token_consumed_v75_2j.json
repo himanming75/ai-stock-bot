@@ -1,7 +1,9 @@
 {
   "authorization_id": "PCA-DE2BD57CC3F407E9",
   "certificate_id": "PRC-E525FD1920F093EC",
-  "consumed": false,
+  "consumed": true,
+  "consumed_at": "2026-07-30T20:56:07+00:00",
+  "consumed_by_execution_id": "PCS-9E02ACACB3FD3F80",
   "expires_at": "2026-07-30T21:56:03+00:00",
   "issued_at": "2026-07-30T20:56:03+00:00",
   "session_id": "PAPER-C47E765BCA0F6573",

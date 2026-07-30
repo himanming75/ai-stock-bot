@@ -1,0 +1,36 @@
+{
+  "execution_id": "PCS-9E02ACACB3FD3F80",
+  "execution_ledger": [
+    {
+      "event": "CYCLE_START_AUTHORIZATION_VERIFIED",
+      "execution_id": "PCS-9E02ACACB3FD3F80",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "event": "CYCLE_START_TOKEN_VERIFIED",
+      "execution_id": "PCS-9E02ACACB3FD3F80",
+      "ledger_index": 2,
+      "state": "PASS"
+    },
+    {
+      "event": "CYCLE_START_TOKEN_CONSUMED",
+      "execution_id": "PCS-9E02ACACB3FD3F80",
+      "ledger_index": 3,
+      "state": "CONSUMED"
+    },
+    {
+      "event": "OFFLINE_PAPER_CYCLE_STATE_CREATED",
+      "execution_id": "PCS-9E02ACACB3FD3F80",
+      "ledger_index": 4,
+      "state": "ACTIVE"
+    },
+    {
+      "event": "OFFLINE_PAPER_CYCLE_STARTED",
+      "execution_id": "PCS-9E02ACACB3FD3F80",
+      "ledger_index": 5,
+      "state": "ACTIVE"
+    }
+  ],
+  "execution_ledger_sha256": "417f4c1ebb6473b32e185c4d5718946b0034c26aa602ebecedba62d2156861dd"
+}

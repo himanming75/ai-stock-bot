@@ -1,0 +1,15 @@
+{
+  "broker_connection_allowed": false,
+  "consume_single_use_token": true,
+  "external_side_effects_allowed": false,
+  "generate_orders_on_start": false,
+  "generate_signals_on_start": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_orders_allowed": false,
+  "require_authorized_not_started": true,
+  "require_empty_order_queue": true,
+  "require_unmutated_positions": true,
+  "require_zero_orders": true,
+  "simulate_fills_on_start": false
+}

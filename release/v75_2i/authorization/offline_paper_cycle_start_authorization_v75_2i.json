@@ -59,40 +59,40 @@
     "paper_orders_allowed": false,
     "token_consumed": false
   },
-  "authorization_id": "PCA-2ADD50EB760C8E4C",
+  "authorization_id": "PCA-DE2BD57CC3F407E9",
   "authorization_ledger": [
     {
-      "authorization_id": "PCA-2ADD50EB760C8E4C",
+      "authorization_id": "PCA-DE2BD57CC3F407E9",
       "event": "READINESS_CERTIFICATE_VERIFIED",
       "ledger_index": 1,
       "state": "PASS"
     },
     {
-      "authorization_id": "PCA-2ADD50EB760C8E4C",
+      "authorization_id": "PCA-DE2BD57CC3F407E9",
       "event": "RUNTIME_BASELINE_VERIFIED",
       "ledger_index": 2,
       "state": "PASS"
     },
     {
-      "authorization_id": "PCA-2ADD50EB760C8E4C",
+      "authorization_id": "PCA-DE2BD57CC3F407E9",
       "event": "SAFETY_LOCKS_RECONFIRMED",
       "ledger_index": 3,
       "state": "ENFORCED"
     },
     {
-      "authorization_id": "PCA-2ADD50EB760C8E4C",
+      "authorization_id": "PCA-DE2BD57CC3F407E9",
       "event": "CYCLE_START_TOKEN_ISSUED",
       "ledger_index": 4,
       "state": "ISSUED"
     },
     {
-      "authorization_id": "PCA-2ADD50EB760C8E4C",
+      "authorization_id": "PCA-DE2BD57CC3F407E9",
       "event": "OFFLINE_PAPER_CYCLE_START_AUTHORIZED",
       "ledger_index": 5,
       "state": "AUTHORIZED_NOT_STARTED"
     }
   ],
-  "authorization_ledger_sha256": "fe1004032e31dae58d4d48e3dc7df263f421a84b643760f2eecb5b01a181074b",
+  "authorization_ledger_sha256": "b742168d9db9d64de24f16894d0ec4069a6e3aef3689e795724c9b1c89726221",
   "authorization_scope": "OFFLINE_PAPER_CYCLE_START_ONLY",
   "authorization_state": "AUTHORIZED_NOT_STARTED",
   "broker_connection_allowed": false,
@@ -101,25 +101,25 @@
   "cycle_sequence": 1,
   "cycle_start_authorized": true,
   "cycle_start_token": {
-    "authorization_id": "PCA-2ADD50EB760C8E4C",
+    "authorization_id": "PCA-DE2BD57CC3F407E9",
     "certificate_id": "PRC-E525FD1920F093EC",
     "consumed": false,
-    "expires_at": "2026-07-30T21:48:59+00:00",
-    "issued_at": "2026-07-30T20:48:59+00:00",
+    "expires_at": "2026-07-30T21:56:03+00:00",
+    "issued_at": "2026-07-30T20:56:03+00:00",
     "session_id": "PAPER-C47E765BCA0F6573",
     "single_use": true,
-    "token_sha256": "5bf8c0fabba10e089a13fdd916497eca5e3f53186ea43613cf084e816626ddf1",
+    "token_sha256": "e505b509e1d15687c4fde7b5fde0687662647cb23dde17d39f7348c2b9cc809e",
     "ttl_seconds": 3600
   },
-  "cycle_start_token_sha256": "2006fff320d9ba1d8f43ac8e47cbf5a9d92aba4f796610e5c715e0135cfc1c72",
+  "cycle_start_token_sha256": "6d3569b69aae4345d9d109e3daca9640b4593085631bbc98ad8c785a4a1d1d77",
   "cycle_started": false,
   "decision": "offline_paper_cycle_start_authorized",
-  "expires_at": "2026-07-30T21:48:59+00:00",
-  "issued_at": "2026-07-30T20:48:59+00:00",
+  "expires_at": "2026-07-30T21:56:03+00:00",
+  "issued_at": "2026-07-30T20:56:03+00:00",
   "live_orders_allowed": false,
   "network_allowed": false,
   "network_used": false,
-  "offline_paper_cycle_start_authorization_sha256": "4375da3601065bd589237ff3c5c4c5cbfd136c699ba36b7d70f497aeb0080230",
+  "offline_paper_cycle_start_authorization_sha256": "b9a4df218e41671c44fc6477f53761e6ca7e960537f3a1bbd69623fcb9023cf6",
   "orders_submitted": 0,
   "paper_orders_allowed": false,
   "safety_lock": {
