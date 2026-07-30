@@ -1,0 +1,12 @@
+{
+  "authorization_ttl_seconds": 3600,
+  "automatic_activation_allowed": false,
+  "broker_credentials_required": false,
+  "live_orders_enabled": false,
+  "live_trading_approval_allowed": false,
+  "network_enabled": false,
+  "require_confirmed_checklist": true,
+  "require_offline_paper_mode": true,
+  "require_signed_operator_decision": true,
+  "single_use_authorization": true
+}

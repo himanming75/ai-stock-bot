@@ -1,0 +1,36 @@
+{
+  "authorization_id": "PAA-918FA91804409F77",
+  "authorization_ledger": [
+    {
+      "authorization_id": "PAA-918FA91804409F77",
+      "event": "SIGNED_DECISION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "PAA-918FA91804409F77",
+      "event": "PAPER_SCOPE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "PAA-918FA91804409F77",
+      "event": "ACTIVATION_TOKEN_ISSUED",
+      "ledger_index": 3,
+      "state": "ISSUED_NOT_CONSUMED"
+    },
+    {
+      "authorization_id": "PAA-918FA91804409F77",
+      "event": "LIVE_TRADING_LOCK_RECONFIRMED",
+      "ledger_index": 4,
+      "state": "ENFORCED"
+    },
+    {
+      "authorization_id": "PAA-918FA91804409F77",
+      "event": "PAPER_ACTIVATION_EXECUTION_HELD",
+      "ledger_index": 5,
+      "state": "READY_FOR_SEPARATE_EXECUTION"
+    }
+  ],
+  "authorization_ledger_sha256": "99d374d4865e1da2dc0f9ed085d66673678e290befcc2f6eb4c70c2047d77110"
+}

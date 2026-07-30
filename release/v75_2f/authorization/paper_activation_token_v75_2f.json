@@ -1,0 +1,12 @@
+{
+  "activation_token": {
+    "consumed": false,
+    "issued_at": "2026-07-30T20:32:26+00:00",
+    "single_use": true,
+    "token_sha256": "d2c19b7bc7dfbd107a9d4d9662b39bcef947512e6afad8e39fa5739523154a04",
+    "ttl_seconds": 3600
+  },
+  "authorization_id": "PAA-918FA91804409F77",
+  "authorization_scope": "OFFLINE_PAPER_ACTIVATION_ONLY",
+  "session_id": "PAPER-C47E765BCA0F6573"
+}

@@ -1,0 +1,41 @@
+{
+  "authorization_checks": [
+    {
+      "check": "DECISION_RECORD_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "OPERATOR_DECISION_APPROVE_PAPER",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "OPERATOR_SIGNATURE_EVIDENCE",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "CONFIRMED_CHECKLIST",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "OFFLINE_PAPER_SAFETY_LOCKS",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 6,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "ACTIVATION_EXECUTION",
+      "check_index": 7,
+      "state": "NOT_EXECUTED"
+    }
+  ],
+  "authorization_checks_sha256": "de73a0ec5196f72cc91eb50cdc306eacfe991c5c0e866640f887a016c22f1df3",
+  "authorization_id": "PAA-918FA91804409F77"
+}
