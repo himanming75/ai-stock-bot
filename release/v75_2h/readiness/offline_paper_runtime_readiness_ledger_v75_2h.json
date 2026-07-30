@@ -1,0 +1,36 @@
+{
+  "certificate_id": "PRC-E525FD1920F093EC",
+  "readiness_ledger": [
+    {
+      "certificate_id": "PRC-E525FD1920F093EC",
+      "event": "ACTIVATION_RECORD_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "certificate_id": "PRC-E525FD1920F093EC",
+      "event": "RUNTIME_STATE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS"
+    },
+    {
+      "certificate_id": "PRC-E525FD1920F093EC",
+      "event": "TOKEN_CONSUMPTION_VERIFIED",
+      "ledger_index": 3,
+      "state": "PASS"
+    },
+    {
+      "certificate_id": "PRC-E525FD1920F093EC",
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 4,
+      "state": "ENFORCED"
+    },
+    {
+      "certificate_id": "PRC-E525FD1920F093EC",
+      "event": "READINESS_CERTIFICATE_ISSUED",
+      "ledger_index": 5,
+      "state": "READY_FOR_OFFLINE_PAPER_CYCLE"
+    }
+  ],
+  "readiness_ledger_sha256": "917f2e1b755f24ebeeb6daca9f07ec7d426a50a8e9d384144f7cbcdff5fd27bc"
+}

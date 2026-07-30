@@ -1,0 +1,14 @@
+{
+  "broker_connected": false,
+  "broker_credentials_required": false,
+  "external_side_effects_allowed": false,
+  "issue_readiness_certificate": true,
+  "live_orders_enabled": false,
+  "live_trading_approval_allowed": false,
+  "network_enabled": false,
+  "require_active_offline_runtime": true,
+  "require_consumed_single_use_token": true,
+  "require_empty_order_queue": true,
+  "require_unmutated_positions": true,
+  "require_zero_submitted_orders": true
+}

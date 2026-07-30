@@ -1,0 +1,17 @@
+{
+  "certificate_id": "PRC-E525FD1920F093EC",
+  "runtime_snapshot": {
+    "activation_id": "OPA-244D2F2E694663D4",
+    "broker_connected": false,
+    "champion_candidate_id": "CAND-0563E3012F19",
+    "live_orders_enabled": false,
+    "mode": "OFFLINE_PAPER",
+    "network_enabled": false,
+    "order_queue_size": 0,
+    "orders_submitted": 0,
+    "positions_mutated": false,
+    "session_id": "PAPER-C47E765BCA0F6573",
+    "state": "ACTIVE"
+  },
+  "runtime_snapshot_sha256": "5e8e1f7bc9ccc0b6edee22ed0cd686e1315b6da97585bf8d7ddff446a9dbe8ed"
+}
