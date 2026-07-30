@@ -1,0 +1,21 @@
+{
+  "authorized_offline_submission_ids": [
+    "OSUB-B970211DF06EB599"
+  ],
+  "authorized_paper_order_ids": [
+    "PORD-E485BB6F23E7C728"
+  ],
+  "consumed": false,
+  "consumed_at": null,
+  "expires_at": "2026-07-30T22:34:43+00:00",
+  "fill_price_policy": "REFERENCE_PRICE_ONLY",
+  "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+  "fill_simulation_authorization_id": "FSA-43A4BB5A8DDF412A",
+  "issued_at": "2026-07-30T22:19:43+00:00",
+  "nonce": "e99b35c8b1ba80abd4938dd93b3aa412",
+  "scope": "OFFLINE_PAPER_FILL_SIMULATION_EXECUTION_ONLY",
+  "single_use": true,
+  "submission_validation_id": "OSV-11691C5E0ABD0B18",
+  "token_sha256": "fe3a19679c00c4cb97d416f2fe0a69c3e14383a741727597bf6eae9efa83942b",
+  "token_state": "ISSUED_NOT_CONSUMED"
+}

@@ -1,0 +1,23 @@
+{
+  "authorization_scope": "OFFLINE_PAPER_FILL_SIMULATION_EXECUTION_ONLY",
+  "authorization_ttl_seconds": 900,
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_price_policy": "REFERENCE_PRICE_ONLY",
+  "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_quantity_lock": true,
+  "require_reference_price_lock": true,
+  "require_single_use_token": true,
+  "require_validated_submissions_integrity": true,
+  "require_validation_integrity": true,
+  "require_zero_existing_fills": true
+}

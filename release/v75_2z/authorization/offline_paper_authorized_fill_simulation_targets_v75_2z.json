@@ -1,0 +1,29 @@
+{
+  "authorized_fill_simulation_targets": [
+    {
+      "authorization_id": "OSA-84DCA4FDC7C1EFD7",
+      "cash_updated": false,
+      "current_order_state": "SUBMITTED_OFFLINE_REFERENCE",
+      "fill_object_created": false,
+      "fill_price_policy": "REFERENCE_PRICE_ONLY",
+      "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+      "fill_simulated": false,
+      "fill_simulation_execution_authorized": true,
+      "filled": false,
+      "offline_submission_id": "OSUB-B970211DF06EB599",
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_type": "MARKET_REFERENCE_ONLY",
+      "paper_order_id": "PORD-E485BB6F23E7C728",
+      "portfolio_updated": false,
+      "position_updated": false,
+      "quantity": 1,
+      "reference_price": 633.5,
+      "side": "BUY",
+      "symbol": "SPY",
+      "time_in_force": "DAY"
+    }
+  ],
+  "authorized_fill_simulation_targets_sha256": "4050a03d44f87eaa4bec251161362d9975b5d1c4906404a5f366312197d00eec",
+  "authorized_target_count": 1,
+  "fill_simulation_authorization_id": "FSA-43A4BB5A8DDF412A"
+}

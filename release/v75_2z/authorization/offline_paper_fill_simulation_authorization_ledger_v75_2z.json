@@ -1,0 +1,42 @@
+{
+  "authorization_ledger": [
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "SUBMISSION_VALIDATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "FILL_SIMULATION_TARGETS_LOCKED",
+      "ledger_index": 2,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "REFERENCE_PRICE_AND_QUANTITY_POLICIES_LOCKED",
+      "ledger_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "SINGLE_USE_FILL_SIMULATION_TOKEN_ISSUED",
+      "ledger_index": 4,
+      "state": "ISSUED_NOT_CONSUMED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "POSITION_CASH_PORTFOLIO_UPDATES_BLOCKED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "FILL_SIMULATION_AUTHORIZATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "AUTHORIZED_NOT_EXECUTED"
+    }
+  ],
+  "authorization_ledger_sha256": "0f0b85e6b501ac9af4fd842637f4869ba1c6b6e04cfcd8d9115c5732e20bc397",
+  "fill_simulation_authorization_id": "FSA-43A4BB5A8DDF412A"
+}

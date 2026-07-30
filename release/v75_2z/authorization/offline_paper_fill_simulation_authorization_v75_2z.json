@@ -1,0 +1,223 @@
+{
+  "approved_for_live": false,
+  "authorization_checks": [
+    {
+      "check": "SUBMISSION_VALIDATION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "VALIDATED_SUBMISSIONS_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "SUBMISSION_AND_ORDER_IDENTITIES_LOCKED",
+      "check_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "check": "REFERENCE_PRICE_LOCK",
+      "check_index": 4,
+      "state": "LOCKED"
+    },
+    {
+      "check": "FULL_QUANTITY_LOCK",
+      "check_index": 5,
+      "state": "LOCKED"
+    },
+    {
+      "check": "NO_EXISTING_FILL_OBJECT",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "NO_EXISTING_POSITION_UPDATE",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "SINGLE_USE_TOKEN_POLICY",
+      "check_index": 8,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "FILL_SIMULATION_SCOPE_LIMIT",
+      "check_index": 9,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "BROKER_AND_EXTERNAL_SUBMISSION_BLOCKED",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "authorization_checks_sha256": "4fb584bb365b94e84d8a74124e008f4cad67d4b1f1dcbb6bc46d50bfe4b65c95",
+  "authorization_gate": {
+    "broker_routing_allowed": false,
+    "cash_update_allowed": false,
+    "external_order_submission_allowed": false,
+    "fill_object_creation_allowed": false,
+    "fill_simulation_allowed": false,
+    "fill_simulation_authorized": true,
+    "fill_simulation_execution_allowed": true,
+    "live_orders_allowed": false,
+    "network_allowed": false,
+    "next_version": "75.2AA",
+    "paper_broker_allowed": false,
+    "portfolio_update_allowed": false,
+    "position_update_allowed": false
+  },
+  "authorization_id": "OSA-84DCA4FDC7C1EFD7",
+  "authorization_ledger": [
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "SUBMISSION_VALIDATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "FILL_SIMULATION_TARGETS_LOCKED",
+      "ledger_index": 2,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "REFERENCE_PRICE_AND_QUANTITY_POLICIES_LOCKED",
+      "ledger_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "SINGLE_USE_FILL_SIMULATION_TOKEN_ISSUED",
+      "ledger_index": 4,
+      "state": "ISSUED_NOT_CONSUMED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "POSITION_CASH_PORTFOLIO_UPDATES_BLOCKED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "authorization_id": "FSA-43A4BB5A8DDF412A",
+      "event": "FILL_SIMULATION_AUTHORIZATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "AUTHORIZED_NOT_EXECUTED"
+    }
+  ],
+  "authorization_ledger_sha256": "0f0b85e6b501ac9af4fd842637f4869ba1c6b6e04cfcd8d9115c5732e20bc397",
+  "authorization_scope": "OFFLINE_PAPER_FILL_SIMULATION_EXECUTION_ONLY",
+  "authorization_source_id": "OGA-821453B53E1A1137",
+  "authorization_state": "AUTHORIZED_NOT_EXECUTED",
+  "authorized_fill_simulation_targets": [
+    {
+      "authorization_id": "OSA-84DCA4FDC7C1EFD7",
+      "cash_updated": false,
+      "current_order_state": "SUBMITTED_OFFLINE_REFERENCE",
+      "fill_object_created": false,
+      "fill_price_policy": "REFERENCE_PRICE_ONLY",
+      "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+      "fill_simulated": false,
+      "fill_simulation_execution_authorized": true,
+      "filled": false,
+      "offline_submission_id": "OSUB-B970211DF06EB599",
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_type": "MARKET_REFERENCE_ONLY",
+      "paper_order_id": "PORD-E485BB6F23E7C728",
+      "portfolio_updated": false,
+      "position_updated": false,
+      "quantity": 1,
+      "reference_price": 633.5,
+      "side": "BUY",
+      "symbol": "SPY",
+      "time_in_force": "DAY"
+    }
+  ],
+  "authorized_fill_simulation_targets_sha256": "4050a03d44f87eaa4bec251161362d9975b5d1c4906404a5f366312197d00eec",
+  "authorized_target_count": 1,
+  "broker_connection_allowed": false,
+  "broker_routes_created": 0,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "cash_updates_created": 0,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "decision": "offline_paper_fill_simulation_authorized",
+  "execution_id": "OGE-52EECE411E228881",
+  "expires_at": "2026-07-30T22:34:43+00:00",
+  "external_order_submission_allowed": false,
+  "external_orders_submitted": 0,
+  "fill_objects_created": 0,
+  "fill_simulation_allowed": false,
+  "fill_simulation_authorization_id": "FSA-43A4BB5A8DDF412A",
+  "fill_simulation_authorization_token": {
+    "authorized_offline_submission_ids": [
+      "OSUB-B970211DF06EB599"
+    ],
+    "authorized_paper_order_ids": [
+      "PORD-E485BB6F23E7C728"
+    ],
+    "consumed": false,
+    "consumed_at": null,
+    "expires_at": "2026-07-30T22:34:43+00:00",
+    "fill_price_policy": "REFERENCE_PRICE_ONLY",
+    "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+    "fill_simulation_authorization_id": "FSA-43A4BB5A8DDF412A",
+    "issued_at": "2026-07-30T22:19:43+00:00",
+    "nonce": "e99b35c8b1ba80abd4938dd93b3aa412",
+    "scope": "OFFLINE_PAPER_FILL_SIMULATION_EXECUTION_ONLY",
+    "single_use": true,
+    "submission_validation_id": "OSV-11691C5E0ABD0B18",
+    "token_sha256": "fe3a19679c00c4cb97d416f2fe0a69c3e14383a741727597bf6eae9efa83942b",
+    "token_state": "ISSUED_NOT_CONSUMED"
+  },
+  "fill_simulation_authorization_token_sha256": "6532c7d08ad9d5f0c49757ad37430f9d8401206cd04509fc1f3b554b1a86f9d6",
+  "fill_simulation_authorized": true,
+  "fill_simulation_executed": false,
+  "fill_simulation_execution_allowed": true,
+  "fills_created": 0,
+  "issued_at": "2026-07-30T22:19:43+00:00",
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "network_used": false,
+  "offline_paper_fill_simulation_authorization_sha256": "a2e3c5aa70074c008b892ba22b9d3f7a28db65f60cf685ad39f80d6b59304441",
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "portfolio_updates_created": 0,
+  "position_update_allowed": false,
+  "positions_updated": 0,
+  "safety_lock": {
+    "broker_connected": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "live_trading_approval_allowed": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2z.offline_paper_fill_simulation_authorization.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_order_submission_authorization_sha256": "11206424bb72a6a5cf088ec11740364fa9b012d86f39489921efe0954aa28b03",
+  "source_order_submission_execution_sha256": "b970872995b0c921f26fd9c2257425cd118285f7c396639895cfbf724f59e29b",
+  "source_order_submission_validation_sha256": "16617dff1af58ce7610111ea08985c0f0868b30e235ac36ae572df50b079faa3",
+  "source_validated_submissions_sha256": "d1d467cee4e0fdcff289a8f02e0c4938e01b39adb834c859c93cc8d9bc8a9d86",
+  "status": "PASS",
+  "submission_execution_id": "OSE-3E6F455A1A0CD65E",
+  "submission_validation_id": "OSV-11691C5E0ABD0B18",
+  "token_consumed": false,
+  "validation_id": "OOV-91C40238B53F1BD9",
+  "version": "75.2Z"
+}
