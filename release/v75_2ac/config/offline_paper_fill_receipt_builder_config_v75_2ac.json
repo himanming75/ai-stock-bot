@@ -1,0 +1,20 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "create_receipt_artifacts": true,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "receipt_scope": "OFFLINE_PAPER_FILL_RECEIPT_ARTIFACT_ONLY",
+  "require_verification_checks_integrity": true,
+  "require_verification_integrity": true,
+  "require_verification_ledger_integrity": true,
+  "require_verified_execution_state": true,
+  "require_verified_fill_objects_integrity": true,
+  "require_zero_account_mutations": true
+}
