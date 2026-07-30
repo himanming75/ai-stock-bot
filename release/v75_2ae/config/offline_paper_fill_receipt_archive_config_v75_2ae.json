@@ -1,0 +1,21 @@
+{
+  "archive_scope": "OFFLINE_PAPER_FILL_RECEIPT_ARCHIVE_PACKAGE_ONLY",
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "create_archive_index": true,
+  "create_archive_manifest": true,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_receipt_verification_integrity": true,
+  "require_verification_checks_integrity": true,
+  "require_verification_ledger_integrity": true,
+  "require_verified_receipts_integrity": true,
+  "require_zero_settlement_and_account_mutations": true,
+  "settlement_execution_allowed": false
+}
