@@ -1,0 +1,10 @@
+V75.2AR INSTALL CHECK
+
+After extracting into C:\stock-bot, run:
+
+Test-Path README_V75_2AR.txt
+Test-Path tools\registry_verifier_v75_2ar.py
+Test-Path tools\test_registry_verifier_v75_2ar.py
+Test-Path release\v75_2ar\config\registry_config_v75_2ar.json
+
+All four results must be True before testing or committing.
