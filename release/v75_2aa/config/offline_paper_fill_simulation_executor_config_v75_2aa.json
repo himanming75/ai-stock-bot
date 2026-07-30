@@ -1,0 +1,23 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "create_fill_objects": true,
+  "execution_scope": "OFFLINE_PAPER_FILL_OBJECT_CREATION_ONLY",
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_price_policy": "REFERENCE_PRICE_ONLY",
+  "fill_quantity_policy": "FULL_QUANTITY_ONLY",
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_authorization_integrity": true,
+  "require_authorized_targets_integrity": true,
+  "require_full_quantity_lock": true,
+  "require_reference_price_lock": true,
+  "require_single_use_token": true,
+  "require_unconsumed_token": true,
+  "require_unexpired_token": true
+}
