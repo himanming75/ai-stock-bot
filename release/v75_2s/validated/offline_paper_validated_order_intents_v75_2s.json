@@ -1,0 +1,32 @@
+{
+  "validated_order_intent_summary": {
+    "buy_intent_count": 1,
+    "no_action_intent_count": 0,
+    "order_intent_count": 1,
+    "sell_intent_count": 0,
+    "symbols": [
+      "SPY"
+    ],
+    "total_intended_quantity": 1
+  },
+  "validated_order_intents": [
+    {
+      "authorization_id": "OIA-7059F9C606C6E1CA",
+      "broker_routed": false,
+      "created_at": "2026-07-30T21:39:07+00:00",
+      "fill_simulated": false,
+      "intent_action": "BUY",
+      "intent_type": "MARKET_REFERENCE_ONLY",
+      "network_used": false,
+      "order_created": false,
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_submitted": false,
+      "quantity": 1,
+      "reference_price": 633.5,
+      "signal_action": "BUY",
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "symbol": "SPY"
+    }
+  ],
+  "validation_id": "OIV-E06C915B186DCEC9"
+}

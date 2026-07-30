@@ -1,0 +1,42 @@
+{
+  "validation_id": "OIV-E06C915B186DCEC9",
+  "validation_ledger": [
+    {
+      "event": "ORDER_INTENT_EXECUTION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_IDENTITIES_RECALCULATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_POLICY_VERIFIED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_GENERATION_AUTHORIZATION",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    }
+  ],
+  "validation_ledger_sha256": "f8d9c1df4763db90d850c04c7adda522bb8163d644be3eedabef2136e9f3d66a"
+}

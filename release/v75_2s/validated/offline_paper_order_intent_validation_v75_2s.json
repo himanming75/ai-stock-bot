@@ -1,0 +1,178 @@
+{
+  "approved_for_live": false,
+  "authorization_id": "OIA-7059F9C606C6E1CA",
+  "broker_connection_allowed": false,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "decision": "offline_paper_order_intent_validated",
+  "execution_id": "OIE-00F1E95A42CD7448",
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "network_used": false,
+  "offline_paper_order_intent_validation_sha256": "a196507b780d38e9218c51c00779073f827d47948a6aebbde2a3cc6719622de6",
+  "order_generation_allowed": false,
+  "orders_created": 0,
+  "orders_submitted": 0,
+  "paper_orders_allowed": false,
+  "safety_lock": {
+    "broker_connected": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "live_trading_approval_allowed": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2s.offline_paper_order_intent_validation.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_order_intent_execution_sha256": "fcfdaec8902e73b416c52d3a351d60b93369a6f1aeb026500ac2640b86957e6a",
+  "source_order_intent_package_sha256": "f23a1f9962c3cc22032e0b32233cb7e0b4e204845afbd3c63caf870435b1766e",
+  "status": "PASS",
+  "validated_at": "2026-07-30T21:43:48+00:00",
+  "validated_order_intent_summary": {
+    "buy_intent_count": 1,
+    "no_action_intent_count": 0,
+    "order_intent_count": 1,
+    "sell_intent_count": 0,
+    "symbols": [
+      "SPY"
+    ],
+    "total_intended_quantity": 1
+  },
+  "validated_order_intents": [
+    {
+      "authorization_id": "OIA-7059F9C606C6E1CA",
+      "broker_routed": false,
+      "created_at": "2026-07-30T21:39:07+00:00",
+      "fill_simulated": false,
+      "intent_action": "BUY",
+      "intent_type": "MARKET_REFERENCE_ONLY",
+      "network_used": false,
+      "order_created": false,
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_submitted": false,
+      "quantity": 1,
+      "reference_price": 633.5,
+      "signal_action": "BUY",
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "symbol": "SPY"
+    }
+  ],
+  "validation_checks": [
+    {
+      "check": "ORDER_INTENT_EXECUTION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_PACKAGE_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "CONSUMED_TOKEN_EVIDENCE",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_COUNT_CONSISTENCY",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_ID_RECALCULATION",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_INTENT_ACTION_CONSISTENCY",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "INTENT_QUANTITY_POLICY",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "REFERENCE_PRICE_VALIDITY",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "ZERO_ORDER_SIDE_EFFECTS",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_AND_BROKER_DISABLED",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "validation_checks_sha256": "c9081771813a974c2fdc4ae36f1b320b65504e0cc5a8d6637b3565d73f42098c",
+  "validation_gate": {
+    "fill_simulation_allowed": false,
+    "live_orders_allowed": false,
+    "network_allowed": false,
+    "next_version": "75.2T",
+    "order_generation_allowed": false,
+    "order_generation_authorization_allowed": true,
+    "order_intent_validated": true,
+    "paper_orders_allowed": false
+  },
+  "validation_id": "OIV-E06C915B186DCEC9",
+  "validation_ledger": [
+    {
+      "event": "ORDER_INTENT_EXECUTION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_IDENTITIES_RECALCULATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_POLICY_VERIFIED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    },
+    {
+      "event": "ORDER_INTENT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_GENERATION_AUTHORIZATION",
+      "validation_id": "OIV-E06C915B186DCEC9"
+    }
+  ],
+  "validation_ledger_sha256": "f8d9c1df4763db90d850c04c7adda522bb8163d644be3eedabef2136e9f3d66a",
+  "validation_state": "READY_FOR_ORDER_GENERATION_AUTHORIZATION",
+  "version": "75.2S"
+}

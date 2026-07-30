@@ -1,0 +1,66 @@
+{
+  "validation_checks": [
+    {
+      "check": "ORDER_INTENT_EXECUTION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_PACKAGE_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "CONSUMED_TOKEN_EVIDENCE",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_COUNT_CONSISTENCY",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_INTENT_ID_RECALCULATION",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_INTENT_ACTION_CONSISTENCY",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "INTENT_QUANTITY_POLICY",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "REFERENCE_PRICE_VALIDITY",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "ZERO_ORDER_SIDE_EFFECTS",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_AND_BROKER_DISABLED",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "validation_checks_sha256": "c9081771813a974c2fdc4ae36f1b320b65504e0cc5a8d6637b3565d73f42098c",
+  "validation_id": "OIV-E06C915B186DCEC9"
+}
