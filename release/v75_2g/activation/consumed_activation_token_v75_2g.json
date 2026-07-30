@@ -1,0 +1,8 @@
+{
+  "activation_id": "OPA-244D2F2E694663D4",
+  "authorization_id": "PAA-918FA91804409F77",
+  "consumed": true,
+  "consumed_at": "2026-07-30T20:37:25+00:00",
+  "single_use": true,
+  "token_sha256": "d2c19b7bc7dfbd107a9d4d9662b39bcef947512e6afad8e39fa5739523154a04"
+}

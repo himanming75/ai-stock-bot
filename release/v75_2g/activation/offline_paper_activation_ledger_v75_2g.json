@@ -1,0 +1,42 @@
+{
+  "activation_id": "OPA-244D2F2E694663D4",
+  "activation_ledger": [
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "ACTIVATION_AUTHORIZATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "ACTIVATION_TOKEN_VALIDATED",
+      "ledger_index": 2,
+      "state": "PASS"
+    },
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "ACTIVATION_TOKEN_CONSUMED",
+      "ledger_index": 3,
+      "state": "CONSUMED"
+    },
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "OFFLINE_PAPER_RUNTIME_INITIALIZED",
+      "ledger_index": 4,
+      "state": "ACTIVE"
+    },
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "LIVE_AND_NETWORK_LOCK_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "activation_id": "OPA-244D2F2E694663D4",
+      "event": "OFFLINE_PAPER_SESSION_ACTIVATED",
+      "ledger_index": 6,
+      "state": "OFFLINE_PAPER_SESSION_ACTIVE"
+    }
+  ],
+  "activation_ledger_sha256": "0c40cc196596b728ff8cc632b781e01dbc7af5f6f148e73cf3c2be62d74ce553"
+}

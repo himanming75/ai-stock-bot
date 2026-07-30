@@ -1,0 +1,41 @@
+{
+  "activation_checks": [
+    {
+      "check": "AUTHORIZATION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "AUTHORIZATION_SCOPE",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "TOKEN_INTEGRITY",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "TOKEN_EXPIRY",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "TOKEN_SINGLE_USE_CONSUMPTION",
+      "check_index": 5,
+      "state": "CONSUMED"
+    },
+    {
+      "check": "OFFLINE_RUNTIME_INITIALIZATION",
+      "check_index": 6,
+      "state": "ACTIVE"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 7,
+      "state": "ENFORCED"
+    }
+  ],
+  "activation_checks_sha256": "b57a8e82d9e6c3eebdc4a28c2c8cf5aa70680e59b50702528872c9c400168823",
+  "activation_id": "OPA-244D2F2E694663D4"
+}

@@ -9,9 +9,9 @@
   },
   "activation_token": {
     "consumed": false,
-    "issued_at": "2026-07-30T20:32:26+00:00",
+    "issued_at": "2026-07-30T20:37:29+00:00",
     "single_use": true,
-    "token_sha256": "d2c19b7bc7dfbd107a9d4d9662b39bcef947512e6afad8e39fa5739523154a04",
+    "token_sha256": "de3415e86014a24e814112a1e48e3c157f11a92276f8c921689037f03f84d6f2",
     "ttl_seconds": 3600
   },
   "approved_for_live": false,
@@ -53,49 +53,49 @@
     }
   ],
   "authorization_checks_sha256": "de73a0ec5196f72cc91eb50cdc306eacfe991c5c0e866640f887a016c22f1df3",
-  "authorization_id": "PAA-918FA91804409F77",
+  "authorization_id": "PAA-98C7A5927972A9DA",
   "authorization_ledger": [
     {
-      "authorization_id": "PAA-918FA91804409F77",
+      "authorization_id": "PAA-98C7A5927972A9DA",
       "event": "SIGNED_DECISION_VERIFIED",
       "ledger_index": 1,
       "state": "PASS"
     },
     {
-      "authorization_id": "PAA-918FA91804409F77",
+      "authorization_id": "PAA-98C7A5927972A9DA",
       "event": "PAPER_SCOPE_VERIFIED",
       "ledger_index": 2,
       "state": "PASS"
     },
     {
-      "authorization_id": "PAA-918FA91804409F77",
+      "authorization_id": "PAA-98C7A5927972A9DA",
       "event": "ACTIVATION_TOKEN_ISSUED",
       "ledger_index": 3,
       "state": "ISSUED_NOT_CONSUMED"
     },
     {
-      "authorization_id": "PAA-918FA91804409F77",
+      "authorization_id": "PAA-98C7A5927972A9DA",
       "event": "LIVE_TRADING_LOCK_RECONFIRMED",
       "ledger_index": 4,
       "state": "ENFORCED"
     },
     {
-      "authorization_id": "PAA-918FA91804409F77",
+      "authorization_id": "PAA-98C7A5927972A9DA",
       "event": "PAPER_ACTIVATION_EXECUTION_HELD",
       "ledger_index": 5,
       "state": "READY_FOR_SEPARATE_EXECUTION"
     }
   ],
-  "authorization_ledger_sha256": "99d374d4865e1da2dc0f9ed085d66673678e290befcc2f6eb4c70c2047d77110",
+  "authorization_ledger_sha256": "09371c8238af878d44d3bbd7ca9312361fd7d4351ffa5729ee227d6b24085282",
   "authorization_scope": "OFFLINE_PAPER_ACTIVATION_ONLY",
   "authorization_state": "AUTHORIZED_NOT_ACTIVATED",
   "bundle_id": "PDB-DB5038C2AC8B7180",
   "champion_candidate_id": "CAND-0563E3012F19",
-  "created_at": "2026-07-30T20:32:26+00:00",
+  "created_at": "2026-07-30T20:37:29+00:00",
   "decision": "paper_activation_authorization_created",
   "decision_id": "POD-7BAD234DCC90557F",
   "network_used": false,
-  "paper_activation_authorization_sha256": "5c3c0e8bef0088acb4795af44bbe24be529659655507514a9c2db6d96ac45afe",
+  "paper_activation_authorization_sha256": "2abe8d27e29bb9c0b0e5617f9e3d24ee1c6ee0d261cc5aea950fea7baafce46f",
   "preflight_id": "PDP-13003147E861FB4D",
   "review_id": "POR-2B7D09A3E88440BB",
   "runtime_policy": {
