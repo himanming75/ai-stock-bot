@@ -1,0 +1,20 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "require_consumed_token_integrity": true,
+  "require_execution_integrity": true,
+  "require_package_integrity": true,
+  "require_safety_lock": true,
+  "require_submission_id_recalculation": true,
+  "require_zero_broker_routes": true,
+  "require_zero_external_orders": true,
+  "require_zero_fills": true,
+  "required_order_state": "SUBMITTED_OFFLINE_REFERENCE",
+  "validation_scope": "OFFLINE_PAPER_ORDER_SUBMISSION_VALIDATION_ONLY"
+}
