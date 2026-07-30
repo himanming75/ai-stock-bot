@@ -1,0 +1,16 @@
+{
+  "authorization_id": "OIA-4240C04BF407B967",
+  "authorized_signal_ids": [
+    "SIG-AB05F6CBC6D960C9"
+  ],
+  "consumed": false,
+  "consumed_at": null,
+  "expires_at": "2026-07-30T21:49:59+00:00",
+  "issued_at": "2026-07-30T21:34:59+00:00",
+  "nonce": "31e687da99090cacc40d374d7ba5b9e5",
+  "scope": "OFFLINE_PAPER_ORDER_INTENT_CREATION_ONLY",
+  "single_use": true,
+  "token_sha256": "f81e2ec265cc7d962c29fb23879c7e8c23135ffe32c4d561bb6b7245676a43d7",
+  "token_state": "ISSUED_NOT_CONSUMED",
+  "validation_id": "SOV-A441B7AB4B9C4F56"
+}

@@ -1,0 +1,16 @@
+{
+  "authorization_id": "OIA-4240C04BF407B967",
+  "authorized_signal_manifest": [
+    {
+      "action": "BUY",
+      "as_of": "2026-07-30T15:30:00+00:00",
+      "latest_price": 633.5,
+      "order_created": false,
+      "order_intent_creation_authorized": true,
+      "order_submitted": false,
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "symbol": "SPY"
+    }
+  ],
+  "authorized_signal_manifest_sha256": "7eb0bc0565e5fe2fb247462222bf7f4ed4f6d3d0d654ee473c5eafb19523dab2"
+}

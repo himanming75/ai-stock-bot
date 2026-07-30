@@ -1,0 +1,42 @@
+{
+  "authorization_id": "OIA-4240C04BF407B967",
+  "authorization_ledger": [
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "SIGNAL_OUTPUT_VALIDATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "VALIDATED_SIGNAL_IDENTITIES_LOCKED",
+      "ledger_index": 2,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "ORDER_INTENT_SCOPE_AUTHORIZED",
+      "ledger_index": 3,
+      "state": "AUTHORIZED"
+    },
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "SINGLE_USE_TOKEN_ISSUED",
+      "ledger_index": 4,
+      "state": "ISSUED_NOT_CONSUMED"
+    },
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "authorization_id": "OIA-4240C04BF407B967",
+      "event": "ORDER_INTENT_AUTHORIZATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "AUTHORIZED_NOT_EXECUTED"
+    }
+  ],
+  "authorization_ledger_sha256": "f8d67801786a2d32e7eebd8e2c3efa66f465d134e1db60c0f60d849e5d6b2215"
+}

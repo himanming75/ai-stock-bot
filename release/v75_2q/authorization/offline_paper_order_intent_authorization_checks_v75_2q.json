@@ -1,0 +1,66 @@
+{
+  "authorization_checks": [
+    {
+      "check": "SIGNAL_OUTPUT_VALIDATION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "VALIDATED_SIGNAL_MANIFEST",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_IDENTITY_LOCK",
+      "check_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "check": "ORDER_INTENT_NOT_CREATED",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "FILL_SIMULATION_NOT_STARTED",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "ZERO_ORDER_SIDE_EFFECTS",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "BROKER_DISCONNECTED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "SINGLE_USE_TOKEN_POLICY",
+      "check_index": 10,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "AUTHORIZATION_SCOPE_LIMIT",
+      "check_index": 11,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "authorization_checks_sha256": "ff736182c9dfec0ffcc0ebe954a8eba3894c74767b79906d2f92a9816226bba2",
+  "authorization_id": "OIA-4240C04BF407B967"
+}
