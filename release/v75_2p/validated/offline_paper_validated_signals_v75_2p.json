@@ -1,0 +1,32 @@
+{
+  "validated_signal_summary": {
+    "buy_count": 1,
+    "hold_count": 0,
+    "sell_count": 0,
+    "signal_count": 1,
+    "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+    "strategy_id": "CHAMPION_OFFLINE_V1",
+    "symbols": [
+      "SPY"
+    ]
+  },
+  "validated_signals": [
+    {
+      "action": "BUY",
+      "as_of": "2026-07-30T15:30:00+00:00",
+      "fast_sma": 633.0,
+      "fast_window": 2,
+      "latest_price": 633.5,
+      "order_created": false,
+      "order_submitted": false,
+      "price_field": "close",
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+      "slow_sma": 632.3333333333,
+      "slow_window": 3,
+      "strategy_id": "CHAMPION_OFFLINE_V1",
+      "symbol": "SPY"
+    }
+  ],
+  "validation_id": "SOV-A441B7AB4B9C4F56"
+}

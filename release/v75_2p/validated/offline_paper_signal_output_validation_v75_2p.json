@@ -1,0 +1,178 @@
+{
+  "approved_for_live": false,
+  "authorization_id": "SGA-EB99F93B5CB946E8",
+  "broker_connection_allowed": false,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "decision": "offline_paper_signal_output_validated",
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "network_used": false,
+  "offline_paper_signal_output_validation_sha256": "2dfd5ffa61bad424925907fb335b00de15baca265af2ac3c163b2f8b948f251b",
+  "order_generation_allowed": false,
+  "orders_created": 0,
+  "orders_submitted": 0,
+  "paper_orders_allowed": false,
+  "safety_lock": {
+    "broker_connected": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "live_trading_approval_allowed": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2p.offline_paper_signal_output_validation.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "signal_execution_id": "SGE-44449BA405BF05D4",
+  "source_signal_generation_execution_sha256": "fb604ccb83493913de9cda22fc98ef33cfeb00f7406e940c411a15ad3ce2c126",
+  "source_signal_output_package_sha256": "bac1b055068f0978d39ec596799e30269236b004c532797ea4685e111051012d",
+  "status": "PASS",
+  "validated_at": "2026-07-30T21:30:08+00:00",
+  "validated_signal_summary": {
+    "buy_count": 1,
+    "hold_count": 0,
+    "sell_count": 0,
+    "signal_count": 1,
+    "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+    "strategy_id": "CHAMPION_OFFLINE_V1",
+    "symbols": [
+      "SPY"
+    ]
+  },
+  "validated_signals": [
+    {
+      "action": "BUY",
+      "as_of": "2026-07-30T15:30:00+00:00",
+      "fast_sma": 633.0,
+      "fast_window": 2,
+      "latest_price": 633.5,
+      "order_created": false,
+      "order_submitted": false,
+      "price_field": "close",
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+      "slow_sma": 632.3333333333,
+      "slow_window": 3,
+      "strategy_id": "CHAMPION_OFFLINE_V1",
+      "symbol": "SPY"
+    }
+  ],
+  "validation_checks": [
+    {
+      "check": "SIGNAL_GENERATION_EXECUTION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_OUTPUT_PACKAGE_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "CONSUMED_TOKEN_EVIDENCE",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_COUNT_CONSISTENCY",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_SUMMARY_CONSISTENCY",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "SMA_RELATIONSHIP_VALID",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_ACTION_VALID",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_ID_RECALCULATION",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "ZERO_ORDER_SIDE_EFFECTS",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "validation_checks_sha256": "e885f9d6dd2565bee1354cca4575a8dccbd102ccd346da54cc978f56c180fe41",
+  "validation_gate": {
+    "fill_simulation_allowed": false,
+    "live_orders_allowed": false,
+    "network_allowed": false,
+    "next_version": "75.2Q",
+    "order_generation_allowed": false,
+    "order_intent_authorization_allowed": true,
+    "paper_orders_allowed": false,
+    "signal_output_validated": true
+  },
+  "validation_id": "SOV-A441B7AB4B9C4F56",
+  "validation_ledger": [
+    {
+      "event": "SIGNAL_EXECUTION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNALS_RECALCULATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_IDENTITIES_VERIFIED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_OUTPUT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_INTENT_AUTHORIZATION",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    }
+  ],
+  "validation_ledger_sha256": "099b8a2c2d9a777873efb058a73f99be8a4a36581538b8334995b0c5fb2c4450",
+  "validation_state": "READY_FOR_ORDER_INTENT_AUTHORIZATION",
+  "version": "75.2P"
+}

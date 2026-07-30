@@ -1,0 +1,17 @@
+{
+  "broker_connection_allowed": false,
+  "expected_signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "order_generation_allowed": false,
+  "paper_orders_allowed": false,
+  "require_consumed_token": true,
+  "require_execution_integrity": true,
+  "require_network_disabled": true,
+  "require_signal_id_recalculation": true,
+  "require_signal_package_integrity": true,
+  "require_sma_recalculation": true,
+  "require_zero_orders": true,
+  "validation_scope": "OFFLINE_PAPER_SIGNAL_OUTPUT_ONLY"
+}

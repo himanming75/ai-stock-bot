@@ -1,0 +1,42 @@
+{
+  "validation_id": "SOV-A441B7AB4B9C4F56",
+  "validation_ledger": [
+    {
+      "event": "SIGNAL_EXECUTION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNALS_RECALCULATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_IDENTITIES_VERIFIED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    },
+    {
+      "event": "SIGNAL_OUTPUT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_INTENT_AUTHORIZATION",
+      "validation_id": "SOV-A441B7AB4B9C4F56"
+    }
+  ],
+  "validation_ledger_sha256": "099b8a2c2d9a777873efb058a73f99be8a4a36581538b8334995b0c5fb2c4450"
+}
