@@ -1,0 +1,50 @@
+{
+  "broker_connection_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "input_mode": "STATIC_OFFLINE_FIXTURE",
+  "live_orders_allowed": false,
+  "market_bars": [
+    {
+      "close": 631.0,
+      "high": 632.0,
+      "low": 629.0,
+      "open": 630.0,
+      "symbol": "SPY",
+      "timestamp": "2026-07-29T20:00:00+00:00",
+      "volume": 1000000
+    },
+    {
+      "close": 632.5,
+      "high": 633.0,
+      "low": 630.5,
+      "open": 631.0,
+      "symbol": "SPY",
+      "timestamp": "2026-07-30T14:30:00+00:00",
+      "volume": 1200000
+    },
+    {
+      "close": 633.5,
+      "high": 634.0,
+      "low": 632.0,
+      "open": 632.5,
+      "symbol": "SPY",
+      "timestamp": "2026-07-30T15:30:00+00:00",
+      "volume": 900000
+    }
+  ],
+  "network_allowed": false,
+  "order_generation_allowed": false,
+  "paper_orders_allowed": false,
+  "signal_generation_allowed": false,
+  "strategy_inputs": {
+    "fast_window": 2,
+    "minimum_history_bars": 3,
+    "price_field": "close",
+    "slow_window": 3,
+    "strategy_id": "CHAMPION_OFFLINE_V1"
+  },
+  "symbols": [
+    "SPY"
+  ]
+}

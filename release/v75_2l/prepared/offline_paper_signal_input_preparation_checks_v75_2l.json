@@ -1,0 +1,56 @@
+{
+  "preparation_checks": [
+    {
+      "check": "BASELINE_CERTIFICATE_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "STATIC_OFFLINE_INPUT_MODE",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "SYMBOL_UNIVERSE_VALID",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "MARKET_BARS_VALID",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "STRATEGY_INPUTS_VALID",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "INPUT_PACKAGE_IMMUTABLE",
+      "check_index": 6,
+      "state": "LOCKED"
+    },
+    {
+      "check": "SIGNAL_GENERATION_NOT_STARTED",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 10,
+      "state": "ENFORCED"
+    }
+  ],
+  "preparation_checks_sha256": "a78fb6b157c2d056c8dbf1e850f89866ec8427488983e4274bc4011d8bb08c1d",
+  "preparation_id": "SIP-C5DD839926772AA2"
+}

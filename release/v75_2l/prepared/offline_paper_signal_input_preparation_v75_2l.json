@@ -1,0 +1,185 @@
+{
+  "approved_for_live": false,
+  "broker_connection_allowed": false,
+  "certificate_id": "PBC-A11F3187EAE2B7E3",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "decision": "offline_paper_signal_input_prepared",
+  "execution_id": "PCS-9E02ACACB3FD3F80",
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "network_used": false,
+  "offline_paper_signal_input_preparation_sha256": "9f35cef04ac7c43adac4e054449baacf95fe77ff2d82f1ff545be49ef4fe5b8e",
+  "orders_submitted": 0,
+  "paper_orders_allowed": false,
+  "preparation_checks": [
+    {
+      "check": "BASELINE_CERTIFICATE_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "STATIC_OFFLINE_INPUT_MODE",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "SYMBOL_UNIVERSE_VALID",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "MARKET_BARS_VALID",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "STRATEGY_INPUTS_VALID",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "INPUT_PACKAGE_IMMUTABLE",
+      "check_index": 6,
+      "state": "LOCKED"
+    },
+    {
+      "check": "SIGNAL_GENERATION_NOT_STARTED",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 10,
+      "state": "ENFORCED"
+    }
+  ],
+  "preparation_checks_sha256": "a78fb6b157c2d056c8dbf1e850f89866ec8427488983e4274bc4011d8bb08c1d",
+  "preparation_gate": {
+    "fill_simulation_allowed": false,
+    "live_orders_allowed": false,
+    "network_allowed": false,
+    "next_version": "75.2M",
+    "order_generation_allowed": false,
+    "paper_orders_allowed": false,
+    "signal_generation_allowed": false,
+    "signal_input_prepared": true,
+    "signal_input_validation_allowed": true
+  },
+  "preparation_id": "SIP-C5DD839926772AA2",
+  "preparation_ledger": [
+    {
+      "event": "BASELINE_CERTIFICATE_VERIFIED",
+      "ledger_index": 1,
+      "preparation_id": "SIP-C5DD839926772AA2",
+      "state": "PASS"
+    },
+    {
+      "event": "OFFLINE_MARKET_DATA_LOCKED",
+      "ledger_index": 2,
+      "preparation_id": "SIP-C5DD839926772AA2",
+      "state": "LOCKED"
+    },
+    {
+      "event": "STRATEGY_INPUTS_LOCKED",
+      "ledger_index": 3,
+      "preparation_id": "SIP-C5DD839926772AA2",
+      "state": "LOCKED"
+    },
+    {
+      "event": "SIGNAL_INPUT_PACKAGE_CREATED",
+      "ledger_index": 4,
+      "preparation_id": "SIP-C5DD839926772AA2",
+      "state": "READY"
+    },
+    {
+      "event": "SIGNAL_INPUT_PREPARATION_COMPLETED",
+      "ledger_index": 5,
+      "preparation_id": "SIP-C5DD839926772AA2",
+      "state": "READY_FOR_SIGNAL_INPUT_VALIDATION"
+    }
+  ],
+  "preparation_ledger_sha256": "a283783942049a926ac0ef34de87c13d59f0f3ed77acf65370aeedc6841b25c2",
+  "preparation_state": "READY_FOR_SIGNAL_INPUT_VALIDATION",
+  "prepared_at": "2026-07-30T21:07:40+00:00",
+  "safety_lock": {
+    "broker_connected": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "live_trading_approval_allowed": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2l.offline_paper_signal_input_preparation.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "signal_input_package": {
+    "champion_candidate_id": "CAND-0563E3012F19",
+    "cycle_id": "PCS-9E02ACACB3FD3F80",
+    "cycle_sequence": 1,
+    "market_data": {
+      "bar_count": 3,
+      "bars": [
+        {
+          "close": 631.0,
+          "high": 632.0,
+          "low": 629.0,
+          "open": 630.0,
+          "symbol": "SPY",
+          "timestamp": "2026-07-29T20:00:00+00:00",
+          "volume": 1000000
+        },
+        {
+          "close": 632.5,
+          "high": 633.0,
+          "low": 630.5,
+          "open": 631.0,
+          "symbol": "SPY",
+          "timestamp": "2026-07-30T14:30:00+00:00",
+          "volume": 1200000
+        },
+        {
+          "close": 633.5,
+          "high": 634.0,
+          "low": 632.0,
+          "open": 632.5,
+          "symbol": "SPY",
+          "timestamp": "2026-07-30T15:30:00+00:00",
+          "volume": 900000
+        }
+      ],
+      "immutable": true,
+      "mode": "STATIC_OFFLINE_FIXTURE",
+      "network_source": false,
+      "symbols": [
+        "SPY"
+      ]
+    },
+    "preparation_id": "SIP-C5DD839926772AA2",
+    "prepared_at": "2026-07-30T21:07:40+00:00",
+    "session_id": "PAPER-C47E765BCA0F6573",
+    "strategy_inputs": {
+      "fast_window": 2,
+      "immutable": true,
+      "minimum_history_bars": 3,
+      "price_field": "close",
+      "slow_window": 3,
+      "strategy_id": "CHAMPION_OFFLINE_V1"
+    }
+  },
+  "signal_input_package_sha256": "75717e637bda88635ea64c683223c501e8f32649efd85a2382949256b76907ea",
+  "source_runtime_baseline_certificate_sha256": "8b476fea51f30fc735b563bdb662403cd48b31186da1f165deb956ff90692c92",
+  "status": "PASS",
+  "version": "75.2L"
+}
