@@ -1,0 +1,22 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_deterministic_registry_id": true,
+  "require_receipt_notional_recalculation": true,
+  "require_registry_checks_integrity": true,
+  "require_registry_entry_integrity": true,
+  "require_registry_index_integrity": true,
+  "require_registry_integrity": true,
+  "require_registry_ledger_integrity": true,
+  "require_zero_settlement_and_account_mutations": true,
+  "settlement_execution_allowed": false,
+  "verification_scope": "OFFLINE_PAPER_FILL_RECEIPT_ARCHIVE_CERTIFICATE_REGISTRY_VERIFICATION_ONLY"
+}
