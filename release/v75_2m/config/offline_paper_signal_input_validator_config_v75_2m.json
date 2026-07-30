@@ -1,0 +1,26 @@
+{
+  "allowed_price_fields": [
+    "open",
+    "high",
+    "low",
+    "close"
+  ],
+  "broker_connection_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "order_generation_allowed": false,
+  "paper_orders_allowed": false,
+  "require_minimum_history": true,
+  "require_network_source_false": true,
+  "require_nonnegative_volume": true,
+  "require_package_immutable": true,
+  "require_strategy_immutable": true,
+  "require_strategy_window_consistency": true,
+  "require_strict_time_order": true,
+  "require_unique_symbol_timestamps": true,
+  "require_valid_ohlc": true,
+  "required_input_mode": "STATIC_OFFLINE_FIXTURE",
+  "signal_generation_allowed": false
+}

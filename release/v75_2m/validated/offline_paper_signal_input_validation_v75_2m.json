@@ -1,0 +1,201 @@
+{
+  "approved_for_live": false,
+  "broker_connection_allowed": false,
+  "certificate_id": "PBC-A11F3187EAE2B7E3",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "decision": "offline_paper_signal_input_validated",
+  "execution_id": "PCS-9E02ACACB3FD3F80",
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "network_used": false,
+  "offline_paper_signal_input_validation_sha256": "06af68c77bce96fe82874a68984886ac9874e32157614b73e22695b56132cb34",
+  "orders_submitted": 0,
+  "paper_orders_allowed": false,
+  "preparation_id": "SIP-C5DD839926772AA2",
+  "safety_lock": {
+    "broker_connected": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "live_trading_approval_allowed": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2m.offline_paper_signal_input_validation.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_signal_input_package_sha256": "75717e637bda88635ea64c683223c501e8f32649efd85a2382949256b76907ea",
+  "source_signal_input_preparation_sha256": "9f35cef04ac7c43adac4e054449baacf95fe77ff2d82f1ff545be49ef4fe5b8e",
+  "status": "PASS",
+  "validated_at": "2026-07-30T21:13:00+00:00",
+  "validation_checks": [
+    {
+      "check": "SIGNAL_INPUT_PREPARATION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_INPUT_PACKAGE_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "PACKAGE_IDENTITY_CONSISTENCY",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "STATIC_OFFLINE_INPUT_MODE",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "MARKET_DATA_IMMUTABILITY",
+      "check_index": 5,
+      "state": "LOCKED"
+    },
+    {
+      "check": "SYMBOL_UNIVERSE_VALID",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "OHLC_STRUCTURE_VALID",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "TIMESTAMP_ORDER_VALID",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "DUPLICATE_BARS_ABSENT",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "STRATEGY_INPUTS_VALID",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "MINIMUM_HISTORY_SUFFICIENT",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "SIGNAL_GENERATION_NOT_STARTED",
+      "check_index": 12,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_GENERATION_NOT_STARTED",
+      "check_index": 13,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 14,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 15,
+      "state": "ENFORCED"
+    }
+  ],
+  "validation_checks_sha256": "f2e26e2dc2c2b15e1c43e208aa2f0f4f31b1a3f2cb6d8301e47cc5647fe4d249",
+  "validation_evidence": {
+    "market_summary": {
+      "bar_count": 3,
+      "bar_count_by_symbol": {
+        "SPY": 3
+      },
+      "duplicate_symbol_timestamps": 0,
+      "first_timestamp_by_symbol": {
+        "SPY": "2026-07-29T20:00:00+00:00"
+      },
+      "immutable": true,
+      "last_timestamp_by_symbol": {
+        "SPY": "2026-07-30T15:30:00+00:00"
+      },
+      "mode": "STATIC_OFFLINE_FIXTURE",
+      "network_source": false,
+      "strict_time_order": true,
+      "symbol_count": 1,
+      "symbols": [
+        "SPY"
+      ]
+    },
+    "preparation_id": "SIP-C5DD839926772AA2",
+    "signal_input_package_sha256": "75717e637bda88635ea64c683223c501e8f32649efd85a2382949256b76907ea",
+    "strategy_summary": {
+      "fast_window": 2,
+      "history_sufficient": true,
+      "immutable": true,
+      "minimum_history_bars": 3,
+      "price_field": "close",
+      "slow_window": 3,
+      "strategy_id": "CHAMPION_OFFLINE_V1",
+      "window_consistency": true
+    },
+    "validated_at": "2026-07-30T21:13:00+00:00",
+    "validation_id": "SIV-39942131A4ECC674"
+  },
+  "validation_evidence_sha256": "40042a98209667bb8f71f07c123bf34b9ee8e60efe0c8922d5a3b2122d6d936e",
+  "validation_gate": {
+    "fill_simulation_allowed": false,
+    "live_orders_allowed": false,
+    "network_allowed": false,
+    "next_version": "75.2N",
+    "order_generation_allowed": false,
+    "paper_orders_allowed": false,
+    "signal_generation_allowed": false,
+    "signal_generation_authorization_allowed": true,
+    "signal_input_validated": true
+  },
+  "validation_id": "SIV-39942131A4ECC674",
+  "validation_ledger": [
+    {
+      "event": "SIGNAL_INPUT_PREPARATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "SIV-39942131A4ECC674"
+    },
+    {
+      "event": "SIGNAL_INPUT_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "SIV-39942131A4ECC674"
+    },
+    {
+      "event": "MARKET_DATA_VALIDATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "SIV-39942131A4ECC674"
+    },
+    {
+      "event": "STRATEGY_INPUTS_VALIDATED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "SIV-39942131A4ECC674"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "SIV-39942131A4ECC674"
+    },
+    {
+      "event": "SIGNAL_INPUT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_SIGNAL_GENERATION_AUTHORIZATION",
+      "validation_id": "SIV-39942131A4ECC674"
+    }
+  ],
+  "validation_ledger_sha256": "6203abcbf6e0845c185223619c8ae4c7a1435db733bc8583fb1592c9cef7d94b",
+  "validation_state": "READY_FOR_SIGNAL_GENERATION_AUTHORIZATION",
+  "version": "75.2M"
+}
