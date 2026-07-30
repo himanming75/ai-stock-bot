@@ -1,0 +1,16 @@
+{
+  "authorization_id": "OGA-20B7866E9E0A6F38",
+  "authorized_order_intent_manifest": [
+    {
+      "order_created": false,
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_object_creation_authorized": true,
+      "order_submitted": false,
+      "quantity": 1,
+      "reference_price": 633.5,
+      "side": "BUY",
+      "symbol": "SPY"
+    }
+  ],
+  "authorized_order_intent_manifest_sha256": "e16c1ab828e52fab2d3a4633d290afb3301bcf18d60ba95bd298c10621feccda"
+}

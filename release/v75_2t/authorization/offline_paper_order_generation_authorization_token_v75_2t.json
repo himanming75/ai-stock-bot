@@ -1,0 +1,16 @@
+{
+  "authorization_id": "OGA-20B7866E9E0A6F38",
+  "authorized_order_intent_ids": [
+    "INT-72B43614E992077D"
+  ],
+  "consumed": false,
+  "consumed_at": null,
+  "expires_at": "2026-07-30T22:03:00+00:00",
+  "issued_at": "2026-07-30T21:48:00+00:00",
+  "nonce": "be825dbb7d0d98cbec3b21285ca1860f",
+  "scope": "OFFLINE_PAPER_ORDER_OBJECT_CREATION_ONLY",
+  "single_use": true,
+  "token_sha256": "9c3528c88fb64abeb6b7ecc19f5eb2355ecadb57add27bd214af8a7ecdc955ad",
+  "token_state": "ISSUED_NOT_CONSUMED",
+  "validation_id": "OIV-E06C915B186DCEC9"
+}
