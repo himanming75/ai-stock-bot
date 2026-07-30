@@ -1,0 +1,18 @@
+{
+  "broker_connection_allowed": false,
+  "default_quantity": 1,
+  "execution_scope": "OFFLINE_PAPER_ORDER_INTENT_CREATION_ONLY",
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "intent_type": "MARKET_REFERENCE_ONLY",
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "order_generation_allowed": false,
+  "paper_orders_allowed": false,
+  "prevent_output_overwrite": true,
+  "require_authorization_integrity": true,
+  "require_signal_manifest_integrity": true,
+  "require_single_use_token": true,
+  "require_token_unconsumed": true,
+  "require_token_unexpired": true
+}

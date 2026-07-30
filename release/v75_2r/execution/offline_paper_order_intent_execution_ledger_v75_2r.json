@@ -1,0 +1,42 @@
+{
+  "execution_id": "OIE-00F1E95A42CD7448",
+  "execution_ledger": [
+    {
+      "event": "ORDER_INTENT_AUTHORIZATION_VERIFIED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "event": "SINGLE_USE_TOKEN_CONSUMED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 2,
+      "state": "CONSUMED"
+    },
+    {
+      "event": "AUTHORIZED_SIGNAL_MANIFEST_LOADED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "event": "ORDER_INTENT_OBJECTS_CREATED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 4,
+      "state": "PASS"
+    },
+    {
+      "event": "ORDER_SIDE_EFFECTS_BLOCKED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "event": "ORDER_INTENT_EXECUTION_COMPLETED",
+      "execution_id": "OIE-00F1E95A42CD7448",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_INTENT_VALIDATION"
+    }
+  ],
+  "execution_ledger_sha256": "0c40e9607c30bfc5305cbb29f870ddaec481e09620ae75a45b7b39beac0c1db2"
+}

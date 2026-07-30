@@ -3,14 +3,14 @@
   "authorized_signal_ids": [
     "SIG-AB05F6CBC6D960C9"
   ],
-  "consumed": false,
-  "consumed_at": null,
+  "consumed": true,
+  "consumed_at": "2026-07-30T21:39:07+00:00",
   "expires_at": "2026-07-30T21:54:03+00:00",
   "issued_at": "2026-07-30T21:39:03+00:00",
   "nonce": "72d05e1041af8ee62c8d316d3bd955d2",
   "scope": "OFFLINE_PAPER_ORDER_INTENT_CREATION_ONLY",
   "single_use": true,
   "token_sha256": "092a532fb5fe093d3eed1dddbaf3366c1ef6af265ec88a42c4d5953418e4f580",
-  "token_state": "ISSUED_NOT_CONSUMED",
+  "token_state": "CONSUMED",
   "validation_id": "SOV-A441B7AB4B9C4F56"
 }
