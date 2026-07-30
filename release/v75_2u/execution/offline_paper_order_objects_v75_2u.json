@@ -1,0 +1,39 @@
+{
+  "authorization_id": "OGA-821453B53E1A1137",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "created_at": "2026-07-30T21:52:25+00:00",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "execution_id": "OGE-52EECE411E228881",
+  "fills_created": 0,
+  "immutable": true,
+  "network_source": false,
+  "offline_only": true,
+  "orders_submitted": 0,
+  "paper_order_count": 1,
+  "paper_orders": [
+    {
+      "authorization_id": "OGA-821453B53E1A1137",
+      "broker_routed": false,
+      "created_at": "2026-07-30T21:52:25+00:00",
+      "external_side_effects": false,
+      "fill_simulated": false,
+      "filled": false,
+      "network_used": false,
+      "offline_paper_object": true,
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_state": "CREATED_NOT_SUBMITTED",
+      "order_type": "MARKET_REFERENCE_ONLY",
+      "paper_order_id": "PORD-E485BB6F23E7C728",
+      "quantity": 1,
+      "reference_price": 633.5,
+      "side": "BUY",
+      "submitted": false,
+      "symbol": "SPY",
+      "time_in_force": "DAY"
+    }
+  ],
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_execution_id": "OIE-00F1E95A42CD7448",
+  "validation_id": "OIV-E06C915B186DCEC9"
+}

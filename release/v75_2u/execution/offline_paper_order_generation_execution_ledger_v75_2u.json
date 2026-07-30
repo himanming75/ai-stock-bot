@@ -1,0 +1,42 @@
+{
+  "execution_id": "OGE-52EECE411E228881",
+  "execution_ledger": [
+    {
+      "event": "ORDER_GENERATION_AUTHORIZATION_VERIFIED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "event": "SINGLE_USE_TOKEN_CONSUMED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 2,
+      "state": "CONSUMED"
+    },
+    {
+      "event": "ORDER_INTENT_IDENTITIES_LOCKED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 3,
+      "state": "LOCKED"
+    },
+    {
+      "event": "OFFLINE_PAPER_ORDER_OBJECTS_CREATED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 4,
+      "state": "PASS"
+    },
+    {
+      "event": "ORDER_SUBMISSION_AND_FILL_BLOCKED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "event": "ORDER_GENERATION_EXECUTION_COMPLETED",
+      "execution_id": "OGE-52EECE411E228881",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_OBJECT_VALIDATION"
+    }
+  ],
+  "execution_ledger_sha256": "7884feee0e1fcd8512d7d53bd8ad3bf2e689313bcf645dfea493cff30292a0dd"
+}

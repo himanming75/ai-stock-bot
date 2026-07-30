@@ -74,65 +74,65 @@
     "order_submission_allowed": false,
     "paper_orders_allowed": false
   },
-  "authorization_id": "OGA-20B7866E9E0A6F38",
+  "authorization_id": "OGA-821453B53E1A1137",
   "authorization_ledger": [
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "ORDER_INTENT_VALIDATION_VERIFIED",
       "ledger_index": 1,
       "state": "PASS"
     },
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "ORDER_INTENT_IDENTITIES_LOCKED",
       "ledger_index": 2,
       "state": "LOCKED"
     },
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "ORDER_OBJECT_CREATION_SCOPE_AUTHORIZED",
       "ledger_index": 3,
       "state": "AUTHORIZED"
     },
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "SINGLE_USE_TOKEN_ISSUED",
       "ledger_index": 4,
       "state": "ISSUED_NOT_CONSUMED"
     },
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "SAFETY_LOCKS_RECONFIRMED",
       "ledger_index": 5,
       "state": "ENFORCED"
     },
     {
-      "authorization_id": "OGA-20B7866E9E0A6F38",
+      "authorization_id": "OGA-821453B53E1A1137",
       "event": "ORDER_GENERATION_AUTHORIZATION_COMPLETED",
       "ledger_index": 6,
       "state": "AUTHORIZED_NOT_EXECUTED"
     }
   ],
-  "authorization_ledger_sha256": "f6bd78a67e14d05dc4a6b34f4460c88f91c0a9f61d29a84a9ebb827fbed8bbba",
+  "authorization_ledger_sha256": "89f455cc078b4761a86f86d82c75605130f3527e72216fcee57ab5001088110c",
   "authorization_scope": "OFFLINE_PAPER_ORDER_OBJECT_CREATION_ONLY",
   "authorization_state": "AUTHORIZED_NOT_EXECUTED",
   "authorization_token": {
-    "authorization_id": "OGA-20B7866E9E0A6F38",
+    "authorization_id": "OGA-821453B53E1A1137",
     "authorized_order_intent_ids": [
       "INT-72B43614E992077D"
     ],
     "consumed": false,
     "consumed_at": null,
-    "expires_at": "2026-07-30T22:03:00+00:00",
-    "issued_at": "2026-07-30T21:48:00+00:00",
-    "nonce": "be825dbb7d0d98cbec3b21285ca1860f",
+    "expires_at": "2026-07-30T22:07:20+00:00",
+    "issued_at": "2026-07-30T21:52:20+00:00",
+    "nonce": "06270a33133fd6ada2afd84287d83c7e",
     "scope": "OFFLINE_PAPER_ORDER_OBJECT_CREATION_ONLY",
     "single_use": true,
-    "token_sha256": "9c3528c88fb64abeb6b7ecc19f5eb2355ecadb57add27bd214af8a7ecdc955ad",
+    "token_sha256": "b951c56034d728eac8b184b56c98f17c74bd3c8afcf9c03ae0e4fec358ec0c83",
     "token_state": "ISSUED_NOT_CONSUMED",
     "validation_id": "OIV-E06C915B186DCEC9"
   },
-  "authorization_token_sha256": "9184f6b41b641b03eec1529e589cd573792cea5348a11988aee8da2de75e575f",
+  "authorization_token_sha256": "06f4879d40287d44b6bc14565b91ce0571cb9c524e487106445340ed34c76caa",
   "authorization_ttl_seconds": 900,
   "authorized_order_intent_manifest": [
     {
@@ -153,13 +153,13 @@
   "cycle_sequence": 1,
   "decision": "offline_paper_order_generation_authorized",
   "execution_id": "OIE-00F1E95A42CD7448",
-  "expires_at": "2026-07-30T22:03:00+00:00",
+  "expires_at": "2026-07-30T22:07:20+00:00",
   "fill_simulation_allowed": false,
-  "issued_at": "2026-07-30T21:48:00+00:00",
+  "issued_at": "2026-07-30T21:52:20+00:00",
   "live_orders_allowed": false,
   "network_allowed": false,
   "network_used": false,
-  "offline_paper_order_generation_authorization_sha256": "d72d6f9842cac69dc0120c8599cd27714f89a5d7fc808d0eba5b31760a875074",
+  "offline_paper_order_generation_authorization_sha256": "08dfcadfa49fa08eeb2350ab420a6dc1ed5acdee192458278bc4ad20e2b605b0",
   "order_generation_authorized": true,
   "order_generation_executed": false,
   "order_objects_created": 0,

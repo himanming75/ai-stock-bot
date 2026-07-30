@@ -3,14 +3,14 @@
   "authorized_order_intent_ids": [
     "INT-72B43614E992077D"
   ],
-  "consumed": false,
-  "consumed_at": null,
+  "consumed": true,
+  "consumed_at": "2026-07-30T21:52:25+00:00",
   "expires_at": "2026-07-30T22:07:20+00:00",
   "issued_at": "2026-07-30T21:52:20+00:00",
   "nonce": "06270a33133fd6ada2afd84287d83c7e",
   "scope": "OFFLINE_PAPER_ORDER_OBJECT_CREATION_ONLY",
   "single_use": true,
   "token_sha256": "b951c56034d728eac8b184b56c98f17c74bd3c8afcf9c03ae0e4fec358ec0c83",
-  "token_state": "ISSUED_NOT_CONSUMED",
+  "token_state": "CONSUMED",
   "validation_id": "OIV-E06C915B186DCEC9"
 }
