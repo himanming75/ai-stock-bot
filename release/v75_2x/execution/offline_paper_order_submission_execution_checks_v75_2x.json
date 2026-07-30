@@ -1,0 +1,66 @@
+{
+  "execution_checks": [
+    {
+      "check": "ORDER_SUBMISSION_AUTHORIZATION_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "SUBMISSION_TOKEN_INTEGRITY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "SUBMISSION_TOKEN_TIME_WINDOW",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "SUBMISSION_TOKEN_SINGLE_USE",
+      "check_index": 4,
+      "state": "CONSUMED"
+    },
+    {
+      "check": "PAPER_ORDER_IDENTITIES_LOCKED",
+      "check_index": 5,
+      "state": "LOCKED"
+    },
+    {
+      "check": "OFFLINE_SUBMISSION_STATE_TRANSITION",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "EXTERNAL_ORDER_SUBMISSION_BLOCKED",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "BROKER_ROUTING_NOT_STARTED",
+      "check_index": 8,
+      "state": "PASS"
+    },
+    {
+      "check": "FILL_SIMULATION_NOT_STARTED",
+      "check_index": 9,
+      "state": "PASS"
+    },
+    {
+      "check": "ZERO_EXTERNAL_SIDE_EFFECTS",
+      "check_index": 10,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 11,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 12,
+      "state": "ENFORCED"
+    }
+  ],
+  "execution_checks_sha256": "c1219970f509b54be77295243f29b52b32c6e534589928ddb79c9635bf9c257a",
+  "submission_execution_id": "OSE-3E6F455A1A0CD65E"
+}

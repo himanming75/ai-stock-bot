@@ -3,14 +3,14 @@
   "authorized_paper_order_ids": [
     "PORD-E485BB6F23E7C728"
   ],
-  "consumed": false,
-  "consumed_at": null,
+  "consumed": true,
+  "consumed_at": "2026-07-30T22:09:11+00:00",
   "expires_at": "2026-07-30T22:24:06+00:00",
   "issued_at": "2026-07-30T22:09:06+00:00",
   "nonce": "e4e0b32622e94f57f3f9c302009e7d63",
   "scope": "OFFLINE_PAPER_ORDER_SUBMISSION_EXECUTION_ONLY",
   "single_use": true,
   "token_sha256": "9d6d8d5c7f3b7153368c01a85974fda79298b25a95b95c3618023b39001da44b",
-  "token_state": "ISSUED_NOT_CONSUMED",
+  "token_state": "CONSUMED",
   "validation_id": "OOV-91C40238B53F1BD9"
 }

@@ -1,0 +1,17 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "execution_scope": "OFFLINE_PAPER_ORDER_SUBMISSION_STATE_TRANSITION_ONLY",
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "prevent_output_overwrite": true,
+  "require_authorization_integrity": true,
+  "require_manifest_integrity": true,
+  "require_single_use_token": true,
+  "require_token_unconsumed": true,
+  "require_token_unexpired": true,
+  "submitted_order_state": "SUBMITTED_OFFLINE_REFERENCE"
+}
