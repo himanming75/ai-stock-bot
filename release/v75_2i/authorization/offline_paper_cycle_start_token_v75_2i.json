@@ -1,0 +1,11 @@
+{
+  "authorization_id": "PCA-2ADD50EB760C8E4C",
+  "certificate_id": "PRC-E525FD1920F093EC",
+  "consumed": false,
+  "expires_at": "2026-07-30T21:48:59+00:00",
+  "issued_at": "2026-07-30T20:48:59+00:00",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "single_use": true,
+  "token_sha256": "5bf8c0fabba10e089a13fdd916497eca5e3f53186ea43613cf084e816626ddf1",
+  "ttl_seconds": 3600
+}

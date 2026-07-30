@@ -1,0 +1,13 @@
+{
+  "authorization_token_ttl_seconds": 3600,
+  "broker_connection_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_orders_allowed": false,
+  "require_empty_order_queue": true,
+  "require_operator_cycle_start": true,
+  "require_single_use_token": true,
+  "require_unmutated_positions": true,
+  "require_zero_orders_before_start": true
+}

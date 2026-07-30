@@ -1,0 +1,51 @@
+{
+  "authorization_checks": [
+    {
+      "check": "READINESS_CERTIFICATE_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "OFFLINE_RUNTIME_READY",
+      "check_index": 2,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDER_QUEUE_EMPTY",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "ORDERS_SUBMITTED_ZERO",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "POSITIONS_UNMUTATED",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "BROKER_DISCONNECTED",
+      "check_index": 6,
+      "state": "PASS"
+    },
+    {
+      "check": "NETWORK_DISABLED",
+      "check_index": 7,
+      "state": "PASS"
+    },
+    {
+      "check": "LIVE_TRADING_PROHIBITION",
+      "check_index": 8,
+      "state": "ENFORCED"
+    },
+    {
+      "check": "SINGLE_USE_CYCLE_TOKEN_ISSUED",
+      "check_index": 9,
+      "state": "ISSUED"
+    }
+  ],
+  "authorization_checks_sha256": "affa1ff2e55455cd4f7329b856927c658a58a85722027dd54275ecfbe171839a",
+  "authorization_id": "PCA-2ADD50EB760C8E4C"
+}
