@@ -1,0 +1,11 @@
+{
+  "approved_for_live": false,
+  "champion_strategy": "breakout",
+  "forward_size": 20,
+  "input": "release/v69_1/scenarios/paper_trade_scenarios_breakout_v69_1.json",
+  "minimum_pass_rate": 0.6,
+  "network_used": false,
+  "step_size": 10,
+  "train_size": 50,
+  "version": "70.0"
+}

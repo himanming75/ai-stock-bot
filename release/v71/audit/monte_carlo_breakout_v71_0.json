@@ -1,0 +1,17 @@
+{
+  "approved_for_live": false,
+  "block_reason": "walk-forward validation did not approve Monte Carlo progression",
+  "champion_strategy": "breakout",
+  "decision": "monte_carlo_validation_blocked",
+  "monte_carlo_report_sha256": "dd9c2f9d533d8ebcbd1b6e162572bcec3f884a86ad8b0680a2442e8bb4f91218",
+  "network_used": false,
+  "requires_extended_paper_validation": false,
+  "requires_strategy_revision": true,
+  "schema_version": "v71.0.monte_carlo_robustness_validation.1",
+  "simulation_count": 0,
+  "source_walk_forward_report_sha256": "e755433a033f4abf1ea056de600670beba2c106d375178654e437c9b9d0e51e3",
+  "status": "PASS",
+  "validation_state": "BLOCKED",
+  "version": "71.0",
+  "walk_forward_state": "REJECTED"
+}

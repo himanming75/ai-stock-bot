@@ -1,0 +1,116 @@
+{
+  "approved_for_live": false,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "created_at": "2026-07-30T19:18:00+00:00",
+  "decision": "rollback_manifest_created",
+  "network_used": false,
+  "paper_session_reference": {
+    "activation_allowed": false,
+    "bootstrap_allowed": true,
+    "bootstrap_version": "75.2A"
+  },
+  "promotion_scope": "PROVISIONAL_PAPER_ONLY",
+  "recovery_verification": {
+    "champion_deactivated": false,
+    "paper_orders_frozen": false,
+    "pending_orders_cancelled": false,
+    "positions_reconciled": false,
+    "runner_up_staged": false,
+    "verification_state": "PENDING_EXECUTION"
+  },
+  "requires_operator_review": true,
+  "requires_paper_session_bootstrap": true,
+  "rollback_ledger": [
+    {
+      "candidate_id": "CAND-0563E3012F19",
+      "event": "ROLLBACK_PLAN_REGISTERED",
+      "ledger_index": 1,
+      "state": "READY"
+    },
+    {
+      "candidate_id": "CAND-0563E3012F19",
+      "event": "CHAMPION_ROLLBACK_ROUTE_CREATED",
+      "ledger_index": 2,
+      "state": "READY"
+    },
+    {
+      "candidate_id": "CAND-031295B32A7B",
+      "event": "RUNNER_UP_FAILOVER_ROUTE_CREATED",
+      "ledger_index": 3,
+      "state": "READY"
+    },
+    {
+      "candidate_id": "CAND-0563E3012F19",
+      "event": "ROLLBACK_MANIFEST_CREATED",
+      "ledger_index": 4,
+      "state": "READY"
+    }
+  ],
+  "rollback_ledger_sha256": "2f6402b364351e54778164f5eac2b37f9c830d11c4140774d77231e39ca818e6",
+  "rollback_manifest_sha256": "2b6ac588350266d6841883bfe398966be36e47b5bb2ef50504291a1538c75ed1",
+  "rollback_policy": {
+    "automatic_live_actions_allowed": false,
+    "close_positions_policy": "RECONCILE_THEN_DEACTIVATE",
+    "failover_policy": "STAGE_RUNNER_UP",
+    "mode": "MANUAL_OPERATOR_TRIGGERED",
+    "pending_order_policy": "CANCEL_ALL_PAPER_ONLY"
+  },
+  "rollback_sequence": [
+    {
+      "action": "FREEZE_NEW_PAPER_ORDERS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "FROZEN",
+      "sequence": 1
+    },
+    {
+      "action": "CAPTURE_FINAL_PAPER_SNAPSHOT",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "CAPTURED",
+      "sequence": 2
+    },
+    {
+      "action": "CANCEL_PENDING_PAPER_ORDERS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "CANCELLED",
+      "sequence": 3
+    },
+    {
+      "action": "RECONCILE_PAPER_POSITIONS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "RECONCILED",
+      "sequence": 4
+    },
+    {
+      "action": "DEACTIVATE_CHAMPION",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "DEACTIVATED",
+      "sequence": 5
+    },
+    {
+      "action": "STAGE_RUNNER_UP_FAILOVER",
+      "candidate_id": "CAND-031295B32A7B",
+      "required_state": "STAGED",
+      "sequence": 6
+    },
+    {
+      "action": "VERIFY_RECOVERY_STATE",
+      "candidate_id": "CAND-031295B32A7B",
+      "required_state": "PASS",
+      "sequence": 7
+    }
+  ],
+  "rollback_sequence_sha256": "b77e5ffde8897cb6348778cf486226ec64ca7ac20cef005dd675d6f3677ab464",
+  "rollback_state": "READY_FOR_PAPER_SESSION_BOOTSTRAP",
+  "runner_up_candidate_id": "CAND-031295B32A7B",
+  "schema_version": "v75.1c.rollback_manifest.1",
+  "source_promotion_manifest_sha256": "98b23fc859c0cb7b0fa055c3cc699061367fcf32e55b664aec4977ae14ead4a2",
+  "status": "PASS",
+  "trigger_conditions": [
+    "OPERATOR_REQUEST",
+    "PAPER_RISK_LIMIT_BREACH",
+    "PAPER_SESSION_INTEGRITY_FAILURE",
+    "PAPER_RECONCILIATION_FAILURE",
+    "CHAMPION_HEALTH_CHECK_FAILURE"
+  ],
+  "version": "75.1C"
+}

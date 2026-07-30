@@ -1,0 +1,13 @@
+{
+  "version": "62.0",
+  "schema_version": "v62.0.performance_dashboard_data.1",
+  "status": "PASS",
+  "decision": "empty_dashboard_sample",
+  "network_used": false,
+  "source_v61_journal_sha256": "",
+  "chart_point_count": 0,
+  "chart": [],
+  "metrics": {},
+  "recent_summary": {},
+  "dashboard_sha256": ""
+}

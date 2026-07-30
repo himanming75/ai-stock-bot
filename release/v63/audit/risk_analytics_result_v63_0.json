@@ -1,0 +1,44 @@
+{
+  "analytics": {
+    "analytics_sha256": "2c0d7fd374590fb0adea806c94aa3eb38096109eb8977051d0e37ba8250eacff",
+    "annualized_volatility": "0.000000",
+    "average_daily_return": "0.000000",
+    "calmar_ratio": "0.000000",
+    "daily_volatility": "0.000000",
+    "downside_deviation_annualized": "0.000000",
+    "downside_deviation_daily": "0.000000",
+    "historical_cvar_loss": "0.000000",
+    "historical_cvar_return": "0.000000",
+    "historical_var_loss": "0.000000",
+    "historical_var_return": "0.000000",
+    "max_drawdown": "0.000000",
+    "negative_return_count": 0,
+    "observation_count": 1,
+    "recovery_factor": "0.000000",
+    "risk_free_rate": "0.000000",
+    "risk_level": "LOW",
+    "risk_score": "0.000000",
+    "sharpe_ratio": "0.000000",
+    "sortino_ratio": "0.000000",
+    "var_confidence": "0.950000"
+  },
+  "decision": "risk_analytics_built",
+  "network_used": false,
+  "risk_report_sha256": "4f5fb0d8e114303560de3175a9ae02d35b88736bd0e1f896008622e931b13d77",
+  "rolling_drawdown": [
+    {
+      "drawdown": "0.000000",
+      "drawdown_amount": "0.0000",
+      "equity": "50480.0000",
+      "journal_date": "2026-07-29",
+      "rolling_point_sha256": "c920dba1833b83dbae475e73afe45a117d5a17c7311325120f7380bcd1241ba7",
+      "running_peak": "50480.0000",
+      "sequence": 1
+    }
+  ],
+  "rolling_point_count": 1,
+  "schema_version": "v63.0.risk_analytics.1",
+  "source_v62_dashboard_sha256": "bd8928b37327c333f2b74351f75dc6ea9707de5a4d32dc25518fa313252feb55",
+  "status": "PASS",
+  "version": "63.0"
+}

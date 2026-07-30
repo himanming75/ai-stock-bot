@@ -1,0 +1,51 @@
+{
+  "approved_for_live": false,
+  "bundle_sha256": "2d9dc00df09141ca0759f9004423cff34660aa208c119fe269d261baad9ee7d3",
+  "decision": "multi_strategy_scenarios_built",
+  "network_used": false,
+  "reports": {
+    "breakout": "release\\v69_1\\scenarios\\paper_trade_scenarios_breakout_v69_1.json",
+    "mean_reversion": "release\\v69_1\\scenarios\\paper_trade_scenarios_mean_reversion_v69_1.json",
+    "momentum": "release\\v69_1\\scenarios\\paper_trade_scenarios_momentum_v69_1.json"
+  },
+  "schema_version": "v69.1.multi_strategy_scenario_builder.1",
+  "status": "PASS",
+  "strategies": [
+    "momentum",
+    "mean_reversion",
+    "breakout"
+  ],
+  "strategy_count": 3,
+  "summaries": [
+    {
+      "loss_count": 43,
+      "net_pnl": "536.8895",
+      "scenario_report_sha256": "7965461c464a7a50f42e4d2307c18da9e2725b7c2bfd0515a148f24834d3671c",
+      "seed": 6910,
+      "strategy": "momentum",
+      "trade_count": 100,
+      "win_count": 57
+    },
+    {
+      "loss_count": 37,
+      "net_pnl": "266.2634",
+      "scenario_report_sha256": "e8502d6cad6b568c2031709a6dd401be2854fc66bb33428e0f957d6626441e39",
+      "seed": 7910,
+      "strategy": "mean_reversion",
+      "trade_count": 100,
+      "win_count": 63
+    },
+    {
+      "loss_count": 54,
+      "net_pnl": "703.7748",
+      "scenario_report_sha256": "ebec073fa2df2152640234e6fb7062636d0ae00a5a7d3d8ab55f15fcbfa20203",
+      "seed": 8910,
+      "strategy": "breakout",
+      "trade_count": 100,
+      "win_count": 46
+    }
+  ],
+  "total_trade_count": 300,
+  "trade_count_per_strategy": 100,
+  "version": "69.1"
+}

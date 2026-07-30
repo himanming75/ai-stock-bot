@@ -1,0 +1,13 @@
+{
+  "approved_for_live": false,
+  "network_used": false,
+  "scenario": "mixed",
+  "seed": 6700,
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA"
+  ],
+  "trade_count": 100,
+  "version": "67.0"
+}

@@ -1,0 +1,58 @@
+{
+  "chart": [
+    {
+      "closed_trade_count": 0,
+      "daily_closed_trades": 0,
+      "daily_pnl": "0.0000",
+      "daily_return": "0.000000",
+      "daily_trade_events": 1,
+      "drawdown": "0.000000",
+      "drawdown_amount": "0.0000",
+      "equity": "50480.0000",
+      "journal_date": "2026-07-29",
+      "point_sha256": "d104988a1d825c029c75656b6b4eee3c2261827f5d08e0a780b8c55260016274",
+      "running_peak": "50480.0000",
+      "sequence": 1,
+      "trade_count": 1
+    }
+  ],
+  "chart_point_count": 1,
+  "dashboard_sha256": "bd8928b37327c333f2b74351f75dc6ea9707de5a4d32dc25518fa313252feb55",
+  "decision": "dashboard_data_built",
+  "metrics": {
+    "first_date": "2026-07-29",
+    "flat_day_count": 1,
+    "latest_date": "2026-07-29",
+    "latest_equity": "50480.0000",
+    "max_drawdown": "0.000000",
+    "max_drawdown_date": null,
+    "metrics_sha256": "428ccee3de1d3d1f97fd8f63f8083b843b58400c13d20706e66aadfb5e778d20",
+    "negative_day_count": 0,
+    "positive_day_count": 0,
+    "profitable_day_ratio": "0.000000",
+    "starting_equity": "50480.0000",
+    "total_closed_trades": 0,
+    "total_pnl": "0.0000",
+    "total_return": "0.000000",
+    "total_trade_events": 1,
+    "trading_day_count": 1
+  },
+  "network_used": false,
+  "recent_summary": {
+    "closed_trades": 0,
+    "first_date": "2026-07-29",
+    "latest_date": "2026-07-29",
+    "latest_equity": "50480.0000",
+    "pnl": "0.0000",
+    "recent_sha256": "06ca9adb14aa2aa25b3976682af911747fa8a7a41708c222b4b5d5b6583fb6ae",
+    "return": "0.000000",
+    "starting_equity": "50480.0000",
+    "trade_events": 1,
+    "window_days_requested": 5,
+    "window_days_used": 1
+  },
+  "schema_version": "v62.0.performance_dashboard_data.1",
+  "source_v61_journal_sha256": "45977c7a59d688d0afbcf19edb9af0840947537c9d62aa901c7ca508319e0d25",
+  "status": "PASS",
+  "version": "62.0"
+}

@@ -1,0 +1,8 @@
+{
+  "champion_deactivated": false,
+  "paper_orders_frozen": false,
+  "pending_orders_cancelled": false,
+  "positions_reconciled": false,
+  "runner_up_staged": false,
+  "verification_state": "PENDING_EXECUTION"
+}

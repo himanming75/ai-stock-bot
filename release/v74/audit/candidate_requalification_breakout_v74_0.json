@@ -1,0 +1,535 @@
+{
+  "approved_candidate_count": 5,
+  "approved_candidate_ids": [
+    "CAND-0563E3012F19",
+    "CAND-031295B32A7B",
+    "CAND-839C0BFEE9BA",
+    "CAND-30C9F1AB56A1",
+    "CAND-F9A06D5B4EDB"
+  ],
+  "approved_for_live": false,
+  "candidate_requalification_report_sha256": "ae3af6c047f7b364ca65446c1a6cb5e67f577c6bd82ba5ba2309479001107d48",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "champion_strategy": "breakout",
+  "config": {
+    "analytics": {
+      "minimum_expectancy": 0.0,
+      "minimum_net_pnl": 0.0,
+      "minimum_profit_factor": 1.1,
+      "minimum_trade_count": 5,
+      "minimum_win_rate": 0.45
+    },
+    "monte_carlo": {
+      "minimum_p05_net_pnl": 0.0,
+      "minimum_probability_positive": 0.6,
+      "simulation_count": 500
+    },
+    "walk_forward": {
+      "minimum_aggregate_expectancy": 0.0,
+      "minimum_pass_rate": 0.5,
+      "minimum_window_trade_count": 2,
+      "window_count": 2
+    }
+  },
+  "created_at": "2026-07-30T18:55:39+00:00",
+  "decision": "candidate_requalification_completed",
+  "execution_results": [
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-0563E3012F19",
+      "eligible_for_provisional_paper_promotion": true,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "requalification_priority": 1,
+      "requalification_score": 123.647798,
+      "requalification_state": "APPROVED",
+      "stage_results": [
+        {
+          "decision": "analytics_pipeline_completed",
+          "failure_reasons": [],
+          "metrics": {
+            "breakeven_count": 0,
+            "expectancy": 195.286952,
+            "gross_loss": 0,
+            "gross_profit": 1367.008664,
+            "loss_count": 0,
+            "net_pnl": 1367.008664,
+            "profit_factor": null,
+            "trade_count": 7,
+            "win_count": 7,
+            "win_rate": 1.0
+          },
+          "name": "analytics_revalidation",
+          "stage": "V68",
+          "status": "PASS"
+        },
+        {
+          "aggregate_metrics": {
+            "expectancy": 195.286952,
+            "loss_count": 0,
+            "net_pnl": 1367.008664,
+            "profit_factor": null,
+            "trade_count": 7,
+            "win_count": 7,
+            "win_rate": 1.0
+          },
+          "fail_count": 0,
+          "failure_reasons": [],
+          "name": "walk_forward_revalidation",
+          "pass_count": 2,
+          "pass_rate": 1.0,
+          "stage": "V70",
+          "status": "PASS",
+          "validation_state": "APPROVED",
+          "window_count": 2,
+          "window_results": [
+            {
+              "metrics": {
+                "expectancy": 245.80608,
+                "loss_count": 0,
+                "net_pnl": 737.41824,
+                "profit_factor": null,
+                "trade_count": 3,
+                "win_count": 3,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 1
+            },
+            {
+              "metrics": {
+                "expectancy": 157.397606,
+                "loss_count": 0,
+                "net_pnl": 629.590424,
+                "profit_factor": null,
+                "trade_count": 4,
+                "win_count": 4,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 2
+            }
+          ]
+        },
+        {
+          "failure_reasons": [],
+          "median_net_pnl": 1367.008664,
+          "name": "monte_carlo_revalidation",
+          "p05_net_pnl": 959.040758,
+          "probability_positive": 1.0,
+          "seed": 11705548250014572417,
+          "simulation_count": 500,
+          "stage": "V71",
+          "status": "PASS",
+          "validation_state": "APPROVED"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-031295B32A7B",
+      "eligible_for_provisional_paper_promotion": true,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "requalification_priority": 2,
+      "requalification_score": 108.374493,
+      "requalification_state": "APPROVED",
+      "stage_results": [
+        {
+          "decision": "analytics_pipeline_completed",
+          "failure_reasons": [],
+          "metrics": {
+            "breakeven_count": 0,
+            "expectancy": 160.02786,
+            "gross_loss": 72.270901,
+            "gross_profit": 1192.465922,
+            "loss_count": 1,
+            "net_pnl": 1120.195021,
+            "profit_factor": 16.499945,
+            "trade_count": 7,
+            "win_count": 6,
+            "win_rate": 0.857143
+          },
+          "name": "analytics_revalidation",
+          "stage": "V68",
+          "status": "PASS"
+        },
+        {
+          "aggregate_metrics": {
+            "expectancy": 160.02786,
+            "loss_count": 1,
+            "net_pnl": 1120.195021,
+            "profit_factor": 16.499945,
+            "trade_count": 7,
+            "win_count": 6,
+            "win_rate": 0.857143
+          },
+          "fail_count": 0,
+          "failure_reasons": [],
+          "name": "walk_forward_revalidation",
+          "pass_count": 2,
+          "pass_rate": 1.0,
+          "stage": "V70",
+          "status": "PASS",
+          "validation_state": "APPROVED",
+          "window_count": 2,
+          "window_results": [
+            {
+              "metrics": {
+                "expectancy": 156.057848,
+                "loss_count": 1,
+                "net_pnl": 468.173544,
+                "profit_factor": 7.478037,
+                "trade_count": 3,
+                "win_count": 2,
+                "win_rate": 0.666667
+              },
+              "status": "PASS",
+              "window": 1
+            },
+            {
+              "metrics": {
+                "expectancy": 163.005369,
+                "loss_count": 0,
+                "net_pnl": 652.021477,
+                "profit_factor": null,
+                "trade_count": 4,
+                "win_count": 4,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 2
+            }
+          ]
+        },
+        {
+          "failure_reasons": [],
+          "median_net_pnl": 1166.368429,
+          "name": "monte_carlo_revalidation",
+          "p05_net_pnl": 509.034593,
+          "probability_positive": 0.994,
+          "seed": 12906420357960432820,
+          "simulation_count": 500,
+          "stage": "V71",
+          "status": "PASS",
+          "validation_state": "APPROVED"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-839C0BFEE9BA",
+      "eligible_for_provisional_paper_promotion": true,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "requalification_priority": 3,
+      "requalification_score": 107.125614,
+      "requalification_state": "APPROVED",
+      "stage_results": [
+        {
+          "decision": "analytics_pipeline_completed",
+          "failure_reasons": [],
+          "metrics": {
+            "breakeven_count": 0,
+            "expectancy": 160.453456,
+            "gross_loss": 104.8576,
+            "gross_profit": 1067.578337,
+            "loss_count": 1,
+            "net_pnl": 962.720737,
+            "profit_factor": 10.18122,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "name": "analytics_revalidation",
+          "stage": "V68",
+          "status": "PASS"
+        },
+        {
+          "aggregate_metrics": {
+            "expectancy": 160.453456,
+            "loss_count": 1,
+            "net_pnl": 962.720737,
+            "profit_factor": 10.18122,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "fail_count": 0,
+          "failure_reasons": [],
+          "name": "walk_forward_revalidation",
+          "pass_count": 2,
+          "pass_rate": 1.0,
+          "stage": "V70",
+          "status": "PASS",
+          "validation_state": "APPROVED",
+          "window_count": 2,
+          "window_results": [
+            {
+              "metrics": {
+                "expectancy": 126.967467,
+                "loss_count": 1,
+                "net_pnl": 380.9024,
+                "profit_factor": 4.632568,
+                "trade_count": 3,
+                "win_count": 2,
+                "win_rate": 0.666667
+              },
+              "status": "PASS",
+              "window": 1
+            },
+            {
+              "metrics": {
+                "expectancy": 193.939446,
+                "loss_count": 0,
+                "net_pnl": 581.818337,
+                "profit_factor": null,
+                "trade_count": 3,
+                "win_count": 3,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 2
+            }
+          ]
+        },
+        {
+          "failure_reasons": [],
+          "median_net_pnl": 962.720737,
+          "name": "monte_carlo_revalidation",
+          "p05_net_pnl": 420.159775,
+          "probability_positive": 1.0,
+          "seed": 7268047941653775603,
+          "simulation_count": 500,
+          "stage": "V71",
+          "status": "PASS",
+          "validation_state": "APPROVED"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-30C9F1AB56A1",
+      "eligible_for_provisional_paper_promotion": true,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "requalification_priority": 4,
+      "requalification_score": 105.826978,
+      "requalification_state": "APPROVED",
+      "stage_results": [
+        {
+          "decision": "analytics_pipeline_completed",
+          "failure_reasons": [],
+          "metrics": {
+            "breakeven_count": 0,
+            "expectancy": 158.273264,
+            "gross_loss": 72.835148,
+            "gross_profit": 1022.474733,
+            "loss_count": 1,
+            "net_pnl": 949.639585,
+            "profit_factor": 14.038205,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "name": "analytics_revalidation",
+          "stage": "V68",
+          "status": "PASS"
+        },
+        {
+          "aggregate_metrics": {
+            "expectancy": 158.273264,
+            "loss_count": 1,
+            "net_pnl": 949.639585,
+            "profit_factor": 14.038205,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "fail_count": 0,
+          "failure_reasons": [],
+          "name": "walk_forward_revalidation",
+          "pass_count": 2,
+          "pass_rate": 1.0,
+          "stage": "V70",
+          "status": "PASS",
+          "validation_state": "APPROVED",
+          "window_count": 2,
+          "window_results": [
+            {
+              "metrics": {
+                "expectancy": 183.300877,
+                "loss_count": 1,
+                "net_pnl": 549.90263,
+                "profit_factor": 8.549962,
+                "trade_count": 3,
+                "win_count": 2,
+                "win_rate": 0.666667
+              },
+              "status": "PASS",
+              "window": 1
+            },
+            {
+              "metrics": {
+                "expectancy": 133.245652,
+                "loss_count": 0,
+                "net_pnl": 399.736955,
+                "profit_factor": null,
+                "trade_count": 3,
+                "win_count": 3,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 2
+            }
+          ]
+        },
+        {
+          "failure_reasons": [],
+          "median_net_pnl": 959.044029,
+          "name": "monte_carlo_revalidation",
+          "p05_net_pnl": 348.899984,
+          "probability_positive": 0.994,
+          "seed": 4101772619776388880,
+          "simulation_count": 500,
+          "stage": "V71",
+          "status": "PASS",
+          "validation_state": "APPROVED"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-F9A06D5B4EDB",
+      "eligible_for_provisional_paper_promotion": true,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "requalification_priority": 5,
+      "requalification_score": 105.303235,
+      "requalification_state": "APPROVED",
+      "stage_results": [
+        {
+          "decision": "analytics_pipeline_completed",
+          "failure_reasons": [],
+          "metrics": {
+            "breakeven_count": 0,
+            "expectancy": 158.273264,
+            "gross_loss": 72.835148,
+            "gross_profit": 1022.474733,
+            "loss_count": 1,
+            "net_pnl": 949.639585,
+            "profit_factor": 14.038205,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "name": "analytics_revalidation",
+          "stage": "V68",
+          "status": "PASS"
+        },
+        {
+          "aggregate_metrics": {
+            "expectancy": 158.273264,
+            "loss_count": 1,
+            "net_pnl": 949.639585,
+            "profit_factor": 14.038205,
+            "trade_count": 6,
+            "win_count": 5,
+            "win_rate": 0.833333
+          },
+          "fail_count": 0,
+          "failure_reasons": [],
+          "name": "walk_forward_revalidation",
+          "pass_count": 2,
+          "pass_rate": 1.0,
+          "stage": "V70",
+          "status": "PASS",
+          "validation_state": "APPROVED",
+          "window_count": 2,
+          "window_results": [
+            {
+              "metrics": {
+                "expectancy": 183.300877,
+                "loss_count": 1,
+                "net_pnl": 549.90263,
+                "profit_factor": 8.549962,
+                "trade_count": 3,
+                "win_count": 2,
+                "win_rate": 0.666667
+              },
+              "status": "PASS",
+              "window": 1
+            },
+            {
+              "metrics": {
+                "expectancy": 133.245652,
+                "loss_count": 0,
+                "net_pnl": 399.736955,
+                "profit_factor": null,
+                "trade_count": 3,
+                "win_count": 3,
+                "win_rate": 1.0
+              },
+              "status": "PASS",
+              "window": 2
+            }
+          ]
+        },
+        {
+          "failure_reasons": [],
+          "median_net_pnl": 959.044029,
+          "name": "monte_carlo_revalidation",
+          "p05_net_pnl": 291.525767,
+          "probability_positive": 0.996,
+          "seed": 14746009040757708747,
+          "simulation_count": 500,
+          "stage": "V71",
+          "status": "PASS",
+          "validation_state": "APPROVED"
+        }
+      ]
+    }
+  ],
+  "execution_results_sha256": "b15f76149ddad2586db0631b04d768c18efeab36db370ea73a65fb04857924d4",
+  "network_used": false,
+  "next_step": {
+    "action": "build_provisional_paper_promotion_package",
+    "version": "75.0"
+  },
+  "pipeline_state": "APPROVED_SURVIVORS_AVAILABLE",
+  "rejected_candidate_count": 0,
+  "requires_provisional_paper_review": true,
+  "revision_id": "REV-breakout-V72",
+  "runner_up_candidate_id": "CAND-031295B32A7B",
+  "schema_version": "v74.candidate_requalification_pipeline.1",
+  "selected_candidate_count": 5,
+  "source_backtest_sha256": "206264e7c93da212c8be66c9f1d088396c5974df625a8852a015cb2d281d2608",
+  "source_manifest_sha256": "4bbe9a2efa9ebb3e3c72cac82e19d801c68c3d1020735733bb0a4217d075145e",
+  "status": "PASS",
+  "version": "74.0"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "63.0",
+  "schema_version": "v63.0.risk_analytics.1",
+  "status": "PASS",
+  "decision": "empty_risk_analytics_sample",
+  "network_used": false,
+  "source_v62_dashboard_sha256": "",
+  "analytics": {},
+  "rolling_drawdown": [],
+  "rolling_point_count": 0,
+  "risk_report_sha256": ""
+}

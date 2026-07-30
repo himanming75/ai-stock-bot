@@ -1,0 +1,20 @@
+{
+  "approved_for_live": false,
+  "candidate_package_count": 2,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "champion_score": 123.647798,
+  "created_at": "2026-07-30T19:06:00+00:00",
+  "decision": "champion_promotion_package_created",
+  "network_used": false,
+  "package_state": "READY_FOR_PROMOTION_MANIFEST",
+  "promotion_scope": "PROVISIONAL_PAPER_ONLY",
+  "promotion_summary_sha256": "cdc1ca881e8e3fc65e3869b829693d9b0fe23d4f27e8cd8c41074c8a415016ba",
+  "requires_promotion_manifest": true,
+  "requires_rollback_manifest": true,
+  "runner_up_candidate_id": "CAND-031295B32A7B",
+  "runner_up_score": 108.374493,
+  "schema_version": "v75.1a.champion_promotion_package.1",
+  "source_v74_report_sha256": "ae3af6c047f7b364ca65446c1a6cb5e67f577c6bd82ba5ba2309479001107d48",
+  "status": "PASS",
+  "version": "75.1A"
+}

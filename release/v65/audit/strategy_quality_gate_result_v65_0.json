@@ -1,0 +1,49 @@
+{
+  "approve_checks": {
+    "expectancy": false,
+    "minimum_trades": false,
+    "profit_factor": false,
+    "risk_score": true,
+    "win_rate": false
+  },
+  "approved_for_extended_paper": false,
+  "approved_for_live": false,
+  "decision": "strategy_quality_evaluated",
+  "network_used": false,
+  "observed": {
+    "closed_trade_count": 0,
+    "expectancy": "0.000000",
+    "profit_factor": "0.000000",
+    "risk_level": "LOW",
+    "risk_score": "0.000000",
+    "win_rate": "0.000000"
+  },
+  "quality_gate": "INSUFFICIENT_DATA",
+  "quality_gate_sha256": "e37f41df2127d6ae486ac1cff6b4ad97d31d9b5926342aaa2c19c7fdfcd5f8e0",
+  "reasons": [
+    "closed_trade_count 0 is below minimum_trades 20"
+  ],
+  "schema_version": "v65.0.strategy_quality_gate.1",
+  "source_v63_risk_report_sha256": "4f5fb0d8e114303560de3175a9ae02d35b88736bd0e1f896008622e931b13d77",
+  "source_v64_strategy_report_sha256": "9c45ac865365c1a56e43ba0e9a08ce23397102bdb429f029255f277278eb849b",
+  "status": "PASS",
+  "thresholds": {
+    "approve_expectancy": "0.000000",
+    "approve_max_risk_score": "40.000000",
+    "approve_profit_factor": "1.500000",
+    "approve_win_rate": "0.550000",
+    "minimum_trades": 20,
+    "reject_risk_score": "70.000000",
+    "watch_expectancy": "-5.000000",
+    "watch_profit_factor": "1.000000",
+    "watch_win_rate": "0.450000"
+  },
+  "version": "65.0",
+  "watch_checks": {
+    "expectancy": true,
+    "minimum_trades": false,
+    "profit_factor": false,
+    "risk_score": true,
+    "win_rate": false
+  }
+}

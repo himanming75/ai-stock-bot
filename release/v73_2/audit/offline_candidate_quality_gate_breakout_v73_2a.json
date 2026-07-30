@@ -1,0 +1,803 @@
+{
+  "approved_for_live": false,
+  "candidate_count": 24,
+  "candidate_evaluations": [
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-0563E3012F19",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 195.286952,
+        "gross_loss": 0,
+        "gross_profit": 1367.008664,
+        "loss_count": 0,
+        "net_pnl": 1367.008664,
+        "profit_factor": null,
+        "trade_count": 7,
+        "win_count": 7,
+        "win_rate": 1.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 1,
+      "quality_score": 100.099391,
+      "source_backtest_rank": 1
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-031295B32A7B",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 160.02786,
+        "gross_loss": 72.270901,
+        "gross_profit": 1192.465922,
+        "loss_count": 1,
+        "net_pnl": 1120.195021,
+        "profit_factor": 16.499945,
+        "trade_count": 7,
+        "win_count": 6,
+        "win_rate": 0.857143
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 2,
+      "quality_score": 91.388088,
+      "source_backtest_rank": 8
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-839C0BFEE9BA",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 160.453456,
+        "gross_loss": 104.8576,
+        "gross_profit": 1067.578337,
+        "loss_count": 1,
+        "net_pnl": 962.720737,
+        "profit_factor": 10.18122,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 3,
+      "quality_score": 89.169596,
+      "source_backtest_rank": 7
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-30C9F1AB56A1",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 158.273264,
+        "gross_loss": 72.835148,
+        "gross_profit": 1022.474733,
+        "loss_count": 1,
+        "net_pnl": 949.639585,
+        "profit_factor": 14.038205,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 4,
+      "quality_score": 88.995181,
+      "source_backtest_rank": 9
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-F9A06D5B4EDB",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 158.273264,
+        "gross_loss": 72.835148,
+        "gross_profit": 1022.474733,
+        "loss_count": 1,
+        "net_pnl": 949.639585,
+        "profit_factor": 14.038205,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 5,
+      "quality_score": 88.995181,
+      "source_backtest_rank": 10
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-08CFDF59D92E",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 177.659361,
+        "gross_loss": 106.227378,
+        "gross_profit": 994.524182,
+        "loss_count": 1,
+        "net_pnl": 888.296804,
+        "profit_factor": 9.362221,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 6,
+      "quality_score": 87.824452,
+      "source_backtest_rank": 2
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-724EAD1C0510",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 177.659361,
+        "gross_loss": 106.227378,
+        "gross_profit": 994.524182,
+        "loss_count": 1,
+        "net_pnl": 888.296804,
+        "profit_factor": 9.362221,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 7,
+      "quality_score": 87.824452,
+      "source_backtest_rank": 3
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-C8ADD830533D",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 177.659361,
+        "gross_loss": 106.227378,
+        "gross_profit": 994.524182,
+        "loss_count": 1,
+        "net_pnl": 888.296804,
+        "profit_factor": 9.362221,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 8,
+      "quality_score": 87.824452,
+      "source_backtest_rank": 4
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-43BDD0AE596F",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 161.855852,
+        "gross_loss": 105.404444,
+        "gross_profit": 914.683703,
+        "loss_count": 1,
+        "net_pnl": 809.279259,
+        "profit_factor": 8.677848,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 9,
+      "quality_score": 86.639189,
+      "source_backtest_rank": 5
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-A7CD65D210FF",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 161.855852,
+        "gross_loss": 105.404444,
+        "gross_profit": 914.683703,
+        "loss_count": 1,
+        "net_pnl": 809.279259,
+        "profit_factor": 8.677848,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 10,
+      "quality_score": 86.639189,
+      "source_backtest_rank": 6
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-8C1663A5EC19",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 145.053939,
+        "gross_loss": 104.8576,
+        "gross_profit": 830.127293,
+        "loss_count": 1,
+        "net_pnl": 725.269693,
+        "profit_factor": 7.916711,
+        "trade_count": 5,
+        "win_count": 4,
+        "win_rate": 0.8
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 11,
+      "quality_score": 85.379045,
+      "source_backtest_rank": 12
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-D5691BCECC40",
+      "failure_reasons": [],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 148.167664,
+        "gross_loss": 215.394403,
+        "gross_profit": 1104.400384,
+        "loss_count": 2,
+        "net_pnl": 889.005981,
+        "profit_factor": 5.12734,
+        "trade_count": 6,
+        "win_count": 4,
+        "win_rate": 0.666667
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "PASS",
+      "quality_rank": 12,
+      "quality_score": 81.520093,
+      "source_backtest_rank": 11
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-134970E37ACB",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 13,
+      "quality_score": 1.0,
+      "source_backtest_rank": 13
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-16A41F29628B",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 14,
+      "quality_score": 1.0,
+      "source_backtest_rank": 14
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-1D3EFEC1F9D7",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 15,
+      "quality_score": 1.0,
+      "source_backtest_rank": 15
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-47FFD6E68566",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 16,
+      "quality_score": 1.0,
+      "source_backtest_rank": 16
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-4B91D8DCD154",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 17,
+      "quality_score": 1.0,
+      "source_backtest_rank": 17
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-4F18E08D973E",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 18,
+      "quality_score": 1.0,
+      "source_backtest_rank": 18
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-53EB23DB5288",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 19,
+      "quality_score": 1.0,
+      "source_backtest_rank": 19
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-9098A656F548",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 20,
+      "quality_score": 1.0,
+      "source_backtest_rank": 20
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-A06195B8F0D7",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 21,
+      "quality_score": 1.0,
+      "source_backtest_rank": 21
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-A41DCA6640E6",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 22,
+      "quality_score": 1.0,
+      "source_backtest_rank": 22
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-E7A11DA25E44",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 23,
+      "quality_score": 1.0,
+      "source_backtest_rank": 23
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-FB73C914CC26",
+      "failure_reasons": [
+        "INSUFFICIENT_TRADE_COUNT",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "NON_POSITIVE_NET_PNL"
+      ],
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": -99.5,
+        "gross_loss": 199.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "net_pnl": -199.0,
+        "profit_factor": 0.0,
+        "trade_count": 2,
+        "win_count": 0,
+        "win_rate": 0.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_gate_status": "FAIL",
+      "quality_rank": 24,
+      "quality_score": 1.0,
+      "source_backtest_rank": 24
+    }
+  ],
+  "candidate_evaluations_sha256": "563ec8252108951e08b340316f7ebe676cf9c34978fe52e88d02c26a286b8117",
+  "champion_strategy": "breakout",
+  "created_at": "2026-07-30T18:28:29+00:00",
+  "decision": "quality_gate_survivors_available",
+  "failed_count": 12,
+  "failure_distribution": {
+    "INSUFFICIENT_TRADE_COUNT": 12,
+    "LOW_PROFIT_FACTOR": 12,
+    "LOW_WIN_RATE": 12,
+    "NON_POSITIVE_EXPECTANCY": 12,
+    "NON_POSITIVE_NET_PNL": 12
+  },
+  "network_used": false,
+  "next_step": {
+    "action": "select_survivors_and_build_requalification_manifest",
+    "required_validations": [
+      "v68_analytics",
+      "v70_walk_forward",
+      "v71_monte_carlo"
+    ],
+    "version": "73.2B"
+  },
+  "provisional_champion_candidate_id": "CAND-0563E3012F19",
+  "quality_gate_report_sha256": "e513ff34172f882576673468b9ece2271959a1f2b643f90a07ced139bb483c56",
+  "quality_gate_state": "SURVIVORS_AVAILABLE",
+  "requires_requalification": true,
+  "revision_id": "REV-breakout-V72",
+  "schema_version": "v73.2a.offline_candidate_quality_gate.1",
+  "source_v73_1_report_sha256": "206264e7c93da212c8be66c9f1d088396c5974df625a8852a015cb2d281d2608",
+  "status": "PASS",
+  "survivor_candidate_ids": [
+    "CAND-0563E3012F19",
+    "CAND-031295B32A7B",
+    "CAND-839C0BFEE9BA",
+    "CAND-30C9F1AB56A1",
+    "CAND-F9A06D5B4EDB",
+    "CAND-08CFDF59D92E",
+    "CAND-724EAD1C0510",
+    "CAND-C8ADD830533D",
+    "CAND-43BDD0AE596F",
+    "CAND-A7CD65D210FF",
+    "CAND-8C1663A5EC19",
+    "CAND-D5691BCECC40"
+  ],
+  "survivor_count": 12,
+  "thresholds": {
+    "minimum_expectancy": 0.0,
+    "minimum_net_pnl": 0.0,
+    "minimum_profit_factor": 1.1,
+    "minimum_trade_count": 5,
+    "minimum_win_rate": 0.45
+  },
+  "version": "73.2A"
+}

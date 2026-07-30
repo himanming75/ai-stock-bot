@@ -1,0 +1,2 @@
+sequence,journal_date,journal_time,cash,market_value,equity,unrealized_pnl,net_realized_pnl,daily_pnl,daily_return,trade_count,daily_trade_events,closed_trade_count,daily_closed_trades,open_lot_count,win_rate,profit_factor,entry_sha256
+1,2026-07-29,2026-07-29T22:00:00Z,29980.0000,20500.0000,50480.0000,480.0000,0.0000,0.0000,0.000000,1,1,0,0,1,0.000000,0.000000,f376235e753666c7fc740591c877470a72bdb3687fcf0909c977e5dc3906bcec

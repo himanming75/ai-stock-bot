@@ -1,0 +1,47 @@
+{
+  "rollback_sequence": [
+    {
+      "action": "FREEZE_NEW_PAPER_ORDERS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "FROZEN",
+      "sequence": 1
+    },
+    {
+      "action": "CAPTURE_FINAL_PAPER_SNAPSHOT",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "CAPTURED",
+      "sequence": 2
+    },
+    {
+      "action": "CANCEL_PENDING_PAPER_ORDERS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "CANCELLED",
+      "sequence": 3
+    },
+    {
+      "action": "RECONCILE_PAPER_POSITIONS",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "RECONCILED",
+      "sequence": 4
+    },
+    {
+      "action": "DEACTIVATE_CHAMPION",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "DEACTIVATED",
+      "sequence": 5
+    },
+    {
+      "action": "STAGE_RUNNER_UP_FAILOVER",
+      "candidate_id": "CAND-031295B32A7B",
+      "required_state": "STAGED",
+      "sequence": 6
+    },
+    {
+      "action": "VERIFY_RECOVERY_STATE",
+      "candidate_id": "CAND-031295B32A7B",
+      "required_state": "PASS",
+      "sequence": 7
+    }
+  ],
+  "rollback_sequence_sha256": "b77e5ffde8897cb6348778cf486226ec64ca7ac20cef005dd675d6f3677ab464"
+}

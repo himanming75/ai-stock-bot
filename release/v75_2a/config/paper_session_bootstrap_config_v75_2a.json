@@ -1,0 +1,8 @@
+{
+  "currency": "USD",
+  "live_orders_enabled": false,
+  "max_positions": 10,
+  "network_enabled": false,
+  "session_mode": "OFFLINE_PAPER",
+  "starting_cash": 100000
+}

@@ -1,0 +1,50 @@
+{
+  "decision": "daily_journal_updated",
+  "entries": [
+    {
+      "cash": "29980.0000",
+      "closed_trade_count": 0,
+      "daily_closed_trades": 0,
+      "daily_pnl": "0.0000",
+      "daily_return": "0.000000",
+      "daily_trade_events": 1,
+      "entry_sha256": "f376235e753666c7fc740591c877470a72bdb3687fcf0909c977e5dc3906bcec",
+      "equity": "50480.0000",
+      "journal_date": "2026-07-29",
+      "journal_time": "2026-07-29T22:00:00Z",
+      "market_value": "20500.0000",
+      "net_realized_pnl": "0.0000",
+      "open_lot_count": 1,
+      "previous_entry_sha256": "GENESIS",
+      "profit_factor": "0.000000",
+      "sequence": 1,
+      "trade_count": 1,
+      "unrealized_pnl": "480.0000",
+      "v59_integration_sha256": "7d3f0e454c3010e20b39510600d60be44a15436e732be6fd10dab3a9352b39e5",
+      "v60_history_sha256": "a706188b781a21e207e8e9045cb43ed52d59ed9cbdebf2f4aba7cdc6d77be27f",
+      "win_rate": "0.000000"
+    }
+  ],
+  "entry_count": 1,
+  "journal_sha256": "45977c7a59d688d0afbcf19edb9af0840947537c9d62aa901c7ca508319e0d25",
+  "latest_entry_sha256": "f376235e753666c7fc740591c877470a72bdb3687fcf0909c977e5dc3906bcec",
+  "network_used": false,
+  "schema_version": "v61.0.daily_performance_journal.1",
+  "status": "PASS",
+  "summary": {
+    "best_daily_return": "0.000000",
+    "cumulative_return": "0.000000",
+    "first_date": "2026-07-29",
+    "flat_day_count": 1,
+    "latest_date": "2026-07-29",
+    "latest_equity": "50480.0000",
+    "negative_day_count": 0,
+    "positive_day_count": 0,
+    "starting_equity": "50480.0000",
+    "summary_sha256": "00ad7fc46c525823dad403db9464a38cd8449035396511a957461c17b42874f7",
+    "total_closed_trades": 0,
+    "total_trade_events": 1,
+    "worst_daily_return": "0.000000"
+  },
+  "version": "61.1"
+}

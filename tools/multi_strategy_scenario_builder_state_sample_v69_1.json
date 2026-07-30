@@ -1,0 +1,17 @@
+{
+  "approved_for_live": false,
+  "network_used": false,
+  "seed": 6910,
+  "strategies": [
+    "momentum",
+    "mean_reversion",
+    "breakout"
+  ],
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA"
+  ],
+  "trade_count_per_strategy": 100,
+  "version": "69.1"
+}

@@ -1,0 +1,8 @@
+{
+  "approved_for_live": false,
+  "input": "release/v70/audit/walk_forward_validation_breakout_v70_0.json",
+  "network_used": false,
+  "output": "release/v72/audit/strategy_revision_breakout_v72_0.json",
+  "revision_id": "REV-breakout-V72",
+  "version": "72.0"
+}

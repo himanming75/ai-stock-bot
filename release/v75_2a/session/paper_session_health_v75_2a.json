@@ -1,0 +1,12 @@
+{
+  "account_initialized": true,
+  "bootstrap_integrity": "PASS",
+  "champion_attached": true,
+  "health_check_sha256": "4fa70047d41687f6ae103bc4dc781961f8068dadda4cb27f9aff3b0eea8b9409",
+  "health_state": "READY",
+  "live_orders_disabled": true,
+  "network_disabled": true,
+  "paper_activation_state": "NOT_ACTIVATED",
+  "rollback_manifest_attached": true,
+  "session_id": "PAPER-C47E765BCA0F6573"
+}

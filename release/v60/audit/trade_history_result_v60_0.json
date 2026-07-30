@@ -1,0 +1,68 @@
+{
+  "decision": "trade_history_updated",
+  "history_sha256": "a706188b781a21e207e8e9045cb43ed52d59ed9cbdebf2f4aba7cdc6d77be27f",
+  "latest_trade_id": "TRD-F06276977A6DC0706354",
+  "network_used": false,
+  "open_lot_count": 1,
+  "open_lots": [
+    {
+      "entry_commission": "0.0000",
+      "entry_price": "200.2000",
+      "lot_id": "LOT-B76BC5CFEF31BFFDBA8E",
+      "lot_sha256": "7a623bc085014ee6356888abca1a8ff5f4b7bf607fa19b65ee89f2a5c1d7388b",
+      "opened_at": "2026-07-29T22:00:00Z",
+      "opened_trade_id": "TRD-F06276977A6DC0706354",
+      "original_quantity": "100",
+      "remaining_quantity": "100",
+      "symbol": "AAPL"
+    }
+  ],
+  "rejection_reasons": [],
+  "schema_version": "v60.0.trade_ledger_history.1",
+  "statistics": {
+    "average_loss": "0.0000",
+    "average_win": "0.0000",
+    "breakeven_count": 0,
+    "buy_event_count": 1,
+    "event_count": 1,
+    "expectancy": "0.0000",
+    "gross_loss": "0.0000",
+    "gross_profit": "0.0000",
+    "loss_count": 0,
+    "net_realized_pnl": "0.0000",
+    "open_lot_count": 1,
+    "profit_factor": "0.000000",
+    "sell_event_count": 0,
+    "statistics_sha256": "28d0c58ae184a87b9577fae47a90fd03e7f1ce6fccf8b4a85a2ebcdf9e432a9d",
+    "win_count": 0,
+    "win_rate": "0.000000"
+  },
+  "status": "PASS",
+  "trade_count": 1,
+  "trades": [
+    {
+      "action": "BUY",
+      "average_entry_price": null,
+      "closed_quantity": "0",
+      "commission": "0.0000",
+      "entry_sha256": "48032cb7f8f0d6a1cd773a633a3c084a02d6d951cfc8315d428213758dc4cca8",
+      "event_time": "2026-07-29T22:00:00Z",
+      "event_type": "POSITION_OPENED",
+      "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+      "gross_notional": "20020.0000",
+      "holding_period_seconds": null,
+      "matched_lot_ids": [],
+      "payload_sha256": "a7633dcef412b6700ce1d76e3ea10e621d7d314f31958b9a48559d0d4498699f",
+      "previous_entry_sha256": "GENESIS",
+      "price": "200.2000",
+      "quantity": "100",
+      "realized_pnl_delta": "0.0000",
+      "sequence": 1,
+      "symbol": "AAPL",
+      "trade_id": "TRD-F06276977A6DC0706354",
+      "trade_outcome": "OPEN",
+      "v59_integration_sha256": "7d3f0e454c3010e20b39510600d60be44a15436e732be6fd10dab3a9352b39e5"
+    }
+  ],
+  "version": "60.0"
+}

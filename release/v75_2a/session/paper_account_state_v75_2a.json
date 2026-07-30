@@ -1,0 +1,14 @@
+{
+  "account_state": "INITIALIZED",
+  "account_state_sha256": "48e73f1253db76a1643c4e906003fcc6eb356888d91f38b90f33ca63a7ff9f80",
+  "cash": 100000.0,
+  "closed_orders": [],
+  "currency": "USD",
+  "equity": 100000.0,
+  "max_positions": 10,
+  "open_orders": [],
+  "positions": [],
+  "realized_pnl": 0.0,
+  "starting_cash": 100000.0,
+  "unrealized_pnl": 0.0
+}

@@ -1,0 +1,36 @@
+{
+  "session_ledger": [
+    {
+      "event": "PAPER_SESSION_ID_CREATED",
+      "ledger_index": 1,
+      "session_id": "PAPER-C47E765BCA0F6573",
+      "state": "CREATED"
+    },
+    {
+      "event": "PAPER_ACCOUNT_INITIALIZED",
+      "ledger_index": 2,
+      "session_id": "PAPER-C47E765BCA0F6573",
+      "state": "READY"
+    },
+    {
+      "candidate_id": "CAND-0563E3012F19",
+      "event": "CHAMPION_ATTACHED",
+      "ledger_index": 3,
+      "session_id": "PAPER-C47E765BCA0F6573",
+      "state": "ATTACHED"
+    },
+    {
+      "event": "ROLLBACK_MANIFEST_ATTACHED",
+      "ledger_index": 4,
+      "session_id": "PAPER-C47E765BCA0F6573",
+      "state": "ATTACHED"
+    },
+    {
+      "event": "PAPER_SESSION_BOOTSTRAP_CREATED",
+      "ledger_index": 5,
+      "session_id": "PAPER-C47E765BCA0F6573",
+      "state": "READY"
+    }
+  ],
+  "session_ledger_sha256": "ea0e239915015377ae9144f54cd870720ac401c64c9d2d44f0aff5f376176e99"
+}

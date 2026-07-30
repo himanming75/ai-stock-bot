@@ -1,0 +1,41 @@
+{
+  "activation_sequence": [
+    {
+      "action": "VERIFY_PROMOTION_PACKAGE_INTEGRITY",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "PASS",
+      "sequence": 1
+    },
+    {
+      "action": "VERIFY_OPERATOR_REVIEW",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "APPROVED",
+      "sequence": 2
+    },
+    {
+      "action": "VERIFY_ROLLBACK_MANIFEST",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "READY",
+      "sequence": 3
+    },
+    {
+      "action": "STAGE_CHAMPION_FOR_PROVISIONAL_PAPER",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "STAGED",
+      "sequence": 4
+    },
+    {
+      "action": "REGISTER_RUNNER_UP_FAILOVER",
+      "candidate_id": "CAND-031295B32A7B",
+      "required_state": "REGISTERED",
+      "sequence": 5
+    },
+    {
+      "action": "AWAIT_PAPER_SESSION_BOOTSTRAP",
+      "candidate_id": "CAND-0563E3012F19",
+      "required_state": "PENDING",
+      "sequence": 6
+    }
+  ],
+  "activation_sequence_sha256": "c8e6787ca43192112b6a5ec4d138021dd27d2c676a52cad0b5a3c1bdfa52b296"
+}

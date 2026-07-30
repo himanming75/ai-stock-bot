@@ -1,0 +1,446 @@
+{
+  "approved_for_live": false,
+  "baseline_parameters": {
+    "cooldown_bars": 2,
+    "min_volume_ratio": 1.0,
+    "signal_threshold": 0.6,
+    "stop_loss_pct": 0.02,
+    "take_profit_pct": 0.04
+  },
+  "candidate_set_sha256": "85d8b6124834c1f5c979428a938fb6d734852d9cc647a8dc7cc0e728259d9f23",
+  "candidates": [
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.066667,
+      "candidate_id": "CAND-47FFD6E68566",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 123.933332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 1
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.916667,
+      "candidate_id": "CAND-16A41F29628B",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 123.583332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 2
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 2.066667,
+      "candidate_id": "CAND-134970E37ACB",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 122.933332,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 3
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.016667,
+      "candidate_id": "CAND-1D3EFEC1F9D7",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 122.749999,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 4
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.916667,
+      "candidate_id": "CAND-4B91D8DCD154",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 122.583332,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 5
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.816667,
+      "candidate_id": "CAND-08CFDF59D92E",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 122.183332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 6
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 3.066667,
+      "candidate_id": "CAND-A06195B8F0D7",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 121.933332,
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 7
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.666667,
+      "candidate_id": "CAND-D5691BCECC40",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 121.833332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 8
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 2.016667,
+      "candidate_id": "CAND-9098A656F548",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 121.749999,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 9
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 2.916667,
+      "candidate_id": "CAND-4F18E08D973E",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 121.583332,
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 10
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.816667,
+      "candidate_id": "CAND-724EAD1C0510",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 121.183332,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 11
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.766667,
+      "candidate_id": "CAND-839C0BFEE9BA",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.999999,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 12
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.666667,
+      "candidate_id": "CAND-43BDD0AE596F",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.833332,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 13
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 3.016667,
+      "candidate_id": "CAND-53EB23DB5288",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.749999,
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 14
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.566667,
+      "candidate_id": "CAND-30C9F1AB56A1",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.433332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 15
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.983333,
+      "candidate_id": "CAND-FB73C914CC26",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.183334,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 16
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 2.816667,
+      "candidate_id": "CAND-C8ADD830533D",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.183332,
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 17
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.416667,
+      "candidate_id": "CAND-031295B32A7B",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 120.083332,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 18
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.766667,
+      "candidate_id": "CAND-8C1663A5EC19",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.999999,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 19
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.833333,
+      "candidate_id": "CAND-E7A11DA25E44",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.833334,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 20
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 2.666667,
+      "candidate_id": "CAND-A7CD65D210FF",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.833332,
+      "parameters": {
+        "cooldown_bars": 6,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "rank": 21
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.566667,
+      "candidate_id": "CAND-F9A06D5B4EDB",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.433332,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 22
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 0.516667,
+      "candidate_id": "CAND-0563E3012F19",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.249999,
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "rank": 23
+    },
+    {
+      "approved_for_live": false,
+      "baseline_distance_score": 1.983333,
+      "candidate_id": "CAND-A41DCA6640E6",
+      "evaluation_state": "PENDING_BACKTEST",
+      "heuristic_priority_score": 119.183334,
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.5,
+        "signal_threshold": 0.65,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "rank": 24
+    }
+  ],
+  "champion_strategy": "breakout",
+  "created_at": "2026-07-30T18:15:11+00:00",
+  "decision": "parameter_optimization_plan_created",
+  "evaluation_contract": {
+    "minimum_promotion_rules": {
+      "approved_for_live": false,
+      "v68_quality_gate": "APPROVE",
+      "v70_requires_monte_carlo_validation": true,
+      "v70_validation_state": "APPROVED"
+    },
+    "ranking_note": "heuristic_priority_score only orders candidates for testing; it is not a performance result and cannot approve a strategy.",
+    "required_input_per_candidate": [
+      "paper_trade_report",
+      "v68_analytics_report",
+      "v70_walk_forward_report"
+    ]
+  },
+  "max_candidates": 24,
+  "network_used": false,
+  "next_step": {
+    "action": "execute_offline_candidate_backtests",
+    "then": [
+      "run_v68_analytics",
+      "run_v70_walk_forward_validation",
+      "select_surviving_candidate",
+      "run_v71_monte_carlo_validation"
+    ],
+    "version": "73.1"
+  },
+  "optimization_state": "CANDIDATES_READY",
+  "parameter_optimization_report_sha256": "f2a7d0844951ec36cd4410a0b45a02421c89e6d32089c4a32fc980618fcb78c1",
+  "recommendation_codes": [
+    "REV-EDGE-RECOVERY",
+    "REV-ENTRY-QUALITY",
+    "REV-LOSS-CONTROL",
+    "REV-REQUALIFICATION",
+    "REV-ROBUSTNESS"
+  ],
+  "requires_offline_backtest": true,
+  "revision_id": "REV-breakout-V72",
+  "schema_version": "v73.0.parameter_optimization.1",
+  "search_space": {
+    "cooldown_bars": [
+      2,
+      4,
+      6
+    ],
+    "min_volume_ratio": [
+      1.0,
+      1.25,
+      1.5
+    ],
+    "signal_threshold": [
+      0.6,
+      0.65,
+      0.7
+    ],
+    "stop_loss_pct": [
+      0.015,
+      0.02,
+      0.022
+    ],
+    "take_profit_pct": [
+      0.036,
+      0.04,
+      0.046
+    ]
+  },
+  "selected_candidate_count": 24,
+  "source_v72_report_sha256": "9774b92810920ee3eaddcecd665d42c7a28b9e4fcfcc882c8afd4c9b8fef6628",
+  "status": "PASS",
+  "total_search_combinations": 243,
+  "version": "73.0"
+}

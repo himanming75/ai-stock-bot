@@ -1,0 +1,20 @@
+{
+  "analytics": {
+    "minimum_expectancy": 0.0,
+    "minimum_net_pnl": 0.0,
+    "minimum_profit_factor": 1.1,
+    "minimum_trade_count": 5,
+    "minimum_win_rate": 0.45
+  },
+  "monte_carlo": {
+    "minimum_p05_net_pnl": 0.0,
+    "minimum_probability_positive": 0.6,
+    "simulation_count": 500
+  },
+  "walk_forward": {
+    "minimum_aggregate_expectancy": 0.0,
+    "minimum_pass_rate": 0.5,
+    "minimum_window_trade_count": 2,
+    "window_count": 2
+  }
+}

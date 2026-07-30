@@ -1,0 +1,103 @@
+{
+  "decision": "portfolio_and_snapshot_updated",
+  "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+  "integration_sha256": "7d3f0e454c3010e20b39510600d60be44a15436e732be6fd10dab3a9352b39e5",
+  "network_used": false,
+  "reconciliation": {
+    "decision": "portfolio_updated",
+    "ending_cash": "29980.0000",
+    "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+    "ledger": [
+      {
+        "action": "BUY",
+        "cash_after": "29980.0000",
+        "cash_before": "50000.0000",
+        "commission": "0.0000",
+        "entry_sha256": "fae408871057c1f20a1460ff16de110866bedadf4eb97659f5a863a7c113c6bd",
+        "event_type": "POSITION_OPENED",
+        "execution_sha256": "cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852",
+        "payload_sha256": "eb7b356021b91b51512e7edc27866715b0770ccd59890713b4d1236b435f0fe0",
+        "position_quantity_after": "100",
+        "position_quantity_before": "0",
+        "previous_entry_sha256": "GENESIS",
+        "price": "200.2000",
+        "quantity": "100",
+        "realized_pnl_delta": "0.0000",
+        "sequence": 1,
+        "symbol": "AAPL"
+      }
+    ],
+    "network_used": false,
+    "position_count": 1,
+    "positions": [
+      {
+        "average_cost": "200.2000",
+        "cost_basis": "20020.0000",
+        "market_price": "205.0000",
+        "market_value": "20500.0000",
+        "position_sha256": "b449324eb52150bb06aeb2f06108f813325102579ab325a74d2532f8c02e7f5e",
+        "quantity": "100",
+        "realized_pnl": "0.0000",
+        "symbol": "AAPL",
+        "total_commission": "0.0000",
+        "unrealized_pnl": "480.0000"
+      }
+    ],
+    "reconciliation_sha256": "067e966f64a914f6b4cc59fea200ab864b69e5faf2d3ab44170b3b18dbb7ddf1",
+    "rejection_reasons": [],
+    "schema_version": "v59.0.paper_portfolio_update.1",
+    "starting_cash": "50000.0000",
+    "status": "PASS",
+    "total_commission": "0.0000",
+    "total_cost_basis": "20020.0000",
+    "total_equity": "50480.0000",
+    "total_market_value": "20500.0000",
+    "total_realized_pnl": "0.0000",
+    "total_unrealized_pnl": "480.0000",
+    "version": "59.0"
+  },
+  "schema_version": "v59.0.paper_portfolio_update_integration.1",
+  "snapshot": {
+    "buying_power": "29980.0000",
+    "cash_allocation": "0.593899",
+    "cash_balance": "29980.0000",
+    "cumulative_pnl": "480.0000",
+    "cumulative_return": "0.009600",
+    "daily_pnl": "480.0000",
+    "daily_return": "0.009600",
+    "decision": "snapshot",
+    "gross_exposure": "0.406101",
+    "invested_allocation": "0.406101",
+    "leverage_ratio": "0.406101",
+    "long_market_value": "20500.0000",
+    "net_exposure": "0.406101",
+    "net_liquidation_value": "50480.0000",
+    "network_used": false,
+    "position_count": 1,
+    "positions": [
+      {
+        "allocation": "0.406101",
+        "allocation_sha256": "21e70f057484fe8f6730481d6b5c80a3051a4875a40a5d3ebbfc51d6658c064a",
+        "gross_exposure_contribution": "0.406101",
+        "market_value": "20500.0000",
+        "net_exposure_contribution": "0.406101",
+        "quantity": "100",
+        "realized_pnl": "0.0000",
+        "symbol": "AAPL",
+        "unrealized_pnl": "480.0000"
+      }
+    ],
+    "prior_net_liquidation_value": "50000.0000",
+    "reconciliation_sha256": "067e966f64a914f6b4cc59fea200ab864b69e5faf2d3ab44170b3b18dbb7ddf1",
+    "rejection_reasons": [],
+    "schema_version": "v59.0.paper_account_snapshot.1",
+    "short_market_value": "0.0000",
+    "snapshot_sha256": "4f3a60686d4fc8db0ebe3e6e7d95adb626e09ed033bb27307f9863ad60b6da78",
+    "snapshot_time": "2026-07-29T21:00:00Z",
+    "status": "PASS",
+    "total_market_value": "20500.0000",
+    "version": "59.0"
+  },
+  "status": "PASS",
+  "version": "59.0"
+}

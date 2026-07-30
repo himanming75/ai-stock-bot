@@ -1,0 +1,30 @@
+{
+  "approved_for_live": false,
+  "decision": "extended_paper_promotion_evaluated",
+  "eligible_for_extended_paper": false,
+  "network_used": false,
+  "observed": {
+    "closed_trade_count": 0,
+    "expectancy": "0.000000",
+    "net_pnl": "0.0000",
+    "open_trade_count": 1,
+    "profit_factor": "0.000000",
+    "quality_gate": "INSUFFICIENT_DATA",
+    "win_rate": "0.000000"
+  },
+  "promotion_report_sha256": "b1826b3bf975e61964d0b406a219ed4e01d4270fccc6bfae11947700f32915d6",
+  "promotion_state": "HOLD_INSUFFICIENT_DATA",
+  "reason": "Insufficient closed-trade data for promotion",
+  "safety": {
+    "broker_connection_enabled": false,
+    "external_order_submission_enabled": false,
+    "live_trading_enabled": false,
+    "requires_future_live_safety_gate": true
+  },
+  "schema_version": "v66.0.extended_paper_promotion.1",
+  "source_v64_strategy_report_sha256": "9c45ac865365c1a56e43ba0e9a08ce23397102bdb429f029255f277278eb849b",
+  "source_v65_quality_gate_sha256": "e37f41df2127d6ae486ac1cff6b4ad97d31d9b5926342aaa2c19c7fdfcd5f8e0",
+  "start_extended_paper": false,
+  "status": "PASS",
+  "version": "66.0"
+}

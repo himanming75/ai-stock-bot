@@ -1,0 +1,9 @@
+{
+  "approved_for_live": false,
+  "network_used": false,
+  "paper_trades_input": "release/v69_1/scenarios/paper_trade_scenarios_breakout_v69_1.json",
+  "seed": 7100,
+  "simulations": 1000,
+  "version": "71.0",
+  "walk_forward_input": "release/v70/audit/walk_forward_validation_breakout_v70_0.json"
+}

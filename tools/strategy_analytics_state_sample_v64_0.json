@@ -1,0 +1,21 @@
+{
+  "version": "64.0",
+  "schema_version": "v64.0.strategy_analytics.1",
+  "status": "PASS",
+  "decision": "empty_strategy_analytics_sample",
+  "network_used": false,
+  "source_v60_history_sha256": "",
+  "source_v63_risk_report_sha256": "",
+  "source_event_count": 0,
+  "closed_trade_count": 0,
+  "open_trade_count": 0,
+  "overall": {},
+  "by_strategy": [],
+  "by_symbol": [],
+  "by_side": [],
+  "by_weekday": [],
+  "by_entry_hour_utc": [],
+  "strategy_ranking": [],
+  "normalized_closed_trades": [],
+  "strategy_report_sha256": ""
+}

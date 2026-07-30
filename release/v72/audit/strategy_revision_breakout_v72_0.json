@@ -1,0 +1,189 @@
+{
+  "analysis_sha256": "bdee63b508a3a92ae898378e56ec4e8bf3ab19adfb38f2809b3ae199a278ac3c",
+  "approved_for_live": false,
+  "champion_strategy": "breakout",
+  "created_at": "2026-07-30T18:08:33+00:00",
+  "decision": "strategy_revision_required",
+  "fail_window_count": 3,
+  "failed_windows": [
+    {
+      "failure_reasons": [
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "LOW_EXPECTANCY_RETENTION"
+      ],
+      "metrics": {
+        "expectancy_retention": "-0.057681",
+        "forward_expectancy": "-0.6754",
+        "forward_profit_factor": "0.926246",
+        "forward_win_rate": "0.250000",
+        "train_expectancy": "11.7093"
+      },
+      "severity": "CRITICAL",
+      "window": 1,
+      "window_status": "FAIL"
+    },
+    {
+      "failure_reasons": [
+        "LOW_WIN_RATE"
+      ],
+      "metrics": {
+        "expectancy_retention": "0.517581",
+        "forward_expectancy": "5.0562",
+        "forward_profit_factor": "1.695707",
+        "forward_win_rate": "0.400000",
+        "train_expectancy": "9.7689"
+      },
+      "severity": "MODERATE",
+      "window": 2,
+      "window_status": "FAIL"
+    },
+    {
+      "failure_reasons": [
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "NON_POSITIVE_EXPECTANCY",
+        "LOW_EXPECTANCY_RETENTION"
+      ],
+      "metrics": {
+        "expectancy_retention": "-0.301643",
+        "forward_expectancy": "-1.5350",
+        "forward_profit_factor": "0.843601",
+        "forward_win_rate": "0.300000",
+        "train_expectancy": "5.0888"
+      },
+      "severity": "CRITICAL",
+      "window": 4,
+      "window_status": "FAIL"
+    }
+  ],
+  "failure_distribution": {
+    "LOW_EXPECTANCY_RETENTION": {
+      "count": 2,
+      "failed_window_rate": "0.666667"
+    },
+    "LOW_PROFIT_FACTOR": {
+      "count": 2,
+      "failed_window_rate": "0.666667"
+    },
+    "LOW_WIN_RATE": {
+      "count": 3,
+      "failed_window_rate": "1.000000"
+    },
+    "NON_POSITIVE_EXPECTANCY": {
+      "count": 2,
+      "failed_window_rate": "0.666667"
+    }
+  },
+  "network_used": false,
+  "parent_version": "70.0",
+  "pass_window_count": 1,
+  "passed_windows": [
+    {
+      "failure_reasons": [],
+      "metrics": {
+        "expectancy_retention": "0.997858",
+        "forward_expectancy": "4.7987",
+        "forward_profit_factor": "1.631495",
+        "forward_win_rate": "0.450000",
+        "train_expectancy": "4.8090"
+      },
+      "severity": "NONE",
+      "window": 3,
+      "window_status": "PASS"
+    }
+  ],
+  "recommendation_sha256": "e0c31e5da23fdc42e1db1d8cee0f7a5b4eb592497b99ef206978b992b76937a5",
+  "recommendations": [
+    {
+      "actions": [
+        "Remove low-quality setup variants",
+        "Re-estimate reward-to-risk assumptions",
+        "Separate profitable and unprofitable signal subtypes"
+      ],
+      "code": "REV-EDGE-RECOVERY",
+      "priority": "CRITICAL",
+      "rank": 1,
+      "rationale": "The strategy produced non-positive forward expectancy in 2 failed window(s).",
+      "title": "Restore positive forward expectancy"
+    },
+    {
+      "actions": [
+        "Generate a new revision identifier",
+        "Rebuild paper scenarios for all candidate strategies",
+        "Rerun V68 analytics, V69 tournament, V70 walk-forward, and V71 gate"
+      ],
+      "code": "REV-REQUALIFICATION",
+      "priority": "MANDATORY",
+      "rank": 2,
+      "rationale": "3 walk-forward window(s) failed.",
+      "title": "Run full requalification after revision"
+    },
+    {
+      "actions": [
+        "Require stronger signal confirmation before entry",
+        "Add trend-alignment and minimum-volume filters",
+        "Reject entries during weak or conflicting market conditions"
+      ],
+      "code": "REV-ENTRY-QUALITY",
+      "priority": "HIGH",
+      "rank": 3,
+      "rationale": "Forward win rate was below the required threshold in 3 failed window(s).",
+      "title": "Strengthen entry-quality filters"
+    },
+    {
+      "actions": [
+        "Tighten invalidation and stop-loss rules",
+        "Cap repeated losses in the same symbol or market regime",
+        "Review risk-reward requirements before order approval"
+      ],
+      "code": "REV-LOSS-CONTROL",
+      "priority": "HIGH",
+      "rank": 4,
+      "rationale": "Forward profit factor fell below 1.0 in 2 failed window(s).",
+      "title": "Improve loss containment"
+    },
+    {
+      "actions": [
+        "Reduce parameter complexity",
+        "Prefer broad stable parameter ranges over narrow optima",
+        "Add regime-aware validation before strategy promotion"
+      ],
+      "code": "REV-ROBUSTNESS",
+      "priority": "HIGH",
+      "rank": 5,
+      "rationale": "Forward expectancy retained less than 25% of train expectancy in 2 failed window(s).",
+      "title": "Reduce overfitting and improve robustness"
+    }
+  ],
+  "requalification_state": "REVISION_REQUIRED",
+  "requires_requalification": true,
+  "requires_strategy_revision": true,
+  "revision_id": "REV-breakout-V72",
+  "revision_plan": {
+    "next_version": "72.1",
+    "pipeline": [
+      "strategy_revision",
+      "paper_scenario_regeneration",
+      "v68_analytics",
+      "v69_strategy_tournament",
+      "v70_walk_forward_validation",
+      "v71_monte_carlo_gate"
+    ],
+    "promotion_rule": "Do not progress to Monte Carlo unless V70 returns APPROVED and requires_monte_carlo_validation=true.",
+    "required": true
+  },
+  "schema_version": "v72.0.strategy_revision_requalification.1",
+  "severity_distribution": {
+    "CRITICAL": 2,
+    "MODERATE": 1
+  },
+  "source_pass_rate": "0.250000",
+  "source_validation_state": "REJECTED",
+  "source_walk_forward_report_sha256": "e755433a033f4abf1ea056de600670beba2c106d375178654e437c9b9d0e51e3",
+  "source_window_count": 4,
+  "status": "PASS",
+  "strategy_revision_report_sha256": "9774b92810920ee3eaddcecd665d42c7a28b9e4fcfcc882c8afd4c9b8fef6628",
+  "version": "72.0"
+}

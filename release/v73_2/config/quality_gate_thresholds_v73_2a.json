@@ -1,0 +1,7 @@
+{
+  "minimum_expectancy": 0.0,
+  "minimum_net_pnl": 0.0,
+  "minimum_profit_factor": 1.1,
+  "minimum_trade_count": 5,
+  "minimum_win_rate": 0.45
+}

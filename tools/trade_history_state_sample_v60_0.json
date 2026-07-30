@@ -1,0 +1,7 @@
+{
+  "schema_version": "v60.0.trade_history_state.1",
+  "version": "60.0",
+  "trades": [],
+  "open_lots": [],
+  "network_used": false
+}

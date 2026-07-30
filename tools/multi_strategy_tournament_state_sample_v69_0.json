@@ -1,0 +1,10 @@
+{
+  "version": "69.0",
+  "minimum_candidates": 2,
+  "inputs": [
+    "momentum=release/v68/momentum/result.json",
+    "mean_reversion=release/v68/mean_reversion/result.json"
+  ],
+  "network_used": false,
+  "approved_for_live": false
+}

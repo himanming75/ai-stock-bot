@@ -1,0 +1,2 @@
+﻿sequence,trade_id,event_time,symbol,action,event_type,quantity,price,gross_notional,commission,realized_pnl_delta,trade_outcome,closed_quantity,average_entry_price,holding_period_seconds,execution_sha256,entry_sha256
+1,TRD-F06276977A6DC0706354,2026-07-29T22:00:00Z,AAPL,BUY,POSITION_OPENED,100,200.2000,20020.0000,0.0000,0.0000,OPEN,0,,,cc59067eea86dfdf4881e1f7089d815677e1fb64b06b441770257cb2eca28852,48032cb7f8f0d6a1cd773a633a3c084a02d6d951cfc8315d428213758dc4cca8

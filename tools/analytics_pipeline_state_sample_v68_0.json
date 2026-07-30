@@ -1,0 +1,7 @@
+{
+  "approved_for_live": false,
+  "input": "release/v67/audit/paper_trade_scenarios_v67_0.json",
+  "minimum_trades": 20,
+  "network_used": false,
+  "version": "68.0"
+}

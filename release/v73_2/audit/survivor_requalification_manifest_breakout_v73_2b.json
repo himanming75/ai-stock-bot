@@ -1,0 +1,373 @@
+{
+  "approved_for_live": false,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "champion_strategy": "breakout",
+  "created_at": "2026-07-30T18:34:41+00:00",
+  "decision": "requalification_manifest_created",
+  "execution_order": [
+    "CAND-0563E3012F19",
+    "CAND-031295B32A7B",
+    "CAND-839C0BFEE9BA",
+    "CAND-30C9F1AB56A1",
+    "CAND-F9A06D5B4EDB"
+  ],
+  "manifest_state": "READY_FOR_REQUALIFICATION",
+  "max_survivors": 5,
+  "network_used": false,
+  "next_step": {
+    "action": "execute_candidate_requalification_pipeline",
+    "stages": [
+      "V68",
+      "V70",
+      "V71"
+    ],
+    "version": "74.0"
+  },
+  "requalification_manifest_sha256": "4bbe9a2efa9ebb3e3c72cac82e19d801c68c3d1020735733bb0a4217d075145e",
+  "requires_requalification_execution": true,
+  "revision_id": "REV-breakout-V72",
+  "runner_up_candidate_id": "CAND-031295B32A7B",
+  "schema_version": "v73.2b.survivor_requalification_manifest.1",
+  "selected_candidates": [
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-0563E3012F19",
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 195.286952,
+        "gross_loss": 0,
+        "gross_profit": 1367.008664,
+        "loss_count": 0,
+        "net_pnl": 1367.008664,
+        "profit_factor": null,
+        "trade_count": 7,
+        "win_count": 7,
+        "win_rate": 1.0
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_rank": 1,
+      "quality_score": 100.099391,
+      "requalification_priority": 1,
+      "requalification_state": "PENDING",
+      "required_validations": [
+        "V68",
+        "V70",
+        "V71"
+      ],
+      "source_backtest_rank": 1
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-031295B32A7B",
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 160.02786,
+        "gross_loss": 72.270901,
+        "gross_profit": 1192.465922,
+        "loss_count": 1,
+        "net_pnl": 1120.195021,
+        "profit_factor": 16.499945,
+        "trade_count": 7,
+        "win_count": 6,
+        "win_rate": 0.857143
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "quality_rank": 2,
+      "quality_score": 91.388088,
+      "requalification_priority": 2,
+      "requalification_state": "PENDING",
+      "required_validations": [
+        "V68",
+        "V70",
+        "V71"
+      ],
+      "source_backtest_rank": 8
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-839C0BFEE9BA",
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 160.453456,
+        "gross_loss": 104.8576,
+        "gross_profit": 1067.578337,
+        "loss_count": 1,
+        "net_pnl": 962.720737,
+        "profit_factor": 10.18122,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "quality_rank": 3,
+      "quality_score": 89.169596,
+      "requalification_priority": 3,
+      "requalification_state": "PENDING",
+      "required_validations": [
+        "V68",
+        "V70",
+        "V71"
+      ],
+      "source_backtest_rank": 7
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-30C9F1AB56A1",
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 158.273264,
+        "gross_loss": 72.835148,
+        "gross_profit": 1022.474733,
+        "loss_count": 1,
+        "net_pnl": 949.639585,
+        "profit_factor": 14.038205,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_rank": 4,
+      "quality_score": 88.995181,
+      "requalification_priority": 4,
+      "requalification_state": "PENDING",
+      "required_validations": [
+        "V68",
+        "V70",
+        "V71"
+      ],
+      "source_backtest_rank": 9
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-F9A06D5B4EDB",
+      "metrics": {
+        "breakeven_count": 0,
+        "expectancy": 158.273264,
+        "gross_loss": 72.835148,
+        "gross_profit": 1022.474733,
+        "loss_count": 1,
+        "net_pnl": 949.639585,
+        "profit_factor": 14.038205,
+        "trade_count": 6,
+        "win_count": 5,
+        "win_rate": 0.833333
+      },
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "quality_rank": 5,
+      "quality_score": 88.995181,
+      "requalification_priority": 5,
+      "requalification_state": "PENDING",
+      "required_validations": [
+        "V68",
+        "V70",
+        "V71"
+      ],
+      "source_backtest_rank": 10
+    }
+  ],
+  "selected_candidates_sha256": "2906df4187befb13395241042e513567b91641d874b5a2a201ff1cf42ff09014",
+  "selected_survivor_count": 5,
+  "source_candidate_count": 24,
+  "source_survivor_count": 12,
+  "source_v73_2a_report_sha256": "e513ff34172f882576673468b9ece2271959a1f2b643f90a07ced139bb483c56",
+  "status": "PASS",
+  "validation_contracts": [
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-0563E3012F19",
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "priority": 1,
+      "promotion_rule": "Candidate is eligible for provisional paper promotion only when all required stages pass. Live approval remains prohibited.",
+      "required_stages": [
+        {
+          "name": "analytics_revalidation",
+          "required_decision": "analytics_pipeline_completed",
+          "required_output": "release/v74/CAND-0563E3012F19/analytics_revalidation_v68.json",
+          "stage": "V68"
+        },
+        {
+          "name": "walk_forward_revalidation",
+          "required_output": "release/v74/CAND-0563E3012F19/walk_forward_revalidation_v70.json",
+          "required_state": "APPROVED",
+          "stage": "V70"
+        },
+        {
+          "name": "monte_carlo_revalidation",
+          "required_output": "release/v74/CAND-0563E3012F19/monte_carlo_revalidation_v71.json",
+          "required_state": "APPROVED",
+          "stage": "V71"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-031295B32A7B",
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.04
+      },
+      "priority": 2,
+      "promotion_rule": "Candidate is eligible for provisional paper promotion only when all required stages pass. Live approval remains prohibited.",
+      "required_stages": [
+        {
+          "name": "analytics_revalidation",
+          "required_decision": "analytics_pipeline_completed",
+          "required_output": "release/v74/CAND-031295B32A7B/analytics_revalidation_v68.json",
+          "stage": "V68"
+        },
+        {
+          "name": "walk_forward_revalidation",
+          "required_output": "release/v74/CAND-031295B32A7B/walk_forward_revalidation_v70.json",
+          "required_state": "APPROVED",
+          "stage": "V70"
+        },
+        {
+          "name": "monte_carlo_revalidation",
+          "required_output": "release/v74/CAND-031295B32A7B/monte_carlo_revalidation_v71.json",
+          "required_state": "APPROVED",
+          "stage": "V71"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-839C0BFEE9BA",
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.25,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.036
+      },
+      "priority": 3,
+      "promotion_rule": "Candidate is eligible for provisional paper promotion only when all required stages pass. Live approval remains prohibited.",
+      "required_stages": [
+        {
+          "name": "analytics_revalidation",
+          "required_decision": "analytics_pipeline_completed",
+          "required_output": "release/v74/CAND-839C0BFEE9BA/analytics_revalidation_v68.json",
+          "stage": "V68"
+        },
+        {
+          "name": "walk_forward_revalidation",
+          "required_output": "release/v74/CAND-839C0BFEE9BA/walk_forward_revalidation_v70.json",
+          "required_state": "APPROVED",
+          "stage": "V70"
+        },
+        {
+          "name": "monte_carlo_revalidation",
+          "required_output": "release/v74/CAND-839C0BFEE9BA/monte_carlo_revalidation_v71.json",
+          "required_state": "APPROVED",
+          "stage": "V71"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-30C9F1AB56A1",
+      "parameters": {
+        "cooldown_bars": 2,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "priority": 4,
+      "promotion_rule": "Candidate is eligible for provisional paper promotion only when all required stages pass. Live approval remains prohibited.",
+      "required_stages": [
+        {
+          "name": "analytics_revalidation",
+          "required_decision": "analytics_pipeline_completed",
+          "required_output": "release/v74/CAND-30C9F1AB56A1/analytics_revalidation_v68.json",
+          "stage": "V68"
+        },
+        {
+          "name": "walk_forward_revalidation",
+          "required_output": "release/v74/CAND-30C9F1AB56A1/walk_forward_revalidation_v70.json",
+          "required_state": "APPROVED",
+          "stage": "V70"
+        },
+        {
+          "name": "monte_carlo_revalidation",
+          "required_output": "release/v74/CAND-30C9F1AB56A1/monte_carlo_revalidation_v71.json",
+          "required_state": "APPROVED",
+          "stage": "V71"
+        }
+      ]
+    },
+    {
+      "approved_for_live": false,
+      "candidate_id": "CAND-F9A06D5B4EDB",
+      "parameters": {
+        "cooldown_bars": 4,
+        "min_volume_ratio": 1.0,
+        "signal_threshold": 0.7,
+        "stop_loss_pct": 0.015,
+        "take_profit_pct": 0.046
+      },
+      "priority": 5,
+      "promotion_rule": "Candidate is eligible for provisional paper promotion only when all required stages pass. Live approval remains prohibited.",
+      "required_stages": [
+        {
+          "name": "analytics_revalidation",
+          "required_decision": "analytics_pipeline_completed",
+          "required_output": "release/v74/CAND-F9A06D5B4EDB/analytics_revalidation_v68.json",
+          "stage": "V68"
+        },
+        {
+          "name": "walk_forward_revalidation",
+          "required_output": "release/v74/CAND-F9A06D5B4EDB/walk_forward_revalidation_v70.json",
+          "required_state": "APPROVED",
+          "stage": "V70"
+        },
+        {
+          "name": "monte_carlo_revalidation",
+          "required_output": "release/v74/CAND-F9A06D5B4EDB/monte_carlo_revalidation_v71.json",
+          "required_state": "APPROVED",
+          "stage": "V71"
+        }
+      ]
+    }
+  ],
+  "validation_contracts_sha256": "fa155ec2099f2368a24f10e9e418e515b8c1253857be11e04c15fb758f4df7a6",
+  "version": "73.2B"
+}
