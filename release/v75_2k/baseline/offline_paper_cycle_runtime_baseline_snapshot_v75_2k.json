@@ -1,0 +1,19 @@
+{
+  "baseline_observed_at": "2026-07-30T21:00:50+00:00",
+  "broker_connected": false,
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "fill_simulation_started": false,
+  "live_orders_enabled": false,
+  "mode": "OFFLINE_PAPER",
+  "network_enabled": false,
+  "order_generation_started": false,
+  "order_queue": [],
+  "orders_submitted": 0,
+  "positions_mutated": false,
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "signal_generation_started": false,
+  "started_at": "2026-07-30T20:56:07+00:00",
+  "state": "ACTIVE"
+}
