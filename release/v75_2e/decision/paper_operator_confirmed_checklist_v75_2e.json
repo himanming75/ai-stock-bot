@@ -1,0 +1,48 @@
+{
+  "confirmed_checklist": [
+    {
+      "operator_confirmed": true,
+      "review_index": 1,
+      "review_item": "CONFIRM_CHAMPION_CANDIDATE",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 2,
+      "review_item": "CONFIRM_INITIAL_PAPER_ACCOUNT",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 3,
+      "review_item": "CONFIRM_SESSION_HEALTH_READY",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 4,
+      "review_item": "CONFIRM_OFFLINE_NETWORK_LOCK",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 5,
+      "review_item": "CONFIRM_LIVE_ORDERS_DISABLED",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 6,
+      "review_item": "CONFIRM_ROLLBACK_MANIFEST_AVAILABLE",
+      "state": "CONFIRMED"
+    },
+    {
+      "operator_confirmed": true,
+      "review_index": 7,
+      "review_item": "ACKNOWLEDGE_PAPER_ONLY_SCOPE",
+      "state": "CONFIRMED"
+    }
+  ],
+  "confirmed_checklist_sha256": "cc5f1df5e1dcecdad28026cd22c92da88a37b0c2d4534eb4a09602df6367075b",
+  "decision_id": "POD-7BAD234DCC90557F"
+}

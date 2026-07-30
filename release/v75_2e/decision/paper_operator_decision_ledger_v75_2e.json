@@ -1,0 +1,42 @@
+{
+  "decision_id": "POD-7BAD234DCC90557F",
+  "decision_ledger": [
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "OPERATOR_REVIEW_PACKAGE_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "OPERATOR_CHECKLIST_CONFIRMED",
+      "ledger_index": 2,
+      "state": "PASS"
+    },
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "OPERATOR_SIGNATURE_RECORDED",
+      "ledger_index": 3,
+      "state": "RECORDED"
+    },
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "OPERATOR_DECISION_RECORDED",
+      "ledger_index": 4,
+      "state": "APPROVE_PAPER"
+    },
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "LIVE_TRADING_LOCK_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "decision_id": "POD-7BAD234DCC90557F",
+      "event": "PAPER_ACTIVATION_GATE_EVALUATED",
+      "ledger_index": 6,
+      "state": "READY_FOR_PAPER_ACTIVATION_AUTHORIZATION"
+    }
+  ],
+  "decision_ledger_sha256": "32bf9c1892903463c494c3fb850e7fb94f31c7c65d8e956768207b531dbd044c"
+}

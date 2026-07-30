@@ -1,0 +1,14 @@
+{
+  "all_checklist_items_required": true,
+  "allowed_operator_decisions": [
+    "APPROVE_PAPER",
+    "REJECT",
+    "HOLD"
+  ],
+  "automatic_approval_allowed": false,
+  "decision_reason_required": true,
+  "live_trading_approval_allowed": false,
+  "network_enabled": false,
+  "operator_name_required": true,
+  "operator_signature_required": true
+}
