@@ -1,0 +1,42 @@
+{
+  "validation_id": "OOV-91C40238B53F1BD9",
+  "validation_ledger": [
+    {
+      "event": "ORDER_GENERATION_EXECUTION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    },
+    {
+      "event": "PAPER_ORDER_PACKAGE_VERIFIED",
+      "ledger_index": 2,
+      "state": "PASS",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    },
+    {
+      "event": "PAPER_ORDER_IDENTITIES_RECALCULATED",
+      "ledger_index": 3,
+      "state": "PASS",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    },
+    {
+      "event": "ORDER_OBJECT_POLICY_VERIFIED",
+      "ledger_index": 4,
+      "state": "PASS",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    },
+    {
+      "event": "SAFETY_LOCKS_RECONFIRMED",
+      "ledger_index": 5,
+      "state": "ENFORCED",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    },
+    {
+      "event": "ORDER_OBJECT_VALIDATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "READY_FOR_ORDER_SUBMISSION_AUTHORIZATION",
+      "validation_id": "OOV-91C40238B53F1BD9"
+    }
+  ],
+  "validation_ledger_sha256": "0548c64f78a6c0e0ef7533bf319112e544793c3d1c66d1b765f2b63d382651f5"
+}

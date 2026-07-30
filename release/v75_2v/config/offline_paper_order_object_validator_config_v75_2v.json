@@ -1,0 +1,21 @@
+{
+  "broker_connection_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "minimum_reference_price": 0.01,
+  "network_allowed": false,
+  "order_submission_allowed": false,
+  "paper_broker_allowed": false,
+  "require_consumed_token_integrity": true,
+  "require_execution_integrity": true,
+  "require_order_id_recalculation": true,
+  "require_package_integrity": true,
+  "require_safety_lock": true,
+  "require_zero_fills": true,
+  "require_zero_submissions": true,
+  "required_order_state": "CREATED_NOT_SUBMITTED",
+  "required_order_type": "MARKET_REFERENCE_ONLY",
+  "required_time_in_force": "DAY",
+  "validation_scope": "OFFLINE_PAPER_ORDER_OBJECT_VALIDATION_ONLY"
+}
