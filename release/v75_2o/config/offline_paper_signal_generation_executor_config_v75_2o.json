@@ -1,0 +1,22 @@
+{
+  "broker_connection_allowed": false,
+  "buy_when_fast_above_slow": true,
+  "execution_scope": "OFFLINE_PAPER_SIGNAL_GENERATION_ONLY",
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "hold_when_equal": true,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "order_generation_allowed": false,
+  "paper_orders_allowed": false,
+  "prevent_output_overwrite": true,
+  "require_authorization_integrity": true,
+  "require_immutable_inputs": true,
+  "require_input_package_integrity": true,
+  "require_single_use_token": true,
+  "require_static_offline_fixture": true,
+  "require_token_unconsumed": true,
+  "require_token_unexpired": true,
+  "sell_when_fast_below_slow": true,
+  "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER"
+}

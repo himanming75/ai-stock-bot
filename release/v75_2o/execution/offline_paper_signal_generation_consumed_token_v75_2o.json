@@ -1,13 +1,13 @@
 {
   "authorization_id": "SGA-EB99F93B5CB946E8",
-  "consumed": false,
-  "consumed_at": null,
+  "consumed": true,
+  "consumed_at": "2026-07-30T21:25:16+00:00",
   "expires_at": "2026-07-30T21:40:09+00:00",
   "issued_at": "2026-07-30T21:25:09+00:00",
   "nonce": "d029d7d47a95d668b573b6be695002c3",
   "scope": "OFFLINE_PAPER_SIGNAL_GENERATION_ONLY",
   "single_use": true,
   "token_sha256": "24f2dc11b2102867d16d8f99ec634ed80b476f3b156ae5a94d903aa7d68e6d42",
-  "token_state": "ISSUED_NOT_CONSUMED",
+  "token_state": "CONSUMED",
   "validation_id": "SIV-39942131A4ECC674"
 }

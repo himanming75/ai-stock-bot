@@ -1,0 +1,44 @@
+{
+  "authorization_id": "SGA-EB99F93B5CB946E8",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "cycle_id": "PCS-9E02ACACB3FD3F80",
+  "cycle_sequence": 1,
+  "executed_at": "2026-07-30T21:25:16+00:00",
+  "immutable": true,
+  "network_source": false,
+  "orders_created": 0,
+  "orders_submitted": 0,
+  "preparation_id": "SIP-C5DD839926772AA2",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "signal_execution_id": "SGE-44449BA405BF05D4",
+  "signal_summary": {
+    "buy_count": 1,
+    "hold_count": 0,
+    "sell_count": 0,
+    "signal_count": 1,
+    "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+    "strategy_id": "CHAMPION_OFFLINE_V1",
+    "symbols": [
+      "SPY"
+    ]
+  },
+  "signals": [
+    {
+      "action": "BUY",
+      "as_of": "2026-07-30T15:30:00+00:00",
+      "fast_sma": 633.0,
+      "fast_window": 2,
+      "latest_price": 633.5,
+      "order_created": false,
+      "order_submitted": false,
+      "price_field": "close",
+      "signal_id": "SIG-AB05F6CBC6D960C9",
+      "signal_method": "SIMPLE_MOVING_AVERAGE_CROSSOVER",
+      "slow_sma": 632.3333333333,
+      "slow_window": 3,
+      "strategy_id": "CHAMPION_OFFLINE_V1",
+      "symbol": "SPY"
+    }
+  ],
+  "validation_id": "SIV-39942131A4ECC674"
+}

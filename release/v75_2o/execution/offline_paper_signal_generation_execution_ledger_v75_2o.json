@@ -1,0 +1,42 @@
+{
+  "execution_ledger": [
+    {
+      "event": "SIGNAL_GENERATION_AUTHORIZATION_VERIFIED",
+      "ledger_index": 1,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "PASS"
+    },
+    {
+      "event": "SINGLE_USE_TOKEN_CONSUMED",
+      "ledger_index": 2,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "CONSUMED"
+    },
+    {
+      "event": "SIGNAL_INPUT_PACKAGE_LOADED",
+      "ledger_index": 3,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "LOCKED"
+    },
+    {
+      "event": "OFFLINE_SIGNAL_CALCULATION_EXECUTED",
+      "ledger_index": 4,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "PASS"
+    },
+    {
+      "event": "SIGNAL_OUTPUT_PACKAGE_CREATED",
+      "ledger_index": 5,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "READY"
+    },
+    {
+      "event": "SIGNAL_GENERATION_EXECUTION_COMPLETED",
+      "ledger_index": 6,
+      "signal_execution_id": "SGE-44449BA405BF05D4",
+      "state": "READY_FOR_SIGNAL_OUTPUT_VALIDATION"
+    }
+  ],
+  "execution_ledger_sha256": "7ef6da9899f56d03cffba73241288b83df742701c16eb195259b6cff129937c7",
+  "signal_execution_id": "SGE-44449BA405BF05D4"
+}

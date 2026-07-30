@@ -1,42 +1,42 @@
 {
-  "authorization_id": "SGA-416B1F0F082F95A0",
+  "authorization_id": "SGA-EB99F93B5CB946E8",
   "authorization_ledger": [
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "SIGNAL_INPUT_VALIDATION_VERIFIED",
       "ledger_index": 1,
       "state": "PASS"
     },
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "VALIDATED_INPUT_SCOPE_LOCKED",
       "ledger_index": 2,
       "state": "LOCKED"
     },
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "SIGNAL_GENERATION_SCOPE_AUTHORIZED",
       "ledger_index": 3,
       "state": "AUTHORIZED"
     },
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "SINGLE_USE_TOKEN_ISSUED",
       "ledger_index": 4,
       "state": "ISSUED_NOT_CONSUMED"
     },
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "SAFETY_LOCKS_RECONFIRMED",
       "ledger_index": 5,
       "state": "ENFORCED"
     },
     {
-      "authorization_id": "SGA-416B1F0F082F95A0",
+      "authorization_id": "SGA-EB99F93B5CB946E8",
       "event": "SIGNAL_GENERATION_AUTHORIZATION_COMPLETED",
       "ledger_index": 6,
       "state": "AUTHORIZED_NOT_EXECUTED"
     }
   ],
-  "authorization_ledger_sha256": "c402519e8ad0417c407388ef983ba97acf56a53f3ecc56b1cd897d45cbe44926"
+  "authorization_ledger_sha256": "0aa06965f7e01337f9379daeacbf64f639657572712bc5cd9fd4e691e65822a6"
 }
