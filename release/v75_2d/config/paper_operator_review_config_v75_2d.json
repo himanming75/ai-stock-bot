@@ -1,0 +1,20 @@
+{
+  "activation_allowed": false,
+  "allowed_operator_decisions": [
+    "APPROVE_PAPER",
+    "REJECT",
+    "HOLD"
+  ],
+  "automatic_approval_allowed": false,
+  "network_enabled": false,
+  "operator_signature_required": true,
+  "required_review_items": [
+    "CONFIRM_CHAMPION_CANDIDATE",
+    "CONFIRM_INITIAL_PAPER_ACCOUNT",
+    "CONFIRM_SESSION_HEALTH_READY",
+    "CONFIRM_OFFLINE_NETWORK_LOCK",
+    "CONFIRM_LIVE_ORDERS_DISABLED",
+    "CONFIRM_ROLLBACK_MANIFEST_AVAILABLE",
+    "ACKNOWLEDGE_PAPER_ONLY_SCOPE"
+  ]
+}

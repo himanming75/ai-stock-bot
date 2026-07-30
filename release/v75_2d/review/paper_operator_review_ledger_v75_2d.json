@@ -1,0 +1,42 @@
+{
+  "review_id": "POR-2B7D09A3E88440BB",
+  "review_ledger": [
+    {
+      "event": "PREFLIGHT_RESULT_VERIFIED",
+      "ledger_index": 1,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PASS"
+    },
+    {
+      "event": "ACCOUNT_STATE_SUMMARIZED",
+      "ledger_index": 2,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "CREATED"
+    },
+    {
+      "event": "SESSION_HEALTH_SUMMARIZED",
+      "ledger_index": 3,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "CREATED"
+    },
+    {
+      "event": "OPERATOR_CHECKLIST_CREATED",
+      "ledger_index": 4,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PENDING"
+    },
+    {
+      "event": "OPERATOR_DECISION_REQUESTED",
+      "ledger_index": 5,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PENDING"
+    },
+    {
+      "event": "PAPER_ACTIVATION_HELD",
+      "ledger_index": 6,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "BLOCKED"
+    }
+  ],
+  "review_ledger_sha256": "8ddd0bae037216569f8a9999bb361a3440f65b4f65347c957f22a4ba61c2adf2"
+}

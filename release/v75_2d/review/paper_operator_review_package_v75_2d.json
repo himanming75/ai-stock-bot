@@ -1,0 +1,158 @@
+{
+  "activation_gate": {
+    "activation_allowed": false,
+    "next_version": "75.2E",
+    "operator_decision_recorded": false,
+    "operator_signature_verified": false
+  },
+  "approved_for_live": false,
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "created_at": "2026-07-30T20:10:32+00:00",
+  "decision": "paper_operator_review_package_created",
+  "network_used": false,
+  "operator_decision": {
+    "allowed_decisions": [
+      "APPROVE_PAPER",
+      "REJECT",
+      "HOLD"
+    ],
+    "decision_recorded": false,
+    "decision_state": "PENDING",
+    "operator_name": null,
+    "operator_signature": null,
+    "reason": null,
+    "selected_decision": null,
+    "signature_required": true,
+    "signed_at": null
+  },
+  "paper_operator_review_package_sha256": "8c05ccfab723fbd1fd0d1d1c8669ba0e29c91340bbd7f6bfdd6c001e1e6731a8",
+  "preflight_id": "PDP-13003147E861FB4D",
+  "review_checklist": [
+    {
+      "operator_confirmed": false,
+      "review_index": 1,
+      "review_item": "CONFIRM_CHAMPION_CANDIDATE",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 2,
+      "review_item": "CONFIRM_INITIAL_PAPER_ACCOUNT",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 3,
+      "review_item": "CONFIRM_SESSION_HEALTH_READY",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 4,
+      "review_item": "CONFIRM_OFFLINE_NETWORK_LOCK",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 5,
+      "review_item": "CONFIRM_LIVE_ORDERS_DISABLED",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 6,
+      "review_item": "CONFIRM_ROLLBACK_MANIFEST_AVAILABLE",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    },
+    {
+      "operator_confirmed": false,
+      "review_index": 7,
+      "review_item": "ACKNOWLEDGE_PAPER_ONLY_SCOPE",
+      "state": "PENDING_OPERATOR_CONFIRMATION"
+    }
+  ],
+  "review_checklist_sha256": "8fd54fc9cf605f9cdee76e7f0cf925b8806e0befe43f0617eaaffc411bb0167e",
+  "review_id": "POR-2B7D09A3E88440BB",
+  "review_ledger": [
+    {
+      "event": "PREFLIGHT_RESULT_VERIFIED",
+      "ledger_index": 1,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PASS"
+    },
+    {
+      "event": "ACCOUNT_STATE_SUMMARIZED",
+      "ledger_index": 2,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "CREATED"
+    },
+    {
+      "event": "SESSION_HEALTH_SUMMARIZED",
+      "ledger_index": 3,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "CREATED"
+    },
+    {
+      "event": "OPERATOR_CHECKLIST_CREATED",
+      "ledger_index": 4,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PENDING"
+    },
+    {
+      "event": "OPERATOR_DECISION_REQUESTED",
+      "ledger_index": 5,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "PENDING"
+    },
+    {
+      "event": "PAPER_ACTIVATION_HELD",
+      "ledger_index": 6,
+      "review_id": "POR-2B7D09A3E88440BB",
+      "state": "BLOCKED"
+    }
+  ],
+  "review_ledger_sha256": "8ddd0bae037216569f8a9999bb361a3440f65b4f65347c957f22a4ba61c2adf2",
+  "review_state": "AWAITING_OPERATOR_DECISION",
+  "review_summary": {
+    "account_state": "INITIALIZED",
+    "cash": 100000.0,
+    "currency": "USD",
+    "equity": 100000.0,
+    "health_state": "READY",
+    "max_positions": 10,
+    "open_order_count": 0,
+    "paper_activation_state": "NOT_ACTIVATED",
+    "position_count": 0,
+    "preflight_state": "READY_FOR_OPERATOR_REVIEW",
+    "starting_cash": 100000.0,
+    "verified_file_count": 7
+  },
+  "review_warnings": [
+    {
+      "code": "PAPER_SESSION_NOT_ACTIVATED",
+      "message": "Paper session activation remains blocked until a separate signed decision is validated.",
+      "severity": "INFO",
+      "warning_index": 1
+    },
+    {
+      "code": "LIVE_TRADING_PROHIBITED",
+      "message": "This package does not approve live trading, broker connectivity, or external order submission.",
+      "severity": "CRITICAL",
+      "warning_index": 2
+    }
+  ],
+  "safety_lock": {
+    "automatic_approval_allowed": false,
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2d.paper_operator_review_package.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_paper_deployment_preflight_sha256": "91d67cb0005197ad28d4a42915426b10b2e64c8a49aab98b02d784f7e119b357",
+  "status": "PASS",
+  "version": "75.2D"
+}
