@@ -1,0 +1,16 @@
+V75.2AO — Offline Paper Fill Receipt Archive Certificate Registry Snapshot Seal Certificate Builder
+
+Files:
+- tools/offline_paper_fill_receipt_archive_certificate_registry_snapshot_seal_certificate_builder_v75_2ao.py
+- tools/test_offline_paper_fill_receipt_archive_certificate_registry_snapshot_seal_certificate_builder_v75_2ao.py
+- release/v75_2ao/config/offline_paper_fill_receipt_archive_certificate_registry_snapshot_seal_certificate_config_v75_2ao.json
+
+Test:
+python -m unittest tools.test_offline_paper_fill_receipt_archive_certificate_registry_snapshot_seal_certificate_builder_v75_2ao -v
+
+Input:
+V75.2AN offline_paper_fill_receipt_archive_certificate_registry_snapshot_seal_verification_v75_2an.json
+
+Safety:
+- Offline final evidence certificate only
+- No settlement, account, broker, network, external submission, or live trading
