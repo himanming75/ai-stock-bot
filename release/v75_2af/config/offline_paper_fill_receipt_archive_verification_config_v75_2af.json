@@ -1,0 +1,22 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_archive_checks_integrity": true,
+  "require_archive_index_integrity": true,
+  "require_archive_ledger_integrity": true,
+  "require_archive_manifest_integrity": true,
+  "require_archive_package_integrity": true,
+  "require_deterministic_archive_package_id": true,
+  "require_receipt_notional_recalculation": true,
+  "require_zero_settlement_and_account_mutations": true,
+  "settlement_execution_allowed": false,
+  "verification_scope": "OFFLINE_PAPER_FILL_RECEIPT_ARCHIVE_PACKAGE_VERIFICATION_ONLY"
+}
