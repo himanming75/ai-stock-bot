@@ -1,0 +1,13 @@
+{
+  "authorization_id": "SGA-416B1F0F082F95A0",
+  "consumed": false,
+  "consumed_at": null,
+  "expires_at": "2026-07-30T21:33:39+00:00",
+  "issued_at": "2026-07-30T21:18:39+00:00",
+  "nonce": "9f2b51b376731533edafbd8900ded863",
+  "scope": "OFFLINE_PAPER_SIGNAL_GENERATION_ONLY",
+  "single_use": true,
+  "token_sha256": "d7513fc046dac5faad32df735008527238fe5521096250c13de77530b0d70ecb",
+  "token_state": "ISSUED_NOT_CONSUMED",
+  "validation_id": "SIV-39942131A4ECC674"
+}
