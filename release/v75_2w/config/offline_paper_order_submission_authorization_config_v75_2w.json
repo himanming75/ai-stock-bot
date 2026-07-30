@@ -1,0 +1,17 @@
+{
+  "authorization_scope": "OFFLINE_PAPER_ORDER_SUBMISSION_EXECUTION_ONLY",
+  "authorization_ttl_seconds": 900,
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "external_side_effects_allowed": false,
+  "fill_simulation_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "order_submission_allowed": false,
+  "paper_broker_allowed": false,
+  "require_single_use_token": true,
+  "require_validated_orders_integrity": true,
+  "require_validation_integrity": true,
+  "require_zero_fills": true,
+  "require_zero_submissions": true
+}

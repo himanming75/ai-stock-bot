@@ -1,0 +1,42 @@
+{
+  "authorization_id": "OSA-3A8770A064AF1E39",
+  "authorization_ledger": [
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "ORDER_OBJECT_VALIDATION_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "PAPER_ORDER_IDENTITIES_LOCKED",
+      "ledger_index": 2,
+      "state": "LOCKED"
+    },
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "OFFLINE_SUBMISSION_EXECUTION_SCOPE_AUTHORIZED",
+      "ledger_index": 3,
+      "state": "AUTHORIZED"
+    },
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "SINGLE_USE_TOKEN_ISSUED",
+      "ledger_index": 4,
+      "state": "ISSUED_NOT_CONSUMED"
+    },
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "SUBMISSION_ROUTING_AND_FILL_REMAIN_BLOCKED",
+      "ledger_index": 5,
+      "state": "ENFORCED"
+    },
+    {
+      "authorization_id": "OSA-3A8770A064AF1E39",
+      "event": "ORDER_SUBMISSION_AUTHORIZATION_COMPLETED",
+      "ledger_index": 6,
+      "state": "AUTHORIZED_NOT_EXECUTED"
+    }
+  ],
+  "authorization_ledger_sha256": "948b992534881038303fb5d2755b227247873606032d8c69732aeb759e862833"
+}

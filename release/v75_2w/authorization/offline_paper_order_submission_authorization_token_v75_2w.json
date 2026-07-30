@@ -1,0 +1,16 @@
+{
+  "authorization_id": "OSA-3A8770A064AF1E39",
+  "authorized_paper_order_ids": [
+    "PORD-E485BB6F23E7C728"
+  ],
+  "consumed": false,
+  "consumed_at": null,
+  "expires_at": "2026-07-30T22:19:34+00:00",
+  "issued_at": "2026-07-30T22:04:34+00:00",
+  "nonce": "dd8292f130b0d2d23066c88d8631da0e",
+  "scope": "OFFLINE_PAPER_ORDER_SUBMISSION_EXECUTION_ONLY",
+  "single_use": true,
+  "token_sha256": "3d64d893deb3d9c1dc433611d803ba470f5e223a05669863d95021963c63f1be",
+  "token_state": "ISSUED_NOT_CONSUMED",
+  "validation_id": "OOV-91C40238B53F1BD9"
+}

@@ -1,0 +1,21 @@
+{
+  "authorization_id": "OSA-3A8770A064AF1E39",
+  "authorized_order_manifest": [
+    {
+      "broker_routed": false,
+      "filled": false,
+      "order_intent_id": "INT-72B43614E992077D",
+      "order_state": "CREATED_NOT_SUBMITTED",
+      "order_type": "MARKET_REFERENCE_ONLY",
+      "paper_order_id": "PORD-E485BB6F23E7C728",
+      "quantity": 1,
+      "reference_price": 633.5,
+      "side": "BUY",
+      "submission_execution_authorized": true,
+      "submitted": false,
+      "symbol": "SPY",
+      "time_in_force": "DAY"
+    }
+  ],
+  "authorized_order_manifest_sha256": "28a582153084d0c27d50062182ada95c70050692f7b20ffd1fd8e205b44436e0"
+}
