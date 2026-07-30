@@ -1,0 +1,31 @@
+{
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "launch_plan": [
+    {
+      "action": "VERIFY_DEPLOYMENT_BUNDLE_INTEGRITY",
+      "state": "PENDING_PREFLIGHT",
+      "step": 1
+    },
+    {
+      "action": "VERIFY_REQUIRED_FILES",
+      "state": "PENDING_PREFLIGHT",
+      "step": 2
+    },
+    {
+      "action": "VERIFY_OFFLINE_RUNTIME_LOCKS",
+      "state": "PENDING_PREFLIGHT",
+      "step": 3
+    },
+    {
+      "action": "REQUEST_OPERATOR_REVIEW",
+      "state": "PENDING_PREFLIGHT",
+      "step": 4
+    },
+    {
+      "action": "HOLD_PAPER_SESSION_ACTIVATION",
+      "state": "BLOCKED_UNTIL_REVIEW",
+      "step": 5
+    }
+  ],
+  "launch_plan_sha256": "eed5a4410ea0f92adbcc937e446abb3de3bee72d4ace0db93809da5f1c0416aa"
+}

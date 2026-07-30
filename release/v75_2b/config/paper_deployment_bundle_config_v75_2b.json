@@ -1,0 +1,17 @@
+{
+  "broker_credentials_required": false,
+  "deployment_mode": "OFFLINE_PAPER",
+  "live_orders_enabled": false,
+  "network_enabled": false,
+  "operator_review_required": true,
+  "python_command": "python",
+  "required_files": [
+    "release/v75_2a/session/paper_session_bootstrap_v75_2a.json",
+    "release/v75_2a/session/paper_account_state_v75_2a.json",
+    "release/v75_2a/session/paper_session_health_v75_2a.json",
+    "release/v75_2a/session/paper_session_ledger_v75_2a.json",
+    "release/v75_1c/rollback/rollback_manifest_v75_1c.json",
+    "release/v75_1b/promotion/promotion_manifest_v75_1b.json",
+    "release/v75_1a/promotion/promotion_package_v75_1a.json"
+  ]
+}

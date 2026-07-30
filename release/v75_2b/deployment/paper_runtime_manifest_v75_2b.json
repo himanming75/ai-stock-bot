@@ -1,0 +1,17 @@
+{
+  "broker_credentials_required": false,
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "deployment_mode": "OFFLINE_PAPER",
+  "environment": {
+    "AI_STOCK_BOT_BROKER_CREDENTIALS_REQUIRED": "0",
+    "AI_STOCK_BOT_LIVE_ORDERS_ENABLED": "0",
+    "AI_STOCK_BOT_MODE": "OFFLINE_PAPER",
+    "AI_STOCK_BOT_NETWORK_ENABLED": "0"
+  },
+  "live_orders_enabled": false,
+  "network_enabled": false,
+  "python_command": "python",
+  "runtime_manifest_sha256": "262a3f57e8af3d4487b4f69ef7f1c3dfcdc8b0e8477d0348d33af4bd99dd4e9d",
+  "runtime_state": "DEFINED_NOT_STARTED",
+  "session_id": "PAPER-C47E765BCA0F6573"
+}

@@ -1,0 +1,48 @@
+{
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "file_inventory": [
+    {
+      "inventory_index": 1,
+      "path": "release/v75_2a/session/paper_session_bootstrap_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 2,
+      "path": "release/v75_2a/session/paper_account_state_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 3,
+      "path": "release/v75_2a/session/paper_session_health_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 4,
+      "path": "release/v75_2a/session/paper_session_ledger_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 5,
+      "path": "release/v75_1c/rollback/rollback_manifest_v75_1c.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 6,
+      "path": "release/v75_1b/promotion/promotion_manifest_v75_1b.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 7,
+      "path": "release/v75_1a/promotion/promotion_package_v75_1a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    }
+  ],
+  "file_inventory_sha256": "c9804e6db19742e83314b9f6c03aec9d30e5a09598390b0d8319142a183142c6"
+}

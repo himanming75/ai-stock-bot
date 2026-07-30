@@ -1,0 +1,154 @@
+{
+  "activation_gate": {
+    "activation_allowed": false,
+    "next_version": "75.2C",
+    "operator_review_required": true,
+    "preflight_required": true
+  },
+  "approved_for_live": false,
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "created_at": "2026-07-30T19:57:46+00:00",
+  "decision": "paper_deployment_bundle_created",
+  "deployment_ledger": [
+    {
+      "bundle_id": "PDB-DB5038C2AC8B7180",
+      "event": "PAPER_BOOTSTRAP_VERIFIED",
+      "ledger_index": 1,
+      "state": "PASS"
+    },
+    {
+      "bundle_id": "PDB-DB5038C2AC8B7180",
+      "event": "DEPLOYMENT_FILE_INVENTORY_CREATED",
+      "ledger_index": 2,
+      "state": "CREATED"
+    },
+    {
+      "bundle_id": "PDB-DB5038C2AC8B7180",
+      "event": "PAPER_RUNTIME_MANIFEST_CREATED",
+      "ledger_index": 3,
+      "state": "CREATED"
+    },
+    {
+      "bundle_id": "PDB-DB5038C2AC8B7180",
+      "event": "PAPER_LAUNCH_PLAN_CREATED",
+      "ledger_index": 4,
+      "state": "CREATED"
+    },
+    {
+      "bundle_id": "PDB-DB5038C2AC8B7180",
+      "event": "PAPER_DEPLOYMENT_BUNDLE_CREATED",
+      "ledger_index": 5,
+      "state": "READY_FOR_PREFLIGHT"
+    }
+  ],
+  "deployment_ledger_sha256": "ed9cb62a000742fb3cc346bb13be5cd1154ec2c999b63f9330818eaefe8acc4d",
+  "deployment_state": "READY_FOR_PAPER_DEPLOYMENT_PREFLIGHT",
+  "file_inventory": [
+    {
+      "inventory_index": 1,
+      "path": "release/v75_2a/session/paper_session_bootstrap_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 2,
+      "path": "release/v75_2a/session/paper_account_state_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 3,
+      "path": "release/v75_2a/session/paper_session_health_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 4,
+      "path": "release/v75_2a/session/paper_session_ledger_v75_2a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 5,
+      "path": "release/v75_1c/rollback/rollback_manifest_v75_1c.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 6,
+      "path": "release/v75_1b/promotion/promotion_manifest_v75_1b.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    },
+    {
+      "inventory_index": 7,
+      "path": "release/v75_1a/promotion/promotion_package_v75_1a.json",
+      "required": true,
+      "verification_state": "PENDING_PREFLIGHT"
+    }
+  ],
+  "file_inventory_sha256": "c9804e6db19742e83314b9f6c03aec9d30e5a09598390b0d8319142a183142c6",
+  "launch_plan": [
+    {
+      "action": "VERIFY_DEPLOYMENT_BUNDLE_INTEGRITY",
+      "state": "PENDING_PREFLIGHT",
+      "step": 1
+    },
+    {
+      "action": "VERIFY_REQUIRED_FILES",
+      "state": "PENDING_PREFLIGHT",
+      "step": 2
+    },
+    {
+      "action": "VERIFY_OFFLINE_RUNTIME_LOCKS",
+      "state": "PENDING_PREFLIGHT",
+      "step": 3
+    },
+    {
+      "action": "REQUEST_OPERATOR_REVIEW",
+      "state": "PENDING_PREFLIGHT",
+      "step": 4
+    },
+    {
+      "action": "HOLD_PAPER_SESSION_ACTIVATION",
+      "state": "BLOCKED_UNTIL_REVIEW",
+      "step": 5
+    }
+  ],
+  "launch_plan_sha256": "eed5a4410ea0f92adbcc937e446abb3de3bee72d4ace0db93809da5f1c0416aa",
+  "network_used": false,
+  "paper_deployment_bundle_sha256": "c0e6ed2c357d2fd23e6a716ab6f64fa321b1e1080917260085fbdaa1b6106d85",
+  "promotion_scope": "PROVISIONAL_PAPER_ONLY",
+  "runner_up_candidate_id": "CAND-031295B32A7B",
+  "runtime_manifest": {
+    "broker_credentials_required": false,
+    "bundle_id": "PDB-DB5038C2AC8B7180",
+    "deployment_mode": "OFFLINE_PAPER",
+    "environment": {
+      "AI_STOCK_BOT_BROKER_CREDENTIALS_REQUIRED": "0",
+      "AI_STOCK_BOT_LIVE_ORDERS_ENABLED": "0",
+      "AI_STOCK_BOT_MODE": "OFFLINE_PAPER",
+      "AI_STOCK_BOT_NETWORK_ENABLED": "0"
+    },
+    "live_orders_enabled": false,
+    "network_enabled": false,
+    "python_command": "python",
+    "runtime_manifest_sha256": "262a3f57e8af3d4487b4f69ef7f1c3dfcdc8b0e8477d0348d33af4bd99dd4e9d",
+    "runtime_state": "DEFINED_NOT_STARTED",
+    "session_id": "PAPER-C47E765BCA0F6573"
+  },
+  "safety_lock": {
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2b.paper_deployment_bundle.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "session_mode": "OFFLINE_PAPER",
+  "source_paper_session_bootstrap_sha256": "f6b764d5595725b7284a11ee4fda2f992bd719921231146d8bdf48f72a0e9776",
+  "status": "PASS",
+  "version": "75.2B"
+}
