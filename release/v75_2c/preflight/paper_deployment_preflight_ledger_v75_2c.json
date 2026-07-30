@@ -1,0 +1,36 @@
+{
+  "preflight_id": "PDP-13003147E861FB4D",
+  "preflight_ledger": [
+    {
+      "event": "DEPLOYMENT_BUNDLE_VERIFIED",
+      "ledger_index": 1,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "REQUIRED_FILES_VERIFIED",
+      "ledger_index": 2,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "OFFLINE_LOCKS_VERIFIED",
+      "ledger_index": 3,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "OPERATOR_REVIEW_REQUESTED",
+      "ledger_index": 4,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PENDING"
+    },
+    {
+      "event": "PAPER_ACTIVATION_HELD",
+      "ledger_index": 5,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "BLOCKED"
+    }
+  ],
+  "preflight_ledger_sha256": "069a58701fe542cadb64304dfdc65701861296b7beacb98b1a49f84e32b4aa4a"
+}

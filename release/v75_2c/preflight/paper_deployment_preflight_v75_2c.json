@@ -1,0 +1,156 @@
+{
+  "activation_gate": {
+    "activation_allowed": false,
+    "next_version": "75.2D",
+    "operator_review_required": true
+  },
+  "approved_for_live": false,
+  "bundle_id": "PDB-DB5038C2AC8B7180",
+  "champion_candidate_id": "CAND-0563E3012F19",
+  "created_at": "2026-07-30T20:04:07+00:00",
+  "decision": "paper_deployment_preflight_passed",
+  "network_used": false,
+  "operator_review": {
+    "approval_recorded": false,
+    "required": true,
+    "state": "PENDING"
+  },
+  "paper_deployment_preflight_sha256": "91d67cb0005197ad28d4a42915426b10b2e64c8a49aab98b02d784f7e119b357",
+  "preflight_checklist_sha256": "1cd46d3f12e357966628d6826f8f65da4c83876dbbd689ca9494232237ad167c",
+  "preflight_checks": [
+    {
+      "check": "DEPLOYMENT_BUNDLE_INTEGRITY",
+      "check_index": 1,
+      "state": "PASS"
+    },
+    {
+      "check": "REQUIRED_FILES",
+      "check_index": 2,
+      "state": "PASS",
+      "verified_count": 7
+    },
+    {
+      "check": "OFFLINE_RUNTIME_LOCKS",
+      "check_index": 3,
+      "state": "PASS"
+    },
+    {
+      "check": "LAUNCH_PLAN_SEQUENCE",
+      "check_index": 4,
+      "state": "PASS"
+    },
+    {
+      "check": "DEPLOYMENT_LEDGER_SEQUENCE",
+      "check_index": 5,
+      "state": "PASS"
+    },
+    {
+      "check": "OPERATOR_REVIEW_GATE",
+      "check_index": 6,
+      "state": "REQUIRED"
+    },
+    {
+      "check": "PAPER_SESSION_ACTIVATION",
+      "check_index": 7,
+      "state": "BLOCKED"
+    }
+  ],
+  "preflight_id": "PDP-13003147E861FB4D",
+  "preflight_ledger": [
+    {
+      "event": "DEPLOYMENT_BUNDLE_VERIFIED",
+      "ledger_index": 1,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "REQUIRED_FILES_VERIFIED",
+      "ledger_index": 2,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "OFFLINE_LOCKS_VERIFIED",
+      "ledger_index": 3,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PASS"
+    },
+    {
+      "event": "OPERATOR_REVIEW_REQUESTED",
+      "ledger_index": 4,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "PENDING"
+    },
+    {
+      "event": "PAPER_ACTIVATION_HELD",
+      "ledger_index": 5,
+      "preflight_id": "PDP-13003147E861FB4D",
+      "state": "BLOCKED"
+    }
+  ],
+  "preflight_ledger_sha256": "069a58701fe542cadb64304dfdc65701861296b7beacb98b1a49f84e32b4aa4a",
+  "preflight_state": "READY_FOR_OPERATOR_REVIEW",
+  "safety_lock": {
+    "broker_credentials_required": false,
+    "external_side_effects_allowed": false,
+    "live_orders_enabled": false,
+    "lock_state": "ENFORCED",
+    "network_enabled": false
+  },
+  "schema_version": "v75.2c.paper_deployment_preflight.1",
+  "session_id": "PAPER-C47E765BCA0F6573",
+  "source_paper_deployment_bundle_sha256": "c0e6ed2c357d2fd23e6a716ab6f64fa321b1e1080917260085fbdaa1b6106d85",
+  "status": "PASS",
+  "verified_files": [
+    {
+      "exists": true,
+      "inventory_index": 1,
+      "path": "release/v75_2a/session/paper_session_bootstrap_v75_2a.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 2,
+      "path": "release/v75_2a/session/paper_account_state_v75_2a.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 3,
+      "path": "release/v75_2a/session/paper_session_health_v75_2a.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 4,
+      "path": "release/v75_2a/session/paper_session_ledger_v75_2a.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 5,
+      "path": "release/v75_1c/rollback/rollback_manifest_v75_1c.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 6,
+      "path": "release/v75_1b/promotion/promotion_manifest_v75_1b.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    },
+    {
+      "exists": true,
+      "inventory_index": 7,
+      "path": "release/v75_1a/promotion/promotion_package_v75_1a.json",
+      "required": true,
+      "verification_state": "VERIFIED"
+    }
+  ],
+  "version": "75.2C"
+}

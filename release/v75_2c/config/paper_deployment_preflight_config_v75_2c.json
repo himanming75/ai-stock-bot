@@ -1,0 +1,12 @@
+{
+  "activation_allowed": false,
+  "forbidden_environment_variables": [
+    "BROKER_API_KEY",
+    "BROKER_API_SECRET",
+    "LIVE_TRADING_ENABLED"
+  ],
+  "network_enabled": false,
+  "operator_review_required": true,
+  "repository_root_required": true,
+  "verify_required_files": true
+}
