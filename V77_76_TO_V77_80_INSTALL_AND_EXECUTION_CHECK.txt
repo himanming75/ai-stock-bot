@@ -1,0 +1,22 @@
+V77.76-V77.80 WALK-FORWARD VALIDATION
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+V77.71-V77.75 must have been executed so this file exists:
+release\v77_75\output\strategy_optimization_certificate_v77_75.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_76_TO_V77_80.ps1
+
+Expected:
+- 8 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V77_81_MONTE_CARLO_ROBUSTNESS_ENGINE
+- V77.76-V77.80 PASS - READY TO COMMIT
+
+This certificate is not live-trading approval.

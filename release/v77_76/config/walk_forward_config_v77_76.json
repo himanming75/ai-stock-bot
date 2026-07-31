@@ -1,0 +1,27 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "stage": "V77.76",
+  "walk_forward": {
+    "fold_count": 6,
+    "step_periods": 63,
+    "test_periods": 63,
+    "train_periods": 252,
+    "window_mode": "rolling"
+  },
+  "walk_forward_safety_limits": {
+    "maximum_average_drawdown": 0.5,
+    "maximum_return_variance": 0.005,
+    "minimum_average_profit_factor": 1.0,
+    "minimum_average_sharpe_ratio": 0.25,
+    "minimum_average_stability_score": 0.45,
+    "minimum_fold_retention_ratio": 0.6,
+    "minimum_positive_fold_ratio": 0.6,
+    "minimum_worst_fold_sharpe_ratio": -1.0,
+    "positive_fold_ratio_scope": "required_only_when_candidate_expected_return_is_positive"
+  }
+}

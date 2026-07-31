@@ -1,0 +1,13 @@
+V77.76-V77.80 REPAIR 1
+
+The original V77.79 required 60% absolute-positive folds for every candidate.
+For a candidate that merely improves a weak baseline but still has a negative expected return,
+that rule is unsuitable for deciding eligibility for additional offline robustness testing.
+
+Repair:
+- Require at least 60% of folds to retain the candidate's expected return within a defined floor.
+- Keep the absolute-positive-fold requirement when the candidate expected return is positive.
+- Preserve Sharpe, profit factor, drawdown, variance, stability, and worst-fold checks.
+- This is only Monte Carlo robustness eligibility.
+- Profitability and live deployment are not certified.
+- live_deployment_approved remains false and actual orders remain zero.
