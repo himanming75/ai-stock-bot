@@ -1,0 +1,35 @@
+V77.5 INSTALL AND EXECUTION CHECK
+
+1. Extract V77_5_changed_files.zip into C:\stock-bot.
+   Overwrite broker\__init__.py.
+
+2. Confirm repository:
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+
+Expected:
+7e21abb
+
+3. Confirm V77.4 verification:
+Test-Path release\v77_4\output\execution_event_reconciliation_verification_v77_4.json
+
+Expected: True
+
+4. Run tests:
+python -m unittest tools.test_broker_state_checkpoint_v77_5 -v
+
+5. Remove previous output:
+Remove-Item release\v77_5\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate verification:
+python tools\broker_state_checkpoint_v77_5.py `
+  --repository-root . `
+  --config release\v77_5\config\broker_state_checkpoint_config_v77_5.json `
+  --output-dir release\v77_5\output
+
+7. Independently verify:
+python tools\verify_broker_state_checkpoint_v77_5.py `
+  --output-dir release\v77_5\output
+
+8. Do not add release\v77_5\output to Git.

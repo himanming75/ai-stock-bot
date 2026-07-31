@@ -1,3 +1,8 @@
+from .broker_state_checkpoint_v77_5 import (
+    BrokerStateCheckpoint,
+    BrokerStateCheckpointManager,
+    CheckpointError,
+)
 """Broker integration contracts and offline sandbox adapters."""
 
 from .contracts_v77_1 import (
@@ -52,4 +57,7 @@ __all__ = [
     "ExecutionEventReconciler",
     "ReconciliationIssue",
     "ReconciliationReport",
+    "BrokerStateCheckpoint",
+    "BrokerStateCheckpointManager",
+    "CheckpointError",
 ]
