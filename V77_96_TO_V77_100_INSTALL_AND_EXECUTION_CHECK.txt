@@ -1,0 +1,22 @@
+V77.96-V77.100 BROKER INTEGRATION SKELETON
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v77_95\output\live_readiness_certificate_v77_95.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_96_TO_V77_100.ps1
+
+Expected:
+- 12 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V78_1_PAPER_BROKER_ADAPTER_FOUNDATION
+- V77.96-V77.100 PASS - READY TO COMMIT
+
+This certificate authorizes only offline broker-adapter development.
+Real credentials, network transport, broker connections, and actual orders remain prohibited.

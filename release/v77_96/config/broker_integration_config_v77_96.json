@@ -1,0 +1,25 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "broker_skeleton": {
+    "adapter_name": "OfflineBrokerAdapter",
+    "credential_policy": "no_real_credentials",
+    "mode": "offline_simulation",
+    "network_policy": "default_deny",
+    "order_submission_policy": "simulated_orders_only",
+    "short_selling_enabled": false,
+    "supported_asset_classes": [
+      "equity_simulation"
+    ],
+    "supported_order_types": [
+      "market",
+      "limit"
+    ]
+  },
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V77.96"
+}
