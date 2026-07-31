@@ -1,0 +1,8 @@
+{
+  "stage": "V77.50",
+  "environment": "offline",
+  "network_allowed": false,
+  "broker_connected": false,
+  "actual_orders_submitted": 0,
+  "live_trading_authorized": false
+}
