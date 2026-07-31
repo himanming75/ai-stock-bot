@@ -1,0 +1,22 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "event_bus": {
+    "dead_letter_queue_enabled": true,
+    "delivery_policy": "at_least_once_with_idempotency",
+    "max_retries": 2,
+    "mode": "offline",
+    "ordered_sequence_enabled": true,
+    "topics": [
+      "order.events",
+      "fill.events",
+      "system.events"
+    ]
+  },
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.11"
+}
