@@ -1,0 +1,22 @@
+V78.6-V78.10 PAPER EVENT ENGINE
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v78_5\output\paper_broker_adapter_certificate_v78_5.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_6_TO_V78_10.ps1
+
+Expected:
+- 14 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V78_11_EVENT_BUS_FOUNDATION
+- V78.6-V78.10 PASS - READY TO COMMIT
+
+This certificate authorizes only offline event-bus foundation development.
+Real credentials, network transport, broker connections, and actual orders remain prohibited.

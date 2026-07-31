@@ -1,0 +1,23 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "paper_event": {
+    "allowed_event_types": [
+      "ORDER_CREATED",
+      "ORDER_ACCEPTED",
+      "ORDER_FILLED",
+      "ORDER_CANCELED"
+    ],
+    "append_only": true,
+    "hash_algorithm": "sha256",
+    "hash_chain_enabled": true,
+    "starting_cash": 100000.0,
+    "stream_id": "PAPER-V78"
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.6"
+}
