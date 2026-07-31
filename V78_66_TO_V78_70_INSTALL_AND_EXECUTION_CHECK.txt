@@ -1,0 +1,25 @@
+V78.66-V78.70 AUDIT AND RECONCILIATION
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_65\output\fill_portfolio_bridge_certificate_v78_65.json
+release\v78_62\output\fill_normalization_portfolio_event_v78_62.json
+release\v78_63\output\fill_application_reconciliation_v78_63.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_66_TO_V78_70.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_71_PERFORMANCE_ACCOUNTING_FOUNDATION
+- V78.66-V78.70 PASS - READY TO COMMIT
+
+This bundle performs offline cross-checking, ledger replay, and hash-chain auditing only.
+It does not connect to a real broker, use real credentials, access the network, or submit actual orders.
