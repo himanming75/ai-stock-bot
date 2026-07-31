@@ -1,0 +1,14 @@
+V77.21-V77.25 SCHEDULED RUNTIME BUNDLE
+
+1. Extract this ZIP over C:\stock-bot
+2. Run:
+   powershell -ExecutionPolicy Bypass -File .\RUN_V77_21_TO_V77_25.ps1
+
+Expected:
+status PASS
+stage_count 5
+passed_stage_count 5
+failed_stage_count 0
+actual_orders_submitted 0
+live_trading_authorized false
+next_phase V77_26_PAPER_MARKET_DATA_FEED
