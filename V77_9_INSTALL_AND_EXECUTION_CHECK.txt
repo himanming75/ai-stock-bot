@@ -1,0 +1,17 @@
+V77.9 INSTALL AND EXECUTION CHECK
+Extract into C:\stock-bot and overwrite broker\__init__.py.
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+Expected: f18e772
+Test-Path release\v77_8\output\multi_order_continuation_stress_verification_v77_8.json
+Test-Path release\v77_5\output\sample_broker_state_checkpoint_v77_5.json
+python -m unittest tools.test_failure_injection_recovery_v77_9 -v
+Remove-Item release\v77_9\output -Recurse -Force -ErrorAction SilentlyContinue
+python tools\failure_injection_recovery_v77_9.py `
+ --repository-root . `
+ --config release\v77_9\config\failure_injection_recovery_config_v77_9.json `
+ --output-dir release\v77_9\output
+python tools\verify_failure_injection_recovery_v77_9.py `
+ --output-dir release\v77_9\output
+Do not add release\v77_9\output to Git.

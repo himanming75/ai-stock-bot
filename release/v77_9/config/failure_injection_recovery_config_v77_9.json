@@ -1,0 +1,13 @@
+{
+  "actual_order_submission_allowed": false,
+  "broker_connection_allowed": false,
+  "expected_blocked_failure_count": 4,
+  "expected_detected_corruption_count": 4,
+  "expected_framework_commit_sha": "f18e772",
+  "expected_v77_8_stress_sha256": "434d6b7bca8f7683cc78146437f92b129e52cfb3079cb36a091d43a1eed6217d",
+  "expected_v77_8_stressed_state_sha256": "31c147f03598cbc346573893c23adea46e6a65a3449bfac5f6466372cff8b327",
+  "expected_v77_8_verification_sha256": "f7e86261882217f6d9399e35ea2e8a7c3b620384ec4ad3494e226c860ce589d7",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "scope": "FAILURE_INJECTION_RECOVERY"
+}

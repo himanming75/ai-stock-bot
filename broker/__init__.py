@@ -1,3 +1,8 @@
+from .failure_injection_recovery_v77_9 import (
+    FailureInjectionError,
+    FailureInjectionRecovery,
+    FailureInjectionReport,
+)
 from .multi_order_continuation_stress_v77_8 import (
     MultiOrderContinuationStress,
     MultiOrderStressError,
@@ -82,4 +87,7 @@ __all__ = [
     "MultiOrderContinuationStress",
     "MultiOrderStressError",
     "MultiOrderStressReport",
+    "FailureInjectionError",
+    "FailureInjectionRecovery",
+    "FailureInjectionReport",
 ]
