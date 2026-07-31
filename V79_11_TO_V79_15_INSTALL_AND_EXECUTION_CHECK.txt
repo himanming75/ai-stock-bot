@@ -1,0 +1,24 @@
+V79.11-V79.15 AUTHENTICATED HISTORICAL DATA GATE
+
+BASE: GitHub main commit 7ab0b3d
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_11_TO_V79_15.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 12 tests
+- OK
+- Pipeline PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- client_type StockHistoricalDataClient
+- network_requests_executed 0
+- credentials_exposed false
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_16_ALPACA_HISTORICAL_NETWORK_SMOKE_TEST
+
+The pipeline uses synthetic test credentials. It never reads real environment credentials and never sends a network request.

@@ -1,0 +1,102 @@
+{
+  "base_commit": "7ab0b3d",
+  "file_count": 19,
+  "files": [
+    {
+      "bytes": 717,
+      "path": "GIT_COMMIT_V79_11_TO_V79_15.txt",
+      "sha256": "331c93cd3ba66b5dfdc057924b04adec9e3c3d845a47e6571f4e105359e157ee"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_11_TO_V79_15.ps1",
+      "sha256": "d738e6b3cb91ffaa0f507116bcb8ef42c457eb8b7b000f346048393284f6def7"
+    },
+    {
+      "bytes": 917,
+      "path": "RUN_V79_11_TO_V79_15.ps1",
+      "sha256": "aba0b0635b1279f4bc06e51ac13b9437f687938c8abdf51ce067f86b90c7c603"
+    },
+    {
+      "bytes": 637,
+      "path": "V79_11_TO_V79_15_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "a517e4e5470f13328a57242b81e78edc1e42bbb15989a2020e63a2a495a3cb75"
+    },
+    {
+      "bytes": 7342,
+      "path": "V79_11_TO_V79_15_LOCAL_TEST_RESULTS.txt",
+      "sha256": "b3f5e92dbf9e4db703145fabaf6a71ce6797f250b901175bafdb878083bbc053"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_11_TO_V79_15.ps1",
+      "sha256": "47bb071a633647c728b14ebf54ba859caa6bffd68ed37f32bbfb87382316b3ed"
+    },
+    {
+      "bytes": 1609,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "c4164a9a4a92e22a77921e081db76a0080eaf17f9c7ef8ec1c063a6741efc6ea"
+    },
+    {
+      "bytes": 9422,
+      "path": "alpaca_market_data/authenticated_gate_v79_11_15.py",
+      "sha256": "1b490616d6f43a61c3c485b65616621dd8fa17386ab1f500f772f89251d7dc16"
+    },
+    {
+      "bytes": 235,
+      "path": "release/v79_11/config/credential_policy_v79_11.json",
+      "sha256": "d483d6b46c97a76fb8c46b63c10fc171cd9953f854d61093ed342a6feb66c0be"
+    },
+    {
+      "bytes": 99,
+      "path": "release/v79_11/docs/V79.11_CREDENTIAL_INSPECTION.md",
+      "sha256": "d007d590046c9e29553faea841b525d916ed695cfab28a3d9eff9850ef9a8355"
+    },
+    {
+      "bytes": 109,
+      "path": "release/v79_12/docs/V79.12_NETWORK_APPROVAL_TOKEN.md",
+      "sha256": "613c80b71f28a0a8961befb42273103598c8885dfed2b15f7fe108096252ecd3"
+    },
+    {
+      "bytes": 127,
+      "path": "release/v79_13/docs/V79.13_AUTHENTICATED_CLIENT_FACTORY.md",
+      "sha256": "8e370881b5576a4aa623932bdd4cc71e39a7aa7ccda5f247e9aac39149bea8b0"
+    },
+    {
+      "bytes": 118,
+      "path": "release/v79_14/docs/V79.14_HISTORICAL_REQUEST_GATE.md",
+      "sha256": "c5cd3fbc0e818f3e1ec5b91c6b2e3128d1f8e0abfd818e43ced842637985594e"
+    },
+    {
+      "bytes": 370,
+      "path": "release/v79_15/docs/V79.11_TO_V79.15_RELEASE_NOTES.md",
+      "sha256": "ba39592d12056710a1f5f28edb932e67b51d1b0ed618fd1f94b70aeca4043629"
+    },
+    {
+      "bytes": 147,
+      "path": "release/v79_15/docs/V79.15_AUTHENTICATED_GATE_CERTIFICATE.md",
+      "sha256": "b14ad72a9366f10ee36e4468645416c2f60747afdfbd6fec589e42dcf0b397f8"
+    },
+    {
+      "bytes": 902,
+      "path": "tools/install_check_v79_11_to_v79_15.py",
+      "sha256": "c9fc60744fb3d1b6472828e090e1f6964d1ac240266674a79a484d8b02b2ac8a"
+    },
+    {
+      "bytes": 2199,
+      "path": "tools/run_v79_11_to_v79_15_pipeline.py",
+      "sha256": "7d51a79ce194a8d9087839b7303f17287837790e59963ad29e575fb5bdd014d1"
+    },
+    {
+      "bytes": 3694,
+      "path": "tools/test_authenticated_gate_v79_11_to_v79_15.py",
+      "sha256": "c5dcce5725914173ae9f1422ad535022d2fa3ddf19b4de6573f6f3ab546d1a41"
+    },
+    {
+      "bytes": 2016,
+      "path": "tools/verify_v79_11_to_v79_15_pipeline.py",
+      "sha256": "b3b98faa15c0e56948d4502891cd86d87ecf82ce1b6d87c8d319f61b742b1cb0"
+    }
+  ],
+  "stage_range": "V79.11-V79.15"
+}

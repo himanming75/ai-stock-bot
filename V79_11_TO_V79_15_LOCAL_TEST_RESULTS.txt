@@ -1,0 +1,110 @@
+$ /opt/pyvenv/bin/python -m unittest tools.test_authenticated_gate_v79_11_to_v79_15 -v
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_policy_blocks_trading (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_policy_blocks_trading) ... ok
+test_v79_11_bad_shape (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_11_bad_shape) ... ok
+test_v79_11_complete_pair (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_11_complete_pair) ... ok
+test_v79_11_missing_secret (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_11_missing_secret) ... ok
+test_v79_12_approval_valid (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_12_approval_valid) ... ok
+test_v79_12_denied (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_12_denied) ... ok
+test_v79_12_expired (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_12_expired) ... ok
+test_v79_13_client_created_without_request (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_13_client_created_without_request) ... ok
+test_v79_13_rejects_bad_credentials (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_13_rejects_bad_credentials) ... ok
+test_v79_14_only_stock_bars (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_14_only_stock_bars) ... ok
+test_v79_14_rejects_orders (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_14_rejects_orders) ... ok
+test_v79_15_certificate (tools.test_authenticated_gate_v79_11_to_v79_15.Tests.test_v79_15_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.003s
+
+OK
+
+
+$ /opt/pyvenv/bin/python tools/run_v79_11_to_v79_15_pipeline.py --repository-root . --clean
+{
+  "actual_orders_submitted": 0,
+  "client_type": "StockHistoricalDataClient",
+  "credential_pair_complete": true,
+  "credentials_exposed": false,
+  "failed_stage_count": 0,
+  "network_requests_executed": 0,
+  "next_phase": "V79_16_ALPACA_HISTORICAL_NETWORK_SMOKE_TEST",
+  "passed_stage_count": 5,
+  "stage_range": "V79.11-V79.15",
+  "status": "PASS",
+  "trading_client_created": false
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+
+
+$ /opt/pyvenv/bin/python tools/verify_v79_11_to_v79_15_pipeline.py --repository-root .
+{
+  "checks": {
+    "actual_orders_zero": true,
+    "all_five_stages_completed": true,
+    "broker_disconnected": true,
+    "certificate_hash_valid": true,
+    "certificate_status_pass": true,
+    "credentials_not_exposed": true,
+    "live_trading_not_authorized": true,
+    "network_requests_zero": true,
+    "trading_client_not_created": true,
+    "verification_links_certificate": true,
+    "verification_status_pass": true
+  },
+  "failed_checks": [],
+  "next_phase": "V79_16_ALPACA_HISTORICAL_NETWORK_SMOKE_TEST",
+  "stage": "V79.15",
+  "status": "PASS",
+  "verified": true
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+
+
+$ /opt/pyvenv/bin/python tools/install_check_v79_11_to_v79_15.py
+{
+  "actual_orders_submitted": 0,
+  "credentials_read": false,
+  "network_test_performed": false,
+  "pydantic_importable": true,
+  "stage_range": "V79.11-V79.15",
+  "status": "PASS",
+  "stock_historical_client_importable": true,
+  "trading_client_created": false
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
