@@ -1,0 +1,16 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "operation_runtime": {
+    "allow_live_runtime": false,
+    "heartbeat_count": 3,
+    "max_restarts": 2,
+    "runtime_id": "AI-STOCK-BOT-V78-OFFLINE-RUNTIME"
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.86"
+}
