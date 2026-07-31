@@ -1,0 +1,23 @@
+{
+  "broker_connection_allowed": false,
+  "expected_hashes": {
+    "certificate_sha256": "523c164c62c3aaae979e74918b3795ffd8d33c902becfd2ca8f2ebc3cedf642c",
+    "ledger_sha256": "d7c0f9df71304b0456f4eb94c4b61e9b974bb6337444d008799e68b294032425",
+    "manifest_sha256": "e4c8cade370e551db75845d55c78f2298695808cc585f0343e467c7dce3adb8e",
+    "release_seal_sha256": "c8283c98ee1ac3eb590a5e0615c79ab57234c05e3d0ec7fe0f4d08e69cfb4463"
+  },
+  "expected_sealed_commit_sha": "211d78b5c047febbc33c73f281fbf4a5f5554689",
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_all_evidence_files_match": true,
+  "require_all_hashes_match": true,
+  "require_git_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_sealed_commit_match": true,
+  "require_zero_trading_side_effects": true,
+  "v76_6_output_dir": "release/v76_6/output",
+  "verification_scope": "RELEASE_CANDIDATE_SEAL_VERIFICATION"
+}

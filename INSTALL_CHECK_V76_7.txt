@@ -1,0 +1,31 @@
+V76.7 INSTALL CHECK
+
+Extract this ZIP directly into C:\stock-bot.
+
+cd C:\stock-bot
+
+Test-Path README_V76_7.txt
+Test-Path INSTALL_CHECK_V76_7.txt
+Test-Path tools\release_candidate_seal_verification_v76_7.py
+Test-Path tools\test_release_candidate_seal_verification_v76_7.py
+Test-Path release\v76_7\config\release_candidate_seal_verification_config_v76_7.json
+
+All five results must be True.
+
+Important:
+V76.6 output must still exist:
+Test-Path release\v76_6\output\release_candidate_evidence_manifest_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_ledger_v76_6.json
+Test-Path release\v76_6\output\release_candidate_certificate_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_seal_v76_6.json
+
+Run:
+python -m unittest tools.test_release_candidate_seal_verification_v76_7 -v
+
+Then:
+python tools/release_candidate_seal_verification_v76_7.py `
+  --repository-root . `
+  --config release/v76_7/config/release_candidate_seal_verification_config_v76_7.json `
+  --output-dir release/v76_7/output
+
+V76.7A repair: clean-tree verification ignores untracked V76.7 installer/output files, while tracked and staged changes still fail.
