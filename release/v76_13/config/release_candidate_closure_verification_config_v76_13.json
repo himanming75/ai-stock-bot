@@ -1,0 +1,22 @@
+{
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "55c3e61b2318a07f69bc99d6969685330ea14e4d",
+  "expected_v76_12_closure_certificate_sha256": "43d66510f0c53bb8540722f9fe7648c7909509f0ea9153140b0c0ef79ec79d59",
+  "expected_v76_12_gate_count": 45,
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_all_closure_gates_pass": true,
+  "require_closure_hash_anchor": true,
+  "require_closure_self_hash_match": true,
+  "require_closure_summary_match": true,
+  "require_framework_commit_match": true,
+  "require_git_tracked_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_release_candidate_closed": true,
+  "require_zero_trading_side_effects": true,
+  "v76_12_output_dir": "release/v76_12/output",
+  "verification_scope": "RELEASE_CANDIDATE_CLOSURE_VERIFICATION"
+}
