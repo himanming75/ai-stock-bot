@@ -1,0 +1,25 @@
+V78.76-V78.80 REPORTING
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_75\output\performance_accounting_certificate_v78_75.json
+release\v78_73\output\performance_metrics_engine_v78_73.json
+release\v78_72\output\equity_curve_return_ledger_v78_72.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_76_TO_V78_80.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_81_DEPLOYMENT_FOUNDATION
+- V78.76-V78.80 PASS - READY TO COMMIT
+
+Outputs include deterministic JSON, CSV, Markdown, manifest, digests, safety gate, and reporting certificate.
+This bundle remains fully offline and submits zero actual orders.

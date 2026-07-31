@@ -1,0 +1,26 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "reporting": {
+    "export_formats": [
+      "json",
+      "csv",
+      "markdown"
+    ],
+    "report_id": "V78-OFFLINE-PERFORMANCE-REPORT",
+    "report_version": "1.0",
+    "required_sections": [
+      "summary",
+      "trade_statistics",
+      "equity_curve",
+      "safety"
+    ],
+    "title": "Offline Paper Trading Performance Report"
+  },
+  "stage": "V78.76"
+}
