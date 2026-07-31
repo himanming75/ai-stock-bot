@@ -1,0 +1,18 @@
+V76.4 INSTALL CHECK
+
+Test-Path README_V76_4.txt
+Test-Path INSTALL_CHECK_V76_4.txt
+Test-Path tools\advanced_validation_behavioral_verification_v76_4.py
+Test-Path tools\test_advanced_validation_behavioral_verification_v76_4.py
+Test-Path release\v76_4\config\advanced_validation_behavioral_verification_config_v76_4.json
+
+All five results must be True.
+
+Test:
+python -m unittest tools.test_advanced_validation_behavioral_verification_v76_4 -v
+
+Run:
+python tools/advanced_validation_behavioral_verification_v76_4.py `
+  --repository-root . `
+  --config release/v76_4/config/advanced_validation_behavioral_verification_config_v76_4.json `
+  --output-dir release/v76_4/output

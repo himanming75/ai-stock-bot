@@ -1,0 +1,83 @@
+{
+  "broker_connection_allowed": false,
+  "live_approval_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "preserve_repository": true,
+  "repeat_count": 2,
+  "repository_mutation_allowed": false,
+  "require_all_scenarios_pass": true,
+  "require_repeatability": true,
+  "require_zero_trading_side_effects": true,
+  "scenarios": [
+    {
+      "name": "Market Data Pipeline Repeatability",
+      "scenario_id": "MARKET_DATA_REPEATABILITY",
+      "script": "tools/test_market_data_feed_v41_0.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Model Inference Repeatability",
+      "scenario_id": "MODEL_INFERENCE_REPEATABILITY",
+      "script": "test_ml.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Strategy Engine Repeatability",
+      "scenario_id": "STRATEGY_REPEATABILITY",
+      "script": "test_offline_strategy_v25_4.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Backtest Engine Repeatability",
+      "scenario_id": "BACKTEST_REPEATABILITY",
+      "script": "test_offline_backtest_v25_6.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Risk Engine Repeatability",
+      "scenario_id": "RISK_REPEATABILITY",
+      "script": "test_offline_risk_v25_3.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Portfolio Manager Repeatability",
+      "scenario_id": "PORTFOLIO_REPEATABILITY",
+      "script": "test_offline_portfolio_v25_2.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Order Simulator Repeatability",
+      "scenario_id": "ORDER_SIM_REPEATABILITY",
+      "script": "test_offline_order_sim_v25_5.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Paper Gateway Repeatability",
+      "scenario_id": "PAPER_GATEWAY_REPEATABILITY",
+      "script": "tools/test_paper_broker_gateway_v47_0.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Reconciliation Repeatability",
+      "scenario_id": "RECONCILIATION_REPEATABILITY",
+      "script": "tools/test_paper_portfolio_reconciliation_v49_0.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Dashboard Data Repeatability",
+      "scenario_id": "DASHBOARD_REPEATABILITY",
+      "script": "tools/test_performance_dashboard_data_v62_0.py",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "Audit Evidence Repeatability",
+      "scenario_id": "AUDIT_REPEATABILITY",
+      "script": "test_offline_audit_chain_v24_3.py",
+      "timeout_seconds": 600
+    }
+  ],
+  "verification_scope": "ADVANCED_VALIDATION_BEHAVIORAL_VERIFICATION",
+  "verify_tracked_file_immutability": true
+}
