@@ -1,0 +1,24 @@
+V78.41-V78.45 SIGNAL-RISK BRIDGE
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_40\output\strategy_runtime_certificate_v78_40.json
+release\v78_38\output\deterministic_signal_execution_engine_v78_38.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_41_TO_V78_45.ps1
+
+Expected:
+- 11 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_46_PORTFOLIO_RUNTIME_FOUNDATION
+- V78.41-V78.45 PASS - READY TO COMMIT
+
+This bundle creates offline risk requests and risk decisions only.
+It does not create orders, submit orders, connect to a broker, use real credentials, or access the network.

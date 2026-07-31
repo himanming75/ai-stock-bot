@@ -1,0 +1,26 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "signal_risk_bridge": {
+    "confidence_map": {
+      "BUY": 0.75,
+      "HOLD": 0.0,
+      "SELL": 0.75
+    },
+    "current_cash": 100000.0,
+    "current_position_quantity": 10,
+    "max_requested_notional": 1000.0,
+    "reference_price": 100.0,
+    "risk_limits": {
+      "max_cash_utilization": 0.1,
+      "max_position_notional": 1000.0,
+      "min_order_notional": 50.0
+    }
+  },
+  "stage": "V78.41"
+}
