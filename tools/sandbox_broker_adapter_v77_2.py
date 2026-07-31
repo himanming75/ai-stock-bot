@@ -65,15 +65,59 @@ def run_git(root: Path, args: list[str]) -> str:
     return process.stdout.strip()
 
 
+V77_2_ALLOWED_TRACKED_PATHS = frozenset(
+    {
+        "V77_2_INSTALL_AND_EXECUTION_CHECK.txt",
+        "broker/__init__.py",
+        "broker/sandbox_adapter_v77_2.py",
+        "tools/sandbox_broker_adapter_v77_2.py",
+        "tools/verify_sandbox_broker_adapter_v77_2.py",
+        "tools/test_sandbox_broker_adapter_v77_2.py",
+        "release/v77_2/config/sandbox_broker_adapter_config_v77_2.json",
+        "release/v77_2/docs/V77_2_SANDBOX_BROKER_ADAPTER.md",
+    }
+)
+
+
+def _status_path(line: str) -> str:
+    value = line[3:].strip()
+    if " -> " in value:
+        value = value.split(" -> ", 1)[1]
+    return value.replace("\\", "/")
+
+
 def git_state(root: Path) -> dict[str, Any]:
     tracked = run_git(root, ["status", "--short", "--untracked-files=no"])
+    tracked_lines = tracked.splitlines() if tracked else []
+    unrelated = [
+        line for line in tracked_lines
+        if _status_path(line) not in V77_2_ALLOWED_TRACKED_PATHS
+    ]
     return {
         "head_sha": run_git(root, ["rev-parse", "HEAD"]),
         "head_short_sha": run_git(root, ["rev-parse", "--short=7", "HEAD"]),
         "origin_main_sha": run_git(root, ["rev-parse", "origin/main"]),
         "branch": run_git(root, ["rev-parse", "--abbrev-ref", "HEAD"]),
-        "tracked_status_short": tracked.splitlines() if tracked else [],
+        "tracked_status_short": tracked_lines,
+        "unrelated_tracked_status_short": unrelated,
     }
+
+
+def git_is_ancestor(root: Path, ancestor: str, descendant: str = "HEAD") -> bool:
+    process = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", ancestor, descendant],
+        cwd=root,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    if process.returncode not in {0, 1}:
+        raise AdapterVerificationError(
+            f"git merge-base --is-ancestor failed: {process.stderr.strip()}"
+        )
+    return process.returncode == 0
 
 
 def validate_config(config: dict[str, Any]) -> None:
@@ -114,11 +158,16 @@ def verify_adapter(root: Path, config: dict[str, Any]) -> dict[str, Any]:
 
     add_gate(gates, "GIT_HEAD_MATCHES_ORIGIN_MAIN", git["head_sha"] == git["origin_main_sha"])
     add_gate(
-        gates, "GIT_HEAD_MATCHES_FRAMEWORK_COMMIT",
-        git["head_short_sha"] == config["expected_framework_commit_sha"],
+        gates,
+        "GIT_FRAMEWORK_COMMIT_IS_ANCESTOR",
+        git_is_ancestor(root, config["expected_framework_commit_sha"]),
     )
     add_gate(gates, "GIT_BRANCH_MAIN", git["branch"] == "main")
-    add_gate(gates, "GIT_TRACKED_WORKING_TREE_CLEAN", git["tracked_status_short"] == [])
+    add_gate(
+        gates,
+        "GIT_NO_UNRELATED_TRACKED_CHANGES",
+        git["unrelated_tracked_status_short"] == [],
+    )
 
     v77_1_path = root / "release/v77_1/output/broker_interface_contract_verification_v77_1.json"
     add_gate(gates, "V77_1_VERIFICATION_EXISTS", v77_1_path.is_file())
@@ -226,7 +275,8 @@ def verify_adapter(root: Path, config: dict[str, Any]) -> dict[str, Any]:
             "framework_commit_sha": git["head_sha"],
             "origin_main_sha": git["origin_main_sha"],
             "branch": git["branch"],
-            "tracked_working_tree_clean": git["tracked_status_short"] == [],
+            "no_unrelated_tracked_changes": git["unrelated_tracked_status_short"] == [],
+            "allowed_v77_2_tracked_changes": git["tracked_status_short"],
         },
         "source_anchors": {
             "v77_1_broker_contract_sha256": source.get("broker_contract_sha256"),

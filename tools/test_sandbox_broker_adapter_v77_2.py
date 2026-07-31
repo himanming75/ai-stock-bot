@@ -120,8 +120,12 @@ class SandboxAdapterTests(unittest.TestCase):
                 "origin_main_sha": "a" * 40,
                 "branch": "main",
                 "tracked_status_short": [],
+                "unrelated_tracked_status_short": [],
             }
-            with patch("tools.sandbox_broker_adapter_v77_2.git_state", return_value=git):
+            with (
+                patch("tools.sandbox_broker_adapter_v77_2.git_state", return_value=git),
+                patch("tools.sandbox_broker_adapter_v77_2.git_is_ancestor", return_value=True),
+            ):
                 result = verify_adapter(root, config)
             self.assertEqual(result["status"], "PASS")
             output = root / "release/v77_2/output"
