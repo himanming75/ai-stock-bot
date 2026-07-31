@@ -1,0 +1,35 @@
+V77.3 INSTALL AND EXECUTION CHECK
+
+1. Extract V77_3_changed_files.zip into C:\stock-bot.
+   Overwrite broker\__init__.py.
+
+2. Confirm current repository:
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+
+Expected:
+5834685
+
+3. Confirm V77.2 certification:
+Test-Path release\v77_2\output\sandbox_broker_adapter_verification_v77_2.json
+
+Expected: True
+
+4. Run tests:
+python -m unittest tools.test_order_lifecycle_simulator_v77_3 -v
+
+5. Remove previous output:
+Remove-Item release\v77_3\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate verification:
+python tools\order_lifecycle_simulator_v77_3.py `
+  --repository-root . `
+  --config release\v77_3\config\order_lifecycle_simulator_config_v77_3.json `
+  --output-dir release\v77_3\output
+
+7. Independently verify:
+python tools\verify_order_lifecycle_simulator_v77_3.py `
+  --output-dir release\v77_3\output
+
+8. Do not add release\v77_3\output to Git.

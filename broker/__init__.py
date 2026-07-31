@@ -20,6 +20,10 @@ from .sandbox_adapter_v77_2 import (
     SandboxBrokerError,
     SandboxEvent,
 )
+from .order_lifecycle_simulator_v77_3 import (
+    OrderLifecycleSimulator,
+    SandboxFill,
+)
 
 __all__ = [
     "AccountSnapshot",
@@ -38,4 +42,6 @@ __all__ = [
     "SandboxBrokerAdapter",
     "SandboxBrokerError",
     "SandboxEvent",
+    "OrderLifecycleSimulator",
+    "SandboxFill",
 ]

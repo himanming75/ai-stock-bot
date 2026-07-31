@@ -1,0 +1,20 @@
+{
+  "actual_order_submission_allowed": false,
+  "allow_cash_updates": true,
+  "allow_full_fills": true,
+  "allow_partial_fills": true,
+  "allow_position_updates": true,
+  "allow_short_positions": false,
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "5834685",
+  "expected_v77_2_adapter_sha256": "4dc8334003ad0d40c07d0df3133206d2bb87cc94dec75800ad85532f6486ecfb",
+  "expected_v77_2_verification_sha256": "7480fac8fb3cd52a6c38f0fc3da95659380ea4fa761c52af530e753f642b7a70",
+  "lifecycle_scope": "ORDER_LIFECYCLE_SIMULATOR",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "require_overfill_rejection": true,
+  "require_terminal_fill_rejection": true,
+  "require_zero_actual_orders": true,
+  "required_adapter_name": "memory_order_lifecycle_simulator_v77_3",
+  "starting_cash": "100000.00"
+}
