@@ -1,0 +1,26 @@
+V76.18 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_18.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm prior outputs:
+Test-Path release\v76_16\output\release_archive_seal_v76_16.json
+Test-Path release\v76_17\output\release_archive_seal_verification_v76_17.json
+
+3. Run tests:
+python -m unittest tools.test_release_archive_closure_certificate_v76_18 -v
+
+4. Remove old V76.18 output:
+Remove-Item release\v76_18\output -Recurse -Force -ErrorAction SilentlyContinue
+
+5. Generate closure certificate:
+python tools\release_archive_closure_certificate_v76_18.py `
+  --repository-root . `
+  --config release\v76_18\config\release_archive_closure_certificate_config_v76_18.json `
+  --output-dir release\v76_18\output
+
+6. Verify closure certificate:
+python tools\verify_release_archive_closure_certificate_v76_18.py `
+  --output-dir release\v76_18\output
+
+Do not git-add release\v76_18\output.
+Do not commit until generation and verification both report PASS.
