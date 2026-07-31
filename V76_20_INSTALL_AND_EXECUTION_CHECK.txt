@@ -1,0 +1,32 @@
+V76.20 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_20_changed_files.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm repository state:
+git checkout main
+git pull origin main
+git rev-parse HEAD
+Expected before installation:
+d5890a92b372d578efec20f6854a713c79b56a9b
+
+3. Confirm V76.19 output:
+Test-Path release\v76_19\output\release_archive_closure_verification_v76_19.json
+
+4. Run tests:
+python -m unittest tools.test_release_archive_finalization_v76_20 -v
+
+5. Remove old V76.20 output:
+Remove-Item release\v76_20\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate finalization:
+python tools\release_archive_finalization_v76_20.py `
+  --repository-root . `
+  --config release\v76_20\config\release_archive_finalization_config_v76_20.json `
+  --output-dir release\v76_20\output
+
+7. Verify generated output:
+python tools\verify_release_archive_finalization_v76_20.py `
+  --output-dir release\v76_20\output
+
+8. Do not add release\v76_20\output to Git.
+Commit only the six supplied source/config/doc files after both commands report PASS.
