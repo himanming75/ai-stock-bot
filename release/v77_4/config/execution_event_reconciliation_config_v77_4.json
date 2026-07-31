@@ -1,0 +1,16 @@
+{
+  "actual_order_submission_allowed": false,
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "e07b6cc",
+  "expected_v77_3_lifecycle_sha256": "ce18e0017fd0b191d89dece73e0bb850227d37727cc1ffa08a6550e170e72443",
+  "expected_v77_3_verification_sha256": "bb4d59c53f355b901b0be4d056fe52c1ccd6da00e1c2939e2327dcbdf2353d62",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "reconciliation_scope": "EXECUTION_EVENT_RECONCILIATION",
+  "require_average_fill_price_match": true,
+  "require_cash_reconciliation": true,
+  "require_contiguous_event_sequence": true,
+  "require_fill_event_match": true,
+  "require_order_fill_quantity_match": true,
+  "require_position_reconciliation": true
+}

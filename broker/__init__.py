@@ -20,6 +20,11 @@ from .sandbox_adapter_v77_2 import (
     SandboxBrokerError,
     SandboxEvent,
 )
+from .execution_event_reconciliation_v77_4 import (
+    ExecutionEventReconciler,
+    ReconciliationIssue,
+    ReconciliationReport,
+)
 from .order_lifecycle_simulator_v77_3 import (
     OrderLifecycleSimulator,
     SandboxFill,
@@ -44,4 +49,7 @@ __all__ = [
     "SandboxEvent",
     "OrderLifecycleSimulator",
     "SandboxFill",
+    "ExecutionEventReconciler",
+    "ReconciliationIssue",
+    "ReconciliationReport",
 ]
