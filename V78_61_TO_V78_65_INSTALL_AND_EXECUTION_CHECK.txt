@@ -1,0 +1,24 @@
+V78.61-V78.65 FILL-PORTFOLIO BRIDGE
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_60\output\paper_broker_integration_certificate_v78_60.json
+release\v78_58\output\paper_fill_simulation_engine_v78_58.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_61_TO_V78_65.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_66_AUDIT_RECONCILIATION_FOUNDATION
+- V78.61-V78.65 PASS - READY TO COMMIT
+
+This bundle performs offline fill normalization, portfolio accounting, and reconciliation only.
+It does not connect to a real broker, use real credentials, access the network, or submit actual orders.

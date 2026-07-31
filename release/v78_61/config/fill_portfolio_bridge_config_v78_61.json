@@ -1,0 +1,17 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "fill_portfolio_bridge": {
+    "allow_real_broker_events": false,
+    "mark_prices": {
+      "AAPL": 100.0
+    },
+    "starting_cash": 100000.0
+  },
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.61"
+}
