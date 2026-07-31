@@ -1,0 +1,30 @@
+V76.19 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_19_changed_files.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm repository state:
+git checkout main
+git pull origin main
+git rev-parse HEAD
+Expected before installation: ad123c7127ecc4bcf80e62bb2d0b6a2e0b761339
+
+3. Confirm V76.18 output:
+Test-Path release\v76_18\output\release_archive_closure_certificate_v76_18.json
+
+4. Run tests:
+python -m unittest tools.test_release_archive_closure_verification_v76_19 -v
+
+5. Remove old V76.19 output:
+Remove-Item release\v76_19\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate independent closure verification:
+python tools\release_archive_closure_verification_v76_19.py `
+  --repository-root . `
+  --config release\v76_19\config\release_archive_closure_verification_config_v76_19.json `
+  --output-dir release\v76_19\output
+
+7. Verify generated output:
+python tools\verify_release_archive_closure_verification_v76_19.py `
+  --output-dir release\v76_19\output
+
+8. Do not add release\v76_19\output to Git. Commit only the six supplied source/config/doc files after both commands report PASS.
