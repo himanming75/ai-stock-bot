@@ -1,0 +1,35 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "release_acceptance": {
+    "acceptance_checks": [
+      "final_system_certificate_passed",
+      "all_required_artifacts_present",
+      "all_artifact_hashes_verified",
+      "artifact_chain_verified",
+      "offline_safety_invariants_verified",
+      "release_ready"
+    ],
+    "allow_live_release": false,
+    "release_name": "AI-STOCK-BOT-V78-FINAL",
+    "release_version": "78.100",
+    "required_artifacts": [
+      "release/v78_95/output/final_system_certificate_v78_95.json",
+      "release/v78_95/output/final_system_certification_pipeline_summary_v78_91_to_v78_95.json",
+      "release/v78_90/output/operation_runtime_certificate_v78_90.json",
+      "release/v78_85/output/deployment_certificate_v78_85.json",
+      "release/v78_82/output/deployment_manifest_v78_82.json",
+      "release/v78_80/output/reporting_certificate_v78_80.json",
+      "release/v78_78/output/report_manifest_v78_78.json",
+      "release/v78_78/output/performance_report_v78_78.json",
+      "release/v78_78/output/equity_curve_v78_78.csv",
+      "release/v78_78/output/performance_report_v78_78.md"
+    ]
+  },
+  "stage": "V78.96"
+}

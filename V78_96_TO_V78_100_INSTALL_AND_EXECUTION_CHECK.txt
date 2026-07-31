@@ -1,0 +1,35 @@
+V78.96-V78.100 RELEASE ACCEPTANCE AND FINAL RELEASE
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_95\output\final_system_certificate_v78_95.json
+release\v78_95\output\final_system_certification_pipeline_summary_v78_91_to_v78_95.json
+release\v78_90\output\operation_runtime_certificate_v78_90.json
+release\v78_85\output\deployment_certificate_v78_85.json
+release\v78_82\output\deployment_manifest_v78_82.json
+release\v78_80\output\reporting_certificate_v78_80.json
+release\v78_78\output\report_manifest_v78_78.json
+release\v78_78\output\performance_report_v78_78.json
+release\v78_78\output\equity_curve_v78_78.csv
+release\v78_78\output\performance_report_v78_78.md
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_96_TO_V78_100.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- release_ready true
+- release_name AI-STOCK-BOT-V78-FINAL
+- release_version 78.100
+- champion_candidate_id 802493bbc77a
+- next_phase V79_FOUNDATION
+- V78.96-V78.100 PASS - READY TO COMMIT
+
+This is the final acceptance of the offline paper-trading release only.
+It does not approve live trading, network access, real credentials, broker connection, live deployment, or actual order submission.
