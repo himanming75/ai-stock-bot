@@ -1,0 +1,23 @@
+V76.9 INSTALL CHECK
+
+Extract V76_9.zip directly into C:\stock-bot.
+
+cd C:\stock-bot
+
+File checks:
+Test-Path README_V76_9.txt
+Test-Path INSTALL_CHECK_V76_9.txt
+Test-Path tools\release_candidate_audit_certificate_verification_v76_9.py
+Test-Path tools\verify_release_candidate_audit_certificate_verification_v76_9.py
+Test-Path tools\test_release_candidate_audit_certificate_verification_v76_9.py
+Test-Path release\v76_9\config\release_candidate_audit_certificate_verification_config_v76_9.json
+
+All must return True.
+
+Prerequisite V76.8 outputs:
+Test-Path release\v76_8\output\release_candidate_audit_certificate_v76_8.json
+Test-Path release\v76_8\output\release_candidate_audit_certificate_summary_v76_8.json
+Test-Path release\v76_8\output\release_candidate_audit_certificate_v76_8.txt
+
+Run tests and verification before committing V76.9.
+Do not commit release\v76_9\output.
