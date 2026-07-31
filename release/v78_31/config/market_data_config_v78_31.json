@@ -1,0 +1,21 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "market_data": {
+    "expected_interval_minutes": 1,
+    "source": "deterministic_offline_feed",
+    "symbols": [
+      "AAPL"
+    ],
+    "timeframes": [
+      "1m"
+    ],
+    "timezone": "America/New_York"
+  },
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.31"
+}

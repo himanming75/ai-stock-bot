@@ -1,0 +1,21 @@
+V78.31-V78.35 MARKET DATA ADAPTER
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v78_30\output\market_clock_certificate_v78_30.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_31_TO_V78_35.ps1
+
+Expected:
+- 11 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V78_36_STRATEGY_RUNTIME_FOUNDATION
+- V78.31-V78.35 PASS - READY TO COMMIT
+
+Offline only. No credentials, no broker connection, no network, and zero actual orders.
