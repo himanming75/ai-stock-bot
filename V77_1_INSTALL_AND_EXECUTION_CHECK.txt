@@ -1,0 +1,35 @@
+V77.1 INSTALL AND EXECUTION CHECK
+
+1. Extract V77_1_changed_files.zip into C:\stock-bot.
+
+2. Confirm repository:
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+
+Expected:
+2fc6f54
+
+3. Confirm V76.24 generated closure files:
+Test-Path release\v76_24\output\project_release_closure_v76_24.json
+Test-Path release\v76_24\output\project_release_closure_summary_v76_24.json
+
+Both must return True.
+
+4. Run unit tests:
+python -m unittest tools.test_broker_interface_contract_v77_1 -v
+
+5. Remove previous output:
+Remove-Item release\v77_1\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate V77.1 verification:
+python tools\broker_interface_contract_v77_1.py `
+  --repository-root . `
+  --config release\v77_1\config\broker_interface_contract_config_v77_1.json `
+  --output-dir release\v77_1\output
+
+7. Independently verify:
+python tools\verify_broker_interface_contract_v77_1.py `
+  --output-dir release\v77_1\output
+
+8. Keep release\v77_1\output untracked. Commit only the seven supplied source/config/doc files.

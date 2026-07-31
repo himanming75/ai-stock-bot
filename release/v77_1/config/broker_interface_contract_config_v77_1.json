@@ -1,0 +1,17 @@
+{
+  "broker_connection_allowed": false,
+  "contract_scope": "BROKER_INTERFACE_CONTRACT",
+  "expected_framework_commit_sha": "2fc6f54",
+  "expected_v76_24_closure_chain_sha256": "f82709c71f19252ac423c26b36be1554e7fdc6a0aa4616a3fb52b3b23258f47d",
+  "expected_v76_24_closure_sha256": "c8b61f2dbe7150f52a9cfbc52edc7461639584a892aed994c1430930a088eeaf",
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "order_submission_allowed": false,
+  "require_decimal_financial_fields": true,
+  "require_immutable_contract_models": true,
+  "require_runtime_protocol": true,
+  "require_source_anchor_match": true,
+  "require_terminal_status_definition": true,
+  "required_environment": "offline"
+}
