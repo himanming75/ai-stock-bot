@@ -1,0 +1,32 @@
+V76.10 INSTALL CHECK
+
+Extract V76_10.zip directly into C:\stock-bot.
+
+cd C:\stock-bot
+
+File checks:
+Test-Path README_V76_10.txt
+Test-Path INSTALL_CHECK_V76_10.txt
+Test-Path tools\release_candidate_final_attestation_v76_10.py
+Test-Path tools\verify_release_candidate_final_attestation_v76_10.py
+Test-Path tools\test_release_candidate_final_attestation_v76_10.py
+Test-Path release\v76_10\config\release_candidate_final_attestation_config_v76_10.json
+
+All must return True.
+
+Prerequisite output checks:
+Test-Path release\v76_6\output\release_candidate_evidence_manifest_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_ledger_v76_6.json
+Test-Path release\v76_6\output\release_candidate_certificate_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_seal_v76_6.json
+Test-Path release\v76_7\output\release_candidate_seal_verification_v76_7.json
+Test-Path release\v76_8\output\release_candidate_audit_certificate_v76_8.json
+Test-Path release\v76_9\output\release_candidate_audit_certificate_verification_v76_9.json
+
+Run tests and both attestation commands before committing.
+Do not commit release\v76_10\output.
+
+Repair installation
+-------------------
+Delete the failed V76.10 output before rerunning:
+Remove-Item release\v76_10\output -Recurse -Force -ErrorAction SilentlyContinue
