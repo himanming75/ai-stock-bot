@@ -1,0 +1,19 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.36",
+  "strategy_runtime": {
+    "default_parameters": {
+      "fast_window": 3,
+      "slow_window": 5
+    },
+    "minimum_history": 5,
+    "strategy_id": "moving_average_cross_v78",
+    "symbol": "AAPL"
+  }
+}

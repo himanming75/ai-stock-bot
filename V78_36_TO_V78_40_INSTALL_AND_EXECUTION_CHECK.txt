@@ -1,0 +1,23 @@
+V78.36-V78.40 STRATEGY RUNTIME
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v78_35\output\market_data_adapter_certificate_v78_35.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_36_TO_V78_40.ps1
+
+Expected:
+- 12 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_41_SIGNAL_RISK_BRIDGE_FOUNDATION
+- V78.36-V78.40 PASS - READY TO COMMIT
+
+This bundle only generates offline BUY, SELL, or HOLD signals.
+It cannot create orders, submit orders, connect to a broker, load real credentials, or use the network.
