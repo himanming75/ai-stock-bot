@@ -1,0 +1,22 @@
+V78.1-V78.5 PAPER BROKER ADAPTER
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v77_100\output\broker_integration_skeleton_certificate_v77_100.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_1_TO_V78_5.ps1
+
+Expected:
+- 13 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V78_6_PAPER_EVENT_ENGINE
+- V78.1-V78.5 PASS - READY TO COMMIT
+
+This certificate authorizes only offline paper-broker runtime.
+Real credentials, network transport, broker connections, and actual orders remain prohibited.

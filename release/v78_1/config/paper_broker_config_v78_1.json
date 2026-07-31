@@ -1,0 +1,22 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "paper_broker": {
+    "adapter_name": "DeterministicPaperBrokerAdapter",
+    "adapter_registry_enabled": true,
+    "deterministic_event_ids": true,
+    "mode": "offline_paper",
+    "short_selling_enabled": false,
+    "starting_cash": 100000.0,
+    "supported_order_types": [
+      "market",
+      "limit"
+    ]
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.1"
+}
