@@ -1,0 +1,32 @@
+V76.15 INSTALL AND EXECUTION CHECK
+
+1. Extract this ZIP into C:\stock-bot and overwrite when prompted.
+
+2. Confirm files:
+Test-Path README_V76_15.txt
+Test-Path INSTALL_CHECK_V76_15.txt
+Test-Path tools\final_integrity_verification_v76_15.py
+Test-Path tools\verify_final_integrity_verification_v76_15.py
+Test-Path tools\test_final_integrity_verification_v76_15.py
+Test-Path release\v76_15\config\final_integrity_verification_config_v76_15.json
+Test-Path release\v76_14\output\final_immutable_manifest_v76_14.json
+Test-Path release\v76_14\output\final_immutable_manifest_summary_v76_14.json
+Test-Path release\v76_14\output\final_immutable_manifest_v76_14.txt
+
+3. Run tests:
+python -m unittest tools.test_final_integrity_verification_v76_15 -v
+
+4. Remove previous V76.15 output:
+Remove-Item release\v76_15\output -Recurse -Force -ErrorAction SilentlyContinue
+
+5. Generate:
+python tools\final_integrity_verification_v76_15.py `
+  --repository-root . `
+  --config release\v76_15\config\final_integrity_verification_config_v76_15.json `
+  --output-dir release\v76_15\output
+
+6. Verify:
+python tools\verify_final_integrity_verification_v76_15.py `
+  --output-dir release\v76_15\output
+
+Do not commit until both generation and independent verification report PASS.
