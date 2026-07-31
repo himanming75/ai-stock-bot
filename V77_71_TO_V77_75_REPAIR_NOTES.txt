@@ -1,0 +1,17 @@
+V77.71-V77.75 REPAIR 1
+
+Cause:
+The original V77.74 evaluated only the composite-score rank-one candidate.
+A candidate can rank first overall but fail one mandatory safety threshold,
+which caused V77.74 and V77.75 to fail even when another safe candidate existed.
+
+Fix:
+- Evaluate ranked candidates in order.
+- Select the highest-ranked candidate that passes every mandatory safety check.
+- Record rejected higher-ranked candidates and failed checks.
+- Record whether fallback selection was used.
+- V77.75 certifies only the safety-qualified selected champion.
+- No safety limit is weakened or bypassed.
+
+Run:
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_71_TO_V77_75.ps1

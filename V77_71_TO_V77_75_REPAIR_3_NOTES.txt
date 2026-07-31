@@ -1,0 +1,19 @@
+V77.71-V77.75 REPAIR 3
+
+Root cause:
+V77.74 used absolute live-quality thresholds during the optimization-candidate stage.
+The current baseline strategy can have weak Sharpe or profit factor, so every candidate
+was rejected before Walk-Forward Validation could test out-of-sample robustness.
+
+Corrected design:
+- V77.74 is now explicitly WALK_FORWARD_ELIGIBILITY_ONLY.
+- A candidate must improve Sharpe and profit factor versus the V77.66 baseline.
+- Return may not materially regress.
+- Drawdown remains subject to a hard catastrophic cap and baseline-relative expansion cap.
+- Trade count, stability, and parameter ordering remain mandatory.
+- V77.75 certifies the candidate only for V77.76 Walk-Forward Validation.
+- live_deployment_approved remains false.
+- No broker, network, or actual order capability is enabled.
+
+This does not certify profitability or authorize live deployment.
+Those decisions remain blocked pending Walk-Forward and later production-readiness stages.

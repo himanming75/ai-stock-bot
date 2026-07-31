@@ -1,0 +1,52 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "objective_weights": {
+    "max_drawdown": 0.2,
+    "profit_factor": 0.15,
+    "sharpe_ratio": 0.25,
+    "stability_score": 0.15,
+    "total_return": 0.25
+  },
+  "safety_gate_scope": "walk_forward_eligibility_only",
+  "safety_limits": {
+    "maximum_drawdown": 0.2,
+    "minimum_profit_factor": 1.05,
+    "minimum_sharpe_ratio": 0.5,
+    "minimum_stability_score": 0.5,
+    "minimum_trade_count": 30
+  },
+  "search_space": {
+    "fast_window": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "signal_threshold": [
+      0.005,
+      0.015,
+      0.025
+    ],
+    "slow_window": [
+      40,
+      50,
+      60,
+      75
+    ]
+  },
+  "stage": "V77.71",
+  "walk_forward_eligibility_limits": {
+    "hard_maximum_drawdown": 0.5,
+    "maximum_drawdown_expansion": 0.1,
+    "maximum_return_regression": 0.005,
+    "minimum_profit_factor_improvement": 0.05,
+    "minimum_sharpe_improvement": 0.1,
+    "minimum_stability_score": 0.5,
+    "minimum_trade_count": 30
+  }
+}

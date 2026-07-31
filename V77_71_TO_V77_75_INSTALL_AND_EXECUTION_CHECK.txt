@@ -1,0 +1,20 @@
+V77.71-V77.75 STRATEGY OPTIMIZATION BUNDLE
+
+Extract over C:\stock-bot, then run:
+
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_71_TO_V77_75.ps1
+
+Required local inputs:
+release\v77_66\output\performance_report_v77_66.json
+release\v77_70\output\reporting_audit_certificate_v77_70.json
+
+Expected:
+status PASS
+stage_count 5
+passed_stage_count 5
+failed_stage_count 0
+champion_candidate_id populated
+actual_orders_submitted 0
+live_trading_authorized false
+next_phase V77_76_WALK_FORWARD_VALIDATION_ENGINE

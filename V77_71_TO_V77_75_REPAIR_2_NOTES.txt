@@ -1,0 +1,14 @@
+V77.71-V77.75 REPAIR 2
+
+Cause:
+The pipeline summary crashed when champion_candidate was explicitly null.
+
+Fix:
+- Use (p75.get("champion_candidate") or {}) before reading candidate_id.
+- Add failed_stages to the summary so the real safety failure is printed.
+- Preserve all existing safety thresholds.
+- No live trading, network access, or broker connection is enabled.
+
+Install:
+Extract over C:\stock-bot and rerun:
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_71_TO_V77_75.ps1
