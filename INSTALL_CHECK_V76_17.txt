@@ -1,0 +1,28 @@
+V76.17 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_17.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm V76.16 output files:
+Test-Path release\v76_16\output\release_archive_seal_v76_16.json
+Test-Path release\v76_16\output\release_archive_seal_summary_v76_16.json
+Test-Path release\v76_16\output\release_archive_seal_v76_16.txt
+Test-Path release\v76_16\output\ai_stock_bot_release_evidence_v76_16.zip
+
+3. Run tests:
+python -m unittest tools.test_release_archive_seal_verification_v76_17 -v
+
+4. Remove old V76.17 output:
+Remove-Item release\v76_17\output -Recurse -Force -ErrorAction SilentlyContinue
+
+5. Run independent verification:
+python tools\release_archive_seal_verification_v76_17.py `
+  --repository-root . `
+  --config release\v76_17\config\release_archive_seal_verification_config_v76_17.json `
+  --output-dir release\v76_17\output
+
+6. Verify the V76.17 output:
+python tools\verify_release_archive_seal_verification_v76_17.py `
+  --output-dir release\v76_17\output
+
+Do not git-add release\v76_17\output.
+Do not commit until both commands report PASS.
