@@ -1,0 +1,11 @@
+V75.2BB INSTALL CHECK
+
+Run from C:\stock-bot:
+
+Test-Path README_V75_2BB.txt
+Test-Path INSTALL_CHECK_V75_2BB.txt
+Test-Path tools\registry_snapshot_seal_cert_archive_seal_verifier_v75_2bb.py
+Test-Path tools\test_registry_snapshot_seal_cert_archive_seal_verifier_v75_2bb.py
+Test-Path release\v75_2bb\config\registry_snapshot_seal_cert_archive_seal_verification_config_v75_2bb.json
+
+All five results must be True.
