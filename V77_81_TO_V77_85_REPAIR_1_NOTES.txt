@@ -1,0 +1,19 @@
+V77.81-V77.85 REPAIR 1
+
+Root cause:
+- Tail shock probability was evaluated independently for every trade.
+- With 60 trades and a 3% per-trade probability, a scenario received about 1.8 large shocks on average.
+- Slippage and commission were also charged as full-return reductions without considering partial-fill size.
+- The gate applied absolute profitability criteria even though this stage only determines eligibility for further offline stress testing.
+
+Repair:
+- Tail shocks are now scenario-level, with at most one shock in a stressed scenario.
+- Execution costs are proportional to the executed fill ratio.
+- Survival, catastrophic drawdown, terminal equity, return retention, tail Sharpe, and drawdown hard caps remain mandatory.
+- Loss probability is mandatory only when the Monte Carlo median return is positive.
+- A non-positive median is never certified as profitable.
+- V77.85 only certifies eligibility for offline risk stress testing.
+- live_deployment_approved remains false.
+- Network, broker access, and actual orders remain disabled.
+
+This repair does not approve live trading or establish profitability.

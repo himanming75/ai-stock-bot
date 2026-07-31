@@ -1,0 +1,45 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "monte_carlo": {
+    "bankruptcy_survival_equity_floor": 0.25,
+    "base_seed": 778185,
+    "capital_preservation_equity_floor": 0.7,
+    "commission_bps_range": [
+      0.0,
+      5.0
+    ],
+    "partial_fill_ratio_range": [
+      0.7,
+      1.0
+    ],
+    "simulation_count": 1000,
+    "slippage_bps_range": [
+      0.0,
+      12.0
+    ],
+    "tail_shock_return_range": [
+      -0.08,
+      -0.03
+    ],
+    "tail_shock_scenario_probability": 0.1,
+    "trade_sequence_length": 60
+  },
+  "monte_carlo_safety_limits": {
+    "capital_preservation_scope": "reported_only_not_certified",
+    "loss_probability_scope": "required_only_when_median_return_is_positive",
+    "maximum_catastrophic_drawdown_probability": 0.4,
+    "maximum_drawdown_p95": 0.85,
+    "maximum_loss_probability": 0.95,
+    "maximum_sharpe_tail_spread": 6.0,
+    "minimum_bankruptcy_survival_rate": 0.95,
+    "minimum_hard_sharpe_p05": -10.0,
+    "minimum_return_retention_rate": 0.9,
+    "minimum_terminal_equity_p05": 0.15
+  },
+  "network_allowed": false,
+  "stage": "V77.81"
+}

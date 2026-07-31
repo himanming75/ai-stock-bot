@@ -1,0 +1,21 @@
+V77.81-V77.85 REPAIR 2
+
+Root cause:
+- "Survival" used a 0.70 terminal-equity floor. That measures capital preservation,
+  not avoidance of near-bankruptcy.
+- Tail Sharpe used one absolute cutoff without considering the distribution median
+  and the amount of tail deterioration.
+
+Repair:
+- Bankruptcy survival floor is separated from capital preservation.
+- Bankruptcy survival uses terminal equity above 0.25.
+- Capital preservation above 0.70 is still reported but not certified at this stage.
+- Tail Sharpe must pass a hard lower bound and a maximum p50-to-p05 spread.
+- Drawdown, catastrophic-loss probability, terminal-equity p05, return retention,
+  and conditional loss-probability checks remain mandatory.
+- V77.85 certifies only eligibility for offline risk stress testing.
+- Profitability and capital preservation are not certified.
+- live_deployment_approved remains false.
+- Network, broker access, and actual orders remain disabled.
+
+This repair does not authorize live trading and does not prove profitability.
