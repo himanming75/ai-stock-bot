@@ -1,0 +1,23 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "final_system_certification": {
+    "allow_live_activation": false,
+    "required_certificates": [
+      "release/v78_65/output/fill_portfolio_bridge_certificate_v78_65.json",
+      "release/v78_70/output/audit_reconciliation_certificate_v78_70.json",
+      "release/v78_75/output/performance_accounting_certificate_v78_75.json",
+      "release/v78_80/output/reporting_certificate_v78_80.json",
+      "release/v78_85/output/deployment_certificate_v78_85.json",
+      "release/v78_90/output/operation_runtime_certificate_v78_90.json"
+    ],
+    "system_id": "AI-STOCK-BOT-V78-OFFLINE-SYSTEM",
+    "system_version": "78.95"
+  },
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.91"
+}

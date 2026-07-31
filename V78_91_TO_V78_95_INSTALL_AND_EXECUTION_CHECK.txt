@@ -1,0 +1,26 @@
+V78.91-V78.95 FINAL SYSTEM CERTIFICATION
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+V78.65, V78.70, V78.75, V78.80, V78.85, and V78.90 certificate outputs
+and the V78.61-V78.90 pipeline summary outputs.
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_91_TO_V78_95.ps1
+
+Expected:
+- 9 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- system_id AI-STOCK-BOT-V78-OFFLINE-SYSTEM
+- system_version 78.95
+- next_phase V78_96_RELEASE_ACCEPTANCE_FOUNDATION
+- V78.91-V78.95 PASS - READY TO COMMIT
+
+This certificate covers only the complete offline paper-trading system.
+It does not approve live activation, real credentials, network transport, broker connection, or actual order submission.
