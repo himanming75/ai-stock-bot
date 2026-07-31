@@ -1,0 +1,17 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "execution_coordinator": {
+    "allow_paper_broker_dispatch": true,
+    "allow_real_broker_dispatch": false,
+    "limit_offset_bps": 5.0,
+    "order_type": "market",
+    "time_in_force": "day"
+  },
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.51"
+}

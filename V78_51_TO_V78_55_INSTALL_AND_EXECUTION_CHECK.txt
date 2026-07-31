@@ -1,0 +1,25 @@
+V78.51-V78.55 EXECUTION COORDINATOR
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_50\output\portfolio_runtime_certificate_v78_50.json
+release\v78_43\output\risk_decision_integration_v78_43.json
+release\v78_42\output\signal_normalization_risk_request_v78_42.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_51_TO_V78_55.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_56_PAPER_BROKER_INTEGRATION_FOUNDATION
+- V78.51-V78.55 PASS - READY TO COMMIT
+
+This bundle creates and queues offline paper-order intents only.
+It does not connect to a real broker, use real credentials, access the network, or submit actual orders.
