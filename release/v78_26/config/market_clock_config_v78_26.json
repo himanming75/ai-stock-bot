@@ -1,0 +1,27 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "market_clock": {
+    "early_closes": {
+      "2026-11-27": "13:00"
+    },
+    "holidays": [
+      "2026-07-03",
+      "2026-11-26",
+      "2026-12-25"
+    ],
+    "session_times": {
+      "aftermarket_close": "20:00",
+      "premarket_open": "04:00",
+      "regular_close": "16:00",
+      "regular_open": "09:30"
+    },
+    "timezone": "America/New_York"
+  },
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.26"
+}
