@@ -10,7 +10,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-VERSION = "76.3"
+VERSION = "76.3A"
 SCHEMA = "v76.3.multi_capability_behavioral_verification.1"
 
 
@@ -112,8 +112,15 @@ def load_config(path: Path) -> dict[str, Any]:
     return value
 
 
-def safety_environment() -> dict[str, str]:
+def safety_environment(repository_root: Path) -> dict[str, str]:
     environment = os.environ.copy()
+    existing_pythonpath = environment.get("PYTHONPATH", "")
+    repository_value = str(repository_root.resolve())
+    environment["PYTHONPATH"] = (
+        repository_value
+        if not existing_pythonpath
+        else repository_value + os.pathsep + existing_pythonpath
+    )
     environment.update({
         "AI_STOCK_BOT_NETWORK_ALLOWED": "0",
         "AI_STOCK_BOT_BROKER_ENABLED": "0",
@@ -178,7 +185,7 @@ def run_command(
         completed = subprocess.run(
             command,
             cwd=repository_root,
-            env=safety_environment(),
+            env=safety_environment(repository_root),
             capture_output=True,
             text=True,
             encoding="utf-8",

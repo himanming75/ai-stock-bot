@@ -11,6 +11,7 @@ from tools.multi_capability_behavioral_verification_v76_3 import (
     run_verification,
     validate_config,
     write_outputs,
+    safety_environment,
 )
 
 
@@ -231,6 +232,32 @@ class TestV763(unittest.TestCase):
             digest({"b": 2, "a": 1}),
             digest({"a": 1, "b": 2}),
         )
+
+    def test_repository_root_is_added_to_pythonpath(self):
+        with tempfile.TemporaryDirectory() as directory:
+            environment = safety_environment(Path(directory))
+            first = environment["PYTHONPATH"].split(__import__("os").pathsep)[0]
+            self.assertEqual(Path(first).resolve(), Path(directory).resolve())
+
+    def test_tools_package_import_works_from_direct_script(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "tools").mkdir()
+            (root / "tools" / "helper.py").write_text(
+                "VALUE = 123\n", encoding="utf-8"
+            )
+            (root / "tools" / "runner.py").write_text(
+                "from tools.helper import VALUE\n"
+                "print(VALUE)\n",
+                encoding="utf-8",
+            )
+            result = run_verification(
+                root,
+                make_config([capability("TOOLS_IMPORT", "tools/runner.py")]),
+            )
+            self.assertEqual(result["status"], "PASS")
+            record = result["capability_results"][0]["records"][0]
+            self.assertIn("123", record["stdout"])
 
 
 if __name__ == "__main__":
