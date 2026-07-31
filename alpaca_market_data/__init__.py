@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.40."""
+"""Safe Alpaca market-data modules through V79.45."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -47,6 +47,13 @@ from .quality_reconciliation_v79_36_40 import (
     run_quality_reconciliation, build_quality_certificate,
 )
 
+from .dataset_versioning_v79_41_45 import (
+    DatasetVersionConfig, DatasetFingerprint, validate_quality_certificate,
+    fingerprint_dataset, build_version_metadata, create_immutable_version,
+    update_version_registry, build_version_manifest, verify_version_manifest,
+    run_dataset_versioning, build_version_certificate, sha256_version_json,
+)
+
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
     "OfflineAlpacaMarketDataAdapter", "inspect_alpaca_installation",
@@ -79,4 +86,8 @@ __all__ = [
     "validate_ohlcv", "reconcile_symbol_time_series", "build_repair_ledger",
     "write_quality_outputs", "verify_quality_manifest",
     "run_quality_reconciliation", "build_quality_certificate",
+    "DatasetVersionConfig", "DatasetFingerprint", "validate_quality_certificate",
+    "fingerprint_dataset", "build_version_metadata", "create_immutable_version",
+    "update_version_registry", "build_version_manifest", "verify_version_manifest",
+    "run_dataset_versioning", "build_version_certificate", "sha256_version_json",
 ]

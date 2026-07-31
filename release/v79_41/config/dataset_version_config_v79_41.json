@@ -1,0 +1,13 @@
+{
+  "stage": "V79.41",
+  "dataset_name": "alpaca_historical_bars",
+  "version_prefix": "hist",
+  "hash_prefix_length": 16,
+  "require_quality_certificate": true,
+  "immutable_versions": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

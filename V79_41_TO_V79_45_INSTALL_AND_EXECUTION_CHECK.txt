@@ -1,0 +1,26 @@
+V79.41-V79.45 HISTORICAL DATASET VERSIONING
+
+BASE:
+- GitHub main commit 6fe2934
+- Existing files must not be deleted.
+- release/v79_40/output must be present.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_41_TO_V79_45.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 13 tests
+- OK
+- Pipeline PASS
+- row_count 11
+- registry_version_count 1
+- created true
+- reused_existing_version false
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_46_HISTORICAL_DATASET_RETENTION
