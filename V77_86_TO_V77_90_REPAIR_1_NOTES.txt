@@ -1,0 +1,18 @@
+V77.86-V77.90 REPAIR 1
+
+Root cause:
+All scenarios were treated as normal-operation pass/fail scenarios.
+Diagnostic extremes such as Circuit Breaker, Flash Crash, and Liquidity Collapse
+were incorrectly required to maintain ordinary fill probability and liquidity.
+
+Repair:
+- Scenarios are divided into OPERATIONAL_STRESS and DIAGNOSTIC_EXTREME.
+- Operational scenarios must pass drawdown, cash, position, fill, liquidity, gap, and Sharpe limits.
+- Diagnostic extremes are expected to trigger HALT_NEW_ORDERS or ACTIVATE_KILL_SWITCH.
+- Diagnostic extremes must still avoid mathematical total ruin.
+- Diagnostic outcomes remain fully recorded and are not deleted or ignored.
+- V77.90 only certifies eligibility for the offline live-readiness audit.
+- Profitability, capital preservation, and live deployment remain uncertified.
+- Network, broker connection, and actual orders remain disabled.
+
+This repair does not weaken live trading protections. It correctly tests emergency shutdown behavior.

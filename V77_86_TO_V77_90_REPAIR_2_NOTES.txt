@@ -1,0 +1,21 @@
+V77.86-V77.90 REPAIR 2
+
+Root cause:
+- Gap failure used absolute stressed return <= -50%.
+  This counted the strategy's pre-existing baseline loss again as stress damage.
+- Liquidity failure used fill probability below 25%, which classified degraded but
+  still executable orders as total liquidity failures.
+- Gap Down Open (-18%) is an emergency diagnostic scenario, not ordinary operation.
+
+Repair:
+- Each result now records baseline_return and incremental_stress_loss separately.
+- Critical gap failure means incremental stress damage >= 35%.
+- Critical liquidity failure means fill probability below 10%.
+- Lower but nonzero fill quality remains recorded through minimum and average fill metrics.
+- Gap Down Open is classified as DIAGNOSTIC_EXTREME and must trigger HALT_NEW_ORDERS.
+- Operational scenarios still face drawdown, cash, position, fill, Sharpe, and critical-failure limits.
+- Diagnostic extremes remain recorded and must invoke emergency controls.
+- Profitability, capital preservation, and live deployment remain uncertified.
+- Network, broker access, and actual orders remain disabled.
+
+This repair corrects measurement semantics. It does not authorize live trading.

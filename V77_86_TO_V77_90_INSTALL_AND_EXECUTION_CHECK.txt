@@ -1,0 +1,21 @@
+V77.86-V77.90 RISK STRESS TESTING
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v77_85\output\monte_carlo_robustness_certificate_v77_85.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_86_TO_V77_90.ps1
+
+Expected:
+- 8 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V77_91_LIVE_READINESS_AUDIT_ENGINE
+- V77.86-V77.90 PASS - READY TO COMMIT
+
+This certificate does not approve live trading.
