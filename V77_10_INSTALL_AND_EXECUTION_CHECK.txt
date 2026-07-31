@@ -1,0 +1,20 @@
+V77.10 INSTALL AND EXECUTION CHECK
+Extract into C:\stock-bot and overwrite broker\__init__.py.
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+Expected: 45da292
+Test-Path release\v77_5\output\broker_state_checkpoint_verification_v77_5.json
+Test-Path release\v77_6\output\restart_recovery_replay_verification_v77_6.json
+Test-Path release\v77_7\output\recovery_continuation_safety_verification_v77_7.json
+Test-Path release\v77_8\output\multi_order_continuation_stress_verification_v77_8.json
+Test-Path release\v77_9\output\failure_injection_recovery_verification_v77_9.json
+python -m unittest tools.test_recovery_audit_certificate_v77_10 -v
+Remove-Item release\v77_10\output -Recurse -Force -ErrorAction SilentlyContinue
+python tools\recovery_audit_certificate_v77_10.py `
+ --repository-root . `
+ --config release\v77_10\config\recovery_audit_certificate_config_v77_10.json `
+ --output-dir release\v77_10\output
+python tools\verify_recovery_audit_certificate_v77_10.py `
+ --output-dir release\v77_10\output
+Do not add release\v77_10\output to Git.

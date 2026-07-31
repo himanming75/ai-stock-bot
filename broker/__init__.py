@@ -1,3 +1,8 @@
+from .recovery_audit_certificate_v77_10 import (
+    RecoveryAuditCertificate,
+    RecoveryAuditCertificateBuilder,
+    RecoveryAuditCertificateError,
+)
 from .failure_injection_recovery_v77_9 import (
     FailureInjectionError,
     FailureInjectionRecovery,
@@ -90,4 +95,7 @@ __all__ = [
     "FailureInjectionError",
     "FailureInjectionRecovery",
     "FailureInjectionReport",
+    "RecoveryAuditCertificate",
+    "RecoveryAuditCertificateBuilder",
+    "RecoveryAuditCertificateError",
 ]
