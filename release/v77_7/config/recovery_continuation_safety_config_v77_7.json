@@ -1,0 +1,19 @@
+{
+  "actual_order_submission_allowed": false,
+  "broker_connection_allowed": false,
+  "continuation_scope": "RECOVERY_CONTINUATION_SAFETY",
+  "expected_framework_commit_sha": "277ba25",
+  "expected_v77_6_recovery_sha256": "456e7841f499e34e5a8d0c8769be96bdc094abdce9a4d788017e1eca9055cc72",
+  "expected_v77_6_replayed_state_sha256": "03baec3f972138369629a5038afb79c5018e4095f5602cc24bcbadc71ef044f0",
+  "expected_v77_6_verification_sha256": "86cdc3b282076c9182360268b53d6f4148c9903dd03165e29d977844a3ddceb7",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "require_checkpoint_chain_change": true,
+  "require_continued_checkpoint": true,
+  "require_duplicate_client_order_rejection": true,
+  "require_event_sequence_continuity": true,
+  "require_fill_id_continuity": true,
+  "require_order_id_continuity": true,
+  "require_post_continuation_reconciliation": true,
+  "require_source_identity_preservation": true
+}

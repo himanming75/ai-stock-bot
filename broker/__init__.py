@@ -1,3 +1,8 @@
+from .recovery_continuation_safety_v77_7 import (
+    ContinuationSafetyError,
+    ContinuationSafetyReport,
+    RecoveryContinuationSafety,
+)
 from .restart_recovery_replay_v77_6 import (
     RecoveryError,
     RestartRecoveryReplay,
@@ -66,4 +71,7 @@ __all__ = [
     "CheckpointError",
     "RecoveryError",
     "RestartRecoveryReplay",
+    "ContinuationSafetyError",
+    "ContinuationSafetyReport",
+    "RecoveryContinuationSafety",
 ]
