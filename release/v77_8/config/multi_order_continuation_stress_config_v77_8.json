@@ -1,0 +1,23 @@
+{
+  "actual_order_submission_allowed": false,
+  "broker_connection_allowed": false,
+  "expected_duplicate_rejection_count": 2,
+  "expected_framework_commit_sha": "afe6b36",
+  "expected_new_fill_count": 12,
+  "expected_new_order_count": 8,
+  "expected_symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA"
+  ],
+  "expected_v77_7_continued_checkpoint_sha256": "77d21d170e83771394a2d1e03a175ce32c536803becb34750a45b6efbe8f72fc",
+  "expected_v77_7_safety_sha256": "340a99a09cbb8b9c08ee0675d13542a63b5257faec6a821db2028930709a2ad2",
+  "expected_v77_7_verification_sha256": "42e099fec185288550824336f6ea17b643d48cfd4b2c7210eb186bd4d2de4bc6",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "require_event_sequence_continuity": true,
+  "require_final_reconciliation": true,
+  "require_identifier_continuity": true,
+  "require_partial_and_full_fills": true,
+  "stress_scope": "MULTI_ORDER_CONTINUATION_STRESS"
+}

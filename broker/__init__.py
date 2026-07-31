@@ -1,3 +1,8 @@
+from .multi_order_continuation_stress_v77_8 import (
+    MultiOrderContinuationStress,
+    MultiOrderStressError,
+    MultiOrderStressReport,
+)
 from .recovery_continuation_safety_v77_7 import (
     ContinuationSafetyError,
     ContinuationSafetyReport,
@@ -74,4 +79,7 @@ __all__ = [
     "ContinuationSafetyError",
     "ContinuationSafetyReport",
     "RecoveryContinuationSafety",
+    "MultiOrderContinuationStress",
+    "MultiOrderStressError",
+    "MultiOrderStressReport",
 ]
