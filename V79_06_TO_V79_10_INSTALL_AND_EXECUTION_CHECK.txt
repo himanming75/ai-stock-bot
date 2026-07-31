@@ -1,0 +1,42 @@
+V79.06-V79.10 ALPACA HISTORICAL DATA CLIENT
+
+BASE:
+- Apply over GitHub main commit b1ae910.
+- Existing files must not be deleted.
+- alpaca_market_data/__init__.py is safely updated to export the new module.
+
+REQUIRED:
+python -m pip install "alpaca-py>=0.43.5" pandas
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_06_TO_V79_10.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 12 tests run
+- OK
+- pipeline status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- record_count 4
+- symbols AAPL, MSFT
+- sdk_request_type StockBarsRequest
+- fixture_fetch_count 1
+- cache_hit_count 1
+- network_calls_made 0
+- credentials_used 0
+- broker_connected false
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_11_ALPACA_AUTHENTICATED_HISTORICAL_DATA_GATE
+- V79.06-V79.10 PASS - READY TO COMMIT
+
+SAFETY:
+- Official SDK request object is built but not sent.
+- Historical data comes from the included fixture.
+- No HTTP call.
+- No credentials.
+- No broker or TradingClient.
+- No order submission.

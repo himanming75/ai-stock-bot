@@ -1,0 +1,25 @@
+V79.06-V79.10 HOTFIX
+
+FIX 1:
+- Incorrect:
+  from alpaca.data.enums import Adjustment, DataFeed, Sort
+- Correct:
+  from alpaca.common.enums import Sort
+  from alpaca.data.enums import Adjustment, DataFeed
+
+Reason:
+alpaca-py 0.43.5 defines the historical request sort enum in alpaca.common.enums.
+
+FIX 2:
+RUN_V79_06_TO_V79_10.ps1 now removes release\v79_10\output before
+INSTALL CHECK and tests. If a test fails, an older certificate cannot remain
+and produce a misleading standalone VERIFY PASS.
+
+EXPECTED AFTER FIX:
+- 13 tests
+- OK
+- Pipeline PASS
+- VERIFY PASS
+- network_calls_made 0
+- credentials_used 0
+- actual_orders_submitted 0

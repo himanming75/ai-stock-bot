@@ -1,0 +1,147 @@
+{
+  "base_commit": "b1ae910",
+  "file_count": 28,
+  "files": [
+    {
+      "bytes": 708,
+      "path": "GIT_COMMIT_V79_06_TO_V79_10.txt",
+      "sha256": "55db89bc74703edb764b51c1e5147d5dd173c43b7f9648d3b0f3fada8d0d4a92"
+    },
+    {
+      "bytes": 200,
+      "path": "INSTALL_CHECK_V79_06_TO_V79_10.ps1",
+      "sha256": "e8f8de9c80e3eb55b7c1e3df6a4b45be2a9076f2bf7634f99fef71371e4ca2f2"
+    },
+    {
+      "bytes": 745,
+      "path": "RUN_V79_06_TO_V79_10.ps1",
+      "sha256": "2aa480ca64bf1d27f68314b583b3041c967048d2d0a126e7b302591fa66633a2"
+    },
+    {
+      "bytes": 1039,
+      "path": "V79_06_TO_V79_10_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "8acf05cf8687a5270cd8a0735a4d1cb728a0cfd36a3a215077caf0d12d2ea8cd"
+    },
+    {
+      "bytes": 8144,
+      "path": "V79_06_TO_V79_10_LOCAL_TEST_RESULTS.txt",
+      "sha256": "82a6d19fb56b786ddffb551ffcc754670992864402d25a0611f15c16e0b49cae"
+    },
+    {
+      "bytes": 215,
+      "path": "VERIFY_V79_06_TO_V79_10.ps1",
+      "sha256": "cdc0d35227669f458d5ed5f226fb8202a37e92f096d93211efc5f94a227a52af"
+    },
+    {
+      "bytes": 1353,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "399dcd1b433783e942d9086fcf0616f499309accebb76441f6c105d14fa99dae"
+    },
+    {
+      "bytes": 1221,
+      "path": "alpaca_market_data/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "d86bbbf66b1b830809cf13427e724488b1ba87534720f165ccafdb04beaaa16e"
+    },
+    {
+      "bytes": 16936,
+      "path": "alpaca_market_data/__pycache__/foundation_v79_01_05.cpython-313.pyc",
+      "sha256": "1fedbe350b50ef322ca9157f2b6c61aab45f7e45a85b243a7c7eecac3210a0c0"
+    },
+    {
+      "bytes": 30324,
+      "path": "alpaca_market_data/__pycache__/historical_v79_06_10.cpython-313.pyc",
+      "sha256": "44ae33cbcbbb5b1d10d6c60b1cabef572487c1f8fb11880ed32f811a3bbb4ad0"
+    },
+    {
+      "bytes": 19380,
+      "path": "alpaca_market_data/historical_v79_06_10.py",
+      "sha256": "042f577e3c044d88f5503fb9215b22274146a527d67e6ff2762df59f9c2adcca"
+    },
+    {
+      "bytes": 296,
+      "path": "release/v79_06/config/historical_client_config_v79_06.json",
+      "sha256": "e43104de94f6a5dd9426327a59065f7f1a37b2293e9e5fdda7643d6fa9c47379"
+    },
+    {
+      "bytes": 241,
+      "path": "release/v79_06/docs/V79.06_ALPACA_HISTORICAL_CLIENT_BOUNDARY.md",
+      "sha256": "6365316e0ccbdd6e644be074753f43049f6b4dd471af0d25b0859ffacb98e936"
+    },
+    {
+      "bytes": 249,
+      "path": "release/v79_07/docs/V79.07_HISTORICAL_BARS_REQUEST_FACTORY.md",
+      "sha256": "023092ef1e70fe4b3fab0b1bdd4ee2dfe36fb9a48dbfe26decdd519d7e1e5a1b"
+    },
+    {
+      "bytes": 972,
+      "path": "release/v79_07/fixtures/historical_stock_bars_v79_07.json",
+      "sha256": "76a0ae3f345df70f06a8407f43c304fa2a296473427d29354dd6e523d6433e23"
+    },
+    {
+      "bytes": 155,
+      "path": "release/v79_08/docs/V79.08_HISTORICAL_DATA_NORMALIZER.md",
+      "sha256": "7119c563e9d2077417c86e247f088352ea807bd8908d2230872235210371b6b1"
+    },
+    {
+      "bytes": 153,
+      "path": "release/v79_09/docs/V79.09_HISTORICAL_DATA_CACHE.md",
+      "sha256": "d7e5e81e921d0acaa47dfa095f2c71b7336b7aed517d353245d90fce9add4b49"
+    },
+    {
+      "bytes": 671,
+      "path": "release/v79_10/docs/V79.06_TO_V79.10_RELEASE_NOTES.md",
+      "sha256": "ff7530dafa0c22e1c15ee4ef404bb2e8151acff3a75048fca786e9ff614c0ca2"
+    },
+    {
+      "bytes": 265,
+      "path": "release/v79_10/docs/V79.10_ALPACA_HISTORICAL_DATA_CERTIFICATE.md",
+      "sha256": "84aaeaf46ca5fcca0098aaffcac86d7f262c0908fd3bd679476d27ec95300279"
+    },
+    {
+      "bytes": 2999,
+      "path": "release/v79_10/output/alpaca_historical_data_certificate_v79_10.json",
+      "sha256": "4b696906ad545facf7d84beb3e4b29da7c5468c200f52f1ae588398a868b4fbd"
+    },
+    {
+      "bytes": 434,
+      "path": "release/v79_10/output/alpaca_historical_data_verification_v79_10.json",
+      "sha256": "d0d688c81e0d265e902a544be65b0c915958f87ae623b65a56c04bb9231535e2"
+    },
+    {
+      "bytes": 1390,
+      "path": "release/v79_10/output/cache/ed3ee3e0d88a5f683a3449ce45f8fb32f300f4842d441b87503c6e04d06007df.json",
+      "sha256": "543621bd8d0eaa6bcb56da5c7b339e844dc0b4913e7a0c54d861c831165acf33"
+    },
+    {
+      "bytes": 415,
+      "path": "release/v79_10/output/cache/ed3ee3e0d88a5f683a3449ce45f8fb32f300f4842d441b87503c6e04d06007df.manifest.json",
+      "sha256": "a77a5065b32df8b2adb8f85963cda8039370d2d99733bbad5afc4b1616c93bd9"
+    },
+    {
+      "bytes": 10142,
+      "path": "tools/__pycache__/test_alpaca_historical_data_v79_06_to_v79_10.cpython-313.pyc",
+      "sha256": "7e9470118b7aff939d34b2ad5b150132be9faf0ae42d513ab8bdc7ac8c36b8e0"
+    },
+    {
+      "bytes": 1155,
+      "path": "tools/install_check_v79_06_to_v79_10.py",
+      "sha256": "3bd0fa605e18eba50170b4973c817e7d8512504ee5f63eabe17a64b8d218098a"
+    },
+    {
+      "bytes": 3716,
+      "path": "tools/run_v79_06_to_v79_10_pipeline.py",
+      "sha256": "e6f428368d04dee7e82bcb9325fe9f6f1d5df716179b97147589a22e83f4c69d"
+    },
+    {
+      "bytes": 6513,
+      "path": "tools/test_alpaca_historical_data_v79_06_to_v79_10.py",
+      "sha256": "7cf8516ae259f7725ec25732eaee3904d8ddf025993148dcb2fd50c3bdf71ba1"
+    },
+    {
+      "bytes": 2784,
+      "path": "tools/verify_v79_06_to_v79_10_pipeline.py",
+      "sha256": "c2abd7f2c33aaa389efc5f6231601b8b2cac9acb365255ae74e0df6e4d9abfc6"
+    }
+  ],
+  "stage_range": "V79.06-V79.10"
+}

@@ -1,0 +1,50 @@
+{
+  "AAPL": [
+    {
+      "symbol": "AAPL",
+      "timestamp": "2026-01-05T14:30:00Z",
+      "open": 250.0,
+      "high": 251.5,
+      "low": 249.5,
+      "close": 251.0,
+      "volume": 120000,
+      "trade_count": 4000,
+      "vwap": 250.7
+    },
+    {
+      "symbol": "AAPL",
+      "timestamp": "2026-01-05T14:31:00Z",
+      "open": 251.0,
+      "high": 252.0,
+      "low": 250.8,
+      "close": 251.7,
+      "volume": 90000,
+      "trade_count": 3100,
+      "vwap": 251.4
+    }
+  ],
+  "MSFT": [
+    {
+      "symbol": "MSFT",
+      "timestamp": "2026-01-05T14:30:00Z",
+      "open": 470.0,
+      "high": 472.0,
+      "low": 469.0,
+      "close": 471.5,
+      "volume": 80000,
+      "trade_count": 2800,
+      "vwap": 470.9
+    },
+    {
+      "symbol": "MSFT",
+      "timestamp": "2026-01-05T14:31:00Z",
+      "open": 471.5,
+      "high": 472.5,
+      "low": 471.0,
+      "close": 472.0,
+      "volume": 75000,
+      "trade_count": 2600,
+      "vwap": 471.8
+    }
+  ]
+}

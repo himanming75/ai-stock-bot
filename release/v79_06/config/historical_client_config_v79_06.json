@@ -1,0 +1,12 @@
+{
+  "stage": "V79.06",
+  "mode": "offline_fixture",
+  "network_allowed": false,
+  "credentials_allowed": false,
+  "broker_connected": false,
+  "trading_client_created": false,
+  "order_submission_allowed": false,
+  "actual_orders_submitted": 0,
+  "default_feed": "iex",
+  "cache_enabled": true
+}

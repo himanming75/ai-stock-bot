@@ -1,0 +1,98 @@
+$ /opt/pyvenv/bin/python -m unittest tools.test_alpaca_historical_data_v79_06_to_v79_10 -v
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_no_trading_or_order_client_imports (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_no_trading_or_order_client_imports) ... ok
+test_service_uses_cache_without_network (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_service_uses_cache_without_network) ... ok
+test_v79_06_installation_contract (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_06_installation_contract) ... ok
+test_v79_06_safety_config (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_06_safety_config) ... ok
+test_v79_07_invalid_query_rejected (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_07_invalid_query_rejected) ... ok
+test_v79_07_official_request_object_builds_without_http (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_07_official_request_object_builds_without_http) ... ok
+test_v79_07_query_normalization (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_07_query_normalization) ... ok
+test_v79_07_sort_import_uses_common_enums (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_07_sort_import_uses_common_enums) ... ok
+test_v79_08_bad_ohlc_rejected (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_08_bad_ohlc_rejected) ... ok
+test_v79_08_normalizer_orders_records (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_08_normalizer_orders_records) ... ok
+test_v79_09_cache_round_trip (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_09_cache_round_trip) ... ok
+test_v79_09_cache_tamper_detected (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_09_cache_tamper_detected) ... ok
+test_v79_10_certificate_passes (tools.test_alpaca_historical_data_v79_06_to_v79_10.HistoricalDataTests.test_v79_10_certificate_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.006s
+
+OK
+
+
+$ /opt/pyvenv/bin/python tools/run_v79_06_to_v79_10_pipeline.py --repository-root . --clean
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "cache_hit_count": 1,
+  "credentials_used": 0,
+  "failed_stage_count": 0,
+  "fixture_fetch_count": 1,
+  "network_calls_made": 0,
+  "next_phase": "V79_11_ALPACA_AUTHENTICATED_HISTORICAL_DATA_GATE",
+  "passed_stage_count": 5,
+  "record_count": 4,
+  "sdk_request_type": "StockBarsRequest",
+  "stage_range": "V79.06-V79.10",
+  "status": "PASS",
+  "symbols": [
+    "AAPL",
+    "MSFT"
+  ],
+  "trading_client_created": false
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+
+
+$ /opt/pyvenv/bin/python tools/verify_v79_06_to_v79_10_pipeline.py --repository-root .
+{
+  "checks": {
+    "actual_orders_zero": true,
+    "all_five_stages_completed": true,
+    "alpaca_sdk_installed": true,
+    "broker_disconnected": true,
+    "certificate_hash_valid": true,
+    "certificate_status_pass": true,
+    "credentials_unused": true,
+    "historical_client_importable": true,
+    "live_trading_not_authorized": true,
+    "network_calls_zero": true,
+    "records_present": true,
+    "trading_client_not_created": true,
+    "verification_links_certificate": true,
+    "verification_status_pass": true
+  },
+  "failed_checks": [],
+  "next_phase": "V79_11_ALPACA_AUTHENTICATED_HISTORICAL_DATA_GATE",
+  "stage": "V79.10",
+  "status": "PASS",
+  "verified": true
+}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

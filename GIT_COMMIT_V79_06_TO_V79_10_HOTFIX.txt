@@ -1,0 +1,5 @@
+git status --short
+git add RUN_V79_06_TO_V79_10.ps1 alpaca_market_data/historical_v79_06_10.py tools/test_alpaca_historical_data_v79_06_to_v79_10.py V79_06_TO_V79_10_HOTFIX_NOTES.txt GIT_COMMIT_V79_06_TO_V79_10_HOTFIX.txt
+git status --short
+git commit -m "Fix V79.07 Alpaca Sort import and stale certificate handling"
+git push origin main

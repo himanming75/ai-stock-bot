@@ -1,0 +1,37 @@
+{
+  "base_commit": "b1ae910",
+  "file_count": 6,
+  "files": [
+    {
+      "bytes": 339,
+      "path": "GIT_COMMIT_V79_06_TO_V79_10_HOTFIX.txt",
+      "sha256": "c7f820c0afe51927c9da0896f2460ccfb51ba1439075178ba6512a1f92ecc0c4"
+    },
+    {
+      "bytes": 934,
+      "path": "RUN_V79_06_TO_V79_10.ps1",
+      "sha256": "fac859ada30c9e7982f0e354212ed3f24ffb6d8bd5339ad30fcedac599496ee6"
+    },
+    {
+      "bytes": 6721,
+      "path": "V79_06_TO_V79_10_HOTFIX_LOCAL_TEST_RESULTS.txt",
+      "sha256": "bd35b80061217f3eebee6e25191812da838c9bc912553907d5c93af9a9d7fa6c"
+    },
+    {
+      "bytes": 634,
+      "path": "V79_06_TO_V79_10_HOTFIX_NOTES.txt",
+      "sha256": "ab42c7639380eeb378cc2273293f52afbd5bc640674a9a4c4a4c6a8728fd5f10"
+    },
+    {
+      "bytes": 19423,
+      "path": "alpaca_market_data/historical_v79_06_10.py",
+      "sha256": "5f488c8534d94d2b88a486a9fa702a30d51c36bc01989c99c3a432fe81891902"
+    },
+    {
+      "bytes": 6914,
+      "path": "tools/test_alpaca_historical_data_v79_06_to_v79_10.py",
+      "sha256": "5e422ea91075a93352a2601dc1dd896a0003520dc6db3144ef4d38134b331621"
+    }
+  ],
+  "hotfix": "V79.06-V79.10 Sort import and stale output prevention"
+}
