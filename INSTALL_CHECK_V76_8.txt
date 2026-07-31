@@ -1,0 +1,25 @@
+V76.8 INSTALL CHECK
+
+Extract V76_8.zip directly into C:\stock-bot.
+
+cd C:\stock-bot
+
+Check:
+Test-Path README_V76_8.txt
+Test-Path INSTALL_CHECK_V76_8.txt
+Test-Path tools\release_candidate_audit_certificate_v76_8.py
+Test-Path tools\verify_release_candidate_audit_certificate_v76_8.py
+Test-Path tools\test_release_candidate_audit_certificate_v76_8.py
+Test-Path release\v76_8\config\release_candidate_audit_certificate_config_v76_8.json
+
+All results must be True.
+
+Prerequisite outputs:
+Test-Path release\v76_7\output\release_candidate_seal_verification_v76_7.json
+Test-Path release\v76_7\output\release_candidate_seal_verification_summary_v76_7.json
+Test-Path release\v76_6\output\release_candidate_evidence_manifest_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_ledger_v76_6.json
+Test-Path release\v76_6\output\release_candidate_certificate_v76_6.json
+Test-Path release\v76_6\output\release_candidate_evidence_seal_v76_6.json
+
+Run tests before committing V76.8.

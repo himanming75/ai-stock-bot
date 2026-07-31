@@ -1,0 +1,25 @@
+{
+  "broker_connection_allowed": false,
+  "certificate_scope": "RELEASE_CANDIDATE_AUDIT_CERTIFICATE",
+  "expected_framework_commit_sha": "b6796022d589f772d21b1618685e79f7d7232670",
+  "expected_hashes": {
+    "v76_6_certificate_sha256": "523c164c62c3aaae979e74918b3795ffd8d33c902becfd2ca8f2ebc3cedf642c",
+    "v76_6_ledger_sha256": "d7c0f9df71304b0456f4eb94c4b61e9b974bb6337444d008799e68b294032425",
+    "v76_6_manifest_sha256": "e4c8cade370e551db75845d55c78f2298695808cc585f0343e467c7dce3adb8e",
+    "v76_6_release_seal_sha256": "c8283c98ee1ac3eb590a5e0615c79ab57234c05e3d0ec7fe0f4d08e69cfb4463",
+    "v76_7_audit_sha256": "ef2966239f17c480c227e1240245ed1ce6f8fa5639e6c0860fd0240e2d6865c5"
+  },
+  "expected_v76_6_sealed_commit_sha": "211d78b5c047febbc33c73f281fbf4a5f5554689",
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_all_anchored_hashes_match": true,
+  "require_git_tracked_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_v76_7_audit_pass": true,
+  "require_zero_trading_side_effects": true,
+  "v76_6_output_dir": "release/v76_6/output",
+  "v76_7_output_dir": "release/v76_7/output"
+}
