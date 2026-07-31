@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "symbol": "AAPL",
+      "timestamp": "2026-01-05T14:31:00Z",
+      "timeframe": "1Min",
+      "open": 250.8,
+      "high": 251.5,
+      "low": 250.6,
+      "close": 251.2,
+      "volume": 85000,
+      "trade_count": 2900,
+      "vwap": 251.0,
+      "source": "offline_fixture"
+    },
+    {
+      "symbol": "AAPL",
+      "timestamp": "2026-01-05T14:33:00Z",
+      "timeframe": "1Min",
+      "open": 251.4,
+      "high": 252.0,
+      "low": 251.2,
+      "close": 251.8,
+      "volume": 81000,
+      "trade_count": 2800,
+      "vwap": 251.6,
+      "source": "offline_fixture"
+    },
+    {
+      "symbol": "MSFT",
+      "timestamp": "2026-01-05T14:32:00Z",
+      "timeframe": "1Min",
+      "open": 471.1,
+      "high": 471.8,
+      "low": 470.9,
+      "close": 471.6,
+      "volume": 66000,
+      "trade_count": 2250,
+      "vwap": 471.4,
+      "source": "offline_fixture"
+    },
+    {
+      "symbol": "SPY",
+      "timestamp": "2026-01-05T14:33:00Z",
+      "timeframe": "1Min",
+      "open": 611.1,
+      "high": 611.7,
+      "low": 610.9,
+      "close": 611.5,
+      "volume": 250000,
+      "trade_count": 7200,
+      "vwap": 611.3,
+      "source": "offline_fixture"
+    }
+  ]
+}

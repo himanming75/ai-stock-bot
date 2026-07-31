@@ -1,0 +1,12 @@
+{
+  "stage": "V79.26",
+  "dataset_name": "alpaca_historical_bars",
+  "timeframe": "1Min",
+  "expected_symbols": ["AAPL", "MSFT", "SPY"],
+  "max_gap_tasks": 100,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

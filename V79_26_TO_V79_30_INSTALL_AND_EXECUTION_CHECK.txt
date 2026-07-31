@@ -1,0 +1,35 @@
+V79.26-V79.30 HISTORICAL DATA INCREMENTAL SYNC
+
+BASE:
+- GitHub main commit f0351bc
+- Existing files must not be deleted.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_26_TO_V79_30.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 12 tests
+- OK
+- Pipeline PASS
+- existing_row_count 6
+- incoming_row_count 4
+- new_row_count 3
+- duplicate_row_count 1
+- merged_row_count 9
+- checkpoint_count 3
+- gap_task_count 2
+- gap_expected_bar_count 2
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_31_HISTORICAL_GAP_FILL_EXECUTION
+
+OUTPUT:
+release\v79_30\output\sync\alpaca_historical_bars.jsonl
+release\v79_30\output\sync\alpaca_historical_bars.checkpoints.json
+release\v79_30\output\sync\alpaca_historical_bars.gap_fill_queue.json
+release\v79_30\output\sync\alpaca_historical_bars.incremental_manifest.json

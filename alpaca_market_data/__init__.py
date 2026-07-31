@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.25."""
+"""Safe Alpaca market-data modules through V79.30."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -28,6 +28,12 @@ from .ingestion_v79_21_25 import (
     deduplicate_ingestion_rows, HistoricalDatasetStore,
     run_historical_ingestion, build_ingestion_certificate,
 )
+from .incremental_sync_v79_26_30 import (
+    IncrementalSyncConfig, SyncCheckpoint, GapFillTask,
+    load_existing_dataset, build_checkpoints, merge_incremental_rows,
+    detect_missing_bars, build_gap_fill_queue, write_incremental_dataset,
+    run_incremental_sync, build_incremental_sync_certificate,
+)
 
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
@@ -49,4 +55,8 @@ __all__ = [
     "normalize_ingestion_rows", "validate_ingestion_dataset",
     "deduplicate_ingestion_rows", "HistoricalDatasetStore",
     "run_historical_ingestion", "build_ingestion_certificate",
+    "IncrementalSyncConfig", "SyncCheckpoint", "GapFillTask",
+    "load_existing_dataset", "build_checkpoints", "merge_incremental_rows",
+    "detect_missing_bars", "build_gap_fill_queue", "write_incremental_dataset",
+    "run_incremental_sync", "build_incremental_sync_certificate",
 ]
