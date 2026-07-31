@@ -1,0 +1,16 @@
+V76.2 INSTALL CHECK
+
+Test-Path README_V76_2.txt
+Test-Path INSTALL_CHECK_V76_2.txt
+Test-Path tools\targeted_behavioral_capability_verification_v76_2.py
+Test-Path tools\test_targeted_behavioral_capability_verification_v76_2.py
+Test-Path release\v76_2\config\targeted_behavioral_capability_verification_config_v76_2.json
+
+Test:
+python -m unittest tools.test_targeted_behavioral_capability_verification_v76_2 -v
+
+Run:
+python tools/targeted_behavioral_capability_verification_v76_2.py `
+  --repository-root . `
+  --config release/v76_2/config/targeted_behavioral_capability_verification_config_v76_2.json `
+  --output-dir release/v76_2/output

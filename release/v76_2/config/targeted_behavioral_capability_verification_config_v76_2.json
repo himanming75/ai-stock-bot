@@ -1,0 +1,32 @@
+{
+  "verification_scope": "TARGETED_BEHAVIORAL_CAPABILITY_VERIFICATION",
+  "capability_id": "FEATURE_PIPELINE",
+  "offline_only": true,
+  "preserve_repository": true,
+  "require_zero_trading_side_effects": true,
+  "network_allowed": false,
+  "broker_connection_allowed": false,
+  "order_submission_allowed": false,
+  "repository_mutation_allowed": false,
+  "live_approval_allowed": false,
+  "verification_commands": [
+    {
+      "verification_id": "FEATURE_ENGINE_V27_0",
+      "script": "test_offline_features_v27_0.py",
+      "required": true,
+      "timeout_seconds": 300
+    },
+    {
+      "verification_id": "NORMALIZER_V27_4",
+      "script": "test_offline_normalizer_v27_4.py",
+      "required": true,
+      "timeout_seconds": 300
+    },
+    {
+      "verification_id": "FEATURE_SELECTOR_V27_5",
+      "script": "test_offline_feature_selector_v27_5.py",
+      "required": true,
+      "timeout_seconds": 300
+    }
+  ]
+}
