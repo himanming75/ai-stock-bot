@@ -1,0 +1,22 @@
+V77.91-V77.95 LIVE READINESS AUDIT
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v77_90\output\risk_stress_test_certificate_v77_90.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_91_TO_V77_95.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V77_96_BROKER_INTEGRATION_SKELETON
+- V77.91-V77.95 PASS - READY TO COMMIT
+
+This certificate authorizes only an offline broker-integration skeleton.
+Real credentials, broker connections, network access, and actual orders remain prohibited.

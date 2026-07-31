@@ -1,0 +1,36 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "deployment_controls": {
+    "broker_adapter_not_enabled": true,
+    "live_mode_default_disabled": true,
+    "paper_mode_default": true
+  },
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "operational_controls": {
+    "audit_logging_enabled": true,
+    "kill_switch_defined": true,
+    "manual_override_required": true,
+    "max_daily_loss_limit_defined": true,
+    "max_position_limit_defined": true,
+    "order_rate_limit_defined": true
+  },
+  "recovery_controls": {
+    "checkpoint_restore_supported": true,
+    "corruption_detection_supported": true,
+    "disconnect_halt_supported": true,
+    "idempotency_guard_supported": true,
+    "manual_stop_supported": true,
+    "replay_supported": true,
+    "risk_breach_kill_supported": true
+  },
+  "security_controls": {
+    "credentials_not_in_repository": true,
+    "network_default_deny": true,
+    "secrets_externalized": true
+  },
+  "stage": "V77.91"
+}
