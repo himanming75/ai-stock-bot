@@ -1,0 +1,37 @@
+V76.12 INSTALL / RUN CHECK
+
+1. Extract this ZIP into C:\stock-bot and allow overwrite/merge.
+
+2. Confirm files:
+
+Test-Path README_V76_12.txt
+Test-Path INSTALL_CHECK_V76_12.txt
+Test-Path tools\release_candidate_closure_certificate_v76_12.py
+Test-Path tools\verify_release_candidate_closure_certificate_v76_12.py
+Test-Path tools\test_release_candidate_closure_certificate_v76_12.py
+Test-Path release\v76_12\config\release_candidate_closure_certificate_config_v76_12.json
+Test-Path release\v76_11\output\release_candidate_final_attestation_verification_v76_11.json
+Test-Path release\v76_11\output\release_candidate_final_attestation_verification_summary_v76_11.json
+Test-Path release\v76_11\output\release_candidate_final_attestation_verification_v76_11.txt
+
+3. Run tests:
+
+python -m unittest tools.test_release_candidate_closure_certificate_v76_12 -v
+
+4. Remove old output if present:
+
+Remove-Item release\v76_12\output -Recurse -Force -ErrorAction SilentlyContinue
+
+5. Issue certificate:
+
+python tools\release_candidate_closure_certificate_v76_12.py `
+  --repository-root . `
+  --config release\v76_12\config\release_candidate_closure_certificate_config_v76_12.json `
+  --output-dir release\v76_12\output
+
+6. Verify certificate:
+
+python tools\verify_release_candidate_closure_certificate_v76_12.py `
+  --output-dir release\v76_12\output
+
+Do not commit until both commands report PASS.
