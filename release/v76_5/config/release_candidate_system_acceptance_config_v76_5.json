@@ -1,0 +1,19 @@
+{
+  "acceptance_scope": "RELEASE_CANDIDATE_SYSTEM_ACCEPTANCE",
+  "broker_connection_allowed": false,
+  "command_timeout_seconds": 3600,
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "preserve_repository": true,
+  "prior_config_path": "release/v76_4/config/advanced_validation_behavioral_verification_config_v76_4.json",
+  "prior_summary_path": "release/v76_4/output/advanced_validation_behavioral_summary_v76_4.json",
+  "prior_verification_path": "release/v76_4/output/advanced_validation_behavioral_verification_v76_4.json",
+  "require_all_gates_pass": true,
+  "require_deterministic_model_output": true,
+  "require_prior_verification_pass": true,
+  "require_tracked_file_immutability": true,
+  "require_zero_trading_side_effects": true
+}

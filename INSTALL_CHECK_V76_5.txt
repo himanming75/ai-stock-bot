@@ -1,0 +1,20 @@
+V76.5 INSTALL CHECK
+
+cd C:\stock-bot
+
+Test-Path README_V76_5.txt
+Test-Path INSTALL_CHECK_V76_5.txt
+Test-Path tools\release_candidate_system_acceptance_v76_5.py
+Test-Path tools\test_release_candidate_system_acceptance_v76_5.py
+Test-Path release\v76_5\config\release_candidate_system_acceptance_config_v76_5.json
+
+All five results must be True.
+
+Run unit tests:
+python -m unittest tools.test_release_candidate_system_acceptance_v76_5 -v
+
+Run acceptance:
+python tools/release_candidate_system_acceptance_v76_5.py `
+  --repository-root . `
+  --config release/v76_5/config/release_candidate_system_acceptance_config_v76_5.json `
+  --output-dir release/v76_5/output
