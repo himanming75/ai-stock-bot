@@ -1,0 +1,33 @@
+V76.24 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_24_changed_files.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm repository state:
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+
+Expected before installation:
+fe4834f
+
+3. Confirm V76.23 output:
+Test-Path release\v76_23\output\release_archive_completion_certificate_verification_v76_23.json
+
+4. Run tests:
+python -m unittest tools.test_project_release_closure_v76_24 -v
+
+5. Remove old V76.24 output:
+Remove-Item release\v76_24\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate project release closure:
+python tools\project_release_closure_v76_24.py `
+  --repository-root . `
+  --config release\v76_24\config\project_release_closure_config_v76_24.json `
+  --output-dir release\v76_24\output
+
+7. Verify generated output:
+python tools\verify_project_release_closure_v76_24.py `
+  --output-dir release\v76_24\output
+
+8. Do not add release\v76_24\output to Git.
+Commit only the six supplied source/config/doc files after both commands report PASS.
