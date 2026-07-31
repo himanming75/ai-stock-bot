@@ -1,0 +1,26 @@
+V76.16 INSTALL AND EXECUTION CHECK
+
+1. Extract V76_16.zip into C:\stock-bot and overwrite when prompted.
+
+2. Confirm source outputs remain present:
+Test-Path release\v76_14\output\final_immutable_manifest_v76_14.json
+Test-Path release\v76_15\output\final_integrity_verification_v76_15.json
+
+3. Run tests:
+python -m unittest tools.test_release_archive_seal_v76_16 -v
+
+4. Remove old V76.16 output:
+Remove-Item release\v76_16\output -Recurse -Force -ErrorAction SilentlyContinue
+
+5. Generate deterministic archive seal:
+python tools\release_archive_seal_v76_16.py `
+  --repository-root . `
+  --config release\v76_16\config\release_archive_seal_config_v76_16.json `
+  --output-dir release\v76_16\output
+
+6. Verify:
+python tools\verify_release_archive_seal_v76_16.py `
+  --output-dir release\v76_16\output
+
+Do not commit until generation and verification both report PASS.
+Do not git-add release\v76_16\output.

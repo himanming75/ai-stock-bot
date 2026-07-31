@@ -1,0 +1,30 @@
+{
+  "broker_connection_allowed": false,
+  "deterministic_archive_required": true,
+  "expected_framework_commit_sha": "5fa759dc70443ce883897bd8c2fbe028399476c6",
+  "expected_v76_14_anchor_chain_sha256": "76a00d9dababdb2928b4c0effd94957a6804edf7ba7fa698a86e36a79e822ae5",
+  "expected_v76_14_final_manifest_sha256": "752e7929cd531d69518101635af2a6bdd885ea5cfe928364ed79f315d579bbac",
+  "expected_v76_15_artifact_set_sha256": "e910ef8ba2649a3a046ed2eef7da4da36e63c4676bc80f2df3808bc251df9eaf",
+  "expected_v76_15_verification_sha256": "ee7f251a7887af3ffdfef6df8dcf8929332b8eba649a0138adc9393bb8990a51",
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_framework_commit_match": true,
+  "require_git_tracked_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_source_hash_anchors": true,
+  "require_v76_14_outputs": true,
+  "require_v76_15_outputs": true,
+  "require_zero_trading_side_effects": true,
+  "seal_scope": "RELEASE_ARCHIVE_SEAL",
+  "source_files": [
+    "release/v76_14/output/final_immutable_manifest_v76_14.json",
+    "release/v76_14/output/final_immutable_manifest_summary_v76_14.json",
+    "release/v76_14/output/final_immutable_manifest_v76_14.txt",
+    "release/v76_15/output/final_integrity_verification_v76_15.json",
+    "release/v76_15/output/final_integrity_verification_summary_v76_15.json",
+    "release/v76_15/output/final_integrity_verification_v76_15.txt"
+  ]
+}
