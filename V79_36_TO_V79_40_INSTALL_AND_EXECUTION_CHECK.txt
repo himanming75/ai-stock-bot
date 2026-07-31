@@ -1,0 +1,28 @@
+V79.36-V79.40 HISTORICAL DATA QUALITY RECONCILIATION
+
+BASE:
+- GitHub main commit 0692e4d
+- Existing files must not be deleted.
+- release/v79_35/output must be present.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_36_TO_V79_40.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 13 tests
+- OK
+- Pipeline PASS
+- row_count 11
+- symbol_count 3
+- duplicate_primary_key_count 0
+- gap_count 0
+- issue_count 0
+- pending_repair_count 0
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_41_HISTORICAL_DATASET_VERSIONING

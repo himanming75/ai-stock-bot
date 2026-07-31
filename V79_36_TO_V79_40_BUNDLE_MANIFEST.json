@@ -1,0 +1,102 @@
+{
+  "base_commit": "0692e4d",
+  "file_count": 20,
+  "files": [
+    {
+      "bytes": 729,
+      "path": "GIT_COMMIT_V79_36_TO_V79_40.txt",
+      "sha256": "13158b89069ab999d1d6dc3f3070e2a40a512f11f4528039cbaf9ab3a61dbc2f"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_36_TO_V79_40.ps1",
+      "sha256": "42c75712b50e346ab7af41f3e2bda1bfba4ca81ddf30e0681be2c47355eb40e7"
+    },
+    {
+      "bytes": 928,
+      "path": "RUN_V79_36_TO_V79_40.ps1",
+      "sha256": "1e23cf08150cc0ada214be342a4020bfa7b256a778fb2e74d60ffc2db66b5e45"
+    },
+    {
+      "bytes": 615,
+      "path": "V79_36_TO_V79_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "ec7daa94c58159ae0bf44353e3c35f44dfbef202db32b5d716efacce63306133"
+    },
+    {
+      "bytes": 2812,
+      "path": "V79_36_TO_V79_40_LOCAL_TEST_RESULTS.txt",
+      "sha256": "421844600aeb622beec0091eac0cba421a9e9108e2e02fea55c4fa77ceb00cfb"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_36_TO_V79_40.ps1",
+      "sha256": "355d601da67217fddf0d225354e3e382855383f8b1cff50200281070d10851a7"
+    },
+    {
+      "bytes": 4485,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "1da68aad876e7936db739927f7442c6fae21c3a5d83691b22d402c294a45fb9b"
+    },
+    {
+      "bytes": 18896,
+      "path": "alpaca_market_data/quality_reconciliation_v79_36_40.py",
+      "sha256": "de33c769f8d1ac077138268b48e4d50c81fa17d77230aaa0ccc5b34fec50524d"
+    },
+    {
+      "bytes": 478,
+      "path": "release/v79_36/config/quality_config_v79_36.json",
+      "sha256": "f6592002dc609860783d7b39b13a70daf6d4eebca64beb7301cd52d91b44a502"
+    },
+    {
+      "bytes": 114,
+      "path": "release/v79_36/docs/V79.36_DATASET_INTEGRITY_SCAN.md",
+      "sha256": "08ebcaa0aa4ec2b062517f74d863f8c2d5e1c445443841c068ab26e1ceef58e9"
+    },
+    {
+      "bytes": 105,
+      "path": "release/v79_37/docs/V79.37_OHLCV_VALIDATION.md",
+      "sha256": "8ee0ed1519ce90105109eae8e816dd581b27ede2e31f6a42d9af29c1451a361c"
+    },
+    {
+      "bytes": 140,
+      "path": "release/v79_38/docs/V79.38_SYMBOL_TIME_RECONCILIATION.md",
+      "sha256": "8184ed0017774ea14068b79f73433d63c8ca74b493549b5a7f19e477514c11b6"
+    },
+    {
+      "bytes": 152,
+      "path": "release/v79_39/docs/V79.39_QUALITY_MANIFEST_REPAIR_LEDGER.md",
+      "sha256": "ea1b369e4467d61274b2b46a507603a276693920aa3fc82060eecec2bba8df31"
+    },
+    {
+      "bytes": 275,
+      "path": "release/v79_40/docs/V79.36_TO_V79.40_RELEASE_NOTES.md",
+      "sha256": "094bf095e457c34e2ebed9e3491c8162b642a06d1d24aedaab5da11d018e5515"
+    },
+    {
+      "bytes": 123,
+      "path": "release/v79_40/docs/V79.40_HISTORICAL_QUALITY_CERTIFICATE.md",
+      "sha256": "474e63a34f3d93101e6e4ea2e9a436faabb00434ce0c05f9bec856f0235ac910"
+    },
+    {
+      "bytes": 698,
+      "path": "tools/install_check_v79_36_to_v79_40.py",
+      "sha256": "13e92194fbded2b16551c6c128f983a679ea42a5ca51ed5201add8e8ae09d8ff"
+    },
+    {
+      "bytes": 1675,
+      "path": "tools/run_v79_36_to_v79_40_pipeline.py",
+      "sha256": "dc88b5ba5215044de96d845861338cb7dca523e532d5a3010b4a6b43e97c61d0"
+    },
+    {
+      "bytes": 4482,
+      "path": "tools/test_quality_reconciliation_v79_36_to_v79_40.py",
+      "sha256": "b3a3cfc039b7b94e8d2eed33eba60b218686604b69706a95854ff4180736c568"
+    },
+    {
+      "bytes": 2366,
+      "path": "tools/verify_v79_36_to_v79_40_pipeline.py",
+      "sha256": "9be4d1ce25acc30ab3a4c9a9bf579325c87c6dde0fa75d717deaac07902b7eb5"
+    }
+  ],
+  "stage_range": "V79.36-V79.40"
+}

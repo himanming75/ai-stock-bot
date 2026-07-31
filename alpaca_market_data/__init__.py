@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.35."""
+"""Safe Alpaca market-data modules through V79.40."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -40,6 +40,12 @@ from .gap_fill_v79_31_35 import (
     merge_gap_fill_rows, validate_tasks_completed, write_gap_fill_outputs,
     verify_gap_fill_manifest, run_gap_fill, build_gap_fill_certificate,
 )
+from .quality_reconciliation_v79_36_40 import (
+    QualityConfig, QualityIssue, load_quality_dataset, scan_dataset_integrity,
+    validate_ohlcv, reconcile_symbol_time_series, build_repair_ledger,
+    write_quality_outputs, verify_quality_manifest,
+    run_quality_reconciliation, build_quality_certificate,
+)
 
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
@@ -69,4 +75,8 @@ __all__ = [
     "load_fixture_bars", "select_fixture_rows_for_task", "execute_gap_fill_tasks",
     "merge_gap_fill_rows", "validate_tasks_completed", "write_gap_fill_outputs",
     "verify_gap_fill_manifest", "run_gap_fill", "build_gap_fill_certificate",
+    "QualityConfig", "QualityIssue", "load_quality_dataset", "scan_dataset_integrity",
+    "validate_ohlcv", "reconcile_symbol_time_series", "build_repair_ledger",
+    "write_quality_outputs", "verify_quality_manifest",
+    "run_quality_reconciliation", "build_quality_certificate",
 ]
