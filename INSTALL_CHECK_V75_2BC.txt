@@ -1,0 +1,7 @@
+Run from C:\stock-bot
+
+Test-Path README_V75_2BC.txt
+Test-Path INSTALL_CHECK_V75_2BC.txt
+Test-Path tools\registry_snapshot_seal_cert_archive_seal_certificate_builder_v75_2bc.py
+Test-Path tools\test_registry_snapshot_seal_cert_archive_seal_certificate_builder_v75_2bc.py
+Test-Path release\v75_2bc\config\registry_snapshot_seal_cert_archive_seal_certificate_config_v75_2bc.json
