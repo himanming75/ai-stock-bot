@@ -1,0 +1,21 @@
+V78.16-V78.20 PAPER SESSION MANAGER
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisite:
+release\v78_15\output\event_bus_certificate_v78_15.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_16_TO_V78_20.ps1
+
+Expected:
+- 12 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- next_phase V78_21_RUNTIME_SCHEDULER_FOUNDATION
+- V78.16-V78.20 PASS - READY TO COMMIT
+
+Offline only. No credentials, no broker connection, no network, and zero actual orders.
