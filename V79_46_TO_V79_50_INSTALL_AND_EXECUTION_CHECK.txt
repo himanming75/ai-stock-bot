@@ -1,0 +1,27 @@
+V79.46-V79.50 HISTORICAL DATASET RETENTION
+
+BASE:
+- GitHub main commit 7cf90ca
+- Existing files must not be deleted.
+- release/v79_45/output must be present.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_46_TO_V79_50.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 13 tests
+- OK
+- Pipeline PASS
+- version_count 1
+- kept_version_count 1
+- archived_version_count 0
+- deleted_version_count 0
+- source_versions_preserved true
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_51_HISTORICAL_DATASET_RECOVERY

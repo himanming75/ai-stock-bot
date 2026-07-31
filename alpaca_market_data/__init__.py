@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.45."""
+"""Safe Alpaca market-data modules through V79.50."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -54,6 +54,14 @@ from .dataset_versioning_v79_41_45 import (
     run_dataset_versioning, build_version_certificate, sha256_version_json,
 )
 
+from .dataset_retention_v79_46_50 import (
+    RetentionConfig, RetentionAction, validate_version_certificate,
+    load_version_registry, inventory_versions, build_retention_plan,
+    execute_retention_plan, write_retention_outputs,
+    verify_retention_manifest, run_dataset_retention,
+    build_retention_certificate, sha256_retention_json,
+)
+
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
     "OfflineAlpacaMarketDataAdapter", "inspect_alpaca_installation",
@@ -90,4 +98,9 @@ __all__ = [
     "fingerprint_dataset", "build_version_metadata", "create_immutable_version",
     "update_version_registry", "build_version_manifest", "verify_version_manifest",
     "run_dataset_versioning", "build_version_certificate", "sha256_version_json",
+    "RetentionConfig", "RetentionAction", "validate_version_certificate",
+    "load_version_registry", "inventory_versions", "build_retention_plan",
+    "execute_retention_plan", "write_retention_outputs",
+    "verify_retention_manifest", "run_dataset_retention",
+    "build_retention_certificate", "sha256_retention_json",
 ]

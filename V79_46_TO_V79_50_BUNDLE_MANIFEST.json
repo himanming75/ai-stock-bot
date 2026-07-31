@@ -1,0 +1,97 @@
+{
+  "base_commit": "7cf90ca",
+  "file_count": 19,
+  "files": [
+    {
+      "bytes": 669,
+      "path": "GIT_COMMIT_V79_46_TO_V79_50.txt",
+      "sha256": "3ce1e387d363eb5a2d4e345a8fee43a6d05c9f6f76d766c5244791fa52bfaf42"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_46_TO_V79_50.ps1",
+      "sha256": "705b4f8296a9626578065510072dbe3d31e90e9eee4c3250ac79752cc279faf4"
+    },
+    {
+      "bytes": 923,
+      "path": "RUN_V79_46_TO_V79_50.ps1",
+      "sha256": "2411e448cb566736ed9fb7d3009595512f58fcb4d14ae5afc31e673c6d24387c"
+    },
+    {
+      "bytes": 611,
+      "path": "V79_46_TO_V79_50_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "8d8b2bf71ddc1397a8d1b4dc69d81596744c6b855d81428925ca851861cf42d7"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_46_TO_V79_50.ps1",
+      "sha256": "7db269deadba04525eb578cefb6650ef53d00b4f89089af5907cd96b01847321"
+    },
+    {
+      "bytes": 5836,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "d2a2db0db0004dae080d88f40887471cb0299fbb19100504b6166334b3091392"
+    },
+    {
+      "bytes": 17089,
+      "path": "alpaca_market_data/dataset_retention_v79_46_50.py",
+      "sha256": "c43a91038c3ac2368ebc63ebc847cfb5caabc1952e5f9fe3b7e1605f96cea69b"
+    },
+    {
+      "bytes": 367,
+      "path": "release/v79_46/config/dataset_retention_config_v79_46.json",
+      "sha256": "8a347645fbe33ea03217e8a8857dd6d4ee35782712823142de2161b25fa010a0"
+    },
+    {
+      "bytes": 147,
+      "path": "release/v79_46/docs/V79.46_RETENTION_POLICY.md",
+      "sha256": "3179027ed41cd52d05ec57183f932578944319f9c0ab166922aa70d6d358fd82"
+    },
+    {
+      "bytes": 121,
+      "path": "release/v79_47/docs/V79.47_VERSION_INVENTORY.md",
+      "sha256": "35a6bd3fe9d7c4e766087e7b4ff7d9520897693fdde18c92cd8c28383d096d78"
+    },
+    {
+      "bytes": 108,
+      "path": "release/v79_48/docs/V79.48_RETENTION_PLAN.md",
+      "sha256": "6d06b8dc7e6c0093528f457e478e34056d3734dab4abd2daaa85f1d1da981f96"
+    },
+    {
+      "bytes": 142,
+      "path": "release/v79_49/docs/V79.49_RETENTION_EXECUTION.md",
+      "sha256": "d0d6a4a69bb34c7d244a203e31d7be07add29fd97ef89d5792134bb941306209"
+    },
+    {
+      "bytes": 267,
+      "path": "release/v79_50/docs/V79.46_TO_V79.50_RELEASE_NOTES.md",
+      "sha256": "da6d1ba4ff7c6750f662b19d44e7e83c09c628af0a75b5681b27ada9406bd67a"
+    },
+    {
+      "bytes": 134,
+      "path": "release/v79_50/docs/V79.50_RETENTION_CERTIFICATE.md",
+      "sha256": "1dd96e86cafebd4e40a4dbd0a02f4a44a1899151d73925a53af99963c700cbc2"
+    },
+    {
+      "bytes": 695,
+      "path": "tools/install_check_v79_46_to_v79_50.py",
+      "sha256": "728a0e4cc014314a67e306300e09e764790b46b0d27748b2a9df239edb48ec9d"
+    },
+    {
+      "bytes": 1659,
+      "path": "tools/run_v79_46_to_v79_50_pipeline.py",
+      "sha256": "e05a42c008f97eabc95585b5435561311ee061f95a799d106feedfccd3fe0a0f"
+    },
+    {
+      "bytes": 7352,
+      "path": "tools/test_dataset_retention_v79_46_to_v79_50.py",
+      "sha256": "f5cb771f5f71d4912eea2979f31404a54067cd80543f2a5c3441c9fe9f3bc794"
+    },
+    {
+      "bytes": 2533,
+      "path": "tools/verify_v79_46_to_v79_50_pipeline.py",
+      "sha256": "8e35f516939d2674571f9489851f71270e80d0c6a743adb6d71191586dfb7afd"
+    }
+  ],
+  "stage_range": "V79.46-V79.50"
+}

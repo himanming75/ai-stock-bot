@@ -1,0 +1,14 @@
+{
+  "stage": "V79.46",
+  "minimum_versions_to_keep": 1,
+  "maximum_active_versions": 5,
+  "preserve_active_version": true,
+  "archive_before_delete": true,
+  "allow_physical_delete": false,
+  "dry_run": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
