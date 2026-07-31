@@ -1,0 +1,61 @@
+{
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "c39fd1af94c1fead939927d4646ba8c4231fe664",
+  "expected_v76_13_gate_count": 45,
+  "expected_v76_13_verification_sha256": "01261ef77e8451e2d1858211af5a2992cce4639ca029056bff28576a09c63e2b",
+  "immutable_anchor_chain": {
+    "v76_10": {
+      "commit_sha": "7a438b825f14fd078b0c0de5fefecb08c6ad3a41",
+      "final_attestation_sha256": "72fd18fb350602dcb6e92ffab4d97d6effb5cb209fc49eda536cffaeb7c1529d",
+      "source_framework_commit_sha": "09db70f69560314c989d074973cbfd0a493848e7"
+    },
+    "v76_11": {
+      "commit_sha": "cd08119464af5c1483167878582746063c7d84c5",
+      "verification_sha256": "17728c923f74347a67d118fc439e613baf62df6d1652fa793bb316786a6bc66d"
+    },
+    "v76_12": {
+      "closure_certificate_sha256": "43d66510f0c53bb8540722f9fe7648c7909509f0ea9153140b0c0ef79ec79d59",
+      "commit_sha": "55c3e61b2318a07f69bc99d6969685330ea14e4d"
+    },
+    "v76_13": {
+      "commit_sha": "c39fd1af94c1fead939927d4646ba8c4231fe664",
+      "verification_sha256": "01261ef77e8451e2d1858211af5a2992cce4639ca029056bff28576a09c63e2b"
+    },
+    "v76_6": {
+      "certificate_sha256": "523c164c62c3aaae979e74918b3795ffd8d33c902becfd2ca8f2ebc3cedf642c",
+      "commit_sha": "211d78b5c047febbc33c73f281fbf4a5f5554689",
+      "ledger_sha256": "d7c0f9df71304b0456f4eb94c4b61e9b974bb6337444d008799e68b294032425",
+      "manifest_sha256": "e4c8cade370e551db75845d55c78f2298695808cc585f0343e467c7dce3adb8e",
+      "release_seal_sha256": "c8283c98ee1ac3eb590a5e0615c79ab57234c05e3d0ec7fe0f4d08e69cfb4463"
+    },
+    "v76_7": {
+      "audit_sha256": "ef2966239f17c480c227e1240245ed1ce6f8fa5639e6c0860fd0240e2d6865c5",
+      "commit_sha": "b6796022d589f772d21b1618685e79f7d7232670"
+    },
+    "v76_8": {
+      "audit_certificate_sha256": "28cfcb6fa465adca705b238cf73edd51878f08ef36642874069633608f4eff9a",
+      "commit_sha": "5e2638aef05887a30cc119a8073b220a30191dae"
+    },
+    "v76_9": {
+      "commit_sha": "09db70f69560314c989d074973cbfd0a493848e7",
+      "verification_sha256": "64a8b8e635213364e9514e40b4ad7626fa763569f83cb6d149b64c8c42243183"
+    }
+  },
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "manifest_scope": "FINAL_IMMUTABLE_MANIFEST",
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_all_v76_13_gates_pass": true,
+  "require_complete_anchor_chain": true,
+  "require_framework_commit_match": true,
+  "require_git_tracked_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_release_candidate_closed": true,
+  "require_v76_13_hash_anchor": true,
+  "require_v76_13_self_hash_match": true,
+  "require_v76_13_summary_match": true,
+  "require_zero_trading_side_effects": true,
+  "v76_13_output_dir": "release/v76_13/output"
+}
