@@ -1,0 +1,146 @@
+{
+  "broker_connection_allowed": false,
+  "capabilities": [
+    {
+      "capability_id": "MARKET_DATA_PIPELINE",
+      "name": "Market Data Pipeline",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "tools/test_market_data_feed_v41_0.py",
+          "timeout_seconds": 600,
+          "verification_id": "MARKET_DATA_FEED_V41_0"
+        }
+      ]
+    },
+    {
+      "capability_id": "MODEL_INFERENCE_ENGINE",
+      "name": "Model Inference Engine",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_ml.py",
+          "timeout_seconds": 600,
+          "verification_id": "MODEL_INFERENCE_BASELINE"
+        }
+      ]
+    },
+    {
+      "capability_id": "STRATEGY_ENGINE",
+      "name": "Strategy Engine",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_strategy_v25_4.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_STRATEGY_V25_4"
+        }
+      ]
+    },
+    {
+      "capability_id": "BACKTEST_ENGINE",
+      "name": "Backtest Engine",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_backtest_v25_6.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_BACKTEST_V25_6"
+        }
+      ]
+    },
+    {
+      "capability_id": "RISK_ENGINE",
+      "name": "Risk Engine",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_risk_v25_3.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_RISK_V25_3"
+        }
+      ]
+    },
+    {
+      "capability_id": "PORTFOLIO_MANAGER",
+      "name": "Portfolio Manager",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_portfolio_v25_2.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_PORTFOLIO_V25_2"
+        }
+      ]
+    },
+    {
+      "capability_id": "ORDER_LIFECYCLE_SIMULATOR",
+      "name": "Order Lifecycle Simulator",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_order_sim_v25_5.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_ORDER_SIM_V25_5"
+        }
+      ]
+    },
+    {
+      "capability_id": "PAPER_TRADING_ADAPTER",
+      "name": "Paper Trading Adapter",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "tools/test_paper_broker_gateway_v47_0.py",
+          "timeout_seconds": 600,
+          "verification_id": "PAPER_BROKER_GATEWAY_V47_0"
+        }
+      ]
+    },
+    {
+      "capability_id": "RECONCILIATION_ENGINE",
+      "name": "Reconciliation Engine",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "tools/test_paper_portfolio_reconciliation_v49_0.py",
+          "timeout_seconds": 600,
+          "verification_id": "PAPER_PORTFOLIO_RECONCILIATION_V49_0"
+        }
+      ]
+    },
+    {
+      "capability_id": "DASHBOARD_REPORTING",
+      "name": "Dashboard and Reporting",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "tools/test_performance_dashboard_data_v62_0.py",
+          "timeout_seconds": 600,
+          "verification_id": "PERFORMANCE_DASHBOARD_DATA_V62_0"
+        }
+      ]
+    },
+    {
+      "capability_id": "AUDIT_EVIDENCE_LAYER",
+      "name": "Audit and Evidence Layer",
+      "verification_commands": [
+        {
+          "required": true,
+          "script": "test_offline_audit_chain_v24_3.py",
+          "timeout_seconds": 600,
+          "verification_id": "OFFLINE_AUDIT_CHAIN_V24_3"
+        }
+      ]
+    }
+  ],
+  "live_approval_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "preserve_repository": true,
+  "repository_mutation_allowed": false,
+  "require_all_capabilities_pass": true,
+  "require_zero_trading_side_effects": true,
+  "verification_scope": "MULTI_CAPABILITY_BEHAVIORAL_VERIFICATION"
+}

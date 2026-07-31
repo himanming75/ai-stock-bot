@@ -1,0 +1,18 @@
+V76.3 INSTALL CHECK
+
+Test-Path README_V76_3.txt
+Test-Path INSTALL_CHECK_V76_3.txt
+Test-Path tools\multi_capability_behavioral_verification_v76_3.py
+Test-Path tools\test_multi_capability_behavioral_verification_v76_3.py
+Test-Path release\v76_3\config\multi_capability_behavioral_verification_config_v76_3.json
+
+All five results must be True.
+
+Test:
+python -m unittest tools.test_multi_capability_behavioral_verification_v76_3 -v
+
+Run:
+python tools/multi_capability_behavioral_verification_v76_3.py `
+  --repository-root . `
+  --config release/v76_3/config/multi_capability_behavioral_verification_config_v76_3.json `
+  --output-dir release/v76_3/output
