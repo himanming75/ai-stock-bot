@@ -1,0 +1,13 @@
+V77.36-V77.40 RISK MANAGEMENT BUNDLE
+
+Extract over C:\stock-bot, then run:
+powershell -ExecutionPolicy Bypass -File .\RUN_V77_36_TO_V77_40.ps1
+
+Expected:
+status PASS
+stage_count 5
+passed_stage_count 5
+failed_stage_count 0
+actual_orders_submitted 0
+live_trading_authorized false
+next_phase V77_41_PAPER_PORTFOLIO_STATE_ENGINE
