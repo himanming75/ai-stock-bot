@@ -1,0 +1,37 @@
+V76.6 INSTALL CHECK
+
+cd C:\stock-bot
+
+Test-Path README_V76_6.txt
+Test-Path INSTALL_CHECK_V76_6.txt
+Test-Path tools\release_candidate_evidence_seal_v76_6.py
+Test-Path tools\verify_release_candidate_evidence_seal_v76_6.py
+Test-Path tools\test_release_candidate_evidence_seal_v76_6.py
+Test-Path tools\test_verify_release_candidate_evidence_seal_v76_6.py
+Test-Path release\v76_6\config\release_candidate_evidence_seal_config_v76_6.json
+
+All seven results must be True.
+
+Before creating the seal:
+git status --short
+git log -1 --oneline
+git rev-parse HEAD
+git rev-parse origin/main
+
+git status --short must show no output.
+HEAD and origin/main must match.
+
+Run unit tests:
+python -m unittest tools.test_release_candidate_evidence_seal_v76_6 -v
+python -m unittest tools.test_verify_release_candidate_evidence_seal_v76_6 -v
+
+Create seal:
+python tools/release_candidate_evidence_seal_v76_6.py `
+  --repository-root . `
+  --config release/v76_6/config/release_candidate_evidence_seal_config_v76_6.json `
+  --output-dir release/v76_6/output
+
+Verify seal:
+python tools/verify_release_candidate_evidence_seal_v76_6.py `
+  --repository-root . `
+  --output-dir release/v76_6/output

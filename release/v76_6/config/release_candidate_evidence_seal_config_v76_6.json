@@ -1,0 +1,41 @@
+{
+  "broker_connection_allowed": false,
+  "evidence_files": [
+    {
+      "description": "Full V76.4 advanced behavioral verification result",
+      "evidence_id": "V76_4_FULL_VERIFICATION",
+      "path": "release/v76_4/output/advanced_validation_behavioral_verification_v76_4.json",
+      "required": true
+    },
+    {
+      "description": "V76.4 advanced behavioral verification summary",
+      "evidence_id": "V76_4_SUMMARY",
+      "path": "release/v76_4/output/advanced_validation_behavioral_summary_v76_4.json",
+      "required": true
+    },
+    {
+      "description": "Full V76.5 release candidate system acceptance result",
+      "evidence_id": "V76_5_FULL_ACCEPTANCE",
+      "path": "release/v76_5/output/release_candidate_system_acceptance_v76_5.json",
+      "required": true
+    },
+    {
+      "description": "V76.5 release candidate system acceptance summary",
+      "evidence_id": "V76_5_SUMMARY",
+      "path": "release/v76_5/output/release_candidate_system_acceptance_summary_v76_5.json",
+      "required": true
+    }
+  ],
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "preserve_repository": true,
+  "require_all_evidence_present": true,
+  "require_manifest_verification": true,
+  "require_prior_acceptance_pass": true,
+  "require_tracked_file_immutability": true,
+  "require_zero_trading_side_effects": true,
+  "seal_scope": "RELEASE_CANDIDATE_EVIDENCE_SEAL"
+}
