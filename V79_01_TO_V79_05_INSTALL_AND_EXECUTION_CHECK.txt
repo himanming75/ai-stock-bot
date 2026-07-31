@@ -1,0 +1,46 @@
+V79.01-V79.05 ALPACA MARKET DATA FOUNDATION
+
+BASE:
+- Apply over GitHub main commit 6d044b4
+- Repository: himanming75/ai-stock-bot
+- Existing files must not be deleted.
+
+INSTALL:
+1. Extract this ZIP.
+2. Copy all extracted files/folders into C:\stock-bot.
+3. Choose Merge/Replace for matching folders. This bundle adds V79 files.
+4. Open PowerShell in C:\stock-bot.
+
+OPTIONAL ALPACA SDK:
+python -m pip install "alpaca-py>=0.28.0"
+
+The SDK is not required for offline unit tests.
+No network test is performed.
+No credential value is read, printed, or used.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_01_TO_V79_05.ps1
+
+EXPECTED:
+- INSTALL CHECK status PASS
+- 10 tests run
+- OK
+- pipeline status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- fixture_bar_count 2
+- network_calls_made 0
+- broker_connected false
+- actual_orders_submitted 0
+- verification status PASS
+- next_phase V79_06_ALPACA_HISTORICAL_DATA_CLIENT
+- V79.01-V79.05 PASS - READY TO COMMIT
+
+SAFETY:
+- Offline foundation only
+- No Alpaca HTTP request
+- No broker connection
+- No actual order
+- No live credential use
+- No live-trading authorization

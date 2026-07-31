@@ -1,0 +1,132 @@
+{
+  "base_commit": "6d044b4",
+  "file_count": 25,
+  "files": [
+    {
+      "bytes": 406,
+      "path": "GIT_COMMIT_V79_01_TO_V79_05.txt",
+      "sha256": "c83c223ce3e755ebb463401005dfb3a4533c6d18d62caea02d5b6b6e94da171e"
+    },
+    {
+      "bytes": 200,
+      "path": "INSTALL_CHECK_V79_01_TO_V79_05.ps1",
+      "sha256": "35639165e92c3e23be3bf0ddca28ed37f9177ff152943d4849f632f3c9d44f83"
+    },
+    {
+      "bytes": 752,
+      "path": "RUN_V79_01_TO_V79_05.ps1",
+      "sha256": "b1320cb982daa7c015d52d910999863de632f7ceb4d699b390dd4c57a07e04ac"
+    },
+    {
+      "bytes": 1144,
+      "path": "V79_01_TO_V79_05_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "abb60935e8e4b559ffb9f4225528632ab67bc4396ebd95582393118d9bd85b7c"
+    },
+    {
+      "bytes": 7859,
+      "path": "V79_01_TO_V79_05_LOCAL_TEST_RESULTS.txt",
+      "sha256": "adf6feff9dd141717eab66f0239ac1cc74f4de8ea17964df1990152413b4d08d"
+    },
+    {
+      "bytes": 215,
+      "path": "VERIFY_V79_01_TO_V79_05.ps1",
+      "sha256": "9703034ba260d5043029efc187aaf1a7f98329dec2c6e60f849c2b0cfd2f035d"
+    },
+    {
+      "bytes": 604,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "372c94b2f138ee02beac10aab621eb8a7dd2344ccd25295e34d523688faaebaa"
+    },
+    {
+      "bytes": 634,
+      "path": "alpaca_market_data/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "cd5cd366a6fbfe4cff293242f9b9a591c1c4c7da080f45752cc98178282f2357"
+    },
+    {
+      "bytes": 16936,
+      "path": "alpaca_market_data/__pycache__/foundation_v79_01_05.cpython-313.pyc",
+      "sha256": "37b42a267b116925e9798a10737026100137c665a51860ccabd58e3209132374"
+    },
+    {
+      "bytes": 10738,
+      "path": "alpaca_market_data/foundation_v79_01_05.py",
+      "sha256": "345d151d195f2f673d8efc487b5a385c2afcd487fc3f3a884c2150ab5b18c90d"
+    },
+    {
+      "bytes": 287,
+      "path": "release/v79_01/config/alpaca_install_contract_v79_01.json",
+      "sha256": "5b018dc32b7096ba30b5e57f709ca978be55fae7bdcddf286dd235133bf3fe27"
+    },
+    {
+      "bytes": 194,
+      "path": "release/v79_01/docs/V79.01_ALPACA_SDK_INSTALL_FOUNDATION.md",
+      "sha256": "0acdc462d70e69a28e1bc549c80377e3f94f0dbb556d232a2c96a9e66cbdf0db"
+    },
+    {
+      "bytes": 261,
+      "path": "release/v79_02/docs/V79.02_ALPACA_ENVIRONMENT_SAFETY_GATE.md",
+      "sha256": "627a45986498b5e53d34ea4f180dc889bc0cb45b16f2d93b3f24fd8dfff75f15"
+    },
+    {
+      "bytes": 178,
+      "path": "release/v79_03/docs/V79.03_MARKET_DATA_CONTRACTS.md",
+      "sha256": "5e84683fabf2b9d138b29855e691248b4540731399b0fbef7c96a0bea7c64e8f"
+    },
+    {
+      "bytes": 197,
+      "path": "release/v79_04/docs/V79.04_OFFLINE_ALPACA_DATA_ADAPTER.md",
+      "sha256": "ea7452b24071ad10dea1840a5acd7a458e4ba815883b44793436d9c8a0123233"
+    },
+    {
+      "bytes": 428,
+      "path": "release/v79_04/fixtures/sample_stock_bars_v79_04.json",
+      "sha256": "65e81d2b65935b4a594becf7ba8242ea854070c6d04ae399a72c19f22a8df252"
+    },
+    {
+      "bytes": 726,
+      "path": "release/v79_05/docs/V79.01_TO_V79.05_RELEASE_NOTES.md",
+      "sha256": "3d37841fa7d7ecb9a5dac4bb2f47d953049a91e21b20ac6d41f5054d0e14b83e"
+    },
+    {
+      "bytes": 256,
+      "path": "release/v79_05/docs/V79.05_ALPACA_MARKET_DATA_FOUNDATION_CERTIFICATE.md",
+      "sha256": "3abf80fc3d3ca092bad3ab90221939e26ee8bee24a43ef4b73edd67b5ab213b6"
+    },
+    {
+      "bytes": 1822,
+      "path": "release/v79_05/output/alpaca_market_data_foundation_certificate_v79_05.json",
+      "sha256": "ab60ff9c83a4a2a82b35cb16dea578a4dd6f44f9e0e5c9ccfb3373f2e3f69c02"
+    },
+    {
+      "bytes": 401,
+      "path": "release/v79_05/output/alpaca_market_data_foundation_verification_v79_05.json",
+      "sha256": "08b5f077eaf515f0505332f7946ecd4371ff69897dee843a9f03e34835eefa13"
+    },
+    {
+      "bytes": 8112,
+      "path": "tools/__pycache__/test_alpaca_market_data_foundation_v79_01_to_v79_05.cpython-313.pyc",
+      "sha256": "a7d3e7b35ce55ea0ce61357dba7bc468c848fd5177408f81473ec60b71d5d729"
+    },
+    {
+      "bytes": 1176,
+      "path": "tools/install_check_v79_01_to_v79_05.py",
+      "sha256": "05e7be47b3f35f5c3736d0e3c43ba37fd7831f1584524d7fb9c97821ae5ffa16"
+    },
+    {
+      "bytes": 2402,
+      "path": "tools/run_v79_01_to_v79_05_pipeline.py",
+      "sha256": "45a684a74c24235bd15d54ac665d0579ca21a93f4e0310e07591f9457d6818b6"
+    },
+    {
+      "bytes": 5426,
+      "path": "tools/test_alpaca_market_data_foundation_v79_01_to_v79_05.py",
+      "sha256": "a742d2c5062b70ad73e961e1bc18831b58846045ad75e2df46c58418e42e9198"
+    },
+    {
+      "bytes": 2499,
+      "path": "tools/verify_v79_01_to_v79_05_pipeline.py",
+      "sha256": "e02599c6c28c958d246f59e684d2075df6b716f50f83f49a16dd295fd24d84ac"
+    }
+  ],
+  "stage_range": "V79.01-V79.05"
+}

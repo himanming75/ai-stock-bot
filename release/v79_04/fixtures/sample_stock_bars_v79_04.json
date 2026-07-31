@@ -1,0 +1,24 @@
+[
+  {
+    "symbol": "AAPL",
+    "timestamp": "2026-01-05T14:30:00Z",
+    "open": 250.0,
+    "high": 251.5,
+    "low": 249.5,
+    "close": 251.0,
+    "volume": 120000,
+    "trade_count": 4000,
+    "vwap": 250.7
+  },
+  {
+    "symbol": "MSFT",
+    "timestamp": "2026-01-05T14:30:00Z",
+    "open": 470.0,
+    "high": 472.0,
+    "low": 469.0,
+    "close": 471.5,
+    "volume": 80000,
+    "trade_count": 2800,
+    "vwap": 470.9
+  }
+]

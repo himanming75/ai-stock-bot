@@ -1,0 +1,10 @@
+{
+  "stage": "V79.01",
+  "package_name": "alpaca-py",
+  "import_name": "alpaca",
+  "minimum_version": "0.28.0",
+  "required_for_live_data": true,
+  "required_for_offline_tests": false,
+  "network_test_allowed": false,
+  "install_command": "python -m pip install \"alpaca-py>=0.28.0\""
+}
