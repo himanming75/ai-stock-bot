@@ -1,0 +1,23 @@
+{
+  "broker_connection_allowed": false,
+  "broker_routing_allowed": false,
+  "cash_update_allowed": false,
+  "create_seal_checks": true,
+  "create_seal_ledger": true,
+  "create_seal_manifest": true,
+  "create_sealed_snapshot_index": true,
+  "external_order_submission_allowed": false,
+  "external_side_effects_allowed": false,
+  "live_orders_allowed": false,
+  "network_allowed": false,
+  "paper_broker_allowed": false,
+  "portfolio_update_allowed": false,
+  "position_update_allowed": false,
+  "require_snapshot_verification_integrity": true,
+  "require_verification_checks_integrity": true,
+  "require_verification_ledger_integrity": true,
+  "require_verified_snapshot_index_integrity": true,
+  "require_zero_settlement_and_account_mutations": true,
+  "seal_scope": "OFFLINE_PAPER_CERTIFICATE_REGISTRY_SNAPSHOT_SEAL_ONLY",
+  "settlement_execution_allowed": false
+}
