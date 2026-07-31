@@ -1,0 +1,44 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "performance_accounting": {
+    "annualization_factor": 252.0,
+    "equity_values": [
+      100100.0,
+      99950.0,
+      100300.0,
+      100050.0,
+      100500.0,
+      100350.0,
+      100700.0,
+      100650.0
+    ],
+    "labels": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "starting_equity": 100000.0,
+    "trade_pnls": [
+      100.0,
+      -150.0,
+      350.0,
+      -250.0,
+      450.0,
+      -150.0,
+      350.0,
+      -50.0
+    ]
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.71"
+}
