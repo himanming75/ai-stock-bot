@@ -1,0 +1,16 @@
+V76.0 INSTALL CHECK
+
+Run from C:\stock-bot:
+
+Test-Path README_V76_0.txt
+Test-Path INSTALL_CHECK_V76_0.txt
+Test-Path tools\stable_release_functional_capability_baseline_v76_0.py
+Test-Path tools\test_stable_release_functional_capability_baseline_v76_0.py
+Test-Path release\v76_0\config\stable_release_functional_capability_baseline_config_v76_0.json
+Test-Path release\v76_0\config\functional_capability_inventory_input_v76_0.json
+
+All six results must be True.
+
+Then run:
+
+python -m unittest tools.test_stable_release_functional_capability_baseline_v76_0 -v

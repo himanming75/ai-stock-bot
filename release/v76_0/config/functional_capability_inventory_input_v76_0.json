@@ -1,0 +1,115 @@
+{
+  "capabilities": [
+    {
+      "capability_id": "MARKET_DATA_PIPELINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "DATA_QUALITY_GATES",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "FEATURE_PIPELINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "MODEL_INFERENCE_ENGINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "STRATEGY_ENGINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "MULTI_STRATEGY_ORCHESTRATION",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "BACKTEST_ENGINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "WALK_FORWARD_VALIDATION",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "MONTE_CARLO_VALIDATION",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "PORTFOLIO_MANAGER",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "RISK_ENGINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "ORDER_LIFECYCLE_SIMULATOR",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "PAPER_TRADING_ADAPTER",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "RECONCILIATION_ENGINE",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "OBSERVABILITY_ALERTING",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "DASHBOARD_REPORTING",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "RECOVERY_KILL_SWITCH",
+      "evidence": [],
+      "notes": "Initial conservative state; update after repository review.",
+      "state": "PARTIAL"
+    },
+    {
+      "capability_id": "AUDIT_EVIDENCE_LAYER",
+      "evidence": [
+        "V75.2BE evidence package baseline"
+      ],
+      "notes": "Audit/Evidence layer is frozen at V75.2BE.",
+      "state": "COMPLETE"
+    }
+  ],
+  "inventory_scope": "AI_STOCK_BOT_FUNCTIONAL_INVENTORY"
+}

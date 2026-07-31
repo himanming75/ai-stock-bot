@@ -1,0 +1,149 @@
+{
+  "audit_evidence_anchor": "V75.2BE",
+  "broker_connection_allowed": false,
+  "cash_mutation_allowed": false,
+  "external_order_submission_allowed": false,
+  "freeze_audit_evidence_layer": true,
+  "live_order_submission_allowed": false,
+  "network_allowed": false,
+  "paper_order_submission_allowed": false,
+  "portfolio_mutation_allowed": false,
+  "position_mutation_allowed": false,
+  "preserve_existing_capabilities": true,
+  "require_acceptance_gates": true,
+  "require_capability_inventory": true,
+  "require_deterministic_baseline_id": true,
+  "require_gap_plan": true,
+  "require_offline_only": true,
+  "require_zero_trading_side_effects": true,
+  "required_capabilities": [
+    {
+      "capability_id": "MARKET_DATA_PIPELINE",
+      "category": "DATA",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_MARKET_DATA_PIPELINE",
+      "name": "Market Data Pipeline",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "DATA_QUALITY_GATES",
+      "category": "DATA",
+      "default_next_action": "IMPLEMENT_DATA_QUALITY_GATES",
+      "name": "Data Quality Gates",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "FEATURE_PIPELINE",
+      "category": "AI",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_FEATURE_PIPELINE",
+      "name": "Feature Pipeline",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "MODEL_INFERENCE_ENGINE",
+      "category": "AI",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_MODEL_INFERENCE",
+      "name": "Model Inference Engine",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "STRATEGY_ENGINE",
+      "category": "DECISION",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_STRATEGY_ENGINE",
+      "name": "Strategy Engine",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "MULTI_STRATEGY_ORCHESTRATION",
+      "category": "DECISION",
+      "default_next_action": "IMPLEMENT_MULTI_STRATEGY_ORCHESTRATION",
+      "name": "Multi-Strategy Orchestration",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "BACKTEST_ENGINE",
+      "category": "VALIDATION",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_BACKTEST_ENGINE",
+      "name": "Backtest Engine",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "WALK_FORWARD_VALIDATION",
+      "category": "VALIDATION",
+      "default_next_action": "IMPLEMENT_WALK_FORWARD_VALIDATION",
+      "name": "Walk-Forward Validation",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "MONTE_CARLO_VALIDATION",
+      "category": "VALIDATION",
+      "default_next_action": "IMPLEMENT_MONTE_CARLO_VALIDATION",
+      "name": "Monte Carlo Validation",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "PORTFOLIO_MANAGER",
+      "category": "PORTFOLIO",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_PORTFOLIO_MANAGER",
+      "name": "Portfolio Manager",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "RISK_ENGINE",
+      "category": "RISK",
+      "default_next_action": "IMPLEMENT_AND_VALIDATE_RISK_ENGINE",
+      "name": "Risk Engine",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "ORDER_LIFECYCLE_SIMULATOR",
+      "category": "EXECUTION",
+      "default_next_action": "IMPLEMENT_ORDER_LIFECYCLE_SIMULATOR",
+      "name": "Order Lifecycle Simulator",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "PAPER_TRADING_ADAPTER",
+      "category": "EXECUTION",
+      "default_next_action": "IMPLEMENT_SAFE_PAPER_TRADING_ADAPTER",
+      "name": "Paper Trading Adapter",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "RECONCILIATION_ENGINE",
+      "category": "OPERATIONS",
+      "default_next_action": "IMPLEMENT_RECONCILIATION_ENGINE",
+      "name": "Reconciliation Engine",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "OBSERVABILITY_ALERTING",
+      "category": "OPERATIONS",
+      "default_next_action": "IMPLEMENT_OBSERVABILITY_AND_ALERTING",
+      "name": "Observability and Alerting",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "DASHBOARD_REPORTING",
+      "category": "OPERATIONS",
+      "default_next_action": "IMPLEMENT_DASHBOARD_AND_REPORTING",
+      "name": "Dashboard and Reporting",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "RECOVERY_KILL_SWITCH",
+      "category": "SAFETY",
+      "default_next_action": "IMPLEMENT_RECOVERY_AND_KILL_SWITCH",
+      "name": "Recovery and Kill Switch",
+      "required_for_stable_release": true
+    },
+    {
+      "capability_id": "AUDIT_EVIDENCE_LAYER",
+      "category": "AUDIT",
+      "default_next_action": "PRESERVE_AND_REGRESSION_TEST",
+      "name": "Audit and Evidence Layer",
+      "required_for_stable_release": true
+    }
+  ],
+  "settlement_mutation_allowed": false,
+  "transition_scope": "STABLE_RELEASE_TRANSITION_AND_FUNCTIONAL_CAPABILITY_BASELINE"
+}
