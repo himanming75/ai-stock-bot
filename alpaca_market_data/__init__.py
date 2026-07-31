@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.20."""
+"""Safe Alpaca market-data modules through V79.25."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -22,6 +22,12 @@ from .network_smoke_v79_16_20 import (
     execute_historical_network_smoke, sanitize_smoke_result,
     build_network_smoke_certificate,
 )
+from .ingestion_v79_21_25 import (
+    IngestionConfig, IngestionBar, IngestionValidation,
+    normalize_ingestion_rows, validate_ingestion_dataset,
+    deduplicate_ingestion_rows, HistoricalDatasetStore,
+    run_historical_ingestion, build_ingestion_certificate,
+)
 
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
@@ -39,4 +45,8 @@ __all__ = [
     "inspect_network_smoke_preflight", "build_bounded_stock_bars_request",
     "execute_historical_network_smoke", "sanitize_smoke_result",
     "build_network_smoke_certificate",
+    "IngestionConfig", "IngestionBar", "IngestionValidation",
+    "normalize_ingestion_rows", "validate_ingestion_dataset",
+    "deduplicate_ingestion_rows", "HistoricalDatasetStore",
+    "run_historical_ingestion", "build_ingestion_certificate",
 ]
