@@ -1,0 +1,23 @@
+V76.1 INSTALL CHECK
+
+Run from C:\stock-bot:
+
+Test-Path README_V76_1.txt
+Test-Path INSTALL_CHECK_V76_1.txt
+Test-Path tools\repository_functional_capability_audit_v76_1.py
+Test-Path tools\test_repository_functional_capability_audit_v76_1.py
+Test-Path release\v76_1\config\repository_functional_capability_audit_config_v76_1.json
+Test-Path repository_files.txt
+Test-Path repository_all_files.txt
+
+All seven results must be True.
+
+Test:
+python -m unittest tools.test_repository_functional_capability_audit_v76_1 -v
+
+Run:
+python tools/repository_functional_capability_audit_v76_1.py `
+  --tracked-files repository_files.txt `
+  --all-files repository_all_files.txt `
+  --config release/v76_1/config/repository_functional_capability_audit_config_v76_1.json `
+  --output-dir release/v76_1/output

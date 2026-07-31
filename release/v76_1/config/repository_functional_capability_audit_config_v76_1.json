@@ -1,0 +1,403 @@
+{
+  "audit_scope": "REPOSITORY_FUNCTIONAL_CAPABILITY_AUDIT",
+  "broker_connection_allowed": false,
+  "capabilities": [
+    {
+      "capability_id": "MARKET_DATA_PIPELINE",
+      "category": "DATA",
+      "evidence_rules": {
+        "implementation": [
+          "data/*market*.py",
+          "backtest/*data_feed*.py",
+          "backtest/*market_data*.py"
+        ],
+        "release": [
+          "release/*/audit/*market_data*.json",
+          "release/*/audit/*data_feed*.json"
+        ],
+        "tests": [
+          "test_*market*.py",
+          "test_*data_feed*.py",
+          "backtest/test_*market*.py"
+        ]
+      },
+      "name": "Market Data Pipeline"
+    },
+    {
+      "capability_id": "DATA_QUALITY_GATES",
+      "category": "DATA",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*data*quality*.py",
+          "backtest/*validation*scorecard*.py",
+          "backtest/*preflight*.py"
+        ],
+        "release": [
+          "release/*/audit/*quality*gate*.json",
+          "release/*/audit/*preflight*.json"
+        ],
+        "tests": [
+          "test_*data*quality*.py",
+          "test_*validation_scorecard*.py",
+          "test_*preflight*.py"
+        ]
+      },
+      "name": "Data Quality Gates"
+    },
+    {
+      "capability_id": "FEATURE_PIPELINE",
+      "category": "AI",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*features*.py",
+          "backtest/*feature_selector*.py",
+          "backtest/*normalizer*.py"
+        ],
+        "release": [
+          "release/*/audit/*feature*.json",
+          "release/*/audit/*dataset*.json"
+        ],
+        "tests": [
+          "test_*features*.py",
+          "test_*feature_selector*.py",
+          "test_*normalizer*.py"
+        ]
+      },
+      "name": "Feature Pipeline"
+    },
+    {
+      "capability_id": "MODEL_INFERENCE_ENGINE",
+      "category": "AI",
+      "evidence_rules": {
+        "implementation": [
+          "ml/*predictor*.py",
+          "forecast/*predictor*.py",
+          "backtest/*ai_pipeline*.py",
+          "backtest/*model_registry*.py"
+        ],
+        "release": [
+          "release/*/audit/*ai*.json",
+          "release/*/audit/*model*.json",
+          "models/*.json"
+        ],
+        "tests": [
+          "test_*predictor*.py",
+          "test_forecast.py",
+          "test_ml.py",
+          "test_*ai_pipeline*.py",
+          "test_*model_registry*.py"
+        ]
+      },
+      "name": "Model Inference Engine"
+    },
+    {
+      "capability_id": "STRATEGY_ENGINE",
+      "category": "DECISION",
+      "evidence_rules": {
+        "implementation": [
+          "recommendation/*engine*.py",
+          "backtest/*strategy*.py",
+          "backtest/*signal_engine*.py"
+        ],
+        "release": [
+          "release/*/audit/*strategy*.json",
+          "release/*/audit/*signal*.json"
+        ],
+        "tests": [
+          "test_recommendation*.py",
+          "test_*strategy*.py",
+          "test_*signal_engine*.py"
+        ]
+      },
+      "name": "Strategy Engine"
+    },
+    {
+      "capability_id": "MULTI_STRATEGY_ORCHESTRATION",
+      "category": "DECISION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*multi_strategy*.py",
+          "backtest/*strategy_orchestrator*.py",
+          "backtest/*tournament*.py"
+        ],
+        "release": [
+          "release/*/audit/*multi_strategy*.json",
+          "release/*/scenarios/*multi_strategy*.json"
+        ],
+        "tests": [
+          "test_*multi_strategy*.py",
+          "test_*strategy_orchestrator*.py",
+          "test_*tournament*.py"
+        ]
+      },
+      "name": "Multi-Strategy Orchestration"
+    },
+    {
+      "capability_id": "BACKTEST_ENGINE",
+      "category": "VALIDATION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/engine.py",
+          "backtest/*backtest*.py",
+          "backtest/professional_backtester*.py"
+        ],
+        "release": [
+          "release/*/audit/*backtest*.json",
+          "release/audit/*readiness*.json"
+        ],
+        "tests": [
+          "test_*backtest*.py",
+          "test_professional_backtester*.py"
+        ]
+      },
+      "name": "Backtest Engine"
+    },
+    {
+      "capability_id": "WALK_FORWARD_VALIDATION",
+      "category": "VALIDATION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*walk_forward*.py",
+          "backtest/*out_of_sample*.py"
+        ],
+        "release": [
+          "release/*/audit/*walk_forward*.json"
+        ],
+        "tests": [
+          "test_*walk_forward*.py",
+          "test_*out_of_sample*.py"
+        ]
+      },
+      "name": "Walk-Forward Validation"
+    },
+    {
+      "capability_id": "MONTE_CARLO_VALIDATION",
+      "category": "VALIDATION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*monte_carlo*.py",
+          "backtest/*stress_testing*.py",
+          "backtest/*parameter_robustness*.py"
+        ],
+        "release": [
+          "release/*/audit/*monte_carlo*.json",
+          "release/*/audit/*stress*.json"
+        ],
+        "tests": [
+          "test_*monte_carlo*.py",
+          "test_*stress_testing*.py",
+          "test_*parameter_robustness*.py"
+        ]
+      },
+      "name": "Monte Carlo Validation"
+    },
+    {
+      "capability_id": "PORTFOLIO_MANAGER",
+      "category": "PORTFOLIO",
+      "evidence_rules": {
+        "implementation": [
+          "portfolio/*manager*.py",
+          "portfolio/*allocator*.py",
+          "backtest/*portfolio*.py"
+        ],
+        "release": [
+          "release/*/audit/*portfolio*.json",
+          "release/*/session/*account_state*.json"
+        ],
+        "tests": [
+          "test_portfolio.py",
+          "test_allocator.py",
+          "test_*portfolio*.py"
+        ]
+      },
+      "name": "Portfolio Manager"
+    },
+    {
+      "capability_id": "RISK_ENGINE",
+      "category": "RISK",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*risk*.py",
+          "backtest/*position_sizing*.py"
+        ],
+        "release": [
+          "release/*/audit/*risk*.json",
+          "release/*/stages/*risk*.json"
+        ],
+        "tests": [
+          "test_*risk*.py",
+          "test_*position_sizing*.py"
+        ]
+      },
+      "name": "Risk Engine"
+    },
+    {
+      "capability_id": "ORDER_LIFECYCLE_SIMULATOR",
+      "category": "EXECUTION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*order_lifecycle*.py",
+          "backtest/*order_sim*.py",
+          "backtest/*fill_engine*.py",
+          "backtest/*execution_simulator*.py"
+        ],
+        "release": [
+          "release/*/audit/*order_lifecycle*.json",
+          "release/*/audit/*fill_simulation*.json"
+        ],
+        "tests": [
+          "test_*order_lifecycle*.py",
+          "test_*order_sim*.py",
+          "test_*fill_engine*.py",
+          "test_*execution_simulator*.py"
+        ]
+      },
+      "name": "Order Lifecycle Simulator"
+    },
+    {
+      "capability_id": "PAPER_TRADING_ADAPTER",
+      "category": "EXECUTION",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*paper_broker*adapter*.py",
+          "backtest/*paper_broker*gateway*.py",
+          "backtest/*paper_trading*pipeline*.py"
+        ],
+        "release": [
+          "release/*/audit/*paper_broker*.json",
+          "release/*/audit/*paper_trading*.json"
+        ],
+        "tests": [
+          "test_*paper_broker*adapter*.py",
+          "test_*paper_broker*gateway*.py",
+          "test_*paper_trading*pipeline*.py"
+        ]
+      },
+      "name": "Paper Trading Adapter"
+    },
+    {
+      "capability_id": "RECONCILIATION_ENGINE",
+      "category": "OPERATIONS",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*reconciliation*.py",
+          "backtest/*settlement*.py"
+        ],
+        "release": [
+          "release/*/audit/*reconciliation*.json",
+          "release/*/audit/*settlement*.json"
+        ],
+        "tests": [
+          "test_*reconciliation*.py",
+          "test_*settlement*.py"
+        ]
+      },
+      "name": "Reconciliation Engine"
+    },
+    {
+      "capability_id": "OBSERVABILITY_ALERTING",
+      "category": "OPERATIONS",
+      "evidence_rules": {
+        "implementation": [
+          "automation/*pipeline*.py",
+          "automation/*tracker*.py",
+          "backtest/*monitor*.py",
+          "backtest/*operations_console*.py"
+        ],
+        "release": [
+          "release/*/audit/*analytics_pipeline*.json",
+          "output/dashboard.html",
+          "logs/*.log"
+        ],
+        "tests": [
+          "test_*pipeline*.py",
+          "test_*tracker*.py",
+          "test_*monitor*.py",
+          "test_*operations_console*.py"
+        ]
+      },
+      "name": "Observability and Alerting"
+    },
+    {
+      "capability_id": "DASHBOARD_REPORTING",
+      "category": "OPERATIONS",
+      "evidence_rules": {
+        "implementation": [
+          "charts/*.py",
+          "backtest/*report*.py",
+          "backtest/*tear_sheet*.py"
+        ],
+        "release": [
+          "release/*/audit/*dashboard*.json",
+          "release/*/export/*dashboard*.csv",
+          "output/dashboard.html"
+        ],
+        "tests": [
+          "test_*report*.py",
+          "test_*tear_sheet*.py"
+        ]
+      },
+      "name": "Dashboard and Reporting"
+    },
+    {
+      "capability_id": "RECOVERY_KILL_SWITCH",
+      "category": "SAFETY",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*rollback*.py",
+          "backtest/*recovery*.py",
+          "backtest/*runtime_guard*.py",
+          "backtest/*final_control*.py"
+        ],
+        "release": [
+          "release/*/rollback/*.json",
+          "release/*/audit/*control*.json"
+        ],
+        "tests": [
+          "test_*rollback*.py",
+          "test_*recovery*.py",
+          "test_*runtime_guard*.py",
+          "test_*final_control*.py"
+        ]
+      },
+      "name": "Recovery and Kill Switch"
+    },
+    {
+      "capability_id": "AUDIT_EVIDENCE_LAYER",
+      "category": "AUDIT",
+      "evidence_rules": {
+        "implementation": [
+          "backtest/*audit*.py",
+          "tools/*audit*.py",
+          "tools/*verification*.py",
+          "tools/*evidence*.py"
+        ],
+        "release": [
+          "release/*/audit/*.json",
+          "release/*/certificates/*.json",
+          "release/*/manifest/*.json",
+          "release/v75_2be/config/*.json"
+        ],
+        "tests": [
+          "test_*audit*.py",
+          "tools/test_*audit*.py",
+          "tools/test_*verification*.py",
+          "tools/test_*evidence*.py"
+        ]
+      },
+      "name": "Audit and Evidence Layer"
+    }
+  ],
+  "filename_evidence_only": true,
+  "live_approval_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "preserve_repository": true,
+  "repository_mutation_allowed": false,
+  "require_conservative_classification": true,
+  "require_release_evidence": true,
+  "require_test_evidence": true,
+  "require_tracked_file_evidence": true,
+  "require_zero_trading_side_effects": true
+}
