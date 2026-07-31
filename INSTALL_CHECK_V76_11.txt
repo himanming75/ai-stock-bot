@@ -1,0 +1,41 @@
+AI STOCK BOT V76.11 INSTALL CHECK
+
+1. Extract this ZIP into C:\stock-bot and allow file/folder merge.
+
+2. Confirm files:
+
+Test-Path README_V76_11.txt
+Test-Path INSTALL_CHECK_V76_11.txt
+Test-Path tools\release_candidate_final_attestation_verification_v76_11.py
+Test-Path tools\verify_release_candidate_final_attestation_verification_v76_11.py
+Test-Path tools\test_release_candidate_final_attestation_verification_v76_11.py
+Test-Path release\v76_11\config\release_candidate_final_attestation_verification_config_v76_11.json
+
+3. Confirm V76.10 prerequisite outputs:
+
+Test-Path release\v76_10\output\release_candidate_final_attestation_v76_10.json
+Test-Path release\v76_10\output\release_candidate_final_attestation_summary_v76_10.json
+Test-Path release\v76_10\output\release_candidate_final_attestation_v76_10.txt
+
+4. Run tests:
+
+python -m unittest tools.test_release_candidate_final_attestation_verification_v76_11 -v
+
+5. Generate verification:
+
+python tools\release_candidate_final_attestation_verification_v76_11.py `
+  --repository-root . `
+  --config release\v76_11\config\release_candidate_final_attestation_verification_config_v76_11.json `
+  --output-dir release\v76_11\output
+
+6. Independently verify the generated V76.11 result:
+
+python tools\verify_release_candidate_final_attestation_verification_v76_11.py `
+  --output-dir release\v76_11\output
+
+Do not commit release\v76_11\output.
+Wait for both commands to return PASS before committing source/config files.
+
+Repair rerun
+------------
+Remove-Item release\v76_11\output -Recurse -Force -ErrorAction SilentlyContinue

@@ -1,0 +1,23 @@
+{
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "7a438b825f14fd078b0c0de5fefecb08c6ad3a41",
+  "expected_v76_10_final_attestation_sha256": "72fd18fb350602dcb6e92ffab4d97d6effb5cb209fc49eda536cffaeb7c1529d",
+  "expected_v76_10_gate_count": 36,
+  "expected_v76_10_source_framework_commit_sha": "09db70f69560314c989d074973cbfd0a493848e7",
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "offline_only": true,
+  "order_submission_allowed": false,
+  "require_all_attestation_gates_pass": true,
+  "require_attestation_hash_anchor": true,
+  "require_attestation_self_hash_match": true,
+  "require_attestation_summary_match": true,
+  "require_attested_chain_complete": true,
+  "require_framework_commit_match": true,
+  "require_git_tracked_clean": true,
+  "require_head_matches_origin_main": true,
+  "require_zero_trading_side_effects": true,
+  "v76_10_output_dir": "release/v76_10/output",
+  "verification_scope": "FINAL_ATTESTATION_VERIFICATION"
+}
