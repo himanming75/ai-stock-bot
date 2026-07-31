@@ -1,0 +1,28 @@
+V78.81-V78.85 DEPLOYMENT FOUNDATION
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_80\output\reporting_certificate_v78_80.json
+release\v78_78\output\report_manifest_v78_78.json
+release\v78_78\output\performance_report_v78_78.json
+release\v78_78\output\equity_curve_v78_78.csv
+release\v78_78\output\performance_report_v78_78.md
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_81_TO_V78_85.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- release_id AI-STOCK-BOT-V78-OFFLINE
+- next_phase V78_86_OPERATION_RUNTIME_FOUNDATION
+- V78.81-V78.85 PASS - READY TO COMMIT
+
+This bundle validates and certifies an offline deployment package only.
+It does not perform live deployment, connect to a broker, access the network, use real credentials, or submit actual orders.

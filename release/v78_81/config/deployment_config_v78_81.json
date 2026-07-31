@@ -1,0 +1,23 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "deployment": {
+    "allow_live_deployment": false,
+    "release_id": "AI-STOCK-BOT-V78-OFFLINE",
+    "release_version": "78.85",
+    "required_artifacts": [
+      "release/v78_80/output/reporting_certificate_v78_80.json",
+      "release/v78_78/output/report_manifest_v78_78.json",
+      "release/v78_78/output/performance_report_v78_78.json",
+      "release/v78_78/output/equity_curve_v78_78.csv",
+      "release/v78_78/output/performance_report_v78_78.md"
+    ],
+    "target_environment": "offline"
+  },
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "real_credentials_allowed": false,
+  "stage": "V78.81"
+}
