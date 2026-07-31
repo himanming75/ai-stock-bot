@@ -1,0 +1,20 @@
+V77.16-V77.20 PAPER RUNTIME BUNDLE
+
+1. Extract this ZIP over C:\stock-bot
+2. Keep release\v77_16\output through release\v77_20\output untracked.
+3. Run:
+   powershell -ExecutionPolicy Bypass -File .\RUN_V77_16_TO_V77_20.ps1
+
+Manual equivalent:
+python -m unittest tools.test_paper_runtime_v77_16_to_v77_20 -v
+python tools\run_v77_16_to_v77_20_pipeline.py --repository-root . --clean --cycles 1000
+python tools\verify_v77_16_to_v77_20_pipeline.py --repository-root .
+
+Expected:
+status PASS
+stage_count 5
+passed_stage_count 5
+failed_stage_count 0
+actual_orders_submitted 0
+live_trading_authorized false
+next_phase V77_21_PAPER_RUNTIME_SCHEDULER
