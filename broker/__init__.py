@@ -1,7 +1,4 @@
-"""Broker integration contracts.
-
-V77.1 is intentionally offline-only.  No concrete network broker is exposed.
-"""
+"""Broker integration contracts and offline sandbox adapters."""
 
 from .contracts_v77_1 import (
     AccountSnapshot,
@@ -18,6 +15,11 @@ from .contracts_v77_1 import (
     OrderType,
     TimeInForce,
 )
+from .sandbox_adapter_v77_2 import (
+    SandboxBrokerAdapter,
+    SandboxBrokerError,
+    SandboxEvent,
+)
 
 __all__ = [
     "AccountSnapshot",
@@ -33,4 +35,7 @@ __all__ = [
     "OrderSide",
     "OrderType",
     "TimeInForce",
+    "SandboxBrokerAdapter",
+    "SandboxBrokerError",
+    "SandboxEvent",
 ]

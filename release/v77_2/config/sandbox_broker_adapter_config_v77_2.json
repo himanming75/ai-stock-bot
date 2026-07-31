@@ -1,0 +1,19 @@
+{
+  "actual_order_submission_allowed": false,
+  "adapter_scope": "SANDBOX_BROKER_ADAPTER",
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "4b3062e",
+  "expected_v77_1_broker_contract_sha256": "504a3f5780f908f9aed0eb7ae26c39a0ba7f438dd556d39b0c6ee44d6a41673b",
+  "expected_v77_1_verification_sha256": "c5952a391a070f0e9cef48e593f536359592efb287bc4fa05302cbc3b1248e15",
+  "fills_allowed": false,
+  "live_approval_allowed": false,
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "require_cancel_support": true,
+  "require_duplicate_client_order_id_rejection": true,
+  "require_event_ledger": true,
+  "require_zero_actual_orders": true,
+  "required_adapter_name": "memory_sandbox_broker_v77_2",
+  "required_environment": "offline",
+  "starting_cash": "100000.00"
+}
