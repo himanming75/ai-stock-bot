@@ -1,0 +1,18 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "portfolio_runtime": {
+    "allow_order_creation": false,
+    "allow_order_submission": false,
+    "mark_prices": {
+      "AAPL": 100.0
+    },
+    "starting_cash": 100000.0
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.46"
+}

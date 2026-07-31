@@ -1,0 +1,25 @@
+V78.46-V78.50 PORTFOLIO RUNTIME
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_45\output\signal_risk_bridge_certificate_v78_45.json
+release\v78_43\output\risk_decision_integration_v78_43.json
+release\v78_42\output\signal_normalization_risk_request_v78_42.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_46_TO_V78_50.ps1
+
+Expected:
+- 11 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_51_EXECUTION_COORDINATOR_FOUNDATION
+- V78.46-V78.50 PASS - READY TO COMMIT
+
+This bundle performs offline portfolio accounting only.
+It does not create or submit orders, connect to a broker, use real credentials, or access the network.
