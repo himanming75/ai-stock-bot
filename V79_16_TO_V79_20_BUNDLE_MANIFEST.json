@@ -1,0 +1,112 @@
+{
+  "base_commit": "07fb793",
+  "file_count": 21,
+  "files": [
+    {
+      "bytes": 795,
+      "path": "GIT_COMMIT_V79_16_TO_V79_20.txt",
+      "sha256": "53e9cdb2e3846fe77a8f49c0f88af457356f5d39825ffd1bd6e8d722b5200f9f"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_16_TO_V79_20.ps1",
+      "sha256": "97763b039605d782c38e990407f8b57b0de83f6fa648d0d2a6e0d6848512913b"
+    },
+    {
+      "bytes": 305,
+      "path": "RUN_OPTIONAL_ALPACA_NETWORK_SMOKE_V79_20.ps1",
+      "sha256": "520446e0bf86969604ea4abc6c177b98aed12a92dd343c6206e03847101963e7"
+    },
+    {
+      "bytes": 924,
+      "path": "RUN_V79_16_TO_V79_20.ps1",
+      "sha256": "a5bb1ea28532a2683c0a139ba88ad641fcb9eb424bd51a1579254e5328fa0837"
+    },
+    {
+      "bytes": 939,
+      "path": "V79_16_TO_V79_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "b403a01e6dbd7e6a3b7e2b6338388a89c7d85e02c8835501019fbf6dbb45fe70"
+    },
+    {
+      "bytes": 7389,
+      "path": "V79_16_TO_V79_20_LOCAL_TEST_RESULTS.txt",
+      "sha256": "690cbd5daa3fb867a594dfd9f9f708ad0bd7a3838ffa4a79cfe173067abea464"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_16_TO_V79_20.ps1",
+      "sha256": "3d6a01836f606e43872fa911b3c29efc701de22d4e7b185a56be48854e4b32ec"
+    },
+    {
+      "bytes": 2138,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "066bb360adcd66acf57b5cdec77c14f376a954dba5b13c8533cbcabefd5b144c"
+    },
+    {
+      "bytes": 11124,
+      "path": "alpaca_market_data/network_smoke_v79_16_20.py",
+      "sha256": "aac76ee58b8758e370ab387e81938825d680e8a3f91a76e3c02abb9e25af5fe3"
+    },
+    {
+      "bytes": 337,
+      "path": "release/v79_16/config/network_smoke_config_v79_16.json",
+      "sha256": "84cff1de5ddd86973d560962623b218a5b0e4a83f09dc52b6c3c655b38558262"
+    },
+    {
+      "bytes": 176,
+      "path": "release/v79_16/docs/V79.16_NETWORK_SMOKE_PREFLIGHT.md",
+      "sha256": "3b19f5aea7b72c8f36d12467ad0ff265b6d452c88bc3cf6466fededdd10641e7"
+    },
+    {
+      "bytes": 113,
+      "path": "release/v79_17/docs/V79.17_BOUNDED_HISTORICAL_REQUEST.md",
+      "sha256": "09eafb016fcb00a28196cd1a8771300c14114428769b5ea6806f9941e9c3e725"
+    },
+    {
+      "bytes": 172,
+      "path": "release/v79_18/docs/V79.18_HISTORICAL_NETWORK_EXECUTOR.md",
+      "sha256": "f1ff6e9496e0dd117223adcb9210c18813489e00dbe8aec5d376621f383db7f0"
+    },
+    {
+      "bytes": 158,
+      "path": "release/v79_19/docs/V79.19_NETWORK_RESULT_SANITIZER.md",
+      "sha256": "a4d1b6881df7348fa4bf0f249617c62703d056d9b6b01da096ae5d77ac042699"
+    },
+    {
+      "bytes": 412,
+      "path": "release/v79_20/docs/V79.16_TO_V79.20_RELEASE_NOTES.md",
+      "sha256": "c160ce830c394a71dd2a699a9dbac217c1500512570529a901b9f09514613060"
+    },
+    {
+      "bytes": 170,
+      "path": "release/v79_20/docs/V79.20_NETWORK_SMOKE_CERTIFICATE.md",
+      "sha256": "6baad865984c706487b0acffeeb017692aefed80e82bf579c5c3f21b43b29279"
+    },
+    {
+      "bytes": 956,
+      "path": "tools/install_check_v79_16_to_v79_20.py",
+      "sha256": "889a31e5794987c5fb82450e4b738667fe3a26e4529b2f337744aebaca85d394"
+    },
+    {
+      "bytes": 964,
+      "path": "tools/run_optional_live_network_smoke_v79_20.py",
+      "sha256": "69334902f23726c983d26141afb4430ec27f192224a0a595351a4939e9104bc8"
+    },
+    {
+      "bytes": 1742,
+      "path": "tools/run_v79_16_to_v79_20_pipeline.py",
+      "sha256": "788a2e24d837e9145cdf4fdd3dedc232a70a20aa0c353f8369bb4c66193b0092"
+    },
+    {
+      "bytes": 4145,
+      "path": "tools/test_network_smoke_v79_16_to_v79_20.py",
+      "sha256": "245863555ace589d6cdb0c64a62132ee5778013566df4b1068efdf9a0f3ff2a2"
+    },
+    {
+      "bytes": 2035,
+      "path": "tools/verify_v79_16_to_v79_20_pipeline.py",
+      "sha256": "c9ef124e84c47bbe4722110c88ec5f6f5b9f5b63a0273d59cae9e5b74d6586d7"
+    }
+  ],
+  "stage_range": "V79.16-V79.20"
+}

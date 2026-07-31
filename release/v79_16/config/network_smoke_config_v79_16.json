@@ -1,0 +1,14 @@
+{
+  "stage": "V79.16",
+  "enable_environment_variable": "ALPACA_ENABLE_NETWORK_SMOKE",
+  "required_enable_value": "YES",
+  "symbol": "AAPL",
+  "timeframe": "1Day",
+  "lookback_days": 7,
+  "limit": 1,
+  "feed": "iex",
+  "timeout_seconds": 15,
+  "trading_api_allowed": false,
+  "account_api_allowed": false,
+  "order_api_allowed": false
+}

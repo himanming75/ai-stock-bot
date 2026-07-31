@@ -1,0 +1,35 @@
+V79.16-V79.20 ALPACA HISTORICAL NETWORK SMOKE TEST
+
+BASE:
+- GitHub main commit 07fb793
+- Existing files must not be deleted.
+
+SAFE RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_16_TO_V79_20.ps1
+
+EXPECTED SAFE RUN:
+- INSTALL CHECK PASS
+- 12 tests
+- OK
+- Pipeline PASS
+- network_smoke_mode SKIPPED_SAFE
+- network_requests_executed 0
+- credential_use_count 0
+- credentials_exposed false
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_21_ALPACA_HISTORICAL_DATA_INGESTION
+
+OPTIONAL ONE-REQUEST NETWORK SMOKE:
+Only run after setting:
+$env:ALPACA_ENABLE_NETWORK_SMOKE="YES"
+$env:APCA_API_KEY_ID="<your key>"
+$env:APCA_API_SECRET_KEY="<your secret>"
+
+Then:
+powershell -ExecutionPolicy Bypass -File .\RUN_OPTIONAL_ALPACA_NETWORK_SMOKE_V79_20.ps1
+
+The optional command permits one read-only AAPL historical bars request.
+It does not create TradingClient and cannot submit orders.

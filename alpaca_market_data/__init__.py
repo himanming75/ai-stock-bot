@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.15."""
+"""Safe Alpaca market-data modules through V79.20."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -16,6 +16,12 @@ from .authenticated_gate_v79_11_15 import (
     inspect_credentials, issue_network_approval, build_authenticated_client,
     authorize_historical_request, build_authenticated_gate_certificate,
 )
+from .network_smoke_v79_16_20 import (
+    NetworkSmokeConfig, NetworkSmokePreflight, NetworkSmokeResult,
+    inspect_network_smoke_preflight, build_bounded_stock_bars_request,
+    execute_historical_network_smoke, sanitize_smoke_result,
+    build_network_smoke_certificate,
+)
 
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
@@ -29,4 +35,8 @@ __all__ = [
     "CredentialInspection", "NetworkApproval", "AuthenticatedClientPolicy",
     "inspect_credentials", "issue_network_approval", "build_authenticated_client",
     "authorize_historical_request", "build_authenticated_gate_certificate",
+    "NetworkSmokeConfig", "NetworkSmokePreflight", "NetworkSmokeResult",
+    "inspect_network_smoke_preflight", "build_bounded_stock_bars_request",
+    "execute_historical_network_smoke", "sanitize_smoke_result",
+    "build_network_smoke_certificate",
 ]
