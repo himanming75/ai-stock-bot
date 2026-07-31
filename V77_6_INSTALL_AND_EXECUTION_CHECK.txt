@@ -1,0 +1,38 @@
+V77.6 INSTALL AND EXECUTION CHECK
+
+1. Extract V77_6_changed_files.zip into C:\stock-bot.
+   Overwrite broker\__init__.py.
+
+2. Confirm repository:
+git checkout main
+git pull origin main
+git rev-parse --short=7 HEAD
+
+Expected:
+01e6612
+
+3. Confirm V77.5 files:
+Test-Path release\v77_5\output\broker_state_checkpoint_verification_v77_5.json
+Test-Path release\v77_5\output\sample_broker_state_checkpoint_v77_5.json
+
+Expected:
+True
+True
+
+4. Run tests:
+python -m unittest tools.test_restart_recovery_replay_v77_6 -v
+
+5. Remove previous output:
+Remove-Item release\v77_6\output -Recurse -Force -ErrorAction SilentlyContinue
+
+6. Generate verification:
+python tools\restart_recovery_replay_v77_6.py `
+  --repository-root . `
+  --config release\v77_6\config\restart_recovery_replay_config_v77_6.json `
+  --output-dir release\v77_6\output
+
+7. Independently verify:
+python tools\verify_restart_recovery_replay_v77_6.py `
+  --output-dir release\v77_6\output
+
+8. Do not add release\v77_6\output to Git.

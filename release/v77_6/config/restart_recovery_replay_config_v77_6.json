@@ -1,0 +1,21 @@
+{
+  "actual_order_submission_allowed": false,
+  "broker_connection_allowed": false,
+  "expected_framework_commit_sha": "01e6612",
+  "expected_v77_5_checkpoint_sha256": "d9a5804f52f6b8b5b66fa190ddea7af91e16b14187c9989d386b928bb046d3d4",
+  "expected_v77_5_sample_state_sha256": "03baec3f972138369629a5038afb79c5018e4095f5602cc24bcbadc71ef044f0",
+  "expected_v77_5_verification_sha256": "a41216d0f66662e3f16edce669159d9e98c81bd97aa25fbafe18cf1e21823e6d",
+  "live_trading_allowed": false,
+  "network_allowed": false,
+  "recovery_scope": "RESTART_RECOVERY_REPLAY",
+  "require_cash_match": true,
+  "require_checkpoint_integrity": true,
+  "require_events_match": true,
+  "require_fills_match": true,
+  "require_id_continuity": true,
+  "require_orders_match": true,
+  "require_positions_match": true,
+  "require_reconciliation_after_restore": true,
+  "require_sequence_continuity": true,
+  "require_state_sha256_match": true
+}

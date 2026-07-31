@@ -1,3 +1,7 @@
+from .restart_recovery_replay_v77_6 import (
+    RecoveryError,
+    RestartRecoveryReplay,
+)
 from .broker_state_checkpoint_v77_5 import (
     BrokerStateCheckpoint,
     BrokerStateCheckpointManager,
@@ -60,4 +64,6 @@ __all__ = [
     "BrokerStateCheckpoint",
     "BrokerStateCheckpointManager",
     "CheckpointError",
+    "RecoveryError",
+    "RestartRecoveryReplay",
 ]
