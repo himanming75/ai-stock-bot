@@ -1,0 +1,24 @@
+V78.56-V78.60 PAPER BROKER INTEGRATION
+
+Install:
+Extract this bundle over C:\stock-bot.
+
+Prerequisites:
+release\v78_55\output\execution_coordinator_certificate_v78_55.json
+release\v78_52\output\approved_decision_to_paper_order_intent_v78_52.json
+
+Run:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V78_56_TO_V78_60.ps1
+
+Expected:
+- 10 tests OK
+- status PASS
+- passed_stage_count 5
+- failed_stage_count 0
+- champion_candidate_id 802493bbc77a
+- next_phase V78_61_FILL_PORTFOLIO_BRIDGE_FOUNDATION
+- V78.56-V78.60 PASS - READY TO COMMIT
+
+This bundle performs offline paper-order submission and fill simulation only.
+It does not connect to a real broker, use real credentials, access the network, or submit actual orders.

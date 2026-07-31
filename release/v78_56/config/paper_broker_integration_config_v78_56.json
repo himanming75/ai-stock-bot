@@ -1,0 +1,16 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_connected": false,
+  "environment": "offline",
+  "live_deployment_approved": false,
+  "live_trading_authorized": false,
+  "network_allowed": false,
+  "paper_broker_integration": {
+    "allow_real_broker": false,
+    "commission_per_order": 0.25,
+    "max_fill_quantity": 4,
+    "slippage_bps": 5.0
+  },
+  "real_credentials_allowed": false,
+  "stage": "V78.56"
+}
