@@ -1,0 +1,33 @@
+V79.31-V79.35 HISTORICAL GAP FILL EXECUTION
+
+BASE:
+- GitHub main commit 84d002b
+- Existing project structure must not be changed.
+- Run V79.26-V79.30 first if release/v79_30/output is absent.
+
+INSTALL:
+1. Extract this ZIP into C:\stock-bot
+2. Allow overwrite only for alpaca_market_data\__init__.py
+3. No existing project files are deleted.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_31_TO_V79_35.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 13 tests
+- OK
+- Pipeline PASS
+- gap_task_count 2
+- completed_task_count 2
+- expected_gap_bar_count 2
+- fetched_gap_bar_count 2
+- remaining_gap_task_count 0
+- filled_new_row_count 2
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- VERIFY PASS
+- next_phase V79_36_HISTORICAL_DATA_QUALITY_RECONCILIATION

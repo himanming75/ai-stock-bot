@@ -1,0 +1,107 @@
+{
+  "base_commit": "84d002b",
+  "file_count": 21,
+  "files": [
+    {
+      "bytes": 652,
+      "path": "GIT_COMMIT_V79_31_TO_V79_35.txt",
+      "sha256": "126b6d29ed70992ad43711ace453a1d6d354e35bc86aadf44b081f941114c470"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_31_TO_V79_35.ps1",
+      "sha256": "38647bf261cfb3a3dec793ff408a8724698f688c252a691e9179d86d85ec7269"
+    },
+    {
+      "bytes": 914,
+      "path": "RUN_V79_31_TO_V79_35.ps1",
+      "sha256": "e2ee13d99f7a0e72caf84b1c7a17b71d5097a6bd7a113a409cf0f7f534bb4223"
+    },
+    {
+      "bytes": 829,
+      "path": "V79_31_TO_V79_35_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "d734dfde99639f47c0de7eed4b0e205dfe218300ec84d868e6990251e41694aa"
+    },
+    {
+      "bytes": 2740,
+      "path": "V79_31_TO_V79_35_LOCAL_TEST_RESULTS.txt",
+      "sha256": "b47cb4961c242e244f982bc2722ddd8330b7983ff904634bf1343770b8ff0d60"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_31_TO_V79_35.ps1",
+      "sha256": "502bcb103511db854de9435b0892f133d58096a6a1faaa3aee26a9704e4f5c60"
+    },
+    {
+      "bytes": 3891,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "8837b8a4fa3885acb5fdff0c985d48b32299154eca89d6076f41b36f1a0eddbd"
+    },
+    {
+      "bytes": 16235,
+      "path": "alpaca_market_data/gap_fill_v79_31_35.py",
+      "sha256": "3ffef80eb11dd27ca0c61f4b9df79aa9cae4f7e65dc9bea0eb16ce54e102590f"
+    },
+    {
+      "bytes": 370,
+      "path": "release/v79_31/config/gap_fill_config_v79_31.json",
+      "sha256": "bf8dee7181b03327b2ee7ffd54e2c8d3aca6bbc42f4b44d6db65b6ead26cfefc"
+    },
+    {
+      "bytes": 171,
+      "path": "release/v79_31/docs/V79.31_GAP_TASK_LOADING.md",
+      "sha256": "5732aff4473180b1e41e0e191d7fd3a1e4ce27e23a41b6cb980bd19bac4ed6ff"
+    },
+    {
+      "bytes": 173,
+      "path": "release/v79_32/docs/V79.32_OFFLINE_GAP_FETCH.md",
+      "sha256": "a51d580e6792c2af7f000e32c7d5ab5752e01bbc90b0d28a3d08a4eaf55e20dd"
+    },
+    {
+      "bytes": 691,
+      "path": "release/v79_32/fixtures/gap_fill_bars_v79_32.json",
+      "sha256": "f37108408d82220f9f4c87d737cebe83639732325b9cc1e8c503183e48c7b757"
+    },
+    {
+      "bytes": 150,
+      "path": "release/v79_33/docs/V79.33_GAP_MERGE.md",
+      "sha256": "989805a3f26061c0e3027376c549f0dd330b92618d18a6617841e492f2a01fcc"
+    },
+    {
+      "bytes": 166,
+      "path": "release/v79_34/docs/V79.34_ATOMIC_GAP_STORAGE.md",
+      "sha256": "7fd99490050c5b8b4f2a2c84ce7784db6c17b0de355878dbb5c1805573424c4d"
+    },
+    {
+      "bytes": 405,
+      "path": "release/v79_35/docs/V79.31_TO_V79.35_RELEASE_NOTES.md",
+      "sha256": "a116fb4457de7e52729b2b95b65e25a94b4367a7ff47d3aa35d168719b8729b1"
+    },
+    {
+      "bytes": 188,
+      "path": "release/v79_35/docs/V79.35_GAP_FILL_CERTIFICATE.md",
+      "sha256": "f38506dd34290a881c164895afdd647d62002e61e85d3a9ee224add3e1b96a0e"
+    },
+    {
+      "bytes": 769,
+      "path": "tools/install_check_v79_31_to_v79_35.py",
+      "sha256": "10289a0bb948c31b7f15fed4b39c26bbcc3f9408e00df827f0a105e7f722734c"
+    },
+    {
+      "bytes": 2132,
+      "path": "tools/run_v79_31_to_v79_35_pipeline.py",
+      "sha256": "3a034f12ab439fdaf5b881318509eed797c2390527eeceef3ab87b3d547a3c70"
+    },
+    {
+      "bytes": 6437,
+      "path": "tools/test_gap_fill_v79_31_to_v79_35.py",
+      "sha256": "5a1698cf3aa5667321e4212598d511f3b8f7afbf6384907e5b90609e38cd42dd"
+    },
+    {
+      "bytes": 2447,
+      "path": "tools/verify_v79_31_to_v79_35_pipeline.py",
+      "sha256": "f1ea12a12980199a3c19170819dff4c506f8684e673949bb5f8a20e4b34f36ac"
+    }
+  ],
+  "stage_range": "V79.31-V79.35"
+}

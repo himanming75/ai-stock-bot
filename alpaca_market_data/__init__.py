@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.30."""
+"""Safe Alpaca market-data modules through V79.35."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -34,6 +34,12 @@ from .incremental_sync_v79_26_30 import (
     detect_missing_bars, build_gap_fill_queue, write_incremental_dataset,
     run_incremental_sync, build_incremental_sync_certificate,
 )
+from .gap_fill_v79_31_35 import (
+    GapFillConfig, GapFillExecution, load_jsonl_bars, load_gap_tasks,
+    load_fixture_bars, select_fixture_rows_for_task, execute_gap_fill_tasks,
+    merge_gap_fill_rows, validate_tasks_completed, write_gap_fill_outputs,
+    verify_gap_fill_manifest, run_gap_fill, build_gap_fill_certificate,
+)
 
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
@@ -59,4 +65,8 @@ __all__ = [
     "load_existing_dataset", "build_checkpoints", "merge_incremental_rows",
     "detect_missing_bars", "build_gap_fill_queue", "write_incremental_dataset",
     "run_incremental_sync", "build_incremental_sync_certificate",
+    "GapFillConfig", "GapFillExecution", "load_jsonl_bars", "load_gap_tasks",
+    "load_fixture_bars", "select_fixture_rows_for_task", "execute_gap_fill_tasks",
+    "merge_gap_fill_rows", "validate_tasks_completed", "write_gap_fill_outputs",
+    "verify_gap_fill_manifest", "run_gap_fill", "build_gap_fill_certificate",
 ]

@@ -1,0 +1,28 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_no_order_submission_or_credentials (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_no_order_submission_or_credentials) ... ok
+test_v79_31_config_safety (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_31_config_safety) ... ok
+test_v79_31_loads_pending_queue (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_31_loads_pending_queue) ... ok
+test_v79_31_rejects_completed_task (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_31_rejects_completed_task) ... ok
+test_v79_32_executes_fixture_fill (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_32_executes_fixture_fill) ... ok
+test_v79_32_fixture_loader_rejects_network_source (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_32_fixture_loader_rejects_network_source) ... ok
+test_v79_32_rejects_missing_fixture_bar (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_32_rejects_missing_fixture_bar) ... ok
+test_v79_33_merges_new_gap_rows (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_33_merges_new_gap_rows) ... ok
+test_v79_33_reexecution_is_idempotent (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_33_reexecution_is_idempotent) ... ok
+test_v79_33_rejects_conflict (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_33_rejects_conflict) ... ok
+test_v79_34_detects_tamper (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_34_detects_tamper) ... ok
+test_v79_34_writes_and_verifies_manifest (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_34_writes_and_verifies_manifest) ... ok
+test_v79_35_certificate (tools.test_gap_fill_v79_31_to_v79_35.Tests.test_v79_35_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.005s
+
+OK

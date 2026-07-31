@@ -1,0 +1,33 @@
+{
+  "stage": "V79.32",
+  "source": "OFFLINE_FIXTURE",
+  "network_requests_executed": 0,
+  "rows": [
+    {
+      "symbol": "AAPL",
+      "timeframe": "1Min",
+      "timestamp": "2026-01-05T14:32:00Z",
+      "open": 251.2,
+      "high": 251.6,
+      "low": 251.0,
+      "close": 251.4,
+      "volume": 83000,
+      "trade_count": 2850,
+      "vwap": 251.3,
+      "source": "offline_fixture"
+    },
+    {
+      "symbol": "SPY",
+      "timeframe": "1Min",
+      "timestamp": "2026-01-05T14:32:00Z",
+      "open": 610.7,
+      "high": 611.2,
+      "low": 610.5,
+      "close": 611.0,
+      "volume": 245000,
+      "trade_count": 7100,
+      "vwap": 610.9,
+      "source": "offline_fixture"
+    }
+  ]
+}
