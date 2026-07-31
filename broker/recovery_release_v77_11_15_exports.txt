@@ -1,0 +1,10 @@
+Add these imports to broker/__init__.py only if your project requires package-level exports:
+
+from .recovery_release_pipeline_v77_11_15 import (
+    RecoveryReleaseError,
+    build_manifest,
+    build_bundle,
+    verify_bundle,
+    validate_installation,
+    issue_release_certificate,
+)
