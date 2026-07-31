@@ -21,3 +21,7 @@ data/*.csv
 .DS_Store
 Thumbs.db
 dist/
+
+# V76.4B local backups and deterministic runtime cache
+*.v76_4b_backup
+release/v76_4/runtime_cache/

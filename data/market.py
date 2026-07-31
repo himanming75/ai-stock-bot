@@ -32,6 +32,7 @@ def get_history(
         interval=interval,
         auto_adjust=True,
         progress=False,
+        threads=False,
     )
 
     if data is None or data.empty:
@@ -153,6 +154,9 @@ def get_history(
 
     data.index = pd.to_datetime(data.index)
     data.index.name = "Date"
+
+    data = data.sort_index()
+    data = data[~data.index.duplicated(keep="last")]
 
     return data
 

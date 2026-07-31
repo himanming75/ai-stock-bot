@@ -1,4 +1,5 @@
 import math
+import random
 from dataclasses import asdict, dataclass
 
 import numpy as np
@@ -11,6 +12,9 @@ from sklearn.metrics import (
     recall_score,
 )
 from sklearn.model_selection import TimeSeriesSplit
+
+MODEL_RANDOM_SEED = 42
+MODEL_N_JOBS = 1
 
 
 FEATURE_COLUMNS = [
@@ -567,8 +571,8 @@ def create_model() -> RandomForestClassifier:
         min_samples_leaf=7,
         max_features="sqrt",
         class_weight="balanced_subsample",
-        random_state=42,
-        n_jobs=-1,
+        random_state=MODEL_RANDOM_SEED,
+        n_jobs=MODEL_N_JOBS,
     )
 
 
@@ -813,6 +817,9 @@ def predict_stock_direction(
     """
     최신 데이터를 이용하여 향후 상승 확률을 계산합니다.
     """
+
+    random.seed(MODEL_RANDOM_SEED)
+    np.random.seed(MODEL_RANDOM_SEED)
 
     symbol = (
         str(symbol)

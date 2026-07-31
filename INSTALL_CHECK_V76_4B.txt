@@ -1,0 +1,6 @@
+V76.4B INSTALL CHECK
+
+Test-Path README_V76_4B.txt
+Test-Path INSTALL_CHECK_V76_4B.txt
+Test-Path tools\apply_deterministic_ml_repair_v76_4b.py
+Test-Path tools\test_apply_deterministic_ml_repair_v76_4b.py
