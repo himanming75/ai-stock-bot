@@ -1,0 +1,1 @@
+python tools/install_check_v95_01_to_v96_00_fast_track.py
