@@ -1,0 +1,20 @@
+V79.56-V79.60 HISTORICAL DATASET BACKUP/RESTORE
+
+BASE:
+- GitHub main commit 9436eca
+- release/v79_55/output must be present.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_56_TO_V79_60.ps1
+
+EXPECTED:
+- INSTALL CHECK PASS
+- 13 tests, OK
+- row_count 11
+- backup_created true
+- restore_created true
+- source_preserved true
+- backup_preserved true
+- VERIFY PASS
+- next_phase V79_61_HISTORICAL_FEATURE_STORE

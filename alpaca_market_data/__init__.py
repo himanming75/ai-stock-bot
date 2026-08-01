@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.55."""
+"""Safe Alpaca market-data modules through V79.60."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -68,6 +68,14 @@ from .dataset_recovery_v79_51_55 import (
     validate_recovery_retention_certificate,
 )
 
+from .dataset_backup_restore_v79_56_60 import (
+    BackupRestoreConfig, BackupPlan, validate_recovery_certificate,
+    build_backup_plan, create_backup_archive, restore_backup,
+    write_backup_restore_outputs, verify_backup_restore_manifest,
+    run_backup_restore, build_backup_restore_certificate,
+    sha256_backup_json, validate_backup_recovery_certificate,
+)
+
 __all__ = [
     "AlpacaInstallStatus", "MarketDataSafetyConfig", "BarRequest", "MarketBar",
     "OfflineAlpacaMarketDataAdapter", "inspect_alpaca_installation",
@@ -115,4 +123,9 @@ __all__ = [
     "verify_recovery_manifest", "run_dataset_recovery", "build_recovery_certificate",
     "sha256_recovery_json", "load_recovery_registry",
     "validate_recovery_retention_certificate",
+    "BackupRestoreConfig", "BackupPlan", "validate_recovery_certificate",
+    "build_backup_plan", "create_backup_archive", "restore_backup",
+    "write_backup_restore_outputs", "verify_backup_restore_manifest",
+    "run_backup_restore", "build_backup_restore_certificate",
+    "sha256_backup_json", "validate_backup_recovery_certificate",
 ]

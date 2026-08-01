@@ -1,0 +1,15 @@
+{
+  "stage": "V79.56",
+  "dataset_name": "alpaca_historical_bars",
+  "backup_kind": "FULL",
+  "compression": "DEFLATED",
+  "require_recovery_certificate": true,
+  "preserve_source": true,
+  "overwrite_existing_backup": false,
+  "overwrite_existing_restore": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
