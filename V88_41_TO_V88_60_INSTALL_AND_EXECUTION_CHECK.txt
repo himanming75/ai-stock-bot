@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V88_41_TO_V88_60.ps1
+EXPECTED: schema, freshness, missing, duplicate, ordering, clock, symbol, provider, fallback, negative scenarios, audit PASS; market data network false; network 0; orders 0.

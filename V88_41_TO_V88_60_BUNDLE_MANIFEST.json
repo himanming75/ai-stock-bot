@@ -1,0 +1,163 @@
+{
+  "base_commit": "778c033",
+  "stage_range": "V88.41-V88.60",
+  "functional_bundle": "PAPER_MARKET_DATA_OPERATIONS_FOUNDATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V88_41_TO_V88_60.txt",
+      "bytes": 846,
+      "sha256": "e461ab4fb21ffdbf815ec923fd17a7342092872c754d8c6e212724033451bfae"
+    },
+    {
+      "path": "INSTALL_CHECK_V88_41_TO_V88_60.ps1",
+      "bytes": 47,
+      "sha256": "d948e3daf6710c257ffc6289765e3cbec85b512dea42ed3703b0edd900a73db8"
+    },
+    {
+      "path": "RUN_V88_41_TO_V88_60.ps1",
+      "bytes": 813,
+      "sha256": "ab9c8f395ec99edd1606622704525fc91467f4bbc389dc113c13e54fee91a776"
+    },
+    {
+      "path": "V88_41_TO_V88_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 247,
+      "sha256": "1b5004e720e9c7820e7f99bbbd6d3a0c6c8fecec83b74870b3507df962e17e55"
+    },
+    {
+      "path": "VERIFY_V88_41_TO_V88_60.ps1",
+      "bytes": 69,
+      "sha256": "964486d951d808c9ba246186273382bc857ce552a3ba1e0d5523ceffe9a529b9"
+    },
+    {
+      "path": "alpaca_market_data/market_data_operations_v88_41_60.py",
+      "bytes": 19897,
+      "sha256": "3af2348c395d9973395707dbab56892f2ed14d881eca0345b7a3cc920aa43730"
+    },
+    {
+      "path": "release/v88_41/docs/V88.41_DATA_POLICY.md",
+      "bytes": 168,
+      "sha256": "6fd54b5e9db9e85519b5bf3831da951af352948973325ccca914d190c3c1440f"
+    },
+    {
+      "path": "release/v88_42/docs/V88.42_BAR_SCHEMA_VALIDATION.md",
+      "bytes": 178,
+      "sha256": "881bf59a6f423b8025a1b4e79a407c9c22d637183aa047d005cdd43edff587fd"
+    },
+    {
+      "path": "release/v88_43/docs/V88.43_BAR_FRESHNESS.md",
+      "bytes": 170,
+      "sha256": "82c75d3e20c2a86e564113797991f59fdd2527159b266897872cbfefd9a3dfd9"
+    },
+    {
+      "path": "release/v88_44/docs/V88.44_MISSING_BAR_DETECTION.md",
+      "bytes": 178,
+      "sha256": "4b1f6bc2af4264f0188e0627ff1a279fec001170cd227600118b0cb591a45c72"
+    },
+    {
+      "path": "release/v88_45/docs/V88.45_DUPLICATE_BAR_DETECTION.md",
+      "bytes": 180,
+      "sha256": "f6b8fed0cf34bb69558ece899be28a406e40cd30af9c35f4bc65a79d88491a46"
+    },
+    {
+      "path": "release/v88_46/docs/V88.46_OUT_OF_ORDER_DETECTION.md",
+      "bytes": 179,
+      "sha256": "6c0d9ae69ae0dc5654ea9c292356facd6b717f9d69d9f8e0551ab9b9c81bc2de"
+    },
+    {
+      "path": "release/v88_47/docs/V88.47_MARKET_CLOCK_CONSISTENCY.md",
+      "bytes": 181,
+      "sha256": "5b0673070e32ecfd9c53a9edab160d478b63492ea95317070b7d8a692f9667fe"
+    },
+    {
+      "path": "release/v88_48/docs/V88.48_SYMBOL_HEALTH.md",
+      "bytes": 170,
+      "sha256": "aa01b358709283eac6b60a92a782e1f2b63b4d01efd537ef4268b3f045386962"
+    },
+    {
+      "path": "release/v88_49/docs/V88.49_PROVIDER_HEALTH.md",
+      "bytes": 172,
+      "sha256": "85036d37590589fb6b298276f1461d7b49fcc565bba76d41bac2196b9224d40b"
+    },
+    {
+      "path": "release/v88_50/docs/V88.50_OFFLINE_FALLBACK_POLICY.md",
+      "bytes": 180,
+      "sha256": "480db971a93e4cb8a4e966f55061bea66fd7146aa7ca3824484080be9b4437e1"
+    },
+    {
+      "path": "release/v88_51/docs/V88.51_DATA_GAP_CLASSIFICATION.md",
+      "bytes": 180,
+      "sha256": "f93b500ce715a5c5f40a0a59b30abeab1fb7421693d855b76df66bc2d6da748a"
+    },
+    {
+      "path": "release/v88_52/docs/V88.52_DATA_INCIDENT.md",
+      "bytes": 170,
+      "sha256": "0bdeaf2b58b1c58694cc8b52c6e8b054c949e7f4ad9425f590d40e4e129abfa0"
+    },
+    {
+      "path": "release/v88_53/docs/V88.53_DATA_RECOVERY_PLAN.md",
+      "bytes": 175,
+      "sha256": "9b291ebf67c472923d5a6b0aa21e66628dc75cf6fd78f187907fd99d6f8e667d"
+    },
+    {
+      "path": "release/v88_54/docs/V88.54_MARKET_DATA_SNAPSHOT.md",
+      "bytes": 177,
+      "sha256": "7d9eb90af3bdeec6083c175eaa74f5a3b1c47f910d26d8184ed450b4a226e0a0"
+    },
+    {
+      "path": "release/v88_55/docs/V88.55_POSITIVE_SCENARIO.md",
+      "bytes": 174,
+      "sha256": "e40b91326a8c0d0805ae53d74149b928644bc2ce42b4148173da001ab18f3cbe"
+    },
+    {
+      "path": "release/v88_56/docs/V88.56_NEGATIVE_SCENARIOS.md",
+      "bytes": 175,
+      "sha256": "0d0a61a6513274ed2b19ee9b26430664fb811955ec56f014bf43caf8838b2158"
+    },
+    {
+      "path": "release/v88_57/docs/V88.57_DATA_QUALITY_AUDIT.md",
+      "bytes": 175,
+      "sha256": "183100ca2841e8b0d8117ec4d1dc504e74bca732f78f67e63fd0114beee1df73"
+    },
+    {
+      "path": "release/v88_58/docs/V88.58_DATA_OPERATIONS_LEDGER.md",
+      "bytes": 179,
+      "sha256": "f7832e86ae180ca43894c9eb908a7b76169b06c3425bfe1461d7dc18c44f4c4d"
+    },
+    {
+      "path": "release/v88_59/docs/V88.59_DATA_OPERATIONS_MANIFEST.md",
+      "bytes": 181,
+      "sha256": "3e7469085ce9f5401f975bca96528af1e2513490422a1be19d76307ee4cedfa7"
+    },
+    {
+      "path": "release/v88_60/docs/V88.41_TO_V88.60_RELEASE_NOTES.md",
+      "bytes": 414,
+      "sha256": "f05a8b105ac2c5ce48a985fa7bab11b7f2194bbb227d8a936dbb86e8cb6f1468"
+    },
+    {
+      "path": "release/v88_60/docs/V88.60_DATA_OPERATIONS_COMPLETION.md",
+      "bytes": 183,
+      "sha256": "097184e0c03163cbaa45ca2c6e0fb6e3bcf68bc6a1f70a29004366795d8af160"
+    },
+    {
+      "path": "tools/install_check_v88_41_to_v88_60.py",
+      "bytes": 439,
+      "sha256": "648316bf4a29be46b852e842d5b3caf9b75c5ec11219f98fc3f087816a92b086"
+    },
+    {
+      "path": "tools/run_v88_41_to_v88_60_pipeline.py",
+      "bytes": 1233,
+      "sha256": "3a969c7823d9bcb8b2d091bcb75b8984169cd7e8f81d157d24f0b7eca7728cf8"
+    },
+    {
+      "path": "tools/test_market_data_operations_v88_41_to_v88_60.py",
+      "bytes": 2961,
+      "sha256": "dd968c080c3a59b92d35e263597fb898d619aac4513719f8b90fd4a5d29403f8"
+    },
+    {
+      "path": "tools/verify_v88_41_to_v88_60_pipeline.py",
+      "bytes": 1873,
+      "sha256": "e456138bf391ee11ac14014afa2c5e709fc9ac9975deacf5c567091eb9422990"
+    }
+  ]
+}
