@@ -1,0 +1,12 @@
+{
+  "mode": "PAPER_ORDER_SUBMISSION_SIMULATION_OFFLINE",
+  "environment": "PAPER",
+  "retry_limit": 3,
+  "partial_fill_ratio": 0.5,
+  "ack_latency_ms": 25,
+  "allow_network": false,
+  "allow_post": false,
+  "allow_cancel": false,
+  "allow_replace": false,
+  "actual_orders_submitted": 0
+}

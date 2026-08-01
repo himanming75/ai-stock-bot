@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V85_61_TO_V85_80.ps1
+EXPECTED: 28 tests OK, payload/client-order-id/serializer/queue/ACK, accepted-partial-rejected responses, retry, duplicate/replay, deterministic replay, network 0, orders 0.
