@@ -1,0 +1,71 @@
+{
+  "base_commit": "6bff53f",
+  "stage_range": "V90.61-V90.80",
+  "functional_bundle": "ACTUAL_PAPER_RELEASE_CANDIDATE",
+  "release_candidate": "ACTUAL_PAPER_READ_ONLY_OPERATIONS_RC1",
+  "write_capability_count": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V90_61_TO_V90_80.txt",
+      "bytes": 519,
+      "sha256": "3663a12e5c71b2c9b0441892ac4b5ff407229aa688d7a49f6ba646ab5f8ae065"
+    },
+    {
+      "path": "INSTALL_CHECK_V90_61_TO_V90_80.ps1",
+      "bytes": 47,
+      "sha256": "a3ed05f2038e7cd9dc1cc8bc4f4833ccaa9228b068775fad2158c174f414c42e"
+    },
+    {
+      "path": "RUN_V90_61_TO_V90_80.ps1",
+      "bytes": 821,
+      "sha256": "e3494f8839f717e2442241c50dcd9c8f4780793668dac25395db89ecf7f61918"
+    },
+    {
+      "path": "VERIFY_V90_61_TO_V90_80.ps1",
+      "bytes": 69,
+      "sha256": "c91b0e0f7f4d9450bdba68c18ca1248cdf03a76c7dc714c3f1593c1a67500fe6"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_release_candidate_v90_61_80.py",
+      "bytes": 17079,
+      "sha256": "4b041850e891a290710dfdee4d0cd9b8703417723618229dcd59e04e9bf28abb"
+    },
+    {
+      "path": "release/v90_80/docs/DESIGN.md",
+      "bytes": 357,
+      "sha256": "acd8a5daf49bc5f29f56c1943328ad4a675246b454afbedc0d916616291d8c62"
+    },
+    {
+      "path": "release/v90_80/docs/RELEASE_NOTES.md",
+      "bytes": 283,
+      "sha256": "063a587215c9fd1709d1709dec814ddea9bb4f9d0ef7c88f0b3d798a14f7ae1b"
+    },
+    {
+      "path": "release/v90_80/docs/TEST_RESULTS.md",
+      "bytes": 224,
+      "sha256": "f9ce21d260818ec8a95552dc77dec072375ec16dbb3a1a99bab9409c1baa4389"
+    },
+    {
+      "path": "tools/install_check_v90_61_to_v90_80.py",
+      "bytes": 483,
+      "sha256": "187e802cb7eeda45f35d5aa891764d125ce40391c4b1fde2c3a8613a28105258"
+    },
+    {
+      "path": "tools/run_v90_61_to_v90_80_pipeline.py",
+      "bytes": 1602,
+      "sha256": "d7dafd014dc48d2e459354efa117daabbdd4196ed867b949b2167517ea667737"
+    },
+    {
+      "path": "tools/test_actual_paper_release_candidate_v90_61_to_v90_80.py",
+      "bytes": 3895,
+      "sha256": "b938685f48155d94b9acd8de2f9daf8aea6d1a3f6df1b4fab64814b2dc4c7188"
+    },
+    {
+      "path": "tools/verify_v90_61_to_v90_80_pipeline.py",
+      "bytes": 1783,
+      "sha256": "6950c2e3b973b50add4be901ed98d6144656273fb5ffc3c3e059a70e377a05b0"
+    }
+  ]
+}
