@@ -1,0 +1,158 @@
+{
+  "base_commit": "b80b649",
+  "stage_range": "V86.01-V86.20",
+  "functional_bundle": "PAPER_BROKER_SINGLE_ORDER_NETWORK_VALIDATION",
+  "file_count": 31,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V86_01_TO_V86_20.txt",
+      "bytes": 871,
+      "sha256": "4d395964ed2ca718dcb45faa69458a81865092c85b0b4458092e07bfebd522b0"
+    },
+    {
+      "path": "INSTALL_CHECK_V86_01_TO_V86_20.ps1",
+      "bytes": 47,
+      "sha256": "9ab8f19d09d1d2f4b21b499430a7570f03c13a5d57235991632e6722f253076d"
+    },
+    {
+      "path": "RUN_V86_01_TO_V86_20.ps1",
+      "bytes": 470,
+      "sha256": "54333089dd6de852ca6fcd867c2f7794659f2d73f1b4f2e6bdae6972e80d5ab8"
+    },
+    {
+      "path": "RUN_V86_01_TO_V86_20_ACTUAL_SINGLE_PAPER_ORDER.ps1",
+      "bytes": 634,
+      "sha256": "8accf0e11fd0d84407c7f99caeeb0badd0f8c6bad7e135c12c64a1368c67db57"
+    },
+    {
+      "path": "VERIFY_V86_01_TO_V86_20.ps1",
+      "bytes": 69,
+      "sha256": "255dbe8855be295eabbbac3921b5370d096ba7a46f556f8efda517cdfdf26820"
+    },
+    {
+      "path": "alpaca_market_data/single_order_network_validation_v86_01_20.py",
+      "bytes": 15782,
+      "sha256": "4091bf7c1e930a15796da775b516377bdf7d85f43b813b95169c10e5637ce0c0"
+    },
+    {
+      "path": "release/v86_01/docs/V86.01_STAGE.md",
+      "bytes": 140,
+      "sha256": "4be3f4d3d3b045b58ce91271ebc1a0e97ed77dec35567dfa2dc725598fab4ad1"
+    },
+    {
+      "path": "release/v86_02/docs/V86.02_STAGE.md",
+      "bytes": 140,
+      "sha256": "05317d95be74852f2b497ad953af121d18906e480a8b8763307db27053b6f03a"
+    },
+    {
+      "path": "release/v86_03/docs/V86.03_STAGE.md",
+      "bytes": 140,
+      "sha256": "015bc593b04dfec11f274db203f6f390f30c4d9431453d6c23e3f5c6176664bb"
+    },
+    {
+      "path": "release/v86_04/docs/V86.04_STAGE.md",
+      "bytes": 140,
+      "sha256": "3f05ba6b01634717fcf227cc93e668976538d7821055736d8460a6b28147851c"
+    },
+    {
+      "path": "release/v86_05/docs/V86.05_STAGE.md",
+      "bytes": 140,
+      "sha256": "5f392edcca6545824588d54e03362a7c79dd5b609f461e59d36e678ae226c5bb"
+    },
+    {
+      "path": "release/v86_06/docs/V86.06_STAGE.md",
+      "bytes": 140,
+      "sha256": "91d803351ac55edde673e4b315b577863894a404dce5cede83f187330cb38647"
+    },
+    {
+      "path": "release/v86_07/docs/V86.07_STAGE.md",
+      "bytes": 140,
+      "sha256": "d9f2a9efb24d703975536e763231ba81a636c938dd135afc1348f4b9570f0f0a"
+    },
+    {
+      "path": "release/v86_08/docs/V86.08_STAGE.md",
+      "bytes": 140,
+      "sha256": "881cfd969a077c1df06537ca9c7fe9a8334bface886c6afe668f155f7fd71b9a"
+    },
+    {
+      "path": "release/v86_09/docs/V86.09_STAGE.md",
+      "bytes": 140,
+      "sha256": "9f80e400f97f70e0e1db11be2b53d881e50f4132f0a1ba47bb4a17926a7cc66d"
+    },
+    {
+      "path": "release/v86_10/docs/V86.10_STAGE.md",
+      "bytes": 140,
+      "sha256": "4c61f92557b4c1448283a1c331458eeb75da6248d88498d9de02e3c47cd92321"
+    },
+    {
+      "path": "release/v86_11/docs/V86.11_STAGE.md",
+      "bytes": 140,
+      "sha256": "f78a1a63f4809cd6c8dfb3b044318ca319eb8e8c50feb98eaf984baca695b0c5"
+    },
+    {
+      "path": "release/v86_12/docs/V86.12_STAGE.md",
+      "bytes": 140,
+      "sha256": "af7fb6889a9063592688083aedd366367c25ebc78e43f946f36a128c9219bca3"
+    },
+    {
+      "path": "release/v86_13/docs/V86.13_STAGE.md",
+      "bytes": 140,
+      "sha256": "34d509b5d7af4570587b93ef0a4d6d0fd0361edbf596ff0dc98596e37381956f"
+    },
+    {
+      "path": "release/v86_14/docs/V86.14_STAGE.md",
+      "bytes": 140,
+      "sha256": "21a15148426051343792f1be210c63573b6ef27b9b5b4b4206af349dd1a17470"
+    },
+    {
+      "path": "release/v86_15/docs/V86.15_STAGE.md",
+      "bytes": 140,
+      "sha256": "14122a06c6c6bb9de58503dfce90c995900e922552b122f829701225743db2ec"
+    },
+    {
+      "path": "release/v86_16/docs/V86.16_STAGE.md",
+      "bytes": 140,
+      "sha256": "8b939e6a5431168817d3222ef01d0f48dd5c1530e9624a1d6f6293016de3dca5"
+    },
+    {
+      "path": "release/v86_17/docs/V86.17_STAGE.md",
+      "bytes": 140,
+      "sha256": "c7abca2f92354e4f0f7780cca5fc7c4afd31195ea272ac5048cbf6ae46fd5efb"
+    },
+    {
+      "path": "release/v86_18/docs/V86.18_STAGE.md",
+      "bytes": 140,
+      "sha256": "722c700b509342369012325c0d34aea2b8e2410ca1a4d6867585c5f717b33785"
+    },
+    {
+      "path": "release/v86_19/docs/V86.19_STAGE.md",
+      "bytes": 140,
+      "sha256": "231d432b27e369a7bb35398af5ad85ad58194f6d85248aaf526e91ba4c77764d"
+    },
+    {
+      "path": "release/v86_20/docs/V86.20_STAGE.md",
+      "bytes": 140,
+      "sha256": "f0ce83da9824fec46f1d4948a952dc86afc5fe6c09c7f4ed598395c43ae223b8"
+    },
+    {
+      "path": "tools/install_check_v86_01_to_v86_20.py",
+      "bytes": 598,
+      "sha256": "ea8a411593997b619c5db454d5937d614e77c1d3d41b6930d0ae42e5084df4ca"
+    },
+    {
+      "path": "tools/run_v86_01_to_v86_20_pipeline.py",
+      "bytes": 1310,
+      "sha256": "adb67c4a704a41e1a5f80c79e91dcaeeda886c753dc82361d8103a05900f73c4"
+    },
+    {
+      "path": "tools/test_single_order_network_validation_v86_01_to_v86_20.py",
+      "bytes": 3182,
+      "sha256": "43eb7d07c4ee069fe1a6bf40b060b0c029553b2512bf854161df75fb4699d388"
+    },
+    {
+      "path": "tools/verify_v86_01_to_v86_20_pipeline.py",
+      "bytes": 1537,
+      "sha256": "8f3e1934b798d2b49f41e651c6d3eaacf4ab07ee4d037ef59665b32c48c9b843"
+    }
+  ]
+}

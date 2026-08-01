@@ -1,0 +1,1 @@
+python tools/install_check_v86_01_to_v86_20.py
