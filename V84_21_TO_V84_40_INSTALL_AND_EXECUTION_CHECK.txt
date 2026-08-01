@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V84_21_TO_V84_40.ps1
+EXPECTED: 26 tests OK, 4 scenarios, gate pass and reject, duplicate and replay detection, all live submission flags false, network 0, orders 0.
