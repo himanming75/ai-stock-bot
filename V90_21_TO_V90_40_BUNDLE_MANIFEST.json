@@ -1,0 +1,68 @@
+{
+  "base_commit": "1073f52",
+  "stage_range": "V90.21-V90.40",
+  "functional_bundle": "ACTUAL_PAPER_READ_ONLY_RUNTIME_VALIDATION",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V90_21_TO_V90_40.txt",
+      "bytes": 520,
+      "sha256": "2c322e22f14c7d9705e11b3f8d42759256fc4535d78157836db5668b7e95b664"
+    },
+    {
+      "path": "INSTALL_CHECK_V90_21_TO_V90_40.ps1",
+      "bytes": 47,
+      "sha256": "45ec057fc1d2dbed9f3fadb223aef5cf34f50a3070a6e61adf0124723b857b89"
+    },
+    {
+      "path": "RUN_V90_21_TO_V90_40.ps1",
+      "bytes": 816,
+      "sha256": "66bf0210bc88fbe532625cb014a70d5635a428ccd22a2966d0512732f2df3658"
+    },
+    {
+      "path": "VERIFY_V90_21_TO_V90_40.ps1",
+      "bytes": 69,
+      "sha256": "45e144b8f0e6e81e4a219ccc06e9e873f98703ffb838c1fd1bdb76506bbcefd7"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_read_runtime_v90_21_40.py",
+      "bytes": 9632,
+      "sha256": "ad45b2d2710b9825c585542614b20af9ac83ec4350524d19cd6215e21a48de0c"
+    },
+    {
+      "path": "release/v90_40/docs/DESIGN.md",
+      "bytes": 186,
+      "sha256": "fa0bccaab881244758afb770e4262a711505e33f8773c9616035f1c4603b84de"
+    },
+    {
+      "path": "release/v90_40/docs/RELEASE_NOTES.md",
+      "bytes": 184,
+      "sha256": "c9e1d8756a8873b9bb61fe748298da2624c3f2ee7fb59486cef33b425db3e010"
+    },
+    {
+      "path": "release/v90_40/docs/TEST_RESULTS.md",
+      "bytes": 174,
+      "sha256": "64da03562e29b570ae4f945849f59f2fcc3993719cad15348645496f5fdf2cfa"
+    },
+    {
+      "path": "tools/install_check_v90_21_to_v90_40.py",
+      "bytes": 443,
+      "sha256": "cb6b4542b7157808074c32c955f8976b851cffd4436f3b591fdb837fb714413e"
+    },
+    {
+      "path": "tools/run_v90_21_to_v90_40_pipeline.py",
+      "bytes": 1079,
+      "sha256": "e7f4aca79fdfebad73e4ed81dccfaffab168e5fd28240755df8f901ae701e8de"
+    },
+    {
+      "path": "tools/test_actual_paper_read_runtime_v90_21_to_v90_40.py",
+      "bytes": 2243,
+      "sha256": "ed88cc3218ea25617821b2c5650dc6bef597a5227c7867eb20f5467638eaea91"
+    },
+    {
+      "path": "tools/verify_v90_21_to_v90_40_pipeline.py",
+      "bytes": 1406,
+      "sha256": "32681f828cf755934ce75858230bf8a2b767ddde444dbda5f081e60aa47f50ca"
+    }
+  ]
+}
