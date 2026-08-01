@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V82_81_TO_V83_00.ps1
+EXPECTED: 20 tests OK, 2 approvals, paper session authorized, paper order submission false, live false, write capabilities 0, network 0, orders 0.

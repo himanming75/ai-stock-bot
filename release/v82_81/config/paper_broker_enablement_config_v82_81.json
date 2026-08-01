@@ -1,0 +1,12 @@
+{
+  "mode": "PAPER_ENABLEMENT_OFFLINE",
+  "environment": "PAPER",
+  "required_approvals": 2,
+  "session_ttl_seconds": 900,
+  "max_order_notional": 1000.0,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

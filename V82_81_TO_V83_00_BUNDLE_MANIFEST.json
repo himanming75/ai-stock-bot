@@ -1,0 +1,168 @@
+{
+  "base_commit": "8d13672",
+  "stage_range": "V82.81-V83.00",
+  "functional_bundle": "PAPER_BROKER_ENABLEMENT_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V82_81_TO_V83_00.txt",
+      "bytes": 847,
+      "sha256": "2e3b930206bd3ded7cb8203f78795de797153b288261357479cddfedf17f8907"
+    },
+    {
+      "path": "INSTALL_CHECK_V82_81_TO_V83_00.ps1",
+      "bytes": 47,
+      "sha256": "d225f27800ea01aa9d670c7c6d71e5fad6a0e949d0b8e186a30df44b7ea862d0"
+    },
+    {
+      "path": "RUN_V82_81_TO_V83_00.ps1",
+      "bytes": 814,
+      "sha256": "2c203373a7d399dedf8547cd2d76f26ad98fffeb57c58367648291bdb39d3f5b"
+    },
+    {
+      "path": "V82_81_TO_V83_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 220,
+      "sha256": "4f1064c521b019f0c70fc0c245287c82786f7352ddbb1c4172f49307ad7d36e5"
+    },
+    {
+      "path": "VERIFY_V82_81_TO_V83_00.ps1",
+      "bytes": 69,
+      "sha256": "7cc3ade0da893869ab4ddb613b84e1871322e50a79614e50379eb3db8e137918"
+    },
+    {
+      "path": "alpaca_market_data/paper_broker_enablement_v82_81_v83_00.py",
+      "bytes": 15332,
+      "sha256": "5d97177373a51c626684b565c4e97f8ef4f4c65bfa568e834a31e13f5c695cd8"
+    },
+    {
+      "path": "release/v82_81/config/paper_broker_enablement_config_v82_81.json",
+      "bytes": 312,
+      "sha256": "173403e66504c1c4ad1faa5294326e852661fe6699d2873168c0619797ae5f6f"
+    },
+    {
+      "path": "release/v82_81/docs/V82.81_PAPER_ENABLEMENT_POLICY.md",
+      "bytes": 195,
+      "sha256": "eb0d348978ec81518871636e30726f36c2a4b4e98beca47d174c66ca3936780a"
+    },
+    {
+      "path": "release/v82_82/docs/V82.82_SESSION_REQUEST.md",
+      "bytes": 187,
+      "sha256": "5cc26c8c7a096d4596565f688b587576112b2fa9563807776696934aad92230a"
+    },
+    {
+      "path": "release/v82_83/docs/V82.83_MULTI_APPROVER_FLOW.md",
+      "bytes": 191,
+      "sha256": "a5f51144283240f7b0fd8ed4773623b9e4fded35719232205e4c63f63b27d69e"
+    },
+    {
+      "path": "release/v82_84/docs/V82.84_APPROVAL_EVALUATION.md",
+      "bytes": 191,
+      "sha256": "444d039028941ef67dac98a7503a90ae3f1bd81df1d73abb7c7193b72daa30f9"
+    },
+    {
+      "path": "release/v82_85/docs/V82.85_ENVIRONMENT_LOCK.md",
+      "bytes": 188,
+      "sha256": "78231b035a66aadc4d7131133e4ee6438943fca212914ac6ac1c4e1edcb95edd"
+    },
+    {
+      "path": "release/v82_86/docs/V82.86_CAPABILITY_VERIFICATION.md",
+      "bytes": 195,
+      "sha256": "8b82b4f874456726b69490072b96a440e413be9356ecdbac3c5ee886bee77f72"
+    },
+    {
+      "path": "release/v82_87/docs/V82.87_ACCOUNT_VALIDATION.md",
+      "bytes": 190,
+      "sha256": "ea52da5bd62f68d366649188ce31f8c99d92bd1644dc4af2b4b46cb4f5046a64"
+    },
+    {
+      "path": "release/v82_88/docs/V82.88_HEALTH_VALIDATION.md",
+      "bytes": 189,
+      "sha256": "c3b969941b6f701fdab7ba6acfcbf35e9884298155b496e30d0510ff7ac389a4"
+    },
+    {
+      "path": "release/v82_89/docs/V82.89_PERMISSION_RECEIPT.md",
+      "bytes": 190,
+      "sha256": "260c8ac2356bdcf65cf58b337d599e3fdb6f3c9ace5c4b7fa5bb3ed13bb50902"
+    },
+    {
+      "path": "release/v82_90/docs/V82.90_ENABLEMENT_STATE_MACHINE.md",
+      "bytes": 196,
+      "sha256": "ce25c5464fecda5f556fb28d2546adeeafbf7a17ad49e6205c31ca87c387e742"
+    },
+    {
+      "path": "release/v82_91/docs/V82.91_SESSION_SNAPSHOT.md",
+      "bytes": 188,
+      "sha256": "010cf90a976060077c61859c4ed8c1411333cc3ded00bc2949bef6fb5e32906b"
+    },
+    {
+      "path": "release/v82_92/docs/V82.92_SESSION_REVOCATION.md",
+      "bytes": 190,
+      "sha256": "4200833b2d23d5ce5ad1dfd3cb4450258ed5a70eb30a57fbc30ceff9fdf8fafa"
+    },
+    {
+      "path": "release/v82_93/docs/V82.93_ENABLEMENT_AUDIT.md",
+      "bytes": 188,
+      "sha256": "416448de8b1480561987730365e7e68ae924fef79e3185ba8b62c54e01e43f93"
+    },
+    {
+      "path": "release/v82_94/docs/V82.94_MASTER_LEDGER.md",
+      "bytes": 185,
+      "sha256": "93695ef960f83514c1571cae6627cadf75a6294203cddef5f1ab691e0b9a84ee"
+    },
+    {
+      "path": "release/v82_95/docs/V82.95_ENABLEMENT_MANIFEST.md",
+      "bytes": 191,
+      "sha256": "d29627806ca45b77f5262393883fdcc98b1d3a75a7a45014ee04f21152a0da18"
+    },
+    {
+      "path": "release/v82_96/docs/V82.96_ENABLEMENT_PIPELINE.md",
+      "bytes": 191,
+      "sha256": "e107e0f3676d073d5c90cdf1ae3c6b955090cb5a7cfa17cd4a5ae9af27f5787e"
+    },
+    {
+      "path": "release/v82_97/docs/V82.97_INTEGRITY_VERIFICATION.md",
+      "bytes": 194,
+      "sha256": "de464af6b1a5a2c959540ba0ee393ef3e3ca2b4325f6d3fe555ffa1c7ec1e135"
+    },
+    {
+      "path": "release/v82_98/docs/V82.98_ENABLEMENT_CERTIFICATION.md",
+      "bytes": 196,
+      "sha256": "69a958bb811c5536d7bcb4f58ae41c13d9c673f188dded0a094b8fc00d74471f"
+    },
+    {
+      "path": "release/v82_99/docs/V82.99_FINAL_ENABLEMENT_REPORT.md",
+      "bytes": 195,
+      "sha256": "52bf3997e2b8d3a86d56c1878eab3a899e85f67c88a03642f6e290eb06339b9d"
+    },
+    {
+      "path": "release/v83_00/docs/V82.81_TO_V83.00_RELEASE_NOTES.md",
+      "bytes": 494,
+      "sha256": "1ad8a32977689025381aa58a79286ca7a1f686cd19a3534bf72b0b31c125301b"
+    },
+    {
+      "path": "release/v83_00/docs/V83.00_PAPER_BROKER_ENABLEMENT_COMPLETION.md",
+      "bytes": 195,
+      "sha256": "a0819862091e36f9c491b5cec06e8130d1a5e386f6cbed47049316528246ef28"
+    },
+    {
+      "path": "tools/install_check_v82_81_to_v83_00.py",
+      "bytes": 670,
+      "sha256": "0f58b581f6f355c458108bc451af1c403973de089889b643fabbb10d8d2fc592"
+    },
+    {
+      "path": "tools/run_v82_81_to_v83_00_pipeline.py",
+      "bytes": 1160,
+      "sha256": "656de21880afdcf53775116217a84c8fd615dd17115a5f0ad97c584861e366ca"
+    },
+    {
+      "path": "tools/test_paper_broker_enablement_v82_81_to_v83_00.py",
+      "bytes": 3452,
+      "sha256": "254c35223d2f34c4fae05c71276aa0da45b4e4691781b58612c163498096484a"
+    },
+    {
+      "path": "tools/verify_v82_81_to_v83_00_pipeline.py",
+      "bytes": 1966,
+      "sha256": "f12a2b35ae6492d0e95e9f951203b2b2f54d10f8b413ec3e1df7327a5a340b75"
+    }
+  ]
+}
