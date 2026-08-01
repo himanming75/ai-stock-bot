@@ -1,0 +1,163 @@
+{
+  "base_commit": "b87a871",
+  "stage_range": "V86.81-V87.00",
+  "functional_bundle": "PAPER_BROKER_RELEASE_CANDIDATE_AND_OPERATIONS_FOUNDATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V86_81_TO_V87_00.txt",
+      "bytes": 865,
+      "sha256": "5a78fd5c8962e3d14aa69f67e1d940fae2ffe2ca50c82e92aa91b1dc06863f1f"
+    },
+    {
+      "path": "INSTALL_CHECK_V86_81_TO_V87_00.ps1",
+      "bytes": 47,
+      "sha256": "f486dfc2a800f6e4871247d740b49aef70c61c7600afdfb4f47098e1b15705db"
+    },
+    {
+      "path": "RUN_V86_81_TO_V87_00.ps1",
+      "bytes": 814,
+      "sha256": "4578f1cc57e961085be3d95e91324c146432b83c360f3e80d2a1e7fc9b1803f2"
+    },
+    {
+      "path": "V86_81_TO_V87_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 234,
+      "sha256": "c5108b7fde6c6494f64bd351f44b30bbc673495b3baaa74243e41475896ca531"
+    },
+    {
+      "path": "VERIFY_V86_81_TO_V87_00.ps1",
+      "bytes": 69,
+      "sha256": "1af7c519f5eaad8fd7ed324d51eb737a230afec472109a5ba6bc4c7f01726650"
+    },
+    {
+      "path": "alpaca_market_data/paper_broker_operations_v86_81_v87_00.py",
+      "bytes": 18025,
+      "sha256": "2d51291890a7bf131f989010980cd163e11a7d5fb687ef94e9a15685426100d0"
+    },
+    {
+      "path": "release/v86_81/docs/V86.81_RELEASE_POLICY.md",
+      "bytes": 134,
+      "sha256": "634abd8dd2a9c1f29487e24976bce74994baf3b00354c5b1feea9e0d0cdb186f"
+    },
+    {
+      "path": "release/v86_82/docs/V86.82_OPERATIONS_PROFILE.md",
+      "bytes": 138,
+      "sha256": "e6f0eec901abd111e1e4331725ff0eb14555adfd53e8cc1ceaf9a192ffe73832"
+    },
+    {
+      "path": "release/v86_83/docs/V86.83_START_REQUEST.md",
+      "bytes": 133,
+      "sha256": "31707f0231db28e840d20401fea72af33adb2b898ae414895e25b981fae1b44e"
+    },
+    {
+      "path": "release/v86_84/docs/V86.84_START_GATE.md",
+      "bytes": 130,
+      "sha256": "a6a8af3872f150fe44c30e282c09147537bdfd4965b5baee10116492522a02aa"
+    },
+    {
+      "path": "release/v86_85/docs/V86.85_SESSION_ISSUANCE.md",
+      "bytes": 136,
+      "sha256": "7c53a7b69c32e84e871c74b652844469590a7cf8dd710cebf031532279cc2eae"
+    },
+    {
+      "path": "release/v86_86/docs/V86.86_HEALTH_CHECK.md",
+      "bytes": 132,
+      "sha256": "51d7ccf66379a80f48f393b42454c3fe2db7d271c9012ab53156ec99feffc615"
+    },
+    {
+      "path": "release/v86_87/docs/V86.87_DAILY_LIMIT_GUARD.md",
+      "bytes": 137,
+      "sha256": "229d87161a593014f5cef91106f83ede5156e9770b5210859581beac54871e2a"
+    },
+    {
+      "path": "release/v86_88/docs/V86.88_STOP_REQUEST.md",
+      "bytes": 132,
+      "sha256": "094617b04e24006feb240b5b823e27f411d939813d1da88fef6d58fd4f1d184e"
+    },
+    {
+      "path": "release/v86_89/docs/V86.89_SESSION_STOP.md",
+      "bytes": 132,
+      "sha256": "4560de0b99114e2877e2384fc0437521b438cc4ce452bd7020634feeae8c9678"
+    },
+    {
+      "path": "release/v86_90/docs/V86.90_INCIDENT_POLICY.md",
+      "bytes": 135,
+      "sha256": "d272fb37ba2e067acd8ac4a892430e4c23e27e74b6b619cecfd0a0832d571a35"
+    },
+    {
+      "path": "release/v86_91/docs/V86.91_INCIDENT_RECORD.md",
+      "bytes": 135,
+      "sha256": "94e634809aab63ebc3808577a8c8570b3e07f46a425329875fee329bd6a77ce7"
+    },
+    {
+      "path": "release/v86_92/docs/V86.92_ROLLBACK_PLAN.md",
+      "bytes": 133,
+      "sha256": "05c56812bdd4e497372e97e0aa3c9c9acd918992df52a9f7a1a3cf73b0de63dd"
+    },
+    {
+      "path": "release/v86_93/docs/V86.93_OPERATIONS_RUNBOOK.md",
+      "bytes": 138,
+      "sha256": "4bbb7c3b56da700f4bdcaa145f86c69fdcd1ae23087eae5081baedb4c8a244dc"
+    },
+    {
+      "path": "release/v86_94/docs/V86.94_DEPLOYMENT_CHECKLIST.md",
+      "bytes": 140,
+      "sha256": "9df28d3017683e3dcadbdddc8f0a6a68df2e74b595faf9fac3ff9c20be52f75b"
+    },
+    {
+      "path": "release/v86_95/docs/V86.95_OPERATIONS_SCENARIO.md",
+      "bytes": 139,
+      "sha256": "2fb198af962c9cf044b6da17a19475846eaee2a62c161b1511bd022706edb866"
+    },
+    {
+      "path": "release/v86_96/docs/V86.96_OPERATIONS_AUDIT.md",
+      "bytes": 136,
+      "sha256": "80c080793b2d427fd3cf78316e0cef4cf33270a251ecc95dcfe1165c1be230e0"
+    },
+    {
+      "path": "release/v86_97/docs/V86.97_OPERATIONS_REPORT.md",
+      "bytes": 137,
+      "sha256": "4da16a42e60f27b3588374ef6506090d6607f6854bff3410702e174ca8faab85"
+    },
+    {
+      "path": "release/v86_98/docs/V86.98_OPERATIONS_LEDGER.md",
+      "bytes": 137,
+      "sha256": "e999ff6342f3ef43e9d01d32a57c0dd8cb48b2fd28720a3e64b932f84752bb3b"
+    },
+    {
+      "path": "release/v86_99/docs/V86.99_OPERATIONS_MANIFEST.md",
+      "bytes": 139,
+      "sha256": "32bd0c4da29e35d5effa0acef0094f127b347286450bc048dea6281d8754f754"
+    },
+    {
+      "path": "release/v87_00/docs/V86.81_TO_V87.00_RELEASE_NOTES.md",
+      "bytes": 347,
+      "sha256": "ad1912afdeee8f1addc6ffcb959b116c1a55fa9f25c1046dbdc1693d1e2aae15"
+    },
+    {
+      "path": "release/v87_00/docs/V87.00_OPERATIONS_FOUNDATION_COMPLETION.md",
+      "bytes": 244,
+      "sha256": "2526675347da47d34774e765902e2ad7337ba3180e5767331a7af0ec55aec9cf"
+    },
+    {
+      "path": "tools/install_check_v86_81_to_v87_00.py",
+      "bytes": 447,
+      "sha256": "6c765deeec11eb7cd6b71a7c82756c3692e9f56c222fc502d117bdf33d32c65d"
+    },
+    {
+      "path": "tools/run_v86_81_to_v87_00_pipeline.py",
+      "bytes": 1097,
+      "sha256": "5354358fc3cdfb2b3f41474bb06491d423015dbb99ef4e39a5e97a8c84dc74f1"
+    },
+    {
+      "path": "tools/test_paper_broker_operations_v86_81_to_v87_00.py",
+      "bytes": 2541,
+      "sha256": "869ef9c72746185291029741952c72a1e23ff06fbd41a819b575a4086b71b626"
+    },
+    {
+      "path": "tools/verify_v86_81_to_v87_00_pipeline.py",
+      "bytes": 1727,
+      "sha256": "13a2f2a764d4a5987fb937903b2ba36ca19416e4fb9ef07218aae675e56ed186"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V86_81_TO_V87_00.ps1
+EXPECTED: 20 tests OK, manual start/stop, health, positive and negative daily-limit tests, incident response, rollback, runbook, checklist, network 0, orders 0.
