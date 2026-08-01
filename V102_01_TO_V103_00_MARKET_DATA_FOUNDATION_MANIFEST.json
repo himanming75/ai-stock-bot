@@ -1,0 +1,127 @@
+{
+  "base_commit": "f3a1b36",
+  "stage_range": "V102.01-V103.00",
+  "bundle_type": "REALTIME_MARKET_DATA_FOUNDATION",
+  "certificate_only": false,
+  "requires_existing_runtime_engine": true,
+  "standard_pipeline_network_enabled": false,
+  "network_requests_executed": 0,
+  "paper_order_submission_enabled": false,
+  "actual_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "optional_actual_stream_runner_isolated": true,
+  "validated_against_v101_runtime_foundation": true,
+  "file_count": 23,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V102_01_TO_V103_00_MARKET_DATA_FOUNDATION.txt",
+      "bytes": 621,
+      "sha256": "a37da420a6474298b3a29c312be173382211ce5d901650211afd0b1fb92c7d8a"
+    },
+    {
+      "path": "RUN_V102_01_TO_V103_00_ACTUAL_ALPACA_STREAM.ps1",
+      "bytes": 217,
+      "sha256": "926f10e9423956cecf2cfaa46a6fde0f2055a812e38ec05a1ab29f4a0a9226ac"
+    },
+    {
+      "path": "RUN_V102_01_TO_V103_00_MARKET_DATA_FOUNDATION.ps1",
+      "bytes": 937,
+      "sha256": "40513170f56504680b8a6dc866d3cd4adc44911c3d362111e8c1be0909627508"
+    },
+    {
+      "path": "market_data_engine/__init__.py",
+      "bytes": 949,
+      "sha256": "7605cf8771ecac46291136903a7736383a98459c703de2c86c9875f470ae9525"
+    },
+    {
+      "path": "market_data_engine/connection.py",
+      "bytes": 1619,
+      "sha256": "01ff40e30764b389644199761e8c4e94b9c67d9dfdde7fb4f9a85eb4b995b578"
+    },
+    {
+      "path": "market_data_engine/fixture_stream.py",
+      "bytes": 974,
+      "sha256": "0acf37d311861d788c9a91b953fbaa06f33174ff9bb8dab6a53a2d1e9f6936d5"
+    },
+    {
+      "path": "market_data_engine/freshness.py",
+      "bytes": 1019,
+      "sha256": "a83f8b4ad1ef5602a7404407a0b760a9ba874f0e8b6b4ec8cb8ab42fb37058bb"
+    },
+    {
+      "path": "market_data_engine/models.py",
+      "bytes": 1027,
+      "sha256": "33cdb3e42853a9f361c1a544c036dac9511bb2581fe9f5d99f1adeb58024df53"
+    },
+    {
+      "path": "market_data_engine/parser.py",
+      "bytes": 4501,
+      "sha256": "12338291488fdcc3bb0007ac9f8c77f6cabb783dd2fb50e7f61298a68571857d"
+    },
+    {
+      "path": "market_data_engine/reconnect.py",
+      "bytes": 645,
+      "sha256": "3be84c257946e14a246c0acd8695f1fbb8e117ab42c37cb1d8194215c3e8f274"
+    },
+    {
+      "path": "market_data_engine/router.py",
+      "bytes": 2525,
+      "sha256": "d2527866f61888e57cd4c1c4ef4711e8da0bc82b64c1e948b809f133226fbe35"
+    },
+    {
+      "path": "market_data_engine/sequence.py",
+      "bytes": 1309,
+      "sha256": "2ea12064db2af9ee891c0d809632c2814f31710247a13fcd2ef16667f2d34e1e"
+    },
+    {
+      "path": "market_data_engine/subscriptions.py",
+      "bytes": 1749,
+      "sha256": "fd9bf8d25be062e5ea37c1e7186efc979bb31b0b0f660910636a4847f75b7153"
+    },
+    {
+      "path": "release/v103_00/docs/DESIGN.md",
+      "bytes": 500,
+      "sha256": "0517a31f0dca99b7d86fd061a94645e85a1253387445c18118c3e2ded5013007"
+    },
+    {
+      "path": "release/v103_00/docs/RELEASE_NOTES.md",
+      "bytes": 282,
+      "sha256": "4dd4af09b6505ed81bba50b5417147a0e51123c8f85642aa9db4814fb8960bff"
+    },
+    {
+      "path": "release/v103_00/docs/TEST_RESULTS.md",
+      "bytes": 495,
+      "sha256": "d978c25eb475db51ea18225ecc741dd4ee59342bf595141e8d7840f8e5cbb6c2"
+    },
+    {
+      "path": "tools/__pycache__/test_market_data_foundation_v102_01_to_v103_00.cpython-313.pyc",
+      "bytes": 11719,
+      "sha256": "b17beed578f62b27a496d0942877435576ae8c0f57b30da5d46d8b6919fb8f90"
+    },
+    {
+      "path": "tools/install_check_v102_01_to_v103_00.py",
+      "bytes": 557,
+      "sha256": "aefa80f9482b1135aa88bd7afac70e98389a810b4c8f782f4fcb44fef07eb4bd"
+    },
+    {
+      "path": "tools/run_actual_alpaca_market_data_v102_01_to_v103_00.py",
+      "bytes": 1960,
+      "sha256": "496b4f9afa5f049058572afe3af8d4ab9cba6dff16b42877f02c1ab28daed2f1"
+    },
+    {
+      "path": "tools/run_market_data_foundation_v102_01_to_v103_00.py",
+      "bytes": 3734,
+      "sha256": "79c4e0e0e17c41abfb748451d17bcdb8bb4e70c5840863d3c70bf1a96b24d434"
+    },
+    {
+      "path": "tools/test_market_data_foundation_v102_01_to_v103_00.py",
+      "bytes": 6244,
+      "sha256": "1db6714d7b633947955bec3d73e08d000a0d99b15627757741757dcb436bfb29"
+    },
+    {
+      "path": "tools/verify_market_data_foundation_v102_01_to_v103_00.py",
+      "bytes": 1797,
+      "sha256": "2f2e35f2b66a5b7f4939941a94a5d5acd162dfe0551ad1a09db1c2dd60ad80c1"
+    }
+  ]
+}
