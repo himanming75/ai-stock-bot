@@ -1,0 +1,1 @@
+python tools/install_check_v88_81_to_v90_00.py

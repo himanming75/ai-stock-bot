@@ -1,0 +1,70 @@
+{
+  "base_commit": "26805f7",
+  "stage_range": "V88.81-V90.00",
+  "delivery_mode": "FAST_TRACK",
+  "functional_bundle": "PAPER_AUTOMATION_PORTFOLIO_RISK_RUNTIME_RC",
+  "functionality_removed": false,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V88_81_TO_V90_00_FAST_TRACK.txt",
+      "bytes": 561,
+      "sha256": "c85812e77b7d8f317ad530bb09ecb1a279939cecf4da9eff3c858646a6a7b223"
+    },
+    {
+      "path": "INSTALL_CHECK_V88_81_TO_V90_00_FAST_TRACK.ps1",
+      "bytes": 47,
+      "sha256": "2403d84dd5611cddc0cc67f1ab5e2052ade6f3ef47831ef142e64b2c1bd4a381"
+    },
+    {
+      "path": "RUN_V88_81_TO_V90_00_FAST_TRACK.ps1",
+      "bytes": 856,
+      "sha256": "41a624e8f89123343e425edc0ab15955d74fc9767879effc11cb87da3e5d26c8"
+    },
+    {
+      "path": "VERIFY_V88_81_TO_V90_00_FAST_TRACK.ps1",
+      "bytes": 69,
+      "sha256": "92be5b9c7c363f67f43b9ff7202463add7bcddd6018fbf95d5f4124d381851ae"
+    },
+    {
+      "path": "alpaca_market_data/fast_track_v88_81_v90_00.py",
+      "bytes": 17538,
+      "sha256": "1cd175495371a9fd8f300871945ed1c58a678e4fb83a90e4488d31ad9e138477"
+    },
+    {
+      "path": "release/v90_00/docs/DESIGN.md",
+      "bytes": 722,
+      "sha256": "cd65aa61ba5ea2be99861deeca3f0d36699cafccd3e82296f6dd63e49516c80f"
+    },
+    {
+      "path": "release/v90_00/docs/RELEASE_NOTES.md",
+      "bytes": 601,
+      "sha256": "56982627d9d3e17f783e42b737c35d609c78e1edeaf7c5010422513e8009d6a4"
+    },
+    {
+      "path": "release/v90_00/docs/TEST_RESULTS.md",
+      "bytes": 361,
+      "sha256": "2a8015783de5fda48f0c7dc3605dc1ac3456ec000dfb1dec97b698b9650cfe75"
+    },
+    {
+      "path": "tools/install_check_v88_81_to_v90_00.py",
+      "bytes": 701,
+      "sha256": "ca1e80ed81bbafa88513c8ec8269d2161c728f88cdcddf0244390d9a95f246f1"
+    },
+    {
+      "path": "tools/run_v88_81_to_v90_00_pipeline.py",
+      "bytes": 1279,
+      "sha256": "a122392e53eec810727814c8858c9b2f41385c381c6329a12c2d8bb6031d816d"
+    },
+    {
+      "path": "tools/test_fast_track_v88_81_to_v90_00.py",
+      "bytes": 3012,
+      "sha256": "4492393edf9d70e5e02f764c1dca0c614d65c744a83699cbdb3f3ca22fa492c5"
+    },
+    {
+      "path": "tools/verify_v88_81_to_v90_00_pipeline.py",
+      "bytes": 1580,
+      "sha256": "460c5adfa97ce88ce9d6de3c952aaf1749bc29c0281a7d6d83ddd57722a590f9"
+    }
+  ]
+}

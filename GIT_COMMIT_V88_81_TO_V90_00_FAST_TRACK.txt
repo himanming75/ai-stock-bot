@@ -1,0 +1,3 @@
+git add RUN_V88_81_TO_V90_00_FAST_TRACK.ps1 INSTALL_CHECK_V88_81_TO_V90_00_FAST_TRACK.ps1 VERIFY_V88_81_TO_V90_00_FAST_TRACK.ps1 GIT_COMMIT_V88_81_TO_V90_00_FAST_TRACK.txt V88_81_TO_V90_00_FAST_TRACK_BUNDLE_MANIFEST.json alpaca_market_data/fast_track_v88_81_v90_00.py tools/install_check_v88_81_to_v90_00.py tools/run_v88_81_to_v90_00_pipeline.py tools/test_fast_track_v88_81_to_v90_00.py tools/verify_v88_81_to_v90_00_pipeline.py release/v90_00
+git commit -m "V88.81-V90.00 fast track paper automation portfolio risk runtime RC completed"
+git push origin main
