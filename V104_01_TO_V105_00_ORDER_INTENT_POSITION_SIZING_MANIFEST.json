@@ -1,0 +1,97 @@
+{
+  "base_commit": "2f195de",
+  "stage_range": "V104.01-V105.00",
+  "bundle_type": "ORDER_INTENT_POSITION_SIZING_FOUNDATION",
+  "certificate_only": false,
+  "requires_runtime_engine": true,
+  "requires_strategy_engine": true,
+  "broker_transport_included": false,
+  "paper_order_submission_enabled": false,
+  "broker_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "validated_against_prior_real_foundations": true,
+  "file_count": 17,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V104_01_TO_V105_00_ORDER_INTENT_POSITION_SIZING.txt",
+      "bytes": 560,
+      "sha256": "2be2f3a7f06aef1e9f3d1ddb5123c96db793e394ba7870aa6fea2cf08a416371"
+    },
+    {
+      "path": "RUN_V104_01_TO_V105_00_ORDER_INTENT_POSITION_SIZING.ps1",
+      "bytes": 956,
+      "sha256": "60cccec0f730673fed805e0c1802aaa3bd4603ebcbcc062b28a6e24feb8862f2"
+    },
+    {
+      "path": "execution_engine/__init__.py",
+      "bytes": 661,
+      "sha256": "6068422b1a0348bb1d0d28bdda1b100fb92afef8568c7ae8c91b626e80687db5"
+    },
+    {
+      "path": "execution_engine/dedup.py",
+      "bytes": 1055,
+      "sha256": "88dc64da77d2337fe85b08a31b35ae69e0735a09fbac60c50119254c503fd9c4"
+    },
+    {
+      "path": "execution_engine/engine.py",
+      "bytes": 2776,
+      "sha256": "a3b4effd1b0ad6db55c67b942903838860a56e51900ff77c5a6e31fbde77b002"
+    },
+    {
+      "path": "execution_engine/expiry.py",
+      "bytes": 385,
+      "sha256": "2d5251b92ae57959cbc0d8d8186d6ddf35dc4894d25af8d855e51a0de42fa661"
+    },
+    {
+      "path": "execution_engine/factory.py",
+      "bytes": 1894,
+      "sha256": "807503356edb4e9db7274b3eca605892225144aa3cb1b14418aa4fda26b4421e"
+    },
+    {
+      "path": "execution_engine/models.py",
+      "bytes": 2123,
+      "sha256": "2007b1c91c8ed43ce99e7b15fa50df790e992b5bafde51553f8f56d788ac540b"
+    },
+    {
+      "path": "execution_engine/sizing.py",
+      "bytes": 4091,
+      "sha256": "1095e56d7bb49c02d5857ec19a9897a8e43e9ae7a05084ec5835f651481e7564"
+    },
+    {
+      "path": "release/v105_00/docs/DESIGN.md",
+      "bytes": 499,
+      "sha256": "687a427b4d1833fe8ccfba30c4d5432d444c45efdcc00dcdf9bab908a60557be"
+    },
+    {
+      "path": "release/v105_00/docs/RELEASE_NOTES.md",
+      "bytes": 241,
+      "sha256": "0720e3e7bc62e59af2383255d52c983022903f1f383e11d643133a5ab26170b4"
+    },
+    {
+      "path": "release/v105_00/docs/TEST_RESULTS.md",
+      "bytes": 354,
+      "sha256": "8ae2170aba49a3b2f39fb8547a341dd1773f15de9400e0e56275f785451f2e65"
+    },
+    {
+      "path": "tools/install_check_v104_01_to_v105_00.py",
+      "bytes": 506,
+      "sha256": "d77e2581d6331bdb7f28f35b0fd93973c47f792ce443d4bb391589f8a5b01e1a"
+    },
+    {
+      "path": "tools/run_order_intent_position_sizing_v104_01_to_v105_00.py",
+      "bytes": 4449,
+      "sha256": "207c1607a6467db0c2373c996f6649f5c6b465868f40dc02fbb4c4ee0a31d13b"
+    },
+    {
+      "path": "tools/test_order_intent_position_sizing_v104_01_to_v105_00.py",
+      "bytes": 7810,
+      "sha256": "f3c2e01761c453d445078f70a4861cdda7f3e3feee9650b9e64d0b262a75c75a"
+    },
+    {
+      "path": "tools/verify_order_intent_position_sizing_v104_01_to_v105_00.py",
+      "bytes": 1738,
+      "sha256": "23597eaf70b6f4219cedb1b88a35e22bad741eeb09e440c5dc6c3c5724c1c260"
+    }
+  ]
+}
