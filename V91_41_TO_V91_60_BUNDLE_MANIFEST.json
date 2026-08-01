@@ -1,0 +1,71 @@
+{
+  "base_commit": "e0c112e",
+  "stage_range": "V91.41-V91.60",
+  "functional_bundle": "ACTUAL_PAPER_AUTOMATION_RC2_FOUNDATION",
+  "release_candidate": "ACTUAL_PAPER_AUTOMATION_RC2_READ_ONLY",
+  "write_capability_count": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V91_41_TO_V91_60.txt",
+      "bytes": 521,
+      "sha256": "810efd836df376c20342f3b15ecb7e47c91d79e53839c582aca2fe45773aa351"
+    },
+    {
+      "path": "INSTALL_CHECK_V91_41_TO_V91_60.ps1",
+      "bytes": 47,
+      "sha256": "4c7aa0213c1559f31d4896dc2890f4d192ab159210d4e0c55cea33451c69563e"
+    },
+    {
+      "path": "RUN_V91_41_TO_V91_60.ps1",
+      "bytes": 818,
+      "sha256": "b4fa0774d6d6dc646653a7b34398fe760a3ecda491d20e129886adc51b5fb098"
+    },
+    {
+      "path": "VERIFY_V91_41_TO_V91_60.ps1",
+      "bytes": 69,
+      "sha256": "a68d673d7597635df3be89d0bb87e1f561a00631cace2777d226d0788b2eff0d"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_automation_rc2_v91_41_60.py",
+      "bytes": 16162,
+      "sha256": "531ddc0b48cedfb78c0f68d1349c15defbc6ee69614f54dfce312c2107cb0aeb"
+    },
+    {
+      "path": "release/v91_60/docs/DESIGN.md",
+      "bytes": 406,
+      "sha256": "bee6713824113e69683acd81a3a30f1de6d3d76f766c9f143be4d4c5f7e6589a"
+    },
+    {
+      "path": "release/v91_60/docs/RELEASE_NOTES.md",
+      "bytes": 236,
+      "sha256": "2fdb57af2ec03656fb8b84e40c9c77049fe4853f40b1b8c27afb792329897f0d"
+    },
+    {
+      "path": "release/v91_60/docs/TEST_RESULTS.md",
+      "bytes": 224,
+      "sha256": "a768c1c8ac9d1ca59929548e1fb594ee6e7df5d963ca27cea522be46876ae0e0"
+    },
+    {
+      "path": "tools/install_check_v91_41_to_v91_60.py",
+      "bytes": 592,
+      "sha256": "0a1dd0ceac138a8d0283a7253574f7a26c862071ddbdfc8a03c4ae9a34585c01"
+    },
+    {
+      "path": "tools/run_v91_41_to_v91_60_pipeline.py",
+      "bytes": 1461,
+      "sha256": "2788b68e18497b78174cdc21d2d61ac529d1fb437ebf978af27993987d7b3ffa"
+    },
+    {
+      "path": "tools/test_actual_paper_automation_rc2_v91_41_to_v91_60.py",
+      "bytes": 2524,
+      "sha256": "687d217e1aa41bde4391cb2a4a27141ed68810a56c804a7a5f0b1b489759e92b"
+    },
+    {
+      "path": "tools/verify_v91_41_to_v91_60_pipeline.py",
+      "bytes": 2049,
+      "sha256": "331f330a03c9ba5f3175514fb933887946ba76780e2352580c92dafe8a0a4e88"
+    }
+  ]
+}
