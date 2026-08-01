@@ -1,0 +1,3 @@
+git add RUN_V92_81_TO_V93_00.ps1 INSTALL_CHECK_V92_81_TO_V93_00.ps1 VERIFY_V92_81_TO_V93_00.ps1 GIT_COMMIT_V92_81_TO_V93_00.txt V92_81_TO_V93_00_BUNDLE_MANIFEST.json alpaca_market_data/actual_paper_submission_release_candidate_v92_81_v93_00.py tools/install_check_v92_81_to_v93_00.py tools/run_v92_81_to_v93_00_pipeline.py tools/test_actual_paper_submission_release_candidate_v92_81_to_v93_00.py tools/verify_v92_81_to_v93_00_pipeline.py release/v93_00
+git commit -m "V92.81-V93.00 actual paper submission release candidate completed"
+git push origin main

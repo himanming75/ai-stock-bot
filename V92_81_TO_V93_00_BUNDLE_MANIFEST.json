@@ -1,0 +1,72 @@
+{
+  "base_commit": "d81e9c7",
+  "stage_range": "V92.81-V93.00",
+  "functional_bundle": "ACTUAL_PAPER_SUBMISSION_RELEASE_CANDIDATE",
+  "release_candidate": "ACTUAL_PAPER_SUBMISSION_PREVIEW_RC1",
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V92_81_TO_V93_00.txt",
+      "bytes": 556,
+      "sha256": "1d3439d9cb280acc7fa596ca40e46e1feed59cc8b2d6cc3327d8d020d6740aac"
+    },
+    {
+      "path": "INSTALL_CHECK_V92_81_TO_V93_00.ps1",
+      "bytes": 47,
+      "sha256": "7926921bbb774ed8ee6baccebfce82fba21e415ec199901b270b05a43d339bfb"
+    },
+    {
+      "path": "RUN_V92_81_TO_V93_00.ps1",
+      "bytes": 832,
+      "sha256": "876235818745d39e6fc2f728d7c29d8d75583e8385d74c389c603389a6a3b175"
+    },
+    {
+      "path": "VERIFY_V92_81_TO_V93_00.ps1",
+      "bytes": 69,
+      "sha256": "52aa7bf9aeac8339b7dd3a0e5183aec15e688f4c24a4955c0c0cde2153df6469"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_submission_release_candidate_v92_81_v93_00.py",
+      "bytes": 13042,
+      "sha256": "392930433e6871085f28e869e9bf384e547bfae92d23415bdd6f1ace35ea08d2"
+    },
+    {
+      "path": "release/v93_00/docs/DESIGN.md",
+      "bytes": 341,
+      "sha256": "4b450dc93fff0d998488f8530ba096e36f545eed321f29a4b59d9b3e6ad04306"
+    },
+    {
+      "path": "release/v93_00/docs/RELEASE_NOTES.md",
+      "bytes": 188,
+      "sha256": "60574daaf0973be0ff6a5b0bafc71c8f16ab20422d56badcb14b59f0fb282c11"
+    },
+    {
+      "path": "release/v93_00/docs/TEST_RESULTS.md",
+      "bytes": 193,
+      "sha256": "16261b2630fa0ec147d7860882538395017ac4525a3daa563b6f5c6031e94cd4"
+    },
+    {
+      "path": "tools/install_check_v92_81_to_v93_00.py",
+      "bytes": 490,
+      "sha256": "589f22055ccad0297c90df8c7e360f346e9cd9efebcda9cc46359f7da195f9a1"
+    },
+    {
+      "path": "tools/run_v92_81_to_v93_00_pipeline.py",
+      "bytes": 1556,
+      "sha256": "061df3b9f36253948165ea7a3996d05b895f8cc8357764630dae0c8d6458c965"
+    },
+    {
+      "path": "tools/test_actual_paper_submission_release_candidate_v92_81_to_v93_00.py",
+      "bytes": 2479,
+      "sha256": "8b32c3db7c29a0efaf28a37eea6a4e83c62af82aff06e0c3da996d86e10501dc"
+    },
+    {
+      "path": "tools/verify_v92_81_to_v93_00_pipeline.py",
+      "bytes": 1723,
+      "sha256": "64efe01636519fadeceabb6614ea8d7e0efd084ca381e2b107d3ddea3fdc5843"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+python tools/install_check_v92_81_to_v93_00.py
