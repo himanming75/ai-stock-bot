@@ -1,0 +1,92 @@
+{
+  "base_commit": "588ef8f",
+  "stage_range": "V79.76-V79.80",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_76_TO_V79_80.txt",
+      "bytes": 631,
+      "sha256": "18257822840e02d7220a11c7457b49e09f659c021c741541c988e90d03d18679"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_76_TO_V79_80.ps1",
+      "bytes": 47,
+      "sha256": "5da85f1ddff7e2519cc7749d40be4a426da4546fa4d73c09ce5d1598b7400caf"
+    },
+    {
+      "path": "RUN_V79_76_TO_V79_80.ps1",
+      "bytes": 646,
+      "sha256": "90cbbfff56a90fa18cd42116ac71e5271138e117e280aecebff53d810eb39e23"
+    },
+    {
+      "path": "V79_76_TO_V79_80_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 173,
+      "sha256": "97a9538923d34a4801f2b480a6e3bc49429dc55f1eb61f64ee2cc6301ec6590a"
+    },
+    {
+      "path": "VERIFY_V79_76_TO_V79_80.ps1",
+      "bytes": 69,
+      "sha256": "a23e64490947d6e3cb560c2db46d36191233777acd3b2dd46633e6ee1afcc1d3"
+    },
+    {
+      "path": "alpaca_market_data/historical_portfolio_simulation_v79_76_80.py",
+      "bytes": 10274,
+      "sha256": "88e00b14b1ecd3215dcea2d71cc1da9bb7eb9420a6453497eaaa1c250907f7f2"
+    },
+    {
+      "path": "release/v79_76/config/historical_portfolio_config_v79_76.json",
+      "bytes": 302,
+      "sha256": "38d245ca66ff8a94508e593d6a5592b216d63b0299344ee9d237becec44c4beb"
+    },
+    {
+      "path": "release/v79_76/docs/V79.76_PORTFOLIO_POLICY.md",
+      "bytes": 101,
+      "sha256": "8086ca22d69f8a7eaaedcd091fa737be3431166aa99a4aea5a557b6a0d4affd8"
+    },
+    {
+      "path": "release/v79_77/docs/V79.77_PORTFOLIO_SIMULATOR.md",
+      "bytes": 106,
+      "sha256": "c59a0559eca615e6501702227240c9be6dae173d89d8ec088e77bc706e4847e2"
+    },
+    {
+      "path": "release/v79_78/docs/V79.78_PORTFOLIO_LEDGER.md",
+      "bytes": 88,
+      "sha256": "2ca5feda8eff7cfe315a96da3e79fe96cd29476ecce9e60b6fc9ea5c13b8bbca"
+    },
+    {
+      "path": "release/v79_79/docs/V79.79_PORTFOLIO_MANIFEST.md",
+      "bytes": 89,
+      "sha256": "7572262109fb8995fd5b3b5178c33d02a87870edf8fc2d2bad7bfaf419e8ee16"
+    },
+    {
+      "path": "release/v79_80/docs/V79.76_TO_V79.80_RELEASE_NOTES.md",
+      "bytes": 198,
+      "sha256": "d42ddd2cea968f133926b1cfd487f4c91d7ba4023d770fd028aca3a0417e2a6d"
+    },
+    {
+      "path": "release/v79_80/docs/V79.80_PORTFOLIO_CERTIFICATE.md",
+      "bytes": 94,
+      "sha256": "eeffa7fbfba15f0e1de763fc79830f4f5cae30fdaa7d04644104398938c731be"
+    },
+    {
+      "path": "tools/install_check_v79_76_to_v79_80.py",
+      "bytes": 671,
+      "sha256": "ddc4f2beb7c1f4fd4e7805e7b95a2ab1637970f4a5f6e11d0e1c72df47aebefe"
+    },
+    {
+      "path": "tools/run_v79_76_to_v79_80_pipeline.py",
+      "bytes": 1059,
+      "sha256": "00d5db62e1dbb8e2e4181189e7017f24da8f5f6362cf291f68aae62ff92934be"
+    },
+    {
+      "path": "tools/test_historical_portfolio_simulation_v79_76_to_v79_80.py",
+      "bytes": 3027,
+      "sha256": "3bd1b2f5638f86e7dd456534a74ff1235cd58aad25c2cd53f56fdd855911005c"
+    },
+    {
+      "path": "tools/verify_v79_76_to_v79_80_pipeline.py",
+      "bytes": 1426,
+      "sha256": "45b233da5aef339841623c98ea5515fd1625f073f651969411e69e81fb63b296"
+    }
+  ]
+}

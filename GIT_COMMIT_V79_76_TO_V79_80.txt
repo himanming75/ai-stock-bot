@@ -1,0 +1,3 @@
+git add RUN_V79_76_TO_V79_80.ps1 INSTALL_CHECK_V79_76_TO_V79_80.ps1 VERIFY_V79_76_TO_V79_80.ps1 V79_76_TO_V79_80_INSTALL_AND_EXECUTION_CHECK.txt GIT_COMMIT_V79_76_TO_V79_80.txt V79_76_TO_V79_80_BUNDLE_MANIFEST.json alpaca_market_data/historical_portfolio_simulation_v79_76_80.py tools/install_check_v79_76_to_v79_80.py tools/run_v79_76_to_v79_80_pipeline.py tools/test_historical_portfolio_simulation_v79_76_to_v79_80.py tools/verify_v79_76_to_v79_80_pipeline.py release/v79_76 release/v79_77 release/v79_78 release/v79_79 release/v79_80
+git commit -m "V79.76-V79.80 historical portfolio simulation completed"
+git push origin main

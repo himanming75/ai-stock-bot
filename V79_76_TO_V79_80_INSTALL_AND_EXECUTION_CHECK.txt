@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V79_76_TO_V79_80.ps1
+EXPECTED: 13 tests OK, final_equity 100000 with current HOLD-only data, trade_count 0, VERIFY PASS.

@@ -1,0 +1,15 @@
+from pathlib import Path
+import argparse,json,shutil,sys
+R=Path(__file__).resolve().parents[1]
+if str(R) not in sys.path:sys.path.insert(0,str(R))
+from alpaca_market_data.historical_portfolio_simulation_v79_76_80 import *
+def main():
+ p=argparse.ArgumentParser();p.add_argument("--repository-root",default=".");p.add_argument("--clean",action="store_true");a=p.parse_args()
+ root=Path(a.repository_root).resolve();out=root/"release/v79_80/output"
+ if a.clean and out.exists():shutil.rmtree(out)
+ prior=root/"release/v79_75/output";c=PortfolioConfig()
+ r=run_portfolio_simulation(prior,prior/"historical_signal_engine_certificate_v79_75.json",c,out)
+ cert=build_portfolio_certificate(root,out,c,r)
+ print(json.dumps({"stage_range":"V79.76-V79.80","status":cert["status"],**cert["portfolio_summary"],"network_requests_executed":0,"credentials_used":0,"trading_client_created":False,"actual_orders_submitted":0,"next_phase":cert["next_phase"]},indent=2,sort_keys=True))
+ return 0 if cert["status"]=="PASS" else 1
+if __name__=="__main__":raise SystemExit(main())

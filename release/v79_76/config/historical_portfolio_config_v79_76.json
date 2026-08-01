@@ -1,0 +1,12 @@
+{
+  "initial_cash": 100000.0,
+  "allocation_per_trade": 0.1,
+  "commission_per_trade": 0.0,
+  "allow_short": false,
+  "allow_fractional": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
