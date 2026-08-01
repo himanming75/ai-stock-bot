@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V79_66_TO_V79_70.ps1
+EXPECTED: 13 tests OK, indicator_count 9, indicator_row_count 11, VERIFY PASS.

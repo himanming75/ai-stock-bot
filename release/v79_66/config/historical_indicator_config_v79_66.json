@@ -1,0 +1,13 @@
+{
+  "macd_fast": 2,
+  "macd_slow": 3,
+  "macd_signal": 2,
+  "bollinger_window": 3,
+  "stochastic_window": 3,
+  "roc_window": 2,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

@@ -1,0 +1,1 @@
+python tools/install_check_v79_66_to_v79_70.py

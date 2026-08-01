@@ -1,0 +1,92 @@
+{
+  "base_commit": "b8a91a7",
+  "stage_range": "V79.66-V79.70",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_66_TO_V79_70.txt",
+      "bytes": 622,
+      "sha256": "ebb54cce32f86db58783d29e08c5d46615667eb4fd7affc9510c4abd7fa2e69d"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_66_TO_V79_70.ps1",
+      "bytes": 47,
+      "sha256": "17680eb0c03c915b39dd228f75362b69bacbff844c0972ceed277abed9cee534"
+    },
+    {
+      "path": "RUN_V79_66_TO_V79_70.ps1",
+      "bytes": 643,
+      "sha256": "5f217876e731837fe6a04fff90bd12066cc69d44bc2c31acfdb6e76234a0a8fd"
+    },
+    {
+      "path": "V79_66_TO_V79_70_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 152,
+      "sha256": "4434c0a3b9f5489f30b9a8ed5f703b0d239fac081a60b11a63bd64f5ddc905d7"
+    },
+    {
+      "path": "VERIFY_V79_66_TO_V79_70.ps1",
+      "bytes": 69,
+      "sha256": "d6dae6642bc5fd61b30e7a7512639173f1dab4793660b3cce049d2e6c78b5c2d"
+    },
+    {
+      "path": "alpaca_market_data/historical_indicator_library_v79_66_70.py",
+      "bytes": 8695,
+      "sha256": "d9f865f479b29f6fb17737ba9898ed78bf3234b0dfc2fcb07d6e4a8fd431ecb1"
+    },
+    {
+      "path": "release/v79_66/config/historical_indicator_config_v79_66.json",
+      "bytes": 285,
+      "sha256": "a42eb2bad039d1825b1d797ce8a379b229d802b00b1fc5fe419a8929fc583a69"
+    },
+    {
+      "path": "release/v79_66/docs/V79.66_INDICATOR_REGISTRY.md",
+      "bytes": 68,
+      "sha256": "caf93aa4169450760a486b4921dc2e54d7cda30e8f41f917c1d9b6f065722578"
+    },
+    {
+      "path": "release/v79_67/docs/V79.67_INDICATOR_BUILDER.md",
+      "bytes": 78,
+      "sha256": "5aa2f1f8470b09da4d61c5f7871b9fd7688dde397cc791395e2c0b219e75c968"
+    },
+    {
+      "path": "release/v79_68/docs/V79.68_INDICATOR_CACHE.md",
+      "bytes": 67,
+      "sha256": "bbad82cf327ad0e73e6af014e0c417f539259e1ad89bc96da62ba62bdda38d42"
+    },
+    {
+      "path": "release/v79_69/docs/V79.69_INDICATOR_MANIFEST.md",
+      "bytes": 65,
+      "sha256": "6fea8b14b17cdaa644048c0ff0874cb725f10b34cf75b90b93c339720d7c62b4"
+    },
+    {
+      "path": "release/v79_70/docs/V79.66_TO_V79.70_RELEASE_NOTES.md",
+      "bytes": 91,
+      "sha256": "53a36c46f3db5c8cc372d0accf02720bf448b9acb7c96566ae68565536806f9a"
+    },
+    {
+      "path": "release/v79_70/docs/V79.70_INDICATOR_CERTIFICATE.md",
+      "bytes": 72,
+      "sha256": "efbf53a1da20aec4480e368397070594ec2c5e0fde0d1e35f6fc47b541ed2dd9"
+    },
+    {
+      "path": "tools/install_check_v79_66_to_v79_70.py",
+      "bytes": 662,
+      "sha256": "0d98e12023352a49b3925e0b9e60b7a90c5c6fdb76ec665de4e8a061565ef1da"
+    },
+    {
+      "path": "tools/run_v79_66_to_v79_70_pipeline.py",
+      "bytes": 1048,
+      "sha256": "f6ba96ebd5408a8992c9deae8310b1afa03c90de1dc0561c25dc9f3d05f96054"
+    },
+    {
+      "path": "tools/test_historical_indicator_library_v79_66_to_v79_70.py",
+      "bytes": 2968,
+      "sha256": "9a5b675093a811e2fec8d8741f3c90cb23bfebd19dd2631a25ec1a47dadebb8d"
+    },
+    {
+      "path": "tools/verify_v79_66_to_v79_70_pipeline.py",
+      "bytes": 1241,
+      "sha256": "560e523c110be4bb088701286e571eb3a0110427d9a02ddbae04e3ffc4387829"
+    }
+  ]
+}
