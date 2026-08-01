@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V83_01_TO_V83_20.ps1
+EXPECTED: 25 tests OK, 4 gate scenarios, pass and reject receipts, duplicate detection, paper session true, paper submit false, network 0, orders 0.
