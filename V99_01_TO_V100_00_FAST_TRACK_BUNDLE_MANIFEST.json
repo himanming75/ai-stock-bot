@@ -1,0 +1,74 @@
+{
+  "base_commit": "1a2bcef",
+  "stage_range": "V99.01-V100.00",
+  "functional_bundle": "FINAL_PAPER_PRODUCTION_CANDIDATE_FAST_TRACK",
+  "release_candidate": "AI_STOCK_BOT_PAPER_PRODUCTION_CANDIDATE_V100",
+  "features_removed": false,
+  "paper_trading_scope": true,
+  "live_trading_scope": false,
+  "default_network_requests_executed": 0,
+  "default_actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V99_01_TO_V100_00_FAST_TRACK.txt",
+      "bytes": 644,
+      "sha256": "1a6c74e5e61583c1cd1b717cc183596181200e559704a05c14605caaf4616ff8"
+    },
+    {
+      "path": "INSTALL_CHECK_V99_01_TO_V100_00_FAST_TRACK.ps1",
+      "bytes": 59,
+      "sha256": "27bc71177dccbd06eb47a32cb227d33b344440f59c8044fc16b72d4c7f22de16"
+    },
+    {
+      "path": "RUN_V99_01_TO_V100_00_FAST_TRACK.ps1",
+      "bytes": 936,
+      "sha256": "6fd8f11fdb9784e0c3edfc71c6e7956d02257b7c404c8808bb605831df969a31"
+    },
+    {
+      "path": "VERIFY_V99_01_TO_V100_00_FAST_TRACK.ps1",
+      "bytes": 72,
+      "sha256": "89be0419a33a9cec3ffed45a50ebc9f4539e2ddd067cc263f40ae2c1ab01e597"
+    },
+    {
+      "path": "alpaca_market_data/final_production_candidate_fast_track_v99_01_v100_00.py",
+      "bytes": 16233,
+      "sha256": "5bd79429a5562aeb8e2bcd349bcc73b19e53ef0d1af39d1e60b669749facc36a"
+    },
+    {
+      "path": "release/v100_00/docs/DESIGN.md",
+      "bytes": 437,
+      "sha256": "1e30179294f346448ad7932f1fa24f9394669a8c30bc42dbe673b1f376f11b4d"
+    },
+    {
+      "path": "release/v100_00/docs/RELEASE_NOTES.md",
+      "bytes": 234,
+      "sha256": "6c278bd91f86e402fa351d829a325f9705f38983e0cd2263b68fe63dadba8b35"
+    },
+    {
+      "path": "release/v100_00/docs/TEST_RESULTS.md",
+      "bytes": 285,
+      "sha256": "49e4f76c19738bb95f15f42b9be5a1c548945bb310c22cf8c2e17b1d928562ba"
+    },
+    {
+      "path": "tools/install_check_v99_01_to_v100_00_fast_track.py",
+      "bytes": 472,
+      "sha256": "1a2e994a0fb5ef24009aea61215dcc8d9ca972900c5ef48480365d5287ffd668"
+    },
+    {
+      "path": "tools/run_v99_01_to_v100_00_fast_track_pipeline.py",
+      "bytes": 1818,
+      "sha256": "8cc40c5a8fc2fe266576be1a290d50cb1ff6ab1bdbb98a22241bd8e5dfdada30"
+    },
+    {
+      "path": "tools/test_final_production_candidate_fast_track_v99_01_to_v100_00.py",
+      "bytes": 2601,
+      "sha256": "19fc3d46d72135d903fd21f850d11732b0b6d062b5e354888a118111de1b110c"
+    },
+    {
+      "path": "tools/verify_v99_01_to_v100_00_fast_track.py",
+      "bytes": 1800,
+      "sha256": "bb1e5bc2faee8f85a7498e00ce4fe3d11660f96160f350a1867fea64741a1921"
+    }
+  ]
+}
