@@ -1,0 +1,163 @@
+{
+  "base_commit": "dcf5cab",
+  "stage_range": "V87.81-V88.00",
+  "functional_bundle": "PAPER_STRATEGY_OPERATIONS_RELEASE_CANDIDATE",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V87_81_TO_V88_00.txt",
+      "bytes": 854,
+      "sha256": "be81408597be63d794df5fab61ca655e8b653db6d0a49e20127600de16b7435d"
+    },
+    {
+      "path": "INSTALL_CHECK_V87_81_TO_V88_00.ps1",
+      "bytes": 47,
+      "sha256": "ef60e6e020036a68a8f0b0106cd05e6c41a25bdefea769fb74048210c3e2cc12"
+    },
+    {
+      "path": "RUN_V87_81_TO_V88_00.ps1",
+      "bytes": 813,
+      "sha256": "c05fbc8616f330a313a9f8ac9446262dbf9ea396036ba4a775cccab09c2a57ac"
+    },
+    {
+      "path": "V87_81_TO_V88_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 215,
+      "sha256": "0f6cd18fd5445bbfd90c0665e8d7af018428b56bb544b25a5301deff2485b6c7"
+    },
+    {
+      "path": "VERIFY_V87_81_TO_V88_00.ps1",
+      "bytes": 69,
+      "sha256": "e450e26c90aa2b1fb6cd2d706282d50ad67bc50ae46ac79fde986053cab888a2"
+    },
+    {
+      "path": "alpaca_market_data/strategy_operations_rc_v87_81_v88_00.py",
+      "bytes": 19223,
+      "sha256": "f8a62d800dceb63a36c8883cfafd002afa5bc411093c536157c5dc0b0f41edca"
+    },
+    {
+      "path": "release/v87_81/docs/V87.81_RC_POLICY.md",
+      "bytes": 123,
+      "sha256": "0fae52d94d34522d46d7f29d47205b8808fcf0a0e2ee8ad62c95dd5631b92b60"
+    },
+    {
+      "path": "release/v87_82/docs/V87.82_RUNTIME_PROFILE.md",
+      "bytes": 129,
+      "sha256": "b07c9788b3ed10e3eb3a38ac9a7033cfa63d860eb4c76d04341bf5dc7ccce613"
+    },
+    {
+      "path": "release/v87_83/docs/V87.83_STARTUP_CHECK.md",
+      "bytes": 127,
+      "sha256": "c252f8af5aced2793186cf1ffdd6a34bd9593fd3357506409edaa2609c07ac40"
+    },
+    {
+      "path": "release/v87_84/docs/V87.84_STARTUP_MANAGER.md",
+      "bytes": 129,
+      "sha256": "4179de228bc6df98979de89321968be9ff5821d9351abeab45393e1d100124ee"
+    },
+    {
+      "path": "release/v87_85/docs/V87.85_HEALTH_MONITOR.md",
+      "bytes": 128,
+      "sha256": "aacd00d346addbfd416ba7415dcc6d4b14c8f36dddab451b172b978ae73813b0"
+    },
+    {
+      "path": "release/v87_86/docs/V87.86_RUNTIME_METRICS.md",
+      "bytes": 129,
+      "sha256": "e0e74d99510fbb946b44295e5db6d7c9ba982ed79a5cbddc888a86ff89314506"
+    },
+    {
+      "path": "release/v87_87/docs/V87.87_SCHEDULER_PLAN.md",
+      "bytes": 128,
+      "sha256": "949dec77ce247d93aa3aed37c8bab47d7b29dda0d304317b1f5dd16232bd23bf"
+    },
+    {
+      "path": "release/v87_88/docs/V87.88_DAILY_LIMIT_GUARD.md",
+      "bytes": 131,
+      "sha256": "2ac5c58cebbda81e2f74582c6bdd6b10ea6c804e0ad5fe29cc4d9fad06288afc"
+    },
+    {
+      "path": "release/v87_89/docs/V87.89_INCIDENT_POLICY.md",
+      "bytes": 129,
+      "sha256": "012c669745a15671858e146ff6eb84f648e50674712c055c6900a3755da0524f"
+    },
+    {
+      "path": "release/v87_90/docs/V87.90_INCIDENT_RECORD.md",
+      "bytes": 129,
+      "sha256": "b1cc4ebeec2691647ec2b43b4bac3cd11a73404806f8f5f353e1b080dcaaae45"
+    },
+    {
+      "path": "release/v87_91/docs/V87.91_RECOVERY_PLAN.md",
+      "bytes": 127,
+      "sha256": "f2e5776515d48828a3433aca651f85464e2bb0120dd4db162ead79a65aecffda"
+    },
+    {
+      "path": "release/v87_92/docs/V87.92_DAILY_REPORT.md",
+      "bytes": 126,
+      "sha256": "c7488eba10e6476e2dec02e15adcc565479c2d7e40f4f3c169669a1a8e0aa09a"
+    },
+    {
+      "path": "release/v87_93/docs/V87.93_SHUTDOWN_MANAGER.md",
+      "bytes": 130,
+      "sha256": "43f00a05abbbf229842788845c9a95031aaea204fc1a4540fc6628172a2e93fb"
+    },
+    {
+      "path": "release/v87_94/docs/V87.94_ROLLBACK_PACKAGE.md",
+      "bytes": 130,
+      "sha256": "e1dc6e6300a5c3fc4349f32e50b13f74153cef2edb0a8bff8d3c76c2487820c0"
+    },
+    {
+      "path": "release/v87_95/docs/V87.95_OPERATIONS_SCENARIO.md",
+      "bytes": 133,
+      "sha256": "7d7f3194142b6db0843d1134188ddcfba5aac7e6b0af7fdb323bab6ef9c349cc"
+    },
+    {
+      "path": "release/v87_96/docs/V87.96_OPERATIONS_AUDIT.md",
+      "bytes": 130,
+      "sha256": "2fb89d0394b702065d27524cc40a3618f788e0537dbf817f07015b62b2f8fc2e"
+    },
+    {
+      "path": "release/v87_97/docs/V87.97_RC_ACCEPTANCE_TEST.md",
+      "bytes": 132,
+      "sha256": "0b06895a11700e86d172570ffdf0292dab1f824a20feaba00c95a013a48c0774"
+    },
+    {
+      "path": "release/v87_98/docs/V87.98_RC_LEDGER.md",
+      "bytes": 123,
+      "sha256": "42d04cc557bed5ff4fb902a90fc6d24f48b9eafa5b10f9580be7d8d7efe2aa64"
+    },
+    {
+      "path": "release/v87_99/docs/V87.99_RC_MANIFEST.md",
+      "bytes": 125,
+      "sha256": "250a886fa540499ace70411a669020c9b4a3d974885476f7a4fdbf28edfc1454"
+    },
+    {
+      "path": "release/v88_00/docs/V87.81_TO_V88.00_RELEASE_NOTES.md",
+      "bytes": 423,
+      "sha256": "ec62bd9c20aca8c666c7f37bdcfdabd6c1a1afeb35ba2b93a62bb657cf626e95"
+    },
+    {
+      "path": "release/v88_00/docs/V88.00_STRATEGY_OPERATIONS_RC_COMPLETION.md",
+      "bytes": 260,
+      "sha256": "7f947d936f2509aa4563dfabdc56e52a3003d7bf4fd56341a2901f0f47064f57"
+    },
+    {
+      "path": "tools/install_check_v87_81_to_v88_00.py",
+      "bytes": 455,
+      "sha256": "bed69bbd270c0de3c6eaf11f321d18beb1a6f9a62d32b2c1043ba03e7e80c0cb"
+    },
+    {
+      "path": "tools/run_v87_81_to_v88_00_pipeline.py",
+      "bytes": 1152,
+      "sha256": "d3db4d0621763fdd5101cb103a034ca3ea9f3ced896747bbe98696284faf843e"
+    },
+    {
+      "path": "tools/test_strategy_operations_rc_v87_81_to_v88_00.py",
+      "bytes": 2415,
+      "sha256": "575930d507878e30e006dd5d446f83837745997e6933993f66010763a28a7c43"
+    },
+    {
+      "path": "tools/verify_v87_81_to_v88_00_pipeline.py",
+      "bytes": 1853,
+      "sha256": "a668f35d64abfa07a2a858a03f5cedbb6d0c0a53668566ea90cd3ff03b676249"
+    }
+  ]
+}

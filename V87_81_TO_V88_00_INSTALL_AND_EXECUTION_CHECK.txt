@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V87_81_TO_V88_00.ps1
+EXPECTED: startup/health/limits/incident recovery/daily report/shutdown/rollback/audit/acceptance PASS; scheduler false; network 0; orders 0.
