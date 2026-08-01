@@ -1,0 +1,15 @@
+{
+  "macd_weight": 1.0,
+  "roc_weight": 1.0,
+  "stochastic_weight": 1.0,
+  "bollinger_weight": 1.0,
+  "buy_threshold": 1.5,
+  "sell_threshold": -1.5,
+  "stochastic_oversold": 25.0,
+  "stochastic_overbought": 75.0,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

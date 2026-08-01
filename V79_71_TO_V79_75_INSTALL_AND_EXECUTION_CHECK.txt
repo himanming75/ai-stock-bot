@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V79_71_TO_V79_75.ps1
+EXPECTED: 13 tests OK, signal_row_count 11, distribution complete, VERIFY PASS.

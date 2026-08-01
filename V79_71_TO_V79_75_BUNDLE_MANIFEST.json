@@ -1,0 +1,92 @@
+{
+  "base_commit": "f2dcd98",
+  "stage_range": "V79.71-V79.75",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_71_TO_V79_75.txt",
+      "bytes": 610,
+      "sha256": "bbe2fc6984d57941902515631e52fd367cc3bbf55020e5492c2b6133757cc5c2"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_71_TO_V79_75.ps1",
+      "bytes": 47,
+      "sha256": "91b9c9bf4dba102ce878f5f4cb1e32a246751c03270457260adbfb71f04809af"
+    },
+    {
+      "path": "RUN_V79_71_TO_V79_75.ps1",
+      "bytes": 639,
+      "sha256": "41e4c892ba689800a7d063660420345cf582af63cc77b5f452bdcb232775fc06"
+    },
+    {
+      "path": "V79_71_TO_V79_75_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 153,
+      "sha256": "ddba65a8c8e8164a0b25cbd138f1f41258b1196a10cce87029a35f2be41605bb"
+    },
+    {
+      "path": "VERIFY_V79_71_TO_V79_75.ps1",
+      "bytes": 69,
+      "sha256": "436f2bd837292966bdaac8137912bba3341fd81d0ca0bd5d95316482a3d07579"
+    },
+    {
+      "path": "alpaca_market_data/historical_signal_engine_v79_71_75.py",
+      "bytes": 10103,
+      "sha256": "4b086296bf63a456a49726473b4254b74032b3ad0d0279e3a2fd5dda9e761be7"
+    },
+    {
+      "path": "release/v79_71/config/historical_signal_config_v79_71.json",
+      "bytes": 371,
+      "sha256": "118f04326e4d66ed1bbdbcefc8e022cde579b1d6cc2646112ee945d1c6b62315"
+    },
+    {
+      "path": "release/v79_71/docs/V79.71_SIGNAL_RULE_REGISTRY.md",
+      "bytes": 104,
+      "sha256": "336240149667d64afbf3b231cd23ab9b8c91f1c7baa65a6497611f38ee05052c"
+    },
+    {
+      "path": "release/v79_72/docs/V79.72_SIGNAL_BUILDER.md",
+      "bytes": 103,
+      "sha256": "93985dbc268d3f925cf21fa711e8fafa4c8bd2d2383ce3cc10eee71cc874cb2d"
+    },
+    {
+      "path": "release/v79_73/docs/V79.73_SIGNAL_CACHE.md",
+      "bytes": 83,
+      "sha256": "f88da34a34a52214fe4ad0d3b0e0a3eb86a2e83c775055eb9050448e6a29de07"
+    },
+    {
+      "path": "release/v79_74/docs/V79.74_SIGNAL_MANIFEST.md",
+      "bytes": 89,
+      "sha256": "999bb2fe76b432bb642dacdd122d2451008d672dac473de97baf1275a7ab192d"
+    },
+    {
+      "path": "release/v79_75/docs/V79.71_TO_V79.75_RELEASE_NOTES.md",
+      "bytes": 166,
+      "sha256": "14c171bd59342a1985b4ba64a7fadb11d30dd158cbe87f7d7f3bd01d25d57d9f"
+    },
+    {
+      "path": "release/v79_75/docs/V79.75_SIGNAL_CERTIFICATE.md",
+      "bytes": 103,
+      "sha256": "f1e9e1ecea689723bf64047222d6f9beb45f50850dded8d8970b22fdfc9a6afc"
+    },
+    {
+      "path": "tools/install_check_v79_71_to_v79_75.py",
+      "bytes": 644,
+      "sha256": "4a78db91c2fc4be26d695dfd99f8c09531f134cbbf348fd0b7f9dbb8b3c8665a"
+    },
+    {
+      "path": "tools/run_v79_71_to_v79_75_pipeline.py",
+      "bytes": 1040,
+      "sha256": "84dc90e3b14c1de2d52f5a2f5f5d6270a43bb5dedb9d86d8c6bb853f68297406"
+    },
+    {
+      "path": "tools/test_historical_signal_engine_v79_71_to_v79_75.py",
+      "bytes": 3145,
+      "sha256": "ab68d91f18a02d71a6e0a11a53cb8938f615e7af3b85556e71b3d84280703c8a"
+    },
+    {
+      "path": "tools/verify_v79_71_to_v79_75_pipeline.py",
+      "bytes": 1486,
+      "sha256": "809aa70e3e1e87fcf4ee41a6fe94ffea488d247118d98f5e0586c340f8537d67"
+    }
+  ]
+}
