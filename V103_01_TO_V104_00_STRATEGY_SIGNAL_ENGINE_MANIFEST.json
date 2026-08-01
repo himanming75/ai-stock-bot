@@ -1,0 +1,97 @@
+{
+  "base_commit": "2880e36",
+  "stage_range": "V103.01-V104.00",
+  "bundle_type": "STRATEGY_SIGNAL_ENGINE_FOUNDATION",
+  "certificate_only": false,
+  "requires_runtime_engine": true,
+  "requires_market_data_engine": true,
+  "order_intent_enabled": false,
+  "paper_order_submission_enabled": false,
+  "network_write_enabled": false,
+  "actual_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "validated_against_prior_real_foundations": true,
+  "file_count": 17,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V103_01_TO_V104_00_STRATEGY_SIGNAL_ENGINE.txt",
+      "bytes": 513,
+      "sha256": "a81d52804488365bacb9146bcddd032fa7a704b2addd039cf0d24b8073e4681c"
+    },
+    {
+      "path": "RUN_V103_01_TO_V104_00_STRATEGY_SIGNAL_ENGINE.ps1",
+      "bytes": 933,
+      "sha256": "29d78f80cbb8c2bbce8a2cb31df9f5deae7e24cde23ff78668c0cbeb5bb98a67"
+    },
+    {
+      "path": "release/v104_00/docs/DESIGN.md",
+      "bytes": 489,
+      "sha256": "2b781389e7beb9118b458a370cbbe66cbfe8f59f5ac6ff0f5878d4d81a5347f0"
+    },
+    {
+      "path": "release/v104_00/docs/RELEASE_NOTES.md",
+      "bytes": 206,
+      "sha256": "ad076420a972a3235a75398bdb8a4b843879e9a6dee7e4d354cf52dd27cd4135"
+    },
+    {
+      "path": "release/v104_00/docs/TEST_RESULTS.md",
+      "bytes": 354,
+      "sha256": "93d9436384f20e3aadb9af31c563e55d11cf718241165adf1b849cfefbb98830"
+    },
+    {
+      "path": "strategy_engine/__init__.py",
+      "bytes": 658,
+      "sha256": "46c360eef02f0ebf044cb6f73a503aa2a19f718f271a4cc92780ba192bd8a9b0"
+    },
+    {
+      "path": "strategy_engine/dedup.py",
+      "bytes": 1076,
+      "sha256": "e396a65fd3dde7e40236c5c4dd2bf1daead466542d419c522dac13e242db5162"
+    },
+    {
+      "path": "strategy_engine/engine.py",
+      "bytes": 2555,
+      "sha256": "184c89e415f01b3d091f20802ddcdfe5e8fec410cec6f5a936fa6df61c96b2e8"
+    },
+    {
+      "path": "strategy_engine/filters.py",
+      "bytes": 3007,
+      "sha256": "0d9a157eb427da5a621b139a0dfe8da1060b11db3d4d8cd98646bf3ec1e50d7a"
+    },
+    {
+      "path": "strategy_engine/models.py",
+      "bytes": 2772,
+      "sha256": "66a63485976075ea0c04b67f25c675819f7e08da17b500b985148bd16e334fef"
+    },
+    {
+      "path": "strategy_engine/sample_strategy.py",
+      "bytes": 2317,
+      "sha256": "d90fb035f5d3aedba47c2ca2857e9672dbc5bde7aea2c1b77cdd8b047eb0e25e"
+    },
+    {
+      "path": "strategy_engine/strategy.py",
+      "bytes": 301,
+      "sha256": "20d4c52a703380997b2bd75b38621bb2272ece83acd60fdcdce237e1db3f08c5"
+    },
+    {
+      "path": "tools/install_check_v103_01_to_v104_00.py",
+      "bytes": 518,
+      "sha256": "a972e1016dd67e129c509e754c851a08b75012b323060900b08dc650208fdd86"
+    },
+    {
+      "path": "tools/run_strategy_signal_engine_v103_01_to_v104_00.py",
+      "bytes": 3198,
+      "sha256": "9dbd2cc0fd59091fa75a0f30b205495fa6f18b2c17a0fab9be234070b0784453"
+    },
+    {
+      "path": "tools/test_strategy_signal_engine_v103_01_to_v104_00.py",
+      "bytes": 6436,
+      "sha256": "484aeb535b56c66ccf3285f19f03985a4bdfe4a6cf9ec01baea7266577adef78"
+    },
+    {
+      "path": "tools/verify_strategy_signal_engine_v103_01_to_v104_00.py",
+      "bytes": 1944,
+      "sha256": "62e2543bc5acaf8e3536d2158006f79a1b1ae4a49510a9b206763e6c6f73fb38"
+    }
+  ]
+}
