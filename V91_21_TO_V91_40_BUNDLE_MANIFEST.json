@@ -1,0 +1,70 @@
+{
+  "base_commit": "7df7270",
+  "stage_range": "V91.21-V91.40",
+  "functional_bundle": "ACTUAL_PAPER_AUTOMATION_SESSION_VALIDATION",
+  "write_capability_count": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V91_21_TO_V91_40.txt",
+      "bytes": 533,
+      "sha256": "cf5681fd101ac6540d44962f6fc676a36091b93c1f7f3014b4dbb51eaacf4301"
+    },
+    {
+      "path": "INSTALL_CHECK_V91_21_TO_V91_40.ps1",
+      "bytes": 47,
+      "sha256": "9b7f0f4240cac4a2c04966ff4642b75c71a7cbe1f3f48e6e422efbcc8ef97aae"
+    },
+    {
+      "path": "RUN_V91_21_TO_V91_40.ps1",
+      "bytes": 822,
+      "sha256": "5c155b8c1af06ae49aef03d55878fa9cc5a0490e2d89d7bcd5b80f1d0d4d6eb4"
+    },
+    {
+      "path": "VERIFY_V91_21_TO_V91_40.ps1",
+      "bytes": 69,
+      "sha256": "3ecf061b59618dd69859596e2b06a703c211c641b5f43b956c4b99e9149ef034"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_automation_session_v91_21_40.py",
+      "bytes": 18163,
+      "sha256": "b21a642e1cb7fe22af3c6fd04b3dc8bd1d92451e3337d14d8ef992ddc2b2ac57"
+    },
+    {
+      "path": "release/v91_40/docs/DESIGN.md",
+      "bytes": 355,
+      "sha256": "0a5ba923c249a001f68424ea82f85385b2218e1740b4fbe74f4c2630f9aa697d"
+    },
+    {
+      "path": "release/v91_40/docs/RELEASE_NOTES.md",
+      "bytes": 182,
+      "sha256": "01c01246f706394f7f2adc3c6be8a1fea50b4fe7e7a795df720b3b277d604d15"
+    },
+    {
+      "path": "release/v91_40/docs/TEST_RESULTS.md",
+      "bytes": 179,
+      "sha256": "f14784d7e98203e83428dc52504dd980f0f2ee14953f2a060d05328663f7831b"
+    },
+    {
+      "path": "tools/install_check_v91_21_to_v91_40.py",
+      "bytes": 460,
+      "sha256": "fb81e4aaa350737f489df931f7c997fd9bc61038dfa5f5457c57594b09dd6701"
+    },
+    {
+      "path": "tools/run_v91_21_to_v91_40_pipeline.py",
+      "bytes": 1552,
+      "sha256": "1be5a722a778f6e8717a5191ae53eb72f29b25c5c5444244b68a053b93c131dc"
+    },
+    {
+      "path": "tools/test_actual_paper_automation_session_v91_21_to_v91_40.py",
+      "bytes": 2821,
+      "sha256": "3a8a44fba3a566910678847ee3e94f6e4f9f60e354abcbcf82f9a8e17012ff33"
+    },
+    {
+      "path": "tools/verify_v91_21_to_v91_40_pipeline.py",
+      "bytes": 1874,
+      "sha256": "f472446f3212a804d67361eb8ce1c662a18bfdd058e4ddcceb42d9fb36d99d84"
+    }
+  ]
+}
