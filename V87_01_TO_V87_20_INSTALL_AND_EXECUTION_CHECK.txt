@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V87_01_TO_V87_20.ps1
+EXPECTED: signal/risk/approval/preview/reservation/context/checkpoint/resume/cancel/lock release PASS, rejection scenarios >=5, network 0, orders 0.

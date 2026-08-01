@@ -1,0 +1,163 @@
+{
+  "base_commit": "2b20c2e",
+  "stage_range": "V87.01-V87.20",
+  "functional_bundle": "PAPER_STRATEGY_EXECUTION_OPERATIONS_FOUNDATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V87_01_TO_V87_20.txt",
+      "bytes": 867,
+      "sha256": "8987cca94d082116a93cfbc135bb7e154817e7f1b3b6f1d4a8bfcddf8f3b46ae"
+    },
+    {
+      "path": "INSTALL_CHECK_V87_01_TO_V87_20.ps1",
+      "bytes": 47,
+      "sha256": "1774ae9afe41c51ec7609426b44eacea578a9a9ba7b4653ae98fb34047bd8b05"
+    },
+    {
+      "path": "RUN_V87_01_TO_V87_20.ps1",
+      "bytes": 820,
+      "sha256": "ae451b66669ca8d53bb86d4e23df865974978037a88a219fed998ae866503d8f"
+    },
+    {
+      "path": "V87_01_TO_V87_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 222,
+      "sha256": "8d8aa43c8993883e956eb4360c55b3d12817f9b6b74a59c93ccf3bb2048e8742"
+    },
+    {
+      "path": "VERIFY_V87_01_TO_V87_20.ps1",
+      "bytes": 69,
+      "sha256": "1253b6f531337b23dee929b12a4c50f97566b367c8ea757a6d4cba93ae1db559"
+    },
+    {
+      "path": "alpaca_market_data/strategy_execution_operations_v87_01_20.py",
+      "bytes": 20330,
+      "sha256": "fe320bd59a62e77afda6808006062cc552cfbaebf9ac17a6abcdca9e4fe12f4b"
+    },
+    {
+      "path": "release/v87_01/docs/V87.01_STRATEGY_POLICY.md",
+      "bytes": 175,
+      "sha256": "648708f3c15084e8f272559d8ef5a09e1fce1ec79408166b40188bd4bca5ee3b"
+    },
+    {
+      "path": "release/v87_02/docs/V87.02_SIGNAL_INTAKE.md",
+      "bytes": 173,
+      "sha256": "3facf779328c70812b517783a99f3e57749b2bee3c49427641638ad4015c300a"
+    },
+    {
+      "path": "release/v87_03/docs/V87.03_SIGNAL_VALIDATION.md",
+      "bytes": 177,
+      "sha256": "35b9c39a90ede5dce6203fa3d74d62f4d93edf2dcadeb80e7f88b3617b8ee44c"
+    },
+    {
+      "path": "release/v87_04/docs/V87.04_RISK_DECISION.md",
+      "bytes": 173,
+      "sha256": "00f3230a16a94809c2150df55d1b254d8831a8f09165be6b9398e2b1d4f59753"
+    },
+    {
+      "path": "release/v87_05/docs/V87.05_STRATEGY_LOCK.md",
+      "bytes": 173,
+      "sha256": "291dc26721a4f0c8e68df5f04a6b3d9232e8f9b9a0ca1875f47f47d0cccfc0d3"
+    },
+    {
+      "path": "release/v87_06/docs/V87.06_APPROVAL_REQUEST.md",
+      "bytes": 176,
+      "sha256": "350cd8fce8346853c0b77929d82b242f3fac6857c037fbb464e9fa2c3c098dc8"
+    },
+    {
+      "path": "release/v87_07/docs/V87.07_MANUAL_APPROVAL.md",
+      "bytes": 175,
+      "sha256": "56bb3f4853e7d80e94cafd1ed474efc8a5dd012ceacdcb0623ebcb5fa897003a"
+    },
+    {
+      "path": "release/v87_08/docs/V87.08_EXECUTION_PREVIEW.md",
+      "bytes": 177,
+      "sha256": "2decee76615cc8769febe9477c1d822f7a45c2eb3abb6c37cf6908c037d5125e"
+    },
+    {
+      "path": "release/v87_09/docs/V87.09_BUDGET_RESERVATION.md",
+      "bytes": 178,
+      "sha256": "8b3dbf6a923359f70d41e7524961f1d1cfe7389c914f767fceb043112897b1ed"
+    },
+    {
+      "path": "release/v87_10/docs/V87.10_EXECUTION_CONTEXT.md",
+      "bytes": 177,
+      "sha256": "f5320def7bbb7ebae05479ad113189d95a054ac420caea10f8a884adbf1692c0"
+    },
+    {
+      "path": "release/v87_11/docs/V87.11_EXECUTION_QUEUE.md",
+      "bytes": 175,
+      "sha256": "b70ebe473f1bec2fd019401e71d3d0545bf6b9b5f40c2b682d07812a85661a76"
+    },
+    {
+      "path": "release/v87_12/docs/V87.12_SESSION_CHECKPOINT.md",
+      "bytes": 178,
+      "sha256": "6aa1e2b434c046369213ddd2f86f01e5fecc0559e90fbf746b68ef6642b9ac2e"
+    },
+    {
+      "path": "release/v87_13/docs/V87.13_SESSION_RESUME.md",
+      "bytes": 174,
+      "sha256": "39fe8b7b1a63d93d97171385bd7b28fe3269972463474dae4d6e1ea4d3ed1263"
+    },
+    {
+      "path": "release/v87_14/docs/V87.14_PREVIEW_CANCEL.md",
+      "bytes": 174,
+      "sha256": "74df2f1d8ec143404eb85a3882a8c2871192f03de641e0d6d3f84ecf348b3b71"
+    },
+    {
+      "path": "release/v87_15/docs/V87.15_STRATEGY_LOCK_RELEASE.md",
+      "bytes": 181,
+      "sha256": "0725c9ce55abd153169a1c74b0cbe75e08bc60755f29c1387644bef744ae9552"
+    },
+    {
+      "path": "release/v87_16/docs/V87.16_REJECTION_SCENARIOS.md",
+      "bytes": 179,
+      "sha256": "f0e35c1527f247fc2021157ae4ff7e6945f8d0ce680b74e0dddff26543c295cd"
+    },
+    {
+      "path": "release/v87_17/docs/V87.17_ROLLBACK_PLAN.md",
+      "bytes": 173,
+      "sha256": "4352d2585dfed54f4c008ebe868ea6628fe1c0201859a736a084c9ae1734114d"
+    },
+    {
+      "path": "release/v87_18/docs/V87.18_OPERATIONS_SCENARIO.md",
+      "bytes": 179,
+      "sha256": "efdda508287642365a54be02a70c361f1ded35f3f88337704bf1bdf735fa22d0"
+    },
+    {
+      "path": "release/v87_19/docs/V87.19_STRATEGY_EXECUTION_AUDIT.md",
+      "bytes": 184,
+      "sha256": "e5087a9909542ec421f7eb1aef4d34a6f134082de24b9b6f846468148ed8a76b"
+    },
+    {
+      "path": "release/v87_20/docs/V87.01_TO_V87.20_RELEASE_NOTES.md",
+      "bytes": 486,
+      "sha256": "546dc43a0221e5cb97c0ac51fbc4ea01cbde1fc6f87831cfd8848d79f66eba75"
+    },
+    {
+      "path": "release/v87_20/docs/V87.20_STRATEGY_EXECUTION_COMPLETION.md",
+      "bytes": 189,
+      "sha256": "9374121afcc400035ed9e1a1b845865d4bad8b11d5486ff8c2ea3c77a6893d49"
+    },
+    {
+      "path": "tools/install_check_v87_01_to_v87_20.py",
+      "bytes": 458,
+      "sha256": "89769633cbbaed1b469eb734677d45e81d0e3619e9901bd58a7f8e78dad29849"
+    },
+    {
+      "path": "tools/run_v87_01_to_v87_20_pipeline.py",
+      "bytes": 1138,
+      "sha256": "03d26bf3af5f2d833d40e206ec9c448a88a2631c43f88eeb66969b6a1895d912"
+    },
+    {
+      "path": "tools/test_strategy_execution_operations_v87_01_to_v87_20.py",
+      "bytes": 2824,
+      "sha256": "dd0e48239c6f816ab422370b3b8dd22b9d05a72e7659f89c239156b93314d251"
+    },
+    {
+      "path": "tools/verify_v87_01_to_v87_20_pipeline.py",
+      "bytes": 1889,
+      "sha256": "8982faa078e73ef25bc2e4e82ce566ffafed3a4e0a512c82d90eea60d305d7bc"
+    }
+  ]
+}
