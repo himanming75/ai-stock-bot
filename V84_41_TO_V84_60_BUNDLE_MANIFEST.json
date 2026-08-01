@@ -1,0 +1,168 @@
+{
+  "base_commit": "78dbef0",
+  "stage_range": "V84.41-V84.60",
+  "functional_bundle": "LIVE_ORDER_AUTHORIZATION_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V84_41_TO_V84_60.txt",
+      "bytes": 846,
+      "sha256": "8381a098efc76da7aead65f57668e2ecc5c77520b29641b80aa9d2334d243746"
+    },
+    {
+      "path": "INSTALL_CHECK_V84_41_TO_V84_60.ps1",
+      "bytes": 47,
+      "sha256": "144f529e50673f23fca0969248ff4965c3055997872ca54627932aac5bf52d0f"
+    },
+    {
+      "path": "RUN_V84_41_TO_V84_60.ps1",
+      "bytes": 815,
+      "sha256": "e337c3f00fd135a6e32f589a3af49b93d1a1ba4245bba7a232d8894de9331d8b"
+    },
+    {
+      "path": "V84_41_TO_V84_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 271,
+      "sha256": "9b963a434c295063369ee15c566bb9bf976d310cb40e5a6db2a8e22c77b98956"
+    },
+    {
+      "path": "VERIFY_V84_41_TO_V84_60.ps1",
+      "bytes": 69,
+      "sha256": "56856bd1b0d7454c2fe83a5f985af2b2679047224c3a7d2c8787ce8099472c76"
+    },
+    {
+      "path": "alpaca_market_data/live_order_authorization_v84_41_60.py",
+      "bytes": 17134,
+      "sha256": "c84a8d807f107a6ef6992131fb1b35bf5c3f8f6173c3c1f1d4cd5fb9e2650189"
+    },
+    {
+      "path": "release/v84_41/config/live_order_authorization_config_v84_41.json",
+      "bytes": 338,
+      "sha256": "ca17e516a5adf19cc31520f0fdc34ec437a13e2e5bd8c2516459bbd6615cbd24"
+    },
+    {
+      "path": "release/v84_41/docs/V84.41_AUTHORIZATION_POLICY.md",
+      "bytes": 198,
+      "sha256": "2a6ae7d18a0c29e71c6d7c087f0c6b97370162846c9717d2af8ed76564c9ddf4"
+    },
+    {
+      "path": "release/v84_42/docs/V84.42_AUTHORIZATION_REQUEST.md",
+      "bytes": 199,
+      "sha256": "7436c767fe58d3a098694c6dfedce75a18bb8389432ffd10f202b89a3cff3641"
+    },
+    {
+      "path": "release/v84_43/docs/V84.43_MULTI_APPROVER_FLOW.md",
+      "bytes": 197,
+      "sha256": "24d6b411e0391e101819cb2c800feae3ce2a106c24196e51c29c211a2bfbb080"
+    },
+    {
+      "path": "release/v84_44/docs/V84.44_APPROVAL_EVALUATION.md",
+      "bytes": 197,
+      "sha256": "d251bcedcc03bff46a7c97122fd19383264b85e14b5dcaad1ecc4ac74ff19634"
+    },
+    {
+      "path": "release/v84_45/docs/V84.45_SCOPE_CONTRACT.md",
+      "bytes": 192,
+      "sha256": "3f34332d498bae5967feb6585a6fe1a9f5ce47d85922aecbe13b5b6657e206f9"
+    },
+    {
+      "path": "release/v84_46/docs/V84.46_AUTHORIZATION_TOKEN.md",
+      "bytes": 197,
+      "sha256": "e1336d583a834794addc37c57f02c70f7e01fe0ccb625902e6c6b9f32529c427"
+    },
+    {
+      "path": "release/v84_47/docs/V84.47_TOKEN_VALIDATION.md",
+      "bytes": 194,
+      "sha256": "ad4d20a58c548bf04f3f7eb3e35cc8f7ddcb66f706c680e1906c0f55859a5698"
+    },
+    {
+      "path": "release/v84_48/docs/V84.48_SINGLE_USE_CONSUMPTION.md",
+      "bytes": 200,
+      "sha256": "a3364acc02d80230ea9d9ed5dad858bd7cfba91912f21dc1c78e241d75bc3cf1"
+    },
+    {
+      "path": "release/v84_49/docs/V84.49_TOKEN_REVOCATION.md",
+      "bytes": 194,
+      "sha256": "518466377861cc0dcb706696b1324f590e19b9fba8fe468e226af963bc5e2f8a"
+    },
+    {
+      "path": "release/v84_50/docs/V84.50_TOKEN_EXPIRATION.md",
+      "bytes": 194,
+      "sha256": "9118c761c7843fdaa08982e5a63f570f8083f991e6dd6eedd031849d2a9eac0e"
+    },
+    {
+      "path": "release/v84_51/docs/V84.51_DUPLICATE_GUARD.md",
+      "bytes": 193,
+      "sha256": "af214ef78e09ebf1ddc479169d5fb3b30fb16b6a245f880e9472348514a1a3c3"
+    },
+    {
+      "path": "release/v84_52/docs/V84.52_REPLAY_GUARD.md",
+      "bytes": 190,
+      "sha256": "1c74d469a6a5c18ca9a3be66aa5550a76aaf5fdd839891de3bf442f091e076b6"
+    },
+    {
+      "path": "release/v84_53/docs/V84.53_AUTHORIZATION_RECEIPT.md",
+      "bytes": 199,
+      "sha256": "b49ea4acd4ab9aa4f6096830019cb3156a74db724a8dc6afd4d4fe2e97bf1cc7"
+    },
+    {
+      "path": "release/v84_54/docs/V84.54_AUTHORIZATION_STATE_MACHINE.md",
+      "bytes": 205,
+      "sha256": "cd6b88984b521df7f8a608af4e0fd51d4f2a5b2a3796647b6d41683e30b79c21"
+    },
+    {
+      "path": "release/v84_55/docs/V84.55_AUTHORIZATION_SCENARIOS.md",
+      "bytes": 201,
+      "sha256": "f54fd2e4dce0a020bc451a59e55661c453adcb2230428a725557c9c5c2589226"
+    },
+    {
+      "path": "release/v84_56/docs/V84.56_AUTHORIZATION_AUDIT.md",
+      "bytes": 197,
+      "sha256": "fbe43de787b180fda3f189bb66f18be066ca949cf55320dc770db55c0da9ea3a"
+    },
+    {
+      "path": "release/v84_57/docs/V84.57_MASTER_LEDGER.md",
+      "bytes": 191,
+      "sha256": "aca839490129e1c7cd1a4ce24150fd73ecafc45ab1dbdff795d2794a8aee85c9"
+    },
+    {
+      "path": "release/v84_58/docs/V84.58_AUTHORIZATION_MANIFEST.md",
+      "bytes": 200,
+      "sha256": "cd0566e29916b5b1742d6fabb158d0fdf0f0f955c1522408089ff754d48625a6"
+    },
+    {
+      "path": "release/v84_59/docs/V84.59_AUTHORIZATION_PIPELINE.md",
+      "bytes": 200,
+      "sha256": "e4443bb55b91b06d62193af7bd904ddb234b9a21eec08e8d37a3da8c90ff1ddb"
+    },
+    {
+      "path": "release/v84_60/docs/V84.41_TO_V84.60_RELEASE_NOTES.md",
+      "bytes": 448,
+      "sha256": "654c351addfb02db39b4ded552fa04c035e2e37c4c58f5a29a292cd86c98daa9"
+    },
+    {
+      "path": "release/v84_60/docs/V84.60_LIVE_ORDER_AUTHORIZATION_COMPLETION.md",
+      "bytes": 213,
+      "sha256": "34b8b7e9b86949448dcdcd1f69acd27f0313f6fa2cc43f73864308bba7f7719b"
+    },
+    {
+      "path": "tools/install_check_v84_41_to_v84_60.py",
+      "bytes": 667,
+      "sha256": "f17f096cab48a39d6c0374e530578531b7d2aa8fb30fc27af598cd746e57790e"
+    },
+    {
+      "path": "tools/run_v84_41_to_v84_60_pipeline.py",
+      "bytes": 1216,
+      "sha256": "7e3a944f0bb824b84db187f58540e680bb2c1cad063116657fbee7445c4abab4"
+    },
+    {
+      "path": "tools/test_live_order_authorization_v84_41_to_v84_60.py",
+      "bytes": 3441,
+      "sha256": "878d6694962b903da33ba8b067e80109dff26b6d42aac9a1c1a12079e4a233a4"
+    },
+    {
+      "path": "tools/verify_v84_41_to_v84_60_pipeline.py",
+      "bytes": 2259,
+      "sha256": "617d874141ef588a0f3daa6f8f1111bedd5de9007a3681289527eccf976f175b"
+    }
+  ]
+}

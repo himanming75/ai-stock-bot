@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V84_41_TO_V84_60.ps1
+EXPECTED: 24 tests OK, 3 approvals, live authorization token issued/validated, wrong-intent rejection, single-use/revoke/expire, duplicate/replay detection, submit/network capabilities 0, orders 0.

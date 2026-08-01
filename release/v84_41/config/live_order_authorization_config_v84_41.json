@@ -1,0 +1,13 @@
+{
+  "mode": "LIVE_ORDER_AUTHORIZATION_OFFLINE",
+  "environment": "LIVE",
+  "required_approvals": 3,
+  "token_ttl_seconds": 180,
+  "single_use": true,
+  "max_order_notional": 500.0,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
