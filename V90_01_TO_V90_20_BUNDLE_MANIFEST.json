@@ -1,0 +1,81 @@
+{
+  "base_commit": "e0ccde4",
+  "stage_range": "V90.01-V90.20",
+  "functional_bundle": "ACTUAL_PAPER_AUTOMATION_ENABLEMENT_FOUNDATION",
+  "network_default": "OFFLINE_FIXTURE",
+  "actual_network_mode": "OPT_IN_GET_ONLY",
+  "write_capability_count": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V90_01_TO_V90_20.txt",
+      "bytes": 605,
+      "sha256": "f677af6dbf5e83e637217b37589e42b8e86fd3410c0ad67e4831c6cc349c8975"
+    },
+    {
+      "path": "INSTALL_CHECK_V90_01_TO_V90_20.ps1",
+      "bytes": 47,
+      "sha256": "a4a88c8d41bf73981b8fc718fbca6a0c95e4a193d360a8603e213816688d28cb"
+    },
+    {
+      "path": "RUN_V90_01_TO_V90_20.ps1",
+      "bytes": 837,
+      "sha256": "608308616955606c3ab71f70995643c44ca30dcb16d4149eed145c7e373c6e71"
+    },
+    {
+      "path": "RUN_V90_01_TO_V90_20_ACTUAL_PAPER_READ.ps1",
+      "bytes": 429,
+      "sha256": "6728059d6c5e8e63066b4d5b7d6d17aedfc67d5a329fa8be2dc2379d1974186b"
+    },
+    {
+      "path": "VERIFY_V90_01_TO_V90_20.ps1",
+      "bytes": 69,
+      "sha256": "7b9bbce7ec19c1399e11398e5fdfd8b1576db1ef78bc3bb0fd1b407a4c5e7a8d"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_automation_v90_01_20.py",
+      "bytes": 16120,
+      "sha256": "376af9d1db4fb16b43cb54869afae743e7902ce33be8e690e74ffae253eec5c8"
+    },
+    {
+      "path": "release/v90_20/docs/DESIGN.md",
+      "bytes": 406,
+      "sha256": "a94f498e449a4e90d8c35823de99283d040707aab46bad81bdc4ea8d743ffa80"
+    },
+    {
+      "path": "release/v90_20/docs/RELEASE_NOTES.md",
+      "bytes": 361,
+      "sha256": "4059f5e8dbaec70adaa0b3dfe8f26a5ae6f4a4a3f4932bc3c6ef41a1c15394bd"
+    },
+    {
+      "path": "release/v90_20/docs/TEST_RESULTS.md",
+      "bytes": 295,
+      "sha256": "d9e75f383c87236481a9c75e52d60f6b4f092b42fcedabaa2775ea4af3a3e0e2"
+    },
+    {
+      "path": "tools/install_check_v90_01_to_v90_20.py",
+      "bytes": 440,
+      "sha256": "813fed4762b4e3010830b92788f91b68156328d88a0843f80d4aa2089d55cd3e"
+    },
+    {
+      "path": "tools/run_v90_01_to_v90_20_actual_read.py",
+      "bytes": 537,
+      "sha256": "f0c4bb7504f00f66ce96e3fbd0b527d0a933e2693de263b1ba68f58eebf49d56"
+    },
+    {
+      "path": "tools/run_v90_01_to_v90_20_pipeline.py",
+      "bytes": 1138,
+      "sha256": "b44e37bbc3c2eb34038f98c94e3b9be05fc9a453056a92f35319480ac3aaccb2"
+    },
+    {
+      "path": "tools/test_actual_paper_automation_v90_01_to_v90_20.py",
+      "bytes": 3140,
+      "sha256": "559c5b12c735b131d010e02e51a198a8b400cd9e5b894ab6ec0ec8ab1fcf7d7c"
+    },
+    {
+      "path": "tools/verify_v90_01_to_v90_20_pipeline.py",
+      "bytes": 1530,
+      "sha256": "df21b051d7a003a196e61cacb767d26c82fdb4602691244c19e75f6fc2be4745"
+    }
+  ]
+}
