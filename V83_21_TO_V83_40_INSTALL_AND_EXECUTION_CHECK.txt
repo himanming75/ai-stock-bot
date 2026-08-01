@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V83_21_TO_V83_40.ps1
+EXPECTED: 22 tests OK, 2 approvals, token issued and validated, single-use consume, revoke/expire/replay checks, submit capabilities 0, network 0, orders 0.
