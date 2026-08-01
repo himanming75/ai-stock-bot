@@ -1,0 +1,11 @@
+{
+  "mode": "OFFLINE_ADAPTER_CONTRACT_ONLY",
+  "adapter_name": "SANDBOX_BROKER",
+  "retry_limit": 3,
+  "rate_limit_per_minute": 120,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_client_creation": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

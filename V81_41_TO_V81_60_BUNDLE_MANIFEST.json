@@ -1,0 +1,168 @@
+{
+  "base_commit": "8df76ce",
+  "stage_range": "V81.41-V81.60",
+  "functional_bundle": "BROKER_ADAPTER_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V81_41_TO_V81_60.txt",
+      "bytes": 838,
+      "sha256": "9e897de60693fc00cef871641e84de79f3eadb85d7273864ed6e3be3dbf35784"
+    },
+    {
+      "path": "INSTALL_CHECK_V81_41_TO_V81_60.ps1",
+      "bytes": 47,
+      "sha256": "9954b1a5b6c9ad7247471458fa2e60f50fc8f35be79c5a872b5c9b8cce96f441"
+    },
+    {
+      "path": "RUN_V81_41_TO_V81_60.ps1",
+      "bytes": 816,
+      "sha256": "d2a561bb887fbd7c40ae49f7a5a16f7418b83585acacf58e2ab3dbc05359affd"
+    },
+    {
+      "path": "V81_41_TO_V81_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 200,
+      "sha256": "ec3f574fbc38949514d4e512b443898b2ef52c99a440190f0a46940dfb283988"
+    },
+    {
+      "path": "VERIFY_V81_41_TO_V81_60.ps1",
+      "bytes": 69,
+      "sha256": "d4b9c5da771b79c295ad744ccb71e9f105948460c842e3ed673a70b487744ec0"
+    },
+    {
+      "path": "alpaca_market_data/broker_adapter_foundation_v81_41_60.py",
+      "bytes": 19343,
+      "sha256": "0c88cec096d1aadb1673268d5f486e146c714a15ce777639be4846aac7b633e5"
+    },
+    {
+      "path": "release/v81_41/config/broker_adapter_config_v81_41.json",
+      "bytes": 291,
+      "sha256": "2fce6a862e9d2a34e48dfce5afcdee450943497f52982dd3fbd7bd90a42ba921"
+    },
+    {
+      "path": "release/v81_41/docs/V81.41_BROKER_CAPABILITY_REGISTRY.md",
+      "bytes": 177,
+      "sha256": "f513bb456855ef1349c85cf67cb537e7628d4f5fd18481d9dfb31f4600c5c154"
+    },
+    {
+      "path": "release/v81_42/docs/V81.42_BROKER_INTERFACE_CONTRACT.md",
+      "bytes": 176,
+      "sha256": "fb9c7e91bd9df9318064719ea7ee1cc1fc87bb6373eb7393f93c2bf8a74ad93e"
+    },
+    {
+      "path": "release/v81_43/docs/V81.43_ADAPTER_FACTORY.md",
+      "bytes": 166,
+      "sha256": "a0b2f6124157e11d1ac2a40bc92e868f63b6fce073e501795947385207acb206"
+    },
+    {
+      "path": "release/v81_44/docs/V81.44_SYMBOL_TRANSLATOR.md",
+      "bytes": 168,
+      "sha256": "55f4e5c9ce3945717b7583631b99e804196c544bb1570072c36cf7ddf191acdf"
+    },
+    {
+      "path": "release/v81_45/docs/V81.45_ORDER_TRANSLATOR.md",
+      "bytes": 167,
+      "sha256": "bd815e2a10538a2425e8b4370125b99449dafb67951604d378808139af433a76"
+    },
+    {
+      "path": "release/v81_46/docs/V81.46_ACCOUNT_ADAPTER.md",
+      "bytes": 166,
+      "sha256": "55e1146e217ae7cda704c09202af9d1e2ebc3fb9617a9e6b1a73109987f979ed"
+    },
+    {
+      "path": "release/v81_47/docs/V81.47_POSITION_ADAPTER.md",
+      "bytes": 167,
+      "sha256": "cb473b77264689931b6ed7bb390310954054f479c5c658dfe62f4b45fbc566db"
+    },
+    {
+      "path": "release/v81_48/docs/V81.48_ORDER_ADAPTER.md",
+      "bytes": 164,
+      "sha256": "ce2209fae05dca98103ca56eb1e860b025ea628dcd672812b22f98a3b7211fcd"
+    },
+    {
+      "path": "release/v81_49/docs/V81.49_FILL_ADAPTER.md",
+      "bytes": 163,
+      "sha256": "4c59e0cb7634ccddc0f7805079c0b8a940dedc994d3ee0c77ac55415835e08e9"
+    },
+    {
+      "path": "release/v81_50/docs/V81.50_ERROR_CLASSIFICATION.md",
+      "bytes": 171,
+      "sha256": "746cebe9dbe32ab67a03fa6ac869b088bb58dd0785dd985b0999c4500f7eae9e"
+    },
+    {
+      "path": "release/v81_51/docs/V81.51_RETRY_POLICY.md",
+      "bytes": 163,
+      "sha256": "46454d87071057081f3c2326da424bfeb1045759cd403659ca2abc6807cbb3cf"
+    },
+    {
+      "path": "release/v81_52/docs/V81.52_RATE_LIMIT_GUARD.md",
+      "bytes": 167,
+      "sha256": "5db921da7e3f59c8c8dbe77cf9add87c34ebf940569246a9a08243492a48bd26"
+    },
+    {
+      "path": "release/v81_53/docs/V81.53_OFFLINE_SNAPSHOT.md",
+      "bytes": 167,
+      "sha256": "e44b6415cddae381ba4f6d20893d3e8013a5a3bf52d20daa2f93b2e963285f99"
+    },
+    {
+      "path": "release/v81_54/docs/V81.54_ADAPTER_AUDIT.md",
+      "bytes": 164,
+      "sha256": "8aa02176a5d17f13b17883384cc9f57137f37c2341935bf0bdfbbf3de78aebfa"
+    },
+    {
+      "path": "release/v81_55/docs/V81.55_MASTER_LEDGER.md",
+      "bytes": 164,
+      "sha256": "6321ac348244b2d86b2ba23caf8346f1468979630b9fc4a743a7fc9815a19f24"
+    },
+    {
+      "path": "release/v81_56/docs/V81.56_ADAPTER_MANIFEST.md",
+      "bytes": 167,
+      "sha256": "0a94bad564407317ccde401b0c1ccfd7c9d9e1c979c2c288b7cafb1511cfa58d"
+    },
+    {
+      "path": "release/v81_57/docs/V81.57_ADAPTER_PIPELINE.md",
+      "bytes": 167,
+      "sha256": "681617cbe98ddbf194fff0d6d029da04a84026513887bb8251c079309b505b77"
+    },
+    {
+      "path": "release/v81_58/docs/V81.58_INTEGRITY_VERIFICATION.md",
+      "bytes": 173,
+      "sha256": "a60188792c45fe9908db8c61438f3f333d8171943ee3b5a55e07f3f62fcc1b93"
+    },
+    {
+      "path": "release/v81_59/docs/V81.59_ADAPTER_CERTIFICATION.md",
+      "bytes": 172,
+      "sha256": "6f85dbfbb87ee273e50ab6d3762e651dc985a82cdae2bb17e0092f10d9378c4a"
+    },
+    {
+      "path": "release/v81_60/docs/V81.41_TO_V81.60_RELEASE_NOTES.md",
+      "bytes": 517,
+      "sha256": "456624f2ca966ac081b5de1de9690b49d8f466109c6d2f81029305f8ecab53d0"
+    },
+    {
+      "path": "release/v81_60/docs/V81.60_BROKER_ADAPTER_FOUNDATION_COMPLETION.md",
+      "bytes": 187,
+      "sha256": "537e2b574ede4b724b04990bc417728584c587f78f1b4fb0a25e4023b66b153f"
+    },
+    {
+      "path": "tools/install_check_v81_41_to_v81_60.py",
+      "bytes": 679,
+      "sha256": "2f5dce160f6f5b8273f6c73c97ebe24ed455e7faa26517d776347c9e7ad43001"
+    },
+    {
+      "path": "tools/run_v81_41_to_v81_60_pipeline.py",
+      "bytes": 1087,
+      "sha256": "d220ceae2950f9c8404ba6a53d2933ebe8a503c0d1ab0e76eec117dd05278a05"
+    },
+    {
+      "path": "tools/test_broker_adapter_foundation_v81_41_to_v81_60.py",
+      "bytes": 4716,
+      "sha256": "4bf6716444fda80044df683f6053aa791f6bb4982dc61e51f6981bb9178a626a"
+    },
+    {
+      "path": "tools/verify_v81_41_to_v81_60_pipeline.py",
+      "bytes": 1901,
+      "sha256": "9205de53c3f3531a0ea858079863aa8650d479cef536d688d986dd1d5175617c"
+    }
+  ]
+}
