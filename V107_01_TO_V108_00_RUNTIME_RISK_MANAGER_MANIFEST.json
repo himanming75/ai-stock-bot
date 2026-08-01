@@ -1,0 +1,81 @@
+{
+  "base_commit": "5ab3160",
+  "stage_range": "V107.01-V108.00",
+  "bundle_type": "RUNTIME_RISK_MANAGER_FOUNDATION",
+  "certificate_only": false,
+  "requires_portfolio_engine_v107": true,
+  "broker_transport_enabled": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "validated_against_prior_real_foundations": true,
+  "risk_gate_priority_verified": true,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V107_01_TO_V108_00_RUNTIME_RISK_MANAGER.txt",
+      "bytes": 495,
+      "sha256": "55c023b793d8a9c99cee9ad4e42d5a410a64c853f256796ec92ceb20082245f8"
+    },
+    {
+      "path": "RUN_V107_01_TO_V108_00_RUNTIME_RISK_MANAGER.ps1",
+      "bytes": 924,
+      "sha256": "3073ad68650afd96dd1495b8344b36338455fac737e36bd0611373bbf0cec606"
+    },
+    {
+      "path": "release/v108_00/docs/DESIGN.md",
+      "bytes": 467,
+      "sha256": "c084d51543a34955b80f25fdb980408122dcbd92564017a65570dd47c51e3c01"
+    },
+    {
+      "path": "release/v108_00/docs/RELEASE_NOTES.md",
+      "bytes": 220,
+      "sha256": "1ca867cfdf25b955c31b4cf85f466af112e1a49981fd1df4210f73e125057cd1"
+    },
+    {
+      "path": "release/v108_00/docs/TEST_RESULTS.md",
+      "bytes": 709,
+      "sha256": "b47aa91e2327a3341a59bd135fb2219fcfe535f6b2e0d0d56d229557281649c1"
+    },
+    {
+      "path": "risk_engine/__init__.py",
+      "bytes": 407,
+      "sha256": "82c45bf9e87b912254f480994624c94738e0a602b5b9e75cffd89b14dad91477"
+    },
+    {
+      "path": "risk_engine/manager.py",
+      "bytes": 7043,
+      "sha256": "d5b92d3fbec2f00b4f74385ffd475a263aae8a1dfb2e4fc5dfd219379d6ae187"
+    },
+    {
+      "path": "risk_engine/models.py",
+      "bytes": 1935,
+      "sha256": "6406055c99ac10446b397ed5d8bb5f941e2e3473597a276781a092acecd914db"
+    },
+    {
+      "path": "risk_engine/state.py",
+      "bytes": 1100,
+      "sha256": "996eea47cc6b7c69cd48e55896a5d8b8cf52a53a4631bd67a749e62c9d7136f9"
+    },
+    {
+      "path": "tools/install_check_v107_01_to_v108_00.py",
+      "bytes": 535,
+      "sha256": "fa3418471fb81eb98f325e16585d632c12cf86f873c7925aba0d6297b4ae59ed"
+    },
+    {
+      "path": "tools/run_runtime_risk_manager_v107_01_to_v108_00.py",
+      "bytes": 4494,
+      "sha256": "08b0357f2219043c27a60d2ac257ca734b2f4c475aa62d522a896d8a19808c89"
+    },
+    {
+      "path": "tools/test_runtime_risk_manager_v107_01_to_v108_00.py",
+      "bytes": 6694,
+      "sha256": "f40db7b136c975416d0df2aec80691a7402b43c40161225f31cadd36441785c3"
+    },
+    {
+      "path": "tools/verify_runtime_risk_manager_v107_01_to_v108_00.py",
+      "bytes": 2253,
+      "sha256": "9fa81fecdedda3a20823a2cc4dc6ec6786451aa457278cdbf998fb2320a4d41a"
+    }
+  ]
+}
