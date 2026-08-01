@@ -1,0 +1,17 @@
+{
+  "mode": "SELECTION_ONLY",
+  "initial_equity": 100000.0,
+  "minimum_trade_count": 1,
+  "maximum_drawdown_pct": 0.2,
+  "minimum_selection_score": 0.0,
+  "weight_return": 0.35,
+  "weight_sharpe": 0.25,
+  "weight_drawdown": 0.2,
+  "weight_win_rate": 0.1,
+  "weight_stability": 0.1,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

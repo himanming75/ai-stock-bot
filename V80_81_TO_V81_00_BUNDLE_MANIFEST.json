@@ -1,0 +1,168 @@
+{
+  "base_commit": "b67ad00",
+  "stage_range": "V80.81-V81.00",
+  "functional_bundle": "STRATEGY_BACKTEST_RANKING_AND_SELECTION_ENGINE",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V80_81_TO_V81_00.txt",
+      "bytes": 842,
+      "sha256": "2be3eb0c578ba931ff73bf6657abbf4022f3d93c49a787b5cb37708decdc97a6"
+    },
+    {
+      "path": "INSTALL_CHECK_V80_81_TO_V81_00.ps1",
+      "bytes": 47,
+      "sha256": "6e088009a2216dbbf6bb635968cc5b343240e3ba202d7c833d0ade28e383de8d"
+    },
+    {
+      "path": "RUN_V80_81_TO_V81_00.ps1",
+      "bytes": 809,
+      "sha256": "624eff97f40caa9de1da42d573e105ae24d6d317db45e6cc921044df2850360e"
+    },
+    {
+      "path": "V80_81_TO_V81_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 194,
+      "sha256": "fa8366d2e67b2234cf9238d8a3a1095681c369e2e69a9efb6d88e3d19039e78b"
+    },
+    {
+      "path": "VERIFY_V80_81_TO_V81_00.ps1",
+      "bytes": 69,
+      "sha256": "ce029f0522265d06f78057e7bda85733c74186701a6363db0515781b1fd0cb69"
+    },
+    {
+      "path": "alpaca_market_data/strategy_selection_v80_81_v81_00.py",
+      "bytes": 16414,
+      "sha256": "81543e55e5429b84675ac969bf0b40155c005e906ff1f86cd850fb600a2cef5a"
+    },
+    {
+      "path": "release/v80_81/config/strategy_selection_config_v80_81.json",
+      "bytes": 439,
+      "sha256": "dde1c0442addf38bacd07ebf621cfc624839ee288d7a2f812d8d2810cfaf89ea"
+    },
+    {
+      "path": "release/v80_81/docs/V80.81_SELECTION_POLICY.md",
+      "bytes": 160,
+      "sha256": "2df4a499dcc62e8d3d954ef102650598722f72791c7905ea5b0d551b1f685b47"
+    },
+    {
+      "path": "release/v80_82/docs/V80.82_MARKET_REGIME_FIXTURES.md",
+      "bytes": 166,
+      "sha256": "f02717feeec9d44851ef46dfd3132851587cffc789120fb660a1e17168309875"
+    },
+    {
+      "path": "release/v80_83/docs/V80.83_STRATEGY_BACKTEST.md",
+      "bytes": 161,
+      "sha256": "59c31c7725810cd55030067ffb3d2c102277f766f3546b0a593890b458c262e6"
+    },
+    {
+      "path": "release/v80_84/docs/V80.84_BACKTEST_MATRIX.md",
+      "bytes": 159,
+      "sha256": "3eba143a2906e7cf2c788182e22758683b4087d321ea993b5241775b360d511b"
+    },
+    {
+      "path": "release/v80_85/docs/V80.85_PERFORMANCE_AGGREGATION.md",
+      "bytes": 167,
+      "sha256": "8212122102105c8990ef0436ab5493df461421be87ea2814e3ef9cf46411b3c2"
+    },
+    {
+      "path": "release/v80_86/docs/V80.86_STABILITY_FILTER.md",
+      "bytes": 160,
+      "sha256": "03ebaad1fc84268dc2d58f6704f452c91559ce5ea31ad74a33f742b05e8613f9"
+    },
+    {
+      "path": "release/v80_87/docs/V80.87_STRATEGY_LEADERBOARD.md",
+      "bytes": 164,
+      "sha256": "0c9bc0d88f0b707ed9cc02a9a29e4a9ad0d58a740b8bf6311aeae335a345c180"
+    },
+    {
+      "path": "release/v80_88/docs/V80.88_CHAMPION_SELECTION.md",
+      "bytes": 162,
+      "sha256": "0e7907a982165a0c4039b939023a52d1282a57dd4121b6ece27eb85e820f499e"
+    },
+    {
+      "path": "release/v80_89/docs/V80.89_SELECTION_AUDIT.md",
+      "bytes": 159,
+      "sha256": "46df6c0da9ccdfbfd4174aac39a8d81d239719d134d90f62e7d2a3b2c6c49077"
+    },
+    {
+      "path": "release/v80_90/docs/V80.90_MASTER_LEDGER.md",
+      "bytes": 157,
+      "sha256": "57a6471fe3a24535b4be17d7aa1e8c84fc210ac11c0580bd6faea88a5e73e9ee"
+    },
+    {
+      "path": "release/v80_91/docs/V80.91_SELECTION_MANIFEST.md",
+      "bytes": 162,
+      "sha256": "3ccd8fb4aca071f23823f99b5b065a9f63cbc8c29fc9808dd20e5532c44cecb4"
+    },
+    {
+      "path": "release/v80_92/docs/V80.92_SELECTION_PIPELINE.md",
+      "bytes": 162,
+      "sha256": "dd97485119d562833a6f053c0da17b84fcc1aee177aa28907f576c3b2dd4ddc5"
+    },
+    {
+      "path": "release/v80_93/docs/V80.93_RETURN_RANKING.md",
+      "bytes": 158,
+      "sha256": "24d6f8d54ccef1211da469f690f2fdd046f9cf500d56d2ff9560196ae0a46472"
+    },
+    {
+      "path": "release/v80_94/docs/V80.94_SHARPE_RANKING.md",
+      "bytes": 158,
+      "sha256": "94f4671170ed8e3e5fea4f9a168f3c0828875668cc56547df62fc613a5fdaa90"
+    },
+    {
+      "path": "release/v80_95/docs/V80.95_DRAWDOWN_RANKING.md",
+      "bytes": 160,
+      "sha256": "19583e0eb79d29b7f10ad8dd8adf77cf83cf37e3122127637e827f07ba75049f"
+    },
+    {
+      "path": "release/v80_96/docs/V80.96_WIN_RATE_RANKING.md",
+      "bytes": 160,
+      "sha256": "fee327636308675957bd5f75a512830f3b60cdbf3290591e634cedf1c4261aad"
+    },
+    {
+      "path": "release/v80_97/docs/V80.97_STABILITY_RANKING.md",
+      "bytes": 161,
+      "sha256": "55c121e9d7c948fed9cb96fec9d7b68555a10f1ed9d25ed7a4a09f690ee3cfda"
+    },
+    {
+      "path": "release/v80_98/docs/V80.98_INTEGRITY_VERIFICATION.md",
+      "bytes": 166,
+      "sha256": "144d7b3c9b72984e594cff9c1997c88adb027df67540dac0d57f4c2eafc969d1"
+    },
+    {
+      "path": "release/v80_99/docs/V80.99_SELECTION_CERTIFICATION.md",
+      "bytes": 167,
+      "sha256": "a9530f702f6d02b58b76bde647df3ba08dfcae9c5550bf0a76f128a4ae9f4bb9"
+    },
+    {
+      "path": "release/v81_00/docs/V80.81_TO_V81.00_RELEASE_NOTES.md",
+      "bytes": 359,
+      "sha256": "2313c846604bdf092761ac6f8ddc72c092ddcdcf4d53c2edc3146022c090331e"
+    },
+    {
+      "path": "release/v81_00/docs/V81.00_STRATEGY_SELECTION_COMPLETION.md",
+      "bytes": 200,
+      "sha256": "ad2741700cd9e710c763668cdd17ed1c7708dd0168e02accc0aeacd9b19c71c8"
+    },
+    {
+      "path": "tools/install_check_v80_81_to_v81_00.py",
+      "bytes": 646,
+      "sha256": "c05c805387764da78727a8e03f4abbcdaf088a0794d245385e31e2166feb9785"
+    },
+    {
+      "path": "tools/run_v80_81_to_v81_00_pipeline.py",
+      "bytes": 1076,
+      "sha256": "32f11b6d998df154598027d53fc2bb49133e929b25c2d88476339a02a135c1e6"
+    },
+    {
+      "path": "tools/test_strategy_selection_v80_81_to_v81_00.py",
+      "bytes": 4308,
+      "sha256": "a2f5dd9a0a035d1532917b0245d46dfc83bcb3b17fb71d8d6ec68ee27588be50"
+    },
+    {
+      "path": "tools/verify_v80_81_to_v81_00_pipeline.py",
+      "bytes": 1762,
+      "sha256": "9fb6cad9eaf68052ff7ac89b99e5d116a012a525d14c02c3e0d962e36a200c85"
+    }
+  ]
+}
