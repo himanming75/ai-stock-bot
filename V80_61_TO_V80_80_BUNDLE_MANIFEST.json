@@ -1,0 +1,168 @@
+{
+  "base_commit": "942d3ec",
+  "stage_range": "V80.61-V80.80",
+  "functional_bundle": "STRATEGY_ENGINE_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V80_61_TO_V80_80.txt",
+      "bytes": 841,
+      "sha256": "e87c55c207c755703f8d3193f224004a9ab9b89c378b0a06582bdf94cd1c83e5"
+    },
+    {
+      "path": "INSTALL_CHECK_V80_61_TO_V80_80.ps1",
+      "bytes": 47,
+      "sha256": "a2c30d8c1d2aae4655f55aad4daf0f9e2850bdd9b7d3141cad343cf8883df92a"
+    },
+    {
+      "path": "RUN_V80_61_TO_V80_80.ps1",
+      "bytes": 817,
+      "sha256": "8cc06e5638988042208d1c4f0061ba4d972e72674cafec870447e2bc0113df6a"
+    },
+    {
+      "path": "V80_61_TO_V80_80_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 194,
+      "sha256": "423271a67c8033c82461b9a7b9a5ff60f4adb67add55121c5737a510cc701217"
+    },
+    {
+      "path": "VERIFY_V80_61_TO_V80_80.ps1",
+      "bytes": 69,
+      "sha256": "c51964f775370442f402549c04bd1f8be6524897cfc499fa65bbb157dc58330b"
+    },
+    {
+      "path": "alpaca_market_data/strategy_engine_foundation_v80_61_80.py",
+      "bytes": 14658,
+      "sha256": "da64cfe27e34c3ef4fd51dda7cd18fd91eeae2790a003c861b4a4221e58d86c1"
+    },
+    {
+      "path": "release/v80_61/config/strategy_engine_config_v80_61.json",
+      "bytes": 458,
+      "sha256": "5aff36733a46c4a5279c9652237ee4ec120a3fd658974236e59e8ed953ce8ca9"
+    },
+    {
+      "path": "release/v80_61/docs/V80.61_STRATEGY_REGISTRY.md",
+      "bytes": 141,
+      "sha256": "a125628588ee0db34d1781a18ebc1917f324bd975aa073af3001e62f0723d6b5"
+    },
+    {
+      "path": "release/v80_62/docs/V80.62_STRATEGY_METADATA.md",
+      "bytes": 141,
+      "sha256": "235c09c6c13a5d4fd9e0a0b01f4fdd4b021a6db96e08dc78a5b99be39b019d2f"
+    },
+    {
+      "path": "release/v80_63/docs/V80.63_STRATEGY_INTERFACE.md",
+      "bytes": 142,
+      "sha256": "2b6852d212e1f29403f39ad42e2a36a47f7576434405a81dcd105547f9dccda5"
+    },
+    {
+      "path": "release/v80_64/docs/V80.64_PLUGIN_LOADER.md",
+      "bytes": 137,
+      "sha256": "679149420fa17d5ddd5a221407edde8b4a60147d395aa11e43950e853b21a020"
+    },
+    {
+      "path": "release/v80_65/docs/V80.65_INPUT_VALIDATION.md",
+      "bytes": 140,
+      "sha256": "2e0ae0f96dbfbd35ce5f31b433223ce23c93c52ed98abb1ab2a022eb4c9fa0d2"
+    },
+    {
+      "path": "release/v80_66/docs/V80.66_STRATEGY_EXECUTION.md",
+      "bytes": 142,
+      "sha256": "0fdd4fd07d0cde9db1e2a8ff0f2360d1fb4b217060d0542f81ec798795469dff"
+    },
+    {
+      "path": "release/v80_67/docs/V80.67_SIGNAL_RESOLUTION.md",
+      "bytes": 141,
+      "sha256": "c1c69338aa06f9d77583893eaaa78e602513eefdbb9835c0b502f788847975d4"
+    },
+    {
+      "path": "release/v80_68/docs/V80.68_PORTFOLIO_ALLOCATION.md",
+      "bytes": 144,
+      "sha256": "65d9e1abc5b57944c2e3c9185455823e184c4e51aff7048a94b0ba971eee4add"
+    },
+    {
+      "path": "release/v80_69/docs/V80.69_STRATEGY_AUDIT.md",
+      "bytes": 138,
+      "sha256": "6d9ca8568e33e9971493056c9f09f1521c8874d27a42542349a6af8ba0a34afa"
+    },
+    {
+      "path": "release/v80_70/docs/V80.70_MASTER_LEDGER.md",
+      "bytes": 137,
+      "sha256": "079e9bef016c11791a20b5d9d24c42b504678d9dbc34d20830d965c20853bb8f"
+    },
+    {
+      "path": "release/v80_71/docs/V80.71_STRATEGY_MANIFEST.md",
+      "bytes": 141,
+      "sha256": "b2b7e587ce2fe56883ff1b59ab34c5f99907fb7e01aed37a5bd734e947f805c4"
+    },
+    {
+      "path": "release/v80_72/docs/V80.72_ENGINE_PIPELINE.md",
+      "bytes": 139,
+      "sha256": "6ac72531d743a8bae49e53f3f779be3f9eb1400843b58afcabe76dc93aa59eb5"
+    },
+    {
+      "path": "release/v80_73/docs/V80.73_SMA_CROSS_STRATEGY.md",
+      "bytes": 142,
+      "sha256": "f325a911a64d466ee41814bfbedece93a240856b7324e84ecff0adca5db5fcaa"
+    },
+    {
+      "path": "release/v80_74/docs/V80.74_RSI_MEAN_REVERSION_STRATEGY.md",
+      "bytes": 151,
+      "sha256": "180e25f6f1836ea2903593bac2cd19059d4b5f18800748c22f12e7896fb10bc5"
+    },
+    {
+      "path": "release/v80_75/docs/V80.75_MOMENTUM_STRATEGY.md",
+      "bytes": 141,
+      "sha256": "b8c85fbb1d87082eb2192fcb29b54ac82d7890082abf0c0798fd21d6e29e9c1e"
+    },
+    {
+      "path": "release/v80_76/docs/V80.76_BREAKOUT_STRATEGY.md",
+      "bytes": 141,
+      "sha256": "8ad232dfedf869d8dc7017ac1a6972dcab18761000629dd37d44655ba7d05a94"
+    },
+    {
+      "path": "release/v80_77/docs/V80.77_MULTI_STRATEGY_COORDINATION.md",
+      "bytes": 151,
+      "sha256": "71dbd84d6672a54e2c9834239c83328d8d773f33f7e0ff7e0ceb898b1d7d4b14"
+    },
+    {
+      "path": "release/v80_78/docs/V80.78_INTEGRITY_VERIFICATION.md",
+      "bytes": 146,
+      "sha256": "0b3766c1eb7a740bf650c102a1ad600b82035cb342b4d20b60d1217837868451"
+    },
+    {
+      "path": "release/v80_79/docs/V80.79_STRATEGY_CERTIFICATION.md",
+      "bytes": 146,
+      "sha256": "3c39af6f47751515461483b340a2f36345c33b981154c8e8034ed4f4f5ace325"
+    },
+    {
+      "path": "release/v80_80/docs/V80.61_TO_V80.80_RELEASE_NOTES.md",
+      "bytes": 400,
+      "sha256": "a8d1a042305e95259942201295fefc462f53303c24327fa9c758646bd95258d9"
+    },
+    {
+      "path": "release/v80_80/docs/V80.80_STRATEGY_ENGINE_FOUNDATION_COMPLETION.md",
+      "bytes": 161,
+      "sha256": "347cec529bafd8d208bcc66c12d8055b582a7a5c93edf3020a2062ae410406e0"
+    },
+    {
+      "path": "tools/install_check_v80_61_to_v80_80.py",
+      "bytes": 656,
+      "sha256": "13f5df525e6c528c12142f1fffd0c5d3ca345dee336b802d0f2cb7753608c0c4"
+    },
+    {
+      "path": "tools/run_v80_61_to_v80_80_pipeline.py",
+      "bytes": 1092,
+      "sha256": "57e6bed595d1f3eba801b6ce07921ae035d4b26900585053033564dec2fca3f9"
+    },
+    {
+      "path": "tools/test_strategy_engine_foundation_v80_61_to_v80_80.py",
+      "bytes": 3693,
+      "sha256": "c117b6fac020d16d34ccd6a15bccf2a9aadf1978a5cf6b70b8315195dd0122f5"
+    },
+    {
+      "path": "tools/verify_v80_61_to_v80_80_pipeline.py",
+      "bytes": 1646,
+      "sha256": "de486724c7859381f47e160eb0b5ba68496941fa00a5f00bd5719f8db63d4841"
+    }
+  ]
+}

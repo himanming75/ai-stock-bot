@@ -1,0 +1,23 @@
+{
+  "mode": "STRATEGY_DECISION_ONLY",
+  "enabled_strategies": [
+    "SMA_CROSS",
+    "RSI_MEAN_REVERSION",
+    "MOMENTUM",
+    "BREAKOUT"
+  ],
+  "weights": [
+    0.3,
+    0.25,
+    0.25,
+    0.2
+  ],
+  "minimum_confidence": 0.2,
+  "conflict_policy": "WEIGHTED_VOTE",
+  "allow_dynamic_imports": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

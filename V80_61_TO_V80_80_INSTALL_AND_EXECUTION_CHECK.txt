@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V80_61_TO_V80_80.ps1
+EXPECTED: 23 tests OK, 4 strategies, 4 signals, weighted decision, target weight <= 0.25, order quantity 0, VERIFY PASS.
