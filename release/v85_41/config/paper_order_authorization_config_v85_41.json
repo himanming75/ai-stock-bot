@@ -1,0 +1,20 @@
+{
+  "mode": "PAPER_ORDER_SUBMISSION_AUTHORIZATION_OFFLINE",
+  "environment": "PAPER",
+  "required_approvals": 2,
+  "token_ttl_seconds": 180,
+  "single_use": true,
+  "max_order_notional": 500.0,
+  "max_quantity": 10,
+  "buying_power": 10000.0,
+  "max_daily_loss": 250.0,
+  "max_position_notional": 2500.0,
+  "kill_switch_armed": true,
+  "explicit_submission_opt_in": false,
+  "required_opt_in_value": "YES",
+  "allow_network": false,
+  "allow_post": false,
+  "allow_cancel": false,
+  "allow_replace": false,
+  "actual_orders_submitted": 0
+}

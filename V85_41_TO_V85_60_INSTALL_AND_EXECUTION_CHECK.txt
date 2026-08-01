@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V85_41_TO_V85_60.ps1
+EXPECTED: 27 tests OK, 2 approvals, token TTL 180, single-use, notional/quantity/buying-power/loss/position/kill-switch guards, duplicate/replay detection, POST disabled, orders 0.
