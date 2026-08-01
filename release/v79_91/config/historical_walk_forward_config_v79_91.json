@@ -1,0 +1,13 @@
+{
+  "train_size": 4,
+  "test_size": 2,
+  "step_size": 2,
+  "min_fold_count": 2,
+  "maximum_mean_drawdown_pct": 0.2,
+  "require_no_overlap": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

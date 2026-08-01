@@ -1,0 +1,92 @@
+{
+  "base_commit": "3b5c5f8",
+  "stage_range": "V79.91-V79.95",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_91_TO_V79_95.txt",
+      "bytes": 640,
+      "sha256": "b7db8cb68f0c8ae79d2a5a87841680b9abeea49f1bff98b285ea7857400380c1"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_91_TO_V79_95.ps1",
+      "bytes": 47,
+      "sha256": "ec18e9b9fef85904acc62e7dbb0603027cacc3973854e52dbafcab7d2ca9b15a"
+    },
+    {
+      "path": "RUN_V79_91_TO_V79_95.ps1",
+      "bytes": 675,
+      "sha256": "b44bc1043bfe9924ad18c9d3d15ceea2499fbc62da50fe30840f41bdf25f29e7"
+    },
+    {
+      "path": "V79_91_TO_V79_95_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 249,
+      "sha256": "0a17cc84e08c37806fda993620c87b96ee72fe8f64b0e59ef5ab69eb38531406"
+    },
+    {
+      "path": "VERIFY_V79_91_TO_V79_95.ps1",
+      "bytes": 69,
+      "sha256": "b0c4dd5f0b140c7eb701a50f7eda7a89a3c1361f2c49fb4ecfa807edcf695142"
+    },
+    {
+      "path": "alpaca_market_data/historical_walk_forward_validation_v79_91_95.py",
+      "bytes": 17721,
+      "sha256": "8e53ee7635111501cb2e9e339d91a947e6b55916838de07b7f41760ccdac5d84"
+    },
+    {
+      "path": "release/v79_91/config/historical_walk_forward_config_v79_91.json",
+      "bytes": 303,
+      "sha256": "bc3e65938954f768f316f71e487764c65f43ce272a1e4081cd414b514072cd18"
+    },
+    {
+      "path": "release/v79_91/docs/V79.91_WALK_FORWARD_WINDOW_PLAN.md",
+      "bytes": 117,
+      "sha256": "62dd2911790535475016710abb6d6719758eddcd14a64adf031aedb907bc9753"
+    },
+    {
+      "path": "release/v79_92/docs/V79.92_FOLD_EXECUTION.md",
+      "bytes": 100,
+      "sha256": "60e9411d5434282f563ae1dd2e99ff8b2c8b2ac3d1ec18a3d49712111fc14d53"
+    },
+    {
+      "path": "release/v79_93/docs/V79.93_FOLD_AGGREGATION.md",
+      "bytes": 117,
+      "sha256": "4c75f2c55c691021b61d3f6c37db5e13d96bb0a2fcf21ce3b4e0455a6806f4a8"
+    },
+    {
+      "path": "release/v79_94/docs/V79.94_WALK_FORWARD_MANIFEST.md",
+      "bytes": 100,
+      "sha256": "625d85fa0e97b0be27705395f0d72153b618bb607f242b50470679a392d28edd"
+    },
+    {
+      "path": "release/v79_95/docs/V79.91_TO_V79.95_RELEASE_NOTES.md",
+      "bytes": 194,
+      "sha256": "53667697525826f40672e78d046891a0cf3eb979e5b5bdd3d43551d279f71c4b"
+    },
+    {
+      "path": "release/v79_95/docs/V79.95_WALK_FORWARD_CERTIFICATE.md",
+      "bytes": 124,
+      "sha256": "a6ed234ccca487e39f1430ee05972b937007552463157084fdb0c305d6591f2c"
+    },
+    {
+      "path": "tools/install_check_v79_91_to_v79_95.py",
+      "bytes": 805,
+      "sha256": "cd1459494e903962f4a2c2e2602733162d84149f8dc98a2ebd4fd5b9192ee36d"
+    },
+    {
+      "path": "tools/run_v79_91_to_v79_95_pipeline.py",
+      "bytes": 1713,
+      "sha256": "88a429dab59a191980a3c3320a31a4d94fc44f249501f7a16f62931f60e90209"
+    },
+    {
+      "path": "tools/test_historical_walk_forward_validation_v79_91_to_v79_95.py",
+      "bytes": 5472,
+      "sha256": "8c31ac9dbb4f0a1250799db9452c2251e37b865d87abcee8dbb5d719b2afc716"
+    },
+    {
+      "path": "tools/verify_v79_91_to_v79_95_pipeline.py",
+      "bytes": 2134,
+      "sha256": "7c277fd9e37a9fc2de972afefda3bac5821f4e50890898a4c06ab5b4688e3718"
+    }
+  ]
+}

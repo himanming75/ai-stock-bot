@@ -1,0 +1,11 @@
+RUN:
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_91_TO_V79_95.ps1
+
+EXPECTED:
+- 15 tests OK
+- fold_count 3
+- leakage_count 0
+- mean_test_return 0 with current flat equity data
+- validation status PASS
+- actual_orders_submitted 0
+- VERIFY PASS
