@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V87_21_TO_V87_40.ps1
+EXPECTED: accepted/partial/filled/rejected/canceled all simulated, budget/position/PnL/drawdown/retry/replay PASS, network 0, orders 0.

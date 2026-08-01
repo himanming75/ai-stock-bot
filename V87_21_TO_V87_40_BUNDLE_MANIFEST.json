@@ -1,0 +1,163 @@
+{
+  "base_commit": "ac8b053",
+  "stage_range": "V87.21-V87.40",
+  "functional_bundle": "PAPER_STRATEGY_EXECUTION_SIMULATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V87_21_TO_V87_40.txt",
+      "bytes": 856,
+      "sha256": "cb3a2ac5e4745bf304dbfa773611719bbd6e1ab27563cffa083d832f81236608"
+    },
+    {
+      "path": "INSTALL_CHECK_V87_21_TO_V87_40.ps1",
+      "bytes": 47,
+      "sha256": "75c2fb6fe383ddbcff0c1b4fef233b28be80e2f6e14d9a19ced1730f5ea6d7e4"
+    },
+    {
+      "path": "RUN_V87_21_TO_V87_40.ps1",
+      "bytes": 820,
+      "sha256": "769351446e2d4ef0a060ba092a2ab76ea1bbeafaf2a52474f5eb474077ca450a"
+    },
+    {
+      "path": "V87_21_TO_V87_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 209,
+      "sha256": "dd11718b50f4b35ffcc3f0d1996ef6166c38270acf175de81873bd7a7f49da36"
+    },
+    {
+      "path": "VERIFY_V87_21_TO_V87_40.ps1",
+      "bytes": 69,
+      "sha256": "82dd6f4a7175396580cdd5cfd245db378c04aa39205e302545da25c26047ba12"
+    },
+    {
+      "path": "alpaca_market_data/strategy_execution_simulation_v87_21_40.py",
+      "bytes": 17975,
+      "sha256": "5be4612d7949799f1b18de97d907cc9b39f212a2bb48cbff39735980e99a0fc9"
+    },
+    {
+      "path": "release/v87_21/docs/V87.21_SIMULATION_POLICY.md",
+      "bytes": 168,
+      "sha256": "7877db5b5e62d81e74486035322faeb467522e14373dc45fa25e578a1cf416e2"
+    },
+    {
+      "path": "release/v87_22/docs/V87.22_ORDER_PLAN.md",
+      "bytes": 161,
+      "sha256": "f406609d518ca0a3fffc1a9ca066454f04220e100b54e7856affef5f0e01e5c6"
+    },
+    {
+      "path": "release/v87_23/docs/V87.23_POSITION_SIZING.md",
+      "bytes": 166,
+      "sha256": "6c6324c19ab7e3401ada5b5daa4c89f937c8adf4a5e4499e4bcf8c438112fe6d"
+    },
+    {
+      "path": "release/v87_24/docs/V87.24_SLIPPAGE_MODEL.md",
+      "bytes": 165,
+      "sha256": "8968d3a8c9dffdb64434c2e9e30ba0cf7fe4091a18ee8cf656887a5365a6f1db"
+    },
+    {
+      "path": "release/v87_25/docs/V87.25_COMMISSION_MODEL.md",
+      "bytes": 167,
+      "sha256": "7f5077af5faf26aaa4010733dd7ca5b6a14def9de7da1ec00503e33580566874"
+    },
+    {
+      "path": "release/v87_26/docs/V87.26_LIFECYCLE_EVENTS.md",
+      "bytes": 167,
+      "sha256": "3d263d0f97eae7cd673e35042ffb4e614824c13c37f280d876612b4e240a935a"
+    },
+    {
+      "path": "release/v87_27/docs/V87.27_RETRY_POLICY.md",
+      "bytes": 163,
+      "sha256": "40ee0b7936a2a234ef2287ef47ba6987898c483d4d7a786c6569f3a56c00c991"
+    },
+    {
+      "path": "release/v87_28/docs/V87.28_BUDGET_CONSUMPTION.md",
+      "bytes": 169,
+      "sha256": "efb3f0e0c9a302e2399a3753dd8c2d1385a5f7da3bb69cea8f0e1b77e95b4861"
+    },
+    {
+      "path": "release/v87_29/docs/V87.29_POSITION_DELTA.md",
+      "bytes": 165,
+      "sha256": "791f1a824c17d8c28b942d9db32363905de247269c0badc95b728df98d442a7e"
+    },
+    {
+      "path": "release/v87_30/docs/V87.30_PORTFOLIO_UPDATE.md",
+      "bytes": 167,
+      "sha256": "f968128372db10780bcdaf7c978f9b5da3b985781f89ba1bc072c192dc3f284b"
+    },
+    {
+      "path": "release/v87_31/docs/V87.31_PNL_PREVIEW.md",
+      "bytes": 162,
+      "sha256": "6dc1fbce5c746dea957b27f954fe6cd9fdc81ad97da710cadf6218f0a6db4857"
+    },
+    {
+      "path": "release/v87_32/docs/V87.32_DRAWDOWN_UPDATE.md",
+      "bytes": 166,
+      "sha256": "512b5203bf028f645055a8d1993a0d144ccebba4c88cf4a84a5047625376aa9e"
+    },
+    {
+      "path": "release/v87_33/docs/V87.33_SCENARIO_MATRIX.md",
+      "bytes": 166,
+      "sha256": "297790129de1d2cec69771c04f17b4afcbc144fbc2518622d11544d418f3d0cd"
+    },
+    {
+      "path": "release/v87_34/docs/V87.34_REPLAY_VALIDATION.md",
+      "bytes": 168,
+      "sha256": "dab98f537d6074500f7bec2d64bda412178bae2ff9366458c1900179e9df458b"
+    },
+    {
+      "path": "release/v87_35/docs/V87.35_ROLLBACK_PLAN.md",
+      "bytes": 164,
+      "sha256": "7069ababeda725c563ac3987613fd4bdfcd370e5cca1f0dda18a8ab3484ecd72"
+    },
+    {
+      "path": "release/v87_36/docs/V87.36_SIMULATION_SCENARIO.md",
+      "bytes": 170,
+      "sha256": "94ddbfc17a948b6c95e8b28783c2238f6f8393fc1332b894e2da381a5a051733"
+    },
+    {
+      "path": "release/v87_37/docs/V87.37_SIMULATION_AUDIT.md",
+      "bytes": 167,
+      "sha256": "d4ae581dee378c2a02bd00c400826492e01eb57ec5b152cb12ec06a0262077a2"
+    },
+    {
+      "path": "release/v87_38/docs/V87.38_SIMULATION_LEDGER.md",
+      "bytes": 168,
+      "sha256": "9db43311f004d3c9eec4bd16565760437d697393c946cdbe04dd12e043d365f5"
+    },
+    {
+      "path": "release/v87_39/docs/V87.39_SIMULATION_MANIFEST.md",
+      "bytes": 170,
+      "sha256": "f6771d16bd9b339be0cb5d74876c4c530f26a5b2d861a4ca786c2eef4ef466a9"
+    },
+    {
+      "path": "release/v87_40/docs/V87.21_TO_V87.40_RELEASE_NOTES.md",
+      "bytes": 402,
+      "sha256": "827d389e3a3fd3493dfb652bff7a28d9579ba39c7289a03a1aeaac52bd46732e"
+    },
+    {
+      "path": "release/v87_40/docs/V87.40_SIMULATION_COMPLETION.md",
+      "bytes": 172,
+      "sha256": "bcccab46db5468821474d3ee0a4ad75c268d98905b138c62c70fd6b5999d0574"
+    },
+    {
+      "path": "tools/install_check_v87_21_to_v87_40.py",
+      "bytes": 466,
+      "sha256": "86eaf59d7666784566fbfd6142acb30348b5e8c8342386776d001cb96102fa7e"
+    },
+    {
+      "path": "tools/run_v87_21_to_v87_40_pipeline.py",
+      "bytes": 1155,
+      "sha256": "e746872f35d3345a064eedc43b1965fb750cab5920ba59cbe9ef48b190f0c2d9"
+    },
+    {
+      "path": "tools/test_strategy_execution_simulation_v87_21_to_v87_40.py",
+      "bytes": 2551,
+      "sha256": "73d74a77a73bfae696a70e5bde4676e75776eee2eee463c21b4caae52ea32d50"
+    },
+    {
+      "path": "tools/verify_v87_21_to_v87_40_pipeline.py",
+      "bytes": 1811,
+      "sha256": "1b03865b59fe351290f5f7da044f86f85ce27e82d6ea5f786e2ef8f6c6d40d8e"
+    }
+  ]
+}
