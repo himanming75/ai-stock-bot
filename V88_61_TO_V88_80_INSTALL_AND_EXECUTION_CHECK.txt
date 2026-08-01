@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V88_61_TO_V88_80.ps1
+EXPECTED: timeline, queue, three cycles, three signals, checkpoint, resume, shutdown, daily report, negative scenarios and audit PASS; network 0; orders 0.
