@@ -1,0 +1,92 @@
+{
+  "base_commit": "8917482",
+  "stage_range": "V79.81-V79.85",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_81_TO_V79_85.txt",
+      "bytes": 604,
+      "sha256": "2f58f6acc7621ebf6ba38cac3892c7702caec065e2d9d02a6192344e069995f7"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_81_TO_V79_85.ps1",
+      "bytes": 47,
+      "sha256": "73393102a4b5ed9183aa1ceffbd6351e67f4cd0a399b08cb94ba876c4df23e0f"
+    },
+    {
+      "path": "RUN_V79_81_TO_V79_85.ps1",
+      "bytes": 637,
+      "sha256": "cca8c2596eaf6996f241364ecfe7d181355a92df3401af56fcef747a4a3525c1"
+    },
+    {
+      "path": "V79_81_TO_V79_85_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 162,
+      "sha256": "6840d4471429e95eaec5571543d347b5c75a6ec1211571a222b3505aaa6e584d"
+    },
+    {
+      "path": "VERIFY_V79_81_TO_V79_85.ps1",
+      "bytes": 69,
+      "sha256": "ad66cd96271a990e6ed596ca41d9f9616741f2ec40bf65eb242020cd3eacd8d1"
+    },
+    {
+      "path": "alpaca_market_data/historical_risk_engine_v79_81_85.py",
+      "bytes": 9693,
+      "sha256": "9ae147fd7b1542f5aec86daf9531c8f7e935409ed1aca3974991c3dcb90c0c79"
+    },
+    {
+      "path": "release/v79_81/config/historical_risk_config_v79_81.json",
+      "bytes": 328,
+      "sha256": "d084ac1f9d7c3b586f891ad3a532d9ad7c3b85720b5083bf60cf621f47149add"
+    },
+    {
+      "path": "release/v79_81/docs/V79.81_RISK_POLICY.md",
+      "bytes": 108,
+      "sha256": "afdf8e19514b7b75eda3387335f6172797c356e6528d37a075fc9741474bdacc"
+    },
+    {
+      "path": "release/v79_82/docs/V79.82_POSITION_SIZING.md",
+      "bytes": 112,
+      "sha256": "9fee909b5ff57d6b3f616b00c673efe770e1946e84c837786259e30e18e4433a"
+    },
+    {
+      "path": "release/v79_83/docs/V79.83_DRAWDOWN_ENGINE.md",
+      "bytes": 106,
+      "sha256": "0ee61a69892fdc8d827def9c0a3730df7d51f96652ba84e78fb43db05766ec67"
+    },
+    {
+      "path": "release/v79_84/docs/V79.84_RISK_MANIFEST.md",
+      "bytes": 101,
+      "sha256": "6c8a8ab2e275545522af5b40c83192a80942a1a97e896800a34fbb0369087851"
+    },
+    {
+      "path": "release/v79_85/docs/V79.81_TO_V79.85_RELEASE_NOTES.md",
+      "bytes": 176,
+      "sha256": "8fc146804e8ac22efbd400d2e99aa7a025f946aa73e1ea7032e6011db7dd8070"
+    },
+    {
+      "path": "release/v79_85/docs/V79.85_RISK_CERTIFICATE.md",
+      "bytes": 95,
+      "sha256": "eca574e2c82826227c424a5cfe06057b8bc384f130f95479110936c8ff9a3995"
+    },
+    {
+      "path": "tools/install_check_v79_81_to_v79_85.py",
+      "bytes": 634,
+      "sha256": "95f3dd38078770306b5cb008452e42e2af6e7b24e00370b2ee19bcf62309a327"
+    },
+    {
+      "path": "tools/run_v79_81_to_v79_85_pipeline.py",
+      "bytes": 1033,
+      "sha256": "f714cb27a0072ac453193b537679a5dbbb49ed596a3b477eb34e1eab5a190f2f"
+    },
+    {
+      "path": "tools/test_historical_risk_engine_v79_81_to_v79_85.py",
+      "bytes": 2909,
+      "sha256": "6648e1f5d06025f4e4c67ab2a9ceeeebff147bf07de7c42cf8c1a3a6b7d853a5"
+    },
+    {
+      "path": "tools/verify_v79_81_to_v79_85_pipeline.py",
+      "bytes": 1432,
+      "sha256": "3c7c67b31ac948f76d591843dab0c71ca16c4c08058234054bfc0d19f3f76e24"
+    }
+  ]
+}

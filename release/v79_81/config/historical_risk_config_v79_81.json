@@ -1,0 +1,13 @@
+{
+  "max_position_pct": 0.2,
+  "max_gross_exposure_pct": 0.8,
+  "max_open_positions": 5,
+  "max_drawdown_pct": 0.2,
+  "risk_per_trade_pct": 0.01,
+  "stop_loss_pct": 0.05,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

@@ -1,0 +1,3 @@
+git add RUN_V79_81_TO_V79_85.ps1 INSTALL_CHECK_V79_81_TO_V79_85.ps1 VERIFY_V79_81_TO_V79_85.ps1 V79_81_TO_V79_85_INSTALL_AND_EXECUTION_CHECK.txt GIT_COMMIT_V79_81_TO_V79_85.txt V79_81_TO_V79_85_BUNDLE_MANIFEST.json alpaca_market_data/historical_risk_engine_v79_81_85.py tools/install_check_v79_81_to_v79_85.py tools/run_v79_81_to_v79_85_pipeline.py tools/test_historical_risk_engine_v79_81_to_v79_85.py tools/verify_v79_81_to_v79_85_pipeline.py release/v79_81 release/v79_82 release/v79_83 release/v79_84 release/v79_85
+git commit -m "V79.81-V79.85 historical risk engine completed"
+git push origin main
