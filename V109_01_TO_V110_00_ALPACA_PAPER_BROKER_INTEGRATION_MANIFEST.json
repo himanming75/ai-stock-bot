@@ -1,0 +1,98 @@
+{
+  "base_commit": "55592c39d208b4de1f7fd23dbb1225cae6f4eddb",
+  "stage_range": "V109.01-V110.00",
+  "bundle_type": "ALPACA_PAPER_BROKER_INTEGRATION_FOUNDATION",
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "live_base_url_forbidden": true,
+  "network_read_enabled_by_default": false,
+  "network_write_enabled_by_default": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 17,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V109_01_TO_V110_00_ALPACA_PAPER_BROKER_INTEGRATION.txt",
+      "bytes": 574,
+      "sha256": "9a7826e3eebad420da153db34e109d52bc344eda9240f7f5e9fcdb05f6451a03"
+    },
+    {
+      "path": "RUN_V109_01_TO_V110_00_ALPACA_PAPER_BROKER_INTEGRATION.ps1",
+      "bytes": 986,
+      "sha256": "5e1e78d182ae5e992d0a8460f0e4bc2a1fc84deeb8cb19d4a9c8cf4515417057"
+    },
+    {
+      "path": "alpaca_broker/__init__.py",
+      "bytes": 1004,
+      "sha256": "e4339ea3c0cdc989b10617330af74046e805b9eb4f5adea5c1d2020fe15a74da"
+    },
+    {
+      "path": "alpaca_broker/client.py",
+      "bytes": 6880,
+      "sha256": "c07409a77be0f0209e656428ab5317a0b824e5bd679ff1c5b9f8b3ab6730a82e"
+    },
+    {
+      "path": "alpaca_broker/config.py",
+      "bytes": 2151,
+      "sha256": "620c89fe402d21970cde6265ad4971765f9fb6075bc30abaa22d565a233d2305"
+    },
+    {
+      "path": "alpaca_broker/errors.py",
+      "bytes": 504,
+      "sha256": "94cf6dae41c011356c1957ca823d04be68cac0ef3b30d983ae9f44f31c600cee"
+    },
+    {
+      "path": "alpaca_broker/models.py",
+      "bytes": 1223,
+      "sha256": "acc481de9df9da2090c5a3ab31ece5e9bd22688404f398d8fc65557437c121c0"
+    },
+    {
+      "path": "alpaca_broker/reconciliation.py",
+      "bytes": 1923,
+      "sha256": "c5d3bc990a98f7f9c86010100d447ed448ae540af7430d0b2dd646bcf478a0f3"
+    },
+    {
+      "path": "alpaca_broker/transport.py",
+      "bytes": 2875,
+      "sha256": "d56204b4a65a00b48344159fac1299770dd2aa31ecc00d3d615b3776c5743169"
+    },
+    {
+      "path": "release/v110_00/docs/DESIGN.md",
+      "bytes": 656,
+      "sha256": "2e6f7c3f7bab2305d44d0801bf50acf930371ca113abe734908a9582d62769c0"
+    },
+    {
+      "path": "release/v110_00/docs/RELEASE_NOTES.md",
+      "bytes": 368,
+      "sha256": "4be1ef88622df01bd9c7c2abf197c5a957c08463c02e91803167dd41f940fa4f"
+    },
+    {
+      "path": "release/v110_00/docs/TEST_RESULTS.md",
+      "bytes": 304,
+      "sha256": "849f574d4152fa50747fb468d931275ad6121eff981b8f84045b19b04285aba9"
+    },
+    {
+      "path": "tools/install_check_v109_01_to_v110_00.py",
+      "bytes": 578,
+      "sha256": "759737df319e4c32f51ef9e5bbbb2e35fcd5b1f06c24bd6f9951af19854ca2fb"
+    },
+    {
+      "path": "tools/run_alpaca_paper_broker_integration_v109_01_to_v110_00.py",
+      "bytes": 3815,
+      "sha256": "194cb772fb5ad8a473b1a60e3b441f4acc01c2cfc962d8ecc93b12c812245ba0"
+    },
+    {
+      "path": "tools/test_alpaca_paper_broker_integration_v109_01_to_v110_00.py",
+      "bytes": 7936,
+      "sha256": "b1012e92d163c0d58610c69ba723c96e458f2a8f80f9bcf89ed1b187a373468c"
+    },
+    {
+      "path": "tools/verify_alpaca_paper_broker_integration_v109_01_to_v110_00.py",
+      "bytes": 1942,
+      "sha256": "6c357fb72567e92752194ed39a6646ab271715eb6649ac9c2c516482300d7ea0"
+    }
+  ]
+}
