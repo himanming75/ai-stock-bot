@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V82_21_TO_V82_40.ps1
+EXPECTED: 20 tests OK, read capabilities > 0, write capabilities 0, account/position/order/clock/asset/quote fixtures valid, network 0, orders 0, VERIFY PASS.

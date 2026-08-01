@@ -1,0 +1,9 @@
+{
+  "mode": "READ_ONLY_OFFLINE_FIXTURE",
+  "provider": "ALPACA_COMPATIBLE",
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

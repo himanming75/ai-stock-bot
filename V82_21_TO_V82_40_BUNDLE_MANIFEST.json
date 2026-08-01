@@ -1,0 +1,168 @@
+{
+  "base_commit": "255d4aa",
+  "stage_range": "V82.21-V82.40",
+  "functional_bundle": "BROKER_READ_ONLY_INTEGRATION_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V82_21_TO_V82_40.txt",
+      "bytes": 834,
+      "sha256": "c38efff4b378e225fbbe73c82ea49f59231919da4760490a7a49dd40969476c8"
+    },
+    {
+      "path": "INSTALL_CHECK_V82_21_TO_V82_40.ps1",
+      "bytes": 47,
+      "sha256": "f02094fcb85b220d0ae1bfe08da80601b0ab80bc74e293ef27af6526b24d637c"
+    },
+    {
+      "path": "RUN_V82_21_TO_V82_40.ps1",
+      "bytes": 807,
+      "sha256": "59220104281a436a81b85995350679b542703dbc5f7770b5040959d2b8e653e0"
+    },
+    {
+      "path": "V82_21_TO_V82_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 232,
+      "sha256": "099d01e46638870b96db3bd370b8e572b80aeea47257c00e9b6bf96f7d5850fb"
+    },
+    {
+      "path": "VERIFY_V82_21_TO_V82_40.ps1",
+      "bytes": 69,
+      "sha256": "64db05926ebd44d3f3c4b09631d6d271021290d02d4c40b104ecf3f3171b1de0"
+    },
+    {
+      "path": "alpaca_market_data/broker_read_only_v82_21_40.py",
+      "bytes": 14158,
+      "sha256": "39543e4b120a81227fed74256328abfe8b318604c9f7c4c8a4bb86cbe599ba9b"
+    },
+    {
+      "path": "release/v82_21/config/broker_read_only_config_v82_21.json",
+      "bytes": 233,
+      "sha256": "c8ff4750f0a4c9a9c288f6f3b9d6b6176b7c70c1e462000d80853c2ed401e253"
+    },
+    {
+      "path": "release/v82_21/docs/V82.21_READ_ONLY_CAPABILITY_CONTRACT.md",
+      "bytes": 206,
+      "sha256": "56e10413b665aa6ad2fd6639b4d98577ffb204f7ae6bb96c7c9da0f6097be0fc"
+    },
+    {
+      "path": "release/v82_22/docs/V82.22_ACCOUNT_FIXTURE.md",
+      "bytes": 192,
+      "sha256": "5509dd8090d751b6f62c860bb2bcbb13a1c7a1348ecef6c739f926a79e2b080a"
+    },
+    {
+      "path": "release/v82_23/docs/V82.23_POSITIONS_FIXTURE.md",
+      "bytes": 194,
+      "sha256": "4673c868a0a90aac795a5ce2cb8e5ec641215655351b27764d7d570388c16a68"
+    },
+    {
+      "path": "release/v82_24/docs/V82.24_ORDERS_FIXTURE.md",
+      "bytes": 191,
+      "sha256": "2582975f6a198bf0478ebe57fbc375736e79da208a852fb2aa15c4be3667d0c0"
+    },
+    {
+      "path": "release/v82_25/docs/V82.25_MARKET_CLOCK_FIXTURE.md",
+      "bytes": 197,
+      "sha256": "f9f095d669e0a32da529376768dbd38dda35eac7d1a936de7b17b07c4513834c"
+    },
+    {
+      "path": "release/v82_26/docs/V82.26_ASSETS_FIXTURE.md",
+      "bytes": 191,
+      "sha256": "9871744ec49459f54792b52ee4acbc7dba6919dcd188c51e798c782c2b635700"
+    },
+    {
+      "path": "release/v82_27/docs/V82.27_MARKET_DATA_FIXTURE.md",
+      "bytes": 196,
+      "sha256": "b4367675bed26327780b8cdee32d0386c73326e5fc3c25f59e1a169ef03e9bc0"
+    },
+    {
+      "path": "release/v82_28/docs/V82.28_ACCOUNT_VALIDATION.md",
+      "bytes": 195,
+      "sha256": "699bced4316fbdd353df7b0a721f365a821ef1b02065a27d9ec11d9c4e52abc7"
+    },
+    {
+      "path": "release/v82_29/docs/V82.29_POSITIONS_VALIDATION.md",
+      "bytes": 197,
+      "sha256": "146565b36337f0a281c83d9a97bb129f69e4bda5d118d793821e14f911e7b4c7"
+    },
+    {
+      "path": "release/v82_30/docs/V82.30_ORDERS_VALIDATION.md",
+      "bytes": 194,
+      "sha256": "d5ce1a08090a0d3e708ba286095f58a9c547cd21f0965f88e63d260ed7070310"
+    },
+    {
+      "path": "release/v82_31/docs/V82.31_CLOCK_VALIDATION.md",
+      "bytes": 193,
+      "sha256": "539c875b0beb40137eba929c1c6a5dd1ba74f3dec07229a64ba573c7655f06ae"
+    },
+    {
+      "path": "release/v82_32/docs/V82.32_ASSETS_VALIDATION.md",
+      "bytes": 194,
+      "sha256": "43d7c9cd236587274c71f6888b3bc49bf54e82cf74ab42a03e5de966b8469c64"
+    },
+    {
+      "path": "release/v82_33/docs/V82.33_MARKET_DATA_VALIDATION.md",
+      "bytes": 199,
+      "sha256": "1e1c8c1ec14e553c62e99d3085e4760d3fad729c00345a2c2da6df7b23df93b3"
+    },
+    {
+      "path": "release/v82_34/docs/V82.34_ACCOUNT_RECONCILIATION.md",
+      "bytes": 199,
+      "sha256": "1ce793198bc79e366f807545b38847ad0b393de79e65cb5f31135f07c8e4987c"
+    },
+    {
+      "path": "release/v82_35/docs/V82.35_SYNC_HEALTH.md",
+      "bytes": 188,
+      "sha256": "f5ffba65747f6aeb9a7acfe8bbc6ebcefb66f28adfeba1fa23de5b3b0d3ef0bd"
+    },
+    {
+      "path": "release/v82_36/docs/V82.36_READ_ONLY_AUDIT.md",
+      "bytes": 192,
+      "sha256": "cfdb473e36f0b0eb88fda3b73ad45a47a4ac7364a92ef48a208dad8ede5136a8"
+    },
+    {
+      "path": "release/v82_37/docs/V82.37_MASTER_LEDGER.md",
+      "bytes": 190,
+      "sha256": "594c6b4bce0fa2b82a94e24b842b5b67fdf1e3a5f7a177e6e6fbcb0722fa8c29"
+    },
+    {
+      "path": "release/v82_38/docs/V82.38_READ_ONLY_MANIFEST.md",
+      "bytes": 195,
+      "sha256": "fb4816c9058ff10cc855b5dbd16f156b6e527bfb7b8e20f7387747c24dc57411"
+    },
+    {
+      "path": "release/v82_39/docs/V82.39_READ_ONLY_PIPELINE.md",
+      "bytes": 195,
+      "sha256": "ed00ce01787a94907b6f37091f9fc08d1fe704c306070e79499205bb76dc46b0"
+    },
+    {
+      "path": "release/v82_40/docs/V82.21_TO_V82.40_RELEASE_NOTES.md",
+      "bytes": 401,
+      "sha256": "4d0e2cdfe798df31cd354ca6cbf713a45a345a2913570ec26c468e701a9dceab"
+    },
+    {
+      "path": "release/v82_40/docs/V82.40_BROKER_READ_ONLY_COMPLETION.md",
+      "bytes": 204,
+      "sha256": "48d5ade1e96817286cacf486c365c121946e60319f8ca0d7299a773eedd23e32"
+    },
+    {
+      "path": "tools/install_check_v82_21_to_v82_40.py",
+      "bytes": 627,
+      "sha256": "5ad21b1011c4a769050fb09f0ef11fc3e3da139f9258f2274278f3a07dacd6f8"
+    },
+    {
+      "path": "tools/run_v82_21_to_v82_40_pipeline.py",
+      "bytes": 1092,
+      "sha256": "a9b29071a7269cba4c7891fe4a1b9d6dd19bf1c90f7f233a021d6a66c617d006"
+    },
+    {
+      "path": "tools/test_broker_read_only_v82_21_to_v82_40.py",
+      "bytes": 3194,
+      "sha256": "62c6193c2539d2d996a7426912f3c833de53a469b8a41e9ad5ebdfd456d7c5f1"
+    },
+    {
+      "path": "tools/verify_v82_21_to_v82_40_pipeline.py",
+      "bytes": 1874,
+      "sha256": "f87db6cf27f158fc798d3494842eb53dd5e9921b0e9f4d7e6812e31b492a6544"
+    }
+  ]
+}
