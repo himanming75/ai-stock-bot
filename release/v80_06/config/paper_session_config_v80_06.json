@@ -1,0 +1,16 @@
+{
+  "mode": "DRY_RUN_NO_NETWORK",
+  "broker_name": "ALPACA",
+  "market_timezone": "America/New_York",
+  "session_date": "2026-01-05",
+  "regular_open": "09:30",
+  "regular_close": "16:00",
+  "initial_cash": 100000.0,
+  "initial_buying_power": 100000.0,
+  "allow_extended_hours": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

@@ -1,0 +1,1 @@
+python tools/install_check_v80_06_to_v80_20.py
