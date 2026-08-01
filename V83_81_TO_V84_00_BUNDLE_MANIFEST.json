@@ -1,0 +1,168 @@
+{
+  "base_commit": "24f3502",
+  "stage_range": "V83.81-V84.00",
+  "functional_bundle": "PAPER_BROKER_FINAL_CERTIFICATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V83_81_TO_V84_00.txt",
+      "bytes": 845,
+      "sha256": "9a311b9bd6f9d113a98df10176b3f5d7249518192397f44470ccc939130bfad7"
+    },
+    {
+      "path": "INSTALL_CHECK_V83_81_TO_V84_00.ps1",
+      "bytes": 47,
+      "sha256": "df61e34a6c92dca631817447890c165cb07ffd56ee767d5d02d0e49938e758ab"
+    },
+    {
+      "path": "RUN_V83_81_TO_V84_00.ps1",
+      "bytes": 814,
+      "sha256": "eca5c7c6ec68f605ca0259065b5a9220babd24f1cd6e79bdd004d41c8dc30054"
+    },
+    {
+      "path": "V83_81_TO_V84_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 211,
+      "sha256": "e480013012e4db31d7835db84fa4a05128b34810da91ba6b1b90d61f86d00d49"
+    },
+    {
+      "path": "VERIFY_V83_81_TO_V84_00.ps1",
+      "bytes": 69,
+      "sha256": "22dddbdbbaf1cc787f303942b027fa3997101554179649480ca74548a377b1cf"
+    },
+    {
+      "path": "alpaca_market_data/paper_broker_final_cert_v83_81_v84_00.py",
+      "bytes": 16951,
+      "sha256": "d4922d6f0c442eec9ec1bff721caa99da7ef29748bb8c23302ed069b1bf5fc44"
+    },
+    {
+      "path": "release/v83_81/config/paper_broker_final_cert_config_v83_81.json",
+      "bytes": 343,
+      "sha256": "b5a32d3b0436905ef36675e37109a66ae3896c05db7a2b618450960135b9e8e5"
+    },
+    {
+      "path": "release/v83_81/docs/V83.81_CERTIFICATE_CHAIN.md",
+      "bytes": 198,
+      "sha256": "a5513df4ac88931604c6083986ff443882da5ce444b4c7230d418ec906e0326b"
+    },
+    {
+      "path": "release/v83_82/docs/V83.82_CHAIN_VALIDATION.md",
+      "bytes": 197,
+      "sha256": "4fd24241c8ad2bbac12f5a411b54649f7d9de38fd0fb5b0495cc0e687d27f17e"
+    },
+    {
+      "path": "release/v83_83/docs/V83.83_END_TO_END_SUMMARY.md",
+      "bytes": 199,
+      "sha256": "5fe00659d921fe5bbec49318d564699f7c14644417e828d981fff972cef3b47c"
+    },
+    {
+      "path": "release/v83_84/docs/V83.84_ORDER_FILL_CONSISTENCY.md",
+      "bytes": 203,
+      "sha256": "55687d732be4edb0236f4c5cec07e219643b0f712730eeb4344bc5c38c955fe3"
+    },
+    {
+      "path": "release/v83_85/docs/V83.85_LEDGER_CONSISTENCY.md",
+      "bytes": 199,
+      "sha256": "1a0294ad5a5012c5cd589454347a923f0ec64c4b97138896d4ef39435b11a6ea"
+    },
+    {
+      "path": "release/v83_86/docs/V83.86_SAFETY_AUDIT.md",
+      "bytes": 193,
+      "sha256": "9c7a833bcb452efa5e48d0eb554a591736efaedc34e104d88051c661d3447f01"
+    },
+    {
+      "path": "release/v83_87/docs/V83.87_REPLAY_CERTIFICATION.md",
+      "bytes": 201,
+      "sha256": "f04821516f94a75d6337cc20663997bbaa14e35be4ad03c3e6a9e11b3c97a240"
+    },
+    {
+      "path": "release/v83_88/docs/V83.88_COMPLIANCE_REPORT.md",
+      "bytes": 198,
+      "sha256": "e502ec67af83ac47c88c7c5d9547fb063fd5c828749f1cc5198bc02889ebda4b"
+    },
+    {
+      "path": "release/v83_89/docs/V83.89_ROLLBACK_PLAN.md",
+      "bytes": 194,
+      "sha256": "411a109ab1506843b750e8369a74a2aa4a24c1616c8a04c014bb7fdf8c9ae218"
+    },
+    {
+      "path": "release/v83_90/docs/V83.90_RELEASE_READINESS.md",
+      "bytes": 198,
+      "sha256": "8ea0f339c736c4137384b6c58380d4e3538faaab71279ec7891fbfc4bc58b688"
+    },
+    {
+      "path": "release/v83_91/docs/V83.91_FINAL_AUDIT.md",
+      "bytes": 192,
+      "sha256": "80158205e10d60cdfdb2c9d2833d2c983b23ffe6104292f7ecee303bc171ef35"
+    },
+    {
+      "path": "release/v83_92/docs/V83.92_MASTER_LEDGER.md",
+      "bytes": 194,
+      "sha256": "7520e1dfd650757d85a92004385151f80e59d65dc731449e99e1c9192e87098e"
+    },
+    {
+      "path": "release/v83_93/docs/V83.93_FINAL_MANIFEST.md",
+      "bytes": 195,
+      "sha256": "38c4fb77db40a38cd9507ba38e078b51094e1952605199433f7a01935f315c94"
+    },
+    {
+      "path": "release/v83_94/docs/V83.94_ARCHIVE_DESCRIPTOR.md",
+      "bytes": 199,
+      "sha256": "b71ecd8047d475f64a8e3f07fb493bf7350fbab2a5d92fe2e1759ceacd1a1029"
+    },
+    {
+      "path": "release/v83_95/docs/V83.95_FINAL_REPORT.md",
+      "bytes": 193,
+      "sha256": "895162260f5f083961b94589d69e8b53fa7de0ba33ea90f1e56778c958963bff"
+    },
+    {
+      "path": "release/v83_96/docs/V83.96_FINAL_PIPELINE.md",
+      "bytes": 195,
+      "sha256": "71b4f71f858872b0c24243266a95e1819d798493beb6dbe79e046ee5e6526e9e"
+    },
+    {
+      "path": "release/v83_97/docs/V83.97_INTEGRITY_VERIFICATION.md",
+      "bytes": 203,
+      "sha256": "3e3706fb2a5c2d11d540b93774eb1a2a7be834ff1be8374b75545ec193610bd8"
+    },
+    {
+      "path": "release/v83_98/docs/V83.98_FINAL_CERTIFICATION.md",
+      "bytes": 200,
+      "sha256": "3ce18a2e9b5aa5390cd7ff27cd27efbfa733c1aedd21b68409b427610c5a893a"
+    },
+    {
+      "path": "release/v83_99/docs/V83.99_MASTER_PASS_REPORT.md",
+      "bytes": 199,
+      "sha256": "a9905f6b3c5a5d8ff29951eb64bb7053520f914a3ff1e6790773f44596aa79f5"
+    },
+    {
+      "path": "release/v84_00/docs/V83.81_TO_V84.00_RELEASE_NOTES.md",
+      "bytes": 444,
+      "sha256": "becc668dfc87bf84e95b6a209c17f303d78d1112a63c06954f07f2c58f2d3693"
+    },
+    {
+      "path": "release/v84_00/docs/V84.00_PAPER_BROKER_FRAMEWORK_COMPLETE.md",
+      "bytes": 192,
+      "sha256": "c2eec5b0be7dd7d28703f65f52dc2947b0e7686f67cfc34dd0fb5420a8899e5d"
+    },
+    {
+      "path": "tools/install_check_v83_81_to_v84_00.py",
+      "bytes": 678,
+      "sha256": "2ca0a822329b52cc4ca43fdc9a50721c5d778d28f549216e2a5cf3c4b8e1b262"
+    },
+    {
+      "path": "tools/run_v83_81_to_v84_00_pipeline.py",
+      "bytes": 1218,
+      "sha256": "a83f1db248dcaf0d4da8d39d83be729f3a677017ef494c0492501d115cd72ea0"
+    },
+    {
+      "path": "tools/test_paper_broker_final_cert_v83_81_to_v84_00.py",
+      "bytes": 2506,
+      "sha256": "22ebf3d7c6cb5100c62b16338f625e104a0bad700710b0b200244ffeac9cd0df"
+    },
+    {
+      "path": "tools/verify_v83_81_to_v84_00_pipeline.py",
+      "bytes": 1974,
+      "sha256": "62c9b95337298f349b4ce96f7f61c13b1e0212c8a1c3fcb02d68da0e6fd9dfa5"
+    }
+  ]
+}
