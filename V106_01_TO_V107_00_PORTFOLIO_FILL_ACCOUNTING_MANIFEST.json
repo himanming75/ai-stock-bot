@@ -1,0 +1,91 @@
+{
+  "base_commit": "b5c4a06",
+  "stage_range": "V106.01-V107.00",
+  "bundle_type": "PORTFOLIO_FILL_ACCOUNTING_FOUNDATION",
+  "certificate_only": false,
+  "requires_execution_engine_v106": true,
+  "broker_transport_enabled": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "validated_against_prior_real_foundations": true,
+  "verification_decimal_comparison_fixed": true,
+  "file_count": 16,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING.txt",
+      "bytes": 576,
+      "sha256": "bad9352b10d2e8e986571076a56aff4331f45f3db77596f3b4e08152e213330f"
+    },
+    {
+      "path": "RUN_V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING.ps1",
+      "bytes": 952,
+      "sha256": "cb92ddc9a828a8c917dbe5c1c6a44582bab4875df99504dd54e827df5cb2cb1e"
+    },
+    {
+      "path": "execution_engine/execution_engine.py",
+      "bytes": 2620,
+      "sha256": "6beaad76f991b7969fdd0aab715e84a14103aa7a8578ebc35108c85613019183"
+    },
+    {
+      "path": "portfolio_engine/__init__.py",
+      "bytes": 551,
+      "sha256": "c8c91f9517cd14d36e07ddb450dbaadf6dd265d8341c42d947ec74d577ef5d68"
+    },
+    {
+      "path": "portfolio_engine/accounting.py",
+      "bytes": 6571,
+      "sha256": "49eacf078f88550390911776014977d40333d5306e2951c37d362cf171afb718"
+    },
+    {
+      "path": "portfolio_engine/dedup.py",
+      "bytes": 474,
+      "sha256": "9b2faad26a778fc488593c4f1b1eb864d9f867ee844fcdb8f72781b9d23f3888"
+    },
+    {
+      "path": "portfolio_engine/models.py",
+      "bytes": 2835,
+      "sha256": "0163936a55026488487f0718af3d37b1ddefd152c8499e64c017da054c32bdd2"
+    },
+    {
+      "path": "portfolio_engine/valuation.py",
+      "bytes": 795,
+      "sha256": "9abe7a02fc8e5f60215db4de5a7dce0170be506a7343acc01373c797e273a396"
+    },
+    {
+      "path": "release/v107_00/docs/DESIGN.md",
+      "bytes": 449,
+      "sha256": "3dbfb5af46a0a217def507b315ba761231766b4759becd4fd0271291f9cb9a59"
+    },
+    {
+      "path": "release/v107_00/docs/RELEASE_NOTES.md",
+      "bytes": 217,
+      "sha256": "1a55dfd19eb5e77a00b090dd459904c8fdb6761a15e1c31d2afc7fc6a373ea0a"
+    },
+    {
+      "path": "release/v107_00/docs/TEST_RESULTS.md",
+      "bytes": 558,
+      "sha256": "d284687449c4b91e83bfdd22deed19d2fe83d9b87396f5a37d1a5cfb1a8e84bb"
+    },
+    {
+      "path": "tools/install_check_v106_01_to_v107_00.py",
+      "bytes": 513,
+      "sha256": "6feb18fe90ceeae35b7a02a5b57743be6d4f4d27c815ff7c702e17605ca6a9bd"
+    },
+    {
+      "path": "tools/run_portfolio_fill_accounting_v106_01_to_v107_00.py",
+      "bytes": 4687,
+      "sha256": "9e8bb3d8dd1955ab827b8951363d3405fd1a315c794adb474cc2c98823cdae3b"
+    },
+    {
+      "path": "tools/test_portfolio_fill_accounting_v106_01_to_v107_00.py",
+      "bytes": 9559,
+      "sha256": "0a748945b42477426a1ef1a8d61d1d3bc462a303a276bc67c58282c4066043ea"
+    },
+    {
+      "path": "tools/verify_portfolio_fill_accounting_v106_01_to_v107_00.py",
+      "bytes": 1917,
+      "sha256": "9908db383be6664650857d5e3836f52966a3cfd710b38e905134de4055acb9aa"
+    }
+  ]
+}

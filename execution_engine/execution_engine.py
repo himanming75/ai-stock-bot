@@ -62,12 +62,22 @@ class PaperExecutionEngine:
 
         self.event_bus.publish(Event(
             topic="execution.request",
-            payload={"request": request},
+            payload={
+                "request": request,
+                "intent_id": intent.intent_id,
+                "symbol": intent.symbol,
+                "side": intent.side.value,
+            },
             created_at=self.now(),
         ))
         self.event_bus.publish(Event(
             topic="execution.update",
-            payload={"result": result},
+            payload={
+                "result": result,
+                "intent_id": intent.intent_id,
+                "symbol": intent.symbol,
+                "side": intent.side.value,
+            },
             created_at=self.now(),
         ))
         self.stats.updates_published += 1

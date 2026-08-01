@@ -1,0 +1,3 @@
+git add portfolio_engine execution_engine/execution_engine.py RUN_V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING.ps1 GIT_COMMIT_V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING.txt V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING_MANIFEST.json tools/install_check_v106_01_to_v107_00.py tools/run_portfolio_fill_accounting_v106_01_to_v107_00.py tools/test_portfolio_fill_accounting_v106_01_to_v107_00.py tools/verify_portfolio_fill_accounting_v106_01_to_v107_00.py release/v107_00
+git commit -m "V106.01-V107.00 portfolio and fill accounting foundation implemented"
+git push origin main
