@@ -1,0 +1,92 @@
+{
+  "base_commit": "3e36561",
+  "stage_range": "V79.61-V79.65",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_61_TO_V79_65.txt",
+      "bytes": 610,
+      "sha256": "1e3275cd5fd26be73296e0e47e048ad9cffac54529832325b9e17dcd93ea8435"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_61_TO_V79_65.ps1",
+      "bytes": 47,
+      "sha256": "d217c388c90cd38baa77a62420dfa07ab172fcb20726191a007145f78b177591"
+    },
+    {
+      "path": "RUN_V79_61_TO_V79_65.ps1",
+      "bytes": 639,
+      "sha256": "ddc297f1579a022ef76c10e305d735c6c6996553a850b8027a6d25d263082044"
+    },
+    {
+      "path": "V79_61_TO_V79_65_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 148,
+      "sha256": "935aa5429fb9d4baee318ac4270a7ebca09e0ac370ae81c6a8fb8e37948b966c"
+    },
+    {
+      "path": "VERIFY_V79_61_TO_V79_65.ps1",
+      "bytes": 69,
+      "sha256": "fed2412fb0b019bc1c3f319ce59a4b95b82b48f7b0e70c2efc36d399780b5514"
+    },
+    {
+      "path": "alpaca_market_data/historical_feature_store_v79_61_65.py",
+      "bytes": 7659,
+      "sha256": "a39fa4d53bcff652438dcd9d4b7b7ec15d9d1d62bbc6a2997716d39046ffc08e"
+    },
+    {
+      "path": "release/v79_61/config/historical_feature_store_config_v79_61.json",
+      "bytes": 235,
+      "sha256": "efccd8a3b936069bc48f4d9a1ba6c3ab973d7e54b9463766cb42e7138b480923"
+    },
+    {
+      "path": "release/v79_61/docs/V79.61_FEATURE_REGISTRY.md",
+      "bytes": 68,
+      "sha256": "7af239b2511593c254bc0d6f9ba71353d5b8c998f7ce2950efa776c7440cb110"
+    },
+    {
+      "path": "release/v79_62/docs/V79.62_FEATURE_BUILDER.md",
+      "bytes": 67,
+      "sha256": "0b9b8dc2243a047c43523d98d6dd1ff50474c2c1accab2d4b7748ddbcfb67d8c"
+    },
+    {
+      "path": "release/v79_63/docs/V79.63_FEATURE_CACHE.md",
+      "bytes": 65,
+      "sha256": "bc0b89445342304de16e65513ad67a1f63cca7c2a917e9bb2a1a70e8942b6b23"
+    },
+    {
+      "path": "release/v79_64/docs/V79.64_FEATURE_MANIFEST.md",
+      "bytes": 68,
+      "sha256": "c751acb207c00897958d19084e618c555068308bed24bb86ae57ab034eec8ad2"
+    },
+    {
+      "path": "release/v79_65/docs/V79.61_TO_V79.65_RELEASE_NOTES.md",
+      "bytes": 79,
+      "sha256": "8132686e860dca002fc8dbf9c5c0065f25a088ac8c8a159c5d60dba2b4b58aab"
+    },
+    {
+      "path": "release/v79_65/docs/V79.65_FEATURE_STORE_CERTIFICATE.md",
+      "bytes": 71,
+      "sha256": "d5c5f53e770d8939d92bf37e5ac89f0580d60b08e50418e53ff9ac87795938a8"
+    },
+    {
+      "path": "tools/install_check_v79_61_to_v79_65.py",
+      "bytes": 291,
+      "sha256": "a5bd6398a4e0f78c575380714ab2dabce837dbb98728c154fb92de2cf2a384b3"
+    },
+    {
+      "path": "tools/run_v79_61_to_v79_65_pipeline.py",
+      "bytes": 964,
+      "sha256": "b8c2118e276499bd03660a41c4e520f63322bc18bd4c89c7af93a7278b5b141e"
+    },
+    {
+      "path": "tools/test_historical_feature_store_v79_61_to_v79_65.py",
+      "bytes": 3296,
+      "sha256": "025047d55f0fdee65f83be8e4251356802d02b54edf78e11697a9646bc5392b8"
+    },
+    {
+      "path": "tools/verify_v79_61_to_v79_65_pipeline.py",
+      "bytes": 1232,
+      "sha256": "cbd61ce442ef4bfac4ee98cf7ee3931ca720ecf5ba716483655dc986d9146e05"
+    }
+  ]
+}

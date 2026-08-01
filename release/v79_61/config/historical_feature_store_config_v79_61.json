@@ -1,0 +1,11 @@
+{
+  "sma_window": 2,
+  "ema_window": 3,
+  "rsi_window": 2,
+  "atr_window": 2,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

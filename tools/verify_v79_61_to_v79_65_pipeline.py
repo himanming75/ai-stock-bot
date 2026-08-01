@@ -1,0 +1,6 @@
+from pathlib import Path
+import argparse,hashlib,json
+p=argparse.ArgumentParser();p.add_argument('--repository-root',default='.');a=p.parse_args();o=Path(a.repository_root).resolve()/'release/v79_65/output';cp=o/'historical_feature_store_certificate_v79_65.json';vp=o/'historical_feature_store_verify_v79_65.json';mp=o/'historical_feature_manifest_v79_64.json'
+for x in (cp,vp,mp):
+ if not x.is_file():raise SystemExit(f'VERIFY FAIL: missing {x}')
+c=json.loads(cp.read_text());v=json.loads(vp.read_text());u=dict(c);e=u.pop('certificate_sha256',None);h=lambda z:hashlib.sha256(json.dumps(z,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest();checks={'certificate_status_pass':c['status']=='PASS','certificate_hash_valid':e==h(u),'verify_flag_true':v['verified'] is True,'feature_rows_positive':c['feature_summary']['feature_row_count']>0,'invalid_values_zero':c['feature_summary']['invalid_feature_value_count']==0,'actual_orders_zero':c['actual_orders_submitted']==0};f=[k for k,x in checks.items() if not x];print(json.dumps({'stage_range':'V79.61-V79.65','status':'PASS' if not f else 'FAIL','checks':checks,'failed_checks':f,'next_phase':c['next_phase']},indent=2));raise SystemExit(0 if not f else 1)
