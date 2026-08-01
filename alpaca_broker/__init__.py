@@ -19,6 +19,13 @@ from .models import (
 from .client import AlpacaPaperClient
 from .reconciliation import BrokerPortfolioReconciler
 from .transport import HttpTransport, UrllibHttpTransport
+from .read_validation import (
+    ControlledPaperReadValidator,
+    ControlledReadReport,
+    READ_CONFIRMATION_ENV,
+    READ_CONFIRMATION_TEXT,
+    READ_OPT_IN_ENV,
+)
 
 __all__ = [
     "AlpacaPaperConfig",
@@ -38,4 +45,9 @@ __all__ = [
     "BrokerPortfolioReconciler",
     "HttpTransport",
     "UrllibHttpTransport",
+    "ControlledPaperReadValidator",
+    "ControlledReadReport",
+    "READ_CONFIRMATION_ENV",
+    "READ_CONFIRMATION_TEXT",
+    "READ_OPT_IN_ENV",
 ]
