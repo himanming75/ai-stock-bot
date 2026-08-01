@@ -1,0 +1,14 @@
+{
+  "mode": "DRY_RUN_NO_NETWORK",
+  "initial_equity": 100000.0,
+  "maximum_daily_loss_pct": 0.02,
+  "maximum_drawdown_pct": 0.05,
+  "maximum_gross_exposure_pct": 1.0,
+  "warning_drawdown_pct": 0.025,
+  "require_flat_eod": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
