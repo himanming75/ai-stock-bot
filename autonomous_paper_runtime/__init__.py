@@ -9,6 +9,13 @@ from .models import (
 from .policy import AutonomousDecisionPolicy
 from .runtime import AutonomousAlpacaPaperRuntime
 from .read_session import AutonomousPaperReadSession, AutonomousPaperReadSnapshot
+from .reconciliation import (
+    AutonomousPaperReadReconciler,
+    AutonomousReconciliationReport,
+    ReconciliationIssue,
+    ReconciliationPolicy,
+    ReconciliationStatus,
+)
 
 __all__ = [
     "AutonomousRuntimeConfig",
@@ -19,4 +26,9 @@ __all__ = [
     "AutonomousAlpacaPaperRuntime",
     "AutonomousPaperReadSession",
     "AutonomousPaperReadSnapshot",
+    "AutonomousPaperReadReconciler",
+    "AutonomousReconciliationReport",
+    "ReconciliationIssue",
+    "ReconciliationPolicy",
+    "ReconciliationStatus",
 ]

@@ -1,0 +1,84 @@
+{
+  "base_commit": "3d9f42f",
+  "stage_range": "V121.01-V122.00",
+  "bundle_type": "AUTONOMOUS_PAPER_READ_RECONCILIATION",
+  "blocking_checks": [
+    "CASH",
+    "EQUITY",
+    "POSITION_COUNT",
+    "POSITION_SYMBOLS",
+    "OPEN_ORDER_COUNT",
+    "RECOVERY_GENERATION",
+    "RUNTIME_STATE"
+  ],
+  "safe_mode_on_blocking_mismatch": true,
+  "demo_expected_open_orders": 0,
+  "demo_actual_open_orders": 1,
+  "demo_reconciliation_status": "SAFE_MODE",
+  "default_pipeline_actual_network": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 12,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V121_01_TO_V122_00_AUTONOMOUS_PAPER_READ_RECONCILIATION.txt",
+      "bytes": 664,
+      "sha256": "6cbf533921172f07f17384489a62f1ab47ab43fac8b848f59bb7a7fe302b1855"
+    },
+    {
+      "path": "RUN_V121_01_TO_V122_00_AUTONOMOUS_PAPER_READ_RECONCILIATION.ps1",
+      "bytes": 985,
+      "sha256": "6d8afaa53ef92cd3cab1e9e4675dd19509208da6480c78b2c42fb2fb9f73750c"
+    },
+    {
+      "path": "autonomous_paper_runtime/__init__.py",
+      "bytes": 981,
+      "sha256": "554560146441ad0a944637a043ba7bfa2f0859bd530b44d18bd5922c024a3c4f"
+    },
+    {
+      "path": "autonomous_paper_runtime/reconciliation.py",
+      "bytes": 8212,
+      "sha256": "920355cd8527df695ed2a294a1a2cf321a08093f88bc3e69e1653ed9ab98e98b"
+    },
+    {
+      "path": "release/v122_00/docs/DESIGN.md",
+      "bytes": 569,
+      "sha256": "6fa85ad8f1ba24e74d3e1d9732190c6dd03ef52536dc79b5b4c3a6299950827d"
+    },
+    {
+      "path": "release/v122_00/docs/RELEASE_NOTES.md",
+      "bytes": 366,
+      "sha256": "ab4095252ebe3e4c8b5954f0cead20c348b1e62d7bf7c62fdfd7482263f7e7a0"
+    },
+    {
+      "path": "release/v122_00/docs/TEST_RESULTS.md",
+      "bytes": 573,
+      "sha256": "c432c9ac921b90eac43e32ba708cf1e1bf00c8c444e9d9ce55f785940ff47f54"
+    },
+    {
+      "path": "tools/install_check_v121_01_to_v122_00.py",
+      "bytes": 794,
+      "sha256": "53d70bd7b7127ff8ec313587f5bb737375227c9910caa6b474b7497eccbe5378"
+    },
+    {
+      "path": "tools/run_autonomous_paper_read_reconciliation_v121_01_to_v122_00.py",
+      "bytes": 2869,
+      "sha256": "824858db8077c15dc1374c55b0891c1cc78d4886c55938ebd7cf696961b80710"
+    },
+    {
+      "path": "tools/test_autonomous_paper_read_reconciliation_v121_01_to_v122_00.py",
+      "bytes": 7543,
+      "sha256": "1838e36905da336628ab9e42be1c8717a2d66a3e3ca7c8a48a08bb5b1b81ea52"
+    },
+    {
+      "path": "tools/verify_autonomous_paper_read_reconciliation_v121_01_to_v122_00.py",
+      "bytes": 2190,
+      "sha256": "6df3d2a2777e48044ad3eaafc77ae7bb27f54d7ca6a55d9f213d22f626b2b094"
+    }
+  ]
+}
