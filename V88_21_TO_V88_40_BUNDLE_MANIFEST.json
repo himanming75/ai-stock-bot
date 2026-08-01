@@ -1,0 +1,163 @@
+{
+  "base_commit": "65052a5",
+  "stage_range": "V88.21-V88.40",
+  "functional_bundle": "PAPER_STRATEGY_RUNTIME_LOOP_FOUNDATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V88_21_TO_V88_40.txt",
+      "bytes": 843,
+      "sha256": "69628cfa39dc38355a3af2e9718c7420077f60fc6300687003584493f7e5469f"
+    },
+    {
+      "path": "INSTALL_CHECK_V88_21_TO_V88_40.ps1",
+      "bytes": 47,
+      "sha256": "4a9aeb6f6fe3b09d307c697ba8f18695929d674fc94cce3256cc9fc98a5dfe77"
+    },
+    {
+      "path": "RUN_V88_21_TO_V88_40.ps1",
+      "bytes": 812,
+      "sha256": "6b700e9cbecf58ac6d6383d8de265c67079591b90b619515da9903af6b46953c"
+    },
+    {
+      "path": "V88_21_TO_V88_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 242,
+      "sha256": "6c9d120105bd26e66dd37acdce5ed115027ff5e8ad3beb2808d41df1c937a0ef"
+    },
+    {
+      "path": "VERIFY_V88_21_TO_V88_40.ps1",
+      "bytes": 69,
+      "sha256": "2efaf362d1b849e66b60f32aa4f2210893eafbb7cde0e9f902feeee9c040f0ab"
+    },
+    {
+      "path": "alpaca_market_data/strategy_runtime_loop_v88_21_40.py",
+      "bytes": 17525,
+      "sha256": "636851575f227ab917101f46eb07be5ffdedcf1e9b5f11573458809bc97227e0"
+    },
+    {
+      "path": "release/v88_21/docs/V88.21_RUNTIME_POLICY.md",
+      "bytes": 158,
+      "sha256": "4afd881001c0e7d321f41b66251d20936ebf613898b0f5c350dab15ff7747c49"
+    },
+    {
+      "path": "release/v88_22/docs/V88.22_MARKET_STATE.md",
+      "bytes": 156,
+      "sha256": "1d342eece0991ae5e5c2e50647d176c1e3b8db5b5e350a1a7d56a7f11d230fcc"
+    },
+    {
+      "path": "release/v88_23/docs/V88.23_HEARTBEAT.md",
+      "bytes": 153,
+      "sha256": "cddf58bb350e688b70de349f071efdcf638e3b8bfffa00c7d17ca23224779827"
+    },
+    {
+      "path": "release/v88_24/docs/V88.24_HEARTBEAT_CHECK.md",
+      "bytes": 159,
+      "sha256": "d2393fde72dfa7af0f492c1f4cf6d59cdd34d6611120452282409a67992266d7"
+    },
+    {
+      "path": "release/v88_25/docs/V88.25_DATA_FRESHNESS.md",
+      "bytes": 158,
+      "sha256": "ad70824914ed2caf4dbcfa80f6ca6bedc7f29f05de7b3c82a20b3316f743d292"
+    },
+    {
+      "path": "release/v88_26/docs/V88.26_STRATEGY_CYCLE.md",
+      "bytes": 158,
+      "sha256": "06df729fbca7bd21de2da945dac665eedf4e484e47a61753aa312a1fd9c5ac8a"
+    },
+    {
+      "path": "release/v88_27/docs/V88.27_SIGNAL_CANDIDATE.md",
+      "bytes": 160,
+      "sha256": "bece836bdcf6a1e9de5ea89dc94ddae6bec19c9c7364ae379cb0511b31abdca4"
+    },
+    {
+      "path": "release/v88_28/docs/V88.28_SIGNAL_DEDUPLICATION.md",
+      "bytes": 164,
+      "sha256": "877278d61de9ba38cb0bc9e4581507f7f07dbcb034fd9dbf5380b1931e21423a"
+    },
+    {
+      "path": "release/v88_29/docs/V88.29_TIMEOUT_GUARD.md",
+      "bytes": 157,
+      "sha256": "62b72ea7b8af86f817a78a475ad1b49e8a81815004ae1d114001730c6ca5ed58"
+    },
+    {
+      "path": "release/v88_30/docs/V88.30_EXCEPTION_CONTAINMENT.md",
+      "bytes": 165,
+      "sha256": "c7ea4cb6c05cbf67d12f01e0208966b93ad014762521a3672f8cc2dd4df3012b"
+    },
+    {
+      "path": "release/v88_31/docs/V88.31_RUNTIME_QUEUE.md",
+      "bytes": 157,
+      "sha256": "f27f1cc8d273ffcc69d4efe10c4cd8df41b619134823c4c759e9b16d355319a1"
+    },
+    {
+      "path": "release/v88_32/docs/V88.32_CHECKPOINT.md",
+      "bytes": 154,
+      "sha256": "3cd129aa6f455d30401080708751fef836bcd2bcb98070d7aed00da3e5d40288"
+    },
+    {
+      "path": "release/v88_33/docs/V88.33_RESUME.md",
+      "bytes": 150,
+      "sha256": "596476f234ec36098e55ddd71fa7a53c9098d66fbb608b545d441c9203510a8d"
+    },
+    {
+      "path": "release/v88_34/docs/V88.34_GRACEFUL_SHUTDOWN.md",
+      "bytes": 161,
+      "sha256": "78f624799ba88130d9624488988fd8ae00217f17634ec19a5060e920c95ca3f7"
+    },
+    {
+      "path": "release/v88_35/docs/V88.35_RETRY_POLICY.md",
+      "bytes": 156,
+      "sha256": "f39f98de1b73c93749817b1df829709becfc72c155935c698f7b2fcf048f5f26"
+    },
+    {
+      "path": "release/v88_36/docs/V88.36_LOOP_ITERATION.md",
+      "bytes": 158,
+      "sha256": "a2b28bff2fe5514c3ed7d607780c55dc9a8964137a9f7eb4fc25e6455090e98b"
+    },
+    {
+      "path": "release/v88_37/docs/V88.37_NEGATIVE_SCENARIOS.md",
+      "bytes": 162,
+      "sha256": "642e7e32af1a056df46e8420f5f870dbb9c07fc3b6a36bc71796f1c30481b610"
+    },
+    {
+      "path": "release/v88_38/docs/V88.38_RUNTIME_AUDIT.md",
+      "bytes": 157,
+      "sha256": "6897c91a37a926c929121f06b05a3f40c9c5f41e2d3b604d79afbf8ee2dcece0"
+    },
+    {
+      "path": "release/v88_39/docs/V88.39_RUNTIME_LEDGER.md",
+      "bytes": 158,
+      "sha256": "f35134ebf768b715a237e27ed616ff98ef546d62952d47e8da1a9246d2ac2d33"
+    },
+    {
+      "path": "release/v88_40/docs/V88.21_TO_V88.40_RELEASE_NOTES.md",
+      "bytes": 427,
+      "sha256": "399d379261e4a88bc3a5d57f6c9b8f43349f9122c87fbc22e82dacfa195da4b8"
+    },
+    {
+      "path": "release/v88_40/docs/V88.40_RUNTIME_LOOP_COMPLETION.md",
+      "bytes": 167,
+      "sha256": "26527b10d41c6deb2cd432569f17dea0151b8c6c5ba8bd874b1348ba5db691d0"
+    },
+    {
+      "path": "tools/install_check_v88_21_to_v88_40.py",
+      "bytes": 444,
+      "sha256": "5a547623b065d31884d50ac9c3897803106803cf005b981bb4dfc3152d729fb7"
+    },
+    {
+      "path": "tools/run_v88_21_to_v88_40_pipeline.py",
+      "bytes": 1167,
+      "sha256": "9329f84ceb2863c62b0a5e204a222f397c8c23820d84cf18193e430436c819a8"
+    },
+    {
+      "path": "tools/test_strategy_runtime_loop_v88_21_to_v88_40.py",
+      "bytes": 2909,
+      "sha256": "5d439803f612d2b2c1e50a1ba078a915228f2afbef9ca1111fc55d7fa8ddc17f"
+    },
+    {
+      "path": "tools/verify_v88_21_to_v88_40_pipeline.py",
+      "bytes": 1916,
+      "sha256": "d655e2df4594b1d668557d5e9ef9700fa642bcfa172d207a3b0f02dc0c7a2ee0"
+    }
+  ]
+}

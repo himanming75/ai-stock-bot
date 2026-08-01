@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V88_21_TO_V88_40.ps1
+EXPECTED: market, heartbeat, freshness, cycle, signal, queue, timeout, checkpoint, resume, shutdown, retry, negative scenarios PASS; runtime false; network 0; orders 0.
