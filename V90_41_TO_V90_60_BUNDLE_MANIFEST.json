@@ -1,0 +1,71 @@
+{
+  "base_commit": "7ef8c1b",
+  "stage_range": "V90.41-V90.60",
+  "functional_bundle": "ACTUAL_PAPER_RUNTIME_CERTIFICATION",
+  "release_candidate": "ACTUAL_PAPER_READ_ONLY_RUNTIME_RC1",
+  "write_capability_count": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V90_41_TO_V90_60.txt",
+      "bytes": 531,
+      "sha256": "1250cce15bfe9cc1942ba200d39d1a4a19b4e0e0f5a202788443f42eb0e35c2b"
+    },
+    {
+      "path": "INSTALL_CHECK_V90_41_TO_V90_60.ps1",
+      "bytes": 47,
+      "sha256": "06302956b8dd01f2dabc52b1340ae3eb8aca96734d67e614d6d15735282065cb"
+    },
+    {
+      "path": "RUN_V90_41_TO_V90_60.ps1",
+      "bytes": 857,
+      "sha256": "02088d2f80e03f418dae32e844309879ceaa5b9d47d6729518a95604c7ebbe2b"
+    },
+    {
+      "path": "VERIFY_V90_41_TO_V90_60.ps1",
+      "bytes": 69,
+      "sha256": "9f8a2d776ceba83fb49b53e52d6d5be35359517815a6995fd20df86aef725a24"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_runtime_certification_v90_41_60.py",
+      "bytes": 17873,
+      "sha256": "91c55474ac855b8662ed6a572a582642ad6f5661d104d3050cebbd3901bb22fd"
+    },
+    {
+      "path": "release/v90_60/docs/DESIGN.md",
+      "bytes": 750,
+      "sha256": "ce35228acb9ef44af836b7a1d9f5271fc4d3fd6149c3ab0456497b712fb7c468"
+    },
+    {
+      "path": "release/v90_60/docs/RELEASE_NOTES.md",
+      "bytes": 342,
+      "sha256": "b8392e6d40af11893e261dd92441712ddc52f01f996ffd9fb3ff670c1c4d94ee"
+    },
+    {
+      "path": "release/v90_60/docs/TEST_RESULTS.md",
+      "bytes": 346,
+      "sha256": "25cd384188ba00373fe7aa380d091dc4507280ece2cdf3d45cee9732fed9c35a"
+    },
+    {
+      "path": "tools/install_check_v90_41_to_v90_60.py",
+      "bytes": 693,
+      "sha256": "e6c9a47f01c9cd877d677f3b28200e56ac4d8df0f9e726d8aabf426bc097c352"
+    },
+    {
+      "path": "tools/run_v90_41_to_v90_60_pipeline.py",
+      "bytes": 1981,
+      "sha256": "fd5da35202575628efc3b06894b5e7d9eea9d7f09d231d29815ff0db8ca12b6b"
+    },
+    {
+      "path": "tools/test_actual_paper_runtime_certification_v90_41_to_v90_60.py",
+      "bytes": 4730,
+      "sha256": "dac60aea6f7ba908a4b764647e07b1daee27c54abbf3e558fcd9c2848496e99a"
+    },
+    {
+      "path": "tools/verify_v90_41_to_v90_60_pipeline.py",
+      "bytes": 2665,
+      "sha256": "455b228b48c0f7e9bb97df104f58d83f8fcded072ff060fae7a721357639a394"
+    }
+  ]
+}
