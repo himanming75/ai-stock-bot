@@ -1,0 +1,163 @@
+{
+  "base_commit": "b2ee28a",
+  "stage_range": "V87.61-V87.80",
+  "functional_bundle": "PAPER_STRATEGY_EXECUTION_FINAL_CERTIFICATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V87_61_TO_V87_80.txt",
+      "bytes": 883,
+      "sha256": "f4bb86f96b56398f306ec7ce2dd1ce1d389b376acafdffe25840506d6563a8ab"
+    },
+    {
+      "path": "INSTALL_CHECK_V87_61_TO_V87_80.ps1",
+      "bytes": 47,
+      "sha256": "1ff8259a689697c8d8a389b60f891c269db230d05fa1bca95794b3274501f526"
+    },
+    {
+      "path": "RUN_V87_61_TO_V87_80.ps1",
+      "bytes": 829,
+      "sha256": "b6996d6309093a228937ede61ce97b834a5ee7d769ecd41ce65e50123167697c"
+    },
+    {
+      "path": "V87_61_TO_V87_80_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 209,
+      "sha256": "2874cd691f72066c7f40a2006798488f54e0d4c876a26ae8996c5a93819b5442"
+    },
+    {
+      "path": "VERIFY_V87_61_TO_V87_80.ps1",
+      "bytes": 69,
+      "sha256": "9e5e227448c077d7073a181a1f84e1bb2f930b48efe7ab7687db2c08bf165de1"
+    },
+    {
+      "path": "alpaca_market_data/strategy_execution_final_certification_v87_61_80.py",
+      "bytes": 17041,
+      "sha256": "4f862fc2ec3ae1f87bddcafc1175c31d19085577b00e071783202eb9fa8fae3d"
+    },
+    {
+      "path": "release/v87_61/docs/V87.61_SOURCE_CERTIFICATE_PATHS.md",
+      "bytes": 187,
+      "sha256": "c5cb845e66133a20aa25b61874e975ede920f439350e6402d1018ebb0e6aa932"
+    },
+    {
+      "path": "release/v87_62/docs/V87.62_CERTIFICATE_CHAIN_LOAD.md",
+      "bytes": 185,
+      "sha256": "fac699075b9a9deaabd84f6e5b8c6de3804c4e4359c5a0e450072415d7d63ed1"
+    },
+    {
+      "path": "release/v87_63/docs/V87.63_CHAIN_SUMMARY.md",
+      "bytes": 176,
+      "sha256": "dffb3936e7ce6b4cb44a0a7963109dd774e6205c2445483fc07190219358bf43"
+    },
+    {
+      "path": "release/v87_64/docs/V87.64_INTEGRITY_CHAIN.md",
+      "bytes": 178,
+      "sha256": "852d3a67ae632b5e3c0389b0b67000c858d06dd385c3abe76caa9452d0d656af"
+    },
+    {
+      "path": "release/v87_65/docs/V87.65_SAFETY_CHAIN.md",
+      "bytes": 175,
+      "sha256": "5b3a82c8d85cbcfebed350ff74109f28b8ac8dc8acc0ee4ad8f76e619457452e"
+    },
+    {
+      "path": "release/v87_66/docs/V87.66_COMPLIANCE_REPORT.md",
+      "bytes": 180,
+      "sha256": "579f4b897ffd99843a2960028c8a5f1f989212aa03460d84a3dfb25a0cb6af44"
+    },
+    {
+      "path": "release/v87_67/docs/V87.67_REPLAY_CERTIFICATE.md",
+      "bytes": 181,
+      "sha256": "6398986baaa4274013197a382fd7e8a57c58bd1503d5a740abfb67f230cbab07"
+    },
+    {
+      "path": "release/v87_68/docs/V87.68_ROLLBACK_CERTIFICATE.md",
+      "bytes": 183,
+      "sha256": "11a5bdc0d5c84e99d3979d6ad99242f6f735b1b88c7995165180d2af8f76f7ff"
+    },
+    {
+      "path": "release/v87_69/docs/V87.69_RELEASE_READINESS.md",
+      "bytes": 180,
+      "sha256": "756edeaebf5ee6ec7dd49b7f61b60ec22a8909fe8f154dd3d105603a23c0c3c1"
+    },
+    {
+      "path": "release/v87_70/docs/V87.70_CERTIFICATION_ARCHIVE.md",
+      "bytes": 184,
+      "sha256": "ec279559aaeeb9951fa7120d062455efd4142c9e8e0dae258ef57c3b76e6d7d9"
+    },
+    {
+      "path": "release/v87_71/docs/V87.71_FINAL_REPORT.md",
+      "bytes": 175,
+      "sha256": "cfcb37a8838497a8740640f5c7c7b0f03de678e6f3384c1637fe7977e41d9b09"
+    },
+    {
+      "path": "release/v87_72/docs/V87.72_FINAL_AUDIT.md",
+      "bytes": 174,
+      "sha256": "6dadb37c21c700c2a049313614bbdac383053f8a166378a025f5bd0f0a721ff1"
+    },
+    {
+      "path": "release/v87_73/docs/V87.73_FINAL_LEDGER.md",
+      "bytes": 175,
+      "sha256": "e1b147ce4e51086fd524d4d88eebc47ae8912763f36af9bfdb88fb2c76caf4c9"
+    },
+    {
+      "path": "release/v87_74/docs/V87.74_FINAL_MANIFEST.md",
+      "bytes": 177,
+      "sha256": "cb5b234a9492824fe9d342d0a144a4cc4fcaebe7ff302693ac50fa526ea44cc9"
+    },
+    {
+      "path": "release/v87_75/docs/V87.75_RC1_RELEASE_PACKAGE.md",
+      "bytes": 182,
+      "sha256": "a4b2a275dc8b1017b6a1f71af020a3166b3f0f97f0430be452514cd4d6afbf38"
+    },
+    {
+      "path": "release/v87_76/docs/V87.76_FINAL_CHAIN_VERIFICATION.md",
+      "bytes": 187,
+      "sha256": "bacc0f97dc19f3448a4b7b53bc7fcc1be436902025ae8ecacc0d20d4dce9bf57"
+    },
+    {
+      "path": "release/v87_77/docs/V87.77_CERTIFICATION_SUMMARY.md",
+      "bytes": 184,
+      "sha256": "e08db60c7bf289ddd2948e86a8195cd99d596e8f5bd77ee9791dd90cf4800bef"
+    },
+    {
+      "path": "release/v87_78/docs/V87.78_RELEASE_INTEGRITY_CHECK.md",
+      "bytes": 186,
+      "sha256": "e0a088ec48743816a8e8e0071c0c19265601424852932eb0d21e5413497015f5"
+    },
+    {
+      "path": "release/v87_79/docs/V87.79_FINAL_PIPELINE.md",
+      "bytes": 177,
+      "sha256": "0187bc826a47114df767148b1f366dfe67c99f231af446fd0b432e864151e9ab"
+    },
+    {
+      "path": "release/v87_80/docs/V87.61_TO_V87.80_RELEASE_NOTES.md",
+      "bytes": 331,
+      "sha256": "f1467ca40b8cf2a36f4887f78e55b339a3cf2c855151d989d24cfb3222593610"
+    },
+    {
+      "path": "release/v87_80/docs/V87.80_FINAL_CERTIFICATION_COMPLETION.md",
+      "bytes": 193,
+      "sha256": "13cbff177f0ff131b6a2c40c45140ccd39b89b0d051977bad129d0fdae9385af"
+    },
+    {
+      "path": "tools/install_check_v87_61_to_v87_80.py",
+      "bytes": 665,
+      "sha256": "f1c28f372f748e360651e4f847b84b78fbc1ef29a860382a0fe5723f48751619"
+    },
+    {
+      "path": "tools/run_v87_61_to_v87_80_pipeline.py",
+      "bytes": 1183,
+      "sha256": "3c158773f852ee440852b201a0d0cdbd9de6ff33a12d8b5cf33a480f2d2d5125"
+    },
+    {
+      "path": "tools/test_strategy_execution_final_certification_v87_61_to_v87_80.py",
+      "bytes": 3168,
+      "sha256": "84322f6a47ccc41475bb56afea0844ede42e47bcf36ee55908c7bd80ed509c4c"
+    },
+    {
+      "path": "tools/verify_v87_61_to_v87_80_pipeline.py",
+      "bytes": 1582,
+      "sha256": "53af943c6522c8e1f0d8bf64ed7e5c96d9554c08896b36325afacf8557086230"
+    }
+  ]
+}

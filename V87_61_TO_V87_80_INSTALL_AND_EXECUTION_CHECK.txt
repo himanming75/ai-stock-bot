@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V87_61_TO_V87_80.ps1
+EXPECTED: three-certificate chain, safety/compliance/replay/rollback/readiness/archive/audit/release package PASS; network 0; orders 0.
