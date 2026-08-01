@@ -1,0 +1,168 @@
+{
+  "base_commit": "47a64f2",
+  "stage_range": "V83.41-V83.60",
+  "functional_bundle": "PAPER_ORDER_SUBMISSION_SIMULATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V83_41_TO_V83_60.txt",
+      "bytes": 848,
+      "sha256": "616bb6d8e8f633b6f40de395275bd149989a677a0d2b15712af19e89268b25e7"
+    },
+    {
+      "path": "INSTALL_CHECK_V83_41_TO_V83_60.ps1",
+      "bytes": 47,
+      "sha256": "913b1b8871e0ea578ad2b26d38b4a6a1254f1020fd474fa1240bdd4faf999c53"
+    },
+    {
+      "path": "RUN_V83_41_TO_V83_60.ps1",
+      "bytes": 817,
+      "sha256": "6d7e566c5f11c8439391696b65feb9d617b63cc2513314becff018fce8ec93d7"
+    },
+    {
+      "path": "V83_41_TO_V83_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 218,
+      "sha256": "e9a6d3678c136f974913feb52be4f0527f7c7a89462867620a276c54622eb493"
+    },
+    {
+      "path": "VERIFY_V83_41_TO_V83_60.ps1",
+      "bytes": 69,
+      "sha256": "8f24853a0562963397178e9849cb1c43c6bb31b4f234ee60a7517d09d8607c63"
+    },
+    {
+      "path": "alpaca_market_data/paper_order_submission_sim_v83_41_60.py",
+      "bytes": 15787,
+      "sha256": "6a22b815d90b01e5bc0b8ee193f88ee3b439a4e012487fd836e16e154b99f8c8"
+    },
+    {
+      "path": "release/v83_41/config/paper_order_submission_sim_config_v83_41.json",
+      "bytes": 281,
+      "sha256": "41857b0e79b3934657b64c5a6144fa10e1c8e19b4dae3da25c3ea58a1b66dade"
+    },
+    {
+      "path": "release/v83_41/docs/V83.41_SUBMISSION_POLICY.md",
+      "bytes": 179,
+      "sha256": "cfe90ee9f9508e936e9a84d2e2d3352ec99a7bec4c70313eebc81a8f03f4ef29"
+    },
+    {
+      "path": "release/v83_42/docs/V83.42_SUBMISSION_INTENT.md",
+      "bytes": 179,
+      "sha256": "9cbda304ee3c40c830f2eaa710030fd381a76c87bcb4f1790ff3265c1b468d97"
+    },
+    {
+      "path": "release/v83_43/docs/V83.43_SUBMISSION_IDEMPOTENCY.md",
+      "bytes": 184,
+      "sha256": "4ebdf8744347bbc6a3812ff913d58651e51505b2123f93079415f948b02a2ea8"
+    },
+    {
+      "path": "release/v83_44/docs/V83.44_SUBMISSION_QUEUE.md",
+      "bytes": 178,
+      "sha256": "9eb082232396a777d11a55677298ead84fb3b046534fdb59f68c76fce5fde9eb"
+    },
+    {
+      "path": "release/v83_45/docs/V83.45_DUPLICATE_SUBMISSION_GUARD.md",
+      "bytes": 188,
+      "sha256": "69ae9ccb46425dd974c20233dc42fa9617770b3a69542427ac69f32d7706d251"
+    },
+    {
+      "path": "release/v83_46/docs/V83.46_SUBMISSION_SERIALIZATION.md",
+      "bytes": 186,
+      "sha256": "8c147dfebbaab501925e8ef539897e812d3ee9da952c8c5c251666a405ae781c"
+    },
+    {
+      "path": "release/v83_47/docs/V83.47_BROKER_RESPONSE_SIMULATOR.md",
+      "bytes": 187,
+      "sha256": "b8238a7ab4f3bd78de13a6c6da70b58fe43c06caea528a919f4223d658dd564f"
+    },
+    {
+      "path": "release/v83_48/docs/V83.48_RETRY_POLICY.md",
+      "bytes": 174,
+      "sha256": "3d7035b7f4350c0bf22af5c7a3d76484c00c1ad12d55c1436560f3b417a80168"
+    },
+    {
+      "path": "release/v83_49/docs/V83.49_RETRY_SIMULATION.md",
+      "bytes": 178,
+      "sha256": "ce7468433fa1ebd7a7f8b0cdf85e092bc994c9f9b20ddcc2a2028273e6087769"
+    },
+    {
+      "path": "release/v83_50/docs/V83.50_SUBMISSION_RECEIPT.md",
+      "bytes": 180,
+      "sha256": "9099c50c9054412a3d9c647f94c8bb1bb360a9a2683165ec4449639d5b3d7a22"
+    },
+    {
+      "path": "release/v83_51/docs/V83.51_REPLAY_GUARD.md",
+      "bytes": 174,
+      "sha256": "333c4ed1476a7a4ce2cac6227cd48daca1b4ffc351108e1e8fddc03ad4d32c0b"
+    },
+    {
+      "path": "release/v83_52/docs/V83.52_DETERMINISTIC_REPLAY.md",
+      "bytes": 182,
+      "sha256": "93abe02089a60591ec81c3695837e722287ca5275f05d26ecf8006a0a026cbee"
+    },
+    {
+      "path": "release/v83_53/docs/V83.53_SUBMISSION_SCENARIOS.md",
+      "bytes": 182,
+      "sha256": "ad9585e776d2b4d8cabba3eb411476960bca00bce0b07009caeb18cb798370da"
+    },
+    {
+      "path": "release/v83_54/docs/V83.54_SUBMISSION_STATE_MACHINE.md",
+      "bytes": 186,
+      "sha256": "f23885709124d63d7c84549b9cf98121ea38d23a17ba4eda94dd40972f4efc92"
+    },
+    {
+      "path": "release/v83_55/docs/V83.55_SUBMISSION_AUDIT.md",
+      "bytes": 178,
+      "sha256": "91a1f08c0ebcfedab0d07598ba1177d49861ce0aafaa303733c1dde49fbeca9c"
+    },
+    {
+      "path": "release/v83_56/docs/V83.56_MASTER_LEDGER.md",
+      "bytes": 175,
+      "sha256": "62b167c4f1c5df7572eaa83f6068a5893d3b48ea9b1f905dd761563f3d720669"
+    },
+    {
+      "path": "release/v83_57/docs/V83.57_SUBMISSION_MANIFEST.md",
+      "bytes": 181,
+      "sha256": "90f1254f1d63b175654dd89c4b61075eb10a80a9edec87ccabf3aace6bc2c877"
+    },
+    {
+      "path": "release/v83_58/docs/V83.58_SUBMISSION_PIPELINE.md",
+      "bytes": 181,
+      "sha256": "670c7140c10fd581aa301d35a6c4898e4be5ee6178365a12118ed8179dc7af12"
+    },
+    {
+      "path": "release/v83_59/docs/V83.59_INTEGRITY_VERIFICATION.md",
+      "bytes": 184,
+      "sha256": "6ed669fdbf6ec74f99ce773f798a5f2de986111179c8e57cf03fccc604dd6130"
+    },
+    {
+      "path": "release/v83_60/docs/V83.41_TO_V83.60_RELEASE_NOTES.md",
+      "bytes": 483,
+      "sha256": "4aa167f405f7895fed46ae3d63989aa631cce10034f4349d47140e7a226d0e4a"
+    },
+    {
+      "path": "release/v83_60/docs/V83.60_PAPER_ORDER_SUBMISSION_SIM_COMPLETION.md",
+      "bytes": 199,
+      "sha256": "910da406b3dc623571293ed7ef05060ead2619e36ba97ae29a8bca6f43d5bb9c"
+    },
+    {
+      "path": "tools/install_check_v83_41_to_v83_60.py",
+      "bytes": 683,
+      "sha256": "c7c807606fb70109984b939cf001419448651509dca70a51e8638af15229fb00"
+    },
+    {
+      "path": "tools/run_v83_41_to_v83_60_pipeline.py",
+      "bytes": 1253,
+      "sha256": "4dee8993df0d52f57f6f1b19b260322f8dce691e7861aa1c89788a8a776ac7ba"
+    },
+    {
+      "path": "tools/test_paper_order_submission_sim_v83_41_to_v83_60.py",
+      "bytes": 4305,
+      "sha256": "96aad918da936d0c2495d604c12422522d67c6180c4d43cfd68eb458bec95661"
+    },
+    {
+      "path": "tools/verify_v83_41_to_v83_60_pipeline.py",
+      "bytes": 1812,
+      "sha256": "c2e2737985146bff3e98b37b4a48504b6c8ed5feb7cc37c3c71dae9697dcb3b2"
+    }
+  ]
+}

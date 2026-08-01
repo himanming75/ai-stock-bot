@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V83_41_TO_V83_60.ps1
+EXPECTED: 25 tests OK, accepted/rejected/partial simulated responses, duplicate and replay detection, deterministic replay, network 0, orders 0.

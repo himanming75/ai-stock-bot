@@ -1,0 +1,11 @@
+{
+  "mode": "PAPER_ORDER_SUBMISSION_SIMULATION",
+  "environment": "PAPER",
+  "retry_limit": 3,
+  "partial_fill_ratio": 0.5,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
