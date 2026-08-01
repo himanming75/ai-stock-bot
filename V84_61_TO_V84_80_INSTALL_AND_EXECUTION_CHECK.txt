@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V84_61_TO_V84_80.ps1
+EXPECTED: 26 tests OK, 4 simulated scenarios, ACK count 4, accepted/rejected/partial/auth-reject, duplicate/replay detection, deterministic replay, network 0, orders 0.
