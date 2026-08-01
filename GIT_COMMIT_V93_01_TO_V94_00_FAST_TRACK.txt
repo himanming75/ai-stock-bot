@@ -1,0 +1,3 @@
+git add RUN_V93_01_TO_V94_00_FAST_TRACK.ps1 INSTALL_CHECK_V93_01_TO_V94_00_FAST_TRACK.ps1 VERIFY_V93_01_TO_V94_00_FAST_TRACK.ps1 GIT_COMMIT_V93_01_TO_V94_00_FAST_TRACK.txt V93_01_TO_V94_00_FAST_TRACK_BUNDLE_MANIFEST.json alpaca_market_data/submission_enablement_fast_track_v93_01_v94_00.py tools/install_check_v93_01_to_v94_00_fast_track.py tools/run_v93_01_to_v94_00_fast_track_pipeline.py tools/test_submission_enablement_fast_track_v93_01_to_v94_00.py tools/verify_v93_01_to_v94_00_fast_track.py release/v94_00
+git commit -m "V93.01-V94.00 fast track submission enablement single-order preview RC completed"
+git push origin main

@@ -1,0 +1,73 @@
+{
+  "base_commit": "a68372a",
+  "stage_range": "V93.01-V94.00",
+  "functional_bundle": "SUBMISSION_ENABLEMENT_FAST_TRACK",
+  "release_candidate": "ACTUAL_PAPER_SINGLE_ORDER_PREVIEW_RC1",
+  "features_removed": false,
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V93_01_TO_V94_00_FAST_TRACK.txt",
+      "bytes": 632,
+      "sha256": "4436228aed69b465526a456743c08f59b51605ce3872e59572c5a3ff01686b3e"
+    },
+    {
+      "path": "INSTALL_CHECK_V93_01_TO_V94_00_FAST_TRACK.ps1",
+      "bytes": 58,
+      "sha256": "f8ed3ac3e9b066e95ab872c80400beb03c03340af571a1376c6dc0fec616f170"
+    },
+    {
+      "path": "RUN_V93_01_TO_V94_00_FAST_TRACK.ps1",
+      "bytes": 902,
+      "sha256": "6f72fb4ccf228325b3949b1c7aeff1a88a6dfd92703caa05a02c89771809b852"
+    },
+    {
+      "path": "VERIFY_V93_01_TO_V94_00_FAST_TRACK.ps1",
+      "bytes": 71,
+      "sha256": "cbbc24a6fadf022e4f2bff4f629641e87d521de37c28eae92562abb3b8d02fa8"
+    },
+    {
+      "path": "alpaca_market_data/submission_enablement_fast_track_v93_01_v94_00.py",
+      "bytes": 13458,
+      "sha256": "cc152691564f9e4d95039ad21b67c4f9b0aa5ccfcb2744fbe9db21bd20c70177"
+    },
+    {
+      "path": "release/v94_00/docs/DESIGN.md",
+      "bytes": 337,
+      "sha256": "f79f212cc37dceb7ab6e1160b44fefb3c5222860326dd5c0d9e1b7fa82b49728"
+    },
+    {
+      "path": "release/v94_00/docs/RELEASE_NOTES.md",
+      "bytes": 181,
+      "sha256": "62f9289f8a6cda2f29d6482b5b657c7fcc2e8f3eb00a87d4f6e786b7af6c190a"
+    },
+    {
+      "path": "release/v94_00/docs/TEST_RESULTS.md",
+      "bytes": 301,
+      "sha256": "30f81699602a4598922ad3afdd09f8aeaa38bb9f2787a54b65ecdec82a804f83"
+    },
+    {
+      "path": "tools/install_check_v93_01_to_v94_00_fast_track.py",
+      "bytes": 468,
+      "sha256": "9310e0393918718903b6ef28df0c2f1bd27d8c86f52ae31c53f1f2c78f847dee"
+    },
+    {
+      "path": "tools/run_v93_01_to_v94_00_fast_track_pipeline.py",
+      "bytes": 1636,
+      "sha256": "04246c05e8f142bb5365cafdd34412ff20ff2ad756835607e44de4287f153935"
+    },
+    {
+      "path": "tools/test_submission_enablement_fast_track_v93_01_to_v94_00.py",
+      "bytes": 2562,
+      "sha256": "f25807c3be5adc9ca448e0f2effdae98d10333f7e302c0ee1eb71909a88dcc09"
+    },
+    {
+      "path": "tools/verify_v93_01_to_v94_00_fast_track.py",
+      "bytes": 1709,
+      "sha256": "f9b8b4b35762f229bb1c667d77eb7554f615a0f14872538be12b412cbb42ab65"
+    }
+  ]
+}
