@@ -1,0 +1,168 @@
+{
+  "base_commit": "02cfbb2",
+  "stage_range": "V85.01-V85.20",
+  "functional_bundle": "PAPER_BROKER_NETWORK_CONNECTION_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V85_01_TO_V85_20.txt",
+      "bytes": 867,
+      "sha256": "08bb5e3c02e44aa9a10bb71af82ecc4543477b27588daf00a2dfdba0cf9b611c"
+    },
+    {
+      "path": "INSTALL_CHECK_V85_01_TO_V85_20.ps1",
+      "bytes": 47,
+      "sha256": "26b20ea1de5f82e4908ec6b3357224f8d273ab78ce9b41d25fe94c817a5efb25"
+    },
+    {
+      "path": "RUN_V85_01_TO_V85_20.ps1",
+      "bytes": 822,
+      "sha256": "b8ccd9f0439afdaebbd390aa05aafb8fb21d8ed81ac27e2a54b69b30a1f79c02"
+    },
+    {
+      "path": "V85_01_TO_V85_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 261,
+      "sha256": "7c114cf3eb825dd653cdc59681b4dc4249150822ec57b39e97ae32d9db397d84"
+    },
+    {
+      "path": "VERIFY_V85_01_TO_V85_20.ps1",
+      "bytes": 69,
+      "sha256": "ed3adb5238187ae8d9a285d1d15557053e1b10ee7434d5ebaae63871622f0685"
+    },
+    {
+      "path": "alpaca_market_data/paper_broker_network_foundation_v85_01_20.py",
+      "bytes": 17211,
+      "sha256": "09e1b16e6648f5747ca77cf6281f71e95da4ee1ed3e92e81bb33a6898074bfa4"
+    },
+    {
+      "path": "release/v85_01/config/paper_broker_network_foundation_config_v85_01.json",
+      "bytes": 536,
+      "sha256": "1d1662290954c008db0131c74e31ffac4ac724f72b0502c58103301d30eeb7d2"
+    },
+    {
+      "path": "release/v85_01/docs/V85.01_ENDPOINT_VALIDATION.md",
+      "bytes": 265,
+      "sha256": "fda6da2f64c7241192423d0e05dbb6dba8317e029853d751b4340b109f01bffc"
+    },
+    {
+      "path": "release/v85_02/docs/V85.02_CREDENTIAL_CONTRACT.md",
+      "bytes": 265,
+      "sha256": "7f9e012570b58a4741ff9967698448f7d8388e0cc24b6211fbed5c7ac702d58f"
+    },
+    {
+      "path": "release/v85_03/docs/V85.03_CREDENTIAL_STATUS.md",
+      "bytes": 263,
+      "sha256": "fecdc56da5f6c31bac1bfddf465d508cbae7c7fd9826086b7a064e86738ca96b"
+    },
+    {
+      "path": "release/v85_04/docs/V85.04_CAPABILITY_REGISTRY.md",
+      "bytes": 265,
+      "sha256": "04c15997a44ae28ef70221f8526a625427c8660e87ec8f3028a7ddf08cd5c698"
+    },
+    {
+      "path": "release/v85_05/docs/V85.05_ENDPOINT_CATALOG.md",
+      "bytes": 262,
+      "sha256": "90ae408261960fe90c20059f7cf9332a7cab65564e8d2e3b364bf95dd092eaaf"
+    },
+    {
+      "path": "release/v85_06/docs/V85.06_NETWORK_OPT_IN.md",
+      "bytes": 260,
+      "sha256": "9d5d53abc2a6d0cd27049d915778719c11f6a234f2d8e426ff0c1a37d890dcfe"
+    },
+    {
+      "path": "release/v85_07/docs/V85.07_REQUEST_PLAN.md",
+      "bytes": 258,
+      "sha256": "2f88a0d3f27bda7891fda77847d16fa119ad2bff38068962a5f2430494e88306"
+    },
+    {
+      "path": "release/v85_08/docs/V85.08_RESPONSE_SCHEMA_CATALOG.md",
+      "bytes": 269,
+      "sha256": "0f0107bafd3cd1e9736c2bd03f114079516cc3578940459417663fe99b1978ad"
+    },
+    {
+      "path": "release/v85_09/docs/V85.09_RESPONSE_VALIDATION.md",
+      "bytes": 265,
+      "sha256": "4df2f544964920623cc4c29c4d6d7c329c45816f5eb3b43e14fb12d980e89895"
+    },
+    {
+      "path": "release/v85_10/docs/V85.10_TIMEOUT_POLICY.md",
+      "bytes": 260,
+      "sha256": "43bcf98ad08e01ca33dbb734b342731db2632dd400c76076c437e53e8b845ca8"
+    },
+    {
+      "path": "release/v85_11/docs/V85.11_RETRY_POLICY.md",
+      "bytes": 258,
+      "sha256": "d85fba16ad3a1e1514cf1060bfbdf092fe269dc0d9d775f03db8895b452ba94b"
+    },
+    {
+      "path": "release/v85_12/docs/V85.12_RATE_LIMIT_POLICY.md",
+      "bytes": 263,
+      "sha256": "67cd6ea21a6ed0b5486b9f39b89402e856cf855b443547f2dc1af1bff9fc6945"
+    },
+    {
+      "path": "release/v85_13/docs/V85.13_TLS_POLICY.md",
+      "bytes": 256,
+      "sha256": "5bae33df41f22e087ebdd090335878c5ed5dc8f350a454469458e08837906987"
+    },
+    {
+      "path": "release/v85_14/docs/V85.14_REDACTION_POLICY.md",
+      "bytes": 262,
+      "sha256": "871cb4746a9f5c94c0e7ad76c5eff553aece927ac72622d9cd3186277c85d890"
+    },
+    {
+      "path": "release/v85_15/docs/V85.15_OFFLINE_FIXTURES.md",
+      "bytes": 262,
+      "sha256": "daab3ca54ce66ae0904a4ec4391ecdeadf95812c9f975a3d6ac44d6321a817d5"
+    },
+    {
+      "path": "release/v85_16/docs/V85.16_VALIDATION_SCENARIOS.md",
+      "bytes": 266,
+      "sha256": "db7cb4d15d53e2a78ad5c65d67dcce501a7aab14834c2acedcb13de406200916"
+    },
+    {
+      "path": "release/v85_17/docs/V85.17_NETWORK_FOUNDATION_AUDIT.md",
+      "bytes": 270,
+      "sha256": "a0c610c54f01689b0a4344508c7ea5534a44d8dc231d32969ee73aee37cf5ed9"
+    },
+    {
+      "path": "release/v85_18/docs/V85.18_MASTER_LEDGER.md",
+      "bytes": 259,
+      "sha256": "55bf4fc18c95e026c20cd5813a3e460c1a43ce6311d22c5f014d201fa54a4e8a"
+    },
+    {
+      "path": "release/v85_19/docs/V85.19_NETWORK_FOUNDATION_MANIFEST.md",
+      "bytes": 273,
+      "sha256": "f9dd4497e3212178adc3650fad06cfa3755deb740e5aa4fc8519b33fc6a60fd5"
+    },
+    {
+      "path": "release/v85_20/docs/V85.01_TO_V85.20_RELEASE_NOTES.md",
+      "bytes": 468,
+      "sha256": "080c1645c65d720c761b749fcfe542f64e88a19616e4b142985bc1ca3360d91b"
+    },
+    {
+      "path": "release/v85_20/docs/V85.20_PAPER_NETWORK_FOUNDATION_COMPLETION.md",
+      "bytes": 281,
+      "sha256": "d863db0b52e686f643f60586d19cb6f890429594908956bc4af2c9ddfdb0cffa"
+    },
+    {
+      "path": "tools/install_check_v85_01_to_v85_20.py",
+      "bytes": 702,
+      "sha256": "fce7d19e1aeb3d9e41be7ad675061de05502194b3a39a892fb59527198cb8f56"
+    },
+    {
+      "path": "tools/run_v85_01_to_v85_20_pipeline.py",
+      "bytes": 1178,
+      "sha256": "0c0703accea803a97ae944642cddf21280d7b6d605b04a4630196e93c5ce6c06"
+    },
+    {
+      "path": "tools/test_paper_broker_network_foundation_v85_01_to_v85_20.py",
+      "bytes": 3287,
+      "sha256": "69af1eac7c1b6084b57f09606820f7b4c4e9daa7d177a32e200b33d194cd3b7f"
+    },
+    {
+      "path": "tools/verify_v85_01_to_v85_20_pipeline.py",
+      "bytes": 1916,
+      "sha256": "6da4a8659fab09777484bf64e657ea1387306888cb9f5b2d905da16ab25b0a81"
+    }
+  ]
+}

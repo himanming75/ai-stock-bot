@@ -1,0 +1,18 @@
+{
+  "mode": "PAPER_BROKER_NETWORK_FOUNDATION",
+  "provider": "ALPACA",
+  "base_url": "https://paper-api.alpaca.markets",
+  "data_url": "https://data.alpaca.markets",
+  "explicit_network_opt_in": false,
+  "read_only": true,
+  "allow_account_read": true,
+  "allow_positions_read": true,
+  "allow_orders_read": true,
+  "allow_clock_read": true,
+  "allow_assets_read": true,
+  "allow_market_data_read": true,
+  "allow_order_submission": false,
+  "allow_order_cancel": false,
+  "allow_order_replace": false,
+  "actual_orders_submitted": 0
+}

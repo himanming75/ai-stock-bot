@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V85_01_TO_V85_20.ps1
+EXPECTED: 24 tests OK, Alpaca paper/data endpoint contracts, credential presence checks, 6 read endpoints and schemas, write endpoints 0, network opt-in false, actual network 0, orders 0.
