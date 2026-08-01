@@ -1,0 +1,3 @@
+git add RUN_V94_01_TO_V95_00_FAST_TRACK.ps1 INSTALL_CHECK_V94_01_TO_V95_00_FAST_TRACK.ps1 VERIFY_V94_01_TO_V95_00_FAST_TRACK.ps1 GIT_COMMIT_V94_01_TO_V95_00_FAST_TRACK.txt V94_01_TO_V95_00_FAST_TRACK_BUNDLE_MANIFEST.json alpaca_market_data/single_order_network_optin_fast_track_v94_01_v95_00.py tools/install_check_v94_01_to_v95_00_fast_track.py tools/run_v94_01_to_v95_00_fast_track_pipeline.py tools/test_single_order_network_optin_fast_track_v94_01_to_v95_00.py tools/verify_v94_01_to_v95_00_fast_track.py release/v95_00
+git commit -m "V94.01-V95.00 fast track actual paper single-order network opt-in completed"
+git push origin main
