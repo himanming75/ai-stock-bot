@@ -1,0 +1,168 @@
+{
+  "base_commit": "a7c4c77",
+  "stage_range": "V81.81-V82.00",
+  "functional_bundle": "PAPER_PERFORMANCE_ANALYTICS_AND_CERTIFICATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V81_81_TO_V82_00.txt",
+      "bytes": 866,
+      "sha256": "5bfd5e6207455a37eff3e7ef147dfaa4886da95ca91c77ca902425b0c9f22922"
+    },
+    {
+      "path": "INSTALL_CHECK_V81_81_TO_V82_00.ps1",
+      "bytes": 47,
+      "sha256": "85cef5fe4a35e634adb1bce9e469b2df7cf47120607c33e7948828ac6dcf0222"
+    },
+    {
+      "path": "RUN_V81_81_TO_V82_00.ps1",
+      "bytes": 818,
+      "sha256": "d398ca2f6018955e800f1f96fbd37630f3c5b6c57a6321cde9c545455a4c440a"
+    },
+    {
+      "path": "V81_81_TO_V82_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 253,
+      "sha256": "539f7ef7a609a9b54c504167dc5977086c716a54d2d8bbecf19a16ab82854aa0"
+    },
+    {
+      "path": "VERIFY_V81_81_TO_V82_00.ps1",
+      "bytes": 69,
+      "sha256": "358d23c15ea0188ab678c85fa195da73f3691f03bf7a594a3b000cc8d05aa535"
+    },
+    {
+      "path": "alpaca_market_data/paper_performance_analytics_v81_81_v82_00.py",
+      "bytes": 19921,
+      "sha256": "e19df65c10be793b99a3b36011526bccba7a2da21c197a5a93ded8840a1c3d29"
+    },
+    {
+      "path": "release/v81_81/config/paper_performance_config_v81_81.json",
+      "bytes": 341,
+      "sha256": "3074227adb6c8477d40fdde6a1815b8a57180588a6dd3f3ae7a638464a0cff37"
+    },
+    {
+      "path": "release/v81_81/docs/V81.81_PERFORMANCE_FIXTURE.md",
+      "bytes": 170,
+      "sha256": "155f33665405107e55525bdd98c92321198b2523003e160d1eadb22afcb4a01b"
+    },
+    {
+      "path": "release/v81_82/docs/V81.82_RETURN_METRICS.md",
+      "bytes": 165,
+      "sha256": "657579edc44548947da9578dd26e96b2ada00973c5ed6070b4aa698527040bb8"
+    },
+    {
+      "path": "release/v81_83/docs/V81.83_DRAWDOWN_ANALYTICS.md",
+      "bytes": 169,
+      "sha256": "f5e29e68bd5ea45cac367bf7c066af5d5cc619f0a233522bbfe3ec7c9e8fe622"
+    },
+    {
+      "path": "release/v81_84/docs/V81.84_RISK_ADJUSTED_METRICS.md",
+      "bytes": 172,
+      "sha256": "e242c9a057ca0928a11dc94f977b88ceaf8cff851a9c395c544c00176f71a288"
+    },
+    {
+      "path": "release/v81_85/docs/V81.85_TRADE_ANALYTICS.md",
+      "bytes": 166,
+      "sha256": "35ed211bf3595ce9df54489e5892dc28be858057e9cf6dc3cdcb8954dc80172b"
+    },
+    {
+      "path": "release/v81_86/docs/V81.86_CALMAR_RATIO.md",
+      "bytes": 163,
+      "sha256": "96bd7bcc310adb033b5dcfabbe9cecc620fd572d69cd52a2e9f9f9f57805dd2d"
+    },
+    {
+      "path": "release/v81_87/docs/V81.87_TIME_BUCKET_REPORTS.md",
+      "bytes": 170,
+      "sha256": "1e0a8706209cee0b02cf6a828174ebfc2b5e88b2ac4a8a7ab9ae3a3369f45601"
+    },
+    {
+      "path": "release/v81_88/docs/V81.88_RISK_GATE.md",
+      "bytes": 160,
+      "sha256": "2652cf688db46241ea1653826888e3d4c475afd323e4f5ebd6c9f6936bc8fb1e"
+    },
+    {
+      "path": "release/v81_89/docs/V81.89_PERFORMANCE_SCORECARD.md",
+      "bytes": 172,
+      "sha256": "e55ff68a894a8904b3bc629a80b4b7204f58ad932ae58e18cb5bd37974739a0d"
+    },
+    {
+      "path": "release/v81_90/docs/V81.90_PERFORMANCE_AUDIT.md",
+      "bytes": 168,
+      "sha256": "57ac5a8803957e46950307174c4f1c356306012d0ed3ca339f0c09430508dcb2"
+    },
+    {
+      "path": "release/v81_91/docs/V81.91_MASTER_LEDGER.md",
+      "bytes": 164,
+      "sha256": "5339181808463b629ea92984c7228abdf0e88cbda8c66c309a54d8100d325931"
+    },
+    {
+      "path": "release/v81_92/docs/V81.92_PERFORMANCE_MANIFEST.md",
+      "bytes": 171,
+      "sha256": "684c9960b00ce04c2aae468208a947f789a99867c63343494950c36ab022c2c3"
+    },
+    {
+      "path": "release/v81_93/docs/V81.93_ANALYTICS_PIPELINE.md",
+      "bytes": 169,
+      "sha256": "214b400acb39224c20530f2f72c69b92e2483931d74a4f14f3c66417027dd82b"
+    },
+    {
+      "path": "release/v81_94/docs/V81.94_EQUITY_CURVE_REPORT.md",
+      "bytes": 170,
+      "sha256": "23c7f12a33813cf17ab0e078477f2e3ea06a6017b8e56423ae1acc28103dc78d"
+    },
+    {
+      "path": "release/v81_95/docs/V81.95_DAILY_REPORT.md",
+      "bytes": 163,
+      "sha256": "3a5238abec2121f72315beda2e99f779ca8fa64ef436d4b0aada0b00ed552419"
+    },
+    {
+      "path": "release/v81_96/docs/V81.96_WEEKLY_REPORT.md",
+      "bytes": 164,
+      "sha256": "b0af0b345fd5615f5382cbab9e52fed9f0de5461dc50e845bd6ebf7123a57cbb"
+    },
+    {
+      "path": "release/v81_97/docs/V81.97_MONTHLY_REPORT.md",
+      "bytes": 165,
+      "sha256": "849e665b90ab5a729ab69c1e2c69c8539458d1d14dfd6063f4ff8e03c85fccf4"
+    },
+    {
+      "path": "release/v81_98/docs/V81.98_INTEGRITY_VERIFICATION.md",
+      "bytes": 173,
+      "sha256": "3ce7e8f7be43ca9cf773ab909516eaaaa669888b6c1e81ae4ffa9356cab4dfbd"
+    },
+    {
+      "path": "release/v81_99/docs/V81.99_PERFORMANCE_CERTIFICATION.md",
+      "bytes": 176,
+      "sha256": "746b2c5da77ea351a175ce4dd7e9b654905c0b6f119e91a8f01a7a9fb1b612ef"
+    },
+    {
+      "path": "release/v82_00/docs/V81.81_TO_V82.00_RELEASE_NOTES.md",
+      "bytes": 449,
+      "sha256": "dd696a1e5c236f518e96a6c4c243d89a625a99c3c72ff6426e9633a747216ad6"
+    },
+    {
+      "path": "release/v82_00/docs/V82.00_PAPER_PERFORMANCE_CERTIFICATION.md",
+      "bytes": 253,
+      "sha256": "f50e5b490feea9a8149c28914ab052ef81497678f6489183765b1c6cdb73c767"
+    },
+    {
+      "path": "tools/install_check_v81_81_to_v82_00.py",
+      "bytes": 671,
+      "sha256": "b5031db4c646184ccc1844442c16ffe819f89dd4d60ae8f285be28bb1c6a4c24"
+    },
+    {
+      "path": "tools/run_v81_81_to_v82_00_pipeline.py",
+      "bytes": 1168,
+      "sha256": "cd029ce17b7bdff8f9c81fbd587620cb632c50e829647d5945c20b4a658ae9ad"
+    },
+    {
+      "path": "tools/test_paper_performance_analytics_v81_81_to_v82_00.py",
+      "bytes": 3375,
+      "sha256": "27221b7c48106d23c858af07ffff9f7bb9d241857c6af362ab69bcfb47098a1c"
+    },
+    {
+      "path": "tools/verify_v81_81_to_v82_00_pipeline.py",
+      "bytes": 2041,
+      "sha256": "e662acfcbc8dc0c7db788dab00b29726d0dda483c6202cf895a5e279c039e9cb"
+    }
+  ]
+}

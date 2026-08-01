@@ -1,0 +1,1 @@
+python tools/install_check_v81_81_to_v82_00.py

@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V81_81_TO_V82_00.ps1
+EXPECTED: 21 tests OK, return/drawdown/Sharpe/Sortino/profit-factor metrics, daily-weekly-monthly reports, risk gate PASS, paper framework certified, actual orders 0, VERIFY PASS.

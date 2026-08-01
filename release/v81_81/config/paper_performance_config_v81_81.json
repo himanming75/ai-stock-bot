@@ -1,0 +1,13 @@
+{
+  "mode": "ANALYTICS_ONLY",
+  "initial_equity": 100000.0,
+  "annualization_periods": 252,
+  "risk_free_rate": 0.0,
+  "maximum_drawdown_limit": 0.1,
+  "minimum_observation_count": 5,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
