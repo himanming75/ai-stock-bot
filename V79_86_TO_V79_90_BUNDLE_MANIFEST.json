@@ -1,0 +1,92 @@
+{
+  "base_commit": "f4695b3",
+  "stage_range": "V79.86-V79.90",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_86_TO_V79_90.txt",
+      "bytes": 634,
+      "sha256": "3e8a68ea0bb8900d0cc5181d8cd38db51afba1e94e5375a062f7d79c42b07d60"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_86_TO_V79_90.ps1",
+      "bytes": 47,
+      "sha256": "76593b4c596ca154f9c5abb23c814b06a8727c46a7265fca5d2faf82d20060fd"
+    },
+    {
+      "path": "RUN_V79_86_TO_V79_90.ps1",
+      "bytes": 647,
+      "sha256": "c33302a22d8705e68b96f9a480dbd660d810a5157df3dd77432eb0f93b5f11cf"
+    },
+    {
+      "path": "V79_86_TO_V79_90_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 186,
+      "sha256": "bd4c8e19d3c5cf1d91585af81295ccccb4f52b82ef148ef7be4c6b441b9df08a"
+    },
+    {
+      "path": "VERIFY_V79_86_TO_V79_90.ps1",
+      "bytes": 69,
+      "sha256": "6dfe9d4fb686364021b4d28f939e8d391065af5e26b50af7499d0639d8b55553"
+    },
+    {
+      "path": "alpaca_market_data/historical_performance_analytics_v79_86_90.py",
+      "bytes": 10742,
+      "sha256": "61fd550b411507c8d3f5b0fa8cafb9f4da17fcd735b9928abf1246c9486f8843"
+    },
+    {
+      "path": "release/v79_86/config/historical_performance_config_v79_86.json",
+      "bytes": 211,
+      "sha256": "683ab9bc8d6a5439a754908f4cf6519aa37ca956fe4d83b8a0b65b4c1441f38d"
+    },
+    {
+      "path": "release/v79_86/docs/V79.86_RETURN_METRICS.md",
+      "bytes": 110,
+      "sha256": "ca45a286037d277b2187c5b4b98207bdc5d3f34798dbd448d6594e1906269b65"
+    },
+    {
+      "path": "release/v79_87/docs/V79.87_RISK_ADJUSTED_METRICS.md",
+      "bytes": 117,
+      "sha256": "c3f115809af714f43ba5244ba31fe0584fe0c55220a5e5605cc10bd6d2967292"
+    },
+    {
+      "path": "release/v79_88/docs/V79.88_TRADE_ANALYTICS.md",
+      "bytes": 102,
+      "sha256": "d8406ebda3d463e598a5f01789254868b6ecf4b3b05c6715bc5b3ea276fdf840"
+    },
+    {
+      "path": "release/v79_89/docs/V79.89_PERFORMANCE_MANIFEST.md",
+      "bytes": 94,
+      "sha256": "f13b1a34ec3eee10809612d18d53df755e38666babecfd0234eab2c49c7d8445"
+    },
+    {
+      "path": "release/v79_90/docs/V79.86_TO_V79.90_RELEASE_NOTES.md",
+      "bytes": 186,
+      "sha256": "ce057ab1b363c447ac58a0873959f48aa700f2e5e7ca6225ebc5f9852b071242"
+    },
+    {
+      "path": "release/v79_90/docs/V79.90_PERFORMANCE_CERTIFICATE.md",
+      "bytes": 106,
+      "sha256": "d84dd6f07bde68e1ab027742f1ade7b0af87979f88dd84525b0435c816a7180d"
+    },
+    {
+      "path": "tools/install_check_v79_86_to_v79_90.py",
+      "bytes": 678,
+      "sha256": "aaf24097b96d1950b118c99ee762f11d2886a8ec6402738fb6b2ba37f1edffca"
+    },
+    {
+      "path": "tools/run_v79_86_to_v79_90_pipeline.py",
+      "bytes": 1149,
+      "sha256": "2818ea983d8e264bf3ed0b73b3d21a767ecfd4d5174e05e9b2497234f0599aa7"
+    },
+    {
+      "path": "tools/test_historical_performance_analytics_v79_86_to_v79_90.py",
+      "bytes": 3022,
+      "sha256": "1db84db580955732bd56551419bb33a941a38ec6c29408123cb131b6b4adf277"
+    },
+    {
+      "path": "tools/verify_v79_86_to_v79_90_pipeline.py",
+      "bytes": 1483,
+      "sha256": "750fbd85e85670660c648a5704e293970ae25159952781ffbe2e52c679704cb0"
+    }
+  ]
+}

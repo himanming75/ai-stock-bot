@@ -1,0 +1,9 @@
+{
+  "periods_per_year": 252,
+  "risk_free_rate": 0.0,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

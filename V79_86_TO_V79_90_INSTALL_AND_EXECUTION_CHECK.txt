@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V79_86_TO_V79_90.ps1
+EXPECTED: 14 tests OK; current zero-activity data produces zero returns, ratios, and closed trades; VERIFY PASS.
