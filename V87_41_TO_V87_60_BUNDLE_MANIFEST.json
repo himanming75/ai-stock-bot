@@ -1,0 +1,163 @@
+{
+  "base_commit": "6c8e3d5",
+  "stage_range": "V87.41-V87.60",
+  "functional_bundle": "PAPER_STRATEGY_EXECUTION_RECONCILIATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V87_41_TO_V87_60.txt",
+      "bytes": 868,
+      "sha256": "c42aebf697b2efb54693201a1319e104175688914758b96573f4c4e2ab1efaf4"
+    },
+    {
+      "path": "INSTALL_CHECK_V87_41_TO_V87_60.ps1",
+      "bytes": 47,
+      "sha256": "3e10ca05f37f300923f7b0587743de747c4d8dc74420b1f08478ec75a3463d18"
+    },
+    {
+      "path": "RUN_V87_41_TO_V87_60.ps1",
+      "bytes": 824,
+      "sha256": "bdfcd2438eeb1d26f49bb9dd0412ce81b954eedf5604290951534ab9383f8c0d"
+    },
+    {
+      "path": "V87_41_TO_V87_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 198,
+      "sha256": "ee90ff68380493ce9f36a90910421a3ff7cb812163528e309048e72f3fd2d5e0"
+    },
+    {
+      "path": "VERIFY_V87_41_TO_V87_60.ps1",
+      "bytes": 69,
+      "sha256": "53d1a50898ce81d161882ff790070e117b8871043731b97c2d3e65f48cf14709"
+    },
+    {
+      "path": "alpaca_market_data/strategy_execution_reconciliation_v87_41_60.py",
+      "bytes": 16250,
+      "sha256": "11270b39827b558e81fac85c7cb8168d1f8e20808d7197db6f862cef5baaf217"
+    },
+    {
+      "path": "release/v87_41/docs/V87.41_RECONCILIATION_POLICY.md",
+      "bytes": 206,
+      "sha256": "7f9b5d3e9d3b45d0408d549ece3e46e77053f0e46e5d6c26c64ca412f4199395"
+    },
+    {
+      "path": "release/v87_42/docs/V87.42_SOURCE_SUMMARY.md",
+      "bytes": 199,
+      "sha256": "c0e82807200efd3f1a325505c054e72ea1b184bb12b9e53fc0b5af6b94534758"
+    },
+    {
+      "path": "release/v87_43/docs/V87.43_ORDER_FILL_RECONCILIATION.md",
+      "bytes": 210,
+      "sha256": "52dd02f1dc39f618dff91ff5e7b2586553b26f3ef0fe9b75289771e748f2bd79"
+    },
+    {
+      "path": "release/v87_44/docs/V87.44_QUANTITY_RECONCILIATION.md",
+      "bytes": 208,
+      "sha256": "b6ab57c8fc598455b6547ef9129e91d10f5c3cddcd9e22cb74e9b0ad11ff3dcc"
+    },
+    {
+      "path": "release/v87_45/docs/V87.45_CASH_RECONCILIATION.md",
+      "bytes": 204,
+      "sha256": "d45abf355b22265ada0e9d5655439fb65b7bc57bd881bfbf43afa446c2efd933"
+    },
+    {
+      "path": "release/v87_46/docs/V87.46_EQUITY_RECONCILIATION.md",
+      "bytes": 206,
+      "sha256": "e9399c0a0b1a21916a83283da41fc99b113b30f792b42288085ab5c78e9fb329"
+    },
+    {
+      "path": "release/v87_47/docs/V87.47_PNL_RECONCILIATION.md",
+      "bytes": 203,
+      "sha256": "d8b43972c83947df0ea8c56825930b5246990394b09874bacfe7072781ad1570"
+    },
+    {
+      "path": "release/v87_48/docs/V87.48_DRAWDOWN_RECONCILIATION.md",
+      "bytes": 208,
+      "sha256": "2ed6c937679ba3f90f73176eacb65812c558d021084d59464eab3947843472e3"
+    },
+    {
+      "path": "release/v87_49/docs/V87.49_BUDGET_RECONCILIATION.md",
+      "bytes": 206,
+      "sha256": "5ac3fecb7b6fc1cc65df619689a960e4be418d34f55b96e433b164569fb3b4a1"
+    },
+    {
+      "path": "release/v87_50/docs/V87.50_REPLAY_RECONCILIATION.md",
+      "bytes": 206,
+      "sha256": "af8ead6197f399d39da37f288822e26277a8e2004b57f5391e70baa62e4a8f02"
+    },
+    {
+      "path": "release/v87_51/docs/V87.51_LEDGER_CHAIN.md",
+      "bytes": 197,
+      "sha256": "527f542e7a486b83fe1a997d2bde9d2a7cae7af9a19344a585af2dac52cb7586"
+    },
+    {
+      "path": "release/v87_52/docs/V87.52_TAMPER_DETECTION.md",
+      "bytes": 201,
+      "sha256": "5df28df65c3aa827f42e22dfe3fbe05753dd84cba899e8571b72ce8f0cd92bc0"
+    },
+    {
+      "path": "release/v87_53/docs/V87.53_ROLLBACK_PLAN.md",
+      "bytes": 198,
+      "sha256": "d531e6ccd8f43a21c6ecea70cf8cd62f7f16bb1255234873393adf7bf9954b43"
+    },
+    {
+      "path": "release/v87_54/docs/V87.54_RECONCILIATION_REPORT.md",
+      "bytes": 206,
+      "sha256": "b929527ce4dea99a2c3a39f564d69dc4b2d0b6927c6a517069ddfedffbc4b468"
+    },
+    {
+      "path": "release/v87_55/docs/V87.55_RECONCILIATION_SCENARIO.md",
+      "bytes": 208,
+      "sha256": "d6a84d2d86a316c57298fa9860776e6eea683d816d6174008095792ee2713300"
+    },
+    {
+      "path": "release/v87_56/docs/V87.56_RECONCILIATION_AUDIT.md",
+      "bytes": 205,
+      "sha256": "beed0bda5379707fdf35818ddb1561b000b344c905589ca95e15e67132bf0932"
+    },
+    {
+      "path": "release/v87_57/docs/V87.57_RECONCILIATION_LEDGER.md",
+      "bytes": 206,
+      "sha256": "6df84185e10c4bae9509678df5df8ccef656aece8e54df6ec8d57767d004fc0f"
+    },
+    {
+      "path": "release/v87_58/docs/V87.58_RECONCILIATION_MANIFEST.md",
+      "bytes": 208,
+      "sha256": "3c2623ac3b6256178ae48fd8905c6ce330b7969118f0751d7b2acb7588f13dc6"
+    },
+    {
+      "path": "release/v87_59/docs/V87.59_INTEGRITY_VERIFICATION.md",
+      "bytes": 207,
+      "sha256": "4e6de966ee0a5a3344a54b1e9db06714c80deb50be136d69657758ed7cce318a"
+    },
+    {
+      "path": "release/v87_60/docs/V87.41_TO_V87.60_RELEASE_NOTES.md",
+      "bytes": 316,
+      "sha256": "7e83860de4986281ed746cf4adf0a57f466f6ee393140734764061f5cad5b21f"
+    },
+    {
+      "path": "release/v87_60/docs/V87.60_RECONCILIATION_COMPLETION.md",
+      "bytes": 210,
+      "sha256": "052e6e03ab3087f999abf2883af5e67270e4e41d37eac732aee4eab37c1ad740"
+    },
+    {
+      "path": "tools/install_check_v87_41_to_v87_60.py",
+      "bytes": 482,
+      "sha256": "ff57b1381ecc1bf8fbe30c4c129053ce927aa6dac379aa28730620650ffcea4b"
+    },
+    {
+      "path": "tools/run_v87_41_to_v87_60_pipeline.py",
+      "bytes": 1173,
+      "sha256": "719221644ecc52db8eaf6d83e0b6c0addca00cb663788404f2d085559c3d51d1"
+    },
+    {
+      "path": "tools/test_strategy_execution_reconciliation_v87_41_to_v87_60.py",
+      "bytes": 2341,
+      "sha256": "7894933881701b1e3b265c7992db82de6da511b38f3d6f91b31dea29b28b5618"
+    },
+    {
+      "path": "tools/verify_v87_41_to_v87_60_pipeline.py",
+      "bytes": 1733,
+      "sha256": "384692b9353762c165cc24d90f8e4a0f5f29c3bccb85b07e3b84041cec583eb9"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V87_41_TO_V87_60.ps1
+EXPECTED: order/fill, quantity, cash, equity, PnL, drawdown, budget, replay, tamper, rollback all PASS; network 0; orders 0.

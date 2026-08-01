@@ -1,0 +1,1 @@
+python tools/install_check_v87_41_to_v87_60.py
