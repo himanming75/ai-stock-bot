@@ -1,0 +1,132 @@
+{
+  "base_commit": "d2cb067",
+  "stage_range": "V101.01-V102.00",
+  "bundle_type": "REAL_RUNTIME_FOUNDATION",
+  "certificate_only": false,
+  "network_write_enabled": false,
+  "paper_order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "file_count": 25,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V101_01_TO_V102_00_RUNTIME_FOUNDATION.txt",
+      "bytes": 484,
+      "sha256": "3ef35898017b06fd1295c4817aef63606cf3d6642a3216dc156d6e68289476e7"
+    },
+    {
+      "path": "RUN_V101_01_TO_V102_00_RUNTIME_FOUNDATION.ps1",
+      "bytes": 921,
+      "sha256": "16bdaa614466456d49bb83a0771dc860259d2484518f3ccd1c0558cda45cd9ec"
+    },
+    {
+      "path": "release/v102_00/docs/DESIGN.md",
+      "bytes": 551,
+      "sha256": "990288d6e0d8630f06125b094ff34a3a384f7530bb694fe923df7341af2527ea"
+    },
+    {
+      "path": "release/v102_00/docs/RELEASE_NOTES.md",
+      "bytes": 246,
+      "sha256": "0e189cb61920c80ed9c2def062834a425d84a0b6b8d7a7767a9cd2aed3a3dd19"
+    },
+    {
+      "path": "release/v102_00/docs/TEST_RESULTS.md",
+      "bytes": 366,
+      "sha256": "455a83f5e2f726d86ae6ba12e96d6414a68034284eed678671c80e3cdfd76f5c"
+    },
+    {
+      "path": "runtime_engine/__init__.py",
+      "bytes": 687,
+      "sha256": "fe21d01aecab300c1d04d783429efa94e512b295ce4da1ce051d5c6828400cf8"
+    },
+    {
+      "path": "runtime_engine/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 818,
+      "sha256": "4a14c00eb6b458bb300ed88302611ef59a7686233445fb12ff519919a0179dda"
+    },
+    {
+      "path": "runtime_engine/__pycache__/clock.cpython-313.pyc",
+      "bytes": 2292,
+      "sha256": "d1d747aa1a171cfbea4db4c97433d2f3f3487c2ae6f79dcfe07bf115a46270ea"
+    },
+    {
+      "path": "runtime_engine/__pycache__/event_bus.cpython-313.pyc",
+      "bytes": 4162,
+      "sha256": "709a34f408bcbefb77852f8b2bad2c0de10d62ddb4ab012f20ff1432769dedf2"
+    },
+    {
+      "path": "runtime_engine/__pycache__/heartbeat.cpython-313.pyc",
+      "bytes": 2058,
+      "sha256": "6f4680a915ca104bd5118bae4c774b9b34b10be38972c3e8c934acc7ecd32692"
+    },
+    {
+      "path": "runtime_engine/__pycache__/recovery.cpython-313.pyc",
+      "bytes": 3833,
+      "sha256": "043ffcee32f48ec3b92c796ef2c774963e05d6aa889bf5f26e306c3775afc9b3"
+    },
+    {
+      "path": "runtime_engine/__pycache__/runtime_manager.cpython-313.pyc",
+      "bytes": 8818,
+      "sha256": "e9649fba53e2a928c9601a1fe4792439be6c6666d12cd6bf279e835d215ec67c"
+    },
+    {
+      "path": "runtime_engine/__pycache__/scheduler.cpython-313.pyc",
+      "bytes": 5363,
+      "sha256": "38635426fee7f5217969fa03b338d7a19135c6b91d2f9d1ca6b8e4b8d8c0fee2"
+    },
+    {
+      "path": "runtime_engine/clock.py",
+      "bytes": 805,
+      "sha256": "50baacafd5b3a434f035b113e170a714cea1d06225b238b49195e035351a09d9"
+    },
+    {
+      "path": "runtime_engine/event_bus.py",
+      "bytes": 1897,
+      "sha256": "3dd627b751b673a85abbd8ca24dd5655b5201f3e3affdb48066f3e8533988bc3"
+    },
+    {
+      "path": "runtime_engine/heartbeat.py",
+      "bytes": 902,
+      "sha256": "c215159d0d80fa7b3d3f3e7dbbd412647365afa60b5e8ab71017bba7a67d2877"
+    },
+    {
+      "path": "runtime_engine/recovery.py",
+      "bytes": 1812,
+      "sha256": "c57750292b3f1ebea0a3a43738c88a2b2e3d6325f63612e2b1baa70cd397c59f"
+    },
+    {
+      "path": "runtime_engine/runtime_manager.py",
+      "bytes": 5519,
+      "sha256": "f4e181e37c10f5a438201e0bd2e560a6eb8d1fc15d37b3f4b9e85be7ed328223"
+    },
+    {
+      "path": "runtime_engine/scheduler.py",
+      "bytes": 2688,
+      "sha256": "c7c6b15627424f8134487560a9299bcd15c1c345f965388b92d467d14a028539"
+    },
+    {
+      "path": "tools/__pycache__/test_runtime_foundation_v101_01_to_v102_00.cpython-313.pyc",
+      "bytes": 11992,
+      "sha256": "d567f263e9d30d789614ed0c4a0c75bc5852e6d5fd5839c2243930da6a178e4c"
+    },
+    {
+      "path": "tools/install_check_v101_01_to_v102_00.py",
+      "bytes": 511,
+      "sha256": "913409238f287ba2359a42627642d4275402158bb893dcb062c2a4a8d12abf21"
+    },
+    {
+      "path": "tools/run_runtime_foundation_v101_01_to_v102_00.py",
+      "bytes": 2335,
+      "sha256": "ff2a44e15fcc8f8037e450011bd0df54c66e52e1fa50970de344ab912d5fea21"
+    },
+    {
+      "path": "tools/test_runtime_foundation_v101_01_to_v102_00.py",
+      "bytes": 6314,
+      "sha256": "32447a364d0d2670e492c89e2ef82a7d6a09c20a5369e2add60376c1d7f0e038"
+    },
+    {
+      "path": "tools/verify_runtime_foundation_v101_01_to_v102_00.py",
+      "bytes": 1517,
+      "sha256": "9e043dbdee5a1d915bd3d9eda8ce55502d21a195a7c0fe00f5d5fabb4c370332"
+    }
+  ]
+}
