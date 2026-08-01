@@ -1,0 +1,86 @@
+{
+  "base_commit": "4f6c994",
+  "stage_range": "V108.01-V109.00",
+  "bundle_type": "END_TO_END_PAPER_RUNTIME_FOUNDATION",
+  "certificate_only": false,
+  "requires_runtime_engine": true,
+  "requires_market_data_engine": true,
+  "requires_strategy_engine": true,
+  "requires_execution_engine": true,
+  "requires_portfolio_engine": true,
+  "requires_risk_engine": true,
+  "broker_transport_type": "IN_MEMORY_MOCK",
+  "actual_broker_transport_enabled": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "validated_against_prior_real_foundations": true,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V108_01_TO_V109_00_END_TO_END_PAPER_RUNTIME.txt",
+      "bytes": 525,
+      "sha256": "873c254de67714f8de45d855e6596293be9f687d6cfa6bd96b247e39a6eb383c"
+    },
+    {
+      "path": "RUN_V108_01_TO_V109_00_END_TO_END_PAPER_RUNTIME.ps1",
+      "bytes": 946,
+      "sha256": "988275c48de102e78536bf1720bcb50f8139f6955518005af7fd455fcd69b3ff"
+    },
+    {
+      "path": "paper_runtime/__init__.py",
+      "bytes": 394,
+      "sha256": "d5d13cc7f4036a0cf3572169d0aa67ed49c2ebf11d10214346d270005e1665cd"
+    },
+    {
+      "path": "paper_runtime/models.py",
+      "bytes": 592,
+      "sha256": "dde4c46f47a884493939d5219211bc37b1de517d5fd85515914f3d962f437a1d"
+    },
+    {
+      "path": "paper_runtime/orchestrator.py",
+      "bytes": 8029,
+      "sha256": "433d1259ac3862b35f879c9bf07e584c434bcd706f22736894d7ad0e7b2caadc"
+    },
+    {
+      "path": "paper_runtime/recovery.py",
+      "bytes": 1735,
+      "sha256": "4e55a18a01058827e2b2bb62bc02dc4eea0e5921dcc64a1a080fd7124cb53d16"
+    },
+    {
+      "path": "release/v109_00/docs/DESIGN.md",
+      "bytes": 501,
+      "sha256": "169275315ffdedaed9873d201dc9e608d0ac67cddcc51db8a4d57ec72b3fe74a"
+    },
+    {
+      "path": "release/v109_00/docs/RELEASE_NOTES.md",
+      "bytes": 246,
+      "sha256": "e8e0588e7fb92a0e7a6175dd1fd971d2e9b9190e0f9835d30ef94ee215217ddf"
+    },
+    {
+      "path": "release/v109_00/docs/TEST_RESULTS.md",
+      "bytes": 344,
+      "sha256": "248bb0f4f6ed8645160b4fc2cfd8ad9e81d87ddb8865eea0efdf86bc2832f8e1"
+    },
+    {
+      "path": "tools/install_check_v108_01_to_v109_00.py",
+      "bytes": 527,
+      "sha256": "3b78cc8b1f058f39bf04383b8d114feec249e7aee86ba684a9010ce21beed541"
+    },
+    {
+      "path": "tools/run_end_to_end_paper_runtime_v108_01_to_v109_00.py",
+      "bytes": 5746,
+      "sha256": "e5b0ad4642900ca7f6c5c77cad67e1c98408c6b8b70b23e488cc48b7d49f8ae3"
+    },
+    {
+      "path": "tools/test_end_to_end_paper_runtime_v108_01_to_v109_00.py",
+      "bytes": 8400,
+      "sha256": "2be38962b76dbbbcb79aebe4f6fae3e507059900c1025f3ce65bd3d0f9daf941"
+    },
+    {
+      "path": "tools/verify_end_to_end_paper_runtime_v108_01_to_v109_00.py",
+      "bytes": 2365,
+      "sha256": "d0eb1d2732036b658a0d61a428e023bbe736bbec7bb87c11065e88bcee2c90c8"
+    }
+  ]
+}
