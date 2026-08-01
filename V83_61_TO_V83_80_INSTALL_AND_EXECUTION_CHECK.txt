@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V83_61_TO_V83_80.ps1
+EXPECTED: 21 tests OK, lifecycle/fills/partial/cancel/reject, cash and position ledgers, PnL, deterministic replay, network 0, orders 0.
