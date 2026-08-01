@@ -1,0 +1,102 @@
+{
+  "base_commit": "e5855d2",
+  "stage_range": "V105.01-V106.00",
+  "bundle_type": "PAPER_EXECUTION_ADAPTER_FOUNDATION",
+  "certificate_only": false,
+  "requires_runtime_engine": true,
+  "requires_execution_engine_v105": true,
+  "transport_type": "IN_MEMORY_MOCK",
+  "actual_broker_transport_enabled": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "validated_against_prior_real_foundations": true,
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V105_01_TO_V106_00_PAPER_EXECUTION_ADAPTER.txt",
+      "bytes": 521,
+      "sha256": "823b770b0dc63ddb7aeedd9dd88373770d8134bfc0270729bc083bcc3ab5815d"
+    },
+    {
+      "path": "RUN_V105_01_TO_V106_00_PAPER_EXECUTION_ADAPTER.ps1",
+      "bytes": 944,
+      "sha256": "74c6a13bb790a6dffc96567c78c91a88199037b8234809a46797f09fbea87a9a"
+    },
+    {
+      "path": "execution_engine/__init__.py",
+      "bytes": 1591,
+      "sha256": "573873c738c01158242fd5f11492b2ce1e85933db84ea379c7beb6a04eb90de0"
+    },
+    {
+      "path": "execution_engine/adapter_models.py",
+      "bytes": 4245,
+      "sha256": "0c8b78908090e3fc100e2faf689f7183faaff78746368c3c00808d31dbc3b1b2"
+    },
+    {
+      "path": "execution_engine/client_order_id.py",
+      "bytes": 702,
+      "sha256": "0d2a85afc83096c44626a31017720df681400d2c789e0d9d2b1b401a45dacf5f"
+    },
+    {
+      "path": "execution_engine/execution_engine.py",
+      "bytes": 2296,
+      "sha256": "f17d80dab89affd008fe5dc2f7782e6a6a0a6287b4cee15e89d7ab4c4c6e557b"
+    },
+    {
+      "path": "execution_engine/idempotency.py",
+      "bytes": 734,
+      "sha256": "0b55510b0fa507bcac169e7ea13b4c65c14e65e6e790402f5f5e6e72c0a3f52b"
+    },
+    {
+      "path": "execution_engine/paper_adapter.py",
+      "bytes": 2998,
+      "sha256": "d2f442ad46ebe2ff2d71fc254a1541c5854af46467a52b799d0e96ffe23926f0"
+    },
+    {
+      "path": "execution_engine/payloads.py",
+      "bytes": 870,
+      "sha256": "5e60cc7622f097a85312fbf1c450a6cbffd46ad9b7f5d413d6bbac2ef94c6976"
+    },
+    {
+      "path": "execution_engine/transport.py",
+      "bytes": 4885,
+      "sha256": "525d7103eb93cbe4397322dbbcfbc722191a39f1418fc325d0eba91f5008e830"
+    },
+    {
+      "path": "release/v106_00/docs/DESIGN.md",
+      "bytes": 569,
+      "sha256": "e911fd1250d2dca7f48639259952decef2d3dd8a32d0be513adeafee8f6c70d5"
+    },
+    {
+      "path": "release/v106_00/docs/RELEASE_NOTES.md",
+      "bytes": 294,
+      "sha256": "c3da988579cbb18d763eef292ca2e916ca95ab6d69b31f798d22309892d9053e"
+    },
+    {
+      "path": "release/v106_00/docs/TEST_RESULTS.md",
+      "bytes": 404,
+      "sha256": "e909af8051370e5760e0616b3d08277a4032d4a2bc88f1a5f16d1f1d739a8cd2"
+    },
+    {
+      "path": "tools/install_check_v105_01_to_v106_00.py",
+      "bytes": 579,
+      "sha256": "5dd813edfc708ddb95c3f2b741ee935184b9b26a130d8e715feb01ff4e74456c"
+    },
+    {
+      "path": "tools/run_paper_execution_adapter_v105_01_to_v106_00.py",
+      "bytes": 3953,
+      "sha256": "5ff8d0eac15961203d0b16c645ab08eced099562a1894e3e38a0e4aa9287f9e5"
+    },
+    {
+      "path": "tools/test_paper_execution_adapter_v105_01_to_v106_00.py",
+      "bytes": 6729,
+      "sha256": "5704afe520e67e631420f0cf7fd5a52a2f8b3b5acd7370f91f93471b2e3a4537"
+    },
+    {
+      "path": "tools/verify_paper_execution_adapter_v105_01_to_v106_00.py",
+      "bytes": 2033,
+      "sha256": "9aed54d99824ea4b46eef073ffac3d5f89af84f2eae6774c36eb4af1bc45c42a"
+    }
+  ]
+}
