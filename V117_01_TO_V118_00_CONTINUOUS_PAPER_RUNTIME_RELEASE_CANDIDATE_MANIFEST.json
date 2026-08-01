@@ -1,0 +1,88 @@
+{
+  "base_commit": "6e9f384",
+  "stage_range": "V117.01-V118.00",
+  "bundle_type": "CONTINUOUS_PAPER_RUNTIME_RELEASE_CANDIDATE",
+  "release_candidate": "CONTINUOUS_PAPER_RUNTIME_RC1",
+  "integrated_components": [
+    "PAPER_SESSION_SCHEDULER",
+    "RUNTIME_SCHEDULER_INTEGRATION",
+    "OPERATIONAL_STABILITY_CONTROLLER"
+  ],
+  "demo_ticks": 109,
+  "demo_cycles": 105,
+  "scheduler_decisions": 110,
+  "restart_validation": true,
+  "heartbeat_watchdog": true,
+  "session_close_shutdown": true,
+  "default_pipeline_actual_network": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V117_01_TO_V118_00_CONTINUOUS_PAPER_RUNTIME_RELEASE_CANDIDATE.txt",
+      "bytes": 597,
+      "sha256": "7c25fd9bae4e70f941d0d9725371e13e928fb70f2454f42c0031150c93d5b308"
+    },
+    {
+      "path": "RUN_V117_01_TO_V118_00_CONTINUOUS_PAPER_RUNTIME_RELEASE_CANDIDATE.ps1",
+      "bytes": 959,
+      "sha256": "49194f11c7f00cab0bff279747c9bf1b016f86d9911496d2557cb75b056fbe86"
+    },
+    {
+      "path": "continuous_paper_runtime/__init__.py",
+      "bytes": 472,
+      "sha256": "d6253abb6191648aedc1c9ae9e159f4d52254b1b03491aa1f0a15be785a80529"
+    },
+    {
+      "path": "continuous_paper_runtime/controller.py",
+      "bytes": 10386,
+      "sha256": "75854393bf343db70c33c8292c8478fe6a7b62fa1883a47621e509336ed74e03"
+    },
+    {
+      "path": "continuous_paper_runtime/models.py",
+      "bytes": 999,
+      "sha256": "b0beccb57b188fb0c2d800a44e7784dc8589c36cbccd92b329919c040e824cd6"
+    },
+    {
+      "path": "release/v118_00/docs/DESIGN.md",
+      "bytes": 586,
+      "sha256": "a135bf36b045484e29133a437bb035943137f7e44f72d62ceed7b189288c7557"
+    },
+    {
+      "path": "release/v118_00/docs/RELEASE_NOTES.md",
+      "bytes": 328,
+      "sha256": "2336e69aa11d885116d7392fd798688a0211f45056dc5f67337cd6f50087799d"
+    },
+    {
+      "path": "release/v118_00/docs/TEST_RESULTS.md",
+      "bytes": 599,
+      "sha256": "5395c74cdba0cfef285c8f9499de4bdc8c4fe05b3199796289d396c58da7e5ba"
+    },
+    {
+      "path": "tools/install_check_v117_01_to_v118_00.py",
+      "bytes": 597,
+      "sha256": "b4dd038e074107d09c89166e0341fe6b63ce9a145a69830f991dd043c92ea37d"
+    },
+    {
+      "path": "tools/run_continuous_paper_runtime_v117_01_to_v118_00.py",
+      "bytes": 7334,
+      "sha256": "f074677dbfad432ac6fe4ed3aef720726e6fb9fb3a76f801ef88e4be1b659794"
+    },
+    {
+      "path": "tools/test_continuous_paper_runtime_v117_01_to_v118_00.py",
+      "bytes": 9953,
+      "sha256": "ea0115919e7172160e25736924eb51c6f8aa39dbd50a45790d234f17e0012b39"
+    },
+    {
+      "path": "tools/verify_continuous_paper_runtime_v117_01_to_v118_00.py",
+      "bytes": 2919,
+      "sha256": "69501e8a8123adcf51b4cfb561524b1119c977228ca09af1a198544aee760a5c"
+    }
+  ]
+}
