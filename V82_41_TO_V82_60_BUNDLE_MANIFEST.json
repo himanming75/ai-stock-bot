@@ -1,0 +1,168 @@
+{
+  "base_commit": "46fb51d",
+  "stage_range": "V82.41-V82.60",
+  "functional_bundle": "BROKER_CONNECTION_VALIDATION_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V82_41_TO_V82_60.txt",
+      "bytes": 858,
+      "sha256": "37b08982f42d0538014ad0e51ed1e5814f713d2416c963a7b7d1061b7323e25f"
+    },
+    {
+      "path": "INSTALL_CHECK_V82_41_TO_V82_60.ps1",
+      "bytes": 47,
+      "sha256": "e540242cd1585870960db56ecdea8fc917efd223990a81328fe5299bb0d041b7"
+    },
+    {
+      "path": "RUN_V82_41_TO_V82_60.ps1",
+      "bytes": 819,
+      "sha256": "0dd8409cd15de93ff0d803539183238394167eeea00bdd01cb2bf6d27f08ea39"
+    },
+    {
+      "path": "V82_41_TO_V82_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 243,
+      "sha256": "e211ffada31fe25da84169caaac6cfd80727685c93a67577c980e039d2dbbdd3"
+    },
+    {
+      "path": "VERIFY_V82_41_TO_V82_60.ps1",
+      "bytes": 69,
+      "sha256": "0d13567a6a8eb33f0f2bd6f15850f193ab98e731515827fb9de2a31defa92921"
+    },
+    {
+      "path": "alpaca_market_data/broker_connection_validation_v82_41_60.py",
+      "bytes": 15965,
+      "sha256": "03ef2fd1b0e7c86eb786bc05ab253e17cde013873f9657c5bf82f357ab4a12f0"
+    },
+    {
+      "path": "release/v82_41/config/broker_connection_validation_config_v82_41.json",
+      "bytes": 344,
+      "sha256": "c581a0a98b7d6302895af931e42f5d689cbb2023b16fac2e3e823e52fbc9ed16"
+    },
+    {
+      "path": "release/v82_41/docs/V82.41_ENDPOINT_CONTRACT.md",
+      "bytes": 172,
+      "sha256": "2536a3f9c71918b460b6f55ad7d830cf32800e251772df42b91563f986f21103"
+    },
+    {
+      "path": "release/v82_42/docs/V82.42_ENDPOINT_VALIDATION.md",
+      "bytes": 174,
+      "sha256": "4c50e3d389af9e061938ff7dd39c1e1e11e0f4017280a5e29d93aea20d594ea8"
+    },
+    {
+      "path": "release/v82_43/docs/V82.43_CREDENTIAL_SHAPE.md",
+      "bytes": 171,
+      "sha256": "7653dc14aa93b985f72847cda5af07c18c0b54e6ee71e7c39d2ece5763349fa8"
+    },
+    {
+      "path": "release/v82_44/docs/V82.44_CREDENTIAL_VALIDATION.md",
+      "bytes": 176,
+      "sha256": "9c41bad54a2cab36f7582d1dc7306245d37f8e0bbb5768a6ee1f5d30cfacb5b7"
+    },
+    {
+      "path": "release/v82_45/docs/V82.45_TIMEOUT_POLICY.md",
+      "bytes": 169,
+      "sha256": "05adddd1e62375d8795445dff5022115b3b4836a75848e70ec492614c98bbe3b"
+    },
+    {
+      "path": "release/v82_46/docs/V82.46_RETRY_POLICY.md",
+      "bytes": 167,
+      "sha256": "791cc3c028bd63b36464eed3035ea9dd0426a856d4cceae8ac575b9f233249e9"
+    },
+    {
+      "path": "release/v82_47/docs/V82.47_RATE_LIMIT_POLICY.md",
+      "bytes": 172,
+      "sha256": "6b0ce61ee4e19eac51238d8213e096741596797e9a1f3e86145e83451be2c152"
+    },
+    {
+      "path": "release/v82_48/docs/V82.48_HEARTBEAT_FIXTURE.md",
+      "bytes": 172,
+      "sha256": "a9b4c7daf1cf573839da7ec1d41da352cc9ffad44e3b100c962f139400c1c7cf"
+    },
+    {
+      "path": "release/v82_49/docs/V82.49_RESPONSE_SCHEMA_CONTRACT.md",
+      "bytes": 179,
+      "sha256": "ce08cacc185c541275a7972779a438fd606ec1f2e77c74e2efb4cade0ca79599"
+    },
+    {
+      "path": "release/v82_50/docs/V82.50_RESPONSE_SCHEMA_VALIDATION.md",
+      "bytes": 181,
+      "sha256": "e233ef75935d43cc63af1b314db57fc2bc3b7783674bc8ae5c5f0827d804dea0"
+    },
+    {
+      "path": "release/v82_51/docs/V82.51_ERROR_CLASSIFICATION.md",
+      "bytes": 175,
+      "sha256": "7b64c91560b44b161e4e63fa12ed3cbe2afd2b8940405df5bc6509f563774ffb"
+    },
+    {
+      "path": "release/v82_52/docs/V82.52_ERROR_VALIDATION.md",
+      "bytes": 171,
+      "sha256": "987a2e112b35d0b8d2f92586ff0eba112373a88a147b328c4605b00fa3674565"
+    },
+    {
+      "path": "release/v82_53/docs/V82.53_TLS_CONTRACT.md",
+      "bytes": 167,
+      "sha256": "1c6f16a7806a5b90cf50f154c4bab86585aff4c21ca52b4a97dfb61b0633697a"
+    },
+    {
+      "path": "release/v82_54/docs/V82.54_PROVIDER_COMPATIBILITY.md",
+      "bytes": 177,
+      "sha256": "32fd5ff2c5142ee99ed9eeacbde342157b090d2d3d13343e5aa3405a78c12703"
+    },
+    {
+      "path": "release/v82_55/docs/V82.55_CONNECTION_HEALTH.md",
+      "bytes": 172,
+      "sha256": "181caa4b267ff3bddbcf97260b5ecfc0db7e740234e810374bd854a9745ef50f"
+    },
+    {
+      "path": "release/v82_56/docs/V82.56_CONNECTION_AUDIT.md",
+      "bytes": 171,
+      "sha256": "a256b3b7d6664b1e63f42b1a0ab332b0a0fd39615ba152ae9ec3707a7a5a53b6"
+    },
+    {
+      "path": "release/v82_57/docs/V82.57_MASTER_LEDGER.md",
+      "bytes": 168,
+      "sha256": "b2de33c1a7f84c88f1a70a33cdc9472744048eecf9ec5aa71b2c960ff9b1334c"
+    },
+    {
+      "path": "release/v82_58/docs/V82.58_CONNECTION_MANIFEST.md",
+      "bytes": 174,
+      "sha256": "5070efd1a1171439d52da51283d8756b9674ddc3199ff41c3ef804c080b965e0"
+    },
+    {
+      "path": "release/v82_59/docs/V82.59_CONNECTION_PIPELINE.md",
+      "bytes": 174,
+      "sha256": "9bc1ab5d4701a8a80a78657a4324bcb66ec377cbcc6439eb933c21cac29a3b24"
+    },
+    {
+      "path": "release/v82_60/docs/V82.41_TO_V82.60_RELEASE_NOTES.md",
+      "bytes": 489,
+      "sha256": "64eea5e8fa352a4a8bd8411c3d36d4f2294399458030a38dca137f4c8a08277c"
+    },
+    {
+      "path": "release/v82_60/docs/V82.60_BROKER_CONNECTION_VALIDATION_COMPLETION.md",
+      "bytes": 194,
+      "sha256": "0abc930183465f184480699d163d7a7d08912ea88a4fd81b12691cb3a76679e7"
+    },
+    {
+      "path": "tools/install_check_v82_41_to_v82_60.py",
+      "bytes": 687,
+      "sha256": "be5c5166f7d5fd3e601deab70cdefcc22d843240deaa724d45cf82af4fefe90a"
+    },
+    {
+      "path": "tools/run_v82_41_to_v82_60_pipeline.py",
+      "bytes": 1119,
+      "sha256": "c03bd0ed0030a5c661e90d4f6f378cc6e88406db00b973228b862db07bff3833"
+    },
+    {
+      "path": "tools/test_broker_connection_validation_v82_41_to_v82_60.py",
+      "bytes": 3542,
+      "sha256": "ae2236ba6bb54c7dc0d8023254e7694e88596bccf1fff086ff39be05d4a7a7f0"
+    },
+    {
+      "path": "tools/verify_v82_41_to_v82_60_pipeline.py",
+      "bytes": 1969,
+      "sha256": "1f464c614514c6dd59ecbbe952cb5878262f409366b84bc30c4a6c74ca9037c1"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V82_41_TO_V82_60.ps1
+EXPECTED: 23 tests OK, 6 GET endpoints, 0 write endpoints, credential values unloaded, schemas valid, heartbeat healthy, connection validation PASS, network 0, orders 0.

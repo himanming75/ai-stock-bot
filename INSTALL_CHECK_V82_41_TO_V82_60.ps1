@@ -1,0 +1,1 @@
+python tools/install_check_v82_41_to_v82_60.py

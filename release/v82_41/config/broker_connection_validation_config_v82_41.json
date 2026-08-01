@@ -1,0 +1,13 @@
+{
+  "mode": "OFFLINE_CONNECTION_VALIDATION",
+  "provider": "ALPACA_COMPATIBLE",
+  "endpoint_scheme": "https",
+  "timeout_seconds": 10,
+  "retry_limit": 3,
+  "rate_limit_per_minute": 200,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
