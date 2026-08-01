@@ -1,0 +1,83 @@
+{
+  "base_commit": "40a99fa",
+  "stage_range": "V96.01-V97.00",
+  "functional_bundle": "ACTUAL_PAPER_CONTROLLED_EXECUTION_VALIDATION_FAST_TRACK",
+  "release_candidate": "ACTUAL_PAPER_CONTROLLED_EXECUTION_VALIDATION_RC1",
+  "features_removed": false,
+  "default_network_requests_executed": 0,
+  "default_actual_orders_submitted": 0,
+  "actual_validation_runner_read_only": true,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V96_01_TO_V97_00_FAST_TRACK.txt",
+      "bytes": 742,
+      "sha256": "9a2ea5ec2c19d17abad20ebf51f7825f22a506d1d01e88accc4b66864fbef341"
+    },
+    {
+      "path": "INSTALL_CHECK_V96_01_TO_V97_00_FAST_TRACK.ps1",
+      "bytes": 58,
+      "sha256": "b16ac5dd988a02cdc7bdaded03dd0e8d879577ab011a5a5e220e2d7ff7d47537"
+    },
+    {
+      "path": "RUN_V96_01_TO_V97_00_ACTUAL_VALIDATION.ps1",
+      "bytes": 228,
+      "sha256": "9580b5bab84ac08be9ffbcd9ef3030ff29da0cbc62b17df87f910cba52e08562"
+    },
+    {
+      "path": "RUN_V96_01_TO_V97_00_FAST_TRACK.ps1",
+      "bytes": 930,
+      "sha256": "772fc97bbc5b412e9462d5299fd315aa4955a80e61e93685faf535ec5a8d0131"
+    },
+    {
+      "path": "VERIFY_V96_01_TO_V97_00_FAST_TRACK.ps1",
+      "bytes": 71,
+      "sha256": "7327e19c6c83574fe8d45b75321c746495ed90df73f43799c1c0cb2ba6d09962"
+    },
+    {
+      "path": "alpaca_market_data/controlled_execution_validation_fast_track_v96_01_v97_00.py",
+      "bytes": 15683,
+      "sha256": "18297f671768cdb79c0ed1ac09ffff37af6b66c811e0c4035a2489ef51724164"
+    },
+    {
+      "path": "release/v97_00/docs/DESIGN.md",
+      "bytes": 367,
+      "sha256": "9e6599610638e3331371c11e1604a047e005666a4e24d4aa57de2e276ebf1a61"
+    },
+    {
+      "path": "release/v97_00/docs/RELEASE_NOTES.md",
+      "bytes": 189,
+      "sha256": "f62c0d71ecde8acf81d659b17c4c53e9b50a4a8465feb72cf511c558f96a02be"
+    },
+    {
+      "path": "release/v97_00/docs/TEST_RESULTS.md",
+      "bytes": 281,
+      "sha256": "4f2bad3321947e0b58c47be6c72c3459251f7841546b475adbf0c0e673cb9364"
+    },
+    {
+      "path": "tools/install_check_v96_01_to_v97_00_fast_track.py",
+      "bytes": 474,
+      "sha256": "0e5b133234bd9cf055d79f645eacaba880b1f15c1796fcf8f9d47ecc9da88472"
+    },
+    {
+      "path": "tools/run_v96_01_to_v97_00_actual_validation.py",
+      "bytes": 999,
+      "sha256": "89092cac2bf86a51f6c57e62c2a58ab1d87487b203a2d3f91c324bc606be1451"
+    },
+    {
+      "path": "tools/run_v96_01_to_v97_00_fast_track_pipeline.py",
+      "bytes": 1658,
+      "sha256": "4545cb841824938b108668ff471408feee6b0a8b0d64e9c7de5d1a2056d6fee6"
+    },
+    {
+      "path": "tools/test_controlled_execution_validation_fast_track_v96_01_to_v97_00.py",
+      "bytes": 2256,
+      "sha256": "f375f02fb2f7da0685af7768c01fb38150eb354c2153c018f5f669a258f2f8ca"
+    },
+    {
+      "path": "tools/verify_v96_01_to_v97_00_fast_track.py",
+      "bytes": 1599,
+      "sha256": "ff6efa3f820909d11045520bbd8e07274bf94f51220e528bd6bd36c3ab5e5dcf"
+    }
+  ]
+}
