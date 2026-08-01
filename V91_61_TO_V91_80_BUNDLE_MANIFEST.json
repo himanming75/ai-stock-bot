@@ -1,0 +1,72 @@
+{
+  "base_commit": "2feb061",
+  "stage_range": "V91.61-V91.80",
+  "functional_bundle": "ACTUAL_PAPER_AUTOMATION_RC2_CERTIFICATION",
+  "release_candidate": "ACTUAL_PAPER_AUTOMATION_RC2_CERTIFIED_READ_ONLY",
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V91_61_TO_V91_80.txt",
+      "bytes": 552,
+      "sha256": "f9bc2e9ec07fe7c35a1ea787506ddcb1e9af9e54d74af16144bce4f2b082f485"
+    },
+    {
+      "path": "INSTALL_CHECK_V91_61_TO_V91_80.ps1",
+      "bytes": 47,
+      "sha256": "318b849f38379433c776e88c7fe9064491ccd2e89e98c797d34a1618fb5fd52f"
+    },
+    {
+      "path": "RUN_V91_61_TO_V91_80.ps1",
+      "bytes": 832,
+      "sha256": "1f823a0fbaac4057e6ff3611f4c5588e0113434f45ddc5e6cae341e9c81f7c84"
+    },
+    {
+      "path": "VERIFY_V91_61_TO_V91_80.ps1",
+      "bytes": 69,
+      "sha256": "19e72d99034636a9998f86814cd6b16946a7ec16a6c84eea806cca5d1a55ffc5"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_automation_rc2_certification_v91_61_80.py",
+      "bytes": 15431,
+      "sha256": "d3e1a6acb7efaedb9497317e4b720b2ca16eb60f2a6eddec2e5af73f4359170e"
+    },
+    {
+      "path": "release/v91_80/docs/DESIGN.md",
+      "bytes": 343,
+      "sha256": "6f88edb208dfd7066b01db4c4e97603ccb5b7dc24d1426c4d853809589fce70a"
+    },
+    {
+      "path": "release/v91_80/docs/RELEASE_NOTES.md",
+      "bytes": 216,
+      "sha256": "cabfb1fb030270c3a0cc4fa3c3899e58cfc755b557ced4e6a895ac7877ae8b41"
+    },
+    {
+      "path": "release/v91_80/docs/TEST_RESULTS.md",
+      "bytes": 202,
+      "sha256": "10ff4a42b1ec6bd0b07ce1425f7e6a71280e3ebcefbafc461a77730d29ed6a87"
+    },
+    {
+      "path": "tools/install_check_v91_61_to_v91_80.py",
+      "bytes": 466,
+      "sha256": "a92e10d940cc02ffdfa7775e7d5b9ea9796bf9287dfecb264aa866d0241d8290"
+    },
+    {
+      "path": "tools/run_v91_61_to_v91_80_pipeline.py",
+      "bytes": 1591,
+      "sha256": "e198243de39577ec7d4d0285788e65e2993d0c2b5f863208ee61f0da207e26fd"
+    },
+    {
+      "path": "tools/test_actual_paper_automation_rc2_certification_v91_61_to_v91_80.py",
+      "bytes": 2885,
+      "sha256": "2f8672e706bcfc0baa2ca642d435360008e8d5942593eadeae652680cdea8975"
+    },
+    {
+      "path": "tools/verify_v91_61_to_v91_80_pipeline.py",
+      "bytes": 2184,
+      "sha256": "b741e896a6f0413c85bd32718b44bc53b874f0040aff407384f4508244fc7f80"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+git add RUN_V91_61_TO_V91_80.ps1 INSTALL_CHECK_V91_61_TO_V91_80.ps1 VERIFY_V91_61_TO_V91_80.ps1 GIT_COMMIT_V91_61_TO_V91_80.txt V91_61_TO_V91_80_BUNDLE_MANIFEST.json alpaca_market_data/actual_paper_automation_rc2_certification_v91_61_80.py tools/install_check_v91_61_to_v91_80.py tools/run_v91_61_to_v91_80_pipeline.py tools/test_actual_paper_automation_rc2_certification_v91_61_to_v91_80.py tools/verify_v91_61_to_v91_80_pipeline.py release/v91_80
+git commit -m "V91.61-V91.80 actual paper automation RC2 certification completed"
+git push origin main
