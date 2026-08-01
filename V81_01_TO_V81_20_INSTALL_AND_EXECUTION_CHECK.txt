@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V81_01_TO_V81_20.ps1
+EXPECTED: 25 tests OK, 5 allocation candidates, selected optimizer, weight sum 0.9, cash reserve 10000, orders 0, VERIFY PASS.

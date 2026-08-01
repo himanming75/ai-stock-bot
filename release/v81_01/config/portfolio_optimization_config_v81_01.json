@@ -1,0 +1,16 @@
+{
+  "mode": "ALLOCATION_ONLY",
+  "capital": 100000.0,
+  "maximum_strategy_weight": 0.4,
+  "minimum_strategy_weight": 0.05,
+  "maximum_gross_exposure": 0.9,
+  "cash_reserve": 0.1,
+  "fractional_kelly_multiplier": 0.5,
+  "maximum_sector_weight": 0.5,
+  "maximum_pair_correlation": 0.85,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

@@ -1,0 +1,168 @@
+{
+  "base_commit": "cfed496",
+  "stage_range": "V81.01-V81.20",
+  "functional_bundle": "PORTFOLIO_OPTIMIZATION_AND_ALLOCATION_ENGINE",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V81_01_TO_V81_20.txt",
+      "bytes": 844,
+      "sha256": "c9778f9d7960cd6ef0897a165065820a5ce48516a64f2bce3fed7d1a21705027"
+    },
+    {
+      "path": "INSTALL_CHECK_V81_01_TO_V81_20.ps1",
+      "bytes": 47,
+      "sha256": "e421cc67d97411d951e7fbeb1c98a792cb80ab79a34a8fff2db7b6c43cd74c14"
+    },
+    {
+      "path": "RUN_V81_01_TO_V81_20.ps1",
+      "bytes": 813,
+      "sha256": "1c7cec03d6b36c5e275e98d8cf0f2c1a2700b88e95b4bf43155084dc81f985cc"
+    },
+    {
+      "path": "V81_01_TO_V81_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 200,
+      "sha256": "f1d6523b602e8de051eaf713f03346e360ba590e3de472c37a265656d1b09d0e"
+    },
+    {
+      "path": "VERIFY_V81_01_TO_V81_20.ps1",
+      "bytes": 69,
+      "sha256": "14565fb63f40b2702d09fc47a8ef2f04ee9d993709392aba01991ad10987f1c3"
+    },
+    {
+      "path": "alpaca_market_data/portfolio_optimization_v81_01_20.py",
+      "bytes": 16127,
+      "sha256": "f98da88594899bb71559ee6ce0e87eaae9761cb5a2246dd8f03d1ac9de53fb49"
+    },
+    {
+      "path": "release/v81_01/config/portfolio_optimization_config_v81_01.json",
+      "bytes": 442,
+      "sha256": "7161daa3158f056baf0b359a16e16b561074f53632be34473b572b6bcd7d4dbd"
+    },
+    {
+      "path": "release/v81_01/docs/V81.01_PORTFOLIO_POLICY.md",
+      "bytes": 150,
+      "sha256": "7bfb169cfc84ac750f3823559f20ddc08dc568024e286d2c465a42893d10dae1"
+    },
+    {
+      "path": "release/v81_02/docs/V81.02_STRATEGY_UNIVERSE.md",
+      "bytes": 151,
+      "sha256": "7f25155b6c3e7b02bf5192855e8dda984198aa542874e47b8585fe08c0ae3fb6"
+    },
+    {
+      "path": "release/v81_03/docs/V81.03_EQUAL_WEIGHT.md",
+      "bytes": 146,
+      "sha256": "2bf0ab6a2403b7c2fba7ae028ddccf903da0742c5d28c97cff14555ab58a7629"
+    },
+    {
+      "path": "release/v81_04/docs/V81.04_SCORE_WEIGHT.md",
+      "bytes": 146,
+      "sha256": "4628bc021404db492c0e6f6be52737beca726ff43e063944a57618044ed55c39"
+    },
+    {
+      "path": "release/v81_05/docs/V81.05_INVERSE_VOLATILITY.md",
+      "bytes": 152,
+      "sha256": "ee9ead5b58069062a8f0def8cd04c202d49d0fa22277cacd187dc090fc315d36"
+    },
+    {
+      "path": "release/v81_06/docs/V81.06_RISK_BUDGET.md",
+      "bytes": 145,
+      "sha256": "7bc46e48ee83a31a1afcc6589058e50a895da05e44e70ff6cbfc8e35c0f134bd"
+    },
+    {
+      "path": "release/v81_07/docs/V81.07_KELLY_FRACTION.md",
+      "bytes": 148,
+      "sha256": "92f995d4b58b1bdcec9f82d127871132a20da6b018261c50cce3135ab774facd"
+    },
+    {
+      "path": "release/v81_08/docs/V81.08_FRACTIONAL_KELLY.md",
+      "bytes": 150,
+      "sha256": "0a533d5a1ee45957a682570ce14bfa53d2b545d5138477dcc61d7af8d742273d"
+    },
+    {
+      "path": "release/v81_09/docs/V81.09_EXPOSURE_CONTROL.md",
+      "bytes": 150,
+      "sha256": "5f48896e0429bc2bc51c8e332654110cad2dedfc88069dd317d2f4fab2b205a6"
+    },
+    {
+      "path": "release/v81_10/docs/V81.10_CORRELATION_CONSTRAINT.md",
+      "bytes": 156,
+      "sha256": "0c0d09c9c23517ad7211e8e84c8b252b821befc2a45e87675f23c69df0866d53"
+    },
+    {
+      "path": "release/v81_11/docs/V81.11_PORTFOLIO_OPTIMIZER.md",
+      "bytes": 153,
+      "sha256": "9c5ad95b0fbcf6071f3193ab5aa4062de813a266c86d98e9595edaec488fc131"
+    },
+    {
+      "path": "release/v81_12/docs/V81.12_CONSTRAINT_VALIDATION.md",
+      "bytes": 155,
+      "sha256": "fb664895de576c411dd5a0d3dc767c072e3e352c1b68ba5ca70a8ce26366b2b4"
+    },
+    {
+      "path": "release/v81_13/docs/V81.13_OPTIMIZER_SELECTION.md",
+      "bytes": 153,
+      "sha256": "cfe968a071be283034267fed111e577d628cd805d2b8038976dcd9bf749b6fe9"
+    },
+    {
+      "path": "release/v81_14/docs/V81.14_ALLOCATION_PLAN.md",
+      "bytes": 149,
+      "sha256": "225d60dfe2dd1c2e08eeced7f8cb60d3d7d9e5985949c07831123aa083832f36"
+    },
+    {
+      "path": "release/v81_15/docs/V81.15_ALLOCATION_AUDIT.md",
+      "bytes": 150,
+      "sha256": "6ed6e20fe298030be7b819490a2a66e7a8b27cd0f62b058b68f7132e8c7f1d41"
+    },
+    {
+      "path": "release/v81_16/docs/V81.16_MASTER_LEDGER.md",
+      "bytes": 147,
+      "sha256": "a671cce7d96519b817ae5da41495fb30ce25b53554ce92b46f07bed45aba4218"
+    },
+    {
+      "path": "release/v81_17/docs/V81.17_ALLOCATION_MANIFEST.md",
+      "bytes": 153,
+      "sha256": "37f6ec070fb0aa177939b18aa3e5f98a58c8b15f8a2122e19c42949ff24e3b1e"
+    },
+    {
+      "path": "release/v81_18/docs/V81.18_INTEGRITY_VERIFICATION.md",
+      "bytes": 156,
+      "sha256": "62fd6097a789d1caea38257b4e02e911f452c497f3eb68b476347289461427ab"
+    },
+    {
+      "path": "release/v81_19/docs/V81.19_ALLOCATION_CERTIFICATION.md",
+      "bytes": 158,
+      "sha256": "64771a67e08a27bd29eddd2e9c3f56cd6644b77033369b669565613058f7e260"
+    },
+    {
+      "path": "release/v81_20/docs/V81.01_TO_V81.20_RELEASE_NOTES.md",
+      "bytes": 405,
+      "sha256": "9af931c7aeecc68578da82bcc8d2c5b72550108ff9a82ccf9824f3b006069abf"
+    },
+    {
+      "path": "release/v81_20/docs/V81.20_PORTFOLIO_OPTIMIZATION_COMPLETION.md",
+      "bytes": 167,
+      "sha256": "736b9d568fd76b40bad00c7892eaeae166d3a3bcbd74aaf0d109ef546558a36f"
+    },
+    {
+      "path": "tools/install_check_v81_01_to_v81_20.py",
+      "bytes": 658,
+      "sha256": "507cd8c72f640f354d629bf2ca3997464efbda35239edac80d9d6371dc3d442a"
+    },
+    {
+      "path": "tools/run_v81_01_to_v81_20_pipeline.py",
+      "bytes": 1091,
+      "sha256": "c8a7df3868ef4d129ce31b3036f08b1a00695b69f452176e278cdc4dc67177c4"
+    },
+    {
+      "path": "tools/test_portfolio_optimization_v81_01_to_v81_20.py",
+      "bytes": 3793,
+      "sha256": "b76605386345cd60369394d5339a37a61b7e0ca6379640f5eeabe7b3d2859835"
+    },
+    {
+      "path": "tools/verify_v81_01_to_v81_20_pipeline.py",
+      "bytes": 1767,
+      "sha256": "3e40fed09ac9ff20404f487441c37c2e24d162d741ad9f3821f347ff255019eb"
+    }
+  ]
+}
