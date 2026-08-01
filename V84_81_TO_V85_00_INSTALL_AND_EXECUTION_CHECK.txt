@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V84_81_TO_V85_00.ps1
+EXPECTED: 14 tests OK, 4-certificate chain, safety/replay/authorization/gate/compliance/readiness/audit/archive PASS, network 0, orders 0.

@@ -1,0 +1,12 @@
+{
+  "mode": "LIVE_BROKER_FINAL_CERTIFICATION_OFFLINE",
+  "required_certificate_count": 4,
+  "require_zero_network": true,
+  "require_zero_orders": true,
+  "require_live_authorized_false": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
