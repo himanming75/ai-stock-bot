@@ -1,0 +1,105 @@
+{
+  "base_commit": "260cbce",
+  "stage_range": "V114.01-V115.00",
+  "bundle_type": "ALPACA_PAPER_SESSION_SCHEDULER_FOUNDATION",
+  "timezone": "America/New_York",
+  "market_phases": [
+    "CLOSED",
+    "PRE_MARKET",
+    "REGULAR",
+    "AFTER_HOURS",
+    "HOLIDAY",
+    "WEEKEND"
+  ],
+  "scheduler_actions": [
+    "WAIT",
+    "PREPARE",
+    "START_SESSION",
+    "RUN_CYCLE",
+    "CLOSE_SESSION",
+    "RECOVER_SESSION",
+    "SKIP_DAY"
+  ],
+  "state_persistence": "ATOMIC_JSON",
+  "default_pipeline_actual_network": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V114_01_TO_V115_00_ALPACA_PAPER_SESSION_SCHEDULER.txt",
+      "bytes": 569,
+      "sha256": "9b22102308a4e489f2a74add2458419e070e2c3a471887f6e6d0544c2ac6b525"
+    },
+    {
+      "path": "RUN_V114_01_TO_V115_00_ALPACA_PAPER_SESSION_SCHEDULER.ps1",
+      "bytes": 964,
+      "sha256": "97f992faae4fc4b61550d7977d3810c2810f03cf0337fbff9c4991b24780cfc4"
+    },
+    {
+      "path": "paper_scheduler/__init__.py",
+      "bytes": 564,
+      "sha256": "cd729fece6638a6e2fabd17038dcfaf2ab1424ce12fa1f9a995b817873508739"
+    },
+    {
+      "path": "paper_scheduler/calendar.py",
+      "bytes": 1639,
+      "sha256": "93d26d600d7c06a9574b7c5e9ea50197a2cb10504a3ca9f91292ca26ec73480c"
+    },
+    {
+      "path": "paper_scheduler/models.py",
+      "bytes": 2713,
+      "sha256": "19ae61925ac2db588ea54966a047e07fd983d1210786232ba7ae540d9b9022cf"
+    },
+    {
+      "path": "paper_scheduler/scheduler.py",
+      "bytes": 5876,
+      "sha256": "ba392dd279fcd52e1a4b12d42adbd7f4afffc5726dedd4686a47d55aaa061621"
+    },
+    {
+      "path": "paper_scheduler/store.py",
+      "bytes": 1468,
+      "sha256": "a8cf8109d80dd59d121a5fb366575bc491e223f06d1482ac19a7a0bb4e66051b"
+    },
+    {
+      "path": "release/v115_00/docs/DESIGN.md",
+      "bytes": 659,
+      "sha256": "e05b47129390f312d7c4375c1b4793b31a1bdd2e954cb233ba24d9d621727210"
+    },
+    {
+      "path": "release/v115_00/docs/RELEASE_NOTES.md",
+      "bytes": 295,
+      "sha256": "d63b96989fd60df868f46638a14f024ebeadef77600b9e7ae8e541c86d832d61"
+    },
+    {
+      "path": "release/v115_00/docs/TEST_RESULTS.md",
+      "bytes": 538,
+      "sha256": "07ff8e381fc4e14509e800afbb553a5bc6bb895c6620f92d6873eec7e66297d3"
+    },
+    {
+      "path": "tools/install_check_v114_01_to_v115_00.py",
+      "bytes": 645,
+      "sha256": "22f3f50ef39090307573df9564843d9170d2abb27563c17ed55f9092fd4ce90d"
+    },
+    {
+      "path": "tools/run_alpaca_paper_session_scheduler_v114_01_to_v115_00.py",
+      "bytes": 3481,
+      "sha256": "5d7c04ce31b128cc22d8d6030d02c3d9e3a36ec5e345beb70bd773e461e1d2e5"
+    },
+    {
+      "path": "tools/test_alpaca_paper_session_scheduler_v114_01_to_v115_00.py",
+      "bytes": 5383,
+      "sha256": "4c4706385647e021b127efc17f0a24b5cd92b659d0ddff5c5b6abff64198f0d8"
+    },
+    {
+      "path": "tools/verify_alpaca_paper_session_scheduler_v114_01_to_v115_00.py",
+      "bytes": 1956,
+      "sha256": "9560327d7e75b7c2f3a2e907a7e14bf3aad3ea1c86ff49269aef57ea73e07f3f"
+    }
+  ]
+}
