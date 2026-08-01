@@ -1,0 +1,87 @@
+{
+  "base_commit": "e350b79",
+  "stage_range": "V116.01-V117.00",
+  "bundle_type": "PAPER_RUNTIME_OPERATIONAL_STABILITY",
+  "long_run_cycles": 500,
+  "max_consecutive_failures": 3,
+  "backoff_sequence_seconds": [
+    5,
+    15,
+    45
+  ],
+  "max_backoff_seconds": 60,
+  "heartbeat_watchdog": true,
+  "bounded_recovery": true,
+  "graceful_shutdown": true,
+  "default_pipeline_actual_network": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY.txt",
+      "bytes": 601,
+      "sha256": "9b7c81a626cab8f13b4e756699f4ad3d2f88a4a42214d03665ef351de7284325"
+    },
+    {
+      "path": "RUN_V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY.ps1",
+      "bytes": 988,
+      "sha256": "8d293dc15dfbf938ec7f1291525419a2f1e87b5ef785b62bd78ede8a4a5192a6"
+    },
+    {
+      "path": "paper_runtime_stability/__init__.py",
+      "bytes": 445,
+      "sha256": "6a2b93a07c11787e1d1586a9f86014e315b2732ace0003c820e2b57ae76f8aab"
+    },
+    {
+      "path": "paper_runtime_stability/controller.py",
+      "bytes": 8537,
+      "sha256": "ba43eef19b31b8e0d7b808c9acc34894006eac5435018f7434c6766b704d0996"
+    },
+    {
+      "path": "paper_runtime_stability/models.py",
+      "bytes": 836,
+      "sha256": "08f9be8f21e2e683ac45462000f7271db066f6c298b9054f87fb5b6afa30eb44"
+    },
+    {
+      "path": "release/v117_00/docs/DESIGN.md",
+      "bytes": 685,
+      "sha256": "9fd6c228e3dd5e5ae6140849c7a4cc87425a0143798fe44ad0c77fa13deed692"
+    },
+    {
+      "path": "release/v117_00/docs/RELEASE_NOTES.md",
+      "bytes": 327,
+      "sha256": "82152d60a04697f8dcf2caa6dbdbd04eeb9b00265e9660aa7064375bff62e4c1"
+    },
+    {
+      "path": "release/v117_00/docs/TEST_RESULTS.md",
+      "bytes": 384,
+      "sha256": "dc1cd66ef29658a158cbfe9792d781bb68338effadb596be369b713506d78a4f"
+    },
+    {
+      "path": "tools/install_check_v116_01_to_v117_00.py",
+      "bytes": 613,
+      "sha256": "79555b121ef1f90db855159d7dbbbdcdb2c7884621490a785ca78c2f5b10ad02"
+    },
+    {
+      "path": "tools/run_paper_runtime_operational_stability_v116_01_to_v117_00.py",
+      "bytes": 4119,
+      "sha256": "193f6ad868c184671ede8d9389c1a3e02086efb49c7134c74d2d3c801040b021"
+    },
+    {
+      "path": "tools/test_paper_runtime_operational_stability_v116_01_to_v117_00.py",
+      "bytes": 6677,
+      "sha256": "63bcb963bc25d4cf25a877012c52a1b80917c2c117cf501a2f60314f7ec569a2"
+    },
+    {
+      "path": "tools/verify_paper_runtime_operational_stability_v116_01_to_v117_00.py",
+      "bytes": 2375,
+      "sha256": "3b7cf69a256cfe3cfdebea6190e4310d3bb892479c02a0e0b4a6bff1e9f75214"
+    }
+  ]
+}
