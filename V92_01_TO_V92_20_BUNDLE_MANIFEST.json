@@ -1,0 +1,71 @@
+{
+  "base_commit": "55314a8",
+  "stage_range": "V92.01-V92.20",
+  "functional_bundle": "ACTUAL_PAPER_ORDER_SUBMISSION_DRY_RUN_VALIDATION",
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V92_01_TO_V92_20.txt",
+      "bytes": 549,
+      "sha256": "679fed216696a46e1f9086e115284b0810ec698e10511d4aa2c168fbac2da709"
+    },
+    {
+      "path": "INSTALL_CHECK_V92_01_TO_V92_20.ps1",
+      "bytes": 47,
+      "sha256": "fee23c2cf067272dd3252fcf8dfb1d89def4b10a209cb9de2b5e763277a30747"
+    },
+    {
+      "path": "RUN_V92_01_TO_V92_20.ps1",
+      "bytes": 827,
+      "sha256": "d3b58852f2d765bca287750ec06e61462b8f00bff2e10d5f6dec64842409be4f"
+    },
+    {
+      "path": "VERIFY_V92_01_TO_V92_20.ps1",
+      "bytes": 69,
+      "sha256": "2b4b18f7f7a502a352224bc4f17a543754e1f31439eaec11b9d6ecc6305133d5"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_order_submission_dryrun_v92_01_20.py",
+      "bytes": 14170,
+      "sha256": "53ac7438e858c81028913eaa8707250bc40d2ed4aa8935469be95367edb500ad"
+    },
+    {
+      "path": "release/v92_20/docs/DESIGN.md",
+      "bytes": 316,
+      "sha256": "980c1f4d861fb818f4a3762737146626c677885a3f65ae573a635d5fd45ab234"
+    },
+    {
+      "path": "release/v92_20/docs/RELEASE_NOTES.md",
+      "bytes": 150,
+      "sha256": "34e433dd67c5c0c13c748dd423fe8c714a11e39fba19edcc9d81262e2a74877b"
+    },
+    {
+      "path": "release/v92_20/docs/TEST_RESULTS.md",
+      "bytes": 240,
+      "sha256": "560a30c604adcd91ee5305a6689f0e1847a45677741630ed9d7eb82fe9d865b7"
+    },
+    {
+      "path": "tools/install_check_v92_01_to_v92_20.py",
+      "bytes": 449,
+      "sha256": "317a4b575e6af548a53c3fab9187554b5cb19299c74d439464fd3b46e99e4654"
+    },
+    {
+      "path": "tools/run_v92_01_to_v92_20_pipeline.py",
+      "bytes": 1489,
+      "sha256": "22dbaabd628c5ca0de6f9c04723a53b2bc71d68fa864c0727c1ffb3715539953"
+    },
+    {
+      "path": "tools/test_actual_paper_order_submission_dryrun_v92_01_to_v92_20.py",
+      "bytes": 2547,
+      "sha256": "2413d07523a4acb6fdc4644d94cc730c5a2fea1ae0028767a0f3c20eba8c084a"
+    },
+    {
+      "path": "tools/verify_v92_01_to_v92_20_pipeline.py",
+      "bytes": 1721,
+      "sha256": "ab96be95758954c852a0270cee9a2d9ea4bff334268f1ccfcd51e6dde8a78c1f"
+    }
+  ]
+}

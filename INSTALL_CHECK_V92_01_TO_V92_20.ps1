@@ -1,0 +1,1 @@
+python tools/install_check_v92_01_to_v92_20.py
