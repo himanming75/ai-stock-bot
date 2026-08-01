@@ -1,0 +1,13 @@
+RUN:
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_96_TO_V80_00.ps1
+
+EXPECTED:
+- 15 tests OK
+- certificate_count 7
+- historical_engine_complete true
+- risk_violation_count 0
+- walk_forward_leakage_count 0
+- actual_orders_submitted 0
+- paper_trading_authorized false
+- live_trading_authorized false
+- VERIFY PASS

@@ -1,0 +1,92 @@
+{
+  "base_commit": "4e1e80f",
+  "stage_range": "V79.96-V80.00",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V79_96_TO_V80_00.txt",
+      "bytes": 640,
+      "sha256": "c63d09d8dbe4dfe494183eba9c76adc4aa110366a66215b04c7ec45562997eb2"
+    },
+    {
+      "path": "INSTALL_CHECK_V79_96_TO_V80_00.ps1",
+      "bytes": 47,
+      "sha256": "14aaf990748733756557469ee9b5ff286888bd5030ed8e1db1ea9d20bbe0bf4d"
+    },
+    {
+      "path": "RUN_V79_96_TO_V80_00.ps1",
+      "bytes": 847,
+      "sha256": "db42b55d935a34d71c5628adc303afaf0014a121a6a2f2610113cff6a843a110"
+    },
+    {
+      "path": "V79_96_TO_V80_00_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 317,
+      "sha256": "e814f5e231221c80132193f2664588c0ab58b0e058a51fe46a161830545aebeb"
+    },
+    {
+      "path": "VERIFY_V79_96_TO_V80_00.ps1",
+      "bytes": 69,
+      "sha256": "d96c96d39e122bf13813b82904b4c083a405663a624d257a1c792fdea3e067c3"
+    },
+    {
+      "path": "alpaca_market_data/historical_backtest_completion_v79_96_v80_00.py",
+      "bytes": 15823,
+      "sha256": "68667bf03938bbf0aae4cb8670e81996f9e6037fede15fc7e27a91a19c9cb24c"
+    },
+    {
+      "path": "release/v79_96/config/historical_backtest_completion_config_v79_96.json",
+      "bytes": 428,
+      "sha256": "7664d121a32cd013ec7b6ae9c256f7938658072379150abdc9ce1fb09655e716"
+    },
+    {
+      "path": "release/v79_96/docs/V79.96_PIPELINE_AGGREGATION.md",
+      "bytes": 149,
+      "sha256": "dd1d313bcf55d902056a49c4019b0c8eccf603124d8dfd4a7ffff85a2cb1337b"
+    },
+    {
+      "path": "release/v79_97/docs/V79.97_COMPLETION_LEDGER.md",
+      "bytes": 129,
+      "sha256": "c024b91def5016790eeb85cf597c55ac99fe978ea78feffaefd4133cb9a189a0"
+    },
+    {
+      "path": "release/v79_98/docs/V79.98_FINAL_HISTORICAL_MANIFEST.md",
+      "bytes": 125,
+      "sha256": "e15cdbbe83b555073423497b4d92204cd0f9cd19e79c6afcef6fd6c2cc5650bb"
+    },
+    {
+      "path": "release/v79_99/docs/V79.99_HISTORICAL_CERTIFICATION.md",
+      "bytes": 154,
+      "sha256": "d48ad075c317d73636dfa1a7794c39de00696d03d925c46af84201604cbff21e"
+    },
+    {
+      "path": "release/v80_00/docs/V79.96_TO_V80.00_RELEASE_NOTES.md",
+      "bytes": 245,
+      "sha256": "642b9e14541fdaac62fa3c7413af6bfaea01a77c29a52a49dc2198665ad0b673"
+    },
+    {
+      "path": "release/v80_00/docs/V80.00_HISTORICAL_BACKTEST_COMPLETION.md",
+      "bytes": 156,
+      "sha256": "c58b68ffb14d9fb9f02d0a12348d60ea9fe4e02e72782970f3a121452a6d816a"
+    },
+    {
+      "path": "tools/install_check_v79_96_to_v80_00.py",
+      "bytes": 815,
+      "sha256": "a0ad032671d824280695001d804147b6dafe9c768d4b15e0a6ed2a0659ee7c00"
+    },
+    {
+      "path": "tools/run_v79_96_to_v80_00_pipeline.py",
+      "bytes": 2119,
+      "sha256": "9d43fb206eb6c6a52faee984108ace39a727fd16fa7a21972cbaf76f25c03372"
+    },
+    {
+      "path": "tools/test_historical_backtest_completion_v79_96_to_v80_00.py",
+      "bytes": 6014,
+      "sha256": "dafdf1480e0502533ef6d6a7fe22866bb96ad287ce298249424807e5dcf7e64c"
+    },
+    {
+      "path": "tools/verify_v79_96_to_v80_00_pipeline.py",
+      "bytes": 2661,
+      "sha256": "61960cd3cecf7eabfd52c2ab83139233b6b8601cc2338f078bd60c5b5906e97e"
+    }
+  ]
+}

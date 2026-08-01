@@ -1,0 +1,3 @@
+git add RUN_V79_96_TO_V80_00.ps1 INSTALL_CHECK_V79_96_TO_V80_00.ps1 VERIFY_V79_96_TO_V80_00.ps1 V79_96_TO_V80_00_INSTALL_AND_EXECUTION_CHECK.txt GIT_COMMIT_V79_96_TO_V80_00.txt V79_96_TO_V80_00_BUNDLE_MANIFEST.json alpaca_market_data/historical_backtest_completion_v79_96_v80_00.py tools/install_check_v79_96_to_v80_00.py tools/run_v79_96_to_v80_00_pipeline.py tools/test_historical_backtest_completion_v79_96_to_v80_00.py tools/verify_v79_96_to_v80_00_pipeline.py release/v79_96 release/v79_97 release/v79_98 release/v79_99 release/v80_00
+git commit -m "V79.96-V80.00 historical backtest completion package completed"
+git push origin main

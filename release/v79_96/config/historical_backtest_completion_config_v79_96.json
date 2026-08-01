@@ -1,0 +1,20 @@
+{
+  "required_stages": [
+    "V79.65",
+    "V79.70",
+    "V79.75",
+    "V79.80",
+    "V79.85",
+    "V79.90",
+    "V79.95"
+  ],
+  "require_all_certificates_pass": true,
+  "require_zero_orders": true,
+  "require_offline_execution": true,
+  "preserve_source_outputs": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
