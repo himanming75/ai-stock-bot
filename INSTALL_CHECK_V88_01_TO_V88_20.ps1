@@ -1,0 +1,1 @@
+python tools/install_check_v88_01_to_v88_20.py

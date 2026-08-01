@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V88_01_TO_V88_20.ps1
+EXPECTED: market calendar, holiday, early close, DST, event plan, duplicate guard, missed recovery, manual override, heartbeat, shutdown, rollback PASS; scheduler false; network 0; orders 0.

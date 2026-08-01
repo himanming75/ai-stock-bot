@@ -1,0 +1,163 @@
+{
+  "base_commit": "23a37aa",
+  "stage_range": "V88.01-V88.20",
+  "functional_bundle": "PAPER_SCHEDULER_FOUNDATION",
+  "file_count": 32,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V88_01_TO_V88_20.txt",
+      "bytes": 841,
+      "sha256": "141f72f419addcbe78586a26c7b8b8b4efbefcde1a8f085f8d801b7f21e7c692"
+    },
+    {
+      "path": "INSTALL_CHECK_V88_01_TO_V88_20.ps1",
+      "bytes": 47,
+      "sha256": "20617108c13d0a1a5d1884bd1f1b0c3ce42da0786d3d3ce1b5b948754cf8cb1e"
+    },
+    {
+      "path": "RUN_V88_01_TO_V88_20.ps1",
+      "bytes": 817,
+      "sha256": "6d545ae89893b3ef6f76fa862779ad63fc89ef2d5b28663efcc949ea796573c9"
+    },
+    {
+      "path": "V88_01_TO_V88_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 264,
+      "sha256": "206f35ccb30d1638c27af2e5019993614c341dbc6f648dc37b35074db6e422e7"
+    },
+    {
+      "path": "VERIFY_V88_01_TO_V88_20.ps1",
+      "bytes": 69,
+      "sha256": "d648b01f747f84b3cb6006c39ddec96c236f23aeb59b0b802f18b5cdec501b73"
+    },
+    {
+      "path": "alpaca_market_data/paper_scheduler_foundation_v88_01_20.py",
+      "bytes": 19543,
+      "sha256": "d9b49f88c7d7bbf245cd7b4ac74cb8d9ce91ed9f66a3d31810b9d1fdc9058879"
+    },
+    {
+      "path": "release/v88_01/docs/V88.01_SCHEDULER_POLICY.md",
+      "bytes": 147,
+      "sha256": "430cb4f1b3ff77d454d40a9afff3c5647a9d54ab5b233797b3fa293c8fd16cef"
+    },
+    {
+      "path": "release/v88_02/docs/V88.02_MARKET_CALENDAR.md",
+      "bytes": 146,
+      "sha256": "ac9647ec90f49f1815fedd0846ce1c06a9e695e877153825c390234308bb3a3f"
+    },
+    {
+      "path": "release/v88_03/docs/V88.03_SESSION_TIMES.md",
+      "bytes": 144,
+      "sha256": "bd236bc6cc64b146f7ab707e3326fe632e949927307d834e0f73a0654fea7ff4"
+    },
+    {
+      "path": "release/v88_04/docs/V88.04_DST_VALIDATION.md",
+      "bytes": 145,
+      "sha256": "d4814fd278bd50993da9c5d6de21f485853792874dfd428da82acfbdc8ba19b0"
+    },
+    {
+      "path": "release/v88_05/docs/V88.05_EVENT_PLAN.md",
+      "bytes": 141,
+      "sha256": "390a0cf0854654df2127852908192637f3f68a5d5dd0610d1e290d49014b0db6"
+    },
+    {
+      "path": "release/v88_06/docs/V88.06_DUPLICATE_GUARD.md",
+      "bytes": 146,
+      "sha256": "0b461d98128a24295fb82538110129e2b1ace7f0b56cbcd885b454964d5eabf9"
+    },
+    {
+      "path": "release/v88_07/docs/V88.07_MISSED_SCHEDULE_RECOVERY.md",
+      "bytes": 155,
+      "sha256": "17852811982db9935110fc6131b1b4a4d5fe1f2aeae9d4325924c303fda70780"
+    },
+    {
+      "path": "release/v88_08/docs/V88.08_MANUAL_OVERRIDE_REQUEST.md",
+      "bytes": 154,
+      "sha256": "2c29406086c1a8072e168f8e016f9aa9781e00cea465ba217fe243cf4393397f"
+    },
+    {
+      "path": "release/v88_09/docs/V88.09_MANUAL_OVERRIDE_DECISION.md",
+      "bytes": 155,
+      "sha256": "7acd504f79d76b0902deac1673cc81400fd2929d364692f52ad265ee2ebdd494"
+    },
+    {
+      "path": "release/v88_10/docs/V88.10_SCHEDULER_STATE.md",
+      "bytes": 146,
+      "sha256": "b88a220aacd20ce0b6ae38261fd0b9375b2ffc4e821584c1b5fd610c02efb011"
+    },
+    {
+      "path": "release/v88_11/docs/V88.11_STATE_TRANSITION.md",
+      "bytes": 147,
+      "sha256": "af3cafa692cf58de9ad44becfad51e57f9ddbd69efa176072e3dc0b7fdbab321"
+    },
+    {
+      "path": "release/v88_12/docs/V88.12_HEARTBEAT.md",
+      "bytes": 140,
+      "sha256": "a241c75abe0bd12999737e47ed6bbaab7e3c8c4453fe1cd5beca43bfaad75959"
+    },
+    {
+      "path": "release/v88_13/docs/V88.13_STALE_HEARTBEAT_CHECK.md",
+      "bytes": 152,
+      "sha256": "2741938a970082da2783bc9e5cb4e89c78ec0f01867d69031e51df09c1553877"
+    },
+    {
+      "path": "release/v88_14/docs/V88.14_SHUTDOWN_PLAN.md",
+      "bytes": 144,
+      "sha256": "26d1a088355da4f9788b52e6706d34f26282bd4427c57c412ae0107811834f71"
+    },
+    {
+      "path": "release/v88_15/docs/V88.15_ROLLBACK_PLAN.md",
+      "bytes": 144,
+      "sha256": "429fe13877b6e6770c69a09cb854095a81129d584fe61e9ada96184331d020c0"
+    },
+    {
+      "path": "release/v88_16/docs/V88.16_SCHEDULER_SCENARIO.md",
+      "bytes": 149,
+      "sha256": "df1524b3ec701c6922d6251a43ca32b1be15870aea68f501b77edea698119fc7"
+    },
+    {
+      "path": "release/v88_17/docs/V88.17_SCHEDULER_AUDIT.md",
+      "bytes": 146,
+      "sha256": "c389a866f5d5dcbab642d70e4e40f461753254c8afc119274c06a2d0c07b8a33"
+    },
+    {
+      "path": "release/v88_18/docs/V88.18_SCHEDULER_LEDGER.md",
+      "bytes": 147,
+      "sha256": "aceaa2cc8587af30c1705368563f21064f6ef0ce99c4d6494c0b999e854b3d69"
+    },
+    {
+      "path": "release/v88_19/docs/V88.19_SCHEDULER_MANIFEST.md",
+      "bytes": 149,
+      "sha256": "6be34a4aa09037c57dac3bd3a3b75ac494f6913621fc1907a56708ebee631144"
+    },
+    {
+      "path": "release/v88_20/docs/V88.01_TO_V88.20_RELEASE_NOTES.md",
+      "bytes": 429,
+      "sha256": "77d1a27fefcdb14c5710169cc537ea1898fca9780b85a9378d757160930826b9"
+    },
+    {
+      "path": "release/v88_20/docs/V88.20_SCHEDULER_FOUNDATION_COMPLETION.md",
+      "bytes": 162,
+      "sha256": "f8fbf43951a7f4cbd0112acb1a847e8119ef4dcbf510671cf448cd7fc28bcaaa"
+    },
+    {
+      "path": "tools/install_check_v88_01_to_v88_20.py",
+      "bytes": 461,
+      "sha256": "5aa9f26b2e5bfd7c1fe63f164731a68625a31d9d016302c926f3f099a7a2ac4c"
+    },
+    {
+      "path": "tools/run_v88_01_to_v88_20_pipeline.py",
+      "bytes": 1126,
+      "sha256": "a3e523edfd33424f8b3a84433786143f9f24481c942e61240ff9bc899a677515"
+    },
+    {
+      "path": "tools/test_paper_scheduler_foundation_v88_01_to_v88_20.py",
+      "bytes": 2806,
+      "sha256": "95e3a370251492d1c51b1119be1bdc05ae14fa6ccbe6de16c532dc75cc536447"
+    },
+    {
+      "path": "tools/verify_v88_01_to_v88_20_pipeline.py",
+      "bytes": 1818,
+      "sha256": "b6d21cf9171eb6da91e4dbb10b516ffc2449307e7515fe48908b624e18316b16"
+    }
+  ]
+}
