@@ -1,0 +1,15 @@
+{
+  "mode": "PAPER_POSITION_ACCOUNT_RECONCILIATION",
+  "base_url": "https://paper-api.alpaca.markets",
+  "symbol": "AAPL",
+  "quantity_tolerance": 1e-06,
+  "money_tolerance": 0.05,
+  "pnl_tolerance": 0.05,
+  "explicit_network_opt_in": false,
+  "required_opt_in_value": "YES",
+  "allow_get": true,
+  "allow_post": false,
+  "allow_patch": false,
+  "allow_delete": false,
+  "actual_orders_submitted": 0
+}

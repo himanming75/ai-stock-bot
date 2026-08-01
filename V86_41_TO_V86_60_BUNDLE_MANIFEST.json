@@ -1,0 +1,168 @@
+{
+  "base_commit": "6662e88",
+  "stage_range": "V86.41-V86.60",
+  "functional_bundle": "PAPER_POSITION_AND_ACCOUNT_RECONCILIATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V86_41_TO_V86_60.txt",
+      "bytes": 918,
+      "sha256": "498fb4f217d34ef47638d7266444209b3be9a7c295f04c3ba3225d7cc19671a2"
+    },
+    {
+      "path": "INSTALL_CHECK_V86_41_TO_V86_60.ps1",
+      "bytes": 47,
+      "sha256": "97783ab10769d0daec2ff2fa981b40c92e31a8466b2f9c626fa48b817e50aa0e"
+    },
+    {
+      "path": "RUN_V86_41_TO_V86_60.ps1",
+      "bytes": 845,
+      "sha256": "0ed789c9e9222a5146729de8522ccce079da831a32706ced0767788c35efbf32"
+    },
+    {
+      "path": "RUN_V86_41_TO_V86_60_ACTUAL_RECONCILIATION_READ.ps1",
+      "bytes": 756,
+      "sha256": "5c158ce57047af85a541875dba7950bc8d9d1dea727b53abc84e16c32fd3c5bb"
+    },
+    {
+      "path": "V86_41_TO_V86_60_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 309,
+      "sha256": "c38adae169f3d6b61990343431e90b616cbcbd7c34f0b38f3ee02ca7ca54bc65"
+    },
+    {
+      "path": "VERIFY_V86_41_TO_V86_60.ps1",
+      "bytes": 69,
+      "sha256": "ee20d0246c3078479358c13e88bfbf43a82ff228ba6cecbac851f582d28a3b3b"
+    },
+    {
+      "path": "alpaca_market_data/position_account_reconciliation_v86_41_60.py",
+      "bytes": 20831,
+      "sha256": "5437baf12d2994ea1c67b6c915ffbd45cf0f3350c52308504328fa928038c28a"
+    },
+    {
+      "path": "release/v86_41/config/position_account_reconciliation_config_v86_41.json",
+      "bytes": 402,
+      "sha256": "2aaa7eb62922747e4529c43355885754bf47823dea2b764e4d0bee4e07a21753"
+    },
+    {
+      "path": "release/v86_41/docs/V86.41_RECONCILIATION_POLICY.md",
+      "bytes": 162,
+      "sha256": "7f707e66cdaf4c180b02b9dc0ebc135f9ed658c23403b79d32ec3443d4dd7651"
+    },
+    {
+      "path": "release/v86_42/docs/V86.42_CREDENTIAL_STATUS.md",
+      "bytes": 158,
+      "sha256": "a1e819a7111c032777807dfea465d2726f51c01a3784c304b5f9b2239f5ca7ae"
+    },
+    {
+      "path": "release/v86_43/docs/V86.43_ORDER_IDENTIFIER.md",
+      "bytes": 157,
+      "sha256": "eb5503445bc116a4ffa3f9b4b1b841d6a05f2bbfc86abd7678b4c2a5a584dd2d"
+    },
+    {
+      "path": "release/v86_44/docs/V86.44_EXPLICIT_OPT_IN.md",
+      "bytes": 156,
+      "sha256": "e803c4caae480dc0ef023e38d79d563792997a93cb32f8f8f182ba320ea1d7a8"
+    },
+    {
+      "path": "release/v86_45/docs/V86.45_READ_ENDPOINTS.md",
+      "bytes": 155,
+      "sha256": "5969365e9fa192f4320e2fcbba1b848764341dd2ba39ccc5a723c06fdd454764"
+    },
+    {
+      "path": "release/v86_46/docs/V86.46_GET_EXECUTION.md",
+      "bytes": 154,
+      "sha256": "f973a6a83f2a5d73ad89955f9f3d7387220ee833abe2d04f0667806486bc7d04"
+    },
+    {
+      "path": "release/v86_47/docs/V86.47_ORDER_METRICS.md",
+      "bytes": 154,
+      "sha256": "63970d9c6fc4f72bbe4910111f284d0883e1b7b1c1b308db6398e8a81c4b117c"
+    },
+    {
+      "path": "release/v86_48/docs/V86.48_POSITION_LOOKUP.md",
+      "bytes": 156,
+      "sha256": "1121465188b9993d8a2bc9b01a356bb1f5113fa77bb569cd5d552d0a1ecb53ef"
+    },
+    {
+      "path": "release/v86_49/docs/V86.49_QUANTITY_RECONCILIATION.md",
+      "bytes": 164,
+      "sha256": "b3352678ccf9a9ed11edadc9894e74e7a19aaf4792debf5e73d954b9f93e1c0c"
+    },
+    {
+      "path": "release/v86_50/docs/V86.50_AVERAGE_PRICE_RECONCILIATION.md",
+      "bytes": 169,
+      "sha256": "e1382bb0f7dbe5b11378906c35b901cbb8e0e99c3d720797ab3fc686abfa3a47"
+    },
+    {
+      "path": "release/v86_51/docs/V86.51_MARKET_VALUE_RECONCILIATION.md",
+      "bytes": 168,
+      "sha256": "a6f9b2c9ade68bb85fdf402525cb7f71adcafb9a9234d4d4c4f78314dc271e81"
+    },
+    {
+      "path": "release/v86_52/docs/V86.52_UNREALIZED_PNL_RECONCILIATION.md",
+      "bytes": 170,
+      "sha256": "b15f53fc038b29491e3d6255eb0d4a1f19064a2d1395badb8dd6bf4f8f7d7d35"
+    },
+    {
+      "path": "release/v86_53/docs/V86.53_ACCOUNT_SCHEMA.md",
+      "bytes": 155,
+      "sha256": "69f8bdf3c101719d7767ce4775373c509a30fda1c87de1f3b9c003cedfce36e4"
+    },
+    {
+      "path": "release/v86_54/docs/V86.54_ACCOUNT_NUMERIC_RECONCILIATION.md",
+      "bytes": 171,
+      "sha256": "0bcf9d845b9c38f111071b4a275f45851b0eb1fca6c385707e6f83c927b623f9"
+    },
+    {
+      "path": "release/v86_55/docs/V86.55_BUYING_POWER_RECONCILIATION.md",
+      "bytes": 168,
+      "sha256": "012ee4093d45d88ba1388a66f86286cf834040fa931782a9757b55e0a68283f1"
+    },
+    {
+      "path": "release/v86_56/docs/V86.56_MASTER_EVALUATION.md",
+      "bytes": 158,
+      "sha256": "6af5efc58cb79c05e3240ba0d6080f9f0016e73fea6e86e24ee7261cc4b6451e"
+    },
+    {
+      "path": "release/v86_57/docs/V86.57_RECONCILIATION_RUN.md",
+      "bytes": 159,
+      "sha256": "b62f66b389d0658af3d6bdeb41a9e3c5095966f0099b96eb4c61eee75f4668c4"
+    },
+    {
+      "path": "release/v86_58/docs/V86.58_ROLLBACK_PLAN.md",
+      "bytes": 154,
+      "sha256": "b276c4d907c7cab19efbd0daea02b43116e1d2d53a8d6ef4f52f8689c810a540"
+    },
+    {
+      "path": "release/v86_59/docs/V86.59_RECONCILIATION_AUDIT.md",
+      "bytes": 161,
+      "sha256": "4603c286ddbe9ebac10ce6a20ea0e4c15449b6e23a607d83ae10dd3710c268ec"
+    },
+    {
+      "path": "release/v86_60/docs/V86.60_POSITION_ACCOUNT_COMPLETION.md",
+      "bytes": 168,
+      "sha256": "404c708e953c9f936e3cbd66e536d4388f2f1bdd55de4dd1b94dd46e5bfa3b69"
+    },
+    {
+      "path": "tools/install_check_v86_41_to_v86_60.py",
+      "bytes": 327,
+      "sha256": "b448852c230cb98bbcf14b3bfb30f9b5c2d1d0f9d213d42df3220a40a99f3e24"
+    },
+    {
+      "path": "tools/run_v86_41_to_v86_60_pipeline.py",
+      "bytes": 1163,
+      "sha256": "3e436030e9df15d0bdeb088982bd7f6d0a215aa61669a99c4d735412fd23fc80"
+    },
+    {
+      "path": "tools/test_position_account_reconciliation_v86_41_to_v86_60.py",
+      "bytes": 3133,
+      "sha256": "b1d3dab2065fa8c447d009ba44ca3b8c35a92f304661d8368996c3695eb844b2"
+    },
+    {
+      "path": "tools/verify_v86_41_to_v86_60_pipeline.py",
+      "bytes": 1457,
+      "sha256": "53464876ff0cd41b1f016e173d9a20e2dc25208581992c2572da2b9cb457aba0"
+    }
+  ]
+}
