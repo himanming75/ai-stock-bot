@@ -1,0 +1,168 @@
+{
+  "base_commit": "da6de65",
+  "stage_range": "V82.61-V82.80",
+  "functional_bundle": "DRY_RUN_BROKER_VALIDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V82_61_TO_V82_80.txt",
+      "bytes": 838,
+      "sha256": "6e8556c782ae524e907f37b865b02f027af6b75eca6c48aa5d37d220ffae5b6c"
+    },
+    {
+      "path": "INSTALL_CHECK_V82_61_TO_V82_80.ps1",
+      "bytes": 47,
+      "sha256": "4b6164278710da49e2f9e49b779b988733d841bb906df95ca5ce31031547af83"
+    },
+    {
+      "path": "RUN_V82_61_TO_V82_80.ps1",
+      "bytes": 816,
+      "sha256": "7b85b5400c9651ef975995fea550c2afeb11e23087f5e3876c01f95da198b544"
+    },
+    {
+      "path": "V82_61_TO_V82_80_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 222,
+      "sha256": "350888a26350ff9285dc49f8c9ba4dd3c2d8c16cbb26bda361544ecac5a6011b"
+    },
+    {
+      "path": "VERIFY_V82_61_TO_V82_80.ps1",
+      "bytes": 69,
+      "sha256": "bf7912519bc3fbaef4d89cfe6d97249bd69bdd85a0b1daaae81ea3ef3144713e"
+    },
+    {
+      "path": "alpaca_market_data/dry_run_broker_validation_v82_61_80.py",
+      "bytes": 13385,
+      "sha256": "cfbabffcec26fd1f2f5eee175d9c3355e50b98f144cd313956f393208174fe5e"
+    },
+    {
+      "path": "release/v82_61/config/dry_run_broker_config_v82_61.json",
+      "bytes": 302,
+      "sha256": "4ca4f33be32bbc7e626e354ce23eb7ba8383b261a0c88c9b29a59c81e5a80ea1"
+    },
+    {
+      "path": "release/v82_61/docs/V82.61_ORDER_INTENT.md",
+      "bytes": 164,
+      "sha256": "39ef63c602d48c3f86d9e0dd0e48e0766808625c762d365b534e56dc85d426a9"
+    },
+    {
+      "path": "release/v82_62/docs/V82.62_IDEMPOTENCY_KEY.md",
+      "bytes": 167,
+      "sha256": "11efa750656010b4d53509627093837ea0eb8ccd2f66fbabb28ddf1aaceb7209"
+    },
+    {
+      "path": "release/v82_63/docs/V82.63_DUPLICATE_GUARD.md",
+      "bytes": 167,
+      "sha256": "556661b24d9087be842fbf5d52d280d1014bb009851f8ae22fb8149a165767ca"
+    },
+    {
+      "path": "release/v82_64/docs/V82.64_ORDER_SERIALIZATION.md",
+      "bytes": 171,
+      "sha256": "ab11e68b30fef0fff180fc1d81de063a0ea49d2c22055884ad7eb648a0c671f6"
+    },
+    {
+      "path": "release/v82_65/docs/V82.65_SIGNING_SIMULATION.md",
+      "bytes": 170,
+      "sha256": "3c2d22d299eab721c75586c6efda62bb6d0b29dab4f93da82ae1fc45ca814178"
+    },
+    {
+      "path": "release/v82_66/docs/V82.66_RISK_GUARD.md",
+      "bytes": 162,
+      "sha256": "9aca771e46c3e5c4b389f7a2c8d04004528a9c3359978911789e5062812d57ea"
+    },
+    {
+      "path": "release/v82_67/docs/V82.67_BUYING_POWER_GUARD.md",
+      "bytes": 170,
+      "sha256": "e9050ae9175c1be55ae583a535771460116fc2b8cf03138d49285e707c3227aa"
+    },
+    {
+      "path": "release/v82_68/docs/V82.68_POSITION_GUARD.md",
+      "bytes": 166,
+      "sha256": "e88c3998a008e5f167c9090c1dfaaf64abfe44a1ca1f3b2525d84181f05c2066"
+    },
+    {
+      "path": "release/v82_69/docs/V82.69_MARKET_SESSION_GUARD.md",
+      "bytes": 172,
+      "sha256": "2c5bd67f4e9a7406c9f5c5fb131c3e9ababa9ae483dfd38c75b4111e1b254f52"
+    },
+    {
+      "path": "release/v82_70/docs/V82.70_PREFLIGHT_VALIDATION.md",
+      "bytes": 172,
+      "sha256": "508383a3cec5b6a2c16a58a5aa3dfe9eea221edbe6f5bd31e935f9c623b51aca"
+    },
+    {
+      "path": "release/v82_71/docs/V82.71_REJECTION_MAPPING.md",
+      "bytes": 169,
+      "sha256": "a56efade238bab4812431e23af11b8e31079496d29c8d2aa0cd46a2a9708501e"
+    },
+    {
+      "path": "release/v82_72/docs/V82.72_DRY_RUN_RECEIPT.md",
+      "bytes": 167,
+      "sha256": "09c3d89bc67552d74937964a2b9e808558e9d2947f1774268452c0ff45dfccc5"
+    },
+    {
+      "path": "release/v82_73/docs/V82.73_DETERMINISTIC_REPLAY.md",
+      "bytes": 172,
+      "sha256": "8bbd8f88daee25aa3654553165f524a84f55741e27b56af6f53fa77fa82b641b"
+    },
+    {
+      "path": "release/v82_74/docs/V82.74_DRY_RUN_SCENARIOS.md",
+      "bytes": 169,
+      "sha256": "0487648afa39380120d21a3ff9b1bcc9a74bf1aa7ed7860b5cd6d551f56977a6"
+    },
+    {
+      "path": "release/v82_75/docs/V82.75_DRY_RUN_AUDIT.md",
+      "bytes": 165,
+      "sha256": "9e4d2e923c7100a6403013b78f96d2ede32fa75e093306c81d91eae00ad18002"
+    },
+    {
+      "path": "release/v82_76/docs/V82.76_MASTER_LEDGER.md",
+      "bytes": 165,
+      "sha256": "1a571bb7ca877d463b2d1d5aa6490b506bf5041dc36407d3b667569dc0227673"
+    },
+    {
+      "path": "release/v82_77/docs/V82.77_DRY_RUN_MANIFEST.md",
+      "bytes": 168,
+      "sha256": "1fe80d87fd6c5773b01df9a1302f3442e93051c7cb37dd3686210c407e470be0"
+    },
+    {
+      "path": "release/v82_78/docs/V82.78_DRY_RUN_PIPELINE.md",
+      "bytes": 168,
+      "sha256": "ec5bd85f8d2056c498df0ac6e322a0e07b0aae65b12e6bdd1ae70347a0b94cee"
+    },
+    {
+      "path": "release/v82_79/docs/V82.79_INTEGRITY_VERIFICATION.md",
+      "bytes": 174,
+      "sha256": "623cc062087dd207ec2a9b30eb80c0ae713a596824c314bc394b6b603187a3d5"
+    },
+    {
+      "path": "release/v82_80/docs/V82.61_TO_V82.80_RELEASE_NOTES.md",
+      "bytes": 433,
+      "sha256": "33e6edcf437510df1df95bfcde1a0eff5998ea00f38dec6fd57d65a61c93c9c1"
+    },
+    {
+      "path": "release/v82_80/docs/V82.80_DRY_RUN_BROKER_VALIDATION_COMPLETION.md",
+      "bytes": 188,
+      "sha256": "a1f7c9f70447a252dac90659da4a56e72f3396d2603eb73bacc3cb4e9e610467"
+    },
+    {
+      "path": "tools/install_check_v82_61_to_v82_80.py",
+      "bytes": 650,
+      "sha256": "35827088f3235d9126e3990f1923451affb26b27cbc55f19acca83c4e4a363a2"
+    },
+    {
+      "path": "tools/run_v82_61_to_v82_80_pipeline.py",
+      "bytes": 1086,
+      "sha256": "c7c715afb2c78ed5a7f5ca45c65c785569026ad7f1ae00be6848dad65ff9b146"
+    },
+    {
+      "path": "tools/test_dry_run_broker_validation_v82_61_to_v82_80.py",
+      "bytes": 3621,
+      "sha256": "f41de8791f536247e524adc6528151680de45f182b5dfef20c51419378ba04ca"
+    },
+    {
+      "path": "tools/verify_v82_61_to_v82_80_pipeline.py",
+      "bytes": 1808,
+      "sha256": "5a4c49f5d8cb3f104a2b104211575bc88b8fb6b703d91294a09f4cd2af7945c9"
+    }
+  ]
+}

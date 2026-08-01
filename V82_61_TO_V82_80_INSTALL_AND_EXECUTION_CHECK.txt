@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V82_61_TO_V82_80.ps1
+EXPECTED: 25 tests OK, 4 dry-run scenarios, accepted and rejected receipts, duplicate detection, deterministic replay, actual orders 0, VERIFY PASS.
