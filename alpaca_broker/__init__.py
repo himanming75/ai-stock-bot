@@ -43,6 +43,14 @@ from .order_validation import (
     ActualPaperOrderValidator,
     OrderValidationPolicy,
 )
+from .order_recovery import (
+    RECOVERABLE_STATUSES,
+    TERMINAL_STATUSES,
+    AlpacaPaperOrderRecoveryManager,
+    AtomicPaperOrderRecoveryStore,
+    PaperOrderRecoveryRecord,
+    PaperOrderRecoveryReport,
+)
 
 __all__ = [
     "AlpacaPaperConfig",
@@ -80,4 +88,10 @@ __all__ = [
     "ActualPaperOrderValidationReport",
     "ActualPaperOrderValidator",
     "OrderValidationPolicy",
+    "RECOVERABLE_STATUSES",
+    "TERMINAL_STATUSES",
+    "AlpacaPaperOrderRecoveryManager",
+    "AtomicPaperOrderRecoveryStore",
+    "PaperOrderRecoveryRecord",
+    "PaperOrderRecoveryReport",
 ]
