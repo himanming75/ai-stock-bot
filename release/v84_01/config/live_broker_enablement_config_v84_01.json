@@ -1,0 +1,15 @@
+{
+  "mode": "LIVE_BROKER_ENABLEMENT_OFFLINE",
+  "environment": "LIVE",
+  "required_approvals": 3,
+  "max_order_notional": 500.0,
+  "max_position_notional": 2500.0,
+  "max_daily_loss": 250.0,
+  "kill_switch_armed": true,
+  "emergency_stop_enabled": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

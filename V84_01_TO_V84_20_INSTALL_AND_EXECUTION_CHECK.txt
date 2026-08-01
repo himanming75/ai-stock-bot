@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V84_01_TO_V84_20.ps1
+EXPECTED: 21 tests OK, 3 approvals, armed kill switch, emergency stop ready, account/position/order/loss guards, write/network/credential capabilities 0, orders 0.
