@@ -1,0 +1,3 @@
+git add RUN_V91_01_TO_V91_20.ps1 INSTALL_CHECK_V91_01_TO_V91_20.ps1 VERIFY_V91_01_TO_V91_20.ps1 GIT_COMMIT_V91_01_TO_V91_20.txt V91_01_TO_V91_20_BUNDLE_MANIFEST.json alpaca_market_data/actual_paper_automation_optin_v91_01_20.py tools/install_check_v91_01_to_v91_20.py tools/run_v91_01_to_v91_20_pipeline.py tools/test_actual_paper_automation_optin_v91_01_to_v91_20.py tools/verify_v91_01_to_v91_20_pipeline.py release/v91_20
+git commit -m "V91.01-V91.20 actual paper automation opt-in foundation completed"
+git push origin main
