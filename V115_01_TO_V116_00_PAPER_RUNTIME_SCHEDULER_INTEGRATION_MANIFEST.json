@@ -1,0 +1,91 @@
+{
+  "base_commit": "41affee",
+  "stage_range": "V115.01-V116.00",
+  "bundle_type": "PAPER_RUNTIME_SCHEDULER_INTEGRATION",
+  "scheduler_actions_integrated": [
+    "PREPARE",
+    "START_SESSION",
+    "RUN_CYCLE",
+    "RECOVER_SESSION",
+    "CLOSE_SESSION"
+  ],
+  "runtime_cycle_components": [
+    "SIGNAL",
+    "RISK",
+    "EXECUTION",
+    "FILL",
+    "PORTFOLIO",
+    "RECOVERY"
+  ],
+  "default_pipeline_actual_network": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V115_01_TO_V116_00_PAPER_RUNTIME_SCHEDULER_INTEGRATION.txt",
+      "bytes": 601,
+      "sha256": "45ab50157bde8f7ba0225bec767af9bd1a1489944f3c6ce837e76a81a1926359"
+    },
+    {
+      "path": "RUN_V115_01_TO_V116_00_PAPER_RUNTIME_SCHEDULER_INTEGRATION.ps1",
+      "bytes": 996,
+      "sha256": "afd5497e560469029c93fc42d07fb04432a5ee32bce139163f1a4d547631d757"
+    },
+    {
+      "path": "paper_runtime_scheduler/__init__.py",
+      "bytes": 487,
+      "sha256": "85fb07d7e0a70f96054d34125a36d22bd75284a38b754e9efcb9f26db8ff19d3"
+    },
+    {
+      "path": "paper_runtime_scheduler/integration.py",
+      "bytes": 7300,
+      "sha256": "f35d57f88d49296a68438877a8f17c47fdc37b8a15a58a479c168d278960049d"
+    },
+    {
+      "path": "paper_runtime_scheduler/models.py",
+      "bytes": 1191,
+      "sha256": "05e1b9d3d73c15c6f790112d37d13515bea77c23adc9da8b4c3588108fe09445"
+    },
+    {
+      "path": "release/v116_00/docs/DESIGN.md",
+      "bytes": 667,
+      "sha256": "316e9e493f2430e591eb47a01ddf6d980b43b547bb8942add67f9981348cd194"
+    },
+    {
+      "path": "release/v116_00/docs/RELEASE_NOTES.md",
+      "bytes": 295,
+      "sha256": "91d666498d708fb0ec6b2098824edf47f71279e5d784fcef7c13288cafc09133"
+    },
+    {
+      "path": "release/v116_00/docs/TEST_RESULTS.md",
+      "bytes": 352,
+      "sha256": "d86cd41a4c3b062d74523d29fd042442c284f21519a96bdaba15025caa988f3f"
+    },
+    {
+      "path": "tools/install_check_v115_01_to_v116_00.py",
+      "bytes": 624,
+      "sha256": "ccc6e5e6c85a926ad2d56540a1c1f675646ebe44e817b28c0f51b726ee5ede11"
+    },
+    {
+      "path": "tools/run_paper_runtime_scheduler_integration_v115_01_to_v116_00.py",
+      "bytes": 4860,
+      "sha256": "ad6fd08fb301e43e4bdbd925d6b5d24d1b0cbdff88a3be0740c891e571602b3d"
+    },
+    {
+      "path": "tools/test_paper_runtime_scheduler_integration_v115_01_to_v116_00.py",
+      "bytes": 6002,
+      "sha256": "4bb3029918f222b42d3b057b33e3ad1bd76850e7f91de1f61a02119cff4ac7e9"
+    },
+    {
+      "path": "tools/verify_paper_runtime_scheduler_integration_v115_01_to_v116_00.py",
+      "bytes": 2316,
+      "sha256": "0d8d9dd41510679fdcd03b34ab5b022221f82bd457e02b09b130fa85e5a6bb5f"
+    }
+  ]
+}
