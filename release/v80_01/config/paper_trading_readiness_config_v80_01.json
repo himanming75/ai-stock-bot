@@ -1,0 +1,13 @@
+{
+  "mode": "DRY_RUN_NO_NETWORK",
+  "broker_name": "ALPACA",
+  "paper_environment_required": true,
+  "historical_completion_required": true,
+  "credentials_required": false,
+  "network_probe_enabled": false,
+  "trading_client_enabled": false,
+  "order_submission_enabled": false,
+  "account_query_enabled": false,
+  "positions_query_enabled": false,
+  "actual_orders_submitted": 0
+}

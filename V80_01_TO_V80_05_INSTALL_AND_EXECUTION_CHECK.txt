@@ -1,0 +1,15 @@
+RUN:
+powershell -ExecutionPolicy Bypass -File .\RUN_V80_01_TO_V80_05.ps1
+
+EXPECTED:
+- 15 tests OK
+- readiness_level FOUNDATION_READY_NO_BROKER_CONNECTION
+- intent_receipt_count 2
+- forbidden_capability_count 0
+- network_requests_executed 0
+- credentials_used 0
+- trading_client_created false
+- actual_orders_submitted 0
+- paper_trading_authorized false
+- live_trading_authorized false
+- VERIFY PASS

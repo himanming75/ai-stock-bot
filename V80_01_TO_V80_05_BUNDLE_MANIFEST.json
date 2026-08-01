@@ -1,0 +1,92 @@
+{
+  "base_commit": "49938c9",
+  "stage_range": "V80.01-V80.05",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V80_01_TO_V80_05.txt",
+      "bytes": 618,
+      "sha256": "fc36b439147c4f675d3823853dfb2c8df709ca0381ea40851372114e91381779"
+    },
+    {
+      "path": "INSTALL_CHECK_V80_01_TO_V80_05.ps1",
+      "bytes": 47,
+      "sha256": "a89afd7b5f8a6968f06f417ddb3bc98884b7593e26c62f58eb45fd978c1e5c8e"
+    },
+    {
+      "path": "RUN_V80_01_TO_V80_05.ps1",
+      "bytes": 840,
+      "sha256": "1e5e513582ac504468f2379677f7687a3ec4ae8ad6374453fca776a4da18cdaa"
+    },
+    {
+      "path": "V80_01_TO_V80_05_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 399,
+      "sha256": "6dad336892c336e4ccf70b01747a5e0a894cccdbe9c42b8243afde08eee4a4eb"
+    },
+    {
+      "path": "VERIFY_V80_01_TO_V80_05.ps1",
+      "bytes": 69,
+      "sha256": "febb4fccf1868442a1ac1ec90272011f578a1cd53a221b24b8ea3323d40cb217"
+    },
+    {
+      "path": "alpaca_market_data/paper_trading_readiness_v80_01_05.py",
+      "bytes": 18701,
+      "sha256": "64bad0b8d21d54b94f6e9df05199777e7c66abcaebd4b52084b0c7cd800ebdb1"
+    },
+    {
+      "path": "release/v80_01/config/paper_trading_readiness_config_v80_01.json",
+      "bytes": 383,
+      "sha256": "109c0b3954f894ef47bae05c8c17e64ad5724921b46d16eed7eef00e2aa6b686"
+    },
+    {
+      "path": "release/v80_01/docs/V80.01_PAPER_MODE_POLICY.md",
+      "bytes": 126,
+      "sha256": "5223cf307a124698943dd58b50f24c0a8c67387c05bc95b2734767e697d6e67e"
+    },
+    {
+      "path": "release/v80_02/docs/V80.02_CAPABILITY_PROBE.md",
+      "bytes": 144,
+      "sha256": "1e00455397ab5858c05f0f492b6bc14328351168d5b778768d78c9663cb16a18"
+    },
+    {
+      "path": "release/v80_03/docs/V80.03_DRY_RUN_ORDER_ADAPTER.md",
+      "bytes": 126,
+      "sha256": "4751dbee789115fa15edea27ff91d933ad2243253dd83c1e463e82c39f3a7cdb"
+    },
+    {
+      "path": "release/v80_04/docs/V80.04_READINESS_LEDGER_MANIFEST.md",
+      "bytes": 144,
+      "sha256": "7931be31c8317a228bc3a025c8a2f52c3028bf47ab980bb63e773bc654de4d97"
+    },
+    {
+      "path": "release/v80_05/docs/V80.01_TO_V80.05_RELEASE_NOTES.md",
+      "bytes": 208,
+      "sha256": "fb3a486de60f4afdcf10e73ed56cad61ea51dd68b93c4e9350def6b8bdc4d9db"
+    },
+    {
+      "path": "release/v80_05/docs/V80.05_READINESS_CERTIFICATE.md",
+      "bytes": 154,
+      "sha256": "eaebfa566ad59d6cb8589904795033c26ecb17e1b00ea7b8c17d2e58c3f615e4"
+    },
+    {
+      "path": "tools/install_check_v80_01_to_v80_05.py",
+      "bytes": 775,
+      "sha256": "219fd3b4cb108aaa2b5b5426ce3fcfb490561a73d96f0d1ecd118bac39b2180e"
+    },
+    {
+      "path": "tools/run_v80_01_to_v80_05_pipeline.py",
+      "bytes": 1723,
+      "sha256": "6979b4650bb74c57b762c3740f303578341188bdb281a879601d17aaad22b82f"
+    },
+    {
+      "path": "tools/test_paper_trading_readiness_v80_01_to_v80_05.py",
+      "bytes": 6233,
+      "sha256": "c71f7be060d42c813d93e8d8b3470c6bdcd310b531594516f1532a4d6e0aa869"
+    },
+    {
+      "path": "tools/verify_v80_01_to_v80_05_pipeline.py",
+      "bytes": 2627,
+      "sha256": "a01dee618401ddf352f7a3f1c81f29a84b1979a1a324576e8476a7f85fd36c2e"
+    }
+  ]
+}
