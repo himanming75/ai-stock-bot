@@ -1,0 +1,168 @@
+{
+  "base_commit": "c318232",
+  "stage_range": "V81.21-V81.40",
+  "functional_bundle": "MULTI_ASSET_PORTFOLIO_ENGINE",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V81_21_TO_V81_40.txt",
+      "bytes": 833,
+      "sha256": "30f5e4d1868ba8ba398bccc798ba57412700dbf2a0d3cd55cb735950416244c6"
+    },
+    {
+      "path": "INSTALL_CHECK_V81_21_TO_V81_40.ps1",
+      "bytes": 47,
+      "sha256": "d3bbfb569c255929c7b49add417e41ca6b184bbc85729db0a20f0fb7cae21e9e"
+    },
+    {
+      "path": "RUN_V81_21_TO_V81_40.ps1",
+      "bytes": 812,
+      "sha256": "f8df33f7d6cc5568de29dd8c89fc0ca826db2d4fb0b8d7bfcf830f2b71bda64e"
+    },
+    {
+      "path": "V81_21_TO_V81_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 198,
+      "sha256": "f72d221af9a12be491922bf4e03e87d4d43f35660e79f17c842b939f99b2e1da"
+    },
+    {
+      "path": "VERIFY_V81_21_TO_V81_40.ps1",
+      "bytes": 69,
+      "sha256": "d1bb076262a0f4fce9b32b5e90cd71480961e7d72d353803bf9f174104792b5c"
+    },
+    {
+      "path": "alpaca_market_data/multi_asset_portfolio_v81_21_40.py",
+      "bytes": 17139,
+      "sha256": "4204bff48310a302ea55f93c2919aac0e3bed915c15f72cc91726979b4110c28"
+    },
+    {
+      "path": "release/v81_21/config/multi_asset_config_v81_21.json",
+      "bytes": 545,
+      "sha256": "d881fb52d5c109ac1b65af5f98c3b0d5714dc926f741658eebcb82dc753f3fa3"
+    },
+    {
+      "path": "release/v81_21/docs/V81.21_ASSET_UNIVERSE.md",
+      "bytes": 143,
+      "sha256": "b5b47eb57477e938309b679a92fa8e8ea0f6414f7e21772f081af049d3d2edba"
+    },
+    {
+      "path": "release/v81_22/docs/V81.22_PRICE_SNAPSHOT.md",
+      "bytes": 143,
+      "sha256": "66e287144e3867efe701b1ed793fed4516f5327fc88a400602ca646bc21f4e85"
+    },
+    {
+      "path": "release/v81_23/docs/V81.23_SECTOR_CLASSIFICATION.md",
+      "bytes": 150,
+      "sha256": "985018263c8d83a738572cf5d2166870d7bbedfcd8b46338be5a849daac833e2"
+    },
+    {
+      "path": "release/v81_24/docs/V81.24_CORRELATION_MATRIX.md",
+      "bytes": 147,
+      "sha256": "d4f1f565dce07e7c5916f87bd64bacf41fbd34d0fbd0c346483b15c47ccdffba"
+    },
+    {
+      "path": "release/v81_25/docs/V81.25_ASSET_SCORE_MODEL.md",
+      "bytes": 146,
+      "sha256": "46048173a3387de004d5ef820e7392c52799124b295694f082a55b9d12072bc9"
+    },
+    {
+      "path": "release/v81_26/docs/V81.26_WEIGHT_NORMALIZATION.md",
+      "bytes": 149,
+      "sha256": "dd9b8692ba8d3050943ba964b01fbf6d9af3c77f9ed293c7b230f1b90de0b3c5"
+    },
+    {
+      "path": "release/v81_27/docs/V81.27_TARGET_WEIGHTS.md",
+      "bytes": 143,
+      "sha256": "0acf957ef5d96db71e94035f83f60f929947793ba2c62e0141a3d8a396112537"
+    },
+    {
+      "path": "release/v81_28/docs/V81.28_PORTFOLIO_CONSTRAINTS.md",
+      "bytes": 150,
+      "sha256": "7154877610866fbb30c541b5e5303325d278829234623360735f73a5667d56a1"
+    },
+    {
+      "path": "release/v81_29/docs/V81.29_PORTFOLIO_METRICS.md",
+      "bytes": 146,
+      "sha256": "b62b2a7c1cb6d386cad3ed48fc707000718ea5831ea0255f53ea97b9454b8ac7"
+    },
+    {
+      "path": "release/v81_30/docs/V81.30_POSITION_TARGETS.md",
+      "bytes": 145,
+      "sha256": "d897b3223925f0e756a39c573fe1f69723f6b91e2b0ef3d0897b007b727353f1"
+    },
+    {
+      "path": "release/v81_31/docs/V81.31_REBALANCE_PLAN.md",
+      "bytes": 143,
+      "sha256": "40cff4fdd074a102de7af4c26245552331ade536b15561adc649aba0c2206b60"
+    },
+    {
+      "path": "release/v81_32/docs/V81.32_EXPOSURE_ENGINE.md",
+      "bytes": 144,
+      "sha256": "3bb795087a50ab861c580e0e1875e6937d6d67e3e39c01c56c76dc4ee6dda67a"
+    },
+    {
+      "path": "release/v81_33/docs/V81.33_RISK_BUDGET.md",
+      "bytes": 140,
+      "sha256": "413973de3a156aa58dbfc09282fb64229f3d90a18191bd84af2ed7229ae02098"
+    },
+    {
+      "path": "release/v81_34/docs/V81.34_PORTFOLIO_AUDIT.md",
+      "bytes": 144,
+      "sha256": "299fb03c80652f09d1cd2593ea4702da55a0790831da90994fd2d5303f1df793"
+    },
+    {
+      "path": "release/v81_35/docs/V81.35_MASTER_LEDGER.md",
+      "bytes": 142,
+      "sha256": "9463d213ae426afdbd2cc9de0aa99706bd82289d3686fa7a435394bf92c1e658"
+    },
+    {
+      "path": "release/v81_36/docs/V81.36_MULTI_ASSET_MANIFEST.md",
+      "bytes": 149,
+      "sha256": "255723ac5fa3de80e31397655013c4d50663d1017234dde1cf796c2b1143b018"
+    },
+    {
+      "path": "release/v81_37/docs/V81.37_PIPELINE.md",
+      "bytes": 137,
+      "sha256": "c0f638b5070adf7d860ed11d7fde3f50b846e6d95fab7e771144ad30d9e35124"
+    },
+    {
+      "path": "release/v81_38/docs/V81.38_INTEGRITY_VERIFICATION.md",
+      "bytes": 151,
+      "sha256": "361f8cd8e37b71c9d99b6f0499ec19347f1441d329ee55efd7acdbabff8e0bc9"
+    },
+    {
+      "path": "release/v81_39/docs/V81.39_MULTI_ASSET_CERTIFICATION.md",
+      "bytes": 154,
+      "sha256": "c8ad612393230884c7691e6550078ed927d93b1335160f82fa6a84cb504421e7"
+    },
+    {
+      "path": "release/v81_40/docs/V81.21_TO_V81.40_RELEASE_NOTES.md",
+      "bytes": 422,
+      "sha256": "b9e8dd8f4bfa28c563395c6b6e9ce897e4210a8f5ba2b23b293f3acf566c1154"
+    },
+    {
+      "path": "release/v81_40/docs/V81.40_MULTI_ASSET_COMPLETION.md",
+      "bytes": 151,
+      "sha256": "e6cd391be84c8180121d784654da36101dffd57429356fd878c1dc2bcf6bf1f4"
+    },
+    {
+      "path": "tools/install_check_v81_21_to_v81_40.py",
+      "bytes": 642,
+      "sha256": "13afb0986d832e089775306f812ed787f1ee2fdfabeb03d6bd4b7de2f7d866fb"
+    },
+    {
+      "path": "tools/run_v81_21_to_v81_40_pipeline.py",
+      "bytes": 1085,
+      "sha256": "a3d76c683f96ddc91de4800c02d2503f1c14f01e9ab4a99f6e7e28affbf09336"
+    },
+    {
+      "path": "tools/test_multi_asset_portfolio_v81_21_to_v81_40.py",
+      "bytes": 4287,
+      "sha256": "82deac6261be3bc6df47a597232e289b1aa2f6226acdea08b254c9fbf141fd1c"
+    },
+    {
+      "path": "tools/verify_v81_21_to_v81_40_pipeline.py",
+      "bytes": 1815,
+      "sha256": "887daff7829bc2872a813d73ce75e52045343762c91da224b3960d267c73ac38"
+    }
+  ]
+}

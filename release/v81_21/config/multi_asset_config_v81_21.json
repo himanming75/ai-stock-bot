@@ -1,0 +1,19 @@
+{
+  "mode": "MULTI_ASSET_ALLOCATION_ONLY",
+  "capital": 100000.0,
+  "target_invested_weight": 0.9,
+  "cash_reserve_weight": 0.1,
+  "maximum_asset_weight": 0.25,
+  "minimum_asset_weight": 0.05,
+  "maximum_sector_weight": 0.45,
+  "maximum_pair_correlation": 0.9,
+  "rebalance_threshold": 0.02,
+  "maximum_turnover": 0.35,
+  "allow_fractional_shares": false,
+  "allow_short_selling": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

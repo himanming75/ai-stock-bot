@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V81_21_TO_V81_40.ps1
+EXPECTED: 26 tests OK, 6 assets, weight sum 0.9, exposure 0.9, turnover <= 0.35, risk budget sum 1.0, orders 0, VERIFY PASS.
