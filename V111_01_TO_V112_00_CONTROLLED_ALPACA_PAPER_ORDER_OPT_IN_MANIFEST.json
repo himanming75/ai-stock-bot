@@ -1,0 +1,98 @@
+{
+  "base_commit": "29767edde599983295d04b8a852645c0052201c7",
+  "stage_range": "V111.01-V112.00",
+  "bundle_type": "CONTROLLED_ALPACA_PAPER_SINGLE_ORDER_OPT_IN",
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "live_base_url_forbidden": true,
+  "standard_pipeline_actual_network": false,
+  "standard_pipeline_actual_orders": 0,
+  "actual_runner_available": true,
+  "actual_runner_max_orders": 1,
+  "actual_runner_max_quantity": "1",
+  "actual_runner_max_notional": "100",
+  "actual_runner_allowlist": [
+    "AAPL",
+    "SPY",
+    "QQQ"
+  ],
+  "actual_runner_order_type": "market",
+  "actual_runner_time_in_force": "day",
+  "post_retry_count": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "fixture_demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V111_01_TO_V112_00_CONTROLLED_ALPACA_PAPER_ORDER_OPT_IN.txt",
+      "bytes": 770,
+      "sha256": "5b01d656111f7fc6ca8fecf84425a8292c7b11b2112d2d4459592d6efc1dd228"
+    },
+    {
+      "path": "RUN_V111_01_TO_V112_00_ACTUAL_ALPACA_PAPER_SINGLE_ORDER.ps1",
+      "bytes": 1725,
+      "sha256": "d6fc059d867a923fe55eb6759bfbc6a5f0f5e179e0b47bcbc731b11bd4bd5c34"
+    },
+    {
+      "path": "RUN_V111_01_TO_V112_00_CONTROLLED_ALPACA_PAPER_ORDER_OPT_IN.ps1",
+      "bytes": 993,
+      "sha256": "0b62596772aedc1047faa288fcb2646e78e9ed7ea95c3a1dd4bf85e690164a1d"
+    },
+    {
+      "path": "alpaca_broker/__init__.py",
+      "bytes": 1804,
+      "sha256": "bda405c4120cb2a27a1ebb8dde5bc6b29021bca92a4e9661dcfceb7a63fca6cd"
+    },
+    {
+      "path": "alpaca_broker/order_optin.py",
+      "bytes": 7758,
+      "sha256": "122857cc1e115afe7082d5c7db2742089c92393d1e24418a7e97fec2d04d94ad"
+    },
+    {
+      "path": "release/v112_00/docs/ACTUAL_ORDER_INSTRUCTIONS.md",
+      "bytes": 814,
+      "sha256": "027d4b22f2b7190932b03be24ef9a2ea4f0191b55e14fb05316ca3df7669a4ff"
+    },
+    {
+      "path": "release/v112_00/docs/DESIGN.md",
+      "bytes": 625,
+      "sha256": "b43fd3bb5493f66bf487fdb384cddd02d3b5a33eca0b4c3a7958f598641ace1b"
+    },
+    {
+      "path": "release/v112_00/docs/RELEASE_NOTES.md",
+      "bytes": 355,
+      "sha256": "a2d37886f71bb1027899ee62ecfa8a3cf9d6ae793151bc5d307d3f741be5840e"
+    },
+    {
+      "path": "release/v112_00/docs/TEST_RESULTS.md",
+      "bytes": 330,
+      "sha256": "43524d3bbec663d33bb387f3fc773bc73c1cc9b79fe9e80e3d82d09bb23219ad"
+    },
+    {
+      "path": "tools/install_check_v111_01_to_v112_00.py",
+      "bytes": 698,
+      "sha256": "e9fad6ba0eb6775ada27794daa5d2f05e57577353bf8063f7870c26cf472436b"
+    },
+    {
+      "path": "tools/run_actual_alpaca_paper_single_order_v111_01_to_v112_00.py",
+      "bytes": 2169,
+      "sha256": "38e51b6e26ff216ff9d505f8667ccfa0f6a6a6c419b9b8c6514575a648937bad"
+    },
+    {
+      "path": "tools/run_controlled_alpaca_paper_order_fixture_v111_01_to_v112_00.py",
+      "bytes": 2317,
+      "sha256": "fcfabafbf0c0ccbcf34606424b1d48de108e66bec8e569ea576e023378eb4993"
+    },
+    {
+      "path": "tools/test_controlled_alpaca_paper_order_optin_v111_01_to_v112_00.py",
+      "bytes": 6261,
+      "sha256": "c34b352c156f64e7ce8db12f4a08485b239a2a2258d43a191ee1a6551ac90d8e"
+    },
+    {
+      "path": "tools/verify_controlled_alpaca_paper_order_optin_v111_01_to_v112_00.py",
+      "bytes": 2088,
+      "sha256": "52e502cc1b20f6016ebed5e3fe613376ad34bd3cad37800892320f3a8da55f37"
+    }
+  ]
+}
