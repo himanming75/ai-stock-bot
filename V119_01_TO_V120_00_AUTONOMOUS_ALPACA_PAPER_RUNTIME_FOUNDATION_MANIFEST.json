@@ -1,0 +1,95 @@
+{
+  "base_commit": "996d6bb",
+  "stage_range": "V119.01-V120.00",
+  "bundle_type": "AUTONOMOUS_ALPACA_PAPER_RUNTIME_FOUNDATION",
+  "approved_symbols": [
+    "AAPL",
+    "SPY",
+    "QQQ"
+  ],
+  "max_quantity": 1,
+  "max_order_notional": 100.0,
+  "default_read_network_enabled": false,
+  "default_single_order_write_enabled": false,
+  "live_trading_enabled": false,
+  "default_pipeline_actual_network": false,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V119_01_TO_V120_00_AUTONOMOUS_ALPACA_PAPER_RUNTIME_FOUNDATION.txt",
+      "bytes": 618,
+      "sha256": "3bf7c18b4913dadd1ccf44b8a72982b1eb1cec16fa02d6976f84bfe21c440ef6"
+    },
+    {
+      "path": "RUN_V119_01_TO_V120_00_AUTONOMOUS_ALPACA_PAPER_RUNTIME_FOUNDATION.ps1",
+      "bytes": 989,
+      "sha256": "b29b6aba48ac0a78c0ffd1ae35af8bb1f792446721a32c20f2f02d1b47768b2a"
+    },
+    {
+      "path": "autonomous_paper_runtime/__init__.py",
+      "bytes": 492,
+      "sha256": "515253bf51a0c24e28e70cda0294696d24bab62bc192560e895c19274c04ca7c"
+    },
+    {
+      "path": "autonomous_paper_runtime/config.py",
+      "bytes": 1195,
+      "sha256": "9484458939e2b47cc0d0163a5d34dfa1573ae4088c8b9061d7a905609df19b24"
+    },
+    {
+      "path": "autonomous_paper_runtime/models.py",
+      "bytes": 1187,
+      "sha256": "adecbb2653ddfcde72a9d7a11ce98242b22ec8c406e5423d7950c4e79429fd79"
+    },
+    {
+      "path": "autonomous_paper_runtime/policy.py",
+      "bytes": 1171,
+      "sha256": "e143503d0bb8d6d8893375ed405a5fd7bd48b967b0a447280f8a9efa16339730"
+    },
+    {
+      "path": "autonomous_paper_runtime/runtime.py",
+      "bytes": 4748,
+      "sha256": "6110a808fdd70e0e544ac9cb65283e78b84f3c2321322deccd4e832231bf2ddf"
+    },
+    {
+      "path": "release/v120_00/docs/DESIGN.md",
+      "bytes": 611,
+      "sha256": "c68bdebc2487dcb64c57130aceb6448455a89d9417ae45d667d72a455ac2065e"
+    },
+    {
+      "path": "release/v120_00/docs/RELEASE_NOTES.md",
+      "bytes": 443,
+      "sha256": "cbbb7a5f2a27e9d7646f26baaf8b71a2612dcf61f25678e48bfb0ee914da5d8e"
+    },
+    {
+      "path": "release/v120_00/docs/TEST_RESULTS.md",
+      "bytes": 352,
+      "sha256": "a2f6053b5e24c90a9515c5defc64ccd094c91363c7385fa2b61243e8d9ee0583"
+    },
+    {
+      "path": "tools/install_check_v119_01_to_v120_00.py",
+      "bytes": 628,
+      "sha256": "936bb9e0e885d8d66216aac14e18accf63853136d95d6844b8c2edff6c61a8c1"
+    },
+    {
+      "path": "tools/run_autonomous_alpaca_paper_runtime_v119_01_to_v120_00.py",
+      "bytes": 2425,
+      "sha256": "523a4e556fead6d137e50332ab38c922cb28a5e3305c2eba070c80ed3f3d8970"
+    },
+    {
+      "path": "tools/test_autonomous_alpaca_paper_runtime_v119_01_to_v120_00.py",
+      "bytes": 5636,
+      "sha256": "409593d0a49181b1a6a2ee3600266c8b108478a98769b2c97c044f97b898f683"
+    },
+    {
+      "path": "tools/verify_autonomous_alpaca_paper_runtime_v119_01_to_v120_00.py",
+      "bytes": 1875,
+      "sha256": "8c8eab361d94651ea1aab9332960da35a251a2e5a8ec3e85be95a51e4fb5d248"
+    }
+  ]
+}
