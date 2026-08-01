@@ -1,0 +1,1 @@
+python tools/install_check_v82_01_to_v82_20.py

@@ -1,0 +1,168 @@
+{
+  "base_commit": "7ef38cc",
+  "stage_range": "V82.01-V82.20",
+  "functional_bundle": "LIVE_SAFETY_AND_AUTHORIZATION_FOUNDATION",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V82_01_TO_V82_20.txt",
+      "bytes": 847,
+      "sha256": "222d6953a724ae91ab024297256840e46dfabe577b53d41acedefddf1f05edf6"
+    },
+    {
+      "path": "INSTALL_CHECK_V82_01_TO_V82_20.ps1",
+      "bytes": 47,
+      "sha256": "b97a22f96617664ffd9deedb2831a36aa45e46aefb1e95e777415a8050757872"
+    },
+    {
+      "path": "RUN_V82_01_TO_V82_20.ps1",
+      "bytes": 813,
+      "sha256": "1c74838b53877f632faba794127cf70b41445af0da216743f682fa051bdca718"
+    },
+    {
+      "path": "V82_01_TO_V82_20_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 191,
+      "sha256": "36d2b63908933fb593873084122fa23e2cc7a05719bc931c2b0421b4d5614e4b"
+    },
+    {
+      "path": "VERIFY_V82_01_TO_V82_20.ps1",
+      "bytes": 69,
+      "sha256": "6cf4c3770a92af6b6618da0bac2ea8e5c641dcb88472a4ef87de0a24442fb300"
+    },
+    {
+      "path": "alpaca_market_data/live_safety_foundation_v82_01_20.py",
+      "bytes": 15202,
+      "sha256": "c4d0b30b21175372f176e81026df65abb164fb924938720a5389fc97a0c095a9"
+    },
+    {
+      "path": "release/v82_01/config/live_safety_config_v82_01.json",
+      "bytes": 388,
+      "sha256": "1ba2186b471ef8a5ecbe022626eb9cf42d8467cf9ee1da35bf783775ad0b6e33"
+    },
+    {
+      "path": "release/v82_01/docs/V82.01_ENVIRONMENT_GUARD.md",
+      "bytes": 154,
+      "sha256": "9687e8bead6fd44a66ae4c4064948117dc79e470ac43e851ab1888fbc0cd114a"
+    },
+    {
+      "path": "release/v82_02/docs/V82.02_LIVE_MODE_LOCK.md",
+      "bytes": 151,
+      "sha256": "e69f29dc80c0cd062c3f3272b9c090018ddc7c5d036f28a506e34e2b94392c6f"
+    },
+    {
+      "path": "release/v82_03/docs/V82.03_APPROVAL_REQUEST.md",
+      "bytes": 153,
+      "sha256": "43af89210807421f7dd14da173ccd256fdcccb7ab67aba2c84dee663c4b5798b"
+    },
+    {
+      "path": "release/v82_04/docs/V82.04_MULTI_APPROVER_FLOW.md",
+      "bytes": 156,
+      "sha256": "a5ce64ce37c9c0569106ebbfedd148758ce2f3ad3f17a46f6be33d4839bc3e29"
+    },
+    {
+      "path": "release/v82_05/docs/V82.05_APPROVAL_EVALUATION.md",
+      "bytes": 156,
+      "sha256": "de2638e988d4fa0c786d19cf7597eaff6d19c014fc675e1beacf48a8e1456fdf"
+    },
+    {
+      "path": "release/v82_06/docs/V82.06_DRY_RUN_TOKEN.md",
+      "bytes": 150,
+      "sha256": "d5ad1b3db48e8de76d89d2f504afe1f9432e619dd608e505afd9f5889df20139"
+    },
+    {
+      "path": "release/v82_07/docs/V82.07_KILL_SWITCH.md",
+      "bytes": 148,
+      "sha256": "9aa0ec367fe9a0984f3ee6e0b505d12324d7c9a730212044592d94f68438ee49"
+    },
+    {
+      "path": "release/v82_08/docs/V82.08_EMERGENCY_STOP.md",
+      "bytes": 151,
+      "sha256": "244874b76c08e4df5bd40d3b65d3b3a62e84c8b2e6758fe7685027ba0b520a7a"
+    },
+    {
+      "path": "release/v82_09/docs/V82.09_DAILY_LOSS_GUARD.md",
+      "bytes": 153,
+      "sha256": "2b14c007c616c317c5888464cabcaca8a74fcefb10580a394e194cbaec263609"
+    },
+    {
+      "path": "release/v82_10/docs/V82.10_DRAWDOWN_GUARD.md",
+      "bytes": 151,
+      "sha256": "7264e8c59bc6c6c17d0255bbc2f34a0b6b6c268035624f599f4fa51be786d0fa"
+    },
+    {
+      "path": "release/v82_11/docs/V82.11_ORDER_NOTIONAL_GUARD.md",
+      "bytes": 157,
+      "sha256": "1a4fec4792e833829c02a2f85a40b62fffce72679e7ca15f932a8249e442b200"
+    },
+    {
+      "path": "release/v82_12/docs/V82.12_POSITION_NOTIONAL_GUARD.md",
+      "bytes": 160,
+      "sha256": "5eb584552fc6f2f7162e535ebb7f33ae8a93da567c43d45cc560f378a246bfda"
+    },
+    {
+      "path": "release/v82_13/docs/V82.13_DRY_RUN_GATE.md",
+      "bytes": 149,
+      "sha256": "3460cdd71731a8317bcf7d64df7b883a0b80724bd14bb9c4519343b1f9503789"
+    },
+    {
+      "path": "release/v82_14/docs/V82.14_AUTHORIZATION_STATE_MACHINE.md",
+      "bytes": 164,
+      "sha256": "9541a56d1f64dacc2ee7316af2c7bbf104c36df90788a921452a32ccd93c79a6"
+    },
+    {
+      "path": "release/v82_15/docs/V82.15_LIVE_SAFETY_AUDIT.md",
+      "bytes": 154,
+      "sha256": "c34e8a150ad5bbc17f2b18ae322937a0d0c61fdd0e8fa5af39e1d770d5f0b76b"
+    },
+    {
+      "path": "release/v82_16/docs/V82.16_MASTER_LEDGER.md",
+      "bytes": 150,
+      "sha256": "41a2a5eb5e71506f2d8496c0ea150e09e3a8cce35429d3b269cb31dd08ed8fd1"
+    },
+    {
+      "path": "release/v82_17/docs/V82.17_LIVE_SAFETY_MANIFEST.md",
+      "bytes": 157,
+      "sha256": "c54384c78feff591a52791876a64bb7ae63dd6a8546094f598d7fa156475e7f7"
+    },
+    {
+      "path": "release/v82_18/docs/V82.18_LIVE_SAFETY_PIPELINE.md",
+      "bytes": 157,
+      "sha256": "9745c03faf1b490fdfce1baa9cd4ae19f97ef5eca773fd880fc3b8f5b917528c"
+    },
+    {
+      "path": "release/v82_19/docs/V82.19_INTEGRITY_VERIFICATION.md",
+      "bytes": 159,
+      "sha256": "7a08e080fb7f0a1a63c719c6c1c72e4d89b01869f0d0f6961b1288528fda60b1"
+    },
+    {
+      "path": "release/v82_20/docs/V82.01_TO_V82.20_RELEASE_NOTES.md",
+      "bytes": 453,
+      "sha256": "b6da3b3fac7052bc66729108df20dd489380f0847420f0db692e94daac3c7f0a"
+    },
+    {
+      "path": "release/v82_20/docs/V82.20_LIVE_SAFETY_FOUNDATION_COMPLETION.md",
+      "bytes": 170,
+      "sha256": "deb48f76d9a34219d7516086fb89f578efb0a0314f30feed147177a1d7126e5b"
+    },
+    {
+      "path": "tools/install_check_v82_01_to_v82_20.py",
+      "bytes": 636,
+      "sha256": "6a82fbc4468f71a9c085b6115fdbf8d0d606c135d0316e543814787e6e3600fe"
+    },
+    {
+      "path": "tools/run_v82_01_to_v82_20_pipeline.py",
+      "bytes": 1079,
+      "sha256": "b010dc97c5cbb8eda404aeca193c65e141310549b2e8505eea7dd54f9a0be455"
+    },
+    {
+      "path": "tools/test_live_safety_foundation_v82_01_to_v82_20.py",
+      "bytes": 3534,
+      "sha256": "fd2456ff2a05ca87a2461b033e3f5d3b557352c64d0df59606373d0a1d8ca78a"
+    },
+    {
+      "path": "tools/verify_v82_01_to_v82_20_pipeline.py",
+      "bytes": 1771,
+      "sha256": "694c5abe8d992d21bb925fe99a02abf2032404558cab0c465b88b9d021b6f4bb"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mode": "LIVE_LOCKED",
+  "required_approvals": 2,
+  "authorization_ttl_seconds": 300,
+  "maximum_daily_loss_pct": 0.02,
+  "maximum_drawdown_pct": 0.05,
+  "maximum_order_notional": 1000.0,
+  "maximum_position_notional": 5000.0,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

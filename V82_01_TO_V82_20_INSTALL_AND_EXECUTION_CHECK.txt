@@ -1,0 +1,2 @@
+RUN: powershell -ExecutionPolicy Bypass -File .\RUN_V82_01_TO_V82_20.ps1
+EXPECTED: 25 tests OK, 2 approvals, DRY_RUN_ONLY token, kill switch ARMED, live locked, actual orders 0, VERIFY PASS.
