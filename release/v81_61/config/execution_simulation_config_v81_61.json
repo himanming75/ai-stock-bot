@@ -1,0 +1,14 @@
+{
+  "mode": "SIMULATION_ONLY",
+  "starting_cash": 100000.0,
+  "base_slippage_bps": 5.0,
+  "commission_per_share": 0.005,
+  "minimum_commission": 1.0,
+  "base_latency_ms": 25,
+  "partial_fill_ratio": 0.4,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}
