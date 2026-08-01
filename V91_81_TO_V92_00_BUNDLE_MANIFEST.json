@@ -1,0 +1,71 @@
+{
+  "base_commit": "2745764",
+  "stage_range": "V91.81-V92.00",
+  "functional_bundle": "ACTUAL_PAPER_ORDER_SUBMISSION_OPT_IN_FOUNDATION",
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V91_81_TO_V92_00.txt",
+      "bytes": 550,
+      "sha256": "cedcec6329b054e8aa385c0779c6c532e9a59b1bb8cdeb1689b39df9f59af63e"
+    },
+    {
+      "path": "INSTALL_CHECK_V91_81_TO_V92_00.ps1",
+      "bytes": 47,
+      "sha256": "f389de2d7e6f2e423811ce616508430c84401ac52eeadfb2e367779034ddcb82"
+    },
+    {
+      "path": "RUN_V91_81_TO_V92_00.ps1",
+      "bytes": 826,
+      "sha256": "9e179015316f5311a728e6661e018f7b409152309f2748985dbfccbfebaf8d17"
+    },
+    {
+      "path": "VERIFY_V91_81_TO_V92_00.ps1",
+      "bytes": 69,
+      "sha256": "c1160ffd86c2ae2a0d7098f7fccdc0a49c5a8dc5140416b0036ea341921c9755"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_order_submission_optin_v91_81_v92_00.py",
+      "bytes": 19705,
+      "sha256": "7f894d5e3ed3c490563e104b1d20c912b0e008a786675be50b6fab1159b4eb7f"
+    },
+    {
+      "path": "release/v92_00/docs/DESIGN.md",
+      "bytes": 384,
+      "sha256": "feccf4a98ed07e2b605f4c04472efebbf28962c49b8c55285763d0a7fca43139"
+    },
+    {
+      "path": "release/v92_00/docs/RELEASE_NOTES.md",
+      "bytes": 153,
+      "sha256": "6cbc425dc71fdc95a3944a0c761aab56379461e97eb00f2817db55a5d9344cd6"
+    },
+    {
+      "path": "release/v92_00/docs/TEST_RESULTS.md",
+      "bytes": 231,
+      "sha256": "03bb36e4331b59d380d2141df243e8d4672450bd8cb7007cd7e35902b4a1fa88"
+    },
+    {
+      "path": "tools/install_check_v91_81_to_v92_00.py",
+      "bytes": 474,
+      "sha256": "09962dbf90953c6519e4f44faa19d6705ba54be2ecae7a34c60bc75bd8c7245c"
+    },
+    {
+      "path": "tools/run_v91_81_to_v92_00_pipeline.py",
+      "bytes": 1562,
+      "sha256": "8898ee093331da3c429f67497728ee9c3067e01e81d86c3d9fd727d571cdb912"
+    },
+    {
+      "path": "tools/test_actual_paper_order_submission_optin_v91_81_to_v92_00.py",
+      "bytes": 3677,
+      "sha256": "5ef9213654d51633b3c1b11b3f384431692591a9a84c6189fac9cc4321cf6575"
+    },
+    {
+      "path": "tools/verify_v91_81_to_v92_00_pipeline.py",
+      "bytes": 1836,
+      "sha256": "6ef8b9e50a148f99235da9df7fb4a9ffde8022eba7038aa8e62a79bd562374d0"
+    }
+  ]
+}
