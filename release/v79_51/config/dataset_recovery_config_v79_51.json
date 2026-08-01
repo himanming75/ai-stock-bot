@@ -1,0 +1,13 @@
+{
+  "stage": "V79.51",
+  "dataset_name": "alpaca_historical_bars",
+  "prefer_active_version": true,
+  "require_verified_retention_certificate": true,
+  "preserve_source_version": true,
+  "overwrite_existing_recovery": false,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "actual_orders_submitted": 0
+}

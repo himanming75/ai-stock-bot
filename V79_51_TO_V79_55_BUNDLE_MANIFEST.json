@@ -1,0 +1,97 @@
+{
+  "base_commit": "a975132",
+  "file_count": 19,
+  "files": [
+    {
+      "bytes": 666,
+      "path": "GIT_COMMIT_V79_51_TO_V79_55.txt",
+      "sha256": "c6fcaac984c0ebbc16ed21556738d17f169d0d23957176a0112c835ab0b34bff"
+    },
+    {
+      "bytes": 198,
+      "path": "INSTALL_CHECK_V79_51_TO_V79_55.ps1",
+      "sha256": "63d21054487ba63f3a6711e23d97b9b2bbfcc9ff13279bcbe64cd56d2a3cf2ee"
+    },
+    {
+      "bytes": 864,
+      "path": "RUN_V79_51_TO_V79_55.ps1",
+      "sha256": "433f0c047ada4fe43e584ec1b9b7a9702c5cd60722500f6a924f837f267ad45c"
+    },
+    {
+      "bytes": 460,
+      "path": "V79_51_TO_V79_55_INSTALL_AND_EXECUTION_CHECK.txt",
+      "sha256": "7e4382d70c1b6683891d4c30413ce3108c26d09f2d3f3b317c34aa6295ab9d58"
+    },
+    {
+      "bytes": 213,
+      "path": "VERIFY_V79_51_TO_V79_55.ps1",
+      "sha256": "53cb4e6c1d8b0af2d14b75203bdaf6358c7ba923fa2b4ac7c63e89da78874867"
+    },
+    {
+      "bytes": 6672,
+      "path": "alpaca_market_data/__init__.py",
+      "sha256": "44b3d6964cb241d30679736cdbe11272d942a3cd4c9a4d10189801bc813ed9a7"
+    },
+    {
+      "bytes": 12179,
+      "path": "alpaca_market_data/dataset_recovery_v79_51_55.py",
+      "sha256": "a857dcd10abab0fe44c7e6f8b575c3699edd42d55bd424b9f63f165a26b036ee"
+    },
+    {
+      "bytes": 382,
+      "path": "release/v79_51/config/dataset_recovery_config_v79_51.json",
+      "sha256": "001512d483ba3a299fe84bdcff62030515af7bf72cfee8fad5c64af7c224c6f6"
+    },
+    {
+      "bytes": 104,
+      "path": "release/v79_51/docs/V79.51_RECOVERY_POINT_DISCOVERY.md",
+      "sha256": "5ee1e3cc34a62d90869925c0f11c98e27aaa1768d328239dde4708cec7eb66ce"
+    },
+    {
+      "bytes": 107,
+      "path": "release/v79_52/docs/V79.52_RECOVERY_SOURCE_VALIDATION.md",
+      "sha256": "2cfce6abecf7f0cc1f7c546a6b164df3c4fba502c510ef7942a6bbc3c70d93a6"
+    },
+    {
+      "bytes": 103,
+      "path": "release/v79_53/docs/V79.53_RECOVERY_EXECUTION.md",
+      "sha256": "5d341579800aadc52958e5700096a8893435301d39a9ef8ecd0d3bbc1bcb912b"
+    },
+    {
+      "bytes": 95,
+      "path": "release/v79_54/docs/V79.54_RECOVERY_MANIFEST_LEDGER.md",
+      "sha256": "fcf11bb9740234cd99bb5cd589de8a32c184c1e4cff9ce89cd12898e164202c6"
+    },
+    {
+      "bytes": 236,
+      "path": "release/v79_55/docs/V79.51_TO_V79.55_RELEASE_NOTES.md",
+      "sha256": "c03582ac8b8df0efd552e5da26af7a020fecdf593365fc0c6ec7a9ab86872c8b"
+    },
+    {
+      "bytes": 98,
+      "path": "release/v79_55/docs/V79.55_RECOVERY_CERTIFICATE.md",
+      "sha256": "f457e4d32903ffcbcbdde57e1b6a6d534ec33b19198ef6a7d2d2964fe4c8c86b"
+    },
+    {
+      "bytes": 629,
+      "path": "tools/install_check_v79_51_to_v79_55.py",
+      "sha256": "4a2712a4ab3c35457551b605cad7aff211789ad32a1af3329bf8dda75eaab3be"
+    },
+    {
+      "bytes": 1227,
+      "path": "tools/run_v79_51_to_v79_55_pipeline.py",
+      "sha256": "f4f98d231eb93e3e7bbea345259493e969dbd39275c978013f14dfe453a8e6c9"
+    },
+    {
+      "bytes": 4728,
+      "path": "tools/test_dataset_recovery_v79_51_to_v79_55.py",
+      "sha256": "8eb09d8440a158d07cea6306e8f72152bf83f8baeb4adecce8e8fb3dca073f02"
+    },
+    {
+      "bytes": 1865,
+      "path": "tools/verify_v79_51_to_v79_55_pipeline.py",
+      "sha256": "6bb6d47cb0ab34c2d9160113415f9f330367d6dc616a29c8c2ad2972f8c986ca"
+    }
+  ],
+  "stage_range": "V79.51-V79.55"
+}

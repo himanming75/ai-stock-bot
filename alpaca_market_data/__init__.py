@@ -1,4 +1,4 @@
-"""Safe Alpaca market-data modules through V79.50."""
+"""Safe Alpaca market-data modules through V79.55."""
 from .foundation_v79_01_05 import (
     AlpacaInstallStatus, MarketDataSafetyConfig, BarRequest, MarketBar,
     OfflineAlpacaMarketDataAdapter, inspect_alpaca_installation,
@@ -46,20 +46,26 @@ from .quality_reconciliation_v79_36_40 import (
     write_quality_outputs, verify_quality_manifest,
     run_quality_reconciliation, build_quality_certificate,
 )
-
 from .dataset_versioning_v79_41_45 import (
     DatasetVersionConfig, DatasetFingerprint, validate_quality_certificate,
     fingerprint_dataset, build_version_metadata, create_immutable_version,
     update_version_registry, build_version_manifest, verify_version_manifest,
     run_dataset_versioning, build_version_certificate, sha256_version_json,
 )
-
 from .dataset_retention_v79_46_50 import (
     RetentionConfig, RetentionAction, validate_version_certificate,
     load_version_registry, inventory_versions, build_retention_plan,
     execute_retention_plan, write_retention_outputs,
     verify_retention_manifest, run_dataset_retention,
     build_retention_certificate, sha256_retention_json,
+)
+from .dataset_recovery_v79_51_55 import (
+    RecoveryConfig, RecoveryPoint, validate_retention_certificate,
+    load_registry, discover_recovery_points, select_recovery_point,
+    validate_recovery_source, execute_recovery, write_recovery_outputs,
+    verify_recovery_manifest, run_dataset_recovery, build_recovery_certificate,
+    sha256_recovery_json, load_recovery_registry,
+    validate_recovery_retention_certificate,
 )
 
 __all__ = [
@@ -103,4 +109,10 @@ __all__ = [
     "execute_retention_plan", "write_retention_outputs",
     "verify_retention_manifest", "run_dataset_retention",
     "build_retention_certificate", "sha256_retention_json",
+    "RecoveryConfig", "RecoveryPoint", "validate_retention_certificate",
+    "load_registry", "discover_recovery_points", "select_recovery_point",
+    "validate_recovery_source", "execute_recovery", "write_recovery_outputs",
+    "verify_recovery_manifest", "run_dataset_recovery", "build_recovery_certificate",
+    "sha256_recovery_json", "load_recovery_registry",
+    "validate_recovery_retention_certificate",
 ]

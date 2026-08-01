@@ -1,0 +1,19 @@
+V79.51-V79.55 HISTORICAL DATASET RECOVERY
+
+BASE:
+- GitHub main commit a975132
+- release/v79_45/output and release/v79_50/output must be present.
+
+RUN:
+cd C:\stock-bot
+powershell -ExecutionPolicy Bypass -File .\RUN_V79_51_TO_V79_55.ps1
+
+EXPECTED:
+- 13 tests PASS
+- recovery_point_count 1
+- selected_version_id hist-830f2c9a47e6dc33
+- source_kind PRIMARY
+- row_count 11
+- source_preserved true
+- VERIFY PASS
+- next_phase V79_56_HISTORICAL_DATASET_BACKUP_RESTORE
