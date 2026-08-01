@@ -1,0 +1,3 @@
+git add RUN_V92_41_TO_V92_60.ps1 INSTALL_CHECK_V92_41_TO_V92_60.ps1 VERIFY_V92_41_TO_V92_60.ps1 GIT_COMMIT_V92_41_TO_V92_60.txt V92_41_TO_V92_60_BUNDLE_MANIFEST.json alpaca_market_data/actual_paper_final_submission_certification_v92_41_60.py tools/install_check_v92_41_to_v92_60.py tools/run_v92_41_to_v92_60_pipeline.py tools/test_actual_paper_final_submission_certification_v92_41_to_v92_60.py tools/verify_v92_41_to_v92_60_pipeline.py release/v92_60
+git commit -m "V92.41-V92.60 actual paper final submission certification completed"
+git push origin main

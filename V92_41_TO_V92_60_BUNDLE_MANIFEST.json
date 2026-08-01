@@ -1,0 +1,72 @@
+{
+  "base_commit": "3c9b6a8",
+  "stage_range": "V92.41-V92.60",
+  "functional_bundle": "ACTUAL_PAPER_FINAL_SUBMISSION_CERTIFICATION",
+  "release_candidate": "ACTUAL_PAPER_FINAL_SUBMISSION_PREVIEW_RC1",
+  "write_capability_count": 0,
+  "network_requests_executed": 0,
+  "actual_orders_submitted": 0,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V92_41_TO_V92_60.txt",
+      "bytes": 558,
+      "sha256": "a821e44093509334bb288dda617df6eaf61af42d3dc7a805c0dc49a3d03c2e73"
+    },
+    {
+      "path": "INSTALL_CHECK_V92_41_TO_V92_60.ps1",
+      "bytes": 47,
+      "sha256": "5c93635149a66d3ca2ae76fec60d021ee91a1da3a2f297f839d444ebe31c45c4"
+    },
+    {
+      "path": "RUN_V92_41_TO_V92_60.ps1",
+      "bytes": 834,
+      "sha256": "1f79cd1102e183683f49e982ae2952d824e55884452c59c075da97ca9bcd740f"
+    },
+    {
+      "path": "VERIFY_V92_41_TO_V92_60.ps1",
+      "bytes": 69,
+      "sha256": "61f32e501c0744134d288ce31a15e629016b952329716ccaa0861e1e11766c9e"
+    },
+    {
+      "path": "alpaca_market_data/actual_paper_final_submission_certification_v92_41_60.py",
+      "bytes": 14028,
+      "sha256": "c6a37e095be70c649261d8a77c1b443e3c9c8fa09ef53500d00b24723f52f5c0"
+    },
+    {
+      "path": "release/v92_60/docs/DESIGN.md",
+      "bytes": 352,
+      "sha256": "c15087d10de5303efa9f1e7de6ab34b443efda01500c095d0ef163864c95f3cd"
+    },
+    {
+      "path": "release/v92_60/docs/RELEASE_NOTES.md",
+      "bytes": 200,
+      "sha256": "6e0fc4a93b6f8c16ecce72c9f33b6d2ee3e63dbe180b075f575afd3f8e1ffbdb"
+    },
+    {
+      "path": "release/v92_60/docs/TEST_RESULTS.md",
+      "bytes": 196,
+      "sha256": "5c1942e23acf7d6b377cf413d70b5f586eec898869f8630ce8c8d4b89b957bbf"
+    },
+    {
+      "path": "tools/install_check_v92_41_to_v92_60.py",
+      "bytes": 493,
+      "sha256": "903ca4cd09abb3586042b372b402ec03cc1810a63153c2442164dce8ea87e83b"
+    },
+    {
+      "path": "tools/run_v92_41_to_v92_60_pipeline.py",
+      "bytes": 1640,
+      "sha256": "a1b5c023dab8f69de8eabea84cbbbc6cf3913717c85454efc8af6315764d853d"
+    },
+    {
+      "path": "tools/test_actual_paper_final_submission_certification_v92_41_to_v92_60.py",
+      "bytes": 2321,
+      "sha256": "8945b9c70789ad11c3d89d88a82dd7a446dac8a663ade93f0ddc820bc5ed7281"
+    },
+    {
+      "path": "tools/verify_v92_41_to_v92_60_pipeline.py",
+      "bytes": 1748,
+      "sha256": "cce11340b6c515fd528f80296cb2bd65243d81febaf4980e89c00790aaf53c6a"
+    }
+  ]
+}
