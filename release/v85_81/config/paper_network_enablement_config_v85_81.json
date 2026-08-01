@@ -1,0 +1,19 @@
+{
+  "mode": "PAPER_BROKER_NETWORK_ENABLEMENT_OFFLINE",
+  "environment": "PAPER",
+  "required_approvals": 2,
+  "session_ttl_seconds": 300,
+  "one_order_limit": 1,
+  "max_order_notional": 500.0,
+  "explicit_network_opt_in": false,
+  "required_opt_in_value": "YES",
+  "kill_switch_armed": true,
+  "emergency_stop_ready": true,
+  "allow_network": false,
+  "allow_credentials": false,
+  "allow_trading_client": false,
+  "allow_order_submission": false,
+  "allow_order_cancel": false,
+  "allow_order_replace": false,
+  "actual_orders_submitted": 0
+}
