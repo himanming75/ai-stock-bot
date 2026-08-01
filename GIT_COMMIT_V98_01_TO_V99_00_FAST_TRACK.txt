@@ -1,0 +1,3 @@
+git add RUN_V98_01_TO_V99_00_FAST_TRACK.ps1 INSTALL_CHECK_V98_01_TO_V99_00_FAST_TRACK.ps1 VERIFY_V98_01_TO_V99_00_FAST_TRACK.ps1 GIT_COMMIT_V98_01_TO_V99_00_FAST_TRACK.txt V98_01_TO_V99_00_FAST_TRACK_BUNDLE_MANIFEST.json alpaca_market_data/multi_session_validation_fast_track_v98_01_v99_00.py tools/install_check_v98_01_to_v99_00_fast_track.py tools/run_v98_01_to_v99_00_fast_track_pipeline.py tools/test_multi_session_validation_fast_track_v98_01_to_v99_00.py tools/verify_v98_01_to_v99_00_fast_track.py release/v99_00
+git commit -m "V98.01-V99.00 fast track actual paper multi-session validation and recovery certification completed"
+git push origin main
