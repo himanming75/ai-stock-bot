@@ -1,0 +1,17 @@
+{
+  "mode": "PAPER_BROKER_READ_ONLY_VALIDATION",
+  "trading_base_url": "https://paper-api.alpaca.markets",
+  "data_base_url": "https://data.alpaca.markets",
+  "symbol": "AAPL",
+  "feed": "iex",
+  "connect_timeout_seconds": 3.0,
+  "read_timeout_seconds": 5.0,
+  "explicit_network_opt_in": false,
+  "required_opt_in_value": "YES",
+  "allow_get": true,
+  "allow_post": false,
+  "allow_put": false,
+  "allow_patch": false,
+  "allow_delete": false,
+  "actual_orders_submitted": 0
+}

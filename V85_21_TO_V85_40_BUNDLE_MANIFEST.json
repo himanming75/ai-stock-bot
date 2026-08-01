@@ -1,0 +1,173 @@
+{
+  "base_commit": "186fdeb",
+  "stage_range": "V85.21-V85.40",
+  "functional_bundle": "PAPER_BROKER_READ_ONLY_CONNECTION_VALIDATION",
+  "file_count": 34,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V85_21_TO_V85_40.txt",
+      "bytes": 894,
+      "sha256": "6ec67eb7fb972058acb6bfd40e6200c2ee10783a578f60edd675f607823254a9"
+    },
+    {
+      "path": "INSTALL_CHECK_V85_21_TO_V85_40.ps1",
+      "bytes": 47,
+      "sha256": "4829d127f77014371885493b3ac3b54c361c61a68564583f9fa3550974290ab6"
+    },
+    {
+      "path": "RUN_V85_21_TO_V85_40.ps1",
+      "bytes": 836,
+      "sha256": "0e841fc8c96b3b8d96e361271d5c2ded1fa863b45e65874a9e6c5764d83a450f"
+    },
+    {
+      "path": "RUN_V85_21_TO_V85_40_NETWORK_READ_ONLY.ps1",
+      "bytes": 565,
+      "sha256": "d864bda226e62e0e665ca919f14cedd5810291ae601d56762d39c52ec490107c"
+    },
+    {
+      "path": "V85_21_TO_V85_40_INSTALL_AND_EXECUTION_CHECK.txt",
+      "bytes": 281,
+      "sha256": "bddb75ce00a40ed33f4ea8c0df311e5abf8f61e3fa8b5cf7e6cb3fdc6fede4d0"
+    },
+    {
+      "path": "VERIFY_V85_21_TO_V85_40.ps1",
+      "bytes": 69,
+      "sha256": "2c34101442ef9a024943098064c2af08dd461c46fcbd8663e604bdf7c66eb990"
+    },
+    {
+      "path": "alpaca_market_data/paper_broker_read_only_v85_21_40.py",
+      "bytes": 18229,
+      "sha256": "5e225e825428f9c80eea8a59c23e3c1105272f0ee9012d768abd357cdb0c7346"
+    },
+    {
+      "path": "release/v85_21/config/paper_broker_read_only_config_v85_21.json",
+      "bytes": 477,
+      "sha256": "5bece87509a51bbd4ddd291a0a9ee2304051713c2a5773e6b4e8588d3ffefadf"
+    },
+    {
+      "path": "release/v85_21/docs/V85.21_READ_ONLY_ENDPOINT_CATALOG.md",
+      "bytes": 203,
+      "sha256": "c35bca2833420c680c02012d26657916574690914ed570e4d3309ef21f5d3bba"
+    },
+    {
+      "path": "release/v85_22/docs/V85.22_CREDENTIAL_STATUS.md",
+      "bytes": 194,
+      "sha256": "773c1ef7198bb202dfc0d57acdf25d0ca6d601fb486fd98d07b98b53a22cdcf2"
+    },
+    {
+      "path": "release/v85_23/docs/V85.23_NETWORK_AUTHORIZATION.md",
+      "bytes": 198,
+      "sha256": "c039ae191b35f053495e154cfe14c2c82f07e7c8f2d5e66da56c75c8bf7b64ee"
+    },
+    {
+      "path": "release/v85_24/docs/V85.24_GET_REQUEST_CONTRACT.md",
+      "bytes": 197,
+      "sha256": "5aca3fa4a198223675c967443f929c8e37d62afecf8e9a07abd2a7bba4d306f6"
+    },
+    {
+      "path": "release/v85_25/docs/V85.25_GET_EXECUTION.md",
+      "bytes": 190,
+      "sha256": "d3ac4424b7a2b04dc2b069c164fc9051a4931c410a522ccbfa66bcd4e013692e"
+    },
+    {
+      "path": "release/v85_26/docs/V85.26_RESPONSE_SCHEMA_VALIDATION.md",
+      "bytes": 203,
+      "sha256": "fedf3601ea960a52071a62d16bbf1ad1197cfd55761372f0c596a6840af6e58c"
+    },
+    {
+      "path": "release/v85_27/docs/V85.27_CONNECTION_HEALTH.md",
+      "bytes": 194,
+      "sha256": "09b4aa500d373839018a8da1b5381a780e773af7e8cb107a50b3f5066827df56"
+    },
+    {
+      "path": "release/v85_28/docs/V85.28_SNAPSHOT_RECONCILIATION.md",
+      "bytes": 200,
+      "sha256": "76a0f17aa31992cd8855b6e7f89eb7fdcc21ce7e72adb6e8d5e43b16048f44af"
+    },
+    {
+      "path": "release/v85_29/docs/V85.29_RETRY_CLASSIFICATION.md",
+      "bytes": 197,
+      "sha256": "192b15deba9578be52d0deda9ce121d0550ac122f751323d797595ddcc3dea62"
+    },
+    {
+      "path": "release/v85_30/docs/V85.30_RATE_LIMIT_OBSERVER.md",
+      "bytes": 196,
+      "sha256": "607bec117429d9ce5e7153711f8e93e9e7b0c0991ac509dd59de4ab432708571"
+    },
+    {
+      "path": "release/v85_31/docs/V85.31_TLS_AUDIT.md",
+      "bytes": 186,
+      "sha256": "7987e9dd01c5510fdad46be90c09a5461b20f77047d9cf001f57779bef4a3e7b"
+    },
+    {
+      "path": "release/v85_32/docs/V85.32_REDACTION_AUDIT.md",
+      "bytes": 192,
+      "sha256": "376c6ec261ab93de055faaf32532400783224a0b55b627d7758270ef63d9b7a6"
+    },
+    {
+      "path": "release/v85_33/docs/V85.33_OFFLINE_FALLBACK.md",
+      "bytes": 193,
+      "sha256": "6e94a94d6f7827af29416727c7269890171612ea60d901272dc8a0199f0ca87a"
+    },
+    {
+      "path": "release/v85_34/docs/V85.34_CONNECTION_AUDIT.md",
+      "bytes": 193,
+      "sha256": "482e23c8617672ad9669539df53e3386cae06ebc45e11fce4574f86e0f3b8053"
+    },
+    {
+      "path": "release/v85_35/docs/V85.35_MASTER_LEDGER.md",
+      "bytes": 190,
+      "sha256": "3c19fb1efc21906da9460436296acf5e8ee1ab1220995a2267037dc77d02e70f"
+    },
+    {
+      "path": "release/v85_36/docs/V85.36_READ_ONLY_MANIFEST.md",
+      "bytes": 195,
+      "sha256": "92b58961dcf6baa856e53629c296181cf7b885fb3e87ca81474140c16cf3cfaf"
+    },
+    {
+      "path": "release/v85_37/docs/V85.37_INTEGRITY_VERIFICATION.md",
+      "bytes": 199,
+      "sha256": "fc57c2cd794d695cbdd1edc9a8f938c7018ec2ba14b572ecdbc0609c7793a624"
+    },
+    {
+      "path": "release/v85_38/docs/V85.38_READ_ONLY_CERTIFICATION.md",
+      "bytes": 200,
+      "sha256": "dcd2457cb94825d49caf528c1be5604e0b4c373a7d10b72c0165c4dd1920fe8d"
+    },
+    {
+      "path": "release/v85_39/docs/V85.39_READ_ONLY_PIPELINE.md",
+      "bytes": 195,
+      "sha256": "55a0d3d9e85149a2fd3415ca8426ab6928b0ece970f8ce7e0c5163e38ef5fe5d"
+    },
+    {
+      "path": "release/v85_40/docs/V85.21_TO_V85.40_RELEASE_NOTES.md",
+      "bytes": 601,
+      "sha256": "e9001c1d1e40e22b37845117eaed9f3052295565f5db7055b77c71cfc58bef15"
+    },
+    {
+      "path": "release/v85_40/docs/V85.40_READ_ONLY_CONNECTION_COMPLETION.md",
+      "bytes": 208,
+      "sha256": "f94a36599c51f6d5ed2a160fa259ff60fa431dc2c1d8ff7356deac372ec2ac53"
+    },
+    {
+      "path": "tools/install_check_v85_21_to_v85_40.py",
+      "bytes": 655,
+      "sha256": "3a97a03c5b99f2b695c890b39b6306fa9538cef6eb0efd6701f2423151cd5f87"
+    },
+    {
+      "path": "tools/run_v85_21_to_v85_40_pipeline.py",
+      "bytes": 1234,
+      "sha256": "8841b83a20a87ae257286a5e017523d5803b093fe0fa594ed938623f4c2f47d7"
+    },
+    {
+      "path": "tools/test_paper_broker_read_only_v85_21_to_v85_40.py",
+      "bytes": 4021,
+      "sha256": "76c37629fa92315b8fa880d5a7df692868f6061ff75c844f18ef18a345c9679b"
+    },
+    {
+      "path": "tools/verify_v85_21_to_v85_40_pipeline.py",
+      "bytes": 1766,
+      "sha256": "7c447227f49ea8a33d48ddc31f0c5fed2ab7dfeca50e551cbf041275dd767b9c"
+    }
+  ]
+}
