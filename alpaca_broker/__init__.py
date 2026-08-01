@@ -37,6 +37,12 @@ from .order_optin import (
     WRITE_CONFIRMATION_TEXT,
     WRITE_OPT_IN_ENV,
 )
+from .order_validation import (
+    TERMINAL_ORDER_STATUSES,
+    ActualPaperOrderValidationReport,
+    ActualPaperOrderValidator,
+    OrderValidationPolicy,
+)
 
 __all__ = [
     "AlpacaPaperConfig",
@@ -70,4 +76,8 @@ __all__ = [
     "WRITE_CONFIRMATION_ENV",
     "WRITE_CONFIRMATION_TEXT",
     "WRITE_OPT_IN_ENV",
+    "TERMINAL_ORDER_STATUSES",
+    "ActualPaperOrderValidationReport",
+    "ActualPaperOrderValidator",
+    "OrderValidationPolicy",
 ]
