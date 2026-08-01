@@ -1,0 +1,3 @@
+git add RUN_V90_81_TO_V91_00.ps1 INSTALL_CHECK_V90_81_TO_V91_00.ps1 VERIFY_V90_81_TO_V91_00.ps1 GIT_COMMIT_V90_81_TO_V91_00.txt V90_81_TO_V91_00_BUNDLE_MANIFEST.json alpaca_market_data/final_paper_automation_certification_v90_81_v91_00.py tools/install_check_v90_81_to_v91_00.py tools/run_v90_81_to_v91_00_pipeline.py tools/test_final_paper_automation_certification_v90_81_to_v91_00.py tools/verify_v90_81_to_v91_00_pipeline.py release/v91_00
+git commit -m "V90.81-V91.00 final paper automation certification completed"
+git push origin main
