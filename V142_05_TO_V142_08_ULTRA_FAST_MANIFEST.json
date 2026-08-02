@@ -1,0 +1,19 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "automatic_recovery": true,
+  "base_commit": "262ced9",
+  "bundle_type": "ULTRA_FAST_SCHEDULED_RUNTIME_RECOVERY",
+  "continuous_loop_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "os_task_created": false,
+  "scheduled_runtime_state": true,
+  "scheduler_plan": true,
+  "session_resume": true,
+  "stage_range": "V142.05-V142.08",
+  "validation_mode": "LOCAL_SCHEDULED_RUNTIME_ONLY",
+  "write_requests_executed": 0
+}

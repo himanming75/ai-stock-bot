@@ -1,0 +1,10 @@
+{
+  "schedule_id": "paper-schedule-001",
+  "enabled": true,
+  "interval_seconds": 60,
+  "max_runs_per_invocation": 1,
+  "unbounded_scheduler": false,
+  "actual_submission_allowed": false,
+  "broker_network_allowed": false,
+  "live_trading_enabled": false
+}

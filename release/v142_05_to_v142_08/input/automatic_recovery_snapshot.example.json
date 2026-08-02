@@ -1,0 +1,9 @@
+{
+  "unresolved_order_state": false,
+  "ledger_corrupted": false,
+  "runtime_process_count": 1,
+  "recovery_verified": true,
+  "heartbeat_age_seconds": 5,
+  "max_heartbeat_age_seconds": 300,
+  "restart_detected": false
+}
