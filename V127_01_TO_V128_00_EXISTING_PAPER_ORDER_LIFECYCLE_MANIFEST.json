@@ -1,0 +1,81 @@
+{
+  "base_commit": "1b019a9",
+  "stage_range": "V127.01-V128.00",
+  "bundle_type": "EXISTING_PAPER_ORDER_LIFECYCLE_TRACKING",
+  "target_client_order_id": "single-60d3c5406e5226ae71d7",
+  "actual_runner_get_only": true,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V127_01_TO_V128_00_EXISTING_PAPER_ORDER_LIFECYCLE.txt",
+      "bytes": 720,
+      "sha256": "2fb2eb116ab5cc7242e121c5a1a29d1d0e67db13b485b8c10f0c2b41328abdf0"
+    },
+    {
+      "path": "RUN_V127_01_TO_V128_00_ACTUAL_ORDER_LIFECYCLE_READ.ps1",
+      "bytes": 788,
+      "sha256": "4b9d4fe84e21e9a13b5ef27b4a77283c040e03ab952164d4b1c138f6d84db187"
+    },
+    {
+      "path": "RUN_V127_01_TO_V128_00_EXISTING_PAPER_ORDER_LIFECYCLE.ps1",
+      "bytes": 924,
+      "sha256": "6b3764799c6565b320dd3f751154e86daa913fb7ea5f1999c681a00669a1cea4"
+    },
+    {
+      "path": "autonomous_paper_runtime/order_lifecycle.py",
+      "bytes": 3523,
+      "sha256": "20177029e745da25a21886b2cf49bd4c14ec5c54707517c7046ce36ea72d4ea4"
+    },
+    {
+      "path": "release/v128_00/docs/ACTUAL_READ_INSTRUCTIONS.md",
+      "bytes": 324,
+      "sha256": "2e0e5476c1aaf715b3ab95bcf80366448a25faabff9a13c2ec5e192197ee42f0"
+    },
+    {
+      "path": "release/v128_00/docs/DESIGN.md",
+      "bytes": 451,
+      "sha256": "e6901d76bf85451f1f6eb9eb272809ddaa2366c02f34f96d254352ac4c123fd6"
+    },
+    {
+      "path": "release/v128_00/docs/RELEASE_NOTES.md",
+      "bytes": 116,
+      "sha256": "8be9502071e1bbce7ec442005da2caa9997a25e4bfbf0b67466f6abb021b807e"
+    },
+    {
+      "path": "release/v128_00/docs/TEST_RESULTS.md",
+      "bytes": 189,
+      "sha256": "9b035250943fa81abf47d390307f849bd619eb9059202175d226fd4d6242c713"
+    },
+    {
+      "path": "tools/install_check_v127_01_to_v128_00.py",
+      "bytes": 521,
+      "sha256": "ef8769c560ae402ab061e0de6490588e1ebf84aa4b3554d074cac2a133184e33"
+    },
+    {
+      "path": "tools/run_actual_existing_paper_order_lifecycle_v127_01_to_v128_00.py",
+      "bytes": 2050,
+      "sha256": "3ba72d020ae55a368c4b0fa9869c0468363ceaa3525787a1169396b557032a21"
+    },
+    {
+      "path": "tools/run_existing_paper_order_lifecycle_v127_01_to_v128_00.py",
+      "bytes": 1418,
+      "sha256": "0887204575092ba32270b1f4a644e8f05ced0aa725e595ad918fa56576afe7ae"
+    },
+    {
+      "path": "tools/test_existing_paper_order_lifecycle_v127_01_to_v128_00.py",
+      "bytes": 2524,
+      "sha256": "24906eb81cb640e590762d4fef79da5ae3834f1ffcb1a8cf754a56d1b32ae6c8"
+    },
+    {
+      "path": "tools/verify_existing_paper_order_lifecycle_v127_01_to_v128_00.py",
+      "bytes": 1010,
+      "sha256": "dd7f9b7492484153c7451d5398d0a6dc03d056d53ca97a3c73d3dcfd436a8326"
+    }
+  ]
+}
