@@ -1,0 +1,9 @@
+{
+  "session_id": "paper-session-001",
+  "interval_seconds": 30,
+  "max_ticks_per_run": 1,
+  "unbounded_loop_enabled": false,
+  "live_trading_enabled": false,
+  "actual_submission_allowed": false,
+  "broker_network_allowed": false
+}

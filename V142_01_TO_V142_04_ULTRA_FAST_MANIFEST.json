@@ -1,0 +1,19 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "b96e0b7",
+  "bundle_type": "ULTRA_FAST_AUTONOMOUS_PAPER_RUNTIME",
+  "continuous_loop_enabled": false,
+  "emergency_stop": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "runtime_lock": true,
+  "runtime_orchestrator": true,
+  "single_tick_execution": true,
+  "stage_range": "V142.01-V142.04",
+  "validation_mode": "LOCAL_SINGLE_TICK_RUNTIME_ONLY",
+  "watchdog_heartbeat": true,
+  "write_requests_executed": 0
+}
