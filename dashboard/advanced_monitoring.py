@@ -45,118 +45,84 @@ def performance_series(root: Path) -> dict[str, list[dict[str, Any]]]:
     points = curve.get("equity_curve", [])
     if not isinstance(points, list):
         points = []
-
-    equity = []
-    drawdown = []
+    equity, drawdown = [], []
     for index, item in enumerate(points, start=1):
         if not isinstance(item, dict):
             continue
         trade_number = int(item.get("trade_number", index))
-        equity.append({
-            "x": trade_number,
-            "y": _number(item.get("cumulative_pnl", 0)),
-        })
-        drawdown.append({
-            "x": trade_number,
-            "y": _number(item.get("drawdown", 0)),
-        })
-
+        equity.append({"x": trade_number, "y": _number(item.get("cumulative_pnl", 0))})
+        drawdown.append({"x": trade_number, "y": _number(item.get("drawdown", 0))})
     if not equity:
-        report = _load_json(
-            root / "release/op2_17_to_op2_20/actual/daily_shadow_report.json"
-        )
         equity = [{"x": 0, "y": 0.0}]
-        drawdown = [{"x": 0, "y": _number(report.get("max_drawdown_pct", 0))}]
-
+        drawdown = [{"x": 0, "y": 0.0}]
     return {"equity": equity, "drawdown": drawdown}
 
 
 def event_log(root: Path, limit: int = 25) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
-
-    source_paths = [
+    for path in [
         root / "release/op2_13_to_op2_16/actual/shadow_signal_queue.jsonl",
         root / "release/op2_01_to_op2_04/actual/shadow_decision_ledger.jsonl",
-    ]
-    for path in source_paths:
+        root / "release/op3_09_to_op3_12/actual/paper_order_lifecycle_audit_ledger.jsonl",
+        root / "release/op3_13_to_op3_16/actual/limited_autonomous_runtime_ledger.jsonl",
+    ]:
         for item in _load_jsonl(path, limit=limit):
             records.append({
-                "timestamp": str(
-                    item.get("created_at", item.get("observed_at", ""))
-                ),
-                "category": str(
-                    item.get("stage", item.get("status", "EVENT"))
-                ),
+                "timestamp": str(item.get("observed_at", item.get("submitted_at", item.get("created_at", "")))),
+                "category": str(item.get("stage", item.get("stage_range", item.get("status", "EVENT")))),
                 "message": _event_message(item),
                 "severity": "INFO",
             })
-
-    runtime = _load_json(
-        root / "release/op2_17_to_op2_20/actual/shadow_daily_automation_result.json"
-    )
-    if runtime:
-        records.append({
-            "timestamp": str(runtime.get("observed_at", "")),
-            "category": "RUNTIME",
-            "message": str(runtime.get("state", "UNKNOWN")),
-            "severity": (
-                "ERROR"
-                if runtime.get("safe_mode_engaged")
-                else "INFO"
-            ),
-        })
-
     records.sort(key=lambda row: row.get("timestamp", ""), reverse=True)
     return records[:limit]
 
 
 def alerts(root: Path) -> list[dict[str, Any]]:
-    runtime = _load_json(
-        root / "release/op2_17_to_op2_20/actual/shadow_daily_automation_result.json"
-    )
-    pipeline = _load_json(
-        root / "release/op2_13_to_op2_16/actual/automatic_shadow_signal_pipeline_result.json"
-    )
-    snapshot = _load_json(
-        root / "release/op1_13_to_op1_16/actual/current_paper_snapshot.json"
-    )
-
     output: list[dict[str, Any]] = []
+    paper = _load_json(
+        root / "release/dash2_05/actual/current_paper_snapshot.json"
+    )
+    collector = _load_json(
+        root / "release/dash2_05/actual/current_paper_snapshot_collector_result.json"
+    )
+    limited = _load_json(
+        root / "release/op3_13_to_op3_16/actual/limited_autonomous_paper_trading_result.json"
+    )
+    lifecycle = _load_json(
+        root / "release/op3_09_to_op3_12/actual/paper_order_lifecycle_result.json"
+    )
 
-    if runtime.get("safe_mode_engaged"):
-        output.append(_alert("CRITICAL", "RUNTIME_SAFE_MODE", "Runtime safe mode is engaged."))
-    elif str(runtime.get("state", "")).startswith("WAIT_"):
-        output.append(_alert("WARNING", "RUNTIME_WAITING", str(runtime.get("state"))))
+    if not paper:
+        output.append(_alert("CRITICAL", "ACTUAL_PAPER_SNAPSHOT_MISSING", "Run the read-only Paper snapshot collector."))
+    elif not _snapshot_fresh(paper, 300):
+        output.append(_alert("WARNING", "ACTUAL_PAPER_SNAPSHOT_STALE", "Paper snapshot is older than five minutes."))
 
-    if pipeline.get("safe_mode_engaged"):
-        output.append(_alert("CRITICAL", "PIPELINE_SAFE_MODE", "Signal pipeline safe mode is engaged."))
-    elif str(pipeline.get("state", "")).startswith("WAIT_"):
-        output.append(_alert("WARNING", "PIPELINE_WAITING", str(pipeline.get("state"))))
+    if collector.get("safe_mode_engaged"):
+        output.append(_alert("CRITICAL", "PAPER_SNAPSHOT_COLLECTOR_BLOCKED", "The read-only Paper snapshot collector is blocked."))
 
-    heartbeat = root / "release/op2_17_to_op2_20/actual/shadow_runtime_heartbeat.json"
-    if not heartbeat.exists():
-        output.append(_alert("WARNING", "HEARTBEAT_MISSING", "Runtime heartbeat is not available."))
+    if lifecycle.get("recovery_required"):
+        output.append(_alert("WARNING", "PAPER_ORDER_RECOVERY_REQUIRED", str(lifecycle.get("order_status", "open"))))
 
-    if not snapshot:
-        output.append(_alert("WARNING", "SNAPSHOT_MISSING", "Current Paper snapshot is not available."))
+    if limited.get("safe_mode_engaged"):
+        for issue in limited.get("issues", []):
+            if isinstance(issue, dict):
+                output.append(_alert("WARNING", str(issue.get("code", "PAPER_RUNTIME_BLOCKED")), str(issue.get("detail", ""))))
 
-    if runtime.get("error_count", 0):
-        output.append(_alert(
-            "CRITICAL",
-            "RUNTIME_ERRORS",
-            f'{int(runtime.get("error_count", 0))} runtime error(s) reported.',
-        ))
+    disk = shutil.disk_usage(root)
+    used_pct = ((disk.total - disk.free) / disk.total * 100) if disk.total else 0
+    if used_pct >= 95:
+        output.append(_alert("CRITICAL", "DISK_USAGE_CRITICAL", f"Disk usage is {used_pct:.2f}%."))
 
     if not output:
-        output.append(_alert("INFO", "SYSTEM_HEALTHY", "No active dashboard alerts."))
+        output.append(_alert("INFO", "PAPER_SYSTEM_HEALTHY", "No active Paper dashboard alerts."))
     return output
 
 
 def dashboard_health(root: Path) -> dict[str, Any]:
     monitored = [
-        root / "release/op2_17_to_op2_20/actual/shadow_daily_automation_result.json",
-        root / "release/op2_13_to_op2_16/actual/automatic_shadow_signal_pipeline_result.json",
-        root / "release/op1_13_to_op1_16/actual/current_paper_snapshot.json",
+        root / "release/dash2_05/actual/current_paper_snapshot.json",
+        root / "release/op3_09_to_op3_12/actual/paper_order_lifecycle_result.json",
+        root / "release/op3_13_to_op3_16/actual/limited_autonomous_paper_trading_result.json",
     ]
     integrity = []
     newest_mtime = 0.0
@@ -169,37 +135,28 @@ def dashboard_health(root: Path) -> dict[str, Any]:
             "exists": path.exists(),
             "valid_json": valid,
         })
-
     usage = shutil.disk_usage(root)
     now = datetime.now(timezone.utc)
-    newest_at = (
-        datetime.fromtimestamp(newest_mtime, timezone.utc)
-        if newest_mtime
-        else None
-    )
-    data_age_seconds = (
-        int((now - newest_at).total_seconds())
-        if newest_at
-        else None
-    )
-
+    newest_at = datetime.fromtimestamp(newest_mtime, timezone.utc) if newest_mtime else None
+    data_age_seconds = int((now - newest_at).total_seconds()) if newest_at else None
+    disk_used_pct = round(((usage.total - usage.free) / usage.total * 100) if usage.total else 0, 2)
+    snapshot = _load_json(monitored[0])
+    snapshot_ok = bool(snapshot and _snapshot_fresh(snapshot, 300))
     return {
         "dashboard_status": (
             "HEALTHY"
             if all(row["valid_json"] for row in integrity)
+            and snapshot_ok
+            and disk_used_pct < 95
             else "DEGRADED"
         ),
         "checked_at": now.isoformat(),
         "process_id": os.getpid(),
         "disk_total_bytes": usage.total,
         "disk_free_bytes": usage.free,
-        "disk_used_pct": round(
-            ((usage.total - usage.free) / usage.total * 100)
-            if usage.total
-            else 0,
-            2,
-        ),
+        "disk_used_pct": disk_used_pct,
         "latest_data_age_seconds": data_age_seconds,
+        "paper_snapshot_fresh": snapshot_ok,
         "json_integrity": integrity,
         "read_only": True,
     }
@@ -207,7 +164,7 @@ def dashboard_health(root: Path) -> dict[str, Any]:
 
 def build_advanced_payload(root: Path) -> dict[str, Any]:
     return {
-        "dashboard_stage": "DASH1.05-DASH1.08",
+        "dashboard_stage": "DASH2.05-HOTFIX",
         "performance": performance_series(root),
         "events": event_log(root),
         "alerts": alerts(root),
@@ -219,12 +176,26 @@ def build_advanced_payload(root: Path) -> dict[str, Any]:
     }
 
 
+def _snapshot_fresh(payload: dict[str, Any], max_age: int) -> bool:
+    raw = str(payload.get("observed_at", "")).strip()
+    if not raw:
+        return False
+    try:
+        observed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    if observed.tzinfo is None:
+        observed = observed.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - observed.astimezone(timezone.utc)).total_seconds() <= max_age
+
+
 def _event_message(item: dict[str, Any]) -> str:
-    symbol = str(item.get("symbol", "")).strip()
-    action = str(item.get("action", item.get("approved_action", ""))).strip()
-    status = str(item.get("status", "")).strip()
-    pieces = [part for part in (symbol, action, status) if part]
-    return " · ".join(pieces) or "Shadow operation event"
+    pieces = [
+        str(item.get("symbol", "")).strip(),
+        str(item.get("side", item.get("approved_action", ""))).strip(),
+        str(item.get("order_status", item.get("status", ""))).strip(),
+    ]
+    return " · ".join(part for part in pieces if part) or "Paper operation event"
 
 
 def _alert(severity: str, code: str, message: str) -> dict[str, str]:

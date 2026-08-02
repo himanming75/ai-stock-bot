@@ -1,0 +1,16 @@
+{
+  "actual_snapshot_only": true,
+  "base_commit": "e4625e0",
+  "bundle_type": "ACTUAL_PAPER_SNAPSHOT_DASHBOARD_HOTFIX",
+  "cancel_enabled": false,
+  "example_account_inputs_ignored": true,
+  "example_position_inputs_ignored": true,
+  "live_trading_enabled": false,
+  "network_requests_when_enabled": 4,
+  "paper_only": true,
+  "replace_enabled": false,
+  "requires": "DASH2.01-DASH2.04 files already applied",
+  "snapshot_maximum_age_seconds": 300,
+  "stage": "DASH2.05",
+  "write_requests_enabled": false
+}
