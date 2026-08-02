@@ -1,0 +1,11 @@
+{
+  "starting_equity": 10000,
+  "local_cash": 10100,
+  "broker_cash": 10100,
+  "local_equity": 10100,
+  "broker_equity": 10100,
+  "local_position_quantity": 0,
+  "broker_position_quantity": 0,
+  "fees": 1,
+  "tolerance": 0.01
+}
