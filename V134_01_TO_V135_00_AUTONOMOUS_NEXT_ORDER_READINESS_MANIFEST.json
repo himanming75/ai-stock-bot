@@ -1,0 +1,82 @@
+{
+  "base_commit": "4839a7e",
+  "stage_range": "V134.01-V135.00",
+  "bundle_type": "AUTONOMOUS_NEXT_ORDER_READINESS_GATE",
+  "expected_current_state": "BLOCKED_ACTIVE_ORDER",
+  "actual_runner_get_only": true,
+  "actual_read_count": 4,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V134_01_TO_V135_00_AUTONOMOUS_NEXT_ORDER_READINESS.txt",
+      "bytes": 729,
+      "sha256": "f48010592c8febd174542d36bfbf6958540ffd79e04253a6a97349451958366a"
+    },
+    {
+      "path": "RUN_V134_01_TO_V135_00_ACTUAL_NEXT_ORDER_READINESS.ps1",
+      "bytes": 931,
+      "sha256": "ddfe05c8c68b9dfbb9e27c39a767a2bff6d3af61b4fda934472686f3ba907d0a"
+    },
+    {
+      "path": "RUN_V134_01_TO_V135_00_AUTONOMOUS_NEXT_ORDER_READINESS.ps1",
+      "bytes": 1043,
+      "sha256": "a87a49e3ea836e6292d5c421f70a216de2c1d6137afd259e9bdd1281e46b4040"
+    },
+    {
+      "path": "autonomous_paper_runtime/next_order_readiness.py",
+      "bytes": 12199,
+      "sha256": "1946dca6ed4ab8382e6c0a2349a060ba2194cf1cd358e33b482d0743d77678ec"
+    },
+    {
+      "path": "release/v135_00/docs/ACTUAL_RUN_INSTRUCTIONS.md",
+      "bytes": 424,
+      "sha256": "348ad776c5c3a561de7a998b04b90d5f0025f5d1776bb9ade69abde6937c399d"
+    },
+    {
+      "path": "release/v135_00/docs/DESIGN.md",
+      "bytes": 513,
+      "sha256": "492896222d404c13e85a1b95ef5c6c375c97910f14fdc3dc2118861eb05a841c"
+    },
+    {
+      "path": "release/v135_00/docs/RELEASE_NOTES.md",
+      "bytes": 232,
+      "sha256": "6237c3a02781c0c5bab19271ad2d85aa488daf40a34fa06a3728c09c08da969a"
+    },
+    {
+      "path": "release/v135_00/docs/TEST_RESULTS.md",
+      "bytes": 274,
+      "sha256": "2f00f965d2d69b57a33125c9d10a383b666bcd1f997008c5aee521f29ca06702"
+    },
+    {
+      "path": "tools/install_check_v134_01_to_v135_00.py",
+      "bytes": 577,
+      "sha256": "86bf588d3e88f3b47fec3e9212da349e78f9341cb483ed5084315bd5976a9e2d"
+    },
+    {
+      "path": "tools/run_actual_autonomous_next_order_readiness_v134_01_to_v135_00.py",
+      "bytes": 4236,
+      "sha256": "c4ac78b41499bc642a2f9eab31483e43b2f6ee96e277e2ad430f119dad84ad30"
+    },
+    {
+      "path": "tools/run_autonomous_next_order_readiness_v134_01_to_v135_00.py",
+      "bytes": 2077,
+      "sha256": "5d05816ddf23b7ae7fc9dca88f464dd0002b15ca667208fb8289511986dc6379"
+    },
+    {
+      "path": "tools/test_autonomous_next_order_readiness_v134_01_to_v135_00.py",
+      "bytes": 7629,
+      "sha256": "33e542a6a66cf5cef56500a8d62541372f8c76017596a68ae25f8251e497901e"
+    },
+    {
+      "path": "tools/verify_autonomous_next_order_readiness_v134_01_to_v135_00.py",
+      "bytes": 1694,
+      "sha256": "e104013ff3f917f1df6b1f9623a91d48f151c9ed931ee27ddb8360a12287ca63"
+    }
+  ]
+}

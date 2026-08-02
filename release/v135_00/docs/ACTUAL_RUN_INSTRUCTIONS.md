@@ -1,0 +1,12 @@
+# Actual GET-only Next-Order Readiness
+
+```powershell
+$env:AI_STOCK_BOT_ENABLE_ACTUAL_NEXT_ORDER_READINESS = "YES"
+$env:AI_STOCK_BOT_ACTUAL_NEXT_ORDER_READINESS_CONFIRMATION = "READ ACTUAL ALPACA PAPER ACCOUNT FOR NEXT ORDER READINESS GET ONLY"
+
+powershell -ExecutionPolicy Bypass `
+  -File .\RUN_V134_01_TO_V135_00_ACTUAL_NEXT_ORDER_READINESS.ps1 `
+  -MaxPositions 3 `
+  -MaxTotalMarketValue 1000 `
+  -RiskApproved YES
+```
