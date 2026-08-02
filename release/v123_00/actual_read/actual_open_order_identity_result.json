@@ -1,0 +1,42 @@
+{
+  "actual_credentials_used": true,
+  "actual_external_network_used": true,
+  "actual_paper_orders_submitted": 0,
+  "autonomous_order_allowed": false,
+  "blocking_order_count": 1,
+  "bot_order_count": 0,
+  "broker_read_requests_executed": 1,
+  "external_order_count": 1,
+  "identity_status": "SAFE_MODE",
+  "implementation_type": "AUTONOMOUS_PAPER_ORDER_IDENTITY_RECONCILIATION",
+  "live_orders_submitted": 0,
+  "next_phase": "V123_01_AUTONOMOUS_ORDER_LEDGER_RECOVERY",
+  "open_order_count": 1,
+  "read_requests_executed": 0,
+  "recognized_internal_order_count": 0,
+  "records": [
+    {
+      "blocking": true,
+      "broker_order_id": "",
+      "client_order_id": "single-60d3c5406e5226ae71d7",
+      "filled_quantity": "0",
+      "limit_price": null,
+      "order_type": "",
+      "ownership": "EXTERNAL",
+      "quantity": "",
+      "reason": "external or manual order requires operator review",
+      "recognized_internal_order": "",
+      "side": "BUY",
+      "status": "ACCEPTED",
+      "submitted_at": "",
+      "symbol": "AAPL",
+      "time_in_force": ""
+    }
+  ],
+  "safe_mode_engaged": true,
+  "stage_range": "V122.01-V123.00",
+  "status": "PASS",
+  "unknown_order_count": 0,
+  "validation_mode": "ACTUAL_ALPACA_PAPER_GET_ONLY",
+  "write_requests_executed": 0
+}

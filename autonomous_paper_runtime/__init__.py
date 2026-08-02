@@ -16,6 +16,14 @@ from .reconciliation import (
     ReconciliationPolicy,
     ReconciliationStatus,
 )
+from .order_identity import (
+    AutonomousPaperOrderIdentityReconciler,
+    OrderIdentityPolicy,
+    OrderIdentityRecord,
+    OrderIdentityReport,
+    OrderIdentityStatus,
+    OrderOwnership,
+)
 
 __all__ = [
     "AutonomousRuntimeConfig",
@@ -31,4 +39,10 @@ __all__ = [
     "ReconciliationIssue",
     "ReconciliationPolicy",
     "ReconciliationStatus",
+    "AutonomousPaperOrderIdentityReconciler",
+    "OrderIdentityPolicy",
+    "OrderIdentityRecord",
+    "OrderIdentityReport",
+    "OrderIdentityStatus",
+    "OrderOwnership",
 ]

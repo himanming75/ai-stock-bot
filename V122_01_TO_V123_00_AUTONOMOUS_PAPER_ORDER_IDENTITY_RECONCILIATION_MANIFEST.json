@@ -1,0 +1,105 @@
+{
+  "base_commit": "e115d4e",
+  "stage_range": "V122.01-V123.00",
+  "bundle_type": "AUTONOMOUS_PAPER_ORDER_IDENTITY_RECONCILIATION",
+  "ownership_classes": [
+    "BOT",
+    "EXTERNAL",
+    "UNKNOWN"
+  ],
+  "approved_bot_prefixes": [
+    "BOT-AUTO-PAPER-",
+    "AI-STOCK-BOT-PAPER-",
+    "BOT-PAPER-"
+  ],
+  "approved_symbols": [
+    "AAPL",
+    "SPY",
+    "QQQ"
+  ],
+  "external_order_safe_mode": true,
+  "unknown_order_safe_mode": true,
+  "unrecognized_bot_order_safe_mode": true,
+  "optional_actual_get_only_runner": true,
+  "default_pipeline_actual_network": false,
+  "read_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V122_01_TO_V123_00_AUTONOMOUS_PAPER_ORDER_IDENTITY_RECONCILIATION.txt",
+      "bytes": 857,
+      "sha256": "13cd275994e8a171b96b387cac7420e901d4947ee41b5c0379d34c972bf0ba75"
+    },
+    {
+      "path": "RUN_V122_01_TO_V123_00_ACTUAL_OPEN_ORDER_IDENTITY_READ.ps1",
+      "bytes": 907,
+      "sha256": "3bde1b9be4f13b924bb9cb48240b8a054825299878a7789e61e7af7db1f20842"
+    },
+    {
+      "path": "RUN_V122_01_TO_V123_00_AUTONOMOUS_PAPER_ORDER_IDENTITY_RECONCILIATION.ps1",
+      "bytes": 1025,
+      "sha256": "85ca4e83da70ad5eac4cd508d4760eb664d47ecd211cb1639991347034126741"
+    },
+    {
+      "path": "autonomous_paper_runtime/__init__.py",
+      "bytes": 1353,
+      "sha256": "7fe83df482778932b1720b8bef9d4b1e8d5cd17db994960cd787812a7f8164a7"
+    },
+    {
+      "path": "autonomous_paper_runtime/order_identity.py",
+      "bytes": 8345,
+      "sha256": "742e9154e66f109b74c6aad639f892f9beead705a741c2a7e7ecd2842e19e540"
+    },
+    {
+      "path": "release/v123_00/docs/ACTUAL_IDENTITY_READ_INSTRUCTIONS.md",
+      "bytes": 596,
+      "sha256": "8eb8ffb29790252288a525e2232b9585c31f05896763b219de092453a5eca5db"
+    },
+    {
+      "path": "release/v123_00/docs/DESIGN.md",
+      "bytes": 800,
+      "sha256": "070efad314365d75bdaa497a46e2372a0bc98326ff126bdbb43fa7f7313ee102"
+    },
+    {
+      "path": "release/v123_00/docs/RELEASE_NOTES.md",
+      "bytes": 359,
+      "sha256": "59a47b18c0472095bbd68815b5e8aed610004ebc1746c32e388dc82529e9cbd8"
+    },
+    {
+      "path": "release/v123_00/docs/TEST_RESULTS.md",
+      "bytes": 394,
+      "sha256": "d42c4ce405c9c2a442a7b17b8d7690a9f17dd4bf95c15d12ff9baef00b6fb3f3"
+    },
+    {
+      "path": "tools/install_check_v122_01_to_v123_00.py",
+      "bytes": 683,
+      "sha256": "ad6e440ad155ecd3ee0d6ad46a405d8d88758577a683e051f60d3100bec23533"
+    },
+    {
+      "path": "tools/run_actual_open_order_identity_read_v122_01_to_v123_00.py",
+      "bytes": 3089,
+      "sha256": "5ba2a6b76b1888ae342c2f57483decde1ff299510c19ecb1c970c610bcef3b3e"
+    },
+    {
+      "path": "tools/run_autonomous_paper_order_identity_reconciliation_v122_01_to_v123_00.py",
+      "bytes": 2215,
+      "sha256": "858e630e3b1f175243c7961f2e14b4f8e65794bf845c2b2ed466480f7c636db0"
+    },
+    {
+      "path": "tools/test_autonomous_paper_order_identity_reconciliation_v122_01_to_v123_00.py",
+      "bytes": 6016,
+      "sha256": "1e6caba977e6e0f773c25ecf2c300800896372fa8b06aa4f062e201abeb5e8f4"
+    },
+    {
+      "path": "tools/verify_autonomous_paper_order_identity_reconciliation_v122_01_to_v123_00.py",
+      "bytes": 2289,
+      "sha256": "218905b7126495e40a9b54f8b99b58d748249d28002bce481c5a85129f97a388"
+    }
+  ]
+}
