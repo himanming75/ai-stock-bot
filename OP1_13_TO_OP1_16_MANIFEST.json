@@ -1,0 +1,20 @@
+{
+  "account_collection": true,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "8deb0be",
+  "bundle_type": "AUTOMATIC_READ_ONLY_SNAPSHOT_COLLECTOR",
+  "clock_collection": true,
+  "default_mode": "LOCAL_FIXTURE_SNAPSHOT_ONLY",
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_methods_allowed": [
+    "GET"
+  ],
+  "network_mode_optional": true,
+  "open_order_collection": true,
+  "order_submission_enabled": false,
+  "position_collection": true,
+  "snapshot_rotation": true,
+  "stage_range": "OP1.13-OP1.16",
+  "write_requests_executed": 0
+}

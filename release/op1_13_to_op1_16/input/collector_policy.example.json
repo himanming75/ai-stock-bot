@@ -1,0 +1,9 @@
+{
+  "collector_id": "paper-collector-001",
+  "read_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "rotation_enabled": true,
+  "history_limit": 30,
+  "expected_base_url": "https://paper-api.alpaca.markets"
+}
