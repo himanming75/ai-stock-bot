@@ -1,0 +1,10 @@
+{
+  "pilot_name": "controlled-paper-pilot",
+  "paper_only": true,
+  "single_pilot_only": true,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "require_zero_open_orders": true,
+  "maximum_pilot_days": 20
+}

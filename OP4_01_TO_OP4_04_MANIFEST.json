@@ -1,0 +1,17 @@
+{
+  "automatic_order_submission_enabled": false,
+  "base_commit": "2d18124",
+  "broker_write_enabled": false,
+  "bundle_type": "CONTROLLED_PAPER_PILOT_FOUNDATION",
+  "dashboard_state": true,
+  "duplicate_pilot_block": true,
+  "emergency_stop_gate": true,
+  "live_trading_enabled": false,
+  "paper_only": true,
+  "pilot_id": true,
+  "recovery_gate": true,
+  "runtime_lock": true,
+  "session_id": true,
+  "stage_range": "OP4.01-OP4.04",
+  "zero_open_orders_required": true
+}

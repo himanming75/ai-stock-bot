@@ -1,0 +1,23 @@
+{
+  "broker_write_enabled": false,
+  "duplicate_pilot": false,
+  "emergency_stop_engaged": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-02T07:50:26.929710+00:00",
+  "open_order_count": 2,
+  "open_orders_clear": false,
+  "paper_account_ready": true,
+  "paper_only": true,
+  "pilot_id": "",
+  "pilot_name": "controlled-paper-pilot",
+  "pilot_started": false,
+  "pilot_state": "WAIT_OPEN_ORDERS_CLEARANCE",
+  "pilot_status": "WAITING",
+  "position_count": 0,
+  "read_only_dashboard": true,
+  "recovery_required": true,
+  "session_id": "",
+  "stage": "OP4.04",
+  "start_gate_ready": false,
+  "started_at": ""
+}
