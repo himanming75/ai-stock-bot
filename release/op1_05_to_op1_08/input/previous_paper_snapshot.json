@@ -1,0 +1,14 @@
+{
+  "account": {
+    "status": "ACTIVE",
+    "account_blocked": false,
+    "trading_blocked": false,
+    "equity": "100000",
+    "cash": "100000"
+  },
+  "clock": {
+    "is_open": false
+  },
+  "open_orders": [],
+  "positions": []
+}

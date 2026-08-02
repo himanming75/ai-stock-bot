@@ -1,0 +1,3 @@
+git add autonomous_paper_runtime/daily_read_only_observation.py tools/run_daily_read_only_observation_op1_05_to_op1_08.py tools/test_daily_read_only_observation_op1_05_to_op1_08.py tools/install_check_op1_05_to_op1_08.py tools/verify_daily_read_only_observation_op1_05_to_op1_08.py RUN_OP1_05_TO_OP1_08_DAILY_OBSERVATION.ps1 RUN_OP1_05_TO_OP1_08_TEST_AND_VERIFY.ps1 release/op1_05_to_op1_08 OP1_05_TO_OP1_08_MANIFEST.json GIT_COMMIT_OP1_05_TO_OP1_08.txt
+git commit -m "OP1.05-OP1.08 daily read-only observation implemented"
+git push origin main

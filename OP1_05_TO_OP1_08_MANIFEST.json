@@ -1,0 +1,17 @@
+{
+  "account_drift": true,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "bdcf3ae",
+  "bundle_type": "DAILY_READ_ONLY_OBSERVATION",
+  "daily_operations_report": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "open_order_watch": true,
+  "order_submission_enabled": false,
+  "position_watch": true,
+  "stage_range": "OP1.05-OP1.08",
+  "write_requests_executed": 0
+}
