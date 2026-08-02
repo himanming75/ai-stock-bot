@@ -1,0 +1,22 @@
+{
+  "broker_write_enabled": false,
+  "collector_state": "WAIT_PILOT_START",
+  "cumulative_pnl": 0.0,
+  "cumulative_return_pct": 0.0,
+  "latest_equity": 100000.0,
+  "live_trading_enabled": false,
+  "losses": 0,
+  "max_drawdown_pct": 0.0,
+  "metrics_ready": false,
+  "observed_at": "2026-08-02T08:00:24.646439+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "pilot_started": false,
+  "sample_count": 0,
+  "session_health": "WAITING",
+  "session_id": "",
+  "stage": "OP4.12",
+  "trade_count": 0,
+  "win_rate_pct": 0.0,
+  "wins": 0
+}

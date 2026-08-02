@@ -1,0 +1,15 @@
+{
+  "base_commit": "590ef8e",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_PILOT_PERFORMANCE_COLLECTOR",
+  "cumulative_pnl": true,
+  "daily_return": true,
+  "dashboard_state": true,
+  "equity_history": true,
+  "live_trading_enabled": false,
+  "max_drawdown": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "stage_range": "OP4.09-OP4.12",
+  "win_loss_metrics": true
+}
