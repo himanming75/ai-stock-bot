@@ -1,0 +1,10 @@
+{
+  "windows_task_reviewed": true,
+  "service_account_reviewed": true,
+  "log_rotation_ready": true,
+  "monitoring_ready": true,
+  "secret_storage_safe": true,
+  "paper_endpoint_verified": true,
+  "live_endpoint_blocked": true,
+  "emergency_stop_ready": true
+}

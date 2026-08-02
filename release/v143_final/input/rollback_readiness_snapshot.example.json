@@ -1,0 +1,7 @@
+{
+  "rollback_script_ready": true,
+  "configuration_backup_ready": true,
+  "token_revocation_ready": true,
+  "scheduled_task_disable_ready": true,
+  "post_rollback_verification_ready": true
+}

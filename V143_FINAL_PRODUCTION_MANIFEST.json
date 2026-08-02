@@ -1,0 +1,17 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_submission_allowed": false,
+  "automatic_start_enabled": false,
+  "base_commit": "PENDING_V142_05_TO_V142_08_COMMIT",
+  "broker_network_allowed": false,
+  "bundle_type": "FINAL_PRODUCTION_RELEASE_PACKAGE",
+  "continuous_loop_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "paper_only": true,
+  "stage": "V143.FINAL",
+  "write_requests_executed": 0
+}

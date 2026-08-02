@@ -1,0 +1,8 @@
+{
+  "installer_script_ready": true,
+  "install_check_ready": true,
+  "verify_script_ready": true,
+  "runbook_ready": true,
+  "checksum_ready": true,
+  "uninstaller_ready": true
+}
