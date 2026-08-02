@@ -1,0 +1,11 @@
+{
+  "certificate_id": "",
+  "certificate_present": false,
+  "certificate_sha256": "",
+  "hash_algorithm": "SHA-256",
+  "paper_only": true,
+  "seal_present": false,
+  "stage": "OP5.12",
+  "verified": false,
+  "verified_at": "2026-08-02T08:27:34.579878+00:00"
+}

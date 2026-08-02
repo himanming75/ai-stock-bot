@@ -1,0 +1,14 @@
+{
+  "base_commit": "16fb1f0",
+  "broker_write_enabled": false,
+  "bundle_type": "VALIDATION_CERTIFICATE_FOUNDATION",
+  "certificate_generation": true,
+  "certificate_manifest": true,
+  "certificate_verification": true,
+  "issuance_requires_validation_complete": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "sha256_seal": true,
+  "stage_range": "OP5.09-OP5.12"
+}

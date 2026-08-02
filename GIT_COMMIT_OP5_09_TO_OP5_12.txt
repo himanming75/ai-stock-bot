@@ -1,0 +1,3 @@
+git add paper_pilot/validation_certificate.py dashboard/validation_certificate_integration.py tools/run_validation_certificate_op5_09_to_op5_12.py tools/test_validation_certificate_op5_09_to_op5_12.py tools/install_check_op5_09_to_op5_12.py tools/verify_validation_certificate_op5_09_to_op5_12.py RUN_OP5_09_TO_OP5_12_CERTIFICATE.ps1 RUN_OP5_09_TO_OP5_12_TEST_AND_VERIFY.ps1 release/op5_09_to_op5_12 OP5_09_TO_OP5_12_MANIFEST.json GIT_COMMIT_OP5_09_TO_OP5_12.txt
+git commit -m "OP5.09-OP5.12 Validation certificate foundation implemented"
+git push origin main

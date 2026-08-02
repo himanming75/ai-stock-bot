@@ -1,0 +1,16 @@
+{
+  "analytics_complete": false,
+  "broker_write_enabled": false,
+  "certificate_id": "",
+  "certificate_present": false,
+  "certificate_sha256": "",
+  "certificate_state": "WAIT_VALIDATION_COMPLETE",
+  "certificate_verified": false,
+  "issuance_ready": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-02T08:27:34.579878+00:00",
+  "paper_only": true,
+  "stage": "OP5.11",
+  "validation_complete": false,
+  "validation_gate_clear": false
+}
