@@ -1,0 +1,80 @@
+{
+  "account_gate": true,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "aae7abb",
+  "bundle_type": "NEXT_ORDER_ELIGIBILITY",
+  "eligibility_token": true,
+  "file_count": 13,
+  "files": [
+    {
+      "bytes": 445,
+      "path": "GIT_COMMIT_V139_06.txt",
+      "sha256": "243e1456ce5a3cac150196a6e764e65580235065ce927d11c426fc051abdc99b"
+    },
+    {
+      "bytes": 385,
+      "path": "RUN_V139_06_NEXT_ORDER_ELIGIBILITY.ps1",
+      "sha256": "35432dfa844584e69d60c217609e8d45c199e2aee9c7ae75dd4222df40bd15da"
+    },
+    {
+      "bytes": 531,
+      "path": "RUN_V139_06_TEST_AND_VERIFY.ps1",
+      "sha256": "547fa134e56bd6fa45c9ac59cd6fab0dfe2e12d24d5b992c7c081802e1f4f444"
+    },
+    {
+      "bytes": 10467,
+      "path": "autonomous_paper_runtime/next_order_eligibility.py",
+      "sha256": "20563bc1e85adb6ea526c7c95f3f94ed20cfbf9fb9175bc9e53db3e8c7d64c4f"
+    },
+    {
+      "bytes": 458,
+      "path": "release/v139_06/docs/DESIGN.md",
+      "sha256": "5d160e83214b1320c191aa48fe72c164c7b47a2af6fbece16f6cee1884aea37f"
+    },
+    {
+      "bytes": 419,
+      "path": "release/v139_06/docs/RELEASE_NOTES.md",
+      "sha256": "26b7d740ff38eb3a9f59230a2e5de2c2f6f49bf162a8bba14408653cf1592a97"
+    },
+    {
+      "bytes": 361,
+      "path": "release/v139_06/docs/TEST_RESULTS.md",
+      "sha256": "7c87ca0c058e8f659b253f5ea5901e82a459d0c77dbad31b4e28b759514091eb"
+    },
+    {
+      "bytes": 186,
+      "path": "release/v139_06/input/next_order_eligibility_snapshot.example.json",
+      "sha256": "3977527525d86075d9fbfbcf9fc0d6e1f350b7e47318dac9e150dcc4a5c318ab"
+    },
+    {
+      "bytes": 664,
+      "path": "tools/install_check_v139_06.py",
+      "sha256": "06ebbf5c87bfcfb35ce828c9b161f2b90290b3b83a6d897d4fa3f031df5a1140"
+    },
+    {
+      "bytes": 1419,
+      "path": "tools/run_next_order_eligibility_v139_06.py",
+      "sha256": "eed2121aed9ee21fa3f49a5d55cbb740a482e0ce9326afe2719bc44b34c3725f"
+    },
+    {
+      "bytes": 3417,
+      "path": "tools/test_next_order_eligibility_v139_06.py",
+      "sha256": "8838ce29e3bf66626e64e62419f3be7673ae2b411c43f2fc295dd603767d073e"
+    },
+    {
+      "bytes": 1079,
+      "path": "tools/verify_next_order_eligibility_v139_06.py",
+      "sha256": "29fd27971fa984b5b00be3e1a7b30a944a89109c9e85f0933e89af81137c2299"
+    }
+  ],
+  "live_orders_submitted": 0,
+  "market_gate": true,
+  "network_requests_executed": 0,
+  "open_order_gate": true,
+  "risk_gate": true,
+  "stage": "V139.06",
+  "validation_mode": "ACTUAL_SAVED_STATE_LOCAL_ONLY",
+  "write_requests_executed": 0
+}

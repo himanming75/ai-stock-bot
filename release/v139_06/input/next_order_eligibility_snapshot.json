@@ -1,0 +1,9 @@
+{
+  "account_active": true,
+  "trading_blocked": false,
+  "market_is_open": true,
+  "open_order_count": 0,
+  "position_count": 0,
+  "risk_approved": true,
+  "safe_mode_engaged": false
+}
