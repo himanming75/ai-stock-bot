@@ -1,0 +1,74 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "append_only_cycle_ledger": true,
+  "atomic_resume_token": true,
+  "base_commit": "fdc88b6",
+  "bundle_type": "AUTONOMOUS_CYCLE_RESUME",
+  "deterministic_cycle_id": true,
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 451,
+      "path": "GIT_COMMIT_V139_05.txt",
+      "sha256": "036a5344f3b8e43349bf4f667f887e6a7e6f846813ef44c3ab9811f4f8c9e5a6"
+    },
+    {
+      "bytes": 389,
+      "path": "RUN_V139_05_AUTONOMOUS_CYCLE_RESUME.ps1",
+      "sha256": "e0084ce2eb74079c44273545dc0a6558099068b58f0fa98776741e63809ccafa"
+    },
+    {
+      "bytes": 534,
+      "path": "RUN_V139_05_TEST_AND_VERIFY.ps1",
+      "sha256": "bcbd28270efdfca018c3033ad74e6a19405cc982a39561b3376aaebdaa1326da"
+    },
+    {
+      "bytes": 11312,
+      "path": "autonomous_paper_runtime/autonomous_cycle_resume.py",
+      "sha256": "a6cde2bc520b1daed6acbe6f7e1a4074c164cafbb61303705fef4fcd3842ac7c"
+    },
+    {
+      "bytes": 483,
+      "path": "release/v139_05/docs/DESIGN.md",
+      "sha256": "c2cf2e3dada8cb6ab80da16cc07624883b913d7957f9086ea4ab46878a1fd812"
+    },
+    {
+      "bytes": 418,
+      "path": "release/v139_05/docs/RELEASE_NOTES.md",
+      "sha256": "31c30153e272d9c4e20cd1f44b1900dec40408e59a9fe6c2ecc2df8ea040ffac"
+    },
+    {
+      "bytes": 353,
+      "path": "release/v139_05/docs/TEST_RESULTS.md",
+      "sha256": "d76054db51e5801a4894bf85ed86b4a4f22f2b4fe592922e4828311e9db90938"
+    },
+    {
+      "bytes": 604,
+      "path": "tools/install_check_v139_05.py",
+      "sha256": "45730b168a67b0cd2fd028e62ec64114873105d8e176b954ac834169dc3231bc"
+    },
+    {
+      "bytes": 1574,
+      "path": "tools/run_autonomous_cycle_resume_v139_05.py",
+      "sha256": "56c7a444b22a7a3c89da3be5fbf862e9a049a57c80e80207987cf69e4a50d00f"
+    },
+    {
+      "bytes": 4375,
+      "path": "tools/test_autonomous_cycle_resume_v139_05.py",
+      "sha256": "727c1123022e9c4d1017e82554a946e7989521dbed940911f31c4a9468a07aad"
+    },
+    {
+      "bytes": 1082,
+      "path": "tools/verify_autonomous_cycle_resume_v139_05.py",
+      "sha256": "85670251e5a8ab6b6a9acc2089211fb17441a4b50ed34836ccbd4f24890352a8"
+    }
+  ],
+  "idempotent_resume": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "stage": "V139.05",
+  "validation_mode": "ACTUAL_SAVED_STATE_LOCAL_ONLY",
+  "write_requests_executed": 0
+}
