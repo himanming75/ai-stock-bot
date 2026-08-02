@@ -1,0 +1,93 @@
+{
+  "base_commit": "4b12a8a",
+  "stage_range": "V126.01-V127.00",
+  "bundle_type": "CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER",
+  "expected_current_actual_decision": "EXISTING_ORDER_WAIT",
+  "current_recovered_open_order_count": 1,
+  "max_quantity": "1",
+  "max_estimated_notional": "100",
+  "allowed_symbols": [
+    "AAPL",
+    "SPY",
+    "QQQ"
+  ],
+  "order_type": "market",
+  "time_in_force": "day",
+  "requires_market_open": true,
+  "requires_zero_open_orders": true,
+  "requires_exact_submission_approval": true,
+  "live_trading_enabled": false,
+  "default_actual_paper_orders_submitted": 0,
+  "default_write_requests_executed": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V126_01_TO_V127_00_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER.txt",
+      "bytes": 814,
+      "sha256": "b4fc5e6a4db82cf6d9c4ba069d6c435a73aa9165c4f8136bc4f232d9fcf75c70"
+    },
+    {
+      "path": "RUN_V126_01_TO_V127_00_ACTUAL_CONTROLLED_PAPER_SINGLE_ORDER.ps1",
+      "bytes": 1169,
+      "sha256": "a28c414df3ec08427f6811e7144dbb9246f61ed61f5f7f496e4b8e16fe4cfdfa"
+    },
+    {
+      "path": "RUN_V126_01_TO_V127_00_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER.ps1",
+      "bytes": 1007,
+      "sha256": "afc6b522919dc994a5f38bf9f68e286549f80d8e52a264909989e102218d7017"
+    },
+    {
+      "path": "autonomous_paper_runtime/controlled_single_order.py",
+      "bytes": 12264,
+      "sha256": "e68a3dee5d8be7dd673b201950bb04b566b771f72fa4a93b56e20e4606c96d5e"
+    },
+    {
+      "path": "release/v127_00/docs/ACTUAL_RUN_INSTRUCTIONS.md",
+      "bytes": 869,
+      "sha256": "edb7f48a7ff0a0e97a8c05c6677f918a963cdc4e8b4f9a86c857612d5763102a"
+    },
+    {
+      "path": "release/v127_00/docs/DESIGN.md",
+      "bytes": 829,
+      "sha256": "9e58d009e4b48ba3891248f294260f3cb14af4971f9699ebe8e5bfb070100f2d"
+    },
+    {
+      "path": "release/v127_00/docs/RELEASE_NOTES.md",
+      "bytes": 405,
+      "sha256": "05c858aa7d9c6640987c25e71fe69dcc35c6a68b7e8ebc709d31cf803066ca33"
+    },
+    {
+      "path": "release/v127_00/docs/TEST_RESULTS.md",
+      "bytes": 370,
+      "sha256": "8352054d39f4e2eee1f7373c8d1622fca82b639546c32374d6a452a0f18b958e"
+    },
+    {
+      "path": "tools/install_check_v126_01_to_v127_00.py",
+      "bytes": 686,
+      "sha256": "c2595460c20825dea4c98c82e281cedaed830efe2d178f497f8493bcc3888f2a"
+    },
+    {
+      "path": "tools/run_actual_controlled_autonomous_paper_single_order_v126_01_to_v127_00.py",
+      "bytes": 3081,
+      "sha256": "25fa720b7bc740bd9ea94e88f08df20d0703d24eb692086890bb57f63c403d61"
+    },
+    {
+      "path": "tools/run_controlled_autonomous_paper_single_order_v126_01_to_v127_00.py",
+      "bytes": 2976,
+      "sha256": "9b17929914ec97aa3637f1e75418c85d6207d275b2f2ea7ed15c94f856ae93ae"
+    },
+    {
+      "path": "tools/test_controlled_autonomous_paper_single_order_v126_01_to_v127_00.py",
+      "bytes": 7917,
+      "sha256": "1d754c3bf38772897d2d66edee92f4c03824990a96cdc612e685fa3d0677cf7f"
+    },
+    {
+      "path": "tools/verify_controlled_autonomous_paper_single_order_v126_01_to_v127_00.py",
+      "bytes": 1675,
+      "sha256": "0dd79eb18163c04b1ce5440e3ab944c25c8c0c2acbc04d4194fa2aff24be632c"
+    }
+  ]
+}
