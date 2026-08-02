@@ -1,0 +1,84 @@
+{
+  "base_commit": "56d1417",
+  "stage_range": "V137.01-V138.00",
+  "bundle_type": "FINAL_PAPER_SUBMISSION_APPROVAL_GATE",
+  "expected_current_state": "WAIT_PREVIEW_PACKAGE",
+  "actual_runner_uses_saved_preview_only": true,
+  "actual_external_network_used": false,
+  "exact_human_approval_required": true,
+  "actual_submission_allowed_by_default": false,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V137_01_TO_V138_00_FINAL_PAPER_SUBMISSION_APPROVAL.txt",
+      "bytes": 745,
+      "sha256": "6f0cce13c72b08e834ad3c97629908e5040d5728d2cc66ef7f77085b1fddf2b8"
+    },
+    {
+      "path": "RUN_V137_01_TO_V138_00_ACTUAL_FINAL_PAPER_SUBMISSION_APPROVAL.ps1",
+      "bytes": 562,
+      "sha256": "1efbac0c54e421bf97096f0a0d635b0741275b4ec6ff126ad0dc5e1b0dde49b8"
+    },
+    {
+      "path": "RUN_V137_01_TO_V138_00_FINAL_PAPER_SUBMISSION_APPROVAL.ps1",
+      "bytes": 1040,
+      "sha256": "1461b3e28a5fdd5ae34c5f7c4ab715fd2820733f94931ef4b1e9f149a5f2b352"
+    },
+    {
+      "path": "autonomous_paper_runtime/final_submission_approval.py",
+      "bytes": 15807,
+      "sha256": "30e26b36fbae00d469827c1a86626ab3b3a1c31c5743cf0c634d936367fcc736"
+    },
+    {
+      "path": "release/v138_00/docs/ACTUAL_RUN_INSTRUCTIONS.md",
+      "bytes": 598,
+      "sha256": "92bd2e4ee33ff000b2f090616212362db8a49ccdf1e432a13e74403d0a67a6b3"
+    },
+    {
+      "path": "release/v138_00/docs/DESIGN.md",
+      "bytes": 652,
+      "sha256": "a8cd3c92856cc79b7ca30402eb80041ea6241b391accd4f41def11a0759ff77b"
+    },
+    {
+      "path": "release/v138_00/docs/RELEASE_NOTES.md",
+      "bytes": 262,
+      "sha256": "4953b2559bcdeb7823cb15193e6078ad3f68fa82445672024ea47dc9405ac7b4"
+    },
+    {
+      "path": "release/v138_00/docs/TEST_RESULTS.md",
+      "bytes": 235,
+      "sha256": "e3dab3a994f5668707e8386a9c58c611115efa5f766fdaf4dab98cd640f4d15c"
+    },
+    {
+      "path": "tools/install_check_v137_01_to_v138_00.py",
+      "bytes": 607,
+      "sha256": "04d3f0941265df3b63b061fcc48928dc5d5e7a833857ee1161ee7704b592ff37"
+    },
+    {
+      "path": "tools/run_actual_final_paper_submission_approval_v137_01_to_v138_00.py",
+      "bytes": 2655,
+      "sha256": "0f5d030eaffe911756e51f8a817780ebebb48113d5ccc8e259e8ae1909055456"
+    },
+    {
+      "path": "tools/run_final_paper_submission_approval_v137_01_to_v138_00.py",
+      "bytes": 2245,
+      "sha256": "d9af3cdc3aae8a6911dc69d69f1c7f161339b6d203a24771b236db753c18d59e"
+    },
+    {
+      "path": "tools/test_final_paper_submission_approval_v137_01_to_v138_00.py",
+      "bytes": 5821,
+      "sha256": "9b87209e5a9074da06b9efa7b15596e9ad22e996deaa1b09a74a13b02bc32513"
+    },
+    {
+      "path": "tools/verify_final_paper_submission_approval_v137_01_to_v138_00.py",
+      "bytes": 1613,
+      "sha256": "d3294701849df1e245f99c1db5d7d69a1af59bd00abdc99db3146705aff160f0"
+    }
+  ]
+}
