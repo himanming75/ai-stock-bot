@@ -1,0 +1,10 @@
+{
+  "base_commit": "2a4cefd",
+  "stage_range": "V140.06-V140.09",
+  "bundle_type": "ULTRA_FAST_AUTONOMOUS_ENGINE",
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "network_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0
+}

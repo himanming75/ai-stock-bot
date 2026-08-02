@@ -1,0 +1,9 @@
+{
+  "signal_id": "sig-example",
+  "symbol": "SPY",
+  "side": "BUY",
+  "confidence": 0.9,
+  "minimum_confidence": 0.7,
+  "entry_price": 100,
+  "stop_price": 98
+}

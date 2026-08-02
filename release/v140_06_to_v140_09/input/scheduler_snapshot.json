@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "interval_seconds": 30,
+  "heartbeat_age_seconds": 5,
+  "max_heartbeat_age_seconds": 120,
+  "scheduler_process_count": 1
+}

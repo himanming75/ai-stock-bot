@@ -1,0 +1,6 @@
+{
+  "equity": 10000,
+  "buying_power": 5000,
+  "risk_per_trade_pct": 0.01,
+  "max_symbol_exposure": 2000
+}
