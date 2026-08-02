@@ -1,0 +1,11 @@
+{
+  "schedule_id": "windows-read-only-schedule-001",
+  "task_name": "AIStockBot-ReadOnly-Collector",
+  "read_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "network_write_enabled": false,
+  "interval_minutes": 15,
+  "max_retries": 3,
+  "auto_install_task": false
+}

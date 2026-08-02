@@ -1,0 +1,18 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "automatic_task_installation": false,
+  "base_commit": "5c79c9d",
+  "bundle_type": "WINDOWS_SCHEDULED_READ_ONLY_COLLECTION",
+  "explicit_installer": true,
+  "heartbeat": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "network_write_enabled": false,
+  "order_submission_enabled": false,
+  "read_only": true,
+  "recovery_validation": true,
+  "stage_range": "OP1.17-OP1.20",
+  "windows_task_plan": true,
+  "write_requests_executed": 0
+}

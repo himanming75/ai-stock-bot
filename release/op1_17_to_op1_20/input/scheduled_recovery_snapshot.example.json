@@ -1,0 +1,8 @@
+{
+  "recovery_required": false,
+  "active_task_instances": 0,
+  "snapshot_write_in_progress": false,
+  "current_snapshot_corrupted": false,
+  "credentials_available": true,
+  "recovery_verified": true
+}
