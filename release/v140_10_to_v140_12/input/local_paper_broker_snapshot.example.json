@@ -1,0 +1,15 @@
+{
+  "account": {
+    "status": "ACTIVE",
+    "trading_blocked": false,
+    "cash": "100000",
+    "equity": "100000",
+    "buying_power": "200000"
+  },
+  "clock": {
+    "is_open": true,
+    "timestamp": "replace-with-current-paper-clock"
+  },
+  "open_orders": [],
+  "positions": []
+}

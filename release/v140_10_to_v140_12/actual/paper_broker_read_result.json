@@ -1,0 +1,12 @@
+{
+  "account_status": "",
+  "broker_read_verified": false,
+  "captured_at": "2026-08-02T05:05:53.339525+00:00",
+  "market_is_open": false,
+  "network_enabled": true,
+  "network_requests_executed": 0,
+  "open_order_count": 0,
+  "paper_endpoint_verified": true,
+  "position_count": 0,
+  "stage": "V140.10"
+}

@@ -1,0 +1,12 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "broker_order_id": "",
+  "broker_order_status": "",
+  "captured_at": "2026-08-02T05:05:53.341346+00:00",
+  "client_order_id": "",
+  "duplicate_order": false,
+  "network_requests_executed": 0,
+  "stage": "V140.11",
+  "submission_allowed": false,
+  "write_requests_executed": 0
+}
