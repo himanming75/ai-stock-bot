@@ -1,0 +1,96 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "all_blocking_checks_passed": true,
+  "approval_token_verified": true,
+  "autonomous_order_allowed": true,
+  "blocking_failure_count": 0,
+  "checks": [
+    {
+      "blocking": true,
+      "detail": "Alpaca Paper account must be ACTIVE",
+      "name": "ACCOUNT_ACTIVE",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "broker trading_blocked must be false",
+      "name": "TRADING_UNBLOCKED",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "order ledger must be recovered or contain no open orders",
+      "name": "LEDGER_RECOVERED",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "unknown broker orders must be zero",
+      "name": "UNKNOWN_ORDERS_ZERO",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "external or manual broker orders must be zero",
+      "name": "EXTERNAL_ORDERS_ZERO",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "broker and internal portfolio states must match",
+      "name": "PORTFOLIO_MATCHED",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "runtime recovery snapshot must be valid",
+      "name": "RECOVERY_VALID",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "runtime must be READY, WAITING, or STOPPED",
+      "name": "RUNTIME_READY",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "risk manager must report ready",
+      "name": "RISK_READY",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "kill switch must be disengaged",
+      "name": "KILL_SWITCH_OFF",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "emergency stop must be disengaged",
+      "name": "EMERGENCY_STOP_OFF",
+      "passed": true
+    },
+    {
+      "blocking": true,
+      "detail": "live trading must remain disabled",
+      "name": "LIVE_TRADING_DISABLED",
+      "passed": true
+    }
+  ],
+  "failed_check_count": 0,
+  "implementation_type": "AUTONOMOUS_SAFE_MODE_RECOVERY_GATE",
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "next_phase": "V126_01_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER",
+  "no_order_submission_performed": true,
+  "paper_write_ready": true,
+  "passed_check_count": 12,
+  "safe_mode_engaged": false,
+  "stage_range": "V125.01-V126.00",
+  "state": "PAPER_WRITE_READY",
+  "status": "PASS",
+  "validation_mode": "PAPER_WRITE_READINESS_CERTIFICATION",
+  "write_enablement_requested": true,
+  "write_requests_executed": 0
+}

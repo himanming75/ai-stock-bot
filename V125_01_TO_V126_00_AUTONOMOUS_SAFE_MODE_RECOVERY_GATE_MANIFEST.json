@@ -1,0 +1,87 @@
+{
+  "base_commit": "4eb4e35",
+  "stage_range": "V125.01-V126.00",
+  "bundle_type": "AUTONOMOUS_SAFE_MODE_RECOVERY_GATE",
+  "blocking_check_count": 12,
+  "default_state": "READ_ONLY_READY",
+  "approved_state": "PAPER_WRITE_READY",
+  "safe_failure_state": "SAFE_MODE",
+  "live_trading_enabled": false,
+  "readiness_only_no_order_submission": true,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "readiness_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V125_01_TO_V126_00_AUTONOMOUS_SAFE_MODE_RECOVERY_GATE.txt",
+      "bytes": 716,
+      "sha256": "b7c1a5662a96e0dcb896dcba0a862da2c3361f49560705be0fc9c6a977423030"
+    },
+    {
+      "path": "RUN_V125_01_TO_V126_00_AUTONOMOUS_SAFE_MODE_RECOVERY_GATE.ps1",
+      "bytes": 981,
+      "sha256": "06508a466ed09a7bb013b42ac1e179dd2aa33e037a8a18831d940204a2510ebf"
+    },
+    {
+      "path": "RUN_V125_01_TO_V126_00_PAPER_WRITE_READINESS.ps1",
+      "bytes": 719,
+      "sha256": "962db30bd86ad4d9bf8272b2e7ee356a34ebfbd7c259c0f53897fbf7a090e73f"
+    },
+    {
+      "path": "autonomous_paper_runtime/safe_mode_gate.py",
+      "bytes": 8447,
+      "sha256": "0e7102a8e3157375fa83fe407849121ac989adf125e67f56e12e6bd971c1c8dd"
+    },
+    {
+      "path": "release/v126_00/docs/DESIGN.md",
+      "bytes": 711,
+      "sha256": "7b060e3ae3dc20e6fb01af60cf4b0f8bf929d659de1d4c4999ac21f2200fb781"
+    },
+    {
+      "path": "release/v126_00/docs/PAPER_WRITE_READINESS_INSTRUCTIONS.md",
+      "bytes": 610,
+      "sha256": "5f4b5e60e416749b54637e0f89bf3de84e3b287d1617b705bb7bd451ecb85f6e"
+    },
+    {
+      "path": "release/v126_00/docs/RELEASE_NOTES.md",
+      "bytes": 335,
+      "sha256": "7c0a502ccd8264d8e7bfdb133b3d6be9a92f41cd0d36fb14ffbf5b3ec0e3a1b5"
+    },
+    {
+      "path": "release/v126_00/docs/TEST_RESULTS.md",
+      "bytes": 435,
+      "sha256": "020963de323eb1e6067f8e5a76300bb25219966221f19c22b38b3b5636b221c0"
+    },
+    {
+      "path": "tools/install_check_v125_01_to_v126_00.py",
+      "bytes": 742,
+      "sha256": "f63161e4b0d5e8f5addcb36f2cd4694058f97824cbe564493e30794dbe47f85a"
+    },
+    {
+      "path": "tools/run_autonomous_safe_mode_recovery_gate_v125_01_to_v126_00.py",
+      "bytes": 2958,
+      "sha256": "78c317f938c639f71cd06840e85d2eeb3027259ddc2b8661851b8f1b9820fa8f"
+    },
+    {
+      "path": "tools/run_paper_write_readiness_v125_01_to_v126_00.py",
+      "bytes": 2713,
+      "sha256": "3c034a4a62d3250c9a56d504b9798ebefed437aa689ff49c2fac34b7dfbdd6f3"
+    },
+    {
+      "path": "tools/test_autonomous_safe_mode_recovery_gate_v125_01_to_v126_00.py",
+      "bytes": 5389,
+      "sha256": "9cd8be5007c6050b97ce379e43b6f4c25b8f09334bcf4dbac1a16de4e7db11a3"
+    },
+    {
+      "path": "tools/verify_autonomous_safe_mode_recovery_gate_v125_01_to_v126_00.py",
+      "bytes": 1943,
+      "sha256": "78b8d4b609dea6e68d2157ac001a045781908041c4fa8f4c6cf4f94e6df4c08c"
+    }
+  ]
+}
