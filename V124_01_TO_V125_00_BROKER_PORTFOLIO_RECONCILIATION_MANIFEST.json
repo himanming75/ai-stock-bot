@@ -1,0 +1,105 @@
+{
+  "base_commit": "5ee8d2b",
+  "stage_range": "V124.01-V125.00",
+  "bundle_type": "BROKER_PORTFOLIO_RECONCILIATION",
+  "comparison_fields": [
+    "CASH",
+    "EQUITY",
+    "BUYING_POWER",
+    "POSITION_COUNT",
+    "POSITION_SYMBOLS",
+    "POSITION_QUANTITIES",
+    "AVERAGE_ENTRY_PRICES",
+    "MARKET_VALUES",
+    "UNREALIZED_PNL",
+    "OPEN_ORDER_COUNT",
+    "RESERVED_BUY_NOTIONAL"
+  ],
+  "actual_snapshot_cash": "100000",
+  "actual_snapshot_equity": "100000",
+  "actual_snapshot_buying_power": "399692.65",
+  "actual_snapshot_position_count": 0,
+  "recovered_open_order_count": 1,
+  "safe_mode_on_mismatch": true,
+  "optional_actual_get_only_runner": true,
+  "default_pipeline_actual_network": false,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION.txt",
+      "bytes": 776,
+      "sha256": "a85634226a604cc295eed6fd8f16514eb2f70f90c083930f0e9f3186fce80382"
+    },
+    {
+      "path": "RUN_V124_01_TO_V125_00_ACTUAL_BROKER_PORTFOLIO_RECONCILIATION.ps1",
+      "bytes": 918,
+      "sha256": "01ecd8329108bb6ec02fab04ee8e880d21fdcba87133dcf615f21b0373ac9b3a"
+    },
+    {
+      "path": "RUN_V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION.ps1",
+      "bytes": 975,
+      "sha256": "b81e98948b4e876b8dd7b7c5dcc769b23757f765aad67b45f039e3d15cf5f2ea"
+    },
+    {
+      "path": "autonomous_paper_runtime/__init__.py",
+      "bytes": 2285,
+      "sha256": "1f3ae5728eb0751c1a2c571805a319c977767cbaa5e5191198b8da05faf23555"
+    },
+    {
+      "path": "autonomous_paper_runtime/portfolio_reconciliation.py",
+      "bytes": 14913,
+      "sha256": "7520b35a156f54e4cdd019e8c05e66f0682fb2af54dcff976c83920d4d8af3bf"
+    },
+    {
+      "path": "release/v125_00/docs/ACTUAL_RECONCILIATION_INSTRUCTIONS.md",
+      "bytes": 627,
+      "sha256": "2ea3af59a17e17df4a24c1916858dc73770ae137730db404a31198dcf8324097"
+    },
+    {
+      "path": "release/v125_00/docs/DESIGN.md",
+      "bytes": 621,
+      "sha256": "cf10799cb63ffeb209e6a042adf5ef06fa4533c111ebf9f2ab4abfbb982140f2"
+    },
+    {
+      "path": "release/v125_00/docs/RELEASE_NOTES.md",
+      "bytes": 353,
+      "sha256": "17aa4d1042ea31a96536ab95a092a1a3b3c2921a3390673e8961f0a2ebebdd57"
+    },
+    {
+      "path": "release/v125_00/docs/TEST_RESULTS.md",
+      "bytes": 556,
+      "sha256": "c06f0c1bd2aec2aee4022182eb3e74148504b1ac2d55c1dd7edd43ce0c7b69da"
+    },
+    {
+      "path": "tools/install_check_v124_01_to_v125_00.py",
+      "bytes": 804,
+      "sha256": "4ab81989d6e78e61f3b3b1b05049ae8ddaa843309e5d0dc649b607f99d31ec75"
+    },
+    {
+      "path": "tools/run_actual_broker_portfolio_reconciliation_v124_01_to_v125_00.py",
+      "bytes": 4633,
+      "sha256": "0bea793b80cd851893a2502474fd43577020ff058739855acd01a0275537de0e"
+    },
+    {
+      "path": "tools/run_broker_portfolio_reconciliation_v124_01_to_v125_00.py",
+      "bytes": 3917,
+      "sha256": "c9cad372c2495735812830eea61f17da62fe03fc392891d9ad2943e041d19068"
+    },
+    {
+      "path": "tools/test_broker_portfolio_reconciliation_v124_01_to_v125_00.py",
+      "bytes": 7861,
+      "sha256": "01eb1514108aef2153007923c888999adcc3bb081ed2fca36ef840d6e4763587"
+    },
+    {
+      "path": "tools/verify_broker_portfolio_reconciliation_v124_01_to_v125_00.py",
+      "bytes": 2460,
+      "sha256": "63dbfb75234d4c201b6656b5a027e906f5034d87ea3647d777b40e59fe4ac90a"
+    }
+  ]
+}
