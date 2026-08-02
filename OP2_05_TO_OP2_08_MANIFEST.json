@@ -1,0 +1,18 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "bdbfda0",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_PERFORMANCE_EVALUATION",
+  "equity_curve": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "max_drawdown": true,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "profit_factor": true,
+  "shadow_only": true,
+  "shadow_sharpe": true,
+  "stage_range": "OP2.05-OP2.08",
+  "win_rate": true,
+  "write_requests_executed": 0
+}

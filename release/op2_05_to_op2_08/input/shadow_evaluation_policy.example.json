@@ -1,0 +1,10 @@
+{
+  "evaluation_id": "shadow-evaluation-001",
+  "shadow_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "minimum_completed_trades": 2,
+  "initial_shadow_capital": 100000,
+  "maximum_drawdown_limit_pct": 5,
+  "minimum_profit_factor": 1
+}

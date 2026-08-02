@@ -1,0 +1,22 @@
+{
+  "trades": [
+    {
+      "decision_id": "shadow-decision-001",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "entry_price": 100,
+      "exit_price": 110,
+      "quantity": 2,
+      "fees": 0
+    },
+    {
+      "decision_id": "shadow-decision-002",
+      "symbol": "MSFT",
+      "action": "BUY",
+      "entry_price": 100,
+      "exit_price": 95,
+      "quantity": 1,
+      "fees": 0
+    }
+  ]
+}
