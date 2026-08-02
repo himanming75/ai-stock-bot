@@ -1,0 +1,85 @@
+{
+  "base_commit": "52207dd",
+  "stage_range": "V133.01-V134.00",
+  "bundle_type": "TERMINAL_MONITOR_COMMIT_ORCHESTRATOR",
+  "expected_current_state": "CONTINUE_TRACKING",
+  "actual_runner_get_only": true,
+  "network_requests_per_poll": 3,
+  "terminal_local_commit": true,
+  "idempotent_commit": true,
+  "monitor_safe_mode_blocks_commit": true,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V133_01_TO_V134_00_TERMINAL_MONITOR_COMMIT_ORCHESTRATOR.txt",
+      "bytes": 783,
+      "sha256": "fad0f6baf3383f06b1a68cf4f42ba62ad774750d0ddcf3c5fc396574c52f5a6c"
+    },
+    {
+      "path": "RUN_V133_01_TO_V134_00_ACTUAL_TERMINAL_MONITOR_COMMIT.ps1",
+      "bytes": 949,
+      "sha256": "175043f4f186e5ea647cebf7ae4fee800f63356a0b494fc79448f8cc7a6c8b22"
+    },
+    {
+      "path": "RUN_V133_01_TO_V134_00_TERMINAL_MONITOR_COMMIT_ORCHESTRATOR.ps1",
+      "bytes": 1141,
+      "sha256": "5e5efeb2794acaface17a912a5f9675ce8da54a783fc117e594452d517339ef6"
+    },
+    {
+      "path": "autonomous_paper_runtime/terminal_monitor_commit_orchestrator.py",
+      "bytes": 4529,
+      "sha256": "f2b86b6d5a6560d64ea2d0affb92a64d50c1408bd4e6a099ac5b2e678b97b0e3"
+    },
+    {
+      "path": "release/v134_00/docs/ACTUAL_RUN_INSTRUCTIONS.md",
+      "bytes": 419,
+      "sha256": "ba5c46099083e5178cd88d26aaa35dba278c9ce48faa7112c86d0a7d51b01c70"
+    },
+    {
+      "path": "release/v134_00/docs/DESIGN.md",
+      "bytes": 445,
+      "sha256": "c52eb45300fabe761e22ab1085ef1878a2f29519bc95b53424e80087668fc380"
+    },
+    {
+      "path": "release/v134_00/docs/RELEASE_NOTES.md",
+      "bytes": 195,
+      "sha256": "2ccaea68af19dbaf08cf33aae72e2b8da3ed8945a73eedcc9d32d1f7b8058d5e"
+    },
+    {
+      "path": "release/v134_00/docs/TEST_RESULTS.md",
+      "bytes": 207,
+      "sha256": "b51ae44a10c302bf682284e270e2c9f3a7f648f99283b60d5cdeb6a29a6edcf0"
+    },
+    {
+      "path": "tools/install_check_v133_01_to_v134_00.py",
+      "bytes": 538,
+      "sha256": "f0c5e7b7dfe0dc6531c94ef47acbec874c6cb8aa3a5b6fc45eb04159c8988e97"
+    },
+    {
+      "path": "tools/run_actual_terminal_monitor_commit_orchestrator_v133_01_to_v134_00.py",
+      "bytes": 5347,
+      "sha256": "aa9a92a329428ccaead81fe87e23b7fe79f07bdde018d343629fa80c1fccdb43"
+    },
+    {
+      "path": "tools/run_terminal_monitor_commit_orchestrator_v133_01_to_v134_00.py",
+      "bytes": 2673,
+      "sha256": "7532ad08e9032154b1ec090822ed708d7c6af5151598c8e54aa30f78cab14bc6"
+    },
+    {
+      "path": "tools/test_terminal_monitor_commit_orchestrator_v133_01_to_v134_00.py",
+      "bytes": 4984,
+      "sha256": "6df79a6dd77ea4782a8f8146f29aa49acb6ecf8ed63f1ac78d25e2eeec5114c1"
+    },
+    {
+      "path": "tools/verify_terminal_monitor_commit_orchestrator_v133_01_to_v134_00.py",
+      "bytes": 1722,
+      "sha256": "b26c3cd300ff03347818eca043ffbcf8f38f23150e8c766c569cbd02d6824c1e"
+    }
+  ]
+}
