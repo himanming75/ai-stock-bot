@@ -1,0 +1,74 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "dfef44f",
+  "bundle_type": "RECOVERY_VALIDATION",
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 427,
+      "path": "GIT_COMMIT_V139_04.txt",
+      "sha256": "03bbcca10fed947825d44f636cb3767daea473625c27ca2dadb457195ae77e43"
+    },
+    {
+      "bytes": 382,
+      "path": "RUN_V139_04_RECOVERY_VALIDATION.ps1",
+      "sha256": "97a90c5b2639d9477a84f3c4b84d00b2594fc52614a7da2f93084ab12bf0e23b"
+    },
+    {
+      "bytes": 527,
+      "path": "RUN_V139_04_TEST_AND_VERIFY.ps1",
+      "sha256": "fea6229a1feaa87a3b0db66366667ef7f9ab91b4ab1d72dbc9c0239b20ac0266"
+    },
+    {
+      "bytes": 11781,
+      "path": "autonomous_paper_runtime/recovery_validation.py",
+      "sha256": "d1f683e68329017cd753da28ef1fe728199ce36741b4bb81ca72abc2c0b4cef1"
+    },
+    {
+      "bytes": 516,
+      "path": "release/v139_04/docs/DESIGN.md",
+      "sha256": "c44fa1b1f4fbcc16061ad3c21be21382907834d06e849d8c4dcd2205d75d00d7"
+    },
+    {
+      "bytes": 475,
+      "path": "release/v139_04/docs/RELEASE_NOTES.md",
+      "sha256": "b9f7c67b2846d2995a144cbfc05d19c763cccaee941a082fab4a58d48ce7074e"
+    },
+    {
+      "bytes": 337,
+      "path": "release/v139_04/docs/TEST_RESULTS.md",
+      "sha256": "09043594d5ef57fac88f1a96101d87a68f2ed7a0d34a2e435e6a6dab2cd1e58f"
+    },
+    {
+      "bytes": 586,
+      "path": "tools/install_check_v139_04.py",
+      "sha256": "2b819de30beb7267d54c77f6acae05bb5bb8331d293f1847c304e382d7064836"
+    },
+    {
+      "bytes": 1730,
+      "path": "tools/run_recovery_validation_v139_04.py",
+      "sha256": "a0866e90e05029cde60d89feff244a3f8d2edcda977ac9c7ddf422df1cc44d31"
+    },
+    {
+      "bytes": 4498,
+      "path": "tools/test_recovery_validation_v139_04.py",
+      "sha256": "f259f073496f1fcda4165f3cdcd01aebda6be9d745b9cc40f82f6ca36a66835f"
+    },
+    {
+      "bytes": 1141,
+      "path": "tools/verify_recovery_validation_v139_04.py",
+      "sha256": "c196a4710e82fe8f3879d04d0cb0f74bc28118fe820454bfe0a9cd16515640d6"
+    }
+  ],
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "recovery_snapshot_validation": true,
+  "stage": "V139.04",
+  "unlock_ledger_sequence_validation": true,
+  "unlock_result_validation": true,
+  "unlock_token_validation": true,
+  "validation_mode": "ACTUAL_SAVED_STATE_LOCAL_ONLY",
+  "write_requests_executed": 0
+}
