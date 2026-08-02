@@ -1,0 +1,90 @@
+{
+  "base_commit": "a230a33",
+  "stage_range": "V132.01-V133.00",
+  "bundle_type": "TERMINAL_COMPLETION_COMMIT",
+  "expected_current_state": "CONTINUE_TRACKING",
+  "current_actual_status": "ACCEPTED",
+  "actual_runner_get_only": true,
+  "local_terminal_artifacts": [
+    "completion_ledger",
+    "audit_ledger",
+    "unlock_ledger",
+    "recovery_snapshot"
+  ],
+  "idempotent_commit": true,
+  "network_requests_in_default_demo": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V132_01_TO_V133_00_TERMINAL_COMPLETION_COMMIT.txt",
+      "bytes": 685,
+      "sha256": "eec28e79305b421e85d2a0f5c1298ec524e233fb82f8885c11b52e8defbb2668"
+    },
+    {
+      "path": "RUN_V132_01_TO_V133_00_ACTUAL_TERMINAL_COMPLETION_COMMIT.ps1",
+      "bytes": 818,
+      "sha256": "4b7f383f55ebce4b9df0699cb0b175c2390cf0a73d1cd2b84817cb971efc16ef"
+    },
+    {
+      "path": "RUN_V132_01_TO_V133_00_TERMINAL_COMPLETION_COMMIT.ps1",
+      "bytes": 1109,
+      "sha256": "bc3f4d420ac95ab1b705f405adc132eaa56af29f73fa34d3cc925a1d74706ed3"
+    },
+    {
+      "path": "autonomous_paper_runtime/terminal_commit.py",
+      "bytes": 14553,
+      "sha256": "7abf1520e163b37c91c7df6ebe970d5461420d97c4c3008ad6514059b1ffacec"
+    },
+    {
+      "path": "release/v133_00/docs/ACTUAL_COMMIT_INSTRUCTIONS.md",
+      "bytes": 475,
+      "sha256": "36b3868daae1398e0208233c96477901fe3b9df36ff0b3856b11b46bc7fe86ca"
+    },
+    {
+      "path": "release/v133_00/docs/DESIGN.md",
+      "bytes": 508,
+      "sha256": "2f0be12c2675bea433cf38deb5bb0551e6c80065083ffb9636f1e4548ad1ae6a"
+    },
+    {
+      "path": "release/v133_00/docs/RELEASE_NOTES.md",
+      "bytes": 293,
+      "sha256": "c78d4faecfa9a0af2405934a252b970f0ae89620f3218657a883c1d76d68fb04"
+    },
+    {
+      "path": "release/v133_00/docs/TEST_RESULTS.md",
+      "bytes": 355,
+      "sha256": "b8710519bef333a333d87d1523cc8654f2ecaba55a5789fb83ddbac2bdb05e2d"
+    },
+    {
+      "path": "tools/install_check_v132_01_to_v133_00.py",
+      "bytes": 550,
+      "sha256": "f02ddf51c9bf799261542a046bdba537ffd812ba3a68b5d9e2769abc04b6c15b"
+    },
+    {
+      "path": "tools/run_actual_terminal_completion_commit_v132_01_to_v133_00.py",
+      "bytes": 4677,
+      "sha256": "55f61557ad77d0503dfb9d345db2c568588240518dace8791524d73c2230131d"
+    },
+    {
+      "path": "tools/run_terminal_completion_commit_v132_01_to_v133_00.py",
+      "bytes": 2734,
+      "sha256": "0e633173b19df76464a1e087590e804d5fba50c33d1ded9205c63a66520723a3"
+    },
+    {
+      "path": "tools/test_terminal_completion_commit_v132_01_to_v133_00.py",
+      "bytes": 7506,
+      "sha256": "9caa97511821639604fadac14240285b49f3c871c2bcf0d6ad2a7cdc3d50667d"
+    },
+    {
+      "path": "tools/verify_terminal_completion_commit_v132_01_to_v133_00.py",
+      "bytes": 1668,
+      "sha256": "9ca197438ca9668a50ebd43bb3e9ea6877e30c22dc7460f837b8d506e8612447"
+    }
+  ]
+}

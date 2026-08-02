@@ -1,0 +1,14 @@
+{
+  "average_fill_price": "0",
+  "broker_order_id": "3bd9f491-0629-4cf4-9b0e-2a27eadea98d",
+  "cash": "100000",
+  "client_order_id": "single-60d3c5406e5226ae71d7",
+  "equity": "100000",
+  "filled_quantity": "0",
+  "final_status": "accepted",
+  "position_quantity": "0",
+  "quantity": "1",
+  "remaining_quantity": "1",
+  "side": "buy",
+  "symbol": "AAPL"
+}
