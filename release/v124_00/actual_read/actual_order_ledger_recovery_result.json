@@ -1,0 +1,49 @@
+{
+  "actual_credentials_used": true,
+  "actual_external_network_used": true,
+  "actual_paper_orders_submitted": 0,
+  "autonomous_order_allowed": true,
+  "broker_read_requests_executed": 1,
+  "entries": [
+    {
+      "broker_order_id": "3bd9f491-0629-4cf4-9b0e-2a27eadea98d",
+      "client_order_id": "single-60d3c5406e5226ae71d7",
+      "evidence": [
+        {
+          "confidence": "HIGH",
+          "match_type": "CLIENT_ORDER_ID",
+          "matched_value": "single-60d3c5406e5226ae71d7",
+          "source_path": "release/v86_20/output/packages/single-order-validation-2060ad51cf3a236feb3ae21f/offline_scenario.json"
+        }
+      ],
+      "filled_quantity": "0",
+      "limit_price": null,
+      "order_type": "",
+      "owner": "LEGACY_BOT",
+      "quantity": "1",
+      "recovery_status": "RECOVERED",
+      "side": "BUY",
+      "source": "REPOSITORY_EVIDENCE",
+      "status": "ACCEPTED",
+      "submitted_at": "",
+      "symbol": "AAPL",
+      "time_in_force": ""
+    }
+  ],
+  "evidence_count": 1,
+  "external_count": 0,
+  "implementation_type": "AUTONOMOUS_ORDER_LEDGER_RECOVERY",
+  "ledger_recovery_status": "RECOVERED",
+  "live_orders_submitted": 0,
+  "next_phase": "V124_01_BROKER_PORTFOLIO_RECONCILIATION",
+  "open_order_count": 1,
+  "read_requests_executed": 0,
+  "recovered_count": 1,
+  "safe_mode_engaged": false,
+  "scanned_file_count": 7300,
+  "stage_range": "V123.01-V124.00",
+  "status": "PASS",
+  "unknown_count": 0,
+  "validation_mode": "ACTUAL_ALPACA_PAPER_GET_ONLY",
+  "write_requests_executed": 0
+}

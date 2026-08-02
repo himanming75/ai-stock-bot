@@ -1,0 +1,9 @@
+from pathlib import Path
+import argparse,json,os,sys
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from alpaca_broker import AlpacaPaperClient,AlpacaPaperConfig,CredentialLoader,UrllibHttpTransport
+from autonomous_paper_runtime import AutonomousOrderLedgerRecovery
+p=argparse.ArgumentParser();p.add_argument('--repository-root',default='.');a=p.parse_args();env=dict(os.environ);confirm='READ ACTUAL ALPACA PAPER OPEN ORDERS AND RECOVER LEDGER GET ONLY'
+if env.get('AI_STOCK_BOT_ENABLE_ACTUAL_ORDER_LEDGER_RECOVERY','').upper()!='YES':raise SystemExit('AI_STOCK_BOT_ENABLE_ACTUAL_ORDER_LEDGER_RECOVERY=YES is required')
+if env.get('AI_STOCK_BOT_ACTUAL_ORDER_LEDGER_RECOVERY_CONFIRMATION','')!=confirm:raise SystemExit('exact confirmation is required')
+key,secret=CredentialLoader().load(env);client=AlpacaPaperClient(config=AlpacaPaperConfig(network_read_enabled=True,network_write_enabled=False,max_retries=2),api_key=key,secret_key=secret,transport=UrllibHttpTransport());root=Path(a.repository_root).resolve();r=AutonomousOrderLedgerRecovery().recover(root,tuple(client.list_orders(status='open')),[]);d=r.to_json_dict();st=d.pop('status');result={'stage_range':'V123.01-V124.00','status':'PASS','ledger_recovery_status':st,'implementation_type':'AUTONOMOUS_ORDER_LEDGER_RECOVERY','validation_mode':'ACTUAL_ALPACA_PAPER_GET_ONLY','actual_credentials_used':True,'actual_external_network_used':True,**d,'broker_read_requests_executed':1,'next_phase':'V124_01_BROKER_PORTFOLIO_RECONCILIATION' if st=='RECOVERED' else 'V124_01_EXTERNAL_ORDER_SAFE_MODE_RESOLUTION'};out=root/'release/v124_00/actual_read';out.mkdir(parents=True,exist_ok=True);path=out/'actual_order_ledger_recovery_result.json';path.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n');print(json.dumps(result,indent=2,sort_keys=True));print(f'RESULT_FILE={path}')

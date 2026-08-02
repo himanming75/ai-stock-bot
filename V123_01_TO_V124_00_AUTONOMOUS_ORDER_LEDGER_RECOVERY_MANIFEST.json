@@ -1,0 +1,90 @@
+{
+  "base_commit": "80ef6d7",
+  "stage_range": "V123.01-V124.00",
+  "bundle_type": "AUTONOMOUS_ORDER_LEDGER_RECOVERY",
+  "target_client_order_id": "single-60d3c5406e5226ae71d7",
+  "actual_identity_result_excluded_as_evidence": true,
+  "current_stage_files_excluded_as_evidence": true,
+  "demo_ledger_recovery_status": "EXTERNAL_ORDER",
+  "optional_actual_get_only_runner": true,
+  "default_pipeline_actual_network": false,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 15,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY.txt",
+      "bytes": 751,
+      "sha256": "0a51169ffb3e5a179084412e1c9ab5a4f4295cc1f76387b478f3c8885dfff3eb"
+    },
+    {
+      "path": "RUN_V123_01_TO_V124_00_ACTUAL_ORDER_LEDGER_RECOVERY.ps1",
+      "bytes": 824,
+      "sha256": "1a98e3a122f8f4d2450a9ee8863c66610cb576b33e550cf8d668cf319c2050d2"
+    },
+    {
+      "path": "RUN_V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY.ps1",
+      "bytes": 960,
+      "sha256": "5663c22e0b66b4f46f081c0931f9e1beea4b2f5a8bebe8ddbe7f5f61e2d43ea3"
+    },
+    {
+      "path": "autonomous_paper_runtime/__init__.py",
+      "bytes": 897,
+      "sha256": "6e1470b07c54424e7088a0dd2b17069ecf9155dcee27cef0fe90742e1d177e4c"
+    },
+    {
+      "path": "autonomous_paper_runtime/order_ledger.py",
+      "bytes": 7169,
+      "sha256": "6db8cfee5eea8d63983cf8823340f10233b687483e70a358797d9cd83318849b"
+    },
+    {
+      "path": "release/v124_00/docs/ACTUAL_LEDGER_RECOVERY_INSTRUCTIONS.md",
+      "bytes": 343,
+      "sha256": "fff47787c28a9fd946db0b05a41eb18ff594186c7304d647d86700958d5fba1b"
+    },
+    {
+      "path": "release/v124_00/docs/DESIGN.md",
+      "bytes": 661,
+      "sha256": "826af020f5aba9c26c4f0982c62ccb0d18ccb13c4808e71909c5a1e0fe474cb6"
+    },
+    {
+      "path": "release/v124_00/docs/RELEASE_NOTES.md",
+      "bytes": 118,
+      "sha256": "906818aa3662e138af48aafdb29c8c3347d533cf207a8ddc2fb8f1c8ea1bd1de"
+    },
+    {
+      "path": "release/v124_00/docs/TEST_RESULTS.md",
+      "bytes": 170,
+      "sha256": "3106dec71554b2eb73c8891e4f22c58eedbd069d8f9247d64ae15b8257911285"
+    },
+    {
+      "path": "tools/install_check_v123_01_to_v124_00.py",
+      "bytes": 638,
+      "sha256": "161ba8c48622c3a6c19cdc6ca38574b79c87725b1c227fc095063bdf4bdcfdd1"
+    },
+    {
+      "path": "tools/run_actual_order_ledger_recovery_v123_01_to_v124_00.py",
+      "bytes": 1861,
+      "sha256": "f440afc8c49f7f767120c51a3c913221651436f6117c49c4c04be2f1a3263d51"
+    },
+    {
+      "path": "tools/run_autonomous_order_ledger_recovery_v123_01_to_v124_00.py",
+      "bytes": 1779,
+      "sha256": "fbcc9631902080ed057c8cbfab5dabac49fb8d1aafdbb55c94c7e5b43358683b"
+    },
+    {
+      "path": "tools/test_autonomous_order_ledger_recovery_v123_01_to_v124_00.py",
+      "bytes": 3432,
+      "sha256": "a7105a24240c5275128e250dc54ed21698562232514ee6bdada7cbdca65d4df1"
+    },
+    {
+      "path": "tools/verify_autonomous_order_ledger_recovery_v123_01_to_v124_00.py",
+      "bytes": 1429,
+      "sha256": "50fd44abdfedf978183b69f7bd35ad9e5fc6b6570ecdedf012427ec982339e51"
+    }
+  ]
+}
