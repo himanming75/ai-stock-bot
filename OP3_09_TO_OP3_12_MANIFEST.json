@@ -1,0 +1,17 @@
+{
+  "audit_ledger": true,
+  "base_commit": "a0b2d59",
+  "bundle_type": "PAPER_ORDER_LIFECYCLE_RECONCILIATION",
+  "cancel_enabled": false,
+  "default_mode": "LOCAL_SNAPSHOT_ONLY",
+  "fill_monitoring": true,
+  "live_trading_enabled": false,
+  "network_mode": "READ_ONLY_GET",
+  "order_status_monitoring": true,
+  "paper_only": true,
+  "position_reconciliation": true,
+  "replace_enabled": false,
+  "restart_recovery": true,
+  "stage_range": "OP3.09-OP3.12",
+  "write_requests_enabled": false
+}

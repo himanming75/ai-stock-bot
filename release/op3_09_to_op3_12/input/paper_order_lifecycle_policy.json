@@ -1,0 +1,10 @@
+{
+  "lifecycle_id": "paper-order-lifecycle-001",
+  "paper_only": true,
+  "read_only": true,
+  "order_write_enabled": false,
+  "cancel_enabled": false,
+  "replace_enabled": false,
+  "timeout_seconds": 10,
+  "expected_base_url": "https://paper-api.alpaca.markets"
+}

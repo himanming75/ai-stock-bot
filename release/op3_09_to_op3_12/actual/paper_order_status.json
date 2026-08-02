@@ -1,0 +1,11 @@
+{
+  "broker_order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+  "client_order_id": "op3-a5a1b0f16a0309dbebfbce88",
+  "lifecycle_id": "paper-order-lifecycle-001",
+  "observed_at": "2026-08-02T07:16:51.160141+00:00",
+  "recovery_required": true,
+  "stage": "OP3.09",
+  "status": "accepted",
+  "symbol": "AAPL",
+  "terminal": false
+}

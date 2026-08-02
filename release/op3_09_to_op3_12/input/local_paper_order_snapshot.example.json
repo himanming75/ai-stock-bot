@@ -1,0 +1,10 @@
+{
+  "id": "replace-with-broker-order-id",
+  "client_order_id": "replace-with-client-order-id",
+  "symbol": "AAPL",
+  "side": "buy",
+  "qty": "1",
+  "status": "filled",
+  "filled_qty": "1",
+  "filled_avg_price": "50.25"
+}

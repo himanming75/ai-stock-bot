@@ -1,0 +1,11 @@
+{
+  "broker_order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+  "expected_qty": 1.0,
+  "fill_state": "NOT_FILLED",
+  "filled_avg_price": 0.0,
+  "filled_qty": 0.0,
+  "fully_filled": false,
+  "lifecycle_id": "paper-order-lifecycle-001",
+  "observed_at": "2026-08-02T07:16:51.160141+00:00",
+  "stage": "OP3.10"
+}
