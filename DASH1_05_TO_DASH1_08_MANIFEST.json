@@ -1,0 +1,14 @@
+{
+  "alerts": true,
+  "base_commit": "e49d307",
+  "broker_write_enabled": false,
+  "bundle_type": "DASHBOARD_ADVANCED_MONITORING",
+  "dashboard_health": true,
+  "event_log": true,
+  "external_dependencies": [],
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "performance_charts": true,
+  "read_only": true,
+  "stage_range": "DASH1.05-DASH1.08"
+}

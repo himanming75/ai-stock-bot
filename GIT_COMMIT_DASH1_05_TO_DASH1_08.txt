@@ -1,0 +1,3 @@
+git add dashboard/advanced_monitoring.py dashboard/server.py dashboard/static/index.html dashboard/static/styles.css dashboard/static/app.js tools/build_dashboard_advanced_snapshot_dash1_05_to_dash1_08.py tools/test_dashboard_advanced_dash1_05_to_dash1_08.py tools/install_check_dash1_05_to_dash1_08.py tools/verify_dashboard_advanced_dash1_05_to_dash1_08.py RUN_DASH1_05_TO_DASH1_08_TEST_AND_VERIFY.ps1 release/dash1_05_to_dash1_08 DASH1_05_TO_DASH1_08_MANIFEST.json GIT_COMMIT_DASH1_05_TO_DASH1_08.txt
+git commit -m "DASH1.05-DASH1.08 advanced dashboard monitoring implemented"
+git push origin main

@@ -17,54 +17,27 @@
 
   <main>
     <section class="metric-grid">
-      <article class="metric">
-        <span>Portfolio Value</span>
-        <strong id="portfolio-value">$0.00</strong>
-      </article>
-      <article class="metric">
-        <span>Cash</span>
-        <strong id="cash">$0.00</strong>
-      </article>
-      <article class="metric">
-        <span>Buying Power</span>
-        <strong id="buying-power">$0.00</strong>
-      </article>
-      <article class="metric">
-        <span>Shadow PnL</span>
-        <strong id="pnl">$0.00</strong>
-      </article>
+      <article class="metric"><span>Portfolio Value</span><strong id="portfolio-value">$0.00</strong></article>
+      <article class="metric"><span>Cash</span><strong id="cash">$0.00</strong></article>
+      <article class="metric"><span>Buying Power</span><strong id="buying-power">$0.00</strong></article>
+      <article class="metric"><span>Shadow PnL</span><strong id="pnl">$0.00</strong></article>
     </section>
 
     <section class="panel-grid">
       <article class="panel">
-        <div class="panel-title">
-          <h2>Runtime Status</h2>
-          <span id="runtime-status" class="badge">—</span>
-        </div>
+        <div class="panel-title"><h2>Runtime Status</h2><span id="runtime-status" class="badge">—</span></div>
         <dl id="runtime-panel"></dl>
       </article>
-
       <article class="panel">
-        <div class="panel-title">
-          <h2>Shadow Signal</h2>
-          <span id="signal-action" class="action hold">HOLD</span>
-        </div>
+        <div class="panel-title"><h2>Shadow Signal</h2><span id="signal-action" class="action hold">HOLD</span></div>
         <dl id="signal-panel"></dl>
       </article>
-
       <article class="panel">
-        <div class="panel-title">
-          <h2>Portfolio</h2>
-          <span id="account-status" class="badge">—</span>
-        </div>
+        <div class="panel-title"><h2>Portfolio</h2><span id="account-status" class="badge">—</span></div>
         <dl id="portfolio-panel"></dl>
       </article>
-
       <article class="panel">
-        <div class="panel-title">
-          <h2>Daily Shadow Report</h2>
-          <span id="report-status" class="badge">—</span>
-        </div>
+        <div class="panel-title"><h2>Daily Shadow Report</h2><span id="report-status" class="badge">—</span></div>
         <div class="count-grid">
           <div><span>BUY</span><strong id="buy-count">0</strong></div>
           <div><span>SELL</span><strong id="sell-count">0</strong></div>
@@ -72,6 +45,30 @@
           <div><span>RISK BLOCK</span><strong id="risk-count">0</strong></div>
         </div>
         <dl id="report-panel"></dl>
+      </article>
+    </section>
+
+    <section class="advanced-grid">
+      <article class="panel chart-panel">
+        <div class="panel-title"><h2>Shadow Equity Curve</h2><span class="badge">DASH1.05</span></div>
+        <canvas id="equity-chart" width="900" height="260"></canvas>
+      </article>
+      <article class="panel chart-panel">
+        <div class="panel-title"><h2>Drawdown</h2><span class="badge">DASH1.05</span></div>
+        <canvas id="drawdown-chart" width="900" height="260"></canvas>
+      </article>
+      <article class="panel">
+        <div class="panel-title"><h2>Runtime Event Log</h2><span class="badge">DASH1.06</span></div>
+        <div id="event-log" class="event-log"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-title"><h2>Active Alerts</h2><span id="alert-count" class="badge">0</span></div>
+        <div id="alerts" class="alerts"></div>
+      </article>
+      <article class="panel health-panel">
+        <div class="panel-title"><h2>Dashboard Health</h2><span id="health-status" class="badge">—</span></div>
+        <dl id="health-panel"></dl>
+        <div id="integrity-list" class="integrity-list"></div>
       </article>
     </section>
   </main>

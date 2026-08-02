@@ -1,0 +1,78 @@
+{
+  "alerts": [
+    {
+      "code": "RUNTIME_WAITING",
+      "message": "WAIT_AUTOMATIC_SHADOW_PIPELINE",
+      "severity": "WARNING"
+    },
+    {
+      "code": "PIPELINE_WAITING",
+      "message": "WAIT_MULTI_DAY_SHADOW_VALIDATION",
+      "severity": "WARNING"
+    },
+    {
+      "code": "HEARTBEAT_MISSING",
+      "message": "Runtime heartbeat is not available.",
+      "severity": "WARNING"
+    },
+    {
+      "code": "SNAPSHOT_MISSING",
+      "message": "Current Paper snapshot is not available.",
+      "severity": "WARNING"
+    }
+  ],
+  "broker_write_enabled": false,
+  "dashboard_stage": "DASH1.05-DASH1.08",
+  "events": [
+    {
+      "category": "RUNTIME",
+      "message": "WAIT_AUTOMATIC_SHADOW_PIPELINE",
+      "severity": "INFO",
+      "timestamp": "2026-08-02T06:44:46.341855+00:00"
+    }
+  ],
+  "health": {
+    "checked_at": "2026-08-02T06:59:08.068413+00:00",
+    "dashboard_status": "DEGRADED",
+    "disk_free_bytes": 16399200256,
+    "disk_total_bytes": 999134588928,
+    "disk_used_pct": 98.36,
+    "json_integrity": [
+      {
+        "exists": true,
+        "path": "release\\op2_17_to_op2_20\\actual\\shadow_daily_automation_result.json",
+        "valid_json": true
+      },
+      {
+        "exists": true,
+        "path": "release\\op2_13_to_op2_16\\actual\\automatic_shadow_signal_pipeline_result.json",
+        "valid_json": true
+      },
+      {
+        "exists": false,
+        "path": "release\\op1_13_to_op1_16\\actual\\current_paper_snapshot.json",
+        "valid_json": false
+      }
+    ],
+    "latest_data_age_seconds": 861,
+    "process_id": 5392,
+    "read_only": true
+  },
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "performance": {
+    "drawdown": [
+      {
+        "x": 0,
+        "y": 0.0
+      }
+    ],
+    "equity": [
+      {
+        "x": 0,
+        "y": 0.0
+      }
+    ]
+  },
+  "read_only": true
+}
