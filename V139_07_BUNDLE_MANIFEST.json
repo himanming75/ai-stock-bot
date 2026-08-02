@@ -1,0 +1,79 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_submission_allowed": false,
+  "base_commit": "02fe4b8",
+  "bundle_type": "AUTONOMOUS_PAPER_ORDER_LAUNCH_PREPARATION",
+  "deterministic_client_order_id": true,
+  "exact_approval_phrase_required": true,
+  "file_count": 13,
+  "files": [
+    {
+      "bytes": 499,
+      "path": "GIT_COMMIT_V139_07.txt",
+      "sha256": "56ca058b9d3e9f65790eac293e79a43638364450704813d4e2aee83217d031a7"
+    },
+    {
+      "bytes": 742,
+      "path": "RUN_V139_07_AUTONOMOUS_PAPER_ORDER_LAUNCH.ps1",
+      "sha256": "999b445640f57ef4311340e5dc5263ca35a83195cd64f89bea17c8307639dda9"
+    },
+    {
+      "bytes": 557,
+      "path": "RUN_V139_07_TEST_AND_VERIFY.ps1",
+      "sha256": "6914808ca620846e580f561609bc9cc79ddb84495cea22e58cb1fb9a541282f5"
+    },
+    {
+      "bytes": 15994,
+      "path": "autonomous_paper_runtime/autonomous_paper_order_launch.py",
+      "sha256": "fc22dbb1cdbc8e3b0f3f9fade608ef1110117f32eac39c9f2e2429d605ae85b6"
+    },
+    {
+      "bytes": 671,
+      "path": "release/v139_07/docs/DESIGN.md",
+      "sha256": "0475e7222b9f9a2b16ac321677f9694a57f4ea4c1ddd056ad72d6569109a6acb"
+    },
+    {
+      "bytes": 518,
+      "path": "release/v139_07/docs/RELEASE_NOTES.md",
+      "sha256": "ea07a89c8e446244c6c6f16de8e8f9c7e7689822945c6a7ab09bcc54ca808784"
+    },
+    {
+      "bytes": 453,
+      "path": "release/v139_07/docs/TEST_RESULTS.md",
+      "sha256": "41666e5826e5e6bdd1d9a371b647f54a5a00e3658fc48cd04e8a7cb39afa84e4"
+    },
+    {
+      "bytes": 241,
+      "path": "release/v139_07/input/order_candidate.example.json",
+      "sha256": "6e2074f333a4cedd5a9a4cea86ca1ccb27710ec217271d454c0d08aed58d44eb"
+    },
+    {
+      "bytes": 683,
+      "path": "tools/install_check_v139_07.py",
+      "sha256": "516c022a07ad2bdc951e301a94740015a6692b65f7715caa18199aa920139eb6"
+    },
+    {
+      "bytes": 1962,
+      "path": "tools/run_autonomous_paper_order_launch_v139_07.py",
+      "sha256": "eb13eaadf16497474d899074d16c498b9dc95e13539afa229786e920fa59b097"
+    },
+    {
+      "bytes": 5125,
+      "path": "tools/test_autonomous_paper_order_launch_v139_07.py",
+      "sha256": "ea42a02a2b94c9fd232501909755d0ffcbb63e57c87dbf4259e3591100122573"
+    },
+    {
+      "bytes": 1171,
+      "path": "tools/verify_autonomous_paper_order_launch_v139_07.py",
+      "sha256": "c94ac1cffbd8f7b1eb5aa214b4c6641f2f8c20f03b3cd8be7cc12601e7abdb55"
+    }
+  ],
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "stage": "V139.07",
+  "submission_default_enabled": false,
+  "validation_mode": "LOCAL_PREVIEW_APPROVAL_GATE_ONLY",
+  "write_requests_executed": 0
+}

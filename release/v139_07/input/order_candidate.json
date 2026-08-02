@@ -1,0 +1,11 @@
+{
+  "symbol": "SPY",
+  "side": "BUY",
+  "quantity": 1,
+  "order_type": "MARKET",
+  "limit_price": null,
+  "time_in_force": "DAY",
+  "signal_id": "replace-with-signal-id",
+  "strategy": "replace-with-strategy-name",
+  "risk_approved": true
+}
