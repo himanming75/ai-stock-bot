@@ -1,0 +1,20 @@
+{
+  "broker_action_performed": false,
+  "created_at": "2026-08-02T08:11:11.041511+00:00",
+  "emergency_stop_required": false,
+  "monitor_state": "WAIT_PILOT_START",
+  "performance_state": "WAIT_PILOT_START",
+  "pilot_id": "",
+  "pilot_started": false,
+  "pilot_state": "WAIT_OPEN_ORDERS_CLEARANCE",
+  "recovery_gate_clear": false,
+  "recovery_reasons": [
+    "ORDER_RECOVERY_REQUIRED",
+    "OPEN_ORDERS_PRESENT"
+  ],
+  "risk_state": "WAIT_PILOT_START",
+  "session_health": "WAITING",
+  "session_id": "",
+  "snapshot_ready": true,
+  "stage": "OP4.18-OP4.19"
+}

@@ -1,0 +1,9 @@
+{
+  "paper_only": true,
+  "single_cycle_only": true,
+  "continuous_loop_enabled": false,
+  "windows_task_install_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "maximum_steps_per_cycle": 4
+}

@@ -1,0 +1,23 @@
+{
+  "automation_state": "WAIT_PILOT_START",
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "cycle_authorized": false,
+  "cycle_execute_requested": false,
+  "cycle_ready": false,
+  "emergency_stop_required": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-02T08:11:11.041511+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "recovery_gate_clear": false,
+  "recovery_reasons": [
+    "ORDER_RECOVERY_REQUIRED",
+    "OPEN_ORDERS_PRESENT"
+  ],
+  "session_health": "WAITING",
+  "session_id": "",
+  "single_cycle_only": true,
+  "snapshot_ready": true,
+  "stage": "OP4.20"
+}

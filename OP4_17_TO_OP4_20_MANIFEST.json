@@ -1,0 +1,19 @@
+{
+  "base_commit": "873682a",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_PILOT_AUTOMATION_FOUNDATION",
+  "child_scripts_executed": false,
+  "continuous_loop_enabled": false,
+  "emergency_stop_gate": true,
+  "heartbeat_plan": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "performance_plan": true,
+  "recovery_gate": true,
+  "risk_plan": true,
+  "single_cycle_only": true,
+  "snapshot_refresh_plan": true,
+  "stage_range": "OP4.17-OP4.20",
+  "windows_task_install_enabled": false
+}
