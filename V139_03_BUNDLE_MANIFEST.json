@@ -1,0 +1,75 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "append_only_unlock_ledger": true,
+  "atomic_unlock_token": true,
+  "base_commit": "f16574d",
+  "bundle_type": "NEXT_CYCLE_UNLOCK",
+  "deterministic_unlock_id": true,
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 415,
+      "path": "GIT_COMMIT_V139_03.txt",
+      "sha256": "b140d40fcd15a42e051746a5bb6a7b93f830c2a1e878d2cde94b027630586307"
+    },
+    {
+      "bytes": 368,
+      "path": "RUN_V139_03_NEXT_CYCLE_UNLOCK.ps1",
+      "sha256": "8d5d4df7160706dd21cb8050555e4a88b3b8100d433c1b2ced235cfe4f4ccf76"
+    },
+    {
+      "bytes": 521,
+      "path": "RUN_V139_03_TEST_AND_VERIFY.ps1",
+      "sha256": "238bd14ede84bee63b80311a9d9c73bba5be5f3d4a45faf2cfe349163ec55c82"
+    },
+    {
+      "bytes": 12220,
+      "path": "autonomous_paper_runtime/next_cycle_unlock.py",
+      "sha256": "5c3cdae970989e7588bd7d1c376d6f7d442de044993d307a7192180b5ff0b1bb"
+    },
+    {
+      "bytes": 948,
+      "path": "release/v139_03/docs/DESIGN.md",
+      "sha256": "eec7517db5d29e77d0e69401d0d54706480a7a6d9153b8599010704d3a24b184"
+    },
+    {
+      "bytes": 456,
+      "path": "release/v139_03/docs/RELEASE_NOTES.md",
+      "sha256": "5031c0c5f90ad9fca2853417f0abdec64d9eba41cb459b250556ab5cc8e7fa92"
+    },
+    {
+      "bytes": 376,
+      "path": "release/v139_03/docs/TEST_RESULTS.md",
+      "sha256": "77ace13f2b983504dd14e786cadb200f1fb5bfefdfaad85ceb92ab07219e6b3d"
+    },
+    {
+      "bytes": 576,
+      "path": "tools/install_check_v139_03.py",
+      "sha256": "f321677e57ec4f0fdcb0a255c0ae480b801386f576673cb2ff88449f724d9338"
+    },
+    {
+      "bytes": 1928,
+      "path": "tools/run_next_cycle_unlock_v139_03.py",
+      "sha256": "c92e2c62a6ed19cf2c8504c41c9a00ee980d2a188480d92255deadf3a7b7788a"
+    },
+    {
+      "bytes": 5291,
+      "path": "tools/test_next_cycle_unlock_v139_03.py",
+      "sha256": "97419ca7be58c8e38437ad2278d5465d6dd0325eb122ece0d32ee65f13a87e76"
+    },
+    {
+      "bytes": 1150,
+      "path": "tools/verify_next_cycle_unlock_v139_03.py",
+      "sha256": "4ebb8317875d5c846cb75f73caee577f2812c49ccc831a2aed3c023602b1afbc"
+    }
+  ],
+  "idempotent_unlock": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "recovery_snapshot": true,
+  "stage": "V139.03",
+  "validation_mode": "ACTUAL_SAVED_STATE_LOCAL_ONLY",
+  "write_requests_executed": 0
+}
