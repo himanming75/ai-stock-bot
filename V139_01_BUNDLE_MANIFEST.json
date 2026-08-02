@@ -1,0 +1,70 @@
+{
+  "stage": "V139.01",
+  "bundle_type": "ACTUAL_SAVED_STATE_TERMINAL_MONITOR_CONTINUATION",
+  "base_expected": "V139.00 local completed",
+  "file_count": 12,
+  "safety": {
+    "credentials_used": false,
+    "external_network_used": false,
+    "paper_orders_submitted": 0,
+    "live_orders_submitted": 0,
+    "write_requests_executed": 0
+  },
+  "files": [
+    {
+      "path": "GIT_COMMIT_V139_01.txt",
+      "bytes": 541,
+      "sha256": "05bbf6df959d25330fdde3cd7331c7b5ccb1cfcbec7ebb939f893c28d691a8e7"
+    },
+    {
+      "path": "RUN_V139_01_ACTUAL_TERMINAL_MONITOR_CONTINUATION.ps1",
+      "bytes": 438,
+      "sha256": "e323318acf87ae1345e2b0bf2bd1046d3d700552004d87fef54a5d37dfcfa4e3"
+    },
+    {
+      "path": "RUN_V139_01_TEST_AND_VERIFY.ps1",
+      "bytes": 573,
+      "sha256": "ea7e19a0a8dfd42e4d64331ff03711f5a43e268a57c26c73e69814aea6fe9e41"
+    },
+    {
+      "path": "autonomous_paper_runtime/actual_terminal_monitor_continuation.py",
+      "bytes": 6780,
+      "sha256": "9ba33f6baddb41b76cd06993680e75fc478cb6d1545127e19d22af60f1831fdb"
+    },
+    {
+      "path": "release/v139_01/docs/DESIGN.md",
+      "bytes": 246,
+      "sha256": "73e310eb5d686aa27e581bfd5c0b1a98e4795caf5a13384317164145227ad14a"
+    },
+    {
+      "path": "release/v139_01/docs/RELEASE_NOTES.md",
+      "bytes": 218,
+      "sha256": "09bee72ccf7e3523dfd164e80354b056dd1e9bc3d9952f3318317a4915148d2c"
+    },
+    {
+      "path": "release/v139_01/docs/TEST_RESULTS.md",
+      "bytes": 246,
+      "sha256": "2a22f26bbe1bbfd82e8febcf6dddb975bbe0c8438039967dfdefa6ef7dfb7884"
+    },
+    {
+      "path": "tools/install_check_v139_01.py",
+      "bytes": 491,
+      "sha256": "186e95582cb90d81a4c8895158bcde063a19d9ac9c79b55be4d3f0e6ce7caa06"
+    },
+    {
+      "path": "tools/run_actual_terminal_monitor_continuation_v139_01.py",
+      "bytes": 1271,
+      "sha256": "e9d37372f52261e3dd60da0fc4f93c8fc6cf4068646465f1b5e616cdeb35fd9e"
+    },
+    {
+      "path": "tools/test_actual_terminal_monitor_continuation_v139_01.py",
+      "bytes": 1831,
+      "sha256": "05967d0b6b7deb3196977150ed758d8c4765349076b8e76da71ac623f2eb4d4a"
+    },
+    {
+      "path": "tools/verify_actual_terminal_monitor_continuation_v139_01.py",
+      "bytes": 626,
+      "sha256": "e260b08b21f18f613eb7c8be93d8c17196637af5200bed0683652a80c665991b"
+    }
+  ]
+}
