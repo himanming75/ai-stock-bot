@@ -1,0 +1,16 @@
+{
+  "validation_id": "multi-day-shadow-001",
+  "shadow_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "minimum_trading_days": 3,
+  "minimum_signal_count": 6,
+  "minimum_signal_accuracy_pct": 60,
+  "minimum_risk_consistency_pct": 90,
+  "maximum_drawdown_pct": 5,
+  "minimum_profit_factor": 1,
+  "maximum_late_signals": 0,
+  "maximum_missed_signals": 0,
+  "maximum_risk_overrides": 0,
+  "maximum_emergency_stops": 0
+}

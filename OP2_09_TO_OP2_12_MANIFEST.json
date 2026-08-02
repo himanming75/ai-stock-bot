@@ -1,0 +1,17 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "991eab2",
+  "broker_write_enabled": false,
+  "bundle_type": "MULTI_DAY_SHADOW_VALIDATION",
+  "continuation_decision": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "multi_day_summary": true,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "risk_consistency": true,
+  "shadow_only": true,
+  "signal_quality": true,
+  "stage_range": "OP2.09-OP2.12",
+  "write_requests_executed": 0
+}
