@@ -1,0 +1,70 @@
+{
+  "base_commit": "87dfa64",
+  "stage_range": "V130.01-V131.00",
+  "bundle_type": "ORDER_COMPLETION_NEXT_ORDER_UNLOCK_GATE",
+  "expected_current_state": "LOCKED_ACTIVE_ORDER",
+  "current_actual_status": "ACCEPTED",
+  "current_filled_quantity": "0",
+  "current_remaining_quantity": "1",
+  "current_new_order_allowed": false,
+  "network_requests_executed": 0,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 11,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V130_01_TO_V131_00_ORDER_COMPLETION_NEXT_ORDER_UNLOCK.txt",
+      "bytes": 630,
+      "sha256": "a98667ac31f03ab000bcf536fd6f7967e045158af04b54fd8973d7b2942083ee"
+    },
+    {
+      "path": "RUN_V130_01_TO_V131_00_ORDER_COMPLETION_NEXT_ORDER_UNLOCK.ps1",
+      "bytes": 1081,
+      "sha256": "9ed4e90f250650ab5b752b41d248388a7af8a3b80a6869abfd3bd6c9cf745120"
+    },
+    {
+      "path": "autonomous_paper_runtime/completion_unlock_gate.py",
+      "bytes": 10878,
+      "sha256": "37a90ecd52f526154e9c28de1e794a1210c931167c0f86b9e03114f1c80703dd"
+    },
+    {
+      "path": "release/v131_00/docs/DESIGN.md",
+      "bytes": 610,
+      "sha256": "ca95a63bae57f211ae7d0684fc4c8558ef8a26533f12da90042d22a565cfddc7"
+    },
+    {
+      "path": "release/v131_00/docs/RELEASE_NOTES.md",
+      "bytes": 379,
+      "sha256": "f272f9cf3bd622348ba0e79fac642b41b314f3d9d0d32b1b0e0442f57f86d9d4"
+    },
+    {
+      "path": "release/v131_00/docs/TEST_RESULTS.md",
+      "bytes": 448,
+      "sha256": "f71d97a219fc586899b2c6d8462d991358e212ef77f9f7f49a61fc7beca9a7ad"
+    },
+    {
+      "path": "tools/install_check_v130_01_to_v131_00.py",
+      "bytes": 687,
+      "sha256": "894027ab2458fa8a4ea46c8626d41401142a15098840a6500b99816d8733cb44"
+    },
+    {
+      "path": "tools/run_order_completion_next_order_unlock_v130_01_to_v131_00.py",
+      "bytes": 3032,
+      "sha256": "1aa0767c32707215451f17fc90128e6fad9e0a58c8046fad3e7e7c84e5a03b01"
+    },
+    {
+      "path": "tools/test_order_completion_next_order_unlock_v130_01_to_v131_00.py",
+      "bytes": 5397,
+      "sha256": "38f74baec9a47cb239bf08a4e8ce100e338462a88bbdee6ef70ae2453296d1e1"
+    },
+    {
+      "path": "tools/verify_order_completion_next_order_unlock_v130_01_to_v131_00.py",
+      "bytes": 1915,
+      "sha256": "2e41b65cb11606de92b3dc6922837a3628880d2cc88393f1530142bd3867a8bc"
+    }
+  ]
+}
