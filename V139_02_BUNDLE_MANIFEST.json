@@ -1,0 +1,80 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "atomic_token_write": true,
+  "base_commit": "6bfe756",
+  "bundle_type": "TERMINAL_COMMIT_HANDOFF",
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 451,
+      "path": "GIT_COMMIT_V139_02.txt",
+      "sha256": "44304f1a89e3b5d1a292273fc863366b6e2177e2ab3669026854c753c89f3eb2"
+    },
+    {
+      "bytes": 387,
+      "path": "RUN_V139_02_TERMINAL_COMMIT_HANDOFF.ps1",
+      "sha256": "9bace814ec467ca1bff7f26453cc7bd1f78357ed69f37f25fb76d1371bcfa98f"
+    },
+    {
+      "bytes": 539,
+      "path": "RUN_V139_02_TEST_AND_VERIFY.ps1",
+      "sha256": "4bbbd6af2606787acde0b2fca38c8e85452303efa10ab9f81843e9abaf16a085"
+    },
+    {
+      "bytes": 11054,
+      "path": "autonomous_paper_runtime/terminal_commit_handoff.py",
+      "sha256": "37713ab0859edd7dfc3a7b8b22d4549af35ccdfde5dd24516936ee5c5db24131"
+    },
+    {
+      "bytes": 812,
+      "path": "release/v139_02/docs/DESIGN.md",
+      "sha256": "ed85905e57738a6d14e60de66d81f2d869d5371fb795e8c20f004aad9afabad9"
+    },
+    {
+      "bytes": 432,
+      "path": "release/v139_02/docs/RELEASE_NOTES.md",
+      "sha256": "346d3067083698885d90bb13fd8da5e28ab80a59608e106ee58439fe38d31a5e"
+    },
+    {
+      "bytes": 414,
+      "path": "release/v139_02/docs/TEST_RESULTS.md",
+      "sha256": "4671229ec9a4bbf07aa9fd45313a21cb722c4165f44a760ed1283d49252b0cbb"
+    },
+    {
+      "bytes": 606,
+      "path": "tools/install_check_v139_02.py",
+      "sha256": "6ae72681bbe4a6def9fc7a3f2f0c7e590882f5b1ecde5c9963febc4a39f4ace6"
+    },
+    {
+      "bytes": 1581,
+      "path": "tools/run_terminal_commit_handoff_v139_02.py",
+      "sha256": "6653f2722b13fa051cf0ae2f84124d1ccfbaac03b216d4aeadd1e88de8f98bbb"
+    },
+    {
+      "bytes": 4713,
+      "path": "tools/test_terminal_commit_handoff_v139_02.py",
+      "sha256": "cca64ee304da980659ea42c8a5cceef70f397b0e27fd08f76d700bac2611ea4b"
+    },
+    {
+      "bytes": 1149,
+      "path": "tools/verify_terminal_commit_handoff_v139_02.py",
+      "sha256": "b6b1bb688f9be92caffcd1a60df18f9b75d8817d9bbb10470060d8eba74d43b3"
+    }
+  ],
+  "idempotent_handoff": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "recovery_ledger_append_only": true,
+  "stage": "V139.02",
+  "terminal_statuses": [
+    "FILLED",
+    "CANCELED",
+    "CANCELLED",
+    "EXPIRED",
+    "REJECTED"
+  ],
+  "validation_mode": "ACTUAL_SAVED_STATE_LOCAL_ONLY",
+  "write_requests_executed": 0
+}
