@@ -1,0 +1,84 @@
+{
+  "base_commit": "2b56f6c",
+  "stage_range": "V129.01-V130.00",
+  "bundle_type": "EXISTING_PAPER_ORDER_LIFECYCLE_MONITORING_RUNTIME",
+  "target_client_order_id": "single-60d3c5406e5226ae71d7",
+  "default_demo_poll_count": 3,
+  "actual_max_poll_limit": 20,
+  "actual_runner_get_only": true,
+  "network_requests_per_actual_poll": 3,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V129_01_TO_V130_00_EXISTING_PAPER_ORDER_LIFECYCLE_MONITOR.txt",
+      "bytes": 790,
+      "sha256": "9411382afb56ef6a4f009fd2b0bd979a75289c3cac54668d750976754544cba9"
+    },
+    {
+      "path": "RUN_V129_01_TO_V130_00_ACTUAL_EXISTING_ORDER_MONITOR.ps1",
+      "bytes": 1213,
+      "sha256": "b5e247c6b0672308f9c89d6ea5965df32369f82f6f349f44ca08f0d41353ea07"
+    },
+    {
+      "path": "RUN_V129_01_TO_V130_00_EXISTING_PAPER_ORDER_LIFECYCLE_MONITOR.ps1",
+      "bytes": 1098,
+      "sha256": "fa1b8738952ec21c7c509aad1c347bd65f943b1e420c7b22195b2efbdf230411"
+    },
+    {
+      "path": "autonomous_paper_runtime/lifecycle_monitor.py",
+      "bytes": 12113,
+      "sha256": "5af782a96068ab5a3c5254846790f9942950683080440cbf17eae53f1fd302c3"
+    },
+    {
+      "path": "release/v130_00/docs/ACTUAL_MONITOR_INSTRUCTIONS.md",
+      "bytes": 494,
+      "sha256": "4eb93b9e76487c7d37a23199b77a8dff7bfa66403a6ec4b778cf957a336b2ada"
+    },
+    {
+      "path": "release/v130_00/docs/DESIGN.md",
+      "bytes": 515,
+      "sha256": "ef7662ccba7e4c64c005988c975ae2bfda36b1519fc76ab383319881cd1585ae"
+    },
+    {
+      "path": "release/v130_00/docs/RELEASE_NOTES.md",
+      "bytes": 324,
+      "sha256": "f2c23956cd20de4bef2af52e058aa354334bb00bee8ccc05563a469c29a4c5dd"
+    },
+    {
+      "path": "release/v130_00/docs/TEST_RESULTS.md",
+      "bytes": 379,
+      "sha256": "3a0bf007ada85ea75ca1519885b3e493098c4cbbffac83a634d55758cc7e4271"
+    },
+    {
+      "path": "tools/install_check_v129_01_to_v130_00.py",
+      "bytes": 665,
+      "sha256": "70e0ad16d78d876770f1aff1d3421dffbf910b9b3037350d9181b02b5ef73824"
+    },
+    {
+      "path": "tools/run_actual_existing_paper_order_lifecycle_monitor_v129_01_to_v130_00.py",
+      "bytes": 5987,
+      "sha256": "d6e95c54ea7cae18bef92375edcd5ed71324fecf6cbfc08996dfd1ee288d0f46"
+    },
+    {
+      "path": "tools/run_existing_paper_order_lifecycle_monitor_v129_01_to_v130_00.py",
+      "bytes": 2632,
+      "sha256": "e06fb6e6f3cf2b7f6fc031ed997b1c7478fda009af786824d83b67dd37203b25"
+    },
+    {
+      "path": "tools/test_existing_paper_order_lifecycle_monitor_v129_01_to_v130_00.py",
+      "bytes": 6648,
+      "sha256": "fcdc20a18422728d2aa4c1b3c1e982f8a889046fe4edef99f364bdc00a569a98"
+    },
+    {
+      "path": "tools/verify_existing_paper_order_lifecycle_monitor_v129_01_to_v130_00.py",
+      "bytes": 1936,
+      "sha256": "ae18865370341fe8f9182809147471729a7507e4b74633ea2a2e19bae97aa636"
+    }
+  ]
+}
