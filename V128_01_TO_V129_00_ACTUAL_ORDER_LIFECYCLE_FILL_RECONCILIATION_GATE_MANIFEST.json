@@ -1,0 +1,83 @@
+{
+  "base_commit": "23b8d83",
+  "stage_range": "V128.01-V129.00",
+  "bundle_type": "ACTUAL_ORDER_LIFECYCLE_FILL_RECONCILIATION_GATE",
+  "target_client_order_id": "single-60d3c5406e5226ae71d7",
+  "expected_current_state": "WAITING_ACTIVE_ORDER",
+  "actual_runner_get_only": true,
+  "actual_read_endpoint_count": 3,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V128_01_TO_V129_00_ACTUAL_ORDER_LIFECYCLE_FILL_RECONCILIATION_GATE.txt",
+      "bytes": 806,
+      "sha256": "144a9b802363a5b4c908f22c4f9e9f6eca79f26da551a5a6e5cec29797c81f99"
+    },
+    {
+      "path": "RUN_V128_01_TO_V129_00_ACTUAL_FILL_RECONCILIATION_READ.ps1",
+      "bytes": 895,
+      "sha256": "b797b30bc6e84c8f6b13c5602b8a231593583bc54452327548175a9e0e27deb5"
+    },
+    {
+      "path": "RUN_V128_01_TO_V129_00_ORDER_LIFECYCLE_FILL_RECONCILIATION.ps1",
+      "bytes": 988,
+      "sha256": "8531fb3125f7551a239db3ffb8753bb60018322a6026e5aa44aaf4d0b4768c30"
+    },
+    {
+      "path": "autonomous_paper_runtime/fill_reconciliation.py",
+      "bytes": 10311,
+      "sha256": "1607f64201750d613432204a4b0c74d1f4eaff902ec0b977861b3f37ad88318a"
+    },
+    {
+      "path": "release/v129_00/docs/ACTUAL_READ_INSTRUCTIONS.md",
+      "bytes": 497,
+      "sha256": "5cee7c4e195c680c2895467f47b9456335e06a9c81d912622a89ba6c79fe28b1"
+    },
+    {
+      "path": "release/v129_00/docs/DESIGN.md",
+      "bytes": 732,
+      "sha256": "476eb7e609816fdfe18d9781bef4d632dda84e66abd4a3923ebaa13b6c2116ed"
+    },
+    {
+      "path": "release/v129_00/docs/RELEASE_NOTES.md",
+      "bytes": 317,
+      "sha256": "9faaa3d31787fb70c796724158219e2f2628fd26afdfa041c5d44523dd3759c7"
+    },
+    {
+      "path": "release/v129_00/docs/TEST_RESULTS.md",
+      "bytes": 392,
+      "sha256": "6da206d036e815904097e9726c813d7ea18a46bf2ba6a957c1fff510756385a2"
+    },
+    {
+      "path": "tools/install_check_v128_01_to_v129_00.py",
+      "bytes": 648,
+      "sha256": "7ed1ec59eb86ee22a3f1040ee65e7312a4fd2aad6276538c5345682a046da9fe"
+    },
+    {
+      "path": "tools/run_actual_order_lifecycle_fill_reconciliation_v128_01_to_v129_00.py",
+      "bytes": 4790,
+      "sha256": "2c6134966d065e8cc452d74f34ea9e4f5f3134f0d0d110b06ad7e4d42deef902"
+    },
+    {
+      "path": "tools/run_order_lifecycle_fill_reconciliation_v128_01_to_v129_00.py",
+      "bytes": 2581,
+      "sha256": "74c688bed2fe537ebaf42f426cd1f13bf73ef636bbc7795a5fd29699b9767212"
+    },
+    {
+      "path": "tools/test_actual_order_lifecycle_fill_reconciliation_v128_01_to_v129_00.py",
+      "bytes": 5740,
+      "sha256": "d0134045adfa7a5aa07401793f144a3e162fe785a89c7a3ef040b0b858cf566a"
+    },
+    {
+      "path": "tools/verify_order_lifecycle_fill_reconciliation_v128_01_to_v129_00.py",
+      "bytes": 1713,
+      "sha256": "34ac0b5fc6a7aeab85185350c5e4f66a7706ec90cf1f7452bea071403b544457"
+    }
+  ]
+}
