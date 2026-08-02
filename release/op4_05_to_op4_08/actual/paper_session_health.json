@@ -1,0 +1,17 @@
+{
+  "controlled_stop_required": false,
+  "health_status": "WAITING",
+  "heartbeat_age_seconds": null,
+  "heartbeat_warning_seconds": 30,
+  "observed_at": "2026-08-02T07:55:43.859164+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "read_only": true,
+  "session_id": "",
+  "session_timeout_seconds": 60,
+  "stage": "OP4.07",
+  "stop_reasons": [
+    "MANUAL_CONTROLLED_STOP"
+  ],
+  "timeout_detected": false
+}

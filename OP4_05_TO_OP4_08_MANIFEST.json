@@ -1,0 +1,15 @@
+{
+  "base_commit": "4adf785",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_PILOT_SESSION_MONITOR",
+  "controlled_stop": true,
+  "controlled_stop_broker_action": false,
+  "dashboard_state": true,
+  "health_monitor": true,
+  "heartbeat": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "stage_range": "OP4.05-OP4.08",
+  "timeout_guard": true
+}

@@ -1,0 +1,9 @@
+{
+  "paper_only": true,
+  "read_only_monitor": true,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "heartbeat_interval_seconds": 10,
+  "heartbeat_warning_seconds": 30,
+  "session_timeout_seconds": 60
+}
