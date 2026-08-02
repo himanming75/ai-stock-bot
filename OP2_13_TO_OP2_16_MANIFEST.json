@@ -1,0 +1,17 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "automatic_signal_generation": true,
+  "base_commit": "e606b7a",
+  "broker_write_enabled": false,
+  "bundle_type": "AUTOMATIC_SHADOW_SIGNAL_PIPELINE",
+  "decision_handoff": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "pipeline_validation": true,
+  "shadow_only": true,
+  "signal_queue": true,
+  "stage_range": "OP2.13-OP2.16",
+  "write_requests_executed": 0
+}

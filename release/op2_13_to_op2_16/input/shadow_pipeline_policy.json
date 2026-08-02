@@ -1,0 +1,14 @@
+{
+  "pipeline_id": "auto-shadow-pipeline-001",
+  "shadow_only": true,
+  "order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "max_queue_size": 100,
+  "minimum_confidence": 0.7,
+  "allowed_actions": [
+    "BUY",
+    "SELL",
+    "HOLD"
+  ]
+}
