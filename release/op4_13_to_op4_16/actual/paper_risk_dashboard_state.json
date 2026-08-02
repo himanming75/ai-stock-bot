@@ -1,0 +1,20 @@
+{
+  "broker_write_enabled": false,
+  "current_drawdown_pct": 0.0,
+  "daily_loss_pct": 0.0,
+  "emergency_stop_required": false,
+  "gross_exposure_pct": 0.0,
+  "live_trading_enabled": false,
+  "max_drawdown_pct": 0.0,
+  "maximum_symbol_exposure_pct": 0.0,
+  "observed_at": "2026-08-02T08:05:47.243481+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "pilot_started": false,
+  "position_count": 0,
+  "risk_reasons": [],
+  "risk_state": "WAIT_PILOT_START",
+  "session_health": "WAITING",
+  "session_id": "",
+  "stage": "OP4.13-OP4.16"
+}

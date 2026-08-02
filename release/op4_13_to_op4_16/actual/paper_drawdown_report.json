@@ -1,0 +1,14 @@
+{
+  "current_drawdown_pct": 0.0,
+  "effective_drawdown_pct": 0.0,
+  "historical_max_drawdown_pct": 0.0,
+  "initial_equity": 100000.0,
+  "latest_equity": 100000.0,
+  "maximum_drawdown_pct": 5.0,
+  "observed_at": "2026-08-02T08:05:47.243481+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "session_id": "",
+  "stage": "OP4.13",
+  "threshold_exceeded": false
+}

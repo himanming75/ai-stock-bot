@@ -1,0 +1,16 @@
+{
+  "base_commit": "590ef8e",
+  "broker_action_performed": false,
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_PILOT_RISK_MONITOR",
+  "cancel_enabled": false,
+  "daily_loss_monitor": true,
+  "drawdown_monitor": true,
+  "emergency_stop_gate": true,
+  "exposure_monitor": true,
+  "live_trading_enabled": false,
+  "paper_only": true,
+  "position_close_enabled": false,
+  "requires_local_stage": "OP4.09-OP4.12",
+  "stage_range": "OP4.13-OP4.16"
+}
