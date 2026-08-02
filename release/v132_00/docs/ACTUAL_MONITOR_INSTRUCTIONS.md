@@ -1,0 +1,11 @@
+# Actual GET-only terminal transition monitor
+
+```powershell
+$env:AI_STOCK_BOT_ENABLE_ACTUAL_TERMINAL_TRANSITION_MONITOR = "YES"
+$env:AI_STOCK_BOT_ACTUAL_TERMINAL_TRANSITION_CONFIRMATION = "MONITOR ACTUAL ALPACA PAPER ORDER AND EVALUATE TERMINAL GET ONLY"
+
+powershell -ExecutionPolicy Bypass `
+  -File .\RUN_V131_01_TO_V132_00_ACTUAL_TERMINAL_TRANSITION_MONITOR.ps1 `
+  -MaxPolls 3 `
+  -PollIntervalSeconds 5
+```

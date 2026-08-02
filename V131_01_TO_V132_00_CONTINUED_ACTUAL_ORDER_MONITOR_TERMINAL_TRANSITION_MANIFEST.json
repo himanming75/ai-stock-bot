@@ -1,0 +1,82 @@
+{
+  "base_commit": "0991824",
+  "stage_range": "V131.01-V132.00",
+  "bundle_type": "CONTINUED_ACTUAL_ORDER_MONITOR_TERMINAL_TRANSITION_GATE",
+  "expected_current_state": "LOCKED_ACTIVE_ORDER",
+  "actual_runner_get_only": true,
+  "network_requests_per_poll": 3,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V131_01_TO_V132_00_CONTINUED_ACTUAL_ORDER_MONITOR_TERMINAL_TRANSITION.txt",
+      "bytes": 864,
+      "sha256": "b83ab9eb395d1758efb070d1777dc666cac9bdd79973688a4436a02365e38822"
+    },
+    {
+      "path": "RUN_V131_01_TO_V132_00_ACTUAL_TERMINAL_TRANSITION_MONITOR.ps1",
+      "bytes": 942,
+      "sha256": "937ed8e5a36ca12689dca0797dc7186f3f017d9dfab023f28bef093d6af5a638"
+    },
+    {
+      "path": "RUN_V131_01_TO_V132_00_CONTINUED_ORDER_MONITOR_TERMINAL_TRANSITION.ps1",
+      "bytes": 1088,
+      "sha256": "cebe49473a0201164636b10dcc443ac03ac5cdf375c058d1ed0e4289801a6867"
+    },
+    {
+      "path": "autonomous_paper_runtime/terminal_transition_gate.py",
+      "bytes": 3762,
+      "sha256": "449b1f0df9195fee8830004941141ae26668602c70e3d33c834a95934b0fd6a4"
+    },
+    {
+      "path": "release/v132_00/docs/ACTUAL_MONITOR_INSTRUCTIONS.md",
+      "bytes": 413,
+      "sha256": "3cbef5dc6ef5dc3a7e191ef79acda9a09819bed05676f7745de4cee5ed1cc07d"
+    },
+    {
+      "path": "release/v132_00/docs/DESIGN.md",
+      "bytes": 400,
+      "sha256": "8939051e4cb48be4e735a4e33620adea6c3637032ad4b256a594265cf9c33663"
+    },
+    {
+      "path": "release/v132_00/docs/RELEASE_NOTES.md",
+      "bytes": 207,
+      "sha256": "312e718eb4a047721ebc256b970c577369cb0f8f12d3b30295b2117f4c52a458"
+    },
+    {
+      "path": "release/v132_00/docs/TEST_RESULTS.md",
+      "bytes": 189,
+      "sha256": "e09eb620e758397fafbb0e7163dc38e611f40190719872a5f96dafde107119b7"
+    },
+    {
+      "path": "tools/install_check_v131_01_to_v132_00.py",
+      "bytes": 566,
+      "sha256": "ced07e5da1e78b2ae8edc0a3b97d6f0994b8ba1858485eb42c09f99fd5eee05b"
+    },
+    {
+      "path": "tools/run_actual_continued_order_monitor_terminal_transition_v131_01_to_v132_00.py",
+      "bytes": 4484,
+      "sha256": "aa787b4a6b5f6aea4f0f2a8e4a0982256c174310468ae876c9ae159288e5b7e9"
+    },
+    {
+      "path": "tools/run_continued_order_monitor_terminal_transition_v131_01_to_v132_00.py",
+      "bytes": 2338,
+      "sha256": "444a154a5d59e2f48f113e68f0b9298c7c81b7879c4958a5a4c7474827632fa5"
+    },
+    {
+      "path": "tools/test_continued_actual_order_monitor_terminal_transition_v131_01_to_v132_00.py",
+      "bytes": 3908,
+      "sha256": "96040ccc03b0510019eaac7f9d410003a232dda31cc8c918ceed3c506e3f54e7"
+    },
+    {
+      "path": "tools/verify_continued_order_monitor_terminal_transition_v131_01_to_v132_00.py",
+      "bytes": 1478,
+      "sha256": "383d507e82dde1720fdb6dc34cc73f97c3500825cd8f1d0e7223e36d438cc110"
+    }
+  ]
+}
