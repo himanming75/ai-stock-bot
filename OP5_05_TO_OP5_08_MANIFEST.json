@@ -1,0 +1,15 @@
+{
+  "base_commit": "f09245a",
+  "broker_write_enabled": false,
+  "bundle_type": "MULTI_DAY_VALIDATION_ANALYTICS",
+  "drawdown_trend": true,
+  "equity_trend": true,
+  "healthy_rate": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "progress_analytics": true,
+  "return_trend": true,
+  "stage_range": "OP5.05-OP5.08",
+  "validation_report": true
+}

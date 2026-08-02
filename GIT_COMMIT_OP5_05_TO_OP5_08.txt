@@ -1,0 +1,3 @@
+git add paper_pilot/validation_analytics.py dashboard/validation_analytics_integration.py tools/run_validation_analytics_op5_05_to_op5_08.py tools/test_validation_analytics_op5_05_to_op5_08.py tools/install_check_op5_05_to_op5_08.py tools/verify_validation_analytics_op5_05_to_op5_08.py RUN_OP5_05_TO_OP5_08_ANALYTICS.ps1 RUN_OP5_05_TO_OP5_08_TEST_AND_VERIFY.ps1 release/op5_05_to_op5_08 OP5_05_TO_OP5_08_MANIFEST.json GIT_COMMIT_OP5_05_TO_OP5_08.txt
+git commit -m "OP5.05-OP5.08 Multi-day validation analytics implemented"
+git push origin main

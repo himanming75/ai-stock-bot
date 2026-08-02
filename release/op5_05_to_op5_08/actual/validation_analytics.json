@@ -1,0 +1,19 @@
+{
+  "average_drawdown_pct": 0.0,
+  "average_exposure_pct": 0.0,
+  "average_return_pct": 0.0,
+  "consecutive_healthy_days": 0,
+  "consecutive_progress_pct": 0.0,
+  "equity_trend": "FLAT",
+  "healthy_days": 0,
+  "healthy_rate_pct": 0.0,
+  "maximum_drawdown_pct": 0.0,
+  "paper_only": true,
+  "progress_pct": 0.0,
+  "stage": "OP5.05",
+  "unhealthy_days": 0,
+  "unhealthy_rate_pct": 0.0,
+  "validation_complete": false,
+  "validation_days": 0,
+  "validation_gate_clear": false
+}
