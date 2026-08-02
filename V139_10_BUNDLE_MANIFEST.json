@@ -1,0 +1,82 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "append_only_completion_ledger": true,
+  "atomic_cycle_completion_token": true,
+  "atomic_terminal_token": true,
+  "base_commit": "554b4b5",
+  "bundle_type": "TERMINAL_COMMIT_AND_CYCLE_COMPLETION",
+  "deterministic_completion_id": true,
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 509,
+      "path": "GIT_COMMIT_V139_10.txt",
+      "sha256": "c20e1151c9684914a1b31c4feb0456d4d260673a6565afaf5a867a443ffa4b43"
+    },
+    {
+      "bytes": 418,
+      "path": "RUN_V139_10_TERMINAL_COMMIT_CYCLE_COMPLETION.ps1",
+      "sha256": "24e7c013f34162957adea38704da07bdead618ce786b38c00a567830dd9cdf99"
+    },
+    {
+      "bytes": 566,
+      "path": "RUN_V139_10_TEST_AND_VERIFY.ps1",
+      "sha256": "31ab0a11951ed647215776af53c80c882eaad24bf72378566a525495e6d11b66"
+    },
+    {
+      "bytes": 16526,
+      "path": "autonomous_paper_runtime/terminal_commit_cycle_completion.py",
+      "sha256": "1c64b869efaedd7ec22ffd48c96d49880da584cc2b1e01f47bee250a7b4b4460"
+    },
+    {
+      "bytes": 763,
+      "path": "release/v139_10/docs/DESIGN.md",
+      "sha256": "c2e02e953b4d7e6cd6151d803de4140af92e1c86c6f7e03656fd577ba44aa51b"
+    },
+    {
+      "bytes": 649,
+      "path": "release/v139_10/docs/RELEASE_NOTES.md",
+      "sha256": "80a4a0dfd6b854f75d7c67b0be04720e6d42933cdb178de65f6701cee492ee9f"
+    },
+    {
+      "bytes": 454,
+      "path": "release/v139_10/docs/TEST_RESULTS.md",
+      "sha256": "f6273d5597e67ded0cb43ef7df5cc5c75d2e74b2c5e6816179e6b86ecac68698"
+    },
+    {
+      "bytes": 651,
+      "path": "tools/install_check_v139_10.py",
+      "sha256": "ee119ac94d3c2e476fb4ce1076944a7f9a602694362eb7d64982f24e42ec7f2f"
+    },
+    {
+      "bytes": 2082,
+      "path": "tools/run_terminal_commit_cycle_completion_v139_10.py",
+      "sha256": "098c84d2fbd8ba1edbfed929e35baf6702af7923d455324dde29d7618366fec7"
+    },
+    {
+      "bytes": 6720,
+      "path": "tools/test_terminal_commit_cycle_completion_v139_10.py",
+      "sha256": "52080c7261c8a855044819dcb32c33f18b291f3110dd2852cf80532954700784"
+    },
+    {
+      "bytes": 1166,
+      "path": "tools/verify_terminal_commit_cycle_completion_v139_10.py",
+      "sha256": "3b406f26f1e24001d506978ad10ad48eefbd1431bf8da6a84bcb142414d71f46"
+    }
+  ],
+  "idempotent_completion": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "stage": "V139.10",
+  "terminal_statuses": [
+    "FILLED",
+    "CANCELED",
+    "CANCELLED",
+    "EXPIRED",
+    "REJECTED"
+  ],
+  "validation_mode": "LOCAL_TERMINAL_COMMIT_ONLY",
+  "write_requests_executed": 0
+}
