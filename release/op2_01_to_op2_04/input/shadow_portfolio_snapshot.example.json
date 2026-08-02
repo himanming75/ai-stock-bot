@@ -1,0 +1,9 @@
+{
+  "account": {
+    "status": "ACTIVE",
+    "account_blocked": false,
+    "trading_blocked": false
+  },
+  "positions": [],
+  "open_orders": []
+}

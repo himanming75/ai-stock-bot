@@ -1,0 +1,3 @@
+git add autonomous_paper_runtime/shadow_decision_bootstrap.py tools/run_shadow_decision_bootstrap_op2_01_to_op2_04.py tools/test_shadow_decision_bootstrap_op2_01_to_op2_04.py tools/install_check_op2_01_to_op2_04.py tools/verify_shadow_decision_bootstrap_op2_01_to_op2_04.py RUN_OP2_01_TO_OP2_04_SHADOW_DECISION.ps1 RUN_OP2_01_TO_OP2_04_TEST_AND_VERIFY.ps1 release/op2_01_to_op2_04 OP2_01_TO_OP2_04_MANIFEST.json GIT_COMMIT_OP2_01_TO_OP2_04.txt
+git commit -m "OP2.01-OP2.04 shadow decision bootstrap implemented"
+git push origin main

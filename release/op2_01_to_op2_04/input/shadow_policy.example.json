@@ -1,0 +1,15 @@
+{
+  "shadow_session_id": "shadow-session-001",
+  "shadow_mode": true,
+  "order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "max_shadow_notional": 1000,
+  "max_shadow_quantity": 10,
+  "minimum_confidence": 0.7,
+  "allowed_actions": [
+    "BUY",
+    "SELL",
+    "HOLD"
+  ]
+}

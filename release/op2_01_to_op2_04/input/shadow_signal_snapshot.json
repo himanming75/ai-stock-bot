@@ -1,0 +1,8 @@
+{
+  "symbol": "AAPL",
+  "action": "BUY",
+  "confidence": 0.85,
+  "reference_price": 100,
+  "quantity": 2,
+  "as_of": "2026-08-02T06:30:00Z"
+}

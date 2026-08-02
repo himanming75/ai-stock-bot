@@ -1,0 +1,19 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "append_only_shadow_ledger": true,
+  "base_commit": "b8a3e43",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_DECISION_BOOTSTRAP",
+  "buy_sell_hold_decision": true,
+  "duplicate_signal_protection": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "shadow_only": true,
+  "shadow_risk_gate": true,
+  "stage_range": "OP2.01-OP2.04",
+  "write_requests_executed": 0
+}
