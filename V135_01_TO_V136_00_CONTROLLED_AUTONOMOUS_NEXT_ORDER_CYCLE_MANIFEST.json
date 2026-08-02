@@ -1,0 +1,83 @@
+{
+  "base_commit": "a575e54",
+  "stage_range": "V135.01-V136.00",
+  "bundle_type": "CONTROLLED_AUTONOMOUS_NEXT_ORDER_CYCLE",
+  "expected_current_state": "WAIT_ACTIVE_ORDER",
+  "actual_runner_uses_saved_readiness_only": true,
+  "actual_external_network_used": false,
+  "cycle_token_exactly_once": true,
+  "write_requests_executed": 0,
+  "actual_paper_orders_submitted": 0,
+  "live_orders_submitted": 0,
+  "unit_test_return_code": 0,
+  "demo_return_code": 0,
+  "verify_return_code": 0,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "GIT_COMMIT_V135_01_TO_V136_00_CONTROLLED_AUTONOMOUS_NEXT_ORDER_CYCLE.txt",
+      "bytes": 772,
+      "sha256": "4c5814412dd40f88e1d2aed2f35d0253f61c4d2852933b620e73d2b5f332da4a"
+    },
+    {
+      "path": "RUN_V135_01_TO_V136_00_ACTUAL_NEXT_ORDER_CYCLE.ps1",
+      "bytes": 1067,
+      "sha256": "37a8a8e80691b90896031e63a7d78077f98a165bd3b4b6f294bec5e079436ec0"
+    },
+    {
+      "path": "RUN_V135_01_TO_V136_00_CONTROLLED_AUTONOMOUS_NEXT_ORDER_CYCLE.ps1",
+      "bytes": 1059,
+      "sha256": "b5f493b94a2e030454727db6bb0b2538746c88e75d6f351559305fb04757f065"
+    },
+    {
+      "path": "autonomous_paper_runtime/next_order_cycle.py",
+      "bytes": 13110,
+      "sha256": "bb126ad50e023009cce0989aa395b0116ae6244f04492c6c228d27309f767d51"
+    },
+    {
+      "path": "release/v136_00/docs/ACTUAL_RUN_INSTRUCTIONS.md",
+      "bytes": 589,
+      "sha256": "6330cf5fd9bdf8a952ae3482a5648b4ffd9835898df724280531444c553302d5"
+    },
+    {
+      "path": "release/v136_00/docs/DESIGN.md",
+      "bytes": 610,
+      "sha256": "8e4e26fdd56b2b95542e55e4bb25aaef4bad28b08572f823c319c59f00e39430"
+    },
+    {
+      "path": "release/v136_00/docs/RELEASE_NOTES.md",
+      "bytes": 239,
+      "sha256": "3f1034ab53daa3c5578158b2ef85e5f770b7db18a2b4fe42ec33e1286be54e75"
+    },
+    {
+      "path": "release/v136_00/docs/TEST_RESULTS.md",
+      "bytes": 229,
+      "sha256": "ee7c0ab9d87d916b08c366a30bcb36b62e35ccc1d811bcd22071ccf329a09953"
+    },
+    {
+      "path": "tools/install_check_v135_01_to_v136_00.py",
+      "bytes": 585,
+      "sha256": "891abe3d2dcf31655c5c71e26f3712af34e61c44088d7fa442693e28c493466d"
+    },
+    {
+      "path": "tools/run_actual_controlled_autonomous_next_order_cycle_v135_01_to_v136_00.py",
+      "bytes": 2694,
+      "sha256": "12490695b60a5dfc874df3f152d81e41b1f15392b81b7c968eecef6171436d0e"
+    },
+    {
+      "path": "tools/run_controlled_autonomous_next_order_cycle_v135_01_to_v136_00.py",
+      "bytes": 1820,
+      "sha256": "92d6d53dc708067cbe3d99477415752ec85ba75ffbd3a61a7038859ccad60a2f"
+    },
+    {
+      "path": "tools/test_controlled_autonomous_next_order_cycle_v135_01_to_v136_00.py",
+      "bytes": 5173,
+      "sha256": "8a9f15d083af077080c4c146b33dc890893b0b9f9321be246706389087e8353d"
+    },
+    {
+      "path": "tools/verify_controlled_autonomous_next_order_cycle_v135_01_to_v136_00.py",
+      "bytes": 1596,
+      "sha256": "6353e7c64433ca948f8cba8a53c21b2c86bfdb5da584460073cc213d0693ea56"
+    }
+  ]
+}
