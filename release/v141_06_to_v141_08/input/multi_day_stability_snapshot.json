@@ -1,0 +1,11 @@
+{
+  "completed_trading_days": 20,
+  "minimum_trading_days": 20,
+  "duplicate_orders": 0,
+  "live_orders": 0,
+  "risk_violations": 0,
+  "recovery_failures": 0,
+  "ledger_mismatches": 0,
+  "reconciliation_errors": 0,
+  "unexpected_broker_writes": 0
+}

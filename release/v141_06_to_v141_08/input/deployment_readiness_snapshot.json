@@ -1,0 +1,10 @@
+{
+  "install_script_ready": true,
+  "rollback_ready": true,
+  "emergency_stop_ready": true,
+  "recovery_runbook_ready": true,
+  "scheduler_setup_ready": true,
+  "daily_report_ready": true,
+  "secret_storage_safe": true,
+  "live_endpoint_blocked": true
+}

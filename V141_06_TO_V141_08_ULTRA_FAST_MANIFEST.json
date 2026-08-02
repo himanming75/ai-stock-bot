@@ -1,0 +1,16 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "eb0020a",
+  "bundle_type": "ULTRA_FAST_FINAL_VALIDATION_RELEASE",
+  "failure_injection_validation": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "multi_day_validation": true,
+  "network_requests_executed": 0,
+  "paper_production_release": true,
+  "stage_range": "V141.06-V141.08",
+  "validation_mode": "LOCAL_FINAL_VALIDATION_ONLY",
+  "write_requests_executed": 0
+}

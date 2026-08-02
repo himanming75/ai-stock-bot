@@ -1,0 +1,60 @@
+{
+  "scenarios": [
+    {
+      "name": "API_TIMEOUT",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "BROKER_DELAY",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "CORRUPTED_SNAPSHOT",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "DUPLICATE_RUNNER",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "INVALID_TOKEN",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "MARKET_CLOSED",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "NETWORK_DISCONNECT",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    },
+    {
+      "name": "PROCESS_CRASH",
+      "safe_mode_or_recovery_passed": true,
+      "duplicate_orders": 0,
+      "live_orders": 0,
+      "unexpected_writes": 0
+    }
+  ]
+}
