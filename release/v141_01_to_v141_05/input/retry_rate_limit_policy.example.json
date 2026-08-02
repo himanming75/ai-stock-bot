@@ -1,0 +1,7 @@
+{
+  "max_attempts": 3,
+  "initial_backoff_seconds": 1,
+  "maximum_backoff_seconds": 30,
+  "rate_limit_enabled": true,
+  "retry_write_without_lookup": false
+}

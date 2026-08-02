@@ -1,0 +1,17 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "PENDING_V140_10_TO_V140_12_COMMIT",
+  "bundle_type": "ULTRA_FAST_OPERATIONAL_STABILITY",
+  "daily_audit": true,
+  "ledger_hash_chain": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "operational_health_monitor": true,
+  "process_lock": true,
+  "retry_rate_limit_policy": true,
+  "stage_range": "V141.01-V141.05",
+  "validation_mode": "LOCAL_OPERATIONAL_STABILITY_ONLY",
+  "write_requests_executed": 0
+}
