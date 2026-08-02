@@ -1,0 +1,3 @@
+git add autonomous_paper_runtime/controlled_paper_order_preparation.py tools/run_controlled_paper_order_preparation_op3_01_to_op3_04.py tools/test_controlled_paper_order_preparation_op3_01_to_op3_04.py tools/install_check_op3_01_to_op3_04.py tools/verify_controlled_paper_order_preparation_op3_01_to_op3_04.py RUN_OP3_01_TO_OP3_04_PAPER_ORDER_PREPARATION.ps1 RUN_OP3_01_TO_OP3_04_TEST_AND_VERIFY.ps1 release/op3_01_to_op3_04 OP3_01_TO_OP3_04_MANIFEST.json GIT_COMMIT_OP3_01_TO_OP3_04.txt
+git commit -m "OP3.01-OP3.04 controlled Paper order preparation implemented"
+git push origin main

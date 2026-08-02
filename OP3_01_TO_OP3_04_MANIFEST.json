@@ -1,0 +1,18 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "e49d307",
+  "bundle_type": "CONTROLLED_PAPER_ORDER_PREPARATION",
+  "live_endpoint_block": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "manual_preparation_approval": true,
+  "network_requests_executed": 0,
+  "network_write_enabled": false,
+  "order_submission_enabled": false,
+  "paper_candidate": true,
+  "paper_only": true,
+  "preparation_only": true,
+  "risk_limits": true,
+  "stage_range": "OP3.01-OP3.04",
+  "write_requests_executed": 0
+}

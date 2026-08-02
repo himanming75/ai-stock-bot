@@ -1,0 +1,12 @@
+{
+  "preparation_id": "controlled-paper-preparation-001",
+  "paper_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "network_write_enabled": false,
+  "maximum_order_notional": 100,
+  "maximum_order_quantity": 5,
+  "maximum_daily_candidates": 1,
+  "manual_approval_required": true,
+  "expected_base_url": "https://paper-api.alpaca.markets"
+}

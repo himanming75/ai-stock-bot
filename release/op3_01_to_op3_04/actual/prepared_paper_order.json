@@ -1,0 +1,18 @@
+{
+  "candidate_id": "paper-candidate-a5a1b0f16a0309dbebfbce88",
+  "created_at": "2026-08-02T07:05:55.686367+00:00",
+  "endpoint": "https://paper-api.alpaca.markets",
+  "estimated_notional": 50.0,
+  "order_submission_enabled": false,
+  "order_type": "market",
+  "paper_only": true,
+  "preparation_id": "controlled-paper-preparation-001",
+  "quantity": 1,
+  "reference_price": 50.0,
+  "side": "buy",
+  "signal_id": "replace-with-real-shadow-signal-id",
+  "stage": "OP3.01",
+  "submission_attempted": false,
+  "symbol": "AAPL",
+  "time_in_force": "day"
+}

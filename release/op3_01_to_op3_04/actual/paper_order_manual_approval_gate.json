@@ -1,0 +1,11 @@
+{
+  "approval_phrase_verified": true,
+  "approved_for_preparation_only": true,
+  "approved_for_submission": false,
+  "candidate_id": "paper-candidate-a5a1b0f16a0309dbebfbce88",
+  "created_at": "2026-08-02T07:05:55.686367+00:00",
+  "manual_approval_ready": true,
+  "manual_approval_required": true,
+  "preparation_id": "controlled-paper-preparation-001",
+  "stage": "OP3.03"
+}

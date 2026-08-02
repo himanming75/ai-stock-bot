@@ -1,0 +1,14 @@
+{
+  "signal_id": "replace-with-real-shadow-signal-id",
+  "symbol": "AAPL",
+  "side": "buy",
+  "order_type": "market",
+  "time_in_force": "day",
+  "quantity": 1,
+  "reference_price": 50,
+  "shadow_approved": true,
+  "daily_candidate_number": 1,
+  "duplicate_candidate": false,
+  "market_closed": false,
+  "emergency_stop_engaged": false
+}
