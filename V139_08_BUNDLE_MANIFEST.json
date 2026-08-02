@@ -1,0 +1,83 @@
+{
+  "accepted_statuses": [
+    "NEW",
+    "ACCEPTED",
+    "PENDING_NEW"
+  ],
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "8bbb6e2",
+  "bundle_type": "SUBMITTED_ORDER_ACCEPTANCE_VERIFICATION",
+  "file_count": 13,
+  "files": [
+    {
+      "bytes": 547,
+      "path": "GIT_COMMIT_V139_08.txt",
+      "sha256": "7f0a40b1b1220cd36ffc3911f46204bfddd8eb5fe951dd59cf682010f78eed20"
+    },
+    {
+      "bytes": 446,
+      "path": "RUN_V139_08_SUBMITTED_ORDER_ACCEPTANCE_VERIFICATION.ps1",
+      "sha256": "f3cf06fac80293377b784caab6e034cb6a8801f409f134d71df8877cf8f206f3"
+    },
+    {
+      "bytes": 587,
+      "path": "RUN_V139_08_TEST_AND_VERIFY.ps1",
+      "sha256": "6fa54d80f1a3a71282136e0ccb3de1c10c71d305b738c0841cf74ae8a58e57e5"
+    },
+    {
+      "bytes": 14023,
+      "path": "autonomous_paper_runtime/submitted_order_acceptance_verification.py",
+      "sha256": "162a4d63064bc0e884e239c5dd4d5cece22e2d7133c83a98bb28cd2c12843d43"
+    },
+    {
+      "bytes": 599,
+      "path": "release/v139_08/docs/DESIGN.md",
+      "sha256": "70a92fba81ec3a8931343f67233102c2126009d689b3e2636c8ff3cdf48ef599"
+    },
+    {
+      "bytes": 522,
+      "path": "release/v139_08/docs/RELEASE_NOTES.md",
+      "sha256": "54a2347caeab79ef56ca609fb186308323610864a7ef7bfd99f2603feb911eda"
+    },
+    {
+      "bytes": 462,
+      "path": "release/v139_08/docs/TEST_RESULTS.md",
+      "sha256": "a731d68c7c7f1b93e5f9a0719e395b3415a3bde0f62038c5fe8eeb1ac6b22e64"
+    },
+    {
+      "bytes": 251,
+      "path": "release/v139_08/input/submitted_order_result_snapshot.example.json",
+      "sha256": "0b3ae5f6e7fd69b1ffb4fa9a7d69edc57b0018dfc873f76e90b7dde73a03f4de"
+    },
+    {
+      "bytes": 749,
+      "path": "tools/install_check_v139_08.py",
+      "sha256": "5f9d14d394bd16e06791861d36a7bb851cac97351389441dadf494db78b2eb28"
+    },
+    {
+      "bytes": 1827,
+      "path": "tools/run_submitted_order_acceptance_verification_v139_08.py",
+      "sha256": "2b9cf9303f75f520f3abcf07d236830e820a3aeb79be2bf906039501e2bd0f41"
+    },
+    {
+      "bytes": 4894,
+      "path": "tools/test_submitted_order_acceptance_verification_v139_08.py",
+      "sha256": "7325fedfc0e3739d6d209ba5000b8b72500713880eb75856f1f3d28ad97629d3"
+    },
+    {
+      "bytes": 1147,
+      "path": "tools/verify_submitted_order_acceptance_verification_v139_08.py",
+      "sha256": "af28b2764a2d17c3cba2147556a070daac089edcbce764adf3ff4eb09590b689"
+    }
+  ],
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "rejected_statuses": [
+    "REJECTED"
+  ],
+  "stage": "V139.08",
+  "validation_mode": "LOCAL_SUBMISSION_RESULT_VERIFICATION_ONLY",
+  "write_requests_executed": 0
+}

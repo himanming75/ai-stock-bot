@@ -1,0 +1,10 @@
+{
+  "client_order_id": "replace-with-v13907-client-order-id",
+  "broker_order_id": "replace-with-local-broker-order-id",
+  "status": "ACCEPTED",
+  "symbol": "SPY",
+  "side": "BUY",
+  "quantity": 1,
+  "order_type": "MARKET",
+  "time_in_force": "DAY"
+}
