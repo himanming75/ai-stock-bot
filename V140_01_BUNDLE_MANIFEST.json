@@ -1,0 +1,69 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "fbb66f0",
+  "bundle_type": "AUTONOMOUS_RUNTIME_SUPERVISOR",
+  "earliest_stage_routing": true,
+  "file_count": 11,
+  "files": [
+    {
+      "bytes": 487,
+      "path": "GIT_COMMIT_V140_01.txt",
+      "sha256": "91192a4ab6786d0acced2fa5de00f3bba73a8c472ea444ba54dd282e180133ad"
+    },
+    {
+      "bytes": 414,
+      "path": "RUN_V140_01_AUTONOMOUS_RUNTIME_SUPERVISOR.ps1",
+      "sha256": "a9be91d9da861b36b5b262debb154fcc78e85e0fd03937feebe303ae54c4bba8"
+    },
+    {
+      "bytes": 552,
+      "path": "RUN_V140_01_TEST_AND_VERIFY.ps1",
+      "sha256": "7c027692eec6721c5d796f3730ec678e28d3cd02b77eea8bf431cabd8f59f3c7"
+    },
+    {
+      "bytes": 11358,
+      "path": "autonomous_paper_runtime/autonomous_runtime_supervisor.py",
+      "sha256": "fa1671c2abd48a71fab245797026f6abf9821ef55e4bd8697eab8dace0662f55"
+    },
+    {
+      "bytes": 567,
+      "path": "release/v140_01/docs/DESIGN.md",
+      "sha256": "79d89e070fa479d44fd5a3c4e0435323487d3d7c92b338f796ef655c2df1f835"
+    },
+    {
+      "bytes": 365,
+      "path": "release/v140_01/docs/TEST_RESULTS.md",
+      "sha256": "1227045dcd8650dd25bfe77e17736066219c45b283b1835fb7302b86d8183408"
+    },
+    {
+      "bytes": 625,
+      "path": "tools/install_check_v140_01.py",
+      "sha256": "5406a41e610d038b706abe37af219e2dcbbf972e25728821643e0f3953294c93"
+    },
+    {
+      "bytes": 1422,
+      "path": "tools/run_autonomous_runtime_supervisor_v140_01.py",
+      "sha256": "541f3de2aa8d82d07179eefa600075512e5d31665dd6cb51ba412cbe76ac319e"
+    },
+    {
+      "bytes": 4639,
+      "path": "tools/test_autonomous_runtime_supervisor_v140_01.py",
+      "sha256": "9a41e1051569872b7b1354c487645238d05a2cc6b265742409c16be4c2be377d"
+    },
+    {
+      "bytes": 1089,
+      "path": "tools/verify_autonomous_runtime_supervisor_v140_01.py",
+      "sha256": "611e0703980bf61607dc8210aa03ecd96c2f07dd3f7463473843b9cb236ec8e8"
+    }
+  ],
+  "idempotent_runtime_token": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "runtime_lock": true,
+  "safe_mode_propagation": true,
+  "stage": "V140.01",
+  "validation_mode": "LOCAL_RUNTIME_SUPERVISOR_ONLY",
+  "write_requests_executed": 0
+}
