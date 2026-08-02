@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Stock Bot Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">READ-ONLY SHADOW OPERATIONS</p>
+      <h1>AI Stock Bot</h1>
+    </div>
+    <div id="overall-status" class="status-pill">Loading</div>
+  </header>
+
+  <main>
+    <section class="metric-grid">
+      <article class="metric">
+        <span>Portfolio Value</span>
+        <strong id="portfolio-value">$0.00</strong>
+      </article>
+      <article class="metric">
+        <span>Cash</span>
+        <strong id="cash">$0.00</strong>
+      </article>
+      <article class="metric">
+        <span>Buying Power</span>
+        <strong id="buying-power">$0.00</strong>
+      </article>
+      <article class="metric">
+        <span>Shadow PnL</span>
+        <strong id="pnl">$0.00</strong>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Runtime Status</h2>
+          <span id="runtime-status" class="badge">—</span>
+        </div>
+        <dl id="runtime-panel"></dl>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Shadow Signal</h2>
+          <span id="signal-action" class="action hold">HOLD</span>
+        </div>
+        <dl id="signal-panel"></dl>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Portfolio</h2>
+          <span id="account-status" class="badge">—</span>
+        </div>
+        <dl id="portfolio-panel"></dl>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Daily Shadow Report</h2>
+          <span id="report-status" class="badge">—</span>
+        </div>
+        <div class="count-grid">
+          <div><span>BUY</span><strong id="buy-count">0</strong></div>
+          <div><span>SELL</span><strong id="sell-count">0</strong></div>
+          <div><span>HOLD</span><strong id="hold-count">0</strong></div>
+          <div><span>RISK BLOCK</span><strong id="risk-count">0</strong></div>
+        </div>
+        <dl id="report-panel"></dl>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>Local dashboard · Broker writes disabled</span>
+    <span id="last-refresh">—</span>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

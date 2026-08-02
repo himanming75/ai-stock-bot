@@ -1,0 +1,52 @@
+{
+  "application": "AI Stock Bot",
+  "broker_write_enabled": false,
+  "daily_report": {
+    "buy_count": 0,
+    "error_count": 0,
+    "hold_count": 0,
+    "max_drawdown_pct": 0.0,
+    "report_ready": false,
+    "risk_block_count": 0,
+    "runtime_seconds": 0,
+    "sell_count": 0,
+    "signal_count": 0,
+    "total_pnl": 0.0
+  },
+  "dashboard_stage": "DASH1.01-DASH1.04",
+  "dashboard_state": "READY",
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "portfolio": {
+    "buying_power": 0.0,
+    "cash": 0.0,
+    "equity": 0.0,
+    "open_order_count": 0,
+    "portfolio_value": 0.0,
+    "position_count": 0,
+    "status": "NOT_AVAILABLE"
+  },
+  "read_only": true,
+  "runtime": {
+    "continuous_loop_enabled": false,
+    "heartbeat_at": "",
+    "heartbeat_status": "NOT_AVAILABLE",
+    "pipeline_id": "",
+    "runtime_id": "",
+    "safe_mode": false,
+    "single_tick_only": true,
+    "state": "WAIT_AUTOMATIC_SHADOW_PIPELINE",
+    "status": "PASS"
+  },
+  "signal": {
+    "approved_action": "HOLD",
+    "confidence": 0.0,
+    "created_at": "",
+    "pipeline_state": "WAIT_MULTI_DAY_SHADOW_VALIDATION",
+    "quantity": 0,
+    "reasons": [],
+    "reference_price": 0.0,
+    "requested_action": "",
+    "symbol": ""
+  }
+}

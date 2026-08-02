@@ -1,0 +1,3 @@
+git add dashboard tools/build_dashboard_snapshot_dash1_01_to_dash1_04.py tools/test_dashboard_foundation_dash1_01_to_dash1_04.py tools/install_check_dash1_01_to_dash1_04.py tools/verify_dashboard_foundation_dash1_01_to_dash1_04.py RUN_DASH1_01_TO_DASH1_04_DASHBOARD.ps1 RUN_DASH1_01_TO_DASH1_04_TEST_AND_VERIFY.ps1 release/dash1_01_to_dash1_04 DASH1_01_TO_DASH1_04_MANIFEST.json GIT_COMMIT_DASH1_01_TO_DASH1_04.txt
+git commit -m "DASH1.01-DASH1.04 dashboard foundation implemented"
+git push origin main

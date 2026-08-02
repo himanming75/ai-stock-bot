@@ -1,0 +1,16 @@
+{
+  "base_commit": "f8be115",
+  "broker_write_enabled": false,
+  "bundle_type": "LOCAL_READ_ONLY_DASHBOARD_FOUNDATION",
+  "daily_report_panel": true,
+  "default_port": 8501,
+  "external_dependencies": [],
+  "host": "127.0.0.1",
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "portfolio_panel": true,
+  "read_only": true,
+  "runtime_panel": true,
+  "shadow_signal_panel": true,
+  "stage_range": "DASH1.01-DASH1.04"
+}
