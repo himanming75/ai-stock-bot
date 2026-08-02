@@ -1,0 +1,12 @@
+{
+  "execution_id": "single-paper-execution-001",
+  "paper_only": true,
+  "maximum_orders_per_run": 1,
+  "maximum_order_notional": 100,
+  "maximum_order_quantity": 5,
+  "market_order_only": true,
+  "day_time_in_force_only": true,
+  "live_trading_enabled": false,
+  "expected_base_url": "https://paper-api.alpaca.markets",
+  "timeout_seconds": 10
+}

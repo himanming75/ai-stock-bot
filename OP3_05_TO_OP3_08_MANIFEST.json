@@ -1,0 +1,15 @@
+{
+  "actual_submission_requires_exact_phrase": true,
+  "actual_submission_requires_network_switch": true,
+  "actual_submission_requires_paper_credentials": true,
+  "actual_submission_requires_submission_switch": true,
+  "base_commit": "3f8fbaf",
+  "bundle_type": "SINGLE_CONTROLLED_PAPER_ORDER_EXECUTION",
+  "default_mode": "LOCAL_PREVIEW_ONLY",
+  "live_endpoint_blocked": true,
+  "live_trading_enabled": false,
+  "maximum_order_notional": 100,
+  "maximum_orders_per_run": 1,
+  "paper_only": true,
+  "stage_range": "OP3.05-OP3.08"
+}
