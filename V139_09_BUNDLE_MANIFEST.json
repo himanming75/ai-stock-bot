@@ -1,0 +1,92 @@
+{
+  "active_statuses": [
+    "ACCEPTED",
+    "NEW",
+    "PARTIALLY_FILLED",
+    "PENDING_CANCEL",
+    "PENDING_NEW",
+    "PENDING_REPLACE"
+  ],
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "1f8edc1",
+  "bundle_type": "ACTIVE_ORDER_LIFECYCLE_MONITOR",
+  "file_count": 13,
+  "files": [
+    {
+      "bytes": 493,
+      "path": "GIT_COMMIT_V139_09.txt",
+      "sha256": "69db0362a2af9e19f599a828adc5b95be0c03d2e083e5f8f6281c80850012989"
+    },
+    {
+      "bytes": 418,
+      "path": "RUN_V139_09_ACTIVE_ORDER_LIFECYCLE_MONITOR.ps1",
+      "sha256": "d14197aef46a32b05bce202e3cbed8cdedf88f44338d07016c02dc959e56b466"
+    },
+    {
+      "bytes": 560,
+      "path": "RUN_V139_09_TEST_AND_VERIFY.ps1",
+      "sha256": "5cbf3d7285ce209f1722f7d2bc10a802df4cc5a074a37c6b80fb7dbe64283f82"
+    },
+    {
+      "bytes": 17179,
+      "path": "autonomous_paper_runtime/active_order_lifecycle_monitor.py",
+      "sha256": "4ee273aebd3bd3f4c8d30e985641d844ac9854f399f6ba02c0093ddb3d368b58"
+    },
+    {
+      "bytes": 696,
+      "path": "release/v139_09/docs/DESIGN.md",
+      "sha256": "02147e5e70811f3b7c1c3239d4c499809c77711e678cf26fcb2548f180e93958"
+    },
+    {
+      "bytes": 524,
+      "path": "release/v139_09/docs/RELEASE_NOTES.md",
+      "sha256": "63e08ff43f7435724d02af31d8d5ef97b95e2e727e9029a6e842da550f3f3136"
+    },
+    {
+      "bytes": 470,
+      "path": "release/v139_09/docs/TEST_RESULTS.md",
+      "sha256": "d6422d7754a148942f171b5191447defc66910b0c82e76e75a51f99b91f84b16"
+    },
+    {
+      "bytes": 215,
+      "path": "release/v139_09/input/active_order_lifecycle_snapshot.example.json",
+      "sha256": "030adbd3d3f73e0d27e8bdb21056b2880b4266d544bc11a400b716e2ee54b947"
+    },
+    {
+      "bytes": 715,
+      "path": "tools/install_check_v139_09.py",
+      "sha256": "f22301c9bf55938f77d5ac4788866fcc3fa7cf349a6ffa54691053041f0e2889"
+    },
+    {
+      "bytes": 1934,
+      "path": "tools/run_active_order_lifecycle_monitor_v139_09.py",
+      "sha256": "19d9d1acca8c646d37edddf8928d0c89d53365d71a6bd02ec1bdf851ef4baf15"
+    },
+    {
+      "bytes": 4771,
+      "path": "tools/test_active_order_lifecycle_monitor_v139_09.py",
+      "sha256": "3805486dc44f9b9e0d80bab56a79e620ed54ac5197911a6259dba99b8cf2bae1"
+    },
+    {
+      "bytes": 1254,
+      "path": "tools/verify_active_order_lifecycle_monitor_v139_09.py",
+      "sha256": "a3f9ad894064b816c96f36d02da91c9bc630f44b83fc48305a3852c26cf34ff5"
+    }
+  ],
+  "filled_quantity_regression_guard": true,
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "stage": "V139.09",
+  "status_regression_guard": true,
+  "terminal_statuses": [
+    "CANCELED",
+    "CANCELLED",
+    "EXPIRED",
+    "FILLED",
+    "REJECTED"
+  ],
+  "validation_mode": "LOCAL_LIFECYCLE_SNAPSHOT_ONLY",
+  "write_requests_executed": 0
+}

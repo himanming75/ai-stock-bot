@@ -1,0 +1,8 @@
+{
+  "client_order_id": "replace-with-v13908-client-order-id",
+  "broker_order_id": "replace-with-v13908-broker-order-id",
+  "status": "ACCEPTED",
+  "quantity": 1,
+  "filled_quantity": 0,
+  "average_fill_price": 0
+}
