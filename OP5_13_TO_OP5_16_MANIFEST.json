@@ -1,0 +1,15 @@
+{
+  "base_commit": "206e711",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_PILOT_PROMOTION_GATE",
+  "certificate_gate": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "performance_gate": true,
+  "promotion_is_approval": false,
+  "promotion_manifest": true,
+  "risk_gate": true,
+  "stage_range": "OP5.13-OP5.16",
+  "validation_gate": true
+}

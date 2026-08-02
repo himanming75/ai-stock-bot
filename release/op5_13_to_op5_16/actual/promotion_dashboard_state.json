@@ -1,0 +1,27 @@
+{
+  "analytics_complete": false,
+  "average_return_pct": 0.0,
+  "broker_write_enabled": false,
+  "certificate_verified": false,
+  "emergency_stop_required": false,
+  "healthy_rate_pct": 0.0,
+  "live_trading_enabled": false,
+  "maximum_drawdown_pct": 0.0,
+  "observed_at": "2026-08-02T08:32:07.306561+00:00",
+  "paper_only": true,
+  "promotion_ready": false,
+  "promotion_reasons": [
+    "VALIDATION_NOT_COMPLETE",
+    "VALIDATION_GATE_NOT_CLEAR",
+    "ANALYTICS_NOT_COMPLETE",
+    "CERTIFICATE_NOT_VERIFIED",
+    "MINIMUM_VALIDATION_DAYS_NOT_MET",
+    "HEALTHY_RATE_BELOW_THRESHOLD"
+  ],
+  "promotion_state": "WAIT_VALIDATION_COMPLETE",
+  "risk_state": "WAIT_PILOT_START",
+  "stage": "OP5.13-OP5.16",
+  "validation_complete": false,
+  "validation_days": 0,
+  "validation_gate_clear": false
+}

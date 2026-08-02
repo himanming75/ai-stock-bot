@@ -1,0 +1,24 @@
+{
+  "average_return_pct": 0.0,
+  "broker_action_performed": false,
+  "certificate_id": "",
+  "certificate_sha256": "",
+  "created_at": "2026-08-02T08:32:07.306561+00:00",
+  "emergency_stop_required": false,
+  "healthy_rate_pct": 0.0,
+  "maximum_drawdown_pct": 0.0,
+  "paper_only": true,
+  "promotion_ready": false,
+  "promotion_reasons": [
+    "VALIDATION_NOT_COMPLETE",
+    "VALIDATION_GATE_NOT_CLEAR",
+    "ANALYTICS_NOT_COMPLETE",
+    "CERTIFICATE_NOT_VERIFIED",
+    "MINIMUM_VALIDATION_DAYS_NOT_MET",
+    "HEALTHY_RATE_BELOW_THRESHOLD"
+  ],
+  "promotion_state": "WAIT_VALIDATION_COMPLETE",
+  "promotion_type": "PAPER_PILOT_PROMOTION",
+  "stage": "OP5.16",
+  "validation_days": 0
+}
