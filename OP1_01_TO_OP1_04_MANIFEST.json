@@ -1,0 +1,15 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "68cf0c1",
+  "bundle_type": "PAPER_OPERATIONS_PILOT_BOOTSTRAP",
+  "default_mode": "LOCAL_PAPER_SNAPSHOT_ONLY",
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_methods_allowed": [
+    "GET"
+  ],
+  "network_mode_optional": true,
+  "order_submission_enabled": false,
+  "stage_range": "OP1.01-OP1.04",
+  "write_requests_executed": 0
+}

@@ -1,0 +1,17 @@
+{
+  "account_ready": false,
+  "created_at": "2026-08-02T06:00:12.413316+00:00",
+  "credentials_present": true,
+  "credentials_used": false,
+  "endpoint_verified": true,
+  "live_trading_enabled": false,
+  "market_is_open": false,
+  "open_order_count": 0,
+  "order_submission_enabled": false,
+  "pilot_id": "",
+  "pilot_preflight_ready": false,
+  "position_count": 0,
+  "read_only": true,
+  "release_id": "",
+  "stage": "OP1.03"
+}

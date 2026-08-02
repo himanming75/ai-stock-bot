@@ -1,0 +1,8 @@
+{
+  "pilot_id": "paper-pilot-001",
+  "read_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "max_daily_orders": 0,
+  "expected_base_url": "https://paper-api.alpaca.markets"
+}
