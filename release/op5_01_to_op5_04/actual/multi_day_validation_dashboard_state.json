@@ -1,0 +1,22 @@
+{
+  "broker_write_enabled": false,
+  "consecutive_healthy_days": 0,
+  "day_healthy": false,
+  "gate_reasons": [
+    "PILOT_NOT_STARTED",
+    "MINIMUM_VALIDATION_DAYS_NOT_MET",
+    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET",
+    "RECOVERY_GATE_NOT_CLEAR"
+  ],
+  "healthy_days": 0,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-02T08:16:42.489902+00:00",
+  "paper_only": true,
+  "pilot_id": "",
+  "session_id": "",
+  "stage": "OP5.04",
+  "unhealthy_days": 0,
+  "validation_complete": false,
+  "validation_days": 0,
+  "validation_state": "WAIT_PILOT_START"
+}

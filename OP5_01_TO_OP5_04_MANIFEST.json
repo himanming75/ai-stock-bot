@@ -1,0 +1,15 @@
+{
+  "base_commit": "4d01bc7",
+  "broker_write_enabled": false,
+  "bundle_type": "MULTI_DAY_PAPER_VALIDATION_FOUNDATION",
+  "consecutive_healthy_days": true,
+  "continuous_loop_enabled": false,
+  "duplicate_date_block": true,
+  "healthy_day_aggregation": true,
+  "live_trading_enabled": false,
+  "one_record_per_date": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "stage_range": "OP5.01-OP5.04",
+  "validation_gate": true
+}

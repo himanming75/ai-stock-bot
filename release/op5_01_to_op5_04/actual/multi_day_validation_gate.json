@@ -1,0 +1,16 @@
+{
+  "broker_action_performed": false,
+  "created_at": "2026-08-02T08:16:42.489902+00:00",
+  "gate_reasons": [
+    "PILOT_NOT_STARTED",
+    "MINIMUM_VALIDATION_DAYS_NOT_MET",
+    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET",
+    "RECOVERY_GATE_NOT_CLEAR"
+  ],
+  "paper_only": true,
+  "pilot_id": "",
+  "session_id": "",
+  "stage": "OP5.03",
+  "validation_complete": false,
+  "validation_gate_clear": false
+}
