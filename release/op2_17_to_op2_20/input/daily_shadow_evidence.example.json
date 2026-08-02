@@ -1,0 +1,11 @@
+{
+  "signal_count": 3,
+  "buy_count": 1,
+  "sell_count": 1,
+  "hold_count": 1,
+  "risk_block_count": 0,
+  "error_count": 0,
+  "total_pnl": 12.5,
+  "max_drawdown_pct": 1.2,
+  "runtime_seconds": 30
+}

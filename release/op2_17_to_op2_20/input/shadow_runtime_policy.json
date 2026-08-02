@@ -1,0 +1,11 @@
+{
+  "runtime_id": "shadow-runtime-001",
+  "shadow_only": true,
+  "order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "continuous_loop_enabled": false,
+  "max_retries": 3,
+  "heartbeat_interval_minutes": 5,
+  "auto_install_task": false
+}

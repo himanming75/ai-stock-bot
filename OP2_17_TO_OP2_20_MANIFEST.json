@@ -1,0 +1,19 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "automatic_task_installed": false,
+  "base_commit": "bd96716",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_DAILY_AUTOMATION",
+  "continuous_loop_enabled": false,
+  "daily_shadow_report": true,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "recovery_validation": true,
+  "runtime_heartbeat": true,
+  "shadow_only": true,
+  "single_daily_tick": true,
+  "stage_range": "OP2.17-OP2.20",
+  "write_requests_executed": 0
+}
