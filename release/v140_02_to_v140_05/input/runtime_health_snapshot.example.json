@@ -1,0 +1,9 @@
+{
+  "disk_free_mb": 10000,
+  "minimum_disk_free_mb": 500,
+  "heartbeat_age_seconds": 5,
+  "maximum_heartbeat_age_seconds": 300,
+  "filesystem_writable": true,
+  "system_clock_synchronized": true,
+  "runtime_process_count": 1
+}

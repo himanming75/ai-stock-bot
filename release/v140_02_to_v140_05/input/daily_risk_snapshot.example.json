@@ -1,0 +1,10 @@
+{
+  "orders_used": 0,
+  "max_daily_orders": 5,
+  "daily_pnl": 0,
+  "max_daily_loss": 100,
+  "current_exposure": 0,
+  "max_exposure": 5000,
+  "consecutive_losses": 0,
+  "max_consecutive_losses": 3
+}

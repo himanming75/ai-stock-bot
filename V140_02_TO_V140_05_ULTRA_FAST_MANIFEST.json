@@ -1,0 +1,79 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "base_commit": "df0d538",
+  "bundle_type": "ULTRA_FAST_RUNTIME_CONTROL",
+  "file_count": 14,
+  "files": [
+    {
+      "bytes": 559,
+      "path": "GIT_COMMIT_V140_02_TO_V140_05_ULTRA_FAST.txt",
+      "sha256": "ec9db7411911fa6bb0931cad1c28c5340ecf3ae6faca53725c25ecf9e2223fea"
+    },
+    {
+      "bytes": 569,
+      "path": "RUN_V140_02_TO_V140_05_TEST_AND_VERIFY.ps1",
+      "sha256": "a0b6e01b9b30286d136f03a8644c0197c929b4ece8f2bc4761e0da9a55fcf97c"
+    },
+    {
+      "bytes": 379,
+      "path": "RUN_V140_02_TO_V140_05_ULTRA_FAST.ps1",
+      "sha256": "d45b2401809cc6e3be7668ec07203bd7a74ef6a62ad90d134e5a0730273abdd9"
+    },
+    {
+      "bytes": 9302,
+      "path": "autonomous_paper_runtime/runtime_control_bundle.py",
+      "sha256": "ea3f0b4d685f9c2d7ac9f37583c7965427ef6d85e2b80abd387084569c390926"
+    },
+    {
+      "bytes": 405,
+      "path": "release/v140_02_to_v140_05/docs/DESIGN.md",
+      "sha256": "25df10f4bd3d6ef0c6bf1e2bbc25b71e00427a0aa33ac581c57a9282475e4281"
+    },
+    {
+      "bytes": 167,
+      "path": "release/v140_02_to_v140_05/docs/TEST_RESULTS.md",
+      "sha256": "193e2aa0c8e01d2fcda208bbc9c61160a299b800e057f7af15eda458a93fd0cc"
+    },
+    {
+      "bytes": 198,
+      "path": "release/v140_02_to_v140_05/input/daily_risk_snapshot.example.json",
+      "sha256": "ce4b00bb14d219e8a231264791f442f4a6c7859c1f58947bf44f76caf29adc39"
+    },
+    {
+      "bytes": 115,
+      "path": "release/v140_02_to_v140_05/input/market_session_snapshot.example.json",
+      "sha256": "821e5b4bbed5abb765c5edcc05d37dadeb32a7ac30e923672c2a273d0ddaf244"
+    },
+    {
+      "bytes": 227,
+      "path": "release/v140_02_to_v140_05/input/runtime_health_snapshot.example.json",
+      "sha256": "bffeb33af70f8ae497e1dca91cba653c9ffcbb79a1a1a5b3175c67efecdfd879"
+    },
+    {
+      "bytes": 604,
+      "path": "tools/install_check_v140_02_to_v140_05.py",
+      "sha256": "c8e187bf20ee18726544adfdd8face9daa6ece3c27e484c6d615bc6080a54de5"
+    },
+    {
+      "bytes": 1389,
+      "path": "tools/run_runtime_control_bundle_v140_02_to_v140_05.py",
+      "sha256": "ec47b48727ba08997df1ba416c4978680d3522b970f98b4184a3de45db1d1067"
+    },
+    {
+      "bytes": 3795,
+      "path": "tools/test_runtime_control_bundle_v140_02_to_v140_05.py",
+      "sha256": "48db31cc70546d10ad13120439e669b025944c9fa24041f570c0cc52c7ee6c6d"
+    },
+    {
+      "bytes": 786,
+      "path": "tools/verify_runtime_control_bundle_v140_02_to_v140_05.py",
+      "sha256": "295c9cc21a259898fddfec7fd0690182f75ed6a0a55a89bb57f7269135534941"
+    }
+  ],
+  "live_orders_submitted": 0,
+  "network_requests_executed": 0,
+  "stage_range": "V140.02-V140.05",
+  "write_requests_executed": 0
+}

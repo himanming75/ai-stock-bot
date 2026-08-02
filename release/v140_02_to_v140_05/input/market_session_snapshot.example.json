@@ -1,0 +1,6 @@
+{
+  "market_phase": "TRADING_WINDOW",
+  "market_is_open": true,
+  "new_orders_allowed": true,
+  "holiday": false
+}
