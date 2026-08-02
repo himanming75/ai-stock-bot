@@ -1,0 +1,9 @@
+{
+  "signal_id": "replace-with-verified-signal-id",
+  "symbol": "AAPL",
+  "approved_action": "HOLD",
+  "confidence": 0.0,
+  "quantity": 0,
+  "reference_price": 50,
+  "signal_verified": true
+}

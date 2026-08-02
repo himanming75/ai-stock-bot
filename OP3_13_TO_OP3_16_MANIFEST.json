@@ -1,0 +1,16 @@
+{
+  "base_commit": "b6452a5",
+  "bundle_type": "LIMITED_AUTONOMOUS_PAPER_TRADING",
+  "consecutive_loss_limit": true,
+  "continuous_loop_enabled": false,
+  "daily_loss_limit": true,
+  "emergency_stop": true,
+  "live_endpoint_blocked": true,
+  "market_close_buffer": true,
+  "maximum_daily_orders": 1,
+  "maximum_order_notional": 100,
+  "maximum_orders_per_cycle": 1,
+  "paper_only": true,
+  "single_cycle_only": true,
+  "stage_range": "OP3.13-OP3.16"
+}

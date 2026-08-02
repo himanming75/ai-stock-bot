@@ -1,0 +1,15 @@
+{
+  "approved_action": "HOLD",
+  "approved_quantity": 0,
+  "client_order_id": "op3auto-605b7727316c60c17c2a4605",
+  "confidence": 0.0,
+  "created_at": "2026-08-02T07:22:15.216063+00:00",
+  "paper_only": true,
+  "requested_action": "HOLD",
+  "risk_approved": true,
+  "risk_reasons": [],
+  "runtime_id": "limited-auto-paper-001",
+  "signal_id": "replace-with-verified-signal-id",
+  "stage": "OP3.14",
+  "symbol": "AAPL"
+}

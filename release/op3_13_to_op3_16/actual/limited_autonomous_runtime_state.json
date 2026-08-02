@@ -1,0 +1,10 @@
+{
+  "continuous_loop_enabled": false,
+  "created_at": "2026-08-02T07:22:15.216063+00:00",
+  "cycle_date": "2026-08-02",
+  "decision": "HOLD",
+  "risk_reasons": [],
+  "runtime_id": "limited-auto-paper-001",
+  "single_cycle_only": true,
+  "stage": "OP3.13"
+}

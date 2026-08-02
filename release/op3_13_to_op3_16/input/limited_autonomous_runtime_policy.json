@@ -1,0 +1,16 @@
+{
+  "runtime_id": "limited-auto-paper-001",
+  "paper_only": true,
+  "single_cycle_only": true,
+  "continuous_loop_enabled": false,
+  "maximum_orders_per_cycle": 1,
+  "maximum_daily_orders": 1,
+  "maximum_order_notional": 100,
+  "maximum_open_positions": 2,
+  "maximum_daily_loss": 50,
+  "maximum_consecutive_losses": 2,
+  "market_close_buffer_minutes": 15,
+  "timeout_seconds": 10,
+  "live_trading_enabled": false,
+  "expected_base_url": "https://paper-api.alpaca.markets"
+}

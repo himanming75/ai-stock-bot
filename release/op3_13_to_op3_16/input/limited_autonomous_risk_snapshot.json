@@ -1,0 +1,11 @@
+{
+  "cycle_date": "2026-08-02",
+  "daily_orders": 0,
+  "open_positions": 1,
+  "daily_pnl": 0,
+  "consecutive_losses": 0,
+  "minutes_to_market_close": 120,
+  "emergency_stop_engaged": false,
+  "duplicate_signal": false,
+  "market_open": true
+}

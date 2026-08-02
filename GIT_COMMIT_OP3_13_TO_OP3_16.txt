@@ -1,0 +1,3 @@
+git add autonomous_paper_runtime/limited_autonomous_paper_trading.py tools/run_limited_autonomous_paper_trading_op3_13_to_op3_16.py tools/test_limited_autonomous_paper_trading_op3_13_to_op3_16.py tools/install_check_op3_13_to_op3_16.py tools/verify_limited_autonomous_paper_trading_op3_13_to_op3_16.py RUN_OP3_13_TO_OP3_16_LIMITED_AUTONOMOUS_PAPER.ps1 RUN_OP3_13_TO_OP3_16_TEST_AND_VERIFY.ps1 release/op3_13_to_op3_16 OP3_13_TO_OP3_16_MANIFEST.json GIT_COMMIT_OP3_13_TO_OP3_16.txt
+git commit -m "OP3.13-OP3.16 limited autonomous Paper trading implemented"
+git push origin main
