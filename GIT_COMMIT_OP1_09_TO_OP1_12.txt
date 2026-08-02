@@ -1,0 +1,3 @@
+git add autonomous_paper_runtime/weekly_observation_review.py tools/run_weekly_observation_review_op1_09_to_op1_12.py tools/test_weekly_observation_review_op1_09_to_op1_12.py tools/install_check_op1_09_to_op1_12.py tools/verify_weekly_observation_review_op1_09_to_op1_12.py RUN_OP1_09_TO_OP1_12_WEEKLY_REVIEW.ps1 RUN_OP1_09_TO_OP1_12_TEST_AND_VERIFY.ps1 release/op1_09_to_op1_12 OP1_09_TO_OP1_12_MANIFEST.json GIT_COMMIT_OP1_09_TO_OP1_12.txt
+git commit -m "OP1.09-OP1.12 weekly observation review implemented"
+git push origin main

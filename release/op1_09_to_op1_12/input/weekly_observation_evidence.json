@@ -1,0 +1,59 @@
+{
+  "days": [
+    {
+      "network_failures": 0,
+      "snapshot_failures": 0,
+      "unexpected_orders": 0,
+      "unexpected_positions": 0,
+      "risk_violations": 0,
+      "account_blocked_events": 0,
+      "trading_blocked_events": 0,
+      "equity_drift": 0,
+      "cash_drift": 0
+    },
+    {
+      "network_failures": 0,
+      "snapshot_failures": 0,
+      "unexpected_orders": 0,
+      "unexpected_positions": 0,
+      "risk_violations": 0,
+      "account_blocked_events": 0,
+      "trading_blocked_events": 0,
+      "equity_drift": 0,
+      "cash_drift": 0
+    },
+    {
+      "network_failures": 0,
+      "snapshot_failures": 0,
+      "unexpected_orders": 0,
+      "unexpected_positions": 0,
+      "risk_violations": 0,
+      "account_blocked_events": 0,
+      "trading_blocked_events": 0,
+      "equity_drift": 0,
+      "cash_drift": 0
+    },
+    {
+      "network_failures": 0,
+      "snapshot_failures": 0,
+      "unexpected_orders": 0,
+      "unexpected_positions": 0,
+      "risk_violations": 0,
+      "account_blocked_events": 0,
+      "trading_blocked_events": 0,
+      "equity_drift": 0,
+      "cash_drift": 0
+    },
+    {
+      "network_failures": 0,
+      "snapshot_failures": 0,
+      "unexpected_orders": 0,
+      "unexpected_positions": 0,
+      "risk_violations": 0,
+      "account_blocked_events": 0,
+      "trading_blocked_events": 0,
+      "equity_drift": 0,
+      "cash_drift": 0
+    }
+  ]
+}

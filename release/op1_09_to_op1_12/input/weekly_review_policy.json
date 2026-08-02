@@ -1,0 +1,10 @@
+{
+  "review_id": "weekly-review-001",
+  "read_only": true,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "minimum_observation_days": 5,
+  "minimum_stability_score": 90,
+  "max_abs_equity_drift": 1000,
+  "max_abs_cash_drift": 1000
+}

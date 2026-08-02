@@ -1,0 +1,16 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "alert_classification": true,
+  "base_commit": "501a286",
+  "bundle_type": "WEEKLY_OBSERVATION_REVIEW",
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "order_submission_enabled": false,
+  "pilot_continuation_decision": true,
+  "read_only": true,
+  "stability_score": true,
+  "stage_range": "OP1.09-OP1.12",
+  "weekly_summary": true,
+  "write_requests_executed": 0
+}
