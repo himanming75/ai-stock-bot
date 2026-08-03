@@ -1,0 +1,14 @@
+{
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "continuous_loop_enabled": false,
+  "automatic_scheduling_enabled": false,
+  "windows_task_install_enabled": false,
+  "local_trigger_execution_enabled": false,
+  "window_start_utc": "13:30",
+  "window_end_utc": "20:00",
+  "max_triggers_per_day": 3,
+  "minimum_trigger_interval_seconds": 300
+}
