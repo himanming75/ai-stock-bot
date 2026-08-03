@@ -1,0 +1,17 @@
+{
+  "stage_range": "V90.01-V90.32",
+  "base_commit": "10cfe45",
+  "dashboard_analytics_v3": true,
+  "strategy_gate_analytics": true,
+  "portfolio_risk_analytics": true,
+  "validation_progress": true,
+  "alerts": true,
+  "json_api": true,
+  "default_url": "http://127.0.0.1:8602",
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V90.33-V90.64"
+}

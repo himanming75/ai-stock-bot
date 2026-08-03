@@ -1,0 +1,192 @@
+{
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "minimum_excess_return",
+      "title": "MOMENTUM performance gate"
+    },
+    {
+      "level": "warning",
+      "message": "minimum_excess_return",
+      "title": "EMA_CROSS performance gate"
+    },
+    {
+      "level": "warning",
+      "message": "minimum_excess_return",
+      "title": "MACD performance gate"
+    },
+    {
+      "level": "warning",
+      "message": "minimum_excess_return",
+      "title": "BOLLINGER performance gate"
+    },
+    {
+      "level": "warning",
+      "message": "minimum_excess_return",
+      "title": "RSI performance gate"
+    },
+    {
+      "level": "danger",
+      "message": "minimum_approved_strategies",
+      "title": "Portfolio risk gate"
+    },
+    {
+      "level": "info",
+      "message": "2 additional distinct day(s) required.",
+      "title": "Multi-day validation"
+    }
+  ],
+  "allocations": [
+    {
+      "approved": false,
+      "kelly_fraction": 1.0,
+      "rank": 1,
+      "score": 60.7315,
+      "strategy": "MOMENTUM",
+      "weight_pct": 36.6905
+    },
+    {
+      "approved": false,
+      "kelly_fraction": 1.0,
+      "rank": 2,
+      "score": 53.331,
+      "strategy": "EMA_CROSS",
+      "weight_pct": 32.2195
+    },
+    {
+      "approved": false,
+      "kelly_fraction": 1.0,
+      "rank": 3,
+      "score": 51.4614,
+      "strategy": "MACD",
+      "weight_pct": 31.09
+    }
+  ],
+  "bar_count": 220,
+  "benchmark_return_pct": 44.3291,
+  "broker_write_enabled": false,
+  "external_network_enabled": false,
+  "historical_input": "C:\\stock-bot\\release\\v73_1\\data\\sample_breakout_ohlcv_v73_1.csv",
+  "live_trading_enabled": false,
+  "orchestrator_state": "PAPER_AUTOMATION_ORCHESTRATOR_READY",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "portfolio_risk": {
+    "approved_strategy_count": 0,
+    "checks": {
+      "minimum_approved_strategies": false,
+      "single_allocation_cap": true,
+      "strategy_drawdown_cap": true,
+      "weights_sum_to_one": true
+    },
+    "failed": [
+      "minimum_approved_strategies"
+    ],
+    "largest_allocation_pct": 36.6905,
+    "passed": false,
+    "risky_strategies": []
+  },
+  "portfolio_state": "PORTFOLIO_OPTIMIZATION_REVIEW_REQUIRED",
+  "production_release_state": "PAPER_PRODUCTION_RELEASE_PENDING_PREREQUISITES",
+  "sources_available": {
+    "multi_day": true,
+    "orchestrator": true,
+    "portfolio": true,
+    "production_release": true,
+    "robustness": true,
+    "strategy": true
+  },
+  "stage": "V90.32",
+  "stage_range": "V90.01-V90.32",
+  "state": "DASHBOARD_ANALYTICS_V3_READY",
+  "status": "PASS",
+  "strategy_rows": [
+    {
+      "approved": false,
+      "drawdown_pct": 2.7343,
+      "excess_return_pct": -17.8682,
+      "failed_checks": [
+        "minimum_excess_return"
+      ],
+      "profit_factor": 999.0,
+      "rank": 1,
+      "return_pct": 26.4609,
+      "score": 42.5502,
+      "sharpe": 8.7282,
+      "strategy": "MOMENTUM",
+      "trades": 3,
+      "win_rate_pct": 100.0
+    },
+    {
+      "approved": false,
+      "drawdown_pct": 4.3345,
+      "excess_return_pct": -20.4841,
+      "failed_checks": [
+        "minimum_excess_return"
+      ],
+      "profit_factor": 999.0,
+      "rank": 2,
+      "return_pct": 23.845,
+      "score": 36.6912,
+      "sharpe": 7.5067,
+      "strategy": "EMA_CROSS",
+      "trades": 3,
+      "win_rate_pct": 100.0
+    },
+    {
+      "approved": false,
+      "drawdown_pct": 4.334,
+      "excess_return_pct": -21.5194,
+      "failed_checks": [
+        "minimum_excess_return"
+      ],
+      "profit_factor": 999.0,
+      "rank": 3,
+      "return_pct": 22.8097,
+      "score": 35.0997,
+      "sharpe": 7.2285,
+      "strategy": "MACD",
+      "trades": 3,
+      "win_rate_pct": 100.0
+    },
+    {
+      "approved": false,
+      "drawdown_pct": 0.6968,
+      "excess_return_pct": -42.473,
+      "failed_checks": [
+        "minimum_excess_return"
+      ],
+      "profit_factor": 999.0,
+      "rank": 4,
+      "return_pct": 1.8561,
+      "score": 5.9441,
+      "sharpe": 2.2182,
+      "strategy": "BOLLINGER",
+      "trades": 2,
+      "win_rate_pct": 100.0
+    },
+    {
+      "approved": false,
+      "drawdown_pct": 1.3681,
+      "excess_return_pct": -43.6481,
+      "failed_checks": [
+        "minimum_excess_return"
+      ],
+      "profit_factor": 4.1546,
+      "rank": 5,
+      "return_pct": 0.681,
+      "score": 1.1274,
+      "sharpe": 0.5652,
+      "strategy": "RSI",
+      "trades": 3,
+      "win_rate_pct": 66.6667
+    }
+  ],
+  "strategy_state": "STRATEGY_PERFORMANCE_REVIEW_REQUIRED",
+  "validation_progress": {
+    "completed_days": 1,
+    "percent_complete": 33.33,
+    "remaining_days": 2,
+    "required_days": 3
+  }
+}
