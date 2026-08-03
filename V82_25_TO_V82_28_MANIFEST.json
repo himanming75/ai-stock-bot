@@ -1,0 +1,14 @@
+{
+  "base_commit": "7a2a723",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_TRADING_SCHEDULER_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "duplicate_tick_lock": true,
+  "heartbeat": true,
+  "interval_scheduler": true,
+  "lateness_detection": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "stage_range": "V82.25-V82.28",
+  "tick_completion": true
+}

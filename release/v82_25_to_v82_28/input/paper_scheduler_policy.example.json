@@ -1,0 +1,12 @@
+{
+  "paper_only": true,
+  "read_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "continuous_loop_enabled": false,
+  "windows_task_install_enabled": false,
+  "interval_seconds": 300,
+  "heartbeat_timeout_seconds": 900,
+  "maximum_lateness_seconds": 120
+}
