@@ -1,0 +1,15 @@
+{
+  "stage_range": "V85.01-V85.08",
+  "base_commit": "0095b79",
+  "bundle_type": "DASHBOARD_V2",
+  "server_type": "PYTHON_STANDARD_LIBRARY_HTTP",
+  "default_url": "http://127.0.0.1:8501",
+  "refresh_seconds": 15,
+  "read_only": true,
+  "localhost_only": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V86_AI_STRATEGY_ENGINE_V2"
+}
