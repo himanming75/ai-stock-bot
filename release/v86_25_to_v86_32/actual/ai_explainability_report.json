@@ -1,0 +1,138 @@
+{
+  "broker_write_enabled": false,
+  "external_network_enabled": false,
+  "limitations": [
+    "The engine uses only supplied local JSON results.",
+    "It does not use news, fundamentals, or external AI APIs.",
+    "It does not predict guaranteed returns.",
+    "It does not submit or approve broker orders."
+  ],
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "portfolio_explanation": {
+    "allocation_contributions": [
+      {
+        "decision": "BUY",
+        "portfolio_contribution_pct": 33.98,
+        "rank": 1,
+        "recommended_weight_pct": 15.0,
+        "risk_adjusted_score": 54.6136,
+        "sector": "TECH",
+        "symbol": "AAPL"
+      },
+      {
+        "decision": "BUY",
+        "portfolio_contribution_pct": 22.65,
+        "rank": 2,
+        "recommended_weight_pct": 10.0,
+        "risk_adjusted_score": 54.038,
+        "sector": "TECH",
+        "symbol": "MSFT"
+      },
+      {
+        "decision": "BUY",
+        "portfolio_contribution_pct": 27.02,
+        "rank": 3,
+        "recommended_weight_pct": 11.926,
+        "risk_adjusted_score": 41.9965,
+        "sector": "ENERGY",
+        "symbol": "XOM"
+      },
+      {
+        "decision": "WATCH",
+        "portfolio_contribution_pct": 13.04,
+        "rank": 4,
+        "recommended_weight_pct": 5.7548,
+        "risk_adjusted_score": 20.2653,
+        "sector": "HEALTH",
+        "symbol": "JNJ"
+      },
+      {
+        "decision": "WATCH",
+        "portfolio_contribution_pct": 3.32,
+        "rank": 5,
+        "recommended_weight_pct": 1.4648,
+        "risk_adjusted_score": 5.1581,
+        "sector": "AUTO",
+        "symbol": "TSLA"
+      }
+    ],
+    "comparisons": [
+      {
+        "explanation": "AAPL ranks above MSFT by 0.58 risk-adjusted points. Confidence is 82.10% versus 78.00%.",
+        "higher_rank_symbol": "AAPL",
+        "lower_rank_symbol": "MSFT",
+        "score_gap": 0.5756
+      },
+      {
+        "explanation": "MSFT ranks above XOM by 12.04 risk-adjusted points. Confidence is 78.00% versus 69.00%.",
+        "higher_rank_symbol": "MSFT",
+        "lower_rank_symbol": "XOM",
+        "score_gap": 12.0415
+      },
+      {
+        "explanation": "XOM ranks above JNJ by 21.73 risk-adjusted points. Confidence is 69.00% versus 64.00%.",
+        "higher_rank_symbol": "XOM",
+        "lower_rank_symbol": "JNJ",
+        "score_gap": 21.7312
+      },
+      {
+        "explanation": "JNJ ranks above TSLA by 15.11 risk-adjusted points. Confidence is 64.00% versus 58.00%.",
+        "higher_rank_symbol": "JNJ",
+        "lower_rank_symbol": "TSLA",
+        "score_gap": 15.1072
+      }
+    ],
+    "narrative": "The portfolio engine ranked 5 candidates and recommended 5 allocations totaling 44.15% of capital. The portfolio score is 54.65 and the diversification score is 100.00. Recommended symbols are AAPL, MSFT, XOM, JNJ, TSLA. These are paper-only model allocations, not executable orders.",
+    "risk_factors": [
+      {
+        "code": "SECTOR_LIMIT_NEAR_CAP",
+        "message": "TECH allocation is 25.00% near the 25.00% cap.",
+        "severity": "MEDIUM"
+      },
+      {
+        "code": "HIGH_VOLATILITY_POSITION",
+        "message": "TSLA has volatility of 7.50% with allocation 1.46%.",
+        "severity": "HIGH"
+      }
+    ]
+  },
+  "strategy_explanation": {
+    "narrative": "AAPL is classified as BUY with 82.10% confidence and a composite score of 55.25. The latest close is 154.82, RSI(14) is 100.00, and the MACD histogram is -0.003029. This explanation is descriptive only and does not submit an order.",
+    "risk_factors": [
+      {
+        "code": "RSI_OVERBOUGHT",
+        "message": "RSI(14) is 100.00, indicating an overbought condition.",
+        "severity": "HIGH"
+      },
+      {
+        "code": "MACD_DIVERGENCE",
+        "message": "Composite score is bullish while MACD histogram is negative.",
+        "severity": "MEDIUM"
+      }
+    ],
+    "signal_contributions": [
+      {
+        "estimated_contribution_pct": 25.0,
+        "rank": 1,
+        "reason": "MACD: MACD trend is bullish (score=70.0, weight=1.20)"
+      },
+      {
+        "estimated_contribution_pct": 25.0,
+        "rank": 2,
+        "reason": "RSI: RSI momentum is positive (score=55.0, weight=1.00)"
+      },
+      {
+        "estimated_contribution_pct": 25.0,
+        "rank": 3,
+        "reason": "EMA_TREND: Price is above the configured EMA trend (score=50.0, weight=1.00)"
+      },
+      {
+        "estimated_contribution_pct": 25.0,
+        "rank": 4,
+        "reason": "VOLUME: Volume confirms the move (score=40.0, weight=0.80)"
+      }
+    ]
+  }
+}

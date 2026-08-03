@@ -1,0 +1,15 @@
+{
+  "stage_range": "V86.25-V86.32",
+  "base_commit": "4909729",
+  "bundle_type": "AI_EXPLAINABILITY_ENGINE",
+  "signal_contributions": true,
+  "technical_risk_explanations": true,
+  "portfolio_risk_explanations": true,
+  "candidate_comparisons": true,
+  "external_ai_api_enabled": false,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V87_BACKTEST_ENGINE_V2"
+}
