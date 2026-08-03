@@ -1,0 +1,74 @@
+{
+  "account_summary": {
+    "cash_reconciled": true,
+    "equity_reconciled": true,
+    "integrity_passed": true,
+    "positions_reconciled": true,
+    "reconciliation_state": "PAPER_ACCOUNT_RECONCILIATION_PASS"
+  },
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "close_date": "2026-08-03",
+  "close_gates": {
+    "checks": {
+      "account_integrity_passed": true,
+      "account_reconciliation_passed": true,
+      "actual_orders_zero": true,
+      "paper_only": true,
+      "risk_center_approved": true,
+      "simulation_completed": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "continuous_loop_enabled": false,
+  "daily_close_certificate_sha256": "26bd8daa9bf1e81d58729d84d84a359de73b442b2683cccb2ea8bcd0810ebd72",
+  "daily_metrics": {
+    "daily_pnl": 42.3,
+    "daily_return_pct": 0.0423,
+    "ending_equity": 100042.3,
+    "realized_pnl": 0.0,
+    "starting_equity": 100000.0,
+    "total_pnl": 42.3,
+    "unrealized_pnl": 42.3
+  },
+  "external_network_enabled": false,
+  "fill_summary": {
+    "commission": 0.0,
+    "fill_count": 2,
+    "filled_count": 1,
+    "gross_notional": 9404.7,
+    "not_filled_count": 0,
+    "partial_fill_count": 1
+  },
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V97_01_PAPER_BROKER_ADAPTER",
+  "observed_at": "2026-08-03T22:29:06.368501+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "position_summary": {
+    "open_position_count": 1,
+    "positions": [
+      {
+        "average_cost": 200.1,
+        "holding_days": 3,
+        "quantity": 47.0,
+        "status": "OPEN",
+        "symbol": "AAPL"
+      }
+    ]
+  },
+  "risk_summary": {
+    "failed_risk_checks": [],
+    "risk_approved": true,
+    "risk_state": "ENTERPRISE_RISK_CENTER_APPROVED"
+  },
+  "source_simulation_cycle_id": "d1e115b3122d3b74ee624dad",
+  "stage": "V96.64",
+  "stage_range": "V96.33-V96.64",
+  "state": "DAILY_PAPER_CLOSE_COMPLETE",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

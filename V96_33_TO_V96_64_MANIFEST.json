@@ -1,0 +1,20 @@
+{
+  "stage_range": "V96.33-V96.64",
+  "base_commit": "4a2259b",
+  "daily_equity_snapshot": true,
+  "daily_pnl_and_return": true,
+  "fill_summary": true,
+  "position_summary": true,
+  "risk_summary": true,
+  "reconciliation_summary": true,
+  "close_gates": true,
+  "markdown_eod_report": true,
+  "daily_close_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V97.01-V97.32"
+}
