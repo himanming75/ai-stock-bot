@@ -1,0 +1,15 @@
+{
+  "stage_range": "V91.01-V91.32",
+  "base_commit": "8c052d9",
+  "strategy_registry": true,
+  "registered_strategy_count": 11,
+  "batch_runner": true,
+  "champion_scoring_v2": true,
+  "dashboard_payload": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V91.33-V91.64"
+}
