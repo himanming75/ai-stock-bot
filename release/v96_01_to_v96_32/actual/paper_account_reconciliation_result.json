@@ -1,0 +1,105 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "calculated_positions": {
+    "AAPL": 47.0
+  },
+  "cash_ledger_entries": [
+    {
+      "amount": 100000.0,
+      "entry_type": "INITIAL_CASH",
+      "source": "V95.01-V95.32"
+    },
+    {
+      "amount": -3201.6,
+      "entry_type": "FILL_CASH_EFFECT",
+      "source": "d1e115b3122d3b74ee624dad-001",
+      "symbol": "AAPL"
+    },
+    {
+      "amount": -6203.1,
+      "entry_type": "FILL_CASH_EFFECT",
+      "source": "d1e115b3122d3b74ee624dad-002",
+      "symbol": "AAPL"
+    }
+  ],
+  "cash_reconciliation": {
+    "calculated_ending_cash": 90595.3,
+    "difference": 0.0,
+    "passed": true,
+    "reported_ending_cash": 90595.3
+  },
+  "continuous_loop_enabled": false,
+  "duplicate_fill_ids": [],
+  "equity_reconciliation": {
+    "calculated_equity": 100042.3,
+    "difference": 0.0,
+    "passed": true,
+    "reported_equity": 100042.3
+  },
+  "external_network_enabled": false,
+  "integrity": {
+    "checks": {
+      "cash_reconciled": true,
+      "equity_reconciled": true,
+      "no_duplicate_fill_ids": true,
+      "positions_reconciled": true,
+      "realized_pnl_numeric": true,
+      "unrealized_pnl_numeric": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V96_33_DAILY_PAPER_CLOSE",
+  "observed_at": "2026-08-03T22:18:59.611135+00:00",
+  "order_submission_enabled": false,
+  "paper_account_certificate_sha256": "ed5fcb7d5125225e21478e244e881e8ab169d430820fb2791872e09af374ebb6",
+  "paper_only": true,
+  "position_ledger_entries": [
+    {
+      "entry_type": "POSITION_FILL",
+      "quantity_delta": 16.0,
+      "source": "d1e115b3122d3b74ee624dad-001",
+      "symbol": "AAPL"
+    },
+    {
+      "entry_type": "POSITION_FILL",
+      "quantity_delta": 31.0,
+      "source": "d1e115b3122d3b74ee624dad-002",
+      "symbol": "AAPL"
+    }
+  ],
+  "position_reconciliation": {
+    "details": {
+      "AAPL": {
+        "calculated_quantity": 47.0,
+        "difference": 0.0,
+        "passed": true,
+        "reported_quantity": 47.0
+      }
+    },
+    "passed": true
+  },
+  "realized_pnl": 0.0,
+  "reported_positions": {
+    "AAPL": {
+      "average_cost": 200.1,
+      "high_water_mark": 201.0,
+      "holding_days": 3,
+      "opened_date": "2026-08-05",
+      "quantity": 47.0,
+      "status": "OPEN"
+    }
+  },
+  "source_simulation_cycle_id": "d1e115b3122d3b74ee624dad",
+  "stage": "V96.32",
+  "stage_range": "V96.01-V96.32",
+  "state": "PAPER_ACCOUNT_RECONCILIATION_PASS",
+  "status": "PASS",
+  "total_pnl": 42.3,
+  "unrealized_pnl": 42.3,
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

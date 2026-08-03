@@ -1,0 +1,18 @@
+{
+  "stage_range": "V96.01-V96.32",
+  "base_commit": "c5071f7",
+  "cash_ledger": true,
+  "position_ledger": true,
+  "cash_reconciliation": true,
+  "position_reconciliation": true,
+  "equity_reconciliation": true,
+  "duplicate_fill_detection": true,
+  "realized_unrealized_pnl": true,
+  "integrity_certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V96.33-V96.64"
+}
