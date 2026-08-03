@@ -1,0 +1,20 @@
+{
+  "stage_range": "V83.73-V83.76",
+  "base_commit": "2b9d772",
+  "bundle_type": "PAPER_AUTONOMOUS_MODE_INTEGRATION",
+  "single_cycle_only": true,
+  "allowed_stages": [
+    "SCHEDULE_EVALUATION",
+    "TRIGGER_DISPATCH",
+    "SUPERVISED_RUNNER",
+    "RETRY_EVALUATION",
+    "CYCLE_COMPLETION"
+  ],
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}

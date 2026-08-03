@@ -1,0 +1,32 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "authorize_autonomous_cycle_requested": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "complete_cycle_requested": false,
+  "continuous_loop_enabled": false,
+  "cycle_completed": false,
+  "cycle_id": "",
+  "external_network_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "lock_written": false,
+  "observed_at": "2026-08-03T19:18:40.458749+00:00",
+  "operator_supervision_available": true,
+  "order_submission_enabled": false,
+  "paper_autonomous_mode_state": "PAPER_AUTONOMOUS_CYCLE_READY",
+  "paper_only": true,
+  "plan_written": false,
+  "planned_stages": [
+    "SCHEDULE_EVALUATION",
+    "TRIGGER_DISPATCH",
+    "SUPERVISED_RUNNER",
+    "RETRY_EVALUATION",
+    "CYCLE_COMPLETION"
+  ],
+  "single_cycle_only": true,
+  "stage": "V83.76",
+  "state": "PAPER_AUTONOMOUS_CYCLE_READY",
+  "status": "PASS",
+  "windows_task_enabled": false
+}
