@@ -1,0 +1,11 @@
+{
+  "stage_range": "V83.45-V83.48",
+  "base_commit": "b574607",
+  "bundle_type": "REENTRY_EXECUTION_GUARD_AND_AUDIT",
+  "dry_run_default": true,
+  "automatic_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
