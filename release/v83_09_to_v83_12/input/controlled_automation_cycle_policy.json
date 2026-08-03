@@ -1,0 +1,12 @@
+{
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "continuous_loop_enabled": false,
+  "automatic_repetition_enabled": false,
+  "automatic_action_authorization_enabled": false,
+  "broker_command_execution_enabled": false,
+  "windows_task_install_enabled": false,
+  "max_actions_per_cycle": 1
+}

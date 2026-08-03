@@ -1,0 +1,15 @@
+{
+  "automatic_repetition_enabled": false,
+  "base_commit": "decb7be",
+  "broker_command_execution_enabled": false,
+  "broker_write_enabled": false,
+  "bundle_type": "CONTROLLED_AUTOMATION_CYCLE_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "cycle_report_and_ledger": true,
+  "duplicate_cycle_lock": true,
+  "four_stage_cycle": true,
+  "max_actions_per_cycle": 1,
+  "order_submission_enabled": false,
+  "recovery_and_resume": true,
+  "stage_range": "V83.09-V83.12"
+}

@@ -1,0 +1,24 @@
+{
+  "automatic_repetition_enabled": false,
+  "broker_command_execution_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "controlled_cycle_state": "CONTROLLED_CYCLE_LOCK_CLEARED",
+  "cycle_completed": false,
+  "cycle_id": "",
+  "cycle_recovered": false,
+  "cycle_started": false,
+  "gate_reasons": [
+    "ORCHESTRATOR_ACTION_NOT_READY"
+  ],
+  "last_completed_stage": "",
+  "live_trading_enabled": false,
+  "max_actions_per_cycle": 1,
+  "observed_at": "2026-08-03T17:47:25.200180+00:00",
+  "orchestrator_ready": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "recommended_action": "REFRESH_SCHEDULER_HEARTBEAT",
+  "stage": "V83.12",
+  "stage_count": 0
+}
