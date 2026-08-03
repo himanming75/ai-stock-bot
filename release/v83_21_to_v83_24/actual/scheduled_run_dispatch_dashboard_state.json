@@ -1,0 +1,22 @@
+{
+  "active_schedule": false,
+  "authorization_id": "",
+  "authorization_valid": false,
+  "automatic_scheduling_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "dispatch_completed": false,
+  "dispatch_started": false,
+  "dispatch_succeeded": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T18:05:35.931731+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "return_code": null,
+  "schedule_lock_completed": false,
+  "scheduled_dispatch_state": "SCHEDULED_DISPATCH_SAFE_MODE",
+  "stage": "V83.24",
+  "supervised_result_verified": false,
+  "windows_task_install_enabled": false
+}

@@ -1,0 +1,13 @@
+{
+  "automatic_scheduling_enabled": false,
+  "base_commit": "d2b95db",
+  "broker_write_enabled": false,
+  "bundle_type": "SCHEDULED_RUN_DISPATCH_AND_COMPLETION_INTEGRATION",
+  "dry_run": true,
+  "order_submission_enabled": false,
+  "schedule_lock_auto_completion": true,
+  "single_dispatch_per_authorization": true,
+  "stage_range": "V83.21-V83.24",
+  "timeout_and_result_verification": true,
+  "windows_task_install_enabled": false
+}
