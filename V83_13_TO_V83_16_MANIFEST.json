@@ -1,0 +1,13 @@
+{
+  "automatic_repetition_enabled": false,
+  "base_commit": "3a04c35",
+  "bounded_cycle_count": true,
+  "broker_write_enabled": false,
+  "bundle_type": "SUPERVISED_AUTOMATION_RUNNER_FOUNDATION",
+  "consecutive_failure_limit": true,
+  "continuous_loop_enabled": false,
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "risk_recheck_each_cycle": true,
+  "stage_range": "V83.13-V83.16"
+}

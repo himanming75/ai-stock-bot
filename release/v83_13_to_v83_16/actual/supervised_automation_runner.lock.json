@@ -1,0 +1,7 @@
+{
+  "active": false,
+  "completed": true,
+  "paper_only": true,
+  "runner_id": "supervised-runner-20260803175357018564",
+  "stop_reason": "MAX_CYCLES_REACHED"
+}

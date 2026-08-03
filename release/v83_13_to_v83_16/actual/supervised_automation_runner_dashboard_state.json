@@ -1,0 +1,22 @@
+{
+  "attempted_cycles": 3,
+  "automatic_repetition_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "failed_cycles": 0,
+  "live_trading_enabled": false,
+  "max_cycles": 3,
+  "observed_at": "2026-08-03T17:53:57.018564+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "risk_clear": true,
+  "runner_completed": true,
+  "runner_id": "supervised-runner-20260803175357018564",
+  "runner_started": true,
+  "skipped_cycles": 0,
+  "stage": "V83.16",
+  "stop_reason": "MAX_CYCLES_REACHED",
+  "successful_cycles": 3,
+  "supervised_runner_state": "SUPERVISED_RUNNER_COMPLETE"
+}
