@@ -1,0 +1,4 @@
+git status --short
+git add paper_runtime/trigger_chain_retry_policy_v83_37_40.py dashboard/trigger_chain_retry_policy_integration.py tools/run_trigger_chain_retry_policy_v83_37_to_v83_40.py tools/test_trigger_chain_retry_policy_v83_37_to_v83_40.py tools/install_check_v83_37_to_v83_40.py tools/verify_trigger_chain_retry_policy_v83_37_to_v83_40.py RUN_V83_37_TO_V83_40_TRIGGER_CHAIN_RETRY_POLICY.ps1 RUN_V83_37_TO_V83_40_TEST_AND_VERIFY.ps1 INSTALL_AND_SAVE_V83_37_TO_V83_40_ONE_CLICK.ps1 release/v83_37_to_v83_40 V83_37_TO_V83_40_MANIFEST.json GIT_COMMIT_V83_37_TO_V83_40.txt
+git commit -m "V83.37-V83.40 trigger chain retry policy and budget implemented"
+git push origin main

@@ -1,0 +1,17 @@
+{
+  "paper_only": true,
+  "max_retry_attempts": 3,
+  "base_backoff_seconds": 60,
+  "max_backoff_seconds": 900,
+  "retry_timeout_failures": true,
+  "retryable_return_codes": [
+    2,
+    5
+  ],
+  "automatic_retry_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "continuous_loop_enabled": false
+}

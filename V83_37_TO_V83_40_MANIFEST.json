@@ -1,0 +1,15 @@
+{
+  "stage_range": "V83.37-V83.40",
+  "base_local_commit": "76c4450",
+  "base_remote_commit_observed": "367e506",
+  "bundle_type": "TRIGGER_CHAIN_POLICY_AND_RETRY_BUDGET",
+  "retry_eligibility_policy": true,
+  "retry_budget": true,
+  "exponential_backoff_plan": true,
+  "duplicate_retry_lock": true,
+  "automatic_retry_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
