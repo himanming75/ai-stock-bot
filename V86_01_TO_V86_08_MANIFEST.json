@@ -1,0 +1,18 @@
+{
+  "stage_range": "V86.01-V86.08",
+  "base_commit": "7d67486",
+  "bundle_type": "AI_STRATEGY_ENGINE_V2",
+  "engine_type": "LOCAL_RULE_BASED_SIGNAL_AGGREGATOR",
+  "decisions": [
+    "BUY",
+    "SELL",
+    "HOLD",
+    "WATCH"
+  ],
+  "external_ai_api_enabled": false,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V86_09_INDICATOR_ENGINE"
+}
