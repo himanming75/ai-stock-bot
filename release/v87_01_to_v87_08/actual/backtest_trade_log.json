@@ -1,0 +1,71 @@
+{
+  "paper_only": true,
+  "symbol": "AAPL",
+  "trade_statistics": {
+    "average_loss": 0.0,
+    "average_win": 8008.6997,
+    "expectancy": 8008.6997,
+    "gross_loss": 0,
+    "gross_profit": 32034.7989,
+    "losing_trades": 0,
+    "loss_rate_pct": 0.0,
+    "profit_factor": 999.0,
+    "total_trades": 4,
+    "win_rate_pct": 100.0,
+    "winning_trades": 4
+  },
+  "trades": [
+    {
+      "commission": 18.76968315188462,
+      "entry_price": 109.381872,
+      "entry_time": "2026-01-26T16:00:00Z",
+      "exit_price": 118.736248,
+      "exit_time": "2026-01-23T16:00:00Z",
+      "gross_pnl": 7696.831518846196,
+      "net_pnl": 7678.061835694311,
+      "quantity": 822.8054462260437,
+      "return_pct": 8.531179817438124,
+      "side": "LONG",
+      "slippage_cost": 37.53967567861702
+    },
+    {
+      "commission": 20.1741476049681,
+      "entry_price": 114.42288,
+      "entry_time": "2026-01-18T16:00:00Z",
+      "exit_price": 123.77524,
+      "exit_time": "2026-01-15T16:00:00Z",
+      "gross_pnl": 7920.964745431209,
+      "net_pnl": 7900.790597826241,
+      "quantity": 846.9482296908178,
+      "return_pct": 8.152687808592118,
+      "side": "LONG",
+      "slippage_cost": 40.34861366247056
+    },
+    {
+      "commission": 21.6183573186206,
+      "entry_price": 119.463888,
+      "entry_time": "2026-01-10T16:00:00Z",
+      "exit_price": 128.814232,
+      "exit_time": "2026-01-07T16:00:00Z",
+      "gross_pnl": 8141.638805869013,
+      "net_pnl": 8120.020448550392,
+      "quantity": 870.7314731809875,
+      "return_pct": 7.806138192991012,
+      "side": "LONG",
+      "slippage_cost": 43.23704203227511
+    },
+    {
+      "commission": 23.101699887800194,
+      "entry_price": 124.504896,
+      "entry_time": "2026-01-02T16:00:00Z",
+      "exit_price": 133.85322399999998,
+      "exit_time": "2026-01-27T16:00:00Z",
+      "gross_pnl": 8359.027690274219,
+      "net_pnl": 8335.925990386419,
+      "quantity": 894.17355598501,
+      "return_pct": 7.487651078396129,
+      "side": "LONG",
+      "slippage_cost": 46.20373598485744
+    }
+  ]
+}

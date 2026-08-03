@@ -1,0 +1,16 @@
+{
+  "stage_range": "V87.01-V87.08",
+  "base_commit": "0efa591",
+  "bundle_type": "BACKTEST_ENGINE_V2",
+  "historical_replay": true,
+  "virtual_broker": true,
+  "commission_and_slippage": true,
+  "trade_statistics": true,
+  "risk_statistics": true,
+  "equity_curve": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V87_09_WALK_FORWARD_AND_STRESS_VALIDATION"
+}
