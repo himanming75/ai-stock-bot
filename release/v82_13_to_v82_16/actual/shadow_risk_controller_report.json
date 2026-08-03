@@ -1,0 +1,16 @@
+{
+  "consecutive_losses": 0,
+  "daily_loss": 0.0,
+  "drawdown_pct": 0.0,
+  "emergency_stop_required": false,
+  "gross_exposure_pct": 0.0,
+  "kill_switch_active": false,
+  "observed_at": "2026-08-03T16:51:44.457206+00:00",
+  "recovery_allowed": true,
+  "recovery_lock_active": false,
+  "risk_reasons": [],
+  "stage": "V82.13-V82.15",
+  "state": "SHADOW_RISK_CLEAR",
+  "symbol_exposures_pct": {},
+  "trade_count": 0
+}

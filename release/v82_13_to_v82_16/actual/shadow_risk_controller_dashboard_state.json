@@ -1,0 +1,17 @@
+{
+  "broker_write_enabled": false,
+  "consecutive_losses": 0,
+  "daily_loss": 0.0,
+  "drawdown_pct": 0.0,
+  "gross_exposure_pct": 0.0,
+  "kill_switch_active": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T16:51:44.457206+00:00",
+  "order_submission_enabled": false,
+  "read_only": true,
+  "recovery_lock_active": false,
+  "risk_reasons": [],
+  "risk_state": "SHADOW_RISK_CLEAR",
+  "stage": "V82.16",
+  "trade_count": 0
+}

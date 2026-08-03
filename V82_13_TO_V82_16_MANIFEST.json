@@ -1,0 +1,15 @@
+{
+  "base_commit": "c37ebf5",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_RISK_CONTROLLER",
+  "consecutive_loss_gate": true,
+  "daily_loss_gate": true,
+  "drawdown_gate": true,
+  "exposure_gate": true,
+  "kill_switch": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "recovery_lock": true,
+  "stage_range": "V82.13-V82.16",
+  "trade_limit_gate": true
+}
