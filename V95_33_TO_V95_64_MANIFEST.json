@@ -1,0 +1,18 @@
+{
+  "stage_range": "V95.33-V95.64",
+  "base_commit": "7e684d8",
+  "holding_day_tracking": true,
+  "stop_loss": true,
+  "take_profit": true,
+  "trailing_stop": true,
+  "maximum_holding_period": true,
+  "realized_pnl": true,
+  "close_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V96.01-V96.32"
+}

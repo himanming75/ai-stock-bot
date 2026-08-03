@@ -1,0 +1,12 @@
+{
+  "positions": {
+    "AAPL": {
+      "average_cost": 200.1,
+      "high_water_mark": 201.0,
+      "holding_days": 2,
+      "opened_date": "2026-08-05",
+      "quantity": 47.0,
+      "status": "OPEN"
+    }
+  }
+}

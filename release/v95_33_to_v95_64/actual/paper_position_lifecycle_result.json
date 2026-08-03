@@ -1,0 +1,51 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "close_records": [],
+  "closed_position_count": 0,
+  "continuous_loop_enabled": false,
+  "external_network_enabled": false,
+  "lifecycle_date": "2026-08-03",
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V96_01_PAPER_ACCOUNT_LEDGER",
+  "open_position_count": 1,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "position_decisions": [
+    {
+      "action": "HOLD",
+      "average_cost": 200.1,
+      "effective_high_water_mark": 201.0,
+      "holding_days": 2,
+      "lifecycle_date": "2026-08-03",
+      "mark_price": 201.0,
+      "quantity": 47.0,
+      "reason": "NO_EXIT_TRIGGER",
+      "return_pct": 0.4498,
+      "symbol": "AAPL",
+      "trailing_drawdown_pct": 0.0
+    }
+  ],
+  "position_lifecycle_certificate_sha256": "5400e6106624e6500cc4eb92adbad089981e788e90c9b80c1e340336cf09ea5f",
+  "source_simulation_state": "PAPER_EXECUTION_SIMULATION_COMPLETED",
+  "stage": "V95.64",
+  "stage_range": "V95.33-V95.64",
+  "state": "PAPER_POSITION_LIFECYCLE_HOLD",
+  "status": "PASS",
+  "total_realized_pnl": 0,
+  "updated_position_state": {
+    "positions": {
+      "AAPL": {
+        "average_cost": 200.1,
+        "high_water_mark": 201.0,
+        "holding_days": 2,
+        "opened_date": "2026-08-05",
+        "quantity": 47.0,
+        "status": "OPEN"
+      }
+    }
+  },
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}
