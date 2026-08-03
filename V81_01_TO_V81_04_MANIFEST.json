@@ -1,0 +1,9 @@
+{
+  "base_commit": "906953b",
+  "broker_write_enabled": false,
+  "bundle_type": "READ_ONLY_SHADOW_TRADING_FOUNDATION",
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "stage_range": "V81.01-V81.04",
+  "virtual_fills_only": true
+}

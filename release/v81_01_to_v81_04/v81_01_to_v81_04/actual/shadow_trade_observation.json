@@ -1,0 +1,15 @@
+{
+  "account_status": "ACTIVE",
+  "broker_action_performed": false,
+  "observed_at": "2026-08-03T06:16:52.560463+00:00",
+  "open_order_count": 0,
+  "portfolio_value": 100000.0,
+  "position_count": 0,
+  "quantity": 0,
+  "reference_price": 0.0,
+  "shadow_action": "HOLD",
+  "stage": "V81.03",
+  "symbol": "AAPL",
+  "virtual_fill_price": 0.0,
+  "virtual_notional": 0.0
+}

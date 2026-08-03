@@ -1,0 +1,13 @@
+{
+  "broker_write_enabled": false,
+  "completion_ready": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T06:16:52.560463+00:00",
+  "read_only": true,
+  "shadow_action": "HOLD",
+  "shadow_state": "WAIT_PAPER_TRADING_COMPLETION",
+  "stage": "V81.04",
+  "symbol": "AAPL",
+  "virtual_fill_price": 0.0,
+  "virtual_notional": 0.0
+}
