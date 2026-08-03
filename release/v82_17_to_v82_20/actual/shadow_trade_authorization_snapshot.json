@@ -1,0 +1,16 @@
+{
+  "action": "HOLD",
+  "authorization_id": "shadow-authorization-de8eb03cf55e729d950d",
+  "authorization_reasons": [],
+  "authorized": true,
+  "decision": "NO_ACTION",
+  "kill_switch_active": false,
+  "market_session_open": false,
+  "observed_at": "2026-08-03T17:02:17.487197+00:00",
+  "quantity": 0,
+  "recovery_lock_active": false,
+  "risk_state": "SHADOW_RISK_CLEAR",
+  "shadow_only": true,
+  "stage": "V82.19",
+  "symbol": ""
+}
