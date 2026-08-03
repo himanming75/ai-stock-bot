@@ -1,0 +1,136 @@
+{
+  "base_position_multiplier": 1.0,
+  "base_recommendations": [
+    "MOMENTUM",
+    "EMA_CROSS",
+    "MACD"
+  ],
+  "broker_write_enabled": false,
+  "checks": {
+    "base_regime_ready": true,
+    "minimum_alignment": true,
+    "minimum_frame_count": true,
+    "recommendations_present": true
+  },
+  "consensus": {
+    "alignment_pct": 66.67,
+    "conflict_detected": true,
+    "primary_regime": "BULL",
+    "risk_mode": "RISK_ON",
+    "volatility_regime": "NORMAL_VOLATILITY",
+    "weighted_regime_score": 0.7,
+    "weighted_volatility_score": 0.6
+  },
+  "effective_position_multiplier": 0.2975,
+  "external_network_enabled": false,
+  "failed_checks": [],
+  "frame_count": 3,
+  "frames": [
+    {
+      "features": {
+        "annualized_volatility_pct": 4.2846,
+        "atr_pct": 1.3464,
+        "bar_count": 220,
+        "frame_name": "SHORT",
+        "latest_close": 144.9353,
+        "long_sma": 140.1997,
+        "momentum_pct": 4.3221,
+        "price_above_long_sma": true,
+        "price_above_short_sma": true,
+        "short_sma": 142.2625,
+        "trend_slope_pct": 4.6701
+      },
+      "frame_name": "SHORT",
+      "regime": {
+        "confidence_score": 68.66,
+        "primary_regime": "BULL",
+        "risk_mode": "RISK_ON",
+        "volatility_regime": "LOW_VOLATILITY"
+      }
+    },
+    {
+      "features": {
+        "annualized_volatility_pct": 12.5459,
+        "atr_pct": 1.5421,
+        "bar_count": 73,
+        "frame_name": "MEDIUM",
+        "latest_close": 144.4044,
+        "long_sma": 138.3695,
+        "momentum_pct": 3.0878,
+        "price_above_long_sma": true,
+        "price_above_short_sma": true,
+        "short_sma": 140.0575,
+        "trend_slope_pct": 2.1355
+      },
+      "frame_name": "MEDIUM",
+      "regime": {
+        "confidence_score": 57.36,
+        "primary_regime": "SIDEWAYS",
+        "risk_mode": "RISK_ON",
+        "volatility_regime": "NORMAL_VOLATILITY"
+      }
+    },
+    {
+      "features": {
+        "annualized_volatility_pct": 20.0389,
+        "atr_pct": 2.0768,
+        "bar_count": 44,
+        "frame_name": "LONG",
+        "latest_close": 144.9353,
+        "long_sma": 134.9659,
+        "momentum_pct": 3.8688,
+        "price_above_long_sma": true,
+        "price_above_short_sma": true,
+        "short_sma": 140.5182,
+        "trend_slope_pct": 8.9314
+      },
+      "frame_name": "LONG",
+      "regime": {
+        "confidence_score": 71.73,
+        "primary_regime": "BULL",
+        "risk_mode": "RISK_ON",
+        "volatility_regime": "NORMAL_VOLATILITY"
+      }
+    }
+  ],
+  "historical_input": "C:\\stock-bot\\release\\v73_1\\data\\sample_breakout_ohlcv_v73_1.csv",
+  "live_trading_enabled": false,
+  "multi_timeframe_certificate_sha256": "0bc5ce8d9e50c1c60e541bcc7ff10b0b13aa353f82396178fba6d612e1b40e72",
+  "next_phase": "V94_01_META_STRATEGY_ENGINE",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "policy": {
+    "bear_trend_threshold_pct": -3.0,
+    "bull_trend_threshold_pct": 3.0,
+    "high_atr_threshold_pct": 2.5,
+    "high_volatility_threshold_pct": 35.0,
+    "long_sma_period": 25,
+    "low_volatility_threshold_pct": 12.0,
+    "minimum_alignment_pct": 66.0,
+    "minimum_bars_per_frame": 30,
+    "minimum_frame_count": 3,
+    "momentum_period": 10,
+    "short_sma_period": 10,
+    "timeframe_weights": {
+      "LONG": 0.5,
+      "MEDIUM": 0.3,
+      "SHORT": 0.2
+    },
+    "timeframes": {
+      "LONG": 5,
+      "MEDIUM": 3,
+      "SHORT": 1
+    },
+    "trend_slope_period": 15
+  },
+  "recommended_strategies": [
+    "MOMENTUM",
+    "EMA_CROSS",
+    "MACD"
+  ],
+  "source_bar_count": 220,
+  "stage": "V93.64",
+  "stage_range": "V93.33-V93.64",
+  "state": "MULTI_TIMEFRAME_REGIME_READY",
+  "status": "PASS"
+}

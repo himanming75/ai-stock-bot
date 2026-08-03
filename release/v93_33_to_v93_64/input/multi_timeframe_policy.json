@@ -1,0 +1,24 @@
+{
+  "timeframes": {
+    "SHORT": 1,
+    "MEDIUM": 3,
+    "LONG": 5
+  },
+  "timeframe_weights": {
+    "SHORT": 0.2,
+    "MEDIUM": 0.3,
+    "LONG": 0.5
+  },
+  "minimum_bars_per_frame": 30,
+  "minimum_frame_count": 3,
+  "minimum_alignment_pct": 66.0,
+  "short_sma_period": 10,
+  "long_sma_period": 25,
+  "momentum_period": 10,
+  "trend_slope_period": 15,
+  "bull_trend_threshold_pct": 3.0,
+  "bear_trend_threshold_pct": -3.0,
+  "high_volatility_threshold_pct": 35.0,
+  "low_volatility_threshold_pct": 12.0,
+  "high_atr_threshold_pct": 2.5
+}

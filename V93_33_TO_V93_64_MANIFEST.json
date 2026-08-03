@@ -1,0 +1,16 @@
+{
+  "stage_range": "V93.33-V93.64",
+  "base_commit": "001eee9",
+  "resampling": true,
+  "short_medium_long_frames": true,
+  "weighted_consensus": true,
+  "conflict_detection": true,
+  "dynamic_position_adjustment": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V94.01-V94.32"
+}
