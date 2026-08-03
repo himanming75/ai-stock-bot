@@ -1,0 +1,9 @@
+{
+  "base_commit": "96c6cb3",
+  "broker_write_enabled": false,
+  "bundle_type": "AUTONOMOUS_SHADOW_CYCLE_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "live_trading_enabled": false,
+  "single_cycle_only": true,
+  "stage_range": "V82.01-V82.04"
+}

@@ -1,0 +1,15 @@
+{
+  "broker_write_enabled": false,
+  "cycle_completed": false,
+  "cycle_id": "",
+  "cycle_state": "WAIT_SHADOW_FOUNDATION",
+  "execution_ready": false,
+  "foundation_ready": false,
+  "last_stage": "",
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T16:29:06.877394+00:00",
+  "portfolio_ready": false,
+  "read_only": true,
+  "stage": "V82.04",
+  "stage_count": 0
+}
