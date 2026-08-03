@@ -1,0 +1,25 @@
+{
+  "stage_range": "V86.09-V86.16",
+  "base_commit": "5299e51",
+  "bundle_type": "INDICATOR_ENGINE",
+  "indicators": [
+    "SMA20",
+    "SMA50",
+    "EMA20",
+    "EMA50",
+    "EMA200",
+    "RSI14",
+    "MACD",
+    "MACD_SIGNAL",
+    "MACD_HISTOGRAM",
+    "ATR14",
+    "BOLLINGER_BANDS",
+    "VWAP"
+  ],
+  "strategy_signal_conversion": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V86_17_PORTFOLIO_SCORING"
+}
