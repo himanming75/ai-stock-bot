@@ -1,0 +1,13 @@
+{
+  "top_strategy_count": 3,
+  "maximum_strategy_weight_pct": 45.0,
+  "score_weights": {
+    "return_score": 0.2,
+    "sharpe_score": 0.2,
+    "drawdown_score": 0.15,
+    "win_rate_score": 0.1,
+    "regime_score": 0.15,
+    "stability_score": 0.1,
+    "risk_score": 0.1
+  }
+}

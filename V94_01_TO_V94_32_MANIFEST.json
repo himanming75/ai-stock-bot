@@ -1,0 +1,16 @@
+{
+  "stage_range": "V94.01-V94.32",
+  "base_commit": "9d876ac",
+  "source_aggregation": true,
+  "multi_factor_meta_scoring": true,
+  "capped_strategy_allocation": true,
+  "final_position_multiplier": true,
+  "paper_decision": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V94.33-V94.64"
+}
