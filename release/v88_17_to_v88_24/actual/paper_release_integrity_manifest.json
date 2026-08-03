@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "path": "paper_orchestrator/engine.py",
+      "sha256": "90bbbc4a913640603b4e00e2f5810a212b9f6f3cb045d1f772cb654acf73f0d4",
+      "size_bytes": 5949
+    },
+    {
+      "path": "paper_orchestrator/steps.py",
+      "sha256": "3f16764f76d02651b3fb9d88a4162491132c7ce0ca022a945470e1bd7124a630",
+      "size_bytes": 11169
+    },
+    {
+      "path": "web_ui_v2/app.py",
+      "sha256": "0f8d37d825eefdc2d798dcd59bd653591d7720c2a31f39182c7639d31ba152b0",
+      "size_bytes": 12506
+    },
+    {
+      "path": "release/v88_09_to_v88_16/actual/paper_orchestrator_result.json",
+      "sha256": "1d06a37e6510c7d3ebe7a3069710ba11072d4eec970d4d7132bef2af5de7d831",
+      "size_bytes": 1571
+    },
+    {
+      "path": "release/v87_09_to_v87_16/actual/walk_forward_stress_validation_result.json",
+      "sha256": "9252f726dcbf050698a97656529fd6f3d19ba5fd753fa8e50207586d27e46c1f",
+      "size_bytes": 96281
+    },
+    {
+      "path": "release/v87_17_to_v87_24/actual/multi_asset_backtest_result.json",
+      "sha256": "054f40815bd4292f62686ed27ef0b9c9890a1e1724050657b20449d96af26e90",
+      "size_bytes": 28745
+    },
+    {
+      "path": "release/v88_01_to_v88_08/actual/web_ui_v2_state.json",
+      "sha256": "edb47ba6b965b63aaebe552d74d673a7347c1043a1aab66b44334c6c624a4cbe",
+      "size_bytes": 432
+    }
+  ],
+  "integrity_passed": true,
+  "missing_files": [],
+  "required_file_count": 7,
+  "verified_file_count": 7
+}

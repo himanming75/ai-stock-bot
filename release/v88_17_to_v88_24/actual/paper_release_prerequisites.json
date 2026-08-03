@@ -1,0 +1,41 @@
+{
+  "blocking_prerequisites": [
+    "multi_day_requirement_met",
+    "stability_certificate_valid",
+    "production_readiness_approved"
+  ],
+  "checks": {
+    "multi_asset_certified": true,
+    "multi_day_requirement_met": false,
+    "orchestrator_ready": true,
+    "production_readiness_approved": false,
+    "robustness_validated": true,
+    "stability_certificate_valid": false,
+    "web_ui_ready": true
+  },
+  "ready": false,
+  "source_states": {
+    "multi_asset": "MULTI_ASSET_BACKTEST_CERTIFIED",
+    "multi_day": "MULTI_DAY_PAPER_VALIDATION_IN_PROGRESS",
+    "orchestrator": "PAPER_AUTOMATION_ORCHESTRATOR_READY",
+    "readiness": "PRODUCTION_READINESS_PENDING",
+    "robustness": "BACKTEST_ROBUSTNESS_VALIDATED",
+    "stability": "PAPER_STABILITY_CERTIFICATION_PENDING",
+    "web_ui": "WEB_UI_V2_READY"
+  },
+  "sources_available": {
+    "multi_asset": true,
+    "multi_day": true,
+    "orchestrator": true,
+    "readiness": true,
+    "robustness": true,
+    "stability": true,
+    "web_ui": true
+  },
+  "system_based_pending": [],
+  "time_based_pending": [
+    "multi_day_requirement_met",
+    "stability_certificate_valid",
+    "production_readiness_approved"
+  ]
+}

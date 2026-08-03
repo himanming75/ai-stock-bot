@@ -1,0 +1,36 @@
+{
+  "blocking_prerequisites": [
+    "multi_day_requirement_met",
+    "stability_certificate_valid",
+    "production_readiness_approved"
+  ],
+  "broker_write_enabled": false,
+  "certificate_sha256": "eddea9bc92b323fde51c2420a9bc4b74e3710c7f60a2300857d090c401f26323",
+  "commit": "0287524c606dcce795689b267961f76ce2df933a",
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T21:01:44.607441+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "production_ready": false,
+  "stage": "V88.24",
+  "stage_range": "V88.17-V88.24",
+  "state": "PAPER_PRODUCTION_RELEASE_PENDING_PREREQUISITES",
+  "status": "PASS",
+  "system_based_pending": [],
+  "technical_checks": {
+    "environment_valid": true,
+    "integrity_valid": true,
+    "layout_valid": true,
+    "multi_asset_certified": true,
+    "orchestrator_ready": true,
+    "robustness_validated": true,
+    "web_ui_ready": true
+  },
+  "technical_ready": true,
+  "time_based_pending": [
+    "multi_day_requirement_met",
+    "stability_certificate_valid",
+    "production_readiness_approved"
+  ]
+}

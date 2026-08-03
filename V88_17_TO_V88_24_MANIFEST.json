@@ -1,0 +1,22 @@
+{
+  "stage_range": "V88.17-V88.24",
+  "base_commit": "0287524",
+  "bundle_type": "PAPER_PRODUCTION_RELEASE",
+  "repository_layout_detection": true,
+  "supported_indicator_modules": [
+    "indicator_engine",
+    "indicator_engine_v2"
+  ],
+  "environment_validation": true,
+  "prerequisite_gate": true,
+  "integrity_manifest": true,
+  "backup": true,
+  "rollback": true,
+  "release_certificate": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "full_ready_state": "PAPER_AUTOMATED_TRADING_PRODUCTION_READY",
+  "pending_state": "PAPER_PRODUCTION_RELEASE_PENDING_PREREQUISITES"
+}
