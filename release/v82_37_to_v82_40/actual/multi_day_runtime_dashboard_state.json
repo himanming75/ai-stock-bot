@@ -1,0 +1,21 @@
+{
+  "automatic_session_start_enabled": false,
+  "broker_write_enabled": false,
+  "completed_days": 0,
+  "current_trading_date": "2026-08-03",
+  "day_certified": false,
+  "live_trading_enabled": false,
+  "multi_day_state": "MULTI_DAY_RUNTIME_RESET",
+  "next_day_prepared": false,
+  "next_trading_date": "2026-08-04",
+  "observed_at": "2026-08-03T17:27:44.588699+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "previous_trading_date": "2026-08-03",
+  "read_only": true,
+  "rollover_completed": false,
+  "rollover_ready": false,
+  "runtime_active": false,
+  "runtime_id": "",
+  "stage": "V82.40"
+}

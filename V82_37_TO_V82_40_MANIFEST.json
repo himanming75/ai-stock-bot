@@ -1,0 +1,14 @@
+{
+  "automatic_session_start_enabled": false,
+  "base_commit": "c15577a",
+  "broker_write_enabled": false,
+  "bundle_type": "MULTI_DAY_PAPER_RUNTIME_AND_NEXT_DAY_ROLLOVER",
+  "live_trading_enabled": false,
+  "multi_day_state": true,
+  "next_trading_date_calculation": true,
+  "order_submission_enabled": false,
+  "rollover_lock": true,
+  "rollover_plan": true,
+  "runtime_ledger": true,
+  "stage_range": "V82.37-V82.40"
+}

@@ -1,0 +1,11 @@
+{
+  "completed_days": 0,
+  "current_trading_date": "",
+  "last_rollover_at": "",
+  "next_trading_date": "",
+  "paper_only": true,
+  "reset_at": "2026-08-03T17:27:44.588699+00:00",
+  "runtime_active": false,
+  "runtime_id": "",
+  "stage": "V82.40"
+}
