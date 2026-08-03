@@ -1,0 +1,14 @@
+{
+  "planning_portfolio_value": 100000.0,
+  "default_symbol": "AAPL",
+  "minimum_order_notional": 25.0,
+  "maximum_order_notional": 25000.0,
+  "maximum_total_planned_notional": 50000.0,
+  "maximum_planned_orders": 5,
+  "fractional_shares_enabled": false,
+  "allowed_paper_decisions": [
+    "PAPER_TRADE_MINIMAL_EXPOSURE",
+    "PAPER_TRADE_REDUCED_EXPOSURE",
+    "PAPER_TRADE_NORMAL_EXPOSURE"
+  ]
+}

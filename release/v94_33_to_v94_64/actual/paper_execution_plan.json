@@ -1,0 +1,135 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "decision_orchestration_certificate_sha256": "5e767965dec4840d04148fcee7649ccf209612c5cd310b03c19ea9154db000bf",
+  "execution_authorized": false,
+  "external_network_enabled": false,
+  "gates": {
+    "checks": {
+      "live_trading_disabled": true,
+      "meta_strategy_ready": true,
+      "order_submission_disabled": true,
+      "paper_decision_allowed": true,
+      "paper_only": true,
+      "planned_notional_within_limit": true,
+      "planned_order_count_within_limit": true,
+      "planned_orders_present": true,
+      "risk_approved": true
+    },
+    "failed": [],
+    "maximum_planned_orders": 5,
+    "maximum_total_planned_notional": 50000.0,
+    "passed": true,
+    "planned_order_count": 1,
+    "total_planned_notional": 6200.0
+  },
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V95_01_PAPER_EXECUTION_SIMULATOR",
+  "observed_at": "2026-08-03T21:49:47.920376+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "paper_order_plans": [
+    {
+      "base_strategy": "MOMENTUM",
+      "order_type": "MARKET_SIMULATION_ONLY",
+      "plan_key": "844ee1c1c18c364db17539e83f293fce5b2d75c9537c6899efcff5004a9006f9",
+      "planned_notional": 6200.0,
+      "quantity": 31.0,
+      "reference_price": 200.0,
+      "side": "BUY",
+      "skip_reason": "DUPLICATE_PLAN_KEY",
+      "state": "BLOCKED_DUPLICATE",
+      "strategy_id": "MOMENTUM_10",
+      "symbol": "AAPL",
+      "target_notional": 6367.947,
+      "target_weight_pct": 33.4451,
+      "time_in_force": "DAY"
+    },
+    {
+      "base_strategy": "MOMENTUM",
+      "order_type": "MARKET_SIMULATION_ONLY",
+      "plan_key": "1a1dbb413d84690540878da170f7ed3f21469a4a839b7ca94a294e8d3a8ab154",
+      "planned_notional": 6200.0,
+      "quantity": 31.0,
+      "reference_price": 200.0,
+      "side": "BUY",
+      "skip_reason": "",
+      "state": "PLANNED",
+      "strategy_id": "MOMENTUM_15",
+      "symbol": "AAPL",
+      "target_notional": 6367.947,
+      "target_weight_pct": 33.4451,
+      "time_in_force": "DAY"
+    },
+    {
+      "base_strategy": "MOMENTUM",
+      "order_type": "MARKET_SIMULATION_ONLY",
+      "plan_key": "844ee1c1c18c364db17539e83f293fce5b2d75c9537c6899efcff5004a9006f9",
+      "planned_notional": 6200.0,
+      "quantity": 31.0,
+      "reference_price": 200.0,
+      "side": "BUY",
+      "skip_reason": "DUPLICATE_PLAN_KEY",
+      "state": "BLOCKED_DUPLICATE",
+      "strategy_id": "MOMENTUM_10",
+      "symbol": "AAPL",
+      "target_notional": 6304.0869,
+      "target_weight_pct": 33.1097,
+      "time_in_force": "DAY"
+    }
+  ],
+  "planning_portfolio_value": 100000.0,
+  "pre_execution_checklist": [
+    {
+      "item": "META_STRATEGY_GATE",
+      "passed": true
+    },
+    {
+      "item": "RISK_APPROVAL",
+      "passed": true
+    },
+    {
+      "item": "PAPER_DECISION_ALLOWED",
+      "passed": true
+    },
+    {
+      "duplicate_count": 2,
+      "item": "DUPLICATE_PROTECTION",
+      "passed": false
+    },
+    {
+      "item": "PLANNED_ORDER_COUNT",
+      "passed": true,
+      "planned_count": 1
+    },
+    {
+      "item": "SKIPPED_PLAN_REVIEW",
+      "passed": true,
+      "skipped_count": 0
+    },
+    {
+      "item": "BROKER_WRITE_DISABLED",
+      "passed": true
+    },
+    {
+      "item": "LIVE_TRADING_DISABLED",
+      "passed": true
+    },
+    {
+      "item": "MANUAL_APPROVAL_REQUIRED",
+      "passed": false
+    }
+  ],
+  "source_meta_state": "META_STRATEGY_ENGINE_READY",
+  "source_paper_decision": "PAPER_TRADE_MINIMAL_EXPOSURE",
+  "source_position_multiplier": 0.1904,
+  "stage": "V94.64",
+  "stage_range": "V94.33-V94.64",
+  "state": "PAPER_EXECUTION_PLAN_READY_FOR_MANUAL_APPROVAL",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

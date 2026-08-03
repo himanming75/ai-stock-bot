@@ -1,0 +1,17 @@
+{
+  "stage_range": "V94.33-V94.64",
+  "base_commit": "ec0c935",
+  "paper_order_planning": true,
+  "quantity_and_notional_planning": true,
+  "duplicate_protection": true,
+  "pre_execution_gates": true,
+  "manual_approval_required": true,
+  "audit_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V95.01-V95.32"
+}
