@@ -1,0 +1,16 @@
+{
+  "authorization_gate": true,
+  "base_commit": "33a17b6",
+  "broker_write_enabled": false,
+  "bundle_type": "INTRADAY_PAPER_LOOP_MANAGER_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "duplicate_loop_lock": true,
+  "live_trading_enabled": false,
+  "nine_stage_loop": true,
+  "order_submission_enabled": false,
+  "recovery_and_resume": true,
+  "risk_gate": true,
+  "scheduler_tick_gate": true,
+  "session_gate": true,
+  "stage_range": "V82.29-V82.32"
+}

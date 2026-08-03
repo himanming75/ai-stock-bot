@@ -1,0 +1,27 @@
+{
+  "authorization_ready": true,
+  "broker_write_enabled": false,
+  "gate_reasons": [
+    "PAPER_SESSION_NOT_RUNNING",
+    "SCHEDULER_TICK_NOT_AUTHORIZED"
+  ],
+  "last_completed_stage": "",
+  "live_trading_enabled": false,
+  "loop_completed": false,
+  "loop_id": "",
+  "loop_recovered": false,
+  "loop_started": false,
+  "loop_state": "INTRADAY_LOOP_WAIT_GATES",
+  "observed_at": "2026-08-03T17:18:49.055051+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "read_only": true,
+  "risk_clear": true,
+  "scheduler_ready": false,
+  "session_id": "paper-session-1bdf21524122a03ae960",
+  "session_ready": false,
+  "stage": "V82.32",
+  "stage_count": 0,
+  "tick_authorized": false,
+  "tick_id": ""
+}
