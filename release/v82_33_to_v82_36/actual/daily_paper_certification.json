@@ -1,0 +1,12 @@
+{
+  "certification_state": "DAILY_CERTIFICATION_WAIT_GATES",
+  "certified": false,
+  "eod_reasons": [
+    "MARKET_NOT_CLOSED"
+  ],
+  "observed_at": "2026-08-03T17:23:06.518651+00:00",
+  "paper_only": true,
+  "session_id": "paper-session-1bdf21524122a03ae960",
+  "stage": "V82.35",
+  "trading_date": "2026-08-03"
+}

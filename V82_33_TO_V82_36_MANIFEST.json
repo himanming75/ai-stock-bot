@@ -1,0 +1,14 @@
+{
+  "active_loop_gate": true,
+  "active_tick_gate": true,
+  "base_commit": "d754f0a",
+  "broker_write_enabled": false,
+  "bundle_type": "END_OF_DAY_MANAGER_AND_DAILY_CERTIFICATION",
+  "daily_certification": true,
+  "daily_report": true,
+  "live_trading_enabled": false,
+  "market_close_gate": true,
+  "next_day_preparation": true,
+  "order_submission_enabled": false,
+  "stage_range": "V82.33-V82.36"
+}

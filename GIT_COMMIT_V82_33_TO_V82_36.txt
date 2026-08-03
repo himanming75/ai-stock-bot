@@ -1,0 +1,3 @@
+git add paper_runtime/end_of_day_v82_33_36.py dashboard/end_of_day_integration.py tools/run_end_of_day_v82_33_to_v82_36.py tools/test_end_of_day_v82_33_to_v82_36.py tools/install_check_v82_33_to_v82_36.py tools/verify_end_of_day_v82_33_to_v82_36.py RUN_V82_33_TO_V82_36_END_OF_DAY.ps1 RUN_V82_33_TO_V82_36_TEST_AND_VERIFY.ps1 release/v82_33_to_v82_36 V82_33_TO_V82_36_MANIFEST.json GIT_COMMIT_V82_33_TO_V82_36.txt
+git commit -m "V82.33-V82.36 end-of-day manager and daily certification implemented"
+git push origin main
