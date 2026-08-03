@@ -1,0 +1,28 @@
+{
+  "stage_range": "V89.01-V89.32",
+  "base_commit": "0899231",
+  "final_validation_automation": true,
+  "historical_auto_discovery": true,
+  "formats": [
+    "json",
+    "jsonl",
+    "csv"
+  ],
+  "strategies": [
+    "EMA_CROSS",
+    "RSI",
+    "MACD",
+    "MOMENTUM",
+    "BOLLINGER",
+    "BUY_AND_HOLD"
+  ],
+  "performance_gate": true,
+  "champion_candidate": true,
+  "multi_day_bypass": false,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V89.33-V89.64"
+}
