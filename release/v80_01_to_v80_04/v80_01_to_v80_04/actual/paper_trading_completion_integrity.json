@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-08-03T02:08:34.596423+00:00",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op4_01_to_op4_04/actual/controlled_paper_pilot_foundation_result.json",
+      "sha256": "d9664fb2753c69532a1e87d0976ee1080325502a4dab69c650769d0de505a14d",
+      "size_bytes": 113
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op4_05_to_op4_08/actual/paper_session_monitor_result.json",
+      "sha256": "9e7cbfa59ea8d33a4d802f199e0c5be1ea2895335608a8e4fb072c19631a3398",
+      "size_bytes": 33
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op4_09_to_op4_12/actual/paper_performance_collector_result.json",
+      "sha256": "9a903ef546a0a3ce82b5ae5f11ffaf6359c0908e273255245b821f9722028668",
+      "size_bytes": 24
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op4_13_to_op4_16/actual/paper_risk_monitor_result.json",
+      "sha256": "9c3169c62a8f1e76b502a2c2f07cb82e2cabb29d2a466c2155805e1621f27c18",
+      "size_bytes": 72
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op4_17_to_op4_20/actual/paper_pilot_automation_result.json",
+      "sha256": "3efd009e25d8c57cb9445852f71d61891e77eac920285697211d5b0b827e3751",
+      "size_bytes": 57
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op5_01_to_op5_04/actual/multi_day_validation_result.json",
+      "sha256": "52141087f1e8933ca63212fc370c7a480c9dcac08d81364491f73f2a7c962e27",
+      "size_bytes": 59
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op5_05_to_op5_08/actual/validation_analytics_result.json",
+      "sha256": "e5fb498f724e13876163d0bdcb664113c21bdade7773e810bcd75b4871d70a7e",
+      "size_bytes": 50
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op5_09_to_op5_12/actual/validation_certificate_result.json",
+      "sha256": "cd881de0a1e4e71e2192d849584e9e3533ee8fa17782fcad6c16d2087ed15647",
+      "size_bytes": 36
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op5_13_to_op5_16/actual/promotion_gate_result.json",
+      "sha256": "a5ac38913c73c53056631343759dc0d9693fb06e382b127828d6d5b197149133",
+      "size_bytes": 31
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/op5_17_to_op5_20/actual/promotion_approval_result.json",
+      "sha256": "08842c5b5199916a789e7214329f85fa5dcdab7cabaf145c080dcce1cbe2ae3d",
+      "size_bytes": 40
+    },
+    {
+      "path": "/mnt/data/v80_01_to_v80_04_build/release/v80_01_to_v80_04/actual/paper_trading_completion_manifest.json",
+      "sha256": "65870d7d90f9e79600578c96d54fe894844cc525ba8d6bd526cebff5ed517dce",
+      "size_bytes": 1003
+    }
+  ],
+  "hash_algorithm": "SHA-256",
+  "integrity_ready": true,
+  "stage": "V80.03"
+}

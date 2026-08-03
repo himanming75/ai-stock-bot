@@ -1,0 +1,12 @@
+{
+  "base_commit": "119d5e4",
+  "stage_range": "V80.01-V80.04",
+  "bundle_type": "PAPER_TRADING_COMPLETION_PACKAGE",
+  "op4_op5_aggregation": true,
+  "completion_manifest": true,
+  "sha256_integrity": true,
+  "dashboard_completion_state": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false
+}

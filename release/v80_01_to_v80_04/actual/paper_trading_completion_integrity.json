@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-08-03T06:09:28.858998+00:00",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "C:\\stock-bot\\release\\op4_01_to_op4_04\\actual\\controlled_paper_pilot_foundation_result.json",
+      "sha256": "b4a7225aa4af118efb0fbf0fd0e6bf737f86a955368c3f74b6321b29eb9378cc",
+      "size_bytes": 1612
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op4_05_to_op4_08\\actual\\paper_session_monitor_result.json",
+      "sha256": "b5f1a7a430d07e468cd16e6a4b4bdfd69d2e03a09f4b3c4044c1468032f29764",
+      "size_bytes": 1484
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op4_09_to_op4_12\\actual\\paper_performance_collector_result.json",
+      "sha256": "d87c783ab5c0c79b705f2aa3eb79610c2454dd0d8c9d941d616831f06724e383",
+      "size_bytes": 1690
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op4_13_to_op4_16\\actual\\paper_risk_monitor_result.json",
+      "sha256": "f609a214b9e06e943246862e60f77f5e39ca099ecb145e84c95c4a5cb564de9f",
+      "size_bytes": 1541
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op4_17_to_op4_20\\actual\\paper_pilot_automation_result.json",
+      "sha256": "3e5c73b62d16763dd31ae5938f4abf17a71e6ff05b066d83b8eac3a074bb94ef",
+      "size_bytes": 1649
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op5_01_to_op5_04\\actual\\multi_day_validation_result.json",
+      "sha256": "f2609461c4c23b9a455feadae542f8e2c48add63751732ba8490cb1d30b9c367",
+      "size_bytes": 1669
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op5_05_to_op5_08\\actual\\validation_analytics_result.json",
+      "sha256": "1dea1e6746b904bff59ea2e100960c5134feb14db3dcdeb751b325dbfdeec114",
+      "size_bytes": 1565
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op5_09_to_op5_12\\actual\\validation_certificate_result.json",
+      "sha256": "dc0afcef5d38de72523c6c3c3de03d00854f398a8a6816ca673a087d36fdca2f",
+      "size_bytes": 1421
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op5_13_to_op5_16\\actual\\promotion_gate_result.json",
+      "sha256": "85cb583163daf68d019124c7d795b8efab078de9d02540954c74c7c6d622dba8",
+      "size_bytes": 1656
+    },
+    {
+      "path": "C:\\stock-bot\\release\\op5_17_to_op5_20\\actual\\promotion_approval_result.json",
+      "sha256": "84ffa0508aa4214700c63f4987d78dbc93748f2b1f057b94b91ccbbeeaeb1a41",
+      "size_bytes": 1441
+    },
+    {
+      "path": "C:\\stock-bot\\release\\v80_01_to_v80_04\\actual\\paper_trading_completion_manifest.json",
+      "sha256": "52102e2e8bdb8539a003fdb94d0ccd06f19b58d8e0adbe4b09243cafe6c87a3c",
+      "size_bytes": 1091
+    }
+  ],
+  "hash_algorithm": "SHA-256",
+  "integrity_ready": true,
+  "stage": "V80.03"
+}

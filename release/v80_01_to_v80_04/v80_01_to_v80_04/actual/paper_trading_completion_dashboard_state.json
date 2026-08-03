@@ -1,0 +1,33 @@
+{
+  "broker_write_enabled": false,
+  "completion_ready": false,
+  "completion_state": "WAIT_MULTI_DAY_VALIDATION",
+  "gates": {
+    "analytics_complete": false,
+    "approval_complete": false,
+    "automation_ready": true,
+    "certificate_verified": false,
+    "performance_ready": true,
+    "pilot_running": true,
+    "promotion_ready": false,
+    "risk_healthy": true,
+    "session_healthy": true,
+    "validation_complete": false
+  },
+  "integrity_file_count": 11,
+  "live_trading_enabled": false,
+  "minimum_validation_days": 5,
+  "observed_at": "2026-08-03T02:08:34.596423+00:00",
+  "paper_only": true,
+  "progress_pct": 20.0,
+  "stage": "V80.04",
+  "validation_days": 1,
+  "wait_reasons": [
+    "MINIMUM_VALIDATION_DAYS_NOT_MET",
+    "ANALYTICS_COMPLETE_NOT_READY",
+    "CERTIFICATE_VERIFIED_NOT_READY",
+    "PROMOTION_READY_NOT_READY",
+    "APPROVAL_COMPLETE_NOT_READY",
+    "MULTI_DAY_VALIDATION_NOT_COMPLETE"
+  ]
+}
