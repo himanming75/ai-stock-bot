@@ -1,0 +1,9 @@
+{
+  "initial_cash": 100000.0,
+  "slippage_bps": 5.0,
+  "commission_per_share": 0.0,
+  "minimum_commission": 0.0,
+  "partial_fill_probability": 0.15,
+  "minimum_partial_fill_ratio": 0.5,
+  "random_seed": 950132
+}

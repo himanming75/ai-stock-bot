@@ -1,0 +1,19 @@
+{
+  "stage_range": "V95.01-V95.32",
+  "base_commit": "cba0b74",
+  "simulation_cycle_identity": true,
+  "duplicate_cycle_protection": true,
+  "slippage_simulation": true,
+  "commission_simulation": true,
+  "partial_fill_simulation": true,
+  "cash_and_position_accounting": true,
+  "mark_to_market": true,
+  "fill_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V95.33-V95.64"
+}

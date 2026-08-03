@@ -1,0 +1,20 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "cycle_id": "e83336f3d6195f1deeaa4280",
+  "duplicate_cycle": true,
+  "external_network_enabled": false,
+  "fills": [],
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V95_01_WAIT_NEW_SIMULATION_DATE",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "paper_simulation_certificate_sha256": "377c2f9692bf5f9bc21d473846a0894cfc037a5a3dc009121b69398a3aa2c1be",
+  "simulation_date": "2026-08-03",
+  "stage": "V95.32",
+  "stage_range": "V95.01-V95.32",
+  "state": "PAPER_EXECUTION_SIMULATION_DUPLICATE_CYCLE_BLOCKED",
+  "status": "PASS",
+  "write_requests_executed": 0
+}
