@@ -1,0 +1,20 @@
+{
+  "action_authorized": false,
+  "action_completed": false,
+  "action_id": "orchestrator-action-9d1790db0e7aa4166e2e",
+  "action_ready": true,
+  "action_reasons": [
+    "MARKET_OPEN_SESSION_INACTIVE"
+  ],
+  "active_action": false,
+  "automatic_action_execution_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T17:34:53.978728+00:00",
+  "orchestrator_state": "ORCHESTRATOR_ACTION_LOCK_CLEARED",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "read_only": true,
+  "recommended_action": "START_PAPER_SESSION"
+}

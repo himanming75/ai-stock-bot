@@ -1,0 +1,10 @@
+{
+  "automatic_action_execution_enabled": false,
+  "base_commit": "03aadd8",
+  "broker_write_enabled": false,
+  "bundle_type": "AUTOMATED_PAPER_RUNTIME_ORCHESTRATOR_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "stage_range": "V83.01-V83.04"
+}
