@@ -1,0 +1,87 @@
+{
+  "broker_write_enabled": false,
+  "confidence": {
+    "basis": "deterministic_rule_based_explanation",
+    "level": "MEDIUM",
+    "score": 67.0
+  },
+  "decision": "STABLE_CANDIDATE",
+  "explanation_method": "deterministic_local_rule_engine",
+  "explanation_sha256": "c1db1ebae6687c076742363e67b9ec752df1019eb3d8d3e4fd3d85075ba936a1",
+  "external_network_enabled": false,
+  "feature_snapshot": {
+    "average_window_return_pct": 3.4383,
+    "average_window_sharpe": 5.8443,
+    "base_strategy": "MOMENTUM",
+    "best_window_return_pct": 9.4763,
+    "maximum_drawdown_pct": 0.8105,
+    "optimization_score": 93.4112,
+    "parameters": {
+      "period": 5
+    },
+    "positive_window_pct": 50.0,
+    "profit_factor": 999.0,
+    "sharpe_ratio": 11.7122,
+    "stability_failed_checks": [],
+    "stability_passed": true,
+    "strategy_id": "MOMENTUM_10",
+    "total_return_pct": 33.1552,
+    "total_trades": 4,
+    "win_rate_pct": 100.0,
+    "worst_window_drawdown_pct": 0.1759,
+    "worst_window_return_pct": 0.0
+  },
+  "live_trading_enabled": false,
+  "next_phase": "V92_33_ENTERPRISE_RISK_CENTER",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "parameters": {
+    "period": 5
+  },
+  "risk_factors": [
+    {
+      "factor": "small_trade_sample",
+      "message": "Only 4 completed trades were available, so statistical confidence remains limited.",
+      "severity": "medium"
+    },
+    {
+      "factor": "inconsistent_windows",
+      "message": "Positive windows were 50.00%, below a strong consistency level of 75%.",
+      "severity": "medium"
+    }
+  ],
+  "selection_reasons": [
+    {
+      "factor": "walk_forward_stability",
+      "importance": "high",
+      "message": "50.00% of walk-forward windows were profitable and the stability gate passed."
+    },
+    {
+      "factor": "risk_adjusted_return",
+      "importance": "high",
+      "message": "Sharpe ratio was 11.71, indicating positive risk-adjusted performance."
+    },
+    {
+      "factor": "positive_total_return",
+      "importance": "medium",
+      "message": "Total return was 33.16%."
+    },
+    {
+      "factor": "controlled_drawdown",
+      "importance": "medium",
+      "message": "Maximum drawdown was limited to 0.81%."
+    },
+    {
+      "factor": "minimum_trade_evidence",
+      "importance": "low",
+      "message": "The configuration produced 4 completed trades."
+    }
+  ],
+  "stage": "V92.32",
+  "stage_range": "V92.01-V92.32",
+  "state": "AI_EXPLAINABILITY_PRO_READY",
+  "status": "PASS",
+  "strategy_description": "This momentum strategy uses a 5-bar lookback and enters when momentum changes from non-positive to positive, then exits when momentum reverses.",
+  "strategy_id": "MOMENTUM_10",
+  "summary": "MOMENTUM_10 with parameters {'period': 5} passed the walk-forward stability gate. It produced 33.16% total return, 0.81% maximum drawdown, and 50.00% positive walk-forward windows. Confidence is MEDIUM (67.00/100). 2 risk factor(s) remain."
+}
