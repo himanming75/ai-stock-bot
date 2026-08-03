@@ -1,0 +1,23 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "completed_days": 1,
+  "continuous_loop_enabled": false,
+  "external_network_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "minimum_days": 3,
+  "observed_at": "2026-08-03T19:48:37.658860+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "remaining_days": 2,
+  "requirement_met": false,
+  "stage": "V83.79",
+  "state": "MULTI_DAY_PAPER_VALIDATION_IN_PROGRESS",
+  "status": "PASS",
+  "validation_dates": [
+    "2026-08-03"
+  ],
+  "windows_task_enabled": false
+}

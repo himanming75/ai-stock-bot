@@ -1,0 +1,16 @@
+{
+  "stage_range": "V83.77-V83.80",
+  "base_commit": "eddf137",
+  "bundle_type": "MULTI_DAY_PAPER_VALIDATION",
+  "minimum_validation_days": 3,
+  "manual_date_advancement_only": true,
+  "duplicate_dates_idempotent": true,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V83_81_PAPER_STABILITY_CERTIFICATION"
+}
