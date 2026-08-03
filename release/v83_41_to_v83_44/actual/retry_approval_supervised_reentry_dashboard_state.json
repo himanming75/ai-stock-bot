@@ -1,0 +1,21 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "approval_id": "",
+  "approval_written": false,
+  "automatic_reentry_execution_enabled": false,
+  "broker_write_enabled": false,
+  "external_network_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T18:44:48.199796+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "reentry_completed": false,
+  "reentry_plan_written": false,
+  "retry_approval_state": "RETRY_APPROVAL_WAIT_PLAN",
+  "retry_plan_id": "",
+  "stage": "V83.44",
+  "state": "RETRY_APPROVAL_WAIT_PLAN",
+  "status": "PASS"
+}

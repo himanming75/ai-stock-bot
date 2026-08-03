@@ -1,0 +1,13 @@
+{
+  "stage_range": "V83.41-V83.44",
+  "base_commit": "d708019",
+  "bundle_type": "RETRY_APPROVAL_AND_SUPERVISED_REENTRY",
+  "approval_lock": true,
+  "approval_expiration": true,
+  "supervised_reentry_plan": true,
+  "automatic_reentry_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
