@@ -1,0 +1,16 @@
+{
+  "analytics_complete": false,
+  "cumulative_return_pct": 0.0,
+  "cycle_success_rate_pct": 0.0,
+  "expectancy": 0.0,
+  "health_reasons": [
+    "MINIMUM_EQUITY_SAMPLES_NOT_MET",
+    "MINIMUM_CYCLES_NOT_MET"
+  ],
+  "maximum_drawdown_pct": 0.0,
+  "observed_at": "2026-08-03T16:45:08.729214+00:00",
+  "profit_factor": 0.0,
+  "recovery_factor": 0.0,
+  "stage": "V82.12",
+  "state": "SHADOW_ANALYTICS_IN_PROGRESS"
+}

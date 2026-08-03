@@ -1,0 +1,13 @@
+{
+  "base_commit": "b3e480f",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_PERFORMANCE_ANALYTICS",
+  "cycle_health": true,
+  "expectancy": true,
+  "live_trading_enabled": false,
+  "maximum_drawdown": true,
+  "profit_factor": true,
+  "recovery_factor": true,
+  "stage_range": "V82.09-V82.12",
+  "win_rate": true
+}

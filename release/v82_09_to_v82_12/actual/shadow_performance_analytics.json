@@ -1,0 +1,33 @@
+{
+  "analytics_complete": false,
+  "average_cycle_elapsed_ms": 0.0,
+  "average_loss": 0.0,
+  "average_win": 0.0,
+  "breakeven": 0,
+  "completed_cycles": 0,
+  "cumulative_pnl": 0.0,
+  "cumulative_return_pct": 0.0,
+  "cycle_count": 0,
+  "cycle_success_rate_pct": 0.0,
+  "equity_sample_count": 2,
+  "expectancy": 0.0,
+  "failed_cycles": 0,
+  "gross_loss": 0,
+  "gross_profit": 0,
+  "health_reasons": [
+    "MINIMUM_EQUITY_SAMPLES_NOT_MET",
+    "MINIMUM_CYCLES_NOT_MET"
+  ],
+  "initial_equity": 100000.0,
+  "latest_equity": 100000.0,
+  "losses": 0,
+  "maximum_drawdown": 0.0,
+  "maximum_drawdown_pct": 0.0,
+  "observed_at": "2026-08-03T16:45:08.729214+00:00",
+  "profit_factor": 0.0,
+  "recovery_factor": 0.0,
+  "stage": "V82.09-V82.11",
+  "trade_count": 0,
+  "win_rate_pct": 0.0,
+  "wins": 0
+}

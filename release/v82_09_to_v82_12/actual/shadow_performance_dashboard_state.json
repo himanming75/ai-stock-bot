@@ -1,0 +1,22 @@
+{
+  "analytics_complete": false,
+  "analytics_state": "SHADOW_ANALYTICS_IN_PROGRESS",
+  "broker_write_enabled": false,
+  "cycle_count": 0,
+  "cycle_success_rate_pct": 0.0,
+  "equity_sample_count": 2,
+  "expectancy": 0.0,
+  "health_reasons": [
+    "MINIMUM_EQUITY_SAMPLES_NOT_MET",
+    "MINIMUM_CYCLES_NOT_MET"
+  ],
+  "live_trading_enabled": false,
+  "maximum_drawdown_pct": 0.0,
+  "observed_at": "2026-08-03T16:45:08.729214+00:00",
+  "profit_factor": 0.0,
+  "read_only": true,
+  "recovery_factor": 0.0,
+  "stage": "V82.12",
+  "trade_count": 0,
+  "win_rate_pct": 0.0
+}
