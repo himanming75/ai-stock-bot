@@ -1,0 +1,17 @@
+{
+  "stage_range": "V83.49-V83.52",
+  "base_commit": "a4064a1",
+  "bundle_type": "SUPERVISED_REENTRY_RUNNER_INTEGRATION",
+  "allowed_target_script": "RUN_V83_17_TO_V83_20_SCHEDULED_SUPERVISED_RUNNER.ps1",
+  "allowed_arguments": [
+    "-AuthorizeRun"
+  ],
+  "dry_run_default": true,
+  "timeout_validation": true,
+  "return_code_validation": true,
+  "automatic_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
