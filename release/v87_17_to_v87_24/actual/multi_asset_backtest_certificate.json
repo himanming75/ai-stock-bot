@@ -1,0 +1,16 @@
+{
+  "asset_count": 4,
+  "benchmark_return_pct": 64.9247,
+  "certificate_sha256": "168465621cdb547bfe961e8941af235bca5939a3879bde0de7099ad0472dca35",
+  "checks": {
+    "benchmark_available": true,
+    "concentration_cap": true,
+    "effective_asset_count": true,
+    "minimum_asset_count": true,
+    "portfolio_equity_positive": true
+  },
+  "excess_return_pct": -31.5287,
+  "paper_only": true,
+  "portfolio_return_pct": 33.396,
+  "state": "MULTI_ASSET_BACKTEST_CERTIFIED"
+}

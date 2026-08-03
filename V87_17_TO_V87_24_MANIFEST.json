@@ -1,0 +1,16 @@
+{
+  "stage_range": "V87.17-V87.24",
+  "base_commit": "ca95612",
+  "bundle_type": "MULTI_ASSET_BACKTEST_AND_BENCHMARK",
+  "multi_asset_backtest": true,
+  "portfolio_equity_curve": true,
+  "sector_attribution": true,
+  "buy_and_hold_benchmark": true,
+  "excess_return": true,
+  "correlation_and_concentration": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V88_01_WEB_UI_V2"
+}
