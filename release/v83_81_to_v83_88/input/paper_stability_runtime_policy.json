@@ -1,0 +1,15 @@
+{
+  "stage_range": "V83.81-V83.88",
+  "paper_only": true,
+  "minimum_validation_days": 3,
+  "minimum_stability_score": 100,
+  "manual_execution_only": true,
+  "supervised_execution_required": true,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}

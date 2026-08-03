@@ -1,0 +1,16 @@
+{
+  "stage_range": "V83.81-V83.88",
+  "base_commit": "90b7e54",
+  "bundle_type": "PAPER_STABILITY_AND_RUNTIME_READINESS",
+  "installable_before_multi_day_completion": true,
+  "certificate_requires_unique_validation_days": 3,
+  "minimum_stability_score": 100,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V83_89_PAPER_PERFORMANCE_EVALUATION"
+}

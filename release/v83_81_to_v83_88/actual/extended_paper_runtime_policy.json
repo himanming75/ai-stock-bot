@@ -1,0 +1,20 @@
+{
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "certificate_required": true,
+  "certificate_valid": false,
+  "continuous_loop_enabled": false,
+  "duplicate_cycle_protection_required": true,
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "manual_execution_only": true,
+  "observed_at": "2026-08-03T19:55:01.337932+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "restart_recovery_required": true,
+  "stage": "V83.86",
+  "stale_lock_detection_required": true,
+  "state": "EXTENDED_PAPER_RUNTIME_PENDING",
+  "supervised_execution_required": true,
+  "windows_task_enabled": false
+}
