@@ -1,0 +1,3 @@
+git add shadow_runtime/scheduler_v82_05_08.py dashboard/shadow_scheduler_integration.py tools/run_shadow_scheduler_v82_05_to_v82_08.py tools/test_shadow_scheduler_v82_05_to_v82_08.py tools/install_check_v82_05_to_v82_08.py tools/verify_shadow_scheduler_v82_05_to_v82_08.py RUN_V82_05_TO_V82_08_SHADOW_SCHEDULER.ps1 RUN_V82_05_TO_V82_08_TEST_AND_VERIFY.ps1 release/v82_05_to_v82_08 V82_05_TO_V82_08_MANIFEST.json GIT_COMMIT_V82_05_TO_V82_08.txt
+git commit -m "V82.05-V82.08 autonomous shadow scheduler and heartbeat implemented"
+git push origin main

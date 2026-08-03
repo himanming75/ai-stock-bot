@@ -1,0 +1,16 @@
+{
+  "broker_write_enabled": false,
+  "cycle_due": false,
+  "cycle_foundation_ready": false,
+  "cycle_late": false,
+  "heartbeat_age_seconds": 29.902,
+  "heartbeat_timeout": false,
+  "interval_minutes": 15,
+  "live_trading_enabled": false,
+  "next_cycle_at": "2026-08-03T16:44:06.877394+00:00",
+  "next_cycle_authorized": false,
+  "observed_at": "2026-08-03T16:38:16.169054+00:00",
+  "read_only": true,
+  "scheduler_state": "WAIT_AUTONOMOUS_SHADOW_CYCLE",
+  "stage": "V82.08"
+}
