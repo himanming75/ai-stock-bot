@@ -1,0 +1,23 @@
+{
+  "stage_range": "V88.09-V88.16",
+  "base_commit": "fa6dcb5",
+  "bundle_type": "PAPER_AUTOMATION_ORCHESTRATOR",
+  "pipeline_step_count": 7,
+  "duplicate_run_lock": true,
+  "checkpoint_resume": true,
+  "safe_mode": true,
+  "audit_ledger": true,
+  "daily_report": true,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V88_17_PAPER_PRODUCTION_RELEASE",
+  "hotfix": "indicator_engine_layout_compatibility",
+  "supported_indicator_modules": [
+    "indicator_engine",
+    "indicator_engine_v2"
+  ]
+}

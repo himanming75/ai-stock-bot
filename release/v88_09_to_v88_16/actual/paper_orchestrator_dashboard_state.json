@@ -1,0 +1,14 @@
+{
+  "broker_write_enabled": false,
+  "completed_step_count": 7,
+  "external_network_enabled": false,
+  "failed_step": "",
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T20:46:53.170492+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "paper_orchestrator_state": "PAPER_AUTOMATION_ORCHESTRATOR_READY",
+  "safe_mode": false,
+  "status": "PASS",
+  "total_step_count": 7
+}

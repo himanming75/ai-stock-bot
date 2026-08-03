@@ -1,0 +1,23 @@
+{
+  "broker_write_enabled": false,
+  "completed_steps": [
+    "INDICATOR_ENGINE",
+    "STRATEGY_ENGINE",
+    "PORTFOLIO_SCORING",
+    "EXPLAINABILITY_ENGINE",
+    "BACKTEST_ENGINE",
+    "ROBUSTNESS_VALIDATION",
+    "MULTI_ASSET_BACKTEST"
+  ],
+  "current_step": "",
+  "error": "",
+  "external_network_enabled": false,
+  "failed_step": "",
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T20:46:53.170492+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "run_id": "paper-cycle-20260803T204653.170492_0000",
+  "safe_mode": false,
+  "state": "PAPER_AUTOMATION_ORCHESTRATOR_READY"
+}
