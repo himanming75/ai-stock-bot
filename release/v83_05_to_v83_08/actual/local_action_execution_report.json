@@ -1,0 +1,21 @@
+{
+  "action": "START_PAPER_SESSION",
+  "action_id": "orchestrator-action-b772586bc5d33d2bbb2c",
+  "command": [
+    "powershell",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:\\stock-bot\\RUN_V82_21_TO_V82_24_PAPER_SESSION_MANAGER.ps1",
+    "-StartSession"
+  ],
+  "completed_at": "2026-08-03T17:40:13.988711+00:00",
+  "dry_run": false,
+  "executed": true,
+  "paper_only": true,
+  "return_code": 0,
+  "stage": "V83.06-V83.07",
+  "started_at": "2026-08-03T17:40:13.129663+00:00",
+  "stderr": "",
+  "stdout": "=== V82.21-V82.24 PAPER TRADING SESSION MANAGER ===\nLocal session state only. No network or broker orders.\n{\n  \"actual_credentials_used\": false,\n  \"actual_external_network_used\": false,\n  \"actual_paper_orders_submitted\": 0,\n  \"authorization_ready\": true,\n  \"blocking_issue_count\": 0,\n  \"broker_write_enabled\": false,\n  \"cancel_enabled\": false,\n  \"daily_ledger_written\": true,\n  \"daily_snapshot_written\": false,\n  \"dashboard_state_written\": true,\n  \"duplicate_start\": false,\n  \"end_allowed\": false,\n  \"holiday\": false,\n  \"implementation_type\": \"PAPER_TRADING_SESSION_MANAGER\",\n  \"issue_count\": 0,\n  \"issues\": [],\n  \"live_orders_submitted\": 0,\n  \"live_trading_enabled\": false,\n  \"market_closed\": false,\n  \"market_local_time\": \"2026-08-03T13:40:13.866203-04:00\",\n  \"market_open\": true,\n  \"market_timezone\": \"America/New_York\",\n  \"network_requests_executed\": 0,\n  \"next_phase\": \"V82_25_PAPER_TRADING_SCHEDULER\",\n  \"observed_at\": \"2026-08-03T17:40:13.866203+00:00\",\n  \"order_submission_enabled\": false,\n  \"paper_only\": true,\n  \"position_close_enabled\": false,\n  \"read_only\": true,\n  \"recovery_available\": false,\n  \"regular_market_close\": \"16:00\",\n  \"regular_market_open\": \"09:30\",\n  \"replace_enabled\": false,\n  \"result_path\": \"C:\\\\stock-bot\\\\release\\\\v82_21_to_v82_24\\\\actual\\\\paper_session_manager_result.json\",\n  \"session_active\": true,\n  \"session_end_requested\": false,\n  \"session_ended\": false,\n  \"session_id\": \"paper-session-c779a4e46f64159c640d\",\n  \"session_recovered\": false,\n  \"session_recovery_requested\": false,\n  \"session_start_requested\": true,\n  \"session_started\": true,\n  \"stage_range\": \"V82.21-V82.24\",\n  \"start_allowed\": true,\n  \"state\": \"PAPER_SESSION_RUNNING\",\n  \"status\": \"PASS\",\n  \"trading_date\": \"2026-08-03\",\n  \"trading_day\": true,\n  \"validation_mode\": \"LOCAL_PAPER_SESSION_MANAGER_ONLY\",\n  \"weekend\": false,\n  \"write_requests_executed\": 0\n}\nRESULT_FILE=C:\\stock-bot\\release\\v82_21_to_v82_24\\actual\\paper_session_manager_result.json\nV82.21-V82.24 COMPLETE\n"
+}

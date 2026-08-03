@@ -1,0 +1,16 @@
+{
+  "automatic_action_execution_enabled": false,
+  "base_commit": "b305cb8",
+  "broker_command_execution_enabled": false,
+  "broker_write_enabled": false,
+  "bundle_type": "LOCAL_ACTION_DISPATCHER_FOUNDATION",
+  "continuous_loop_enabled": false,
+  "dry_run": true,
+  "duplicate_dispatch_lock": true,
+  "local_action_allowlist": true,
+  "orchestrator_lock_completion": true,
+  "order_submission_enabled": false,
+  "single_command_execution": true,
+  "stage_range": "V83.05-V83.08",
+  "timeout_and_exit_code": true
+}

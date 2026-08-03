@@ -1,0 +1,22 @@
+{
+  "action": "START_PAPER_SESSION",
+  "action_id": "orchestrator-action-b772586bc5d33d2bbb2c",
+  "broker_command_execution_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "dispatch_completed": true,
+  "dispatch_started": true,
+  "dispatch_succeeded": true,
+  "dispatcher_state": "LOCAL_ACTION_DISPATCH_COMPLETE",
+  "dry_run": false,
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T17:40:13.129663+00:00",
+  "orchestrator_action_active": true,
+  "orchestrator_lock_completed": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "plan_authorized": true,
+  "read_only": false,
+  "return_code": 0,
+  "stage": "V83.08"
+}

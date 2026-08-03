@@ -1,0 +1,8 @@
+{
+  "action": "START_PAPER_SESSION",
+  "action_id": "orchestrator-action-b772586bc5d33d2bbb2c",
+  "observed_at": "2026-08-03T17:40:13.129663+00:00",
+  "paper_only": true,
+  "recovery_required": false,
+  "stage": "V83.07"
+}
