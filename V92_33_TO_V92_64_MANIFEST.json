@@ -1,0 +1,21 @@
+{
+  "stage_range": "V92.33-V92.64",
+  "base_commit": "038f9f9",
+  "historical_var": true,
+  "expected_shortfall": true,
+  "annualized_volatility": true,
+  "rolling_drawdown": true,
+  "rolling_volatility": true,
+  "daily_loss_guard": true,
+  "concentration_guard": true,
+  "stress_scenarios": true,
+  "monte_carlo_risk": true,
+  "risk_certificate": true,
+  "dashboard_payload": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V93.01-V93.32"
+}

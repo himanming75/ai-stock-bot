@@ -1,0 +1,14 @@
+{
+  "var_confidence": 0.95,
+  "maximum_var_pct": 5.0,
+  "maximum_expected_shortfall_pct": 8.0,
+  "maximum_drawdown_pct": 35.0,
+  "maximum_single_allocation_pct": 40.0,
+  "maximum_annualized_volatility_pct": 60.0,
+  "daily_loss_warning_pct": 2.0,
+  "daily_loss_stop_pct": 5.0,
+  "maximum_monte_carlo_loss_probability_pct": 60.0,
+  "rolling_volatility_window": 20,
+  "monte_carlo_iterations": 1000,
+  "monte_carlo_horizon_days": 20
+}

@@ -1,0 +1,2 @@
+git commit -m "V92.33-V92.64 enterprise risk center integrated"
+git push origin main
