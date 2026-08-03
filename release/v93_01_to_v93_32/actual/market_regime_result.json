@@ -1,0 +1,67 @@
+{
+  "available_strategies": [
+    "MOMENTUM",
+    "EMA_CROSS",
+    "MACD",
+    "RSI",
+    "BOLLINGER"
+  ],
+  "bar_count": 220,
+  "base_position_multiplier": 1.0,
+  "broker_write_enabled": false,
+  "checks": {
+    "historical_data_sufficient": true,
+    "recommended_strategies_present": true,
+    "regime_confidence_minimum": true,
+    "risk_center_approved": true
+  },
+  "effective_position_multiplier": 1.0,
+  "external_network_enabled": false,
+  "failed_checks": [],
+  "features": {
+    "annualized_volatility_pct": 4.2846,
+    "atr_pct": 1.3464,
+    "latest_close": 144.9353,
+    "long_sma": 140.31,
+    "momentum_pct": 4.3049,
+    "price_above_long_sma": true,
+    "price_above_short_sma": true,
+    "short_sma": 140.448,
+    "trend_slope_pct": 3.7794
+  },
+  "historical_input": "C:\\stock-bot\\release\\v73_1\\data\\sample_breakout_ohlcv_v73_1.csv",
+  "live_trading_enabled": false,
+  "next_phase": "V93_33_MULTI_TIMEFRAME_REGIME",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "policy": {
+    "atr_period": 14,
+    "bear_trend_threshold_pct": -3.0,
+    "bull_trend_threshold_pct": 3.0,
+    "high_atr_threshold_pct": 2.5,
+    "high_volatility_threshold_pct": 35.0,
+    "long_sma_period": 50,
+    "low_volatility_threshold_pct": 12.0,
+    "minimum_confidence_score": 50.0,
+    "momentum_period": 20,
+    "short_sma_period": 20,
+    "trend_slope_period": 30
+  },
+  "recommended_strategies": [
+    "MOMENTUM",
+    "EMA_CROSS",
+    "MACD"
+  ],
+  "regime": {
+    "confidence_score": 66.86,
+    "primary_regime": "BULL",
+    "risk_mode": "RISK_ON",
+    "volatility_regime": "LOW_VOLATILITY"
+  },
+  "regime_certificate_sha256": "cf24ae988f5d0b24ad7500f49398ebebc5604f0614bca1c3ec9ac1808e3add58",
+  "risk_center_approved": true,
+  "stage": "V93.32",
+  "stage_range": "V93.01-V93.32",
+  "state": "MARKET_REGIME_ENGINE_READY",
+  "status": "PASS"
+}

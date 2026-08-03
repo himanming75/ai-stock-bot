@@ -1,0 +1,13 @@
+{
+  "short_sma_period": 20,
+  "long_sma_period": 50,
+  "momentum_period": 20,
+  "trend_slope_period": 30,
+  "atr_period": 14,
+  "bull_trend_threshold_pct": 3.0,
+  "bear_trend_threshold_pct": -3.0,
+  "high_volatility_threshold_pct": 35.0,
+  "low_volatility_threshold_pct": 12.0,
+  "high_atr_threshold_pct": 2.5,
+  "minimum_confidence_score": 50.0
+}

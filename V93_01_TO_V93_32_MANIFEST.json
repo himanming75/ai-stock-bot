@@ -1,0 +1,16 @@
+{
+  "stage_range": "V93.01-V93.32",
+  "base_commit": "9750913",
+  "trend_regime": true,
+  "volatility_regime": true,
+  "risk_mode": true,
+  "strategy_recommendation": true,
+  "dynamic_position_multiplier": true,
+  "certificate": true,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V93.33-V93.64"
+}
