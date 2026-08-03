@@ -1,6 +1,6 @@
 {
   "stage_range": "V97.33-V97.64",
-  "base_commit": "e37ca7e",
+  "base_commit": "5fa34c6",
   "broker_account_read_model": true,
   "broker_position_read_model": true,
   "cash_reconciliation": true,
@@ -20,5 +20,7 @@
   "order_submission_enabled": false,
   "live_trading_enabled": false,
   "external_network_enabled": false,
-  "next_phase": "V98.01-V98.32"
+  "next_phase": "V98.01-V98.32",
+  "fix_revision": "MARKET_VALUE_FALLBACK",
+  "internal_market_value_fallback": true
 }

@@ -4,6 +4,7 @@ from paper_broker_read_model.models import (
     normalize_account,
     normalize_positions,
     internal_account_from_ledger,
+    internal_positions_from_ledger,
 )
 from paper_broker_read_model.reconciliation import (
     compare_value,
@@ -28,6 +29,23 @@ class Tests(unittest.TestCase):
             "equity_reconciliation":{"reported_equity":110},
         })
         self.assertEqual(value["buying_power"],100)
+
+    def test_internal_market_value_fallback(self):
+        value=internal_positions_from_ledger({
+            "reported_positions":{
+                "AAPL":{
+                    "quantity":47,
+                    "average_cost":200.1,
+                    "mark_price":200.1,
+                    "market_value":0.0,
+                }
+            }
+        })
+        self.assertAlmostEqual(value["AAPL"]["market_value"],9404.7,places=4)
+        self.assertEqual(
+            value["AAPL"]["market_value_source"],
+            "CALCULATED_QUANTITY_X_MARK_PRICE",
+        )
 
     def test_compare_value(self):
         self.assertTrue(compare_value(100,100,.01)["passed"])

@@ -42,11 +42,12 @@ git add `
     INSTALL_AND_SAVE_V97_33_TO_V97_64_ONE_CLICK.ps1 `
     release/v97_33_to_v97_64 `
     V97_33_TO_V97_64_MANIFEST.json `
-    GIT_COMMIT_V97_33_TO_V97_64.txt
+    GIT_COMMIT_V97_33_TO_V97_64.txt `
+    GIT_COMMIT_V97_33_TO_V97_64_FIXED.txt
 
 $staged=git diff --cached --name-only
 if($staged){
-    git commit -m "V97.33-V97.64 paper broker read model and snapshot reconciliation integrated"
+    git commit -m "V97.33-V97.64 fix internal market value reconciliation"
     if($LASTEXITCODE-ne 0){throw "COMMIT FAILED"}
 }
 
@@ -57,4 +58,4 @@ if(-not $SkipPush){
 }
 
 git log -1 --oneline
-Write-Host "V97.33-V97.64 ONE-CLICK COMPLETE"
+Write-Host "V97.33-V97.64 FIXED ONE-CLICK COMPLETE"

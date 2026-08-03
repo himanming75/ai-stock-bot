@@ -54,12 +54,29 @@ def internal_positions_from_ledger(
         if not isinstance(row, dict):
             continue
         normalized = str(symbol).upper()
+        quantity = float(row.get("quantity", 0.0))
+        average_cost = float(row.get("average_cost", 0.0))
+        market_price = float(
+            row.get("mark_price", row.get("market_price", average_cost))
+        )
+        reported_market_value = float(row.get("market_value", 0.0))
+        calculated_market_value = quantity * market_price
+        market_value = (
+            reported_market_value
+            if abs(reported_market_value) > 1e-12
+            else calculated_market_value
+        )
         output[normalized] = {
             "symbol": normalized,
-            "quantity": float(row.get("quantity", 0.0)),
-            "average_cost": float(row.get("average_cost", 0.0)),
-            "market_price": float(row.get("mark_price", row.get("average_cost", 0.0))),
-            "market_value": float(row.get("market_value", 0.0)),
+            "quantity": quantity,
+            "average_cost": average_cost,
+            "market_price": market_price,
+            "market_value": round(market_value, 6),
             "unrealized_pnl": float(row.get("unrealized_pnl", 0.0)),
+            "market_value_source": (
+                "REPORTED"
+                if abs(reported_market_value) > 1e-12
+                else "CALCULATED_QUANTITY_X_MARK_PRICE"
+            ),
         }
     return output

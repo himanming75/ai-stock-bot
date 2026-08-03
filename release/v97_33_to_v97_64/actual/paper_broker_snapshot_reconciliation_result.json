@@ -60,15 +60,13 @@
       "credentials_unused": true,
       "network_unused": true,
       "orders_zero": true,
-      "positions_reconciled": false,
+      "positions_reconciled": true,
       "read_only_adapter": true,
       "safe_boundary_passed": true,
       "snapshot_fresh": true
     },
-    "failed": [
-      "positions_reconciled"
-    ],
-    "passed": false
+    "failed": [],
+    "passed": true
   },
   "internal_account_snapshot": {
     "buying_power": 90595.3,
@@ -81,7 +79,8 @@
     "AAPL": {
       "average_cost": 200.1,
       "market_price": 200.1,
-      "market_value": 0.0,
+      "market_value": 9404.7,
+      "market_value_source": "CALCULATED_QUANTITY_X_MARK_PRICE",
       "quantity": 47.0,
       "symbol": "AAPL",
       "unrealized_pnl": 0.0
@@ -90,9 +89,9 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V98_01_AUTOMATED_BACKTEST_FRAMEWORK",
-  "observed_at": "2026-08-03T22:37:00.522754+00:00",
+  "observed_at": "2026-08-03T22:38:41.803711+00:00",
   "order_submission_enabled": false,
-  "paper_broker_snapshot_certificate_sha256": "8d0aa8df3b6db79d87558a5c2d8870723d3d7a28d86ac32c74ccf6c3c48b438a",
+  "paper_broker_snapshot_certificate_sha256": "952e708ae7f2b2b57c2b7cbfef56dfd1fda5b7063379b6a39c48040b8cf481b7",
   "paper_only": true,
   "position_reconciliation": {
     "details": {
@@ -108,12 +107,12 @@
         "internal_present": true,
         "market_value": {
           "broker_value": 9404.7,
-          "difference": 9404.7,
-          "internal_value": 0.0,
-          "passed": false,
+          "difference": -0.0,
+          "internal_value": 9404.7,
+          "passed": true,
           "tolerance": 0.01
         },
-        "passed": false,
+        "passed": true,
         "quantity": {
           "broker_value": 47.0,
           "difference": 0.0,
@@ -123,12 +122,12 @@
         }
       }
     },
-    "passed": false,
+    "passed": true,
     "symbol_count": 1
   },
   "read_only_adapter": true,
   "snapshot_freshness": {
-    "age_seconds": 219.951,
+    "age_seconds": 321.232,
     "maximum_age_seconds": 86400,
     "passed": true,
     "reason": ""
@@ -136,7 +135,7 @@
   "source_adapter_name": "MOCK_PAPER",
   "stage": "V97.64",
   "stage_range": "V97.33-V97.64",
-  "state": "PAPER_BROKER_SNAPSHOT_RECONCILIATION_REVIEW_REQUIRED",
+  "state": "PAPER_BROKER_SNAPSHOT_RECONCILIATION_PASS",
   "status": "PASS",
   "windows_task_enabled": false,
   "write_requests_executed": 0
