@@ -1,0 +1,6 @@
+{
+  "trading_day": true,
+  "market_open": false,
+  "market_closed": true,
+  "source": "LOCAL_MANUAL_STATE"
+}

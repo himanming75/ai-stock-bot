@@ -1,0 +1,15 @@
+{
+  "automatic_scheduling_enabled": false,
+  "base_commit": "PENDING_V83_13_TO_V83_16_COMMIT",
+  "broker_write_enabled": false,
+  "bundle_type": "SCHEDULED_SUPERVISED_RUNNER_FOUNDATION",
+  "daily_run_limit": true,
+  "market_open_gate": true,
+  "minimum_interval_gate": true,
+  "order_submission_enabled": false,
+  "risk_gate": true,
+  "stage_range": "V83.17-V83.20",
+  "time_window_gate": true,
+  "trading_day_gate": true,
+  "windows_task_install_enabled": false
+}

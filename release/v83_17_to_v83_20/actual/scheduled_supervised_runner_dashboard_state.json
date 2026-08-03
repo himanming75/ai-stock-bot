@@ -1,0 +1,31 @@
+{
+  "active_schedule": false,
+  "authorization_id": "",
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "cooldown_clear": true,
+  "in_allowed_window": true,
+  "live_trading_enabled": false,
+  "market_closed": true,
+  "market_open": false,
+  "max_runs_per_day": 3,
+  "minimum_interval_seconds": 300,
+  "observed_at": "2026-08-03T17:59:07.419669+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "risk_clear": true,
+  "run_authorized": false,
+  "run_completed": false,
+  "runs_today": 0,
+  "schedule_ready": false,
+  "schedule_reasons": [
+    "MARKET_NOT_OPEN"
+  ],
+  "scheduled_runner_state": "SCHEDULE_LOCK_CLEARED",
+  "stage": "V83.20",
+  "supervised_ready": true,
+  "trading_date": "2026-08-03",
+  "trading_day": true,
+  "windows_task_install_enabled": false
+}

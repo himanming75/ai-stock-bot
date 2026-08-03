@@ -1,0 +1,3 @@
+git add paper_runtime/scheduled_supervised_runner_v83_17_20.py dashboard/scheduled_supervised_runner_integration.py tools/run_scheduled_supervised_runner_v83_17_to_v83_20.py tools/test_scheduled_supervised_runner_v83_17_to_v83_20.py tools/install_check_v83_17_to_v83_20.py tools/verify_scheduled_supervised_runner_v83_17_to_v83_20.py RUN_V83_17_TO_V83_20_SCHEDULED_SUPERVISED_RUNNER.ps1 RUN_V83_17_TO_V83_20_TEST_AND_VERIFY.ps1 release/v83_17_to_v83_20 V83_17_TO_V83_20_MANIFEST.json GIT_COMMIT_V83_17_TO_V83_20.txt
+git commit -m "V83.17-V83.20 scheduled supervised runner foundation implemented"
+git push origin main
