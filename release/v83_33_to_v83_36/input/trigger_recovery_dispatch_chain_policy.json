@@ -1,0 +1,10 @@
+{
+  "paper_only": true,
+  "automatic_dispatch_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "windows_task_install_enabled": false,
+  "continuous_loop_enabled": false
+}

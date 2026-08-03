@@ -1,0 +1,4 @@
+git status --short
+git add paper_runtime/trigger_recovery_dispatch_chain_v83_33_36.py dashboard/trigger_recovery_dispatch_chain_integration.py tools/run_trigger_recovery_dispatch_chain_v83_33_to_v83_36.py tools/test_trigger_recovery_dispatch_chain_v83_33_to_v83_36.py tools/install_check_v83_33_to_v83_36.py tools/verify_trigger_recovery_dispatch_chain_v83_33_to_v83_36.py RUN_V83_33_TO_V83_36_TRIGGER_RECOVERY_DISPATCH_CHAIN.ps1 RUN_V83_33_TO_V83_36_TEST_AND_VERIFY.ps1 release/v83_33_to_v83_36 V83_33_TO_V83_36_MANIFEST.json GIT_COMMIT_V83_33_TO_V83_36.txt
+git commit -m "V83.33-V83.36 trigger recovery and dispatch chain integrated"
+git push origin main

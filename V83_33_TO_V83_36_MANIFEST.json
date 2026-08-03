@@ -1,0 +1,15 @@
+{
+  "stage_range": "V83.33-V83.36",
+  "base_commit": "367e506",
+  "bundle_type": "TRIGGER_RECOVERY_AND_DISPATCH_CHAIN_INTEGRATION",
+  "trigger_recovery_manager": true,
+  "duplicate_recovery_lock": true,
+  "dispatch_chain_integration": true,
+  "completion_ledger": true,
+  "dashboard_integration": true,
+  "automatic_dispatch_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
