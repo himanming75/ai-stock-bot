@@ -1,0 +1,15 @@
+{
+  "cash": 100000.0,
+  "equity": 100000.0,
+  "gross_exposure_pct": 0.0,
+  "market_value": 0.0,
+  "new_fill_count": 0,
+  "observed_at": "2026-08-03T16:24:38.850937+00:00",
+  "position_count": 0,
+  "realized_pnl": 0.0,
+  "risk_reasons": [],
+  "stage": "V81.11",
+  "state": "WAIT_SHADOW_EXECUTION",
+  "symbol_exposures_pct": {},
+  "unrealized_pnl": 0.0
+}

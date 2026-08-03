@@ -1,0 +1,14 @@
+{
+  "base_commit": "4828561",
+  "broker_write_enabled": false,
+  "bundle_type": "SHADOW_PORTFOLIO_AND_PNL_ENGINE",
+  "equity_history": true,
+  "exposure_gates": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "persistent_portfolio": true,
+  "realized_pnl": true,
+  "recovery_snapshot": true,
+  "stage_range": "V81.09-V81.12",
+  "unrealized_pnl": true
+}

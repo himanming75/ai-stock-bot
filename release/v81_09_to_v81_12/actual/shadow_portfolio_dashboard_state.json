@@ -1,0 +1,16 @@
+{
+  "broker_write_enabled": false,
+  "cash": 100000.0,
+  "equity": 100000.0,
+  "gross_exposure_pct": 0.0,
+  "live_trading_enabled": false,
+  "market_value": 0.0,
+  "observed_at": "2026-08-03T16:24:38.850937+00:00",
+  "portfolio_state": "WAIT_SHADOW_EXECUTION",
+  "position_count": 0,
+  "read_only": true,
+  "realized_pnl": 0.0,
+  "risk_reasons": [],
+  "stage": "V81.12",
+  "unrealized_pnl": 0.0
+}

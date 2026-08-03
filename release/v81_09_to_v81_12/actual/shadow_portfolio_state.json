@@ -1,0 +1,18 @@
+{
+  "broker_action_performed": false,
+  "cash": 100000.0,
+  "equity": 100000.0,
+  "gross_exposure": 0.0,
+  "gross_exposure_pct": 0.0,
+  "market_value": 0.0,
+  "observed_at": "2026-08-03T16:24:38.850937+00:00",
+  "position_count": 0,
+  "positions": {},
+  "processed_fill_ids": [],
+  "realized_pnl": 0.0,
+  "risk_reasons": [],
+  "shadow_only": true,
+  "stage": "V81.09",
+  "symbol_exposures_pct": {},
+  "unrealized_pnl": 0.0
+}

@@ -1,0 +1,9 @@
+{
+  "last_equity": 100000.0,
+  "last_observed_at": "2026-08-03T16:24:38.850937+00:00",
+  "portfolio_state_path": "C:\\stock-bot\\release\\v81_09_to_v81_12\\actual\\shadow_portfolio_state.json",
+  "processed_fill_count": 0,
+  "recovery_ready": true,
+  "shadow_only": true,
+  "stage": "V81.12"
+}
