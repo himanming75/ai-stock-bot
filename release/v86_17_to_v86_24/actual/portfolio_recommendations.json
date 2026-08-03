@@ -1,0 +1,97 @@
+{
+  "allocation_summary": {
+    "allocated_count": 5,
+    "allocated_pct": 44.1456,
+    "eligible_count": 5,
+    "portfolio_exposure_limit_pct": 50.0,
+    "sector_allocations_pct": {
+      "AUTO": 1.4648,
+      "ENERGY": 11.926,
+      "HEALTH": 5.7548,
+      "TECH": 25.0
+    },
+    "sector_limit_pct": 25.0,
+    "unallocated_pct": 5.8544
+  },
+  "diversification_score": 100.0,
+  "paper_only": true,
+  "portfolio_score": 54.65,
+  "recommended_allocations": [
+    {
+      "composite_score": 55.25,
+      "confidence": 82.1,
+      "decision": "BUY",
+      "liquidity_score": 100.0,
+      "max_position_pct": 15.0,
+      "rank": 1,
+      "raw_score": 70.0175,
+      "recommended_weight_pct": 15.0,
+      "risk_adjusted_score": 54.6136,
+      "risk_factor": 0.78,
+      "sector": "TECH",
+      "symbol": "AAPL",
+      "volatility_pct": 2.2
+    },
+    {
+      "composite_score": 50.0,
+      "confidence": 78.0,
+      "decision": "BUY",
+      "liquidity_score": 100.0,
+      "max_position_pct": 15.0,
+      "rank": 2,
+      "raw_score": 65.9,
+      "recommended_weight_pct": 10.0,
+      "risk_adjusted_score": 54.038,
+      "risk_factor": 0.82,
+      "sector": "TECH",
+      "symbol": "MSFT",
+      "volatility_pct": 1.8
+    },
+    {
+      "composite_score": 44.0,
+      "confidence": 69.0,
+      "decision": "BUY",
+      "liquidity_score": 95.0,
+      "max_position_pct": 12.0,
+      "rank": 3,
+      "raw_score": 59.15,
+      "recommended_weight_pct": 11.926,
+      "risk_adjusted_score": 41.9965,
+      "risk_factor": 0.71,
+      "sector": "ENERGY",
+      "symbol": "XOM",
+      "volatility_pct": 2.9
+    },
+    {
+      "composite_score": 32.0,
+      "confidence": 64.0,
+      "decision": "WATCH",
+      "liquidity_score": 92.0,
+      "max_position_pct": 10.0,
+      "rank": 4,
+      "raw_score": 22.77,
+      "recommended_weight_pct": 5.7548,
+      "risk_adjusted_score": 20.2653,
+      "risk_factor": 0.89,
+      "sector": "HEALTH",
+      "symbol": "JNJ",
+      "volatility_pct": 1.1
+    },
+    {
+      "composite_score": 25.0,
+      "confidence": 58.0,
+      "decision": "WATCH",
+      "liquidity_score": 98.0,
+      "max_position_pct": 8.0,
+      "rank": 5,
+      "raw_score": 20.6325,
+      "recommended_weight_pct": 1.4648,
+      "risk_adjusted_score": 5.1581,
+      "risk_factor": 0.25,
+      "sector": "AUTO",
+      "symbol": "TSLA",
+      "volatility_pct": 7.5
+    }
+  ],
+  "state": "PORTFOLIO_SCORING_ENGINE_READY"
+}

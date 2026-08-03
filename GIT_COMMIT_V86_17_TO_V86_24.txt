@@ -1,0 +1,3 @@
+git add portfolio_scoring dashboard_v2/portfolio_scoring_integration.py tools/run_portfolio_scoring_v86_17_to_v86_24.py tools/test_portfolio_scoring_v86_17_to_v86_24.py tools/install_check_v86_17_to_v86_24.py tools/verify_portfolio_scoring_v86_17_to_v86_24.py RUN_V86_17_TO_V86_24_PORTFOLIO_SCORING.ps1 RUN_V86_17_TO_V86_24_TEST_AND_VERIFY.ps1 INSTALL_AND_SAVE_V86_17_TO_V86_24_ONE_CLICK.ps1 release/v86_17_to_v86_24 V86_17_TO_V86_24_MANIFEST.json GIT_COMMIT_V86_17_TO_V86_24.txt
+git commit -m "V86.17-V86.24 portfolio scoring engine integrated"
+git push origin main

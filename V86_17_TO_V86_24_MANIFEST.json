@@ -1,0 +1,14 @@
+{
+  "stage_range": "V86.17-V86.24",
+  "base_commit": "f401e7d",
+  "bundle_type": "PORTFOLIO_SCORING_ENGINE",
+  "multi_symbol_ranking": true,
+  "risk_adjusted_scoring": true,
+  "sector_diversification": true,
+  "recommended_allocation": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V86_25_AI_EXPLAINABILITY"
+}
