@@ -1,0 +1,2 @@
+{"batch_id": "cafd1b7a83bd4b73fb7f649b", "champion_strategy": "MOMENTUM_5", "completed_count": 9, "failed_count": 0, "job_count": 9, "observed_at": "2026-08-03T22:48:23.696887+00:00", "regression_fail_count": 1, "regression_pass_count": 8, "state": "BACKTEST_BATCH_REGRESSION_READY"}
+{"batch_id": "a5aad0c39ee1782d90c89882", "champion_strategy": "MOMENTUM_5", "completed_count": 18, "failed_count": 0, "job_count": 18, "observed_at": "2026-08-03T22:55:48.135955+00:00", "regression_fail_count": 2, "regression_pass_count": 16, "state": "BACKTEST_BATCH_REGRESSION_READY"}

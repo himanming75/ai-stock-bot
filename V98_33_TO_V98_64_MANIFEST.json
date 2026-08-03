@@ -1,0 +1,21 @@
+{
+  "stage_range": "V98.33-V98.64",
+  "base_commit": "2c394fb",
+  "batch_queue": true,
+  "resume_checkpoint": true,
+  "retry": true,
+  "failure_isolation": true,
+  "stress_scenarios": true,
+  "regression_gate": true,
+  "champion_selection": true,
+  "batch_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V99.01-V99.32"
+}

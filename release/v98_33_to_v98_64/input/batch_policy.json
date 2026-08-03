@@ -1,0 +1,25 @@
+{
+  "policy_version": "V98.33",
+  "maximum_retries": 1,
+  "win_rate_adjustment_pct": 0.0,
+  "minimum_adjusted_return_pct": 0.0,
+  "maximum_adjusted_drawdown_pct": 20.0,
+  "minimum_regression_score": -5.0,
+  "scenarios": [
+    {
+      "scenario_id": "BASE",
+      "return_shock_pct": 0.0,
+      "drawdown_shock_pct": 0.0
+    },
+    {
+      "scenario_id": "MILD_STRESS",
+      "return_shock_pct": -3.0,
+      "drawdown_shock_pct": 3.0
+    },
+    {
+      "scenario_id": "SEVERE_STRESS",
+      "return_shock_pct": -7.0,
+      "drawdown_shock_pct": 7.0
+    }
+  ]
+}

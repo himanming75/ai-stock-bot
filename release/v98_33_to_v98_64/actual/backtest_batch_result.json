@@ -1,0 +1,574 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "batch_id": "a5aad0c39ee1782d90c89882",
+  "batch_regression_certificate_sha256": "07867a940d402878afa38e36f63f29bbae8db8348ff6293941118527f112e0e5",
+  "broker_write_enabled": false,
+  "champion": {
+    "all_scenarios_passed": true,
+    "average_regression_score": 12.163354,
+    "average_return_pct": 15.79166,
+    "scenario_count": 6,
+    "strategy_id": "MOMENTUM_5",
+    "worst_drawdown_pct": 7.372208
+  },
+  "checkpoint_completed_count": 18,
+  "checks": {
+    "all_jobs_terminal": true,
+    "champion_available": true,
+    "jobs_created": true,
+    "no_execution_failures": true,
+    "regression_results_present": true
+  },
+  "completed_count": 18,
+  "continuous_loop_enabled": false,
+  "external_network_enabled": false,
+  "failed_checks": [],
+  "failed_count": 0,
+  "job_count": 18,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V99_01_AI_PORTFOLIO_MANAGER",
+  "observed_at": "2026-08-03T22:55:48.135955+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "regression_fail_count": 2,
+  "regression_pass_count": 16,
+  "results": [
+    {
+      "adjusted_drawdown_pct": 0.372208,
+      "adjusted_return_pct": 26.420377,
+      "adjusted_win_rate_pct": 96.774194,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "b004650802ba0526375fb6e2",
+      "base_return_pct": 26.420377,
+      "base_win_rate_pct": 96.774194,
+      "batch_job_id": "69ef00404eab79b6bfd8eafa",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 27.797549,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 3.372208,
+      "adjusted_return_pct": 23.420377,
+      "adjusted_win_rate_pct": 96.774194,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "b004650802ba0526375fb6e2",
+      "base_return_pct": 26.420377,
+      "base_win_rate_pct": 96.774194,
+      "batch_job_id": "2aabde60cb9f21858e936553",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 20.297549,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 7.372208,
+      "adjusted_return_pct": 19.420377,
+      "adjusted_win_rate_pct": 96.774194,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "b004650802ba0526375fb6e2",
+      "base_return_pct": 26.420377,
+      "base_win_rate_pct": 96.774194,
+      "batch_job_id": "928360f8ed26128644e2fe0f",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 10.297549,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 0.372208,
+      "adjusted_return_pct": 11.82961,
+      "adjusted_win_rate_pct": 96.226415,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "ffe47afb29b95b9ad323ec68",
+      "base_return_pct": 11.82961,
+      "base_win_rate_pct": 96.226415,
+      "batch_job_id": "aa61055a2ee7ef204cbf243d",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 13.195826,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 3.372208,
+      "adjusted_return_pct": 8.82961,
+      "adjusted_win_rate_pct": 96.226415,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "ffe47afb29b95b9ad323ec68",
+      "base_return_pct": 11.82961,
+      "base_win_rate_pct": 96.226415,
+      "batch_job_id": "e0fcb5598371d6ea90449959",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 5.695826,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 7.372208,
+      "adjusted_return_pct": 4.82961,
+      "adjusted_win_rate_pct": 96.226415,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.372208,
+      "base_job_id": "ffe47afb29b95b9ad323ec68",
+      "base_return_pct": 11.82961,
+      "base_win_rate_pct": 96.226415,
+      "batch_job_id": "d35b1b0104340ab754d2a0ee",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": -4.304174,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 1.343236,
+      "adjusted_return_pct": 26.339499,
+      "adjusted_win_rate_pct": 91.176471,
+      "attempt_count": 1,
+      "base_drawdown_pct": 1.343236,
+      "base_job_id": "c1254f0055ca9263e0bc35fd",
+      "base_return_pct": 26.339499,
+      "base_win_rate_pct": 91.176471,
+      "batch_job_id": "ff378cfaff3613c667997797",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 26.148174,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 4.343236,
+      "adjusted_return_pct": 23.339499,
+      "adjusted_win_rate_pct": 91.176471,
+      "attempt_count": 1,
+      "base_drawdown_pct": 1.343236,
+      "base_job_id": "c1254f0055ca9263e0bc35fd",
+      "base_return_pct": 26.339499,
+      "base_win_rate_pct": 91.176471,
+      "batch_job_id": "94f62cd16c90fb90de06dac4",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 18.648174,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 8.343236,
+      "adjusted_return_pct": 19.339499,
+      "adjusted_win_rate_pct": 91.176471,
+      "attempt_count": 1,
+      "base_drawdown_pct": 1.343236,
+      "base_job_id": "c1254f0055ca9263e0bc35fd",
+      "base_return_pct": 26.339499,
+      "base_win_rate_pct": 91.176471,
+      "batch_job_id": "03f46ffbff06b95ab8c5b3aa",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 8.648174,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 0.89235,
+      "adjusted_return_pct": 10.739663,
+      "adjusted_win_rate_pct": 89.285714,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.89235,
+      "base_job_id": "d4e6f6d8580e54d9f3f4e0e3",
+      "base_return_pct": 10.739663,
+      "base_win_rate_pct": 89.285714,
+      "batch_job_id": "409e3fc116c6583f61357e66",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 11.186852,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 3.89235,
+      "adjusted_return_pct": 7.739663,
+      "adjusted_win_rate_pct": 89.285714,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.89235,
+      "base_job_id": "d4e6f6d8580e54d9f3f4e0e3",
+      "base_return_pct": 10.739663,
+      "base_win_rate_pct": 89.285714,
+      "batch_job_id": "d591cfd30aa1e696816f1c3a",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 3.686852,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 7.89235,
+      "adjusted_return_pct": 3.739663,
+      "adjusted_win_rate_pct": 89.285714,
+      "attempt_count": 1,
+      "base_drawdown_pct": 0.89235,
+      "base_job_id": "d4e6f6d8580e54d9f3f4e0e3",
+      "base_return_pct": 10.739663,
+      "base_win_rate_pct": 89.285714,
+      "batch_job_id": "cba770d9b878d6fd0cd5dd03",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": false
+        },
+        "failed": [
+          "minimum_score"
+        ],
+        "passed": false
+      },
+      "regression_score": -6.313148,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "EMA_5_15",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 2.324976,
+      "adjusted_return_pct": 26.370992,
+      "adjusted_win_rate_pct": 85.714286,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "cc3991729afd890d579445aa",
+      "base_return_pct": 26.370992,
+      "base_win_rate_pct": 85.714286,
+      "batch_job_id": "061ebdcce205c94054b7465e",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 24.597814,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 5.324976,
+      "adjusted_return_pct": 23.370992,
+      "adjusted_win_rate_pct": 85.714286,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "cc3991729afd890d579445aa",
+      "base_return_pct": 26.370992,
+      "base_win_rate_pct": 85.714286,
+      "batch_job_id": "1b1b8d1c145566a0e3df2623",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 17.097814,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 9.324976,
+      "adjusted_return_pct": 19.370992,
+      "adjusted_win_rate_pct": 85.714286,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "cc3991729afd890d579445aa",
+      "base_return_pct": 26.370992,
+      "base_win_rate_pct": 85.714286,
+      "batch_job_id": "d45a69ed18ff624e14831fa0",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 7.097814,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "FULL"
+    },
+    {
+      "adjusted_drawdown_pct": 2.324976,
+      "adjusted_return_pct": 10.866708,
+      "adjusted_win_rate_pct": 78.481013,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "c6877ab503d7c3d0bd9fcc70",
+      "base_return_pct": 10.866708,
+      "base_win_rate_pct": 78.481013,
+      "batch_job_id": "1d182453ba6e6d4c2b39f48f",
+      "drawdown_shock_pct": 0.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 8.948864,
+      "return_shock_pct": 0.0,
+      "scenario_id": "BASE",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 5.324976,
+      "adjusted_return_pct": 7.866708,
+      "adjusted_win_rate_pct": 78.481013,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "c6877ab503d7c3d0bd9fcc70",
+      "base_return_pct": 10.866708,
+      "base_win_rate_pct": 78.481013,
+      "batch_job_id": "7057509e5624c4c7bfa4bfce",
+      "drawdown_shock_pct": 3.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": true
+        },
+        "failed": [],
+        "passed": true
+      },
+      "regression_score": 1.448864,
+      "return_shock_pct": -3.0,
+      "scenario_id": "MILD_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    },
+    {
+      "adjusted_drawdown_pct": 9.324976,
+      "adjusted_return_pct": 3.866708,
+      "adjusted_win_rate_pct": 78.481013,
+      "attempt_count": 1,
+      "base_drawdown_pct": 2.324976,
+      "base_job_id": "c6877ab503d7c3d0bd9fcc70",
+      "base_return_pct": 10.866708,
+      "base_win_rate_pct": 78.481013,
+      "batch_job_id": "e167e440f4b7bd05fd12b372",
+      "drawdown_shock_pct": 7.0,
+      "regression_gate": {
+        "checks": {
+          "maximum_drawdown": true,
+          "minimum_return": true,
+          "minimum_score": false
+        },
+        "failed": [
+          "minimum_score"
+        ],
+        "passed": false
+      },
+      "regression_score": -8.551136,
+      "return_shock_pct": -7.0,
+      "scenario_id": "SEVERE_STRESS",
+      "state": "COMPLETED",
+      "status": "PASS",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "AAPL",
+      "window_id": "RECENT_80"
+    }
+  ],
+  "resume_enabled": false,
+  "source_run_id": "b35faed432a5aace33ff70f6",
+  "stage": "V98.64",
+  "stage_range": "V98.33-V98.64",
+  "state": "BACKTEST_BATCH_REGRESSION_READY",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}
