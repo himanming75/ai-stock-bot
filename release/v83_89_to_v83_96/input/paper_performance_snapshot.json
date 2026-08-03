@@ -1,0 +1,15 @@
+{
+  "performance_snapshot_ready": false,
+  "source": "LOCAL_PAPER_RUNTIME",
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "gross_profit": 0,
+  "gross_loss": 0,
+  "net_profit": 0,
+  "max_drawdown_pct": 0,
+  "max_daily_loss_pct": 0,
+  "order_rejection_count": 0,
+  "duplicate_order_count": 0,
+  "note": "Set performance_snapshot_ready only after validated paper trade metrics are available."
+}

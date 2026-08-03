@@ -1,0 +1,17 @@
+{
+  "evaluation_ready": false,
+  "metrics": {
+    "checks": {},
+    "checks_passed": 0,
+    "checks_total": 0,
+    "performance_gate_passed": false,
+    "performance_score": 0.0,
+    "total_trades": 0
+  },
+  "observed_at": "2026-08-03T19:58:43.850222+00:00",
+  "paper_only": true,
+  "snapshot_available": false,
+  "stability_ready": false,
+  "stage": "V83.89-V83.92",
+  "state": "PAPER_PERFORMANCE_EVALUATION_PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "broker_write_enabled": false,
+  "checks": {
+    "broker_write_disabled": true,
+    "daily_loss_limit_positive": true,
+    "daily_order_limit_positive": true,
+    "emergency_stop_required": true,
+    "exposure_limit_bounded": true,
+    "exposure_limit_positive": true,
+    "kill_switch_required": true,
+    "order_submission_disabled": true,
+    "position_limit_bounded": true,
+    "position_limit_positive": true
+  },
+  "duplicate_order_protection_required": true,
+  "emergency_stop_required": true,
+  "external_network_enabled": false,
+  "kill_switch_required": true,
+  "live_trading_enabled": false,
+  "maximum_daily_loss_pct": 5.0,
+  "maximum_orders_per_day": 5,
+  "maximum_portfolio_exposure_pct": 50.0,
+  "maximum_position_pct": 10.0,
+  "observed_at": "2026-08-03T19:58:43.850222+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "risk_gate_passed": true,
+  "stage": "V83.93-V83.95",
+  "state": "PRODUCTION_RISK_GATE_PASSED"
+}

@@ -1,0 +1,23 @@
+{
+  "stage_range": "V83.89-V83.96",
+  "paper_only": true,
+  "minimum_trade_count": 5,
+  "minimum_net_profit": 0,
+  "maximum_drawdown_pct": 20,
+  "minimum_profit_factor": 1.0,
+  "maximum_daily_loss_pct": 5,
+  "maximum_order_rejections": 0,
+  "minimum_performance_score": 100,
+  "maximum_position_pct": 10,
+  "maximum_portfolio_exposure_pct": 50,
+  "maximum_orders_per_day": 5,
+  "kill_switch_required": true,
+  "emergency_stop_required": true,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}

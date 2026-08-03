@@ -1,0 +1,15 @@
+{
+  "stage_range": "V83.89-V83.96",
+  "base_commit": "6e39adb",
+  "bundle_type": "PERFORMANCE_AND_PRODUCTION_READINESS",
+  "installable_before_stability_certification": true,
+  "pending_state_is_valid": true,
+  "continuous_loop_enabled": false,
+  "windows_task_enabled": false,
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V83_97_PAPER_PRODUCTION_RELEASE"
+}
