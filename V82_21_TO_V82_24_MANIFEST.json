@@ -1,0 +1,16 @@
+{
+  "base_commit": "c0d0a4c",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_TRADING_SESSION_MANAGER",
+  "daily_ledger": true,
+  "daily_snapshot": true,
+  "live_trading_enabled": false,
+  "market_day_gate": true,
+  "order_submission_enabled": false,
+  "policy_holiday_gate": true,
+  "session_end": true,
+  "session_recovery": true,
+  "session_start": true,
+  "stage_range": "V82.21-V82.24",
+  "weekend_gate": true
+}
