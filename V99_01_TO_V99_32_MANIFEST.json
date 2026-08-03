@@ -1,0 +1,22 @@
+{
+  "stage_range": "V99.01-V99.32",
+  "base_commit": "3d9ee05",
+  "candidate_aggregation": true,
+  "multi_factor_scoring": true,
+  "strategy_ranking": true,
+  "target_allocation": true,
+  "cash_reserve": true,
+  "weight_caps": true,
+  "concentration_gate": true,
+  "weighted_drawdown_gate": true,
+  "portfolio_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V99.33-V99.64"
+}

@@ -1,0 +1,15 @@
+{
+  "policy_version": "V99.01",
+  "return_weight": 1.0,
+  "regression_score_weight": 1.0,
+  "drawdown_penalty": 1.5,
+  "stability_weight": 0.05,
+  "all_scenarios_passed_bonus": 2.0,
+  "minimum_portfolio_score": -20.0,
+  "maximum_strategy_count": 5,
+  "minimum_strategy_count": 2,
+  "minimum_cash_pct": 10.0,
+  "maximum_strategy_weight_pct": 45.0,
+  "minimum_strategy_weight_pct": 5.0,
+  "maximum_weighted_drawdown_pct": 15.0
+}

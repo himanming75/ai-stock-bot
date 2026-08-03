@@ -1,0 +1,105 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "ai_portfolio_certificate_sha256": "3388d863e3b433f80d7c06f25aafbbf042638861da39c117f5bab227b1398613",
+  "allocation": {
+    "allocated_strategy_count": 3,
+    "allocations": [
+      {
+        "strategy_id": "MOMENTUM_5",
+        "target_weight_pct": 39.108196
+      },
+      {
+        "strategy_id": "EMA_5_15",
+        "target_weight_pct": 28.135997
+      },
+      {
+        "strategy_id": "BUY_HOLD",
+        "target_weight_pct": 22.755807
+      }
+    ],
+    "cash_weight_pct": 10.0,
+    "eligible_strategy_count": 3,
+    "invested_weight_pct": 90.0,
+    "unallocated_due_to_caps_pct": 0.0
+  },
+  "broker_write_enabled": false,
+  "candidate_count": 3,
+  "champion": {
+    "all_scenarios_passed": true,
+    "average_regression_score": 12.163354,
+    "average_return_pct": 15.79166,
+    "pass_rate_pct": 100.0,
+    "portfolio_score": 23.896702,
+    "rank": 1,
+    "scenario_count": 6,
+    "strategy_id": "MOMENTUM_5",
+    "worst_drawdown_pct": 7.372208
+  },
+  "continuous_loop_enabled": false,
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V99_33_PORTFOLIO_REBALANCE_ENGINE",
+  "observed_at": "2026-08-03T23:00:59.927535+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "portfolio_id": "0b75d5fbbbac4a6c22f20fc7",
+  "rankings": [
+    {
+      "all_scenarios_passed": true,
+      "average_regression_score": 12.163354,
+      "average_return_pct": 15.79166,
+      "pass_rate_pct": 100.0,
+      "portfolio_score": 23.896702,
+      "rank": 1,
+      "scenario_count": 6,
+      "strategy_id": "MOMENTUM_5",
+      "worst_drawdown_pct": 7.372208
+    },
+    {
+      "all_scenarios_passed": false,
+      "average_regression_score": 10.33418,
+      "average_return_pct": 15.206248,
+      "pass_rate_pct": 83.333333,
+      "portfolio_score": 17.192241,
+      "rank": 2,
+      "scenario_count": 6,
+      "strategy_id": "EMA_5_15",
+      "worst_drawdown_pct": 8.343236
+    },
+    {
+      "all_scenarios_passed": false,
+      "average_regression_score": 8.440006,
+      "average_return_pct": 15.285517,
+      "pass_rate_pct": 83.333333,
+      "portfolio_score": 13.904726,
+      "rank": 3,
+      "scenario_count": 6,
+      "strategy_id": "BUY_HOLD",
+      "worst_drawdown_pct": 9.324976
+    }
+  ],
+  "risk": {
+    "cash_weight_pct": 10.0,
+    "checks": {
+      "maximum_single_weight": true,
+      "minimum_cash": true,
+      "minimum_strategy_count": true,
+      "weighted_drawdown_limit": true,
+      "weights_sum_to_100": true
+    },
+    "failed": [],
+    "largest_strategy_weight_pct": 39.108196,
+    "passed": true,
+    "weighted_drawdown_pct": 7.352564
+  },
+  "source_batch_id": "a5aad0c39ee1782d90c89882",
+  "stage": "V99.32",
+  "stage_range": "V99.01-V99.32",
+  "state": "AI_PORTFOLIO_MANAGER_READY",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

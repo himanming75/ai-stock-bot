@@ -1,0 +1,2 @@
+{"allocated_strategy_count": 2, "candidate_count": 3, "cash_weight_pct": 10.0, "champion_strategy": "MOMENTUM_5", "observed_at": "2026-08-03T22:59:00.935108+00:00", "portfolio_id": "c1fbea8e1a1e09153539a259", "risk_passed": true, "state": "AI_PORTFOLIO_MANAGER_READY"}
+{"allocated_strategy_count": 3, "candidate_count": 3, "cash_weight_pct": 10.0, "champion_strategy": "MOMENTUM_5", "observed_at": "2026-08-03T23:00:59.927535+00:00", "portfolio_id": "0b75d5fbbbac4a6c22f20fc7", "risk_passed": true, "state": "AI_PORTFOLIO_MANAGER_READY"}
