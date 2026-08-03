@@ -1,0 +1,2 @@
+{"actual_orders_submitted": 0, "adapter_name": "MOCK_PAPER", "network_requests_executed": 0, "observed_at": "2026-08-03T22:32:25.724903+00:00", "safe_boundary_passed": true, "state": "PAPER_BROKER_ADAPTER_READY", "write_requests_executed": 0}
+{"actual_orders_submitted": 0, "adapter_name": "MOCK_PAPER", "network_requests_executed": 0, "observed_at": "2026-08-03T22:33:14.339970+00:00", "safe_boundary_passed": true, "state": "PAPER_BROKER_ADAPTER_READY", "write_requests_executed": 0}

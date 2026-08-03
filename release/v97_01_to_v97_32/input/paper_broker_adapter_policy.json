@@ -1,0 +1,9 @@
+{
+  "selected_adapter": "MOCK_PAPER",
+  "read_only_required": true,
+  "credentials_allowed": false,
+  "external_network_allowed": false,
+  "broker_write_allowed": false,
+  "order_submission_allowed": false,
+  "live_trading_allowed": false
+}
