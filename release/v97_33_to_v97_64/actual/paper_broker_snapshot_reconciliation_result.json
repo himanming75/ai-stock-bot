@@ -1,0 +1,143 @@
+{
+  "account_reconciliation": {
+    "buying_power": {
+      "broker_value": 90595.3,
+      "difference": 0.0,
+      "internal_value": 90595.3,
+      "passed": true,
+      "tolerance": 0.01
+    },
+    "cash": {
+      "broker_value": 90595.3,
+      "difference": 0.0,
+      "internal_value": 90595.3,
+      "passed": true,
+      "tolerance": 0.01
+    },
+    "checks": {
+      "buying_power": true,
+      "cash": true,
+      "currency": true,
+      "equity": true,
+      "status": true
+    },
+    "equity": {
+      "broker_value": 100042.3,
+      "difference": 0.0,
+      "internal_value": 100042.3,
+      "passed": true,
+      "tolerance": 0.01
+    },
+    "failed": [],
+    "passed": true
+  },
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "broker_account_snapshot": {
+    "buying_power": 90595.3,
+    "cash": 90595.3,
+    "currency": "USD",
+    "equity": 100042.3,
+    "status": "ACTIVE"
+  },
+  "broker_positions_snapshot": {
+    "AAPL": {
+      "average_cost": 200.1,
+      "market_price": 200.1,
+      "market_value": 9404.699999999999,
+      "quantity": 47.0,
+      "symbol": "AAPL",
+      "unrealized_pnl": 0.0
+    }
+  },
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "external_network_enabled": false,
+  "integrity": {
+    "checks": {
+      "account_reconciled": true,
+      "credentials_unused": true,
+      "network_unused": true,
+      "orders_zero": true,
+      "positions_reconciled": false,
+      "read_only_adapter": true,
+      "safe_boundary_passed": true,
+      "snapshot_fresh": true
+    },
+    "failed": [
+      "positions_reconciled"
+    ],
+    "passed": false
+  },
+  "internal_account_snapshot": {
+    "buying_power": 90595.3,
+    "cash": 90595.3,
+    "currency": "USD",
+    "equity": 100042.3,
+    "status": "ACTIVE"
+  },
+  "internal_positions_snapshot": {
+    "AAPL": {
+      "average_cost": 200.1,
+      "market_price": 200.1,
+      "market_value": 0.0,
+      "quantity": 47.0,
+      "symbol": "AAPL",
+      "unrealized_pnl": 0.0
+    }
+  },
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V98_01_AUTOMATED_BACKTEST_FRAMEWORK",
+  "observed_at": "2026-08-03T22:37:00.522754+00:00",
+  "order_submission_enabled": false,
+  "paper_broker_snapshot_certificate_sha256": "8d0aa8df3b6db79d87558a5c2d8870723d3d7a28d86ac32c74ccf6c3c48b438a",
+  "paper_only": true,
+  "position_reconciliation": {
+    "details": {
+      "AAPL": {
+        "average_cost": {
+          "broker_value": 200.1,
+          "difference": 0.0,
+          "internal_value": 200.1,
+          "passed": true,
+          "tolerance": 0.01
+        },
+        "broker_present": true,
+        "internal_present": true,
+        "market_value": {
+          "broker_value": 9404.7,
+          "difference": 9404.7,
+          "internal_value": 0.0,
+          "passed": false,
+          "tolerance": 0.01
+        },
+        "passed": false,
+        "quantity": {
+          "broker_value": 47.0,
+          "difference": 0.0,
+          "internal_value": 47.0,
+          "passed": true,
+          "tolerance": 1e-06
+        }
+      }
+    },
+    "passed": false,
+    "symbol_count": 1
+  },
+  "read_only_adapter": true,
+  "snapshot_freshness": {
+    "age_seconds": 219.951,
+    "maximum_age_seconds": 86400,
+    "passed": true,
+    "reason": ""
+  },
+  "source_adapter_name": "MOCK_PAPER",
+  "stage": "V97.64",
+  "stage_range": "V97.33-V97.64",
+  "state": "PAPER_BROKER_SNAPSHOT_RECONCILIATION_REVIEW_REQUIRED",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

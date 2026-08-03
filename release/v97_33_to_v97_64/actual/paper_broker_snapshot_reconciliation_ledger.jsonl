@@ -1,0 +1,2 @@
+{"account_reconciled": true, "adapter_name": "MOCK_PAPER", "integrity_passed": true, "observed_at": "2026-08-03T22:35:33.200592+00:00", "positions_reconciled": true, "snapshot_fresh": true, "state": "PAPER_BROKER_SNAPSHOT_RECONCILIATION_PASS"}
+{"account_reconciled": true, "adapter_name": "MOCK_PAPER", "integrity_passed": false, "observed_at": "2026-08-03T22:37:00.522754+00:00", "positions_reconciled": false, "snapshot_fresh": true, "state": "PAPER_BROKER_SNAPSHOT_RECONCILIATION_REVIEW_REQUIRED"}

@@ -1,0 +1,9 @@
+{
+  "cash_tolerance": 0.01,
+  "equity_tolerance": 0.01,
+  "buying_power_tolerance": 0.01,
+  "quantity_tolerance": 1e-06,
+  "average_cost_tolerance": 0.01,
+  "market_value_tolerance": 0.01,
+  "maximum_snapshot_age_seconds": 86400
+}
