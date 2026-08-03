@@ -1,0 +1,15 @@
+{
+  "approval_enables_live_trading": false,
+  "approval_reason_required": true,
+  "approver_required": true,
+  "base_commit": "399c184",
+  "broker_write_enabled": false,
+  "bundle_type": "PROMOTION_APPROVAL_LEDGER",
+  "certification_gate": true,
+  "duplicate_approval_block": true,
+  "explicit_approval_required": true,
+  "live_trading_enabled": false,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "stage_range": "OP5.17-OP5.20"
+}

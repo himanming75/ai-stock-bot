@@ -1,0 +1,14 @@
+{
+  "approval_id": "",
+  "certificate_id": "",
+  "created_at": "2026-08-03T02:04:14.866425+00:00",
+  "gate_reasons": [
+    "PROMOTION_NOT_READY",
+    "CERTIFICATE_NOT_VERIFIED",
+    "EXPLICIT_APPROVAL_NOT_RECORDED"
+  ],
+  "live_trading_enabled": false,
+  "paper_only": true,
+  "paper_pilot_certification_gate_clear": false,
+  "stage": "OP5.19"
+}

@@ -1,0 +1,12 @@
+{
+  "approval_id": "",
+  "approval_ready": false,
+  "approved": false,
+  "broker_action_performed": false,
+  "certificate_id": "",
+  "created_at": "2026-08-03T02:04:14.866425+00:00",
+  "duplicate_approval": false,
+  "paper_only": true,
+  "promotion_ready": false,
+  "stage": "OP5.18"
+}

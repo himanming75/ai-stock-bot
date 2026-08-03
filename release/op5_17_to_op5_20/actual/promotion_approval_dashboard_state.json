@@ -1,0 +1,21 @@
+{
+  "approval_id": "",
+  "approval_ready": false,
+  "approval_state": "WAIT_PROMOTION_READY",
+  "approval_written": false,
+  "approver": "",
+  "broker_write_enabled": false,
+  "certificate_verified": false,
+  "certification_gate_clear": false,
+  "duplicate_approval": false,
+  "gate_reasons": [
+    "PROMOTION_NOT_READY",
+    "CERTIFICATE_NOT_VERIFIED",
+    "EXPLICIT_APPROVAL_NOT_RECORDED"
+  ],
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T02:04:14.866425+00:00",
+  "paper_only": true,
+  "promotion_ready": false,
+  "stage": "OP5.20"
+}
