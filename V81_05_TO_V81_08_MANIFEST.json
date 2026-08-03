@@ -1,0 +1,8 @@
+{
+  "base_commit": "f23d7da",
+  "stage_range": "V81.05-V81.08",
+  "bundle_type": "SHADOW_EXECUTION_ENGINE",
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false
+}

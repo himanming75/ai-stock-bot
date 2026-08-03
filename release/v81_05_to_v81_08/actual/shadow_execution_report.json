@@ -1,0 +1,18 @@
+{
+  "broker_action_performed": false,
+  "commission": 0.0,
+  "effective_cost": 0.0,
+  "fill_id": "",
+  "gross_notional": 0.0,
+  "observed_at": "2026-08-03T16:13:02.111982+00:00",
+  "order_id": "",
+  "quantity": 0,
+  "reference_price": 0.0,
+  "shadow_order_created": false,
+  "side": "HOLD",
+  "slippage_total": 0.0,
+  "stage_range": "V81.05-V81.08",
+  "symbol": "",
+  "virtual_fill_created": false,
+  "virtual_fill_price": 0.0
+}

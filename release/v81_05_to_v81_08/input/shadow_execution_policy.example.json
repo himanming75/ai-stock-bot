@@ -1,0 +1,11 @@
+{
+  "shadow_only": true,
+  "paper_only": true,
+  "read_only": true,
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "fixed_slippage_bps": 2.0,
+  "commission_per_share": 0.0,
+  "minimum_commission": 0.0,
+  "maximum_quantity": 100
+}

@@ -1,0 +1,19 @@
+{
+  "broker_write_enabled": false,
+  "commission": 0.0,
+  "effective_cost": 0.0,
+  "execution_state": "WAIT_SHADOW_TRADING_FOUNDATION",
+  "live_trading_enabled": false,
+  "observed_at": "2026-08-03T16:13:02.111982+00:00",
+  "order_submission_enabled": false,
+  "quantity": 0,
+  "read_only": true,
+  "reference_price": 0.0,
+  "shadow_order_created": false,
+  "side": "HOLD",
+  "slippage_total": 0.0,
+  "stage": "V81.08",
+  "symbol": "",
+  "virtual_fill_created": false,
+  "virtual_fill_price": 0.0
+}
