@@ -1,0 +1,36 @@
+{
+  "actual_paper_orders_submitted": 0,
+  "allowed_action": "AUTHORIZE_SCHEDULED_SUPERVISED_RUN",
+  "allowed_return_codes": [
+    0
+  ],
+  "allowed_target_arguments": [
+    "-AuthorizeRun"
+  ],
+  "allowed_target_script": "RUN_V83_17_TO_V83_20_SCHEDULED_SUPERVISED_RUNNER.ps1",
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "dispatch_completed": false,
+  "dispatch_id": "",
+  "dispatch_requested": true,
+  "dispatch_started": false,
+  "dry_run": false,
+  "duplicate_dispatch": false,
+  "external_network_enabled": false,
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "local_trigger_dispatch_state": "LOCAL_TRIGGER_DISPATCH_SAFE_MODE",
+  "observed_at": "2026-08-03T18:23:38.350040+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "return_code": null,
+  "stage": "V83.32",
+  "state": "LOCAL_TRIGGER_DISPATCH_SAFE_MODE",
+  "status": "BLOCKED",
+  "timed_out": false,
+  "timeout_seconds": 120,
+  "trigger_id": "",
+  "trigger_lock_completed": false,
+  "windows_task_install_enabled": false
+}

@@ -1,0 +1,18 @@
+{
+  "stage_range": "V83.29-V83.32",
+  "base_commit": "9c5b39d",
+  "bundle_type": "LOCAL_TRIGGER_DISPATCHER_AND_AUTO_COMPLETION_INTEGRATION",
+  "trigger_plan_input": "V83.25-V83.28",
+  "scheduled_runner_target": "V83.17-V83.20 AuthorizeRun",
+  "dry_run_default": true,
+  "duplicate_dispatch_lock": true,
+  "timeout_validation": true,
+  "return_code_validation": true,
+  "automatic_trigger_completion": true,
+  "failure_recovery_snapshot": true,
+  "dashboard_and_ledger": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
