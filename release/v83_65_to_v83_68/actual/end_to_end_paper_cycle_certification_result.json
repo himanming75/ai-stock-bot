@@ -1,0 +1,76 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "automatic_execution_enabled": false,
+  "blocking_issue_count": 0,
+  "broker_command_execution_enabled": false,
+  "broker_write_enabled": false,
+  "certificate_written": false,
+  "certify_requested": false,
+  "external_network_enabled": false,
+  "failed_scenarios": [],
+  "implementation_type": "END_TO_END_PAPER_CYCLE_CERTIFICATION",
+  "issue_count": 0,
+  "issues": [],
+  "live_orders_submitted": 0,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V83_69_OPERATOR_CONTROL_CENTER",
+  "observed_at": "2026-08-03T19:11:57.237488+00:00",
+  "operator_supervision_required": true,
+  "order_submission_enabled": false,
+  "paper_cycle_certification_state": "PAPER_CYCLE_CERTIFICATION_READY",
+  "paper_only": true,
+  "passed_scenario_count": 8,
+  "required_scenario_count": 8,
+  "result_path": "C:\\stock-bot\\release\\v83_65_to_v83_68\\actual\\end_to_end_paper_cycle_certification_result.json",
+  "scenarios": [
+    {
+      "detail": "completed chain observed or deterministic normal-success scenario evidence accepted",
+      "passed": true,
+      "scenario": "NORMAL_SUCCESS"
+    },
+    {
+      "detail": "safe wait-trigger state observed or deterministic wait-trigger scenario evidence accepted",
+      "passed": true,
+      "scenario": "WAIT_TRIGGER"
+    },
+    {
+      "detail": "duplicate trigger block covered by unit scenario",
+      "passed": true,
+      "scenario": "DUPLICATE_TRIGGER_BLOCKED"
+    },
+    {
+      "detail": "duplicate dispatch block covered by unit scenario",
+      "passed": true,
+      "scenario": "DUPLICATE_DISPATCH_BLOCKED"
+    },
+    {
+      "detail": "timeout recovery path covered",
+      "passed": true,
+      "scenario": "RUNNER_TIMEOUT_RECOVERY"
+    },
+    {
+      "detail": "retry success path covered",
+      "passed": true,
+      "scenario": "RETRY_SUCCESS"
+    },
+    {
+      "detail": "retry budget exhaustion path covered",
+      "passed": true,
+      "scenario": "RETRY_BUDGET_EXHAUSTED"
+    },
+    {
+      "detail": "restart recovery path covered",
+      "passed": true,
+      "scenario": "RESTART_RECOVERY"
+    }
+  ],
+  "stage": "V83.68",
+  "stage_range": "V83.65-V83.68",
+  "state": "PAPER_CYCLE_CERTIFICATION_READY",
+  "status": "PASS",
+  "validation_mode": "LOCAL_END_TO_END_CERTIFICATION_ONLY",
+  "write_requests_executed": 0
+}

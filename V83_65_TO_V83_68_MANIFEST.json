@@ -1,0 +1,21 @@
+{
+  "stage_range": "V83.65-V83.68",
+  "base_commit": "d3bd1c3",
+  "bundle_type": "END_TO_END_PAPER_CYCLE_CERTIFICATION",
+  "required_scenarios": [
+    "NORMAL_SUCCESS",
+    "WAIT_TRIGGER",
+    "DUPLICATE_TRIGGER_BLOCKED",
+    "DUPLICATE_DISPATCH_BLOCKED",
+    "RUNNER_TIMEOUT_RECOVERY",
+    "RETRY_SUCCESS",
+    "RETRY_BUDGET_EXHAUSTED",
+    "RESTART_RECOVERY"
+  ],
+  "final_certificate": true,
+  "automatic_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
