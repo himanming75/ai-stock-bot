@@ -1,0 +1,15 @@
+{
+  "stage_range": "V83.57-V83.60",
+  "base_commit": "f76d968",
+  "bundle_type": "FULL_SCHEDULE_TO_COMPLETION_ORCHESTRATOR",
+  "single_cycle_lock": true,
+  "state_aggregation": true,
+  "manual_intervention_state": true,
+  "completion_ledger": true,
+  "final_certificate": true,
+  "automatic_stage_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
