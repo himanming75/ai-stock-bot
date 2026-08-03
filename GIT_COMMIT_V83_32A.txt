@@ -1,0 +1,4 @@
+git status --short
+git add tools/verify_local_trigger_dispatcher_v83_29_to_v83_32.py tools/test_verify_local_trigger_dispatcher_v83_32a.py release/v83_32a_verify_wait_trigger_hotfix/README_V83_32A.md GIT_COMMIT_V83_32A.txt
+git commit -m "V83.32A accept safe wait-trigger verification states"
+git push origin main
