@@ -1,0 +1,16 @@
+{
+  "stage_range": "V91.33-V91.64",
+  "base_commit": "05a952d",
+  "parameter_search": true,
+  "walk_forward_tuning": true,
+  "stability_gate": true,
+  "top_strategy_count": 3,
+  "maximum_combinations_per_strategy": 40,
+  "walk_forward_window_count": 4,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V92.01-V92.32"
+}

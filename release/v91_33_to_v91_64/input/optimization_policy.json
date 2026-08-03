@@ -1,0 +1,10 @@
+{
+  "top_strategy_count": 3,
+  "maximum_combinations_per_strategy": 40,
+  "walk_forward_window_count": 4,
+  "minimum_total_trades": 2,
+  "minimum_positive_window_pct": 50.0,
+  "minimum_average_return_pct": 0.0,
+  "maximum_worst_drawdown_pct": 35.0,
+  "minimum_full_sharpe": 0.0
+}
