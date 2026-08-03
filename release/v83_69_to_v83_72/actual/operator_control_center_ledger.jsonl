@@ -1,0 +1,2 @@
+{"event": "UNIFIED_OPERATOR_DASHBOARD_OBSERVED", "observed_at": "2026-08-03T19:14:26.448439+00:00", "paper_only": true, "requires_operator_attention": false, "stage": "V83.70", "state": "OPERATOR_CONTROL_CENTER_READY", "status": "PASS"}
+{"event": "UNIFIED_OPERATOR_DASHBOARD_OBSERVED", "observed_at": "2026-08-03T19:15:10.685977+00:00", "paper_only": true, "requires_operator_attention": false, "stage": "V83.70", "state": "OPERATOR_CONTROL_CENTER_READY", "status": "PASS"}

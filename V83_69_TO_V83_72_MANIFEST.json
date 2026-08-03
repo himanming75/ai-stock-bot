@@ -1,0 +1,20 @@
+{
+  "stage_range": "V83.69-V83.72",
+  "base_commit": "444a1b5",
+  "bundle_type": "OPERATOR_CONTROL_CENTER_AND_UNIFIED_DASHBOARD",
+  "unified_dashboard": true,
+  "attention_detection": true,
+  "allowed_operator_actions": [
+    "PAUSE",
+    "RESUME",
+    "APPROVE_RETRY",
+    "REJECT_RETRY",
+    "CLEAR_STALE_LOCK",
+    "END_SESSION"
+  ],
+  "automatic_control_execution_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}

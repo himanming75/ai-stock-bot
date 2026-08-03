@@ -1,0 +1,3 @@
+git add paper_runtime/operator_control_center_v83_69_72.py dashboard/operator_control_center_integration.py tools/run_operator_control_center_v83_69_to_v83_72.py tools/test_operator_control_center_v83_69_to_v83_72.py tools/install_check_v83_69_to_v83_72.py tools/verify_operator_control_center_v83_69_to_v83_72.py RUN_V83_69_TO_V83_72_OPERATOR_CONTROL_CENTER.ps1 RUN_V83_69_TO_V83_72_TEST_AND_VERIFY.ps1 INSTALL_AND_SAVE_V83_69_TO_V83_72_ONE_CLICK.ps1 release/v83_69_to_v83_72 V83_69_TO_V83_72_MANIFEST.json GIT_COMMIT_V83_69_TO_V83_72.txt
+git commit -m "V83.69-V83.72 operator control center and unified dashboard implemented"
+git push origin main
