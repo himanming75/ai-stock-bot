@@ -1,0 +1,19 @@
+{
+  "stage_range": "V89.33-V89.64",
+  "base_commit": "c8828b2",
+  "portfolio_optimizer": true,
+  "position_sizing": true,
+  "risk_engine": true,
+  "strategy_ranking": true,
+  "allocation_modes": [
+    "EQUAL_WEIGHT",
+    "SCORE_WEIGHT",
+    "INVERSE_DRAWDOWN"
+  ],
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V90.01-V90.32"
+}

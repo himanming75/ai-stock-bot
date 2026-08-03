@@ -1,0 +1,7 @@
+{
+  "allocation_mode": "SCORE_WEIGHT",
+  "maximum_single_allocation_pct": 40.0,
+  "maximum_strategy_drawdown_pct": 35.0,
+  "minimum_approved_strategies": 1,
+  "fallback_top_n": 3
+}
