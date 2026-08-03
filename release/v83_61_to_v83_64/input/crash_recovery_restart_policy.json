@@ -1,0 +1,9 @@
+{
+  "paper_only": true,
+  "stale_lock_after_seconds": 1800,
+  "automatic_resume_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}

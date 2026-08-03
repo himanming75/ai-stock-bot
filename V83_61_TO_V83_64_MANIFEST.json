@@ -1,0 +1,14 @@
+{
+  "stage_range": "V83.61-V83.64",
+  "base_commit": "8a07888",
+  "bundle_type": "CRASH_RECOVERY_AND_RESTART_CONTINUATION",
+  "saved_state_inspection": true,
+  "stale_lock_detection": true,
+  "supervised_resume_plan": true,
+  "supervised_abort": true,
+  "automatic_resume_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
