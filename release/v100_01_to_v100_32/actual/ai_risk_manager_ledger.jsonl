@@ -1,0 +1,2 @@
+{"gate_passed": true, "observed_at": "2026-08-03T23:19:51.440214+00:00", "risk_assessment_id": "dccacaf7b2dfa4bfd1a16cb0", "risk_level": "MEDIUM", "risk_score": 54.462042, "state": "AI_RISK_MANAGER_READY", "var_pct": 2.46728, "worst_stress_loss_pct": 12.42}
+{"gate_passed": true, "observed_at": "2026-08-03T23:26:16.914994+00:00", "risk_assessment_id": "868135cb86524109bdd80aa9", "risk_level": "MEDIUM", "risk_score": 54.462042, "state": "AI_RISK_MANAGER_READY", "var_pct": 2.46728, "worst_stress_loss_pct": 12.42}

@@ -1,0 +1,2 @@
+git commit -m "V100.01-V100.32 harden one-click installer source path resolution"
+git push origin main

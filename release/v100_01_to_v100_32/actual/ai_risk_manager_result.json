@@ -1,0 +1,97 @@
+{
+  "account_equity": 100042.3,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "ai_risk_manager_certificate_sha256": "0084fa6a0d1c9942d007de58c2603a8fb99685fa76a17cec0ca978af2f779005",
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "drawdown": {
+    "limit_pct": 15.0,
+    "passed": true,
+    "weighted_drawdown_pct": 7.352564
+  },
+  "execution_authorized": false,
+  "exposure": {
+    "cash_weight_pct": 10.0,
+    "gross_exposure_pct": 90.0,
+    "largest_strategy_weight_pct": 39.108196,
+    "net_exposure_pct": 90.0,
+    "strategy_count": 3,
+    "turnover_pct": 25.0
+  },
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V100_33_RISK_BUDGET_ALLOCATION",
+  "observed_at": "2026-08-03T23:26:16.914994+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "pre_execution_gate": {
+    "checks": {
+      "execution_not_authorized": true,
+      "manual_approval_required": true,
+      "maximum_drawdown": true,
+      "maximum_single_strategy_weight": true,
+      "maximum_stress_loss": true,
+      "maximum_turnover": true,
+      "maximum_var": true,
+      "minimum_cash": true,
+      "rebalance_risk_passed": true,
+      "risk_score": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "risk_assessment_id": "868135cb86524109bdd80aa9",
+  "risk_score": {
+    "maximum_allowed_score": 70.0,
+    "passed": true,
+    "risk_level": "MEDIUM",
+    "risk_score": 54.462042
+  },
+  "source_portfolio_id": "0b75d5fbbbac4a6c22f20fc7",
+  "source_rebalance_id": "b4af7963d843c1830d531a21",
+  "stage": "V100.32",
+  "stage_range": "V100.01-V100.32",
+  "state": "AI_RISK_MANAGER_READY",
+  "status": "PASS",
+  "stress": {
+    "scenario_count": 3,
+    "scenarios": [
+      {
+        "estimated_loss_amount": 4501.9035,
+        "estimated_loss_pct": 4.5,
+        "exposure_multiplier": 1.0,
+        "market_shock_pct": -5.0,
+        "scenario_id": "MARKET_DOWN_5"
+      },
+      {
+        "estimated_loss_amount": 9003.807,
+        "estimated_loss_pct": 9.0,
+        "exposure_multiplier": 1.0,
+        "market_shock_pct": -10.0,
+        "scenario_id": "MARKET_DOWN_10"
+      },
+      {
+        "estimated_loss_amount": 12425.25366,
+        "estimated_loss_pct": 12.42,
+        "exposure_multiplier": 1.15,
+        "market_shock_pct": -12.0,
+        "scenario_id": "LIQUIDITY_STRESS"
+      }
+    ],
+    "worst_estimated_loss_amount": 12425.25366,
+    "worst_estimated_loss_pct": 12.42
+  },
+  "value_at_risk": {
+    "confidence_level_pct": 95.0,
+    "horizon_days": 1,
+    "var_amount": 2468.3241,
+    "var_pct": 2.46728,
+    "weighted_volatility_pct": 1.5
+  },
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

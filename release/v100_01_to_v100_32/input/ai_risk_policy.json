@@ -1,0 +1,29 @@
+{
+  "policy_version": "V100.01",
+  "weighted_volatility_pct": 1.5,
+  "var_horizon_days": 1,
+  "maximum_single_strategy_weight_pct": 45.0,
+  "minimum_cash_pct": 10.0,
+  "maximum_turnover_pct": 25.0,
+  "maximum_var_pct": 5.0,
+  "maximum_weighted_drawdown_pct": 15.0,
+  "maximum_stress_loss_pct": 20.0,
+  "maximum_risk_score": 70.0,
+  "stress_scenarios": [
+    {
+      "scenario_id": "MARKET_DOWN_5",
+      "market_shock_pct": -5.0,
+      "exposure_multiplier": 1.0
+    },
+    {
+      "scenario_id": "MARKET_DOWN_10",
+      "market_shock_pct": -10.0,
+      "exposure_multiplier": 1.0
+    },
+    {
+      "scenario_id": "LIQUIDITY_STRESS",
+      "market_shock_pct": -12.0,
+      "exposure_multiplier": 1.15
+    }
+  ]
+}
