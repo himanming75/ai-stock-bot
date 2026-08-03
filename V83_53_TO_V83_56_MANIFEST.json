@@ -1,0 +1,14 @@
+{
+  "stage_range": "V83.53-V83.56",
+  "base_commit": "8bbaf9e",
+  "bundle_type": "RETRY_CYCLE_COMPLETION_AND_FINAL_CERTIFICATE",
+  "runner_result_classification": true,
+  "retry_budget_completion": true,
+  "manual_intervention_state": true,
+  "completion_ledger": true,
+  "final_certificate": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false
+}
