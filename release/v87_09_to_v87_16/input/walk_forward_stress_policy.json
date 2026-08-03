@@ -1,0 +1,21 @@
+{
+  "train_size": 100,
+  "test_size": 40,
+  "step_size": 40,
+  "minimum_walk_forward_windows": 2,
+  "minimum_positive_window_pct": 25,
+  "minimum_stress_return_pct": -25,
+  "maximum_stress_drawdown_pct": 40,
+  "maximum_overfit_risk_score": 75,
+  "maximum_loss_probability_pct": 60,
+  "monte_carlo_iterations": 500,
+  "monte_carlo_seed": 8709,
+  "backtest_policy": {
+    "initial_cash": 100000,
+    "position_fraction": 0.9,
+    "fast_period": 5,
+    "slow_period": 15,
+    "commission_bps": 1,
+    "slippage_bps": 2
+  }
+}

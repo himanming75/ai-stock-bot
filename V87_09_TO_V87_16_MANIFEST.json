@@ -1,0 +1,15 @@
+{
+  "stage_range": "V87.09-V87.16",
+  "base_commit": "d2e4662",
+  "bundle_type": "WALK_FORWARD_AND_STRESS_VALIDATION",
+  "walk_forward": true,
+  "stress_testing": true,
+  "monte_carlo": true,
+  "overfit_risk_score": true,
+  "robustness_certificate": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V87_17_MULTI_ASSET_BACKTEST_AND_BENCHMARK"
+}

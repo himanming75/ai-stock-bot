@@ -1,0 +1,3 @@
+git add validation_v2 dashboard_v2/validation_v2_integration.py tools/run_walk_forward_stress_v87_09_to_v87_16.py tools/test_walk_forward_stress_v87_09_to_v87_16.py tools/install_check_v87_09_to_v87_16.py tools/verify_walk_forward_stress_v87_09_to_v87_16.py RUN_V87_09_TO_V87_16_WALK_FORWARD_STRESS.ps1 RUN_V87_09_TO_V87_16_TEST_AND_VERIFY.ps1 INSTALL_AND_SAVE_V87_09_TO_V87_16_ONE_CLICK.ps1 release/v87_09_to_v87_16 V87_09_TO_V87_16_MANIFEST.json GIT_COMMIT_V87_09_TO_V87_16.txt
+git commit -m "V87.09-V87.16 walk-forward and stress validation integrated"
+git push origin main

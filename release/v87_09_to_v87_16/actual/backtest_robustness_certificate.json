@@ -1,0 +1,42 @@
+{
+  "certificate_sha256": "09392701746b1881235df15eda6aaf1c7d8800fa29e82e69a2e89e76b76e9bb9",
+  "checks": {
+    "monte_carlo_loss_probability": true,
+    "overfit_risk_cap": true,
+    "positive_window_rate": true,
+    "stress_drawdown_cap": true,
+    "stress_return_floor": true,
+    "walk_forward_windows": true
+  },
+  "monte_carlo": {
+    "iterations": 500,
+    "median_ending_equity": 132034.7989,
+    "p05_ending_equity": 132034.7989,
+    "p95_ending_equity": 132034.7989,
+    "probability_of_loss_pct": 0.0
+  },
+  "overfit": {
+    "base_return_pct": 32.0348,
+    "overfit_risk_level": "MEDIUM",
+    "overfit_risk_score": 54.98,
+    "positive_window_pct": 33.33,
+    "walk_forward_average_return_pct": 2.6124,
+    "worst_stress_return_pct": 30.5892
+  },
+  "paper_only": true,
+  "state": "BACKTEST_ROBUSTNESS_VALIDATED",
+  "stress_summary": {
+    "scenario_count": 5,
+    "worst_drawdown_pct": 16.6603,
+    "worst_return_pct": 30.5892
+  },
+  "symbol": "AAPL",
+  "walk_forward_summary": {
+    "average_test_return_pct": 2.6124,
+    "maximum_test_return_pct": 7.8373,
+    "median_test_return_pct": 0.0,
+    "minimum_test_return_pct": 0.0,
+    "positive_window_pct": 33.33,
+    "window_count": 3
+  }
+}
