@@ -1,0 +1,17 @@
+{
+  "stage_range": "V88.01-V88.08",
+  "base_commit": "4ccb966",
+  "bundle_type": "WEB_UI_V2",
+  "default_url": "http://127.0.0.1:8601",
+  "local_backtest_execution": true,
+  "equity_curve_display": true,
+  "trade_log_display": true,
+  "risk_explainability_display": true,
+  "json_downloads": true,
+  "localhost_only": true,
+  "external_network_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "next_phase": "V88_09_PAPER_AUTOMATION_ORCHESTRATOR"
+}
