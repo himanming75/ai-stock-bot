@@ -1,0 +1,215 @@
+{
+  "account_cash": 90595.3,
+  "account_equity": 100042.3,
+  "actionable_intent_count": 2,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "current_weights": {
+    "BUY_HOLD": 0.0,
+    "CASH": 90.55699439137244,
+    "EMA_5_15": 0.0,
+    "MOMENTUM_5": 9.400723493962055
+  },
+  "duplicate_intent_count": 0,
+  "duplicate_intents": [],
+  "execution_authorized": false,
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V100_01_AI_RISK_MANAGER_CORE",
+  "observed_at": "2026-08-03T23:07:32.425995+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "planned_intent_count": 3,
+  "portfolio_rebalance_certificate_sha256": "c11df8859cb7e8c3e28ea935619294b90c957e794e597a4c5ac7011c63c02b07",
+  "rebalance_id": "b4af7963d843c1830d531a21",
+  "risk": {
+    "buy_notional": 25010.575,
+    "checks": {
+      "all_submission_disabled": true,
+      "intent_count_limit": true,
+      "minimum_projected_cash": true,
+      "projected_cash_nonnegative": true
+    },
+    "failed": [],
+    "passed": true,
+    "projected_cash": 65584.725,
+    "projected_cash_pct": 65.556994,
+    "sell_notional": 0
+  },
+  "source_portfolio_id": "0b75d5fbbbac4a6c22f20fc7",
+  "stage": "V99.64",
+  "stage_range": "V99.33-V99.64",
+  "state": "PORTFOLIO_REBALANCE_INTENTS_READY",
+  "status": "PASS",
+  "strategy_positions": [
+    {
+      "average_cost": 200.1,
+      "mark_price": 200.1,
+      "market_value": 9404.7,
+      "quantity": 47.0,
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL"
+    },
+    {
+      "average_cost": 0.0,
+      "mark_price": 0.0,
+      "market_value": 0.0,
+      "quantity": 0.0,
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    },
+    {
+      "average_cost": 0.0,
+      "mark_price": 0.0,
+      "market_value": 0.0,
+      "quantity": 0.0,
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY"
+    }
+  ],
+  "target_weights": {
+    "BUY_HOLD": 22.755807,
+    "CASH": 10.0,
+    "EMA_5_15": 28.135997,
+    "MOMENTUM_5": 39.108196
+  },
+  "turnover": {
+    "accepted_buy_notional": 25010.575,
+    "accepted_sell_notional": 0.0,
+    "intents": [
+      {
+        "current_weight_pct": 9.400723,
+        "intent_key": "2be7f21928098d524e57f6449e7f460cd83690076674eb8a23bb3b2c04427fdf",
+        "planned_notional": 25000.0,
+        "quantity": 124.937531,
+        "reference_price": 200.1,
+        "requested_notional": 29720.039261,
+        "side": "BUY",
+        "state": "PLANNED",
+        "strategy_id": "MOMENTUM_5",
+        "submission_allowed": false,
+        "symbol": "AAPL",
+        "target_weight_pct": 39.108196,
+        "weight_gap_pct": 29.707473
+      },
+      {
+        "current_weight_pct": 0.0,
+        "intent_key": "8f60eecd7f3b21d59aa3518153a680cc397731b7f8b3d080b380f4b976895cf0",
+        "planned_notional": 10.575,
+        "quantity": 0.025179,
+        "reference_price": 420.0,
+        "requested_notional": 28147.898527,
+        "side": "BUY",
+        "state": "PARTIALLY_LIMITED_CASH_OR_TURNOVER",
+        "strategy_id": "EMA_5_15",
+        "submission_allowed": false,
+        "symbol": "MSFT",
+        "target_weight_pct": 28.135997,
+        "weight_gap_pct": 28.135997
+      },
+      {
+        "current_weight_pct": 0.0,
+        "intent_key": "c06c716635c2a70eba291b986a2132f10fbeba4a49ff4523920875664c2e801b",
+        "planned_notional": 0.0,
+        "quantity": 0.0,
+        "reference_price": 550.0,
+        "requested_notional": 22765.432706,
+        "side": "BUY",
+        "state": "LIMITED_TURNOVER",
+        "strategy_id": "BUY_HOLD",
+        "submission_allowed": false,
+        "symbol": "SPY",
+        "target_weight_pct": 22.755807,
+        "weight_gap_pct": 22.755807
+      }
+    ],
+    "maximum_total_notional": 25010.575,
+    "maximum_turnover_pct": 25.0,
+    "minimum_projected_cash_pct": 10.0,
+    "projected_cash_after_limits": 65584.725,
+    "projected_cash_pct_after_limits": 65.556994,
+    "required_cash": 10004.23,
+    "used_total_notional": 25010.575,
+    "used_turnover_pct": 25.0
+  },
+  "unique_intents": [
+    {
+      "current_weight_pct": 9.400723,
+      "intent_key": "2be7f21928098d524e57f6449e7f460cd83690076674eb8a23bb3b2c04427fdf",
+      "planned_notional": 25000.0,
+      "quantity": 124.937531,
+      "reference_price": 200.1,
+      "requested_notional": 29720.039261,
+      "side": "BUY",
+      "state": "PLANNED",
+      "strategy_id": "MOMENTUM_5",
+      "submission_allowed": false,
+      "symbol": "AAPL",
+      "target_weight_pct": 39.108196,
+      "weight_gap_pct": 29.707473
+    },
+    {
+      "current_weight_pct": 0.0,
+      "intent_key": "8f60eecd7f3b21d59aa3518153a680cc397731b7f8b3d080b380f4b976895cf0",
+      "planned_notional": 10.575,
+      "quantity": 0.025179,
+      "reference_price": 420.0,
+      "requested_notional": 28147.898527,
+      "side": "BUY",
+      "state": "PARTIALLY_LIMITED_CASH_OR_TURNOVER",
+      "strategy_id": "EMA_5_15",
+      "submission_allowed": false,
+      "symbol": "MSFT",
+      "target_weight_pct": 28.135997,
+      "weight_gap_pct": 28.135997
+    },
+    {
+      "current_weight_pct": 0.0,
+      "intent_key": "c06c716635c2a70eba291b986a2132f10fbeba4a49ff4523920875664c2e801b",
+      "planned_notional": 0.0,
+      "quantity": 0.0,
+      "reference_price": 550.0,
+      "requested_notional": 22765.432706,
+      "side": "BUY",
+      "state": "LIMITED_TURNOVER",
+      "strategy_id": "BUY_HOLD",
+      "submission_allowed": false,
+      "symbol": "SPY",
+      "target_weight_pct": 22.755807,
+      "weight_gap_pct": 22.755807
+    }
+  ],
+  "weight_comparison": [
+    {
+      "current_weight_pct": 0.0,
+      "strategy_id": "BUY_HOLD",
+      "target_weight_pct": 22.755807,
+      "weight_gap_pct": 22.755807
+    },
+    {
+      "current_weight_pct": 90.556994,
+      "strategy_id": "CASH",
+      "target_weight_pct": 10.0,
+      "weight_gap_pct": -80.556994
+    },
+    {
+      "current_weight_pct": 0.0,
+      "strategy_id": "EMA_5_15",
+      "target_weight_pct": 28.135997,
+      "weight_gap_pct": 28.135997
+    },
+    {
+      "current_weight_pct": 9.400723,
+      "strategy_id": "MOMENTUM_5",
+      "target_weight_pct": 39.108196,
+      "weight_gap_pct": 29.707473
+    }
+  ],
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

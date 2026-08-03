@@ -1,0 +1,23 @@
+{
+  "policy_version": "V99.33",
+  "minimum_rebalance_gap_pct": 2.0,
+  "minimum_trade_notional": 100.0,
+  "maximum_trade_notional": 25000.0,
+  "maximum_turnover_pct": 25.0,
+  "maximum_intent_count": 10,
+  "minimum_projected_cash_pct": 10.0,
+  "strategy_symbol_map": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL"
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY"
+    }
+  ]
+}
