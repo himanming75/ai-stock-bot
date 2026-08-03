@@ -1,0 +1,23 @@
+{
+  "bar_count": 120,
+  "cache_hit": false,
+  "dataset_exists": true,
+  "dataset_id": "AAPL_SAMPLE",
+  "dataset_path": "C:\\stock-bot\\release\\v98_01_to_v98_32\\data\\sample_ohlcv.csv",
+  "end_index": 120,
+  "ending_equity": 126370.9919,
+  "family": "BUY_HOLD",
+  "job_id": "cc3991729afd890d579445aa",
+  "maximum_drawdown_pct": 2.324976,
+  "parameters": {},
+  "start_index": 0,
+  "starting_equity": 100000.0,
+  "state": "COMPLETED",
+  "status": "PASS",
+  "strategy_id": "BUY_HOLD",
+  "symbol": "AAPL",
+  "total_return_pct": 26.370992,
+  "trade_count": 0,
+  "win_rate_pct": 85.714286,
+  "window_id": "FULL"
+}

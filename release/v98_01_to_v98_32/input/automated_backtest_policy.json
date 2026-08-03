@@ -1,0 +1,51 @@
+{
+  "policy_version": "V98.01",
+  "starting_equity": 100000.0,
+  "minimum_bars": 30,
+  "commission_bps": 1.0,
+  "slippage_bps": 2.0,
+  "strategies": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "family": "MOMENTUM",
+      "parameters": {
+        "period": 5
+      },
+      "enabled": true
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "family": "EMA_CROSS",
+      "parameters": {
+        "fast": 5,
+        "slow": 15
+      },
+      "enabled": true
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "family": "BUY_HOLD",
+      "parameters": {},
+      "enabled": true
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "AAPL_SAMPLE",
+      "symbol": "AAPL",
+      "path": "release/v98_01_to_v98_32/data/sample_ohlcv.csv"
+    }
+  ],
+  "windows": [
+    {
+      "window_id": "FULL",
+      "start_index": 0,
+      "end_index": 120
+    },
+    {
+      "window_id": "RECENT_80",
+      "start_index": 40,
+      "end_index": 120
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "bar_count": 80,
+  "cache_hit": false,
+  "dataset_exists": true,
+  "dataset_id": "AAPL_SAMPLE",
+  "dataset_path": "C:\\stock-bot\\release\\v98_01_to_v98_32\\data\\sample_ohlcv.csv",
+  "end_index": 120,
+  "ending_equity": 110739.6628,
+  "family": "EMA_CROSS",
+  "job_id": "d4e6f6d8580e54d9f3f4e0e3",
+  "maximum_drawdown_pct": 0.89235,
+  "parameters": {
+    "fast": 5,
+    "slow": 15
+  },
+  "start_index": 40,
+  "starting_equity": 100000.0,
+  "state": "COMPLETED",
+  "status": "PASS",
+  "strategy_id": "EMA_5_15",
+  "symbol": "AAPL",
+  "total_return_pct": 10.739663,
+  "trade_count": 3,
+  "win_rate_pct": 89.285714,
+  "window_id": "RECENT_80"
+}

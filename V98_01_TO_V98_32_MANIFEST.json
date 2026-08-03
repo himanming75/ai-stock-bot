@@ -1,0 +1,23 @@
+{
+  "stage_range": "V98.01-V98.32",
+  "base_commit": "9be9639",
+  "strategy_discovery": true,
+  "dataset_discovery": true,
+  "window_matrix": true,
+  "deterministic_job_ids": true,
+  "isolated_job_execution": true,
+  "failure_containment": true,
+  "local_result_cache": true,
+  "result_aggregation": true,
+  "ranking": true,
+  "run_ledger": true,
+  "certificate": true,
+  "paper_only": true,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V98.33-V98.64"
+}

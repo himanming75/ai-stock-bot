@@ -1,0 +1,25 @@
+{
+  "bar_count": 80,
+  "cache_hit": false,
+  "dataset_exists": true,
+  "dataset_id": "AAPL_SAMPLE",
+  "dataset_path": "C:\\stock-bot\\release\\v98_01_to_v98_32\\data\\sample_ohlcv.csv",
+  "end_index": 120,
+  "ending_equity": 111829.6098,
+  "family": "MOMENTUM",
+  "job_id": "ffe47afb29b95b9ad323ec68",
+  "maximum_drawdown_pct": 0.372208,
+  "parameters": {
+    "period": 5
+  },
+  "start_index": 40,
+  "starting_equity": 100000.0,
+  "state": "COMPLETED",
+  "status": "PASS",
+  "strategy_id": "MOMENTUM_5",
+  "symbol": "AAPL",
+  "total_return_pct": 11.82961,
+  "trade_count": 3,
+  "win_rate_pct": 96.226415,
+  "window_id": "RECENT_80"
+}
