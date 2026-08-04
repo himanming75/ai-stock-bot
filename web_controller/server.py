@@ -8,64 +8,44 @@ from web_controller.actions import run_action
 from web_controller.strategy_api import get_payload as get_strategy,update_payload,validate_payload,restore_payload
 from web_controller.paper_api import get_payload as get_paper,run_payload as run_paper,save_settings_payload
 from web_controller.operations_api import get_payload as get_operations,save_payload as save_operations,run_payload as run_operations,recovery_payload
+from web_controller.qualification_api import get_payload as get_qualification,run_payload as run_qualification
 
 class ControllerHandler(BaseHTTPRequestHandler):
     root=Path.cwd();static_root=Path.cwd()/"web_controller/static"
-    def _json(self,status:int,value:object)->None:
-        raw=json.dumps(value,indent=2,sort_keys=True).encode("utf-8")
-        self.send_response(status);self.send_header("Content-Type","application/json; charset=utf-8")
-        self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store");self.end_headers();self.wfile.write(raw)
-    def _body(self)->dict:
-        length=int(self.headers.get("Content-Length","0") or 0)
-        if length<=0:return {}
-        try:return json.loads(self.rfile.read(length).decode("utf-8"))
+    def _json(self,status,value):
+        raw=json.dumps(value,indent=2,sort_keys=True).encode()
+        self.send_response(status);self.send_header("Content-Type","application/json; charset=utf-8");self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store");self.end_headers();self.wfile.write(raw)
+    def _body(self):
+        n=int(self.headers.get("Content-Length","0") or 0)
+        try:return json.loads(self.rfile.read(n).decode()) if n else {}
         except Exception:return {}
-    def do_GET(self)->None:
-        path=urlparse(self.path).path
-        if path=="/api/dashboard":self._json(200,build_dashboard(self.root));return
-        if path=="/api/logs":self._json(200,get_logs(self.root));return
-        if path=="/api/strategy-config":self._json(200,get_strategy(self.root));return
-        if path=="/api/paper-operations":self._json(200,get_paper(self.root));return
-        if path=="/api/operations-manager":self._json(200,get_operations(self.root));return
-        file=self.static_root/("index.html" if path in {"/","/index.html"} else path.lstrip("/"))
-        try:
-            resolved=file.resolve()
-            if self.static_root.resolve() not in resolved.parents and resolved!=self.static_root.resolve():
-                self._json(403,{"error":"FORBIDDEN"});return
-            if not resolved.exists() or not resolved.is_file():
-                self._json(404,{"error":"NOT_FOUND"});return
-            raw=resolved.read_bytes();mime=mimetypes.guess_type(str(resolved))[0] or "application/octet-stream"
-            self.send_response(200);self.send_header("Content-Type",mime);self.send_header("Content-Length",str(len(raw)));self.end_headers();self.wfile.write(raw)
-        except Exception as exc:self._json(500,{"error":str(exc)})
-    def do_POST(self)->None:
-        path=urlparse(self.path).path;body=self._body()
-        if path=="/api/emergency-stop":
-            self._json(200,{"ok":True,"emergency_stop":set_emergency(self.root,bool(body.get("enabled",True)),str(body.get("reason","")))});return
-        if path=="/api/action":
-            r=run_action(self.root,str(body.get("name","")));self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/strategy-config/validate":
-            r=validate_payload(body);self._json(200 if r.get("valid") else 400,r);return
-        if path=="/api/strategy-config/save":
-            r=update_payload(self.root,body);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/strategy-config/restore":
-            r=restore_payload(self.root);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/paper-operations/action":
-            r=run_paper(self.root,body);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/paper-operations/settings":
-            r=save_settings_payload(self.root,body);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/operations-manager/settings":
-            r=save_operations(self.root,body);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/operations-manager/job":
-            r=run_operations(self.root,body);self._json(200 if r.get("ok") else 409,r);return
-        if path=="/api/operations-manager/recovery":
-            self._json(200,recovery_payload(self.root));return
-        self._json(404,{"error":"NOT_FOUND"})
+    def do_GET(self):
+        p=urlparse(self.path).path
+        routes={"/api/dashboard":lambda:build_dashboard(self.root),"/api/logs":lambda:get_logs(self.root),"/api/strategy-config":lambda:get_strategy(self.root),"/api/paper-operations":lambda:get_paper(self.root),"/api/operations-manager":lambda:get_operations(self.root),"/api/qualification":lambda:get_qualification(self.root)}
+        if p in routes:self._json(200,routes[p]());return
+        file=self.static_root/("index.html" if p in {"/","/index.html"} else p.lstrip("/"))
+        if not file.exists():self._json(404,{"error":"NOT_FOUND"});return
+        raw=file.read_bytes();self.send_response(200);self.send_header("Content-Type",mimetypes.guess_type(str(file))[0] or "application/octet-stream");self.send_header("Content-Length",str(len(raw)));self.end_headers();self.wfile.write(raw)
+    def do_POST(self):
+        p=urlparse(self.path).path;b=self._body()
+        if p=="/api/emergency-stop":r={"ok":True,"emergency_stop":set_emergency(self.root,bool(b.get("enabled",True)),str(b.get("reason","")))}
+        elif p=="/api/action":r=run_action(self.root,str(b.get("name","")))
+        elif p=="/api/strategy-config/validate":r=validate_payload(b)
+        elif p=="/api/strategy-config/save":r=update_payload(self.root,b)
+        elif p=="/api/strategy-config/restore":r=restore_payload(self.root)
+        elif p=="/api/paper-operations/action":r=run_paper(self.root,b)
+        elif p=="/api/paper-operations/settings":r=save_settings_payload(self.root,b)
+        elif p=="/api/operations-manager/settings":r=save_operations(self.root,b)
+        elif p=="/api/operations-manager/job":r=run_operations(self.root,b)
+        elif p=="/api/operations-manager/recovery":r=recovery_payload(self.root)
+        elif p=="/api/qualification/run":r=run_qualification(self.root)
+        else:self._json(404,{"error":"NOT_FOUND"});return
+        self._json(200 if r.get("ok",True) else 409,r)
     def log_message(self,format,*args):print("[WEB]",format%args)
 
-def serve(root:Path,host:str="127.0.0.1",port:int=8765)->None:
+def serve(root:Path,host="127.0.0.1",port=8765):
     handler=type("ConfiguredControllerHandler",(ControllerHandler,),{"root":root,"static_root":root/"web_controller/static"})
-    server=ThreadingHTTPServer((host,port),handler)
-    print(f"AI Stock Bot Web Controller: http://{host}:{port}");print("Press Ctrl+C to stop.")
+    server=ThreadingHTTPServer((host,port),handler);print(f"AI Stock Bot Web Controller: http://{host}:{port}");print("Press Ctrl+C to stop.")
     try:server.serve_forever()
     except KeyboardInterrupt:pass
     finally:server.server_close()

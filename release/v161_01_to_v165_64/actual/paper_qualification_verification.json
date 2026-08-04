@@ -1,0 +1,58 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "live_disabled": true,
+    "live_not_ready": true,
+    "live_orders_zero": true,
+    "paper_only": true,
+    "qualification_api_present": true,
+    "stage": true,
+    "status": true
+  },
+  "failed": [],
+  "metrics": {
+    "average_trade_pnl": 542.8333,
+    "closed_trades": 6,
+    "gross_loss": 994.0,
+    "gross_profit": 4251.0,
+    "loss_count": 2,
+    "maximum_drawdown_pct": 0.0,
+    "profit_factor": 4.2767,
+    "sharpe": 10.247,
+    "total_realized_pnl": 3257.0,
+    "trading_days": 1,
+    "win_count": 2,
+    "win_rate_pct": 33.3333
+  },
+  "qualification": {
+    "checks": {
+      "critical_errors": true,
+      "duplicate_orders": true,
+      "live_submission_disabled": true,
+      "maximum_drawdown": true,
+      "minimum_closed_trades": false,
+      "minimum_profit_factor": true,
+      "minimum_sharpe": true,
+      "minimum_trading_days": false,
+      "minimum_win_rate": false,
+      "paper_only": true,
+      "reconciliation_errors": true,
+      "strategy_score": true
+    },
+    "failed": [
+      "minimum_trading_days",
+      "minimum_closed_trades",
+      "minimum_win_rate"
+    ],
+    "passed": false
+  },
+  "recommendation": {
+    "action": "CONTINUE_PAPER_COLLECTION",
+    "best_strategy": "MOMENTUM_5",
+    "best_strategy_score": 100.0
+  },
+  "state": "PAPER_QUALIFICATION_IN_PROGRESS",
+  "verification_stage": "V165.64",
+  "verification_status": "PASS"
+}

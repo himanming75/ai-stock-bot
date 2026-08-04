@@ -1,0 +1,15 @@
+{
+  "minimum_trading_days": 20,
+  "minimum_closed_trades": 20,
+  "minimum_win_rate_pct": 45.0,
+  "minimum_profit_factor": 1.1,
+  "minimum_sharpe": 0.5,
+  "maximum_drawdown_pct": 10.0,
+  "maximum_reconciliation_errors": 0,
+  "maximum_duplicate_orders": 0,
+  "maximum_critical_errors": 0,
+  "minimum_strategy_score": 60.0,
+  "paper_only": true,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

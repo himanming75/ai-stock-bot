@@ -1,0 +1,4 @@
+{"actual_live_orders_submitted": 0, "closed_trades": 0, "observed_at": "2026-08-04T07:22:58.646223+00:00", "passed": false, "state": "PAPER_QUALIFICATION_IN_PROGRESS", "trading_days": 0}
+{"actual_live_orders_submitted": 0, "closed_trades": 0, "observed_at": "2026-08-04T07:23:02.437547+00:00", "passed": false, "state": "PAPER_QUALIFICATION_IN_PROGRESS", "trading_days": 0}
+{"actual_live_orders_submitted": 0, "closed_trades": 6, "observed_at": "2026-08-04T07:23:47.436882+00:00", "passed": false, "state": "PAPER_QUALIFICATION_IN_PROGRESS", "trading_days": 1}
+{"actual_live_orders_submitted": 0, "closed_trades": 6, "observed_at": "2026-08-04T07:23:47.815965+00:00", "passed": false, "state": "PAPER_QUALIFICATION_IN_PROGRESS", "trading_days": 1}

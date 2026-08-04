@@ -1,0 +1,42 @@
+{
+  "strategies": [
+    {
+      "grade": "A",
+      "metrics": {
+        "average_trade_pnl": 2125.5,
+        "closed_trades": 2,
+        "gross_loss": 0,
+        "gross_profit": 4251.0,
+        "loss_count": 0,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 999.0,
+        "sharpe": 10.247,
+        "total_realized_pnl": 4251.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 100.0
+      },
+      "score": 100.0,
+      "strategy_id": "MOMENTUM_5"
+    },
+    {
+      "grade": "F",
+      "metrics": {
+        "average_trade_pnl": -248.5,
+        "closed_trades": 4,
+        "gross_loss": 994.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 0.0,
+        "sharpe": 10.247,
+        "total_realized_pnl": -994.0,
+        "trading_days": 1,
+        "win_count": 0,
+        "win_rate_pct": 0.0
+      },
+      "score": 40.0,
+      "strategy_id": "EMA_5_15"
+    }
+  ]
+}

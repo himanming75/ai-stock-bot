@@ -1,0 +1,16 @@
+{
+  "stage_range": "V161.01-V165.64",
+  "base_commit": "e4865b5428771587ae874b57c622295cd50a9424",
+  "paper_metrics": true,
+  "profit_factor": true,
+  "sharpe_ratio": true,
+  "maximum_drawdown": true,
+  "strategy_ranking": true,
+  "rolling_5_20_60_day_scores": true,
+  "qualification_gate": true,
+  "web_qualification_tab": true,
+  "live_trading_ready": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V166.01-V170.64 Live Read-Only Approval Center"
+}
