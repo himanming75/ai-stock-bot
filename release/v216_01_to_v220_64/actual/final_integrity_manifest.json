@@ -1,0 +1,55 @@
+{
+  "all_present": true,
+  "file_count": 8,
+  "files": [
+    {
+      "path": "V216_01_TO_V220_64_MANIFEST.json",
+      "present": true,
+      "sha256": "8e23d80998d6801ff2a2bc3a37ffc33fe4b85de3126e28739b43ea9cbd82c7e6",
+      "size_bytes": 865
+    },
+    {
+      "path": "RUN_V216_01_TO_V220_64.ps1",
+      "present": true,
+      "sha256": "d228d578c49515096a97f36dfc4e6474f99222dd2cf148432408e33dc59e224c",
+      "size_bytes": 139
+    },
+    {
+      "path": "RUN_V216_01_TO_V220_64_TEST_AND_VERIFY.ps1",
+      "present": true,
+      "sha256": "b1efec772f3d9cd30bed90ff4f5d59c281fda6dd3dbd71e29677bbbd44f0dbf6",
+      "size_bytes": 492
+    },
+    {
+      "path": "INSTALL_AND_SAVE_V216_01_TO_V220_64_ONE_CLICK.ps1",
+      "present": true,
+      "sha256": "f0429c0b4225fdc6e90092c8eb745448343b4d5d11316e0c1f8d44cf6f88079d",
+      "size_bytes": 2772
+    },
+    {
+      "path": "final_production_release/engine.py",
+      "present": true,
+      "sha256": "ec7f53377363bbeb2d184c5acc4c3748f853c2133efbfa51e1ffe4491c064f2b",
+      "size_bytes": 3559
+    },
+    {
+      "path": "release/v216_01_to_v220_64/config/final_production_release_policy.json",
+      "present": true,
+      "sha256": "7c160653a32746122b5f2b83a612c4c40a9a3522777e80af42c43f2a4361905b",
+      "size_bytes": 542
+    },
+    {
+      "path": "release/v216_01_to_v220_64/docs/FINAL_OPERATOR_GUIDE.md",
+      "present": true,
+      "sha256": "5397048a1b35223a54dcb9998804d08cc664b1d77a8ed39741f474ab4abc60c8",
+      "size_bytes": 1151
+    },
+    {
+      "path": "release/v216_01_to_v220_64/rollback/RESTORE_TO_V215.ps1",
+      "present": true,
+      "sha256": "c2d7dbf6d9ff1308646dcab565d8cd0516c224f4a5ca626b76573ec118c1d106",
+      "size_bytes": 706
+    }
+  ],
+  "generated_at": "2026-08-04T08:44:15.817593+00:00"
+}

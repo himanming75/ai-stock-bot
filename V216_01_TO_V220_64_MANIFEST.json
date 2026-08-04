@@ -1,0 +1,23 @@
+{
+  "stage_range": "V216.01-V220.64",
+  "release_name": "AI_STOCK_BOT_V220_FINAL_PRODUCTION",
+  "base_commit": "46c700805ea5e167cab01bf564ba162d435f9588",
+  "repository": "himanming75/ai-stock-bot",
+  "final_stage_inventory": true,
+  "integration_audit": true,
+  "integrity_manifest": true,
+  "release_certificate": true,
+  "offline_final_bundle": true,
+  "safe_rollback_to_v215": true,
+  "web_final_release_api": true,
+  "paper_trading_ready": true,
+  "live_trading_automatically_enabled": false,
+  "manual_live_activation_required": true,
+  "automatic_strategy_promotion_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_write_enabled": false,
+  "required_historical_live_orders": 0,
+  "next_phase": "Post-V220 Paper Operation and Controlled Live Qualification"
+}

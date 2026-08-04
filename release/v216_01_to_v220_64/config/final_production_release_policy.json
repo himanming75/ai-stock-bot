@@ -1,0 +1,15 @@
+{
+  "release_name": "AI_STOCK_BOT_V220_FINAL_PRODUCTION",
+  "base_commit": "46c700805ea5e167cab01bf564ba162d435f9588",
+  "required_stage_count": 16,
+  "require_web_controller": true,
+  "require_rollback_script": true,
+  "require_operator_guide": true,
+  "require_all_live_orders_zero": true,
+  "automatic_strategy_promotion_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

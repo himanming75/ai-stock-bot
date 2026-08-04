@@ -1,0 +1,95 @@
+{
+  "all_modules_present": true,
+  "all_required_files_present": true,
+  "evaluated_at": "2026-08-04T08:44:15.805951+00:00",
+  "module_count": 8,
+  "modules": [
+    {
+      "import_spec_available": true,
+      "module": "web_controller",
+      "path": "web_controller/server.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "paper_web_ops",
+      "path": "paper_web_ops/runner.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "production_scheduler",
+      "path": "production_scheduler/engine.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "portfolio_broker",
+      "path": "portfolio_broker/engine.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "multi_broker_production",
+      "path": "multi_broker_production/engine.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "broker_plugins",
+      "path": "broker_plugins/engine.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "risk_engine_v2",
+      "path": "risk_engine_v2/engine.py",
+      "present": true,
+      "python_file": true
+    },
+    {
+      "import_spec_available": true,
+      "module": "ai_strategy_ensemble",
+      "path": "ai_strategy_ensemble/engine.py",
+      "present": true,
+      "python_file": true
+    }
+  ],
+  "present_module_count": 8,
+  "required_files": [
+    {
+      "path": "RUN_V141_01_TO_V145_64_WEB_CONTROLLER.ps1",
+      "present": true
+    },
+    {
+      "path": "RUN_V186_01_TO_V190_64.ps1",
+      "present": true
+    },
+    {
+      "path": "RUN_V191_01_TO_V195_64.ps1",
+      "present": true
+    },
+    {
+      "path": "RUN_V206_01_TO_V210_64.ps1",
+      "present": true
+    },
+    {
+      "path": "RUN_V211_01_TO_V215_64.ps1",
+      "present": true
+    },
+    {
+      "path": "release/v216_01_to_v220_64/rollback/RESTORE_TO_V215.ps1",
+      "present": true
+    },
+    {
+      "path": "release/v216_01_to_v220_64/docs/FINAL_OPERATOR_GUIDE.md",
+      "present": true
+    }
+  ]
+}

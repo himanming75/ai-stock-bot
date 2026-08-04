@@ -1,0 +1,404 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_order_submission_enabled": false,
+  "automatic_strategy_promotion_enabled": false,
+  "broker_write_enabled": false,
+  "certificate": {
+    "actual_live_orders_submitted": 0,
+    "automatic_order_submission_enabled": false,
+    "broker_write_enabled": false,
+    "certificate_type": "AI_STOCK_BOT_V220_FINAL_PRODUCTION_CERTIFICATE",
+    "checks": {
+      "all_expected_stages_present": false,
+      "automatic_order_submission_disabled": true,
+      "automatic_strategy_promotion_disabled": true,
+      "broker_write_disabled": true,
+      "final_integrity_present": true,
+      "historical_live_orders_zero": true,
+      "integration_modules_present": true,
+      "live_network_write_disabled": true,
+      "live_submission_disabled": true,
+      "no_unsafe_stage_flags": true,
+      "policy_valid": true,
+      "required_files_present": true
+    },
+    "development_integration_complete": false,
+    "expected_stage_count": 16,
+    "final_release_ready": false,
+    "integration_modules_present": 8,
+    "integrity_all_present": true,
+    "issued_at": "2026-08-04T08:44:15.820027+00:00",
+    "live_submission_enabled": false,
+    "live_trading_automatically_enabled": false,
+    "manual_live_activation_required": true,
+    "paper_operations_supported": true,
+    "present_stage_count": 15,
+    "release_stage": "V220.64"
+  },
+  "checks": {
+    "all_expected_stages_present": false,
+    "automatic_order_submission_disabled": true,
+    "automatic_strategy_promotion_disabled": true,
+    "broker_write_disabled": true,
+    "final_integrity_present": true,
+    "historical_live_orders_zero": true,
+    "integration_modules_present": true,
+    "live_network_write_disabled": true,
+    "live_submission_disabled": true,
+    "no_unsafe_stage_flags": true,
+    "policy_valid": true,
+    "required_files_present": true
+  },
+  "development_complete": false,
+  "failed": [
+    "all_expected_stages_present"
+  ],
+  "final_release_ready": false,
+  "integration": {
+    "all_modules_present": true,
+    "all_required_files_present": true,
+    "evaluated_at": "2026-08-04T08:44:15.805951+00:00",
+    "module_count": 8,
+    "modules": [
+      {
+        "import_spec_available": true,
+        "module": "web_controller",
+        "path": "web_controller/server.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "paper_web_ops",
+        "path": "paper_web_ops/runner.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "production_scheduler",
+        "path": "production_scheduler/engine.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "portfolio_broker",
+        "path": "portfolio_broker/engine.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "multi_broker_production",
+        "path": "multi_broker_production/engine.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "broker_plugins",
+        "path": "broker_plugins/engine.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "risk_engine_v2",
+        "path": "risk_engine_v2/engine.py",
+        "present": true,
+        "python_file": true
+      },
+      {
+        "import_spec_available": true,
+        "module": "ai_strategy_ensemble",
+        "path": "ai_strategy_ensemble/engine.py",
+        "present": true,
+        "python_file": true
+      }
+    ],
+    "present_module_count": 8,
+    "required_files": [
+      {
+        "path": "RUN_V141_01_TO_V145_64_WEB_CONTROLLER.ps1",
+        "present": true
+      },
+      {
+        "path": "RUN_V186_01_TO_V190_64.ps1",
+        "present": true
+      },
+      {
+        "path": "RUN_V191_01_TO_V195_64.ps1",
+        "present": true
+      },
+      {
+        "path": "RUN_V206_01_TO_V210_64.ps1",
+        "present": true
+      },
+      {
+        "path": "RUN_V211_01_TO_V215_64.ps1",
+        "present": true
+      },
+      {
+        "path": "release/v216_01_to_v220_64/rollback/RESTORE_TO_V215.ps1",
+        "present": true
+      },
+      {
+        "path": "release/v216_01_to_v220_64/docs/FINAL_OPERATOR_GUIDE.md",
+        "present": true
+      }
+    ]
+  },
+  "integrity": {
+    "all_present": true,
+    "file_count": 8,
+    "files": [
+      {
+        "path": "V216_01_TO_V220_64_MANIFEST.json",
+        "present": true,
+        "sha256": "8e23d80998d6801ff2a2bc3a37ffc33fe4b85de3126e28739b43ea9cbd82c7e6",
+        "size_bytes": 865
+      },
+      {
+        "path": "RUN_V216_01_TO_V220_64.ps1",
+        "present": true,
+        "sha256": "d228d578c49515096a97f36dfc4e6474f99222dd2cf148432408e33dc59e224c",
+        "size_bytes": 139
+      },
+      {
+        "path": "RUN_V216_01_TO_V220_64_TEST_AND_VERIFY.ps1",
+        "present": true,
+        "sha256": "b1efec772f3d9cd30bed90ff4f5d59c281fda6dd3dbd71e29677bbbd44f0dbf6",
+        "size_bytes": 492
+      },
+      {
+        "path": "INSTALL_AND_SAVE_V216_01_TO_V220_64_ONE_CLICK.ps1",
+        "present": true,
+        "sha256": "f0429c0b4225fdc6e90092c8eb745448343b4d5d11316e0c1f8d44cf6f88079d",
+        "size_bytes": 2772
+      },
+      {
+        "path": "final_production_release/engine.py",
+        "present": true,
+        "sha256": "ec7f53377363bbeb2d184c5acc4c3748f853c2133efbfa51e1ffe4491c064f2b",
+        "size_bytes": 3559
+      },
+      {
+        "path": "release/v216_01_to_v220_64/config/final_production_release_policy.json",
+        "present": true,
+        "sha256": "7c160653a32746122b5f2b83a612c4c40a9a3522777e80af42c43f2a4361905b",
+        "size_bytes": 542
+      },
+      {
+        "path": "release/v216_01_to_v220_64/docs/FINAL_OPERATOR_GUIDE.md",
+        "present": true,
+        "sha256": "5397048a1b35223a54dcb9998804d08cc664b1d77a8ed39741f474ab4abc60c8",
+        "size_bytes": 1151
+      },
+      {
+        "path": "release/v216_01_to_v220_64/rollback/RESTORE_TO_V215.ps1",
+        "present": true,
+        "sha256": "c2d7dbf6d9ff1308646dcab565d8cd0516c224f4a5ca626b76573ec118c1d106",
+        "size_bytes": 706
+      }
+    ],
+    "generated_at": "2026-08-04T08:44:15.817593+00:00"
+  },
+  "inventory": {
+    "expected_stage_count": 16,
+    "generated_at": "2026-08-04T08:44:15.803850+00:00",
+    "missing_stages": [
+      "V160_OPERATIONS"
+    ],
+    "present_stage_count": 15,
+    "rows": [
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v120_final/actual/v120_final_release_result.json",
+        "present": true,
+        "sha256": "5fa6debf9e888631ba926e40190ab3a6dc13b1042b99d5644a7d6f1116e4d5c5",
+        "stage": "V120_FINAL",
+        "state": "V120_FINAL_PRODUCTION_RELEASE_COMPLETE",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v140_final/actual/v140_final_release_result.json",
+        "present": true,
+        "sha256": "8244bdf90abc1cf316159ba0818800da27c45145d24add1c056138427b076741",
+        "stage": "V140_FINAL",
+        "state": "V140_FINAL_AUTONOMOUS_RELEASE_COMPLETE",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v141_01_to_v145_64/actual/web_controller_verification.json",
+        "present": true,
+        "sha256": "3de5d5dbfe791214633f73c39175889686603a7307e9e37d44f640317b0af90b",
+        "stage": "V145_WEB",
+        "state": "NOT_AVAILABLE",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v151_01_to_v155_64/actual/paper_web_operations_verification.json",
+        "present": true,
+        "sha256": "1bc2f7f4accf5b3154d59a9cb2bc6a5e27db77030c9a6fa035e5345168e4b5db",
+        "stage": "V155_PAPER_WEB",
+        "state": "NOT_AVAILABLE",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v156_01_to_v160_64/actual/operations_center_verification.json",
+        "present": false,
+        "sha256": null,
+        "stage": "V160_OPERATIONS",
+        "state": "NOT_AVAILABLE",
+        "status": "NOT_AVAILABLE",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v161_01_to_v165_64/actual/paper_qualification_result.json",
+        "present": true,
+        "sha256": "0b6d9f13cf2721f08d501e43f42e3aefa104eda688730b82786375d348b99482",
+        "stage": "V165_QUALIFICATION",
+        "state": "PAPER_QUALIFICATION_IN_PROGRESS",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v166_01_to_v170_64/actual/live_read_only_approval_result.json",
+        "present": true,
+        "sha256": "b0aded7658fb321c15153274f0a8acc5f39deb2ed923390cbb1f236f190eb356",
+        "stage": "V170_LIVE_APPROVAL",
+        "state": "LIVE_READ_ONLY_APPROVAL_BLOCKED",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v171_01_to_v175_64/actual/controlled_micro_live_result.json",
+        "present": true,
+        "sha256": "e4ee50a6708bba9a530967a46092d0bb6ea0e248dadb510a5a725d5b21ef0ed9",
+        "stage": "V175_MICRO_LIVE",
+        "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v176_01_to_v180_64/actual/restricted_live_automation_result.json",
+        "present": true,
+        "sha256": "683f3425bc69d104a9cf85d093c8b8d83317e393963d9695dde31372dab14871",
+        "stage": "V180_RESTRICTED_LIVE",
+        "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v181_01_to_v185_64/actual/portfolio_broker_result.json",
+        "present": true,
+        "sha256": "65cfa70af2d617331b02d48bd0a50443ad83d37f4779204951922f5f55dad9f2",
+        "stage": "V185_PORTFOLIO",
+        "state": "PORTFOLIO_BROKER_ADAPTER_FOUNDATION_READY",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v186_01_to_v190_64/actual/production_operations_result.json",
+        "present": true,
+        "sha256": "6d88d389e73d0024b2fc898f89579fae44d3907d6d70ec576a83ebdb8291e058",
+        "stage": "V190_OPERATIONS_REPORTING",
+        "state": "PRODUCTION_OPERATIONS_READY",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v191_01_to_v195_64/actual/production_scheduler_result.json",
+        "present": true,
+        "sha256": "ddd6d49e9ab9ff59c989c7b2e62b2648c3dfc08eb266b4abd7e1a86836e6a9dc",
+        "stage": "V195_SCHEDULER",
+        "state": "PRODUCTION_SCHEDULER_READY",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v196_01_to_v200_64/actual/multi_broker_production_result.json",
+        "present": true,
+        "sha256": "3062b67bb005b96e1a6d7466b84f724d5553e64567accf17781b06b176be147f",
+        "stage": "V200_MULTI_BROKER",
+        "state": "MULTI_BROKER_MULTI_ACCOUNT_REVIEW_REQUIRED",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v201_01_to_v205_64/actual/broker_plugin_framework_result.json",
+        "present": true,
+        "sha256": "f096ee1387f4ead1d8b85209a406f943847fbf2f8f16c183bc75b8333c4db0e7",
+        "stage": "V205_PLUGIN_FRAMEWORK",
+        "state": "BROKER_PLUGIN_FRAMEWORK_READY",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v206_01_to_v210_64/actual/risk_engine_v2_result.json",
+        "present": true,
+        "sha256": "af1707077717f973d7092aa51bc134dc7d3452e491424578382b4407d1fd6f93",
+        "stage": "V210_RISK_V2",
+        "state": "RISK_ENGINE_V2_HARD_BLOCKED",
+        "status": "PASS",
+        "unsafe_flags": []
+      },
+      {
+        "actual_live_orders_submitted": 0,
+        "path": "release/v211_01_to_v215_64/actual/ai_strategy_ensemble_result.json",
+        "present": true,
+        "sha256": "721a92fe9294640735e002e68c6dbb540da63e5929a8fcdfe81d85162c6bf90c",
+        "stage": "V215_STRATEGY_ENSEMBLE",
+        "state": "AI_STRATEGY_ENSEMBLE_REVIEW_REQUIRED",
+        "status": "PASS",
+        "unsafe_flags": []
+      }
+    ],
+    "total_actual_live_orders_submitted": 0,
+    "unsafe_stage_flags": []
+  },
+  "live_network_write_enabled": false,
+  "live_submission_enabled": false,
+  "live_trading_ready": false,
+  "manual_live_activation_required": true,
+  "next_phase": "POST_V220_PAPER_OPERATION_AND_CONTROLLED_LIVE_QUALIFICATION",
+  "observed_at": "2026-08-04T08:44:15.823590+00:00",
+  "paper_trading_ready": true,
+  "policy": {
+    "automatic_order_submission_enabled": false,
+    "automatic_strategy_promotion_enabled": false,
+    "base_commit": "46c700805ea5e167cab01bf564ba162d435f9588",
+    "broker_write_enabled": false,
+    "live_network_write_enabled": false,
+    "live_submission_enabled": false,
+    "release_name": "AI_STOCK_BOT_V220_FINAL_PRODUCTION",
+    "require_all_live_orders_zero": true,
+    "require_operator_guide": true,
+    "require_rollback_script": true,
+    "require_web_controller": true,
+    "required_stage_count": 16,
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "stage": "V220.64",
+  "state": "V220_FINAL_PRODUCTION_RELEASE_REVIEW_REQUIRED",
+  "status": "PASS"
+}

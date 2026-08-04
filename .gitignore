@@ -25,3 +25,6 @@ dist/
 # V76.4B local backups and deterministic runtime cache
 *.v76_4b_backup
 release/v76_4/runtime_cache/
+
+# V220 locally generated final bundle
+release/v216_01_to_v220_64/bundle/AI_STOCK_BOT_V220_FINAL_PRODUCTION.zip

@@ -1,0 +1,67 @@
+{
+  "actual_live_orders_submitted": 0,
+  "certificate": {
+    "actual_live_orders_submitted": 0,
+    "automatic_order_submission_enabled": false,
+    "broker_write_enabled": false,
+    "certificate_type": "AI_STOCK_BOT_V220_FINAL_PRODUCTION_CERTIFICATE",
+    "checks": {
+      "all_expected_stages_present": false,
+      "automatic_order_submission_disabled": true,
+      "automatic_strategy_promotion_disabled": true,
+      "broker_write_disabled": true,
+      "final_integrity_present": true,
+      "historical_live_orders_zero": true,
+      "integration_modules_present": true,
+      "live_network_write_disabled": true,
+      "live_submission_disabled": true,
+      "no_unsafe_stage_flags": true,
+      "policy_valid": true,
+      "required_files_present": true
+    },
+    "development_integration_complete": false,
+    "expected_stage_count": 16,
+    "final_release_ready": false,
+    "integration_modules_present": 8,
+    "integrity_all_present": true,
+    "issued_at": "2026-08-04T08:44:15.820027+00:00",
+    "live_submission_enabled": false,
+    "live_trading_automatically_enabled": false,
+    "manual_live_activation_required": true,
+    "paper_operations_supported": true,
+    "present_stage_count": 15,
+    "release_stage": "V220.64"
+  },
+  "checks": {
+    "allowed_state": true,
+    "automatic_strategy_promotion_disabled": true,
+    "automatic_submission_disabled": true,
+    "broker_write_disabled": true,
+    "live_network_write_disabled": true,
+    "live_not_auto_ready": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "manual_live_activation_required": true,
+    "paper_ready": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "final_release_ready": false,
+  "integration_summary": {
+    "all_required_files_present": true,
+    "module_count": 8,
+    "present_module_count": 8
+  },
+  "inventory_summary": {
+    "expected_stage_count": 16,
+    "missing_stages": [
+      "V160_OPERATIONS"
+    ],
+    "present_stage_count": 15
+  },
+  "state": "V220_FINAL_PRODUCTION_RELEASE_REVIEW_REQUIRED",
+  "verification_stage": "V220.64",
+  "verification_status": "PASS"
+}
