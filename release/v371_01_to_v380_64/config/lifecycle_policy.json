@@ -1,0 +1,26 @@
+{
+  "stage": "V380.64",
+  "mode": "READ_ONLY_PAPER_LIFECYCLE",
+  "paper_endpoint_only": true,
+  "network_default_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "order_statuses": [
+    "accepted",
+    "new",
+    "pending_new",
+    "partially_filled",
+    "filled",
+    "done_for_day",
+    "canceled",
+    "expired",
+    "replaced",
+    "pending_cancel",
+    "pending_replace",
+    "stopped",
+    "rejected",
+    "suspended",
+    "calculated"
+  ]
+}
