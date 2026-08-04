@@ -1,0 +1,15 @@
+{
+  "autostart_registration_enabled": false,
+  "supervisor_enabled": false,
+  "restart_on_failure": true,
+  "maximum_restarts": 5,
+  "restart_backoff_seconds": 30,
+  "stale_lock_minutes": 30,
+  "log_retention_days": 30,
+  "task_name": "AIStockBot-AutonomousPaper",
+  "run_only_when_user_logged_on": true,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

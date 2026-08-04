@@ -1,0 +1,19 @@
+{
+  "stage_range": "V266.01-V270.64",
+  "base_commit": "50a19cda9e4d3e98b6c49ff3cfb5d8fa311f33cd",
+  "windows_task_scheduler": true,
+  "supervisor": true,
+  "restart_on_failure": true,
+  "stale_lock_cleanup": true,
+  "checkpoint_recovery_plan": true,
+  "stop_file_awareness": true,
+  "log_retention": true,
+  "web_api": true,
+  "default_autostart_registered": false,
+  "default_supervisor_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V271.01-V275.64 Multi-Timeframe Strategy Engine"
+}

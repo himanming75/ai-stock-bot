@@ -1,0 +1,22 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_live_resume_allowed": false,
+  "created_at": "2026-08-04T10:02:25.397585+00:00",
+  "last_cycle_count": 0,
+  "last_runner_state": "AUTONOMOUS_PAPER_SESSION_READY_BLOCKED",
+  "last_session_id": "20260804T095732Z",
+  "paper_checkpoint_present": true,
+  "session_checkpoint_present": true,
+  "steps": [
+    "READ_LAST_SESSION_CHECKPOINT",
+    "READ_LAST_PAPER_CYCLE",
+    "CHECK_STOP_FILE",
+    "CHECK_STALE_LOCK",
+    "READ_PAPER_ACCOUNT",
+    "READ_OPEN_ORDERS",
+    "READ_POSITIONS",
+    "RECONCILE_BEFORE_RESUME",
+    "RESUME_SESSION_RUNNER_ONLY_IF_SAFE"
+  ],
+  "stop_requested": false
+}

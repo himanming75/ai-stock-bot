@@ -1,0 +1,4 @@
+{"actual_live_orders_submitted": 0, "blocking_reasons": ["SUPERVISOR_DISABLED", "CHILD_EXECUTION_NOT_AUTHORIZED"], "observed_at": "2026-08-04T10:01:38.348160+00:00", "restart_count": 0, "state": "WINDOWS_AUTOSTART_RECOVERY_READY_BLOCKED"}
+{"actual_live_orders_submitted": 0, "blocking_reasons": ["SUPERVISOR_DISABLED", "CHILD_EXECUTION_NOT_AUTHORIZED"], "observed_at": "2026-08-04T10:01:41.087156+00:00", "restart_count": 0, "state": "WINDOWS_AUTOSTART_RECOVERY_READY_BLOCKED"}
+{"actual_live_orders_submitted": 0, "blocking_reasons": ["SUPERVISOR_DISABLED", "CHILD_EXECUTION_NOT_AUTHORIZED"], "observed_at": "2026-08-04T10:02:24.864192+00:00", "restart_count": 0, "state": "WINDOWS_AUTOSTART_RECOVERY_READY_BLOCKED"}
+{"actual_live_orders_submitted": 0, "blocking_reasons": ["SUPERVISOR_DISABLED", "CHILD_EXECUTION_NOT_AUTHORIZED"], "observed_at": "2026-08-04T10:02:25.400508+00:00", "restart_count": 0, "state": "WINDOWS_AUTOSTART_RECOVERY_READY_BLOCKED"}

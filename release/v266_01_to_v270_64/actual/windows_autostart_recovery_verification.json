@@ -1,0 +1,24 @@
+{
+  "actual_live_orders_submitted": 0,
+  "blocking_reasons": [
+    "SUPERVISOR_DISABLED",
+    "CHILD_EXECUTION_NOT_AUTHORIZED"
+  ],
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "child_not_authorized": true,
+    "live_network_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "recovery_present": true,
+    "stage": true,
+    "status": true,
+    "supervisor_default_off": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "state": "WINDOWS_AUTOSTART_RECOVERY_READY_BLOCKED",
+  "verification_stage": "V270.64",
+  "verification_status": "PASS"
+}
