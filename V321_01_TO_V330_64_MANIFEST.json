@@ -1,0 +1,11 @@
+{
+  "bundle": "V321_01_TO_V330_64_REAL_PAPER_LONG_RUN_QUALIFICATION_ONE_CLICK",
+  "stage": "V330.64",
+  "depends_on": "V311.01-V320.64",
+  "state_after_install": "REAL_PAPER_LONG_RUN_READY_BLOCKED",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "next_phase": "V331_01_TO_V340_64_REAL_PAPER_AUTONOMOUS_OBSERVATION_GOVERNANCE"
+}

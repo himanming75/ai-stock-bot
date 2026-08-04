@@ -1,0 +1,15 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "cycles": 0,
+  "errors": 0,
+  "finished_at": "2026-08-04T17:29:08.763367+00:00",
+  "market_was_open": false,
+  "qualification_state": "REAL_PAPER_LONG_RUN_READY_BLOCKED",
+  "stage": "V330.64",
+  "started_at": "2026-08-04T17:29:08.753193+00:00",
+  "state": "REAL_PAPER_LONG_RUN_SESSION_COMPLETE",
+  "status": "PASS",
+  "stop_reason": "QUALIFICATION_DISABLED",
+  "successful_cycles": 0
+}
