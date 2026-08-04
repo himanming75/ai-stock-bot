@@ -1,0 +1,61 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "automatic_order_submission_disabled": true,
+    "broker_write_disabled": true,
+    "duplicate_guard_ready": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "retry_ready": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true,
+    "windows_scheduler_ready": true
+  },
+  "failed": [],
+  "scheduler_plan": {
+    "actual_live_orders_submitted": 0,
+    "broker_write_enabled": false,
+    "enabled_job_count": 0,
+    "generated_at": "2026-08-04T07:57:48.502530+00:00",
+    "jobs": [
+      {
+        "enabled": false,
+        "job": "pre_market",
+        "time": "06:20"
+      },
+      {
+        "enabled": false,
+        "job": "market_open_health",
+        "time": "06:35"
+      },
+      {
+        "enabled": false,
+        "job": "qualification_refresh",
+        "time": "12:00"
+      },
+      {
+        "enabled": false,
+        "job": "portfolio_refresh",
+        "time": "12:05"
+      },
+      {
+        "enabled": false,
+        "job": "post_market_report",
+        "time": "13:10"
+      },
+      {
+        "enabled": false,
+        "job": "nightly_backup",
+        "time": "23:30"
+      }
+    ],
+    "scheduled_order_submission_included": false,
+    "scheduler_enabled": false,
+    "timezone": "America/Los_Angeles"
+  },
+  "state": "PRODUCTION_SCHEDULER_READY",
+  "verification_stage": "V195.64",
+  "verification_status": "PASS"
+}

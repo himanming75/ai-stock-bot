@@ -1,0 +1,23 @@
+{
+  "timezone": "America/Los_Angeles",
+  "enabled": false,
+  "pre_market_enabled": false,
+  "market_open_health_enabled": false,
+  "qualification_refresh_enabled": false,
+  "portfolio_refresh_enabled": false,
+  "post_market_report_enabled": false,
+  "nightly_backup_enabled": false,
+  "pre_market_time": "06:20",
+  "market_open_health_time": "06:35",
+  "qualification_refresh_time": "12:00",
+  "portfolio_refresh_time": "12:05",
+  "post_market_report_time": "13:10",
+  "nightly_backup_time": "23:30",
+  "maximum_retries": 2,
+  "retry_delay_seconds": 15,
+  "lock_ttl_minutes": 30,
+  "scheduled_paper_submission_enabled": false,
+  "scheduled_live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "checks": {
+    "broker_write_disabled": true,
+    "config_valid": true,
+    "plan_has_no_order_submission": true,
+    "scheduled_live_submission_disabled": true,
+    "scheduled_paper_submission_disabled": true
+  },
+  "config": {
+    "broker_write_enabled": false,
+    "enabled": false,
+    "lock_ttl_minutes": 30,
+    "market_open_health_enabled": false,
+    "market_open_health_time": "06:35",
+    "maximum_retries": 2,
+    "nightly_backup_enabled": false,
+    "nightly_backup_time": "23:30",
+    "portfolio_refresh_enabled": false,
+    "portfolio_refresh_time": "12:05",
+    "post_market_report_enabled": false,
+    "post_market_report_time": "13:10",
+    "pre_market_enabled": false,
+    "pre_market_time": "06:20",
+    "qualification_refresh_enabled": false,
+    "qualification_refresh_time": "12:00",
+    "retry_delay_seconds": 15,
+    "scheduled_live_submission_enabled": false,
+    "scheduled_paper_submission_enabled": false,
+    "timezone": "America/Los_Angeles",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "duplicate_execution_guard_ready": true,
+  "failed": [],
+  "live_submission_enabled": false,
+  "next_phase": "V196_01_TO_V200_64_MULTI_BROKER_MULTI_ACCOUNT_PRODUCTION",
+  "observed_at": "2026-08-04T07:57:48.503751+00:00",
+  "retry_foundation_ready": true,
+  "scheduler_plan": {
+    "actual_live_orders_submitted": 0,
+    "broker_write_enabled": false,
+    "enabled_job_count": 0,
+    "generated_at": "2026-08-04T07:57:48.502530+00:00",
+    "jobs": [
+      {
+        "enabled": false,
+        "job": "pre_market",
+        "time": "06:20"
+      },
+      {
+        "enabled": false,
+        "job": "market_open_health",
+        "time": "06:35"
+      },
+      {
+        "enabled": false,
+        "job": "qualification_refresh",
+        "time": "12:00"
+      },
+      {
+        "enabled": false,
+        "job": "portfolio_refresh",
+        "time": "12:05"
+      },
+      {
+        "enabled": false,
+        "job": "post_market_report",
+        "time": "13:10"
+      },
+      {
+        "enabled": false,
+        "job": "nightly_backup",
+        "time": "23:30"
+      }
+    ],
+    "scheduled_order_submission_included": false,
+    "scheduler_enabled": false,
+    "timezone": "America/Los_Angeles"
+  },
+  "stage": "V195.64",
+  "state": "PRODUCTION_SCHEDULER_READY",
+  "status": "PASS",
+  "windows_task_scheduler_ready": true
+}

@@ -1,0 +1,19 @@
+{
+  "stage_range": "V191.01-V195.64",
+  "base_commit": "2e603057cec35fb3b3679404bbe4b0c943314384",
+  "pre_market_schedule": true,
+  "market_health_schedule": true,
+  "qualification_refresh_schedule": true,
+  "portfolio_refresh_schedule": true,
+  "post_market_report_schedule": true,
+  "nightly_backup_schedule": true,
+  "retry_foundation": true,
+  "duplicate_execution_guard": true,
+  "windows_task_scheduler": true,
+  "all_schedules_default_off": true,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V196.01-V200.64 Multi-Broker Multi-Account Production"
+}
