@@ -1,0 +1,50 @@
+{
+  "candidate_count": 3,
+  "champion": {
+    "max_drawdown_pct": 7.37,
+    "rank": 1,
+    "return_pct": 15.79,
+    "sharpe": 1.2,
+    "strategy_id": "MOMENTUM_5",
+    "symbol": "AAPL",
+    "target_weight_pct": 40.0,
+    "tournament_score": 16.331,
+    "win_rate_pct": 66.0
+  },
+  "passed": true,
+  "rankings": [
+    {
+      "max_drawdown_pct": 7.37,
+      "rank": 1,
+      "return_pct": 15.79,
+      "sharpe": 1.2,
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "target_weight_pct": 40.0,
+      "tournament_score": 16.331,
+      "win_rate_pct": 66.0
+    },
+    {
+      "max_drawdown_pct": 6.1,
+      "rank": 2,
+      "return_pct": 12.4,
+      "sharpe": 1.05,
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT",
+      "target_weight_pct": 30.0,
+      "tournament_score": 13.28,
+      "win_rate_pct": 61.0
+    },
+    {
+      "max_drawdown_pct": 8.5,
+      "rank": 3,
+      "return_pct": 9.2,
+      "sharpe": 0.82,
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY",
+      "target_weight_pct": 25.0,
+      "tournament_score": 7.79,
+      "win_rate_pct": 58.0
+    }
+  ]
+}

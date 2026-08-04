@@ -1,0 +1,47 @@
+{
+  "policy_version": "FAST_TRACK_B_V109_01_TO_V110_64",
+  "start_date": "2026-08-10",
+  "session_count": 5,
+  "maximum_retry_attempts": 3,
+  "starting_equity": 100000.0,
+  "base_prices": {
+    "AAPL": 200.0,
+    "MSFT": 400.0,
+    "SPY": 500.0
+  },
+  "strategy_candidates": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL",
+      "target_weight_pct": 40.0,
+      "return_pct": 15.79,
+      "max_drawdown_pct": 7.37,
+      "win_rate_pct": 66.0,
+      "sharpe": 1.2
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT",
+      "target_weight_pct": 30.0,
+      "return_pct": 12.4,
+      "max_drawdown_pct": 6.1,
+      "win_rate_pct": 61.0,
+      "sharpe": 1.05
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY",
+      "target_weight_pct": 25.0,
+      "return_pct": 9.2,
+      "max_drawdown_pct": 8.5,
+      "win_rate_pct": 58.0,
+      "sharpe": 0.82
+    }
+  ],
+  "daily_backup_enabled": true,
+  "daily_report_enabled": true,
+  "automatic_restart_enabled": true,
+  "windows_task_install_enabled": false,
+  "paper_only": true,
+  "live_trading_enabled": false
+}

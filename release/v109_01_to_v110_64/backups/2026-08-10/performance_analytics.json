@@ -1,0 +1,11 @@
+{
+  "annualized_sharpe": 0.0,
+  "cumulative_return_pct": 1.6285,
+  "daily_return_pct": 1.6285,
+  "ending_equity": 101628.5,
+  "loss_count": 0,
+  "maximum_drawdown_pct": 0.0,
+  "observation_count": 2,
+  "win_count": 2,
+  "win_rate_pct": 100.0
+}

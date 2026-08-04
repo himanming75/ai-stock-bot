@@ -1,0 +1,221 @@
+{
+  "actual_broker_orders_submitted": 0,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "analytics": {
+    "annualized_sharpe": 0.0,
+    "cumulative_return_pct": 1.6285,
+    "daily_return_pct": 1.6285,
+    "ending_equity": 101628.5,
+    "loss_count": 0,
+    "maximum_drawdown_pct": 0.0,
+    "observation_count": 2,
+    "win_count": 2,
+    "win_rate_pct": 100.0
+  },
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "certificate_sha256": "8b30f10d28f95dfce502a1c80daae42b24a4c542b21ef87412715db446deb1af",
+  "checkpoint": {
+    "checkpoint_hash": "342c29cdf723abc5c7e35550cc844879a5b78b9d7587f5c55046d8534a6162d2",
+    "close_result": {
+      "closed_position_count": 3,
+      "ending_cash": 101628.5,
+      "ending_equity": 101628.5,
+      "open_market_value": 0.0,
+      "open_positions": [],
+      "realized_pnl": 1628.5,
+      "starting_cash": 100000.0,
+      "total_pnl": 1628.5,
+      "unrealized_pnl": 0.0
+    },
+    "cycle_id": "d5c02e73fa40d9ba85ed0a7e",
+    "generation": 2,
+    "positions": [],
+    "previous_checkpoint_hash": "75530d6780adb3eed4e734ebfc10d917c6be6bc70675f7e9ba3fe666708de733",
+    "state": "FAST_TRACK_PAPER_EXECUTION_AND_ANALYTICS_COMPLETE",
+    "updated_at": "2026-08-04T05:07:08.014068+00:00"
+  },
+  "cycle_id": "d5c02e73fa40d9ba85ed0a7e",
+  "daily_close": {
+    "closed_position_count": 3,
+    "ending_cash": 101628.5,
+    "ending_equity": 101628.5,
+    "open_market_value": 0.0,
+    "open_positions": [],
+    "realized_pnl": 1628.5,
+    "starting_cash": 100000.0,
+    "total_pnl": 1628.5,
+    "unrealized_pnl": 0.0
+  },
+  "exit_count": 3,
+  "exits": [
+    {
+      "average_cost": 200.1,
+      "exit_price": 211.0,
+      "exit_reason": "TAKE_PROFIT",
+      "quantity": 195,
+      "realized_pnl": 2125.5,
+      "state": "CLOSED",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL"
+    },
+    {
+      "average_cost": 400.2,
+      "exit_price": 386.0,
+      "exit_reason": "STOP_LOSS",
+      "quantity": 35,
+      "realized_pnl": -497.0,
+      "state": "CLOSED",
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    },
+    {
+      "average_cost": 400.2,
+      "exit_price": 384.0,
+      "exit_reason": "STOP_LOSS",
+      "quantity": 0,
+      "realized_pnl": -0.0,
+      "state": "CLOSED",
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    }
+  ],
+  "external_network_enabled": false,
+  "filled_count": 1,
+  "fills": [
+    {
+      "actual_broker_submission": false,
+      "fill_id": "35ed542fa024337e1399827c",
+      "fill_notional": 39019.5,
+      "fill_price": 200.1,
+      "filled_quantity": 195,
+      "paper_order_id": "83806732c38ab49803686324",
+      "remaining_quantity": 0,
+      "requested_quantity": 195,
+      "state": "FILLED",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL"
+    },
+    {
+      "actual_broker_submission": false,
+      "fill_id": "ca6489b7cf30214ce358d29f",
+      "fill_notional": 14007.0,
+      "fill_price": 400.2,
+      "filled_quantity": 35,
+      "paper_order_id": "ca8c4186e44f81927d790886",
+      "remaining_quantity": 35,
+      "requested_quantity": 70,
+      "state": "PARTIAL_FILL",
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    },
+    {
+      "actual_broker_submission": false,
+      "fill_id": "7d332fb1fc56603f05af91d0",
+      "fill_notional": 0.0,
+      "fill_price": null,
+      "filled_quantity": 0,
+      "paper_order_id": "329dec7fe29dade6a9bdc929",
+      "remaining_quantity": 45,
+      "requested_quantity": 45,
+      "state": "NOT_FILLED",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY"
+    }
+  ],
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "next_phase": "V109_01_TO_V110_64_AUTONOMOUS_PAPER_OPERATIONS",
+  "not_filled_count": 1,
+  "observed_at": "2026-08-04T05:07:08.018865+00:00",
+  "order_submission_enabled": false,
+  "orders": [
+    {
+      "actual_broker_submission": false,
+      "order_type": "MARKET",
+      "paper_order_id": "83806732c38ab49803686324",
+      "plan_key": "12f93027089e969564fe2cc2c92f1ac915cb230f60b1d5094796209c850962b7",
+      "planned_notional": 39000.0,
+      "reference_price": 200.0,
+      "requested_quantity": 195,
+      "side": "BUY",
+      "state": "PAPER_ORDER_CREATED",
+      "strategy_id": "MOMENTUM_5",
+      "symbol": "AAPL"
+    },
+    {
+      "actual_broker_submission": false,
+      "order_type": "MARKET",
+      "paper_order_id": "ca8c4186e44f81927d790886",
+      "plan_key": "82c46582cbb7073337a3c1bc0187bfb6fd760baef0cb99dadc78f83b2c496a8a",
+      "planned_notional": 28000.0,
+      "reference_price": 400.0,
+      "requested_quantity": 70,
+      "side": "BUY",
+      "state": "PAPER_ORDER_CREATED",
+      "strategy_id": "EMA_5_15",
+      "symbol": "MSFT"
+    },
+    {
+      "actual_broker_submission": false,
+      "order_type": "MARKET",
+      "paper_order_id": "329dec7fe29dade6a9bdc929",
+      "plan_key": "e587244e72665c164e3f66d4ac1369668fd635f209e094c61412a1328acb05a2",
+      "planned_notional": 22500.0,
+      "reference_price": 500.0,
+      "requested_quantity": 45,
+      "side": "BUY",
+      "state": "PAPER_ORDER_CREATED",
+      "strategy_id": "BUY_HOLD",
+      "symbol": "SPY"
+    }
+  ],
+  "paper_fills_processed": 2,
+  "paper_only": true,
+  "paper_order_count": 3,
+  "paper_orders_simulated": 3,
+  "partial_fill_count": 1,
+  "session_date": "2026-08-10",
+  "session_id": "bc35de090dda5aea17a6e439",
+  "source_recovery": {
+    "checkpoint_generation": 2,
+    "method": "V106_CHECKPOINT",
+    "used": true
+  },
+  "source_run_id": "bf03986502408d613720e1d1",
+  "stage": "V108.64",
+  "stage_range": "V106.33-V108.64",
+  "state": "FAST_TRACK_PAPER_EXECUTION_AND_ANALYTICS_COMPLETE",
+  "status": "PASS",
+  "tick_results": [
+    {
+      "exit_count": 0,
+      "prices": {
+        "AAPL": 202.0,
+        "MSFT": 398.0,
+        "SPY": 501.0
+      },
+      "tick": "10:00"
+    },
+    {
+      "exit_count": 2,
+      "prices": {
+        "AAPL": 211.0,
+        "MSFT": 386.0,
+        "SPY": 503.0
+      },
+      "tick": "12:00"
+    },
+    {
+      "exit_count": 1,
+      "prices": {
+        "AAPL": 207.0,
+        "MSFT": 384.0,
+        "SPY": 504.0
+      },
+      "tick": "14:00"
+    }
+  ]
+}
