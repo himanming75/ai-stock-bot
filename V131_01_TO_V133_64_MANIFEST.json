@@ -1,0 +1,16 @@
+{
+  "stage_range": "V131.01-V133.64",
+  "base_commit": "be68ea86b060e43020fc1bed4350a3d53cc07dce",
+  "two_step_manual_approval": true,
+  "approval_expiry_model": true,
+  "single_use_token_model": true,
+  "token_replay_protection": true,
+  "kill_switch_revalidation": true,
+  "live_payload_review": true,
+  "broker_fill_simulation": true,
+  "execution_review_certificate": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V134.01-V136.64 Dynamic Live Risk Engine"
+}

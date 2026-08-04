@@ -1,0 +1,10 @@
+{
+  "live_token": false,
+  "simulation_only": true,
+  "token_expired": false,
+  "token_present": false,
+  "token_replay_detected": false,
+  "token_single_use": true,
+  "token_used": false,
+  "token_valid": false
+}

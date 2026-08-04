@@ -1,0 +1,8 @@
+{
+  "checks": {},
+  "failed": [
+    "candidate_missing"
+  ],
+  "passed": false,
+  "state": "KILL_SWITCH_BLOCKED"
+}

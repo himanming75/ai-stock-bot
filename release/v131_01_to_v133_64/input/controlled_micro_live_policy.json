@@ -1,0 +1,18 @@
+{
+  "policy_version": "V131_01_TO_V133_64",
+  "approval_expiry_minutes": 5,
+  "simulated_token_issue_enabled": false,
+  "manual_kill_switch": false,
+  "current_daily_pnl": 0.0,
+  "maximum_daily_loss": 20.0,
+  "current_daily_order_count": 0,
+  "maximum_daily_orders": 1,
+  "maximum_notional": 250.0,
+  "maximum_quantity": 1,
+  "market_open_required": true,
+  "market_open": true,
+  "broker_health": "HEALTHY",
+  "simulated_fill_price": 200.0,
+  "live_network_enabled": false,
+  "live_submission_enabled": false
+}

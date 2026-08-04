@@ -1,0 +1,79 @@
+{
+  "actual_live_orders_submitted": 0,
+  "approval_token_status": {
+    "live_token": false,
+    "simulation_only": true,
+    "token_expired": false,
+    "token_present": false,
+    "token_replay_detected": false,
+    "token_single_use": true,
+    "token_used": false,
+    "token_valid": false
+  },
+  "candidate": {},
+  "execution_review": {
+    "checks": {
+      "actual_live_orders_zero": true,
+      "approval_not_granted": false,
+      "candidate_present": false,
+      "kill_switch_evaluated": true,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_token_not_issued": true,
+      "payload_review_only": false,
+      "simulation_completed": false,
+      "two_step_approval_required": null
+    },
+    "execution_authorized": false,
+    "failed": [
+      "candidate_present",
+      "two_step_approval_required",
+      "approval_not_granted",
+      "payload_review_only",
+      "simulation_completed"
+    ],
+    "passed": false,
+    "review_state": "CONTROLLED_MICRO_LIVE_REVIEW_REQUIRED"
+  },
+  "execution_simulation": {
+    "actual_broker_request_sent": false,
+    "actual_live_order_submitted": false,
+    "simulated_status": "not_run"
+  },
+  "first_approval_granted": false,
+  "kill_switch": {
+    "checks": {},
+    "failed": [
+      "candidate_missing"
+    ],
+    "passed": false,
+    "state": "KILL_SWITCH_BLOCKED"
+  },
+  "live_approval_token_issued": false,
+  "live_network_enabled": false,
+  "live_order_payload_review": {},
+  "live_submission_enabled": false,
+  "manual_approval_request": {},
+  "next_phase": "V134_01_TO_V136_64_DYNAMIC_LIVE_RISK_ENGINE",
+  "observed_at": "2026-08-04T06:34:46.145017+00:00",
+  "real_live_network_attempted": false,
+  "real_live_submission_attempted": false,
+  "result_sha256": "7a403e42d603ec3ccd97e2f7524d64bffd8ac1bd808324b4f89b28bdfa608b5b",
+  "review_certificate": {
+    "actual_live_orders_submitted": 0,
+    "candidate_id": null,
+    "certificate_sha256": "323cb9cde83e233a5524e1d48c0c04c92ab699f0eb3e95c5fdfe95464306b7f3",
+    "certificate_type": "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW",
+    "execution_authorized": false,
+    "issued_at": "2026-08-04T06:34:46.145017+00:00",
+    "review_passed": false
+  },
+  "review_id": "6b0bb0a39cc810af64b9a624",
+  "second_approval_granted": false,
+  "source_readiness_id": "4ecc4344fa10d5925c4b3f87",
+  "stage": "V133.64",
+  "stage_range": "V131.01-V133.64",
+  "state": "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW_REQUIRED",
+  "status": "PASS",
+  "two_step_manual_approval_required": true
+}
