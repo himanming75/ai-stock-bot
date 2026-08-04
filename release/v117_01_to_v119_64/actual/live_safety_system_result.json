@@ -1,0 +1,102 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "anomaly_detection": {
+    "detected": false,
+    "event_count": 0,
+    "events": [],
+    "passed": true
+  },
+  "approval_granted": false,
+  "approval_token_issued": false,
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "certificate_sha256": "4f1c18e44af513be82b6e3b48fccdecf0f36119575f565537fc4ee517907baa3",
+  "emergency_action": {
+    "broker_writes_executed": 0,
+    "cancel_open_orders_requested": false,
+    "cancel_requests_executed": 0,
+    "emergency_shutdown_required": false,
+    "flatten_positions_requested": false,
+    "flatten_requests_executed": 0,
+    "state": "SAFETY_CLEAR",
+    "triggers": []
+  },
+  "emergency_cancel_requests_executed": 0,
+  "emergency_flatten_requests_executed": 0,
+  "exposure": {
+    "checks": {
+      "gross_exposure_within_limit": true,
+      "largest_order_within_limit": true,
+      "position_count_within_limit": true,
+      "total_pending_orders_within_limit": true
+    },
+    "failed": [],
+    "gross_exposure": 0.0,
+    "largest_order_notional": 2000.0,
+    "open_position_count": 0,
+    "passed": true,
+    "total_pending_order_notional": 4000.0
+  },
+  "external_network_enabled": false,
+  "kill_switch": {
+    "reasons": [],
+    "state": "ARMED_NOT_TRIGGERED",
+    "triggered": false
+  },
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "loss_limits": {
+    "checks": {
+      "daily_loss_within_limit": true,
+      "weekly_loss_within_limit": true
+    },
+    "daily_loss_limit": -2038.25,
+    "daily_pnl": -150.0,
+    "failed": [],
+    "passed": true,
+    "weekly_loss_limit": -5095.64,
+    "weekly_pnl": 250.0
+  },
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V120_FINAL_PRODUCTION_RELEASE",
+  "observed_at": "2026-08-04T05:36:55.174320+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "resume_gate": {
+    "checks": {
+      "broker_healthy": true,
+      "emergency_not_active": true,
+      "manual_resume_approval_not_granted": true,
+      "manual_resume_approval_required": true,
+      "market_data_fresh": true
+    },
+    "manual_resume_approval_granted": false,
+    "manual_resume_approval_required": true,
+    "resume_allowed": false,
+    "state": "RESUME_BLOCKED"
+  },
+  "safety_assessment_id": "33d3f89d6a1848d1a0863662",
+  "safety_certificate": {
+    "actual_orders_submitted": 0,
+    "broker_submission_authorized": false,
+    "certificate_sha256": "b5e4eb0df32601c789b6f9ab18467205f627dcce717724baab2d3efb17535bc0",
+    "certificate_type": "LIVE_SAFETY_CERTIFICATE",
+    "emergency_state": "SAFETY_CLEAR",
+    "issued_at": "2026-08-04T05:36:55.174193+00:00",
+    "kill_switch_state": "ARMED_NOT_TRIGGERED",
+    "live_execution_authorized": false,
+    "manual_approval_required": true,
+    "resume_state": "RESUME_BLOCKED",
+    "safety_passed": true
+  },
+  "safety_passed": true,
+  "source_execution_package_id": "d7b7f464844c41080557c3b6",
+  "stage": "V119.64",
+  "stage_range": "V117.01-V119.64",
+  "state": "LIVE_SAFETY_SYSTEM_READY",
+  "status": "PASS",
+  "write_requests_executed": 0
+}

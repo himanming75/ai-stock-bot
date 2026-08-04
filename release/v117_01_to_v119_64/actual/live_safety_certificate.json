@@ -1,0 +1,13 @@
+{
+  "actual_orders_submitted": 0,
+  "broker_submission_authorized": false,
+  "certificate_sha256": "b5e4eb0df32601c789b6f9ab18467205f627dcce717724baab2d3efb17535bc0",
+  "certificate_type": "LIVE_SAFETY_CERTIFICATE",
+  "emergency_state": "SAFETY_CLEAR",
+  "issued_at": "2026-08-04T05:36:55.174193+00:00",
+  "kill_switch_state": "ARMED_NOT_TRIGGERED",
+  "live_execution_authorized": false,
+  "manual_approval_required": true,
+  "resume_state": "RESUME_BLOCKED",
+  "safety_passed": true
+}

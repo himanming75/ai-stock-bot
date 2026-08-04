@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "daily_loss_within_limit": true,
+    "weekly_loss_within_limit": true
+  },
+  "daily_loss_limit": -2038.25,
+  "daily_pnl": -150.0,
+  "failed": [],
+  "passed": true,
+  "weekly_loss_limit": -5095.64,
+  "weekly_pnl": 250.0
+}

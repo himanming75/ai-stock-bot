@@ -1,0 +1,18 @@
+{
+  "manual_kill_switch": false,
+  "broker_health": "HEALTHY",
+  "market_data_age_seconds": 2.0,
+  "market_halt_detected": false,
+  "clock_drift_seconds": 0.2,
+  "account_equity": 101912.7,
+  "daily_pnl": -150.0,
+  "weekly_pnl": 250.0,
+  "open_position_count": 0,
+  "gross_exposure": 0.0,
+  "price_gap_pct": 0.8,
+  "spread_pct": 0.05,
+  "reject_count": 0,
+  "duplicate_event_count": 0,
+  "position_mismatch_detected": false,
+  "manual_resume_approval_granted": false
+}

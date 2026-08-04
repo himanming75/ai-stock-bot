@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "gross_exposure_within_limit": true,
+    "largest_order_within_limit": true,
+    "position_count_within_limit": true,
+    "total_pending_orders_within_limit": true
+  },
+  "failed": [],
+  "gross_exposure": 0.0,
+  "largest_order_notional": 2000.0,
+  "open_position_count": 0,
+  "passed": true,
+  "total_pending_order_notional": 4000.0
+}

@@ -1,0 +1,2 @@
+{"actual_orders_submitted": 0, "emergency_shutdown_required": false, "kill_switch_triggered": false, "observed_at": "2026-08-04T05:36:14.622103+00:00", "resume_allowed": false, "safety_assessment_id": "02b1fdb33a43579ea926099f", "safety_passed": true, "state": "LIVE_SAFETY_SYSTEM_READY"}
+{"actual_orders_submitted": 0, "emergency_shutdown_required": false, "kill_switch_triggered": false, "observed_at": "2026-08-04T05:36:55.174320+00:00", "resume_allowed": false, "safety_assessment_id": "33d3f89d6a1848d1a0863662", "safety_passed": true, "state": "LIVE_SAFETY_SYSTEM_READY"}

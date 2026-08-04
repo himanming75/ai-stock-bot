@@ -1,0 +1,10 @@
+{
+  "broker_writes_executed": 0,
+  "cancel_open_orders_requested": false,
+  "cancel_requests_executed": 0,
+  "emergency_shutdown_required": false,
+  "flatten_positions_requested": false,
+  "flatten_requests_executed": 0,
+  "state": "SAFETY_CLEAR",
+  "triggers": []
+}

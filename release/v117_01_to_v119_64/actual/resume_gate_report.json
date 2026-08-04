@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "broker_healthy": true,
+    "emergency_not_active": true,
+    "manual_resume_approval_not_granted": true,
+    "manual_resume_approval_required": true,
+    "market_data_fresh": true
+  },
+  "manual_resume_approval_granted": false,
+  "manual_resume_approval_required": true,
+  "resume_allowed": false,
+  "state": "RESUME_BLOCKED"
+}
