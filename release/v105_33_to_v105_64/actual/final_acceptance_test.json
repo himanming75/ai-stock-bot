@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "broker_write_disabled": true,
+    "certificate_valid": true,
+    "integrity_passed": true,
+    "live_disabled": true,
+    "manifest_valid": true,
+    "manual_approval_required": true,
+    "orders_disabled": true,
+    "orders_zero": true,
+    "paper_only": true,
+    "readiness_passed": true,
+    "release_ids_match": true
+  },
+  "failed": [],
+  "passed": true
+}

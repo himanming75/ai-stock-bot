@@ -1,0 +1,17 @@
+{
+  "policy_version": "V105.33",
+  "release_version": "V105 FINAL",
+  "release_name": "AI Stock Bot Paper Trading Final Release",
+  "base_commit": "5724090",
+  "branch": "main",
+  "minimum_readiness_score": 95.0,
+  "require_all_modules_ready": true,
+  "require_pipeline_pass": true,
+  "require_safety_pass": true,
+  "production_release_enabled": true,
+  "manual_approval_required": true,
+  "execution_authorized": false,
+  "live_trading_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false
+}

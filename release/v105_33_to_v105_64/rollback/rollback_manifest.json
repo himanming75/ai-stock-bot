@@ -1,0 +1,14 @@
+{
+  "branch": "main",
+  "broker_write_enabled": false,
+  "created_at": "2026-08-04T03:07:08.235896+00:00",
+  "manifest_type": "ROLLBACK_MANIFEST",
+  "order_submission_enabled": false,
+  "preserve_actual_ledgers": true,
+  "preserve_user_configuration": true,
+  "release_id": "126669f114617d1d9174325f",
+  "release_version": "V105 FINAL",
+  "restore_strategy": "GIT_RESET_TO_BASE_COMMIT_AND_REVERIFY",
+  "rollback_manifest_sha256": "2ca6183588d99d2f0b1e2139df8fd50d656590766596a4d562cefe840a62097c",
+  "rollback_target_commit": "5724090"
+}
