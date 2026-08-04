@@ -1,0 +1,9 @@
+{
+  "policy_version": "V103.01",
+  "checkpoint_enabled": true,
+  "lock_timeout_seconds": 300,
+  "maximum_step_attempts": 3,
+  "fail_closed": true,
+  "manual_approval_required": true,
+  "execution_authorized": false
+}

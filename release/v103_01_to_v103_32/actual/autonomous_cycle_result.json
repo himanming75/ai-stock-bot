@@ -1,0 +1,149 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "approval_eligible": true,
+  "approval_granted": false,
+  "autonomous_cycle_certificate_sha256": "4299dd6ff3e29e74ec4304d49066a222afdc595b3f30edd74bee8627dce21768",
+  "broker_write_enabled": false,
+  "checkpoint": {
+    "checkpoint_hash": "09493893d21de21775972218e4ecf9a65af36619c59d3ba54d2b967b29a2ca16",
+    "current_step": 6,
+    "cycle_id": "4143a06aaeff66f1737bea79",
+    "cycle_key": "59a4703d6f53c10c76d262ab8cace5ce290a7de38c572abdf20dbde76645a50d",
+    "generation": 14,
+    "previous_checkpoint_hash": "8732d77d2ed4c674d4aff161b0f97ed39f7df4db8fa856e84d569c2f935a63d5",
+    "state": "AUTONOMOUS_CYCLE_RUNNING",
+    "steps": [
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "VALIDATE_SOURCE_DECISION",
+        "step_number": 1
+      },
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "ACQUIRE_CYCLE_LOCK",
+        "step_number": 2
+      },
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "CREATE_CYCLE_CHECKPOINT",
+        "step_number": 3
+      },
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "EVALUATE_APPROVAL_REQUIREMENT",
+        "step_number": 4
+      },
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "PREPARE_PAPER_ACTION_PLAN",
+        "step_number": 5
+      },
+      {
+        "attempt_count": 1,
+        "error": null,
+        "state": "COMPLETED",
+        "step_id": "FINALIZE_CYCLE_STATE",
+        "step_number": 6
+      }
+    ],
+    "updated_at": "2026-08-04T02:38:01.353656+00:00"
+  },
+  "completed_step_count": 6,
+  "continuous_loop_enabled": false,
+  "cycle_action": "WAIT_FOR_MANUAL_APPROVAL",
+  "cycle_date": "2026-08-03",
+  "cycle_id": "4143a06aaeff66f1737bea79",
+  "cycle_key": "59a4703d6f53c10c76d262ab8cace5ce290a7de38c572abdf20dbde76645a50d",
+  "duplicate": {
+    "duplicate_cycle": false,
+    "duplicate_match_count": 0,
+    "previous_cycle_id": null,
+    "previous_state": null
+  },
+  "execution_authorized": false,
+  "external_network_enabled": false,
+  "failed_steps": [],
+  "live_trading_enabled": false,
+  "lock": {
+    "acquired": true,
+    "acquired_at": "2026-08-04T02:38:01.190332+00:00",
+    "cycle_id": "4143a06aaeff66f1737bea79",
+    "expires_at": "2026-08-04T02:43:01.190332+00:00",
+    "state": "LOCKED"
+  },
+  "lock_release": {
+    "cycle_id": "4143a06aaeff66f1737bea79",
+    "released": true
+  },
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V103_33_MULTI_DAY_CYCLE_SCHEDULER",
+  "observed_at": "2026-08-04T02:38:01.355114+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "source_decision": "ACT",
+  "source_decision_id": "bd4e58829d68e4fb4a30bb23",
+  "source_decision_state": "AUTONOMOUS_DECISION_READY_FOR_MANUAL_APPROVAL",
+  "stage": "V103.32",
+  "stage_range": "V103.01-V103.32",
+  "state": "AUTONOMOUS_CYCLE_WAITING_FOR_MANUAL_APPROVAL",
+  "status": "PASS",
+  "steps": [
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "VALIDATE_SOURCE_DECISION",
+      "step_number": 1
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "ACQUIRE_CYCLE_LOCK",
+      "step_number": 2
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "CREATE_CYCLE_CHECKPOINT",
+      "step_number": 3
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "EVALUATE_APPROVAL_REQUIREMENT",
+      "step_number": 4
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "PREPARE_PAPER_ACTION_PLAN",
+      "step_number": 5
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "state": "COMPLETED",
+      "step_id": "FINALIZE_CYCLE_STATE",
+      "step_number": 6
+    }
+  ],
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}
