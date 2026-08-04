@@ -1,0 +1,28 @@
+{
+  "account": {
+    "equity": "100000",
+    "cash": "100000"
+  },
+  "clock": {
+    "is_open": false
+  },
+  "orders": [],
+  "positions": [],
+  "snapshots": {
+    "AAPL": {
+      "latestTrade": {
+        "p": 200.0
+      }
+    },
+    "MSFT": {
+      "latestTrade": {
+        "p": 397.0
+      }
+    },
+    "SPY": {
+      "latestTrade": {
+        "p": 499.2
+      }
+    }
+  }
+}

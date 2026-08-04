@@ -1,0 +1,11 @@
+{
+  "stage_range": "V124.01-V126.64",
+  "base_commit": "2cf0723ceac5bcf0a4358d2ab95f1c7aa49af542",
+  "real_paper_shadow": true,
+  "automated_paper_cycle": true,
+  "automated_paper_submission_enabled_by_default": false,
+  "live_shadow_ledger": true,
+  "qualification_sessions": 20,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V127 Manual Approval Micro Live"
+}

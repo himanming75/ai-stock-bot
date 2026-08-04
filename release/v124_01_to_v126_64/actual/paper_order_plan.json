@@ -1,0 +1,14 @@
+{
+  "plans": [
+    {
+      "client_order_id": "4206735fb200b9265de5ce33e025b0dc",
+      "estimated_notional": 200.0,
+      "qty": "1",
+      "side": "buy",
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "AAPL",
+      "time_in_force": "day",
+      "type": "market"
+    }
+  ]
+}

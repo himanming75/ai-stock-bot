@@ -1,0 +1,17 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "critical_errors_zero": true,
+    "live_orders_zero": true,
+    "minimum_sessions": false,
+    "reconciliation_failures_zero": true
+  },
+  "completed_sessions": 2,
+  "critical_error_count": 0,
+  "failed": [
+    "minimum_sessions"
+  ],
+  "micro_live_authorized": false,
+  "passed": false,
+  "reconciliation_failure_count": 0
+}

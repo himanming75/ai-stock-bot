@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "action": "BUY",
+      "change_pct": 0.502513,
+      "price": 200.0,
+      "reference_price": 199.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "SELL",
+      "change_pct": -0.251256,
+      "price": 397.0,
+      "reference_price": 398.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "MSFT"
+    },
+    {
+      "action": "HOLD",
+      "change_pct": 0.04008,
+      "price": 499.2,
+      "reference_price": 499.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "SPY"
+    }
+  ]
+}

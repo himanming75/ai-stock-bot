@@ -1,0 +1,23 @@
+{
+  "policy_version": "V124_01_TO_V126_64",
+  "paper_mode": true,
+  "automated_paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "market_data_feed": "iex",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "reference_prices": {
+    "AAPL": 199.0,
+    "MSFT": 398.0,
+    "SPY": 499.0
+  },
+  "signal_threshold_pct": 0.25,
+  "order_equity_pct": 0.1,
+  "maximum_order_notional": 250.0,
+  "maximum_quantity": 2,
+  "maximum_orders_per_cycle": 1,
+  "minimum_sessions": 20
+}

@@ -1,0 +1,115 @@
+{
+  "account_snapshot": {
+    "cash": "100000",
+    "equity": "100000"
+  },
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "cycle_id": "b6ace7fde4b0481d70c7d6ab",
+  "existing_order_count": 0,
+  "existing_position_count": 0,
+  "live_shadow_records": [
+    {
+      "actual_live_orders_submitted": 0,
+      "estimated_notional": 200.0,
+      "live_order_submitted": false,
+      "live_order_would_be_created": true,
+      "observed_at": "2026-08-04T06:14:49.436213+00:00",
+      "quantity": "1",
+      "shadow_id": "a3c5d5e03aefcf10c805910d",
+      "side": "buy",
+      "source_mode": "OFFLINE_MOCK",
+      "symbol": "AAPL"
+    }
+  ],
+  "live_submission_enabled": false,
+  "live_trading_enabled": false,
+  "market_open": false,
+  "mode": "OFFLINE_MOCK",
+  "next_phase": "V127_MANUAL_APPROVAL_MICRO_LIVE",
+  "observed_at": "2026-08-04T06:14:49.436298+00:00",
+  "paper_only": true,
+  "paper_order_plans": [
+    {
+      "client_order_id": "4206735fb200b9265de5ce33e025b0dc",
+      "estimated_notional": 200.0,
+      "qty": "1",
+      "side": "buy",
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "AAPL",
+      "time_in_force": "day",
+      "type": "market"
+    }
+  ],
+  "paper_submission_authorized": false,
+  "paper_submission_requested": false,
+  "qualification": {
+    "actual_live_orders_submitted": 0,
+    "checks": {
+      "critical_errors_zero": true,
+      "live_orders_zero": true,
+      "minimum_sessions": false,
+      "reconciliation_failures_zero": true
+    },
+    "completed_sessions": 2,
+    "critical_error_count": 0,
+    "failed": [
+      "minimum_sessions"
+    ],
+    "micro_live_authorized": false,
+    "passed": false,
+    "reconciliation_failure_count": 0
+  },
+  "result_sha256": "57bba01bf821e3bd5c71ce1493025d00552bc1a480c647446fd4233d755c41a9",
+  "safety_gate": {
+    "passed": true,
+    "rows": [
+      {
+        "checks": {
+          "live_submission_disabled": true,
+          "notional_within_limit": true,
+          "paper_mode": true,
+          "quantity_positive": true,
+          "quantity_within_limit": true,
+          "symbol_allowed": true
+        },
+        "client_order_id": "4206735fb200b9265de5ce33e025b0dc",
+        "failed": [],
+        "passed": true
+      }
+    ],
+    "valid_count": 1
+  },
+  "scheduler_ready": true,
+  "signals": [
+    {
+      "action": "BUY",
+      "change_pct": 0.502513,
+      "price": 200.0,
+      "reference_price": 199.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "SELL",
+      "change_pct": -0.251256,
+      "price": 397.0,
+      "reference_price": 398.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "MSFT"
+    },
+    {
+      "action": "HOLD",
+      "change_pct": 0.04008,
+      "price": 499.2,
+      "reference_price": 499.0,
+      "strategy_id": "SNAPSHOT_MOMENTUM_SHADOW",
+      "symbol": "SPY"
+    }
+  ],
+  "stage": "V126.64",
+  "stage_range": "V124.01-V126.64",
+  "state": "CONTINUOUS_PAPER_SHADOW_OFFLINE_READY",
+  "status": "PASS",
+  "submitted_paper_orders": []
+}
