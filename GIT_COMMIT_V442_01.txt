@@ -1,0 +1,3 @@
+git add ai_risk_allocation/kelly.py ai_risk_allocation/kelly_sizing.py tools/run_v442_01.py tools/test_v442_01.py tools/verify_v442_01.py release/v442_01 RUN_V442_01_KELLY_POSITION_SIZING.ps1 RUN_V442_01_TEST_AND_VERIFY.ps1 V442_01_MANIFEST.json GIT_COMMIT_V442_01.txt
+git commit -m "V442.01 add offline Kelly position sizing"
+git push origin main
