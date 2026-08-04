@@ -1,0 +1,76 @@
+{
+  "account_snapshot": {
+    "buying_power": 1000.0,
+    "cash": 1000.0,
+    "equity": 1000.0
+  },
+  "actual_live_orders_submitted": 0,
+  "candidate": {},
+  "concentration_control": {
+    "passed": false
+  },
+  "dynamic_sizing": {},
+  "execution_authorized": false,
+  "exposure_control": {
+    "passed": false
+  },
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "loss_limits": {
+    "checks": {
+      "consecutive_loss_limit_clear": true,
+      "daily_loss_within_limit": true,
+      "weekly_loss_within_limit": true
+    },
+    "current_daily_pnl": 0.0,
+    "current_weekly_pnl": 0.0,
+    "daily_loss_limit": -10.0,
+    "failed": [],
+    "passed": true,
+    "weekly_loss_limit": -30.0
+  },
+  "next_phase": "V137_01_TO_V139_64_AUTONOMOUS_TRADING_ORCHESTRATOR",
+  "observed_at": "2026-08-04T06:40:24.666106+00:00",
+  "position_snapshot": [],
+  "real_live_network_attempted": false,
+  "real_live_submission_attempted": false,
+  "result_sha256": "53ab28eaa27b44f5dd5a69a17faf7f01e200e8131e3f2c9c8aa8cbc865fe7805",
+  "risk_assessment_id": "f999cee8d0df7101fed5a354",
+  "risk_budget": {
+    "budget_passed": false
+  },
+  "risk_certificate": {
+    "actual_live_orders_submitted": 0,
+    "certificate_sha256": "bb8f241746e1fdb959bb94ec57a9df63c078b0f4de9d3f67a6a6dc86ad5c5399",
+    "certificate_type": "DYNAMIC_LIVE_RISK_CERTIFICATE",
+    "details_hash": "3c07a8026dd077699c7eadddb8beb91e598932529810056500a40a4a8449cd82",
+    "execution_authorized": false,
+    "issued_at": "2026-08-04T06:40:24.666148+00:00",
+    "live_submission_authorized": false,
+    "risk_passed": false
+  },
+  "risk_gate": {
+    "checks": {
+      "candidate_present": false,
+      "concentration_passed": false,
+      "exposure_passed": false,
+      "final_quantity_positive": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "loss_limits_passed": true,
+      "risk_budget_passed": false
+    },
+    "failed": [
+      "candidate_present",
+      "final_quantity_positive",
+      "risk_budget_passed",
+      "exposure_passed",
+      "concentration_passed"
+    ],
+    "passed": false
+  },
+  "stage": "V136.64",
+  "stage_range": "V134.01-V136.64",
+  "state": "DYNAMIC_LIVE_RISK_REVIEW_REQUIRED",
+  "status": "PASS"
+}

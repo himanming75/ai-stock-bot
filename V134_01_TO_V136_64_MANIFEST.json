@@ -1,0 +1,20 @@
+{
+  "stage_range": "V134.01-V136.64",
+  "base_commit": "802651c097472fb8c216d49bf22afc4505f41e43",
+  "dynamic_position_sizing": true,
+  "volatility_adjustment": true,
+  "stop_distance_sizing": true,
+  "strategy_risk_budget": true,
+  "symbol_risk_budget": true,
+  "gross_exposure_control": true,
+  "minimum_cash_control": true,
+  "daily_weekly_loss_limits": true,
+  "concentration_control": true,
+  "risk_certificate": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V137.01-V139.64 Autonomous Trading Orchestrator",
+  "micro_live_risk_per_trade_pct": 0.5,
+  "fixed_version": "FIXED_V2"
+}

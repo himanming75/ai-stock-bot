@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "consecutive_loss_limit_clear": true,
+    "daily_loss_within_limit": true,
+    "weekly_loss_within_limit": true
+  },
+  "current_daily_pnl": 0.0,
+  "current_weekly_pnl": 0.0,
+  "daily_loss_limit": -10.0,
+  "failed": [],
+  "passed": true,
+  "weekly_loss_limit": -30.0
+}

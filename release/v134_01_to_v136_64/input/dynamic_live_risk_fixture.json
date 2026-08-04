@@ -1,0 +1,23 @@
+{
+  "account": {
+    "equity": 1000.0,
+    "cash": 1000.0,
+    "buying_power": 1000.0
+  },
+  "positions": [],
+  "reference_prices": {
+    "AAPL": 200.0,
+    "MSFT": 400.0,
+    "SPY": 500.0
+  },
+  "volatility_pct": {
+    "AAPL": 1.5,
+    "MSFT": 1.4,
+    "SPY": 0.8
+  },
+  "stop_distance_pct": {
+    "AAPL": 2.0,
+    "MSFT": 2.0,
+    "SPY": 1.5
+  }
+}
