@@ -1,0 +1,33 @@
+{
+  "account": {},
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "blocking_reasons": [
+    "PAPER_READ_DISABLED",
+    "NETWORK_NOT_AUTHORIZED"
+  ],
+  "checks": {
+    "account_read": false,
+    "broker_write_disabled": true,
+    "clock_read": true,
+    "credentials_ready": true,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "open_orders_read": true,
+    "paper_endpoint_only": true,
+    "policy_valid": true,
+    "positions_read": true
+  },
+  "live_submission_enabled": false,
+  "market_open": false,
+  "micro_paper_order_enabled": false,
+  "next_close": null,
+  "next_open": null,
+  "next_phase": "V306_01_TO_V310_64_REAL_PAPER_MICRO_ORDER_VALIDATION",
+  "observed_at": "2026-08-04T17:01:09.065490+00:00",
+  "open_order_count": 0,
+  "position_count": 0,
+  "stage": "V305.64",
+  "state": "REAL_PAPER_VALIDATION_READY_BLOCKED",
+  "status": "PASS"
+}

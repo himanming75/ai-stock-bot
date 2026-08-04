@@ -1,0 +1,14 @@
+{
+  "stage_range": "V301.01-V305.64",
+  "base_commit": "841cc46205a251dd18883320bd419218cd26c8c3",
+  "real_paper_read_validation": true,
+  "paper_endpoint_enforced": true,
+  "account_read": true,
+  "clock_read": true,
+  "positions_read": true,
+  "open_orders_read": true,
+  "micro_paper_order_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V306.01-V310.64 Real Paper Micro Order Validation"
+}

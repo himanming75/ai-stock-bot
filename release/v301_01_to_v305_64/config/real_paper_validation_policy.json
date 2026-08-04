@@ -1,0 +1,14 @@
+{
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "paper_read_enabled": false,
+  "micro_paper_order_enabled": false,
+  "maximum_orders_per_run": 1,
+  "maximum_quantity": 1,
+  "maximum_notional": 100.0,
+  "require_market_open": true,
+  "require_explicit_confirmation": true,
+  "confirmation_phrase": "ENABLE_ONE_MICRO_PAPER_ORDER",
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false
+}

@@ -1,0 +1,15 @@
+{
+  "verification_stage": "V305.64",
+  "verification_status": "PASS",
+  "checks": {
+    "stage": true,
+    "status": true,
+    "allowed_state": true,
+    "network_blocked": true,
+    "paper_orders_zero": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true
+  },
+  "failed": [],
+  "state": "REAL_PAPER_VALIDATION_READY_BLOCKED"
+}
