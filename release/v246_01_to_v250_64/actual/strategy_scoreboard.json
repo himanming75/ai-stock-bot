@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 45,
+      "score": 82.45,
+      "signal_confidence": 88.0,
+      "strategy_id": "momentum_aapl",
+      "strategy_type": "momentum",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 40,
+      "score": 77.3,
+      "signal_confidence": 82.0,
+      "strategy_id": "trend_aapl",
+      "strategy_type": "trend",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 30,
+      "score": 60.6,
+      "signal_confidence": 73.0,
+      "strategy_id": "breakout_msft",
+      "strategy_type": "breakout",
+      "symbol": "MSFT"
+    },
+    {
+      "action": "SELL",
+      "eligible": false,
+      "observations": 28,
+      "score": 38.8,
+      "signal_confidence": 65.0,
+      "strategy_id": "mean_reversion_xom",
+      "strategy_type": "mean_reversion",
+      "symbol": "XOM"
+    }
+  ]
+}

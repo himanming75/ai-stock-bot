@@ -1,0 +1,13 @@
+{
+  "minimum_strategy_score": 55.0,
+  "minimum_final_confidence": 65.0,
+  "maximum_active_strategies": 4,
+  "maximum_single_strategy_weight_pct": 50.0,
+  "minimum_observations": 10,
+  "risk_gate_required": true,
+  "exit_conflict_blocks_entry": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

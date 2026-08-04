@@ -1,0 +1,22 @@
+{
+  "action": "BUY",
+  "confidence": 61.6937,
+  "execution_authorized": false,
+  "gate_passed": false,
+  "submission_authorized": false,
+  "support": [
+    {
+      "action": "BUY",
+      "contribution": 32.9276,
+      "strategy_id": "momentum_aapl",
+      "weight_pct": 37.4177
+    },
+    {
+      "action": "BUY",
+      "contribution": 28.7661,
+      "strategy_id": "trend_aapl",
+      "weight_pct": 35.0806
+    }
+  ],
+  "symbol": "AAPL"
+}

@@ -1,0 +1,179 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "allocations": [
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 45,
+      "score": 82.45,
+      "signal_confidence": 88.0,
+      "strategy_id": "momentum_aapl",
+      "strategy_type": "momentum",
+      "symbol": "AAPL",
+      "weight_pct": 37.4177
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 40,
+      "score": 77.3,
+      "signal_confidence": 82.0,
+      "strategy_id": "trend_aapl",
+      "strategy_type": "trend",
+      "symbol": "AAPL",
+      "weight_pct": 35.0806
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 30,
+      "score": 60.6,
+      "signal_confidence": 73.0,
+      "strategy_id": "breakout_msft",
+      "strategy_type": "breakout",
+      "symbol": "MSFT",
+      "weight_pct": 27.5017
+    }
+  ],
+  "broker_write_enabled": false,
+  "candidates": [
+    {
+      "action": "BUY",
+      "confidence": 61.6937,
+      "support": [
+        {
+          "action": "BUY",
+          "contribution": 32.9276,
+          "strategy_id": "momentum_aapl",
+          "weight_pct": 37.4177
+        },
+        {
+          "action": "BUY",
+          "contribution": 28.7661,
+          "strategy_id": "trend_aapl",
+          "weight_pct": 35.0806
+        }
+      ],
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "confidence": 20.0762,
+      "support": [
+        {
+          "action": "BUY",
+          "contribution": 20.0762,
+          "strategy_id": "breakout_msft",
+          "weight_pct": 27.5017
+        }
+      ],
+      "symbol": "MSFT"
+    }
+  ],
+  "checks": {
+    "allocations_present": true,
+    "broker_write_disabled": true,
+    "candidate_present": true,
+    "live_submission_disabled": true,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "regime_detected": true,
+    "strategy_scores_present": true
+  },
+  "failed": [],
+  "final_trade_candidate": {
+    "action": "BUY",
+    "confidence": 61.6937,
+    "execution_authorized": false,
+    "gate_passed": false,
+    "submission_authorized": false,
+    "support": [
+      {
+        "action": "BUY",
+        "contribution": 32.9276,
+        "strategy_id": "momentum_aapl",
+        "weight_pct": 37.4177
+      },
+      {
+        "action": "BUY",
+        "contribution": 28.7661,
+        "strategy_id": "trend_aapl",
+        "weight_pct": 35.0806
+      }
+    ],
+    "symbol": "AAPL"
+  },
+  "gate": {
+    "checks": {
+      "broker_write_disabled": true,
+      "candidate_present": true,
+      "confidence_sufficient": false,
+      "live_submission_disabled": true,
+      "no_exit_conflict": false,
+      "paper_submission_disabled": true,
+      "risk_gate_passed": false
+    },
+    "failed": [
+      "confidence_sufficient",
+      "risk_gate_passed",
+      "no_exit_conflict"
+    ],
+    "passed": false
+  },
+  "live_submission_enabled": false,
+  "market_regime": {
+    "breadth_pct": 61.0,
+    "regime": "BULL_TREND",
+    "trend_score": 72.0,
+    "volatility_pct": 1.8
+  },
+  "next_phase": "V251_01_TO_V255_64_EXECUTION_OPTIMIZER",
+  "observed_at": "2026-08-04T09:33:40.006219+00:00",
+  "paper_submission_enabled": false,
+  "stage": "V250.64",
+  "state": "AI_STRATEGY_ENSEMBLE_V3_READY",
+  "status": "PASS",
+  "strategy_scores": [
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 45,
+      "score": 82.45,
+      "signal_confidence": 88.0,
+      "strategy_id": "momentum_aapl",
+      "strategy_type": "momentum",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 40,
+      "score": 77.3,
+      "signal_confidence": 82.0,
+      "strategy_id": "trend_aapl",
+      "strategy_type": "trend",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "eligible": true,
+      "observations": 30,
+      "score": 60.6,
+      "signal_confidence": 73.0,
+      "strategy_id": "breakout_msft",
+      "strategy_type": "breakout",
+      "symbol": "MSFT"
+    },
+    {
+      "action": "SELL",
+      "eligible": false,
+      "observations": 28,
+      "score": 38.8,
+      "signal_confidence": 65.0,
+      "strategy_id": "mean_reversion_xom",
+      "strategy_type": "mean_reversion",
+      "symbol": "XOM"
+    }
+  ]
+}

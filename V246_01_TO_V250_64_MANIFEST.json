@@ -1,0 +1,20 @@
+{
+  "stage_range": "V246.01-V250.64",
+  "base_commit": "9d921c1dee3ab62926b644eada25e733714f32c9",
+  "market_regime_detection": true,
+  "regime_adjusted_scoring": true,
+  "strategy_ranking": true,
+  "dynamic_allocation": true,
+  "weighted_voting": true,
+  "confidence_score": true,
+  "risk_gate_link": true,
+  "exit_conflict_gate": true,
+  "final_trade_candidate": true,
+  "audit_ledger": true,
+  "web_api": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V251.01-V255.64 Execution Optimizer"
+}

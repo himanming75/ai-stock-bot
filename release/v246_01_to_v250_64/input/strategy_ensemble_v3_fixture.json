@@ -1,0 +1,57 @@
+{
+  "market": {
+    "trend_score": 72,
+    "volatility_pct": 1.8,
+    "breadth_pct": 61
+  },
+  "strategies": [
+    {
+      "strategy_id": "momentum_aapl",
+      "strategy_type": "momentum",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "signal_confidence": 88,
+      "observations": 45,
+      "win_rate_pct": 61,
+      "profit_factor": 1.8,
+      "sharpe": 1.4,
+      "maximum_drawdown_pct": 4.0
+    },
+    {
+      "strategy_id": "trend_aapl",
+      "strategy_type": "trend",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "signal_confidence": 82,
+      "observations": 40,
+      "win_rate_pct": 59,
+      "profit_factor": 1.7,
+      "sharpe": 1.3,
+      "maximum_drawdown_pct": 4.5
+    },
+    {
+      "strategy_id": "breakout_msft",
+      "strategy_type": "breakout",
+      "symbol": "MSFT",
+      "action": "BUY",
+      "signal_confidence": 73,
+      "observations": 30,
+      "win_rate_pct": 55,
+      "profit_factor": 1.4,
+      "sharpe": 1.0,
+      "maximum_drawdown_pct": 6.0
+    },
+    {
+      "strategy_id": "mean_reversion_xom",
+      "strategy_type": "mean_reversion",
+      "symbol": "XOM",
+      "action": "SELL",
+      "signal_confidence": 65,
+      "observations": 28,
+      "win_rate_pct": 53,
+      "profit_factor": 1.2,
+      "sharpe": 0.8,
+      "maximum_drawdown_pct": 7.0
+    }
+  ]
+}
