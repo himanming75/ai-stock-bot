@@ -1,0 +1,114 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "average_loss_pct": -1.0,
+      "average_win_pct": 1.9,
+      "observed_volatility_pct": 2.2,
+      "risk_quality_score": 88.0,
+      "strategy_id": "MOMENTUM_5",
+      "target_weight_pct": 39.108196,
+      "win_rate_pct": 61.0
+    },
+    {
+      "average_loss_pct": -1.0,
+      "average_win_pct": 1.6,
+      "observed_volatility_pct": 2.8,
+      "risk_quality_score": 78.0,
+      "strategy_id": "EMA_5_15",
+      "target_weight_pct": 28.135997,
+      "win_rate_pct": 57.0
+    },
+    {
+      "average_loss_pct": -1.0,
+      "average_win_pct": 1.2,
+      "observed_volatility_pct": 1.7,
+      "risk_quality_score": 70.0,
+      "strategy_id": "BUY_HOLD",
+      "target_weight_pct": 22.755807,
+      "win_rate_pct": 54.0
+    }
+  ],
+  "continuous_loop_enabled": false,
+  "dynamic_exposure_control": {
+    "budget_multiplier": 0.876864,
+    "current_gross_exposure_pct": 90.0,
+    "final_exposure_multiplier": 0.54615,
+    "risk_multiplier": 0.54615,
+    "stress_multiplier": 0.7516,
+    "target_gross_exposure_pct": 49.153469
+  },
+  "execution_authorized": false,
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V101_01_PORTFOLIO_REBALANCE_CONTROL",
+  "observed_at": "2026-08-04T02:10:34.053113+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "portfolio_heat": {
+    "exposure_multiplier": 0.54615,
+    "gross_risk_budget_pct": 8.768635,
+    "portfolio_heat_pct": 4.78899
+  },
+  "risk_budget_allocation": {
+    "allocations": [
+      {
+        "kelly_fraction": 0.101184,
+        "risk_budget_pct": 5.0,
+        "risk_quality_score": 88.0,
+        "strategy_id": "MOMENTUM_5",
+        "target_weight_pct": 39.108196,
+        "volatility_multiplier": 0.909091
+      },
+      {
+        "kelly_fraction": 0.075312,
+        "risk_budget_pct": 2.323843,
+        "risk_quality_score": 78.0,
+        "strategy_id": "EMA_5_15",
+        "target_weight_pct": 28.135997,
+        "volatility_multiplier": 0.714286
+      },
+      {
+        "kelly_fraction": 0.039167,
+        "risk_budget_pct": 1.444792,
+        "risk_quality_score": 70.0,
+        "strategy_id": "BUY_HOLD",
+        "target_weight_pct": 22.755807,
+        "volatility_multiplier": 1.176471
+      }
+    ],
+    "portfolio_risk_headroom": 0.45538,
+    "total_risk_budget_pct": 10.0,
+    "unused_risk_budget_pct": 1.231365,
+    "used_risk_budget_pct": 8.768635
+  },
+  "risk_budget_certificate_sha256": "42e5e0ad2cf619939bb8bea20b19a5ba19b1ee9ff80b6f007358aae332d03639",
+  "risk_budget_gate": {
+    "checks": {
+      "exposure_multiplier_valid": true,
+      "gross_exposure_limit": true,
+      "portfolio_heat_limit": true,
+      "risk_allocations_present": true,
+      "single_strategy_budget_limit": true,
+      "total_budget_limit": true
+    },
+    "failed": [],
+    "largest_strategy_risk_budget_pct": 5.0,
+    "passed": true
+  },
+  "risk_budget_id": "1c44e0da0be18221cc8c683f",
+  "source_portfolio_id": "0b75d5fbbbac4a6c22f20fc7",
+  "source_risk_assessment_id": "868135cb86524109bdd80aa9",
+  "stage": "V100.64",
+  "stage_range": "V100.33-V100.64",
+  "state": "RISK_BUDGET_ALLOCATION_READY",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

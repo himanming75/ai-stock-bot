@@ -1,0 +1,14 @@
+{
+  "policy_version": "V100.33",
+  "total_risk_budget_pct": 10.0,
+  "maximum_strategy_risk_budget_pct": 5.0,
+  "minimum_strategy_risk_budget_pct": 0.25,
+  "target_strategy_volatility_pct": 2.0,
+  "kelly_fraction": 0.25,
+  "maximum_kelly_fraction": 0.5,
+  "minimum_exposure_multiplier": 0.25,
+  "maximum_exposure_multiplier": 1.25,
+  "minimum_gross_exposure_pct": 20.0,
+  "maximum_gross_exposure_pct": 100.0,
+  "maximum_portfolio_heat_pct": 10.0
+}

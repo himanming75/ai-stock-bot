@@ -1,0 +1,28 @@
+{
+  "strategies": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "observed_volatility_pct": 2.2,
+      "win_rate_pct": 61.0,
+      "average_win_pct": 1.9,
+      "average_loss_pct": -1.0,
+      "risk_quality_score": 88.0
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "observed_volatility_pct": 2.8,
+      "win_rate_pct": 57.0,
+      "average_win_pct": 1.6,
+      "average_loss_pct": -1.0,
+      "risk_quality_score": 78.0
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "observed_volatility_pct": 1.7,
+      "win_rate_pct": 54.0,
+      "average_win_pct": 1.2,
+      "average_loss_pct": -1.0,
+      "risk_quality_score": 70.0
+    }
+  ]
+}
