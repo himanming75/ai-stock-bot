@@ -1,0 +1,19 @@
+{
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "market_value": "15000",
+      "side": "long"
+    },
+    {
+      "symbol": "MSFT",
+      "market_value": "10000",
+      "side": "long"
+    },
+    {
+      "symbol": "SPY",
+      "market_value": "5000",
+      "side": "long"
+    }
+  ]
+}
