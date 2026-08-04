@@ -1,0 +1,34 @@
+{
+  "broker_allocation": [
+    {
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "equity": 1000.0,
+      "weight_pct": 0.9901
+    },
+    {
+      "broker_id": "ALPACA_PAPER",
+      "equity": 100000.0,
+      "weight_pct": 99.0099
+    }
+  ],
+  "positions": [
+    {
+      "account_id_masked": "****PAPER",
+      "broker_id": "ALPACA_PAPER",
+      "market_value": 2000,
+      "quantity": 10,
+      "symbol": "AAPL"
+    }
+  ],
+  "summary": {
+    "account_count": 2,
+    "broker_count": 2,
+    "cash_weight_pct": 90.099,
+    "gross_exposure": 2000.0,
+    "gross_exposure_pct": 1.9802,
+    "position_count": 1,
+    "total_buying_power": 191000.0,
+    "total_cash": 91000.0,
+    "total_equity": 101000.0
+  }
+}

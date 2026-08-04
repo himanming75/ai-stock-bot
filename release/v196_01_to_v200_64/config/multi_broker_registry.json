@@ -1,0 +1,31 @@
+{
+  "brokers": [
+    {
+      "broker_id": "ALPACA_PAPER",
+      "enabled": true,
+      "fixture_path": "release/v196_01_to_v200_64/input/alpaca_paper.json"
+    },
+    {
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "enabled": true,
+      "fixture_path": "release/v196_01_to_v200_64/input/alpaca_live_readonly.json"
+    },
+    {
+      "broker_id": "ETRADE_FOUNDATION",
+      "enabled": false,
+      "fixture_path": "release/v196_01_to_v200_64/input/etrade.json"
+    },
+    {
+      "broker_id": "IBKR_FOUNDATION",
+      "enabled": false,
+      "fixture_path": "release/v196_01_to_v200_64/input/ibkr.json"
+    },
+    {
+      "broker_id": "SCHWAB_FOUNDATION",
+      "enabled": false,
+      "fixture_path": "release/v196_01_to_v200_64/input/schwab.json"
+    }
+  ],
+  "broker_write_enabled": false,
+  "live_submission_enabled": false
+}

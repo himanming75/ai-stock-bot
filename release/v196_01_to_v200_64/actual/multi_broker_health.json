@@ -1,0 +1,33 @@
+{
+  "healthy_broker_count": 2,
+  "passed": true,
+  "rows": [
+    {
+      "account_id_masked": "****PAPER",
+      "broker_id": "ALPACA_PAPER",
+      "checks": {
+        "orders_unsupported": true,
+        "read_latency_within_limit": true,
+        "read_only": true,
+        "status_active": true
+      },
+      "failed": [],
+      "healthy": true,
+      "read_latency_ms": 0.247
+    },
+    {
+      "account_id_masked": "****LIVE",
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "checks": {
+        "orders_unsupported": true,
+        "read_latency_within_limit": true,
+        "read_only": true,
+        "status_active": true
+      },
+      "failed": [],
+      "healthy": true,
+      "read_latency_ms": 0.233
+    }
+  ],
+  "unhealthy_broker_count": 0
+}

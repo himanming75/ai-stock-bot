@@ -1,0 +1,19 @@
+{
+  "stage_range": "V196.01-V200.64",
+  "base_commit": "3f064ba4ece98a9c21974512274f40a1cede94be",
+  "multi_broker_registry": true,
+  "multi_account_snapshots": true,
+  "broker_health_monitor": true,
+  "read_latency_monitor": true,
+  "unhealthy_broker_isolation": true,
+  "read_only_failover": true,
+  "unified_portfolio": true,
+  "broker_allocation": true,
+  "production_gate": true,
+  "web_multi_broker_api": true,
+  "automatic_write_failover_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V201.01-V205.64 Broker Plugin Framework"
+}

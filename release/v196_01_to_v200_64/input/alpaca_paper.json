@@ -1,0 +1,18 @@
+{
+  "account": {
+    "account_id_masked": "****PAPER",
+    "mode": "PAPER",
+    "status": "ACTIVE",
+    "cash": 90000,
+    "equity": 100000,
+    "buying_power": 190000
+  },
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "quantity": 10,
+      "market_value": 2000
+    }
+  ],
+  "orders": []
+}

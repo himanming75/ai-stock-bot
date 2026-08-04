@@ -1,0 +1,12 @@
+{
+  "account": {
+    "account_id_masked": "NOT_CONFIGURED",
+    "mode": "READ_ONLY_FOUNDATION",
+    "status": "DISABLED",
+    "cash": 0,
+    "equity": 0,
+    "buying_power": 0
+  },
+  "positions": [],
+  "orders": []
+}

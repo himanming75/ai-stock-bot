@@ -1,0 +1,92 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_health": {
+    "healthy_broker_count": 2,
+    "passed": true,
+    "rows": [
+      {
+        "account_id_masked": "****PAPER",
+        "broker_id": "ALPACA_PAPER",
+        "checks": {
+          "orders_unsupported": true,
+          "read_latency_within_limit": true,
+          "read_only": true,
+          "status_active": true
+        },
+        "failed": [],
+        "healthy": true,
+        "read_latency_ms": 0.247
+      },
+      {
+        "account_id_masked": "****LIVE",
+        "broker_id": "ALPACA_LIVE_READ_ONLY",
+        "checks": {
+          "orders_unsupported": true,
+          "read_latency_within_limit": true,
+          "read_only": true,
+          "status_active": true
+        },
+        "failed": [],
+        "healthy": true,
+        "read_latency_ms": 0.233
+      }
+    ],
+    "unhealthy_broker_count": 0
+  },
+  "checks": {
+    "all_order_support_disabled": true,
+    "all_snapshots_read_only": true,
+    "allowed_state": true,
+    "automatic_write_failover_disabled": true,
+    "broker_write_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "multi_account_ready": true,
+    "multi_broker_ready": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "failover": {
+    "actual_live_orders_submitted": 0,
+    "automatic_write_failover_enabled": false,
+    "broker_write_enabled": false,
+    "enabled": true,
+    "isolated_brokers": [],
+    "primary_read_broker": "ALPACA_PAPER",
+    "read_failover_ready": true,
+    "secondary_read_broker": "ALPACA_LIVE_READ_ONLY"
+  },
+  "portfolio_summary": {
+    "account_count": 2,
+    "broker_count": 2,
+    "cash_weight_pct": 90.099,
+    "gross_exposure": 2000.0,
+    "gross_exposure_pct": 1.9802,
+    "position_count": 1,
+    "total_buying_power": 191000.0,
+    "total_cash": 91000.0,
+    "total_equity": 101000.0
+  },
+  "production_gate": {
+    "checks": {
+      "automatic_write_failover_disabled": true,
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_accounts": true,
+      "maximum_broker_weight_pct": false,
+      "maximum_brokers": true,
+      "maximum_positions": true,
+      "minimum_healthy_brokers": true
+    },
+    "failed": [
+      "maximum_broker_weight_pct"
+    ],
+    "maximum_broker_weight_pct_observed": 99.0099,
+    "passed": false
+  },
+  "state": "MULTI_BROKER_MULTI_ACCOUNT_REVIEW_REQUIRED",
+  "verification_stage": "V200.64",
+  "verification_status": "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_write_failover_enabled": false,
+  "broker_write_enabled": false,
+  "enabled": true,
+  "isolated_brokers": [],
+  "primary_read_broker": "ALPACA_PAPER",
+  "read_failover_ready": true,
+  "secondary_read_broker": "ALPACA_LIVE_READ_ONLY"
+}

@@ -1,0 +1,13 @@
+{
+  "maximum_brokers": 5,
+  "maximum_accounts": 10,
+  "maximum_positions": 50,
+  "maximum_broker_weight_pct": 80.0,
+  "minimum_healthy_brokers": 1,
+  "maximum_read_latency_ms": 3000,
+  "failover_enabled": true,
+  "automatic_failover_write_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

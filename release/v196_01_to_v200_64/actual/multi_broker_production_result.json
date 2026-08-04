@@ -1,0 +1,146 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_write_failover_enabled": false,
+  "broker_health": {
+    "healthy_broker_count": 2,
+    "passed": true,
+    "rows": [
+      {
+        "account_id_masked": "****PAPER",
+        "broker_id": "ALPACA_PAPER",
+        "checks": {
+          "orders_unsupported": true,
+          "read_latency_within_limit": true,
+          "read_only": true,
+          "status_active": true
+        },
+        "failed": [],
+        "healthy": true,
+        "read_latency_ms": 0.247
+      },
+      {
+        "account_id_masked": "****LIVE",
+        "broker_id": "ALPACA_LIVE_READ_ONLY",
+        "checks": {
+          "orders_unsupported": true,
+          "read_latency_within_limit": true,
+          "read_only": true,
+          "status_active": true
+        },
+        "failed": [],
+        "healthy": true,
+        "read_latency_ms": 0.233
+      }
+    ],
+    "unhealthy_broker_count": 0
+  },
+  "broker_write_enabled": false,
+  "failover": {
+    "actual_live_orders_submitted": 0,
+    "automatic_write_failover_enabled": false,
+    "broker_write_enabled": false,
+    "enabled": true,
+    "isolated_brokers": [],
+    "primary_read_broker": "ALPACA_PAPER",
+    "read_failover_ready": true,
+    "secondary_read_broker": "ALPACA_LIVE_READ_ONLY"
+  },
+  "live_submission_enabled": false,
+  "multi_account_ready": true,
+  "multi_broker_ready": true,
+  "next_phase": "V201_01_TO_V205_64_BROKER_PLUGIN_FRAMEWORK",
+  "observed_at": "2026-08-04T08:03:52.343690+00:00",
+  "production_gate": {
+    "checks": {
+      "automatic_write_failover_disabled": true,
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_accounts": true,
+      "maximum_broker_weight_pct": false,
+      "maximum_brokers": true,
+      "maximum_positions": true,
+      "minimum_healthy_brokers": true
+    },
+    "failed": [
+      "maximum_broker_weight_pct"
+    ],
+    "maximum_broker_weight_pct_observed": 99.0099,
+    "passed": false
+  },
+  "read_failover_ready": true,
+  "snapshots": [
+    {
+      "account_id_masked": "****PAPER",
+      "actual_live_orders_submitted": 0,
+      "broker_id": "ALPACA_PAPER",
+      "buying_power": 190000.0,
+      "cash": 90000.0,
+      "equity": 100000.0,
+      "mode": "PAPER",
+      "orders": [],
+      "positions": [
+        {
+          "market_value": 2000,
+          "quantity": 10,
+          "symbol": "AAPL"
+        }
+      ],
+      "read_latency_ms": 0.247,
+      "read_only": true,
+      "status": "ACTIVE",
+      "supports_orders": false
+    },
+    {
+      "account_id_masked": "****LIVE",
+      "actual_live_orders_submitted": 0,
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "buying_power": 1000.0,
+      "cash": 1000.0,
+      "equity": 1000.0,
+      "mode": "LIVE_READ_ONLY",
+      "orders": [],
+      "positions": [],
+      "read_latency_ms": 0.233,
+      "read_only": true,
+      "status": "ACTIVE",
+      "supports_orders": false
+    }
+  ],
+  "stage": "V200.64",
+  "state": "MULTI_BROKER_MULTI_ACCOUNT_REVIEW_REQUIRED",
+  "status": "PASS",
+  "unified_portfolio": {
+    "broker_allocation": [
+      {
+        "broker_id": "ALPACA_LIVE_READ_ONLY",
+        "equity": 1000.0,
+        "weight_pct": 0.9901
+      },
+      {
+        "broker_id": "ALPACA_PAPER",
+        "equity": 100000.0,
+        "weight_pct": 99.0099
+      }
+    ],
+    "positions": [
+      {
+        "account_id_masked": "****PAPER",
+        "broker_id": "ALPACA_PAPER",
+        "market_value": 2000,
+        "quantity": 10,
+        "symbol": "AAPL"
+      }
+    ],
+    "summary": {
+      "account_count": 2,
+      "broker_count": 2,
+      "cash_weight_pct": 90.099,
+      "gross_exposure": 2000.0,
+      "gross_exposure_pct": 1.9802,
+      "position_count": 1,
+      "total_buying_power": 191000.0,
+      "total_cash": 91000.0,
+      "total_equity": 101000.0
+    }
+  }
+}
