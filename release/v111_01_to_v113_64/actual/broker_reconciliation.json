@@ -1,0 +1,22 @@
+{
+  "account": {
+    "cash": {
+      "broker_value": 101912.7,
+      "difference": 0.0,
+      "internal_value": 101912.7,
+      "passed": true,
+      "tolerance": 1.0
+    },
+    "equity": {
+      "broker_value": 101912.7,
+      "difference": 0.0,
+      "internal_value": 101912.7,
+      "passed": true,
+      "tolerance": 1.0
+    }
+  },
+  "account_reconciled": true,
+  "passed": true,
+  "positions": {},
+  "positions_reconciled": true
+}

@@ -1,0 +1,135 @@
+{
+  "account_snapshot": {
+    "account_id_masked": "MOCK-****-113",
+    "buying_power": 101912.7,
+    "cash": 101912.7,
+    "currency": "USD",
+    "day_trade_count": 0,
+    "equity": 101912.7,
+    "status": "ACTIVE"
+  },
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "adapter_health": {
+    "adapter_name": "MOCK_READ_ONLY",
+    "credentials_used": false,
+    "healthy": true,
+    "network_used": false,
+    "read_only": true,
+    "source": "LOCAL_FIXTURE"
+  },
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "capabilities": {
+    "account_read": true,
+    "credentials_required": false,
+    "fund_transfer": false,
+    "market_data_read": false,
+    "network_required": false,
+    "order_cancel": false,
+    "order_replace": false,
+    "order_submit": false,
+    "orders_read": true,
+    "positions_read": true,
+    "read_only": true
+  },
+  "capability_validation": {
+    "checks": {
+      "fund_transfer_disabled": true,
+      "order_cancel_disabled": true,
+      "order_replace_disabled": true,
+      "order_submit_disabled": true,
+      "read_only": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "certificate_sha256": "00ac1f3cd146812a4dfbc9cf5c7813a360bdb326bdba98a7e490f4b07a24f3ac",
+  "credential_inspection": {
+    "adapter_name": "MOCK_READ_ONLY",
+    "complete": true,
+    "credentials_loaded": false,
+    "credentials_used": false,
+    "presence": {},
+    "present_count": 0,
+    "required_count": 0,
+    "required_environment_names": [],
+    "values_exposed": false
+  },
+  "credentials_loaded": false,
+  "drift": {
+    "drift_detected": false,
+    "drift_event_count": 0,
+    "events": [],
+    "open_broker_order_count": 0
+  },
+  "external_network_enabled": false,
+  "fixture_snapshot_used": true,
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "network_requests_executed": 0,
+  "next_phase": "V114_01_TO_V116_64_BROKER_INTEGRATION_SAFE_EXECUTION_BOUNDARY",
+  "observed_at": "2026-08-04T05:25:39.111751+00:00",
+  "order_snapshot": [],
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "position_snapshot": [],
+  "read_only": true,
+  "real_broker_snapshot_fetched": false,
+  "real_network_connection_attempted": false,
+  "reconciliation": {
+    "account": {
+      "cash": {
+        "broker_value": 101912.7,
+        "difference": 0.0,
+        "internal_value": 101912.7,
+        "passed": true,
+        "tolerance": 1.0
+      },
+      "equity": {
+        "broker_value": 101912.7,
+        "difference": 0.0,
+        "internal_value": 101912.7,
+        "passed": true,
+        "tolerance": 1.0
+      }
+    },
+    "account_reconciled": true,
+    "passed": true,
+    "positions": {},
+    "positions_reconciled": true
+  },
+  "safe_boundary": {
+    "blocked_methods": [
+      "submit_order",
+      "cancel_order",
+      "replace_order",
+      "close_position",
+      "close_all_positions",
+      "transfer_funds"
+    ],
+    "checks": {
+      "cancel_disabled": true,
+      "fund_transfer_disabled": true,
+      "read_only": true,
+      "replace_disabled": true,
+      "submit_disabled": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "selected_adapter": "MOCK_READ_ONLY",
+  "snapshot_id": "a664b7a1e37a8bee6bcc61c9",
+  "stage": "V113.64",
+  "stage_range": "V111.01-V113.64",
+  "state": "LIVE_BROKER_READ_ONLY_INFRASTRUCTURE_READY",
+  "status": "PASS",
+  "supported_adapters": [
+    "MOCK_READ_ONLY",
+    "ALPACA_READ_ONLY",
+    "IBKR_READ_ONLY",
+    "ETRADE_READ_ONLY"
+  ],
+  "write_requests_executed": 0
+}

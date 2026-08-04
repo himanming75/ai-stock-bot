@@ -1,0 +1,9 @@
+{
+  "account_id_masked": "MOCK-****-113",
+  "buying_power": 101912.7,
+  "cash": 101912.7,
+  "currency": "USD",
+  "day_trade_count": 0,
+  "equity": 101912.7,
+  "status": "ACTIVE"
+}
