@@ -21,11 +21,11 @@
     "timestamp": "2026-08-04T12:00:00Z"
   },
   "credential_status": {
-    "complete": false,
+    "complete": true,
     "credentials_loaded": false,
     "credentials_used": false,
-    "key_present": false,
-    "secret_present": false,
+    "key_present": true,
+    "secret_present": true,
     "values_exposed": false
   },
   "live_base_url_used": false,
@@ -64,10 +64,10 @@
   },
   "mode": "OFFLINE_MOCK",
   "next_phase": "V124_LIVE_SHADOW_MODE",
-  "observed_at": "2026-08-04T05:55:02.755684+00:00",
+  "observed_at": "2026-08-04T06:03:26.511790+00:00",
   "operation_id": "300acee5795da01b071b8a5f",
   "order_payload_preview": {
-    "client_order_id": "5e9e4ded9269b52a05e4bccc04fb8718",
+    "client_order_id": "05816867ca579d3cceef4e4eb578c8ed",
     "qty": "1",
     "side": "buy",
     "symbol": "AAPL",
@@ -112,7 +112,12 @@
   },
   "real_network_connection_attempted": false,
   "request_id": null,
-  "result_sha256": "a99aa23c8160d6470e3614d37aa8f7d8f07e9fc175cefad853a46fa166bb4b51",
+  "result_sha256": "ce30803c73eecbbc232b3d60261bbd6f789df2d92ab7a2faa9db1f0037551e1f",
+  "runtime_overrides": {
+    "one_paper_order_override": false,
+    "policy_file_modified": false,
+    "real_paper_network_override": false
+  },
   "stage": "V123.64",
   "stage_range": "V121.01-V123.64",
   "state": "ALPACA_PAPER_OFFLINE_VALIDATION_READY",

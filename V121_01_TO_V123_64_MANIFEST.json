@@ -14,5 +14,10 @@
   "qualification_gate": true,
   "minimum_qualification_sessions": 20,
   "actual_live_orders_submitted": 0,
-  "next_phase": "V124 Live Shadow Mode"
+  "next_phase": "V124 Live Shadow Mode",
+  "fixed_version": "FIXED_V2",
+  "json_policy_edit_required": false,
+  "runtime_network_override": true,
+  "runtime_one_paper_order_override": true,
+  "policy_auto_restored": true
 }

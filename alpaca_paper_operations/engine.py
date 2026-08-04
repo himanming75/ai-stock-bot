@@ -1,5 +1,6 @@
 from __future__ import annotations
 from datetime import datetime,timezone
+import os
 from pathlib import Path
 from typing import Any
 
@@ -50,11 +51,37 @@ def evaluate(
         write_json(actual/"alpaca_paper_operations_result.json",body)
         return body
 
+    runtime_real_network_override=(
+        os.environ.get("ALPACA_ALLOW_REAL_PAPER_NETWORK","").upper()=="YES"
+    )
+    runtime_paper_submit_override=(
+        os.environ.get("ALPACA_ALLOW_ONE_PAPER_ORDER","").upper()=="YES"
+    )
+
+    real_network_allowed=(
+        policy.get("real_network_enabled") is True
+        or runtime_real_network_override
+    )
+    paper_submission_allowed=(
+        policy.get("paper_submission_enabled") is True
+        or runtime_paper_submit_override
+    )
+
+    runtime_policy=dict(policy)
+    runtime_policy["real_network_enabled"]=real_network_allowed
+    runtime_policy["paper_submission_enabled"]=paper_submission_allowed
+
     if real_network:
-        if not policy.get("real_network_enabled"):
-            raise RuntimeError("REAL NETWORK IS DISABLED BY POLICY")
+        if not real_network_allowed:
+            raise RuntimeError(
+                "REAL ALPACA PAPER NETWORK IS BLOCKED. "
+                "Run RUN_V121_TO_V123_REAL_READ_ONLY.ps1."
+            )
         if not creds["complete"]:
-            raise RuntimeError("ALPACA PAPER CREDENTIALS ARE MISSING")
+            raise RuntimeError(
+                "ALPACA PAPER CREDENTIALS ARE MISSING. "
+                "Set ALPACA_PAPER_API_KEY and ALPACA_PAPER_SECRET_KEY."
+            )
         client=AlpacaPaperClient(headers_from_environment())
     else:
         client=MockAlpacaPaperClient(fixture)
@@ -80,9 +107,12 @@ def evaluate(
         "timestamp":datetime.now(timezone.utc).isoformat(),
         "mode":mode,
     })[:32]
-    validation=validate_order(payload,policy)
+    validation=validate_order(payload,runtime_policy)
     gate=submission_gate(
-        validation,policy,submit_paper_order,creds["complete"] if real_network else True
+        validation,
+        runtime_policy,
+        submit_paper_order,
+        creds["complete"] if real_network else True,
     )
 
     submitted_order=None
@@ -139,6 +169,11 @@ def evaluate(
         "market_data_base_url":"https://data.alpaca.markets",
         "market_data_feed":policy.get("market_data_feed"),
         "credential_status":creds,
+        "runtime_overrides":{
+            "real_paper_network_override":runtime_real_network_override,
+            "one_paper_order_override":runtime_paper_submit_override,
+            "policy_file_modified":False,
+        },
         "account_snapshot":account,
         "position_snapshot":positions,
         "order_snapshot":orders,

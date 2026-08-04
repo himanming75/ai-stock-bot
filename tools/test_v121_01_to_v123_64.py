@@ -34,6 +34,17 @@ class Tests(unittest.TestCase):
     def test_qualification_requires_sessions(self):
         q=evaluate_qualification([],{"minimum_qualification_sessions":20})
         self.assertFalse(q["passed"])
+    def test_runtime_override_names_are_safe(self):
+        import os
+        self.assertNotEqual(
+            "ALPACA_ALLOW_REAL_PAPER_NETWORK",
+            "ALPACA_PAPER_API_KEY",
+        )
+        self.assertNotEqual(
+            "ALPACA_ALLOW_ONE_PAPER_ORDER",
+            "ALPACA_PAPER_SECRET_KEY",
+        )
+
     def test_missing_source(self):
         with tempfile.TemporaryDirectory() as t:
             self.assertEqual(evaluate(Path(t))["state"],
