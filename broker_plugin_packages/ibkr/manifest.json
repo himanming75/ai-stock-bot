@@ -1,0 +1,15 @@
+{
+  "plugin_id": "IBKR_FOUNDATION",
+  "display_name": "Interactive Brokers Foundation",
+  "version": "0.1.0",
+  "api_version": "1",
+  "enabled": false,
+  "read_only": true,
+  "supports_orders": false,
+  "capabilities": [
+    "account_read",
+    "positions_read",
+    "orders_read",
+    "streaming_read"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "by_capability": {
+    "account_read": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER",
+      "ETRADE_FOUNDATION",
+      "IBKR_FOUNDATION",
+      "SCHWAB_FOUNDATION"
+    ],
+    "fractional_shares": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER"
+    ],
+    "live_account_read_only": [
+      "ALPACA_LIVE_READ_ONLY"
+    ],
+    "market_clock_read": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER"
+    ],
+    "orders_read": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER",
+      "ETRADE_FOUNDATION",
+      "IBKR_FOUNDATION",
+      "SCHWAB_FOUNDATION"
+    ],
+    "paper_account": [
+      "ALPACA_PAPER"
+    ],
+    "positions_read": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER",
+      "ETRADE_FOUNDATION",
+      "IBKR_FOUNDATION",
+      "SCHWAB_FOUNDATION"
+    ],
+    "streaming_read": [
+      "IBKR_FOUNDATION"
+    ]
+  },
+  "plugins": [
+    {
+      "capabilities": [
+        "account_read",
+        "fractional_shares",
+        "live_account_read_only",
+        "market_clock_read",
+        "orders_read",
+        "positions_read"
+      ],
+      "enabled": true,
+      "plugin_id": "ALPACA_LIVE_READ_ONLY"
+    },
+    {
+      "capabilities": [
+        "account_read",
+        "fractional_shares",
+        "market_clock_read",
+        "orders_read",
+        "paper_account",
+        "positions_read"
+      ],
+      "enabled": true,
+      "plugin_id": "ALPACA_PAPER"
+    },
+    {
+      "capabilities": [
+        "account_read",
+        "orders_read",
+        "positions_read"
+      ],
+      "enabled": false,
+      "plugin_id": "ETRADE_FOUNDATION"
+    },
+    {
+      "capabilities": [
+        "account_read",
+        "orders_read",
+        "positions_read",
+        "streaming_read"
+      ],
+      "enabled": false,
+      "plugin_id": "IBKR_FOUNDATION"
+    },
+    {
+      "capabilities": [
+        "account_read",
+        "orders_read",
+        "positions_read"
+      ],
+      "enabled": false,
+      "plugin_id": "SCHWAB_FOUNDATION"
+    }
+  ]
+}

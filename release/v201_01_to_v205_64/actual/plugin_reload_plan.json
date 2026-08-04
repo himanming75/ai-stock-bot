@@ -1,0 +1,20 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "created_at": "2026-08-04T08:08:42.606722+00:00",
+  "hot_reload_performed": false,
+  "plugin_ids": [
+    "ALPACA_LIVE_READ_ONLY",
+    "ALPACA_PAPER"
+  ],
+  "steps": [
+    "ENABLE_EMERGENCY_STOP",
+    "STOP_NEW_READ_CYCLES",
+    "VERIFY_PLUGIN_MANIFESTS",
+    "VERIFY_API_COMPATIBILITY",
+    "CLEAR_DISCOVERY_CACHE",
+    "RELOAD_READ_ONLY_DESCRIPTORS",
+    "RUN_PLUGIN_HEALTH_CHECK",
+    "RESUME_READ_ONLY_CYCLES"
+  ]
+}

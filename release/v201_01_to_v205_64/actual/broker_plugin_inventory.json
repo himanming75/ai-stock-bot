@@ -1,0 +1,136 @@
+{
+  "plugins": [
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "market_clock_read",
+        "live_account_read_only",
+        "fractional_shares"
+      ],
+      "display_name": "Alpaca Live Read-Only",
+      "enabled": true,
+      "loadable": true,
+      "plugin_id": "ALPACA_LIVE_READ_ONLY",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "1.0.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "market_clock_read",
+        "paper_account",
+        "fractional_shares"
+      ],
+      "display_name": "Alpaca Paper",
+      "enabled": true,
+      "loadable": true,
+      "plugin_id": "ALPACA_PAPER",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "1.0.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read"
+      ],
+      "display_name": "E*TRADE Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "ETRADE_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "streaming_read"
+      ],
+      "display_name": "Interactive Brokers Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "IBKR_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read"
+      ],
+      "display_name": "Charles Schwab Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "SCHWAB_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    }
+  ]
+}

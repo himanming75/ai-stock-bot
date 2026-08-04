@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ALPACA_LIVE_READ_ONLY"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ALPACA_PAPER"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ETRADE_FOUNDATION"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "IBKR_FOUNDATION"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "SCHWAB_FOUNDATION"
+    }
+  ]
+}

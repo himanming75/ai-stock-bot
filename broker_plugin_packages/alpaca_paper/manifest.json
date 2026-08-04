@@ -1,0 +1,17 @@
+{
+  "plugin_id": "ALPACA_PAPER",
+  "display_name": "Alpaca Paper",
+  "version": "1.0.0",
+  "api_version": "1",
+  "enabled": true,
+  "read_only": true,
+  "supports_orders": false,
+  "capabilities": [
+    "account_read",
+    "positions_read",
+    "orders_read",
+    "market_clock_read",
+    "paper_account",
+    "fractional_shares"
+  ]
+}

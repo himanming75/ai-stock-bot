@@ -1,0 +1,14 @@
+{
+  "plugin_id": "SCHWAB_FOUNDATION",
+  "display_name": "Charles Schwab Foundation",
+  "version": "0.1.0",
+  "api_version": "1",
+  "enabled": false,
+  "read_only": true,
+  "supports_orders": false,
+  "capabilities": [
+    "account_read",
+    "positions_read",
+    "orders_read"
+  ]
+}

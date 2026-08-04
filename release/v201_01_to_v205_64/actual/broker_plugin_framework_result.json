@@ -1,0 +1,334 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "capability_matrix": {
+    "by_capability": {
+      "account_read": [
+        "ALPACA_LIVE_READ_ONLY",
+        "ALPACA_PAPER",
+        "ETRADE_FOUNDATION",
+        "IBKR_FOUNDATION",
+        "SCHWAB_FOUNDATION"
+      ],
+      "fractional_shares": [
+        "ALPACA_LIVE_READ_ONLY",
+        "ALPACA_PAPER"
+      ],
+      "live_account_read_only": [
+        "ALPACA_LIVE_READ_ONLY"
+      ],
+      "market_clock_read": [
+        "ALPACA_LIVE_READ_ONLY",
+        "ALPACA_PAPER"
+      ],
+      "orders_read": [
+        "ALPACA_LIVE_READ_ONLY",
+        "ALPACA_PAPER",
+        "ETRADE_FOUNDATION",
+        "IBKR_FOUNDATION",
+        "SCHWAB_FOUNDATION"
+      ],
+      "paper_account": [
+        "ALPACA_PAPER"
+      ],
+      "positions_read": [
+        "ALPACA_LIVE_READ_ONLY",
+        "ALPACA_PAPER",
+        "ETRADE_FOUNDATION",
+        "IBKR_FOUNDATION",
+        "SCHWAB_FOUNDATION"
+      ],
+      "streaming_read": [
+        "IBKR_FOUNDATION"
+      ]
+    },
+    "plugins": [
+      {
+        "capabilities": [
+          "account_read",
+          "fractional_shares",
+          "live_account_read_only",
+          "market_clock_read",
+          "orders_read",
+          "positions_read"
+        ],
+        "enabled": true,
+        "plugin_id": "ALPACA_LIVE_READ_ONLY"
+      },
+      {
+        "capabilities": [
+          "account_read",
+          "fractional_shares",
+          "market_clock_read",
+          "orders_read",
+          "paper_account",
+          "positions_read"
+        ],
+        "enabled": true,
+        "plugin_id": "ALPACA_PAPER"
+      },
+      {
+        "capabilities": [
+          "account_read",
+          "orders_read",
+          "positions_read"
+        ],
+        "enabled": false,
+        "plugin_id": "ETRADE_FOUNDATION"
+      },
+      {
+        "capabilities": [
+          "account_read",
+          "orders_read",
+          "positions_read",
+          "streaming_read"
+        ],
+        "enabled": false,
+        "plugin_id": "IBKR_FOUNDATION"
+      },
+      {
+        "capabilities": [
+          "account_read",
+          "orders_read",
+          "positions_read"
+        ],
+        "enabled": false,
+        "plugin_id": "SCHWAB_FOUNDATION"
+      }
+    ]
+  },
+  "checks": {
+    "all_enabled_plugins_loadable": true,
+    "all_order_support_disabled": true,
+    "all_plugins_read_only": true,
+    "plugins_discovered": true,
+    "reload_write_disabled": true
+  },
+  "compatibility": [
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ALPACA_LIVE_READ_ONLY"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ALPACA_PAPER"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "ETRADE_FOUNDATION"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "IBKR_FOUNDATION"
+    },
+    {
+      "checks": {
+        "api_version": true,
+        "manifest_valid": true,
+        "orders_disabled": true,
+        "python_version": true,
+        "read_only": true
+      },
+      "compatible": true,
+      "failed": [],
+      "plugin_id": "SCHWAB_FOUNDATION"
+    }
+  ],
+  "discovered_plugin_count": 5,
+  "enabled_plugin_count": 2,
+  "failed": [],
+  "live_submission_enabled": false,
+  "loadable_plugin_count": 2,
+  "next_phase": "V206_01_TO_V210_64_RISK_ENGINE_V2",
+  "observed_at": "2026-08-04T08:08:42.608105+00:00",
+  "plugin_order_submission_enabled": false,
+  "plugins": [
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "market_clock_read",
+        "live_account_read_only",
+        "fractional_shares"
+      ],
+      "display_name": "Alpaca Live Read-Only",
+      "enabled": true,
+      "loadable": true,
+      "plugin_id": "ALPACA_LIVE_READ_ONLY",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "1.0.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "market_clock_read",
+        "paper_account",
+        "fractional_shares"
+      ],
+      "display_name": "Alpaca Paper",
+      "enabled": true,
+      "loadable": true,
+      "plugin_id": "ALPACA_PAPER",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "1.0.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read"
+      ],
+      "display_name": "E*TRADE Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "ETRADE_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read",
+        "streaming_read"
+      ],
+      "display_name": "Interactive Brokers Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "IBKR_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "api_version": "1",
+      "capabilities": [
+        "account_read",
+        "positions_read",
+        "orders_read"
+      ],
+      "display_name": "Charles Schwab Foundation",
+      "enabled": false,
+      "loadable": false,
+      "plugin_id": "SCHWAB_FOUNDATION",
+      "read_only": true,
+      "required_methods": [
+        "connect",
+        "disconnect",
+        "get_account",
+        "get_positions",
+        "get_orders",
+        "health",
+        "capabilities"
+      ],
+      "supports_orders": false,
+      "version": "0.1.0"
+    }
+  ],
+  "reload_plan": {
+    "actual_live_orders_submitted": 0,
+    "broker_write_enabled": false,
+    "created_at": "2026-08-04T08:08:42.606722+00:00",
+    "hot_reload_performed": false,
+    "plugin_ids": [
+      "ALPACA_LIVE_READ_ONLY",
+      "ALPACA_PAPER"
+    ],
+    "steps": [
+      "ENABLE_EMERGENCY_STOP",
+      "STOP_NEW_READ_CYCLES",
+      "VERIFY_PLUGIN_MANIFESTS",
+      "VERIFY_API_COMPATIBILITY",
+      "CLEAR_DISCOVERY_CACHE",
+      "RELOAD_READ_ONLY_DESCRIPTORS",
+      "RUN_PLUGIN_HEALTH_CHECK",
+      "RESUME_READ_ONLY_CYCLES"
+    ]
+  },
+  "stage": "V205.64",
+  "state": "BROKER_PLUGIN_FRAMEWORK_READY",
+  "status": "PASS"
+}

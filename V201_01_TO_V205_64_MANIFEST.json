@@ -1,0 +1,20 @@
+{
+  "stage_range": "V201.01-V205.64",
+  "base_commit": "5808fcd14019911ae08bb5cff3f3a6934e60c095",
+  "plugin_discovery": true,
+  "manifest_validation": true,
+  "api_compatibility": true,
+  "capability_matrix": true,
+  "version_fields": true,
+  "safe_reload_plan": true,
+  "alpaca_plugins": true,
+  "etrade_foundation": true,
+  "ibkr_foundation": true,
+  "schwab_foundation": true,
+  "web_plugin_api": true,
+  "plugin_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V206.01-V210.64 Risk Engine V2"
+}

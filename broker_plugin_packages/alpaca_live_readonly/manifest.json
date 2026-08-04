@@ -1,0 +1,17 @@
+{
+  "plugin_id": "ALPACA_LIVE_READ_ONLY",
+  "display_name": "Alpaca Live Read-Only",
+  "version": "1.0.0",
+  "api_version": "1",
+  "enabled": true,
+  "read_only": true,
+  "supports_orders": false,
+  "capabilities": [
+    "account_read",
+    "positions_read",
+    "orders_read",
+    "market_clock_read",
+    "live_account_read_only",
+    "fractional_shares"
+  ]
+}
