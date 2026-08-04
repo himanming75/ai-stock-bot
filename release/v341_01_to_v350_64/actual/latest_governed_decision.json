@@ -1,0 +1,75 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "arbitration": {
+    "action": "BUY",
+    "confidence": 0.895833,
+    "conflict": true,
+    "vote_scores": {
+      "BUY": 1.72,
+      "HOLD": 0.2
+    },
+    "votes": [
+      {
+        "action": "BUY",
+        "confidence": 0.9,
+        "contribution": 0.9,
+        "strategy": "MOMENTUM",
+        "weight": 1.0
+      },
+      {
+        "action": "BUY",
+        "confidence": 0.82,
+        "contribution": 0.82,
+        "strategy": "TREND_FOLLOWING",
+        "weight": 1.0
+      },
+      {
+        "action": "HOLD",
+        "confidence": 0.4,
+        "contribution": 0.2,
+        "strategy": "MEAN_REVERSION",
+        "weight": 0.5
+      }
+    ]
+  },
+  "broker_write_enabled": false,
+  "constraints": {
+    "blocking_reasons": [],
+    "decision_allowed": true,
+    "duplicate_open_order": false
+  },
+  "context_summary": {
+    "account_status": "ACTIVE",
+    "governance_health": "HEALTHY",
+    "governance_state": "REAL_PAPER_OBSERVATION_GOVERNANCE_QUALIFIED",
+    "open_order_count": 0,
+    "position_count": 0,
+    "risk_quantity": 2.0,
+    "signal_action": "BUY",
+    "signal_confidence": 0.82,
+    "symbol": "AAPL"
+  },
+  "decision_hash": "a57a9186f317c2c3c5c7f47ca14b1f72a1ecd2abf22870f1550654a664ae9d15",
+  "governance_enforced": true,
+  "integrity_algorithm": "SHA256_CANONICAL_JSON",
+  "live_submission_enabled": false,
+  "next_phase": "V351_01_TO_V360_64_PAPER_ORDER_PROPOSAL_AND_APPROVAL_GATE",
+  "observed_at": "2026-08-04T19:03:30.035831+00:00",
+  "paper_order_candidate": {
+    "blocking_reasons": [],
+    "confidence": 0.895833,
+    "decision_allowed": true,
+    "order_type": "market",
+    "quantity": 2.0,
+    "side": "BUY",
+    "submission_allowed": false,
+    "symbol": "AAPL",
+    "time_in_force": "day"
+  },
+  "paper_submission_enabled": false,
+  "replayable": true,
+  "stage": "V350.64",
+  "state": "GOVERNED_DECISION_CANDIDATE_READY",
+  "status": "PASS"
+}

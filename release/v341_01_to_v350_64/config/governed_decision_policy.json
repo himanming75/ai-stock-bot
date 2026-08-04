@@ -1,0 +1,11 @@
+{
+  "stage": "V350.64",
+  "mode": "GOVERNED_DECISION_ONLY",
+  "required_governance_state": "REAL_PAPER_OBSERVATION_GOVERNANCE_QUALIFIED",
+  "required_governance_health": "HEALTHY",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "decision_hash_algorithm": "SHA256_CANONICAL_JSON"
+}

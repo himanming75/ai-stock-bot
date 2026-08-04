@@ -1,0 +1,54 @@
+{
+  "symbol": "AAPL",
+  "governance": {
+    "stage": "V340.64",
+    "state": "REAL_PAPER_OBSERVATION_GOVERNANCE_QUALIFIED",
+    "health": "HEALTHY",
+    "incidents": []
+  },
+  "account": {
+    "status": "ACTIVE",
+    "buying_power": "100000",
+    "cash": "50000",
+    "trading_blocked": false,
+    "account_blocked": false
+  },
+  "positions": [],
+  "open_orders": [],
+  "signal": {
+    "action": "BUY",
+    "confidence": 82.0,
+    "signal_rank": "B"
+  },
+  "portfolio": {
+    "selected": true,
+    "weight": 0.1,
+    "sector": "TECH"
+  },
+  "risk": {
+    "recommended_quantity": 2,
+    "recommended_notional": 400,
+    "reference_price": 200,
+    "risk_at_stop": 20
+  },
+  "strategy_votes": [
+    {
+      "strategy": "MOMENTUM",
+      "action": "BUY",
+      "confidence": 0.9,
+      "weight": 1.0
+    },
+    {
+      "strategy": "TREND_FOLLOWING",
+      "action": "BUY",
+      "confidence": 0.82,
+      "weight": 1.0
+    },
+    {
+      "strategy": "MEAN_REVERSION",
+      "action": "HOLD",
+      "confidence": 0.4,
+      "weight": 0.5
+    }
+  ]
+}

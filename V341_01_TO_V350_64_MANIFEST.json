@@ -1,0 +1,11 @@
+{
+  "stage": "V350.64",
+  "package": "Real Paper Governed Decision Bridge",
+  "requires": "V340.64 REAL_PAPER_OBSERVATION_GOVERNANCE_QUALIFIED",
+  "decision_candidate_only": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
