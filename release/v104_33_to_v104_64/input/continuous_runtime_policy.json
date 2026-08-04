@@ -1,0 +1,14 @@
+{
+  "policy_version": "V104.33",
+  "default_max_ticks": 3,
+  "maximum_ticks_per_run": 10,
+  "maximum_recovery_attempts": 3,
+  "heartbeat_enabled": true,
+  "checkpoint_enabled": true,
+  "graceful_shutdown_enabled": true,
+  "background_service_enabled": false,
+  "unbounded_loop_enabled": false,
+  "windows_task_enabled": false,
+  "manual_approval_required": true,
+  "execution_authorized": false
+}
