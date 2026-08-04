@@ -1,0 +1,17 @@
+{
+  "maximum_drawdown_pct": 10.0,
+  "maximum_daily_loss_pct": 2.0,
+  "maximum_consecutive_losses": 4,
+  "circuit_breaker_minutes": 30,
+  "maximum_atr_pct": 5.0,
+  "maximum_symbol_weight_pct": 20.0,
+  "maximum_sector_weight_pct": 40.0,
+  "maximum_correlation": 0.9,
+  "risk_per_trade_pct": 0.5,
+  "maximum_position_notional": 1000.0,
+  "maximum_position_quantity": 100,
+  "kill_switch_default_on": true,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

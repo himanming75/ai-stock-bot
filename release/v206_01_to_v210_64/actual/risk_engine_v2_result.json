@@ -1,0 +1,84 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "candidate": {
+    "atr_pct": 2.5,
+    "entry_price": 200.0,
+    "maximum_correlation": 0.65,
+    "projected_sector_weight_pct": 25.0,
+    "projected_symbol_weight_pct": 5.0,
+    "sector": "Technology",
+    "stop_price": 196.0,
+    "symbol": "AAPL"
+  },
+  "execution_authorized": false,
+  "kill_switch": {
+    "enabled": true,
+    "reason": "DEFAULT_SAFE_START",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V211_01_TO_V215_64_AI_STRATEGY_ENSEMBLE",
+  "observed_at": "2026-08-04T08:15:25.557927+00:00",
+  "policy": {
+    "broker_write_enabled": false,
+    "circuit_breaker_minutes": 30,
+    "kill_switch_default_on": true,
+    "live_submission_enabled": false,
+    "maximum_atr_pct": 5.0,
+    "maximum_consecutive_losses": 4,
+    "maximum_correlation": 0.9,
+    "maximum_daily_loss_pct": 2.0,
+    "maximum_drawdown_pct": 10.0,
+    "maximum_position_notional": 1000.0,
+    "maximum_position_quantity": 100,
+    "maximum_sector_weight_pct": 40.0,
+    "maximum_symbol_weight_pct": 20.0,
+    "risk_per_trade_pct": 0.5,
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "risk_gate": {
+    "checks": {
+      "broker_write_disabled": true,
+      "circuit_breaker_clear": true,
+      "correlation_within_limit": true,
+      "daily_loss_within_limit": true,
+      "drawdown_within_limit": true,
+      "kill_switch_clear": false,
+      "live_submission_disabled": true,
+      "position_size_positive": true,
+      "sector_weight_within_limit": true,
+      "symbol_weight_within_limit": true,
+      "volatility_within_limit": true
+    },
+    "failed": [
+      "kill_switch_clear"
+    ],
+    "metrics": {
+      "atr_pct": 2.5,
+      "consecutive_losses": 2,
+      "daily_loss_pct": 1.5,
+      "drawdown_pct": 1.5,
+      "maximum_correlation": 0.65,
+      "projected_sector_weight_pct": 25.0,
+      "projected_symbol_weight_pct": 5.0
+    },
+    "passed": false,
+    "position_size": {
+      "estimated_notional": 1000.0,
+      "quantity": 5,
+      "risk_budget": 492.5,
+      "risk_per_share": 4.0
+    }
+  },
+  "risk_state": {
+    "consecutive_losses": 2,
+    "current_equity": 98500.0,
+    "day_start_equity": 100000.0,
+    "peak_equity": 100000.0
+  },
+  "stage": "V210.64",
+  "state": "RISK_ENGINE_V2_HARD_BLOCKED",
+  "status": "PASS",
+  "trading_allowed": false
+}

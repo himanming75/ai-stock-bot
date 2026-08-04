@@ -1,0 +1,10 @@
+{
+  "symbol": "AAPL",
+  "sector": "Technology",
+  "entry_price": 200.0,
+  "stop_price": 196.0,
+  "atr_pct": 2.5,
+  "projected_symbol_weight_pct": 5.0,
+  "projected_sector_weight_pct": 25.0,
+  "maximum_correlation": 0.65
+}

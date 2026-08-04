@@ -1,0 +1,56 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "execution_not_authorized": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "kill_switch": {
+    "enabled": true,
+    "reason": "DEFAULT_SAFE_START",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "risk_gate": {
+    "checks": {
+      "broker_write_disabled": true,
+      "circuit_breaker_clear": true,
+      "correlation_within_limit": true,
+      "daily_loss_within_limit": true,
+      "drawdown_within_limit": true,
+      "kill_switch_clear": false,
+      "live_submission_disabled": true,
+      "position_size_positive": true,
+      "sector_weight_within_limit": true,
+      "symbol_weight_within_limit": true,
+      "volatility_within_limit": true
+    },
+    "failed": [
+      "kill_switch_clear"
+    ],
+    "metrics": {
+      "atr_pct": 2.5,
+      "consecutive_losses": 2,
+      "daily_loss_pct": 1.5,
+      "drawdown_pct": 1.5,
+      "maximum_correlation": 0.65,
+      "projected_sector_weight_pct": 25.0,
+      "projected_symbol_weight_pct": 5.0
+    },
+    "passed": false,
+    "position_size": {
+      "estimated_notional": 1000.0,
+      "quantity": 5,
+      "risk_budget": 492.5,
+      "risk_per_share": 4.0
+    }
+  },
+  "state": "RISK_ENGINE_V2_HARD_BLOCKED",
+  "verification_stage": "V210.64",
+  "verification_status": "PASS"
+}

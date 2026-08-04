@@ -1,0 +1,19 @@
+{
+  "stage_range": "V206.01-V210.64",
+  "base_commit": "5681eea95f79a0e024d2a56486647984b29a6b3a",
+  "maximum_drawdown": true,
+  "daily_loss_limit": true,
+  "circuit_breaker": true,
+  "volatility_filter": true,
+  "symbol_exposure": true,
+  "sector_exposure": true,
+  "correlation_filter": true,
+  "dynamic_position_size": true,
+  "risk_kill_switch": true,
+  "web_risk_api": true,
+  "execution_authorized": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V211.01-V215.64 AI Strategy Ensemble"
+}
