@@ -1,0 +1,44 @@
+{
+  "account_cash": 90595.3,
+  "account_equity": 100042.3,
+  "drift_rows": [
+    {
+      "absolute_drift_pct": 4.755807,
+      "current_weight_pct": 18.0,
+      "drift_pct": -4.755807,
+      "drift_zone": "REBALANCE",
+      "rebalance_required": true,
+      "strategy_id": "BUY_HOLD",
+      "target_weight_pct": 22.755807
+    },
+    {
+      "absolute_drift_pct": 13.0,
+      "current_weight_pct": 23.0,
+      "drift_pct": 13.0,
+      "drift_zone": "CRITICAL",
+      "rebalance_required": true,
+      "strategy_id": "CASH",
+      "target_weight_pct": 10.0
+    },
+    {
+      "absolute_drift_pct": 5.864003,
+      "current_weight_pct": 34.0,
+      "drift_pct": 5.864003,
+      "drift_zone": "REBALANCE",
+      "rebalance_required": true,
+      "strategy_id": "EMA_5_15",
+      "target_weight_pct": 28.135997
+    },
+    {
+      "absolute_drift_pct": 14.108196,
+      "current_weight_pct": 25.0,
+      "drift_pct": -14.108196,
+      "drift_zone": "CRITICAL",
+      "rebalance_required": true,
+      "strategy_id": "MOMENTUM_5",
+      "target_weight_pct": 39.108196
+    }
+  ],
+  "largest_absolute_drift_pct": 14.108196,
+  "rebalance_required_count": 4
+}

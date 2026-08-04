@@ -1,0 +1,15 @@
+{
+  "stage_range": "V101.01-V101.32",
+  "base_commit": "5b2219a",
+  "drift_calculation": true,
+  "threshold_zones": true,
+  "incremental_rebalance": true,
+  "cash_buffer_control": true,
+  "turnover_control": true,
+  "portfolio_snapshot": true,
+  "manual_approval_required": true,
+  "execution_authorized": false,
+  "paper_only": true,
+  "order_submission_enabled": false,
+  "next_phase": "V101.33-V101.64"
+}

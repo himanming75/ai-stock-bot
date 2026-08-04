@@ -1,0 +1,12 @@
+{
+  "policy_version": "V101.01",
+  "ignore_zone_pct": 1.0,
+  "rebalance_trigger_pct": 3.0,
+  "critical_drift_pct": 7.5,
+  "incremental_rebalance_fraction": 0.5,
+  "minimum_adjustment_notional": 100.0,
+  "maximum_adjustment_notional": 20000.0,
+  "minimum_cash_pct": 10.0,
+  "maximum_turnover_pct": 20.0,
+  "maximum_adjustment_count": 10
+}

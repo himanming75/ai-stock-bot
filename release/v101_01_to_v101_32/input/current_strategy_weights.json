@@ -1,0 +1,17 @@
+{
+  "allocations": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "current_weight_pct": 25.0
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "current_weight_pct": 34.0
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "current_weight_pct": 18.0
+    }
+  ],
+  "cash_weight_pct": 23.0
+}
