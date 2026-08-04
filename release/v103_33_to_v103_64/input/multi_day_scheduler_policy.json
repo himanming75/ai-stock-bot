@@ -1,0 +1,14 @@
+{
+  "policy_version": "V103.33",
+  "default_session_count": 5,
+  "market_timezone": "America/New_York",
+  "preopen_time": "08:00",
+  "market_open_time": "09:30",
+  "market_close_time": "16:00",
+  "after_hours_end_time": "20:00",
+  "checkpoint_enabled": true,
+  "resume_enabled": true,
+  "manual_approval_required": true,
+  "execution_authorized": false,
+  "market_holidays": []
+}
