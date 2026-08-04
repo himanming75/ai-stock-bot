@@ -1,0 +1,15 @@
+{
+  "stage": "V340.64",
+  "governance_enabled": true,
+  "monitor_only": true,
+  "required_qualification_state": "REAL_PAPER_LONG_RUN_QUALIFIED",
+  "minimum_successful_cycles": 120,
+  "minimum_observation_minutes": 60,
+  "minimum_success_ratio": 0.98,
+  "maximum_excessive_gaps": 2,
+  "paper_endpoint_only": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0
+}

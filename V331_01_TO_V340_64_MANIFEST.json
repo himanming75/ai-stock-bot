@@ -1,0 +1,14 @@
+{
+  "stage": "V340.64",
+  "package": "Real Paper Autonomous Observation Governance",
+  "requires": "V330.64 REAL_PAPER_LONG_RUN_QUALIFIED",
+  "reads_existing_v321_ledgers": true,
+  "modifies_existing_v321_ledgers": false,
+  "network_used": false,
+  "broker_credentials_used": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

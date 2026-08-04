@@ -1,0 +1,8 @@
+{
+  "health": "HEALTHY",
+  "incident_count": 0,
+  "observed_at": "2026-08-04T18:54:48.774213+00:00",
+  "qualified": true,
+  "stage": "V340.64",
+  "state": "REAL_PAPER_OBSERVATION_GOVERNANCE_QUALIFIED"
+}
