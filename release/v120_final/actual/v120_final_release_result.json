@@ -1,0 +1,176 @@
+{
+  "acceptance": {
+    "checks": {
+      "broker_write_disabled": true,
+      "certificate_valid": true,
+      "integration_passed": true,
+      "integrity_passed": true,
+      "live_disabled": true,
+      "manifest_valid": true,
+      "manual_approval_required": true,
+      "orders_zero": true,
+      "safety_passed": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "approval_granted": false,
+  "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "bundle": {
+    "created": true,
+    "file_count": 10368,
+    "path": "C:\\stock-bot\\release\\v120_final\\bundle\\AI_STOCK_BOT_V120_FINAL.zip",
+    "size_bytes": 129549011
+  },
+  "certificate": {
+    "actual_orders_submitted": 0,
+    "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+    "broker_write_enabled": false,
+    "certificate_sha256": "2182bf6e12aae99bd5df2ddda86d30e6cf2e1a61df5e4ef30210622786c033ee",
+    "certificate_type": "V120_FINAL_COMPLETION_CERTIFICATE",
+    "development_complete": true,
+    "issued_at": "2026-08-04T05:42:03.691754+00:00",
+    "live_trading_enabled": false,
+    "manual_approval_required": true,
+    "order_submission_enabled": false,
+    "paper_trading_ready": true,
+    "release_id": "1dc1a75dc4ab7b5cf0459040",
+    "release_version": "V120.0 FINAL"
+  },
+  "development_complete": true,
+  "external_network_enabled": false,
+  "integration": {
+    "passed": true,
+    "ready_stage_count": 7,
+    "rows": [
+      {
+        "actual_orders_submitted": 0,
+        "name": "V105_FINAL_RELEASE",
+        "paper_only": true,
+        "path": "release/v105_33_to_v105_64/actual/production_readiness_final_release_result.json",
+        "ready": true,
+        "state": "PRODUCTION_READINESS_FINAL_RELEASE_COMPLETE",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V106_DAILY_RUNNER",
+        "paper_only": true,
+        "path": "release/v106_01_to_v106_32/actual/daily_paper_runner_result.json",
+        "ready": true,
+        "state": "DAILY_PAPER_TRADING_DUPLICATE_RUN_BLOCKED",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V108_FAST_TRACK_A",
+        "paper_only": true,
+        "path": "release/v106_33_to_v108_64/actual/fast_track_paper_result.json",
+        "ready": true,
+        "state": "FAST_TRACK_PAPER_EXECUTION_AND_ANALYTICS_COMPLETE",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V110_FAST_TRACK_B",
+        "paper_only": true,
+        "path": "release/v109_01_to_v110_64/actual/autonomous_paper_operations_result.json",
+        "ready": true,
+        "state": "AUTONOMOUS_PAPER_OPERATIONS_READY",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V113_READ_ONLY_BROKER",
+        "paper_only": true,
+        "path": "release/v111_01_to_v113_64/actual/live_broker_readonly_result.json",
+        "ready": true,
+        "state": "LIVE_BROKER_READ_ONLY_INFRASTRUCTURE_READY",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V116_SAFE_EXECUTION",
+        "paper_only": true,
+        "path": "release/v114_01_to_v116_64/actual/broker_safe_execution_result.json",
+        "ready": true,
+        "state": "BROKER_INTEGRATION_SAFE_EXECUTION_BOUNDARY_READY",
+        "status": "PASS"
+      },
+      {
+        "actual_orders_submitted": 0,
+        "name": "V119_LIVE_SAFETY",
+        "paper_only": true,
+        "path": "release/v117_01_to_v119_64/actual/live_safety_system_result.json",
+        "ready": true,
+        "state": "LIVE_SAFETY_SYSTEM_READY",
+        "status": "PASS"
+      }
+    ],
+    "stage_count": 7
+  },
+  "integrity": {
+    "expected_file_count": 10364,
+    "failures": [],
+    "passed": true,
+    "verified_file_count": 10364
+  },
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "live_trading_ready": false,
+  "manifest": {
+    "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+    "included_stages": [
+      "V105_FINAL_RELEASE",
+      "V106_DAILY_RUNNER",
+      "V108_FAST_TRACK_A",
+      "V110_FAST_TRACK_B",
+      "V113_READ_ONLY_BROKER",
+      "V116_SAFE_EXECUTION",
+      "V119_LIVE_SAFETY"
+    ],
+    "live_trading_enabled": false,
+    "manifest_sha256": "2c7fcc9050197f05334558c65354e6e77eeb216bf0245f504b482d24653ec060",
+    "manifest_type": "V120_FINAL_RELEASE_MANIFEST",
+    "paper_only": true,
+    "production_bundle_required": true,
+    "release_id": "1dc1a75dc4ab7b5cf0459040",
+    "release_version": "V120.0 FINAL",
+    "stage_count": 7
+  },
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "PAPER_TRADING_OPERATION_AND_VALIDATION",
+  "observed_at": "2026-08-04T05:44:55.995299+00:00",
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "paper_trading_ready": true,
+  "production_release_created": true,
+  "release_id": "1dc1a75dc4ab7b5cf0459040",
+  "release_version": "V120.0 FINAL",
+  "result_sha256": "1e8fa90da4b1351ab0c5452e18af318fcbde04cc93bf9b5e266e60e0194cedc6",
+  "safety": {
+    "checks": {
+      "all_orders_zero": true,
+      "all_paper_only": true,
+      "all_stages_ready": true,
+      "broker_write_disabled": true,
+      "external_network_disabled": true,
+      "live_trading_disabled": true,
+      "manual_approval_required": true,
+      "order_submission_disabled": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "stage": "V120.00",
+  "stage_range": "V120_FINAL",
+  "state": "V120_FINAL_PRODUCTION_RELEASE_COMPLETE",
+  "status": "PASS",
+  "write_requests_executed": 0
+}

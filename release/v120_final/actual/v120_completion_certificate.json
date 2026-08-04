@@ -1,0 +1,15 @@
+{
+  "actual_orders_submitted": 0,
+  "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+  "broker_write_enabled": false,
+  "certificate_sha256": "2182bf6e12aae99bd5df2ddda86d30e6cf2e1a61df5e4ef30210622786c033ee",
+  "certificate_type": "V120_FINAL_COMPLETION_CERTIFICATE",
+  "development_complete": true,
+  "issued_at": "2026-08-04T05:42:03.691754+00:00",
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "order_submission_enabled": false,
+  "paper_trading_ready": true,
+  "release_id": "1dc1a75dc4ab7b5cf0459040",
+  "release_version": "V120.0 FINAL"
+}

@@ -1,0 +1,11 @@
+{
+  "policy_version": "V120_FINAL",
+  "release_version": "V120.0 FINAL",
+  "release_name": "AI Stock Bot Final Development Release",
+  "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+  "branch": "main",
+  "live_trading_enabled": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "manual_approval_required": true
+}

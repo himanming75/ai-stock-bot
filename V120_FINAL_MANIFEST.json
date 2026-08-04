@@ -1,0 +1,16 @@
+{
+  "stage": "V120_FINAL",
+  "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+  "release_version": "V120.0 FINAL",
+  "integration_test": true,
+  "safety_test": true,
+  "integrity_audit": true,
+  "acceptance_test": true,
+  "final_bundle": true,
+  "rollback_package": true,
+  "git_tag": "v120.0-final",
+  "development_complete": true,
+  "paper_trading_ready": true,
+  "live_trading_ready": false,
+  "actual_orders_submitted": 0
+}

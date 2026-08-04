@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "broker_write_disabled": true,
+    "certificate_valid": true,
+    "integration_passed": true,
+    "integrity_passed": true,
+    "live_disabled": true,
+    "manifest_valid": true,
+    "manual_approval_required": true,
+    "orders_zero": true,
+    "safety_passed": true
+  },
+  "failed": [],
+  "passed": true
+}

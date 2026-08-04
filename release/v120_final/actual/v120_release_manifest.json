@@ -1,0 +1,20 @@
+{
+  "base_commit": "2c80e6a9349959fb4bbfecdfc8e38b0f83a27f6e",
+  "included_stages": [
+    "V105_FINAL_RELEASE",
+    "V106_DAILY_RUNNER",
+    "V108_FAST_TRACK_A",
+    "V110_FAST_TRACK_B",
+    "V113_READ_ONLY_BROKER",
+    "V116_SAFE_EXECUTION",
+    "V119_LIVE_SAFETY"
+  ],
+  "live_trading_enabled": false,
+  "manifest_sha256": "2c7fcc9050197f05334558c65354e6e77eeb216bf0245f504b482d24653ec060",
+  "manifest_type": "V120_FINAL_RELEASE_MANIFEST",
+  "paper_only": true,
+  "production_bundle_required": true,
+  "release_id": "1dc1a75dc4ab7b5cf0459040",
+  "release_version": "V120.0 FINAL",
+  "stage_count": 7
+}
