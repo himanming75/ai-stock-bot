@@ -1,0 +1,10 @@
+{
+  "maximum_positions": 10,
+  "maximum_symbol_weight_pct": 20.0,
+  "maximum_sector_weight_pct": 40.0,
+  "minimum_cash_buffer_pct": 10.0,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

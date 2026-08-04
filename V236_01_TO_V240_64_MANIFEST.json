@@ -1,0 +1,19 @@
+{
+  "stage_range": "V236.01-V240.64",
+  "base_commit": "e6ae29f18412f6ac130500bd63cf5b41744db267",
+  "position_inventory": true,
+  "average_cost": true,
+  "realized_pnl": true,
+  "unrealized_pnl": true,
+  "symbol_exposure": true,
+  "sector_exposure": true,
+  "cash_and_equity": true,
+  "position_recovery": true,
+  "audit_ledger": true,
+  "web_api": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V241.01-V245.64 Exit Manager V2"
+}

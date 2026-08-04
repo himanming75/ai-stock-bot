@@ -1,0 +1,39 @@
+{
+  "cash": 8000.0,
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "sector": "Technology",
+      "market_price": 202.0,
+      "events": [
+        {
+          "side": "BUY",
+          "quantity": 5,
+          "price": 200.0
+        },
+        {
+          "side": "BUY",
+          "quantity": 5,
+          "price": 202.0
+        },
+        {
+          "side": "SELL",
+          "quantity": 2,
+          "price": 204.0
+        }
+      ]
+    },
+    {
+      "symbol": "XOM",
+      "sector": "Energy",
+      "market_price": 110.0,
+      "events": [
+        {
+          "side": "BUY",
+          "quantity": 5,
+          "price": 108.0
+        }
+      ]
+    }
+  ]
+}

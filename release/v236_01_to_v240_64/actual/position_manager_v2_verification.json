@@ -1,0 +1,112 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "ledger_present": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "paper_orders_zero": true,
+    "paper_submission_disabled": true,
+    "recovery_present": true,
+    "snapshot_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "exposure": {
+    "cash": 8000.0,
+    "cash_weight_pct": 78.6937,
+    "equity": 10166.0,
+    "invested_value": 2166.0,
+    "sector_exposure": [
+      {
+        "market_value": 550.0,
+        "sector": "Energy",
+        "weight_pct": 5.4102
+      },
+      {
+        "market_value": 1616.0,
+        "sector": "Technology",
+        "weight_pct": 15.8961
+      }
+    ],
+    "symbol_exposure": [
+      {
+        "market_value": 1616.0,
+        "symbol": "AAPL",
+        "weight_pct": 15.8961
+      },
+      {
+        "market_value": 550.0,
+        "symbol": "XOM",
+        "weight_pct": 5.4102
+      }
+    ]
+  },
+  "failed": [],
+  "snapshot": {
+    "created_at": "2026-08-04T09:18:32.602113+00:00",
+    "exposure": {
+      "cash": 8000.0,
+      "cash_weight_pct": 78.6937,
+      "equity": 10166.0,
+      "invested_value": 2166.0,
+      "sector_exposure": [
+        {
+          "market_value": 550.0,
+          "sector": "Energy",
+          "weight_pct": 5.4102
+        },
+        {
+          "market_value": 1616.0,
+          "sector": "Technology",
+          "weight_pct": 15.8961
+        }
+      ],
+      "symbol_exposure": [
+        {
+          "market_value": 1616.0,
+          "symbol": "AAPL",
+          "weight_pct": 15.8961
+        },
+        {
+          "market_value": 550.0,
+          "symbol": "XOM",
+          "weight_pct": 5.4102
+        }
+      ]
+    },
+    "open_position_count": 2,
+    "positions": [
+      {
+        "average_cost": 201.0,
+        "market_price": 202.0,
+        "market_value": 1616.0,
+        "quantity": 8.0,
+        "realized_pnl": 6.0,
+        "sector": "Technology",
+        "symbol": "AAPL",
+        "total_pnl": 14.0,
+        "unrealized_pnl": 8.0
+      },
+      {
+        "average_cost": 108.0,
+        "market_price": 110.0,
+        "market_value": 550.0,
+        "quantity": 5.0,
+        "realized_pnl": 0.0,
+        "sector": "Energy",
+        "symbol": "XOM",
+        "total_pnl": 10.0,
+        "unrealized_pnl": 10.0
+      }
+    ],
+    "total_realized_pnl": 6.0,
+    "total_unrealized_pnl": 18.0
+  },
+  "state": "POSITION_MANAGER_V2_READY",
+  "verification_stage": "V240.64",
+  "verification_status": "PASS"
+}
