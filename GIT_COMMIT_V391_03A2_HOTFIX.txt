@@ -1,0 +1,3 @@
+git add tools/verify_v391_03a2_hotfix.py RUN_V391_03A2_HOTFIX_TEST_AND_VERIFY.ps1 release/v391_03a2_hotfix V391_03A2_HOTFIX_MANIFEST.json GIT_COMMIT_V391_03A2_HOTFIX.txt autonomous_risk_governor/io.py
+git commit -m "V391.03A2 fix risk governor import path verification"
+git push origin main

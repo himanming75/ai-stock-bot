@@ -1,0 +1,11 @@
+{
+  "hotfix": "V391.03A2",
+  "purpose": "Add repository root to Python import path during V391.03A verification",
+  "preserves_v391_03a1_append_jsonl_fix": true,
+  "broker_network_used": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
