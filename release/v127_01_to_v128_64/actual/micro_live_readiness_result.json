@@ -1,0 +1,87 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "approval_token_issued": false,
+  "approval_token_status": {
+    "token_expired": false,
+    "token_issued_for_live": false,
+    "token_present": false,
+    "token_replay_detected": false,
+    "token_single_use": true,
+    "token_used": false,
+    "token_valid": false
+  },
+  "first_approval_granted": false,
+  "live_gateway": {
+    "actual_live_orders_submitted": 0,
+    "authorized": false,
+    "checks": {
+      "approval_token_unused": true,
+      "approval_token_valid": false,
+      "kill_switch_clear": true,
+      "live_network_enabled": false,
+      "live_submission_enabled": false,
+      "micro_limits_passed": false,
+      "two_step_approval_complete": false
+    },
+    "failed": [
+      "micro_limits_passed",
+      "two_step_approval_complete",
+      "approval_token_valid",
+      "live_network_enabled",
+      "live_submission_enabled"
+    ],
+    "gateway_state": "HARD_BLOCKED",
+    "real_live_network_attempted": false,
+    "real_live_submission_attempted": false
+  },
+  "live_network_enabled": false,
+  "live_order_candidates": [],
+  "live_submission_enabled": false,
+  "manual_approval_request": {
+    "approval_request_id": "8a78dba5510838652ae74ad8",
+    "approval_token_issued": false,
+    "candidate_ids": [],
+    "created_at": "2026-08-04T06:19:40.043536+00:00",
+    "expires_at": "2026-08-04T06:29:40.043536+00:00",
+    "first_approval_granted": false,
+    "first_approval_required": true,
+    "limits_passed": false,
+    "second_approval_granted": false,
+    "second_approval_required": true,
+    "single_use": true
+  },
+  "manual_approval_status": {
+    "approval_request_id": "8a78dba5510838652ae74ad8",
+    "approval_token_issued": false,
+    "fully_approved": false,
+    "state": "APPROVAL_BLOCKED_BY_LIMITS",
+    "valid": false
+  },
+  "micro_live_limits": {
+    "eligible_count": 0,
+    "ineligible_count": 0,
+    "passed": false,
+    "rows": []
+  },
+  "micro_live_ready_for_future_controlled_test": false,
+  "next_phase": "V129_RESTRICTED_AUTOMATIC_LIVE_CANDIDATE",
+  "observed_at": "2026-08-04T06:19:40.043852+00:00",
+  "paper_only": true,
+  "paper_vs_live_shadow_comparison": {
+    "actual_live_orders_submitted": 0,
+    "comparison_count": 0,
+    "rows": []
+  },
+  "readiness_id": "ba81a27370bec4b110a7cbfa",
+  "real_live_network_attempted": false,
+  "real_live_submission_attempted": false,
+  "result_sha256": "86cb6531e1d8a12c12e1c4b7235c9bd1f5e6457eb26a8622df4140d47cde2582",
+  "second_approval_granted": false,
+  "source_cycle_id": "230f3e68221dd42512a9f6fd",
+  "stage": "V128.64",
+  "stage_range": "V127.01-V128.64",
+  "state": "MICRO_LIVE_READINESS_REVIEW_REQUIRED",
+  "status": "PASS",
+  "two_step_manual_approval_required": true
+}

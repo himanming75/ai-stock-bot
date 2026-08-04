@@ -1,0 +1,25 @@
+{
+  "policy_version": "V127_01_TO_V128_64",
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "maximum_quantity": 1,
+  "maximum_order_notional": 250.0,
+  "allowed_order_types": [
+    "market",
+    "limit"
+  ],
+  "maximum_daily_live_orders": 1,
+  "current_daily_live_order_count": 0,
+  "maximum_daily_live_loss": 20.0,
+  "current_daily_live_pnl": 0.0,
+  "paper_qualification_required": true,
+  "paper_qualification_passed": true,
+  "approval_expiry_minutes": 10,
+  "shadow_slippage_bps": 5.0,
+  "kill_switch_clear": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false
+}

@@ -1,0 +1,15 @@
+{
+  "stage_range": "V127.01-V128.64",
+  "base_commit": "59f11d3494075f0512d28897e61ec09991fd92fb",
+  "micro_live_candidate_builder": true,
+  "strict_micro_limits": true,
+  "two_step_manual_approval": true,
+  "single_use_token_model": true,
+  "token_expiry_model": true,
+  "token_replay_protection_model": true,
+  "live_gateway_hard_blocked": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V129 Restricted Automatic Live Candidate"
+}
