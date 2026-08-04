@@ -1,0 +1,55 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "approval": {
+    "approval_required": true,
+    "approval_token": "9140187e2b522e89205f1264260e16992790f690a98e632896c5239f4c1c0b9b",
+    "approved": false,
+    "expires_at": "2026-08-04T19:12:02.607648+00:00",
+    "issued_at": "2026-08-04T19:07:02.607648+00:00",
+    "ttl_seconds": 300
+  },
+  "broker_write_enabled": false,
+  "checks": {
+    "blocking_reasons": [],
+    "buying_power": 100000.0,
+    "daily_loss": 0.0,
+    "duplicate_open_order_count": 0,
+    "eligible_for_approval": true,
+    "estimated_notional": 400.0,
+    "position_qty": 0.0
+  },
+  "created_at": "2026-08-04T19:07:02.607698+00:00",
+  "final_safety_audit": {
+    "actual_live_orders_submitted": 0,
+    "actual_paper_orders_submitted": 0,
+    "broker_write_enabled": false,
+    "live_submission_enabled": false,
+    "paper_endpoint_only": true,
+    "paper_submission_enabled": false,
+    "submission_allowed": false
+  },
+  "integrity_algorithm": "SHA256_CANONICAL_JSON",
+  "live_submission_enabled": false,
+  "next_phase": "V361_01_TO_V370_64_CONTROLLED_PAPER_AUTO_EXECUTION",
+  "paper_submission_enabled": false,
+  "proposal": {
+    "blocking_reasons": [],
+    "decision_confidence": 0.895833,
+    "decision_hash": "a57a9186f317c2c3c5c7f47ca14b1f72a1ecd2abf22870f1550654a664ae9d15",
+    "eligible_for_approval": true,
+    "estimated_notional": 400.0,
+    "order_type": "market",
+    "paper_endpoint_only": true,
+    "quantity": 2.0,
+    "reference_price": 200.0,
+    "side": "BUY",
+    "submission_allowed": false,
+    "symbol": "AAPL",
+    "time_in_force": "day"
+  },
+  "proposal_hash": "89c7c6bec7e569b15c37b8a7d98171227ebd8d5bf12ecc2afa8c8c4f83224bad",
+  "stage": "V360.64",
+  "state": "PAPER_ORDER_PROPOSAL_AWAITING_APPROVAL",
+  "status": "PASS"
+}

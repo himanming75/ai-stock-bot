@@ -1,0 +1,14 @@
+{
+  "stage": "V360.64",
+  "mode": "PAPER_ORDER_PROPOSAL_ONLY",
+  "paper_endpoint_only": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "approval_required": true,
+  "kill_switch_required": true,
+  "maximum_proposal_notional": 1000.0,
+  "daily_loss_limit": 500.0,
+  "approval_token_ttl_seconds": 300
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "V360.64",
+  "package": "Paper Order Proposal and Approval Gate",
+  "requires": "V350.64 GOVERNED_DECISION_CANDIDATE_READY",
+  "proposal_only": true,
+  "approval_default": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

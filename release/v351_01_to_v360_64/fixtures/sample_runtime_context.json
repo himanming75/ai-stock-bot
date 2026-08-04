@@ -1,0 +1,11 @@
+{
+  "reference_price": 200.0,
+  "market_open": true,
+  "kill_switch_active": false,
+  "account_status": "ACTIVE",
+  "trading_blocked": false,
+  "buying_power": 100000.0,
+  "position_qty": 0.0,
+  "daily_pnl": 0.0,
+  "open_orders": []
+}
