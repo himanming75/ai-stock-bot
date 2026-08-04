@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path: sys.path.insert(0, str(ROOT))
 from long_run_qualification.config import validate
 from long_run_qualification.continuity import analyze
-from long_run_qualification.io import append_jsonl, read_jsonl, write_json
+from long_run_qualification.io import append_jsonl, load_json, read_jsonl, write_json
 from long_run_qualification.qualifier import qualify
 from long_run_qualification.runner import run
 
@@ -16,6 +16,9 @@ class Tests(unittest.TestCase):
  def make(self):
   td=tempfile.TemporaryDirectory(); root=Path(td.name); (root/"release/v321_01_to_v330_64/config").mkdir(parents=True); write_json(root/"release/v321_01_to_v330_64/config/real_paper_long_run_policy.json",SAFE); return td,root
  def test_policy_safe(self): self.assertTrue(validate(SAFE)["valid"])
+ def test_utf8_bom_policy_load(self):
+  td,root=self.make(); path=root/"release/v321_01_to_v330_64/config/real_paper_long_run_policy.json"; path.write_text("\ufeff"+json.dumps(SAFE),encoding="utf-8"); self.assertEqual(load_json(path,{})["stage"],"V330.64"); td.cleanup()
+
  def test_live_endpoint_rejected(self):
   p=dict(SAFE); p["paper_base_url"]="https://api.alpaca.markets"; self.assertFalse(validate(p)["valid"])
  def test_continuity(self):

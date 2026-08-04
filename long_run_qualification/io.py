@@ -8,7 +8,7 @@ def load_json(path: Path, default: Any = None) -> Any:
     if not path.exists():
         return {} if default is None else default
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8-sig"))
     except (OSError, json.JSONDecodeError):
         return {} if default is None else default
 

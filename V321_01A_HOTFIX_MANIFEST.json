@@ -1,0 +1,13 @@
+{
+  "hotfix": "V321.01A",
+  "target_stage": "V330.64",
+  "purpose": "Fix UTF-8 BOM policy loading and restore safe long-run qualification activation",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_network_enabled": false,
+  "monitor_only": true,
+  "maximum_new_orders_per_day": 0,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
