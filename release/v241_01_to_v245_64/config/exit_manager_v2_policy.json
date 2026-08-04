@@ -1,0 +1,12 @@
+{
+  "take_profit_pct": 5.0,
+  "stop_loss_pct": 3.0,
+  "trailing_stop_pct": 2.0,
+  "break_even_trigger_pct": 2.5,
+  "maximum_holding_minutes": 390,
+  "scale_out_pct": 50.0,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

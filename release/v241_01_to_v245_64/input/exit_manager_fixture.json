@@ -1,0 +1,28 @@
+{
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "quantity": 8,
+      "average_cost": 100.0,
+      "market_price": 106.0,
+      "highest_price": 107.0,
+      "holding_minutes": 120
+    },
+    {
+      "symbol": "XOM",
+      "quantity": 5,
+      "average_cost": 110.0,
+      "market_price": 106.0,
+      "highest_price": 112.0,
+      "holding_minutes": 220
+    },
+    {
+      "symbol": "MSFT",
+      "quantity": 4,
+      "average_cost": 400.0,
+      "market_price": 401.0,
+      "highest_price": 412.0,
+      "holding_minutes": 410
+    }
+  ]
+}

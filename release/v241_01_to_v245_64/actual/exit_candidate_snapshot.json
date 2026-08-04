@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-08-04T09:23:33.805797+00:00",
+  "exit_candidate_count": 3,
+  "positions_evaluated": 3,
+  "rows": [
+    {
+      "average_cost": 100.0,
+      "candidates": [
+        {
+          "level": 97.0,
+          "reason": "STOP_LOSS",
+          "triggered": false
+        },
+        {
+          "level": 104.86,
+          "reason": "TRAILING_STOP",
+          "triggered": false
+        },
+        {
+          "level": 100.0,
+          "reason": "BREAK_EVEN",
+          "triggered": false
+        },
+        {
+          "level": 105.0,
+          "reason": "TAKE_PROFIT",
+          "triggered": true
+        },
+        {
+          "level": 390,
+          "reason": "TIME_EXIT",
+          "triggered": false
+        }
+      ],
+      "estimated_pnl": 24.0,
+      "exit_quantity": 4.0,
+      "exit_triggered": true,
+      "highest_price": 107.0,
+      "holding_minutes": 120,
+      "market_price": 106.0,
+      "quantity": 8.0,
+      "selected_exit": {
+        "level": 105.0,
+        "reason": "TAKE_PROFIT",
+        "triggered": true
+      },
+      "symbol": "AAPL"
+    },
+    {
+      "average_cost": 110.0,
+      "candidates": [
+        {
+          "level": 106.7,
+          "reason": "STOP_LOSS",
+          "triggered": true
+        },
+        {
+          "level": 109.76,
+          "reason": "TRAILING_STOP",
+          "triggered": true
+        },
+        {
+          "level": 110.0,
+          "reason": "BREAK_EVEN",
+          "triggered": false
+        },
+        {
+          "level": 115.5,
+          "reason": "TAKE_PROFIT",
+          "triggered": false
+        },
+        {
+          "level": 390,
+          "reason": "TIME_EXIT",
+          "triggered": false
+        }
+      ],
+      "estimated_pnl": -20.0,
+      "exit_quantity": 5.0,
+      "exit_triggered": true,
+      "highest_price": 112.0,
+      "holding_minutes": 220,
+      "market_price": 106.0,
+      "quantity": 5.0,
+      "selected_exit": {
+        "level": 106.7,
+        "reason": "STOP_LOSS",
+        "triggered": true
+      },
+      "symbol": "XOM"
+    },
+    {
+      "average_cost": 400.0,
+      "candidates": [
+        {
+          "level": 388.0,
+          "reason": "STOP_LOSS",
+          "triggered": false
+        },
+        {
+          "level": 403.76,
+          "reason": "TRAILING_STOP",
+          "triggered": true
+        },
+        {
+          "level": 400.0,
+          "reason": "BREAK_EVEN",
+          "triggered": false
+        },
+        {
+          "level": 420.0,
+          "reason": "TAKE_PROFIT",
+          "triggered": false
+        },
+        {
+          "level": 390,
+          "reason": "TIME_EXIT",
+          "triggered": true
+        }
+      ],
+      "estimated_pnl": 4.0,
+      "exit_quantity": 4.0,
+      "exit_triggered": true,
+      "highest_price": 412.0,
+      "holding_minutes": 410,
+      "market_price": 401.0,
+      "quantity": 4.0,
+      "selected_exit": {
+        "level": 403.76,
+        "reason": "TRAILING_STOP",
+        "triggered": true
+      },
+      "symbol": "MSFT"
+    }
+  ]
+}

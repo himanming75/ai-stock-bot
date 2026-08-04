@@ -1,0 +1,19 @@
+{
+  "stage_range": "V241.01-V245.64",
+  "base_commit": "43d1ef23a84b9c044f49023f559bd3eebfc7f593",
+  "take_profit": true,
+  "stop_loss": true,
+  "trailing_stop": true,
+  "break_even_stop": true,
+  "time_exit": true,
+  "scale_out": true,
+  "exit_priority": true,
+  "exit_recovery": true,
+  "audit_ledger": true,
+  "web_api": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V246.01-V250.64 AI Strategy Ensemble V3"
+}
