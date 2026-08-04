@@ -1,0 +1,42 @@
+{
+  "account": {
+    "account_blocked": false,
+    "equity": "99000",
+    "last_equity": "100000",
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_resume_enabled": false,
+  "broker_write_enabled": false,
+  "evaluation": {
+    "automatic_resume_allowed": false,
+    "breached": false,
+    "daily_loss_limit_amount": 2000.0,
+    "daily_loss_limit_pct": 0.02,
+    "daily_loss_pct": 0.01,
+    "daily_pnl": -1000.0,
+    "daily_return_pct": -0.01,
+    "equity": 99000.0,
+    "last_equity": 100000.0,
+    "manual_resume_required": false,
+    "new_risk_allowed": true,
+    "remaining_loss_buffer": 1000.0,
+    "required_action": "CONTINUE_MONITORING",
+    "state": "DAILY_LOSS_WITHIN_LIMIT",
+    "warning": false,
+    "warning_threshold_pct": 0.015
+  },
+  "live_submission_enabled": false,
+  "manual_resume_required": false,
+  "next_phase": "V391_03A_MAX_DRAWDOWN_GUARD",
+  "observed_at": "2026-08-04T23:34:46.828176+00:00",
+  "paper_submission_enabled": false,
+  "pause_required": false,
+  "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e",
+  "risk_operations_allowed": true,
+  "stage": "V391.02A",
+  "state": "DAILY_LOSS_GUARD_ACTIVE",
+  "status": "PASS"
+}
