@@ -1,0 +1,96 @@
+{
+  "actionable_adjustment_count": 3,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "adaptive_rebalance_certificate_sha256": "fb9db857a04ec2485be7b61c26a30642515b208e6b009d3acf6b8dab1d4b0daa",
+  "adaptive_rebalance_id": "cbf7cf1cb39f7d25ece3d6bd",
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "execution_authorized": false,
+  "external_network_enabled": false,
+  "live_trading_enabled": false,
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V102_01_MASTER_AI_ORCHESTRATOR",
+  "observed_at": "2026-08-04T02:20:42.462882+00:00",
+  "optimization_gate": {
+    "actionable_count": 3,
+    "checks": {
+      "adjustment_count_limit": true,
+      "positive_net_benefit": true,
+      "stability_passed": true,
+      "submission_disabled": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "optimized_adjustments": [
+    {
+      "absolute_drift_pct": 4.755807,
+      "adaptive_fraction": 0.736304,
+      "adaptive_trigger_pct": 3.229515,
+      "drift_pct": -4.755807,
+      "estimated_benefit": 166.605384,
+      "estimated_cost": 2.452239,
+      "net_benefit": 164.153145,
+      "requested_notional": 3503.199011,
+      "side": "BUY",
+      "state": "OPTIMIZED",
+      "strategy_id": "BUY_HOLD",
+      "submission_allowed": false
+    },
+    {
+      "absolute_drift_pct": 5.864003,
+      "adaptive_fraction": 0.75,
+      "adaptive_trigger_pct": 3.681647,
+      "drift_pct": 5.864003,
+      "estimated_benefit": 258.008075,
+      "estimated_cost": 3.079904,
+      "net_benefit": 254.928171,
+      "requested_notional": 4399.862605,
+      "side": "SELL",
+      "state": "OPTIMIZED",
+      "strategy_id": "EMA_5_15",
+      "submission_allowed": false
+    },
+    {
+      "absolute_drift_pct": 14.108196,
+      "adaptive_fraction": 0.75,
+      "adaptive_trigger_pct": 3.342548,
+      "drift_pct": -14.108196,
+      "estimated_benefit": 1493.440416,
+      "estimated_cost": 7.409936,
+      "net_benefit": 1486.03048,
+      "requested_notional": 10585.622825,
+      "side": "BUY",
+      "state": "OPTIMIZED",
+      "strategy_id": "MOMENTUM_5",
+      "submission_allowed": false
+    }
+  ],
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "regime": {
+    "confidence_score": 50.0,
+    "primary_regime": "UNKNOWN",
+    "volatility_regime": "NORMAL_VOLATILITY"
+  },
+  "regime_multiplier": 1.075,
+  "source_rebalance_control_id": "823374eee52f3426adc25b0c",
+  "source_risk_budget_id": "1c44e0da0be18221cc8c683f",
+  "stability": {
+    "minimum_required_score": 50.0,
+    "optimized_count": 3,
+    "passed": true,
+    "skipped_count": 0,
+    "stability_level": "MEDIUM",
+    "stability_score": 78.837706
+  },
+  "stage": "V101.64",
+  "stage_range": "V101.33-V101.64",
+  "state": "ADAPTIVE_REBALANCE_OPTIMIZATION_READY",
+  "status": "PASS",
+  "windows_task_enabled": false,
+  "write_requests_executed": 0
+}

@@ -1,0 +1,41 @@
+{
+  "policy_version": "V101.33",
+  "base_rebalance_trigger_pct": 3.0,
+  "minimum_trigger_pct": 1.5,
+  "maximum_trigger_pct": 8.0,
+  "volatility_reference_pct": 2.0,
+  "volatility_sensitivity": 0.35,
+  "cost_sensitivity": 0.02,
+  "base_incremental_fraction": 0.5,
+  "minimum_incremental_fraction": 0.2,
+  "maximum_incremental_fraction": 0.8,
+  "minimum_net_benefit": 25.0,
+  "commission_bps": 0.0,
+  "slippage_bps": 5.0,
+  "spread_bps": 2.0,
+  "minimum_stability_score": 50.0,
+  "maximum_optimized_adjustments": 10,
+  "regime_multipliers": {
+    "BULL": 0.9,
+    "BEAR": 1.25,
+    "SIDEWAYS": 1.1,
+    "UNKNOWN": 1.15,
+    "LOW_VOLATILITY": 0.9,
+    "NORMAL_VOLATILITY": 1.0,
+    "HIGH_VOLATILITY": 1.3
+  },
+  "strategy_metrics": [
+    {
+      "strategy_id": "MOMENTUM_5",
+      "observed_volatility_pct": 2.2
+    },
+    {
+      "strategy_id": "EMA_5_15",
+      "observed_volatility_pct": 2.8
+    },
+    {
+      "strategy_id": "BUY_HOLD",
+      "observed_volatility_pct": 1.7
+    }
+  ]
+}
