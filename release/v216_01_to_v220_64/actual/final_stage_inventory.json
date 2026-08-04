@@ -1,13 +1,14 @@
 {
   "expected_stage_count": 16,
-  "generated_at": "2026-08-04T08:44:15.803850+00:00",
-  "missing_stages": [
-    "V160_OPERATIONS"
-  ],
-  "present_stage_count": 15,
+  "generated_at": "2026-08-04T08:51:15.301003+00:00",
+  "missing_stages": [],
+  "present_stage_count": 16,
   "rows": [
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v120_final/actual/v120_final_release_result.json"
+      ],
       "path": "release/v120_final/actual/v120_final_release_result.json",
       "present": true,
       "sha256": "5fa6debf9e888631ba926e40190ab3a6dc13b1042b99d5644a7d6f1116e4d5c5",
@@ -18,6 +19,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v140_final/actual/v140_final_release_result.json"
+      ],
       "path": "release/v140_final/actual/v140_final_release_result.json",
       "present": true,
       "sha256": "8244bdf90abc1cf316159ba0818800da27c45145d24add1c056138427b076741",
@@ -28,6 +32,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v141_01_to_v145_64/actual/web_controller_verification.json"
+      ],
       "path": "release/v141_01_to_v145_64/actual/web_controller_verification.json",
       "present": true,
       "sha256": "3de5d5dbfe791214633f73c39175889686603a7307e9e37d44f640317b0af90b",
@@ -38,6 +45,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v151_01_to_v155_64/actual/paper_web_operations_verification.json"
+      ],
       "path": "release/v151_01_to_v155_64/actual/paper_web_operations_verification.json",
       "present": true,
       "sha256": "1bc2f7f4accf5b3154d59a9cb2bc6a5e27db77030c9a6fa035e5345168e4b5db",
@@ -48,16 +58,23 @@
     },
     {
       "actual_live_orders_submitted": 0,
-      "path": "release/v156_01_to_v160_64/actual/operations_center_verification.json",
-      "present": false,
-      "sha256": null,
+      "candidate_paths": [
+        "release/v156_01_to_v160_64/actual/health_status.json",
+        "release/v156_01_to_v160_64/actual/operations_center_verification.json"
+      ],
+      "path": "release/v156_01_to_v160_64/actual/health_status.json",
+      "present": true,
+      "sha256": "7e509519384d9a5a6dd305262d7690f89dcaf0987cbd43e5908f51160f258c5e",
       "stage": "V160_OPERATIONS",
       "state": "NOT_AVAILABLE",
-      "status": "NOT_AVAILABLE",
+      "status": "HEALTHY",
       "unsafe_flags": []
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v161_01_to_v165_64/actual/paper_qualification_result.json"
+      ],
       "path": "release/v161_01_to_v165_64/actual/paper_qualification_result.json",
       "present": true,
       "sha256": "0b6d9f13cf2721f08d501e43f42e3aefa104eda688730b82786375d348b99482",
@@ -68,6 +85,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v166_01_to_v170_64/actual/live_read_only_approval_result.json"
+      ],
       "path": "release/v166_01_to_v170_64/actual/live_read_only_approval_result.json",
       "present": true,
       "sha256": "b0aded7658fb321c15153274f0a8acc5f39deb2ed923390cbb1f236f190eb356",
@@ -78,6 +98,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v171_01_to_v175_64/actual/controlled_micro_live_result.json"
+      ],
       "path": "release/v171_01_to_v175_64/actual/controlled_micro_live_result.json",
       "present": true,
       "sha256": "e4ee50a6708bba9a530967a46092d0bb6ea0e248dadb510a5a725d5b21ef0ed9",
@@ -88,6 +111,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v176_01_to_v180_64/actual/restricted_live_automation_result.json"
+      ],
       "path": "release/v176_01_to_v180_64/actual/restricted_live_automation_result.json",
       "present": true,
       "sha256": "683f3425bc69d104a9cf85d093c8b8d83317e393963d9695dde31372dab14871",
@@ -98,6 +124,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v181_01_to_v185_64/actual/portfolio_broker_result.json"
+      ],
       "path": "release/v181_01_to_v185_64/actual/portfolio_broker_result.json",
       "present": true,
       "sha256": "65cfa70af2d617331b02d48bd0a50443ad83d37f4779204951922f5f55dad9f2",
@@ -108,6 +137,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v186_01_to_v190_64/actual/production_operations_result.json"
+      ],
       "path": "release/v186_01_to_v190_64/actual/production_operations_result.json",
       "present": true,
       "sha256": "6d88d389e73d0024b2fc898f89579fae44d3907d6d70ec576a83ebdb8291e058",
@@ -118,6 +150,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v191_01_to_v195_64/actual/production_scheduler_result.json"
+      ],
       "path": "release/v191_01_to_v195_64/actual/production_scheduler_result.json",
       "present": true,
       "sha256": "ddd6d49e9ab9ff59c989c7b2e62b2648c3dfc08eb266b4abd7e1a86836e6a9dc",
@@ -128,6 +163,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v196_01_to_v200_64/actual/multi_broker_production_result.json"
+      ],
       "path": "release/v196_01_to_v200_64/actual/multi_broker_production_result.json",
       "present": true,
       "sha256": "3062b67bb005b96e1a6d7466b84f724d5553e64567accf17781b06b176be147f",
@@ -138,6 +176,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v201_01_to_v205_64/actual/broker_plugin_framework_result.json"
+      ],
       "path": "release/v201_01_to_v205_64/actual/broker_plugin_framework_result.json",
       "present": true,
       "sha256": "f096ee1387f4ead1d8b85209a406f943847fbf2f8f16c183bc75b8333c4db0e7",
@@ -148,6 +189,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v206_01_to_v210_64/actual/risk_engine_v2_result.json"
+      ],
       "path": "release/v206_01_to_v210_64/actual/risk_engine_v2_result.json",
       "present": true,
       "sha256": "af1707077717f973d7092aa51bc134dc7d3452e491424578382b4407d1fd6f93",
@@ -158,6 +202,9 @@
     },
     {
       "actual_live_orders_submitted": 0,
+      "candidate_paths": [
+        "release/v211_01_to_v215_64/actual/ai_strategy_ensemble_result.json"
+      ],
       "path": "release/v211_01_to_v215_64/actual/ai_strategy_ensemble_result.json",
       "present": true,
       "sha256": "721a92fe9294640735e002e68c6dbb540da63e5929a8fcdfe81d85162c6bf90c",

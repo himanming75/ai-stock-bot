@@ -19,5 +19,9 @@
   "live_submission_enabled": false,
   "live_network_write_enabled": false,
   "required_historical_live_orders": 0,
-  "next_phase": "Post-V220 Paper Operation and Controlled Live Qualification"
+  "next_phase": "Post-V220 Paper Operation and Controlled Live Qualification",
+  "fixed_version": "FIX_V2",
+  "v160_inventory_path_fixed": true,
+  "v160_primary_result_path": "release/v156_01_to_v160_64/actual/health_status.json",
+  "v160_legacy_fallback_supported": true
 }

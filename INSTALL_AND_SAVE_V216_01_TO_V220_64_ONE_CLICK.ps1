@@ -1,6 +1,6 @@
 param([string]$ProjectPath="C:\stock-bot",[switch]$SkipPush)
 $ErrorActionPreference="Stop";$SourceRoot=$PSScriptRoot
-Write-Host "=== V216.01-V220.64 FINAL PRODUCTION RELEASE ONE-CLICK INSTALL ==="
+Write-Host "=== V216.01-V220.64 FINAL PRODUCTION RELEASE FIX V2 ONE-CLICK INSTALL ==="
 Get-ChildItem -LiteralPath $SourceRoot -Force | ForEach-Object {
   Copy-Item -LiteralPath $_.FullName -Destination $ProjectPath -Recurse -Force
 }
@@ -45,17 +45,18 @@ git add final_production_release web_controller/final_release_api.py release/v21
  RUN_V216_01_TO_V220_64.ps1 RUN_V216_01_TO_V220_64_TEST_AND_VERIFY.ps1 `
  INSTALL_AND_SAVE_V216_01_TO_V220_64_ONE_CLICK.ps1 `
  V216_01_TO_V220_64_MANIFEST.json GIT_COMMIT_V216_01_TO_V220_64.txt `
+ GIT_COMMIT_V216_01_TO_V220_64_FIX_V2.txt `
  .gitignore
 
 # Never commit the generated final ZIP.
 git reset -- release/v216_01_to_v220_64/bundle/AI_STOCK_BOT_V220_FINAL_PRODUCTION.zip 2>$null
 
 $staged=git diff --cached --name-only
-if($staged){git commit -m "V216.01-V220.64 final production release integrated"}
+if($staged){git commit -m "V216.01-V220.64 fix V160 inventory path"}
 
 Write-Host "[7/7] GIT PUSH"
 if(-not $SkipPush){git push origin main}
 git log -1 --oneline
-Write-Host "V216.01-V220.64 ONE-CLICK COMPLETE"
+Write-Host "V216.01-V220.64 FIX V2 ONE-CLICK COMPLETE"
 Write-Host "Final offline bundle:"
 Write-Host "$ProjectPath\release\v216_01_to_v220_64\bundle\AI_STOCK_BOT_V220_FINAL_PRODUCTION.zip"

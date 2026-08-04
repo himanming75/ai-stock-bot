@@ -6,7 +6,7 @@
     "broker_write_enabled": false,
     "certificate_type": "AI_STOCK_BOT_V220_FINAL_PRODUCTION_CERTIFICATE",
     "checks": {
-      "all_expected_stages_present": false,
+      "all_expected_stages_present": true,
       "automatic_order_submission_disabled": true,
       "automatic_strategy_promotion_disabled": true,
       "broker_write_disabled": true,
@@ -19,17 +19,17 @@
       "policy_valid": true,
       "required_files_present": true
     },
-    "development_integration_complete": false,
+    "development_integration_complete": true,
     "expected_stage_count": 16,
-    "final_release_ready": false,
+    "final_release_ready": true,
     "integration_modules_present": 8,
     "integrity_all_present": true,
-    "issued_at": "2026-08-04T08:44:15.820027+00:00",
+    "issued_at": "2026-08-04T08:51:15.313757+00:00",
     "live_submission_enabled": false,
     "live_trading_automatically_enabled": false,
     "manual_live_activation_required": true,
     "paper_operations_supported": true,
-    "present_stage_count": 15,
+    "present_stage_count": 16,
     "release_stage": "V220.64"
   },
   "checks": {
@@ -48,7 +48,7 @@
     "web_api_present": true
   },
   "failed": [],
-  "final_release_ready": false,
+  "final_release_ready": true,
   "integration_summary": {
     "all_required_files_present": true,
     "module_count": 8,
@@ -56,12 +56,10 @@
   },
   "inventory_summary": {
     "expected_stage_count": 16,
-    "missing_stages": [
-      "V160_OPERATIONS"
-    ],
-    "present_stage_count": 15
+    "missing_stages": [],
+    "present_stage_count": 16
   },
-  "state": "V220_FINAL_PRODUCTION_RELEASE_REVIEW_REQUIRED",
+  "state": "V220_FINAL_PRODUCTION_RELEASE_COMPLETE",
   "verification_stage": "V220.64",
   "verification_status": "PASS"
 }
