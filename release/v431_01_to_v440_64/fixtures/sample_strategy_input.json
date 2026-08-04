@@ -1,0 +1,12 @@
+{
+  "market_regime": "BULL_TREND",
+  "trend_strength": 84,
+  "momentum_strength": 78,
+  "breakout_strength": 69,
+  "mean_reversion_strength": 22,
+  "volatility_score": 32,
+  "liquidity_score": 91,
+  "breadth_score": 76,
+  "portfolio_score": 73.98,
+  "minimum_portfolio_score": 55
+}

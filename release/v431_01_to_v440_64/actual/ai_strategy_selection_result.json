@@ -1,0 +1,85 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_credentials_used": false,
+  "fallback_strategy": "TREND_FOLLOWING",
+  "live_submission_enabled": false,
+  "market_regime": "BULL_TREND",
+  "network_used": false,
+  "order_submission_allowed": false,
+  "paper_submission_enabled": false,
+  "portfolio_compatible": true,
+  "selected_confidence": 88.06,
+  "selected_score": 90.2784,
+  "selected_strategy": "MOMENTUM",
+  "stage": "V440.64",
+  "state": "AI_STRATEGY_SELECTION_READY",
+  "status": "PASS",
+  "strategy_scores": [
+    {
+      "confidence": 88.06,
+      "eligible": true,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Strategy score is 90.28.",
+        "Strategy confidence is 88.06.",
+        "Momentum strength is 78.0.",
+        "Selection is analytical only and cannot submit an order."
+      ],
+      "score": 90.2784,
+      "strategy": "MOMENTUM"
+    },
+    {
+      "confidence": 86.79,
+      "eligible": true,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Strategy score is 88.90.",
+        "Strategy confidence is 86.79.",
+        "Trend strength is 84.0.",
+        "Selection is analytical only and cannot submit an order."
+      ],
+      "score": 88.898,
+      "strategy": "TREND_FOLLOWING"
+    },
+    {
+      "confidence": 76.41,
+      "eligible": true,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Strategy score is 77.62.",
+        "Strategy confidence is 76.41.",
+        "Breakout strength is 69.0.",
+        "Selection is analytical only and cannot submit an order."
+      ],
+      "score": 77.6184,
+      "strategy": "BREAKOUT"
+    },
+    {
+      "confidence": 22.76,
+      "eligible": true,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Strategy score is 19.30.",
+        "Strategy confidence is 22.76.",
+        "Mean-reversion strength is 22.0.",
+        "Selection is analytical only and cannot submit an order."
+      ],
+      "score": 19.3,
+      "strategy": "MEAN_REVERSION"
+    },
+    {
+      "confidence": 15.2,
+      "eligible": true,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Strategy score is 11.08.",
+        "Strategy confidence is 15.20.",
+        "Volatility score is 32.0.",
+        "Selection is analytical only and cannot submit an order."
+      ],
+      "score": 11.082,
+      "strategy": "CASH_DEFENSIVE"
+    }
+  ]
+}

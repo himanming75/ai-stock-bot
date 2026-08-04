@@ -1,0 +1,18 @@
+{
+  "stage": "V440.64",
+  "mode": "OFFLINE_ONLY",
+  "network_enabled": false,
+  "broker_credentials_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "allowed_strategies": [
+    "TREND_FOLLOWING",
+    "MOMENTUM",
+    "BREAKOUT",
+    "MEAN_REVERSION",
+    "CASH_DEFENSIVE"
+  ],
+  "memory_mode": "APPEND_ONLY_LOCAL_JSONL"
+}
