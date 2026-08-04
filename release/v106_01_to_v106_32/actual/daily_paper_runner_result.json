@@ -1,0 +1,172 @@
+{
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "background_service_running": false,
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "checkpoint": {
+    "checkpoint_hash": "a814f743c03916af344164180ca9158b2d4f4ff0f3ba0d40b1f547a4b1830027",
+    "generation": 2,
+    "plan": {
+      "paper_simulation_authorized": true,
+      "plan_count": 3,
+      "plans": [
+        {
+          "paper_action": "SIMULATE_ALLOCATION",
+          "plan_key": "12f93027089e969564fe2cc2c92f1ac915cb230f60b1d5094796209c850962b7",
+          "plan_number": 1,
+          "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+          "strategy_id": "MOMENTUM_5",
+          "target_weight_pct": 39.108196
+        },
+        {
+          "paper_action": "SIMULATE_ALLOCATION",
+          "plan_key": "82c46582cbb7073337a3c1bc0187bfb6fd760baef0cb99dadc78f83b2c496a8a",
+          "plan_number": 2,
+          "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+          "strategy_id": "EMA_5_15",
+          "target_weight_pct": 28.135997
+        },
+        {
+          "paper_action": "SIMULATE_ALLOCATION",
+          "plan_key": "e587244e72665c164e3f66d4ac1369668fd635f209e094c61412a1328acb05a2",
+          "plan_number": 3,
+          "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+          "strategy_id": "BUY_HOLD",
+          "target_weight_pct": 22.755807
+        }
+      ],
+      "session_date": "2026-08-10",
+      "session_id": "bc35de090dda5aea17a6e439",
+      "source_decision": "ACT"
+    },
+    "previous_checkpoint_hash": "8007d8e2342e15ffde53f85e8ab7d05e376288ca73861018facecbb0660f5bf1",
+    "run_id": "bf03986502408d613720e1d1",
+    "run_state": "DAILY_PAPER_TRADING_RUN_COMPLETED",
+    "session": {
+      "actual_orders_submitted": 0,
+      "attempt_count": 0,
+      "completed_phases": [],
+      "current_phase": "QUEUED",
+      "execution_authorized": false,
+      "paper_only": true,
+      "session_date": "2026-08-10",
+      "session_id": "bc35de090dda5aea17a6e439",
+      "session_key": "c637e22a2364bf3261df5d339c3a82ddf7f2bfa4ebe21e938ff6c8028249afe0",
+      "source_cycle_id": "11614669ffcf00bf2dce5879",
+      "state": "QUEUED"
+    },
+    "updated_at": "2026-08-04T03:20:40.689799+00:00"
+  },
+  "daily_plan": {
+    "paper_simulation_authorized": true,
+    "plan_count": 3,
+    "plans": [
+      {
+        "paper_action": "SIMULATE_ALLOCATION",
+        "plan_key": "12f93027089e969564fe2cc2c92f1ac915cb230f60b1d5094796209c850962b7",
+        "plan_number": 1,
+        "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+        "strategy_id": "MOMENTUM_5",
+        "target_weight_pct": 39.108196
+      },
+      {
+        "paper_action": "SIMULATE_ALLOCATION",
+        "plan_key": "82c46582cbb7073337a3c1bc0187bfb6fd760baef0cb99dadc78f83b2c496a8a",
+        "plan_number": 2,
+        "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+        "strategy_id": "EMA_5_15",
+        "target_weight_pct": 28.135997
+      },
+      {
+        "paper_action": "SIMULATE_ALLOCATION",
+        "plan_key": "e587244e72665c164e3f66d4ac1369668fd635f209e094c61412a1328acb05a2",
+        "plan_number": 3,
+        "state": "AUTHORIZED_FOR_PAPER_SIMULATION",
+        "strategy_id": "BUY_HOLD",
+        "target_weight_pct": 22.755807
+      }
+    ],
+    "session_date": "2026-08-10",
+    "session_id": "bc35de090dda5aea17a6e439",
+    "source_decision": "ACT"
+  },
+  "daily_report": {
+    "actual_broker_orders_submitted": 0,
+    "authorized_plan_count": 3,
+    "live_execution_authorized": false,
+    "paper_only": true,
+    "paper_simulation_authorized": true,
+    "planned_strategy_count": 3,
+    "preflight_passed": true,
+    "session_date": "2026-08-10",
+    "session_id": "bc35de090dda5aea17a6e439",
+    "state": "DAILY_PAPER_TRADING_RUN_COMPLETED"
+  },
+  "daily_runner_certificate_sha256": "0d73c42e43847b118571771338ec1d9a491fc0bcf9bd651f7580da31a9d4226f",
+  "duplicate": {
+    "duplicate": false,
+    "match_count": 0,
+    "previous_run_id": null,
+    "previous_state": null
+  },
+  "external_network_enabled": false,
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "next_phase": "V106_33_INTRADAY_PAPER_EXECUTION_ENGINE",
+  "observed_at": "2026-08-04T03:20:40.693323+00:00",
+  "order_submission_enabled": false,
+  "paper_approval": {
+    "broker_submission_authorized": false,
+    "live_execution_authorized": false,
+    "manual_live_approval_required": true,
+    "paper_auto_approval_enabled": true,
+    "paper_simulation_authorized": true
+  },
+  "paper_only": true,
+  "paper_plans_authorized": 3,
+  "paper_plans_processed": 0,
+  "paper_simulation_authorized": true,
+  "preflight": {
+    "checks": {
+      "actual_orders_zero": true,
+      "final_release_complete": true,
+      "live_auto_approval_disabled": true,
+      "live_trading_disabled": true,
+      "paper_auto_approval_enabled": true,
+      "paper_trading_ready": true,
+      "runtime_ready": true,
+      "scheduler_ready": true,
+      "session_available": true,
+      "session_paper_only": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "run_id": "bf03986502408d613720e1d1",
+  "run_key": "f6d07a03def62e7606de1a9587c0283d73cff3314f30f662c936db3cd84dbd6d",
+  "selected_session": {
+    "selection_reason": "EARLIEST_ELIGIBLE_SESSION",
+    "session": {
+      "actual_orders_submitted": 0,
+      "attempt_count": 0,
+      "completed_phases": [],
+      "current_phase": "QUEUED",
+      "execution_authorized": false,
+      "paper_only": true,
+      "session_date": "2026-08-10",
+      "session_id": "bc35de090dda5aea17a6e439",
+      "session_key": "c637e22a2364bf3261df5d339c3a82ddf7f2bfa4ebe21e938ff6c8028249afe0",
+      "source_cycle_id": "11614669ffcf00bf2dce5879",
+      "state": "QUEUED"
+    },
+    "session_available": true
+  },
+  "source_release_id": "126669f114617d1d9174325f",
+  "stage": "V106.32",
+  "stage_range": "V106.01-V106.32",
+  "state": "DAILY_PAPER_TRADING_RUN_COMPLETED",
+  "status": "PASS",
+  "windows_task_enabled": false
+}

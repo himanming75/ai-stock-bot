@@ -1,0 +1,12 @@
+{
+  "actual_broker_orders_submitted": 0,
+  "authorized_plan_count": 3,
+  "live_execution_authorized": false,
+  "paper_only": true,
+  "paper_simulation_authorized": true,
+  "planned_strategy_count": 3,
+  "preflight_passed": true,
+  "session_date": "2026-08-10",
+  "session_id": "bc35de090dda5aea17a6e439",
+  "state": "DAILY_PAPER_TRADING_RUN_COMPLETED"
+}

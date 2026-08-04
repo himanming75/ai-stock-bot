@@ -1,0 +1,11 @@
+{
+  "policy_version": "V106.01",
+  "paper_auto_approval_enabled": true,
+  "live_auto_approval_enabled": false,
+  "maximum_daily_sessions": 1,
+  "checkpoint_enabled": true,
+  "duplicate_run_protection": true,
+  "live_trading_enabled": false,
+  "broker_submission_enabled": false,
+  "external_network_enabled": false
+}

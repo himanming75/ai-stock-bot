@@ -1,0 +1,22 @@
+{
+  "stage_range": "V106.01-V106.32",
+  "base_commit": "cbebb86",
+  "daily_session_selection": true,
+  "final_release_preflight": true,
+  "paper_auto_approval": true,
+  "live_auto_approval": false,
+  "daily_strategy_plan": true,
+  "duplicate_run_protection": true,
+  "checkpoint": true,
+  "daily_report": true,
+  "daily_ledger": true,
+  "paper_simulation_authorized": true,
+  "live_execution_authorized": false,
+  "actual_orders_submitted": 0,
+  "paper_only": true,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "live_trading_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V106.33-V106.64"
+}
