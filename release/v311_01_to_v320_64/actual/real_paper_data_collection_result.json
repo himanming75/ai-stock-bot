@@ -1,0 +1,49 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "blocking_reasons": [
+    "COLLECTOR_DISABLED",
+    "NETWORK_NOT_AUTHORIZED",
+    "PAPER_READ_DISABLED"
+  ],
+  "checks": {
+    "account_read": false,
+    "broker_write_disabled": true,
+    "clock_read": true,
+    "closed_orders_read": true,
+    "credentials_ready": true,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "monitor_only": true,
+    "open_orders_read": true,
+    "paper_endpoint_only": true,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "positions_read": true
+  },
+  "failed": [
+    "account_read"
+  ],
+  "live_submission_enabled": false,
+  "metrics": {},
+  "next_phase": "V321_01_TO_V330_64_REAL_PAPER_LONG_RUN_QUALIFICATION",
+  "paper_submission_enabled": false,
+  "reconciliation": {
+    "change_count": 0,
+    "changes": []
+  },
+  "snapshot": {
+    "account": {},
+    "closed_orders": [],
+    "market_open": false,
+    "next_close": null,
+    "next_open": null,
+    "observed_at": "2026-08-04T17:15:13.716117+00:00",
+    "open_orders": [],
+    "orders": [],
+    "positions": []
+  },
+  "stage": "V320.64",
+  "state": "REAL_PAPER_DATA_COLLECTION_READY_BLOCKED",
+  "status": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "allowed_state": true,
+    "collector_default_off": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "monitor_only": true,
+    "network_blocked": true,
+    "paper_orders_zero": true,
+    "paper_submission_disabled": true,
+    "stage": true,
+    "status": true
+  },
+  "failed": [],
+  "state": "REAL_PAPER_DATA_COLLECTION_READY_BLOCKED",
+  "verification_stage": "V320.64",
+  "verification_status": "PASS"
+}

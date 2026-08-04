@@ -1,0 +1,19 @@
+{
+  "stage_range": "V311.01-V320.64",
+  "base_commit": "2f7f1ed000e475a1a751417694d7e672340f593e",
+  "paper_account_collection": true,
+  "market_clock_collection": true,
+  "position_collection": true,
+  "open_order_collection": true,
+  "closed_order_collection": true,
+  "metrics_ledger": true,
+  "snapshot_ledger": true,
+  "reconciliation_ledger": true,
+  "autonomous_polling_session": true,
+  "default_collector_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V321.01-V330.64 Real Paper Long-Run Qualification"
+}
