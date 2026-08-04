@@ -1,0 +1,41 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "historical_live_orders_zero": true,
+    "live_submission_disabled": true,
+    "paper_only": true,
+    "scheduled_order_submission_disabled": true,
+    "v140_present": true
+  },
+  "failed": [],
+  "historical_live_orders_submitted": 0,
+  "observed_at": "2026-08-04T07:17:07.734901+00:00",
+  "status": "HEALTHY",
+  "tracked_files": {
+    "orchestrator": {
+      "age_minutes": 20.37,
+      "present": true,
+      "stale": false
+    },
+    "paper": {
+      "age_minutes": 67.97,
+      "present": true,
+      "stale": true
+    },
+    "risk": {
+      "age_minutes": 36.58,
+      "present": true,
+      "stale": true
+    },
+    "shadow": {
+      "age_minutes": 20.34,
+      "present": true,
+      "stale": false
+    },
+    "v140": {
+      "age_minutes": 20.31,
+      "present": true,
+      "stale": false
+    }
+  }
+}

@@ -3,19 +3,18 @@ import json,mimetypes
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
-
 from web_controller.state import build_dashboard,get_logs,set_emergency
 from web_controller.actions import run_action
 from web_controller.strategy_api import get_payload as get_strategy,update_payload,validate_payload,restore_payload
-from web_controller.paper_api import get_payload as get_paper,run_payload,save_settings_payload
+from web_controller.paper_api import get_payload as get_paper,run_payload as run_paper,save_settings_payload
+from web_controller.operations_api import get_payload as get_operations,save_payload as save_operations,run_payload as run_operations,recovery_payload
 
 class ControllerHandler(BaseHTTPRequestHandler):
     root=Path.cwd();static_root=Path.cwd()/"web_controller/static"
     def _json(self,status:int,value:object)->None:
         raw=json.dumps(value,indent=2,sort_keys=True).encode("utf-8")
         self.send_response(status);self.send_header("Content-Type","application/json; charset=utf-8")
-        self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store")
-        self.end_headers();self.wfile.write(raw)
+        self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store");self.end_headers();self.wfile.write(raw)
     def _body(self)->dict:
         length=int(self.headers.get("Content-Length","0") or 0)
         if length<=0:return {}
@@ -27,6 +26,7 @@ class ControllerHandler(BaseHTTPRequestHandler):
         if path=="/api/logs":self._json(200,get_logs(self.root));return
         if path=="/api/strategy-config":self._json(200,get_strategy(self.root));return
         if path=="/api/paper-operations":self._json(200,get_paper(self.root));return
+        if path=="/api/operations-manager":self._json(200,get_operations(self.root));return
         file=self.static_root/("index.html" if path in {"/","/index.html"} else path.lstrip("/"))
         try:
             resolved=file.resolve()
@@ -50,9 +50,15 @@ class ControllerHandler(BaseHTTPRequestHandler):
         if path=="/api/strategy-config/restore":
             r=restore_payload(self.root);self._json(200 if r.get("ok") else 409,r);return
         if path=="/api/paper-operations/action":
-            r=run_payload(self.root,body);self._json(200 if r.get("ok") else 409,r);return
+            r=run_paper(self.root,body);self._json(200 if r.get("ok") else 409,r);return
         if path=="/api/paper-operations/settings":
             r=save_settings_payload(self.root,body);self._json(200 if r.get("ok") else 409,r);return
+        if path=="/api/operations-manager/settings":
+            r=save_operations(self.root,body);self._json(200 if r.get("ok") else 409,r);return
+        if path=="/api/operations-manager/job":
+            r=run_operations(self.root,body);self._json(200 if r.get("ok") else 409,r);return
+        if path=="/api/operations-manager/recovery":
+            self._json(200,recovery_payload(self.root));return
         self._json(404,{"error":"NOT_FOUND"})
     def log_message(self,format,*args):print("[WEB]",format%args)
 

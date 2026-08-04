@@ -1,0 +1,18 @@
+{
+  "stage_range": "V156.01-V160.64",
+  "base_commit": "2420c3d52628e1f8311b34978b4cacbaa6d661b8",
+  "windows_task_scheduler_support": true,
+  "web_controller_autostart": true,
+  "pre_market_readiness_job": true,
+  "intraday_real_paper_shadow_job": true,
+  "post_market_report_job": true,
+  "health_monitor": true,
+  "duplicate_job_lock": true,
+  "checkpoint_recovery_plan": true,
+  "desktop_notification_ledger": true,
+  "all_schedules_enabled_by_default": false,
+  "scheduled_paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V161.01-V165.64 Paper Qualification Center"
+}
