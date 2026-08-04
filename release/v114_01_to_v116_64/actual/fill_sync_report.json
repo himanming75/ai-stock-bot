@@ -1,0 +1,24 @@
+{
+  "order_sync_count": 2,
+  "orders": [
+    {
+      "average_fill_price": null,
+      "broker_order_id": null,
+      "filled_quantity": 0.0,
+      "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+      "source": "SAFE_LOCAL_SYNC",
+      "status": "NOT_SUBMITTED",
+      "symbol": "AAPL"
+    },
+    {
+      "average_fill_price": null,
+      "broker_order_id": null,
+      "filled_quantity": 0.0,
+      "intent_id": "2e3f67adbf18ff2eee13940d",
+      "source": "SAFE_LOCAL_SYNC",
+      "status": "NOT_SUBMITTED",
+      "symbol": "MSFT"
+    }
+  ],
+  "real_broker_sync_performed": false
+}

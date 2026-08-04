@@ -1,0 +1,35 @@
+{
+  "policy_version": "FAST_TRACK_D_V114_01_TO_V116_64",
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "maximum_order_quantity": 100,
+  "maximum_order_notional": 25000.0,
+  "sample_order_intents": [
+    {
+      "symbol": "AAPL",
+      "side": "BUY",
+      "quantity": 10,
+      "order_type": "LIMIT",
+      "time_in_force": "DAY",
+      "limit_price": 200.0,
+      "reference_price": 200.0
+    },
+    {
+      "symbol": "MSFT",
+      "side": "BUY",
+      "quantity": 5,
+      "order_type": "MARKET",
+      "time_in_force": "DAY",
+      "reference_price": 400.0
+    }
+  ],
+  "manual_approval_required": true,
+  "approval_granted": false,
+  "approval_token_issued": false,
+  "external_network_enabled": false,
+  "broker_submission_enabled": false,
+  "live_trading_enabled": false
+}

@@ -1,0 +1,254 @@
+{
+  "account_equity": 101912.7,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_orders_submitted": 0,
+  "approval_granted": false,
+  "approval_token_issued": false,
+  "broker_submission_authorized": false,
+  "broker_write_enabled": false,
+  "cancel_replace": {
+    "cancel_candidates": 2,
+    "cancel_requests_executed": 0,
+    "replace_candidates": 0,
+    "replace_requests_executed": 0,
+    "simulation_only": true
+  },
+  "certificate_sha256": "7321720d270bcf33a191ecd09f2fa60194e1c0f121e1756192d477f874854f40",
+  "execution_package_id": "d7b7f464844c41080557c3b6",
+  "execution_queue": {
+    "queue_count": 2,
+    "ready_for_approval_count": 2,
+    "rejected_count": 0,
+    "rows": [
+      {
+        "broker_submission_authorized": false,
+        "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+        "quantity": 10.0,
+        "side": "BUY",
+        "state": "WAITING_FOR_MANUAL_APPROVAL",
+        "submitted": false,
+        "symbol": "AAPL",
+        "translated_payload": {
+          "adapter_name": "MOCK_READ_ONLY",
+          "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+          "payload": {
+            "client_order_id": "012f7b6fbfc8f13c9bdb6d54",
+            "limit_price": 200.0,
+            "order_type": "LIMIT",
+            "quantity": 10.0,
+            "side": "BUY",
+            "symbol": "AAPL",
+            "time_in_force": "DAY"
+          },
+          "submitted": false,
+          "translation_only": true
+        },
+        "validation_passed": true
+      },
+      {
+        "broker_submission_authorized": false,
+        "intent_id": "2e3f67adbf18ff2eee13940d",
+        "quantity": 5.0,
+        "side": "BUY",
+        "state": "WAITING_FOR_MANUAL_APPROVAL",
+        "submitted": false,
+        "symbol": "MSFT",
+        "translated_payload": {
+          "adapter_name": "MOCK_READ_ONLY",
+          "intent_id": "2e3f67adbf18ff2eee13940d",
+          "payload": {
+            "client_order_id": "2e3f67adbf18ff2eee13940d",
+            "limit_price": null,
+            "order_type": "MARKET",
+            "quantity": 5.0,
+            "side": "BUY",
+            "symbol": "MSFT",
+            "time_in_force": "DAY"
+          },
+          "submitted": false,
+          "translation_only": true
+        },
+        "validation_passed": true
+      }
+    ]
+  },
+  "external_network_enabled": false,
+  "fill_sync": {
+    "order_sync_count": 2,
+    "orders": [
+      {
+        "average_fill_price": null,
+        "broker_order_id": null,
+        "filled_quantity": 0.0,
+        "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+        "source": "SAFE_LOCAL_SYNC",
+        "status": "NOT_SUBMITTED",
+        "symbol": "AAPL"
+      },
+      {
+        "average_fill_price": null,
+        "broker_order_id": null,
+        "filled_quantity": 0.0,
+        "intent_id": "2e3f67adbf18ff2eee13940d",
+        "source": "SAFE_LOCAL_SYNC",
+        "status": "NOT_SUBMITTED",
+        "symbol": "MSFT"
+      }
+    ],
+    "real_broker_sync_performed": false
+  },
+  "live_execution_authorized": false,
+  "live_trading_enabled": false,
+  "manual_approval_package": {
+    "approval_granted": false,
+    "approval_request_hash": "8a8280c8d357645075bdc14cfd8282f25f42ac62a3c370ad3c02e83f17fac609",
+    "approval_token_issued": false,
+    "created_at": "2026-08-04T05:33:34.396865+00:00",
+    "intent_ids": [
+      "012f7b6fbfc8f13c9bdb6d54",
+      "2e3f67adbf18ff2eee13940d"
+    ],
+    "live_execution_authorized": false,
+    "manual_approval_required": true,
+    "validation_passed": true
+  },
+  "manual_approval_required": true,
+  "network_requests_executed": 0,
+  "next_phase": "V117_01_TO_V119_64_LIVE_SAFETY_SYSTEM",
+  "observed_at": "2026-08-04T05:33:34.396946+00:00",
+  "order_intents": [
+    {
+      "estimated_notional": 2000.0,
+      "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+      "limit_price": 200.0,
+      "order_type": "LIMIT",
+      "quantity": 10.0,
+      "side": "BUY",
+      "source": "SAFE_EXECUTION_FIXTURE",
+      "state": "CREATED",
+      "symbol": "AAPL",
+      "time_in_force": "DAY"
+    },
+    {
+      "estimated_notional": 2000.0,
+      "intent_id": "2e3f67adbf18ff2eee13940d",
+      "limit_price": null,
+      "order_type": "MARKET",
+      "quantity": 5.0,
+      "side": "BUY",
+      "source": "SAFE_EXECUTION_FIXTURE",
+      "state": "CREATED",
+      "symbol": "MSFT",
+      "time_in_force": "DAY"
+    }
+  ],
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "position_sync": {
+    "position_sync_count": 0,
+    "positions": [],
+    "real_broker_sync_performed": false
+  },
+  "read_only_source": true,
+  "real_broker_submission_attempted": false,
+  "real_broker_sync_performed": false,
+  "safe_gateway": {
+    "actual_orders_submitted": 0,
+    "blocked_actions": [
+      "submit_order",
+      "cancel_order",
+      "replace_order",
+      "close_position",
+      "close_all_positions",
+      "transfer_funds"
+    ],
+    "checks": {
+      "approval_not_granted": true,
+      "approval_token_not_issued": true,
+      "live_execution_not_authorized": true,
+      "manual_approval_required": true,
+      "network_disabled": true,
+      "submission_disabled": true
+    },
+    "failed": [],
+    "gateway_state": "HARD_BLOCKED",
+    "network_requests_executed": 0,
+    "passed": true,
+    "write_requests_executed": 0
+  },
+  "selected_adapter": "MOCK_READ_ONLY",
+  "source_snapshot_id": "a664b7a1e37a8bee6bcc61c9",
+  "stage": "V116.64",
+  "stage_range": "V114.01-V116.64",
+  "state": "BROKER_INTEGRATION_SAFE_EXECUTION_BOUNDARY_READY",
+  "status": "PASS",
+  "translated_payloads": [
+    {
+      "adapter_name": "MOCK_READ_ONLY",
+      "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+      "payload": {
+        "client_order_id": "012f7b6fbfc8f13c9bdb6d54",
+        "limit_price": 200.0,
+        "order_type": "LIMIT",
+        "quantity": 10.0,
+        "side": "BUY",
+        "symbol": "AAPL",
+        "time_in_force": "DAY"
+      },
+      "submitted": false,
+      "translation_only": true
+    },
+    {
+      "adapter_name": "MOCK_READ_ONLY",
+      "intent_id": "2e3f67adbf18ff2eee13940d",
+      "payload": {
+        "client_order_id": "2e3f67adbf18ff2eee13940d",
+        "limit_price": null,
+        "order_type": "MARKET",
+        "quantity": 5.0,
+        "side": "BUY",
+        "symbol": "MSFT",
+        "time_in_force": "DAY"
+      },
+      "submitted": false,
+      "translation_only": true
+    }
+  ],
+  "validation": {
+    "invalid_count": 0,
+    "passed": true,
+    "rows": [
+      {
+        "checks": {
+          "limit_price_present_when_required": true,
+          "notional_within_limit": true,
+          "order_type_allowed": true,
+          "quantity_positive": true,
+          "quantity_within_limit": true,
+          "side_allowed": true,
+          "symbol_allowed": true
+        },
+        "failed": [],
+        "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+        "passed": true
+      },
+      {
+        "checks": {
+          "limit_price_present_when_required": true,
+          "notional_within_limit": true,
+          "order_type_allowed": true,
+          "quantity_positive": true,
+          "quantity_within_limit": true,
+          "side_allowed": true,
+          "symbol_allowed": true
+        },
+        "failed": [],
+        "intent_id": "2e3f67adbf18ff2eee13940d",
+        "passed": true
+      }
+    ],
+    "valid_count": 2
+  },
+  "write_requests_executed": 0
+}

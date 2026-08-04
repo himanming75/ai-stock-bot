@@ -1,0 +1,35 @@
+{
+  "invalid_count": 0,
+  "passed": true,
+  "rows": [
+    {
+      "checks": {
+        "limit_price_present_when_required": true,
+        "notional_within_limit": true,
+        "order_type_allowed": true,
+        "quantity_positive": true,
+        "quantity_within_limit": true,
+        "side_allowed": true,
+        "symbol_allowed": true
+      },
+      "failed": [],
+      "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+      "passed": true
+    },
+    {
+      "checks": {
+        "limit_price_present_when_required": true,
+        "notional_within_limit": true,
+        "order_type_allowed": true,
+        "quantity_positive": true,
+        "quantity_within_limit": true,
+        "side_allowed": true,
+        "symbol_allowed": true
+      },
+      "failed": [],
+      "intent_id": "2e3f67adbf18ff2eee13940d",
+      "passed": true
+    }
+  ],
+  "valid_count": 2
+}

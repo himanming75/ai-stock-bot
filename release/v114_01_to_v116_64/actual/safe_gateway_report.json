@@ -1,0 +1,24 @@
+{
+  "actual_orders_submitted": 0,
+  "blocked_actions": [
+    "submit_order",
+    "cancel_order",
+    "replace_order",
+    "close_position",
+    "close_all_positions",
+    "transfer_funds"
+  ],
+  "checks": {
+    "approval_not_granted": true,
+    "approval_token_not_issued": true,
+    "live_execution_not_authorized": true,
+    "manual_approval_required": true,
+    "network_disabled": true,
+    "submission_disabled": true
+  },
+  "failed": [],
+  "gateway_state": "HARD_BLOCKED",
+  "network_requests_executed": 0,
+  "passed": true,
+  "write_requests_executed": 0
+}

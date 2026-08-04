@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "estimated_notional": 2000.0,
+      "intent_id": "012f7b6fbfc8f13c9bdb6d54",
+      "limit_price": 200.0,
+      "order_type": "LIMIT",
+      "quantity": 10.0,
+      "side": "BUY",
+      "source": "SAFE_EXECUTION_FIXTURE",
+      "state": "CREATED",
+      "symbol": "AAPL",
+      "time_in_force": "DAY"
+    },
+    {
+      "estimated_notional": 2000.0,
+      "intent_id": "2e3f67adbf18ff2eee13940d",
+      "limit_price": null,
+      "order_type": "MARKET",
+      "quantity": 5.0,
+      "side": "BUY",
+      "source": "SAFE_EXECUTION_FIXTURE",
+      "state": "CREATED",
+      "symbol": "MSFT",
+      "time_in_force": "DAY"
+    }
+  ]
+}
