@@ -1,0 +1,13 @@
+{
+  "stage": "V420.64",
+  "package": "V411.01-V420.64 AI Signal Intelligence",
+  "requires": "V400.01-V410.64",
+  "independent_from_v330": true,
+  "network_used": false,
+  "broker_credentials_used": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

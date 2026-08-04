@@ -1,0 +1,22 @@
+{
+  "stage": "V420.64",
+  "mode": "OFFLINE_ONLY",
+  "network_enabled": false,
+  "broker_credentials_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "allowed_analytical_actions": [
+    "BUY",
+    "SELL",
+    "HOLD"
+  ],
+  "signal_ranks": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "memory_mode": "APPEND_ONLY_LOCAL_JSONL"
+}

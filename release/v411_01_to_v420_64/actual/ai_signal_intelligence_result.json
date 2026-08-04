@@ -1,0 +1,49 @@
+{
+  "action": "BUY",
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_credentials_used": false,
+  "components": {
+    "atr_pct": 0.014816,
+    "macd": 0.724073,
+    "market_trend": 0.55,
+    "momentum": 1.0,
+    "news": 0.35,
+    "rsi": 97.4359,
+    "trend": 1.0,
+    "volatility": 0.296322,
+    "volume": 0.223065,
+    "volume_ratio": 1.223065
+  },
+  "confidence": 76.11,
+  "expected_holding_days": "2-5",
+  "live_submission_enabled": false,
+  "network_used": false,
+  "order_submission_allowed": false,
+  "paper_submission_enabled": false,
+  "patterns": [
+    "BULLISH_ENGULFING"
+  ],
+  "reasons": [
+    "Market regime is BULL_TREND.",
+    "Trend component is 1.000.",
+    "Momentum component is 1.000; RSI is 97.4.",
+    "Relative volume is 1.22.",
+    "MACD component is 0.724.",
+    "Detected patterns: BULLISH_ENGULFING.",
+    "Final analytical action is BUY; no order can be submitted."
+  ],
+  "regime": "BULL_TREND",
+  "risk_level": "MEDIUM",
+  "risk_score": 36,
+  "self_review": [
+    "BUY conflicts with overbought RSI.",
+    "This offline signal cannot submit an order."
+  ],
+  "signal_rank": "B",
+  "signal_score": 0.786359,
+  "stage": "V420.64",
+  "state": "AI_SIGNAL_INTELLIGENCE_READY",
+  "status": "PASS",
+  "symbol": "AAPL"
+}
