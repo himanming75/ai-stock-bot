@@ -9,23 +9,27 @@ from web_controller.strategy_api import get_payload as get_strategy,update_paylo
 from web_controller.paper_api import get_payload as get_paper,run_payload as run_paper,save_settings_payload
 from web_controller.operations_api import get_payload as get_operations,save_payload as save_operations,run_payload as run_operations,recovery_payload
 from web_controller.qualification_api import get_payload as get_qualification,run_payload as run_qualification
+from web_controller.live_approval_api import get_payload as get_live_approval,refresh_payload,decision_payload
 
 class ControllerHandler(BaseHTTPRequestHandler):
     root=Path.cwd();static_root=Path.cwd()/"web_controller/static"
-    def _json(self,status,value):
-        raw=json.dumps(value,indent=2,sort_keys=True).encode()
-        self.send_response(status);self.send_header("Content-Type","application/json; charset=utf-8");self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store");self.end_headers();self.wfile.write(raw)
+    def _send(self,raw:bytes,status=200,mime="application/json; charset=utf-8"):
+        try:
+            self.send_response(status);self.send_header("Content-Type",mime);self.send_header("Content-Length",str(len(raw)));self.send_header("Cache-Control","no-store");self.end_headers();self.wfile.write(raw)
+        except (BrokenPipeError,ConnectionAbortedError,ConnectionResetError):
+            pass
+    def _json(self,status,value):self._send(json.dumps(value,indent=2,sort_keys=True).encode(),status)
     def _body(self):
         n=int(self.headers.get("Content-Length","0") or 0)
         try:return json.loads(self.rfile.read(n).decode()) if n else {}
         except Exception:return {}
     def do_GET(self):
         p=urlparse(self.path).path
-        routes={"/api/dashboard":lambda:build_dashboard(self.root),"/api/logs":lambda:get_logs(self.root),"/api/strategy-config":lambda:get_strategy(self.root),"/api/paper-operations":lambda:get_paper(self.root),"/api/operations-manager":lambda:get_operations(self.root),"/api/qualification":lambda:get_qualification(self.root)}
+        routes={"/api/dashboard":lambda:build_dashboard(self.root),"/api/logs":lambda:get_logs(self.root),"/api/strategy-config":lambda:get_strategy(self.root),"/api/paper-operations":lambda:get_paper(self.root),"/api/operations-manager":lambda:get_operations(self.root),"/api/qualification":lambda:get_qualification(self.root),"/api/live-approval":lambda:get_live_approval(self.root)}
         if p in routes:self._json(200,routes[p]());return
         file=self.static_root/("index.html" if p in {"/","/index.html"} else p.lstrip("/"))
         if not file.exists():self._json(404,{"error":"NOT_FOUND"});return
-        raw=file.read_bytes();self.send_response(200);self.send_header("Content-Type",mimetypes.guess_type(str(file))[0] or "application/octet-stream");self.send_header("Content-Length",str(len(raw)));self.end_headers();self.wfile.write(raw)
+        self._send(file.read_bytes(),200,mimetypes.guess_type(str(file))[0] or "application/octet-stream")
     def do_POST(self):
         p=urlparse(self.path).path;b=self._body()
         if p=="/api/emergency-stop":r={"ok":True,"emergency_stop":set_emergency(self.root,bool(b.get("enabled",True)),str(b.get("reason","")))}
@@ -39,6 +43,8 @@ class ControllerHandler(BaseHTTPRequestHandler):
         elif p=="/api/operations-manager/job":r=run_operations(self.root,b)
         elif p=="/api/operations-manager/recovery":r=recovery_payload(self.root)
         elif p=="/api/qualification/run":r=run_qualification(self.root)
+        elif p=="/api/live-approval/refresh":r=refresh_payload(self.root)
+        elif p=="/api/live-approval/decision":r=decision_payload(self.root,b)
         else:self._json(404,{"error":"NOT_FOUND"});return
         self._json(200 if r.get("ok",True) else 409,r)
     def log_message(self,format,*args):print("[WEB]",format%args)

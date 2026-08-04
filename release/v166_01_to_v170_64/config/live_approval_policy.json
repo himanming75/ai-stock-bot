@@ -1,0 +1,13 @@
+{
+  "live_read_only_enabled": false,
+  "qualification_required": true,
+  "approval_expiry_minutes": 10,
+  "two_person_approval_required": false,
+  "manual_approval_required": true,
+  "maximum_candidate_notional": 100.0,
+  "maximum_candidate_quantity": 1,
+  "paper_only": true,
+  "live_network_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

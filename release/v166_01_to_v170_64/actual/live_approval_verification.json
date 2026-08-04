@@ -1,0 +1,62 @@
+{
+  "actual_live_orders_submitted": 0,
+  "approval_request": {
+    "actual_live_orders_submitted": 0,
+    "approved": false,
+    "candidate": {},
+    "checks": {
+      "candidate_present": false,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "manual_approval_required": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_within_limit": false
+    },
+    "created_at": "2026-08-04T07:30:41.371890+00:00",
+    "decision": "BLOCKED",
+    "eligible_for_review": false,
+    "execution_authorized": false,
+    "expires_at": "2026-08-04T07:40:41.371890+00:00",
+    "failed": [
+      "qualification_passed",
+      "candidate_present",
+      "quantity_within_limit",
+      "notional_within_limit"
+    ],
+    "rejected": false,
+    "request_id": "e835a8f5eafc1bd53309fa4c"
+  },
+  "checks": {
+    "allowed_state": true,
+    "execution_not_authorized": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "network_not_attempted": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true,
+    "write_not_attempted": true
+  },
+  "comparison": {
+    "buying_power_difference": -398696.46,
+    "equity_difference": -99000.0,
+    "live_buying_power": 1000.0,
+    "live_equity": 1000.0,
+    "paper_buying_power": 399696.46,
+    "paper_equity": 100000.0,
+    "same_account_detected": false
+  },
+  "credentials": {
+    "credentials_exposed": false,
+    "credentials_used": false,
+    "live_key_present": false,
+    "live_secret_present": false,
+    "ready_for_read_only": false
+  },
+  "failed": [],
+  "qualification_passed": false,
+  "state": "LIVE_READ_ONLY_APPROVAL_BLOCKED",
+  "verification_stage": "V170.64",
+  "verification_status": "PASS"
+}

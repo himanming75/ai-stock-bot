@@ -1,0 +1,18 @@
+{
+  "stage_range": "V166.01-V170.64",
+  "base_commit": "5d22280c14097e27c090d4988dd1250ae698ee02",
+  "live_credential_detection": true,
+  "live_read_only_fixture": true,
+  "paper_live_comparison": true,
+  "qualification_gate": true,
+  "approval_request": true,
+  "approval_expiry": true,
+  "approval_reject": true,
+  "web_live_approval_tab": true,
+  "browser_disconnect_error_handling": true,
+  "actual_live_network_attempted": false,
+  "live_network_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V171.01-V175.64 Controlled Micro-Live"
+}

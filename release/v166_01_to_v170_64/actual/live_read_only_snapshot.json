@@ -1,0 +1,17 @@
+{
+  "account": {
+    "account_id_masked": "****LIVE",
+    "buying_power": 1000.0,
+    "cash": 1000.0,
+    "equity": 1000.0,
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "account_id_masked": "****LIVE",
+  "actual_live_network_attempted": false,
+  "actual_live_orders_submitted": 0,
+  "actual_live_write_attempted": false,
+  "orders": [],
+  "positions": [],
+  "source": "LOCAL_READ_ONLY_FIXTURE"
+}

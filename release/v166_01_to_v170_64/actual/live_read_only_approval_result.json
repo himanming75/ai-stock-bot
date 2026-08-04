@@ -1,0 +1,101 @@
+{
+  "actual_live_network_attempted": false,
+  "actual_live_orders_submitted": 0,
+  "actual_live_write_attempted": false,
+  "approval_request": {
+    "actual_live_orders_submitted": 0,
+    "approved": false,
+    "candidate": {},
+    "checks": {
+      "candidate_present": false,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "manual_approval_required": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_within_limit": false
+    },
+    "created_at": "2026-08-04T07:30:41.371890+00:00",
+    "decision": "BLOCKED",
+    "eligible_for_review": false,
+    "execution_authorized": false,
+    "expires_at": "2026-08-04T07:40:41.371890+00:00",
+    "failed": [
+      "qualification_passed",
+      "candidate_present",
+      "quantity_within_limit",
+      "notional_within_limit"
+    ],
+    "rejected": false,
+    "request_id": "e835a8f5eafc1bd53309fa4c"
+  },
+  "credentials": {
+    "credentials_exposed": false,
+    "credentials_used": false,
+    "live_key_present": false,
+    "live_secret_present": false,
+    "ready_for_read_only": false
+  },
+  "execution_authorized": false,
+  "live_read_only_enabled": false,
+  "live_read_only_snapshot": {
+    "account": {
+      "account_id_masked": "****LIVE",
+      "buying_power": 1000.0,
+      "cash": 1000.0,
+      "equity": 1000.0,
+      "status": "ACTIVE",
+      "trading_blocked": false
+    },
+    "account_id_masked": "****LIVE",
+    "actual_live_network_attempted": false,
+    "actual_live_orders_submitted": 0,
+    "actual_live_write_attempted": false,
+    "orders": [],
+    "positions": [],
+    "source": "LOCAL_READ_ONLY_FIXTURE"
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V171_01_TO_V175_64_CONTROLLED_MICRO_LIVE",
+  "observed_at": "2026-08-04T07:30:41.374804+00:00",
+  "paper_account": {
+    "account_blocked": false,
+    "account_id_masked": "****b697",
+    "buying_power": 399696.46,
+    "cash": 100000.0,
+    "currency": "USD",
+    "equity": 100000.0,
+    "last_equity": 100000.0,
+    "pattern_day_trader": false,
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "paper_live_comparison": {
+    "buying_power_difference": -398696.46,
+    "equity_difference": -99000.0,
+    "live_buying_power": 1000.0,
+    "live_equity": 1000.0,
+    "paper_buying_power": 399696.46,
+    "paper_equity": 100000.0,
+    "same_account_detected": false
+  },
+  "policy": {
+    "approval_expiry_minutes": 10,
+    "live_network_write_enabled": false,
+    "live_read_only_enabled": false,
+    "live_submission_enabled": false,
+    "manual_approval_required": true,
+    "maximum_candidate_notional": 100.0,
+    "maximum_candidate_quantity": 1,
+    "paper_only": true,
+    "qualification_required": true,
+    "two_person_approval_required": false,
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "qualification_passed": false,
+  "qualification_state": "PAPER_QUALIFICATION_IN_PROGRESS",
+  "selected_candidate": {},
+  "stage": "V170.64",
+  "state": "LIVE_READ_ONLY_APPROVAL_BLOCKED",
+  "status": "PASS"
+}
