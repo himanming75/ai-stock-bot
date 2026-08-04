@@ -1,0 +1,2 @@
+{"actual_live_orders_submitted": 0, "candidate_count": 1, "eligible_count": 1, "observed_at": "2026-08-04T06:24:10.833183+00:00", "readiness_id": "e067d1072f5529d41164181c", "state": "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_READY"}
+{"actual_live_orders_submitted": 0, "candidate_count": 0, "eligible_count": 0, "observed_at": "2026-08-04T06:24:52.539838+00:00", "readiness_id": "4ecc4344fa10d5925c4b3f87", "state": "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_REVIEW_REQUIRED"}

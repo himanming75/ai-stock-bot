@@ -1,0 +1,63 @@
+{
+  "actual_live_orders_submitted": 0,
+  "approval_token_valid": false,
+  "fixture_live_snapshot_used": true,
+  "live_account_snapshot": {
+    "account_blocked": false,
+    "account_id_masked": "****0123",
+    "buying_power": 1000.0,
+    "cash": 1000.0,
+    "equity": 1000.0,
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "live_gateway": {
+    "actual_live_orders_submitted": 0,
+    "authorized": false,
+    "checks": {
+      "approval_token_valid": false,
+      "candidate_gate_passed": false,
+      "live_network_write_enabled": false,
+      "live_submission_enabled": false,
+      "manual_approval_complete": false
+    },
+    "failed": [
+      "candidate_gate_passed",
+      "manual_approval_complete",
+      "approval_token_valid",
+      "live_network_write_enabled",
+      "live_submission_enabled"
+    ],
+    "gateway_state": "HARD_BLOCKED",
+    "live_read_only_allowed": true,
+    "live_write_allowed": false
+  },
+  "live_network_write_enabled": false,
+  "live_order_snapshot": [],
+  "live_position_snapshot": [],
+  "live_submission_enabled": false,
+  "manual_approval_complete": false,
+  "next_phase": "V131_CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW",
+  "observed_at": "2026-08-04T06:24:52.539838+00:00",
+  "readiness_id": "4ecc4344fa10d5925c4b3f87",
+  "real_live_network_attempted": false,
+  "real_live_read_only_snapshot_fetched": false,
+  "reconciliation": {
+    "conflict_count": 0,
+    "passed": true,
+    "rows": []
+  },
+  "restricted_gate": {
+    "eligible_count": 0,
+    "ineligible_count": 0,
+    "passed": false,
+    "rows": []
+  },
+  "restricted_live_candidates": [],
+  "result_sha256": "b73c46795726378a7ec582c9a68970305b05fe6a75e0aa49e63030a280524a35",
+  "source_readiness_id": "ba81a27370bec4b110a7cbfa",
+  "stage": "V130.64",
+  "stage_range": "V129.01-V130.64",
+  "state": "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_REVIEW_REQUIRED",
+  "status": "PASS"
+}

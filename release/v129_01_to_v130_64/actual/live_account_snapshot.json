@@ -1,0 +1,9 @@
+{
+  "account_blocked": false,
+  "account_id_masked": "****0123",
+  "buying_power": 1000.0,
+  "cash": 1000.0,
+  "equity": 1000.0,
+  "status": "ACTIVE",
+  "trading_blocked": false
+}

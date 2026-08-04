@@ -1,0 +1,13 @@
+{
+  "account": {
+    "id": "live-readonly-0123",
+    "status": "ACTIVE",
+    "cash": "1000",
+    "equity": "1000",
+    "buying_power": "1000",
+    "trading_blocked": false,
+    "account_blocked": false
+  },
+  "positions": [],
+  "orders": []
+}

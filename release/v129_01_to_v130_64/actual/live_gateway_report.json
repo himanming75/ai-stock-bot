@@ -1,0 +1,21 @@
+{
+  "actual_live_orders_submitted": 0,
+  "authorized": false,
+  "checks": {
+    "approval_token_valid": false,
+    "candidate_gate_passed": false,
+    "live_network_write_enabled": false,
+    "live_submission_enabled": false,
+    "manual_approval_complete": false
+  },
+  "failed": [
+    "candidate_gate_passed",
+    "manual_approval_complete",
+    "approval_token_valid",
+    "live_network_write_enabled",
+    "live_submission_enabled"
+  ],
+  "gateway_state": "HARD_BLOCKED",
+  "live_read_only_allowed": true,
+  "live_write_allowed": false
+}

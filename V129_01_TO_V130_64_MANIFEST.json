@@ -1,0 +1,12 @@
+{
+  "stage_range": "V129.01-V130.64",
+  "base_commit": "dc79f1d1cce66e470178cc05ac3d5e195bb8cbae",
+  "live_account_readonly_model": true,
+  "position_conflict_detection": true,
+  "open_order_conflict_detection": true,
+  "restricted_automatic_candidate_gate": true,
+  "live_network_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V131 Controlled Micro-Live Execution Review"
+}
