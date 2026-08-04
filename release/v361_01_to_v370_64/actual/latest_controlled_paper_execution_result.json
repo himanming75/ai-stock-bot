@@ -1,0 +1,38 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "allow_network": false,
+  "daily_submission_counter": {
+    "date": "2026-08-04",
+    "proposal_hashes": [],
+    "submitted_orders": 0
+  },
+  "executed_at": "2026-08-04T23:11:04.365313+00:00",
+  "gate": {
+    "allowed": false,
+    "blocking_reasons": [
+      "PAPER_SUBMISSION_POLICY_DISABLED",
+      "ENABLE_PHRASE_MISMATCH",
+      "PAPER_CREDENTIALS_MISSING",
+      "APPROVAL_NOT_GRANTED",
+      "APPROVAL_TOKEN_EXPIRED",
+      "SYMBOL_NOT_ALLOWED",
+      "ORDER_NOTIONAL_LIMIT_EXCEEDED",
+      "MARKET_NOT_OPEN",
+      "ACCOUNT_NOT_ACTIVE"
+    ],
+    "duplicate_open_order_count": 0
+  },
+  "live_endpoint_enabled": false,
+  "live_submission_enabled": false,
+  "network_used": false,
+  "next_phase": "V371_01_TO_V380_64_PAPER_EXECUTION_LIFECYCLE_AND_RECONCILIATION",
+  "order_response": null,
+  "paper_endpoint_only": true,
+  "paper_submission_enabled": false,
+  "proposal_hash": "89c7c6bec7e569b15c37b8a7d98171227ebd8d5bf12ecc2afa8c8c4f83224bad",
+  "stage": "V370.64",
+  "state": "CONTROLLED_PAPER_EXECUTION_BLOCKED",
+  "status": "PASS",
+  "submission_payload": null
+}

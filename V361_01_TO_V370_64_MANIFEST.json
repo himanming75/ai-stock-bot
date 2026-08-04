@@ -1,0 +1,15 @@
+{
+  "stage": "V370.64",
+  "package": "Controlled Paper Auto Execution",
+  "requires": "V360.64 PAPER_ORDER_PROPOSAL_AWAITING_APPROVAL",
+  "default_paper_submission_enabled": false,
+  "paper_endpoint_only": true,
+  "live_endpoint_enabled": false,
+  "maximum_order_notional": 1.0,
+  "maximum_daily_orders": 1,
+  "allowed_symbols": [
+    "SPY"
+  ],
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}
