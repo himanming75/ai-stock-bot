@@ -1,0 +1,93 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_cycle_foundation_ready": true,
+  "broker_write_enabled": false,
+  "checks": {
+    "broker_write_disabled": true,
+    "checkpoint_complete": true,
+    "idempotency_registered": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "policy_valid": true,
+    "reconciliation_complete": true,
+    "recovery_plan_present": true
+  },
+  "cycle_id": "20260804T090046Z",
+  "failed": [],
+  "idempotency": {
+    "duplicate": false,
+    "record": {
+      "cycle_id": "20260804T090046Z",
+      "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+      "notional": 50.0,
+      "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+      "plan_allowed": false,
+      "quantity": 1,
+      "reference_price": 50.0,
+      "side": "BUY",
+      "strategy_id": "momentum",
+      "symbol": "AAPL"
+    },
+    "registered": true
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V226_01_TO_V230_64_LIVE_SHADOW_SLIPPAGE_QUALIFICATION",
+  "order_plan": {
+    "cycle_id": "20260804T090046Z",
+    "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+    "notional": 50.0,
+    "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+    "plan_allowed": false,
+    "quantity": 1,
+    "reference_price": 50.0,
+    "side": "BUY",
+    "strategy_id": "momentum",
+    "symbol": "AAPL"
+  },
+  "paper_orders_submitted": 0,
+  "paper_submission_enabled": false,
+  "real_network_enabled": false,
+  "reconciliation": {
+    "conflict_count": 0,
+    "passed": true,
+    "rows": []
+  },
+  "recovery": {
+    "actual_live_orders_submitted": 0,
+    "automatic_live_resume_allowed": false,
+    "broker_write_enabled": false,
+    "checkpoint_present": true,
+    "created_at": "2026-08-04T09:00:46.102266+00:00",
+    "last_checkpoint": {
+      "actual_live_orders_submitted": 0,
+      "cycle_id": "20260804T090046Z",
+      "details": {
+        "actual_live_orders_submitted": 0,
+        "cycle_id": "20260804T090046Z",
+        "generated_at": "2026-08-04T09:00:46.049450+00:00",
+        "order_plan_allowed": false,
+        "paper_orders_submitted": 0,
+        "reconciliation_conflicts": 0,
+        "reconciliation_passed": true,
+        "risk_gate_passed": false,
+        "signal_present": true
+      },
+      "status": "PASS",
+      "step": "CHECKPOINT_COMPLETE",
+      "updated_at": "2026-08-04T09:00:46.086633+00:00"
+    },
+    "steps": [
+      "ENABLE_EMERGENCY_STOP",
+      "READ_LAST_CHECKPOINT",
+      "READ_PAPER_OPEN_ORDERS",
+      "READ_PAPER_POSITIONS",
+      "RECONCILE_LOCAL_AND_BROKER_STATE",
+      "BLOCK_NEW_ORDER_ON_CONFLICT",
+      "RESUME_FROM_SAFE_STEP"
+    ]
+  },
+  "stage": "V225.64",
+  "state": "PAPER_OPERATIONS_AUTOMATION_V2_READY",
+  "status": "PASS",
+  "submission_state": "POLICY_BLOCKED"
+}

@@ -1,0 +1,40 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "automation_foundation_ready": true,
+    "broker_write_disabled": true,
+    "checkpoint_present": true,
+    "live_orders_zero": true,
+    "paper_orders_zero": true,
+    "paper_submission_default_off": true,
+    "real_network_default_off": true,
+    "recovery_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "cycle_id": "20260804T090046Z",
+  "failed": [],
+  "order_plan": {
+    "cycle_id": "20260804T090046Z",
+    "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+    "notional": 50.0,
+    "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+    "plan_allowed": false,
+    "quantity": 1,
+    "reference_price": 50.0,
+    "side": "BUY",
+    "strategy_id": "momentum",
+    "symbol": "AAPL"
+  },
+  "paper_orders_submitted": 0,
+  "reconciliation": {
+    "conflict_count": 0,
+    "passed": true,
+    "rows": []
+  },
+  "state": "PAPER_OPERATIONS_AUTOMATION_V2_READY",
+  "verification_stage": "V225.64",
+  "verification_status": "PASS"
+}

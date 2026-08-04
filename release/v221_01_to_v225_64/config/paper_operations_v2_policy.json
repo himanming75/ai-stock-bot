@@ -1,0 +1,18 @@
+{
+  "mode": "PAPER_DRY_RUN",
+  "cycle_enabled": true,
+  "real_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_orders_per_cycle": 1,
+  "maximum_order_quantity": 1,
+  "maximum_order_notional": 100.0,
+  "fill_timeout_seconds": 120,
+  "maximum_retries": 2,
+  "retry_delay_seconds": 5,
+  "checkpoint_enabled": true,
+  "reconciliation_required": true,
+  "end_of_day_report_enabled": true,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

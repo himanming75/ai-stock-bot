@@ -1,0 +1,12 @@
+{
+  "cycle_id": "20260804T090046Z",
+  "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+  "notional": 50.0,
+  "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+  "plan_allowed": false,
+  "quantity": 1,
+  "reference_price": 50.0,
+  "side": "BUY",
+  "strategy_id": "momentum",
+  "symbol": "AAPL"
+}

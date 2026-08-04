@@ -1,0 +1,17 @@
+{
+  "stage_range": "V221.01-V225.64",
+  "base_commit": "907107bf6dca03cff7024cb51535da5e8e5e2e9c",
+  "paper_operations_state_machine": true,
+  "checkpoint_recovery": true,
+  "order_idempotency": true,
+  "order_lifecycle_foundation": true,
+  "position_reconciliation": true,
+  "daily_operations_report": true,
+  "web_api": true,
+  "real_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V226.01-V230.64 Live Shadow Slippage Qualification"
+}

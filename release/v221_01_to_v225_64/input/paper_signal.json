@@ -1,0 +1,9 @@
+{
+  "signal": {
+    "strategy_id": "momentum",
+    "symbol": "AAPL",
+    "side": "BUY",
+    "quantity": 1,
+    "reference_price": 50.0
+  }
+}
