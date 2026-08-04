@@ -1,0 +1,18 @@
+{
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "micro_order_enabled": false,
+  "symbol": "SPY",
+  "side": "buy",
+  "order_type": "market",
+  "time_in_force": "day",
+  "notional": 1.0,
+  "maximum_notional": 5.0,
+  "maximum_orders_lifetime": 1,
+  "require_market_open": true,
+  "require_no_open_orders": true,
+  "require_explicit_confirmation": true,
+  "confirmation_phrase": "ENABLE_ONE_DOLLAR_PAPER_ORDER",
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false
+}

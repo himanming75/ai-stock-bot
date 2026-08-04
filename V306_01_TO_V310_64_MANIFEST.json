@@ -1,0 +1,20 @@
+{
+  "stage_range": "V306.01-V310.64",
+  "base_commit": "2a28da5",
+  "paper_endpoint": "https://paper-api.alpaca.markets",
+  "default_symbol": "SPY",
+  "default_notional": 1.0,
+  "maximum_notional": 5.0,
+  "maximum_orders_lifetime": 1,
+  "one_time_token": true,
+  "deterministic_client_order_id": true,
+  "duplicate_prevention": true,
+  "asset_validation": true,
+  "market_open_required": true,
+  "open_orders_must_be_zero": true,
+  "default_micro_order_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V311.01-V320.64 Real Paper Autonomous Data Collection"
+}

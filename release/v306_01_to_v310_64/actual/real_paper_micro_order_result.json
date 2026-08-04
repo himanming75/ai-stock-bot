@@ -1,0 +1,34 @@
+{
+  "account_status": null,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "asset": {},
+  "blocking_reasons": [
+    "MARKET_CLOSED",
+    "MICRO_ORDER_DISABLED",
+    "NETWORK_NOT_AUTHORIZED",
+    "ONE_TIME_TOKEN_INVALID",
+    "SUBMISSION_NOT_AUTHORIZED"
+  ],
+  "broker_write_enabled": false,
+  "client_order_id": "AISB-V310-276608e5bfe835d650cf",
+  "duplicate": false,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "market_open": false,
+  "next_phase": "V311_01_TO_V320_64_REAL_PAPER_AUTONOMOUS_DATA_COLLECTION",
+  "observed_at": "2026-08-04T17:08:24.617606+00:00",
+  "observed_order": {},
+  "open_order_count_before": 0,
+  "receipt": {},
+  "requested_order": {
+    "notional": 1.0,
+    "side": "buy",
+    "symbol": "SPY",
+    "time_in_force": "day",
+    "type": "market"
+  },
+  "stage": "V310.64",
+  "state": "REAL_PAPER_MICRO_ORDER_READY_BLOCKED",
+  "status": "PASS"
+}

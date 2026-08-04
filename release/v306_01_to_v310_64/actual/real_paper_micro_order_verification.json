@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "allowed_state": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "network_blocked": true,
+    "paper_orders_zero": true,
+    "stage": true,
+    "status": true,
+    "submission_blocked": true
+  },
+  "failed": [],
+  "state": "REAL_PAPER_MICRO_ORDER_READY_BLOCKED",
+  "verification_stage": "V310.64",
+  "verification_status": "PASS"
+}
