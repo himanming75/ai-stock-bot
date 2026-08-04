@@ -1,0 +1,29 @@
+{
+  "action": "BUY",
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_credentials_used": false,
+  "confidence": 59.37,
+  "live_submission_enabled": false,
+  "network_used": false,
+  "order_submission_allowed": false,
+  "paper_submission_enabled": false,
+  "reasons": [
+    "Market regime: BULL_TREND.",
+    "Fast moving average is above the slow moving average.",
+    "RSI is 62.0.",
+    "Volume ratio is 1.40.",
+    "Offline news score is 0.40."
+  ],
+  "regime": "BULL_TREND",
+  "risk_level": "LOW",
+  "score": 0.528736,
+  "self_review": [
+    "Confidence is below the execution-grade threshold.",
+    "This offline decision cannot submit an order."
+  ],
+  "stage": "V410.64",
+  "state": "OFFLINE_AI_DECISION_ENGINE_READY",
+  "status": "PASS",
+  "symbol": "AAPL"
+}

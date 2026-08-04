@@ -1,0 +1,11 @@
+{
+  "symbol": "AAPL",
+  "close": 110.0,
+  "sma_fast": 106.0,
+  "sma_slow": 100.0,
+  "rsi": 62.0,
+  "atr_pct": 0.015,
+  "volume_ratio": 1.4,
+  "market_trend": 0.5,
+  "news_score": 0.4
+}
