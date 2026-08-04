@@ -1,0 +1,16 @@
+{
+  "stage": "V443.01",
+  "mode": "OFFLINE_ONLY",
+  "target_volatility_default": 0.2,
+  "minimum_volatility_multiplier_default": 0.25,
+  "maximum_volatility_multiplier_default": 1.0,
+  "position_increase_above_pre_volatility_size_allowed": false,
+  "network_enabled": false,
+  "broker_credentials_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "drawdown_scaling_enabled": false,
+  "correlation_adjustment_enabled": false
+}
