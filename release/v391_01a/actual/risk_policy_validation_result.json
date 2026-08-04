@@ -1,0 +1,49 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "next_phase": "V391_02A_DAILY_LOSS_GUARD",
+  "paper_submission_enabled": false,
+  "policy": {
+    "automatic_resume_enabled": false,
+    "broker_write_enabled": false,
+    "daily_loss_limit_pct": 0.02,
+    "kill_switch_active": false,
+    "kill_switch_required": true,
+    "live_submission_enabled": false,
+    "manual_resume_required": true,
+    "maximum_consecutive_losses": 5,
+    "maximum_drawdown_pct": 0.1,
+    "maximum_position_pct": 0.1,
+    "maximum_symbol_exposure_pct": 0.1,
+    "maximum_total_exposure_pct": 0.5,
+    "mode": "RISK_GOVERNOR_POLICY_ONLY",
+    "paper_endpoint_only": true,
+    "risk_governor_enabled": true,
+    "risk_operations_allowed": true,
+    "stage": "V391.01A"
+  },
+  "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e",
+  "policy_path": "C:\\stock-bot\\release\\v391_01a\\config\\risk_governor_policy.json",
+  "risk_operations_allowed": true,
+  "stage": "V391.01A",
+  "state": "RISK_POLICY_READY",
+  "status": "PASS",
+  "validation": {
+    "checks": {
+      "automatic_resume_disabled": true,
+      "broker_write_disabled": true,
+      "kill_switch_required": true,
+      "live_submission_disabled": true,
+      "manual_resume_required": true,
+      "mode_valid": true,
+      "paper_endpoint_only": true,
+      "risk_governor_enabled": true,
+      "stage_valid": true
+    },
+    "errors": [],
+    "missing_keys": [],
+    "valid": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "V391.01A",
+  "mode": "RISK_GOVERNOR_POLICY_ONLY",
+  "risk_governor_enabled": true,
+  "paper_endpoint_only": true,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "daily_loss_limit_pct": 0.02,
+  "maximum_drawdown_pct": 0.1,
+  "maximum_position_pct": 0.1,
+  "maximum_total_exposure_pct": 0.5,
+  "maximum_symbol_exposure_pct": 0.1,
+  "maximum_consecutive_losses": 5,
+  "kill_switch_required": true,
+  "kill_switch_active": false,
+  "manual_resume_required": true,
+  "automatic_resume_enabled": false,
+  "risk_operations_allowed": true
+}
