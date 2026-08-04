@@ -1,0 +1,66 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "daily_report": {
+    "actual_live_orders_submitted": 0,
+    "average_absolute_slippage_pct": 0.02,
+    "average_spread_pct": 0.029999,
+    "generated_at": "2026-08-04T09:07:35.478924+00:00",
+    "maximum_absolute_slippage_pct": 0.02,
+    "qualification_rate_pct": 100.0,
+    "qualified_count": 4,
+    "rejected_count": 0,
+    "sample_count": 4
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V231_01_TO_V235_64_ORDER_LIFECYCLE_V2",
+  "observed_at": "2026-08-04T09:07:35.453537+00:00",
+  "qualification": {
+    "available_buying_power": 1000.0,
+    "checks": {
+      "broker_write_disabled": true,
+      "buying_power_sufficient": true,
+      "live_submission_disabled": true,
+      "market_open": true,
+      "quote_fresh": true,
+      "slippage_within_limit": true,
+      "spread_within_limit": true
+    },
+    "expected_notional": 200.04,
+    "failed": [],
+    "minimum_score": 80.0,
+    "passed": true,
+    "required_buying_power": 240.05,
+    "score": 100.0
+  },
+  "quote": {
+    "ask": 200.04,
+    "average_daily_volume": 50000000,
+    "bid": 199.98,
+    "last": 200.01,
+    "market_open": true,
+    "mid": 200.01,
+    "quote_age_seconds": 2.0,
+    "spread": 0.06,
+    "spread_pct": 0.029999,
+    "symbol": "AAPL"
+  },
+  "real_live_read_enabled": false,
+  "signal": {
+    "paper_reference_price": 200.0,
+    "quantity": 1,
+    "side": "BUY",
+    "strategy_id": "momentum",
+    "symbol": "AAPL"
+  },
+  "slippage": {
+    "expected_live_fill_price": 200.04,
+    "paper_reference_price": 200.0,
+    "side": "BUY",
+    "slippage_absolute": 0.04,
+    "slippage_pct": 0.02
+  },
+  "stage": "V230.64",
+  "state": "LIVE_SHADOW_QUALIFIED",
+  "status": "PASS"
+}

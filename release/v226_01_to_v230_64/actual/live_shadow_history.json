@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "observed_at": "2026-08-04T09:06:51.966690+00:00",
+      "qualified": true,
+      "score": 100.0,
+      "slippage_pct": 0.02,
+      "spread_pct": 0.029999,
+      "symbol": "AAPL"
+    },
+    {
+      "observed_at": "2026-08-04T09:06:54.906621+00:00",
+      "qualified": true,
+      "score": 100.0,
+      "slippage_pct": 0.02,
+      "spread_pct": 0.029999,
+      "symbol": "AAPL"
+    },
+    {
+      "observed_at": "2026-08-04T09:07:35.106649+00:00",
+      "qualified": true,
+      "score": 100.0,
+      "slippage_pct": 0.02,
+      "spread_pct": 0.029999,
+      "symbol": "AAPL"
+    },
+    {
+      "observed_at": "2026-08-04T09:07:35.453537+00:00",
+      "qualified": true,
+      "score": 100.0,
+      "slippage_pct": 0.02,
+      "spread_pct": 0.029999,
+      "symbol": "AAPL"
+    }
+  ]
+}

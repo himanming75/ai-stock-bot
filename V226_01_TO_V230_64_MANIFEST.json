@@ -1,0 +1,16 @@
+{
+  "stage_range": "V226.01-V230.64",
+  "base_commit": "ad8c006a2c155e373a18e978e705e11c2bf4c54d",
+  "live_quote_shadow": true,
+  "spread_analysis": true,
+  "slippage_analysis": true,
+  "buying_power_qualification": true,
+  "qualification_score": true,
+  "daily_shadow_report": true,
+  "web_api": true,
+  "real_live_read_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V231.01-V235.64 Order Lifecycle V2"
+}

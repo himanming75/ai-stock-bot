@@ -1,0 +1,9 @@
+{
+  "account": {
+    "account_id_masked": "****LIVE",
+    "buying_power": 1000.0,
+    "cash": 1000.0,
+    "status": "ACTIVE",
+    "read_only": true
+  }
+}

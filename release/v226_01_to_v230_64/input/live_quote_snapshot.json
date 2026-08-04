@@ -1,0 +1,9 @@
+{
+  "symbol": "AAPL",
+  "bid": 199.98,
+  "ask": 200.04,
+  "last": 200.01,
+  "quote_age_seconds": 2,
+  "market_open": true,
+  "average_daily_volume": 50000000
+}

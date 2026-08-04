@@ -1,0 +1,14 @@
+{
+  "mode": "LIVE_SHADOW_READ_ONLY",
+  "real_live_read_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_spread_pct": 0.5,
+  "maximum_slippage_pct": 0.25,
+  "maximum_quote_age_seconds": 15,
+  "minimum_buying_power_buffer_pct": 20.0,
+  "minimum_qualification_score": 80.0,
+  "estimated_fee_per_order": 0.0,
+  "qualification_history_required": 20,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}
