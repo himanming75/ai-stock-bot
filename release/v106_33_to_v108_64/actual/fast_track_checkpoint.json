@@ -1,5 +1,5 @@
 {
-  "checkpoint_hash": "8965c5ae840337524740ec02b0edbb73cea9135a5ec44bc0b1fdc7f822427f10",
+  "checkpoint_hash": "342c29cdf723abc5c7e35550cc844879a5b78b9d7587f5c55046d8534a6162d2",
   "close_result": {
     "closed_position_count": 3,
     "ending_cash": 101628.5,
@@ -11,10 +11,10 @@
     "total_pnl": 1628.5,
     "unrealized_pnl": 0.0
   },
-  "cycle_id": "67daa5f6a3180ff33f11029d",
-  "generation": 1,
+  "cycle_id": "d5c02e73fa40d9ba85ed0a7e",
+  "generation": 2,
   "positions": [],
-  "previous_checkpoint_hash": null,
+  "previous_checkpoint_hash": "75530d6780adb3eed4e734ebfc10d917c6be6bc70675f7e9ba3fe666708de733",
   "state": "FAST_TRACK_PAPER_EXECUTION_AND_ANALYTICS_COMPLETE",
-  "updated_at": "2026-08-04T03:26:17.596102+00:00"
+  "updated_at": "2026-08-04T05:07:08.014068+00:00"
 }

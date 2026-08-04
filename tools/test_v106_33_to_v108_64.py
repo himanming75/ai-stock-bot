@@ -8,6 +8,7 @@ from fast_track_paper.lifecycle import process_tick
 from fast_track_paper.close import daily_close
 from fast_track_paper.analytics import calculate_analytics
 from fast_track_paper.engine import evaluate
+from fast_track_paper.source import resolve_daily_source
 
 class Tests(unittest.TestCase):
     def test_orders(self):
@@ -85,6 +86,40 @@ class Tests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             result=evaluate(Path(temp))
             self.assertEqual(result["state"],"FAST_TRACK_PAPER_SOURCE_REQUIRED")
+
+    def test_source_recovery_from_checkpoint(self):
+        import json
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            checkpoint=(
+                root/"release/v106_01_to_v106_32/actual/"
+                "daily_paper_runner_checkpoint.json"
+            )
+            checkpoint.parent.mkdir(parents=True,exist_ok=True)
+            checkpoint.write_text(json.dumps({
+                "run_id":"run1",
+                "run_state":"DAILY_PAPER_TRADING_RUN_COMPLETED",
+                "session":{
+                    "session_id":"s1",
+                    "session_date":"2026-08-10",
+                },
+                "plan":{
+                    "plan_count":1,
+                    "plans":[{
+                        "state":"AUTHORIZED_FOR_PAPER_SIMULATION",
+                        "strategy_id":"MOMENTUM_5",
+                        "target_weight_pct":50,
+                        "plan_key":"p1",
+                    }],
+                },
+                "generation":2,
+            }),encoding="utf-8")
+            value=resolve_daily_source(root)
+            self.assertEqual(
+                value["source_recovery"]["method"],
+                "V106_CHECKPOINT",
+            )
+            self.assertTrue(value["paper_simulation_authorized"])
 
     def test_orders_zero(self):
         with tempfile.TemporaryDirectory() as temp:

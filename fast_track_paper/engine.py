@@ -13,16 +13,14 @@ from fast_track_paper.lifecycle import process_tick
 from fast_track_paper.close import daily_close
 from fast_track_paper.analytics import calculate_analytics
 from fast_track_paper.checkpoint import save_checkpoint
+from fast_track_paper.source import resolve_daily_source
 
 def evaluate(root: Path) -> dict[str, Any]:
     policy=load_json(
         root/"release/v106_33_to_v108_64/input/"
         "fast_track_paper_policy.json"
     )
-    source=load_json(
-        root/"release/v106_01_to_v106_32/actual/"
-        "daily_paper_runner_result.json"
-    )
+    source=resolve_daily_source(root)
     prices=load_json(
         root/"release/v106_33_to_v108_64/input/"
         "paper_price_scenario.json"
@@ -51,6 +49,7 @@ def evaluate(root: Path) -> dict[str, Any]:
             "state":"FAST_TRACK_PAPER_CYCLE_DUPLICATE_BLOCKED",
             "status":"PASS",
             "cycle_id":cycle_id,
+            "source_recovery":source.get("source_recovery",{}),
             "actual_orders_submitted":0,
             "paper_only":True,
             "live_trading_enabled":False,
@@ -67,6 +66,7 @@ def evaluate(root: Path) -> dict[str, Any]:
             "state":"FAST_TRACK_PAPER_SOURCE_REQUIRED",
             "status":"PASS",
             "cycle_id":cycle_id,
+            "source_recovery":source.get("source_recovery",{}),
             "actual_orders_submitted":0,
             "paper_only":True,
             "live_trading_enabled":False,
@@ -141,6 +141,7 @@ def evaluate(root: Path) -> dict[str, Any]:
         "observed_at":observed_at,
         "cycle_id":cycle_id,
         "source_run_id":source.get("run_id"),
+        "source_recovery":source.get("source_recovery",{}),
         "session_id":session.get("session_id"),
         "session_date":session.get("session_date"),
         "paper_order_count":len(orders),

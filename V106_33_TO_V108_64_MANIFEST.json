@@ -19,5 +19,9 @@
   "live_trading_enabled": false,
   "broker_submission_enabled": false,
   "external_network_enabled": false,
-  "next_phase": "V109.01-V110.64 FAST TRACK B"
+  "next_phase": "V109.01-V110.64 FAST TRACK B",
+  "fixed_version": "FIXED_V2",
+  "automatic_v106_bootstrap": true,
+  "v106_checkpoint_recovery": true,
+  "preserve_existing_ledgers": true
 }

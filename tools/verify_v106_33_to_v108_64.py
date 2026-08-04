@@ -36,6 +36,7 @@ print(json.dumps({
 "verification_status":"PASS" if not failed else "FAIL",
 "state":result.get("state"),
 "cycle_id":result.get("cycle_id"),
+"source_recovery":result.get("source_recovery"),
 "paper_order_count":result.get("paper_order_count"),
 "filled_count":result.get("filled_count"),
 "partial_fill_count":result.get("partial_fill_count"),

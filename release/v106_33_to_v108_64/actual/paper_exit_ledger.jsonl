@@ -1,3 +1,6 @@
 {"average_cost": 200.1, "exit_price": 211.0, "exit_reason": "TAKE_PROFIT", "quantity": 195, "realized_pnl": 2125.5, "state": "CLOSED", "strategy_id": "MOMENTUM_5", "symbol": "AAPL"}
 {"average_cost": 400.2, "exit_price": 386.0, "exit_reason": "STOP_LOSS", "quantity": 35, "realized_pnl": -497.0, "state": "CLOSED", "strategy_id": "EMA_5_15", "symbol": "MSFT"}
 {"average_cost": 400.2, "exit_price": 384.0, "exit_reason": "STOP_LOSS", "quantity": 0, "realized_pnl": -0.0, "state": "CLOSED", "strategy_id": "EMA_5_15", "symbol": "MSFT"}
+{"average_cost": 200.1, "exit_price": 211.0, "exit_reason": "TAKE_PROFIT", "quantity": 195, "realized_pnl": 2125.5, "state": "CLOSED", "strategy_id": "MOMENTUM_5", "symbol": "AAPL"}
+{"average_cost": 400.2, "exit_price": 386.0, "exit_reason": "STOP_LOSS", "quantity": 35, "realized_pnl": -497.0, "state": "CLOSED", "strategy_id": "EMA_5_15", "symbol": "MSFT"}
+{"average_cost": 400.2, "exit_price": 384.0, "exit_reason": "STOP_LOSS", "quantity": 0, "realized_pnl": -0.0, "state": "CLOSED", "strategy_id": "EMA_5_15", "symbol": "MSFT"}

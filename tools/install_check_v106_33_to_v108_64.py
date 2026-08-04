@@ -7,6 +7,7 @@ if str(ROOT) not in sys.path:
 
 required=[
 "fast_track_paper/io.py",
+"fast_track_paper/source.py",
 "fast_track_paper/orders.py",
 "fast_track_paper/fills.py",
 "fast_track_paper/positions.py",

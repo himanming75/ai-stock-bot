@@ -18,7 +18,7 @@ if([string]::IsNullOrWhiteSpace($SourceRoot)){
 $SourceRoot=[System.IO.Path]::GetFullPath($SourceRoot)
 $ProjectPath=[System.IO.Path]::GetFullPath($ProjectPath)
 
-Write-Host "=== V106.33-V108.64 FAST TRACK A ONE-CLICK INSTALL ==="
+Write-Host "=== V106.33-V108.64 FAST TRACK A FIXED V2 ONE-CLICK INSTALL ==="
 Write-Host "Source:  $SourceRoot"
 Write-Host "Project: $ProjectPath"
 
@@ -61,11 +61,12 @@ git add `
     INSTALL_AND_SAVE_V106_33_TO_V108_64_ONE_CLICK.ps1 `
     release/v106_33_to_v108_64 `
     V106_33_TO_V108_64_MANIFEST.json `
-    GIT_COMMIT_V106_33_TO_V108_64.txt
+    GIT_COMMIT_V106_33_TO_V108_64.txt `
+    GIT_COMMIT_V106_33_TO_V108_64_FIXED_V2.txt
 
 $StagedFiles=git diff --cached --name-only
 if($StagedFiles){
-    git commit -m "V106.33-V108.64 fast track paper execution and analytics integrated"
+    git commit -m "V106.33-V108.64 fix automatic V106 source bootstrap"
     if($LASTEXITCODE-ne 0){throw "COMMIT FAILED"}
 }
 
@@ -75,4 +76,4 @@ if(-not $SkipPush){
     if($LASTEXITCODE-ne 0){throw "PUSH FAILED"}
 }
 git log -1 --oneline
-Write-Host "V106.33-V108.64 FAST TRACK A ONE-CLICK COMPLETE"
+Write-Host "V106.33-V108.64 FAST TRACK A FIXED V2 ONE-CLICK COMPLETE"
