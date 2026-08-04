@@ -1,0 +1,9 @@
+{
+  "policy_version": "V102.01",
+  "retry_limit": 3,
+  "checkpoint_enabled": true,
+  "fail_closed": true,
+  "require_all_modules_ready": true,
+  "manual_approval_required": true,
+  "execution_authorized": false
+}
