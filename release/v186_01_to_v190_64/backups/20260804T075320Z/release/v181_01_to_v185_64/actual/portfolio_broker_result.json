@@ -1,0 +1,111 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_adapter_foundation_ready": true,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "multi_account_ready": true,
+  "next_phase": "V186_01_TO_V190_64_PRODUCTION_OPERATIONS_AND_REPORTING",
+  "observed_at": "2026-08-04T07:46:27.110838+00:00",
+  "portfolio": {
+    "accounts": [
+      {
+        "account_id_masked": "****PAPER",
+        "broker_id": "ALPACA_PAPER",
+        "buying_power": 190000.0,
+        "cash": 90000.0,
+        "currency": "USD",
+        "equity": 100000.0,
+        "mode": "PAPER",
+        "read_only": true,
+        "status": "ACTIVE"
+      },
+      {
+        "account_id_masked": "****LIVE",
+        "broker_id": "ALPACA_LIVE_READ_ONLY",
+        "buying_power": 1000.0,
+        "cash": 1000.0,
+        "currency": "USD",
+        "equity": 1000.0,
+        "mode": "LIVE_READ_ONLY",
+        "read_only": true,
+        "status": "ACTIVE"
+      }
+    ],
+    "broker_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "ALPACA_PAPER",
+        "weight_pct": 1.9802
+      }
+    ],
+    "orders": [],
+    "positions": [
+      {
+        "account_id_masked": "****PAPER",
+        "average_price": 195.0,
+        "broker_id": "ALPACA_PAPER",
+        "current_price": 200.0,
+        "market_value": 2000.0,
+        "quantity": 10.0,
+        "strategy_id": "momentum",
+        "symbol": "AAPL",
+        "unrealized_pnl": 50.0
+      }
+    ],
+    "strategy_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "momentum",
+        "weight_pct": 1.9802
+      }
+    ],
+    "summary": {
+      "account_count": 2,
+      "cash_weight_pct": 90.099,
+      "gross_exposure": 2000.0,
+      "gross_exposure_pct": 1.9802,
+      "net_exposure": 2000.0,
+      "net_exposure_pct": 1.9802,
+      "position_count": 1,
+      "total_cash": 91000.0,
+      "total_equity": 101000.0
+    },
+    "symbol_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "AAPL",
+        "weight_pct": 1.9802
+      }
+    ]
+  },
+  "portfolio_risk_gate": {
+    "checks": {
+      "all_accounts_read_only": true,
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_accounts": true,
+      "maximum_gross_exposure_pct": true,
+      "maximum_positions": true,
+      "maximum_symbol_weight_pct": true,
+      "minimum_cash_weight_pct": true
+    },
+    "failed": [],
+    "maximum_symbol_weight_pct_observed": 1.9802,
+    "passed": true
+  },
+  "registered_brokers": [
+    {
+      "broker_id": "ALPACA_PAPER",
+      "read_only": true,
+      "supports_orders": false
+    },
+    {
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "read_only": true,
+      "supports_orders": false
+    }
+  ],
+  "stage": "V185.64",
+  "state": "PORTFOLIO_BROKER_ADAPTER_FOUNDATION_READY",
+  "status": "PASS"
+}

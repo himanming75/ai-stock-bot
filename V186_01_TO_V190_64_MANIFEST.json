@@ -1,0 +1,19 @@
+{
+  "stage_range": "V186.01-V190.64",
+  "base_commit": "b93a072576ac5591197c42edba21b80dbf8c1578",
+  "daily_weekly_monthly_reporting": true,
+  "portfolio_reporting": true,
+  "qualification_reporting": true,
+  "production_health_check": true,
+  "backup_snapshot": true,
+  "backup_sha256_manifest": true,
+  "backup_retention": true,
+  "manual_restore_plan": true,
+  "operations_certificate": true,
+  "web_production_api": true,
+  "automatic_restore_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V191.01-V195.64 Production Scheduler Automation"
+}

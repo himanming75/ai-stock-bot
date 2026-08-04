@@ -1,0 +1,21 @@
+{
+  "report_timezone": "America/Los_Angeles",
+  "daily_report_enabled": true,
+  "weekly_report_enabled": true,
+  "monthly_report_enabled": true,
+  "backup_enabled": true,
+  "maximum_backup_count": 30,
+  "backup_include_paths": [
+    "release/v140_final/actual",
+    "release/v161_01_to_v165_64/actual",
+    "release/v181_01_to_v185_64/actual",
+    "release/v146_01_to_v150_64/config",
+    "release/v151_01_to_v155_64/config",
+    "release/v156_01_to_v160_64/config"
+  ],
+  "health_minimum_free_disk_mb": 1024,
+  "health_maximum_log_size_mb": 100,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

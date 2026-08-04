@@ -1,0 +1,153 @@
+{
+  "actual_live_orders_submitted": 0,
+  "live_submission_enabled": false,
+  "live_trading_ready": false,
+  "metrics": {
+    "average_trade_pnl": 542.8333,
+    "closed_trades": 6,
+    "gross_loss": 994.0,
+    "gross_profit": 4251.0,
+    "loss_count": 2,
+    "maximum_drawdown_pct": 0.0,
+    "profit_factor": 4.2767,
+    "sharpe": 10.247,
+    "total_realized_pnl": 3257.0,
+    "trading_days": 1,
+    "win_count": 2,
+    "win_rate_pct": 33.3333
+  },
+  "next_phase": "V166_01_TO_V170_64_LIVE_READ_ONLY_APPROVAL_CENTER",
+  "observed_at": "2026-08-04T07:23:47.815965+00:00",
+  "paper_only": true,
+  "qualification": {
+    "checks": {
+      "critical_errors": true,
+      "duplicate_orders": true,
+      "live_submission_disabled": true,
+      "maximum_drawdown": true,
+      "minimum_closed_trades": false,
+      "minimum_profit_factor": true,
+      "minimum_sharpe": true,
+      "minimum_trading_days": false,
+      "minimum_win_rate": false,
+      "paper_only": true,
+      "reconciliation_errors": true,
+      "strategy_score": true
+    },
+    "failed": [
+      "minimum_trading_days",
+      "minimum_closed_trades",
+      "minimum_win_rate"
+    ],
+    "passed": false
+  },
+  "quality_counts": {
+    "critical_errors": 0,
+    "duplicate_orders": 0,
+    "reconciliation_errors": 0
+  },
+  "recommendation": {
+    "action": "CONTINUE_PAPER_COLLECTION",
+    "best_strategy": "MOMENTUM_5",
+    "best_strategy_score": 100.0
+  },
+  "rolling_windows": {
+    "20": {
+      "grade": "B",
+      "metrics": {
+        "average_trade_pnl": 542.8333,
+        "closed_trades": 6,
+        "gross_loss": 994.0,
+        "gross_profit": 4251.0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 4.2767,
+        "sharpe": 10.247,
+        "total_realized_pnl": 3257.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 33.3333
+      },
+      "score": 83.33
+    },
+    "5": {
+      "grade": "B",
+      "metrics": {
+        "average_trade_pnl": 542.8333,
+        "closed_trades": 6,
+        "gross_loss": 994.0,
+        "gross_profit": 4251.0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 4.2767,
+        "sharpe": 7.0993,
+        "total_realized_pnl": 3257.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 33.3333
+      },
+      "score": 83.33
+    },
+    "60": {
+      "grade": "B",
+      "metrics": {
+        "average_trade_pnl": 542.8333,
+        "closed_trades": 6,
+        "gross_loss": 994.0,
+        "gross_profit": 4251.0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 4.2767,
+        "sharpe": 10.247,
+        "total_realized_pnl": 3257.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 33.3333
+      },
+      "score": 83.33
+    }
+  },
+  "stage": "V165.64",
+  "state": "PAPER_QUALIFICATION_IN_PROGRESS",
+  "status": "PASS",
+  "strategy_rankings": [
+    {
+      "grade": "A",
+      "metrics": {
+        "average_trade_pnl": 2125.5,
+        "closed_trades": 2,
+        "gross_loss": 0,
+        "gross_profit": 4251.0,
+        "loss_count": 0,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 999.0,
+        "sharpe": 10.247,
+        "total_realized_pnl": 4251.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 100.0
+      },
+      "score": 100.0,
+      "strategy_id": "MOMENTUM_5"
+    },
+    {
+      "grade": "F",
+      "metrics": {
+        "average_trade_pnl": -248.5,
+        "closed_trades": 4,
+        "gross_loss": 994.0,
+        "gross_profit": 0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 0.0,
+        "sharpe": 10.247,
+        "total_realized_pnl": -994.0,
+        "trading_days": 1,
+        "win_count": 0,
+        "win_rate_pct": 0.0
+      },
+      "score": 40.0,
+      "strategy_id": "EMA_5_15"
+    }
+  ]
+}

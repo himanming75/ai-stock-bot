@@ -1,0 +1,89 @@
+{
+  "broker_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "ALPACA_PAPER",
+      "weight_pct": 1.9802
+    }
+  ],
+  "daily": {
+    "average_daily_return_pct": 1.6285,
+    "latest_equity": 101628.5,
+    "maximum_equity": 101628.5,
+    "minimum_equity": 101628.5,
+    "negative_days": 0,
+    "observation_count": 1,
+    "positive_days": 1,
+    "total_pnl": 1628.5
+  },
+  "generated_at": "2026-08-04T07:53:21.402839+00:00",
+  "live_orders_submitted": 0,
+  "monthly": {
+    "average_daily_return_pct": 1.6285,
+    "latest_equity": 101628.5,
+    "maximum_equity": 101628.5,
+    "minimum_equity": 101628.5,
+    "negative_days": 0,
+    "observation_count": 2,
+    "positive_days": 2,
+    "total_pnl": 3257.0
+  },
+  "paper_account": {
+    "equity": null,
+    "market_open": null,
+    "paper_orders_submitted": 1
+  },
+  "portfolio_summary": {
+    "account_count": 2,
+    "cash_weight_pct": 90.099,
+    "gross_exposure": 2000.0,
+    "gross_exposure_pct": 1.9802,
+    "net_exposure": 2000.0,
+    "net_exposure_pct": 1.9802,
+    "position_count": 1,
+    "total_cash": 91000.0,
+    "total_equity": 101000.0
+  },
+  "qualification": {
+    "metrics": {
+      "average_trade_pnl": 542.8333,
+      "closed_trades": 6,
+      "gross_loss": 994.0,
+      "gross_profit": 4251.0,
+      "loss_count": 2,
+      "maximum_drawdown_pct": 0.0,
+      "profit_factor": 4.2767,
+      "sharpe": 10.247,
+      "total_realized_pnl": 3257.0,
+      "trading_days": 1,
+      "win_count": 2,
+      "win_rate_pct": 33.3333
+    },
+    "passed": false,
+    "state": "PAPER_QUALIFICATION_IN_PROGRESS"
+  },
+  "strategy_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "momentum",
+      "weight_pct": 1.9802
+    }
+  ],
+  "symbol_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "AAPL",
+      "weight_pct": 1.9802
+    }
+  ],
+  "weekly": {
+    "average_daily_return_pct": 1.6285,
+    "latest_equity": 101628.5,
+    "maximum_equity": 101628.5,
+    "minimum_equity": 101628.5,
+    "negative_days": 0,
+    "observation_count": 2,
+    "positive_days": 2,
+    "total_pnl": 3257.0
+  }
+}

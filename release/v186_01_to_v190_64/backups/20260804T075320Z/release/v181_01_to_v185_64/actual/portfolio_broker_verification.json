@@ -1,0 +1,58 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "adapter_foundation_ready": true,
+    "all_adapters_no_orders": true,
+    "all_adapters_read_only": true,
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "multi_account_ready": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "portfolio_risk_gate": {
+    "checks": {
+      "all_accounts_read_only": true,
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_accounts": true,
+      "maximum_gross_exposure_pct": true,
+      "maximum_positions": true,
+      "maximum_symbol_weight_pct": true,
+      "minimum_cash_weight_pct": true
+    },
+    "failed": [],
+    "maximum_symbol_weight_pct_observed": 1.9802,
+    "passed": true
+  },
+  "portfolio_summary": {
+    "account_count": 2,
+    "cash_weight_pct": 90.099,
+    "gross_exposure": 2000.0,
+    "gross_exposure_pct": 1.9802,
+    "net_exposure": 2000.0,
+    "net_exposure_pct": 1.9802,
+    "position_count": 1,
+    "total_cash": 91000.0,
+    "total_equity": 101000.0
+  },
+  "registered_brokers": [
+    {
+      "broker_id": "ALPACA_PAPER",
+      "read_only": true,
+      "supports_orders": false
+    },
+    {
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "read_only": true,
+      "supports_orders": false
+    }
+  ],
+  "state": "PORTFOLIO_BROKER_ADAPTER_FOUNDATION_READY",
+  "verification_stage": "V185.64",
+  "verification_status": "PASS"
+}

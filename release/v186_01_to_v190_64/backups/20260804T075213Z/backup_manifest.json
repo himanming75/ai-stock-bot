@@ -1,0 +1,31 @@
+{
+  "actual_live_orders_submitted": 0,
+  "backup_id": "20260804T075213Z",
+  "backup_root": "/mnt/data/V186_01_TO_V190_64_PRODUCTION_OPERATIONS_REPORTING/release/v186_01_to_v190_64/backups/20260804T075213Z",
+  "broker_credentials_included": false,
+  "created_at": "2026-08-04T07:52:13.979694+00:00",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "release/v161_01_to_v165_64/actual/paper_qualification_result.json",
+      "sha256": "ada8076669d900b06e439043c370995a46b99ad9ebb842112849ec8117707dc0",
+      "size_bytes": 149
+    },
+    {
+      "path": "release/v140_final/actual/v140_final_release_result.json",
+      "sha256": "499dfc0657e6c9752892eb2fea89913390aceafd87de8faa6d3195589fbad97d",
+      "size_bytes": 93
+    },
+    {
+      "path": "release/v181_01_to_v185_64/actual/portfolio_broker_result.json",
+      "sha256": "e86c4c3d960cde113bdfbe74e41958505430db2fbe614a2a29bbc08228be3b8c",
+      "size_bytes": 230
+    }
+  ],
+  "missing_paths": [
+    "release/v146_01_to_v150_64/config",
+    "release/v151_01_to_v155_64/config",
+    "release/v156_01_to_v160_64/config"
+  ],
+  "restore_automatically_allowed": false
+}

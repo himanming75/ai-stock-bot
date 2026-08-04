@@ -1,0 +1,94 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "automatic_restore_disabled": true,
+    "backup_foundation_ready": true,
+    "broker_write_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "reporting_ready": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "health": {
+    "actual_live_orders_submitted": 0,
+    "checks": {
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_log_size": true,
+      "minimum_free_disk": true,
+      "portfolio_present": true,
+      "qualification_present": true,
+      "v140_present": true
+    },
+    "failed": [],
+    "free_disk_mb": 141395.94,
+    "observed_at": "2026-08-04T07:53:23.161162+00:00",
+    "status": "HEALTHY",
+    "total_log_size_mb": 0.1232,
+    "tracked_files": {
+      "release/v140_final/actual/v140_final_release_result.json": {
+        "present": true,
+        "size_bytes": 3226
+      },
+      "release/v161_01_to_v165_64/actual/paper_qualification_result.json": {
+        "present": true,
+        "size_bytes": 4040
+      },
+      "release/v181_01_to_v185_64/actual/portfolio_broker_result.json": {
+        "present": true,
+        "size_bytes": 2918
+      }
+    }
+  },
+  "operations_certificate": {
+    "actual_live_orders_submitted": 0,
+    "backup_ready": true,
+    "broker_write_enabled": false,
+    "certificate_type": "PRODUCTION_OPERATIONS_READ_ONLY_CERTIFICATE",
+    "health_status": "HEALTHY",
+    "issued_at": "2026-08-04T07:53:23.163641+00:00",
+    "live_submission_enabled": false,
+    "live_trading_ready": false,
+    "operations_ready": true,
+    "reporting_ready": true
+  },
+  "report_summary": {
+    "daily": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 1,
+      "positive_days": 1,
+      "total_pnl": 1628.5
+    },
+    "monthly": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 2,
+      "positive_days": 2,
+      "total_pnl": 3257.0
+    },
+    "weekly": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 2,
+      "positive_days": 2,
+      "total_pnl": 3257.0
+    }
+  },
+  "state": "PRODUCTION_OPERATIONS_READY",
+  "verification_stage": "V190.64",
+  "verification_status": "PASS"
+}

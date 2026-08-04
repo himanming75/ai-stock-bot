@@ -1,0 +1,8 @@
+{
+  "state": "PAPER_QUALIFICATION_IN_PROGRESS",
+  "qualification": {
+    "passed": false
+  },
+  "metrics": {},
+  "actual_live_orders_submitted": 0
+}

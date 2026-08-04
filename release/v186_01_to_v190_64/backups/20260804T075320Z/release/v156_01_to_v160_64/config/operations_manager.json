@@ -1,0 +1,19 @@
+{
+  "timezone": "America/Los_Angeles",
+  "web_controller_autostart_enabled": false,
+  "pre_market_check_enabled": false,
+  "intraday_shadow_enabled": false,
+  "post_market_report_enabled": false,
+  "automated_paper_submission_enabled": false,
+  "pre_market_time": "06:20",
+  "intraday_time": "07:00",
+  "post_market_time": "13:10",
+  "health_stale_minutes": 30,
+  "restart_on_failure": false,
+  "desktop_notifications_enabled": true,
+  "email_notifications_enabled": false,
+  "telegram_notifications_enabled": false,
+  "paper_only": true,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

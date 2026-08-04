@@ -1,0 +1,12 @@
+{
+  "actual_live_orders_submitted": 0,
+  "backup_ready": true,
+  "broker_write_enabled": false,
+  "certificate_type": "PRODUCTION_OPERATIONS_READ_ONLY_CERTIFICATE",
+  "health_status": "HEALTHY",
+  "issued_at": "2026-08-04T07:53:23.163641+00:00",
+  "live_submission_enabled": false,
+  "live_trading_ready": false,
+  "operations_ready": true,
+  "reporting_ready": true
+}

@@ -1,0 +1,165 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_restore_enabled": false,
+  "backup": {
+    "file_count": 0,
+    "skipped": true
+  },
+  "backup_foundation_ready": true,
+  "broker_write_enabled": false,
+  "health": {
+    "actual_live_orders_submitted": 0,
+    "checks": {
+      "broker_write_disabled": true,
+      "live_submission_disabled": true,
+      "maximum_log_size": true,
+      "minimum_free_disk": true,
+      "portfolio_present": true,
+      "qualification_present": true,
+      "v140_present": true
+    },
+    "failed": [],
+    "free_disk_mb": 141395.94,
+    "observed_at": "2026-08-04T07:53:23.161162+00:00",
+    "status": "HEALTHY",
+    "total_log_size_mb": 0.1232,
+    "tracked_files": {
+      "release/v140_final/actual/v140_final_release_result.json": {
+        "present": true,
+        "size_bytes": 3226
+      },
+      "release/v161_01_to_v165_64/actual/paper_qualification_result.json": {
+        "present": true,
+        "size_bytes": 4040
+      },
+      "release/v181_01_to_v185_64/actual/portfolio_broker_result.json": {
+        "present": true,
+        "size_bytes": 2918
+      }
+    }
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V191_01_TO_V195_64_PRODUCTION_SCHEDULER_AUTOMATION",
+  "observed_at": "2026-08-04T07:53:23.164535+00:00",
+  "operations_certificate": {
+    "actual_live_orders_submitted": 0,
+    "backup_ready": true,
+    "broker_write_enabled": false,
+    "certificate_type": "PRODUCTION_OPERATIONS_READ_ONLY_CERTIFICATE",
+    "health_status": "HEALTHY",
+    "issued_at": "2026-08-04T07:53:23.163641+00:00",
+    "live_submission_enabled": false,
+    "live_trading_ready": false,
+    "operations_ready": true,
+    "reporting_ready": true
+  },
+  "reporting_ready": true,
+  "reports": {
+    "broker_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "ALPACA_PAPER",
+        "weight_pct": 1.9802
+      }
+    ],
+    "daily": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 1,
+      "positive_days": 1,
+      "total_pnl": 1628.5
+    },
+    "generated_at": "2026-08-04T07:53:21.402839+00:00",
+    "live_orders_submitted": 0,
+    "monthly": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 2,
+      "positive_days": 2,
+      "total_pnl": 3257.0
+    },
+    "paper_account": {
+      "equity": null,
+      "market_open": null,
+      "paper_orders_submitted": 1
+    },
+    "portfolio_summary": {
+      "account_count": 2,
+      "cash_weight_pct": 90.099,
+      "gross_exposure": 2000.0,
+      "gross_exposure_pct": 1.9802,
+      "net_exposure": 2000.0,
+      "net_exposure_pct": 1.9802,
+      "position_count": 1,
+      "total_cash": 91000.0,
+      "total_equity": 101000.0
+    },
+    "qualification": {
+      "metrics": {
+        "average_trade_pnl": 542.8333,
+        "closed_trades": 6,
+        "gross_loss": 994.0,
+        "gross_profit": 4251.0,
+        "loss_count": 2,
+        "maximum_drawdown_pct": 0.0,
+        "profit_factor": 4.2767,
+        "sharpe": 10.247,
+        "total_realized_pnl": 3257.0,
+        "trading_days": 1,
+        "win_count": 2,
+        "win_rate_pct": 33.3333
+      },
+      "passed": false,
+      "state": "PAPER_QUALIFICATION_IN_PROGRESS"
+    },
+    "strategy_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "momentum",
+        "weight_pct": 1.9802
+      }
+    ],
+    "symbol_allocation": [
+      {
+        "market_value": 2000.0,
+        "name": "AAPL",
+        "weight_pct": 1.9802
+      }
+    ],
+    "weekly": {
+      "average_daily_return_pct": 1.6285,
+      "latest_equity": 101628.5,
+      "maximum_equity": 101628.5,
+      "minimum_equity": 101628.5,
+      "negative_days": 0,
+      "observation_count": 2,
+      "positive_days": 2,
+      "total_pnl": 3257.0
+    }
+  },
+  "restore_plan": {
+    "actual_live_orders_submitted": 0,
+    "automatic_restore_performed": false,
+    "backup_available": true,
+    "backup_id": "20260804T075320Z",
+    "broker_write_enabled": false,
+    "steps": [
+      "STOP_WEB_CONTROLLER",
+      "ENABLE_EMERGENCY_STOP",
+      "VERIFY_CURRENT_GIT_STATUS",
+      "VERIFY_BACKUP_MANIFEST_HASHES",
+      "RESTORE_SELECTED_CONFIG_AND_ACTUAL_FILES_MANUALLY",
+      "RUN_FULL_TEST_AND_VERIFY",
+      "RESTART_PAPER_READ_ONLY_OPERATIONS"
+    ]
+  },
+  "stage": "V190.64",
+  "state": "PRODUCTION_OPERATIONS_READY",
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "broker_write_disabled": true,
+    "live_submission_disabled": true,
+    "maximum_log_size": true,
+    "minimum_free_disk": true,
+    "portfolio_present": true,
+    "qualification_present": true,
+    "v140_present": true
+  },
+  "failed": [],
+  "free_disk_mb": 141395.94,
+  "observed_at": "2026-08-04T07:53:23.161162+00:00",
+  "status": "HEALTHY",
+  "total_log_size_mb": 0.1232,
+  "tracked_files": {
+    "release/v140_final/actual/v140_final_release_result.json": {
+      "present": true,
+      "size_bytes": 3226
+    },
+    "release/v161_01_to_v165_64/actual/paper_qualification_result.json": {
+      "present": true,
+      "size_bytes": 4040
+    },
+    "release/v181_01_to_v185_64/actual/portfolio_broker_result.json": {
+      "present": true,
+      "size_bytes": 2918
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "actual_live_orders_submitted": 0,
+  "certificate_sha256": "6d628d5f76eb74caccc25cb924ab840726ea11d384d0d5f9cb85ab1f07e34506",
+  "certificate_type": "V140_FINAL_AUTONOMOUS_RELEASE_CERTIFICATE",
+  "development_complete": true,
+  "issued_at": "2026-08-04T06:56:49.099124+00:00",
+  "live_execution_authorized": false,
+  "live_trading_ready": false,
+  "paper_trading_ready": true,
+  "release_passed": true,
+  "source_summary_hash": "e63fd9f49e1bbafb91894f5b2c5e077683da0cd71d320f4f519fc17550fa12c8"
+}

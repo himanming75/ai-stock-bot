@@ -1,0 +1,16 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_restore_performed": false,
+  "backup_available": true,
+  "backup_id": "20260804T075320Z",
+  "broker_write_enabled": false,
+  "steps": [
+    "STOP_WEB_CONTROLLER",
+    "ENABLE_EMERGENCY_STOP",
+    "VERIFY_CURRENT_GIT_STATUS",
+    "VERIFY_BACKUP_MANIFEST_HASHES",
+    "RESTORE_SELECTED_CONFIG_AND_ACTUAL_FILES_MANUALLY",
+    "RUN_FULL_TEST_AND_VERIFY",
+    "RESTART_PAPER_READ_ONLY_OPERATIONS"
+  ]
+}

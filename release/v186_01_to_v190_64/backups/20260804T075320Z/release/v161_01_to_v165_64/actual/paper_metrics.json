@@ -1,0 +1,14 @@
+{
+  "average_trade_pnl": 542.8333,
+  "closed_trades": 6,
+  "gross_loss": 994.0,
+  "gross_profit": 4251.0,
+  "loss_count": 2,
+  "maximum_drawdown_pct": 0.0,
+  "profit_factor": 4.2767,
+  "sharpe": 10.247,
+  "total_realized_pnl": 3257.0,
+  "trading_days": 1,
+  "win_count": 2,
+  "win_rate_pct": 33.3333
+}

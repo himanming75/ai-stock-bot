@@ -1,0 +1,16 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "all_sources_present": true,
+    "all_status_pass": true,
+    "historical_live_orders_zero": true,
+    "kill_switch_default_enabled": true,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "manual_live_enable_required": true,
+    "paper_mode_default": true
+  },
+  "failed": [],
+  "historical_live_orders_submitted": 0,
+  "passed": true
+}
