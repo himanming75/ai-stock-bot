@@ -1,0 +1,38 @@
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+path = ROOT / "release/v441_01/actual/position_sizing_result.json"
+with path.open("r", encoding="utf-8-sig") as handle:
+    result = json.load(handle)
+
+positions = result.get("positions", [])
+risk_budget = float(result["account_equity"]) * float(result["risk_per_trade_pct"])
+checks = {
+    "stage": result.get("stage") == "V441.01",
+    "state": result.get("state") == "POSITION_SIZING_FOUNDATION_READY",
+    "status": result.get("status") == "PASS",
+    "positions_present": len(positions) > 0,
+    "risk_cap_respected": all(float(item["risk_at_stop"]) <= risk_budget + 0.02 for item in positions),
+    "weight_cap_respected": all(
+        float(item["effective_weight"]) <= float(result["maximum_position_pct"]) + 0.000001
+        for item in positions
+    ),
+    "network_unused": result.get("network_used") is False,
+    "credentials_unused": result.get("broker_credentials_used") is False,
+    "paper_submission_disabled": result.get("paper_submission_enabled") is False,
+    "live_submission_disabled": result.get("live_submission_enabled") is False,
+    "broker_write_disabled": result.get("broker_write_enabled") is False,
+    "order_submission_blocked": result.get("order_submission_allowed") is False,
+    "paper_orders_zero": result.get("actual_paper_orders_submitted") == 0,
+    "live_orders_zero": result.get("actual_live_orders_submitted") == 0,
+}
+verification = {
+    "verification_stage": "V441.01",
+    "verification_status": "PASS" if all(checks.values()) else "FAIL",
+    "checks": checks,
+    "failed": [name for name, passed in checks.items() if not passed],
+}
+print(json.dumps(verification, indent=2, sort_keys=True))
+raise SystemExit(0 if all(checks.values()) else 1)

@@ -1,0 +1,14 @@
+{
+  "stage": "V441.01",
+  "mode": "OFFLINE_ONLY",
+  "risk_model": "FIXED_FRACTIONAL_WITH_STOP_DISTANCE",
+  "network_enabled": false,
+  "broker_credentials_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "kelly_enabled": false,
+  "drawdown_scaling_enabled": false,
+  "correlation_adjustment_enabled": false
+}

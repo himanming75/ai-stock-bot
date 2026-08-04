@@ -1,0 +1,13 @@
+{
+  "stage": "V441.01",
+  "package": "Position Sizing Foundation",
+  "requires": "V431.01-V440.64",
+  "independent_from_v330": true,
+  "network_used": false,
+  "broker_credentials_used": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

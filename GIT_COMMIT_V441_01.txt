@@ -1,0 +1,3 @@
+git add ai_risk_allocation tools/run_v441_01.py tools/test_v441_01.py tools/verify_v441_01.py release/v441_01 RUN_V441_01_POSITION_SIZING.ps1 RUN_V441_01_TEST_AND_VERIFY.ps1 V441_01_MANIFEST.json GIT_COMMIT_V441_01.txt
+git commit -m "V441.01 add offline position sizing foundation"
+git push origin main

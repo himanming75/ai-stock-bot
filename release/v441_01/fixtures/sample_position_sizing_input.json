@@ -1,0 +1,30 @@
+{
+  "account_equity": 100000,
+  "risk_per_trade_pct": 0.01,
+  "maximum_position_pct": 0.25,
+  "allow_fractional_shares": true,
+  "minimum_notional": 1,
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "sector": "TECH",
+      "reference_price": 180.5,
+      "stop_loss_pct": 0.05,
+      "proposed_weight": 0.232303
+    },
+    {
+      "symbol": "MSFT",
+      "sector": "TECH",
+      "reference_price": 525.25,
+      "stop_loss_pct": 0.04,
+      "proposed_weight": 0.2285
+    },
+    {
+      "symbol": "JNJ",
+      "sector": "HEALTH",
+      "reference_price": 168.4,
+      "stop_loss_pct": 0.03,
+      "proposed_weight": 0.177798
+    }
+  ]
+}
