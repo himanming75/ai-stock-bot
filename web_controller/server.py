@@ -6,6 +6,9 @@ from urllib.parse import urlparse
 
 from web_controller.state import build_dashboard,get_logs,set_emergency
 from web_controller.actions import run_action
+from web_controller.strategy_api import (
+    get_payload,update_payload,validate_payload,restore_payload
+)
 
 class ControllerHandler(BaseHTTPRequestHandler):
     root=Path.cwd()
@@ -32,10 +35,10 @@ class ControllerHandler(BaseHTTPRequestHandler):
             self._json(200,build_dashboard(self.root));return
         if path=="/api/logs":
             self._json(200,get_logs(self.root));return
-        if path in {"/","/index.html"}:
-            file=self.static_root/"index.html"
-        else:
-            file=self.static_root/path.lstrip("/")
+        if path=="/api/strategy-config":
+            self._json(200,get_payload(self.root));return
+        if path in {"/","/index.html"}: file=self.static_root/"index.html"
+        else: file=self.static_root/path.lstrip("/")
         try:
             resolved=file.resolve()
             if self.static_root.resolve() not in resolved.parents and resolved!=self.static_root.resolve():
@@ -56,14 +59,20 @@ class ControllerHandler(BaseHTTPRequestHandler):
         path=urlparse(self.path).path
         body=self._body()
         if path=="/api/emergency-stop":
-            value=set_emergency(
-                self.root,
-                bool(body.get("enabled",True)),
-                str(body.get("reason","")),
-            )
-            self._json(200,{"ok":True,"emergency_stop":value});return
+            self._json(200,{"ok":True,"emergency_stop":set_emergency(
+                self.root,bool(body.get("enabled",True)),str(body.get("reason",""))
+            )});return
         if path=="/api/action":
             result=run_action(self.root,str(body.get("name","")))
+            self._json(200 if result.get("ok") else 409,result);return
+        if path=="/api/strategy-config/validate":
+            result=validate_payload(body)
+            self._json(200 if result.get("valid") else 400,result);return
+        if path=="/api/strategy-config/save":
+            result=update_payload(self.root,body)
+            self._json(200 if result.get("ok") else 409,result);return
+        if path=="/api/strategy-config/restore":
+            result=restore_payload(self.root)
             self._json(200 if result.get("ok") else 409,result);return
         self._json(404,{"error":"NOT_FOUND"})
 
@@ -71,11 +80,9 @@ class ControllerHandler(BaseHTTPRequestHandler):
         print("[WEB]",format%args)
 
 def serve(root:Path,host:str="127.0.0.1",port:int=8765)->None:
-    handler=type(
-        "ConfiguredControllerHandler",
-        (ControllerHandler,),
-        {"root":root,"static_root":root/"web_controller/static"},
-    )
+    handler=type("ConfiguredControllerHandler",(ControllerHandler,),{
+        "root":root,"static_root":root/"web_controller/static"
+    })
     server=ThreadingHTTPServer((host,port),handler)
     print(f"AI Stock Bot Web Controller: http://{host}:{port}")
     print("Press Ctrl+C to stop.")

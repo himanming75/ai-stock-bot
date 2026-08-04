@@ -1,0 +1,16 @@
+{
+  "stage_range": "V146.01-V150.64",
+  "base_commit": "428e6f82a34bd5b9f043c73df2a8e2af53255b81",
+  "strategy_toggle": true,
+  "symbol_management": true,
+  "risk_setting_editor": true,
+  "validation_before_save": true,
+  "backup_restore": true,
+  "emergency_stop_write_guard": true,
+  "paper_only": true,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V151.01-V155.64 Real Alpaca Paper Web Operations",
+  "fixed_version": "FIXED_V2",
+  "default_config_deepcopy_fixed": true
+}

@@ -1,41 +1,14 @@
-const j=(v)=>JSON.stringify(v,null,2);
-function metric(label,value,klass=""){return `<div class="card"><div class="label">${label}</div><div class="value ${klass}">${value}</div></div>`}
-function table(el,rows){
-  if(!rows||!rows.length){el.innerHTML="<tr><td>No data</td></tr>";return}
-  const keys=Object.keys(rows[0]);
-  el.innerHTML=`<thead><tr>${keys.map(k=>`<th>${k}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${keys.map(k=>`<td>${r[k]??""}</td>`).join("")}</tr>`).join("")}</tbody>`;
-}
-async function refresh(){
-  const d=await fetch("/api/dashboard").then(r=>r.json());
-  const stop=d.emergency_stop?.enabled;
-  document.getElementById("statusBadge").textContent=stop?"STOPPED":"READY";
-  document.getElementById("statusBadge").className="badge "+(stop?"bad":"ok");
-  document.getElementById("metrics").innerHTML=[
-    metric("Release",d.release.state,d.release.development_complete?"ok":"warn"),
-    metric("Paper Equity",d.paper_account.equity??"N/A"),
-    metric("Market",d.market_open===true?"OPEN":d.market_open===false?"CLOSED":"N/A",d.market_open?"ok":"warn"),
-    metric("Risk Gate",d.risk.gate?.passed===true?"PASS":"BLOCKED",d.risk.gate?.passed?"ok":"warn"),
-    metric("Cycle",d.orchestrator.state),
-    metric("Live Orders",d.safety.actual_live_orders_submitted,d.safety.actual_live_orders_submitted===0?"ok":"bad")
-  ].join("");
-  document.getElementById("account").innerHTML=`<pre>${j(d.paper_account)}</pre>`;
-  document.getElementById("risk").innerHTML=`<pre>${j(d.risk)}</pre>`;
-  document.getElementById("cycle").innerHTML=`<pre>${j(d.orchestrator)}</pre>`;
-  document.getElementById("stop").innerHTML=`<pre>${j(d.emergency_stop)}</pre>`;
-  table(document.getElementById("positions"),d.paper_positions);
-  table(document.getElementById("orders"),d.paper_orders);
-  const logs=await fetch("/api/logs").then(r=>r.json());
-  document.getElementById("logs").textContent=j(logs);
-}
-async function runAction(name){
-  const r=await fetch("/api/action",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name})});
-  const d=await r.json();
-  document.getElementById("actionResult").textContent=j(d);
-  await refresh();
-}
-async function setStop(enabled){
-  const d=await fetch("/api/emergency-stop",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({enabled,reason:enabled?"WEB_EMERGENCY_STOP":"WEB_MANUAL_CLEAR"})}).then(r=>r.json());
-  document.getElementById("actionResult").textContent=j(d);
-  await refresh();
-}
+const j=v=>JSON.stringify(v,null,2);let currentConfig=null;
+function showTab(name){document.getElementById("dashboardTab").style.display=name==="dashboard"?"block":"none";document.getElementById("strategyTab").style.display=name==="strategy"?"block":"none";if(name==="strategy")loadConfig()}
+function metric(l,v,c=""){return `<div class="card"><div class="label">${l}</div><div class="value ${c}">${v}</div></div>`}
+function table(el,rows){if(!rows||!rows.length){el.innerHTML="<tr><td>No data</td></tr>";return}const keys=Object.keys(rows[0]);el.innerHTML=`<thead><tr>${keys.map(k=>`<th>${k}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${keys.map(k=>`<td>${r[k]??""}</td>`).join("")}</tr>`).join("")}</tbody>`}
+async function refresh(){const d=await fetch("/api/dashboard").then(r=>r.json());const stop=d.emergency_stop?.enabled;statusBadge.textContent=stop?"STOPPED":"READY";statusBadge.className="badge "+(stop?"bad":"ok");metrics.innerHTML=[metric("Release",d.release.state,d.release.development_complete?"ok":"warn"),metric("Paper Equity",d.paper_account.equity??"N/A"),metric("Market",d.market_open===true?"OPEN":d.market_open===false?"CLOSED":"N/A",d.market_open?"ok":"warn"),metric("Risk Gate",d.risk.gate?.passed===true?"PASS":"BLOCKED",d.risk.gate?.passed?"ok":"warn"),metric("Cycle",d.orchestrator.state),metric("Live Orders",d.safety.actual_live_orders_submitted,"ok")].join("");account.innerHTML=`<pre>${j(d.paper_account)}</pre>`;risk.innerHTML=`<pre>${j(d.risk)}</pre>`;cycle.innerHTML=`<pre>${j(d.orchestrator)}</pre>`;stop.innerHTML=`<pre>${j(d.emergency_stop)}</pre>`;table(positions,d.paper_positions);table(orders,d.paper_orders);logs.textContent=j(await fetch("/api/logs").then(r=>r.json()))}
+async function runAction(name){const r=await fetch("/api/action",{method:"POST",headers:{"Content-Type":"application/json"},body:j({name})});actionResult.textContent=j(await r.json());refresh()}
+async function setStop(enabled){const d=await fetch("/api/emergency-stop",{method:"POST",headers:{"Content-Type":"application/json"},body:j({enabled,reason:enabled?"WEB_EMERGENCY_STOP":"WEB_MANUAL_CLEAR"})}).then(r=>r.json());actionResult.textContent=j(d);refresh();loadConfig()}
+async function loadConfig(){const d=await fetch("/api/strategy-config").then(r=>r.json());currentConfig=d.config;strategyRows.innerHTML=Object.entries(currentConfig.strategies).map(([n,v])=>`<div class="strategyRow"><strong>${n}</strong><label><input id="enabled_${n}" type="checkbox" ${v.enabled?"checked":""}> Enabled</label><label>Weight %<input id="weight_${n}" type="number" value="${v.weight_pct}"></label></div>`).join("");symbols.value=currentConfig.symbols.join(", ");maxNotional.value=currentConfig.risk.maximum_order_notional;maxQty.value=currentConfig.risk.maximum_quantity;maxDailyOrders.value=currentConfig.risk.maximum_daily_orders;maxDailyLoss.value=currentConfig.risk.maximum_daily_loss;maxPositions.value=currentConfig.risk.maximum_positions;runtimePolicy.textContent=j(d.runtime_policy)}
+function collect(){const strategies={};for(const n of Object.keys(currentConfig.strategies)){strategies[n]={enabled:document.getElementById("enabled_"+n).checked,weight_pct:Number(document.getElementById("weight_"+n).value)}}return {strategies,symbols:symbols.value.split(",").map(x=>x.trim()).filter(Boolean),risk:{maximum_order_notional:Number(maxNotional.value),maximum_quantity:Number(maxQty.value),maximum_daily_orders:Number(maxDailyOrders.value),maximum_daily_loss:Number(maxDailyLoss.value),maximum_positions:Number(maxPositions.value)},paper_only:true,live_submission_enabled:false}}
+async function post(url,body={}){const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:j(body)});const d=await r.json();configResult.textContent=j(d);if(d.ok)loadConfig()}
+function validateConfig(){post("/api/strategy-config/validate",collect())}
+function saveConfig(){post("/api/strategy-config/save",collect())}
+function restoreConfig(){post("/api/strategy-config/restore")}
 refresh();setInterval(refresh,15000);

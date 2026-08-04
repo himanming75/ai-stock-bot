@@ -1,0 +1,31 @@
+{
+  "strategies": {
+    "momentum": {
+      "enabled": true,
+      "weight_pct": 50.0
+    },
+    "mean_reversion": {
+      "enabled": false,
+      "weight_pct": 25.0
+    },
+    "breakout": {
+      "enabled": false,
+      "weight_pct": 25.0
+    }
+  },
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "risk": {
+    "maximum_order_notional": 250.0,
+    "maximum_quantity": 1,
+    "maximum_daily_orders": 3,
+    "maximum_daily_loss": 50.0,
+    "maximum_positions": 3
+  },
+  "paper_only": true,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}
