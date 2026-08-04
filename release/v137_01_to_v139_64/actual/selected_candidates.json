@@ -1,0 +1,12 @@
+{
+  "candidates": [
+    {
+      "action": "BUY",
+      "change_pct": 0.502513,
+      "price": 200.0,
+      "reference_price": 199.0,
+      "strategy_id": "AUTONOMOUS_SNAPSHOT_MOMENTUM",
+      "symbol": "AAPL"
+    }
+  ]
+}

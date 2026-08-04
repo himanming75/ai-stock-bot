@@ -1,0 +1,18 @@
+{
+  "stage_range": "V137.01-V139.64",
+  "base_commit": "0bb823f4dc6bbd716e7e41cc1896def3fe1a8760",
+  "market_clock": true,
+  "market_scan": true,
+  "signal_generation": true,
+  "candidate_selection": true,
+  "dynamic_risk_integration": true,
+  "paper_execution_path": true,
+  "position_update": true,
+  "daily_performance": true,
+  "duplicate_cycle_protection": true,
+  "recovery_checkpoint": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V140 Final Autonomous Release"
+}

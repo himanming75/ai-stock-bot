@@ -1,0 +1,89 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "autonomous_cycle_complete": true,
+  "checkpoint": {
+    "checkpoint_hash": "103b69df8e923aa77c4a7106068616d6a198aae5d93247840366c6a67358e6c1",
+    "cycle_id": "e7e6d3abfec91020e3eeaa1c",
+    "generation": 2,
+    "positions": [],
+    "previous_checkpoint_hash": "bfb95e6e04d5e5b950c1124ad83844b67e2f1ede7c64fc42ccf91ee73ff727b2",
+    "state": "AUTONOMOUS_TRADING_RISK_BLOCKED"
+  },
+  "cycle_id": "e7e6d3abfec91020e3eeaa1c",
+  "duplicate_cycle": false,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "market": {
+    "market_open": true,
+    "next_close": "2026-08-04T20:00:00Z",
+    "next_open": null,
+    "timestamp": "2026-08-04T15:00:00Z"
+  },
+  "next_phase": "V140_FINAL_AUTONOMOUS_RELEASE",
+  "observed_at": "2026-08-04T06:44:51.740514+00:00",
+  "paper_execution": {
+    "actual_live_orders_submitted": 0,
+    "live_submission_attempted": false,
+    "paper_execution_authorized": false,
+    "paper_fills": [],
+    "paper_orders_submitted": 0
+  },
+  "paper_only": true,
+  "paper_order_plans": [],
+  "performance": {
+    "daily_return_pct": 0.0,
+    "ending_equity": 1000.0,
+    "open_market_value": 0,
+    "realized_pnl": 0.0,
+    "starting_equity": 1000.0,
+    "total_pnl": 0.0,
+    "unrealized_pnl": 0.0
+  },
+  "positions": [],
+  "real_live_network_attempted": false,
+  "real_live_submission_attempted": false,
+  "result_sha256": "13d58d7aca0b9040ccf71c97931f0b1d09ee96821b389f125c8ab626ec79dbb0",
+  "risk_gate_passed": false,
+  "risk_source_state": "DYNAMIC_LIVE_RISK_REVIEW_REQUIRED",
+  "selected_candidates": [
+    {
+      "action": "BUY",
+      "change_pct": 0.502513,
+      "price": 200.0,
+      "reference_price": 199.0,
+      "strategy_id": "AUTONOMOUS_SNAPSHOT_MOMENTUM",
+      "symbol": "AAPL"
+    }
+  ],
+  "signals": [
+    {
+      "action": "BUY",
+      "change_pct": 0.502513,
+      "price": 200.0,
+      "reference_price": 199.0,
+      "strategy_id": "AUTONOMOUS_SNAPSHOT_MOMENTUM",
+      "symbol": "AAPL"
+    },
+    {
+      "action": "SELL",
+      "change_pct": -0.251256,
+      "price": 397.0,
+      "reference_price": 398.0,
+      "strategy_id": "AUTONOMOUS_SNAPSHOT_MOMENTUM",
+      "symbol": "MSFT"
+    },
+    {
+      "action": "HOLD",
+      "change_pct": 0.04008,
+      "price": 499.2,
+      "reference_price": 499.0,
+      "strategy_id": "AUTONOMOUS_SNAPSHOT_MOMENTUM",
+      "symbol": "SPY"
+    }
+  ],
+  "stage": "V139.64",
+  "stage_range": "V137.01-V139.64",
+  "state": "AUTONOMOUS_TRADING_RISK_BLOCKED",
+  "status": "PASS"
+}

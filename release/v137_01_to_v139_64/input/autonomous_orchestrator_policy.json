@@ -1,0 +1,18 @@
+{
+  "policy_version": "V137_01_TO_V139_64",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "reference_prices": {
+    "AAPL": 199.0,
+    "MSFT": 398.0,
+    "SPY": 499.0
+  },
+  "signal_threshold_pct": 0.25,
+  "maximum_candidates_per_cycle": 1,
+  "paper_execution_enabled": true,
+  "maximum_paper_orders_per_cycle": 1,
+  "live_submission_enabled": false
+}

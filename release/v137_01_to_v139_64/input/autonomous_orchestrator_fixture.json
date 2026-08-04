@@ -1,0 +1,28 @@
+{
+  "session_date": "2026-08-04",
+  "account": {
+    "equity": 1000.0
+  },
+  "clock": {
+    "is_open": true,
+    "timestamp": "2026-08-04T15:00:00Z",
+    "next_close": "2026-08-04T20:00:00Z"
+  },
+  "snapshots": {
+    "AAPL": {
+      "latestTrade": {
+        "p": 200.0
+      }
+    },
+    "MSFT": {
+      "latestTrade": {
+        "p": 397.0
+      }
+    },
+    "SPY": {
+      "latestTrade": {
+        "p": 499.2
+      }
+    }
+  }
+}
