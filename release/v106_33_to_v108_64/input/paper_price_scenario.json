@@ -1,0 +1,38 @@
+{
+  "reference_prices": {
+    "AAPL": 200.0,
+    "MSFT": 400.0,
+    "SPY": 500.0
+  },
+  "intraday_ticks": [
+    {
+      "tick": "10:00",
+      "prices": {
+        "AAPL": 202.0,
+        "MSFT": 398.0,
+        "SPY": 501.0
+      }
+    },
+    {
+      "tick": "12:00",
+      "prices": {
+        "AAPL": 211.0,
+        "MSFT": 386.0,
+        "SPY": 503.0
+      }
+    },
+    {
+      "tick": "14:00",
+      "prices": {
+        "AAPL": 207.0,
+        "MSFT": 384.0,
+        "SPY": 504.0
+      }
+    }
+  ],
+  "closing_prices": {
+    "AAPL": 207.0,
+    "MSFT": 384.0,
+    "SPY": 504.0
+  }
+}

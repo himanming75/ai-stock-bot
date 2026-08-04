@@ -1,0 +1,12 @@
+{
+  "actual_orders_submitted": 0,
+  "certificate_sha256": "2daf84cb33d6068574605391e21450e5e112b01e349e5609a4e3c52bfb208932",
+  "cycle_id": "d5c02e73fa40d9ba85ed0a7e",
+  "live_trading_enabled": false,
+  "next_phase": "V109_01_TO_V110_64_AUTONOMOUS_PAPER_OPERATIONS",
+  "paper_only": true,
+  "stage": "V108.64",
+  "stage_range": "V106.33-V108.64",
+  "state": "FAST_TRACK_PAPER_SOURCE_REQUIRED",
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "policy_version": "FAST_TRACK_A_V106_33_TO_V108_64",
+  "starting_equity": 100000.0,
+  "starting_cash": 100000.0,
+  "slippage_bps": 5.0,
+  "deterministic_fill_ratios": [
+    1.0,
+    0.5,
+    0.0
+  ],
+  "stop_loss_pct": 3.0,
+  "take_profit_pct": 5.0,
+  "trailing_stop_pct": 2.0,
+  "strategy_symbol_map": {
+    "MOMENTUM_5": "AAPL",
+    "EMA_5_15": "MSFT",
+    "BUY_HOLD": "SPY"
+  },
+  "paper_only": true,
+  "live_trading_enabled": false,
+  "broker_submission_enabled": false
+}

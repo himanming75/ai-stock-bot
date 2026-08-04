@@ -1,0 +1,20 @@
+{
+  "checkpoint_hash": "8965c5ae840337524740ec02b0edbb73cea9135a5ec44bc0b1fdc7f822427f10",
+  "close_result": {
+    "closed_position_count": 3,
+    "ending_cash": 101628.5,
+    "ending_equity": 101628.5,
+    "open_market_value": 0.0,
+    "open_positions": [],
+    "realized_pnl": 1628.5,
+    "starting_cash": 100000.0,
+    "total_pnl": 1628.5,
+    "unrealized_pnl": 0.0
+  },
+  "cycle_id": "67daa5f6a3180ff33f11029d",
+  "generation": 1,
+  "positions": [],
+  "previous_checkpoint_hash": null,
+  "state": "FAST_TRACK_PAPER_EXECUTION_AND_ANALYTICS_COMPLETE",
+  "updated_at": "2026-08-04T03:26:17.596102+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "stage_range": "V106.33-V108.64",
+  "base_commit": "9bba472",
+  "fast_track": "A",
+  "paper_order_generation": true,
+  "full_partial_no_fill": true,
+  "position_lifecycle": true,
+  "stop_loss": true,
+  "take_profit": true,
+  "trailing_stop": true,
+  "daily_close": true,
+  "realized_unrealized_pnl": true,
+  "performance_analytics": true,
+  "equity_curve_foundation": true,
+  "checkpoint": true,
+  "duplicate_protection": true,
+  "actual_orders_submitted": 0,
+  "paper_only": true,
+  "live_trading_enabled": false,
+  "broker_submission_enabled": false,
+  "external_network_enabled": false,
+  "next_phase": "V109.01-V110.64 FAST TRACK B"
+}
