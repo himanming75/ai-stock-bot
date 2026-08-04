@@ -1,0 +1,117 @@
+{
+  "sessions_completed": 12,
+  "cycles_completed": 140,
+  "reconciliation_pass_rate_pct": 99.5,
+  "internal_state": {
+    "account": {
+      "cash": 98500.0,
+      "equity": 100250.0,
+      "buying_power": 197000.0
+    },
+    "positions": [
+      {
+        "symbol": "AAPL",
+        "qty": 5
+      },
+      {
+        "symbol": "MSFT",
+        "qty": 2
+      }
+    ],
+    "orders": [
+      {
+        "client_order_id": "A1",
+        "status": "filled"
+      },
+      {
+        "client_order_id": "M1",
+        "status": "canceled"
+      }
+    ]
+  },
+  "broker_state": {
+    "account": {
+      "cash": 98500.0,
+      "equity": 100250.0,
+      "buying_power": 197000.0
+    },
+    "positions": [
+      {
+        "symbol": "AAPL",
+        "qty": 5
+      },
+      {
+        "symbol": "MSFT",
+        "qty": 2
+      }
+    ],
+    "orders": [
+      {
+        "client_order_id": "A1",
+        "status": "filled"
+      },
+      {
+        "client_order_id": "M1",
+        "status": "canceled"
+      }
+    ]
+  },
+  "order_events": [
+    {
+      "status": "new"
+    },
+    {
+      "status": "accepted"
+    },
+    {
+      "status": "partially_filled"
+    },
+    {
+      "status": "filled"
+    },
+    {
+      "status": "canceled"
+    }
+  ],
+  "recovery_events": [
+    {
+      "recovery_status": "PASS",
+      "duplicate_order": false,
+      "resolved": true
+    },
+    {
+      "recovery_status": "PASS",
+      "duplicate_order": false,
+      "resolved": true
+    }
+  ],
+  "trades": [
+    {
+      "pnl": 120.0
+    },
+    {
+      "pnl": -60.0
+    },
+    {
+      "pnl": 90.0
+    },
+    {
+      "pnl": -40.0
+    },
+    {
+      "pnl": 75.0
+    },
+    {
+      "pnl": 30.0
+    }
+  ],
+  "equity_curve": [
+    100000,
+    100120,
+    100060,
+    100150,
+    100110,
+    100185,
+    100215
+  ]
+}

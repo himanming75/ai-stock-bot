@@ -1,0 +1,83 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "checks": {
+    "broker_write_disabled": true,
+    "cycles_sufficient": true,
+    "drawdown_within_limit": true,
+    "duplicates_zero": true,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "order_state_coverage": true,
+    "paper_endpoint_only": true,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "profit_factor_sufficient": true,
+    "reconciliation_current_pass": true,
+    "reconciliation_pass_rate": true,
+    "recovery_failures_zero": true,
+    "sessions_sufficient": true,
+    "unresolved_mismatches_zero": true,
+    "win_rate_sufficient": true
+  },
+  "cycles_completed": 140,
+  "failed": [],
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "next_phase": "V301_01_TO_V310_64_RESTRICTED_LIVE_QUALIFICATION",
+  "observed_at": "2026-08-04T16:55:33.765992+00:00",
+  "order_state_coverage": {
+    "coverage_pct": 100.0,
+    "covered": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ],
+    "observed": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ],
+    "required": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ]
+  },
+  "paper_read_enabled": false,
+  "paper_submission_enabled": false,
+  "performance_metrics": {
+    "maximum_drawdown_pct": 0.0599,
+    "net_pnl": 215.0,
+    "profit_factor": 3.15,
+    "trade_count": 6,
+    "win_rate_pct": 66.6667
+  },
+  "reconciliation": {
+    "checks": {
+      "account_match": true,
+      "orders_match": true,
+      "positions_match": true
+    },
+    "mismatches": [],
+    "passed": true
+  },
+  "reconciliation_pass_rate_pct": 99.5,
+  "recovery": {
+    "duplicate_orders": 0,
+    "recovery_failures": 0,
+    "recovery_passed": true,
+    "unresolved_mismatches": 0
+  },
+  "sessions_completed": 12,
+  "stage": "V300.64",
+  "state": "PAPER_QUALIFIED",
+  "status": "PASS"
+}

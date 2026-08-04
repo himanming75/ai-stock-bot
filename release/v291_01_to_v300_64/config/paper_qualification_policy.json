@@ -1,0 +1,19 @@
+{
+  "paper_read_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "minimum_sessions": 10,
+  "minimum_cycles": 100,
+  "minimum_reconciliation_pass_rate_pct": 99.0,
+  "maximum_unresolved_mismatches": 0,
+  "maximum_duplicate_orders": 0,
+  "maximum_recovery_failures": 0,
+  "minimum_order_state_coverage_pct": 80.0,
+  "maximum_daily_drawdown_pct": 5.0,
+  "minimum_profit_factor": 1.1,
+  "minimum_win_rate_pct": 45.0,
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

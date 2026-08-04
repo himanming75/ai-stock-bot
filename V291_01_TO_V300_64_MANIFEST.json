@@ -1,0 +1,20 @@
+{
+  "stage_range": "V291.01-V300.64",
+  "base_commit": "1f16d7213936903d0ca24ade5db7c99b78f0dee2",
+  "account_reconciliation": true,
+  "position_reconciliation": true,
+  "order_reconciliation": true,
+  "partial_fill_coverage": true,
+  "cancel_coverage": true,
+  "duplicate_detection": true,
+  "recovery_evaluation": true,
+  "qualification_metrics": true,
+  "web_api": true,
+  "paper_read_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V301.01-V310.64 Restricted Live Qualification"
+}

@@ -1,0 +1,71 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "coverage_present": true,
+    "live_network_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "metrics_present": true,
+    "paper_orders_zero": true,
+    "paper_submission_disabled": true,
+    "reconciliation_present": true,
+    "recovery_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "order_state_coverage": {
+    "coverage_pct": 100.0,
+    "covered": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ],
+    "observed": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ],
+    "required": [
+      "accepted",
+      "canceled",
+      "filled",
+      "new",
+      "partially_filled"
+    ]
+  },
+  "performance_metrics": {
+    "maximum_drawdown_pct": 0.0599,
+    "net_pnl": 215.0,
+    "profit_factor": 3.15,
+    "trade_count": 6,
+    "win_rate_pct": 66.6667
+  },
+  "qualification_failed_checks": [],
+  "reconciliation": {
+    "checks": {
+      "account_match": true,
+      "orders_match": true,
+      "positions_match": true
+    },
+    "mismatches": [],
+    "passed": true
+  },
+  "recovery": {
+    "duplicate_orders": 0,
+    "recovery_failures": 0,
+    "recovery_passed": true,
+    "unresolved_mismatches": 0
+  },
+  "state": "PAPER_QUALIFIED",
+  "verification_stage": "V300.64",
+  "verification_status": "PASS"
+}

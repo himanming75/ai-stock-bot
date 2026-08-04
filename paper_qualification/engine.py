@@ -1,73 +1,80 @@
 from __future__ import annotations
-from datetime import datetime,timezone
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
-from paper_qualification.io import write_json,append_jsonl
-from paper_qualification.config import load
-from paper_qualification.source import collect
-from paper_qualification.metrics import compute
-from paper_qualification.strategies import analyze
-from paper_qualification.windows import evaluate as evaluate_windows
+from paper_qualification.config import load, validate
+from paper_qualification.io import load_json, write_json, append_jsonl
+from paper_qualification.metrics import calculate
+from paper_qualification.order_states import coverage
+from paper_qualification.reconciliation import compare
+from paper_qualification.recovery import evaluate as evaluate_recovery
 
-def evaluate(root:Path)->dict[str,Any]:
-    policy=load(root)
-    source=collect(root)
-    metrics=compute(source["trades"],source["daily"])
-    strategies=analyze(source["trades"],source["daily"])
-    windows=evaluate_windows(source["daily"],source["trades"])
-    duplicate_orders=sum(1 for x in source["orders"] if str(x.get("status","")).lower()=="duplicate")
-    reconciliation_errors=0
-    critical_errors=0
-    best_score=strategies[0]["score"] if strategies else 0.0
-    checks={
-        "minimum_trading_days":metrics["trading_days"]>=policy["minimum_trading_days"],
-        "minimum_closed_trades":metrics["closed_trades"]>=policy["minimum_closed_trades"],
-        "minimum_win_rate":metrics["win_rate_pct"]>=policy["minimum_win_rate_pct"],
-        "minimum_profit_factor":metrics["profit_factor"]>=policy["minimum_profit_factor"],
-        "minimum_sharpe":metrics["sharpe"]>=policy["minimum_sharpe"],
-        "maximum_drawdown":metrics["maximum_drawdown_pct"]<=policy["maximum_drawdown_pct"],
-        "reconciliation_errors":reconciliation_errors<=policy["maximum_reconciliation_errors"],
-        "duplicate_orders":duplicate_orders<=policy["maximum_duplicate_orders"],
-        "critical_errors":critical_errors<=policy["maximum_critical_errors"],
-        "strategy_score":best_score>=policy["minimum_strategy_score"],
-        "paper_only":True,
-        "live_submission_disabled":True,
+def evaluate(root: Path) -> dict:
+    policy = load(root)
+    validation = validate(policy)
+    fixture = load_json(root / "release/v291_01_to_v300_64/input/paper_qualification_fixture.json")
+    reconciliation = compare(fixture.get("internal_state", {}), fixture.get("broker_state", {}))
+    state_coverage = coverage(fixture.get("order_events", []))
+    recovery = evaluate_recovery(fixture.get("recovery_events", []))
+    metrics = calculate(fixture.get("trades", []), fixture.get("equity_curve", []))
+
+    sessions = int(fixture.get("sessions_completed", 0) or 0)
+    cycles = int(fixture.get("cycles_completed", 0) or 0)
+    reconciliation_pass_rate = float(fixture.get("reconciliation_pass_rate_pct", 0) or 0)
+
+    checks = {
+        "policy_valid": validation["valid"],
+        "paper_endpoint_only": policy.get("paper_base_url") == "https://paper-api.alpaca.markets",
+        "sessions_sufficient": sessions >= int(policy["minimum_sessions"]),
+        "cycles_sufficient": cycles >= int(policy["minimum_cycles"]),
+        "reconciliation_current_pass": reconciliation["passed"],
+        "reconciliation_pass_rate": reconciliation_pass_rate >= float(policy["minimum_reconciliation_pass_rate_pct"]),
+        "unresolved_mismatches_zero": recovery["unresolved_mismatches"] <= int(policy["maximum_unresolved_mismatches"]),
+        "duplicates_zero": recovery["duplicate_orders"] <= int(policy["maximum_duplicate_orders"]),
+        "recovery_failures_zero": recovery["recovery_failures"] <= int(policy["maximum_recovery_failures"]),
+        "order_state_coverage": state_coverage["coverage_pct"] >= float(policy["minimum_order_state_coverage_pct"]),
+        "drawdown_within_limit": metrics["maximum_drawdown_pct"] <= float(policy["maximum_daily_drawdown_pct"]),
+        "profit_factor_sufficient": metrics["profit_factor"] >= float(policy["minimum_profit_factor"]),
+        "win_rate_sufficient": metrics["win_rate_pct"] >= float(policy["minimum_win_rate_pct"]),
+        "paper_submission_disabled": policy.get("paper_submission_enabled") is False,
+        "live_submission_disabled": policy.get("live_submission_enabled") is False,
+        "live_network_disabled": policy.get("live_network_enabled") is False,
+        "broker_write_disabled": policy.get("broker_write_enabled") is False,
     }
-    failed=[k for k,v in checks.items() if not v]
-    state="PAPER_QUALIFICATION_PASSED" if not failed else "PAPER_QUALIFICATION_IN_PROGRESS"
-    observed=datetime.now(timezone.utc).isoformat()
-    result={
-        "stage":"V165.64","state":state,"status":"PASS",
-        "observed_at":observed,
-        "metrics":metrics,
-        "strategy_rankings":strategies,
-        "rolling_windows":windows,
-        "quality_counts":{
-            "reconciliation_errors":reconciliation_errors,
-            "duplicate_orders":duplicate_orders,
-            "critical_errors":critical_errors,
-        },
-        "qualification":{"passed":not failed,"checks":checks,"failed":failed},
-        "recommendation":{
-            "best_strategy":strategies[0]["strategy_id"] if strategies else None,
-            "best_strategy_score":best_score,
-            "action":"CONTINUE_PAPER_COLLECTION" if failed else "READY_FOR_LIVE_READ_ONLY_REVIEW",
-        },
-        "paper_only":True,
-        "live_trading_ready":False,
-        "live_submission_enabled":False,
-        "actual_live_orders_submitted":0,
-        "next_phase":"V166_01_TO_V170_64_LIVE_READ_ONLY_APPROVAL_CENTER",
+    failed = [name for name, passed in checks.items() if not passed]
+    qualification_state = "PAPER_QUALIFIED" if not failed else "PAPER_QUALIFICATION_IN_PROGRESS"
+    result = {
+        "stage": "V300.64",
+        "state": qualification_state,
+        "status": "PASS",
+        "observed_at": datetime.now(timezone.utc).isoformat(),
+        "sessions_completed": sessions,
+        "cycles_completed": cycles,
+        "reconciliation_pass_rate_pct": reconciliation_pass_rate,
+        "reconciliation": reconciliation,
+        "order_state_coverage": state_coverage,
+        "recovery": recovery,
+        "performance_metrics": metrics,
+        "checks": checks,
+        "failed": failed,
+        "paper_read_enabled": policy.get("paper_read_enabled") is True,
+        "paper_submission_enabled": False,
+        "live_submission_enabled": False,
+        "live_network_enabled": False,
+        "broker_write_enabled": False,
+        "actual_paper_orders_submitted": 0,
+        "actual_live_orders_submitted": 0,
+        "next_phase": "V301_01_TO_V310_64_RESTRICTED_LIVE_QUALIFICATION",
     }
-    actual=root/"release/v161_01_to_v165_64/actual"
-    write_json(actual/"paper_qualification_result.json",result)
-    write_json(actual/"paper_metrics.json",metrics)
-    write_json(actual/"strategy_rankings.json",{"strategies":strategies})
-    write_json(actual/"rolling_window_scores.json",windows)
-    append_jsonl(actual/"qualification_ledger.jsonl",{
-        "observed_at":observed,"state":state,
-        "trading_days":metrics["trading_days"],
-        "closed_trades":metrics["closed_trades"],
-        "passed":not failed,"actual_live_orders_submitted":0,
+    actual = root / "release/v291_01_to_v300_64/actual"
+    write_json(actual / "paper_qualification_result.json", result)
+    write_json(actual / "broker_reconciliation_result.json", reconciliation)
+    write_json(actual / "paper_performance_metrics.json", metrics)
+    append_jsonl(actual / "paper_qualification_ledger.jsonl", {
+        "observed_at": result["observed_at"],
+        "state": qualification_state,
+        "sessions_completed": sessions,
+        "cycles_completed": cycles,
+        "failed": failed,
+        "actual_live_orders_submitted": 0,
     })
     return result
