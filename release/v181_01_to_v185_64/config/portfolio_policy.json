@@ -1,0 +1,9 @@
+{
+  "maximum_accounts": 5,
+  "maximum_positions": 10,
+  "maximum_gross_exposure_pct": 50.0,
+  "maximum_symbol_weight_pct": 25.0,
+  "minimum_cash_weight_pct": 20.0,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false
+}

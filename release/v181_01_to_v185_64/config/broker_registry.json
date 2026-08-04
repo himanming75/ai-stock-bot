@@ -1,0 +1,21 @@
+{
+  "brokers": [
+    {
+      "broker_id": "ALPACA_PAPER",
+      "enabled": true,
+      "fixture_path": "release/v181_01_to_v185_64/input/alpaca_paper_fixture.json"
+    },
+    {
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "enabled": true,
+      "fixture_path": "release/v181_01_to_v185_64/input/alpaca_live_readonly_fixture.json"
+    },
+    {
+      "broker_id": "ETRADE_FOUNDATION",
+      "enabled": false,
+      "fixture_path": "release/v181_01_to_v185_64/input/etrade_fixture.json"
+    }
+  ],
+  "broker_write_enabled": false,
+  "live_submission_enabled": false
+}

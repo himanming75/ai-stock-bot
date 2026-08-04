@@ -1,0 +1,22 @@
+{
+  "account": {
+    "account_id_masked": "****PAPER",
+    "mode": "PAPER",
+    "status": "ACTIVE",
+    "cash": 90000.0,
+    "equity": 100000.0,
+    "buying_power": 190000.0
+  },
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "quantity": 10,
+      "market_value": 2000.0,
+      "average_price": 195.0,
+      "current_price": 200.0,
+      "unrealized_pnl": 50.0,
+      "strategy_id": "momentum"
+    }
+  ],
+  "orders": []
+}

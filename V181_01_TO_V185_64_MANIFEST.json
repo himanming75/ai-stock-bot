@@ -1,0 +1,21 @@
+{
+  "stage_range": "V181.01-V185.64",
+  "base_commit": "bf8c38c3c777a03b51535c344a62cb0acd7b6d4d",
+  "broker_adapter_interface": true,
+  "multi_account_registry": true,
+  "alpaca_paper_adapter": true,
+  "alpaca_live_read_only_adapter": true,
+  "etrade_foundation": true,
+  "portfolio_aggregation": true,
+  "cash_and_exposure_metrics": true,
+  "symbol_strategy_broker_allocation": true,
+  "portfolio_risk_gate": true,
+  "web_portfolio_api": true,
+  "all_adapters_read_only": true,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V186.01-V190.64 Production Operations and Reporting",
+  "fixed_version": "FIXED_V2",
+  "missing_policy_defaults_fixed": true
+}
