@@ -1,0 +1,98 @@
+{
+  "actual_live_orders_submitted": 0,
+  "autonomous_paper_orchestrator_ready": true,
+  "development_complete": true,
+  "live_execution_authorized": false,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "live_trading_ready": false,
+  "next_phase": "V141_01_WEB_CONTROLLER_FOUNDATION",
+  "observed_at": "2026-08-04T06:49:07.995002+00:00",
+  "paper_trading_ready": true,
+  "release_certificate": {
+    "actual_live_orders_submitted": 0,
+    "certificate_sha256": "7fbe16eb50af28d246b9b28d850b681343cc1520ff15bd1b8eeedfc8734d0047",
+    "certificate_type": "V140_FINAL_AUTONOMOUS_RELEASE_CERTIFICATE",
+    "development_complete": true,
+    "issued_at": "2026-08-04T06:49:07.994810+00:00",
+    "live_execution_authorized": false,
+    "live_trading_ready": false,
+    "paper_trading_ready": true,
+    "release_passed": true,
+    "source_summary_hash": "ca7ff5a57d0865b6032d26cbd826eae71b4533e8bd62eff538fbc65e06449dc6"
+  },
+  "release_id": "3564cfc5fed2c1ab09cf7a85",
+  "result_sha256": "9760eb0782044536b63d2220583a687ff97a00c180b60f5308a361738ba955ec",
+  "safety_gate": {
+    "actual_live_orders_submitted": 0,
+    "checks": {
+      "all_sources_present": true,
+      "all_status_pass": true,
+      "historical_live_orders_zero": true,
+      "kill_switch_default_enabled": true,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "manual_live_enable_required": true,
+      "paper_mode_default": true
+    },
+    "failed": [],
+    "historical_live_orders_submitted": 0,
+    "passed": true
+  },
+  "source_summary": {
+    "v121_123": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V123.64",
+      "state": "REAL_ALPACA_PAPER_ORDER_SUBMITTED",
+      "status": "PASS"
+    },
+    "v124_126": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V126.64",
+      "state": "CONTINUOUS_REAL_PAPER_SHADOW_READY",
+      "status": "PASS"
+    },
+    "v127_128": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V128.64",
+      "state": "MICRO_LIVE_READINESS_REVIEW_REQUIRED",
+      "status": "PASS"
+    },
+    "v129_130": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V130.64",
+      "state": "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_REVIEW_REQUIRED",
+      "status": "PASS"
+    },
+    "v131_133": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V133.64",
+      "state": "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW_REQUIRED",
+      "status": "PASS"
+    },
+    "v134_136": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V136.64",
+      "state": "DYNAMIC_LIVE_RISK_REVIEW_REQUIRED",
+      "status": "PASS"
+    },
+    "v137_139": {
+      "actual_live_orders_submitted": 0,
+      "present": true,
+      "stage": "V139.64",
+      "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED",
+      "status": "PASS"
+    }
+  },
+  "stage": "V140.00",
+  "stage_range": "V121.01-V140.00",
+  "state": "V140_FINAL_AUTONOMOUS_RELEASE_COMPLETE",
+  "status": "PASS",
+  "web_controller_ready_for_development": true
+}

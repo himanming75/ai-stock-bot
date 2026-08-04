@@ -1,0 +1,8 @@
+{
+  "default_mode": "PAPER",
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "manual_live_enable_required": true,
+  "kill_switch_default_enabled": true,
+  "minimum_paper_sessions_before_live": 20
+}

@@ -1,0 +1,51 @@
+{
+  "v121_123": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V123.64",
+    "state": "REAL_ALPACA_PAPER_ORDER_SUBMITTED",
+    "status": "PASS"
+  },
+  "v124_126": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V126.64",
+    "state": "CONTINUOUS_REAL_PAPER_SHADOW_READY",
+    "status": "PASS"
+  },
+  "v127_128": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V128.64",
+    "state": "MICRO_LIVE_READINESS_REVIEW_REQUIRED",
+    "status": "PASS"
+  },
+  "v129_130": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V130.64",
+    "state": "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_REVIEW_REQUIRED",
+    "status": "PASS"
+  },
+  "v131_133": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V133.64",
+    "state": "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW_REQUIRED",
+    "status": "PASS"
+  },
+  "v134_136": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V136.64",
+    "state": "DYNAMIC_LIVE_RISK_REVIEW_REQUIRED",
+    "status": "PASS"
+  },
+  "v137_139": {
+    "actual_live_orders_submitted": 0,
+    "present": true,
+    "stage": "V139.64",
+    "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED",
+    "status": "PASS"
+  }
+}
