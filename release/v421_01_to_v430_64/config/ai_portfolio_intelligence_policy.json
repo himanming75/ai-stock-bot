@@ -1,0 +1,14 @@
+{
+  "stage": "V430.64",
+  "mode": "OFFLINE_ONLY",
+  "network_enabled": false,
+  "broker_credentials_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_new_orders_per_day": 0,
+  "default_maximum_positions": 5,
+  "default_maximum_positions_per_sector": 2,
+  "default_maximum_single_weight": 0.35,
+  "memory_mode": "APPEND_ONLY_LOCAL_JSONL"
+}

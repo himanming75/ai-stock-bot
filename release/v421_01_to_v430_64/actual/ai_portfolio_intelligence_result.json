@@ -1,0 +1,172 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_credentials_used": false,
+  "cash_weight": 0.3614,
+  "diversification_score": 33.33,
+  "excluded": [
+    {
+      "action": "BUY",
+      "confidence": 67.08,
+      "exclusion_reasons": [
+        "SECTOR_CONCENTRATION_LIMIT"
+      ],
+      "expected_holding_days": "1-3",
+      "liquidity_score": 96.0,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Trend component is 0.899.",
+        "Momentum component is 1.000; RSI is 100.0.",
+        "Relative volume is 1.13.",
+        "MACD component is 0.566.",
+        "Final analytical action is BUY; no order can be submitted."
+      ],
+      "risk_level": "LOW",
+      "risk_score": 33,
+      "sector": "TECH",
+      "selected": false,
+      "selection_score": 71.7184,
+      "signal_rank": "C",
+      "signal_score": 0.647437,
+      "symbol": "AAPL",
+      "weight": 0.0
+    },
+    {
+      "action": "SELL",
+      "confidence": 68.43,
+      "exclusion_reasons": [
+        "ACTION_NOT_BUY"
+      ],
+      "expected_holding_days": "1-3",
+      "liquidity_score": 98.0,
+      "reasons": [
+        "Market regime is BEAR_TREND.",
+        "Trend component is -0.875.",
+        "Momentum component is -1.000; RSI is 0.0.",
+        "Relative volume is 1.11.",
+        "MACD component is -0.619.",
+        "Final analytical action is SELL; no order can be submitted."
+      ],
+      "risk_level": "LOW",
+      "risk_score": 34,
+      "sector": "AUTO",
+      "selected": false,
+      "selection_score": 34.2556,
+      "signal_rank": "C",
+      "signal_score": -0.668088,
+      "symbol": "TSLA",
+      "weight": 0.0
+    },
+    {
+      "action": "HOLD",
+      "confidence": 50.93,
+      "exclusion_reasons": [
+        "ACTION_NOT_BUY",
+        "CONFIDENCE_TOO_LOW",
+        "SIGNAL_RANK_TOO_LOW"
+      ],
+      "expected_holding_days": "0",
+      "liquidity_score": 80.0,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Trend component is 0.505.",
+        "Momentum component is 1.000; RSI is 100.0.",
+        "Relative volume is 1.20.",
+        "MACD component is 0.326.",
+        "Final analytical action is HOLD; no order can be submitted."
+      ],
+      "risk_level": "LOW",
+      "risk_score": 16,
+      "sector": "ENERGY",
+      "selected": false,
+      "selection_score": 28.0003,
+      "signal_rank": "D",
+      "signal_score": 0.398885,
+      "symbol": "XOM",
+      "weight": 0.0
+    }
+  ],
+  "live_submission_enabled": false,
+  "network_used": false,
+  "order_submission_allowed": false,
+  "paper_submission_enabled": false,
+  "portfolio_score": 73.9816,
+  "selected": [
+    {
+      "action": "BUY",
+      "confidence": 75.56,
+      "exclusion_reasons": [],
+      "expected_holding_days": "2-5",
+      "liquidity_score": 99.0,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Trend component is 1.000.",
+        "Momentum component is 1.000; RSI is 100.0.",
+        "Relative volume is 1.10.",
+        "MACD component is 1.000.",
+        "Final analytical action is BUY; no order can be submitted."
+      ],
+      "risk_level": "MEDIUM",
+      "risk_score": 42,
+      "sector": "TECH",
+      "selected": true,
+      "selection_score": 80.7366,
+      "signal_rank": "B",
+      "signal_score": 0.777859,
+      "symbol": "NVDA",
+      "weight": 0.232303
+    },
+    {
+      "action": "BUY",
+      "confidence": 72.12,
+      "exclusion_reasons": [],
+      "expected_holding_days": "2-5",
+      "liquidity_score": 95.0,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Trend component is 1.000.",
+        "Momentum component is 1.000; RSI is 100.0.",
+        "Relative volume is 1.13.",
+        "MACD component is 0.736.",
+        "Final analytical action is BUY; no order can be submitted."
+      ],
+      "risk_level": "MEDIUM",
+      "risk_score": 36,
+      "sector": "TECH",
+      "selected": true,
+      "selection_score": 79.4149,
+      "signal_rank": "B",
+      "signal_score": 0.724892,
+      "symbol": "MSFT",
+      "weight": 0.2285
+    },
+    {
+      "action": "BUY",
+      "confidence": 55.68,
+      "exclusion_reasons": [],
+      "expected_holding_days": "1-3",
+      "liquidity_score": 82.0,
+      "reasons": [
+        "Market regime is BULL_TREND.",
+        "Trend component is 0.620.",
+        "Momentum component is 1.000; RSI is 100.0.",
+        "Relative volume is 1.19.",
+        "MACD component is 0.397.",
+        "Final analytical action is BUY; no order can be submitted."
+      ],
+      "risk_level": "MEDIUM",
+      "risk_score": 35,
+      "sector": "HEALTH",
+      "selected": true,
+      "selection_score": 61.7934,
+      "signal_rank": "C",
+      "signal_score": 0.471939,
+      "symbol": "JNJ",
+      "weight": 0.177798
+    }
+  ],
+  "stage": "V430.64",
+  "state": "AI_PORTFOLIO_INTELLIGENCE_READY",
+  "status": "PASS",
+  "total_selected_weight": 0.638601
+}
