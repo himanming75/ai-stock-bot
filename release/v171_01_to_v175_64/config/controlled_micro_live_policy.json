@@ -1,0 +1,15 @@
+{
+  "maximum_quantity": 1,
+  "maximum_order_notional": 100.0,
+  "maximum_daily_orders": 1,
+  "maximum_daily_loss": 20.0,
+  "approval_token_expiry_minutes": 5,
+  "manual_approval_required": true,
+  "qualification_required": true,
+  "kill_switch_required_clear": true,
+  "dry_run_only": true,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

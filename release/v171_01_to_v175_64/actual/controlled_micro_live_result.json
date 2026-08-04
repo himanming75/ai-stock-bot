@@ -1,0 +1,131 @@
+{
+  "actual_live_network_attempted": false,
+  "actual_live_orders_submitted": 0,
+  "actual_live_write_attempted": false,
+  "approval_token": {
+    "actual_live_orders_submitted": 0,
+    "candidate_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "eligible": false,
+    "execution_authorized": false,
+    "expires_at": "2026-08-04T07:42:05.975331+00:00",
+    "issued_at": "2026-08-04T07:37:05.975331+00:00",
+    "token_id": "e96fae2913b2b8ede7b55cf050eb5d18",
+    "used": false
+  },
+  "approval_token_status": {
+    "expired": false,
+    "token": {
+      "actual_live_orders_submitted": 0,
+      "candidate_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "eligible": false,
+      "execution_authorized": false,
+      "expires_at": "2026-08-04T07:42:05.975331+00:00",
+      "issued_at": "2026-08-04T07:37:05.975331+00:00",
+      "token_id": "e96fae2913b2b8ede7b55cf050eb5d18",
+      "used": false
+    },
+    "valid": false
+  },
+  "broker_reconciliation_plan": {
+    "actual_live_orders_submitted": 0,
+    "automatic_submission_included": false,
+    "candidate_id": null,
+    "required_steps": [
+      "READ_LIVE_ACCOUNT_BEFORE_ORDER",
+      "VERIFY_NO_EXISTING_DUPLICATE_ORDER",
+      "VERIFY_SYMBOL_POSITION",
+      "VERIFY_BUYING_POWER",
+      "SUBMIT_SINGLE_MICRO_ORDER_ONLY_AFTER_SEPARATE_RELEASE",
+      "READ_ORDER_BY_ID",
+      "VERIFY_FILL_OR_CANCEL",
+      "READ_POSITION_AFTER_FILL",
+      "WRITE_BROKER_RECONCILIATION_LEDGER"
+    ]
+  },
+  "candidate": {},
+  "dry_run_ready": false,
+  "dry_run_receipt": {
+    "actual_live_orders_submitted": 0,
+    "broker_request_created": false,
+    "candidate": {},
+    "checks": {
+      "approval_approved": false,
+      "approval_token_valid": false,
+      "candidate_present": false,
+      "dry_run_only": true,
+      "kill_switch_clear": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_exactly_one": false
+    },
+    "created_at": "2026-08-04T07:37:05.995170+00:00",
+    "dry_run_only": true,
+    "estimated_notional": 0.0,
+    "execution_authorized": false,
+    "live_network_attempted": false,
+    "live_write_attempted": false,
+    "quantity": 0.0,
+    "receipt_id": "6ea5dfd87599a87c46f3fa93",
+    "receipt_type": "CONTROLLED_MICRO_LIVE_DRY_RUN",
+    "within_notional_limit": false,
+    "within_quantity_limit": false
+  },
+  "execution_authorized": false,
+  "kill_switch": {
+    "enabled": true,
+    "reason": "DEFAULT_SAFE_START",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "live_write_enabled": false,
+  "micro_live_execution_ready": false,
+  "next_phase": "V176_01_TO_V180_64_RESTRICTED_LIVE_AUTOMATION_REVIEW",
+  "observed_at": "2026-08-04T07:37:05.996787+00:00",
+  "policy": {
+    "approval_token_expiry_minutes": 5,
+    "dry_run_only": true,
+    "kill_switch_required_clear": true,
+    "live_network_enabled": false,
+    "live_submission_enabled": false,
+    "live_write_enabled": false,
+    "manual_approval_required": true,
+    "maximum_daily_loss": 20.0,
+    "maximum_daily_orders": 1,
+    "maximum_order_notional": 100.0,
+    "maximum_quantity": 1,
+    "qualification_required": true,
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "readiness_gate": {
+    "checks": {
+      "approval_approved": false,
+      "approval_token_valid": false,
+      "candidate_present": false,
+      "dry_run_only": true,
+      "kill_switch_clear": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_exactly_one": false
+    },
+    "failed": [
+      "qualification_passed",
+      "approval_approved",
+      "candidate_present",
+      "quantity_exactly_one",
+      "notional_within_limit",
+      "kill_switch_clear",
+      "approval_token_valid"
+    ],
+    "passed": false
+  },
+  "stage": "V175.64",
+  "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED",
+  "status": "PASS"
+}

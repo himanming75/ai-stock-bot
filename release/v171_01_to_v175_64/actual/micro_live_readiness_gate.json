@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "approval_approved": false,
+    "approval_token_valid": false,
+    "candidate_present": false,
+    "dry_run_only": true,
+    "kill_switch_clear": false,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "live_write_disabled": true,
+    "notional_within_limit": false,
+    "qualification_passed": false,
+    "quantity_exactly_one": false
+  },
+  "failed": [
+    "qualification_passed",
+    "approval_approved",
+    "candidate_present",
+    "quantity_exactly_one",
+    "notional_within_limit",
+    "kill_switch_clear",
+    "approval_token_valid"
+  ],
+  "passed": false
+}

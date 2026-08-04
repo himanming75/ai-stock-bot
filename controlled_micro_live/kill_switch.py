@@ -1,21 +1,19 @@
 from __future__ import annotations
-from typing import Any
+from datetime import datetime,timezone
+from pathlib import Path
+from controlled_micro_live.io import load_json,write_json
 
-def evaluate(policy:dict[str,Any],candidate:dict[str,Any])->dict[str,Any]:
-    checks={
-        "manual_kill_switch_clear":policy.get("manual_kill_switch") is False,
-        "daily_loss_clear":float(policy.get("current_daily_pnl",0.0))>-abs(float(policy.get("maximum_daily_loss",20.0))),
-        "daily_order_limit_clear":int(policy.get("current_daily_order_count",0))<int(policy.get("maximum_daily_orders",1)),
-        "candidate_notional_clear":float(candidate.get("estimated_notional",0.0))<=float(policy.get("maximum_notional",250.0)),
-        "candidate_quantity_clear":float(candidate.get("quantity",0.0))<=float(policy.get("maximum_quantity",1.0)),
-        "market_required":policy.get("market_open_required") is True,
-        "market_open":policy.get("market_open") is True,
-        "broker_healthy":policy.get("broker_health")=="HEALTHY",
-    }
-    failed=[k for k,v in checks.items() if not v]
-    return {
-        "passed":not failed,
-        "checks":checks,
-        "failed":failed,
-        "state":"KILL_SWITCH_CLEAR" if not failed else "KILL_SWITCH_BLOCKED",
-    }
+def path(root:Path)->Path:
+    return root/"release/v171_01_to_v175_64/control/micro_live_kill_switch.json"
+
+def load(root:Path)->dict:
+    value=load_json(path(root))
+    if not value:
+        value={"enabled":True,"reason":"DEFAULT_SAFE_START","updated_at":datetime.now(timezone.utc).isoformat()}
+        write_json(path(root),value)
+    return value
+
+def set_state(root:Path,enabled:bool,reason:str)->dict:
+    value={"enabled":enabled,"reason":reason or ("MANUAL_STOP" if enabled else "MANUAL_CLEAR"),"updated_at":datetime.now(timezone.utc).isoformat()}
+    write_json(path(root),value)
+    return value

@@ -1,0 +1,19 @@
+{
+  "stage_range": "V171.01-V175.64",
+  "base_commit": "cb7f4ae3801778bb0b22e65800396e337a1f60a9",
+  "micro_live_dry_run": true,
+  "one_share_limit": true,
+  "maximum_notional": 100.0,
+  "maximum_daily_orders": 1,
+  "manual_approval_required": true,
+  "qualification_required": true,
+  "approval_token": true,
+  "kill_switch": true,
+  "broker_reconciliation_plan": true,
+  "micro_live_execution_ready": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V176.01-V180.64 Restricted Live Automation Review"
+}

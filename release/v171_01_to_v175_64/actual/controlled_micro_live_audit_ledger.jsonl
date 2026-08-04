@@ -1,0 +1,4 @@
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "observed_at": "2026-08-04T07:36:01.256601+00:00", "readiness_passed": false, "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "observed_at": "2026-08-04T07:36:04.580489+00:00", "readiness_passed": false, "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "observed_at": "2026-08-04T07:37:05.592813+00:00", "readiness_passed": false, "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "observed_at": "2026-08-04T07:37:05.996787+00:00", "readiness_passed": false, "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED"}

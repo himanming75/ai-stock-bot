@@ -2,125 +2,74 @@ from __future__ import annotations
 from datetime import datetime,timezone
 from pathlib import Path
 from typing import Any
-
-from controlled_micro_live.io import load_json,write_json,append_jsonl,digest
-from controlled_micro_live.approval import build_approval
-from controlled_micro_live.token import issue_simulated_token
-from controlled_micro_live.kill_switch import evaluate as evaluate_kill_switch
-from controlled_micro_live.payload import build_payload
-from controlled_micro_live.simulator import simulate
-from controlled_micro_live.review import evaluate as evaluate_review
+from controlled_micro_live.io import load_json,write_json,append_jsonl
+from controlled_micro_live.config import load
+from controlled_micro_live.kill_switch import load as load_kill_switch
+from controlled_micro_live.token import issue,inspect
+from controlled_micro_live.dry_run import build as build_dry_run
+from controlled_micro_live.reconcile import build_plan
 
 def evaluate(root:Path)->dict[str,Any]:
-    policy=load_json(root/"release/v131_01_to_v133_64/input/controlled_micro_live_policy.json")
-    source=load_json(root/"release/v129_01_to_v130_64/actual/restricted_live_candidate_result.json")
-    actual=root/"release/v131_01_to_v133_64/actual"
+    policy=load(root)
+    qualification=load_json(root/"release/v161_01_to_v165_64/actual/paper_qualification_result.json")
+    approval_result=load_json(root/"release/v166_01_to_v170_64/actual/live_read_only_approval_result.json")
+    approval=load_json(root/"release/v166_01_to_v170_64/actual/live_approval_request.json")
+    candidate=approval_result.get("selected_candidate",{})
+    kill_switch=load_kill_switch(root)
+    qualification_passed=qualification.get("qualification",{}).get("passed") is True
+    approval_approved=approval.get("approved") is True
+    qty=float(candidate.get("quantity",candidate.get("qty",0)) or 0)
+    notional=float(candidate.get("estimated_notional",0) or 0)
 
-    ready=source.get("state") in {
-        "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_READY",
-        "RESTRICTED_AUTOMATIC_LIVE_CANDIDATE_REVIEW_REQUIRED",
+    token=issue(root,candidate,approval,qualification_passed)
+    token_status=inspect(root,candidate)
+    checks={
+        "qualification_passed":qualification_passed,
+        "approval_approved":approval_approved,
+        "candidate_present":bool(candidate),
+        "quantity_exactly_one":qty==1,
+        "notional_within_limit":0<notional<=policy["maximum_order_notional"],
+        "kill_switch_clear":kill_switch.get("enabled") is False,
+        "approval_token_valid":token_status.get("valid") is True,
+        "dry_run_only":policy.get("dry_run_only") is True,
+        "live_network_disabled":policy.get("live_network_enabled") is False,
+        "live_write_disabled":policy.get("live_write_enabled") is False,
+        "live_submission_disabled":policy.get("live_submission_enabled") is False,
     }
-    candidates=source.get("restricted_live_candidates",[]) if ready else []
-    candidate=candidates[0] if candidates else {}
-
-    if not ready:
-        body={
-            "stage":"V133.64","stage_range":"V131.01-V133.64",
-            "state":"CONTROLLED_MICRO_LIVE_SOURCE_REQUIRED","status":"PASS",
-            "actual_live_orders_submitted":0,
-            "next_phase":"V134_01_TO_V136_64_DYNAMIC_LIVE_RISK_ENGINE",
-        }
-        body["result_sha256"]=digest(body)
-        write_json(actual/"controlled_micro_live_result.json",body)
-        return body
-
-    approval=build_approval(candidate,policy) if candidate else {}
-    token=issue_simulated_token(approval,policy) if approval else {
-        "token_present":False,"token_valid":False,"token_used":False,
-        "token_single_use":True,"token_expired":False,
-        "token_replay_detected":False,"live_token":False,
-        "simulation_only":True,
-    }
-    kill_switch=evaluate_kill_switch(policy,candidate) if candidate else {
-        "passed":False,"checks":{},"failed":["candidate_missing"],
-        "state":"KILL_SWITCH_BLOCKED",
-    }
-    payload=build_payload(candidate) if candidate else {}
-    simulation=simulate(payload,policy) if payload else {
-        "simulated_status":"not_run",
-        "actual_broker_request_sent":False,
-        "actual_live_order_submitted":False,
-    }
-    review=evaluate_review(
-        candidate,approval,token,kill_switch,payload,simulation,policy
-    )
-
-    state=(
-        "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW_COMPLETE"
-        if candidate and review.get("passed")
-        else "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW_REQUIRED"
-    )
-    observed=datetime.now(timezone.utc).isoformat()
-    certificate={
-        "certificate_type":"CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW",
-        "issued_at":observed,
-        "candidate_id":candidate.get("candidate_id"),
-        "review_passed":review.get("passed"),
-        "execution_authorized":False,
-        "actual_live_orders_submitted":0,
-    }
-    certificate["certificate_sha256"]=digest(certificate)
-    body={
-        "stage":"V133.64","stage_range":"V131.01-V133.64",
-        "state":state,"status":"PASS","observed_at":observed,
-        "review_id":digest({
-            "candidate":candidate,
-            "policy_version":policy.get("policy_version"),
-        })[:24],
-        "source_readiness_id":source.get("readiness_id"),
+    failed=[k for k,v in checks.items() if not v]
+    dry_run=build_dry_run(root,candidate,checks)
+    reconciliation=build_plan(candidate)
+    readiness=not failed
+    state="CONTROLLED_MICRO_LIVE_DRY_RUN_READY" if readiness else "CONTROLLED_MICRO_LIVE_HARD_BLOCKED"
+    result={
+        "stage":"V175.64","state":state,"status":"PASS",
+        "observed_at":datetime.now(timezone.utc).isoformat(),
         "candidate":candidate,
-        "manual_approval_request":approval,
-        "approval_token_status":token,
+        "policy":policy,
         "kill_switch":kill_switch,
-        "live_order_payload_review":payload,
-        "execution_simulation":simulation,
-        "execution_review":review,
-        "review_certificate":certificate,
-        "two_step_manual_approval_required":True,
-        "first_approval_granted":False,
-        "second_approval_granted":False,
-        "live_approval_token_issued":False,
+        "approval_token":token,
+        "approval_token_status":token_status,
+        "readiness_gate":{"passed":readiness,"checks":checks,"failed":failed},
+        "dry_run_receipt":dry_run,
+        "broker_reconciliation_plan":reconciliation,
+        "micro_live_execution_ready":False,
+        "dry_run_ready":readiness,
+        "execution_authorized":False,
         "live_network_enabled":False,
+        "live_write_enabled":False,
         "live_submission_enabled":False,
-        "real_live_network_attempted":False,
-        "real_live_submission_attempted":False,
+        "actual_live_network_attempted":False,
+        "actual_live_write_attempted":False,
         "actual_live_orders_submitted":0,
-        "next_phase":"V134_01_TO_V136_64_DYNAMIC_LIVE_RISK_ENGINE",
+        "next_phase":"V176_01_TO_V180_64_RESTRICTED_LIVE_AUTOMATION_REVIEW",
     }
-    body["result_sha256"]=digest(body)
-    write_json(actual/"controlled_micro_live_result.json",body)
-    write_json(actual/"manual_approval_request.json",approval)
-    write_json(actual/"approval_token_status.json",token)
-    write_json(actual/"kill_switch_report.json",kill_switch)
-    write_json(actual/"live_order_payload_review.json",payload)
-    write_json(actual/"execution_simulation.json",simulation)
-    write_json(actual/"execution_review_certificate.json",certificate)
-    append_jsonl(actual/"approval_ledger.jsonl",{
-        "observed_at":observed,
-        "candidate_id":candidate.get("candidate_id"),
-        "first_approval_granted":False,
-        "second_approval_granted":False,
-    })
-    append_jsonl(actual/"token_ledger.jsonl",{
-        "observed_at":observed,
-        "token_present":token.get("token_present"),
-        "live_token":False,
-        "token_used":token.get("token_used"),
-    })
-    append_jsonl(actual/"execution_review_ledger.jsonl",{
-        "observed_at":observed,
-        "review_id":body["review_id"],
-        "state":state,
+    actual=root/"release/v171_01_to_v175_64/actual"
+    write_json(actual/"controlled_micro_live_result.json",result)
+    write_json(actual/"micro_live_readiness_gate.json",result["readiness_gate"])
+    write_json(actual/"broker_reconciliation_plan.json",reconciliation)
+    append_jsonl(actual/"controlled_micro_live_audit_ledger.jsonl",{
+        "observed_at":result["observed_at"],"state":state,
+        "readiness_passed":readiness,"execution_authorized":False,
         "actual_live_orders_submitted":0,
     })
-    return body
+    return result

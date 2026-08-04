@@ -1,0 +1,96 @@
+{
+  "actual_live_orders_submitted": 0,
+  "broker_reconciliation_plan": {
+    "actual_live_orders_submitted": 0,
+    "automatic_submission_included": false,
+    "candidate_id": null,
+    "required_steps": [
+      "READ_LIVE_ACCOUNT_BEFORE_ORDER",
+      "VERIFY_NO_EXISTING_DUPLICATE_ORDER",
+      "VERIFY_SYMBOL_POSITION",
+      "VERIFY_BUYING_POWER",
+      "SUBMIT_SINGLE_MICRO_ORDER_ONLY_AFTER_SEPARATE_RELEASE",
+      "READ_ORDER_BY_ID",
+      "VERIFY_FILL_OR_CANCEL",
+      "READ_POSITION_AFTER_FILL",
+      "WRITE_BROKER_RECONCILIATION_LEDGER"
+    ]
+  },
+  "checks": {
+    "allowed_state": true,
+    "execution_not_authorized": true,
+    "execution_not_ready": true,
+    "live_orders_zero": true,
+    "network_disabled": true,
+    "network_not_attempted": true,
+    "stage": true,
+    "status": true,
+    "submission_disabled": true,
+    "web_api_present": true,
+    "write_disabled": true,
+    "write_not_attempted": true
+  },
+  "dry_run_receipt": {
+    "actual_live_orders_submitted": 0,
+    "broker_request_created": false,
+    "candidate": {},
+    "checks": {
+      "approval_approved": false,
+      "approval_token_valid": false,
+      "candidate_present": false,
+      "dry_run_only": true,
+      "kill_switch_clear": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_exactly_one": false
+    },
+    "created_at": "2026-08-04T07:37:05.995170+00:00",
+    "dry_run_only": true,
+    "estimated_notional": 0.0,
+    "execution_authorized": false,
+    "live_network_attempted": false,
+    "live_write_attempted": false,
+    "quantity": 0.0,
+    "receipt_id": "6ea5dfd87599a87c46f3fa93",
+    "receipt_type": "CONTROLLED_MICRO_LIVE_DRY_RUN",
+    "within_notional_limit": false,
+    "within_quantity_limit": false
+  },
+  "failed": [],
+  "kill_switch": {
+    "enabled": true,
+    "reason": "DEFAULT_SAFE_START",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "readiness_gate": {
+    "checks": {
+      "approval_approved": false,
+      "approval_token_valid": false,
+      "candidate_present": false,
+      "dry_run_only": true,
+      "kill_switch_clear": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_exactly_one": false
+    },
+    "failed": [
+      "qualification_passed",
+      "approval_approved",
+      "candidate_present",
+      "quantity_exactly_one",
+      "notional_within_limit",
+      "kill_switch_clear",
+      "approval_token_valid"
+    ],
+    "passed": false
+  },
+  "state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED",
+  "verification_stage": "V175.64",
+  "verification_status": "PASS"
+}
