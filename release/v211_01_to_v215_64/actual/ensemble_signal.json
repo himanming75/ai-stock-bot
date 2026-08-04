@@ -1,0 +1,56 @@
+{
+  "contributions": [
+    {
+      "action": "BUY",
+      "confidence": 0.82,
+      "signed_contribution": 0.82,
+      "strategy_id": "momentum",
+      "symbol": "AAPL",
+      "weight": 1.0
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.6,
+      "signed_contribution": 0.0,
+      "strategy_id": "mean_reversion",
+      "symbol": "AAPL",
+      "weight": 0.0
+    },
+    {
+      "action": "BUY",
+      "confidence": 0.55,
+      "signed_contribution": 0.0,
+      "strategy_id": "breakout",
+      "symbol": "AAPL",
+      "weight": 0.0
+    },
+    {
+      "action": "BUY",
+      "confidence": 0.7,
+      "signed_contribution": 0.7,
+      "strategy_id": "momentum",
+      "symbol": "MSFT",
+      "weight": 1.0
+    },
+    {
+      "action": "SELL",
+      "confidence": 0.45,
+      "signed_contribution": -0.0,
+      "strategy_id": "mean_reversion",
+      "symbol": "MSFT",
+      "weight": 0.0
+    }
+  ],
+  "signals": [
+    {
+      "action": "BUY",
+      "ensemble_score": 0.82,
+      "symbol": "AAPL"
+    },
+    {
+      "action": "BUY",
+      "ensemble_score": 0.7,
+      "symbol": "MSFT"
+    }
+  ]
+}

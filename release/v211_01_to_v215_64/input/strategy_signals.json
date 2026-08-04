@@ -1,0 +1,34 @@
+{
+  "signals": [
+    {
+      "strategy_id": "momentum",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "confidence": 0.82
+    },
+    {
+      "strategy_id": "mean_reversion",
+      "symbol": "AAPL",
+      "action": "HOLD",
+      "confidence": 0.6
+    },
+    {
+      "strategy_id": "breakout",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "confidence": 0.55
+    },
+    {
+      "strategy_id": "momentum",
+      "symbol": "MSFT",
+      "action": "BUY",
+      "confidence": 0.7
+    },
+    {
+      "strategy_id": "mean_reversion",
+      "symbol": "MSFT",
+      "action": "SELL",
+      "confidence": 0.45
+    }
+  ]
+}

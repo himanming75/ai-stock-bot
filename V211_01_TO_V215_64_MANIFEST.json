@@ -1,0 +1,17 @@
+{
+  "stage_range": "V211.01-V215.64",
+  "base_commit": "95179e728569479ce399da03fd7a97d6aaf42a84",
+  "strategy_scoring": true,
+  "champion_challenger_ranking": true,
+  "strategy_allocation": true,
+  "inactive_recommendation": true,
+  "weighted_ensemble_signal": true,
+  "risk_engine_v2_link": true,
+  "web_strategy_ensemble_api": true,
+  "automatic_strategy_promotion_enabled": false,
+  "execution_authorized": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V216.01-V220.64 Final Production Release"
+}

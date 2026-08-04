@@ -1,0 +1,149 @@
+{
+  "actual_live_orders_submitted": 0,
+  "allocations": [
+    {
+      "role": "CHALLENGER",
+      "score": 66.65,
+      "strategy_id": "momentum",
+      "weight_pct": 100.0
+    }
+  ],
+  "champion": null,
+  "checks": {
+    "allocations_present": true,
+    "allowed_state": true,
+    "automatic_submission_disabled": true,
+    "broker_write_disabled": true,
+    "execution_not_authorized": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "promotion_not_authorized": true,
+    "rankings_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "ensemble_signal": {
+    "contributions": [
+      {
+        "action": "BUY",
+        "confidence": 0.82,
+        "signed_contribution": 0.82,
+        "strategy_id": "momentum",
+        "symbol": "AAPL",
+        "weight": 1.0
+      },
+      {
+        "action": "HOLD",
+        "confidence": 0.6,
+        "signed_contribution": 0.0,
+        "strategy_id": "mean_reversion",
+        "symbol": "AAPL",
+        "weight": 0.0
+      },
+      {
+        "action": "BUY",
+        "confidence": 0.55,
+        "signed_contribution": 0.0,
+        "strategy_id": "breakout",
+        "symbol": "AAPL",
+        "weight": 0.0
+      },
+      {
+        "action": "BUY",
+        "confidence": 0.7,
+        "signed_contribution": 0.7,
+        "strategy_id": "momentum",
+        "symbol": "MSFT",
+        "weight": 1.0
+      },
+      {
+        "action": "SELL",
+        "confidence": 0.45,
+        "signed_contribution": -0.0,
+        "strategy_id": "mean_reversion",
+        "symbol": "MSFT",
+        "weight": 0.0
+      }
+    ],
+    "signals": [
+      {
+        "action": "BUY",
+        "ensemble_score": 0.82,
+        "symbol": "AAPL"
+      },
+      {
+        "action": "BUY",
+        "ensemble_score": 0.7,
+        "symbol": "MSFT"
+      }
+    ]
+  },
+  "failed": [],
+  "rankings": [
+    {
+      "eligible": true,
+      "metrics": {
+        "maximum_drawdown_pct": 4.2,
+        "profit_factor": 1.75,
+        "sharpe": 1.35,
+        "total_pnl": 1850.0,
+        "win_rate_pct": 58.0
+      },
+      "observations": 40,
+      "rank": 1,
+      "role": "CHALLENGER",
+      "score": 66.65,
+      "strategy_id": "momentum"
+    },
+    {
+      "eligible": false,
+      "metrics": {
+        "maximum_drawdown_pct": 2.5,
+        "profit_factor": 2.1,
+        "sharpe": 1.5,
+        "total_pnl": 420.0,
+        "win_rate_pct": 67.0
+      },
+      "observations": 6,
+      "rank": 2,
+      "role": "INACTIVE_RECOMMENDED",
+      "score": 69.15,
+      "strategy_id": "experimental_ai"
+    },
+    {
+      "eligible": false,
+      "metrics": {
+        "maximum_drawdown_pct": 5.1,
+        "profit_factor": 1.45,
+        "sharpe": 1.05,
+        "total_pnl": 980.0,
+        "win_rate_pct": 54.0
+      },
+      "observations": 35,
+      "rank": 3,
+      "role": "INACTIVE_RECOMMENDED",
+      "score": 50.75,
+      "strategy_id": "mean_reversion"
+    },
+    {
+      "eligible": false,
+      "metrics": {
+        "maximum_drawdown_pct": 8.5,
+        "profit_factor": 1.12,
+        "sharpe": 0.55,
+        "total_pnl": 320.0,
+        "win_rate_pct": 47.0
+      },
+      "observations": 28,
+      "rank": 4,
+      "role": "INACTIVE_RECOMMENDED",
+      "score": 24.95,
+      "strategy_id": "breakout"
+    }
+  ],
+  "risk_gate_passed": false,
+  "state": "AI_STRATEGY_ENSEMBLE_REVIEW_REQUIRED",
+  "verification_stage": "V215.64",
+  "verification_status": "PASS"
+}

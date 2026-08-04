@@ -1,0 +1,16 @@
+{
+  "minimum_observations": 10,
+  "minimum_score": 55.0,
+  "champion_minimum_score": 70.0,
+  "maximum_strategy_weight_pct": 60.0,
+  "minimum_strategy_weight_pct": 5.0,
+  "maximum_active_strategies": 3,
+  "drawdown_penalty_factor": 2.0,
+  "loss_penalty_factor": 1.0,
+  "risk_gate_required": true,
+  "automatic_strategy_promotion_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

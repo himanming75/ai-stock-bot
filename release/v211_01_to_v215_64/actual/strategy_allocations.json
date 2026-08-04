@@ -1,0 +1,10 @@
+{
+  "allocations": [
+    {
+      "role": "CHALLENGER",
+      "score": 66.65,
+      "strategy_id": "momentum",
+      "weight_pct": 100.0
+    }
+  ]
+}
