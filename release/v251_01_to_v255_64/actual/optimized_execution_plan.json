@@ -1,0 +1,10 @@
+{
+  "action": "BUY",
+  "confidence": 72.0,
+  "limit_price": 200.04,
+  "order_type": "LIMIT",
+  "plan_allowed": true,
+  "quantity": 1,
+  "symbol": "AAPL",
+  "time_in_force": "DAY"
+}

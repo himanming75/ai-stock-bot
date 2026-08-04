@@ -1,0 +1,9 @@
+{
+  "candidate": {
+    "symbol": "AAPL",
+    "action": "BUY",
+    "quantity": 1,
+    "confidence": 72.0,
+    "reference_price": 200.0
+  }
+}

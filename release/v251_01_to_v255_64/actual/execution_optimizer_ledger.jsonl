@@ -1,0 +1,4 @@
+{"actual_live_orders_submitted": 0, "limit_price": 200.04, "observed_at": "2026-08-04T09:39:03.281169+00:00", "order_type": "LIMIT", "state": "EXECUTION_OPTIMIZER_READY", "symbol": "AAPL"}
+{"actual_live_orders_submitted": 0, "limit_price": 200.04, "observed_at": "2026-08-04T09:39:05.994184+00:00", "order_type": "LIMIT", "state": "EXECUTION_OPTIMIZER_READY", "symbol": "AAPL"}
+{"actual_live_orders_submitted": 0, "limit_price": 200.04, "observed_at": "2026-08-04T09:40:02.159499+00:00", "order_type": "LIMIT", "state": "EXECUTION_OPTIMIZER_READY", "symbol": "AAPL"}
+{"actual_live_orders_submitted": 0, "limit_price": 200.04, "observed_at": "2026-08-04T09:40:02.402962+00:00", "order_type": "LIMIT", "state": "EXECUTION_OPTIMIZER_READY", "symbol": "AAPL"}

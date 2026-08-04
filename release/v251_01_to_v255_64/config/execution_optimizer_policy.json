@@ -1,0 +1,14 @@
+{
+  "maximum_spread_pct": 0.2,
+  "maximum_quote_age_seconds": 10,
+  "maximum_expected_slippage_pct": 0.15,
+  "minimum_fill_probability_pct": 65.0,
+  "limit_offset_bps": 2.0,
+  "retry_limit": 2,
+  "retry_delay_seconds": 5,
+  "partial_fill_timeout_seconds": 90,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

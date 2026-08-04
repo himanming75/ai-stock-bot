@@ -1,0 +1,78 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "execution_not_authorized": true,
+    "execution_plan_present": true,
+    "fill_probability_present": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "paper_orders_zero": true,
+    "paper_submission_disabled": true,
+    "quote_present": true,
+    "retry_plan_present": true,
+    "slippage_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "execution_plan": {
+    "action": "BUY",
+    "confidence": 72.0,
+    "limit_price": 200.04,
+    "order_type": "LIMIT",
+    "plan_allowed": true,
+    "quantity": 1,
+    "symbol": "AAPL",
+    "time_in_force": "DAY"
+  },
+  "failed": [],
+  "fill_probability": {
+    "fill_probability_pct": 87.3
+  },
+  "quote": {
+    "ask": 200.02,
+    "bid": 199.98,
+    "checks": {
+      "fresh": true,
+      "not_crossed": true,
+      "positive_quote": true,
+      "spread_within_limit": true
+    },
+    "crossed": false,
+    "last": 200.0,
+    "locked": false,
+    "mid": 200.0,
+    "passed": true,
+    "quote_age_seconds": 2.0,
+    "spread": 0.04,
+    "spread_pct": 0.02
+  },
+  "retry_plan": {
+    "broker_submission_step_included": false,
+    "cancel_replace_enabled": true,
+    "duplicate_prevention_required": true,
+    "partial_fill_timeout_seconds": 90,
+    "retry_delay_seconds": 5,
+    "retry_limit": 2,
+    "steps": [
+      "MONITOR_ORDER_STATE",
+      "WAIT_FOR_FILL",
+      "CHECK_PARTIAL_FILL",
+      "CANCEL_IF_TIMEOUT",
+      "REPRICE_WITHIN_LIMIT",
+      "STOP_AFTER_RETRY_LIMIT"
+    ]
+  },
+  "slippage": {
+    "expected_fill_price": 200.02,
+    "expected_slippage": 0.02,
+    "expected_slippage_pct": 0.01,
+    "reference_price": 200.0
+  },
+  "state": "EXECUTION_OPTIMIZER_READY",
+  "verification_stage": "V255.64",
+  "verification_status": "PASS"
+}

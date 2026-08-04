@@ -1,0 +1,19 @@
+{
+  "stage_range": "V251.01-V255.64",
+  "base_commit": "6e075b16f2e0b1bb56dc86d78de356ca851e106e",
+  "quote_analyzer": true,
+  "spread_check": true,
+  "slippage_estimator": true,
+  "fill_probability": true,
+  "smart_order_planner": true,
+  "adaptive_limit_price": true,
+  "retry_manager": true,
+  "partial_fill_timeout": true,
+  "duplicate_prevention_required": true,
+  "web_api": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V256.01-V260.64 Autonomous Paper Trading"
+}
