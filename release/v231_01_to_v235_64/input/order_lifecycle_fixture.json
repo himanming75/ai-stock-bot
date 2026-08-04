@@ -1,0 +1,24 @@
+{
+  "order": {
+    "strategy_id": "momentum",
+    "symbol": "AAPL",
+    "side": "BUY",
+    "quantity": 10,
+    "nonce": "001"
+  },
+  "broker_order_id": "BROKER-FIXTURE-001",
+  "fills": [
+    {
+      "quantity": 3,
+      "price": 200.0
+    },
+    {
+      "quantity": 4,
+      "price": 200.1
+    },
+    {
+      "quantity": 3,
+      "price": 200.2
+    }
+  ]
+}

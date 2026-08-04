@@ -1,0 +1,13 @@
+{
+  "average_fill_price": 0.0,
+  "broker_order_id": "BROKER-FIXTURE-001",
+  "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+  "created_at": "2026-08-04T09:12:54.035932+00:00",
+  "filled_quantity": 0.0,
+  "quantity": 10.0,
+  "remaining_quantity": 10.0,
+  "side": "BUY",
+  "state": "NEW",
+  "strategy_id": "momentum",
+  "symbol": "AAPL"
+}

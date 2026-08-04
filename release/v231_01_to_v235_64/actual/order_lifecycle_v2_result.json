@@ -1,0 +1,90 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "checks": {
+    "broker_write_disabled": true,
+    "client_order_id_present": true,
+    "duplicate_protection_present": true,
+    "filled_quantity_not_over_order": true,
+    "live_submission_disabled": true,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "recovery_present": true,
+    "state_valid": true
+  },
+  "duplicate": {
+    "duplicate": true,
+    "duplicate_key": "AAPL|BUY|10.0|momentum",
+    "existing": {
+      "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+      "registered_at": "2026-08-04T09:12:04.767299+00:00"
+    }
+  },
+  "events": [
+    {
+      "actual_live_orders_submitted": 0,
+      "average_fill_price": 0.0,
+      "broker_order_id": "BROKER-FIXTURE-001",
+      "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+      "details": {
+        "duplicate": true
+      },
+      "event_type": "ORDER_CREATED",
+      "filled_quantity": 0.0,
+      "observed_at": "2026-08-04T09:12:54.036219+00:00",
+      "remaining_quantity": 10.0,
+      "state": "NEW"
+    }
+  ],
+  "failed": [],
+  "live_submission_enabled": false,
+  "next_phase": "V236_01_TO_V240_64_POSITION_MANAGER_V2",
+  "order": {
+    "average_fill_price": 0.0,
+    "broker_order_id": "BROKER-FIXTURE-001",
+    "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+    "created_at": "2026-08-04T09:12:54.035932+00:00",
+    "filled_quantity": 0.0,
+    "quantity": 10.0,
+    "remaining_quantity": 10.0,
+    "side": "BUY",
+    "state": "NEW",
+    "strategy_id": "momentum",
+    "symbol": "AAPL"
+  },
+  "paper_submission_enabled": false,
+  "recovery": {
+    "actual_live_orders_submitted": 0,
+    "automatic_submission_allowed": false,
+    "created_at": "2026-08-04T09:12:54.053888+00:00",
+    "order": {
+      "average_fill_price": 0.0,
+      "broker_order_id": "BROKER-FIXTURE-001",
+      "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+      "created_at": "2026-08-04T09:12:54.035932+00:00",
+      "filled_quantity": 0.0,
+      "quantity": 10.0,
+      "remaining_quantity": 10.0,
+      "side": "BUY",
+      "state": "NEW",
+      "strategy_id": "momentum",
+      "symbol": "AAPL"
+    },
+    "order_present": true,
+    "recoverable": true,
+    "steps": [
+      "ENABLE_EMERGENCY_STOP",
+      "READ_LOCAL_ORDER_STATE",
+      "READ_BROKER_ORDER_STATE",
+      "MATCH_CLIENT_AND_BROKER_ORDER_IDS",
+      "REPLAY_MISSING_FILL_EVENTS",
+      "RECONCILE_FILLED_QUANTITY",
+      "BLOCK_DUPLICATE_SUBMISSION",
+      "RESUME_MONITORING_ONLY"
+    ]
+  },
+  "stage": "V235.64",
+  "state": "ORDER_LIFECYCLE_V2_READY",
+  "status": "PASS"
+}

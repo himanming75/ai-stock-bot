@@ -1,0 +1,12 @@
+{
+  "mode": "ORDER_LIFECYCLE_DRY_RUN",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "duplicate_window_seconds": 300,
+  "maximum_fill_events": 100,
+  "allow_replace": true,
+  "allow_cancel": true,
+  "recovery_enabled": true,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

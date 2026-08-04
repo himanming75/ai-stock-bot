@@ -1,0 +1,30 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_submission_allowed": false,
+  "created_at": "2026-08-04T09:12:54.053888+00:00",
+  "order": {
+    "average_fill_price": 0.0,
+    "broker_order_id": "BROKER-FIXTURE-001",
+    "client_order_id": "AISB-7d61fcc4a63745f47c2f",
+    "created_at": "2026-08-04T09:12:54.035932+00:00",
+    "filled_quantity": 0.0,
+    "quantity": 10.0,
+    "remaining_quantity": 10.0,
+    "side": "BUY",
+    "state": "NEW",
+    "strategy_id": "momentum",
+    "symbol": "AAPL"
+  },
+  "order_present": true,
+  "recoverable": true,
+  "steps": [
+    "ENABLE_EMERGENCY_STOP",
+    "READ_LOCAL_ORDER_STATE",
+    "READ_BROKER_ORDER_STATE",
+    "MATCH_CLIENT_AND_BROKER_ORDER_IDS",
+    "REPLAY_MISSING_FILL_EVENTS",
+    "RECONCILE_FILLED_QUANTITY",
+    "BLOCK_DUPLICATE_SUBMISSION",
+    "RESUME_MONITORING_ONLY"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "stage_range": "V231.01-V235.64",
+  "base_commit": "8771fc7a13152bb38088dc5aa80b2e7014811e68",
+  "state_machine": true,
+  "partial_fill_engine": true,
+  "weighted_average_fill_price": true,
+  "client_order_id": true,
+  "broker_order_mapping": true,
+  "duplicate_protection_v2": true,
+  "restart_recovery": true,
+  "audit_ledger_v2": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V236.01-V240.64 Position Manager V2"
+}
