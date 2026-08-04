@@ -1,0 +1,48 @@
+{
+  "signals": [
+    {
+      "strategy_id": "scalp_momentum_aapl",
+      "symbol": "AAPL",
+      "timeframe": "1m",
+      "action": "BUY",
+      "confidence": 82,
+      "trend_alignment": 78,
+      "volume_confirmation": 86,
+      "volatility_penalty": 10,
+      "spread_penalty": 5
+    },
+    {
+      "strategy_id": "day_breakout_msft",
+      "symbol": "MSFT",
+      "timeframe": "15m",
+      "action": "BUY",
+      "confidence": 76,
+      "trend_alignment": 81,
+      "volume_confirmation": 74,
+      "volatility_penalty": 8,
+      "spread_penalty": 4
+    },
+    {
+      "strategy_id": "swing_trend_nvda",
+      "symbol": "NVDA",
+      "timeframe": "1d",
+      "action": "BUY",
+      "confidence": 72,
+      "trend_alignment": 88,
+      "volume_confirmation": 70,
+      "volatility_penalty": 12,
+      "spread_penalty": 3
+    },
+    {
+      "strategy_id": "day_mean_reversion_aapl",
+      "symbol": "AAPL",
+      "timeframe": "5m",
+      "action": "SELL",
+      "confidence": 68,
+      "trend_alignment": 55,
+      "volume_confirmation": 60,
+      "volatility_penalty": 8,
+      "spread_penalty": 5
+    }
+  ]
+}

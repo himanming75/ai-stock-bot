@@ -1,0 +1,187 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "allocation": {
+    "rows": [
+      {
+        "capital_weight_pct": 25.0,
+        "maximum_holding_minutes": 30,
+        "profile": "SCALP",
+        "risk_per_trade_pct": 0.25,
+        "strategy_id": "scalp_momentum_aapl",
+        "symbol": "AAPL"
+      },
+      {
+        "capital_weight_pct": 45.0,
+        "maximum_holding_minutes": 390,
+        "profile": "DAY",
+        "risk_per_trade_pct": 0.5,
+        "strategy_id": "day_breakout_msft",
+        "symbol": "MSFT"
+      },
+      {
+        "capital_weight_pct": 30.0,
+        "maximum_holding_minutes": 10080,
+        "profile": "SWING",
+        "risk_per_trade_pct": 0.75,
+        "strategy_id": "swing_trend_nvda",
+        "symbol": "NVDA"
+      }
+    ],
+    "total_projected_risk_pct": 1.5,
+    "within_total_risk_limit": true
+  },
+  "broker_write_enabled": false,
+  "candidates": [
+    {
+      "action": "BUY",
+      "ensemble_score": 32.58,
+      "support": [
+        {
+          "action": "BUY",
+          "profile": "DAY",
+          "strategy_id": "day_breakout_msft",
+          "timeframe": "15m",
+          "weighted_vote": 32.58
+        }
+      ],
+      "symbol": "MSFT"
+    },
+    {
+      "action": "BUY",
+      "ensemble_score": 20.955,
+      "support": [
+        {
+          "action": "BUY",
+          "profile": "SWING",
+          "strategy_id": "swing_trend_nvda",
+          "timeframe": "1d",
+          "weighted_vote": 20.955
+        }
+      ],
+      "symbol": "NVDA"
+    },
+    {
+      "action": "BUY",
+      "ensemble_score": 18.7625,
+      "support": [
+        {
+          "action": "BUY",
+          "profile": "SCALP",
+          "strategy_id": "scalp_momentum_aapl",
+          "timeframe": "1m",
+          "weighted_vote": 18.7625
+        }
+      ],
+      "symbol": "AAPL"
+    }
+  ],
+  "checks": {
+    "allocation_within_risk": true,
+    "broker_write_disabled": true,
+    "candidate_present": true,
+    "live_submission_disabled": true,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "profiles_present": true,
+    "signals_present": true
+  },
+  "failed": [],
+  "final_candidate": {
+    "action": "BUY",
+    "ensemble_score": 32.58,
+    "execution_authorized": false,
+    "submission_authorized": false,
+    "support": [
+      {
+        "action": "BUY",
+        "profile": "DAY",
+        "strategy_id": "day_breakout_msft",
+        "timeframe": "15m",
+        "weighted_vote": 32.58
+      }
+    ],
+    "symbol": "MSFT"
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V281_01_TO_V290_64_MULTI_ACCOUNT_ENGINE",
+  "observed_at": "2026-08-04T16:41:22.004292+00:00",
+  "paper_submission_enabled": false,
+  "stage": "V280.64",
+  "state": "MULTI_TIMEFRAME_STRATEGY_ENSEMBLE_READY",
+  "status": "PASS",
+  "strategy_rows": [
+    {
+      "action": "BUY",
+      "capital_weight_pct": 25.0,
+      "confidence": 82,
+      "eligible": true,
+      "maximum_holding_minutes": 30,
+      "profile": "SCALP",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.25,
+      "spread_penalty": 5,
+      "strategy_id": "scalp_momentum_aapl",
+      "strategy_score": 75.05,
+      "symbol": "AAPL",
+      "timeframe": "1m",
+      "trend_alignment": 78,
+      "volatility_penalty": 10,
+      "volume_confirmation": 86
+    },
+    {
+      "action": "SELL",
+      "capital_weight_pct": 25.0,
+      "confidence": 68,
+      "eligible": false,
+      "maximum_holding_minutes": 30,
+      "profile": "SCALP",
+      "rejection_reason": "LOWER_SCORE_SAME_SYMBOL_CONFLICT",
+      "risk_per_trade_pct": 0.25,
+      "spread_penalty": 5,
+      "strategy_id": "day_mean_reversion_aapl",
+      "strategy_score": 58.35,
+      "symbol": "AAPL",
+      "timeframe": "5m",
+      "trend_alignment": 55,
+      "volatility_penalty": 8,
+      "volume_confirmation": 60
+    },
+    {
+      "action": "BUY",
+      "capital_weight_pct": 45.0,
+      "confidence": 76,
+      "eligible": true,
+      "maximum_holding_minutes": 390,
+      "profile": "DAY",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.5,
+      "spread_penalty": 4,
+      "strategy_id": "day_breakout_msft",
+      "strategy_score": 72.4,
+      "symbol": "MSFT",
+      "timeframe": "15m",
+      "trend_alignment": 81,
+      "volatility_penalty": 8,
+      "volume_confirmation": 74
+    },
+    {
+      "action": "BUY",
+      "capital_weight_pct": 30.0,
+      "confidence": 72,
+      "eligible": true,
+      "maximum_holding_minutes": 10080,
+      "profile": "SWING",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.75,
+      "spread_penalty": 3,
+      "strategy_id": "swing_trend_nvda",
+      "strategy_score": 69.85,
+      "symbol": "NVDA",
+      "timeframe": "1d",
+      "trend_alignment": 88,
+      "volatility_penalty": 12,
+      "volume_confirmation": 70
+    }
+  ]
+}

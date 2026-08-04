@@ -1,0 +1,20 @@
+{
+  "stage_range": "V271.01-V280.64",
+  "base_commit": "8b6faac9a697cef9afa20ba10614e51315517784",
+  "scalp_profile": true,
+  "day_profile": true,
+  "swing_profile": true,
+  "profile_confidence_gates": true,
+  "profile_holding_limits": true,
+  "profile_risk_limits": true,
+  "capital_allocation": true,
+  "same_symbol_conflict_resolution": true,
+  "ensemble_voting": true,
+  "final_candidate": true,
+  "web_api": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V281.01-V290.64 Multi-Account Engine"
+}

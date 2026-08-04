@@ -1,0 +1,16 @@
+{
+  "action": "BUY",
+  "ensemble_score": 32.58,
+  "execution_authorized": false,
+  "submission_authorized": false,
+  "support": [
+    {
+      "action": "BUY",
+      "profile": "DAY",
+      "strategy_id": "day_breakout_msft",
+      "timeframe": "15m",
+      "weighted_vote": 32.58
+    }
+  ],
+  "symbol": "MSFT"
+}
