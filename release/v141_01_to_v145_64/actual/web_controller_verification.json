@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "emergency_stop_default_on": true,
+    "emergency_stop_present": true,
+    "live_network_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "local_bind_only": true,
+    "static_index": true,
+    "v140_present": true
+  },
+  "controller_url": "http://127.0.0.1:8765",
+  "emergency_stop": {
+    "enabled": true,
+    "reason": "DEFAULT_SAFE_START",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "failed": [],
+  "release": {
+    "development_complete": true,
+    "live_trading_ready": false,
+    "paper_trading_ready": true,
+    "state": "V140_FINAL_AUTONOMOUS_RELEASE_COMPLETE"
+  },
+  "safety": {
+    "actual_live_orders_submitted": 0,
+    "live_network_enabled": false,
+    "live_submission_enabled": false,
+    "local_bind_only": true
+  },
+  "verification_stage": "V145.64",
+  "verification_status": "PASS"
+}

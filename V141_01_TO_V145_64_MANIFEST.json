@@ -1,0 +1,21 @@
+{
+  "stage_range": "V141.01-V145.64",
+  "base_commit": "9a890f0f2696909de388f59363893471b0372e07",
+  "local_web_controller": true,
+  "default_url": "http://127.0.0.1:8765",
+  "external_binding_enabled": false,
+  "dashboard": true,
+  "paper_account_view": true,
+  "position_order_view": true,
+  "risk_view": true,
+  "orchestrator_view": true,
+  "ledger_view": true,
+  "emergency_stop": true,
+  "emergency_stop_default_on": true,
+  "offline_action_controls": true,
+  "live_action_controls": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V146.01-V150.64 Strategy Manager and Web Controls",
+  "fixed_version": "FIXED_V2",
+  "verification_import_path_fixed": true
+}
