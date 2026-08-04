@@ -1,0 +1,20 @@
+{
+  "stage_range": "V261.01-V265.64",
+  "base_commit": "e6fe19c29e92b440b9f26d21afd388fe7a2955a3",
+  "market_closed_wait": true,
+  "repeated_cycle_runner": true,
+  "single_instance_lock": true,
+  "stop_file": true,
+  "error_backoff": true,
+  "market_close_stop": true,
+  "session_checkpoint": true,
+  "cycle_ledger": true,
+  "web_api": true,
+  "default_session_runner_enabled": false,
+  "default_real_paper_network_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V266.01-V270.64 Windows Autostart and Recovery"
+}

@@ -1,0 +1,16 @@
+{
+  "actual_live_orders_submitted": 0,
+  "blocking_reasons": [
+    "SESSION_RUNNER_DISABLED",
+    "NETWORK_NOT_AUTHORIZED_FOR_SESSION"
+  ],
+  "cycle_count": 0,
+  "next_phase": "V266_01_TO_V270_64_WINDOWS_AUTOSTART_AND_RECOVERY",
+  "paper_orders_submitted": 0,
+  "session_id": "20260804T095721Z",
+  "stage": "V265.64",
+  "state": "AUTONOMOUS_PAPER_SESSION_READY_BLOCKED",
+  "status": "PASS",
+  "stop_reason": "BLOCKED_BEFORE_START",
+  "updated_at": "2026-08-04T09:57:21.300369+00:00"
+}

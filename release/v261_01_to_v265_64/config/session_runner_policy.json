@@ -1,0 +1,16 @@
+{
+  "session_runner_enabled": false,
+  "allow_real_paper_network": false,
+  "cycle_interval_seconds": 30,
+  "market_closed_poll_seconds": 60,
+  "maximum_cycles_per_session": 1000,
+  "maximum_runtime_minutes": 480,
+  "maximum_consecutive_errors": 5,
+  "error_backoff_seconds": 30,
+  "stop_after_market_close": true,
+  "single_instance_required": true,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

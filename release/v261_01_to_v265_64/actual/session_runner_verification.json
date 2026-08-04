@@ -1,0 +1,24 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "blocking_reasons": [
+    "SESSION_RUNNER_DISABLED",
+    "NETWORK_NOT_AUTHORIZED_FOR_SESSION"
+  ],
+  "checks": {
+    "allowed_state": true,
+    "checkpoint_present": true,
+    "cycles_zero": true,
+    "default_runner_disabled": true,
+    "live_orders_zero": true,
+    "network_not_authorized": true,
+    "paper_orders_zero": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "state": "AUTONOMOUS_PAPER_SESSION_READY_BLOCKED",
+  "verification_stage": "V265.64",
+  "verification_status": "PASS"
+}
