@@ -1,0 +1,13 @@
+{
+  "stage": "V390.64",
+  "package": "Portfolio Sync and Recovery",
+  "requires": "V380.64 Paper Execution Lifecycle",
+  "read_only": true,
+  "paper_endpoint_only": true,
+  "automatic_recovery_execution_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

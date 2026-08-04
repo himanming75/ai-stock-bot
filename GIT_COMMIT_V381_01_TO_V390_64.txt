@@ -1,0 +1,3 @@
+git add portfolio_sync_recovery tools/run_v381_01_to_v390_64.py tools/test_v381_01_to_v390_64.py tools/verify_v381_01_to_v390_64.py release/v381_01_to_v390_64 RUN_V381_01_TO_V390_64_SAFE_DRY_RUN.ps1 RUN_V381_01_TO_V390_64_READ_PAPER_PORTFOLIO.ps1 RUN_V381_01_TO_V390_64_TEST_AND_VERIFY.ps1 V381_01_TO_V390_64_MANIFEST.json GIT_COMMIT_V381_01_TO_V390_64.txt
+git commit -m "V381.01-V390.64 add Portfolio sync and recovery"
+git push origin main

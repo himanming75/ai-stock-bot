@@ -1,0 +1,15 @@
+{
+  "stage": "V390.64",
+  "mode": "READ_ONLY_PORTFOLIO_SYNC",
+  "paper_endpoint_only": true,
+  "network_default_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "automatic_recovery_execution_enabled": false,
+  "account_drift_tolerance": "1.00",
+  "position_qty_tolerance": "0.000001",
+  "maximum_account_drift_events": 4,
+  "maximum_position_drift_events": 10,
+  "maximum_open_orders": 5
+}
