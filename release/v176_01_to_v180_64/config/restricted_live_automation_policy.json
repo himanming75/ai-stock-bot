@@ -1,0 +1,27 @@
+{
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "allowed_strategies": [
+    "momentum"
+  ],
+  "trading_start": "09:35",
+  "new_order_cutoff": "15:30",
+  "maximum_quantity": 1,
+  "maximum_order_notional": 100.0,
+  "maximum_daily_orders": 1,
+  "maximum_daily_loss": 20.0,
+  "maximum_open_positions": 1,
+  "maximum_gross_exposure": 100.0,
+  "qualification_required": true,
+  "micro_live_dry_run_required": true,
+  "approval_token_required": true,
+  "kill_switch_required_clear": true,
+  "automatic_submission_enabled": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "stage_range": "V176.01-V180.64",
+  "base_commit": "b35ae7db0877b6a623ac118e2a45aed94537fbbf",
+  "restricted_automation_gate": true,
+  "allowlisted_symbols": true,
+  "allowlisted_strategies": true,
+  "time_window_gate": true,
+  "one_share_limit": true,
+  "maximum_notional": 100.0,
+  "maximum_daily_orders": 1,
+  "dry_run_automation_plan": true,
+  "broker_write_step_included": false,
+  "execution_authorized": false,
+  "automatic_submission_enabled": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V181.01-V185.64 Portfolio and Broker Adapter Foundation"
+}

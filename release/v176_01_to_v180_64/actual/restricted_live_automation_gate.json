@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "automatic_submission_disabled": true,
+    "candidate_present": false,
+    "live_network_disabled": true,
+    "live_submission_disabled": true,
+    "live_write_disabled": true,
+    "micro_execution_not_authorized": true,
+    "micro_live_dry_run_ready": false,
+    "notional_within_limit": false,
+    "qualification_passed": false,
+    "quantity_exactly_one": false,
+    "strategy_allowed": false,
+    "symbol_allowed": false,
+    "trading_time_allowed": false
+  },
+  "evaluated_time": "00:41",
+  "failed": [
+    "qualification_passed",
+    "micro_live_dry_run_ready",
+    "candidate_present",
+    "symbol_allowed",
+    "strategy_allowed",
+    "trading_time_allowed",
+    "quantity_exactly_one",
+    "notional_within_limit"
+  ],
+  "passed": false
+}

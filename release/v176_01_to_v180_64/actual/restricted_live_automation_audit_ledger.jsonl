@@ -1,0 +1,4 @@
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "gate_passed": false, "observed_at": "2026-08-04T07:40:39.524615+00:00", "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "gate_passed": false, "observed_at": "2026-08-04T07:40:42.751863+00:00", "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "gate_passed": false, "observed_at": "2026-08-04T07:41:20.979269+00:00", "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "execution_authorized": false, "gate_passed": false, "observed_at": "2026-08-04T07:41:21.468073+00:00", "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED"}

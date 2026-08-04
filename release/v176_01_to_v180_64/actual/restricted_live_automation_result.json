@@ -1,0 +1,97 @@
+{
+  "actual_live_network_attempted": false,
+  "actual_live_orders_submitted": 0,
+  "actual_live_write_attempted": false,
+  "automatic_submission_enabled": false,
+  "automation_plan": {
+    "actual_live_orders_submitted": 0,
+    "broker_submission_step_included": false,
+    "candidate": {},
+    "created_at": "2026-08-04T07:41:21.468048+00:00",
+    "execution_authorized": false,
+    "gate_passed": false,
+    "mode": "RESTRICTED_LIVE_DRY_RUN_ONLY",
+    "workflow": [
+      "READ_LIVE_ACCOUNT",
+      "READ_LIVE_POSITIONS",
+      "READ_OPEN_ORDERS",
+      "RECONCILE_DUPLICATES",
+      "RECHECK_QUALIFICATION",
+      "RECHECK_KILL_SWITCH",
+      "RECHECK_APPROVAL_TOKEN",
+      "SIMULATE_SINGLE_ORDER",
+      "WRITE_DRY_RUN_RECEIPT",
+      "STOP_BEFORE_BROKER_WRITE"
+    ]
+  },
+  "candidate": {},
+  "execution_authorized": false,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "live_write_enabled": false,
+  "micro_live_state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED",
+  "next_phase": "V181_01_TO_V185_64_PORTFOLIO_AND_BROKER_ADAPTER_FOUNDATION",
+  "observed_at": "2026-08-04T07:41:21.468073+00:00",
+  "policy": {
+    "allowed_strategies": [
+      "momentum"
+    ],
+    "allowed_symbols": [
+      "AAPL",
+      "MSFT",
+      "SPY"
+    ],
+    "approval_token_required": true,
+    "automatic_submission_enabled": false,
+    "kill_switch_required_clear": true,
+    "live_network_enabled": false,
+    "live_submission_enabled": false,
+    "live_write_enabled": false,
+    "maximum_daily_loss": 20.0,
+    "maximum_daily_orders": 1,
+    "maximum_gross_exposure": 100.0,
+    "maximum_open_positions": 1,
+    "maximum_order_notional": 100.0,
+    "maximum_quantity": 1,
+    "micro_live_dry_run_required": true,
+    "new_order_cutoff": "15:30",
+    "qualification_required": true,
+    "trading_start": "09:35",
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "qualification_state": "PAPER_QUALIFICATION_IN_PROGRESS",
+  "restricted_automation_ready": false,
+  "restricted_gate": {
+    "checks": {
+      "automatic_submission_disabled": true,
+      "candidate_present": false,
+      "live_network_disabled": true,
+      "live_submission_disabled": true,
+      "live_write_disabled": true,
+      "micro_execution_not_authorized": true,
+      "micro_live_dry_run_ready": false,
+      "notional_within_limit": false,
+      "qualification_passed": false,
+      "quantity_exactly_one": false,
+      "strategy_allowed": false,
+      "symbol_allowed": false,
+      "trading_time_allowed": false
+    },
+    "evaluated_time": "00:41",
+    "failed": [
+      "qualification_passed",
+      "micro_live_dry_run_ready",
+      "candidate_present",
+      "symbol_allowed",
+      "strategy_allowed",
+      "trading_time_allowed",
+      "quantity_exactly_one",
+      "notional_within_limit"
+    ],
+    "passed": false
+  },
+  "review_id": "7a3cc05d255979d5c2b6e0b8",
+  "stage": "V180.64",
+  "state": "RESTRICTED_LIVE_AUTOMATION_HARD_BLOCKED",
+  "status": "PASS"
+}
