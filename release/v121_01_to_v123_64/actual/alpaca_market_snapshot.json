@@ -1,0 +1,29 @@
+{
+  "AAPL": {
+    "latestQuote": {
+      "ap": 200.1,
+      "bp": 199.9
+    },
+    "latestTrade": {
+      "p": 200.0
+    }
+  },
+  "MSFT": {
+    "latestQuote": {
+      "ap": 400.1,
+      "bp": 399.9
+    },
+    "latestTrade": {
+      "p": 400.0
+    }
+  },
+  "SPY": {
+    "latestQuote": {
+      "ap": 500.1,
+      "bp": 499.9
+    },
+    "latestTrade": {
+      "p": 500.0
+    }
+  }
+}

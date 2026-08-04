@@ -1,0 +1,2 @@
+{"account_equity": 100000.0, "critical_error_count": 0, "daily_loss_limit_breached": false, "market_open": false, "mode": "OFFLINE_MOCK", "observed_at": "2026-08-04T05:54:01.784980+00:00", "order_count": 0, "paper_order_submitted": false, "position_count": 0, "reconciliation_passed": true}
+{"account_equity": 100000.0, "critical_error_count": 0, "daily_loss_limit_breached": false, "market_open": false, "mode": "OFFLINE_MOCK", "observed_at": "2026-08-04T05:55:02.737737+00:00", "order_count": 0, "paper_order_submitted": false, "position_count": 0, "reconciliation_passed": true}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "critical_errors_zero": true,
+    "daily_loss_breaches_zero": true,
+    "minimum_sessions": false,
+    "reconciliation_failures_zero": true
+  },
+  "completed_sessions": 0,
+  "critical_error_count": 0,
+  "daily_loss_breach_count": 0,
+  "failed": [
+    "minimum_sessions"
+  ],
+  "live_transition_authorized": false,
+  "passed": false,
+  "reconciliation_failure_count": 0
+}

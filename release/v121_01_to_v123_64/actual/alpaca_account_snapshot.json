@@ -1,0 +1,12 @@
+{
+  "account_blocked": false,
+  "account_id_masked": "****0123",
+  "buying_power": 200000.0,
+  "cash": 100000.0,
+  "currency": "USD",
+  "equity": 100000.0,
+  "last_equity": 100000.0,
+  "pattern_day_trader": false,
+  "status": "ACTIVE",
+  "trading_blocked": false
+}

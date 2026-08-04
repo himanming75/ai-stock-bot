@@ -1,0 +1,23 @@
+{
+  "policy_version": "V121_01_TO_V123_64",
+  "paper_mode": true,
+  "real_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_base_url_prohibited": true,
+  "market_data_feed": "iex",
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "maximum_quantity": 2,
+  "minimum_qualification_sessions": 20,
+  "sample_paper_order": {
+    "symbol": "AAPL",
+    "qty": "1",
+    "side": "buy",
+    "type": "market",
+    "time_in_force": "day"
+  }
+}

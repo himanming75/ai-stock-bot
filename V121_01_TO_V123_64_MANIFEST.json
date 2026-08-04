@@ -1,0 +1,18 @@
+{
+  "stage_range": "V121.01-V123.64",
+  "base_commit": "1c0cada4c0aaeedf8dbfef2e79c91a14dd9b5480",
+  "alpaca_paper_account_read": true,
+  "alpaca_paper_positions_read": true,
+  "alpaca_paper_orders_read": true,
+  "alpaca_market_snapshots": true,
+  "paper_order_submission_capability": true,
+  "paper_order_submission_enabled_by_default": false,
+  "real_network_enabled_by_default": false,
+  "explicit_paper_confirmation_required": true,
+  "live_api_domain_prohibited": true,
+  "live_order_submission_enabled": false,
+  "qualification_gate": true,
+  "minimum_qualification_sessions": 20,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V124 Live Shadow Mode"
+}

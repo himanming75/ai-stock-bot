@@ -1,0 +1,2 @@
+{"actual_live_orders_submitted": 0, "actual_paper_orders_submitted": 0, "mode": "OFFLINE_MOCK", "observed_at": "2026-08-04T05:54:01.785196+00:00", "operation_id": "300acee5795da01b071b8a5f", "request_id": null, "state": "ALPACA_PAPER_OFFLINE_VALIDATION_READY"}
+{"actual_live_orders_submitted": 0, "actual_paper_orders_submitted": 0, "mode": "OFFLINE_MOCK", "observed_at": "2026-08-04T05:55:02.755684+00:00", "operation_id": "300acee5795da01b071b8a5f", "request_id": null, "state": "ALPACA_PAPER_OFFLINE_VALIDATION_READY"}
