@@ -1,0 +1,21 @@
+{
+  "stage_range": "V256.01-V260.64",
+  "base_commit": "be749af",
+  "alpaca_paper_endpoint": "https://paper-api.alpaca.markets",
+  "autonomous_cycle": true,
+  "paper_account_read": true,
+  "paper_clock_read": true,
+  "paper_positions_read": true,
+  "paper_open_orders_read": true,
+  "paper_order_submission": true,
+  "idempotency": true,
+  "daily_report": true,
+  "web_api": true,
+  "default_autonomous_cycle_enabled": false,
+  "default_real_paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V261.01-V270.64 Long-Term Paper Qualification"
+}

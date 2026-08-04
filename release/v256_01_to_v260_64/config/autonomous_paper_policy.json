@@ -1,0 +1,19 @@
+{
+  "mode": "AUTONOMOUS_PAPER",
+  "autonomous_cycle_enabled": false,
+  "real_paper_read_enabled": true,
+  "real_paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "maximum_orders_per_session": 1,
+  "maximum_order_quantity": 1,
+  "maximum_order_notional": 100.0,
+  "cycle_interval_seconds": 30,
+  "maximum_cycles_per_run": 1,
+  "require_market_open": true,
+  "require_confirmation_token": true,
+  "confirmation_phrase": "ENABLE_AUTONOMOUS_PAPER",
+  "paper_base_url": "https://paper-api.alpaca.markets",
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

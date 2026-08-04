@@ -1,0 +1,67 @@
+{
+  "account_snapshot": {},
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "autonomous_cycle_enabled": false,
+  "blocking_reasons": [
+    "AUTONOMOUS_CYCLE_DISABLED",
+    "CONFIRMATION_TOKEN_INVALID",
+    "MARKET_CLOSED",
+    "NETWORK_CALL_NOT_AUTHORIZED_FOR_THIS_RUN",
+    "PAPER_SUBMISSION_DISABLED",
+    "RISK_GATE_BLOCKED"
+  ],
+  "broker_write_enabled": false,
+  "candidate": {
+    "action": "BUY",
+    "confidence": 61.6937,
+    "execution_authorized": false,
+    "gate_passed": false,
+    "submission_authorized": false,
+    "support": [
+      {
+        "action": "BUY",
+        "contribution": 32.9276,
+        "strategy_id": "momentum_aapl",
+        "weight_pct": 37.4177
+      },
+      {
+        "action": "BUY",
+        "contribution": 28.7661,
+        "strategy_id": "trend_aapl",
+        "weight_pct": 35.0806
+      }
+    ],
+    "symbol": "AAPL"
+  },
+  "cycle_count": 1,
+  "duplicate": {
+    "duplicate": false,
+    "registered": true
+  },
+  "execution_plan": {
+    "action": "BUY",
+    "client_order_id": "AISB-PAPER-ccb2be810457d3a5a6a121af",
+    "confidence": 72.0,
+    "limit_price": 200.04,
+    "order_type": "LIMIT",
+    "plan_allowed": true,
+    "quantity": 1,
+    "symbol": "AAPL",
+    "time_in_force": "DAY"
+  },
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "market_open": false,
+  "next_phase": "V261_01_TO_V270_64_LONG_TERM_PAPER_QUALIFICATION",
+  "open_order_count": 0,
+  "paper_order_receipt": {},
+  "position_count": 0,
+  "real_paper_read_enabled": true,
+  "real_paper_submission_enabled": false,
+  "risk_gate_passed": false,
+  "session_id": "20260804T094507Z",
+  "stage": "V260.64",
+  "state": "AUTONOMOUS_PAPER_TRADING_READY_BLOCKED",
+  "status": "PASS"
+}

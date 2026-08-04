@@ -1,0 +1,31 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "blocking_reasons": [
+    "AUTONOMOUS_CYCLE_DISABLED",
+    "CONFIRMATION_TOKEN_INVALID",
+    "MARKET_CLOSED",
+    "NETWORK_CALL_NOT_AUTHORIZED_FOR_THIS_RUN",
+    "PAPER_SUBMISSION_DISABLED",
+    "RISK_GATE_BLOCKED"
+  ],
+  "checks": {
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "daily_report_present": true,
+    "live_network_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "network_not_authorized": true,
+    "paper_endpoint_only": true,
+    "paper_orders_zero": true,
+    "paper_submission_default_off": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "state": "AUTONOMOUS_PAPER_TRADING_READY_BLOCKED",
+  "verification_stage": "V260.64",
+  "verification_status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "blocking_reasons": [
+    "AUTONOMOUS_CYCLE_DISABLED",
+    "CONFIRMATION_TOKEN_INVALID",
+    "MARKET_CLOSED",
+    "NETWORK_CALL_NOT_AUTHORIZED_FOR_THIS_RUN",
+    "PAPER_SUBMISSION_DISABLED",
+    "RISK_GATE_BLOCKED"
+  ],
+  "cycle_count": 1,
+  "final_state": "AUTONOMOUS_PAPER_TRADING_READY_BLOCKED",
+  "generated_at": "2026-08-04T09:45:07.553684+00:00",
+  "live_orders_submitted": 0,
+  "market_open": false,
+  "paper_orders_submitted": 0,
+  "session_id": "20260804T094507Z"
+}
