@@ -1,0 +1,25 @@
+{
+  "accounts": {
+    "PAPER_SCALP": {
+      "equity": 24000,
+      "peak_equity": 25000,
+      "day_pnl": -100,
+      "position_count": 1,
+      "orders_today": 2
+    },
+    "PAPER_DAY": {
+      "equity": 44000,
+      "peak_equity": 45000,
+      "day_pnl": 250,
+      "position_count": 2,
+      "orders_today": 4
+    },
+    "PAPER_SWING": {
+      "equity": 29500,
+      "peak_equity": 30000,
+      "day_pnl": -50,
+      "position_count": 1,
+      "orders_today": 1
+    }
+  }
+}

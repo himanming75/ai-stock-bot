@@ -1,0 +1,229 @@
+{
+  "accounts": [
+    {
+      "account_enabled": true,
+      "account_id": "PAPER_SCALP",
+      "assigned_profiles": [
+        "SCALP"
+      ],
+      "broker": "ALPACA",
+      "capital_limit": 25000.0,
+      "credential_state": {
+        "api_key_present": false,
+        "credential_prefix": "ALPACA_PAPER_SCALP",
+        "ready": false,
+        "secret_key_present": false
+      },
+      "environment": "PAPER",
+      "live_submission_authorized": false,
+      "paper_submission_authorized": false,
+      "risk_state": {
+        "account_id": "PAPER_SCALP",
+        "checks": {
+          "capital_within_limit": true,
+          "daily_loss_within_limit": true,
+          "drawdown_within_limit": true,
+          "kill_switch_clear": false,
+          "orders_within_limit": true,
+          "position_count_within_limit": true
+        },
+        "failed": [
+          "kill_switch_clear"
+        ],
+        "metrics": {
+          "daily_loss_pct": 0.4167,
+          "day_pnl": -100.0,
+          "drawdown_pct": 4.0,
+          "equity": 24000.0,
+          "orders_today": 2,
+          "position_count": 1
+        },
+        "passed": false
+      },
+      "routes": [
+        {
+          "account_id": "PAPER_SCALP",
+          "action": "BUY",
+          "maximum_holding_minutes": 30,
+          "profile": "SCALP",
+          "rejection_reason": "",
+          "risk_per_trade_pct": 0.25,
+          "route_allowed": true,
+          "strategy_id": "scalp_momentum_aapl",
+          "strategy_score": 75.05,
+          "symbol": "AAPL"
+        }
+      ]
+    },
+    {
+      "account_enabled": true,
+      "account_id": "PAPER_DAY",
+      "assigned_profiles": [
+        "DAY"
+      ],
+      "broker": "ALPACA",
+      "capital_limit": 45000.0,
+      "credential_state": {
+        "api_key_present": false,
+        "credential_prefix": "ALPACA_PAPER_DAY",
+        "ready": false,
+        "secret_key_present": false
+      },
+      "environment": "PAPER",
+      "live_submission_authorized": false,
+      "paper_submission_authorized": false,
+      "risk_state": {
+        "account_id": "PAPER_DAY",
+        "checks": {
+          "capital_within_limit": true,
+          "daily_loss_within_limit": true,
+          "drawdown_within_limit": true,
+          "kill_switch_clear": false,
+          "orders_within_limit": true,
+          "position_count_within_limit": true
+        },
+        "failed": [
+          "kill_switch_clear"
+        ],
+        "metrics": {
+          "daily_loss_pct": 0,
+          "day_pnl": 250.0,
+          "drawdown_pct": 2.2222,
+          "equity": 44000.0,
+          "orders_today": 4,
+          "position_count": 2
+        },
+        "passed": false
+      },
+      "routes": [
+        {
+          "account_id": "PAPER_DAY",
+          "action": "BUY",
+          "maximum_holding_minutes": 390,
+          "profile": "DAY",
+          "rejection_reason": "",
+          "risk_per_trade_pct": 0.5,
+          "route_allowed": true,
+          "strategy_id": "day_breakout_msft",
+          "strategy_score": 72.4,
+          "symbol": "MSFT"
+        }
+      ]
+    },
+    {
+      "account_enabled": true,
+      "account_id": "PAPER_SWING",
+      "assigned_profiles": [
+        "SWING"
+      ],
+      "broker": "ALPACA",
+      "capital_limit": 30000.0,
+      "credential_state": {
+        "api_key_present": false,
+        "credential_prefix": "ALPACA_PAPER_SWING",
+        "ready": false,
+        "secret_key_present": false
+      },
+      "environment": "PAPER",
+      "live_submission_authorized": false,
+      "paper_submission_authorized": false,
+      "risk_state": {
+        "account_id": "PAPER_SWING",
+        "checks": {
+          "capital_within_limit": true,
+          "daily_loss_within_limit": true,
+          "drawdown_within_limit": true,
+          "kill_switch_clear": false,
+          "orders_within_limit": true,
+          "position_count_within_limit": true
+        },
+        "failed": [
+          "kill_switch_clear"
+        ],
+        "metrics": {
+          "daily_loss_pct": 0.1695,
+          "day_pnl": -50.0,
+          "drawdown_pct": 1.6667,
+          "equity": 29500.0,
+          "orders_today": 1,
+          "position_count": 1
+        },
+        "passed": false
+      },
+      "routes": [
+        {
+          "account_id": "PAPER_SWING",
+          "action": "BUY",
+          "maximum_holding_minutes": 10080,
+          "profile": "SWING",
+          "rejection_reason": "",
+          "risk_per_trade_pct": 0.75,
+          "route_allowed": true,
+          "strategy_id": "swing_trend_nvda",
+          "strategy_score": 69.85,
+          "symbol": "NVDA"
+        }
+      ]
+    }
+  ],
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "accounts_present": true,
+    "all_accounts_paper": true,
+    "allowed_state": true,
+    "broker_write_disabled": true,
+    "live_network_disabled": true,
+    "live_orders_zero": true,
+    "live_submission_disabled": true,
+    "paper_orders_zero": true,
+    "paper_read_disabled": true,
+    "paper_submission_disabled": true,
+    "routes_present": true,
+    "stage": true,
+    "status": true,
+    "web_api_present": true
+  },
+  "failed": [],
+  "routes": [
+    {
+      "account_id": "PAPER_SCALP",
+      "action": "BUY",
+      "maximum_holding_minutes": 30,
+      "profile": "SCALP",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.25,
+      "route_allowed": true,
+      "strategy_id": "scalp_momentum_aapl",
+      "strategy_score": 75.05,
+      "symbol": "AAPL"
+    },
+    {
+      "account_id": "PAPER_DAY",
+      "action": "BUY",
+      "maximum_holding_minutes": 390,
+      "profile": "DAY",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.5,
+      "route_allowed": true,
+      "strategy_id": "day_breakout_msft",
+      "strategy_score": 72.4,
+      "symbol": "MSFT"
+    },
+    {
+      "account_id": "PAPER_SWING",
+      "action": "BUY",
+      "maximum_holding_minutes": 10080,
+      "profile": "SWING",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.75,
+      "route_allowed": true,
+      "strategy_id": "swing_trend_nvda",
+      "strategy_score": 69.85,
+      "symbol": "NVDA"
+    }
+  ],
+  "state": "MULTI_ACCOUNT_ENGINE_READY",
+  "verification_stage": "V290.64",
+  "verification_status": "PASS"
+}

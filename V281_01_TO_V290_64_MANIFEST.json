@@ -1,0 +1,19 @@
+{
+  "stage_range": "V281.01-V290.64",
+  "base_commit": "7cf613bb517120c20da745a57821749aed7b1b4c",
+  "multiple_alpaca_paper_accounts": true,
+  "credential_prefixes": true,
+  "strategy_profile_assignment": true,
+  "account_capital_limits": true,
+  "account_risk_limits": true,
+  "account_kill_switches": true,
+  "cross_account_conflict_prevention": true,
+  "account_dashboard": true,
+  "paper_read_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V291.01-V300.64 Paper Qualification and Broker Reconciliation"
+}

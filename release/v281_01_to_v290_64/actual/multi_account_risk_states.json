@@ -1,0 +1,71 @@
+{
+  "PAPER_DAY": {
+    "account_id": "PAPER_DAY",
+    "checks": {
+      "capital_within_limit": true,
+      "daily_loss_within_limit": true,
+      "drawdown_within_limit": true,
+      "kill_switch_clear": false,
+      "orders_within_limit": true,
+      "position_count_within_limit": true
+    },
+    "failed": [
+      "kill_switch_clear"
+    ],
+    "metrics": {
+      "daily_loss_pct": 0,
+      "day_pnl": 250.0,
+      "drawdown_pct": 2.2222,
+      "equity": 44000.0,
+      "orders_today": 4,
+      "position_count": 2
+    },
+    "passed": false
+  },
+  "PAPER_SCALP": {
+    "account_id": "PAPER_SCALP",
+    "checks": {
+      "capital_within_limit": true,
+      "daily_loss_within_limit": true,
+      "drawdown_within_limit": true,
+      "kill_switch_clear": false,
+      "orders_within_limit": true,
+      "position_count_within_limit": true
+    },
+    "failed": [
+      "kill_switch_clear"
+    ],
+    "metrics": {
+      "daily_loss_pct": 0.4167,
+      "day_pnl": -100.0,
+      "drawdown_pct": 4.0,
+      "equity": 24000.0,
+      "orders_today": 2,
+      "position_count": 1
+    },
+    "passed": false
+  },
+  "PAPER_SWING": {
+    "account_id": "PAPER_SWING",
+    "checks": {
+      "capital_within_limit": true,
+      "daily_loss_within_limit": true,
+      "drawdown_within_limit": true,
+      "kill_switch_clear": false,
+      "orders_within_limit": true,
+      "position_count_within_limit": true
+    },
+    "failed": [
+      "kill_switch_clear"
+    ],
+    "metrics": {
+      "daily_loss_pct": 0.1695,
+      "day_pnl": -50.0,
+      "drawdown_pct": 1.6667,
+      "equity": 29500.0,
+      "orders_today": 1,
+      "position_count": 1
+    },
+    "passed": false
+  }
+}

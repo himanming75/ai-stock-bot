@@ -1,0 +1,34 @@
+{
+  "strategy_rows": [
+    {
+      "strategy_id": "scalp_momentum_aapl",
+      "symbol": "AAPL",
+      "profile": "SCALP",
+      "action": "BUY",
+      "strategy_score": 75.05,
+      "risk_per_trade_pct": 0.25,
+      "maximum_holding_minutes": 30,
+      "eligible": true
+    },
+    {
+      "strategy_id": "day_breakout_msft",
+      "symbol": "MSFT",
+      "profile": "DAY",
+      "action": "BUY",
+      "strategy_score": 72.4,
+      "risk_per_trade_pct": 0.5,
+      "maximum_holding_minutes": 390,
+      "eligible": true
+    },
+    {
+      "strategy_id": "swing_trend_nvda",
+      "symbol": "NVDA",
+      "profile": "SWING",
+      "action": "BUY",
+      "strategy_score": 69.85,
+      "risk_per_trade_pct": 0.75,
+      "maximum_holding_minutes": 10080,
+      "eligible": true
+    }
+  ]
+}

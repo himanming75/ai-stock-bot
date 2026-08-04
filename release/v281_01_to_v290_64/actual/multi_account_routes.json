@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "account_id": "PAPER_SCALP",
+      "action": "BUY",
+      "maximum_holding_minutes": 30,
+      "profile": "SCALP",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.25,
+      "route_allowed": true,
+      "strategy_id": "scalp_momentum_aapl",
+      "strategy_score": 75.05,
+      "symbol": "AAPL"
+    },
+    {
+      "account_id": "PAPER_DAY",
+      "action": "BUY",
+      "maximum_holding_minutes": 390,
+      "profile": "DAY",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.5,
+      "route_allowed": true,
+      "strategy_id": "day_breakout_msft",
+      "strategy_score": 72.4,
+      "symbol": "MSFT"
+    },
+    {
+      "account_id": "PAPER_SWING",
+      "action": "BUY",
+      "maximum_holding_minutes": 10080,
+      "profile": "SWING",
+      "rejection_reason": "",
+      "risk_per_trade_pct": 0.75,
+      "route_allowed": true,
+      "strategy_id": "swing_trend_nvda",
+      "strategy_score": 69.85,
+      "symbol": "NVDA"
+    }
+  ]
+}

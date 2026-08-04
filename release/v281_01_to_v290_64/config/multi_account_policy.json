@@ -1,0 +1,59 @@
+{
+  "accounts": [
+    {
+      "account_id": "PAPER_SCALP",
+      "broker": "ALPACA",
+      "environment": "PAPER",
+      "enabled": true,
+      "credential_prefix": "ALPACA_PAPER_SCALP",
+      "assigned_profiles": [
+        "SCALP"
+      ],
+      "capital_limit": 25000.0,
+      "daily_loss_limit_pct": 1.0,
+      "maximum_drawdown_pct": 5.0,
+      "maximum_positions": 3,
+      "maximum_orders_per_day": 10,
+      "kill_switch_enabled": true
+    },
+    {
+      "account_id": "PAPER_DAY",
+      "broker": "ALPACA",
+      "environment": "PAPER",
+      "enabled": true,
+      "credential_prefix": "ALPACA_PAPER_DAY",
+      "assigned_profiles": [
+        "DAY"
+      ],
+      "capital_limit": 45000.0,
+      "daily_loss_limit_pct": 1.5,
+      "maximum_drawdown_pct": 7.0,
+      "maximum_positions": 5,
+      "maximum_orders_per_day": 15,
+      "kill_switch_enabled": true
+    },
+    {
+      "account_id": "PAPER_SWING",
+      "broker": "ALPACA",
+      "environment": "PAPER",
+      "enabled": true,
+      "credential_prefix": "ALPACA_PAPER_SWING",
+      "assigned_profiles": [
+        "SWING"
+      ],
+      "capital_limit": 30000.0,
+      "daily_loss_limit_pct": 2.0,
+      "maximum_drawdown_pct": 10.0,
+      "maximum_positions": 5,
+      "maximum_orders_per_day": 5,
+      "kill_switch_enabled": true
+    }
+  ],
+  "allow_cross_account_symbol_overlap": false,
+  "paper_read_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "live_network_enabled": false,
+  "broker_write_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}
