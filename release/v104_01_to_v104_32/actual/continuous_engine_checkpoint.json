@@ -1,0 +1,83 @@
+{
+  "checkpoint_hash": "87b2cc1937018793349a2db3e68872f28ea83f7bbde0e866876266401ee19f3b",
+  "engine_id": "4742a1be27ba43994146601e",
+  "generation": 2,
+  "phases": [
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "LOAD_SCHEDULER_STATE",
+      "phase_number": 1,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "SELECT_NEXT_SESSION",
+      "phase_number": 2,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "VALIDATE_AUTONOMOUS_CYCLE",
+      "phase_number": 3,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "VALIDATE_DECISION_GATE",
+      "phase_number": 4,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "VALIDATE_RISK_AND_REBALANCE",
+      "phase_number": 5,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "PREPARE_PAPER_EXECUTION_CONTEXT",
+      "phase_number": 6,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "PERSIST_ENGINE_CHECKPOINT",
+      "phase_number": 7,
+      "state": "COMPLETED"
+    },
+    {
+      "attempt_count": 1,
+      "error": null,
+      "phase_id": "FINALIZE_ENGINE_ITERATION",
+      "phase_number": 8,
+      "state": "COMPLETED"
+    }
+  ],
+  "previous_checkpoint_hash": "6b94e02d2b91ee9983533648fa5a80ea2cb18a89ac957ff585880ba67bd9b005",
+  "selected_session": {
+    "reason": "EARLIEST_PENDING_SESSION",
+    "session": {
+      "actual_orders_submitted": 0,
+      "attempt_count": 0,
+      "completed_phases": [],
+      "current_phase": "QUEUED",
+      "execution_authorized": false,
+      "paper_only": true,
+      "session_date": "2026-08-10",
+      "session_id": "bc35de090dda5aea17a6e439",
+      "session_key": "c637e22a2364bf3261df5d339c3a82ddf7f2bfa4ebe21e938ff6c8028249afe0",
+      "source_cycle_id": "11614669ffcf00bf2dce5879",
+      "state": "QUEUED"
+    },
+    "session_available": true
+  },
+  "state": "CONTINUOUS_AUTONOMOUS_ENGINE_WAITING_FOR_MANUAL_APPROVAL",
+  "updated_at": "2026-08-04T02:48:30.447774+00:00"
+}
