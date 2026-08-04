@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "live_disabled": true,
+    "live_orders_zero": true,
+    "one_order_limit": true,
+    "paper_api_present": true,
+    "paper_only": true,
+    "paper_read_enabled": true,
+    "paper_shadow_enabled": true,
+    "paper_submission_default_off": true,
+    "settings_valid": true
+  },
+  "controller_url": "http://127.0.0.1:8765",
+  "credential_detection": {
+    "paper_key_present": true,
+    "paper_secret_present": true,
+    "ready": true
+  },
+  "failed": [],
+  "safety": {
+    "actual_live_orders_submitted": 0,
+    "live_network_enabled": false,
+    "live_submission_enabled": false,
+    "paper_only": true
+  },
+  "settings": {
+    "live_submission_enabled": false,
+    "maximum_orders_per_web_cycle": 1,
+    "paper_only": true,
+    "paper_submission_enabled": false,
+    "real_paper_read_enabled": true,
+    "real_paper_shadow_enabled": true,
+    "updated_at": "2026-08-04T00:00:00+00:00"
+  },
+  "verification_stage": "V155.64",
+  "verification_status": "PASS"
+}

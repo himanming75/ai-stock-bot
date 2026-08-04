@@ -1,42 +1,7 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Stock Bot Controller</title><link rel="stylesheet" href="/style.css">
-</head><body>
-<header><div><h1>AI Stock Bot</h1><p>Paper Trading Strategy Controller</p></div><div id="statusBadge" class="badge">Loading</div></header>
-<main>
-<nav class="tabs"><button onclick="showTab('dashboard')">Dashboard</button><button onclick="showTab('strategy')">Strategies & Risk</button></nav>
-<div id="dashboardTab">
-<section class="metrics" id="metrics"></section>
-<section class="panel controls"><h2>Controls</h2><div class="buttons">
-<button onclick="runAction('run_v140')">Refresh V140</button>
-<button onclick="runAction('run_offline_shadow')">Run Offline Shadow</button>
-<button onclick="runAction('run_offline_orchestrator')">Run Offline Cycle</button>
-<button class="danger" onclick="setStop(true)">Emergency Stop ON</button>
-<button class="safe" onclick="setStop(false)">Emergency Stop OFF</button>
-</div><pre id="actionResult">No action executed.</pre></section>
-<section class="grid"><article class="panel"><h2>Paper Account</h2><div id="account"></div></article>
-<article class="panel"><h2>Risk</h2><div id="risk"></div></article>
-<article class="panel"><h2>Autonomous Cycle</h2><div id="cycle"></div></article>
-<article class="panel"><h2>Emergency Stop</h2><div id="stop"></div></article></section>
-<section class="panel"><h2>Positions</h2><div class="tableWrap"><table id="positions"></table></div></section>
-<section class="panel"><h2>Orders</h2><div class="tableWrap"><table id="orders"></table></div></section>
-<section class="panel"><h2>Recent Logs</h2><pre id="logs">Loading...</pre></section>
-</div>
-<div id="strategyTab" style="display:none">
-<section class="panel"><h2>Strategy Manager</h2>
-<div id="strategyRows"></div>
-<h3>Symbols</h3><input id="symbols" class="wideInput" placeholder="AAPL, MSFT, SPY">
-<h3>Risk Limits</h3><div class="formGrid">
-<label>Max Order $<input id="maxNotional" type="number"></label>
-<label>Max Quantity<input id="maxQty" type="number"></label>
-<label>Max Daily Orders<input id="maxDailyOrders" type="number"></label>
-<label>Max Daily Loss $<input id="maxDailyLoss" type="number"></label>
-<label>Max Positions<input id="maxPositions" type="number"></label>
-</div>
-<div class="buttons"><button onclick="validateConfig()">Validate</button><button class="safe" onclick="saveConfig()">Save</button><button onclick="restoreConfig()">Restore Backup</button></div>
-<pre id="configResult">Emergency Stop must be OFF to save or restore.</pre>
-</section>
-<section class="panel"><h2>Runtime Policy Preview</h2><pre id="runtimePolicy"></pre></section>
-</div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Stock Bot Controller</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div><h1>AI Stock Bot</h1><p>Alpaca Paper Trading Controller</p></div><div id="statusBadge" class="badge">Loading</div></header>
+<main><nav class="tabs"><button onclick="showTab('dashboard')">Dashboard</button><button onclick="showTab('strategy')">Strategies & Risk</button><button onclick="showTab('paper')">Paper Operations</button></nav>
+<div id="dashboardTab"><section class="metrics" id="metrics"></section><section class="panel controls"><h2>Controls</h2><div class="buttons"><button onclick="runAction('run_v140')">Refresh V140</button><button onclick="runAction('run_offline_shadow')">Run Offline Shadow</button><button onclick="runAction('run_offline_orchestrator')">Run Offline Cycle</button><button class="danger" onclick="setStop(true)">Emergency Stop ON</button><button class="safe" onclick="setStop(false)">Emergency Stop OFF</button></div><pre id="actionResult">No action executed.</pre></section><section class="grid"><article class="panel"><h2>Paper Account</h2><div id="account"></div></article><article class="panel"><h2>Risk</h2><div id="risk"></div></article><article class="panel"><h2>Autonomous Cycle</h2><div id="cycle"></div></article><article class="panel"><h2>Emergency Stop</h2><div id="stop"></div></article></section><section class="panel"><h2>Positions</h2><div class="tableWrap"><table id="positions"></table></div></section><section class="panel"><h2>Orders</h2><div class="tableWrap"><table id="orders"></table></div></section><section class="panel"><h2>Recent Logs</h2><pre id="logs"></pre></section></div>
+<div id="strategyTab" style="display:none"><section class="panel"><h2>Strategy Manager</h2><div id="strategyRows"></div><h3>Symbols</h3><input id="symbols" class="wideInput"><h3>Risk Limits</h3><div class="formGrid"><label>Max Order $<input id="maxNotional" type="number"></label><label>Max Quantity<input id="maxQty" type="number"></label><label>Max Daily Orders<input id="maxDailyOrders" type="number"></label><label>Max Daily Loss $<input id="maxDailyLoss" type="number"></label><label>Max Positions<input id="maxPositions" type="number"></label></div><div class="buttons"><button onclick="validateConfig()">Validate</button><button class="safe" onclick="saveConfig()">Save</button><button onclick="restoreConfig()">Restore Backup</button></div><pre id="configResult">Emergency Stop must be OFF to save or restore.</pre></section><section class="panel"><h2>Runtime Policy Preview</h2><pre id="runtimePolicy"></pre></section></div>
+<div id="paperTab" style="display:none"><section class="metrics" id="paperMetrics"></section><section class="panel"><h2>Real Alpaca Paper Controls</h2><div class="buttons"><button onclick="paperAction('refresh_real_paper')">Refresh Real Paper Account</button><button onclick="paperAction('run_real_shadow')">Run Real Paper Shadow</button></div><div class="confirmBox"><label><input id="paperSubmissionEnabled" type="checkbox"> Enable one-order Paper submission</label><button onclick="savePaperSettings()">Save Paper Settings</button><label>Type PAPER ONLY<input id="paperConfirmation"></label><button class="danger" onclick="paperAction('submit_one_paper_cycle')">Submit One Paper Cycle</button></div><pre id="paperActionResult">Paper actions have not run.</pre></section><section class="grid"><article class="panel"><h2>Credentials</h2><pre id="paperCredentials"></pre></article><article class="panel"><h2>Market & Account</h2><pre id="paperAccount"></pre></article><article class="panel"><h2>Real Shadow</h2><pre id="paperShadow"></pre></article><article class="panel"><h2>Safety</h2><pre id="paperSafety"></pre></article></section><section class="panel"><h2>Real Paper Positions</h2><div class="tableWrap"><table id="realPaperPositions"></table></div></section><section class="panel"><h2>Real Paper Orders</h2><div class="tableWrap"><table id="realPaperOrders"></table></div></section></div>
 </main><script src="/app.js"></script></body></html>

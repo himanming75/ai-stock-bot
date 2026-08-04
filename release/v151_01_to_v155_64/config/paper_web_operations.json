@@ -1,0 +1,9 @@
+{
+  "real_paper_read_enabled": true,
+  "real_paper_shadow_enabled": true,
+  "paper_submission_enabled": false,
+  "maximum_orders_per_web_cycle": 1,
+  "paper_only": true,
+  "live_submission_enabled": false,
+  "updated_at": "2026-08-04T00:00:00+00:00"
+}

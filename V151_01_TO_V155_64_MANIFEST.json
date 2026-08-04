@@ -1,0 +1,15 @@
+{
+  "stage_range": "V151.01-V155.64",
+  "base_commit": "1ec23a42202ade3e6bfe5cc6a36f5e6564f8febf",
+  "real_paper_account_refresh": true,
+  "real_paper_shadow_web_action": true,
+  "paper_submission_web_action": true,
+  "paper_submission_default_enabled": false,
+  "paper_submission_confirmation": "PAPER ONLY",
+  "maximum_orders_per_web_cycle": 1,
+  "emergency_stop_required_off_for_submission": true,
+  "live_network_enabled": false,
+  "live_submission_enabled": false,
+  "actual_live_orders_submitted": 0,
+  "next_phase": "V156.01-V160.64 Scheduler Recovery Notifications"
+}
