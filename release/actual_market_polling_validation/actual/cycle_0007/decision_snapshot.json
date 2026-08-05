@@ -1,0 +1,86 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "decision_orchestration": {
+    "blockers": [
+      "NO_SYMBOLS_SELECTED"
+    ],
+    "decisions": [
+      {
+        "blockers": [
+          "NOT_SELECTED",
+          "SCORE_BELOW_SELECTION_THRESHOLD"
+        ],
+        "composite_score": "0.5482",
+        "confidence": "0.9000",
+        "rank": null,
+        "reason_codes": [
+          "CONFIDENCE_THRESHOLD_PASS",
+          "MARKET_NEUTRAL",
+          "NEUTRAL_BIAS_ALLOWED"
+        ],
+        "risk_mode": "NEUTRAL",
+        "selected": false,
+        "strategy_route": "MEAN_REVERSION_ENSEMBLE",
+        "symbol": "IWM",
+        "target_weight": "0",
+        "trade_bias": "NEUTRAL"
+      },
+      {
+        "blockers": [
+          "NOT_SELECTED",
+          "SCORE_BELOW_SELECTION_THRESHOLD"
+        ],
+        "composite_score": "0.5450",
+        "confidence": "0.9000",
+        "rank": null,
+        "reason_codes": [
+          "CONFIDENCE_THRESHOLD_PASS",
+          "MARKET_NEUTRAL",
+          "NEUTRAL_BIAS_ALLOWED"
+        ],
+        "risk_mode": "NEUTRAL",
+        "selected": false,
+        "strategy_route": "MEAN_REVERSION_ENSEMBLE",
+        "symbol": "SPY",
+        "target_weight": "0",
+        "trade_bias": "NEUTRAL"
+      },
+      {
+        "blockers": [
+          "NOT_SELECTED",
+          "SCORE_BELOW_SELECTION_THRESHOLD"
+        ],
+        "composite_score": "0.5354",
+        "confidence": "0.9000",
+        "rank": null,
+        "reason_codes": [
+          "CONFIDENCE_THRESHOLD_PASS",
+          "MARKET_NEUTRAL",
+          "NEUTRAL_BIAS_ALLOWED"
+        ],
+        "risk_mode": "NEUTRAL",
+        "selected": false,
+        "strategy_route": "MEAN_REVERSION_ENSEMBLE",
+        "symbol": "QQQ",
+        "target_weight": "0",
+        "trade_bias": "NEUTRAL"
+      }
+    ],
+    "market_regime": "LOW_VOLATILITY_RANGE",
+    "portfolio_weight": "0",
+    "risk_mode": "NEUTRAL",
+    "selected_symbols": [],
+    "status": "BLOCKED",
+    "warnings": []
+  },
+  "generated_at": "2026-08-05T17:31:08.391239+00:00",
+  "next_fixed_development": "AI_DECISION_TO_STRATEGY_RISK_PORTFOLIO_BRIDGE",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "stage": "AI_SYMBOL_SELECTION_AND_DECISION_ORCHESTRATION_MEGA_BUNDLE",
+  "status": "BLOCKED"
+}

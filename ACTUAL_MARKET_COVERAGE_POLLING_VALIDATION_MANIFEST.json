@@ -1,0 +1,21 @@
+{
+  "stage": "ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION_MEGA_BUNDLE",
+  "features": [
+    "Per-symbol 1-minute bar requests",
+    "Three-symbol coverage validation",
+    "Repeated read-only polling",
+    "Market Intelligence per cycle",
+    "AI Decision per cycle",
+    "Strategy Risk Portfolio Bridge per cycle",
+    "JSONL polling ledger",
+    "Market close auto-stop",
+    "Read-only broker state collection"
+  ],
+  "http_methods": [
+    "GET"
+  ],
+  "broker_write_allowed": false,
+  "order_submission_allowed": false,
+  "paper_orders_during_install": 0,
+  "live_orders_during_install": 0
+}

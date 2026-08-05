@@ -1,0 +1,23 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "bridge": {
+    "approved_symbols": [],
+    "blockers": [
+      "NO_SELECTED_AI_DECISIONS",
+      "NO_SYMBOLS_SELECTED"
+    ],
+    "decisions": [],
+    "status": "BLOCKED",
+    "total_approved_notional": "0"
+  },
+  "generated_at": "2026-08-05T17:29:02.619326+00:00",
+  "next_fixed_development": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "stage": "AI_DECISION_TO_STRATEGY_RISK_PORTFOLIO_BRIDGE_MEGA_BUNDLE",
+  "status": "BLOCKED"
+}

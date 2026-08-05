@@ -1,0 +1,10 @@
+git add actual_market_polling
+git add tools/run_actual_market_coverage_polling_validation.py
+git add tools/test_actual_market_coverage_polling_validation.py
+git add RUN_ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION.ps1
+git add RUN_ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION_TEST.ps1
+git add ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION_MANIFEST.json
+git add GIT_COMMIT_ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION.txt
+git add release/actual_market_polling_validation
+git commit -m "Add actual market coverage polling validation"
+git push origin main
