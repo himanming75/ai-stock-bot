@@ -1,0 +1,66 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "bridge": {
+    "approved_symbols": [
+      "QQQ",
+      "SPY"
+    ],
+    "blockers": [],
+    "decisions": [
+      {
+        "approved": true,
+        "approved_notional": "3800.00",
+        "blockers": [],
+        "ensemble_action": "TRADE",
+        "ensemble_confidence": "0.6220",
+        "explanation": [
+          "MARKET_REGIME:RANGING",
+          "MAX_SINGLE_WEIGHT:0.45",
+          "CONFIDENCE:0.6220",
+          "AI_ROUTE:OPTIONS_CONFIRMATION_ENSEMBLE",
+          "AI_TARGET_WEIGHT:0.3458",
+          "BRIDGE_APPROVED:True"
+        ],
+        "rebalance_required": true,
+        "risk_multiplier": "0.7600",
+        "strategy_route": "OPTIONS_CONFIRMATION_ENSEMBLE",
+        "symbol": "QQQ",
+        "target_notional": "20000.00",
+        "target_weight": "0.2000"
+      },
+      {
+        "approved": true,
+        "approved_notional": "3800.00",
+        "blockers": [],
+        "ensemble_action": "TRADE",
+        "ensemble_confidence": "0.6121",
+        "explanation": [
+          "MARKET_REGIME:RANGING",
+          "MAX_SINGLE_WEIGHT:0.45",
+          "CONFIDENCE:0.6121",
+          "AI_ROUTE:OPTIONS_CONFIRMATION_ENSEMBLE",
+          "AI_TARGET_WEIGHT:0.3292",
+          "BRIDGE_APPROVED:True"
+        ],
+        "rebalance_required": true,
+        "risk_multiplier": "0.7600",
+        "strategy_route": "OPTIONS_CONFIRMATION_ENSEMBLE",
+        "symbol": "SPY",
+        "target_notional": "20000.00",
+        "target_weight": "0.2000"
+      }
+    ],
+    "status": "PASS",
+    "total_approved_notional": "7600.00"
+  },
+  "generated_at": "2026-08-05T17:13:51.737227+00:00",
+  "next_fixed_development": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "stage": "AI_DECISION_TO_STRATEGY_RISK_PORTFOLIO_BRIDGE_MEGA_BUNDLE",
+  "status": "PASS"
+}

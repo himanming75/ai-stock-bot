@@ -1,0 +1,11 @@
+git add ai_decision_bridge
+git add tools/run_ai_decision_strategy_risk_portfolio_bridge.py
+git add tools/test_ai_decision_strategy_risk_portfolio_bridge.py
+git add tools/verify_ai_decision_strategy_risk_portfolio_bridge.py
+git add release/ai_decision_strategy_risk_portfolio_bridge
+git add AI_DECISION_STRATEGY_RISK_PORTFOLIO_BRIDGE_MANIFEST.json
+git add RUN_AI_DECISION_STRATEGY_RISK_PORTFOLIO_BRIDGE.ps1
+git add RUN_AI_DECISION_STRATEGY_RISK_PORTFOLIO_BRIDGE_TEST_AND_VERIFY.ps1
+git add GIT_COMMIT_AI_DECISION_STRATEGY_RISK_PORTFOLIO_BRIDGE.txt
+git commit -m "Add AI decision strategy risk portfolio bridge"
+git push origin main

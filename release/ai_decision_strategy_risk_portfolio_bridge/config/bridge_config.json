@@ -1,0 +1,12 @@
+{
+  "portfolio_value": "100000",
+  "maximum_base_notional": "5000",
+  "current_portfolio_exposure": "0.20",
+  "current_sector_exposure": "0.10",
+  "correlated_exposure_after": "0.25",
+  "drawdown_ratio": "0.05",
+  "consecutive_losses": 0,
+  "daily_loss_limit_reached": false,
+  "strategy_risk_budget": "0.80",
+  "default_volatility": "0.22"
+}
