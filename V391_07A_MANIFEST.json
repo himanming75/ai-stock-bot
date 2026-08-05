@@ -1,0 +1,13 @@
+{
+  "stage": "V391.07A",
+  "package": "Kill Switch",
+  "requires": "V391.01A Risk Policy Loader",
+  "kill_switch_required": true,
+  "manual_resume_required": true,
+  "automatic_resume_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}
