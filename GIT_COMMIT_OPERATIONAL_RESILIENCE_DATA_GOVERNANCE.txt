@@ -1,0 +1,3 @@
+git add operational_resilience tools/run_operational_resilience.py tools/test_operational_resilience.py tools/verify_operational_resilience.py release/operational_resilience_data_governance RUN_OPERATIONAL_RESILIENCE.ps1 RUN_OPERATIONAL_RESILIENCE_TEST_AND_VERIFY.ps1 OPERATIONAL_RESILIENCE_DATA_GOVERNANCE_MANIFEST.json GIT_COMMIT_OPERATIONAL_RESILIENCE_DATA_GOVERNANCE.txt
+git commit -m "Add operational resilience and data governance framework"
+git push origin main

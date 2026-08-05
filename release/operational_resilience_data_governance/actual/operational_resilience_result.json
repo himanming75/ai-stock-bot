@@ -1,0 +1,272 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_configuration_applied": false,
+  "actual_external_network_used": false,
+  "actual_fault_injected_into_live_runtime": false,
+  "actual_files_archived": false,
+  "actual_files_deleted": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_recovery_performed": false,
+  "actual_release_applied": false,
+  "actual_replay_started": false,
+  "actual_restore_performed": false,
+  "actual_state_migration_performed": false,
+  "automatic_recovery_enabled": false,
+  "backup_restore_drill": "READY_PREVIEW_ONLY",
+  "checks": {
+    "all_ledgers_present": true,
+    "all_ledgers_valid": true,
+    "configuration_not_applied": true,
+    "configuration_valid": true,
+    "faults_not_live": true,
+    "feature_framework_pass": true,
+    "migration_not_performed": true,
+    "migration_preview_ready": true,
+    "monitoring_framework_pass": true,
+    "release_not_applied": true,
+    "replay_manifest_created": true,
+    "retention_preview_created": true,
+    "runbook_created": true,
+    "shadow_framework_pass": true,
+    "six_faults_simulated": true,
+    "snapshot_integrity_valid": true
+  },
+  "configuration_schema_validation": "READY",
+  "configuration_validation_result": {
+    "missing_fields": [],
+    "safety_errors": [],
+    "type_errors": [],
+    "valid": true
+  },
+  "configuration_version_record": {
+    "actual_configuration_applied": false,
+    "changed": true,
+    "fingerprint": "f3e6cf7625b39227d7a27f9971f90fdf7dec83a6476fb8bbe6c49eff5592287b",
+    "name": "runtime_offline_config",
+    "operator_approval_required": true,
+    "previous_fingerprint": "",
+    "recorded_at": "2026-08-05T08:54:17.291617+00:00",
+    "schema_version": 1
+  },
+  "configuration_versioning": "READY",
+  "data_retention_planner": "READY_PREVIEW_ONLY",
+  "deterministic_replay_manifest": "READY",
+  "failed": [],
+  "fault_injection_results": [
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "LEDGER_AUDIT_FAILURE",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "CORRUPT_LEDGER_LINE"
+    },
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "RETENTION_AND_ARCHIVE_PREVIEW",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "DISK_SPACE_WARNING"
+    },
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "READ_ONLY_RETRY_PREVIEW",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "NETWORK_TIMEOUT"
+    },
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "RATE_LIMIT_HOLD_PREVIEW",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "RATE_LIMIT"
+    },
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "CONFIGURATION_RELOAD_PREVIEW",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "STALE_CONFIGURATION"
+    },
+    {
+      "actual_network_used": false,
+      "actual_order_submission_performed": false,
+      "actual_recovery_performed": false,
+      "expected_response": "RECOVERY_QUEUE_PREVIEW",
+      "fault_injected_into_live_runtime": false,
+      "fault_type": "WORKER_FAILURE"
+    }
+  ],
+  "fault_injection_simulator": "READY_OFFLINE",
+  "ledger_audit_results": [
+    {
+      "exists": true,
+      "invalid_json_lines": [],
+      "line_count": 6,
+      "path": "C:\\stock-bot\\release\\shadow_trading_production_approval\\actual\\shadow_trade_ledger.jsonl",
+      "sha256": "5e2f886e7b405b671c7ff36f64bd0a8e85553d0070057821becc3e1db5f1d213",
+      "status": "PASS",
+      "valid_json_lines": 6
+    },
+    {
+      "exists": true,
+      "invalid_json_lines": [],
+      "line_count": 2,
+      "path": "C:\\stock-bot\\release\\shadow_trading_production_approval\\actual\\approval_ledger.jsonl",
+      "sha256": "799d945dd06fdfd8c4f5063282e6a13424b6dfb6237c0140363c99808bddb345",
+      "status": "PASS",
+      "valid_json_lines": 2
+    },
+    {
+      "exists": true,
+      "invalid_json_lines": [],
+      "line_count": 2,
+      "path": "C:\\stock-bot\\release\\feature_engine_auto_optimization\\actual\\optimization_history.jsonl",
+      "sha256": "aa269b183cfabbdafd362453c2670d2b984c510b4be822884cd4d549a789d6ed",
+      "status": "PASS",
+      "valid_json_lines": 2
+    }
+  ],
+  "ledger_integrity_audit": "READY",
+  "migration_preview": {
+    "actual_migration_performed": false,
+    "actual_state_modified": false,
+    "blockers": [],
+    "current_version": 1,
+    "migration_preview_allowed": true,
+    "operator_approval_required": true,
+    "target_version": 2
+  },
+  "next_fixed_development": "SECURE_CONTROL_PLANE_AND_OPERATOR_CONSOLE",
+  "operational_readiness_report": "READY",
+  "recovery_runbook": {
+    "actual_recovery_performed": false,
+    "automatic_recovery_enabled": false,
+    "generated_at": "2026-08-05T08:54:17.297284+00:00",
+    "step_count": 6,
+    "steps": [
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm CORRUPT_LEDGER_LINE signal",
+        "diagnose": "LEDGER_AUDIT_FAILURE",
+        "fault_type": "CORRUPT_LEDGER_LINE",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      },
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm DISK_SPACE_WARNING signal",
+        "diagnose": "RETENTION_AND_ARCHIVE_PREVIEW",
+        "fault_type": "DISK_SPACE_WARNING",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      },
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm NETWORK_TIMEOUT signal",
+        "diagnose": "READ_ONLY_RETRY_PREVIEW",
+        "fault_type": "NETWORK_TIMEOUT",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      },
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm RATE_LIMIT signal",
+        "diagnose": "RATE_LIMIT_HOLD_PREVIEW",
+        "fault_type": "RATE_LIMIT",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      },
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm STALE_CONFIGURATION signal",
+        "diagnose": "CONFIGURATION_RELOAD_PREVIEW",
+        "fault_type": "STALE_CONFIGURATION",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      },
+      {
+        "contain": "Keep broker write and automatic orders disabled",
+        "detect": "Confirm WORKER_FAILURE signal",
+        "diagnose": "RECOVERY_QUEUE_PREVIEW",
+        "fault_type": "WORKER_FAILURE",
+        "recover": "Operator-reviewed recovery preview only",
+        "verify": "Run offline tests and integrity verification"
+      }
+    ]
+  },
+  "recovery_runbook_generator": "READY",
+  "release_diff": {
+    "actual_release_applied": false,
+    "added_capabilities": [
+      "configuration_versioning",
+      "configuration_schema_validation",
+      "state_snapshot",
+      "snapshot_integrity",
+      "state_migration_preview",
+      "ledger_integrity_audit",
+      "retention_planning",
+      "deterministic_replay_manifest",
+      "fault_injection_simulation",
+      "recovery_runbook"
+    ],
+    "base_stage": "AI_MONITORING_DISTRIBUTED_RUNTIME_MEGA_BUNDLE",
+    "candidate_stage": "OPERATIONAL_RESILIENCE_DATA_GOVERNANCE"
+  },
+  "release_diff_summary": "READY",
+  "replay_manifest": {
+    "actual_order_submission_performed": false,
+    "actual_replay_started": false,
+    "configuration_fingerprint": "f3e6cf7625b39227d7a27f9971f90fdf7dec83a6476fb8bbe6c49eff5592287b",
+    "created_at": "2026-08-05T08:54:17.297238+00:00",
+    "dataset_fingerprint": "c1d57b0171a2b3df9dcf0f96e045e39d61988c10a9c2fb4e78963ff23b5ac336",
+    "random_seed": 21,
+    "replay_id": "cae33b168043b5c00fc37f645061340f00dbb925489ddb6a222b4bdb63c0e1f0",
+    "strategy_versions": {
+      "breakout": "3.0.0",
+      "mean_reversion": "3.0.0",
+      "momentum": "3.0.0",
+      "scalping": "1.0.0",
+      "swing": "1.0.0"
+    }
+  },
+  "retention_plan": {
+    "actual_files_archived": false,
+    "actual_files_deleted": false,
+    "archive": [
+      {
+        "created_at": "2026-06-21T08:54:17.297109+00:00",
+        "name": "old-report"
+      }
+    ],
+    "archive_count": 1,
+    "cutoff": "2026-07-06T08:54:17.297109+00:00",
+    "keep": [
+      {
+        "created_at": "2026-08-02T08:54:17.297109+00:00",
+        "name": "recent-report"
+      }
+    ],
+    "keep_count": 1,
+    "retain_days": 30
+  },
+  "snapshot_integrity": "READY",
+  "snapshot_integrity_result": {
+    "actual_sha256": "26cb47e6389eb3962d7b366606a6f5ab973f4dabcd7f94894508ba09a9ad545d",
+    "expected_sha256": "26cb47e6389eb3962d7b366606a6f5ab973f4dabcd7f94894508ba09a9ad545d",
+    "integrity_valid": true
+  },
+  "stage": "OPERATIONAL_RESILIENCE_DATA_GOVERNANCE_MEGA_BUNDLE",
+  "state": "OFFLINE_QUALIFIED",
+  "state_migration": "READY_PREVIEW_ONLY",
+  "state_snapshot_manager": "READY",
+  "status": "PASS"
+}
