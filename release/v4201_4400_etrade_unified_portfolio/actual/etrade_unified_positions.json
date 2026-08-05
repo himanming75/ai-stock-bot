@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "account_breakdown": [
+        {
+          "account_id": "individual-brokerage-key",
+          "average_price": "450",
+          "broker": "ETRADE",
+          "market_value": "1820",
+          "quantity": "4",
+          "unrealized_pl": "20"
+        }
+      ],
+      "account_count": 1,
+      "symbol": "QQQ",
+      "total_market_value": "1820",
+      "total_quantity": "4",
+      "total_unrealized_pl": "20",
+      "weighted_average_price": "450"
+    },
+    {
+      "account_breakdown": [
+        {
+          "account_id": "individual-brokerage-key",
+          "average_price": "500",
+          "broker": "ETRADE",
+          "market_value": "5050",
+          "quantity": "10",
+          "unrealized_pl": "50"
+        },
+        {
+          "account_id": "stock-plan-key",
+          "average_price": "510",
+          "broker": "ETRADE",
+          "market_value": "2525",
+          "quantity": "5",
+          "unrealized_pl": "-25"
+        }
+      ],
+      "account_count": 2,
+      "symbol": "SPY",
+      "total_market_value": "7575",
+      "total_quantity": "15",
+      "total_unrealized_pl": "25",
+      "weighted_average_price": "503.3333333333333333333333333"
+    }
+  ]
+}

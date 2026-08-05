@@ -1,0 +1,63 @@
+{
+  "items": [
+    {
+      "account_id": "stock-plan-key",
+      "broker": "ETRADE",
+      "canonical_status": "OPEN",
+      "filled_quantity": "0",
+      "open_order": true,
+      "order_id": "order-2",
+      "quantity": "2",
+      "side": "SELL",
+      "status": "OPEN",
+      "symbol": "SPY"
+    },
+    {
+      "account_id": "individual-brokerage-key",
+      "broker": "ETRADE",
+      "canonical_status": "CANCELLED",
+      "filled_quantity": "0",
+      "open_order": false,
+      "order_id": "order-3",
+      "quantity": "4",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "symbol": "QQQ"
+    },
+    {
+      "account_id": "individual-brokerage-key",
+      "broker": "ETRADE",
+      "canonical_status": "FILLED",
+      "filled_quantity": "10",
+      "open_order": false,
+      "order_id": "order-1",
+      "quantity": "10",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "symbol": "SPY"
+    }
+  ],
+  "statistics": {
+    "by_account": {
+      "individual-brokerage-key": 2,
+      "stock-plan-key": 1
+    },
+    "by_status": {
+      "CANCELLED": 1,
+      "FILLED": 1,
+      "OPEN": 1,
+      "REJECTED": 0,
+      "UNKNOWN": 0
+    },
+    "by_symbol": {
+      "QQQ": 1,
+      "SPY": 2
+    },
+    "cancelled_order_count": 1,
+    "filled_order_count": 1,
+    "open_order_count": 1,
+    "order_count": 3,
+    "rejected_order_count": 0,
+    "unknown_order_count": 0
+  }
+}

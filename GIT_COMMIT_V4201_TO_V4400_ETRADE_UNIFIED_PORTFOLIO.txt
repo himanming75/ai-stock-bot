@@ -1,0 +1,10 @@
+git add multi_broker_etrade_unified
+git add tools/run_v4201_to_v4400_etrade_unified_portfolio.py
+git add tools/test_v4201_to_v4400_etrade_unified_portfolio.py
+git add release/v4201_4400_etrade_unified_portfolio
+git add RUN_V4201_TO_V4400_ETRADE_UNIFIED_PORTFOLIO.ps1
+git add RUN_V4201_TO_V4400_ETRADE_UNIFIED_PORTFOLIO_TEST.ps1
+git add V4201_TO_V4400_ETRADE_UNIFIED_PORTFOLIO_MANIFEST.json
+git add GIT_COMMIT_V4201_TO_V4400_ETRADE_UNIFIED_PORTFOLIO.txt
+git commit -m "Add V4201-V4400 ETrade unified portfolio routing"
+git push origin main

@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "account_id": "individual-brokerage-key",
+      "alias": "PRIMARY_BROKERAGE",
+      "broker": "ETRADE",
+      "buying_power": "25000.50",
+      "cash": "25000.50",
+      "equity": "100500.75",
+      "market_value": "6870",
+      "open_order_count": 0,
+      "order_count": 2,
+      "position_count": 2,
+      "unrealized_pl": "70"
+    },
+    {
+      "account_id": "stock-plan-key",
+      "alias": "STOCK_PLAN",
+      "broker": "ETRADE",
+      "buying_power": "500.00",
+      "cash": "500.00",
+      "equity": "32500.00",
+      "market_value": "2525",
+      "open_order_count": 1,
+      "order_count": 1,
+      "position_count": 1,
+      "unrealized_pl": "-25"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+account_id,broker,canonical_status,filled_quantity,open_order,order_id,quantity,side,status,symbol
+stock-plan-key,ETRADE,OPEN,0,True,order-2,2,SELL,OPEN,SPY
+individual-brokerage-key,ETRADE,CANCELLED,0,False,order-3,4,BUY,CANCELLED,QQQ
+individual-brokerage-key,ETRADE,FILLED,10,False,order-1,10,BUY,EXECUTED,SPY

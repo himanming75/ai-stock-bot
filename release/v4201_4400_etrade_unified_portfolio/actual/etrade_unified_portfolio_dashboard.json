@@ -1,0 +1,38 @@
+{
+  "account_count": 2,
+  "broker_write": false,
+  "network_used": false,
+  "order_statistics": {
+    "by_account": {
+      "individual-brokerage-key": 2,
+      "stock-plan-key": 1
+    },
+    "by_status": {
+      "CANCELLED": 1,
+      "FILLED": 1,
+      "OPEN": 1,
+      "REJECTED": 0,
+      "UNKNOWN": 0
+    },
+    "by_symbol": {
+      "QQQ": 1,
+      "SPY": 2
+    },
+    "cancelled_order_count": 1,
+    "filled_order_count": 1,
+    "open_order_count": 1,
+    "order_count": 3,
+    "rejected_order_count": 0,
+    "unknown_order_count": 0
+  },
+  "status": "PASS",
+  "symbol_count": 2,
+  "totals": {
+    "buying_power": "25500.50",
+    "cash": "25500.50",
+    "currency": "USD",
+    "equity": "133000.75",
+    "market_value": "9395",
+    "unrealized_pl": "45"
+  }
+}
