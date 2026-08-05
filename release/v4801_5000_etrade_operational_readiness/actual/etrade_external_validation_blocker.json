@@ -1,0 +1,7 @@
+{
+  "active": true,
+  "blocks_actual_production_validation": true,
+  "blocks_actual_sandbox_validation": true,
+  "blocks_code_completion": false,
+  "type": "ETRADE_SANDBOX_CONSUMER_KEY_ISSUANCE"
+}

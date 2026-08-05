@@ -1,0 +1,10 @@
+git add multi_broker_etrade_recovery
+git add tools/run_v4801_to_v5000_etrade_operational_readiness.py
+git add tools/test_v4801_to_v5000_etrade_operational_readiness.py
+git add release/v4801_5000_etrade_operational_readiness
+git add RUN_V4801_TO_V5000_ETRADE_OPERATIONAL_READINESS.ps1
+git add RUN_V4801_TO_V5000_ETRADE_OPERATIONAL_READINESS_TEST.ps1
+git add V4801_TO_V5000_ETRADE_OPERATIONAL_READINESS_MANIFEST.json
+git add GIT_COMMIT_V4801_TO_V5000_ETRADE_OPERATIONAL_READINESS.txt
+git commit -m "Add V4801-V5000 ETrade recovery operational readiness"
+git push origin main

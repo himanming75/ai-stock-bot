@@ -1,0 +1,10 @@
+{
+  "actual_production_validation_complete": false,
+  "actual_sandbox_validation_complete": false,
+  "broker_write": false,
+  "live_orders": 0,
+  "next_user_action": "RETRY_ETRADE_SANDBOX_KEY_ISSUANCE_OR_CONTACT_ETRADE_SUPPORT",
+  "paper_orders": 0,
+  "read_only_platform_code_complete": true,
+  "status": "PASS"
+}

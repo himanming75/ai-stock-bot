@@ -1,0 +1,67 @@
+{
+  "steps": [
+    {
+      "action": "Renew the current E*TRADE access token",
+      "automatic": true,
+      "backoff_seconds": [
+        0
+      ],
+      "max_attempts": 1,
+      "name": "TOKEN_RENEW",
+      "requires_operator": false
+    },
+    {
+      "action": "Run browser authorization and verification-code exchange",
+      "automatic": false,
+      "backoff_seconds": [
+        0
+      ],
+      "max_attempts": 1,
+      "name": "OAUTH_REAUTHORIZATION",
+      "requires_operator": true
+    },
+    {
+      "action": "Pause reads and retry after a controlled delay",
+      "automatic": true,
+      "backoff_seconds": [
+        60,
+        180,
+        300
+      ],
+      "max_attempts": 3,
+      "name": "RATE_LIMIT_BACKOFF",
+      "requires_operator": false
+    },
+    {
+      "action": "Retry read after server, network, or timeout failure",
+      "automatic": true,
+      "backoff_seconds": [
+        5,
+        15,
+        45
+      ],
+      "max_attempts": 3,
+      "name": "TRANSIENT_RETRY",
+      "requires_operator": false
+    },
+    {
+      "action": "Keep all routes blocked and contact E*TRADE support",
+      "automatic": false,
+      "backoff_seconds": [],
+      "max_attempts": 0,
+      "name": "ACCOUNT_RESTRICTION",
+      "requires_operator": true
+    },
+    {
+      "action": "Reload account data and rerun snapshot integrity checks",
+      "automatic": true,
+      "backoff_seconds": [
+        5,
+        15
+      ],
+      "max_attempts": 2,
+      "name": "SNAPSHOT_REVALIDATION",
+      "requires_operator": false
+    }
+  ]
+}

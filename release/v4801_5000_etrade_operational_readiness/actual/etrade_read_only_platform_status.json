@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "account_routing_ready": true,
+    "actual_production_validation_complete": false,
+    "actual_sandbox_validation_complete": false,
+    "broker_write_disabled": true,
+    "etrade_adapter_ready": true,
+    "etrade_keys_available": false,
+    "failsafe_routing_ready": true,
+    "health_monitoring_ready": true,
+    "multi_broker_core_ready": true,
+    "oauth_foundation_ready": true,
+    "oauth_session_workflow_ready": true,
+    "order_cancel_disabled": true,
+    "order_submission_disabled": true,
+    "reconciliation_ready": true,
+    "recovery_orchestration_ready": true,
+    "sandbox_contract_ready": true,
+    "unified_portfolio_ready": true
+  },
+  "code_operational_readiness": "PASS",
+  "external_validation_status": "BLOCKED_BY_ETRADE_KEY_ISSUANCE",
+  "live_trading_status": "NOT_ENABLED",
+  "read_only_platform_status": "CODE_COMPLETE_EXTERNAL_VALIDATION_PENDING"
+}

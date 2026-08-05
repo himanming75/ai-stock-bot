@@ -1,0 +1,118 @@
+{
+  "scenarios": [
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "CONTINUE_MONITORING",
+        "read_allowed": true,
+        "requires_operator": false,
+        "retry_after_seconds": 0,
+        "state": "READ_ONLY_OPERATIONAL",
+        "trigger": "HEALTHY",
+        "write_allowed": false
+      },
+      "name": "HEALTHY"
+    },
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "RENEW_ACCESS_TOKEN",
+        "read_allowed": false,
+        "requires_operator": false,
+        "retry_after_seconds": 0,
+        "state": "RENEWING_TOKEN",
+        "trigger": "TOKEN_RENEW_REQUIRED",
+        "write_allowed": false
+      },
+      "name": "TOKEN_RENEW"
+    },
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "START_OAUTH_REAUTHORIZATION",
+        "read_allowed": false,
+        "requires_operator": true,
+        "retry_after_seconds": 0,
+        "state": "REAUTHORIZATION_REQUIRED",
+        "trigger": "TOKEN_REVOKED",
+        "write_allowed": false
+      },
+      "name": "TOKEN_REVOKED"
+    },
+    {
+      "attempt": 1,
+      "decision": {
+        "next_action": "WAIT_AND_RETRY_READ",
+        "read_allowed": false,
+        "requires_operator": false,
+        "retry_after_seconds": 180,
+        "state": "RATE_LIMIT_BACKOFF",
+        "trigger": "RATE_LIMIT",
+        "write_allowed": false
+      },
+      "name": "RATE_LIMIT_SECOND_ATTEMPT"
+    },
+    {
+      "attempt": 2,
+      "decision": {
+        "next_action": "RETRY_READ",
+        "read_allowed": false,
+        "requires_operator": false,
+        "retry_after_seconds": 45,
+        "state": "TRANSIENT_RETRY",
+        "trigger": "SERVER_ERROR",
+        "write_allowed": false
+      },
+      "name": "SERVER_ERROR_THIRD_ATTEMPT"
+    },
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "CONTACT_ETRADE_SUPPORT",
+        "read_allowed": false,
+        "requires_operator": true,
+        "retry_after_seconds": 0,
+        "state": "MANUAL_ACCOUNT_RECOVERY",
+        "trigger": "ACCOUNT_RESTRICTED",
+        "write_allowed": false
+      },
+      "name": "ACCOUNT_RESTRICTED"
+    },
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "RELOAD_AND_REVALIDATE_SNAPSHOT",
+        "read_allowed": false,
+        "requires_operator": false,
+        "retry_after_seconds": 5,
+        "state": "SNAPSHOT_REVALIDATION",
+        "trigger": "SNAPSHOT_INTEGRITY_FAILED",
+        "write_allowed": false
+      },
+      "name": "SNAPSHOT_FAILED"
+    },
+    {
+      "attempt": 0,
+      "decision": {
+        "next_action": "REVIEW_UNKNOWN_FAILURE",
+        "read_allowed": false,
+        "requires_operator": true,
+        "retry_after_seconds": 0,
+        "state": "FAILSAFE_BLOCKED",
+        "trigger": "UNCLASSIFIED_FAILURE",
+        "write_allowed": false
+      },
+      "name": "UNKNOWN"
+    }
+  ],
+  "state_counts": {
+    "FAILSAFE_BLOCKED": 1,
+    "MANUAL_ACCOUNT_RECOVERY": 1,
+    "RATE_LIMIT_BACKOFF": 1,
+    "READ_ONLY_OPERATIONAL": 1,
+    "REAUTHORIZATION_REQUIRED": 1,
+    "RENEWING_TOKEN": 1,
+    "SNAPSHOT_REVALIDATION": 1,
+    "TRANSIENT_RETRY": 1
+  }
+}
