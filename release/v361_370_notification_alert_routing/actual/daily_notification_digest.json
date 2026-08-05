@@ -1,0 +1,15 @@
+{
+  "actual_send_performed": false,
+  "controller_status": "PASS",
+  "critical_count": 1,
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T19:24:21.329303+00:00",
+  "health_score": 43,
+  "health_status": "FAIL",
+  "info_count": 2,
+  "performance_status": "PASS_WITH_WARNINGS",
+  "queued_count": 7,
+  "risk_level": "NORMAL",
+  "suppressed_count": 0,
+  "warning_count": 4
+}

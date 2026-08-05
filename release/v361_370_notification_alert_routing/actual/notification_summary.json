@@ -1,0 +1,254 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_discord_messages_sent": 0,
+  "actual_email_sent": 0,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_notification_send_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_slack_messages_sent": 0,
+  "actual_webhooks_sent": 0,
+  "channels": {
+    "DISCORD": false,
+    "EMAIL": false,
+    "LOCAL_LOG": true,
+    "SLACK": false,
+    "WEBHOOK": false
+  },
+  "daily_summary": {
+    "actual_send_performed": false,
+    "controller_status": "PASS",
+    "critical_count": 1,
+    "date": "2026-08-05",
+    "generated_at": "2026-08-05T19:24:21.329303+00:00",
+    "health_score": 43,
+    "health_status": "FAIL",
+    "info_count": 2,
+    "performance_status": "PASS_WITH_WARNINGS",
+    "queued_count": 7,
+    "risk_level": "NORMAL",
+    "suppressed_count": 0,
+    "warning_count": 4
+  },
+  "delivery_mode": "PREPARE_ONLY",
+  "generated_at": "2026-08-05T19:24:21.329303+00:00",
+  "next_fixed_development": "V371_TO_V380_AUTONOMOUS_PAPER_OPERATIONS_GATE",
+  "queue": [
+    {
+      "actual_send_performed": false,
+      "body": "Health score=43 Status=FAIL",
+      "code": "DUPLICATE_CONTROLLER_ROOTS",
+      "context": {
+        "health_score": 43,
+        "status": "FAIL"
+      },
+      "deduplication_key": "fcd3fa03357f8610ba846c04d256aa2b7037e6c22afe5cf349c3e9dbe3b5ae83",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_205c6d00d0bf1a35941ad399",
+      "severity": "CRITICAL",
+      "slack_sent": false,
+      "source": "SYSTEM_HEALTH",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "System health critical: DUPLICATE_CONTROLLER_ROOTS",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Health score=43 Status=FAIL",
+      "code": "CONTROLLER_HEARTBEAT_STALE_OR_MISSING",
+      "context": {
+        "health_score": 43,
+        "status": "FAIL"
+      },
+      "deduplication_key": "dd5c82add52f194c771a8cd6019750ada08635e00b3116afb44fa5cfcf9dba9e",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_64bdefc68df80fe0d7788162",
+      "severity": "WARNING",
+      "slack_sent": false,
+      "source": "SYSTEM_HEALTH",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "System health warning: CONTROLLER_HEARTBEAT_STALE_OR_MISSING",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Health score=43 Status=FAIL",
+      "code": "CONTROLLER_LOCK_STALE",
+      "context": {
+        "health_score": 43,
+        "status": "FAIL"
+      },
+      "deduplication_key": "0d7c5069d8c38a2bacd6a84911fe7150d4468898e86ed82e50724f086e9d2390",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_433e8321c4ac18970e623a91",
+      "severity": "WARNING",
+      "slack_sent": false,
+      "source": "SYSTEM_HEALTH",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "System health warning: CONTROLLER_LOCK_STALE",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Health score=43 Status=FAIL",
+      "code": "DISK_USAGE_HIGH",
+      "context": {
+        "health_score": 43,
+        "status": "FAIL"
+      },
+      "deduplication_key": "63d8d338b3c0d4981b267deffd5ebdb68f957160e2cae49eb8584ddfa3e9389f",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_4e354eb859e4d6524f89982c",
+      "severity": "WARNING",
+      "slack_sent": false,
+      "source": "SYSTEM_HEALTH",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "System health warning: DISK_USAGE_HIGH",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Health score=43 Status=FAIL",
+      "code": "REPOSITORY_FILE_OVER_100MB",
+      "context": {
+        "health_score": 43,
+        "status": "FAIL"
+      },
+      "deduplication_key": "bc1a2f3e39bf9ca93ba8bd0a8d5c4346c8b1562fb07b628576d7e6ba8caac4ca",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_cb59d01f5db63148e6787c0b",
+      "severity": "WARNING",
+      "slack_sent": false,
+      "source": "SYSTEM_HEALTH",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "System health warning: REPOSITORY_FILE_OVER_100MB",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Performance analytics completed with a data-readiness notice.",
+      "code": "LIMITED_SAMPLE_SIZE_FOR_RISK_ADJUSTED_METRICS",
+      "context": {
+        "observation_count": 2,
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "deduplication_key": "7fe7e4bcf4c67d44f89a3a23ac4d2b37c0a4d50c273b157cd3af598883756ad7",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_cf04cd2c4253afb699d7f4d0",
+      "severity": "INFO",
+      "slack_sent": false,
+      "source": "PERFORMANCE_ANALYTICS",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "Performance analytics: LIMITED_SAMPLE_SIZE_FOR_RISK_ADJUSTED_METRICS",
+      "webhook_sent": false
+    },
+    {
+      "actual_send_performed": false,
+      "body": "Performance analytics completed with a data-readiness notice.",
+      "code": "INSUFFICIENT_REALIZED_TRADE_DATA_FOR_WIN_RATE_PROFIT_FACTOR",
+      "context": {
+        "observation_count": 2,
+        "status": "PASS_WITH_WARNINGS"
+      },
+      "deduplication_key": "315b73237dcda9483326d2de18452a007a53f0889ec82edec7e449d2c0def89d",
+      "delivery_plan": [
+        {
+          "actual_send_performed": false,
+          "channel": "LOCAL_LOG",
+          "configuration_required": false,
+          "delivery_mode": "PREPARE_ONLY",
+          "enabled": true
+        }
+      ],
+      "discord_sent": false,
+      "email_sent": false,
+      "generated_at": "2026-08-05T19:24:21.329303+00:00",
+      "message_id": "alert_639f77666610ba0e289483cd",
+      "severity": "INFO",
+      "slack_sent": false,
+      "source": "PERFORMANCE_ANALYTICS",
+      "status": "QUEUED_PREPARE_ONLY",
+      "title": "Performance analytics: INSUFFICIENT_REALIZED_TRADE_DATA_FOR_WIN_RATE_PROFIT_FACTOR",
+      "webhook_sent": false
+    }
+  ],
+  "queued_count": 7,
+  "runtime_files_modified": false,
+  "severity_counts": {
+    "CRITICAL": 1,
+    "INFO": 2,
+    "WARNING": 4
+  },
+  "stage": "V361_TO_V370_NOTIFICATION_AND_ALERT_ROUTING",
+  "status": "PASS",
+  "suppressed_count": 0,
+  "suppressed_duplicates": []
+}

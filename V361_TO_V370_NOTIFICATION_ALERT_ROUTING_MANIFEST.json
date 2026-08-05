@@ -1,0 +1,24 @@
+{
+  "stage": "V361_TO_V370_NOTIFICATION_AND_ALERT_ROUTING",
+  "stages": [
+    "V361_EVENT_COLLECTION",
+    "V362_SEVERITY_CLASSIFICATION",
+    "V363_MESSAGE_NORMALIZATION",
+    "V364_DEDUPLICATION_KEY",
+    "V365_COOLDOWN_SUPPRESSION",
+    "V366_ALERT_PRIORITY_QUEUE",
+    "V367_CHANNEL_ROUTING_PLAN",
+    "V368_DAILY_DIGEST",
+    "V369_NOTIFICATION_LEDGER",
+    "V370_NOTIFICATION_DASHBOARD"
+  ],
+  "delivery_mode": "PREPARE_ONLY",
+  "actual_notification_send_allowed": false,
+  "controller_files_modified": false,
+  "runtime_files_modified": false,
+  "external_network_used_during_build": false,
+  "broker_write_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "V371_TO_V380_AUTONOMOUS_PAPER_OPERATIONS_GATE"
+}

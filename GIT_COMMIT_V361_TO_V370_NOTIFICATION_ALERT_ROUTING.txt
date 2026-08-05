@@ -1,0 +1,10 @@
+git add notification_alert_routing
+git add tools/run_v361_to_v370_notification_alert_routing.py
+git add tools/test_v361_to_v370_notification_alert_routing.py
+git add release/v361_370_notification_alert_routing
+git add RUN_V361_TO_V370_NOTIFICATION_ALERT_ROUTING.ps1
+git add RUN_V361_TO_V370_NOTIFICATION_ALERT_ROUTING_TEST.ps1
+git add V361_TO_V370_NOTIFICATION_ALERT_ROUTING_MANIFEST.json
+git add GIT_COMMIT_V361_TO_V370_NOTIFICATION_ALERT_ROUTING.txt
+git commit -m "Add V361-V370 notification alert routing"
+git push origin main

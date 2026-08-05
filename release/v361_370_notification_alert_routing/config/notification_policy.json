@@ -1,0 +1,31 @@
+{
+  "delivery_mode": "PREPARE_ONLY",
+  "deduplication_cooldown_seconds": 900,
+  "channel_enabled": {
+    "LOCAL_LOG": true,
+    "EMAIL": false,
+    "SLACK": false,
+    "DISCORD": false,
+    "WEBHOOK": false
+  },
+  "severity_channels": {
+    "CRITICAL": [
+      "LOCAL_LOG",
+      "EMAIL",
+      "SLACK",
+      "DISCORD"
+    ],
+    "WARNING": [
+      "LOCAL_LOG",
+      "EMAIL"
+    ],
+    "INFO": [
+      "LOCAL_LOG"
+    ]
+  },
+  "actual_send_allowed": false,
+  "external_network_allowed": false,
+  "broker_write_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}
