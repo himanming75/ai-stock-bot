@@ -1,0 +1,29 @@
+{
+  "bundle": "V461.01_TO_V470.64",
+  "features": [
+    "Credential Safety",
+    "Paper Endpoint Enforcement",
+    "Account and Buying Power Read",
+    "Positions Read",
+    "Open Orders Read",
+    "Market Clock Read",
+    "Asset Tradability Read",
+    "Timeout Retry Backoff",
+    "Rate Limit Handling",
+    "Network Recovery",
+    "Read Audit Ledger",
+    "Snapshot Hash Integrity",
+    "Read Safety Qualification"
+  ],
+  "actual_network_read_requires_explicit_opt_in": true,
+  "actual_network_read_environment_variable": "ALPACA_PAPER_READ_ENABLE=true",
+  "paper_endpoint": "https://paper-api.alpaca.markets",
+  "http_methods_allowed": [
+    "GET"
+  ],
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

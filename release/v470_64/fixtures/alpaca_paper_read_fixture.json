@@ -1,0 +1,77 @@
+{
+  "account": {
+    "id": "offline-paper-account",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "cash": "75000",
+    "portfolio_value": "100000",
+    "equity": "100000",
+    "buying_power": "200000",
+    "trading_blocked": false,
+    "account_blocked": false,
+    "pattern_day_trader": false
+  },
+  "positions": [
+    {
+      "asset_id": "asset-aapl",
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "asset_class": "us_equity",
+      "qty": "10",
+      "side": "long",
+      "market_value": "2100",
+      "cost_basis": "2000",
+      "avg_entry_price": "200",
+      "current_price": "210",
+      "unrealized_pl": "100"
+    }
+  ],
+  "open_orders": [],
+  "clock": {
+    "timestamp": "2026-08-05T10:00:00-04:00",
+    "is_open": true,
+    "next_open": "2026-08-06T09:30:00-04:00",
+    "next_close": "2026-08-05T16:00:00-04:00"
+  },
+  "assets": {
+    "AAPL": {
+      "id": "asset-aapl",
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "exchange": "NASDAQ",
+      "asset_class": "us_equity",
+      "status": "active",
+      "tradable": true,
+      "marginable": true,
+      "shortable": true,
+      "easy_to_borrow": true,
+      "fractionable": true
+    },
+    "MSFT": {
+      "id": "asset-msft",
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "exchange": "NASDAQ",
+      "asset_class": "us_equity",
+      "status": "active",
+      "tradable": true,
+      "marginable": true,
+      "shortable": true,
+      "easy_to_borrow": true,
+      "fractionable": true
+    },
+    "SPY": {
+      "id": "asset-spy",
+      "symbol": "SPY",
+      "name": "SPY",
+      "exchange": "ARCA",
+      "asset_class": "us_equity",
+      "status": "active",
+      "tradable": true,
+      "marginable": true,
+      "shortable": true,
+      "easy_to_borrow": true,
+      "fractionable": true
+    }
+  }
+}

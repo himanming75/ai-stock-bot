@@ -1,0 +1,93 @@
+{
+  "account": {
+    "account_blocked": false,
+    "buying_power": "399311.32",
+    "cash": "99391.51",
+    "currency": "USD",
+    "equity": "100014.82",
+    "id": "60e76715-51f0-4207-ac8b-fd986429b697",
+    "pattern_day_trader": false,
+    "portfolio_value": "100014.82",
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "assets": {
+    "AAPL": {
+      "asset_class": "us_equity",
+      "easy_to_borrow": true,
+      "exchange": "NASDAQ",
+      "fractionable": true,
+      "id": "b0b6dd9d-8b9b-48a9-ba46-b9d54906e415",
+      "marginable": true,
+      "name": "Apple Inc. Common Stock",
+      "shortable": true,
+      "status": "active",
+      "symbol": "AAPL",
+      "tradable": true
+    },
+    "MSFT": {
+      "asset_class": "us_equity",
+      "easy_to_borrow": true,
+      "exchange": "NASDAQ",
+      "fractionable": true,
+      "id": "b6d1aa75-5c9c-4353-a305-9e2caa1925ab",
+      "marginable": true,
+      "name": "Microsoft Corporation Common Stock",
+      "shortable": true,
+      "status": "active",
+      "symbol": "MSFT",
+      "tradable": true
+    },
+    "SPY": {
+      "asset_class": "us_equity",
+      "easy_to_borrow": true,
+      "exchange": "ARCA",
+      "fractionable": true,
+      "id": "b28f4066-5c6d-479b-a2af-85dc1a8f16fb",
+      "marginable": true,
+      "name": "State Street SPDR S&P 500 ETF Trust",
+      "shortable": true,
+      "status": "active",
+      "symbol": "SPY",
+      "tradable": true
+    }
+  },
+  "clock": {
+    "is_open": false,
+    "next_close": "2026-08-05T16:00:00-04:00",
+    "next_open": "2026-08-05T09:30:00-04:00",
+    "timestamp": "2026-08-04T21:41:22.932170711-04:00"
+  },
+  "mode": "ACTUAL_ALPACA_PAPER_READ_ONLY",
+  "observed_at": "2026-08-05T01:41:21.171364+00:00",
+  "open_orders": [],
+  "positions": [
+    {
+      "asset_class": "us_equity",
+      "asset_id": "b0b6dd9d-8b9b-48a9-ba46-b9d54906e415",
+      "avg_entry_price": "303.75",
+      "cost_basis": "607.5",
+      "current_price": "311.16",
+      "exchange": "NASDAQ",
+      "market_value": "622.32",
+      "qty": "2",
+      "side": "long",
+      "symbol": "AAPL",
+      "unrealized_pl": "14.82"
+    },
+    {
+      "asset_class": "us_equity",
+      "asset_id": "b28f4066-5c6d-479b-a2af-85dc1a8f16fb",
+      "avg_entry_price": "771.176",
+      "cost_basis": "0.99",
+      "current_price": "773.22",
+      "exchange": "ARCA",
+      "market_value": "0.992623",
+      "qty": "0.001283753",
+      "side": "long",
+      "symbol": "SPY",
+      "unrealized_pl": "0.002623"
+    }
+  ],
+  "snapshot_version": "V470.64"
+}

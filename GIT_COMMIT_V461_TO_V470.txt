@@ -1,0 +1,3 @@
+git add alpaca_paper_read tools/run_v461_to_v470.py tools/test_v461_to_v470.py tools/verify_v461_to_v470.py release/v461_01 release/v462_01 release/v463_01 release/v464_01 release/v465_01 release/v466_01 release/v467_01 release/v468_01 release/v469_01 release/v470_64 RUN_V461_TO_V470_READ_SAFETY.ps1 RUN_V461_TO_V470_ACTUAL_ALPACA_PAPER_READ.ps1 RUN_V461_TO_V470_TEST_AND_VERIFY.ps1 V461_TO_V470_MANIFEST.json GIT_COMMIT_V461_TO_V470.txt
+git commit -m "V461-V470 add Alpaca paper read and safety integration"
+git push origin main
