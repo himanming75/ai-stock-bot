@@ -1,0 +1,21 @@
+{
+  "profile_name": "live_micro_locked",
+  "broker_mode": "live",
+  "horizon": "day",
+  "allowed_symbols": [
+    "SPY"
+  ],
+  "allowed_order_types": [
+    "market"
+  ],
+  "time_in_force": "day",
+  "maximum_order_notional": "1",
+  "maximum_daily_orders": 1,
+  "maximum_daily_loss": "1",
+  "maximum_gross_exposure": "1",
+  "maximum_symbol_exposure": "1",
+  "require_market_open": true,
+  "allocation_enabled": true,
+  "multi_account_enabled": false,
+  "enabled": false
+}

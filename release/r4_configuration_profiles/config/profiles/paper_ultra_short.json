@@ -1,0 +1,24 @@
+{
+  "profile_name": "paper_ultra_short",
+  "broker_mode": "paper",
+  "horizon": "ultra_short",
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "allowed_order_types": [
+    "market",
+    "limit"
+  ],
+  "time_in_force": "day",
+  "maximum_order_notional": "10",
+  "maximum_daily_orders": 3,
+  "maximum_daily_loss": "10",
+  "maximum_gross_exposure": "30",
+  "maximum_symbol_exposure": "10",
+  "require_market_open": true,
+  "allocation_enabled": true,
+  "multi_account_enabled": false,
+  "enabled": true
+}

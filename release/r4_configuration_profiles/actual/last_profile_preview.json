@@ -1,0 +1,53 @@
+{
+  "actual_activation_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_mode": "live",
+  "broker_network_used": false,
+  "broker_write_enabled": false,
+  "gate": {
+    "activation_preview_allowed": false,
+    "actual_activation_performed": false,
+    "automatic_order_submission_enabled": false,
+    "broker_mode": "live",
+    "checks": {
+      "mode_valid": true,
+      "paper_certificate_present_for_live": false,
+      "paper_mode_selected": false,
+      "r1_release_present_for_live": false
+    },
+    "failed": [
+      "paper_mode_selected",
+      "paper_certificate_present_for_live",
+      "r1_release_present_for_live"
+    ],
+    "stage": "R4_PROFILE_ACTIVATION_GATE"
+  },
+  "horizon": "day",
+  "preview_allowed": false,
+  "profile_name": "live_micro_locked",
+  "profile_valid": true,
+  "stage": "R4_PROFILE_ACTIVATION_PREVIEW",
+  "validation": {
+    "checks": {
+      "allocation_feature_preserved": true,
+      "allowed_symbols_present": true,
+      "broker_mode_valid": true,
+      "horizon_valid": true,
+      "market_open_required": true,
+      "maximum_daily_loss_positive": true,
+      "maximum_daily_orders_positive": true,
+      "maximum_gross_exposure_positive": true,
+      "maximum_order_notional_positive": true,
+      "maximum_symbol_exposure_positive": true,
+      "multi_account_feature_preserved": true,
+      "order_types_valid": true,
+      "profile_name_present": true,
+      "symbol_exposure_within_gross": true,
+      "symbols_unique": true,
+      "time_in_force_valid": true
+    },
+    "failed": [],
+    "valid": true
+  }
+}

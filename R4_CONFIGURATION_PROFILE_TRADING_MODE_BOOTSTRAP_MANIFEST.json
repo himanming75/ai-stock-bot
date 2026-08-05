@@ -1,0 +1,25 @@
+{
+  "stage": "R4_PREPARATION",
+  "features": [
+    "Ultra Short Profile",
+    "Day Profile",
+    "Swing Profile",
+    "Position Profile",
+    "Locked Live Micro Profile",
+    "Allowed Symbol Policy",
+    "Order and Loss Limits",
+    "Exposure Limits",
+    "Allocation Field Preserved",
+    "Multi Account Field Preserved",
+    "Profile Validation",
+    "Activation Preview",
+    "Live Activation Gate"
+  ],
+  "allocation_feature_removed": false,
+  "multi_account_feature_removed": false,
+  "actual_profile_activation_performed": false,
+  "network_used_during_install": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}

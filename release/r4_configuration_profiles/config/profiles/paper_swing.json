@@ -1,0 +1,24 @@
+{
+  "profile_name": "paper_swing",
+  "broker_mode": "paper",
+  "horizon": "swing",
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "allowed_order_types": [
+    "market",
+    "limit"
+  ],
+  "time_in_force": "day",
+  "maximum_order_notional": "50",
+  "maximum_daily_orders": 3,
+  "maximum_daily_loss": "50",
+  "maximum_gross_exposure": "250",
+  "maximum_symbol_exposure": "100",
+  "require_market_open": true,
+  "allocation_enabled": true,
+  "multi_account_enabled": false,
+  "enabled": false
+}

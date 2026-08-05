@@ -1,0 +1,66 @@
+{
+  "actual_activation_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "all_profiles_valid": true,
+  "broker_network_used": false,
+  "profile_count": 5,
+  "profiles": [
+    {
+      "allocation_enabled": true,
+      "broker_mode": "live",
+      "enabled": false,
+      "failed": [],
+      "file": "live_micro_locked.json",
+      "horizon": "day",
+      "multi_account_enabled": false,
+      "profile_name": "live_micro_locked",
+      "valid": true
+    },
+    {
+      "allocation_enabled": true,
+      "broker_mode": "paper",
+      "enabled": false,
+      "failed": [],
+      "file": "paper_day.json",
+      "horizon": "day",
+      "multi_account_enabled": false,
+      "profile_name": "paper_day",
+      "valid": true
+    },
+    {
+      "allocation_enabled": true,
+      "broker_mode": "paper",
+      "enabled": false,
+      "failed": [],
+      "file": "paper_position.json",
+      "horizon": "position",
+      "multi_account_enabled": false,
+      "profile_name": "paper_position",
+      "valid": true
+    },
+    {
+      "allocation_enabled": true,
+      "broker_mode": "paper",
+      "enabled": false,
+      "failed": [],
+      "file": "paper_swing.json",
+      "horizon": "swing",
+      "multi_account_enabled": false,
+      "profile_name": "paper_swing",
+      "valid": true
+    },
+    {
+      "allocation_enabled": true,
+      "broker_mode": "paper",
+      "enabled": true,
+      "failed": [],
+      "file": "paper_ultra_short.json",
+      "horizon": "ultra_short",
+      "multi_account_enabled": false,
+      "profile_name": "paper_ultra_short",
+      "valid": true
+    }
+  ],
+  "stage": "R4_PROFILE_CATALOG"
+}

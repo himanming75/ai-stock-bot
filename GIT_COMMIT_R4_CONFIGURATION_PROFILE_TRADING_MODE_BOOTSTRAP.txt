@@ -1,0 +1,3 @@
+git add configuration_profiles tools/run_r4_profile_catalog.py tools/run_r4_profile_preview.py tools/test_r4_configuration_profiles.py tools/verify_r4_configuration_profiles.py release/r4_configuration_profiles RUN_R4_PROFILE_CATALOG.ps1 PREVIEW_R4_PROFILE.ps1 RUN_R4_TEST_AND_VERIFY.ps1 R4_CONFIGURATION_PROFILE_TRADING_MODE_BOOTSTRAP_MANIFEST.json GIT_COMMIT_R4_CONFIGURATION_PROFILE_TRADING_MODE_BOOTSTRAP.txt
+git commit -m "R4 add configuration profiles and trading modes"
+git push origin main
