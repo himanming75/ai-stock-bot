@@ -1,0 +1,14 @@
+{
+  "fixture_only": true,
+  "symbols": {
+    "SPY": {
+      "is_open": true
+    },
+    "QQQ": {
+      "is_open": true
+    },
+    "IWM": {
+      "is_open": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "mode": "paper",
+  "paper_endpoint": "https://paper-api.alpaca.markets",
+  "symbol_allow_list": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "max_notional_per_ticket": "500.00",
+  "allowed_risk_levels": [
+    "NORMAL"
+  ],
+  "require_market_open": true,
+  "submission_enabled": false,
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false
+}

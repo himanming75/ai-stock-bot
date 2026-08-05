@@ -1,0 +1,12 @@
+git add approval_submission_safety
+git add tools/create_v691_to_v780_approval_token.py
+git add tools/run_v691_to_v780_approval_submission_safety.py
+git add tools/test_v691_to_v780_approval_submission_safety.py
+git add release/v691_780_approval_submission_safety
+git add CREATE_V691_TO_V780_APPROVAL_TOKEN.ps1
+git add RUN_V691_TO_V780_APPROVAL_SUBMISSION_SAFETY.ps1
+git add RUN_V691_TO_V780_APPROVAL_SUBMISSION_SAFETY_TEST.ps1
+git add V691_TO_V780_APPROVAL_SUBMISSION_SAFETY_MANIFEST.json
+git add GIT_COMMIT_V691_TO_V780_APPROVAL_SUBMISSION_SAFETY.txt
+git commit -m "Add V691-V780 approval submission safety"
+git push origin main
