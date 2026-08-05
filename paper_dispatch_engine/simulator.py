@@ -77,6 +77,7 @@ def simulate_fill(
             "fill_event": {},
             "fill_event_hash": "",
             "required_action": "DO_NOT_CREATE_FILL_EVENT",
+            "actual_broker_orders_submitted": 0,
         }
 
     direction = 1 if side == "BUY" else -1

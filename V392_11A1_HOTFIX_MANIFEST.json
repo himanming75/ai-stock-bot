@@ -1,0 +1,11 @@
+{
+  "hotfix": "V392.11A1",
+  "purpose": "Make verifier replay-aware and preserve zero-order invariant",
+  "replay_protection_preserved": true,
+  "blocked_branch_broker_order_count": 0,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_network_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
