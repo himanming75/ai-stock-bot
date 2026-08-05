@@ -1,0 +1,34 @@
+{
+  "alert_count": 0,
+  "alerts": [],
+  "broker_write": false,
+  "cash_reserve_percent": "99.37624443394997296779242704",
+  "critical_alert_count": 0,
+  "daily_return_percent": "-0.0009200936891355337880776005204",
+  "drawdown_percent": "0",
+  "generated_at": "2026-08-05T19:09:58.096843+00:00",
+  "gross_exposure_percent": "0.6237558480208994410877356369",
+  "largest_position_percent": "0.6177761837202217010982765480",
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "portfolio_risk_score": "0.6304732876945514214471383723",
+  "risk_level": "NORMAL",
+  "top_position_risks": [
+    {
+      "concentration_component": "1.482662840928532082635863715",
+      "loss_component": "0",
+      "portfolio_weight_percent": "0.6177761837202217010982765480",
+      "risk_score": "1.482662840928532082635863715",
+      "symbol": "AAPL",
+      "unrealized_pl_percent": "1.70200"
+    },
+    {
+      "concentration_component": "0.01435119432162657597470181330",
+      "loss_component": "0",
+      "portfolio_weight_percent": "0.005979664300677739989459088876",
+      "risk_score": "0.01435119432162657597470181330",
+      "symbol": "SPY",
+      "unrealized_pl_percent": "0.00500"
+    }
+  ]
+}

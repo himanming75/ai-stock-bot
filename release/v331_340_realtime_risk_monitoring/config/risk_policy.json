@@ -1,0 +1,11 @@
+{
+  "max_daily_loss_percent": "2.00",
+  "max_drawdown_percent": "5.00",
+  "max_single_position_percent": "25.00",
+  "max_gross_exposure_percent": "100.00",
+  "max_net_exposure_percent": "75.00",
+  "min_cash_reserve_percent": "10.00",
+  "max_buying_power_utilization_percent": "80.00",
+  "warning_score": "50.00",
+  "critical_score": "75.00"
+}

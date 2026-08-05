@@ -1,0 +1,22 @@
+{
+  "stage": "V331_TO_V340_REALTIME_RISK_MONITORING",
+  "stages": [
+    "V331_DAILY_LOSS_MONITOR",
+    "V332_EQUITY_PEAK_DRAWDOWN",
+    "V333_POSITION_CONCENTRATION",
+    "V334_GROSS_EXPOSURE",
+    "V335_NET_EXPOSURE",
+    "V336_CASH_RESERVE",
+    "V337_BUYING_POWER_UTILIZATION",
+    "V338_POSITION_RISK_SCORE",
+    "V339_RISK_ALERT_LEDGERS",
+    "V340_RISK_DASHBOARD"
+  ],
+  "input_stage": "V321_TO_V330_REALTIME_PORTFOLIO_MONITORING",
+  "controller_files_modified": false,
+  "external_network_used_during_build": false,
+  "broker_write_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "V341_TO_V350_PERFORMANCE_ANALYTICS"
+}
