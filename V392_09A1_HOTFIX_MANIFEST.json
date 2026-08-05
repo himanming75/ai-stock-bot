@@ -1,0 +1,14 @@
+{
+  "hotfix": "V392.09A1",
+  "purpose": "Recover latest approved V392.08A ledger result into immutable snapshot",
+  "source_ledger": "release/v392_08a/actual/local_dispatch_release_ledger.jsonl",
+  "snapshot": "release/v392_08a/actual/local_dispatch_release_gate_approved_snapshot.json",
+  "current_blocked_result_overwritten": false,
+  "replay_registry_modified": false,
+  "broker_adapter_enabled": false,
+  "dispatch_execution_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

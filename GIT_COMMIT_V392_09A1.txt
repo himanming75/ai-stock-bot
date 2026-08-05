@@ -1,0 +1,3 @@
+git add execution_authorization/dispatch_context.py execution_authorization/dispatch_context_guard.py tools/run_v392_09a.py tools/test_v392_09a.py tools/verify_v392_09a.py tools/recover_v392_08a_approved_snapshot.py release/v392_08a/actual/local_dispatch_release_gate_approved_snapshot.json release/v392_09a RUN_V392_09A_LOCAL_DISPATCH_ENGINE_PREPARATION.ps1 RUN_V392_09A_TEST_AND_VERIFY.ps1 V392_09A_MANIFEST.json V392_09A1_HOTFIX_MANIFEST.json GIT_COMMIT_V392_09A1.txt
+git commit -m "V392.09A1 recover approved dispatch release snapshot"
+git push origin main
