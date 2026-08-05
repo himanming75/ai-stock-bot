@@ -1,0 +1,20 @@
+{
+  "stage": "EXECUTION_PLAN_TO_ORDER_TICKET_GENERATOR_MEGA_BUNDLE",
+  "features": [
+    "Alpaca-compatible ticket payload",
+    "Deterministic ticket ID",
+    "Deterministic client order ID",
+    "SHA256 idempotency key",
+    "Slice quantity distribution",
+    "Fractional quantity support",
+    "Ticket notional gate",
+    "Dry-run ticket ledger"
+  ],
+  "actual_external_network_used": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_order_submission_performed": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_development": "PAPER_ORDER_SUBMISSION_GATE_AND_RECONCILIATION"
+}

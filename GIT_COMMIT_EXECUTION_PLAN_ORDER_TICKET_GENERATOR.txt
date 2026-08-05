@@ -1,0 +1,10 @@
+git add order_ticket_generator
+git add tools/run_execution_plan_order_ticket_generator.py
+git add tools/test_execution_plan_order_ticket_generator.py
+git add release/order_ticket_generator
+git add RUN_EXECUTION_PLAN_ORDER_TICKET_GENERATOR.ps1
+git add RUN_EXECUTION_PLAN_ORDER_TICKET_GENERATOR_TEST_AND_VERIFY.ps1
+git add EXECUTION_PLAN_ORDER_TICKET_GENERATOR_MANIFEST.json
+git add GIT_COMMIT_EXECUTION_PLAN_ORDER_TICKET_GENERATOR.txt
+git commit -m "Add execution plan order ticket generator"
+git push origin main

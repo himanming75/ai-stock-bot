@@ -1,0 +1,8 @@
+{
+  "time_in_force": "day",
+  "extended_hours": false,
+  "client_order_prefix": "aisb",
+  "minimum_quantity": "0.0001",
+  "maximum_ticket_notional": "5000",
+  "fractional_precision": 4
+}

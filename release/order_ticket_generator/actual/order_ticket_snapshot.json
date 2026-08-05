@@ -1,0 +1,143 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "generated_at": "2026-08-05T17:40:12.217958+00:00",
+  "next_fixed_development": "PAPER_ORDER_SUBMISSION_GATE_AND_RECONCILIATION",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "ready_ticket_count": 6,
+  "stage": "EXECUTION_PLAN_TO_ORDER_TICKET_GENERATOR_MEGA_BUNDLE",
+  "status": "PASS",
+  "ticket_count": 6,
+  "tickets": [
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-b4208db89a657bf5fa70103e",
+      "estimated_notional": "1266.86",
+      "idempotency_key": "b4208db89a657bf5fa70103e76d0c9128df339b83ca629a401add368848d2391",
+      "parent_symbol": "QQQ",
+      "payload": {
+        "client_order_id": "aisb-b4208db89a657bf5fa70103e",
+        "extended_hours": false,
+        "limit_price": "565.11",
+        "qty": "2.2418",
+        "side": "buy",
+        "symbol": "QQQ",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 1,
+      "ticket_id": "ticket_b4208db89a657bf5fa70"
+    },
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-76100c10b1df3b143e043e35",
+      "estimated_notional": "1266.86",
+      "idempotency_key": "76100c10b1df3b143e043e358e8416c0cd3ad784f9ce6d1b4d4e054d4f45ee1d",
+      "parent_symbol": "QQQ",
+      "payload": {
+        "client_order_id": "aisb-76100c10b1df3b143e043e35",
+        "extended_hours": false,
+        "limit_price": "565.11",
+        "qty": "2.2418",
+        "side": "buy",
+        "symbol": "QQQ",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 2,
+      "ticket_id": "ticket_76100c10b1df3b143e04"
+    },
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-4db6979fd363591e7c4f8213",
+      "estimated_notional": "1266.98",
+      "idempotency_key": "4db6979fd363591e7c4f8213e336fe67c5a200ce14441db002c1f131722571a6",
+      "parent_symbol": "QQQ",
+      "payload": {
+        "client_order_id": "aisb-4db6979fd363591e7c4f8213",
+        "extended_hours": false,
+        "limit_price": "565.11",
+        "qty": "2.2420",
+        "side": "buy",
+        "symbol": "QQQ",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 3,
+      "ticket_id": "ticket_4db6979fd363591e7c4f"
+    },
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-78a604d4a018babfc9a85ffd",
+      "estimated_notional": "1266.88",
+      "idempotency_key": "78a604d4a018babfc9a85ffdeace5175fb95ce10e4b756aca44a2e58959476c3",
+      "parent_symbol": "SPY",
+      "payload": {
+        "client_order_id": "aisb-78a604d4a018babfc9a85ffd",
+        "extended_hours": false,
+        "limit_price": "630.13",
+        "qty": "2.0105",
+        "side": "buy",
+        "symbol": "SPY",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 1,
+      "ticket_id": "ticket_78a604d4a018babfc9a8"
+    },
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-7315caaa89bb16bfa432b012",
+      "estimated_notional": "1266.88",
+      "idempotency_key": "7315caaa89bb16bfa432b012aa90b710d338299109c2fe1861ab5729c99e467a",
+      "parent_symbol": "SPY",
+      "payload": {
+        "client_order_id": "aisb-7315caaa89bb16bfa432b012",
+        "extended_hours": false,
+        "limit_price": "630.13",
+        "qty": "2.0105",
+        "side": "buy",
+        "symbol": "SPY",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 2,
+      "ticket_id": "ticket_7315caaa89bb16bfa432"
+    },
+    {
+      "blocked": false,
+      "blockers": [],
+      "client_order_id": "aisb-2deb038a67fc6103d4906d36",
+      "estimated_notional": "1267.00",
+      "idempotency_key": "2deb038a67fc6103d4906d3651428fdaeac320ce1dfec264108ea375eafd6d46",
+      "parent_symbol": "SPY",
+      "payload": {
+        "client_order_id": "aisb-2deb038a67fc6103d4906d36",
+        "extended_hours": false,
+        "limit_price": "630.13",
+        "qty": "2.0107",
+        "side": "buy",
+        "symbol": "SPY",
+        "time_in_force": "day",
+        "type": "limit"
+      },
+      "slice_count": 3,
+      "slice_number": 3,
+      "ticket_id": "ticket_2deb038a67fc6103d490"
+    }
+  ]
+}
