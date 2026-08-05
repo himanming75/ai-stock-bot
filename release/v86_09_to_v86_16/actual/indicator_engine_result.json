@@ -1,10 +1,66 @@
 {
-  "actual_credentials_used": false,
-  "actual_external_network_used": false,
-  "broker_command_execution_enabled": false,
   "broker_write_enabled": false,
   "external_network_enabled": false,
-  "implementation_type": "LOCAL_OHLCV_INDICATOR_ENGINE",
+  "indicator_engine_layout": "indicator_engine",
+  "indicator_result": {
+    "atr_14": 1.0500000000000114,
+    "bar_count": 220,
+    "bollinger_lower": 149.63330627718358,
+    "bollinger_middle": 152.50799999999998,
+    "bollinger_upper": 155.38269372281638,
+    "bollinger_width_pct": 3.769892363438512,
+    "close": 154.82,
+    "ema_20": 152.50411006985294,
+    "ema_200": 132.79212587688056,
+    "ema_50": 148.7558201905223,
+    "indicator_count": 16,
+    "latest_timestamp": "2026-01-24T16:00:00Z",
+    "macd": 1.7481050889096252,
+    "macd_histogram": -0.003028516175544338,
+    "macd_signal": 1.7511336050851696,
+    "rsi_14": 100.0,
+    "sma_20": 152.50799999999998,
+    "sma_50": 148.75379999999998,
+    "strategy_signals": [
+      {
+        "enabled": true,
+        "name": "RSI",
+        "reason": "RSI(14)=100.00",
+        "score": -100.0,
+        "weight": 1.0
+      },
+      {
+        "enabled": true,
+        "name": "MACD",
+        "reason": "MACD histogram=-0.003029",
+        "score": -0.19561530652010967,
+        "weight": 1.2
+      },
+      {
+        "enabled": true,
+        "name": "EMA_TREND",
+        "reason": "EMA20/EMA50 spread=2.421%",
+        "score": 48.421261843827104,
+        "weight": 1.0
+      },
+      {
+        "enabled": true,
+        "name": "VWAP",
+        "reason": "Close/VWAP deviation=19.552%",
+        "score": 100.0,
+        "weight": 0.8
+      },
+      {
+        "enabled": true,
+        "name": "BOLLINGER",
+        "reason": "Bollinger position=0.902",
+        "score": -40.21297958891588,
+        "weight": 0.7
+      }
+    ],
+    "symbol": "AAPL",
+    "vwap": 129.5004747673001
+  },
   "indicators": {
     "atr_14": 1.0500000000000114,
     "bar_count": 220,
@@ -64,16 +120,11 @@
     "symbol": "AAPL",
     "vwap": 129.5004747673001
   },
-  "input_path": "C:\\stock-bot\\release\\v86_09_to_v86_16\\input\\ohlcv_sample.json",
   "live_trading_enabled": false,
-  "network_requests_executed": 0,
-  "next_phase": "V86_17_PORTFOLIO_SCORING",
   "order_submission_enabled": false,
   "paper_only": true,
   "stage": "V86.16",
   "stage_range": "V86.09-V86.16",
   "state": "INDICATOR_ENGINE_READY",
-  "status": "PASS",
-  "strategy_signal_output_path": "C:\\stock-bot\\release\\v86_09_to_v86_16\\actual\\strategy_signal_input_from_indicators.json",
-  "write_requests_executed": 0
+  "status": "PASS"
 }

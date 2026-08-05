@@ -1,8 +1,8 @@
 {
-  "action": "START_PAPER_SESSION",
-  "action_id": "orchestrator-action-9d1790db0e7aa4166e2e",
-  "active_action": false,
-  "observed_at": "2026-08-03T17:34:53.978728+00:00",
+  "action": "REFRESH_SCHEDULER_HEARTBEAT",
+  "action_id": "orchestrator-action-fd26093e7643c054fb23",
+  "active_action": true,
+  "observed_at": "2026-08-03T17:46:56.643248+00:00",
   "paper_only": true,
-  "recovery_required": false
+  "recovery_required": true
 }

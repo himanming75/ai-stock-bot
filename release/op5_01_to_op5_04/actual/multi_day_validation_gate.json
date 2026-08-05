@@ -1,15 +1,13 @@
 {
   "broker_action_performed": false,
-  "created_at": "2026-08-02T08:16:42.489902+00:00",
+  "created_at": "2026-08-03T02:02:45.851262+00:00",
   "gate_reasons": [
-    "PILOT_NOT_STARTED",
     "MINIMUM_VALIDATION_DAYS_NOT_MET",
-    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET",
-    "RECOVERY_GATE_NOT_CLEAR"
+    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET"
   ],
   "paper_only": true,
-  "pilot_id": "",
-  "session_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP5.03",
   "validation_complete": false,
   "validation_gate_clear": false

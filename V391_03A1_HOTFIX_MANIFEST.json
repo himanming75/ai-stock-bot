@@ -1,0 +1,9 @@
+{
+  "hotfix": "V391.03A1",
+  "purpose": "Add missing append_jsonl to autonomous_risk_governor/io.py",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

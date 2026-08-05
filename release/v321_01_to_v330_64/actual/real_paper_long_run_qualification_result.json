@@ -10,12 +10,12 @@
     "gap_limit": true,
     "invalid_timestamps_zero": true,
     "live_submission_disabled": true,
-    "minimum_cycles": false,
-    "minimum_duration": false,
+    "minimum_cycles": true,
+    "minimum_duration": true,
     "paper_submission_disabled": true,
     "policy_valid": true,
-    "qualification_enabled": false,
-    "success_ratio": false,
+    "qualification_enabled": true,
+    "success_ratio": true,
     "zero_new_orders": true
   },
   "continuity": {
@@ -23,30 +23,25 @@
     "excessive_gap_count": 0,
     "gap_threshold_seconds": 90,
     "invalid_timestamp_count": 0,
-    "maximum_gap_seconds": 0.0,
-    "observation_duration_seconds": 0.0,
-    "timestamp_count": 0
+    "maximum_gap_seconds": 49.616,
+    "observation_duration_seconds": 7699.233,
+    "timestamp_count": 244
   },
-  "failed": [
-    "qualification_enabled",
-    "minimum_cycles",
-    "minimum_duration",
-    "success_ratio"
-  ],
+  "failed": [],
   "live_submission_enabled": false,
   "next_phase": "V331_01_TO_V340_64_REAL_PAPER_AUTONOMOUS_OBSERVATION_GOVERNANCE",
   "paper_submission_enabled": false,
   "stage": "V330.64",
-  "state": "REAL_PAPER_LONG_RUN_READY_BLOCKED",
+  "state": "REAL_PAPER_LONG_RUN_QUALIFIED",
   "statistics": {
     "blocked_cycles": 0,
     "cycle_corrupt_records": 0,
     "error_corrupt_records": 0,
-    "error_records": 0,
-    "observation_minutes": 0.0,
-    "success_ratio": 0.0,
-    "successful_cycles": 0,
-    "total_cycles": 0
+    "error_records": 4,
+    "observation_minutes": 128.321,
+    "success_ratio": 1.0,
+    "successful_cycles": 244,
+    "total_cycles": 244
   },
   "status": "PASS"
 }

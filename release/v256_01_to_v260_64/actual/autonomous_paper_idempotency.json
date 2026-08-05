@@ -6,6 +6,17 @@
     "342d90bde516e23c8d24dee8": {
       "client_order_id": "AISB-PAPER-342d90bde516e23c8d24dee8"
     },
+    "bf54d4fc84b1e0cfd92f6efe": {
+      "action": "BUY",
+      "client_order_id": "AISB-PAPER-bf54d4fc84b1e0cfd92f6efe",
+      "confidence": 72.0,
+      "limit_price": 200.04,
+      "order_type": "LIMIT",
+      "plan_allowed": true,
+      "quantity": 1,
+      "symbol": "AAPL",
+      "time_in_force": "DAY"
+    },
     "ccb2be810457d3a5a6a121af": {
       "action": "BUY",
       "client_order_id": "AISB-PAPER-ccb2be810457d3a5a6a121af",

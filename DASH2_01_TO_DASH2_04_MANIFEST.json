@@ -1,0 +1,14 @@
+{
+  "base_commit": "b6452a5",
+  "broker_write_enabled": false,
+  "bundle_type": "PAPER_TRADING_DASHBOARD_INTEGRATION",
+  "expected_prior_stage": "OP3.13-OP3.16",
+  "live_trading_enabled": false,
+  "order_controls_available": false,
+  "order_lifecycle_panel": true,
+  "paper_account_panel": true,
+  "positions_panel": true,
+  "read_only": true,
+  "risk_panel": true,
+  "stage_range": "DASH2.01-DASH2.04"
+}

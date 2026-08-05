@@ -1,0 +1,52 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "blocked_cycles_zero": false,
+    "broker_write_disabled": true,
+    "consecutive_error_limit": true,
+    "corrupt_records_zero": true,
+    "duplicate_limit": true,
+    "gap_limit": true,
+    "invalid_timestamps_zero": true,
+    "live_submission_disabled": true,
+    "minimum_cycles": false,
+    "minimum_duration": false,
+    "paper_submission_disabled": true,
+    "policy_valid": true,
+    "qualification_enabled": true,
+    "success_ratio": false,
+    "zero_new_orders": true
+  },
+  "continuity": {
+    "duplicate_record_count": 0,
+    "excessive_gap_count": 1,
+    "gap_threshold_seconds": 90,
+    "invalid_timestamp_count": 0,
+    "maximum_gap_seconds": 112.63,
+    "observation_duration_seconds": 155.924,
+    "timestamp_count": 4
+  },
+  "failed": [
+    "minimum_cycles",
+    "minimum_duration",
+    "success_ratio",
+    "blocked_cycles_zero"
+  ],
+  "live_submission_enabled": false,
+  "next_phase": "V331_01_TO_V340_64_REAL_PAPER_AUTONOMOUS_OBSERVATION_GOVERNANCE",
+  "paper_submission_enabled": false,
+  "stage": "V330.64",
+  "state": "REAL_PAPER_LONG_RUN_QUALIFICATION_PENDING",
+  "statistics": {
+    "blocked_cycles": 2,
+    "cycle_corrupt_records": 0,
+    "error_corrupt_records": 0,
+    "error_records": 0,
+    "observation_minutes": 2.599,
+    "success_ratio": 0.5,
+    "successful_cycles": 2,
+    "total_cycles": 4
+  },
+  "status": "PASS"
+}

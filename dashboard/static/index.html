@@ -9,7 +9,7 @@
 <body>
   <header>
     <div>
-      <p class="eyebrow">READ-ONLY SHADOW OPERATIONS</p>
+      <p class="eyebrow">READ-ONLY PAPER OPERATIONS</p>
       <h1>AI Stock Bot</h1>
     </div>
     <div id="overall-status" class="status-pill">Loading</div>
@@ -48,6 +48,35 @@
       </article>
     </section>
 
+    <section class="paper-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DASH2.01–DASH2.04</p>
+          <h2>Paper Trading Operations</h2>
+        </div>
+        <span id="paper-runtime-status" class="badge">—</span>
+      </div>
+
+      <section class="paper-grid">
+        <article class="panel">
+          <div class="panel-title"><h2>Paper Account</h2><span id="paper-account-status" class="badge">—</span></div>
+          <dl id="paper-account-panel"></dl>
+        </article>
+        <article class="panel">
+          <div class="panel-title"><h2>Order Lifecycle</h2><span id="paper-order-status" class="badge">—</span></div>
+          <dl id="paper-order-panel"></dl>
+        </article>
+        <article class="panel">
+          <div class="panel-title"><h2>Positions</h2><span id="position-count" class="badge">0</span></div>
+          <div id="positions-table" class="table-wrap"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-title"><h2>Risk Controls</h2><span id="risk-health" class="badge">—</span></div>
+          <dl id="paper-risk-panel"></dl>
+        </article>
+      </section>
+    </section>
+
     <section class="advanced-grid">
       <article class="panel chart-panel">
         <div class="panel-title"><h2>Shadow Equity Curve</h2><span class="badge">DASH1.05</span></div>
@@ -74,7 +103,7 @@
   </main>
 
   <footer>
-    <span>Local dashboard · Broker writes disabled</span>
+    <span>Local dashboard · Order controls disabled</span>
     <span id="last-refresh">—</span>
   </footer>
   <script src="/app.js"></script>

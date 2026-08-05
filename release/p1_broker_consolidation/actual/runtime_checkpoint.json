@@ -1,0 +1,13 @@
+{
+  "duplicate_fill_count": 0,
+  "new_fill_count": 1,
+  "observed_at": "2026-08-05T04:36:22.264428+00:00",
+  "reconciliation_passed": true,
+  "recovery_plan": [
+    {
+      "action": "CONTINUE_MONITORING",
+      "reason": "RECONCILIATION_HEALTHY"
+    }
+  ],
+  "stage": "P3"
+}

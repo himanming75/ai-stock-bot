@@ -2,7 +2,7 @@
   "actual_credentials_used": false,
   "actual_external_network_used": false,
   "actual_orders_submitted": 0,
-  "ai_portfolio_certificate_sha256": "3388d863e3b433f80d7c06f25aafbbf042638861da39c117f5bab227b1398613",
+  "ai_portfolio_certificate_sha256": "807af49e71c28d042f1b36c271de5605dc5e28a0f3ab03ecbce9d6e0167ca8d1",
   "allocation": {
     "allocated_strategy_count": 3,
     "allocations": [
@@ -42,7 +42,7 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V99_33_PORTFOLIO_REBALANCE_ENGINE",
-  "observed_at": "2026-08-03T23:00:59.927535+00:00",
+  "observed_at": "2026-08-03T23:01:06.914757+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "portfolio_id": "0b75d5fbbbac4a6c22f20fc7",

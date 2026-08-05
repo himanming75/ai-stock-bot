@@ -84,10 +84,10 @@
   "live_trading_enabled": false,
   "manual_approval_required": true,
   "next_phase": "V101_33_ADAPTIVE_REBALANCE_OPTIMIZATION",
-  "observed_at": "2026-08-04T02:16:29.117659+00:00",
+  "observed_at": "2026-08-04T02:16:36.850935+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
-  "rebalance_control_certificate_sha256": "f7bde18f99a240673b3c10b2f721fc151959a8061846db215bae5b1d1f7b2cc3",
+  "rebalance_control_certificate_sha256": "882baa1237cfeae45f82bd9d6364960151eeb9f6fdee019a5c7f694fd512907d",
   "rebalance_control_id": "823374eee52f3426adc25b0c",
   "rebalance_gate": {
     "checks": {

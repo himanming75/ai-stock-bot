@@ -48,7 +48,7 @@
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V101_01_PORTFOLIO_REBALANCE_CONTROL",
-  "observed_at": "2026-08-04T02:10:34.053113+00:00",
+  "observed_at": "2026-08-04T02:10:44.486184+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "portfolio_heat": {
@@ -88,7 +88,7 @@
     "unused_risk_budget_pct": 1.231365,
     "used_risk_budget_pct": 8.768635
   },
-  "risk_budget_certificate_sha256": "42e5e0ad2cf619939bb8bea20b19a5ba19b1ee9ff80b6f007358aae332d03639",
+  "risk_budget_certificate_sha256": "038a1fd484bccb549d4e77c25843125fea99405585bf2dfaabf9e62cc4091463",
   "risk_budget_gate": {
     "checks": {
       "exposure_multiplier_valid": true,

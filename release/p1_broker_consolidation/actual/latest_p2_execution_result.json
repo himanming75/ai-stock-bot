@@ -1,0 +1,38 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "client_order_id": "p2-20260805T042241-AAPL-buy-ad8bb93bce56",
+  "pre_submit": {
+    "approved": false,
+    "checks": {
+      "account_active": true,
+      "account_not_blocked": true,
+      "asset_active": true,
+      "asset_tradable": true,
+      "buying_power_sufficient": true,
+      "confirmation_valid": true,
+      "credentials_present": true,
+      "daily_order_limit": true,
+      "kill_switch_inactive": true,
+      "market_open": false,
+      "network_enabled": true,
+      "notional_within_limit": true,
+      "paper_endpoint_enforced": true,
+      "risk_permission": true,
+      "symbol_allowed": true,
+      "write_enabled": true
+    },
+    "daily_order_count_before": 0,
+    "estimated_notional": "5",
+    "failed": [
+      "market_open"
+    ],
+    "maximum_daily_orders": 3,
+    "maximum_order_notional": "10"
+  },
+  "request_hash": "f90ee6c7cf316ee94980fe2d7db8195bbfc8471cd26cb40892921e64fd3d0bfa",
+  "stage": "P2",
+  "state": "PAPER_ORDER_BLOCKED",
+  "status": "PASS",
+  "submitted": false
+}

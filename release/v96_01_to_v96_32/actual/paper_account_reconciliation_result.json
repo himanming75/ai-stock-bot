@@ -53,9 +53,9 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V96_33_DAILY_PAPER_CLOSE",
-  "observed_at": "2026-08-03T22:18:59.611135+00:00",
+  "observed_at": "2026-08-03T22:19:06.934190+00:00",
   "order_submission_enabled": false,
-  "paper_account_certificate_sha256": "ed5fcb7d5125225e21478e244e881e8ab169d430820fb2791872e09af374ebb6",
+  "paper_account_certificate_sha256": "320562073403b8bdd613cfb344d215696ca044bdfa04dba714f023b319a1e1c2",
   "paper_only": true,
   "position_ledger_entries": [
     {

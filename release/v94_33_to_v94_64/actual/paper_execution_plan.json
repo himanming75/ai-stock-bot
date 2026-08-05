@@ -2,7 +2,7 @@
   "actual_orders_submitted": 0,
   "broker_write_enabled": false,
   "continuous_loop_enabled": false,
-  "decision_orchestration_certificate_sha256": "5e767965dec4840d04148fcee7649ccf209612c5cd310b03c19ea9154db000bf",
+  "decision_orchestration_certificate_sha256": "c506b231f22019994a09b5860bf0a356bd8b4b1ae5677810fbc77979df5251b1",
   "execution_authorized": false,
   "external_network_enabled": false,
   "gates": {
@@ -21,14 +21,14 @@
     "maximum_planned_orders": 5,
     "maximum_total_planned_notional": 50000.0,
     "passed": true,
-    "planned_order_count": 1,
-    "total_planned_notional": 6200.0
+    "planned_order_count": 2,
+    "total_planned_notional": 12400.0
   },
   "live_trading_enabled": false,
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V95_01_PAPER_EXECUTION_SIMULATOR",
-  "observed_at": "2026-08-03T21:49:47.920376+00:00",
+  "observed_at": "2026-08-03T21:54:05.709872+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "paper_order_plans": [
@@ -40,8 +40,8 @@
       "quantity": 31.0,
       "reference_price": 200.0,
       "side": "BUY",
-      "skip_reason": "DUPLICATE_PLAN_KEY",
-      "state": "BLOCKED_DUPLICATE",
+      "skip_reason": "",
+      "state": "PLANNED",
       "strategy_id": "MOMENTUM_10",
       "symbol": "AAPL",
       "target_notional": 6367.947,
@@ -96,14 +96,14 @@
       "passed": true
     },
     {
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "item": "DUPLICATE_PROTECTION",
       "passed": false
     },
     {
       "item": "PLANNED_ORDER_COUNT",
       "passed": true,
-      "planned_count": 1
+      "planned_count": 2
     },
     {
       "item": "SKIPPED_PLAN_REVIEW",

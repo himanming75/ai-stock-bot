@@ -1,0 +1,18 @@
+{
+  "stage": "P2_ACTUAL_PAPER_BROKER_READ_VALIDATION",
+  "actual_read_endpoints": [
+    "GET /v2/account",
+    "GET /v2/positions",
+    "GET /v2/orders?status=open&direction=asc",
+    "GET /v2/clock"
+  ],
+  "paper_endpoint": "https://paper-api.alpaca.markets",
+  "explicit_operator_confirmation_required": true,
+  "installation_performs_network_read": false,
+  "post_method_supported": false,
+  "patch_method_supported": false,
+  "delete_method_supported": false,
+  "actual_order_submission_performed_during_install": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0
+}

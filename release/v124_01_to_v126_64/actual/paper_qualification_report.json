@@ -6,7 +6,7 @@
     "minimum_sessions": false,
     "reconciliation_failures_zero": true
   },
-  "completed_sessions": 2,
+  "completed_sessions": 5,
   "critical_error_count": 0,
   "failed": [
     "minimum_sessions"

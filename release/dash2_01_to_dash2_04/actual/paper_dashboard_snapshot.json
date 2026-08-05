@@ -1,0 +1,68 @@
+{
+  "account": {
+    "account_blocked": false,
+    "buying_power": 100000.0,
+    "cash": 0.0,
+    "equity": 0.0,
+    "portfolio_value": 0.0,
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "broker_write_enabled": false,
+  "dashboard_stage": "DASH2.01-DASH2.04",
+  "live_trading_enabled": false,
+  "order_controls_available": false,
+  "order_lifecycle": {
+    "broker_order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+    "client_order_id": "op3-a5a1b0f16a0309dbebfbce88",
+    "expected_qty": 1.0,
+    "fill_state": "NOT_FILLED",
+    "filled_avg_price": 0.0,
+    "filled_qty": 0.0,
+    "recovery_required": true,
+    "side": "buy",
+    "status": "accepted",
+    "symbol": "AAPL"
+  },
+  "orders": [
+    {
+      "broker_order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+      "client_order_id": "op3-a5a1b0f16a0309dbebfbce88",
+      "quantity": 1,
+      "side": "buy",
+      "status": "accepted",
+      "submission_succeeded": true,
+      "symbol": "AAPL"
+    }
+  ],
+  "positions": [
+    {
+      "avg_entry_price": 0.0,
+      "market_value": 0.0,
+      "qty": 1.0,
+      "symbol": "AAPL",
+      "unrealized_pl": 0.0
+    }
+  ],
+  "read_only": true,
+  "risk": {
+    "consecutive_losses": 0,
+    "daily_orders": 0,
+    "daily_pnl": 0.0,
+    "emergency_stop_engaged": false,
+    "latest_decision": "HOLD",
+    "market_open": true,
+    "minutes_to_market_close": 120,
+    "open_positions": 1,
+    "risk_ready": true,
+    "risk_reasons": []
+  },
+  "runtime": {
+    "actual_paper_orders_submitted": 0,
+    "continuous_loop_enabled": false,
+    "live_orders_submitted": 0,
+    "single_cycle_only": true,
+    "state": "LIMITED_AUTONOMOUS_PAPER_SAFE_MODE",
+    "status": "BLOCKED"
+  }
+}

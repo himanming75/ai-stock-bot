@@ -197,7 +197,7 @@
       "window_id": "FULL"
     }
   },
-  "automated_backtest_certificate_sha256": "f8a9c360ed0c1c8aabcbf01414f486f6a3c9f8f0d2afd2c898c45b836ba4d390",
+  "automated_backtest_certificate_sha256": "6d1d1f4756e225f001e2e477d7d773effad811372d8beda0d3775c7745182e3e",
   "broker_write_enabled": false,
   "cache_hit_count": 0,
   "checks": {
@@ -217,7 +217,7 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V98_33_BACKTEST_BATCH_ORCHESTRATION",
-  "observed_at": "2026-08-03T22:43:21.987075+00:00",
+  "observed_at": "2026-08-03T22:43:33.389050+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "results": [

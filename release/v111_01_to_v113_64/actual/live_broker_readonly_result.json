@@ -45,7 +45,7 @@
     "failed": [],
     "passed": true
   },
-  "certificate_sha256": "00ac1f3cd146812a4dfbc9cf5c7813a360bdb326bdba98a7e490f4b07a24f3ac",
+  "certificate_sha256": "a0ad7d03a463b0aa219326d5bca745ebd719d393ac3d74f2f7478cb7c866e6b2",
   "credential_inspection": {
     "adapter_name": "MOCK_READ_ONLY",
     "complete": true,
@@ -70,7 +70,7 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V114_01_TO_V116_64_BROKER_INTEGRATION_SAFE_EXECUTION_BOUNDARY",
-  "observed_at": "2026-08-04T05:25:39.111751+00:00",
+  "observed_at": "2026-08-04T05:25:49.080240+00:00",
   "order_snapshot": [],
   "order_submission_enabled": false,
   "paper_only": true,

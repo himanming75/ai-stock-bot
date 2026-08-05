@@ -1,0 +1,20 @@
+{
+  "audit_result_sha256": "a6711b58c2799280ec43a8a1714ca297b7a4c5967803878097a1af74da07e265",
+  "certificate_stage": "FINAL_OFFLINE_RELEASE_CANDIDATE",
+  "eligible": true,
+  "failed": [],
+  "issued_at": "2026-08-05T09:26:29.260611+00:00",
+  "live_release_allowed": false,
+  "offline_release_candidate_ready": true,
+  "p3_actual_paper_order_validation_completed": false,
+  "production_release_allowed": false,
+  "release_inventory_sha256": "1c411967bd48f23769db95fb6315bfeea3a90cd6d2662336c3d54d67ad350095",
+  "source_branch": "main",
+  "source_commit": "8ebaa12922f34ef1ae95f1185c444abf1499906a",
+  "status": "PASS",
+  "warnings": [
+    "WORKING_TREE_NOT_CLEAN"
+  ],
+  "working_tree_change_count": 405,
+  "working_tree_clean": false
+}

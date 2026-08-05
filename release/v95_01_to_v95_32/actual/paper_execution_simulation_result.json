@@ -1,20 +1,83 @@
 {
   "actual_orders_submitted": 0,
   "broker_write_enabled": false,
-  "cycle_id": "e83336f3d6195f1deeaa4280",
-  "duplicate_cycle": true,
+  "continuous_loop_enabled": false,
+  "cycle_id": "d1e115b3122d3b74ee624dad",
+  "duplicate_cycle": false,
+  "ending_cash": 90595.3,
+  "ending_equity": 100042.3,
   "external_network_enabled": false,
-  "fills": [],
+  "fill_summary": {
+    "filled_count": 1,
+    "not_filled_count": 0,
+    "partial_fill_count": 1,
+    "total_commission": 0.0,
+    "total_gross_notional": 9404.7
+  },
+  "fills": [
+    {
+      "cash_effect": -3201.6,
+      "commission": 0.0,
+      "cycle_id": "d1e115b3122d3b74ee624dad",
+      "fill_id": "d1e115b3122d3b74ee624dad-001",
+      "fill_price": 200.1,
+      "fill_ratio": 0.516129,
+      "filled_quantity": 16.0,
+      "gross_notional": 3201.6,
+      "reason": "",
+      "requested_quantity": 31.0,
+      "side": "BUY",
+      "state": "PARTIALLY_FILLED",
+      "strategy_id": "MOMENTUM_10",
+      "symbol": "AAPL"
+    },
+    {
+      "cash_effect": -6203.1,
+      "commission": 0.0,
+      "cycle_id": "d1e115b3122d3b74ee624dad",
+      "fill_id": "d1e115b3122d3b74ee624dad-002",
+      "fill_price": 200.1,
+      "fill_ratio": 1.0,
+      "filled_quantity": 31.0,
+      "gross_notional": 6203.1,
+      "reason": "",
+      "requested_quantity": 31.0,
+      "side": "BUY",
+      "state": "FILLED",
+      "strategy_id": "MOMENTUM_15",
+      "symbol": "AAPL"
+    }
+  ],
+  "initial_cash": 100000.0,
   "live_trading_enabled": false,
   "network_requests_executed": 0,
-  "next_phase": "V95_01_WAIT_NEW_SIMULATION_DATE",
+  "next_phase": "V95_33_PAPER_POSITION_LIFECYCLE",
   "order_submission_enabled": false,
   "paper_only": true,
-  "paper_simulation_certificate_sha256": "377c2f9692bf5f9bc21d473846a0894cfc037a5a3dc009121b69398a3aa2c1be",
-  "simulation_date": "2026-08-03",
+  "paper_simulation_certificate_sha256": "a791922944437a976e03b41cbcd32e726913f5ba8bad8d4b695a7215fa2ccfc9",
+  "portfolio": {
+    "cash": 90595.3,
+    "equity": 100042.3,
+    "market_value": 9447.0,
+    "positions": {
+      "AAPL": {
+        "average_cost": 200.1,
+        "mark_price": 201.0,
+        "market_value": 9447.0,
+        "quantity": 47.0,
+        "unrealized_pnl": 42.3
+      }
+    },
+    "unrealized_pnl": 42.3
+  },
+  "simulated_orders_processed": 2,
+  "simulation_date": "2026-08-04",
+  "source_plan_count": 2,
+  "source_plan_state": "PAPER_EXECUTION_PLAN_READY_FOR_MANUAL_APPROVAL",
   "stage": "V95.32",
   "stage_range": "V95.01-V95.32",
-  "state": "PAPER_EXECUTION_SIMULATION_DUPLICATE_CYCLE_BLOCKED",
+  "state": "PAPER_EXECUTION_SIMULATION_COMPLETED",
   "status": "PASS",
+  "windows_task_enabled": false,
   "write_requests_executed": 0
 }

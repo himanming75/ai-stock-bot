@@ -12,7 +12,7 @@
   "approval_token_issued": false,
   "broker_submission_authorized": false,
   "broker_write_enabled": false,
-  "certificate_sha256": "4f1c18e44af513be82b6e3b48fccdecf0f36119575f565537fc4ee517907baa3",
+  "certificate_sha256": "05b26efb48d31634bb86cc2005b1d1e7529853ddc137dc6c47247476a657b2c7",
   "emergency_action": {
     "broker_writes_executed": 0,
     "cancel_open_orders_requested": false,
@@ -62,7 +62,7 @@
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V120_FINAL_PRODUCTION_RELEASE",
-  "observed_at": "2026-08-04T05:36:55.174320+00:00",
+  "observed_at": "2026-08-04T05:37:02.411661+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "resume_gate": {
@@ -82,10 +82,10 @@
   "safety_certificate": {
     "actual_orders_submitted": 0,
     "broker_submission_authorized": false,
-    "certificate_sha256": "b5e4eb0df32601c789b6f9ab18467205f627dcce717724baab2d3efb17535bc0",
+    "certificate_sha256": "da39e1555b2418a517a9de8f67113ed717a7fe336dc7d14d4cf818a8e23e4b3e",
     "certificate_type": "LIVE_SAFETY_CERTIFICATE",
     "emergency_state": "SAFETY_CLEAR",
-    "issued_at": "2026-08-04T05:36:55.174193+00:00",
+    "issued_at": "2026-08-04T05:37:02.411537+00:00",
     "kill_switch_state": "ARMED_NOT_TRIGGERED",
     "live_execution_authorized": false,
     "manual_approval_required": true,

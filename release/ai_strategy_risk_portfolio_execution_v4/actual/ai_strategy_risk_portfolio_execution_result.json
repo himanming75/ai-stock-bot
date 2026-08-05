@@ -1,0 +1,71 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "broker_write_unused": true,
+    "ensemble_trade_ready": true,
+    "ensemble_weight_cap": true,
+    "execution_ready": true,
+    "network_unused": true,
+    "orders_zero": true,
+    "portfolio_ready": true,
+    "risk_approved": true
+  },
+  "ensemble": {
+    "action": "TRADE",
+    "blocked": false,
+    "blockers": [],
+    "confidence": "0.6388",
+    "explanation": [
+      "REGIME_BOOST:momentum_v4",
+      "REGIME_BOOST:breakout_v4",
+      "MARKET_REGIME:TRENDING",
+      "MAX_SINGLE_WEIGHT:0.45",
+      "CONFIDENCE:0.6388"
+    ],
+    "normalized_weights": {
+      "breakout_v4": "0.3707",
+      "mean_reversion_v4": "0.2232",
+      "momentum_v4": "0.4061"
+    },
+    "selected_strategy_ids": [
+      "momentum_v4",
+      "breakout_v4",
+      "mean_reversion_v4"
+    ]
+  },
+  "execution": {
+    "blocked": false,
+    "blockers": [],
+    "expected_slippage_bps": "9.00",
+    "limit_price": "500.10",
+    "order_type": "limit",
+    "quantity": "1",
+    "side": "buy",
+    "slice_count": 2,
+    "symbol": "SPY"
+  },
+  "failed": [],
+  "next_fixed_development": "MARKET_INTELLIGENCE_DATA_FUSION",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "portfolio": {
+    "blockers": [],
+    "rebalance_required": true,
+    "symbol": "SPY",
+    "target_notional": "12000.00",
+    "target_weight": "0.1200"
+  },
+  "risk": {
+    "approved_notional": "573.80",
+    "blocked": false,
+    "blockers": [],
+    "risk_multiplier": "0.5738",
+    "symbol": "SPY"
+  },
+  "stage": "AI_STRATEGY_RISK_PORTFOLIO_EXECUTION_MEGA_BUNDLE",
+  "status": "PASS"
+}

@@ -3,15 +3,15 @@
   "actual_paper_orders_submitted": 0,
   "autonomous_cycle_complete": true,
   "checkpoint": {
-    "checkpoint_hash": "103b69df8e923aa77c4a7106068616d6a198aae5d93247840366c6a67358e6c1",
+    "checkpoint_hash": "cce7eba5aab61fda7a26885fe8908a02dd825954e4ad5498be7b9c9da3a341f8",
     "cycle_id": "e7e6d3abfec91020e3eeaa1c",
-    "generation": 2,
+    "generation": 4,
     "positions": [],
-    "previous_checkpoint_hash": "bfb95e6e04d5e5b950c1124ad83844b67e2f1ede7c64fc42ccf91ee73ff727b2",
-    "state": "AUTONOMOUS_TRADING_RISK_BLOCKED"
+    "previous_checkpoint_hash": "664467b94f6cb7457cf9bb7d5b08096895ce2970a2a3a6e58db679eb222ac23b",
+    "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED"
   },
   "cycle_id": "e7e6d3abfec91020e3eeaa1c",
-  "duplicate_cycle": false,
+  "duplicate_cycle": true,
   "live_network_enabled": false,
   "live_submission_enabled": false,
   "market": {
@@ -21,7 +21,7 @@
     "timestamp": "2026-08-04T15:00:00Z"
   },
   "next_phase": "V140_FINAL_AUTONOMOUS_RELEASE",
-  "observed_at": "2026-08-04T06:44:51.740514+00:00",
+  "observed_at": "2026-08-04T06:56:45.457729+00:00",
   "paper_execution": {
     "actual_live_orders_submitted": 0,
     "live_submission_attempted": false,
@@ -43,7 +43,7 @@
   "positions": [],
   "real_live_network_attempted": false,
   "real_live_submission_attempted": false,
-  "result_sha256": "13d58d7aca0b9040ccf71c97931f0b1d09ee96821b389f125c8ab626ec79dbb0",
+  "result_sha256": "7afeac3cd0478347c392099f2139cb7fc8878985e68000a29c15149fe91c4f1a",
   "risk_gate_passed": false,
   "risk_source_state": "DYNAMIC_LIVE_RISK_REVIEW_REQUIRED",
   "selected_candidates": [
@@ -84,6 +84,6 @@
   ],
   "stage": "V139.64",
   "stage_range": "V137.01-V139.64",
-  "state": "AUTONOMOUS_TRADING_RISK_BLOCKED",
+  "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED",
   "status": "PASS"
 }

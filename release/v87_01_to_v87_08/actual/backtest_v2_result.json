@@ -1,6 +1,4 @@
 {
-  "actual_credentials_used": false,
-  "actual_external_network_used": false,
   "backtest": {
     "bar_count": 240,
     "broker_write_enabled": false,
@@ -3454,19 +3452,13 @@
       }
     ]
   },
-  "broker_command_execution_enabled": false,
   "broker_write_enabled": false,
   "external_network_enabled": false,
-  "implementation_type": "LOCAL_EVENT_DRIVEN_BACKTEST_ENGINE_V2",
-  "input_path": "C:\\stock-bot\\release\\v87_01_to_v87_08\\input\\backtest_sample.json",
   "live_trading_enabled": false,
-  "network_requests_executed": 0,
-  "next_phase": "V87_09_WALK_FORWARD_AND_STRESS_VALIDATION",
   "order_submission_enabled": false,
   "paper_only": true,
   "stage": "V87.08",
   "stage_range": "V87.01-V87.08",
   "state": "BACKTEST_ENGINE_V2_READY",
-  "status": "PASS",
-  "write_requests_executed": 0
+  "status": "PASS"
 }

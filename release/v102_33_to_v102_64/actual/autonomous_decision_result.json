@@ -16,7 +16,7 @@
     "minimum_hold_confidence": 50.0,
     "reason": "ALL_GATES_PASS_HIGH_CONFIDENCE"
   },
-  "autonomous_decision_certificate_sha256": "e8a5c0d0082d76c9ed5bb68e8c98d36606a02d872bf5666db5ceacccba530cec",
+  "autonomous_decision_certificate_sha256": "3ecec334bebf92b384a7cb6be763c3939e59ecc88440d29c5da555969614a108",
   "broker_write_enabled": false,
   "confidence": {
     "confidence_level": "HIGH",
@@ -35,7 +35,7 @@
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V103_01_AUTONOMOUS_CYCLE_MANAGER",
-  "observed_at": "2026-08-04T02:33:12.793618+00:00",
+  "observed_at": "2026-08-04T02:33:29.231378+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "safety_veto": {

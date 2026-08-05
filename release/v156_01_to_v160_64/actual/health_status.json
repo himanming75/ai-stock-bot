@@ -9,31 +9,31 @@
   },
   "failed": [],
   "historical_live_orders_submitted": 0,
-  "observed_at": "2026-08-04T07:17:07.734901+00:00",
+  "observed_at": "2026-08-04T07:25:24.321521+00:00",
   "status": "HEALTHY",
   "tracked_files": {
     "orchestrator": {
-      "age_minutes": 20.37,
+      "age_minutes": 28.65,
       "present": true,
       "stale": false
     },
     "paper": {
-      "age_minutes": 67.97,
+      "age_minutes": 76.25,
       "present": true,
       "stale": true
     },
     "risk": {
-      "age_minutes": 36.58,
+      "age_minutes": 44.85,
       "present": true,
       "stale": true
     },
     "shadow": {
-      "age_minutes": 20.34,
+      "age_minutes": 28.61,
       "present": true,
       "stale": false
     },
     "v140": {
-      "age_minutes": 20.31,
+      "age_minutes": 28.59,
       "present": true,
       "stale": false
     }

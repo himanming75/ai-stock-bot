@@ -1,0 +1,45 @@
+{
+  "policy": {
+    "buy_threshold": 35,
+    "sell_threshold": -35,
+    "watch_confidence": 45
+  },
+  "signals": [
+    {
+      "enabled": true,
+      "name": "RSI",
+      "reason": "RSI(14)=100.00",
+      "score": -100.0,
+      "weight": 1.0
+    },
+    {
+      "enabled": true,
+      "name": "MACD",
+      "reason": "MACD histogram=-0.003029",
+      "score": -0.19561530652010967,
+      "weight": 1.2
+    },
+    {
+      "enabled": true,
+      "name": "EMA_TREND",
+      "reason": "EMA20/EMA50 spread=2.421%",
+      "score": 48.421261843827104,
+      "weight": 1.0
+    },
+    {
+      "enabled": true,
+      "name": "VWAP",
+      "reason": "Close/VWAP deviation=19.552%",
+      "score": 100.0,
+      "weight": 0.8
+    },
+    {
+      "enabled": true,
+      "name": "BOLLINGER",
+      "reason": "Bollinger position=0.902",
+      "score": -40.21297958891588,
+      "weight": 0.7
+    }
+  ],
+  "symbol": "AAPL"
+}

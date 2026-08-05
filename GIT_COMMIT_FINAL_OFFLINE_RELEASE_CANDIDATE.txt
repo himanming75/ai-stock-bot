@@ -1,0 +1,3 @@
+git add final_offline_rc tools/run_final_offline_rc_audit.py tools/test_final_offline_rc_audit.py tools/verify_final_offline_rc_audit.py release/final_offline_release_candidate RUN_FINAL_OFFLINE_RC_AUDIT.ps1 RUN_FINAL_OFFLINE_RC_TEST_AND_VERIFY.ps1 SHOW_FINAL_OFFLINE_RC_STATUS.ps1 FINAL_OFFLINE_RELEASE_CANDIDATE_MANIFEST.json GIT_COMMIT_FINAL_OFFLINE_RELEASE_CANDIDATE.txt
+git commit -m "Add final offline release candidate audit"
+git push origin main

@@ -89,9 +89,9 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V98_01_AUTOMATED_BACKTEST_FRAMEWORK",
-  "observed_at": "2026-08-03T22:38:41.803711+00:00",
+  "observed_at": "2026-08-03T22:38:48.831643+00:00",
   "order_submission_enabled": false,
-  "paper_broker_snapshot_certificate_sha256": "952e708ae7f2b2b57c2b7cbfef56dfd1fda5b7063379b6a39c48040b8cf481b7",
+  "paper_broker_snapshot_certificate_sha256": "4f19ca678886198f4851258b7ce6e25f669477b37c090fa3e2abdc6dc1a69ded",
   "paper_only": true,
   "position_reconciliation": {
     "details": {
@@ -127,7 +127,7 @@
   },
   "read_only_adapter": true,
   "snapshot_freshness": {
-    "age_seconds": 321.232,
+    "age_seconds": 328.26,
     "maximum_age_seconds": 86400,
     "passed": true,
     "reason": ""

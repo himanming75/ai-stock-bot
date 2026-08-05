@@ -7,7 +7,7 @@
     "actual_live_orders_submitted": 0,
     "broker_submission_step_included": false,
     "candidate": {},
-    "created_at": "2026-08-04T07:41:21.468048+00:00",
+    "created_at": "2026-08-04T07:41:29.182167+00:00",
     "execution_authorized": false,
     "gate_passed": false,
     "mode": "RESTRICTED_LIVE_DRY_RUN_ONLY",
@@ -31,7 +31,7 @@
   "live_write_enabled": false,
   "micro_live_state": "CONTROLLED_MICRO_LIVE_HARD_BLOCKED",
   "next_phase": "V181_01_TO_V185_64_PORTFOLIO_AND_BROKER_ADAPTER_FOUNDATION",
-  "observed_at": "2026-08-04T07:41:21.468073+00:00",
+  "observed_at": "2026-08-04T07:41:29.182181+00:00",
   "policy": {
     "allowed_strategies": [
       "momentum"

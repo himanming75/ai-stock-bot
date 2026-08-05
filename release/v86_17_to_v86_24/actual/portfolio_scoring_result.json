@@ -1,14 +1,7 @@
 {
-  "actual_credentials_used": false,
-  "actual_external_network_used": false,
-  "broker_command_execution_enabled": false,
   "broker_write_enabled": false,
   "external_network_enabled": false,
-  "implementation_type": "LOCAL_MULTI_ASSET_PORTFOLIO_SCORING",
-  "input_path": "C:\\stock-bot\\release\\v86_17_to_v86_24\\input\\portfolio_candidates.json",
   "live_trading_enabled": false,
-  "network_requests_executed": 0,
-  "next_phase": "V86_25_AI_EXPLAINABILITY",
   "order_submission_enabled": false,
   "paper_only": true,
   "portfolio": {
@@ -188,6 +181,5 @@
   "stage": "V86.24",
   "stage_range": "V86.17-V86.24",
   "state": "PORTFOLIO_SCORING_ENGINE_READY",
-  "status": "PASS",
-  "write_requests_executed": 0
+  "status": "PASS"
 }

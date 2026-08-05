@@ -1,9 +1,9 @@
 {
   "actual_live_orders_submitted": 0,
   "candidate_id": null,
-  "certificate_sha256": "323cb9cde83e233a5524e1d48c0c04c92ab699f0eb3e95c5fdfe95464306b7f3",
+  "certificate_sha256": "3920d872debd35a2bfa1e4bf37b457c26a03ddf891cd1cb9b54c261f87fdb709",
   "certificate_type": "CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW",
   "execution_authorized": false,
-  "issued_at": "2026-08-04T06:34:46.145017+00:00",
+  "issued_at": "2026-08-04T06:34:55.244561+00:00",
   "review_passed": false
 }

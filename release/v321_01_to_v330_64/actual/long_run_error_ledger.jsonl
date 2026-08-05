@@ -1,0 +1,4 @@
+{"consecutive_errors": 1, "cycle": 245, "error": "<urlopen error timed out>", "error_type": "URLError", "observed_at": "2026-08-04T19:51:17.242241+00:00"}
+{"consecutive_errors": 2, "cycle": 246, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "error_type": "URLError", "observed_at": "2026-08-04T19:51:38.295032+00:00"}
+{"consecutive_errors": 3, "cycle": 247, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "error_type": "URLError", "observed_at": "2026-08-04T19:51:58.312529+00:00"}
+{"consecutive_errors": 4, "cycle": 248, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "error_type": "URLError", "observed_at": "2026-08-04T19:52:38.314495+00:00"}

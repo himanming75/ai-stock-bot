@@ -1,0 +1,9 @@
+{
+  "action": "run_v140",
+  "actual_live_orders_submitted": 0,
+  "executed_at": "2026-08-04T06:56:49.131608+00:00",
+  "ok": true,
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "{\n  \"actual_live_orders_submitted\": 0,\n  \"autonomous_paper_orchestrator_ready\": true,\n  \"development_complete\": true,\n  \"live_trading_ready\": false,\n  \"next_phase\": \"V141_01_WEB_CONTROLLER_FOUNDATION\",\n  \"paper_trading_ready\": true,\n  \"stage\": \"V140.00\",\n  \"state\": \"V140_FINAL_AUTONOMOUS_RELEASE_COMPLETE\",\n  \"status\": \"PASS\",\n  \"web_controller_ready_for_development\": true\n}\nRESULT_FILE=C:\\stock-bot\\release\\v140_final\\actual\\v140_final_release_result.json\n"
+}

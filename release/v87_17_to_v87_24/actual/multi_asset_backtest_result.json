@@ -1,10 +1,6 @@
 {
-  "actual_credentials_used": false,
-  "actual_external_network_used": false,
-  "broker_command_execution_enabled": false,
   "broker_write_enabled": false,
   "external_network_enabled": false,
-  "implementation_type": "LOCAL_MULTI_ASSET_BACKTEST_AND_BENCHMARK",
   "live_trading_enabled": false,
   "multi_asset": {
     "asset_count": 4,
@@ -1260,13 +1256,10 @@
       "XOM": 20.0
     }
   },
-  "network_requests_executed": 0,
-  "next_phase": "V88_01_WEB_UI_V2",
   "order_submission_enabled": false,
   "paper_only": true,
   "stage": "V87.24",
   "stage_range": "V87.17-V87.24",
   "state": "MULTI_ASSET_BACKTEST_CERTIFIED",
-  "status": "PASS",
-  "write_requests_executed": 0
+  "status": "PASS"
 }

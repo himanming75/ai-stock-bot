@@ -1,0 +1,14 @@
+{
+  "broker_write_enabled": false,
+  "live_trading_enabled": false,
+  "maximum_pilot_days": 20,
+  "open_order_count_at_start": 0,
+  "paper_only": true,
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "pilot_name": "controlled-paper-pilot",
+  "position_count_at_start": 0,
+  "session_id": "session-587f043790bf9035beef",
+  "stage": "OP4.02",
+  "started_at": "2026-08-02T08:47:40.644752+00:00",
+  "status": "RUNNING"
+}

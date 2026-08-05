@@ -10,10 +10,10 @@
     "v140_present": true
   },
   "failed": [],
-  "free_disk_mb": 141395.94,
-  "observed_at": "2026-08-04T07:53:23.161162+00:00",
+  "free_disk_mb": 141380.02,
+  "observed_at": "2026-08-04T07:53:32.403346+00:00",
   "status": "HEALTHY",
-  "total_log_size_mb": 0.1232,
+  "total_log_size_mb": 0.1234,
   "tracked_files": {
     "release/v140_final/actual/v140_final_release_result.json": {
       "present": true,

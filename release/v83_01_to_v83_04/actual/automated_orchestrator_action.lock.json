@@ -1,6 +1,7 @@
 {
-  "action_id": "",
-  "active": false,
-  "cleared_at": "2026-08-03T17:34:53.978728+00:00",
+  "action": "REFRESH_SCHEDULER_HEARTBEAT",
+  "action_id": "orchestrator-action-fd26093e7643c054fb23",
+  "active": true,
+  "authorized_at": "2026-08-03T17:46:53.384311+00:00",
   "paper_only": true
 }

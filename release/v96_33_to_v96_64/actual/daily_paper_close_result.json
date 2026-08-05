@@ -22,7 +22,7 @@
     "passed": true
   },
   "continuous_loop_enabled": false,
-  "daily_close_certificate_sha256": "26bd8daa9bf1e81d58729d84d84a359de73b442b2683cccb2ea8bcd0810ebd72",
+  "daily_close_certificate_sha256": "e70e7b2689cf9501e4744dd44567d678c1f836bdfd286219e0e413508c07ca89",
   "daily_metrics": {
     "daily_pnl": 42.3,
     "daily_return_pct": 0.0423,
@@ -44,7 +44,7 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V97_01_PAPER_BROKER_ADAPTER",
-  "observed_at": "2026-08-03T22:29:06.368501+00:00",
+  "observed_at": "2026-08-03T22:29:13.099909+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "position_summary": {

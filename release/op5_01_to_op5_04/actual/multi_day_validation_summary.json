@@ -1,15 +1,15 @@
 {
-  "consecutive_healthy_days": 0,
-  "healthy_days": 0,
+  "consecutive_healthy_days": 1,
+  "healthy_days": 1,
   "maximum_unhealthy_days": 1,
   "minimum_consecutive_healthy_days": 3,
   "minimum_validation_days": 5,
-  "observed_at": "2026-08-02T08:16:42.489902+00:00",
+  "observed_at": "2026-08-03T02:02:45.851262+00:00",
   "paper_only": true,
-  "pilot_id": "",
-  "session_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP5.02",
   "unhealthy_days": 0,
   "validation_complete": false,
-  "validation_days": 0
+  "validation_days": 1
 }

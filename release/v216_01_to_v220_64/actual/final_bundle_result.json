@@ -2,9 +2,9 @@
   "bundle_path": "C:\\stock-bot\\release\\v216_01_to_v220_64\\bundle\\AI_STOCK_BOT_V220_FINAL_PRODUCTION.zip",
   "contains_broker_credentials": false,
   "contains_environment_variables": false,
-  "created_at": "2026-08-04T08:51:14.932581+00:00",
+  "created_at": "2026-08-04T08:51:25.180538+00:00",
   "file_count": 149,
-  "sha256": "e1c9ecffec1c2fcd2505d272e3af87a3e4f99cdaffbe0d7f21705549871db5b8",
-  "size_bytes": 173996,
+  "sha256": "c66a7ed62f375e1ddcb15867eb9caf6c9c5e05eb711dc8def5d9f4ecbbc3fcdb",
+  "size_bytes": 173821,
   "tracked_by_git_recommended": false
 }

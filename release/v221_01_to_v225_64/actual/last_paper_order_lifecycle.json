@@ -1,10 +1,10 @@
 {
   "actual_live_orders_submitted": 0,
-  "cycle_id": "20260804T090046Z",
+  "cycle_id": "20260804T090055Z",
   "details": {
     "reason": "PAPER_SUBMISSION_OR_REAL_NETWORK_DISABLED"
   },
-  "observed_at": "2026-08-04T09:00:46.078374+00:00",
-  "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+  "observed_at": "2026-08-04T09:00:55.528021+00:00",
+  "order_id": "PAPER-fda10a7aa03898f24c3badee",
   "state": "SUBMISSION_BLOCKED"
 }

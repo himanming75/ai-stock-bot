@@ -5,7 +5,7 @@
   },
   "actual_live_orders_submitted": 0,
   "actual_paper_orders_submitted": 0,
-  "cycle_id": "b6ace7fde4b0481d70c7d6ab",
+  "cycle_id": "2b838b2dd71d5b354cea1c82",
   "existing_order_count": 0,
   "existing_position_count": 0,
   "live_shadow_records": [
@@ -14,7 +14,7 @@
       "estimated_notional": 200.0,
       "live_order_submitted": false,
       "live_order_would_be_created": true,
-      "observed_at": "2026-08-04T06:14:49.436213+00:00",
+      "observed_at": "2026-08-04T06:56:47.608345+00:00",
       "quantity": "1",
       "shadow_id": "a3c5d5e03aefcf10c805910d",
       "side": "buy",
@@ -27,7 +27,7 @@
   "market_open": false,
   "mode": "OFFLINE_MOCK",
   "next_phase": "V127_MANUAL_APPROVAL_MICRO_LIVE",
-  "observed_at": "2026-08-04T06:14:49.436298+00:00",
+  "observed_at": "2026-08-04T06:56:47.608375+00:00",
   "paper_only": true,
   "paper_order_plans": [
     {
@@ -51,7 +51,7 @@
       "minimum_sessions": false,
       "reconciliation_failures_zero": true
     },
-    "completed_sessions": 2,
+    "completed_sessions": 5,
     "critical_error_count": 0,
     "failed": [
       "minimum_sessions"
@@ -60,7 +60,7 @@
     "passed": false,
     "reconciliation_failure_count": 0
   },
-  "result_sha256": "57bba01bf821e3bd5c71ce1493025d00552bc1a480c647446fd4233d755c41a9",
+  "result_sha256": "2fc1f115c9977a114e53070a906f14dc16e4a255fd56ca5c6520a5b024bd9a5c",
   "safety_gate": {
     "passed": true,
     "rows": [

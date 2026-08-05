@@ -7,7 +7,7 @@
   "broker_write_enabled": false,
   "external_network_enabled": false,
   "live_trading_enabled": false,
-  "observed_at": "2026-08-03T21:01:44.607441+00:00",
+  "observed_at": "2026-08-03T21:02:21.052953+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "paper_production_release_state": "PAPER_PRODUCTION_RELEASE_PENDING_PREREQUISITES",

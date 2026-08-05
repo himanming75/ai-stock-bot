@@ -2,19 +2,17 @@
   "broker_write_enabled": false,
   "controlled_stop_required": false,
   "controlled_stop_written": false,
-  "health_status": "WAITING",
-  "heartbeat_age_seconds": null,
-  "heartbeat_written": false,
+  "health_status": "HEALTHY",
+  "heartbeat_age_seconds": 0,
+  "heartbeat_written": true,
   "live_trading_enabled": false,
-  "monitor_state": "WAIT_PILOT_START",
-  "observed_at": "2026-08-02T07:55:43.859164+00:00",
+  "monitor_state": "PAPER_SESSION_HEALTHY",
+  "observed_at": "2026-08-03T01:57:14.979057+00:00",
   "paper_only": true,
-  "pilot_id": "",
-  "session_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP4.05-OP4.08",
-  "stop_reasons": [
-    "MANUAL_CONTROLLED_STOP"
-  ],
-  "tick_number": 0,
+  "stop_reasons": [],
+  "tick_number": 1,
   "timeout_detected": false
 }

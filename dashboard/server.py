@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 from dashboard.advanced_monitoring import build_advanced_payload
 from dashboard.data_loader import load_dashboard_sources
 from dashboard.panels import build_dashboard_payload
+from dashboard.paper_trading_integration import build_paper_trading_payload
 
 
 class DashboardHandler(BaseHTTPRequestHandler):
@@ -28,6 +29,11 @@ class DashboardHandler(BaseHTTPRequestHandler):
         if route == "/api/advanced":
             self._send_json(
                 build_advanced_payload(self.repository_root)
+            )
+            return
+        if route == "/api/paper-trading":
+            self._send_json(
+                build_paper_trading_payload(self.repository_root)
             )
             return
 
@@ -71,6 +77,7 @@ def run_server(repository_root: Path, host: str, port: int) -> None:
     print(f"DASHBOARD_URL=http://{host}:{port}")
     print("READ_ONLY=true")
     print("ADVANCED_MONITORING=true")
+    print("PAPER_TRADING_INTEGRATION=true")
     print("Press Ctrl+C to stop.")
     try:
         server.serve_forever()

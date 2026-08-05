@@ -5,6 +5,7 @@
   "broker_network_enabled": false,
   "broker_write_enabled": false,
   "evaluation": {
+    "actual_broker_orders_submitted": 0,
     "approved": false,
     "checks": {
       "available_quantity_nonnegative": true,
@@ -33,7 +34,7 @@
   "fill_accounting_allowed": false,
   "live_submission_enabled": false,
   "next_phase": "V392_12A_FILL_ACCOUNTING_AND_POSITION_UPDATE",
-  "observed_at": "2026-08-05T00:45:16.264193+00:00",
+  "observed_at": "2026-08-05T00:48:07.564563+00:00",
   "paper_submission_enabled": false,
   "partial_fill_supported": true,
   "prerequisite_checks": {

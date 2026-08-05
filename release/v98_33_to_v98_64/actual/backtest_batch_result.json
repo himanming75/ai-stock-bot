@@ -3,7 +3,7 @@
   "actual_external_network_used": false,
   "actual_orders_submitted": 0,
   "batch_id": "a5aad0c39ee1782d90c89882",
-  "batch_regression_certificate_sha256": "07867a940d402878afa38e36f63f29bbae8db8348ff6293941118527f112e0e5",
+  "batch_regression_certificate_sha256": "ba7abfca8936315ebfa9cc9c6af52dc4e712fa39d9f21651b6c1fb4cf85e9594",
   "broker_write_enabled": false,
   "champion": {
     "all_scenarios_passed": true,
@@ -30,7 +30,7 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V99_01_AI_PORTFOLIO_MANAGER",
-  "observed_at": "2026-08-03T22:55:48.135955+00:00",
+  "observed_at": "2026-08-03T22:55:59.097986+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "regression_fail_count": 2,

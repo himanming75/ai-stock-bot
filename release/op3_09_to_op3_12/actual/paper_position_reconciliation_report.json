@@ -4,7 +4,7 @@
   "actual_position_qty": 0.0,
   "expected_position_qty": 0.0,
   "lifecycle_id": "paper-order-lifecycle-001",
-  "observed_at": "2026-08-02T07:16:51.160141+00:00",
+  "observed_at": "2026-08-02T08:47:17.628167+00:00",
   "position_reconciled": true,
   "reconciliation_ready": true,
   "stage": "OP3.11",

@@ -1,8 +1,8 @@
 {
   "account_snapshot": {
     "account_blocked": false,
-    "account_id_masked": "****0123",
-    "buying_power": 200000.0,
+    "account_id_masked": "****b697",
+    "buying_power": 399696.46,
     "cash": 100000.0,
     "currency": "USD",
     "equity": 100000.0,
@@ -12,13 +12,13 @@
     "trading_blocked": false
   },
   "actual_live_orders_submitted": 0,
-  "actual_orders_submitted": 0,
-  "actual_paper_orders_submitted": 0,
+  "actual_orders_submitted": 1,
+  "actual_paper_orders_submitted": 1,
   "clock_snapshot": {
     "is_open": false,
-    "next_close": "2026-08-04T20:00:00Z",
-    "next_open": "2026-08-04T13:30:00Z",
-    "timestamp": "2026-08-04T12:00:00Z"
+    "next_close": "2026-08-04T16:00:00-04:00",
+    "next_open": "2026-08-04T09:30:00-04:00",
+    "timestamp": "2026-08-04T02:09:14.080647152-04:00"
   },
   "credential_status": {
     "complete": true,
@@ -35,46 +35,232 @@
   "market_data_feed": "iex",
   "market_snapshot": {
     "AAPL": {
+      "dailyBar": {
+        "c": 303.41,
+        "h": 311.77,
+        "l": 302.56,
+        "n": 54071,
+        "o": 309.765,
+        "t": "2026-08-03T04:00:00Z",
+        "v": 3242233,
+        "vw": 305.271132
+      },
       "latestQuote": {
-        "ap": 200.1,
-        "bp": 199.9
+        "ap": 318.75,
+        "as": 40,
+        "ax": "V",
+        "bp": 287.82,
+        "bs": 40,
+        "bx": "V",
+        "c": [
+          "R"
+        ],
+        "t": "2026-08-03T20:00:02.536704154Z",
+        "z": "C"
       },
       "latestTrade": {
-        "p": 200.0
+        "c": [
+          "@",
+          "T"
+        ],
+        "i": 54071,
+        "p": 303.54,
+        "s": 69,
+        "t": "2026-08-03T20:59:20.390726973Z",
+        "x": "V",
+        "z": "C"
+      },
+      "minuteBar": {
+        "c": 303.54,
+        "h": 303.54,
+        "l": 303.54,
+        "n": 2,
+        "o": 303.54,
+        "t": "2026-08-03T20:59:00Z",
+        "v": 76,
+        "vw": 303.54
+      },
+      "prevDailyBar": {
+        "c": 308.725,
+        "h": 310.64,
+        "l": 300.01,
+        "n": 85996,
+        "o": 304.765,
+        "t": "2026-07-31T04:00:00Z",
+        "v": 4898226,
+        "vw": 303.565208
       }
     },
     "MSFT": {
+      "dailyBar": {
+        "c": 487.575,
+        "h": 491.62,
+        "l": 475.17,
+        "n": 46810,
+        "o": 476.4,
+        "t": "2026-08-03T04:00:00Z",
+        "v": 2343253,
+        "vw": 487.549114
+      },
       "latestQuote": {
-        "ap": 400.1,
-        "bp": 399.9
+        "ap": 508.72,
+        "as": 40,
+        "ax": "V",
+        "bp": 461.24,
+        "bs": 40,
+        "bx": "V",
+        "c": [
+          "R"
+        ],
+        "t": "2026-08-03T20:00:00.00311803Z",
+        "z": "C"
       },
       "latestTrade": {
-        "p": 400.0
+        "c": [
+          "@"
+        ],
+        "i": 46799,
+        "p": 487.575,
+        "s": 40,
+        "t": "2026-08-03T19:59:58.798870849Z",
+        "x": "V",
+        "z": "C"
+      },
+      "minuteBar": {
+        "c": 487.575,
+        "h": 488.15,
+        "l": 487.11,
+        "n": 907,
+        "o": 487.515,
+        "t": "2026-08-03T19:59:00Z",
+        "v": 43774,
+        "vw": 487.670893
+      },
+      "prevDailyBar": {
+        "c": 464.7,
+        "h": 466.825,
+        "l": 449.87,
+        "n": 41731,
+        "o": 450.095,
+        "t": "2026-07-31T04:00:00Z",
+        "v": 2203754,
+        "vw": 459.765423
       }
     },
     "SPY": {
+      "dailyBar": {
+        "c": 757.72,
+        "h": 758.58,
+        "l": 749.21,
+        "n": 31756,
+        "o": 749.49,
+        "t": "2026-08-03T04:00:00Z",
+        "v": 1927439,
+        "vw": 755.963446
+      },
       "latestQuote": {
-        "ap": 500.1,
-        "bp": 499.9
+        "ap": 757.41,
+        "as": 1480,
+        "ax": "V",
+        "bp": 757.32,
+        "bs": 1480,
+        "bx": "V",
+        "c": [
+          "R"
+        ],
+        "t": "2026-08-03T20:01:01.137263387Z",
+        "z": "B"
       },
       "latestTrade": {
-        "p": 500.0
+        "c": [
+          " ",
+          "T"
+        ],
+        "i": 52984014398771,
+        "p": 758.2,
+        "s": 1391,
+        "t": "2026-08-03T20:17:01.681548091Z",
+        "x": "V",
+        "z": "B"
+      },
+      "minuteBar": {
+        "c": 758.2,
+        "h": 758.2,
+        "l": 758.2,
+        "n": 1,
+        "o": 758.2,
+        "t": "2026-08-03T20:17:00Z",
+        "v": 1391,
+        "vw": 758.2
+      },
+      "prevDailyBar": {
+        "c": 746.79,
+        "h": 748.86,
+        "l": 737.7,
+        "n": 27327,
+        "o": 744.685,
+        "t": "2026-07-31T04:00:00Z",
+        "v": 1909254,
+        "vw": 744.097859
       }
     }
   },
-  "mode": "OFFLINE_MOCK",
+  "mode": "REAL_ALPACA_PAPER",
   "next_phase": "V124_LIVE_SHADOW_MODE",
-  "observed_at": "2026-08-04T06:03:26.511790+00:00",
-  "operation_id": "300acee5795da01b071b8a5f",
+  "observed_at": "2026-08-04T06:09:09.394633+00:00",
+  "operation_id": "39f8c126af03e2bb8b469629",
   "order_payload_preview": {
-    "client_order_id": "05816867ca579d3cceef4e4eb578c8ed",
+    "client_order_id": "9dc410e7bfee213be30a6a2fb94befc6",
     "qty": "1",
     "side": "buy",
     "symbol": "AAPL",
     "time_in_force": "day",
     "type": "market"
   },
-  "order_snapshot": [],
+  "order_snapshot": [
+    {
+      "average_fill_price": null,
+      "client_order_id": "6901e096e8b2ae7b668ca4629b973dde",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "fab95a4e-5e5c-477e-9710-466c29cceea6",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "accepted",
+      "submitted_at": "2026-08-04T06:04:41.17933897Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    },
+    {
+      "average_fill_price": null,
+      "client_order_id": "op3-a5a1b0f16a0309dbebfbce88",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "canceled",
+      "submitted_at": "2026-08-02T07:11:21.099268Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    },
+    {
+      "average_fill_price": null,
+      "client_order_id": "single-60d3c5406e5226ae71d7",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "3bd9f491-0629-4cf4-9b0e-2a27eadea98d",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "canceled",
+      "submitted_at": "2026-08-01T06:04:22.459092Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    }
+  ],
   "order_validation": {
     "checks": {
       "live_base_url_prohibited": true,
@@ -91,7 +277,7 @@
   },
   "paper_api_base_url": "https://paper-api.alpaca.markets",
   "paper_only": true,
-  "paper_order_submission_requested": false,
+  "paper_order_submission_requested": true,
   "position_snapshot": [],
   "qualification": {
     "checks": {
@@ -110,28 +296,65 @@
     "passed": false,
     "reconciliation_failure_count": 0
   },
-  "real_network_connection_attempted": false,
+  "real_network_connection_attempted": true,
   "request_id": null,
-  "result_sha256": "ce30803c73eecbbc232b3d60261bbd6f789df2d92ab7a2faa9db1f0037551e1f",
+  "result_sha256": "28ea42faa5d0defe3a63cc7b5099b1429850966f35996d8bcc568fa9c107b70b",
   "runtime_overrides": {
-    "one_paper_order_override": false,
+    "one_paper_order_override": true,
     "policy_file_modified": false,
-    "real_paper_network_override": false
+    "real_paper_network_override": true
   },
   "stage": "V123.64",
   "stage_range": "V121.01-V123.64",
-  "state": "ALPACA_PAPER_OFFLINE_VALIDATION_READY",
+  "state": "REAL_ALPACA_PAPER_ORDER_SUBMITTED",
   "status": "PASS",
   "submission_gate": {
-    "authorized": false,
+    "authorized": true,
     "checks": {
       "credentials_complete": true,
-      "explicit_submit_requested": false,
+      "explicit_submit_requested": true,
       "live_submission_disabled": true,
-      "paper_submission_enabled": false,
+      "paper_submission_enabled": true,
       "validation_passed": true
     },
-    "state": "PAPER_SUBMISSION_BLOCKED"
+    "state": "PAPER_SUBMISSION_AUTHORIZED"
   },
-  "submitted_order": null
+  "submitted_order": {
+    "asset_class": "us_equity",
+    "asset_id": "b0b6dd9d-8b9b-48a9-ba46-b9d54906e415",
+    "canceled_at": null,
+    "client_order_id": "9dc410e7bfee213be30a6a2fb94befc6",
+    "created_at": "2026-08-04T06:09:14.665508861Z",
+    "expired_at": null,
+    "expires_at": "2026-08-04T20:00:00Z",
+    "extended_hours": false,
+    "failed_at": null,
+    "filled_at": null,
+    "filled_avg_price": null,
+    "filled_qty": "0",
+    "hwm": null,
+    "id": "ca76f0c7-03e7-4d62-8f64-c31ef0713151",
+    "legs": null,
+    "limit_price": null,
+    "notional": null,
+    "order_class": "",
+    "order_type": "market",
+    "position_intent": "buy_to_open",
+    "qty": "1",
+    "replaced_at": null,
+    "replaced_by": null,
+    "replaces": null,
+    "side": "buy",
+    "source": null,
+    "status": "accepted",
+    "stop_price": null,
+    "submitted_at": "2026-08-04T06:09:14.665508861Z",
+    "subtag": null,
+    "symbol": "AAPL",
+    "time_in_force": "day",
+    "trail_percent": null,
+    "trail_price": null,
+    "type": "market",
+    "updated_at": "2026-08-04T06:09:14.66663775Z"
+  }
 }

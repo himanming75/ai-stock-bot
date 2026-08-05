@@ -1,22 +1,20 @@
 {
   "broker_write_enabled": false,
-  "consecutive_healthy_days": 0,
-  "day_healthy": false,
+  "consecutive_healthy_days": 1,
+  "day_healthy": true,
   "gate_reasons": [
-    "PILOT_NOT_STARTED",
     "MINIMUM_VALIDATION_DAYS_NOT_MET",
-    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET",
-    "RECOVERY_GATE_NOT_CLEAR"
+    "CONSECUTIVE_HEALTHY_DAYS_NOT_MET"
   ],
-  "healthy_days": 0,
+  "healthy_days": 1,
   "live_trading_enabled": false,
-  "observed_at": "2026-08-02T08:16:42.489902+00:00",
+  "observed_at": "2026-08-03T02:02:45.851262+00:00",
   "paper_only": true,
-  "pilot_id": "",
-  "session_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP5.04",
   "unhealthy_days": 0,
   "validation_complete": false,
-  "validation_days": 0,
-  "validation_state": "WAIT_PILOT_START"
+  "validation_days": 1,
+  "validation_state": "MULTI_DAY_VALIDATION_IN_PROGRESS"
 }

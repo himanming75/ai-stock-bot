@@ -1,0 +1,21 @@
+{
+  "automatic_broker_execution_enabled": false,
+  "broker_write_enabled": false,
+  "continuous_loop_enabled": false,
+  "created_at": "2026-08-03T19:18:49.866617+00:00",
+  "cycle_id": "paper-auto-cycle-47850fff4a771398cba2",
+  "operator_override_available": true,
+  "order_submission_enabled": false,
+  "paper_only": true,
+  "planned_stages": [
+    "SCHEDULE_EVALUATION",
+    "TRIGGER_DISPATCH",
+    "SUPERVISED_RUNNER",
+    "RETRY_EVALUATION",
+    "CYCLE_COMPLETION"
+  ],
+  "single_cycle_only": true,
+  "stage": "V83.74",
+  "state": "PAPER_AUTONOMOUS_CYCLE_AUTHORIZED",
+  "windows_task_enabled": false
+}

@@ -1,17 +1,15 @@
 {
   "controlled_stop_required": false,
-  "health_status": "WAITING",
-  "heartbeat_age_seconds": null,
+  "health_status": "HEALTHY",
+  "heartbeat_age_seconds": 0,
   "heartbeat_warning_seconds": 30,
-  "observed_at": "2026-08-02T07:55:43.859164+00:00",
+  "observed_at": "2026-08-03T01:57:14.979057+00:00",
   "paper_only": true,
-  "pilot_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
   "read_only": true,
-  "session_id": "",
+  "session_id": "session-587f043790bf9035beef",
   "session_timeout_seconds": 60,
   "stage": "OP4.07",
-  "stop_reasons": [
-    "MANUAL_CONTROLLED_STOP"
-  ],
+  "stop_reasons": [],
   "timeout_detected": false
 }

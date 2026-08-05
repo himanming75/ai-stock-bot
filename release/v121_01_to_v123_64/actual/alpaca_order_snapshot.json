@@ -1,3 +1,46 @@
 {
-  "orders": []
+  "orders": [
+    {
+      "average_fill_price": null,
+      "client_order_id": "6901e096e8b2ae7b668ca4629b973dde",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "fab95a4e-5e5c-477e-9710-466c29cceea6",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "accepted",
+      "submitted_at": "2026-08-04T06:04:41.17933897Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    },
+    {
+      "average_fill_price": null,
+      "client_order_id": "op3-a5a1b0f16a0309dbebfbce88",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "68bead68-7a07-4870-aea0-08b7c8aadb1d",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "canceled",
+      "submitted_at": "2026-08-02T07:11:21.099268Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    },
+    {
+      "average_fill_price": null,
+      "client_order_id": "single-60d3c5406e5226ae71d7",
+      "filled_at": null,
+      "filled_quantity": 0.0,
+      "order_id": "3bd9f491-0629-4cf4-9b0e-2a27eadea98d",
+      "order_type": "market",
+      "quantity": 1.0,
+      "side": "buy",
+      "status": "canceled",
+      "submitted_at": "2026-08-01T06:04:22.459092Z",
+      "symbol": "AAPL",
+      "time_in_force": "day"
+    }
+  ]
 }

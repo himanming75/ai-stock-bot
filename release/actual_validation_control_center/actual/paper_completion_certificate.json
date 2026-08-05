@@ -1,0 +1,16 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "p2_actual_validated": false,
+    "p3_actual_validated": false,
+    "p4_actual_validated": false,
+    "p5_actual_long_run_qualified": false,
+    "paper_complete": false
+  },
+  "eligible": false,
+  "generated_at": "2026-08-05T05:55:00.291327+00:00",
+  "paper_complete": false,
+  "production_live_allowed": false,
+  "stage": "PAPER_COMPLETION_CERTIFICATE",
+  "status": "BLOCKED"
+}

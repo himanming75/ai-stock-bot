@@ -2,3 +2,4 @@
 {"actual_live_orders_submitted": 0, "daily_loss_pct": 1.5, "drawdown_pct": 1.5, "gate_passed": false, "observed_at": "2026-08-04T08:14:45.340647+00:00", "state": "RISK_ENGINE_V2_HARD_BLOCKED"}
 {"actual_live_orders_submitted": 0, "daily_loss_pct": 1.5, "drawdown_pct": 1.5, "gate_passed": false, "observed_at": "2026-08-04T08:15:24.978001+00:00", "state": "RISK_ENGINE_V2_HARD_BLOCKED"}
 {"actual_live_orders_submitted": 0, "daily_loss_pct": 1.5, "drawdown_pct": 1.5, "gate_passed": false, "observed_at": "2026-08-04T08:15:25.557927+00:00", "state": "RISK_ENGINE_V2_HARD_BLOCKED"}
+{"actual_live_orders_submitted": 0, "daily_loss_pct": 1.5, "drawdown_pct": 1.5, "gate_passed": false, "observed_at": "2026-08-04T08:15:33.121094+00:00", "state": "RISK_ENGINE_V2_HARD_BLOCKED"}

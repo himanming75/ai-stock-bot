@@ -6,15 +6,15 @@
   "background_service_running": false,
   "broker_write_enabled": false,
   "checkpoint": {
-    "checkpoint_hash": "5c529bfefa7309317894881c7a237defa726c5778e27ca87a52596906b4f599d",
-    "generation": 2,
+    "checkpoint_hash": "04baea187a856583222934a47e934bafa20a4c8c49eabdaf58fa83fc18a68671",
+    "generation": 3,
     "integration_id": "61d475222e1deaa26b6efa2a",
     "pipeline_ready_steps": 17,
     "pipeline_total_steps": 17,
-    "previous_checkpoint_hash": "d11ac0d0aa56102325cdc74abd49a11ce2c7d323d8b6d64921e7d78ca3dce72e",
+    "previous_checkpoint_hash": "5c529bfefa7309317894881c7a237defa726c5778e27ca87a52596906b4f599d",
     "readiness_level": "READY",
     "readiness_score": 100.0,
-    "updated_at": "2026-08-04T02:57:56.082622+00:00"
+    "updated_at": "2026-08-04T02:58:04.954883+00:00"
   },
   "dashboard_snapshot": {
     "module_rows": [
@@ -217,7 +217,7 @@
   },
   "execution_authorized": false,
   "external_network_enabled": false,
-  "final_integration_certificate_sha256": "6e9b8c29400feb67c2b0bb8d8187684ee5d103dd11615278da3dfbb7ae0363b7",
+  "final_integration_certificate_sha256": "807d0677fe19875d8e4dd259ecd1f427c2147fa4add0efc309c870d387db8963",
   "final_release_eligible": true,
   "integration_id": "61d475222e1deaa26b6efa2a",
   "live_trading_enabled": false,
@@ -413,7 +413,7 @@
   ],
   "network_requests_executed": 0,
   "next_phase": "V105_33_PRODUCTION_READINESS_FINAL_RELEASE",
-  "observed_at": "2026-08-04T02:57:56.083902+00:00",
+  "observed_at": "2026-08-04T02:58:04.955984+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "pipeline": {

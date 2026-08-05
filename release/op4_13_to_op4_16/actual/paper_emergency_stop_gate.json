@@ -1,14 +1,14 @@
 {
   "broker_action_performed": false,
-  "created_at": "2026-08-02T08:05:47.243481+00:00",
+  "created_at": "2026-08-03T01:58:10.956388+00:00",
   "emergency_stop_required": false,
   "order_cancel_performed": false,
   "paper_only": true,
-  "pilot_id": "",
-  "pilot_started": false,
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "pilot_started": true,
   "position_close_performed": false,
   "risk_reasons": [],
-  "session_health": "WAITING",
-  "session_id": "",
+  "session_health": "HEALTHY",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP4.16"
 }

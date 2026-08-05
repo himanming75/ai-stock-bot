@@ -1,0 +1,14 @@
+{
+  "actual_live_orders_submitted_during_p2": 0,
+  "actual_paper_orders_submitted_during_p2": 0,
+  "certificate_stage": "P2_ACTUAL_PAPER_BROKER_READ",
+  "eligible": true,
+  "failed": [],
+  "issued_at": "2026-08-05T08:47:30.983546+00:00",
+  "live_order_submission_allowed": false,
+  "live_validation_allowed": false,
+  "p2_actual_broker_read_validated": true,
+  "p3_actual_paper_order_allowed": false,
+  "p3_development_allowed": true,
+  "status": "PASS"
+}

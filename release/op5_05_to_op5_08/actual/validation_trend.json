@@ -2,6 +2,15 @@
   "equity_change": 0.0,
   "equity_trend": "FLAT",
   "paper_only": true,
-  "points": [],
+  "points": [
+    {
+      "day_healthy": true,
+      "drawdown_pct": 0.0,
+      "equity": 100000.0,
+      "exposure_pct": 0.0,
+      "return_pct": 0.0,
+      "validation_date": "2026-08-02"
+    }
+  ],
   "stage": "OP5.07"
 }

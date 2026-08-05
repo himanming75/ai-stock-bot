@@ -2,10 +2,10 @@
   "cumulative_return_pct": 0.0,
   "daily_loss_pct": 0.0,
   "maximum_daily_loss_pct": 3.0,
-  "observed_at": "2026-08-02T08:05:47.243481+00:00",
+  "observed_at": "2026-08-03T01:58:10.956388+00:00",
   "paper_only": true,
-  "pilot_id": "",
-  "session_id": "",
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "stage": "OP4.15",
   "threshold_exceeded": false
 }

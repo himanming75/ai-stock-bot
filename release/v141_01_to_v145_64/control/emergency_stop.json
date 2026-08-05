@@ -1,5 +1,5 @@
 {
-  "enabled": true,
-  "reason": "DEFAULT_SAFE_START",
-  "updated_at": "2026-08-04T00:00:00+00:00"
+  "enabled": false,
+  "reason": "WEB_MANUAL_CLEAR",
+  "updated_at": "2026-08-04T06:56:43.360947+00:00"
 }

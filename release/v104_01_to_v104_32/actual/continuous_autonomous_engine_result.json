@@ -5,9 +5,9 @@
   "approval_granted": false,
   "broker_write_enabled": false,
   "checkpoint": {
-    "checkpoint_hash": "87b2cc1937018793349a2db3e68872f28ea83f7bbde0e866876266401ee19f3b",
+    "checkpoint_hash": "3df7a7062209a69c58538ccb18a32f845d61010a67bf96db9bf9eb35f8df8988",
     "engine_id": "4742a1be27ba43994146601e",
-    "generation": 2,
+    "generation": 3,
     "phases": [
       {
         "attempt_count": 1,
@@ -66,7 +66,7 @@
         "state": "COMPLETED"
       }
     ],
-    "previous_checkpoint_hash": "6b94e02d2b91ee9983533648fa5a80ea2cb18a89ac957ff585880ba67bd9b005",
+    "previous_checkpoint_hash": "87b2cc1937018793349a2db3e68872f28ea83f7bbde0e866876266401ee19f3b",
     "selected_session": {
       "reason": "EARLIEST_PENDING_SESSION",
       "session": {
@@ -85,10 +85,10 @@
       "session_available": true
     },
     "state": "CONTINUOUS_AUTONOMOUS_ENGINE_WAITING_FOR_MANUAL_APPROVAL",
-    "updated_at": "2026-08-04T02:48:30.447774+00:00"
+    "updated_at": "2026-08-04T02:48:38.506036+00:00"
   },
   "completed_phase_count": 8,
-  "continuous_engine_certificate_sha256": "3ee74baee23c57c6206ce3036fd0d8f68be7bfbf37090e1c8fa381c326404d3d",
+  "continuous_engine_certificate_sha256": "09a707e0242c8b9c1828157deaf0aa661603e68ea10dc245b52cc2559cd5d05b",
   "continuous_loop_enabled": false,
   "continuous_service_started": false,
   "engine_action": "WAIT_FOR_MANUAL_APPROVAL",
@@ -116,7 +116,7 @@
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V104_33_CONTINUOUS_SERVICE_RUNTIME",
-  "observed_at": "2026-08-04T02:48:30.449782+00:00",
+  "observed_at": "2026-08-04T02:48:38.507621+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "phases": [

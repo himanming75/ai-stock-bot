@@ -1,0 +1,33 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted_by_status_check": 0,
+  "checks": {
+    "p2_actual_validated": false,
+    "p3_actual_validated": false,
+    "p4_actual_validated": false,
+    "p5_actual_long_run_qualified": false,
+    "paper_complete": false
+  },
+  "next_action": "RUN_P2_P3_ACTUAL_VALIDATION_AFTER_PAPER_ORDER",
+  "paper_complete": false,
+  "stage": "ACTUAL_VALIDATION_CONTROL_CENTER",
+  "values": {
+    "p2": {
+      "status": "MISSING",
+      "validated": false
+    },
+    "p3": {
+      "status": "MISSING",
+      "validated": false
+    },
+    "p4": {
+      "status": "MISSING",
+      "validated": false
+    },
+    "p5": {
+      "paper_complete": false,
+      "status": "MISSING",
+      "validated": false
+    }
+  }
+}

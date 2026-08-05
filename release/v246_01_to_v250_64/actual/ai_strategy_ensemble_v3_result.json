@@ -129,7 +129,7 @@
     "volatility_pct": 1.8
   },
   "next_phase": "V251_01_TO_V255_64_EXECUTION_OPTIMIZER",
-  "observed_at": "2026-08-04T09:33:40.006219+00:00",
+  "observed_at": "2026-08-04T09:33:56.130287+00:00",
   "paper_submission_enabled": false,
   "stage": "V250.64",
   "state": "AI_STRATEGY_ENSEMBLE_V3_READY",

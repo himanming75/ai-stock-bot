@@ -1,0 +1,13 @@
+{
+  "daily_pnl": 0.0,
+  "end_equity": 100000.0,
+  "ended_at": "2026-08-03T17:27:24.415596+00:00",
+  "paper_only": true,
+  "session_id": "paper-session-1bdf21524122a03ae960",
+  "session_status": "CLOSED",
+  "stage": "V82.22",
+  "start_equity": 100000.0,
+  "started_at": "2026-08-03T17:07:17.886030+00:00",
+  "trade_count": 0,
+  "trading_date": "2026-08-03"
+}

@@ -1,0 +1,10 @@
+{
+  "broker_write_enabled": false,
+  "heartbeat_id": "session-587f043790bf9035beef-heartbeat-000001",
+  "observed_at": "2026-08-03T01:57:14.979057+00:00",
+  "paper_only": true,
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
+  "stage": "OP4.05",
+  "tick_number": 1
+}

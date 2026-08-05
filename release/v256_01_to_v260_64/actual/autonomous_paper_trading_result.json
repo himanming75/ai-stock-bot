@@ -41,7 +41,7 @@
   },
   "execution_plan": {
     "action": "BUY",
-    "client_order_id": "AISB-PAPER-ccb2be810457d3a5a6a121af",
+    "client_order_id": "AISB-PAPER-bf54d4fc84b1e0cfd92f6efe",
     "confidence": 72.0,
     "limit_price": 200.04,
     "order_type": "LIMIT",
@@ -60,7 +60,7 @@
   "real_paper_read_enabled": true,
   "real_paper_submission_enabled": false,
   "risk_gate_passed": false,
-  "session_id": "20260804T094507Z",
+  "session_id": "20260804T094548Z",
   "stage": "V260.64",
   "state": "AUTONOMOUS_PAPER_TRADING_READY_BLOCKED",
   "status": "PASS"

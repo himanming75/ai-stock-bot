@@ -44,9 +44,9 @@
   "live_trading_enabled": false,
   "network_requests_executed": 0,
   "next_phase": "V97_33_PAPER_BROKER_READ_MODEL",
-  "observed_at": "2026-08-03T22:33:14.339970+00:00",
+  "observed_at": "2026-08-03T22:33:20.571968+00:00",
   "order_submission_enabled": false,
-  "paper_broker_adapter_certificate_sha256": "519243ee5337c163b122b1500eb60ef4a5833c5b47aefa1121e16673de5c9564",
+  "paper_broker_adapter_certificate_sha256": "0ee0b89e5402e789e8a6dab28150eee63667ddb9ec882378ed0ba610fc98ae7c",
   "paper_only": true,
   "positions_snapshot": [
     {

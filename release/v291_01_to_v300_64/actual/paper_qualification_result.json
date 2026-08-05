@@ -26,7 +26,7 @@
   "live_network_enabled": false,
   "live_submission_enabled": false,
   "next_phase": "V301_01_TO_V310_64_RESTRICTED_LIVE_QUALIFICATION",
-  "observed_at": "2026-08-04T16:55:33.765992+00:00",
+  "observed_at": "2026-08-04T16:55:53.407227+00:00",
   "order_state_coverage": {
     "coverage_pct": 100.0,
     "covered": [

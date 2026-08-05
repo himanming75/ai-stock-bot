@@ -1,0 +1,24 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_order_submission_enabled": false,
+  "checks": {
+    "kill_switch_readable": true,
+    "live_endpoint_not_selected": true,
+    "live_orders_zero": true,
+    "paper_endpoint": true,
+    "paper_key_present": true,
+    "paper_network_enabled": true,
+    "paper_secret_present": true,
+    "paper_write_confirmation_present": true,
+    "virtual_environment_present": true
+  },
+  "failed": [],
+  "kill_switch": {
+    "kill_switch_active": true,
+    "reason": "P2_VALIDATION_COMPLETE"
+  },
+  "ready_for_explicit_paper_order": true,
+  "stage": "ACTUAL_VALIDATION_MARKET_DAY_PREFLIGHT",
+  "status": "PASS"
+}

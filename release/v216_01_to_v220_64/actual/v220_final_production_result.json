@@ -3,6 +3,16 @@
   "automatic_order_submission_enabled": false,
   "automatic_strategy_promotion_enabled": false,
   "broker_write_enabled": false,
+  "bundle": {
+    "bundle_path": "C:\\stock-bot\\release\\v216_01_to_v220_64\\bundle\\AI_STOCK_BOT_V220_FINAL_PRODUCTION.zip",
+    "contains_broker_credentials": false,
+    "contains_environment_variables": false,
+    "created_at": "2026-08-04T08:51:25.180538+00:00",
+    "file_count": 149,
+    "sha256": "c66a7ed62f375e1ddcb15867eb9caf6c9c5e05eb711dc8def5d9f4ecbbc3fcdb",
+    "size_bytes": 173821,
+    "tracked_by_git_recommended": false
+  },
   "certificate": {
     "actual_live_orders_submitted": 0,
     "automatic_order_submission_enabled": false,
@@ -27,7 +37,7 @@
     "final_release_ready": true,
     "integration_modules_present": 8,
     "integrity_all_present": true,
-    "issued_at": "2026-08-04T08:51:15.313757+00:00",
+    "issued_at": "2026-08-04T08:51:24.838355+00:00",
     "live_submission_enabled": false,
     "live_trading_automatically_enabled": false,
     "manual_live_activation_required": true,
@@ -55,7 +65,7 @@
   "integration": {
     "all_modules_present": true,
     "all_required_files_present": true,
-    "evaluated_at": "2026-08-04T08:51:15.303241+00:00",
+    "evaluated_at": "2026-08-04T08:51:24.827020+00:00",
     "module_count": 8,
     "modules": [
       {
@@ -200,11 +210,11 @@
         "size_bytes": 706
       }
     ],
-    "generated_at": "2026-08-04T08:51:15.312501+00:00"
+    "generated_at": "2026-08-04T08:51:24.837046+00:00"
   },
   "inventory": {
     "expected_stage_count": 16,
-    "generated_at": "2026-08-04T08:51:15.301003+00:00",
+    "generated_at": "2026-08-04T08:51:24.824789+00:00",
     "missing_stages": [],
     "present_stage_count": 16,
     "rows": [
@@ -426,7 +436,7 @@
   "live_trading_ready": false,
   "manual_live_activation_required": true,
   "next_phase": "POST_V220_PAPER_OPERATION_AND_CONTROLLED_LIVE_QUALIFICATION",
-  "observed_at": "2026-08-04T08:51:15.314902+00:00",
+  "observed_at": "2026-08-04T08:51:24.839456+00:00",
   "paper_trading_ready": true,
   "policy": {
     "automatic_order_submission_enabled": false,

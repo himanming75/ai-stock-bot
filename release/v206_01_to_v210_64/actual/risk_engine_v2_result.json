@@ -19,7 +19,7 @@
   },
   "live_submission_enabled": false,
   "next_phase": "V211_01_TO_V215_64_AI_STRATEGY_ENSEMBLE",
-  "observed_at": "2026-08-04T08:15:25.557927+00:00",
+  "observed_at": "2026-08-04T08:15:33.121094+00:00",
   "policy": {
     "broker_write_enabled": false,
     "circuit_breaker_minutes": 30,

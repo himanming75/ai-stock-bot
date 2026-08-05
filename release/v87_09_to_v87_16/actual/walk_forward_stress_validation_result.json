@@ -1,13 +1,7 @@
 {
-  "actual_credentials_used": false,
-  "actual_external_network_used": false,
-  "broker_command_execution_enabled": false,
   "broker_write_enabled": false,
   "external_network_enabled": false,
-  "implementation_type": "LOCAL_WALK_FORWARD_STRESS_VALIDATION",
   "live_trading_enabled": false,
-  "network_requests_executed": 0,
-  "next_phase": "V87_17_MULTI_ASSET_BACKTEST_AND_BENCHMARK",
   "order_submission_enabled": false,
   "paper_only": true,
   "stage": "V87.16",
@@ -3622,6 +3616,5 @@
         }
       ]
     }
-  },
-  "write_requests_executed": 0
+  }
 }

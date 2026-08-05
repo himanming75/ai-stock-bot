@@ -1,2 +1,4 @@
 {"actual_live_orders_submitted": 0, "cycle_id": "621768ac7de7b1c2c2896bbf", "observed_at": "2026-08-04T06:44:07.744969+00:00", "paper_orders_submitted": 1, "state": "AUTONOMOUS_PAPER_TRADING_CYCLE_COMPLETE"}
 {"actual_live_orders_submitted": 0, "cycle_id": "e7e6d3abfec91020e3eeaa1c", "observed_at": "2026-08-04T06:44:51.740514+00:00", "paper_orders_submitted": 0, "state": "AUTONOMOUS_TRADING_RISK_BLOCKED"}
+{"actual_live_orders_submitted": 0, "cycle_id": "e7e6d3abfec91020e3eeaa1c", "observed_at": "2026-08-04T06:45:00.806077+00:00", "paper_orders_submitted": 0, "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED"}
+{"actual_live_orders_submitted": 0, "cycle_id": "e7e6d3abfec91020e3eeaa1c", "observed_at": "2026-08-04T06:56:45.457729+00:00", "paper_orders_submitted": 0, "state": "AUTONOMOUS_TRADING_DUPLICATE_CYCLE_BLOCKED"}

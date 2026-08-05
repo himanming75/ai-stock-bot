@@ -1,9 +1,9 @@
 {
   "continuous_loop_enabled": false,
-  "created_at": "2026-08-02T08:11:11.041511+00:00",
-  "cycle_ready": false,
-  "pilot_id": "",
-  "session_id": "",
+  "created_at": "2026-08-03T01:58:16.901749+00:00",
+  "cycle_ready": true,
+  "pilot_id": "pilot-ccdec1181546dfac1e34",
+  "session_id": "session-587f043790bf9035beef",
   "single_cycle_only": true,
   "stage": "OP4.17",
   "steps": [
@@ -17,14 +17,14 @@
     {
       "name": "PILOT_HEARTBEAT",
       "order": 2,
-      "ready": false,
+      "ready": true,
       "requires_explicit_network_switch": false,
       "script": "RUN_OP4_05_TO_OP4_08_SESSION_MONITOR.ps1"
     },
     {
       "name": "PERFORMANCE_COLLECTION",
       "order": 3,
-      "ready": false,
+      "ready": true,
       "requires_explicit_network_switch": false,
       "script": "RUN_OP4_09_TO_OP4_12_PERFORMANCE.ps1"
     },

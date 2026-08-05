@@ -4,7 +4,7 @@
   "broker_write_enabled": false,
   "certificate_type": "PRODUCTION_OPERATIONS_READ_ONLY_CERTIFICATE",
   "health_status": "HEALTHY",
-  "issued_at": "2026-08-04T07:53:23.163641+00:00",
+  "issued_at": "2026-08-04T07:53:32.532206+00:00",
   "live_submission_enabled": false,
   "live_trading_ready": false,
   "operations_ready": true,

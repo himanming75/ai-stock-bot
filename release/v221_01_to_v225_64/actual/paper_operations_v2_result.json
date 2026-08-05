@@ -12,15 +12,15 @@
     "reconciliation_complete": true,
     "recovery_plan_present": true
   },
-  "cycle_id": "20260804T090046Z",
+  "cycle_id": "20260804T090055Z",
   "failed": [],
   "idempotency": {
     "duplicate": false,
     "record": {
-      "cycle_id": "20260804T090046Z",
-      "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+      "cycle_id": "20260804T090055Z",
+      "idempotency_key": "fda10a7aa03898f24c3badee",
       "notional": 50.0,
-      "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+      "order_id": "PAPER-fda10a7aa03898f24c3badee",
       "plan_allowed": false,
       "quantity": 1,
       "reference_price": 50.0,
@@ -33,10 +33,10 @@
   "live_submission_enabled": false,
   "next_phase": "V226_01_TO_V230_64_LIVE_SHADOW_SLIPPAGE_QUALIFICATION",
   "order_plan": {
-    "cycle_id": "20260804T090046Z",
-    "idempotency_key": "ec4214c99e284cb12b9ec4eb",
+    "cycle_id": "20260804T090055Z",
+    "idempotency_key": "fda10a7aa03898f24c3badee",
     "notional": 50.0,
-    "order_id": "PAPER-ec4214c99e284cb12b9ec4eb",
+    "order_id": "PAPER-fda10a7aa03898f24c3badee",
     "plan_allowed": false,
     "quantity": 1,
     "reference_price": 50.0,
@@ -57,14 +57,14 @@
     "automatic_live_resume_allowed": false,
     "broker_write_enabled": false,
     "checkpoint_present": true,
-    "created_at": "2026-08-04T09:00:46.102266+00:00",
+    "created_at": "2026-08-04T09:00:55.547040+00:00",
     "last_checkpoint": {
       "actual_live_orders_submitted": 0,
-      "cycle_id": "20260804T090046Z",
+      "cycle_id": "20260804T090055Z",
       "details": {
         "actual_live_orders_submitted": 0,
-        "cycle_id": "20260804T090046Z",
-        "generated_at": "2026-08-04T09:00:46.049450+00:00",
+        "cycle_id": "20260804T090055Z",
+        "generated_at": "2026-08-04T09:00:55.503672+00:00",
         "order_plan_allowed": false,
         "paper_orders_submitted": 0,
         "reconciliation_conflicts": 0,
@@ -74,7 +74,7 @@
       },
       "status": "PASS",
       "step": "CHECKPOINT_COMPLETE",
-      "updated_at": "2026-08-04T09:00:46.086633+00:00"
+      "updated_at": "2026-08-04T09:00:55.534761+00:00"
     },
     "steps": [
       "ENABLE_EMERGENCY_STOP",

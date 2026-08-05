@@ -1,0 +1,3 @@
+git add p2_broker_read tools/run_p2_actual_paper_broker_read.py tools/test_p2_actual_paper_broker_read.py tools/verify_p2_actual_paper_broker_read.py release/p2_actual_paper_broker_read RUN_P2_ACTUAL_PAPER_BROKER_READ.ps1 RUN_P2_OFFLINE_SAFETY_TEST.ps1 VERIFY_P2_ACTUAL_PAPER_BROKER_READ.ps1 SHOW_P2_ACTUAL_PAPER_BROKER_READ_STATUS.ps1 P2_ACTUAL_PAPER_BROKER_READ_MANIFEST.json GIT_COMMIT_P2_ACTUAL_PAPER_BROKER_READ.txt
+git commit -m "P2 add actual Alpaca Paper read-only validation"
+git push origin main

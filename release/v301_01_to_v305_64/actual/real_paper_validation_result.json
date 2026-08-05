@@ -1,13 +1,16 @@
 {
-  "account": {},
+  "account": {
+    "buying_power": "399299.62",
+    "cash": "99392.5",
+    "equity": "100010.22",
+    "id": "60e76715-51f0-4207-ac8b-fd986429b697",
+    "status": "ACTIVE"
+  },
   "actual_live_orders_submitted": 0,
   "actual_paper_orders_submitted": 0,
-  "blocking_reasons": [
-    "PAPER_READ_DISABLED",
-    "NETWORK_NOT_AUTHORIZED"
-  ],
+  "blocking_reasons": [],
   "checks": {
-    "account_read": false,
+    "account_read": true,
     "broker_write_disabled": true,
     "clock_read": true,
     "credentials_ready": true,
@@ -19,15 +22,15 @@
     "positions_read": true
   },
   "live_submission_enabled": false,
-  "market_open": false,
+  "market_open": true,
   "micro_paper_order_enabled": false,
-  "next_close": null,
-  "next_open": null,
+  "next_close": "2026-08-04T16:00:00-04:00",
+  "next_open": "2026-08-05T09:30:00-04:00",
   "next_phase": "V306_01_TO_V310_64_REAL_PAPER_MICRO_ORDER_VALIDATION",
-  "observed_at": "2026-08-04T17:01:09.065490+00:00",
+  "observed_at": "2026-08-04T17:02:28.800196+00:00",
   "open_order_count": 0,
-  "position_count": 0,
+  "position_count": 1,
   "stage": "V305.64",
-  "state": "REAL_PAPER_VALIDATION_READY_BLOCKED",
+  "state": "REAL_PAPER_READ_VALIDATED",
   "status": "PASS"
 }

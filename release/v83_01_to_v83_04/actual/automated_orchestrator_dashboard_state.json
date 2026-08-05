@@ -1,20 +1,20 @@
 {
   "action_authorized": false,
   "action_completed": false,
-  "action_id": "orchestrator-action-9d1790db0e7aa4166e2e",
+  "action_id": "orchestrator-action-fd26093e7643c054fb23",
   "action_ready": true,
   "action_reasons": [
-    "MARKET_OPEN_SESSION_INACTIVE"
+    "SESSION_RUNNING_WAIT_NEXT_TICK"
   ],
-  "active_action": false,
+  "active_action": true,
   "automatic_action_execution_enabled": false,
   "broker_write_enabled": false,
   "continuous_loop_enabled": false,
   "live_trading_enabled": false,
-  "observed_at": "2026-08-03T17:34:53.978728+00:00",
-  "orchestrator_state": "ORCHESTRATOR_ACTION_LOCK_CLEARED",
+  "observed_at": "2026-08-03T17:46:56.643248+00:00",
+  "orchestrator_state": "AUTOMATED_ORCHESTRATOR_SAFE_MODE",
   "order_submission_enabled": false,
   "paper_only": true,
   "read_only": true,
-  "recommended_action": "START_PAPER_SESSION"
+  "recommended_action": "REFRESH_SCHEDULER_HEARTBEAT"
 }

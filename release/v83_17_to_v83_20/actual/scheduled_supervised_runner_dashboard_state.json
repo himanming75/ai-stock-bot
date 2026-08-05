@@ -10,7 +10,7 @@
   "market_open": false,
   "max_runs_per_day": 3,
   "minimum_interval_seconds": 300,
-  "observed_at": "2026-08-03T17:59:07.419669+00:00",
+  "observed_at": "2026-08-03T18:05:19.041480+00:00",
   "operator_supervision_required": true,
   "order_submission_enabled": false,
   "paper_only": true,
@@ -22,7 +22,7 @@
   "schedule_reasons": [
     "MARKET_NOT_OPEN"
   ],
-  "scheduled_runner_state": "SCHEDULE_LOCK_CLEARED",
+  "scheduled_runner_state": "SCHEDULED_RUN_WAIT_GATES",
   "stage": "V83.20",
   "supervised_ready": true,
   "trading_date": "2026-08-03",

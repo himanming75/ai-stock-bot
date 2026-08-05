@@ -2,10 +2,10 @@
   "actual_live_orders_submitted": 0,
   "average_absolute_slippage_pct": 0.02,
   "average_spread_pct": 0.029999,
-  "generated_at": "2026-08-04T09:07:35.478924+00:00",
+  "generated_at": "2026-08-04T09:07:43.283415+00:00",
   "maximum_absolute_slippage_pct": 0.02,
   "qualification_rate_pct": 100.0,
-  "qualified_count": 4,
+  "qualified_count": 5,
   "rejected_count": 0,
-  "sample_count": 4
+  "sample_count": 5
 }

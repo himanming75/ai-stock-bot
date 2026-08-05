@@ -1,0 +1,2734 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_release_applied": false,
+  "actual_runtime_started": false,
+  "actual_service_installed": false,
+  "audited_at": "2026-08-05T09:26:29.258148+00:00",
+  "checks": {
+    "all_required_stages_pass": true,
+    "credential_scan_pass": true,
+    "git_commands_valid": true,
+    "inventory_created": true,
+    "json_integrity_pass": true,
+    "main_branch": true,
+    "manifests_valid": true,
+    "repository_structure_pass": true,
+    "safety_invariants_pass": true
+  },
+  "credential_leakage_audit": {
+    "excluded_example_files": 2639,
+    "finding_count": 0,
+    "findings": [],
+    "ignored_placeholder_count": 9,
+    "ignored_placeholder_sample": [
+      {
+        "candidate_fingerprint": "8216b09803ba6682",
+        "path": "test_paper_broker_session_configuration.py",
+        "pattern": "JSON_API_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "8319101460422b0b",
+        "path": "V79_16_TO_V79_20_INSTALL_AND_EXECUTION_CHECK.txt",
+        "pattern": "APCA_API_KEY_ID_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "076ecbfb9858f988",
+        "path": "V79_16_TO_V79_20_INSTALL_AND_EXECUTION_CHECK.txt",
+        "pattern": "APCA_API_SECRET_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "df5fcb3bbb756172",
+        "path": "alpaca_market_data\\actual_paper_automation_v90_01_20.py",
+        "pattern": "JSON_API_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "548f031b1462888e",
+        "path": "secure_control_plane\\service.py",
+        "pattern": "JSON_API_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "071d0540891438da",
+        "path": "secure_control_plane\\service.py",
+        "pattern": "JSON_SECRET_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "8216b09803ba6682",
+        "path": "release\\v77_14\\output\\staging\\test_paper_broker_session_configuration.py",
+        "pattern": "JSON_API_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "e54b74eb9192b480",
+        "path": "release\\secure_control_plane_operator_console\\actual\\secure_control_plane_result.json",
+        "pattern": "JSON_API_KEY_LITERAL"
+      },
+      {
+        "candidate_fingerprint": "e54b74eb9192b480",
+        "path": "release\\secure_control_plane_operator_console\\actual\\secure_control_plane_result.json",
+        "pattern": "JSON_SECRET_KEY_LITERAL"
+      }
+    ],
+    "placeholder_literals_are_not_credentials": true,
+    "raw_sensitive_values_included": false,
+    "scanned_files": 10368,
+    "status": "PASS"
+  },
+  "failed": [],
+  "git_audit": {
+    "branch": "main",
+    "branch_main": true,
+    "clean_tree_required_for_rc": false,
+    "commit": "8ebaa12922f34ef1ae95f1185c444abf1499906a",
+    "dirty_tree_is_warning": true,
+    "git_commands_valid": true,
+    "working_tree_change_count": 405,
+    "working_tree_clean": false,
+    "working_tree_sample": [
+      "M .gitignore",
+      " M dashboard/server.py",
+      " M dashboard/static/app.js",
+      " M dashboard/static/index.html",
+      " M dashboard/static/styles.css",
+      " M release/dash2_05/actual/current_paper_snapshot.json",
+      " M release/dash2_05/actual/current_paper_snapshot_collector_result.json",
+      " M release/op3_09_to_op3_12/actual/paper_order_fill_report.json",
+      " M release/op3_09_to_op3_12/actual/paper_order_lifecycle_audit_ledger.jsonl",
+      " M release/op3_09_to_op3_12/actual/paper_order_lifecycle_result.json",
+      " M release/op3_09_to_op3_12/actual/paper_order_recovery_token.json",
+      " M release/op3_09_to_op3_12/actual/paper_order_status.json",
+      " M release/op3_09_to_op3_12/actual/paper_position_reconciliation_report.json",
+      " M release/op4_01_to_op4_04/actual/controlled_paper_pilot_foundation_result.json",
+      " M release/op4_01_to_op4_04/actual/paper_pilot_dashboard_state.json",
+      " M release/op4_05_to_op4_08/actual/paper_session_health.json",
+      " M release/op4_05_to_op4_08/actual/paper_session_monitor_dashboard_state.json",
+      " M release/op4_05_to_op4_08/actual/paper_session_monitor_result.json",
+      " M release/op4_09_to_op4_12/actual/paper_daily_performance_report.json",
+      " M release/op4_09_to_op4_12/actual/paper_performance_collector_result.json",
+      " M release/op4_09_to_op4_12/actual/paper_performance_dashboard_state.json",
+      " M release/op4_09_to_op4_12/actual/paper_pilot_performance_report.json",
+      " M release/op4_13_to_op4_16/actual/paper_daily_loss_report.json",
+      " M release/op4_13_to_op4_16/actual/paper_drawdown_report.json",
+      " M release/op4_13_to_op4_16/actual/paper_emergency_stop_gate.json",
+      " M release/op4_13_to_op4_16/actual/paper_exposure_report.json",
+      " M release/op4_13_to_op4_16/actual/paper_risk_dashboard_state.json",
+      " M release/op4_13_to_op4_16/actual/paper_risk_monitor_result.json",
+      " M release/op4_17_to_op4_20/actual/paper_pilot_automation_dashboard_state.json",
+      " M release/op4_17_to_op4_20/actual/paper_pilot_automation_result.json",
+      " M release/op4_17_to_op4_20/actual/paper_pilot_cycle_plan.json",
+      " M release/op4_17_to_op4_20/actual/paper_pilot_recovery_gate.json",
+      " M release/op5_01_to_op5_04/actual/multi_day_validation_dashboard_state.json",
+      " M release/op5_01_to_op5_04/actual/multi_day_validation_gate.json",
+      " M release/op5_01_to_op5_04/actual/multi_day_validation_result.json",
+      " M release/op5_01_to_op5_04/actual/multi_day_validation_summary.json",
+      " M release/op5_05_to_op5_08/actual/validation_analytics.json",
+      " M release/op5_05_to_op5_08/actual/validation_analytics_dashboard_state.json",
+      " M release/op5_05_to_op5_08/actual/validation_analytics_report.json",
+      " M release/op5_05_to_op5_08/actual/validation_analytics_result.json",
+      " M release/op5_05_to_op5_08/actual/validation_trend.json",
+      " M release/p1_broker_consolidation/actual/kill_switch.json",
+      " M release/v100_33_to_v100_64/actual/risk_budget_allocation_ledger.jsonl",
+      " M release/v100_33_to_v100_64/actual/risk_budget_allocation_result.json",
+      " M release/v101_01_to_v101_32/actual/portfolio_rebalance_control_ledger.jsonl",
+      " M release/v101_01_to_v101_32/actual/portfolio_rebalance_control_result.json",
+      " M release/v101_33_to_v101_64/actual/adaptive_rebalance_optimization_ledger.jsonl",
+      " M release/v101_33_to_v101_64/actual/adaptive_rebalance_optimization_result.json",
+      " M release/v102_33_to_v102_64/actual/autonomous_decision_ledger.jsonl",
+      " M release/v102_33_to_v102_64/actual/autonomous_decision_result.json",
+      " M release/v103_01_to_v103_32/actual/autonomous_cycle_checkpoint.json",
+      " M release/v103_01_to_v103_32/actual/autonomous_cycle_ledger.jsonl",
+      " M release/v103_01_to_v103_32/actual/autonomous_cycle_result.json",
+      " M release/v103_33_to_v103_64/actual/multi_day_scheduler_checkpoint.json",
+      " M release/v103_33_to_v103_64/actual/multi_day_scheduler_ledger.jsonl",
+      " M release/v103_33_to_v103_64/actual/multi_day_scheduler_result.json",
+      " M release/v103_33_to_v103_64/actual/multi_day_session_queue.json",
+      " M release/v104_01_to_v104_32/actual/continuous_autonomous_engine_ledger.jsonl",
+      " M release/v104_01_to_v104_32/actual/continuous_autonomous_engine_result.json",
+      " M release/v104_01_to_v104_32/actual/continuous_engine_checkpoint.json",
+      " M release/v104_33_to_v104_64/actual/continuous_runtime_checkpoint.json",
+      " M release/v104_33_to_v104_64/actual/continuous_runtime_ledger.jsonl",
+      " M release/v104_33_to_v104_64/actual/continuous_service_runtime_result.json",
+      " M release/v105_01_to_v105_32/actual/final_integration_checkpoint.json",
+      " M release/v105_01_to_v105_32/actual/final_system_integration_ledger.jsonl",
+      " M release/v105_01_to_v105_32/actual/final_system_integration_result.json",
+      " M release/v105_33_to_v105_64/actual/final_completion_certificate.json",
+      " M release/v105_33_to_v105_64/actual/final_file_inventory.json",
+      " M release/v105_33_to_v105_64/actual/final_release_ledger.jsonl",
+      " M release/v105_33_to_v105_64/actual/final_release_manifest.json",
+      " M release/v105_33_to_v105_64/actual/production_readiness_final_release_result.json",
+      " M release/v105_33_to_v105_64/bundle/AI_STOCK_BOT_V105_FINAL_RELEASE_BUNDLE.zip",
+      " M release/v105_33_to_v105_64/rollback/rollback_manifest.json",
+      " M release/v106_01_to_v106_32/actual/daily_paper_runner_result.json",
+      " M release/v109_01_to_v110_64/actual/autonomous_operations_checkpoint.json",
+      " M release/v109_01_to_v110_64/actual/autonomous_operations_ledger.jsonl",
+      " M release/v109_01_to_v110_64/actual/autonomous_paper_operations_result.json",
+      " M release/v109_01_to_v110_64/actual/autonomous_session_ledger.jsonl",
+      " M release/v109_01_to_v110_64/backups/2026-08-10/autonomous_operations_checkpoint.json",
+      " M release/v109_01_to_v110_64/backups/2026-08-11/autonomous_operations_checkpoint.json",
+      " M release/v109_01_to_v110_64/backups/2026-08-12/autonomous_operations_checkpoint.json",
+      " M release/v109_01_to_v110_64/backups/2026-08-13/autonomous_operations_checkpoint.json",
+      " M release/v109_01_to_v110_64/backups/2026-08-14/autonomous_operations_checkpoint.json",
+      " M release/v111_01_to_v113_64/actual/live_broker_readonly_audit_ledger.jsonl",
+      " M release/v111_01_to_v113_64/actual/live_broker_readonly_result.json",
+      " M release/v114_01_to_v116_64/actual/broker_safe_execution_audit_ledger.jsonl",
+      " M release/v114_01_to_v116_64/actual/broker_safe_execution_result.json",
+      " M release/v114_01_to_v116_64/actual/manual_approval_package.json",
+      " M release/v117_01_to_v119_64/actual/live_safety_audit_ledger.jsonl",
+      " M release/v117_01_to_v119_64/actual/live_safety_certificate.json",
+      " M release/v117_01_to_v119_64/actual/live_safety_system_result.json",
+      " M release/v121_01_to_v123_64/actual/alpaca_account_snapshot.json",
+      " M release/v121_01_to_v123_64/actual/alpaca_market_snapshot.json",
+      " M release/v121_01_to_v123_64/actual/alpaca_order_snapshot.json",
+      " M release/v121_01_to_v123_64/actual/alpaca_paper_audit_ledger.jsonl",
+      " M release/v121_01_to_v123_64/actual/alpaca_paper_operations_result.json",
+      " M release/v121_01_to_v123_64/actual/paper_operation_ledger.jsonl",
+      " M release/v124_01_to_v126_64/actual/continuous_paper_session_ledger.jsonl",
+      " M release/v124_01_to_v126_64/actual/continuous_paper_shadow_result.json",
+      " M release/v124_01_to_v126_64/actual/live_shadow_decision_ledger.jsonl"
+    ]
+  },
+  "json_integrity_audit": {
+    "invalid_json": [],
+    "invalid_jsonl": [],
+    "json_count": 3398,
+    "jsonl_count": 180,
+    "status": "PASS"
+  },
+  "live_release_allowed": false,
+  "manifest_inventory": {
+    "all_valid": true,
+    "blank_stage_is_allowed_for_legacy_manifests": true,
+    "manifest_count": 401,
+    "manifests": [
+      {
+        "path": "ACTUAL_VALIDATION_CONTROL_CENTER_MANIFEST.json",
+        "sha256": "0c75cfb95db0fbbd868f795625b612dfc947c0c54fbd8a76c5b5cc9d06578d7b",
+        "stage": "ACTUAL_VALIDATION_CONTROL_CENTER",
+        "valid": true
+      },
+      {
+        "path": "ACTUAL_VALIDATION_SUPPORT_MANIFEST.json",
+        "sha256": "a1d0b2348707ac1730fe289ac7748dfe9d2c61512f35479e29c6f78493caa7f0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "AI_MONITORING_DISTRIBUTED_RUNTIME_MANIFEST.json",
+        "sha256": "b961b1ac9daa2d8c7f6fcaeea03d43c7a7f368a50181030a9e29b0ebfd7e1821",
+        "stage": "AI_MONITORING_DISTRIBUTED_RUNTIME_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "AI_V2_FINAL_MANIFEST.json",
+        "sha256": "0b621dbb09a2afe87217d312cbf2fe074a845f70a474224be8235f7f24475e8d",
+        "stage": "AI_V2_FINAL_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "AI_V2_MEGA_BUNDLE_1_MANIFEST.json",
+        "sha256": "538e4646a57b2fce0f5d85f9262db19ecf30eb47f6f68aa00f5408d1e0d8be1a",
+        "stage": "AI_V2_MEGA_BUNDLE_1",
+        "valid": true
+      },
+      {
+        "path": "AI_V2_MEGA_BUNDLE_2_MANIFEST.json",
+        "sha256": "46c7f9bd1a37f6245cccce709928f90c0b4e0b515482ddcd080b1e19e580f202",
+        "stage": "AI_V2_MEGA_BUNDLE_2",
+        "valid": true
+      },
+      {
+        "path": "AUTO_REPORT_NOTIFICATION_MANIFEST.json",
+        "sha256": "252db2fe2091b8769cf43092e2f40e45fcd60cccc3de0aa4a0fd91cb723c897f",
+        "stage": "AUTO_REPORT_NOTIFICATION_FRAMEWORK",
+        "valid": true
+      },
+      {
+        "path": "BUNDLE_A_R7_TO_R10_RUNTIME_CORE_MANIFEST.json",
+        "sha256": "414822a96427028b4e5eabfbce3680a7f7d4b5bb6a0f5a02e867f7cf0e7570e8",
+        "stage": "BUNDLE_A_R7_TO_R10",
+        "valid": true
+      },
+      {
+        "path": "BUNDLE_B_R11_TO_R13_BROKER_MULTI_ACCOUNT_MANIFEST.json",
+        "sha256": "9836cc24cb4ab1078ba7aaef9ded9d634557f778a5b45044473a21205c1b3963",
+        "stage": "BUNDLE_B_R11_TO_R13",
+        "valid": true
+      },
+      {
+        "path": "BUNDLE_C_R14_TO_R15_FINAL_OPERATIONS_MANIFEST.json",
+        "sha256": "aad425f8d23bfdad4fec20156600a8e4a568dae0338d4ccd557b4f065c152feb",
+        "stage": "BUNDLE_C_R14_TO_R15",
+        "valid": true
+      },
+      {
+        "path": "DASH1_01_TO_DASH1_04_MANIFEST.json",
+        "sha256": "173d4724ee50af2315659f694b157e1d2930546653178cd2009b21fdc5bc231b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "DASH1_05_TO_DASH1_08_MANIFEST.json",
+        "sha256": "869ded34097f492d1db720f1d73165d0c63a1d2fb4ba0c9636cc994fdb1766d2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "DASH2_01_TO_DASH2_04_MANIFEST.json",
+        "sha256": "20159745cc044833f034589ba36cb70769d1185db5c303727dc4489b262ff6b1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "DASH2_05_ACTUAL_SNAPSHOT_HOTFIX_MANIFEST.json",
+        "sha256": "1452f03f1c123fd76d7b2ef1f2ac04fd95dc9407380ce7f2a14bd2d51599b31c",
+        "stage": "DASH2.05",
+        "valid": true
+      },
+      {
+        "path": "FEATURE_ENGINE_AUTO_OPTIMIZATION_MANIFEST.json",
+        "sha256": "85f7757a5c1625156e17afd6e144538ab9027d2d1dd1da842fb7d1e92c1252a6",
+        "stage": "FEATURE_ENGINE_AUTO_OPTIMIZATION_FRAMEWORK",
+        "valid": true
+      },
+      {
+        "path": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_HOTFIX_MANIFEST.json",
+        "sha256": "ee99b4e64168960cee2c6e9921dfa958f867cad64a7ecc582bc7f2797329b117",
+        "stage": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_HOTFIX",
+        "valid": true
+      },
+      {
+        "path": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_HOTFIX_V2_MANIFEST.json",
+        "sha256": "7b31dd9feb1b26ce486a176b74788193ab2c3088a3e42770460c0323d1a4bd99",
+        "stage": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_HOTFIX_V2",
+        "valid": true
+      },
+      {
+        "path": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_PATH_EXCLUSION_V3_MANIFEST.json",
+        "sha256": "fae1e33c8e4cec14e258a0093ab37227bb8c092c15d7d2a4b420ae71f63e6406",
+        "stage": "FINAL_OFFLINE_RC_CREDENTIAL_SCAN_PATH_EXCLUSION_HOTFIX_V3",
+        "valid": true
+      },
+      {
+        "path": "FINAL_OFFLINE_RELEASE_CANDIDATE_MANIFEST.json",
+        "sha256": "e02fdb40a1bbe476fc448154267105e06b7b5b0b219ff8e280c3e8c285d2d44f",
+        "stage": "FINAL_OFFLINE_RELEASE_CANDIDATE_AUDIT",
+        "valid": true
+      },
+      {
+        "path": "L1_LIVE_SAFETY_BOUNDARY_MANIFEST.json",
+        "sha256": "8ae74a94c0e7190057ac8017b0d8c7e5074c059943cc65982c8cd03eb39ed651",
+        "stage": "L1",
+        "valid": true
+      },
+      {
+        "path": "L2_LIVE_READ_ONLY_PREPARATION_MANIFEST.json",
+        "sha256": "c5545ad79fd4121cb3ddd4cf8679adc142eb0d18ef58409ffcf0b58ea20bf58f",
+        "stage": "L2_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "L3_LIVE_MICRO_EXECUTION_PREPARATION_MANIFEST.json",
+        "sha256": "6ad8ffa1a4f2d6225cda2a5c9a6fa0783b3228dfc014fca24e3f92395a4800b8",
+        "stage": "L3_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "L4_LIVE_RECONCILIATION_PREPARATION_MANIFEST.json",
+        "sha256": "4cec33c059fa5597b9ee415b15b4cb81c0edbef0c4d736910721b8e29581fd67",
+        "stage": "L4_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "L5_LIVE_AUTONOMOUS_RUNTIME_PREPARATION_MANIFEST.json",
+        "sha256": "b07c75e1ebbb9485f21c71bbfb6b73fc4d9922e3ab5761227e56dce18c990ea7",
+        "stage": "L5_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "L6_LIVE_LONG_RUN_QUALIFICATION_PREPARATION_MANIFEST.json",
+        "sha256": "9622f1b184122b100d460eb0b436161d1e6e3534148efad1e7767beac1fe42ba",
+        "stage": "L6_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "MULTI_BROKER_STRATEGY_PLUGINS_MANIFEST.json",
+        "sha256": "39198250fc4f375c4cb1fc8c451bfebc75d801d329ced01f071b5384387439aa",
+        "stage": "MULTI_BROKER_STRATEGY_PLUGIN_FRAMEWORK",
+        "valid": true
+      },
+      {
+        "path": "O2_OPERATIONS_ENHANCEMENT_MANIFEST.json",
+        "sha256": "fa7e263ded565ad36e5eace8649aa958e46d87acbba186235bcf7cd3ce45d34b",
+        "stage": "O2",
+        "valid": true
+      },
+      {
+        "path": "O3_AUTONOMOUS_OPERATIONS_MANIFEST.json",
+        "sha256": "1b70c05bbd2764da82f9da118a7254dfa648e8f4a2b7eec151ed4eae0012894a",
+        "stage": "O3",
+        "valid": true
+      },
+      {
+        "path": "O4_RUNTIME_RESUME_SESSION_REPORTING_MANIFEST.json",
+        "sha256": "c0211cfb24ed0d0d22e4bb3532ef82e6c56a57f90eb807d70db4b31191303503",
+        "stage": "O4",
+        "valid": true
+      },
+      {
+        "path": "OP1_01_TO_OP1_04_MANIFEST.json",
+        "sha256": "c45accf27ac46c2633087dab8ade3fae202effee0cb7ed61b183534c81173d4a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP1_05_TO_OP1_08_MANIFEST.json",
+        "sha256": "5140400eb2dcc284c2b3b63da216e9821299ea0816d9e3baaf54629e5943e13c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP1_09_TO_OP1_12_MANIFEST.json",
+        "sha256": "7537f18e824f21f5e72e27ce8f3389bc90f1ba457a166e2f5b8c3a01415c9856",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP1_13_TO_OP1_16_MANIFEST.json",
+        "sha256": "3a068d1d36a98fd0191746e43e59401929043cfffad1c5653b3e082a97493d4b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP1_17_TO_OP1_20_MANIFEST.json",
+        "sha256": "07df60a5af2415e4697910daac07e4f18603789aeae52a39e73956f9f6f79a7c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP2_01_TO_OP2_04_MANIFEST.json",
+        "sha256": "0ba2a16dcd8064914676bf5fddf69f7a816a45f6b1baa4e989d14a08af55caa0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP2_05_TO_OP2_08_MANIFEST.json",
+        "sha256": "bce5053403586998cd26dc01ad480f123426e291e75ce023db60f00f06b0c2ac",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP2_09_TO_OP2_12_MANIFEST.json",
+        "sha256": "d0376e56528b5bbe5617e827d562e1e771a5a91873e763481c72909c4f041092",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP2_13_TO_OP2_16_MANIFEST.json",
+        "sha256": "dfed523a816c5664036720123152058ce0c00a23c97f615d7267c48265313ad5",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP2_17_TO_OP2_20_MANIFEST.json",
+        "sha256": "c9dcefae72e305143e29c30a1f315c9a2bbd35f33141901f1c99e931d7b50b1d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP3_01_TO_OP3_04_MANIFEST.json",
+        "sha256": "7396c8e4c8d73abe65e698ad782bcd1b92977f0cb776caaf741ee220f3e6ccdd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP3_05_TO_OP3_08_MANIFEST.json",
+        "sha256": "61fba6d99553b07cfb0a0821b53a59708ccf8be76d4b8028b376474d07c0f8d8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP3_09_TO_OP3_12_MANIFEST.json",
+        "sha256": "67ab884d90bea884dbecb0d2a55b7e1613b6f01b9e73907248107bf8913250ba",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP3_13_TO_OP3_16_MANIFEST.json",
+        "sha256": "63ce0e888917488b0592637b0bd864c015fcf0091c0c84e6cd89624f796f696e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP4_01_TO_OP4_04_MANIFEST.json",
+        "sha256": "dfbd93144e49d0a78f1f571468ecc800dade8736be60e24b9c69d72edffeb0ba",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP4_05_TO_OP4_08_MANIFEST.json",
+        "sha256": "ca5f587e158cd5cb3afae44248d0f6e055b849742ca6dbad7293e778bf483ac2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP4_09_TO_OP4_12_MANIFEST.json",
+        "sha256": "306d060c795c1ec6b3b22c1db9fc08868898296832ed6bd5158b2ceefeef9415",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP4_13_TO_OP4_16_MANIFEST.json",
+        "sha256": "e8fbe0fc24d3debea433bd7ee90b2d3e540efd81b7763bc0e95451822770fd9f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP4_17_TO_OP4_20_MANIFEST.json",
+        "sha256": "90410b02b6d67d781d63a3fa22a16f0024cca91c4065514185c5ab917df0082d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP5_01_TO_OP5_04_MANIFEST.json",
+        "sha256": "62267d8509fdbf963d97ac623f9fd5a5272457803d221702efd305450f77937b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP5_05_TO_OP5_08_MANIFEST.json",
+        "sha256": "0b6f6c57a9edb0a7d37910cd37dd4ef9d5e5019c7a3930550232b1ffb2df1e0a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP5_09_TO_OP5_12_MANIFEST.json",
+        "sha256": "53ca1472bb956d941c3dd482dc504a0a516e492202d0efe6404871545ffb18f3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP5_13_TO_OP5_16_MANIFEST.json",
+        "sha256": "508ea64637efb4f404f89bc2700baf61b16c48c1232e3b7831d8633d7f4af87c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OP5_17_TO_OP5_20_MANIFEST.json",
+        "sha256": "c5918ff987c401080a3d639f9b219196e2b28231d707e340bb17cd7be0df1a45",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OPERATIONAL_RESILIENCE_DATA_GOVERNANCE_MANIFEST.json",
+        "sha256": "867d77475e72852b1a97542d0e0112ac4b3046af9f973a14431f50a78240bba6",
+        "stage": "OPERATIONAL_RESILIENCE_DATA_GOVERNANCE_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "OPERATIONS_BUNDLE_MANIFEST.json",
+        "sha256": "c299a825b118eaba396d462db7f55dfac622713f6d7ccc8e97de96fb23c1e723",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "OPERATIONS_V2_MANIFEST.json",
+        "sha256": "31d44d6200505e8484255cb129d145af82d0760b192afa56e622a427fda34430",
+        "stage": "OPERATIONS_V2_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "P1_ACTUAL_ENVIRONMENT_QUALIFICATION_MANIFEST.json",
+        "sha256": "659370cd9947202c74225b498af93c9780052d7a19898f95b38f836f2eef3ab4",
+        "stage": "P1_ACTUAL_ENVIRONMENT_QUALIFICATION",
+        "valid": true
+      },
+      {
+        "path": "P1_BROKER_CONSOLIDATION_MANIFEST.json",
+        "sha256": "35c15324cb672c31708c2b5d011ca5aeacef1970933919659703381df468db3e",
+        "stage": "P1",
+        "valid": true
+      },
+      {
+        "path": "P2A1_HOTFIX_MANIFEST.json",
+        "sha256": "1f7345d099a80d549c5aa4a8be0bd64a41d2dc52e29ab53cc77fda9700249511",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "P2A_SAFETY_HOTFIX_MANIFEST.json",
+        "sha256": "6c7d4388574416f34facc0e4c161391b75eaf1e37de57955bd8debcbb3491502",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "P2_ACTUAL_PAPER_BROKER_READ_MANIFEST.json",
+        "sha256": "33681191db470c8bf0fa24e53cd0d24391e0660d13dbebcc805e1c3a098f0554",
+        "stage": "P2_ACTUAL_PAPER_BROKER_READ_VALIDATION",
+        "valid": true
+      },
+      {
+        "path": "P2_ACTUAL_PAPER_EXECUTION_MANIFEST.json",
+        "sha256": "93a92e9cf2615ce10579da73569a423b41a0bac87d06fad0b70069b4893db7ee",
+        "stage": "P2",
+        "valid": true
+      },
+      {
+        "path": "P3_ORDER_FILL_PORTFOLIO_SYNC_MANIFEST.json",
+        "sha256": "5e21e2bfbdc6cda168240f7819a8e15086181bee39f8f58448a65ad52ae8a273",
+        "stage": "P3",
+        "valid": true
+      },
+      {
+        "path": "P4_AUTONOMOUS_PAPER_RUNTIME_MANIFEST.json",
+        "sha256": "3202c6aaaa956c6bad5abc25801257efae35ac271288ae12e4f5984902f37f86",
+        "stage": "P4",
+        "valid": true
+      },
+      {
+        "path": "P5_PAPER_LONG_RUN_QUALIFICATION_MANIFEST.json",
+        "sha256": "043defe895a10f85084f4da1d40ea78bf56328f0ab5e8a73c7609ffec9ad9fef",
+        "stage": "P5",
+        "valid": true
+      },
+      {
+        "path": "R16_TO_R20_MANIFEST.json",
+        "sha256": "d72038ea043a52c257948226c2add0b389ec2408db36797f2d1c8307b296b019",
+        "stage": "R16_TO_R20_REALTIME_PAPER_OPERATIONS_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R1A_DEPLOYMENT_AUDIT_SCAN_PERFORMANCE_HOTFIX_MANIFEST.json",
+        "sha256": "cac70f65544b21dbc76ab846d963f28e88d6d92e25cf58d76b5fe8d4ada57e65",
+        "stage": "R1A",
+        "valid": true
+      },
+      {
+        "path": "R1_PRODUCTION_DEPLOYMENT_PREPARATION_MANIFEST.json",
+        "sha256": "228027baed67c15c757784ce8ac5df00db7250a85efd077fe0241068ebd4eb36",
+        "stage": "R1_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R2_WINDOWS_SCHEDULER_SERVICE_PREPARATION_MANIFEST.json",
+        "sha256": "9c979a5e40e2e14870ff2edc016b6d265d7d102f969dfa697163f084a350c989",
+        "stage": "R2_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R3A_DPAPI_POWERSHELL_COMPATIBILITY_HOTFIX_MANIFEST.json",
+        "sha256": "dea142b1ae9399179946c8c20fa55f1ffc74c7740aed7e36c696c06104e1cb18",
+        "stage": "R3A",
+        "valid": true
+      },
+      {
+        "path": "R3_SECURE_CREDENTIAL_STORAGE_BOOTSTRAP_MANIFEST.json",
+        "sha256": "48cc6aa10127a4365fc0ce2cb63e9f7175360daff880c488b231110c127cf684",
+        "stage": "R3_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R4_CONFIGURATION_PROFILE_TRADING_MODE_BOOTSTRAP_MANIFEST.json",
+        "sha256": "7d82b0384c33ebf5445855418212368f7f40f542495943bca7a79ce7a631b918",
+        "stage": "R4_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R5_STRATEGY_PROFILE_BINDING_RUNTIME_BRIDGE_MANIFEST.json",
+        "sha256": "571d57302342b5852850c2d303fca4416ed7f6d161bcb257290eb4a8dd1421fa",
+        "stage": "R5_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "R6_RUNTIME_SESSION_MANAGER_MANIFEST.json",
+        "sha256": "1fab63c4ff445f37b108251a92bb30e762521632ed923f270a8b7e45be21abd8",
+        "stage": "R6_PREPARATION",
+        "valid": true
+      },
+      {
+        "path": "RUNTIME_SERVICE_DEPLOYMENT_DASHBOARD6_MANIFEST.json",
+        "sha256": "81ed5bd8b264a89cdd66dcdb1d113eaeda72be2700be534ac54c8f999ff3d6be",
+        "stage": "RUNTIME_SERVICE_DEPLOYMENT_DASHBOARD6_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MANIFEST.json",
+        "sha256": "d5f7c0995af936dbb0077d62f0b21e570ea6c000c4d1aa3c28bf5ca6d950a1ea",
+        "stage": "SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MEGA_BUNDLE",
+        "valid": true
+      },
+      {
+        "path": "SHADOW_TRADING_PRODUCTION_APPROVAL_MANIFEST.json",
+        "sha256": "a883925b45e142773f5e8078b1ba46454006bcaa932390205a70f20ea2dd06e7",
+        "stage": "SHADOW_TRADING_PRODUCTION_APPROVAL_FRAMEWORK",
+        "valid": true
+      },
+      {
+        "path": "V100_01_TO_V100_32_MANIFEST.json",
+        "sha256": "b2c9237fd6f9c1348d4c96bc88ed3fb13e27446d8a7c8e34ae646c4ab0270b60",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V100_33_TO_V100_64_MANIFEST.json",
+        "sha256": "dd556c6789966b1886a1ee62940357940df9ff1a4158e2f3f5a3c979137d0b91",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V101_01_TO_V101_32_MANIFEST.json",
+        "sha256": "fa1bddfd67f77af6d36b647e74e18886d48b1c57aa2533932abd8f26ba812384",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V101_01_TO_V102_00_RUNTIME_FOUNDATION_MANIFEST.json",
+        "sha256": "5dd8f1023f5f1cb37e30c2e85e89cbfaca3942adb2cdc5a7946ca4cb10ab8b84",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V101_33_TO_V101_64_MANIFEST.json",
+        "sha256": "f417b6b51940c1d4024f9b7fe0f39f176f5a5565f5575561f251f3714bceb695",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V102_01_TO_V102_32_MANIFEST.json",
+        "sha256": "6bba28be114ee2300597359e585f4aacb9a7e10893815234cf30221964778ac6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V102_01_TO_V103_00_MARKET_DATA_FOUNDATION_MANIFEST.json",
+        "sha256": "88f95f390d2176ca33743cc0082f4de5932489c2464c021730cc0e5dbc580f70",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V102_33_TO_V102_64_MANIFEST.json",
+        "sha256": "9656e161b47d4db58521a42306470a7523156e0cf25341912994634f5403bfed",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V103_01_TO_V103_32_MANIFEST.json",
+        "sha256": "8c10d226598d90e656ebbcce1aff3fd2db67026c5aadb1a8fe938d5ed7dc9be0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V103_01_TO_V104_00_STRATEGY_SIGNAL_ENGINE_MANIFEST.json",
+        "sha256": "ffbc38c853faa2b6d36b65f8b5c86d15d1c40c7541c97eb998e64905f5f9096c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V103_33_TO_V103_64_MANIFEST.json",
+        "sha256": "38c7936aa7d776a02b86e56c2125335d5e040fd4aaa282e3a5b3fd3d37d1cadd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V104_01_TO_V104_32_MANIFEST.json",
+        "sha256": "e451b3834ccaea41f11ad7a20457078e42c5aa1abe6f65c783ca9fb8b82b988f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V104_01_TO_V105_00_ORDER_INTENT_POSITION_SIZING_MANIFEST.json",
+        "sha256": "b33b5722b0b0539f8546e1c3363d3266724a05f9fdb66f0b00693995e1fa82e2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V104_33_TO_V104_64_MANIFEST.json",
+        "sha256": "fdbca1bde868b8d9520a13f7be14ae30edaa53adf0193ac91aa612dbf4a5d21c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V105_01_TO_V105_32_MANIFEST.json",
+        "sha256": "369495e833bc0d97b5bf417672aea8b275075c60cb305ca532c96bb69fec528e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V105_01_TO_V106_00_PAPER_EXECUTION_ADAPTER_MANIFEST.json",
+        "sha256": "5c3ddc4c0dd78ab08fa52f78f77f5015ac246f922d6219db22e318fe1d20682c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V105_33_TO_V105_64_MANIFEST.json",
+        "sha256": "e9d79c29a62caab44538aab0abecbee27d41c422cc51f4b9b06ba20bf5ead401",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V106_01_TO_V106_32_MANIFEST.json",
+        "sha256": "6a907d6dcb34f2458cb7fb31abbc928051daf9305a717fde36f99af2744e1c99",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V106_01_TO_V107_00_PORTFOLIO_FILL_ACCOUNTING_MANIFEST.json",
+        "sha256": "0232d4d3bd07e43060ca3c382fa4946d7df26a1544803718fb6c52e4f7a4e5d7",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V106_33_TO_V108_64_MANIFEST.json",
+        "sha256": "2fb7b1b3dd51dfd73747cd6fc2ea19ce9a26a41599f0a34217b112998135ff66",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V107_01_TO_V108_00_RUNTIME_RISK_MANAGER_MANIFEST.json",
+        "sha256": "c28b7b1078124f8fb3a5e6b54c0d44708158f3a4fc47965a3972bd4d613be573",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V108_01_TO_V109_00_END_TO_END_PAPER_RUNTIME_MANIFEST.json",
+        "sha256": "d98cf0344423d7f475a37c283c5dd2e5f83bd0f0fd19161f20bbaf9f7a6121cd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V109_01_TO_V110_00_ALPACA_PAPER_BROKER_INTEGRATION_MANIFEST.json",
+        "sha256": "203caa50aae3e98944afb2ba10894a04b7a9265ef5737ef1628d882189f16821",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V109_01_TO_V110_64_MANIFEST.json",
+        "sha256": "a886d12354858df5ec3dfcb9e7ca7eb1d04de983dfe13b7a26c4412f3b5f171f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V110_01_TO_V111_00_CONTROLLED_ALPACA_PAPER_READ_MANIFEST.json",
+        "sha256": "205b69f4784fba3951c4e61b020d8998c541ab8ab2474d9bceeffe09683b345f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V111_01_TO_V112_00_CONTROLLED_ALPACA_PAPER_ORDER_OPT_IN_MANIFEST.json",
+        "sha256": "46323e26148755698d61efd2dd2b5eb2144110053e931362279fbadf871c9e61",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V111_01_TO_V113_64_MANIFEST.json",
+        "sha256": "026d5307df8df566645f89f6592ce8ca5a5ee7c690d48807db3e4a879160a145",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V112_01_TO_V113_00_ACTUAL_ALPACA_PAPER_ORDER_VALIDATION_MANIFEST.json",
+        "sha256": "e12feb2214b838a115f06c16d602ebb6cb22dbd39947101df42711b211f15939",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V113_01_TO_V114_00_ALPACA_PAPER_ORDER_RECOVERY_RESTART_MANIFEST.json",
+        "sha256": "3691f855760455a640b6eee24c1510315a78de9eb172034b40e675aae848631f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V114_01_TO_V115_00_ALPACA_PAPER_SESSION_SCHEDULER_MANIFEST.json",
+        "sha256": "17a0878b2e9cad827d6edc24a67e51a5f64f60a4b2ab9bf36842441c9c863f21",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V114_01_TO_V116_64_MANIFEST.json",
+        "sha256": "d47d54e16cd243f319a649d95547a879910178cd7d56ebcbceb8f165dad938a3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V115_01_TO_V116_00_PAPER_RUNTIME_SCHEDULER_INTEGRATION_MANIFEST.json",
+        "sha256": "32ebf3924f4cb4ec6bb3205efce06064ff4d6a6ff77523a675dfd0999b984bc0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY_MANIFEST.json",
+        "sha256": "edb09c1e592cdf32271e8e711033dfa8aa00822f14ace3afe32e6ae49c13b207",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V117_01_TO_V118_00_CONTINUOUS_PAPER_RUNTIME_RELEASE_CANDIDATE_MANIFEST.json",
+        "sha256": "d61cccdc089b62ea1e8f08667301e08e5ef6e38b09501cbe87633b1444188d17",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V117_01_TO_V119_64_MANIFEST.json",
+        "sha256": "b4f69fb50d4fc2883f7a84c8eaf07b32e94c33364c9c7aecb680bba35f2741bd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V118_01_TO_V119_00_CONTINUOUS_PAPER_RUNTIME_FINAL_CERTIFICATION_MANIFEST.json",
+        "sha256": "07907d538a127ac28f1b94ae8497dd79d3d95984c24e8cdf4c90a27a4332ab4b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V119_01_TO_V120_00_AUTONOMOUS_ALPACA_PAPER_RUNTIME_FOUNDATION_MANIFEST.json",
+        "sha256": "9e596a691feb17fb44f2dd6aba5681b6a773d307d5679d07eb0d6778122fc068",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V120_01_TO_V121_00_ACTUAL_AUTONOMOUS_PAPER_READ_SESSION_MANIFEST.json",
+        "sha256": "76510030c13dc44a96ccb430acf8b0e0f45d592f33040d8a94609ab3dee49dac",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V120_FINAL_MANIFEST.json",
+        "sha256": "303d7b02ef4dfa28892b556dab7d32750138d507937af6888db487e05e0abdc8",
+        "stage": "V120_FINAL",
+        "valid": true
+      },
+      {
+        "path": "V121_01_TO_V122_00_AUTONOMOUS_PAPER_READ_RECONCILIATION_MANIFEST.json",
+        "sha256": "a92be9f817c213324dbf010b5362e53e05e2fadafaf7248bea91ccb207028299",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V121_01_TO_V123_64_MANIFEST.json",
+        "sha256": "8ddbd77693fcc969eeb97504d9845803dcd7e70fea021bc27c2065d8e9507100",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V122_01_TO_V123_00_AUTONOMOUS_PAPER_ORDER_IDENTITY_RECONCILIATION_MANIFEST.json",
+        "sha256": "f5d150a3b923092cc2b9c038746d8cf105e79a16190a43de8ad08cad9896d372",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY_MANIFEST.json",
+        "sha256": "174d1fb019a7af3faf98d14b268419596593f084c49eb94ba2f2307e05ee7ecd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION_MANIFEST.json",
+        "sha256": "c387e1c4e3efd26ccb22c8fa4e416af363060d795d0c2d79169edc106e090fc6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V124_01_TO_V126_64_MANIFEST.json",
+        "sha256": "be44dfbc14726e8f76fc75fe94c4189539602e830c8c546d2d77d27171d32878",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V125_01_TO_V126_00_AUTONOMOUS_SAFE_MODE_RECOVERY_GATE_MANIFEST.json",
+        "sha256": "a03f48d958a44c21f3fa88b76af5a3b21642f406467443391e360db38bd9fbce",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V126_01_TO_V127_00_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER_MANIFEST.json",
+        "sha256": "f9ba820671a0686d932d4ab9b9b2443df45c6e604292964704a3292e809dac72",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V127_01_TO_V128_00_EXISTING_PAPER_ORDER_LIFECYCLE_MANIFEST.json",
+        "sha256": "7fa5769b86fc6a92287d8c01c2e0df821044222fdeee95d01acb162574b064f4",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V127_01_TO_V128_64_MANIFEST.json",
+        "sha256": "edb66c7997d2838287f4cb6b8add643fb245fbcced27437f1689adcea06f416d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V128_01_TO_V129_00_ACTUAL_ORDER_LIFECYCLE_FILL_RECONCILIATION_GATE_MANIFEST.json",
+        "sha256": "cd1ed19cab64ffcba0a1bcb7ff8ea5b397486d43d3066cca0ab97caf90933100",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V129_01_TO_V130_00_EXISTING_PAPER_ORDER_LIFECYCLE_MONITOR_MANIFEST.json",
+        "sha256": "645fe90ddabb77040b1e32a0d13e74a0670278f395f57387c61cf15aef94a9c1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V129_01_TO_V130_64_MANIFEST.json",
+        "sha256": "51146ee74919f03f7064bde203495d4d853b695fdffd51babf9c58c94d4340b3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V130_01_TO_V131_00_ORDER_COMPLETION_NEXT_ORDER_UNLOCK_MANIFEST.json",
+        "sha256": "53c690a670c35faa4839c47d95608fa1d36b2f5367e2230a290a825e4f4559f5",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V131_01_TO_V132_00_CONTINUED_ACTUAL_ORDER_MONITOR_TERMINAL_TRANSITION_MANIFEST.json",
+        "sha256": "3b4026de20ad56953f8b7dbf733298fa759f6407cda63e93912f64f8e7ae228a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V131_01_TO_V133_64_MANIFEST.json",
+        "sha256": "2ad443a4be7e4377d816c84a28c31ede6ce486d2a4c06f8e0ca62e85c13483c3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V132_01_TO_V133_00_TERMINAL_COMPLETION_COMMIT_MANIFEST.json",
+        "sha256": "b7b356fe541fcbcbfb2308c056f1a2fabe77a14d7521fb5d3c887d7684b78866",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V133_01_TO_V134_00_TERMINAL_MONITOR_COMMIT_ORCHESTRATOR_MANIFEST.json",
+        "sha256": "d1fccb44c0a761039e4326d79211117b51760d45e32c39a22b064926b7617423",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V134_01_TO_V135_00_AUTONOMOUS_NEXT_ORDER_READINESS_MANIFEST.json",
+        "sha256": "dcb7580e08c0636ba6f0aa463c84e9c1b2f3a9a00183bf8db0764980d80a5c04",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V134_01_TO_V136_64_MANIFEST.json",
+        "sha256": "2fcbd4e4a4109049066192709db0722bfd65376399b3e640548510795c80975b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V135_01_TO_V136_00_CONTROLLED_AUTONOMOUS_NEXT_ORDER_CYCLE_MANIFEST.json",
+        "sha256": "bddb471db02d58d8e945719cfac7cc4cb26c132f688da704443eee5f5dc4b969",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V136_01_TO_V137_00_CONTROLLED_NEXT_ORDER_EXECUTION_PREVIEW_MANIFEST.json",
+        "sha256": "7d2b9728a56d15d98094d3e97f9c1dbdf782c83163719a4cfde234d1862142a2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V137_01_TO_V138_00_FINAL_PAPER_SUBMISSION_APPROVAL_MANIFEST.json",
+        "sha256": "290bcdd483e1f77f641aa31ab5c6b9d8829af7919af674485571529ceea8fd1b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V137_01_TO_V139_64_MANIFEST.json",
+        "sha256": "81e2c6d55d7cf14fd5e2ae0538c4db998eb67dc11480372eecb408d724eedd45",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V138_01_TO_V139_00_AUTONOMOUS_CYCLE_CONTINUATION_MANIFEST.json",
+        "sha256": "4edd47510b00cb5747d151b4ce31da19012df0036cd2fc6b625113f42c9500bd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V139_01_BUNDLE_MANIFEST.json",
+        "sha256": "57bdfd0bfc0b5bfa9d09a37c00d2e3eed241df3ecd987e0e1eabe2a185c79414",
+        "stage": "V139.01",
+        "valid": true
+      },
+      {
+        "path": "V139_02_BUNDLE_MANIFEST.json",
+        "sha256": "a4fb87defbb4ac046352a788beab1598be5904e228dce0282a73b56188caef78",
+        "stage": "V139.02",
+        "valid": true
+      },
+      {
+        "path": "V139_03_BUNDLE_MANIFEST.json",
+        "sha256": "00808c9f840db834658ec493b97e6b92652db341d370d8e4ba409beeac383e44",
+        "stage": "V139.03",
+        "valid": true
+      },
+      {
+        "path": "V139_04_BUNDLE_MANIFEST.json",
+        "sha256": "42e4d366e91f4b37c2fef9994a1e9c5ca449f9dccc2a180b49d7c006ee493a57",
+        "stage": "V139.04",
+        "valid": true
+      },
+      {
+        "path": "V139_05_BUNDLE_MANIFEST.json",
+        "sha256": "f701acae72a5f7d91b005d09d8adfcb02f2c20bc7c9ad96e6c132d36885c72d0",
+        "stage": "V139.05",
+        "valid": true
+      },
+      {
+        "path": "V139_06_BUNDLE_MANIFEST.json",
+        "sha256": "eb02341d62470b5711bca34d43353dac468cab9a2242d00b05e51d0f19c11383",
+        "stage": "V139.06",
+        "valid": true
+      },
+      {
+        "path": "V139_07_BUNDLE_MANIFEST.json",
+        "sha256": "e55797f4540fc2ad317b064310e324d96470b28e269ece3e7326680951741cc1",
+        "stage": "V139.07",
+        "valid": true
+      },
+      {
+        "path": "V139_08_BUNDLE_MANIFEST.json",
+        "sha256": "cc4c969f97ce011fc8babcccac5c9398a207cfcd5f85bc11e1acdcbce3bf0336",
+        "stage": "V139.08",
+        "valid": true
+      },
+      {
+        "path": "V139_09_BUNDLE_MANIFEST.json",
+        "sha256": "a3b443356521fec02d8299939b92c34b63fa1cad34db63fdcacaa6e2b6c76167",
+        "stage": "V139.09",
+        "valid": true
+      },
+      {
+        "path": "V139_10_BUNDLE_MANIFEST.json",
+        "sha256": "190b866b08f98c320e416af33aaccc57518b82b9e22256740979a265bdb884c2",
+        "stage": "V139.10",
+        "valid": true
+      },
+      {
+        "path": "V139_11_TO_V139_15_ULTRA_FAST_MANIFEST.json",
+        "sha256": "393651e2f98a4a9daed368a8de7490b7c3dc3abd436867f39926c6228682de79",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V140_01_BUNDLE_MANIFEST.json",
+        "sha256": "7a9e2dc731f1e368f3ef89852dbb0c22bb44398b2ccd65c8aac69e9d25f6be90",
+        "stage": "V140.01",
+        "valid": true
+      },
+      {
+        "path": "V140_02_TO_V140_05_ULTRA_FAST_MANIFEST.json",
+        "sha256": "4c24a16e7884bb7cd9b71f58a1b9d4cdcd23a2bb3093009360a9305232adfce0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V140_06_TO_V140_09_ULTRA_FAST_MANIFEST.json",
+        "sha256": "ce89ccfba0e919e036f9677805fc289f2e6a8474e9e4bb23e0d56f9864004aa9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V140_10_TO_V140_12_ULTRA_FAST_MANIFEST.json",
+        "sha256": "722959e107ef4d8cbd13a0c50bed06c1dca83fa24e7ff1d0d8e4f66a3bcac4df",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V140_FINAL_MANIFEST.json",
+        "sha256": "a3988df25313cd45cc32d53f2032950713c7a51347a18e34f9aad03549637838",
+        "stage": "V140.00",
+        "valid": true
+      },
+      {
+        "path": "V140_TO_V143_MANIFEST.json",
+        "sha256": "1fcb6ee78c3387f4542ff3a0eebd18d51d73fcf80cf85c0f8c54fb3a95a9808d",
+        "stage": "V140_TO_V143_AI_OPERATIONS",
+        "valid": true
+      },
+      {
+        "path": "V141_01_TO_V141_05_ULTRA_FAST_MANIFEST.json",
+        "sha256": "03f56c1520fdc133e634cfa25cc34ccbe45a5d60cebf281da1bb3a1ed2af9eaa",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V141_01_TO_V145_64_MANIFEST.json",
+        "sha256": "d1a86d792adcc5096813d77314d8bb7aba03674600640b49cf4ce993c968eec8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V141_06_TO_V141_08_ULTRA_FAST_MANIFEST.json",
+        "sha256": "d982a66760533c034312bedca29ef2c6e7af88e4b9ce123fdf0ec2b47ac6df53",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V142_01_TO_V142_04_ULTRA_FAST_MANIFEST.json",
+        "sha256": "624fe5484b01d19316bbe044925a4183486709b659be979cf32c1138a88b9c98",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V142_05_TO_V142_08_ULTRA_FAST_MANIFEST.json",
+        "sha256": "de9bedcb474cb180d6d4de8f210bb7d89eb6529d7a7ceffbc7b4f4d46073d2fd",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V143_FINAL_PRODUCTION_MANIFEST.json",
+        "sha256": "c8134655c3159c82f9633464b7f0c478cd5f1f4367bd5a5b7f70b6db77e60c94",
+        "stage": "V143.FINAL",
+        "valid": true
+      },
+      {
+        "path": "V146_01_TO_V150_64_MANIFEST.json",
+        "sha256": "9b297d93698c7fc8765ad88958ad5b1a6c107a9ced7d50b41b73573035fb4620",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V151_01_TO_V155_64_MANIFEST.json",
+        "sha256": "cf1a7d4a68e117ca510153a060d9494c4f4e84cb0535ac91177f7956300f90f9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V156_01_TO_V160_64_MANIFEST.json",
+        "sha256": "b90cb696d744fe4724fdffc54222efb98c6918509c43bd59bf48a451fa14f0eb",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V161_01_TO_V165_64_MANIFEST.json",
+        "sha256": "130c92e3a29aad56891acd6bc35a858cbe0384005baa9bb9ae36e773810d5fc6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V166_01_TO_V170_64_MANIFEST.json",
+        "sha256": "5ae2516ffcc7e4f76e33e19b17106ab3d83563d237eee933e3579b68a473e8ae",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V171_01_TO_V175_64_MANIFEST.json",
+        "sha256": "7218492b800e2b054fa261e4ac53d6083a67ce78411f69e15a71fab209fa57bf",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V176_01_TO_V180_64_MANIFEST.json",
+        "sha256": "2eaad7b5bbde1ad61808ae752294f887de055c897f96f46bae38574e4dfe92e9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V181_01_TO_V185_64_MANIFEST.json",
+        "sha256": "3a2f7098260f8ca7cae18b60169809e45fe73392a067151bf27966e29ddf5241",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V186_01_TO_V190_64_MANIFEST.json",
+        "sha256": "9f56313880639ac79cb7d3c34f49a71c4389e06d44aff6133fce60943a8bd293",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V191_01_TO_V195_64_MANIFEST.json",
+        "sha256": "4bcfd91081987ba38c8f94a831be6f2ea96723144f10b604e604ba56b34a0e86",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V196_01_TO_V200_64_MANIFEST.json",
+        "sha256": "62b8682454596dc491ddc8877f0ce72aa94890948954ee663fe17f38ee58f3b0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V201_01_TO_V205_64_MANIFEST.json",
+        "sha256": "c61710ef972e54d6c052947fdc24ec1034d5a256dd27451057c2676cbf7f535b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V206_01_TO_V210_64_MANIFEST.json",
+        "sha256": "0243af3d95fb290381d70c6e809cc36913e019398ab07a1b5d5d48bf5cf5dc88",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V211_01_TO_V215_64_MANIFEST.json",
+        "sha256": "d4ff9089c18471a159a7fb91b4747f7e9cc8a175322057ac4fa547e6cb8ff7ff",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V216_01_TO_V220_64_MANIFEST.json",
+        "sha256": "88ce00dc4efa08b1c8081cfed3602400a85a2264c618e054af48574eadc3e46d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V221_01_TO_V225_64_MANIFEST.json",
+        "sha256": "dc7e6a39a22d1ee8d4de98a593c3c233c6192aeb884d4e9cc6f580be0bdc7e6b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V226_01_TO_V230_64_MANIFEST.json",
+        "sha256": "8b99787aadaf305ac5e2c9d08db582d6a019b3a9dc29cd1b501c700ab13ab5cb",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V231_01_TO_V235_64_MANIFEST.json",
+        "sha256": "cb77e43dd77c9d73197fdb54e6894eaf9e720fc4352753808695a27128cc1790",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V236_01_TO_V240_64_MANIFEST.json",
+        "sha256": "e6a5a141967db4916ca565e2d8236e5d26b88716fcde29f175c0903ba1aaa022",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V241_01_TO_V245_64_MANIFEST.json",
+        "sha256": "2f2368f25ba71c4e47ce98d18107228a937c9cde0a3e4feed70383f952ebc73d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V246_01_TO_V250_64_MANIFEST.json",
+        "sha256": "de08f5c3fd4d3ae4e88761f62c8fd2f45d27d59f9f7052e75f94c634cd128348",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V251_01_TO_V255_64_MANIFEST.json",
+        "sha256": "6a931a1fdabc9fd012e77b52807d74aedb68373ab9f981e129488de3ebe0113d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V256_01_TO_V260_64_MANIFEST.json",
+        "sha256": "e119e16c34311d63372074aecd16befb57bb50baa3641b29d6875b85569e0959",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V261_01_TO_V265_64_MANIFEST.json",
+        "sha256": "0dfef8a1d00dd384e042a5aeacc3eb5af68ffb6c53b095105e9aa2678c5ff403",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V266_01_TO_V270_64_MANIFEST.json",
+        "sha256": "dfbde4a3095ce26ac234bb970196c5b561fbbc1abdb5d3c90cbe720f6f86d9c3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V271_01_TO_V280_64_MANIFEST.json",
+        "sha256": "068c47484aa97dd37ea0b7601989bd8976e1a520d8d0d7bf342d5e08cf59842e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V281_01_TO_V290_64_MANIFEST.json",
+        "sha256": "72c8bbd93126fe27bb3fac085779eefefa7a1112fe4e8c297bf0a0a0ce31f8a1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V291_01_TO_V300_64_MANIFEST.json",
+        "sha256": "36ade4cb68cd6627479a0d684cf09a07a3d029aeecea580ba4db417a9dbd535b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V301_01_TO_V305_64_MANIFEST.json",
+        "sha256": "a066fd1780ec3155c0a6fc644d6e7dc7c65b64644194c41ccf6ad04ef5af5735",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V306_01_TO_V310_64_MANIFEST.json",
+        "sha256": "87144099289b5e09f8b68416bcd4b9e2fec8f82c35171cc5d7f3545ad4af6576",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V311_01_TO_V320_64_MANIFEST.json",
+        "sha256": "17809220739958757721ab58663a8655980a4fa91232c61fa489756ca64949a8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V321_01A_HOTFIX_MANIFEST.json",
+        "sha256": "61099c73d7fa5cc16c91cb0e4b17bfcc35fe81366bb9acae000c71ab561b613b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V321_01_TO_V330_64_MANIFEST.json",
+        "sha256": "fa16fce6216aa2ad0f3957976848e35cd2da865fe995b552f65a72004de11ab0",
+        "stage": "V330.64",
+        "valid": true
+      },
+      {
+        "path": "V331_01_TO_V340_64_MANIFEST.json",
+        "sha256": "80ce4aea215a4ba2941ff3048f251282f83e6f13a4a8980a4cfe77f1fe471f76",
+        "stage": "V340.64",
+        "valid": true
+      },
+      {
+        "path": "V341_01_TO_V350_64_MANIFEST.json",
+        "sha256": "ccd6522a36bf3806b42d72ced2d78577ea76e23bd769ea2690baa6644ad03e1e",
+        "stage": "V350.64",
+        "valid": true
+      },
+      {
+        "path": "V351_01_TO_V360_64_MANIFEST.json",
+        "sha256": "294a06d3aa78f0ea806c0f4a2041f1cb6ed5c78d24d1fc4d145edf287089c601",
+        "stage": "V360.64",
+        "valid": true
+      },
+      {
+        "path": "V361_01_TO_V370_64_MANIFEST.json",
+        "sha256": "b0535130bd2f1ca833549bd45799c2d9f9e894973c6d7b2bf8e5b3e62d6e4062",
+        "stage": "V370.64",
+        "valid": true
+      },
+      {
+        "path": "V371_01_TO_V380_64_MANIFEST.json",
+        "sha256": "425fad818003bdb4c84893a8e3361c790d16458138587b53eb236d7ecb1775d7",
+        "stage": "V380.64",
+        "valid": true
+      },
+      {
+        "path": "V381_01_TO_V390_64_MANIFEST.json",
+        "sha256": "17652fa51696ba4e349bdb97353b4e6974caeb6677e0ee551e9ee6ef8a6dea35",
+        "stage": "V390.64",
+        "valid": true
+      },
+      {
+        "path": "V391_01A_MANIFEST.json",
+        "sha256": "8a3e385e3546ee40f5ed35438d106b9ed53aff99b48c409ef4186838761eaf47",
+        "stage": "V391.01A",
+        "valid": true
+      },
+      {
+        "path": "V391_02A_MANIFEST.json",
+        "sha256": "6fbba8a5d7395efa25c9cfbe2a876c7a91a3ac9ebdfd09e7896eddc84c0f9bf7",
+        "stage": "V391.02A",
+        "valid": true
+      },
+      {
+        "path": "V391_03A1_HOTFIX_MANIFEST.json",
+        "sha256": "6dd0072cc1fa38a36b4823c4a16f6cbe8b9d617b9e980a47080bce78aabaa489",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V391_03A2_HOTFIX_MANIFEST.json",
+        "sha256": "d143bad1d2f72f3c4957ef4c4f423cbbed70e603e636e7a404acb16b75e15494",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V391_03A_MANIFEST.json",
+        "sha256": "08324dbdc7c447012ad71678bc3b0b83a95076e8c123d3090a21a27ef21c1683",
+        "stage": "V391.03A",
+        "valid": true
+      },
+      {
+        "path": "V391_04A_MANIFEST.json",
+        "sha256": "d28e1c3a35454728bf88b73b8ac2dbc99d9c0a3a4b68a8acdc64fe9aa816bf8e",
+        "stage": "V391.04A",
+        "valid": true
+      },
+      {
+        "path": "V391_05A_MANIFEST.json",
+        "sha256": "59c0d78146ce6ccc97d369c6d8a9ba0539a54084d4f2345770a51153ea3f03e0",
+        "stage": "V391.05A",
+        "valid": true
+      },
+      {
+        "path": "V391_06A_MANIFEST.json",
+        "sha256": "ba2d059b43220f7bf4f4925078316356e3d67ea07d122039372169b7b47d8097",
+        "stage": "V391.06A",
+        "valid": true
+      },
+      {
+        "path": "V391_07A_MANIFEST.json",
+        "sha256": "36a58687061fbafa30b04e30dbadf5c6f6a45c8ca2459e74913072c1e2ae95b6",
+        "stage": "V391.07A",
+        "valid": true
+      },
+      {
+        "path": "V391_08A_MANIFEST.json",
+        "sha256": "887d971d6945246c7253797dab9b013555e54c173ffde969ee91b2f02100b9c5",
+        "stage": "V391.08A",
+        "valid": true
+      },
+      {
+        "path": "V391_09A_MANIFEST.json",
+        "sha256": "f119f5103c7184fcbbe7fef44e2b58f3f77bafb1255ff13ec68add5d8a879a5c",
+        "stage": "V391.09A",
+        "valid": true
+      },
+      {
+        "path": "V391_10A_MANIFEST.json",
+        "sha256": "364fae726f58cf45ca2aff828f39b8443673744d595375cfcded8b8944175095",
+        "stage": "V391.10A",
+        "valid": true
+      },
+      {
+        "path": "V392_01A_MANIFEST.json",
+        "sha256": "0152b0b34c70755e2e129f6d584535f8e2ee0903be10f53601a7525a9fbfda30",
+        "stage": "V392.01A",
+        "valid": true
+      },
+      {
+        "path": "V392_02A_MANIFEST.json",
+        "sha256": "1f67e7c0b615e4d77c1014d0d77049d6fd64135ac200773a182d336f6752f1ad",
+        "stage": "V392.02A",
+        "valid": true
+      },
+      {
+        "path": "V392_03A_MANIFEST.json",
+        "sha256": "0bf4786ee81eb1b292f39e564b98ad7404619be233736f5ba0f842d3ef932495",
+        "stage": "V392.03A",
+        "valid": true
+      },
+      {
+        "path": "V392_04A_MANIFEST.json",
+        "sha256": "d32b56f13d436b3431d688b5918ff271456508dc37d3c6320e2e8765bd124168",
+        "stage": "V392.04A",
+        "valid": true
+      },
+      {
+        "path": "V392_05A_MANIFEST.json",
+        "sha256": "3631735afa0c538e232228d738584fd699c6e9cbd04cb0504405c6a93a2ae7e5",
+        "stage": "V392.05A",
+        "valid": true
+      },
+      {
+        "path": "V392_06A_MANIFEST.json",
+        "sha256": "038379b0d4c7d60b973685cb920d466d39025a47f989a61c57fed573c3d7d152",
+        "stage": "V392.06A",
+        "valid": true
+      },
+      {
+        "path": "V392_07A_MANIFEST.json",
+        "sha256": "cf6a6411f87828d74b35da4f76cdaaf0c6eab247e66982f6943971530ca0a58f",
+        "stage": "V392.07A",
+        "valid": true
+      },
+      {
+        "path": "V392_08A_MANIFEST.json",
+        "sha256": "20ea932060337fa12ee9b5b1d3e5c554fc9979131272f9aeebb157f2783ee17f",
+        "stage": "V392.08A",
+        "valid": true
+      },
+      {
+        "path": "V392_09A1_HOTFIX_MANIFEST.json",
+        "sha256": "82c9e3c238089e16a06e9323b82e70986c3a5d6613fb0c82354931cac20bfae8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V392_09A_MANIFEST.json",
+        "sha256": "0c27e832b3d1883faccd7b147f76fb2e13106b83bed7253eef8e75bbad0ba65c",
+        "stage": "V392.09A",
+        "valid": true
+      },
+      {
+        "path": "V392_10A_MANIFEST.json",
+        "sha256": "4980164e377b1d346dabe0d60b7acf72d3f5578e34249c7203ef24666f68b17f",
+        "stage": "V392.10A",
+        "valid": true
+      },
+      {
+        "path": "V392_11A1_HOTFIX_MANIFEST.json",
+        "sha256": "779a0112317d82d5ac9528de3a8c868f2ee9539bc772d854e6eaaf5887697a32",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V392_11A_MANIFEST.json",
+        "sha256": "7e815cdfa742a06f557c9dab5598747496a2bbaea23ca046582b7dd635102e5d",
+        "stage": "V392.11A",
+        "valid": true
+      },
+      {
+        "path": "V392_12A1_HOTFIX_MANIFEST.json",
+        "sha256": "993f2be16e08c92e645f57637a15d743d29fe33b5a3b89be042d991489f418b9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V392_12A_MANIFEST.json",
+        "sha256": "f4138ec7507f221814e946ee1025f2992218cf41a5c3b781389af540e2dfe373",
+        "stage": "V392.12A",
+        "valid": true
+      },
+      {
+        "path": "V392_13A_MANIFEST.json",
+        "sha256": "14bd746845616724cfdb48f23709d46ced405aaec8d4b55f26d4162993be21b3",
+        "stage": "V392.13A",
+        "valid": true
+      },
+      {
+        "path": "V392_14A_MANIFEST.json",
+        "sha256": "e5bab3a14fc9f181f608486c38fa5a8a2f13470a110295e1de37c195fac67920",
+        "stage": "V392.14A",
+        "valid": true
+      },
+      {
+        "path": "V392_15A_MANIFEST.json",
+        "sha256": "c206385c75b74f532e877c347fea0245bcfc9ac9a6b135ac1a4a1c5c8f93250d",
+        "stage": "V392.15A",
+        "valid": true
+      },
+      {
+        "path": "V400_01_TO_V410_64_MANIFEST.json",
+        "sha256": "0f141bd781160df14cf4bc8d90ad680e5a971a828047aa3163a731bd91f5ed5a",
+        "stage": "V410.64",
+        "valid": true
+      },
+      {
+        "path": "V411_01_TO_V420_64_MANIFEST.json",
+        "sha256": "5ccca63535e9f115693b2b8cd25e5a9fde4111ce0fe7105dc600141c33dc9b5b",
+        "stage": "V420.64",
+        "valid": true
+      },
+      {
+        "path": "V421_01_TO_V430_64_MANIFEST.json",
+        "sha256": "6661e9790380f3723b9ac09b1736101bcc418345202e9013028c13929b769fb4",
+        "stage": "V430.64",
+        "valid": true
+      },
+      {
+        "path": "V431_01_TO_V440_64_MANIFEST.json",
+        "sha256": "f84cb9c59f3c383d1f969573225f49fbd1d0f4cc1b5ebcc87215394cc4607e05",
+        "stage": "V440.64",
+        "valid": true
+      },
+      {
+        "path": "V441_01_MANIFEST.json",
+        "sha256": "500df422bf8573221a7085f437b81c4d6a348c913a53f92c5b59fd8dc1ab6a87",
+        "stage": "V441.01",
+        "valid": true
+      },
+      {
+        "path": "V442_01_MANIFEST.json",
+        "sha256": "c692d2bd26ad363e9514c3d43bfc3b565a2db5952ed9eb8167265a71ade19567",
+        "stage": "V442.01",
+        "valid": true
+      },
+      {
+        "path": "V443_01_MANIFEST.json",
+        "sha256": "eb2edb8a155467b34492466af11b1e599ced558591edc55ae78ed76f7d479da6",
+        "stage": "V443.01",
+        "valid": true
+      },
+      {
+        "path": "V444_TO_V450_MANIFEST.json",
+        "sha256": "f7d3e22936a7fe2af706ad27358d9ee2a7281d2317cf04cedf98119bc5de9fe2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V451_TO_V460_MANIFEST.json",
+        "sha256": "1ff52595a2874ded5082d9dd99889b1b267d0afe66f93097675478c330921830",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V461_TO_V470_MANIFEST.json",
+        "sha256": "3c0a88e0d9c76fac1937e987035dc4c6162a62c085a3fe2284d9751567543f04",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_01_TO_V79_05_BUNDLE_MANIFEST.json",
+        "sha256": "be911961afabae81b7df47206bd9b0964f0d9937f9eb8136d3bec69677f47786",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_06_TO_V79_10_BUNDLE_MANIFEST.json",
+        "sha256": "8bd0d0e68f6955db41a99c6a05130d272ebdfca2f190381433d1ff3b7658d9a6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_06_TO_V79_10_HOTFIX_MANIFEST.json",
+        "sha256": "b3c5323e5a6a24b263fe345eb2e54397e2bdeddf8ed15b875f67f22b416fcadf",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_11_TO_V79_15_BUNDLE_MANIFEST.json",
+        "sha256": "96fbefd8560a97948209cc0a7ddf211727d205df80348535e4cefb6dfaabd084",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_16_TO_V79_20_BUNDLE_MANIFEST.json",
+        "sha256": "d2a770fc855ad984e3bb4879d21b2b0ae21c55d8df4b60daf4c8516be085e081",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_21_TO_V79_25_BUNDLE_MANIFEST.json",
+        "sha256": "7d26f4cc98d786a1acd739348c6462b0202b6316e4d097562fcd5c0ecf58e49d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_26_TO_V79_30_BUNDLE_MANIFEST.json",
+        "sha256": "81bf1936cff2aa7e5968ddc688860375e43f59c10553f5e15ece0a7e21146869",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_31_TO_V79_35_BUNDLE_MANIFEST.json",
+        "sha256": "7c6f1e38369107b9bdf98e90ff219c43bded8a38746629a6e28e78158fafe1e3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_36_TO_V79_40_BUNDLE_MANIFEST.json",
+        "sha256": "35f5afce4c1596f601540911483552139ab6fb32a56bf3e3cef65804d8923b29",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_41_TO_V79_45_BUNDLE_MANIFEST.json",
+        "sha256": "fb93b413feaa1f2ba3874ae425062b002bbbe7ac5e13dfc03bb28215f410ad65",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_46_TO_V79_50_BUNDLE_MANIFEST.json",
+        "sha256": "e5ce063f346bcb726a60fe193e33945d484aea9a76431bf8f191ec1bb53619e2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_51_TO_V79_55_BUNDLE_MANIFEST.json",
+        "sha256": "bd94c7294e9954cefd68579737008f8901dfc3e60bfcbbcd20a5fe9e95e4d661",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_56_TO_V79_60_BUNDLE_MANIFEST.json",
+        "sha256": "b468e4969a3ed97dcb69b6a6a69bc95705d1e880c55185311a5263f19bc15131",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_61_TO_V79_65_BUNDLE_MANIFEST.json",
+        "sha256": "27cb5928f4ed2dd2988772385f91c571862ba3fcb13cd00dc287649180d29be8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_66_TO_V79_70_BUNDLE_MANIFEST.json",
+        "sha256": "1cbb0a70c2b21f9af07a4a49f6d75401bbd30730e9f7ca37cc63eaf1945d0025",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_71_TO_V79_75_BUNDLE_MANIFEST.json",
+        "sha256": "c1b28c9a7d4294fbad620cbf98b430b6a9488897f44cbce57d022dd51d558ea1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_76_TO_V79_80_BUNDLE_MANIFEST.json",
+        "sha256": "7cb598cf45973f6449c778e6995660bae846bde2137c994cb121191cf6b15647",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_81_TO_V79_85_BUNDLE_MANIFEST.json",
+        "sha256": "ea9e9c123b8c4c35a228f0edcb28797022d7ddc4e85ef14b2da951199b174ba3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_86_TO_V79_90_BUNDLE_MANIFEST.json",
+        "sha256": "efe3c37677aa9518ad48f0aec6235a7a9d7cea6878cbe08e7f46059fef51a3c4",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_91_TO_V79_95_BUNDLE_MANIFEST.json",
+        "sha256": "e2fa1fd9c7efd080e7741b4c6e1c090f142701eafb05059e63aa28bab7170d9a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V79_96_TO_V80_00_BUNDLE_MANIFEST.json",
+        "sha256": "5a0b8a29920cf7b5ce80438534e3a0b68c08848baed68242a2cef38812cfc895",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_01_TO_V80_04_MANIFEST.json",
+        "sha256": "ffbb4876061a6832c4054167c751ab50936b23fee50a6733ceda1b7b168a2984",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_01_TO_V80_05_BUNDLE_MANIFEST.json",
+        "sha256": "68ee5c74e9e7a9dfad265c0921699b22d702d4c99b2ec36682459f9ab30386d2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_06_TO_V80_20_BUNDLE_MANIFEST.json",
+        "sha256": "6a23401c8d2659728168fc993a32ec8ba447017e264b28a08be37f00199b5016",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_21_TO_V80_40_BUNDLE_MANIFEST.json",
+        "sha256": "2ad92f4054175c7305b48d47a51c519758d71f80e461dce8642ca38ae0a6466f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_41_TO_V80_60_BUNDLE_MANIFEST.json",
+        "sha256": "70f82ac7b45566ae33da47993bf44b9d1f5f133035e067b2a859168222b6ba61",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_61_TO_V80_80_BUNDLE_MANIFEST.json",
+        "sha256": "9e574ca840aba94e5764358beb1b847692829f814ecc6b6d427ddcdf176df786",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V80_81_TO_V81_00_BUNDLE_MANIFEST.json",
+        "sha256": "8d2dec71cda4369ab8a6bdaf2d7d8eedd7d281b8b95a50cda82a63e8769d1244",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_01_TO_V81_04_MANIFEST.json",
+        "sha256": "493e4be2055f364a36c471e6371530a389243909566a027d8340b215110d998d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_01_TO_V81_20_BUNDLE_MANIFEST.json",
+        "sha256": "0e819ff9fc7efedd90f4e2b92848f9901de5daf842a460d4b62304d91ab49cef",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_05_TO_V81_08_MANIFEST.json",
+        "sha256": "c8af3f986df662a75ca89841aed5e15b2a204130bcdbd4cdedaac1d28c4ae199",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_09_TO_V81_12_MANIFEST.json",
+        "sha256": "d2eb1190de57c1cba087041715f839db1a6312603408a33fb07c763ef9fc286e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_21_TO_V81_40_BUNDLE_MANIFEST.json",
+        "sha256": "59d67bc0eb3b860babff85be5913af96147a3b0c4cc764eaafea8ff4047ac45e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_41_TO_V81_60_BUNDLE_MANIFEST.json",
+        "sha256": "c17b02efd9aaba42f4ebc9a208a210d83bd3450d3dbefde8bd4030e7635b39b6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_61_TO_V81_80_BUNDLE_MANIFEST.json",
+        "sha256": "636cf56f524ff8f90aeeea8fa340fd577ac2ea6e7c2a58cc1988acc96cdb5421",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V81_81_TO_V82_00_BUNDLE_MANIFEST.json",
+        "sha256": "1f54a73bf7afc52fa9f1ec38e248e7d2673c565db45dcf429dbd5e390ee5acee",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_01_TO_V82_04_MANIFEST.json",
+        "sha256": "66d5fb0d4f08e33001b567ec866e97c3caa034e0ba9f12312e410bb3ae1e7e2c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_01_TO_V82_20_BUNDLE_MANIFEST.json",
+        "sha256": "73b05a55f48d6c48831494e35e69773a6a644ee11e61a12ec48e4e918448b927",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_05_TO_V82_08_MANIFEST.json",
+        "sha256": "3d8c826b664aa45e782ebf6ebb18a16fa03574095ec18f9fecd229cf1e86c7fe",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_09_TO_V82_12_MANIFEST.json",
+        "sha256": "95477d9dcd96a891130034fb677045c91d1ef912249982174ab9ad28d73b67d2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_13_TO_V82_16_MANIFEST.json",
+        "sha256": "c917a2d718d24b7f2fc23de00d7a1d575386c3ee66ce7bfb1482047282cd87cb",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_17_TO_V82_20_MANIFEST.json",
+        "sha256": "b55aacdf1569fbbc118fe59434d84ba10fa2840f188043a36a86c3e8864abbb1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_21_TO_V82_24_MANIFEST.json",
+        "sha256": "6ee224de5af1d818d439fb415a8da417c8260aa68a2fb16f1644c3b4739b5d78",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_21_TO_V82_40_BUNDLE_MANIFEST.json",
+        "sha256": "1de0aa40bdc30b460db9b1d3e37f23d1dcdc529a02985f76e5350ae16dc0471e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_25_TO_V82_28_MANIFEST.json",
+        "sha256": "d90b1ec21d99e6a5a67b7ac78a80bbf4d8565619d43ca28e3ef9b7e74c9b5b90",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_29_TO_V82_32_MANIFEST.json",
+        "sha256": "5f354af762e5e4e3abc6ecbd8134852974081357474cc1de7b71e9531b314ec0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_33_TO_V82_36_MANIFEST.json",
+        "sha256": "f27450dfeb545871a7ec1ccc6a5d9249a3f82bf6f03f80a58a550a0de3428c07",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_37_TO_V82_40_MANIFEST.json",
+        "sha256": "3e1f88adc869e20b555cc4fe71d1805dd1dbca0360cee292090fd1ca06fb04e0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_41_TO_V82_60_BUNDLE_MANIFEST.json",
+        "sha256": "fd9db87e6e3ee1ce3fa7679a2ca08f6cda33ceb1c5cdde9b022c1e67f502ebad",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_61_TO_V82_80_BUNDLE_MANIFEST.json",
+        "sha256": "fe7d0e35b867fc23f1f121f5b7695fd147bf49f4a7c170b62bacea33b489d58f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V82_81_TO_V83_00_BUNDLE_MANIFEST.json",
+        "sha256": "ec9de6e6e91c11947991325bbe6c0bc3c1041129d08a01f18a383a4904021524",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_01_TO_V83_04_MANIFEST.json",
+        "sha256": "233849025be08504fbfecc99aa0a592e5ab304c2293b83d73fcdabae20b0ee48",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_01_TO_V83_20_BUNDLE_MANIFEST.json",
+        "sha256": "917e1b21e6cf834774655ad09ed1b0054bbe0f888b3de57db7f83f6770a055e7",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_05_TO_V83_08_MANIFEST.json",
+        "sha256": "e3fd0e2ee60e63d67921bc4e42a034464c3dd1286a207ea10174a81cdb52f7aa",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_09_TO_V83_12_MANIFEST.json",
+        "sha256": "21eae03889dfc7b62bce91ecd7ec779fbbb9928d161594c2555e057d93398db3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_13_TO_V83_16_MANIFEST.json",
+        "sha256": "8425d975d7cd8b82ea961c3ab551be789dfbfc4362859f11eb3e233b460be175",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_17_TO_V83_20_MANIFEST.json",
+        "sha256": "f2efdffbf86ecd6f6dbfeca222c6c62d9156e7849a73a312763739eb19901171",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_21_TO_V83_24_MANIFEST.json",
+        "sha256": "1149524334e61ae09cc74e8e597589f938acc810b3c09ee9651386c0a8c4adb2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_21_TO_V83_40_BUNDLE_MANIFEST.json",
+        "sha256": "f644d2dd3682dcdc12d5a91ea53f5005ef89a16d5eb88fe41da87cbf273195b6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_25_TO_V83_28_MANIFEST.json",
+        "sha256": "d0982ba649f6fa1c27ff8904fdc312e891e48685d80e4478456dfce60757a3f1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_29_TO_V83_32_MANIFEST.json",
+        "sha256": "991270749a93b658ba9876e731e9443749d82fcd2da2151dd5ad77aa021f2460",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_33_TO_V83_36_MANIFEST.json",
+        "sha256": "ac3ce486d31fb2df657ae0cfe56760201f8718608e1877317506d38d7a9ad32a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_37_TO_V83_40_MANIFEST.json",
+        "sha256": "0144b613a9436d814a9e655ab40c831a347a77d09a95916d5adce3c3eaa84ef9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_41_TO_V83_44_MANIFEST.json",
+        "sha256": "8c1c0f46c0c5dff297277533ac79919df7abef76e19d894b7d53031b3c76a129",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_41_TO_V83_60_BUNDLE_MANIFEST.json",
+        "sha256": "5051c326206cb713dbe418014c33140fbeb323384c3987e7e1cff6eff6d57c9c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_45_TO_V83_48_MANIFEST.json",
+        "sha256": "cc4ff31ab8909278feb9e23dada68a0e7388179e3f09730f60563bc11247e05d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_49_TO_V83_52_MANIFEST.json",
+        "sha256": "eaded548838896a5ab8d590a5e2ada861e1929217e3512abc8bb8036c3dab798",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_53_TO_V83_56_MANIFEST.json",
+        "sha256": "fc29b04b4c559f94264641e126417abf8946bbc20e8a9e8dce47e0e6c9429de5",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_57_TO_V83_60_MANIFEST.json",
+        "sha256": "8c488ba2e945ea90cd132d8f5ecd452b16bf6f715e91bae74a2dd26bd64e1728",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_61_TO_V83_64_MANIFEST.json",
+        "sha256": "e95299f5e05ad72fb0a4f8ff8bc1ed7d39a4a7bcb3efacd258956fc9bca984a5",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_61_TO_V83_80_BUNDLE_MANIFEST.json",
+        "sha256": "57052fc83cdacce54bac3462ba366000811cbb0dcdfd1365b22b50338219c0bc",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_65_TO_V83_68_MANIFEST.json",
+        "sha256": "d0103b7c9c07b5e49f98f08b3933fd47de89dbc2b3353e73facce0b4e7509004",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_69_TO_V83_72_MANIFEST.json",
+        "sha256": "87c2980e09751c3b19fbb83f10bd18c3ee205746700b57444a969526595ba6b2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_73_TO_V83_76_MANIFEST.json",
+        "sha256": "17368673c98d82b406751c6a8be2ad399d74eaedbed86263fb0052534e93ddf2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_77_TO_V83_80_MANIFEST.json",
+        "sha256": "8a9ffea4c372d458cb6e3cb26043dd465166726eff448b804c6c93679f0ec9ae",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_81_TO_V83_88_MANIFEST.json",
+        "sha256": "4a7a7c7fdfe3be9e04029818aa41c1ce5aa840de86289b27d79c4759b4044a34",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_81_TO_V84_00_BUNDLE_MANIFEST.json",
+        "sha256": "6473c3faabdf4bc93091c29e7e1c5ce26e9c84b8b4661a57adcb09952d339cb8",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V83_89_TO_V83_96_MANIFEST.json",
+        "sha256": "3332150c6d100dd89475ce09b46c0c5a1953aaf2a7fe213b26309653171c9153",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V84_01_TO_V84_20_BUNDLE_MANIFEST.json",
+        "sha256": "d1a3f875a91d66268331735786fe181529a02aefbe74613ce129082146f4e023",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V84_21_TO_V84_40_BUNDLE_MANIFEST.json",
+        "sha256": "e896a8a9501127d615fbbbdc22b10c62f39187025a20e901a59953f8919a0e5b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V84_41_TO_V84_60_BUNDLE_MANIFEST.json",
+        "sha256": "a3f09570e53aa989e05114dd9997cc5ac8d56b44374d4e1f2bcc976e305e6b96",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V84_61_TO_V84_80_BUNDLE_MANIFEST.json",
+        "sha256": "a2cbb819c0ebcdbcba822678edf7507f3c570a52b2aca06ed440d5b5378905ea",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V84_81_TO_V85_00_BUNDLE_MANIFEST.json",
+        "sha256": "8f00401aadeca949b520945399e5c7a602fee946fb62867aa12df0677819db54",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_01_TO_V85_08_MANIFEST.json",
+        "sha256": "d451c3cfcc0a858131ab004dc3d68dd86b783abee5495dd665a99ecf8d69fee9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_01_TO_V85_20_BUNDLE_MANIFEST.json",
+        "sha256": "dbc6f2854f70450296cf343b6c6648fa29fbf5d44428613088b7de1c33efb228",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_21_TO_V85_40_BUNDLE_MANIFEST.json",
+        "sha256": "d71006e9fd96e2bc74e8a0a329dfb1bfdb32e56f55f40a160df64d4ef25f2f2d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_41_TO_V85_60_BUNDLE_MANIFEST.json",
+        "sha256": "b51711f8048a83ce37f690c69a9247fa3dd2bb42500c2243f14489ea0b2ebfe4",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_61_TO_V85_80_BUNDLE_MANIFEST.json",
+        "sha256": "1638110909b12f87e3af7d4ec2913ee052b8135820cd78e5b4b2723b6b700038",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V85_81_TO_V86_00_BUNDLE_MANIFEST.json",
+        "sha256": "0acc50de49cb00888dee2cf02e91eb9ab63245876b3a89b671408c7a0b98bd8c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_01_TO_V86_08_MANIFEST.json",
+        "sha256": "fba27367a53c0bbdd3d13f9b535b957cca1d822c73681881f94a4bf4f7ca83a2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_01_TO_V86_20_BUNDLE_MANIFEST.json",
+        "sha256": "9147ae31719f833e99412ecdaddaade5c86892252d715344bfb15cfc3af5445c",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_09_TO_V86_16_MANIFEST.json",
+        "sha256": "5a5d6362e6f2ead08f4f4dfe5881e14b4efabab94b0b060e0a32bb4eb3aa7a5a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_17_TO_V86_24_MANIFEST.json",
+        "sha256": "fff395ec2c2f732a02216f88e70976e0b29049c5f08bb361843a7a9a31df2071",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_21_TO_V86_40_BUNDLE_MANIFEST.json",
+        "sha256": "05ff685939535fc4223cd380839628ca3e98440aa570b1560c9c6bbcea18a268",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_25_TO_V86_32_MANIFEST.json",
+        "sha256": "ee6402a92ef070186af606a1110cc50fde51b725e4cf1cb36a22d3412edf5dfc",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_41_TO_V86_60_BUNDLE_MANIFEST.json",
+        "sha256": "444a31d4c9a8361fba7fce339064a4b69f3577408ff08abbbe9d643aaecd4c1d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_61_TO_V86_80_BUNDLE_MANIFEST.json",
+        "sha256": "faa8fb912129898c341f3586c5a1cb1632c99614eddc6172151be49dbe29599a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V86_81_TO_V87_00_BUNDLE_MANIFEST.json",
+        "sha256": "edd1f74c908928b24e71e9b1f0744914a7dbe74c060a1070654b4d98a357614b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_01_TO_V87_08_MANIFEST.json",
+        "sha256": "fb1fedb77528fcc3bd01aa8b230237b0ae7edf86937e73648158788c6f229183",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_01_TO_V87_20_BUNDLE_MANIFEST.json",
+        "sha256": "3ccc3fc38abeecd54d16bb2ede003a71256a24e22087b0189c8f90587c7d570d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_09_TO_V87_16_MANIFEST.json",
+        "sha256": "9fe10eb3276b04d60062fcc5c29245237eb220eef5b466779984fbae275a8fc2",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_17_TO_V87_24_MANIFEST.json",
+        "sha256": "bd8990e2e5ccc226257bea0beb480ea520437279641bf386d42f235fa3e05e0e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_21_TO_V87_40_BUNDLE_MANIFEST.json",
+        "sha256": "dd9d245d2f73fe54a6117d48df033110f52cb45fc879e36885f73aea90627cce",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_41_TO_V87_60_BUNDLE_MANIFEST.json",
+        "sha256": "bdf49c4c0193ca35e04071c80c1305189226b6d4bdd6fc1cf69f3f26b6b390d3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_61_TO_V87_80_BUNDLE_MANIFEST.json",
+        "sha256": "65d4c943ce12cd559cb9f69e04202aa904e2f14ca320a5af2260e999cb10cdf4",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V87_81_TO_V88_00_BUNDLE_MANIFEST.json",
+        "sha256": "a8067695d109d373bcfae9ffd19886988e612a05a3c0d27c1687a295a15ce248",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_01_TO_V88_08_MANIFEST.json",
+        "sha256": "2a206878e4070a694e3c6afffba7a4a56e4028a36ab4c97ae1ec4c43c58f005d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_01_TO_V88_20_BUNDLE_MANIFEST.json",
+        "sha256": "c6f4cdcd82acc515093461d228d311000ebe8ec85f8ae1327e178970b043905f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_09_TO_V88_16_MANIFEST.json",
+        "sha256": "28d78a106b04c73f94b2b9f2fb339465fa667876d5ab1b61996bf911f59c2441",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_17_TO_V88_24_MANIFEST.json",
+        "sha256": "9f03e23c01417b78122b89a700fe80a1e906262a37159d3ca9358c0a72b54d46",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_21_TO_V88_40_BUNDLE_MANIFEST.json",
+        "sha256": "a98b291a9c3e6e6845ae87cb54c2d31b6d55181e850df19687917fe2867f158e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_41_TO_V88_60_BUNDLE_MANIFEST.json",
+        "sha256": "3769a4232eaf87292d7819d3cb24ad42df81f997559b2bb424221080c7ae3136",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_61_TO_V88_80_BUNDLE_MANIFEST.json",
+        "sha256": "86254ee4cd458081fbadb505fdde429f820fd64c3f711c82647285da66a0375f",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V88_81_TO_V90_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "2bd84734e18462ea980f3c2daf8cd4f1f3424d1b3d8462254cd06e044b417abc",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V89_01_TO_V89_32_MANIFEST.json",
+        "sha256": "37b4471ef71cdd95a77997be5f5b74e10b74c4f2e7b321e82a818c5ccf625f33",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V89_33_TO_V89_64_MANIFEST.json",
+        "sha256": "435ea2dbc1e39fbdb2ce3f170763d627f60697b3b7abd77c5c7628f81744ed58",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_01_TO_V90_20_BUNDLE_MANIFEST.json",
+        "sha256": "c537b7f6e7b5fbaf897bbc22dd4f15d3c337742c0eea119b0d4880c518f7f336",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_01_TO_V90_32_MANIFEST.json",
+        "sha256": "be9ff00c670b345a29128a9d8db0321cbc9b95b1e7adb3f729063b89f4a380fa",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_21_TO_V90_40_BUNDLE_MANIFEST.json",
+        "sha256": "65ecd9e9ed8133c65d28fe55115342364f652092345eaa16bae4419647707dc1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_41_TO_V90_60_BUNDLE_MANIFEST.json",
+        "sha256": "17d7de9854030f770a7b852dd54bd199c66b8fc07f6303551e2dd778575fa4cf",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_61_TO_V90_80_BUNDLE_MANIFEST.json",
+        "sha256": "6ab376b6b4a23f4a80215125b8c2e99c8ede27616f66bf1076acc8863694174b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V90_81_TO_V91_00_BUNDLE_MANIFEST.json",
+        "sha256": "5f992fbbd06026f8094bed424234369ac44f1ceee2197b842f1e4bd2f9e15345",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_01_TO_V91_20_BUNDLE_MANIFEST.json",
+        "sha256": "dc78599cc1d451d2860880d612c745b576ed865e5fab140a61572d26a79e1707",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_01_TO_V91_32_MANIFEST.json",
+        "sha256": "b4ab937a764638f23d67e35cd348c3ec2753e80303b8edaf1bf9cacb88f5ff7e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_21_TO_V91_40_BUNDLE_MANIFEST.json",
+        "sha256": "5da8e6e2d012c18882b7846c1eea100c9f6e859bb4ead8c8355cc152e761b4b3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_33_TO_V91_64_MANIFEST.json",
+        "sha256": "8e6245ee909f85d0ab14c454d44ec19168886137475eab9cb988d4652c94b053",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_41_TO_V91_60_BUNDLE_MANIFEST.json",
+        "sha256": "1b14af3e7dd3e81b60b0e7a961739abfa6669b0e2a3803e23ed9dad0beb62d48",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_61_TO_V91_80_BUNDLE_MANIFEST.json",
+        "sha256": "3420708e387a8cb2dc0af7fb1527ed4a2ede8e24e960881e0c81588c2c25bce3",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V91_81_TO_V92_00_BUNDLE_MANIFEST.json",
+        "sha256": "f3572bca6df1d0177c86b6f73cf952b0b6b25b495c83dda015cb4d6821a63e95",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_01_TO_V92_20_BUNDLE_MANIFEST.json",
+        "sha256": "55e11ef0f2ac306669a0871cfdb39210cf0bbccdb3c34f00d4541add7b0096d1",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_01_TO_V92_32_MANIFEST.json",
+        "sha256": "1d7bfe870dbc4b9998033fd8b6926b6b550044071fce657c103ec41354d9bbde",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_21_TO_V92_40_BUNDLE_MANIFEST.json",
+        "sha256": "1e84568e52d20d02dda52bd472bddd112e123123e93d6c3d5e73d2d42f250efc",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_33_TO_V92_64_MANIFEST.json",
+        "sha256": "46c4dcbf2c05d8dc0460a5ad91b078aa55aa103f1386de9f2f38b3138c45f05d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_41_TO_V92_60_BUNDLE_MANIFEST.json",
+        "sha256": "d9755b9413a681c3ee79be9901ba23db27a8d57ff5a79f906e9fc893b77e6287",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_61_TO_V92_80_BUNDLE_MANIFEST.json",
+        "sha256": "04bc01c3a89d4e03d0ec64b90d2f03b5753c299569485220639bc1a8a68180a0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V92_81_TO_V93_00_BUNDLE_MANIFEST.json",
+        "sha256": "e25d9db2cfccdd27c25ff46acb6b4e197ed815bab491f14d71dd38c055134dc9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V93_01_TO_V93_32_MANIFEST.json",
+        "sha256": "6e2f9f5169ac412248a83cefa9c276d59ecce6078cc92cb972f47bb65b1ae39e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V93_01_TO_V94_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "aac1edab318644ad24ca3db2bd9ae4be3442881d100db7a605010aa32df56c9e",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V93_33_TO_V93_64_MANIFEST.json",
+        "sha256": "b9a91a5f7c16cc117c6c885413dc3bca5aeb38e35009441c90c527e6bd392015",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V94_01_TO_V94_32_MANIFEST.json",
+        "sha256": "3e8c124d870b6988e2ffa6feeb5a6feebf89f2d2a75169de3ac09946cb5e4152",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V94_01_TO_V95_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "ffad73fccda9e7035b7db2b7c8685504c1e1fc2b36ebff1f4e4cd1014e225cce",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V94_33_TO_V94_64_MANIFEST.json",
+        "sha256": "f77dbf6c8832693fc9818f4bf4d3944f452183a7cf036ac73ef8c83687b9a498",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V95_01_TO_V95_32_MANIFEST.json",
+        "sha256": "4894682c6c96067bac91a3ad2d019421ef51920615d551779d6fcca24cb127a6",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V95_01_TO_V96_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "23b7938ca6bc575ea5dfc1d13a14681842b55966a1299b0bd2301a841a1df1b9",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V95_33_TO_V95_64_MANIFEST.json",
+        "sha256": "d0ff1a6daaf552fb33553c3c65e0bd668f74ec881312fc3cedf923daed99f757",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V96_01_TO_V96_32_MANIFEST.json",
+        "sha256": "84d11e91ffc3728abcee0fbba8c1fddf1a1a83a24669c9c7348cf1c40c3fda43",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V96_01_TO_V97_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "07dbce336a29e67adc9a11a2d19ebac3297ed4e47b7637ea6cf5f66d7669cf6a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V96_33_TO_V96_64_MANIFEST.json",
+        "sha256": "1c04d5109000ed1f354e5ab4353e299a495732bbb469cf053ea00540c8a0959a",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V97_01_TO_V97_32_MANIFEST.json",
+        "sha256": "a3651af991c657ede04138b6a943107f87a98a452d4231662ed2dc3f28017f8b",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V97_01_TO_V98_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "ad92c741c7d8711ad8fad275cda708ccc1f8c881e762300b35a414f1f71a6a36",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V97_33_TO_V97_64_MANIFEST.json",
+        "sha256": "a490b1a74dbbf73cebb10865233dc4db76481cb05dd5dba5c440431e9ba35202",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V98_01_TO_V98_32_MANIFEST.json",
+        "sha256": "51e4d3e7c2d7199ec8cad2a620dbb67d70ea9adf6ddc498c6f04c457c3559894",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V98_01_TO_V99_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "956c68f27716b384df419a75ae3596047d6e085b412f4754c87b5486f1c87f27",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V98_33_TO_V98_64_MANIFEST.json",
+        "sha256": "4a593171d4daa4ea29e2c7fb43913d9dad5d6ca7fff6ef632108f4f22b18190d",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V99_01_TO_V100_00_FAST_TRACK_BUNDLE_MANIFEST.json",
+        "sha256": "0bc69bfa594925babaed58172adeded3ee60eff9248d0e662b3b9be3716fc313",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V99_01_TO_V99_32_MANIFEST.json",
+        "sha256": "074f329e6d2f4457483b9dcdc5d87db5e23d9cbe8d08cb3bfa3fe446c34f25b0",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "V99_33_TO_V99_64_MANIFEST.json",
+        "sha256": "7a962b7474bbb3d7aa3169848f606605a71c5e8c90487c65dcd18cb4c18fb049",
+        "stage": "",
+        "valid": true
+      },
+      {
+        "path": "VALIDATION_SUPPORT_MEGA_BUNDLE_MANIFEST.json",
+        "sha256": "751d32274f89e1a499bd9cee53eb7e7ccff76d1905b0eb668fa67448d50ebffc",
+        "stage": "VALIDATION_SUPPORT_AUTOMATION_MEGA_BUNDLE",
+        "valid": true
+      }
+    ],
+    "valid_count": 401
+  },
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "offline_release_candidate_ready": true,
+  "p3_actual_paper_order_validation_completed": false,
+  "p3_actual_paper_order_validation_required": true,
+  "production_release_allowed": false,
+  "release_inventory": {
+    "file_count": 8841,
+    "inventory_path": "release\\final_offline_release_candidate\\actual\\release_inventory.json",
+    "inventory_sha256": "1c411967bd48f23769db95fb6315bfeea3a90cd6d2662336c3d54d67ad350095",
+    "total_size_bytes": 259443131
+  },
+  "repository_structure_audit": {
+    "checks": {
+      ".git": true,
+      ".venv/Scripts/python.exe": true,
+      "RUN_P2_ACTUAL_PAPER_BROKER_READ.ps1": true,
+      "RUN_RUNTIME_SERVICE_DEPLOYMENT.ps1": true,
+      "RUN_SECURE_CONTROL_PLANE.ps1": true,
+      "ai_monitoring_runtime": true,
+      "deployment": true,
+      "operational_resilience": true,
+      "release": true,
+      "runtime_deployment": true,
+      "secure_control_plane": true
+    },
+    "missing": [],
+    "status": "PASS"
+  },
+  "required_stage_audit": {
+    "all_required_stages_pass": true,
+    "pass_count": 9,
+    "required_count": 9,
+    "rows": [
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/p2_actual_paper_broker_read/actual/p2_actual_broker_read_result.json",
+        "stage": "P2",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/auto_report_notification/actual/auto_report_notification_result.json",
+        "stage": "AUTO_REPORT_NOTIFICATION",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/multi_broker_strategy_plugins/actual/multi_broker_strategy_plugins_result.json",
+        "stage": "MULTI_BROKER_STRATEGY",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/feature_engine_auto_optimization/actual/feature_engine_auto_optimization_result.json",
+        "stage": "FEATURE_OPTIMIZATION",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/shadow_trading_production_approval/actual/shadow_trading_production_approval_result.json",
+        "stage": "SHADOW_PRODUCTION_APPROVAL",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/ai_monitoring_distributed_runtime/actual/ai_monitoring_distributed_runtime_result.json",
+        "stage": "AI_MONITORING_RUNTIME",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/operational_resilience_data_governance/actual/operational_resilience_result.json",
+        "stage": "OPERATIONAL_RESILIENCE",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/secure_control_plane_operator_console/actual/secure_control_plane_result.json",
+        "stage": "SECURE_CONTROL_PLANE",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "failed": [],
+        "pass": true,
+        "path": "release/runtime_service_deployment/actual/runtime_service_deployment_result.json",
+        "stage": "RUNTIME_SERVICE_DEPLOYMENT",
+        "status": "PASS"
+      }
+    ]
+  },
+  "safety_invariant_audit": {
+    "checked_fields": 132,
+    "result_file_count": 258,
+    "status": "PASS",
+    "violations": []
+  },
+  "stage": "FINAL_OFFLINE_RELEASE_CANDIDATE_AUDIT",
+  "state": "OFFLINE_RELEASE_CANDIDATE_READY",
+  "status": "PASS",
+  "warnings": [
+    "WORKING_TREE_NOT_CLEAN"
+  ]
+}

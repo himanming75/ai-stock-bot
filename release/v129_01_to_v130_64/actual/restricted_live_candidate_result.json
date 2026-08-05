@@ -38,7 +38,7 @@
   "live_submission_enabled": false,
   "manual_approval_complete": false,
   "next_phase": "V131_CONTROLLED_MICRO_LIVE_EXECUTION_REVIEW",
-  "observed_at": "2026-08-04T06:24:52.539838+00:00",
+  "observed_at": "2026-08-04T06:25:07.660471+00:00",
   "readiness_id": "4ecc4344fa10d5925c4b3f87",
   "real_live_network_attempted": false,
   "real_live_read_only_snapshot_fetched": false,
@@ -54,7 +54,7 @@
     "rows": []
   },
   "restricted_live_candidates": [],
-  "result_sha256": "b73c46795726378a7ec582c9a68970305b05fe6a75e0aa49e63030a280524a35",
+  "result_sha256": "269fbea642803659906ddeeb45f307e790d38694b2f348c9853b1c8854e5a160",
   "source_readiness_id": "ba81a27370bec4b110a7cbfa",
   "stage": "V130.64",
   "stage_range": "V129.01-V130.64",

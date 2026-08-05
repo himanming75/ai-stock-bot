@@ -2,8 +2,111 @@
   "actual_live_orders_submitted": 0,
   "automatic_restore_enabled": false,
   "backup": {
-    "file_count": 0,
-    "skipped": true
+    "actual_live_orders_submitted": 0,
+    "backup_id": "20260804T075332Z",
+    "backup_root": "C:\\stock-bot\\release\\v186_01_to_v190_64\\backups\\20260804T075332Z",
+    "broker_credentials_included": false,
+    "created_at": "2026-08-04T07:53:32.510547+00:00",
+    "file_count": 19,
+    "files": [
+      {
+        "path": "release/v181_01_to_v185_64/actual/portfolio_broker_audit_ledger.jsonl",
+        "sha256": "01861cdd1e6ce8911fe74fa1e009b1134c31cc29e11f97e00650f3db87f78061",
+        "size_bytes": 910
+      },
+      {
+        "path": "release/v181_01_to_v185_64/actual/portfolio_broker_result.json",
+        "sha256": "65cfa70af2d617331b02d48bd0a50443ad83d37f4779204951922f5f55dad9f2",
+        "size_bytes": 2918
+      },
+      {
+        "path": "release/v181_01_to_v185_64/actual/portfolio_broker_verification.json",
+        "sha256": "2599a5e85b6f785ada235c1a71bfc6a96708e2b74673bae2041871df9b06e7de",
+        "size_bytes": 1577
+      },
+      {
+        "path": "release/v181_01_to_v185_64/actual/portfolio_risk_gate.json",
+        "sha256": "fdf34c05a9a986a959483b2b3f0c1424444bca6f498e2079ae920d1cc120585c",
+        "size_bytes": 404
+      },
+      {
+        "path": "release/v181_01_to_v185_64/actual/portfolio_snapshot.json",
+        "sha256": "d404611db28c21a68c903eca8960879cc328649d0c974c2d078f7eaaeb60c033",
+        "size_bytes": 1623
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/paper_metrics.json",
+        "sha256": "ed5ac9f69d3b4254774f0384722c6bda532ea0df4295ee9e327e5f1793c683c9",
+        "size_bytes": 316
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/paper_qualification_result.json",
+        "sha256": "0b6d9f13cf2721f08d501e43f42e3aefa104eda688730b82786375d348b99482",
+        "size_bytes": 4040
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/paper_qualification_verification.json",
+        "sha256": "4335da68273bf22fc6eafc7413712f64f45cf3cd3f14b369f1529e525db1253c",
+        "size_bytes": 1520
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/qualification_ledger.jsonl",
+        "sha256": "ee59300061a9b0479c5bfc35b951ff38e52a96853919705a4db95fbf44f13b4a",
+        "size_bytes": 748
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/rolling_window_scores.json",
+        "sha256": "7a91bf5dfe3342ed4b4e31444be68898159f9202514b6f684ac4963d34d5d300",
+        "size_bytes": 1324
+      },
+      {
+        "path": "release/v161_01_to_v165_64/actual/strategy_rankings.json",
+        "sha256": "8cf7f2e3507d2be676bc83c9b6e38fbd43854d6094e195cbcc2d989ead93f673",
+        "size_bytes": 1015
+      },
+      {
+        "path": "release/v156_01_to_v160_64/config/operations_manager.json",
+        "sha256": "f3d923b489520152fb5bfca61ae6d086ac1ef9021505924e5e93f738ca203cca",
+        "size_bytes": 621
+      },
+      {
+        "path": "release/v151_01_to_v155_64/config/paper_web_operations.json",
+        "sha256": "89edfc06854db985fabdf7c0c3e5885dcee60b31439e43dfd785ce94ba4e8c89",
+        "size_bytes": 252
+      },
+      {
+        "path": "release/v146_01_to_v150_64/config/strategy_manager.json",
+        "sha256": "7b9b793c69a85cf149538d193023478f1720a0eff65fe732ecfb01c857ceedea",
+        "size_bytes": 580
+      },
+      {
+        "path": "release/v140_final/actual/v140_completion_certificate.json",
+        "sha256": "56384f85253e772a24a17e4351e5169fa5fde610084c731e13615fa093744d17",
+        "size_bytes": 513
+      },
+      {
+        "path": "release/v140_final/actual/v140_final_release_result.json",
+        "sha256": "8244bdf90abc1cf316159ba0818800da27c45145d24add1c056138427b076741",
+        "size_bytes": 3226
+      },
+      {
+        "path": "release/v140_final/actual/v140_release_ledger.jsonl",
+        "sha256": "2bef0c2916ee5ea13a795f9ae3e0c0281e2dd43581905a34b987c469286a7e06",
+        "size_bytes": 840
+      },
+      {
+        "path": "release/v140_final/actual/v140_safety_gate.json",
+        "sha256": "79318916c1d1f571abfcf2cbab2337fe653798936a1a07a1ee421c33a77a283d",
+        "size_bytes": 439
+      },
+      {
+        "path": "release/v140_final/actual/v140_source_summary.json",
+        "sha256": "e5ae3d1086dbe9a570a227429ebcaa23f128e39e9945a916f6aa2156bbbd20fb",
+        "size_bytes": 1334
+      }
+    ],
+    "missing_paths": [],
+    "restore_automatically_allowed": false
   },
   "backup_foundation_ready": true,
   "broker_write_enabled": false,
@@ -19,10 +122,10 @@
       "v140_present": true
     },
     "failed": [],
-    "free_disk_mb": 141395.94,
-    "observed_at": "2026-08-04T07:53:23.161162+00:00",
+    "free_disk_mb": 141380.02,
+    "observed_at": "2026-08-04T07:53:32.403346+00:00",
     "status": "HEALTHY",
-    "total_log_size_mb": 0.1232,
+    "total_log_size_mb": 0.1234,
     "tracked_files": {
       "release/v140_final/actual/v140_final_release_result.json": {
         "present": true,
@@ -40,14 +143,14 @@
   },
   "live_submission_enabled": false,
   "next_phase": "V191_01_TO_V195_64_PRODUCTION_SCHEDULER_AUTOMATION",
-  "observed_at": "2026-08-04T07:53:23.164535+00:00",
+  "observed_at": "2026-08-04T07:53:32.533279+00:00",
   "operations_certificate": {
     "actual_live_orders_submitted": 0,
     "backup_ready": true,
     "broker_write_enabled": false,
     "certificate_type": "PRODUCTION_OPERATIONS_READ_ONLY_CERTIFICATE",
     "health_status": "HEALTHY",
-    "issued_at": "2026-08-04T07:53:23.163641+00:00",
+    "issued_at": "2026-08-04T07:53:32.532206+00:00",
     "live_submission_enabled": false,
     "live_trading_ready": false,
     "operations_ready": true,
@@ -72,7 +175,7 @@
       "positive_days": 1,
       "total_pnl": 1628.5
     },
-    "generated_at": "2026-08-04T07:53:21.402839+00:00",
+    "generated_at": "2026-08-04T07:53:30.629444+00:00",
     "live_orders_submitted": 0,
     "monthly": {
       "average_daily_return_pct": 1.6285,
@@ -147,7 +250,7 @@
     "actual_live_orders_submitted": 0,
     "automatic_restore_performed": false,
     "backup_available": true,
-    "backup_id": "20260804T075320Z",
+    "backup_id": "20260804T075332Z",
     "broker_write_enabled": false,
     "steps": [
       "STOP_WEB_CONTROLLER",

@@ -1,0 +1,16 @@
+{
+  "stage": "ACTUAL_VALIDATION_CONTROL_CENTER",
+  "features": [
+    "Combined P2 P3 P4 P5 Actual Status",
+    "Market Day Preflight",
+    "P2 P3 Validation Wrapper",
+    "P4 Next Action Routing",
+    "P5 Gate",
+    "Paper Completion Certificate Gate",
+    "Live Actual Sequence Report"
+  ],
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}

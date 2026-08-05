@@ -1,0 +1,3 @@
+git add dashboard/paper_trading_integration.py dashboard/server.py dashboard/static/index.html dashboard/static/styles.css dashboard/static/app.js tools/build_paper_dashboard_snapshot_dash2_01_to_dash2_04.py tools/test_paper_dashboard_integration_dash2_01_to_dash2_04.py tools/install_check_dash2_01_to_dash2_04.py tools/verify_paper_dashboard_integration_dash2_01_to_dash2_04.py RUN_DASH2_01_TO_DASH2_04_TEST_AND_VERIFY.ps1 release/dash2_01_to_dash2_04 DASH2_01_TO_DASH2_04_MANIFEST.json GIT_COMMIT_DASH2_01_TO_DASH2_04.txt
+git commit -m "DASH2.01-DASH2.04 Paper trading dashboard integration implemented"
+git push origin main

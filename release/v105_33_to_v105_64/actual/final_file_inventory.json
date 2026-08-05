@@ -9748,12 +9748,12 @@
     },
     {
       "path": "release/v105_33_to_v105_64/actual/final_completion_certificate.json",
-      "sha256": "afce94bb5bc9aa75824ed90cac4abbf5b353c4933c8fb29587555a200f7f3015",
+      "sha256": "09852aecbef17038ff54d6b681aaa8b37471ef7a05c888085aafa4a090b1e8de",
       "size_bytes": 1318
     },
     {
       "path": "release/v105_33_to_v105_64/actual/final_release_manifest.json",
-      "sha256": "dd33fe8d0f8230dd1d47253e0d215ee620cd1239ad0dd600ab50499050a61858",
+      "sha256": "c8086b5f8c350f71070b23d3efb2160611616f47702124a96a8a02143fe28a9b",
       "size_bytes": 1186
     },
     {
@@ -9798,7 +9798,7 @@
     },
     {
       "path": "release/v105_33_to_v105_64/rollback/rollback_manifest.json",
-      "sha256": "54faafde4ce8fc571690bb471310f1777f85db9d05a3131d17762a0d3f172aa5",
+      "sha256": "5585e018bd80c148b7467d0fa7ee03dfe33ec954bbd9880040d08ff44ea951dd",
       "size_bytes": 552
     },
     {

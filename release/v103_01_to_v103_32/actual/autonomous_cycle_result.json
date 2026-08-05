@@ -4,15 +4,15 @@
   "actual_orders_submitted": 0,
   "approval_eligible": true,
   "approval_granted": false,
-  "autonomous_cycle_certificate_sha256": "4299dd6ff3e29e74ec4304d49066a222afdc595b3f30edd74bee8627dce21768",
+  "autonomous_cycle_certificate_sha256": "1faebfec5cffe3b92f2bb1ee4c4d8478769e206985c41e4501c066c4d6bdeb00",
   "broker_write_enabled": false,
   "checkpoint": {
-    "checkpoint_hash": "09493893d21de21775972218e4ecf9a65af36619c59d3ba54d2b967b29a2ca16",
+    "checkpoint_hash": "3e70c12a15ca02b1e2d9cb88dda0695c1b656d8d9036c2cbf64711a20ae7684c",
     "current_step": 6,
-    "cycle_id": "4143a06aaeff66f1737bea79",
-    "cycle_key": "59a4703d6f53c10c76d262ab8cace5ce290a7de38c572abdf20dbde76645a50d",
-    "generation": 14,
-    "previous_checkpoint_hash": "8732d77d2ed4c674d4aff161b0f97ed39f7df4db8fa856e84d569c2f935a63d5",
+    "cycle_id": "11614669ffcf00bf2dce5879",
+    "cycle_key": "86ef265656a5dbdbdf16eabb8cac3ffe8afef18b4ecca14ff56ebf65b7e13d82",
+    "generation": 21,
+    "previous_checkpoint_hash": "2d0fc2a13e13093ea41f8dcfb119241b1791496c41c71535dd288cabd35ad6ae",
     "state": "AUTONOMOUS_CYCLE_RUNNING",
     "steps": [
       {
@@ -58,14 +58,14 @@
         "step_number": 6
       }
     ],
-    "updated_at": "2026-08-04T02:38:01.353656+00:00"
+    "updated_at": "2026-08-04T02:38:26.353240+00:00"
   },
   "completed_step_count": 6,
   "continuous_loop_enabled": false,
   "cycle_action": "WAIT_FOR_MANUAL_APPROVAL",
-  "cycle_date": "2026-08-03",
-  "cycle_id": "4143a06aaeff66f1737bea79",
-  "cycle_key": "59a4703d6f53c10c76d262ab8cace5ce290a7de38c572abdf20dbde76645a50d",
+  "cycle_date": "2026-08-05",
+  "cycle_id": "11614669ffcf00bf2dce5879",
+  "cycle_key": "86ef265656a5dbdbdf16eabb8cac3ffe8afef18b4ecca14ff56ebf65b7e13d82",
   "duplicate": {
     "duplicate_cycle": false,
     "duplicate_match_count": 0,
@@ -78,19 +78,19 @@
   "live_trading_enabled": false,
   "lock": {
     "acquired": true,
-    "acquired_at": "2026-08-04T02:38:01.190332+00:00",
-    "cycle_id": "4143a06aaeff66f1737bea79",
-    "expires_at": "2026-08-04T02:43:01.190332+00:00",
+    "acquired_at": "2026-08-04T02:38:26.231746+00:00",
+    "cycle_id": "11614669ffcf00bf2dce5879",
+    "expires_at": "2026-08-04T02:43:26.231746+00:00",
     "state": "LOCKED"
   },
   "lock_release": {
-    "cycle_id": "4143a06aaeff66f1737bea79",
+    "cycle_id": "11614669ffcf00bf2dce5879",
     "released": true
   },
   "manual_approval_required": true,
   "network_requests_executed": 0,
   "next_phase": "V103_33_MULTI_DAY_CYCLE_SCHEDULER",
-  "observed_at": "2026-08-04T02:38:01.355114+00:00",
+  "observed_at": "2026-08-04T02:38:26.354399+00:00",
   "order_submission_enabled": false,
   "paper_only": true,
   "source_decision": "ACT",

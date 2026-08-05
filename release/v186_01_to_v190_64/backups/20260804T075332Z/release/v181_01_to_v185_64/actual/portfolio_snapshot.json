@@ -1,0 +1,72 @@
+{
+  "accounts": [
+    {
+      "account_id_masked": "****PAPER",
+      "broker_id": "ALPACA_PAPER",
+      "buying_power": 190000.0,
+      "cash": 90000.0,
+      "currency": "USD",
+      "equity": 100000.0,
+      "mode": "PAPER",
+      "read_only": true,
+      "status": "ACTIVE"
+    },
+    {
+      "account_id_masked": "****LIVE",
+      "broker_id": "ALPACA_LIVE_READ_ONLY",
+      "buying_power": 1000.0,
+      "cash": 1000.0,
+      "currency": "USD",
+      "equity": 1000.0,
+      "mode": "LIVE_READ_ONLY",
+      "read_only": true,
+      "status": "ACTIVE"
+    }
+  ],
+  "broker_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "ALPACA_PAPER",
+      "weight_pct": 1.9802
+    }
+  ],
+  "orders": [],
+  "positions": [
+    {
+      "account_id_masked": "****PAPER",
+      "average_price": 195.0,
+      "broker_id": "ALPACA_PAPER",
+      "current_price": 200.0,
+      "market_value": 2000.0,
+      "quantity": 10.0,
+      "strategy_id": "momentum",
+      "symbol": "AAPL",
+      "unrealized_pnl": 50.0
+    }
+  ],
+  "strategy_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "momentum",
+      "weight_pct": 1.9802
+    }
+  ],
+  "summary": {
+    "account_count": 2,
+    "cash_weight_pct": 90.099,
+    "gross_exposure": 2000.0,
+    "gross_exposure_pct": 1.9802,
+    "net_exposure": 2000.0,
+    "net_exposure_pct": 1.9802,
+    "position_count": 1,
+    "total_cash": 91000.0,
+    "total_equity": 101000.0
+  },
+  "symbol_allocation": [
+    {
+      "market_value": 2000.0,
+      "name": "AAPL",
+      "weight_pct": 1.9802
+    }
+  ]
+}

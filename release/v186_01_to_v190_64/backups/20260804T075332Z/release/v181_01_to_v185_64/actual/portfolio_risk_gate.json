@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "all_accounts_read_only": true,
+    "broker_write_disabled": true,
+    "live_submission_disabled": true,
+    "maximum_accounts": true,
+    "maximum_gross_exposure_pct": true,
+    "maximum_positions": true,
+    "maximum_symbol_weight_pct": true,
+    "minimum_cash_weight_pct": true
+  },
+  "failed": [],
+  "maximum_symbol_weight_pct_observed": 1.9802,
+  "passed": true
+}

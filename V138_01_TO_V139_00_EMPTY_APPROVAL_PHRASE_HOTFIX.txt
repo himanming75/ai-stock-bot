@@ -1,0 +1,11 @@
+V138.01-V139.00 Empty Approval Phrase Hotfix
+
+Replace:
+RUN_V138_01_TO_V139_00_ACTUAL_AUTONOMOUS_CYCLE_CONTINUATION.ps1
+
+Fix:
+The PowerShell runner now omits --approval-phrase when ApprovalPhrase is empty.
+It uses a PowerShell argument array, so quoted approval phrases are passed safely.
+
+No Python source files are changed.
+No Alpaca network or broker write is performed by this runner.
