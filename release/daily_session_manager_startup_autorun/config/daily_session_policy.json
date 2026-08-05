@@ -1,0 +1,10 @@
+{
+  "session_timezone": "America/New_York",
+  "launch_watchdog_when_market_open": true,
+  "stop_after_market_close": true,
+  "allow_weekend_start": false,
+  "startup_delay_seconds": 30,
+  "maximum_daily_launches": 1,
+  "actual_submission_allowed": false,
+  "watchdog_script": "RUN_ACTUAL_AUTOMATION_WATCHDOG.ps1"
+}

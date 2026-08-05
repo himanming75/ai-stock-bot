@@ -1,0 +1,21 @@
+{
+  "stage": "DAILY_SESSION_MANAGER_AND_STARTUP_AUTORUN",
+  "features": [
+    "Trading-day state",
+    "Market-open readiness",
+    "Market-close session state",
+    "Weekend blocking",
+    "One launch per day",
+    "Atomic state",
+    "Daily session ledger",
+    "Optional Watchdog execution",
+    "Windows logon task registration",
+    "Task removal"
+  ],
+  "autorun_registration_during_install": false,
+  "watchdog_launch_during_install": false,
+  "actual_submission_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "WINDOWS_AUTORUN_REGISTRATION_AND_HEALTH_AUDIT"
+}

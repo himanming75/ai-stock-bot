@@ -1,0 +1,13 @@
+git add daily_session_manager
+git add tools/run_daily_session_manager.py
+git add tools/test_daily_session_manager.py
+git add release/daily_session_manager_startup_autorun
+git add RUN_DAILY_SESSION_MANAGER_STATUS.ps1
+git add RUN_DAILY_SESSION_MANAGER_AND_WATCHDOG.ps1
+git add RUN_DAILY_SESSION_MANAGER_TEST.ps1
+git add REGISTER_AI_STOCK_BOT_STARTUP_TASK.ps1
+git add UNREGISTER_AI_STOCK_BOT_STARTUP_TASK.ps1
+git add DAILY_SESSION_MANAGER_STARTUP_AUTORUN_MANIFEST.json
+git add GIT_COMMIT_DAILY_SESSION_MANAGER_STARTUP_AUTORUN.txt
+git commit -m "Add daily session manager and startup autorun"
+git push origin main
