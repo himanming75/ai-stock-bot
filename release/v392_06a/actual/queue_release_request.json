@@ -1,0 +1,15 @@
+{
+  "approval_phrase": "APPROVE_FIFO_QUEUE_RELEASE",
+  "approved_by": "local-queue-release-operator",
+  "automatic_release": false,
+  "dispatch_execution_enabled": false,
+  "dispatch_id": "dispatch-8e3307ad2829fd8f171f11a5",
+  "expires_at": "2026-08-05T00:34:44.367779+00:00",
+  "head_entry_hash": "a7299ba9c582f30ca97fbd12bab2b506ea551d64c08c9ba97f5f0d8223d69cc2",
+  "proposal_id": "proposal-v392-001",
+  "queue_hash": "d0f178e752264092ddf1cbeb3c15f0921a62231f918ac4ccb149e2ccffcd592f",
+  "reason": "FIFO head inspected and approved for local release-token preparation.",
+  "release_id": "release-db1f14aa1fd49e14ee45c6d4",
+  "target_environment": "PAPER",
+  "token_id": "d1c592f6daebb5c477c6f0329a2ef5e9285cd1ca42b929add59c84f4eaefc66b"
+}
