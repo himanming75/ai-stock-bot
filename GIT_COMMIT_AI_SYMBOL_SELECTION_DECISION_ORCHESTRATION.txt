@@ -1,0 +1,11 @@
+git add ai_decision_orchestration
+git add tools/run_ai_symbol_selection_decision_orchestration.py
+git add tools/test_ai_symbol_selection_decision_orchestration.py
+git add tools/verify_ai_symbol_selection_decision_orchestration.py
+git add release/ai_symbol_selection_decision_orchestration
+git add AI_SYMBOL_SELECTION_DECISION_ORCHESTRATION_MANIFEST.json
+git add RUN_AI_SYMBOL_SELECTION_DECISION_ORCHESTRATION.ps1
+git add RUN_AI_SYMBOL_SELECTION_DECISION_ORCHESTRATION_TEST_AND_VERIFY.ps1
+git add GIT_COMMIT_AI_SYMBOL_SELECTION_DECISION_ORCHESTRATION.txt
+git commit -m "Add AI symbol selection and decision orchestration mega bundle"
+git push origin main

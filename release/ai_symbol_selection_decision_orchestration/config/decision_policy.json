@@ -1,0 +1,12 @@
+{
+  "maximum_symbols": 3,
+  "minimum_score": "0.55",
+  "minimum_confidence": "0.70",
+  "maximum_symbol_weight": "0.40",
+  "maximum_total_weight": "0.90",
+  "neutral_selection_allowed": true,
+  "blocked_biases": [
+    "BLOCKED",
+    "AVOID"
+  ]
+}
