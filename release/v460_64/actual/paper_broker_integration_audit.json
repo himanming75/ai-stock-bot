@@ -1,0 +1,4187 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "audit_hash": "a13c078f34fa12db87bd27d24de51d208093b4b820b1444f21a837913044786c",
+  "audit_version": "V460.64",
+  "broker_credentials_used": false,
+  "broker_write_enabled": false,
+  "counts": {
+    "implemented_candidate": 17,
+    "not_found": 0,
+    "partial_or_indirect": 15,
+    "total": 32
+  },
+  "features": {
+    "account_read": {
+      "evidence": [
+        {
+          "path": "test_offline_risk_v25_3.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V226_01_TO_V230_64_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V82_61_TO_V82_80_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V83_01_TO_V83_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V84_21_TO_V84_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V85_41_TO_V85_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V86_41_TO_V86_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "V97_33_TO_V97_64_MANIFEST.json",
+          "patterns": [
+            "buying_power"
+          ]
+        },
+        {
+          "path": "adaptive_rebalance/optimizer.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/allocation_qualification.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/cash_reserve.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/correlation_adjustment.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/drawdown_scaling.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/integrated_allocation.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/kelly_sizing.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/models.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/portfolio_risk_budget.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/position_sizing.py",
+          "patterns": [
+            "account_equity"
+          ]
+        },
+        {
+          "path": "ai_risk_allocation/sector_exposure.py",
+          "patterns": [
+            "account_equity"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "asset_tradability": {
+      "evidence": [
+        {
+          "path": "alpaca_market_data/broker_connection_validation_v82_41_60.py",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/broker_read_only_v82_21_40.py",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_broker_network_foundation_v85_01_20.py",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_broker_read_only_v85_21_40.py",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/single_order_network_validation_v86_01_20.py",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/runtime_control_bundle.py",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "real_paper_micro_order/engine.py",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "risk_stress/risk_stress_pipeline_v77_86_90.py",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v86_20/output/packages/single-order-validation-2060ad51cf3a236feb3ae21f/offline_scenario.json",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v85_40/output/packages/paper-read-only-validation-49d7b85959f163359c2f8749/connection_run.json",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v85_20/output/packages/paper-network-foundation-0b0066868cfe5d39d4c1c69e/offline_fixtures.json",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v85_20/output/packages/paper-network-foundation-0b0066868cfe5d39d4c1c69e/response_schemas.json",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v82_60/output/packages/broker-connection-validation-f4874e9a2947bff4e5723783/response_schemas.json",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v82_40/output/packages/broker-read-only-01198ba11811263d577aadbe/assets.json",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v82_40/output/packages/broker-read-only-01198ba11811263d577aadbe/validations.json",
+          "patterns": [
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v306_01_to_v310_64/actual/real_paper_micro_order_result.json",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        },
+        {
+          "path": "release/v306_01_to_v310_64/docs/REAL_PAPER_MICRO_ORDER_VALIDATION_GUIDE.md",
+          "patterns": [
+            "fractionable",
+            "tradable"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "audit_ledger": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_OP5_17_TO_OP5_20.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V391_03A1_HOTFIX.txt",
+          "patterns": [
+            "append_jsonl"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V96_01_TO_V96_32.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V96_01_TO_V96_32_ONE_CLICK.ps1",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "INSTALL_CHECK_V76_10.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "INSTALL_CHECK_V76_7.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "INSTALL_CHECK_V76_8.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "OP2_01_TO_OP2_04_MANIFEST.json",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "OP3_09_TO_OP3_12_MANIFEST.json",
+          "patterns": [
+            "audit_ledger",
+            "ledger"
+          ]
+        },
+        {
+          "path": "OP5_17_TO_OP5_20_MANIFEST.json",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AT.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AU.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AV.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AW.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AX.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AY.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2AZ.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2BA.txt",
+          "patterns": [
+            "ledger"
+          ]
+        },
+        {
+          "path": "README_V75_2BB.txt",
+          "patterns": [
+            "ledger"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "buy_sell": {
+      "evidence": [
+        {
+          "path": "RUN_V111_01_TO_V112_00_ACTUAL_ALPACA_PAPER_SINGLE_ORDER.ps1",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "RUN_V113_01_TO_V114_00_ACTUAL_ALPACA_PAPER_ORDER_RECOVERY.ps1",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "RUN_V135_01_TO_V136_00_ACTUAL_NEXT_ORDER_CYCLE.ps1",
+          "patterns": [
+            "\"buy\""
+          ]
+        },
+        {
+          "path": "test_allocator.py",
+          "patterns": [
+            "\"buy\""
+          ]
+        },
+        {
+          "path": "test_authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_manual_approval_manager.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_ai_signal_v25_0.py",
+          "patterns": [
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_execution_simulator_v28_9.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_label_generator_v27_2.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_multi_signal_v25_1.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_order_sim_v25_5.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_paper_fill_engine_v23_1.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_paper_order_model_v21_1.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_update_v23_2.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_strategy_orchestrator_v28_8.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_strategy_v25_4.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_offline_trade_journal_v26_4.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_order_ticket_builder.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_paper_broker_capability_manifest.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        },
+        {
+          "path": "test_paper_broker_simulator.py",
+          "patterns": [
+            "\"buy\"",
+            "\"sell\""
+          ]
+        }
+      ],
+      "matched_pattern_count": 4,
+      "pattern_count": 4,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "cancel_order": {
+      "evidence": [
+        {
+          "path": "test_offline_order_sim_v25_5.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_broker/client.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_broker_execution_sim_v83_61_80.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_order_fill_engine_v80_21_40.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/position_account_reconciliation_v86_41_60.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_paper_operations/client.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "alpaca_paper_operations/mock.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "backtest/offline_order_sim_v25_5.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "broker/contracts_v77_1.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "broker/sandbox_adapter_v77_2.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "broker_integration/broker_integration_pipeline_v77_96_100.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/gateway.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "live_broker_readonly/adapters.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "live_broker_readonly/boundary.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "paper_broker_adapter/base.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "paper_broker_adapter/boundary.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "tools/broker_adapter_layer_v32_0.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "tools/broker_interface_contract_v77_1.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "tools/paper_broker_gateway_v47_0.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        },
+        {
+          "path": "tools/sandbox_broker_adapter_v77_2.py",
+          "patterns": [
+            "cancel_order"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 2,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "cash_equity_reconciliation": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION.txt",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V392_13A.txt",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "RUN_V124_01_TO_V125_00_ACTUAL_BROKER_PORTFOLIO_RECONCILIATION.ps1",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "RUN_V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION.ps1",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "RUN_V77_56_TO_V77_60.ps1",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "V124_01_TO_V125_00_BROKER_PORTFOLIO_RECONCILIATION_MANIFEST.json",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "V139_11_TO_V139_15_ULTRA_FAST_MANIFEST.json",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "V392_13A_MANIFEST.json",
+          "patterns": [
+            "cash_reconciliation"
+          ]
+        },
+        {
+          "path": "V392_15A_MANIFEST.json",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "V77_51_TO_V77_55_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "V87_41_TO_V87_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "cash_reconciliation",
+            "equity_reconciliation"
+          ]
+        },
+        {
+          "path": "V96_01_TO_V96_32_MANIFEST.json",
+          "patterns": [
+            "cash_reconciliation",
+            "equity_reconciliation"
+          ]
+        },
+        {
+          "path": "V97_33_TO_V97_64_MANIFEST.json",
+          "patterns": [
+            "cash_reconciliation",
+            "equity_reconciliation"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/strategy_execution_reconciliation_v87_41_60.py",
+          "patterns": [
+            "cash_reconciliation",
+            "equity_reconciliation"
+          ]
+        },
+        {
+          "path": "analytics/performance_analytics_pipeline_v77_61_65.py",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "autonomous_paper_cycle/orchestrator.py",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/__init__.py",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "broker/paper_execution_pipeline_v77_51_55.py",
+          "patterns": [
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "broker/portfolio_reconciliation_pipeline_v77_56_60.py",
+          "patterns": [
+            "cash_reconciliation",
+            "portfolio_reconciliation"
+          ]
+        },
+        {
+          "path": "daily_paper_close/engine.py",
+          "patterns": [
+            "cash_reconciliation",
+            "equity_reconciliation"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "client_order_id": {
+      "evidence": [
+        {
+          "path": "DISABLE_V306_MICRO_PAPER_ORDER.ps1",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "ENABLE_V306_ONE_MICRO_PAPER_ORDER.ps1",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "RUN_V112_01_TO_V113_00_VALIDATE_EXISTING_ALPACA_PAPER_ORDER.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V113_01_TO_V114_00_ACTUAL_ALPACA_PAPER_ORDER_RECOVERY.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V127_01_TO_V128_00_ACTUAL_ORDER_LIFECYCLE_READ.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V128_01_TO_V129_00_ACTUAL_FILL_RECONCILIATION_READ.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V129_01_TO_V130_00_ACTUAL_EXISTING_ORDER_MONITOR.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V131_01_TO_V132_00_ACTUAL_TERMINAL_TRANSITION_MONITOR.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V132_01_TO_V133_00_ACTUAL_TERMINAL_COMPLETION_COMMIT.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V133_01_TO_V134_00_ACTUAL_TERMINAL_MONITOR_COMMIT.ps1",
+          "patterns": [
+            "clientorderid"
+          ]
+        },
+        {
+          "path": "RUN_V86_21_TO_V86_40_ACTUAL_LIFECYCLE_READ.ps1",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "RUN_V86_41_TO_V86_60_ACTUAL_RECONCILIATION_READ.ps1",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "test_sandbox_order_lifecycle_tracker.py",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V105_01_TO_V106_00_PAPER_EXECUTION_ADAPTER_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V127_01_TO_V128_00_EXISTING_PAPER_ORDER_LIFECYCLE_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V128_01_TO_V129_00_ACTUAL_ORDER_LIFECYCLE_FILL_RECONCILIATION_GATE_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V129_01_TO_V130_00_EXISTING_PAPER_ORDER_LIFECYCLE_MONITOR_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V139_07_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        },
+        {
+          "path": "V140_10_TO_V140_12_ULTRA_FAST_MANIFEST.json",
+          "patterns": [
+            "client_order_id"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 2,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "crash_restart_recovery": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V139_05.txt",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V391_09A.txt",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_61_TO_V83_64.txt",
+          "patterns": [
+            "crash_recovery"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V83_61_TO_V83_64_ONE_CLICK.ps1",
+          "patterns": [
+            "crash_recovery"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V98_33_TO_V98_64_ONE_CLICK.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "OP3_09_TO_OP3_12_MANIFEST.json",
+          "patterns": [
+            "restart_recovery"
+          ]
+        },
+        {
+          "path": "RUN_V139_05_AUTONOMOUS_CYCLE_RESUME.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V139_05_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V142_05_TO_V142_08_ULTRA_FAST.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V391_09A_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V82_29_TO_V82_32_INTRADAY_LOOP.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V83_09_TO_V83_12_CONTROLLED_AUTOMATION_CYCLE.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V83_61_TO_V83_64_CRASH_RECOVERY_RESTART_CONTINUATION.ps1",
+          "patterns": [
+            "crash_recovery"
+          ]
+        },
+        {
+          "path": "RUN_V83_61_TO_V83_64_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "crash_recovery"
+          ]
+        },
+        {
+          "path": "RUN_V83_69_TO_V83_72_OPERATOR_CONTROL_CENTER.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V98_33_TO_V98_64.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "RUN_V98_33_TO_V98_64_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "V103_01_TO_V103_32_MANIFEST.json",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "V103_33_TO_V103_64_MANIFEST.json",
+          "patterns": [
+            "resume"
+          ]
+        },
+        {
+          "path": "V104_01_TO_V104_32_MANIFEST.json",
+          "patterns": [
+            "resume"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "credential_manager": {
+      "evidence": [
+        {
+          "path": "CHECK_V121_ALPACA_PAPER_SETUP.ps1",
+          "patterns": [
+            "api_key",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "ENABLE_V321_REAL_PAPER_LONG_RUN_QUALIFICATION.ps1",
+          "patterns": [
+            "environment"
+          ]
+        },
+        {
+          "path": "OP1_05_TO_OP1_08_MANIFEST.json",
+          "patterns": [
+            "credential"
+          ]
+        },
+        {
+          "path": "OP2_01_TO_OP2_04_MANIFEST.json",
+          "patterns": [
+            "credential"
+          ]
+        },
+        {
+          "path": "OP3_05_TO_OP3_08_MANIFEST.json",
+          "patterns": [
+            "credential"
+          ]
+        },
+        {
+          "path": "README_V76_3.txt",
+          "patterns": [
+            "environment"
+          ]
+        },
+        {
+          "path": "requirements.txt",
+          "patterns": [
+            "dotenv"
+          ]
+        },
+        {
+          "path": "RUN_OPTIONAL_ALPACA_NETWORK_SMOKE_V79_20.ps1",
+          "patterns": [
+            "credential"
+          ]
+        },
+        {
+          "path": "RUN_V110_01_TO_V111_00_ACTUAL_ALPACA_PAPER_READ.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V111_01_TO_V112_00_ACTUAL_ALPACA_PAPER_SINGLE_ORDER.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V112_01_TO_V113_00_VALIDATE_EXISTING_ALPACA_PAPER_ORDER.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V113_01_TO_V114_00_ACTUAL_ALPACA_PAPER_ORDER_RECOVERY.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V120_01_TO_V121_00_ACTUAL_ALPACA_PAPER_READ.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V121_TO_V123_REAL_READ_ONLY.ps1",
+          "patterns": [
+            "api_key",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V121_TO_V123_SUBMIT_ONE_PAPER_ORDER.ps1",
+          "patterns": [
+            "api_key",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V122_01_TO_V123_00_ACTUAL_OPEN_ORDER_IDENTITY_READ.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V123_01_TO_V124_00_ACTUAL_ORDER_LEDGER_RECOVERY.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V124_01_TO_V125_00_ACTUAL_BROKER_PORTFOLIO_RECONCILIATION.ps1",
+          "patterns": [
+            "api_key",
+            "credential",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V124_TO_V126_AUTOMATED_PAPER_CYCLE.ps1",
+          "patterns": [
+            "api_key",
+            "secret_key"
+          ]
+        },
+        {
+          "path": "RUN_V124_TO_V126_REAL_SHADOW.ps1",
+          "patterns": [
+            "api_key",
+            "secret_key"
+          ]
+        }
+      ],
+      "matched_pattern_count": 5,
+      "pattern_count": 5,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "daily_reset": {
+      "evidence": [
+        {
+          "path": "test_improvement_candidate_backtester.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "test_multi_period_robustness.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "test_walk_forward_validator.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "V103_33_TO_V103_64_MANIFEST.json",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "V83_17_TO_V83_20_MANIFEST.json",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_scheduler_foundation_v88_01_20.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/strategy_runtime_loop_v88_21_40.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/final_validation_release_bundle.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/multi_day_shadow_validation.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "backtest/improvement_candidate_backtester.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "backtest/multi_period_robustness.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "backtest/walk_forward_validator.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "market_clock/market_clock_pipeline_v78_26_30.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "multi_day_scheduler/calendar.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "multi_day_scheduler/dashboard.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "multi_day_scheduler/engine.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "multi_day_scheduler/queue.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "paper_runtime/automated_orchestrator_v83_01_04.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "paper_runtime/automatic_schedule_evaluation_v83_25_28.py",
+          "patterns": [
+            "trading_day"
+          ]
+        },
+        {
+          "path": "paper_runtime/end_of_day_v82_33_36.py",
+          "patterns": [
+            "session_reset",
+            "trading_day"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "fill_sync": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V392_12A1_HOTFIX.txt",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "V114_01_TO_V116_64_MANIFEST.json",
+          "patterns": [
+            "fill_sync"
+          ]
+        },
+        {
+          "path": "V392_12A1_HOTFIX_MANIFEST.json",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "V81_61_TO_V81_80_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/execution_simulation_v81_61_80.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_order_fill_engine_v80_21_40.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "audit_reconciliation/audit_reconciliation_pipeline_v78_66_70.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "broker/execution_event_reconciliation_v77_4.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/engine.py",
+          "patterns": [
+            "fill_sync"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/sync.py",
+          "patterns": [
+            "fill_sync"
+          ]
+        },
+        {
+          "path": "fill_portfolio_bridge/fill_portfolio_bridge_pipeline_v78_61_65.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "order_lifecycle_v2/config.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "order_lifecycle_v2/recovery.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_dispatch_engine/simulator.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_dispatch_engine/simulator_guard.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_event/paper_event_pipeline_v78_6_10.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_portfolio/accounting.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_portfolio/guard.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "paper_portfolio/reconciliation.py",
+          "patterns": [
+            "fill_event"
+          ]
+        },
+        {
+          "path": "tools/execution_event_reconciliation_v77_4.py",
+          "patterns": [
+            "fill_event"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "graceful_shutdown": {
+      "evidence": [
+        {
+          "path": "V104_33_TO_V104_64_MANIFEST.json",
+          "patterns": [
+            "graceful_shutdown",
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY_MANIFEST.json",
+          "patterns": [
+            "graceful_shutdown",
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V117_01_TO_V118_00_CONTINUOUS_PAPER_RUNTIME_RELEASE_CANDIDATE_MANIFEST.json",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V117_01_TO_V119_64_MANIFEST.json",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V77_86_TO_V77_90_REPAIR_1_NOTES.txt",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V87_81_TO_V88_00_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V87_81_TO_V88_00_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_01_TO_V88_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_01_TO_V88_20_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_21_TO_V88_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "graceful_shutdown",
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_21_TO_V88_40_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_61_TO_V88_80_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "V88_61_TO_V88_80_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_automation_session_v91_21_40.py",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_release_candidate_v90_61_80.py",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_scheduler_foundation_v88_01_20.py",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/scheduler_runtime_simulation_v88_61_80.py",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/strategy_operations_rc_v87_81_v88_00.py",
+          "patterns": [
+            "shutdown"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/strategy_runtime_loop_v88_21_40.py",
+          "patterns": [
+            "graceful_shutdown",
+            "shutdown"
+          ]
+        },
+        {
+          "path": "continuous_paper_runtime/controller.py",
+          "patterns": [
+            "graceful_shutdown",
+            "shutdown"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "hash_integrity": {
+      "evidence": [
+        {
+          "path": "OP5_09_TO_OP5_12_MANIFEST.json",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_10.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_11.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_12.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_13.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_14.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_15.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_16.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_17.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_18.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_7.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_8.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "README_V76_9.txt",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_cert_integrity_v21_6.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_cert_integrity_v22_8.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_cert_ledger_v22_7.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_integrity_ledger_v21_7.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_integrity_verify_v21_8.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_verify_cert_ledger_audit_v22_6.py",
+          "patterns": [
+            "sha256"
+          ]
+        },
+        {
+          "path": "test_offline_paper_audit_verify_ledger_v21_9.py",
+          "patterns": [
+            "sha256"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "idempotency": {
+      "evidence": [
+        {
+          "path": "test_authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "duplicate_order"
+          ]
+        },
+        {
+          "path": "test_paper_broker_simulator.py",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "test_paper_execution_request_builder.py",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "test_paper_portfolio_manager.py",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V105_01_TO_V106_00_PAPER_EXECUTION_ADAPTER_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V127_01_TO_V128_64_MANIFEST.json",
+          "patterns": [
+            "replay_protection"
+          ]
+        },
+        {
+          "path": "V131_01_TO_V133_64_MANIFEST.json",
+          "patterns": [
+            "replay_protection"
+          ]
+        },
+        {
+          "path": "V132_01_TO_V133_00_TERMINAL_COMPLETION_COMMIT_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V133_01_TO_V134_00_TERMINAL_MONITOR_COMMIT_ORCHESTRATOR_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V139_02_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V139_03_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V139_05_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V139_10_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V140_01_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V140_10_TO_V140_12_ULTRA_FAST_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V221_01_TO_V225_64_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V256_01_TO_V260_64_MANIFEST.json",
+          "patterns": [
+            "idempot"
+          ]
+        },
+        {
+          "path": "V392_02A_MANIFEST.json",
+          "patterns": [
+            "replay_protection"
+          ]
+        },
+        {
+          "path": "V392_03A_MANIFEST.json",
+          "patterns": [
+            "replay_protection"
+          ]
+        },
+        {
+          "path": "V392_06A_MANIFEST.json",
+          "patterns": [
+            "replay_protection"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "kill_switch": {
+      "evidence": [
+        {
+          "path": "DISABLE_V361_CONTROLLED_PAPER_AUTO_EXECUTION.ps1",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "ENABLE_V361_CONTROLLED_PAPER_AUTO_EXECUTION.ps1",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V391_07A.txt",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V117_01_TO_V119_64_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V131_01_TO_V133_64_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V171_01_TO_V175_64_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V206_01_TO_V210_64_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V281_01_TO_V290_64_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V391_07A_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V77_86_TO_V77_90_REPAIR_1_NOTES.txt",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V82_01_TO_V82_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V82_13_TO_V82_16_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V82_17_TO_V82_20_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V84_01_TO_V84_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V84_21_TO_V84_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V85_41_TO_V85_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "V85_81_TO_V86_00_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_automation_optin_v91_01_20.py",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_automation_rc2_certification_v91_61_80.py",
+          "patterns": [
+            "kill_switch"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_automation_rc2_v91_41_60.py",
+          "patterns": [
+            "kill_switch"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 2,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "limit_order": {
+      "evidence": [
+        {
+          "path": "test_authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "test_offline_execution_simulator_v28_9.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "test_offline_order_sim_v25_5.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "test_offline_paper_fill_engine_v23_1.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "test_offline_paper_order_model_v21_1.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "test_offline_paper_order_validation_v21_2.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "V251_01_TO_V255_64_MANIFEST.json",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/broker_adapter_foundation_v81_41_60.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/execution_simulation_v81_61_80.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_order_submission_sim_v85_61_80.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/autonomous_paper_order_launch.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/order_identity.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/order_ledger.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/portfolio_reconciliation.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_trading/alpaca_paper.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "autonomous_paper_trading/idempotency.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "backtest/authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "backtest/offline_execution_simulator_v28_9.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "backtest/offline_order_sim_v25_5.py",
+          "patterns": [
+            "limit_price"
+          ]
+        },
+        {
+          "path": "backtest/offline_paper_fill_engine_v23_1.py",
+          "patterns": [
+            "limit_price"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "long_run_qualification": {
+      "evidence": [
+        {
+          "path": "DISABLE_V321_REAL_PAPER_LONG_RUN_QUALIFICATION.ps1",
+          "patterns": [
+            "long_run",
+            "qualification"
+          ]
+        },
+        {
+          "path": "ENABLE_V321_REAL_PAPER_LONG_RUN_QUALIFICATION.ps1",
+          "patterns": [
+            "long_run",
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V124_01_TO_V126_64.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V161_01_TO_V165_64.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V226_01_TO_V230_64.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V291_01_TO_V300_64.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V321_01A_HOTFIX.txt",
+          "patterns": [
+            "long_run",
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V321_01_TO_V330_64.txt",
+          "patterns": [
+            "long_run",
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V392_15A.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V444_TO_V450.txt",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V124_01_TO_V126_64_ONE_CLICK.ps1",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V161_01_TO_V165_64_ONE_CLICK.ps1",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V226_01_TO_V230_64_ONE_CLICK.ps1",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V291_01_TO_V300_64_ONE_CLICK.ps1",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "RUN_V330_QUALIFICATION_PROGRESS_MONITOR.ps1",
+          "patterns": [
+            "long_run",
+            "qualification",
+            "successful_cycles"
+          ]
+        },
+        {
+          "path": "RUN_V392_15A_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY_MANIFEST.json",
+          "patterns": [
+            "long_run"
+          ]
+        },
+        {
+          "path": "V121_01_TO_V123_64_MANIFEST.json",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "V124_01_TO_V126_64_MANIFEST.json",
+          "patterns": [
+            "qualification"
+          ]
+        },
+        {
+          "path": "V156_01_TO_V160_64_MANIFEST.json",
+          "patterns": [
+            "qualification"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "market_clock": {
+      "evidence": [
+        {
+          "path": "RUN_V78_26_TO_V78_30.ps1",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V137_01_TO_V139_64_MANIFEST.json",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V311_01_TO_V320_64_MANIFEST.json",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V78_21_TO_V78_25_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V78_31_TO_V78_35_INSTALL_AND_EXECUTION_CHECK.txt",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V82_21_TO_V82_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "V88_41_TO_V88_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "alpaca_broker/client.py",
+          "patterns": [
+            "get_clock",
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_broker/models.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_broker/order_optin.py",
+          "patterns": [
+            "get_clock",
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_broker/read_validation.py",
+          "patterns": [
+            "get_clock",
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_automation_v90_01_20.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_read_runtime_v90_21_40.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/broker_connection_validation_v82_41_60.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/broker_read_only_v82_21_40.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/controlled_execution_validation_fast_track_v96_01_v97_00.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/final_paper_automation_certification_v90_81_v91_00.py",
+          "patterns": [
+            "get_clock"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/market_data_operations_v88_41_60.py",
+          "patterns": [
+            "market_clock"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_broker_network_foundation_v85_01_20.py",
+          "patterns": [
+            "is_open"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/paper_broker_read_only_v85_21_40.py",
+          "patterns": [
+            "is_open"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "market_hours_scheduler": {
+      "evidence": [
+        {
+          "path": "CHECK_V266_WINDOWS_AUTOSTART.ps1",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_OP1_17_TO_OP1_20.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V103_33_TO_V103_64.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V114_01_TO_V115_00_ALPACA_PAPER_SESSION_SCHEDULER.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V115_01_TO_V116_00_PAPER_RUNTIME_SCHEDULER_INTEGRATION.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V142_05_TO_V142_08_ULTRA_FAST.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V156_01_TO_V160_64.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V191_01_TO_V195_64.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V82_05_TO_V82_08.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V82_25_TO_V82_28.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_17_TO_V83_20.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_21_TO_V83_24.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_25_TO_V83_28.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_57_TO_V83_60.txt",
+          "patterns": [
+            "schedule"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V88_01_TO_V88_20.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V88_61_TO_V88_80.txt",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V103_33_TO_V103_64_ONE_CLICK.ps1",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V109_01_TO_V110_64_ONE_CLICK.ps1",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V156_01_TO_V160_64_ONE_CLICK.ps1",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V191_01_TO_V195_64_ONE_CLICK.ps1",
+          "patterns": [
+            "schedule",
+            "scheduler"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "market_order": {
+      "evidence": [
+        {
+          "path": "test_authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_offline_execution_simulator_v28_9.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_offline_order_sim_v25_5.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_offline_paper_fill_engine_v23_1.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_offline_paper_order_model_v21_1.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_order_ticket_builder.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_paper_broker_capability_manifest.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_paper_broker_simulator.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_paper_order_translation_validator.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_paper_portfolio_manager.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "test_signal_engine_runtime_adapter.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "V111_01_TO_V112_00_CONTROLLED_ALPACA_PAPER_ORDER_OPT_IN_MANIFEST.json",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "V126_01_TO_V127_00_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER_MANIFEST.json",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "ai_strategy_ensemble_v3/engine.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_broker/order_optin.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_final_submission_certification_v92_41_60.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_order_submission_dryrun_v92_01_20.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_market_data/actual_paper_order_submission_optin_v91_81_v92_00.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_market_data/broker_adapter_foundation_v81_41_60.py",
+          "patterns": [
+            "\"market\""
+          ]
+        },
+        {
+          "path": "alpaca_market_data/controlled_execution_fast_track_v95_01_v96_00.py",
+          "patterns": [
+            "\"market\""
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "network_recovery": {
+      "evidence": [
+        {
+          "path": "V102_01_TO_V103_00_MARKET_DATA_FOUNDATION_MANIFEST.json",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "market_data_engine/__init__.py",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "tools/broker_session_manager_v35_0.py",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "tools/test_broker_session_manager_v35_0.py",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v77_14/output/staging/tools/broker_session_manager_v35_0.py",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v77_14/output/staging/tools/test_broker_session_manager_v35_0.py",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v77_14/output/staging/release/v35/audit/broker_session_result_v35_0.json",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v35/audit/broker_session_result_v35_0.json",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v120_final/actual/project_inventory.json",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v105_33_to_v105_64/actual/final_file_inventory.json",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v103_00/docs/DESIGN.md",
+          "patterns": [
+            "reconnect"
+          ]
+        },
+        {
+          "path": "release/v103_00/docs/TEST_RESULTS.md",
+          "patterns": [
+            "reconnect"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "open_orders_read": {
+      "evidence": [
+        {
+          "path": "OP4_01_TO_OP4_04_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "V121_01_TO_V122_00_AUTONOMOUS_PAPER_READ_RECONCILIATION_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "V126_01_TO_V127_00_CONTROLLED_AUTONOMOUS_PAPER_SINGLE_ORDER_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "V256_01_TO_V260_64_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "V301_01_TO_V305_64_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "V306_01_TO_V310_64_MANIFEST.json",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "alpaca_broker/client.py",
+          "patterns": [
+            "list_orders"
+          ]
+        },
+        {
+          "path": "alpaca_broker/order_optin.py",
+          "patterns": [
+            "list_orders",
+            "open_orders"
+          ]
+        },
+        {
+          "path": "alpaca_broker/read_validation.py",
+          "patterns": [
+            "list_orders",
+            "open_orders"
+          ]
+        },
+        {
+          "path": "alpaca_market_data/final_paper_automation_certification_v90_81_v91_00.py",
+          "patterns": [
+            "get_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/actual_terminal_monitor_continuation.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/alpaca_paper_integration_bundle.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/automatic_snapshot_collector.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/controlled_single_order.py",
+          "patterns": [
+            "list_orders",
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/current_paper_snapshot_collector.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/cycle_continuation.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/daily_read_only_observation.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/next_order_readiness.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/order_identity.py",
+          "patterns": [
+            "open_orders"
+          ]
+        },
+        {
+          "path": "autonomous_paper_runtime/order_ledger.py",
+          "patterns": [
+            "open_orders"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "order_status_sync": {
+      "evidence": [
+        {
+          "path": "OP3_09_TO_OP3_12_MANIFEST.json",
+          "patterns": [
+            "order_status"
+          ]
+        },
+        {
+          "path": "RUN_V113_01_TO_V114_00_ACTUAL_ALPACA_PAPER_ORDER_RECOVERY.ps1",
+          "patterns": [
+            "filled"
+          ]
+        },
+        {
+          "path": "test_approved_paper_operations_handoff.py",
+          "patterns": [
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_approved_paper_run_launcher.py",
+          "patterns": [
+            "expired",
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_authorized_paper_run_execution_envelope.py",
+          "patterns": [
+            "expired"
+          ]
+        },
+        {
+          "path": "test_batch_trainer.py",
+          "patterns": [
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_certified_paper_run_launch_authorization.py",
+          "patterns": [
+            "expired"
+          ]
+        },
+        {
+          "path": "test_final_candidate_recommender.py",
+          "patterns": [
+            "filled",
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_improvement_candidate_backtester.py",
+          "patterns": [
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_manual_approval_manager.py",
+          "patterns": [
+            "expired",
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_offline_audit_validity_v24_6.py",
+          "patterns": [
+            "expired"
+          ]
+        },
+        {
+          "path": "test_offline_data_feed_v26_0.py",
+          "patterns": [
+            "filled"
+          ]
+        },
+        {
+          "path": "test_offline_execution_simulator_v28_9.py",
+          "patterns": [
+            "expired",
+            "filled",
+            "partially_filled"
+          ]
+        },
+        {
+          "path": "test_offline_model_registry_v28_2.py",
+          "patterns": [
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_offline_normalizer_v27_4.py",
+          "patterns": [
+            "filled"
+          ]
+        },
+        {
+          "path": "test_offline_order_sim_v25_5.py",
+          "patterns": [
+            "expired",
+            "filled",
+            "partially_filled"
+          ]
+        },
+        {
+          "path": "test_offline_paper_fill_engine_v23_1.py",
+          "patterns": [
+            "filled",
+            "order_status"
+          ]
+        },
+        {
+          "path": "test_offline_paper_order_model_v21_1.py",
+          "patterns": [
+            "order_status"
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_audit_certificate_v23_9.py",
+          "patterns": [
+            "rejected"
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_update_v23_2.py",
+          "patterns": [
+            "filled"
+          ]
+        }
+      ],
+      "matched_pattern_count": 5,
+      "pattern_count": 5,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "order_submit": {
+      "evidence": [
+        {
+          "path": "DASH1_01_TO_DASH1_04_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "DASH1_05_TO_DASH1_08_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_41_TO_V83_60.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V84_61_TO_V84_80.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V85_61_TO_V85_80.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V91_81_TO_V92_00.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V92_01_TO_V92_20.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V92_21_TO_V92_40.txt",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP1_01_TO_OP1_04_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP1_05_TO_OP1_08_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP1_09_TO_OP1_12_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP1_13_TO_OP1_16_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP1_17_TO_OP1_20_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP2_01_TO_OP2_04_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP2_05_TO_OP2_08_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP2_09_TO_OP2_12_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP2_13_TO_OP2_16_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP2_17_TO_OP2_20_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP3_01_TO_OP3_04_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        },
+        {
+          "path": "OP4_01_TO_OP4_04_MANIFEST.json",
+          "patterns": [
+            "order_submission"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "paper_endpoint_enforcement": {
+      "evidence": [
+        {
+          "path": "ENABLE_V321_REAL_PAPER_LONG_RUN_QUALIFICATION.ps1",
+          "patterns": [
+            "base_url",
+            "paper-api"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_DASH2_01_TO_DASH2_04.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_OP3_13_TO_OP3_16.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V105_33_TO_V105_64.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V106_01_TO_V106_32.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V256_01_TO_V260_64.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V392_15A.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V80_01_TO_V80_04.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V80_01_TO_V80_05.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V82_21_TO_V82_24.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V82_25_TO_V82_28.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V105_33_TO_V105_64_ONE_CLICK.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V106_01_TO_V106_32_ONE_CLICK.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V256_01_TO_V260_64_ONE_CLICK.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "README_V76_3.txt",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "RUN_OP3_13_TO_OP3_16_LIMITED_AUTONOMOUS_PAPER.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "RUN_V80_01_TO_V80_04_COMPLETION.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "RUN_V82_21_TO_V82_24_PAPER_SESSION_MANAGER.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "RUN_V82_25_TO_V82_28_PAPER_SCHEDULER.ps1",
+          "patterns": [
+            "paper trading"
+          ]
+        },
+        {
+          "path": "test_approved_paper_run_launcher.py",
+          "patterns": [
+            "paper trading"
+          ]
+        }
+      ],
+      "matched_pattern_count": 4,
+      "pattern_count": 4,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "portfolio_sync": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V381_01_TO_V390_64.txt",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "V114_01_TO_V116_64_MANIFEST.json",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/engine.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/sync.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "paper_broker/paper_broker_pipeline_v78_1_5.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "paper_execution_lifecycle/engine.py",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "portfolio_sync_recovery/engine.py",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "tools/run_v381_01_to_v390_64.py",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "tools/run_v78_1_to_v78_5_pipeline.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "tools/test_paper_broker_v78_1_to_v78_5.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "tools/test_v114_01_to_v116_64.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "tools/test_v381_01_to_v390_64.py",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "tools/verify_v114_01_to_v116_64.py",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "tools/verify_v381_01_to_v390_64.py",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "release/v78_2/output/paper_account_position_sync_v78_2.json",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "release/v78_1/output/paper_broker_foundation_v78_1.json",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "release/v78_1/output/paper_broker_foundation_verification_v78_1.json",
+          "patterns": [
+            "position_sync"
+          ]
+        },
+        {
+          "path": "release/v381_01_to_v390_64/actual/latest_portfolio_sync_result.json",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "release/v381_01_to_v390_64/config/portfolio_sync_policy.json",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        },
+        {
+          "path": "release/v371_01_to_v380_64/actual/latest_lifecycle_result.json",
+          "patterns": [
+            "portfolio_sync"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "positions_read": {
+      "evidence": [
+        {
+          "path": "config.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "DASH2_01_TO_DASH2_04_MANIFEST.json",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "README_V76_0.txt",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "README_V76_2.txt",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "README_V76_3.txt",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "RUN_DASH2_05_REFRESH_ACTUAL_PAPER_SNAPSHOT.ps1",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "RUN_V134_01_TO_V135_00_ACTUAL_NEXT_ORDER_READINESS.ps1",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_manual_approval_manager.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_multi_asset_v26_1.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_audit_v23_4.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_ledger_v23_3.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_paper_portfolio_update_v23_2.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_paper_trading_account_v21_0.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_portfolio_v25_2.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_offline_risk_v25_3.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_order_ticket_builder.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_paper_execution_request_builder.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_paper_portfolio_manager.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_paper_portfolio_valuation.py",
+          "patterns": [
+            "positions"
+          ]
+        },
+        {
+          "path": "test_position_state_manager.py",
+          "patterns": [
+            "positions"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "rate_limit": {
+      "evidence": [
+        {
+          "path": "V101_01_TO_V102_00_RUNTIME_FOUNDATION_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V102_01_TO_V103_00_MARKET_DATA_FOUNDATION_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V104_01_TO_V105_00_ORDER_INTENT_POSITION_SIZING_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V108_01_TO_V109_00_END_TO_END_PAPER_RUNTIME_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V119_01_TO_V120_00_AUTONOMOUS_ALPACA_PAPER_RUNTIME_FOUNDATION_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V123_01_TO_V124_00_AUTONOMOUS_ORDER_LEDGER_RECOVERY_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V129_01_TO_V130_00_EXISTING_PAPER_ORDER_LIFECYCLE_MONITOR_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V139_07_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V139_10_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V141_01_TO_V141_05_ULTRA_FAST_MANIFEST.json",
+          "patterns": [
+            "rate_limit"
+          ]
+        },
+        {
+          "path": "V79_31_TO_V79_35_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V79_56_TO_V79_60_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V79_61_TO_V79_65_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V79_76_TO_V79_80_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V79_81_TO_V79_85_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V79_91_TO_V79_95_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V80_21_TO_V80_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V80_81_TO_V81_00_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V81_01_TO_V81_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        },
+        {
+          "path": "V81_21_TO_V81_40_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "429"
+          ]
+        }
+      ],
+      "matched_pattern_count": 2,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "replace_order": {
+      "evidence": [
+        {
+          "path": "alpaca_market_data/position_account_reconciliation_v86_41_60.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "broker_safe_execution/gateway.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "live_broker_readonly/adapters.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "live_broker_readonly/boundary.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "paper_broker_adapter/boundary.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_broker_connection_validation_v82_41_to_v82_60.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_broker_read_only_v82_21_to_v82_40.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_dry_run_broker_validation_v82_61_to_v82_80.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_paper_broker_enablement_v82_81_to_v83_00.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_paper_order_authorization_v83_21_to_v83_40.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_paper_order_gate_v83_01_to_v83_20.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "tools/test_paper_order_submission_sim_v83_41_to_v83_60.py",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "release/v97_01_to_v97_32/actual/paper_broker_adapter_result.json",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "release/v86_60/output/packages/position-account-recon-c97c5fde361bb30c535f1742/rollback.json",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "release/v114_01_to_v116_64/actual/broker_safe_execution_result.json",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "release/v114_01_to_v116_64/actual/safe_gateway_report.json",
+          "patterns": [
+            "replace_order"
+          ]
+        },
+        {
+          "path": "release/v111_01_to_v113_64/actual/live_broker_readonly_result.json",
+          "patterns": [
+            "replace_order"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 2,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "stale_order_detection": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V79_06_TO_V79_10_HOTFIX.txt",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_06_TO_V79_10.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_11_TO_V79_15.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_16_TO_V79_20.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_21_TO_V79_25.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_26_TO_V79_30.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_31_TO_V79_35.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_36_TO_V79_40.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_41_TO_V79_45.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V79_46_TO_V79_50.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V83_61_TO_V83_64_CRASH_RECOVERY_RESTART_CONTINUATION.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "RUN_V83_69_TO_V83_72_OPERATOR_CONTROL_CENTER.ps1",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "test_paper_operations_preflight_check.py",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V117_01_TO_V119_64_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V266_01_TO_V270_64_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V79_06_TO_V79_10_HOTFIX_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V79_26_TO_V79_30_LOCAL_TEST_RESULTS.txt",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V83_61_TO_V83_64_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V83_69_TO_V83_72_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        },
+        {
+          "path": "V88_01_TO_V88_20_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "stale"
+          ]
+        }
+      ],
+      "matched_pattern_count": 1,
+      "pattern_count": 3,
+      "required": true,
+      "status": "PARTIAL_OR_INDIRECT"
+    },
+    "state_checkpoint": {
+      "evidence": [
+        {
+          "path": "test_paper_trading_daily_operations_checklist.py",
+          "patterns": [
+            "state_store"
+          ]
+        },
+        {
+          "path": "test_paper_trading_operations_review_queue.py",
+          "patterns": [
+            "state_store"
+          ]
+        },
+        {
+          "path": "test_paper_trading_operations_state_store.py",
+          "patterns": [
+            "saved_state",
+            "state_store"
+          ]
+        },
+        {
+          "path": "V102_01_TO_V102_32_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V103_01_TO_V103_32_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V103_33_TO_V103_64_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V104_01_TO_V104_32_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V104_33_TO_V104_64_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V105_01_TO_V105_32_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V106_01_TO_V106_32_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V106_33_TO_V108_64_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V109_01_TO_V110_64_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V113_01_TO_V114_00_ALPACA_PAPER_ORDER_RECOVERY_RESTART_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V136_01_TO_V137_00_CONTROLLED_NEXT_ORDER_EXECUTION_PREVIEW_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        },
+        {
+          "path": "V137_01_TO_V139_64_MANIFEST.json",
+          "patterns": [
+            "checkpoint"
+          ]
+        },
+        {
+          "path": "V138_01_TO_V139_00_AUTONOMOUS_CYCLE_CONTINUATION_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        },
+        {
+          "path": "V139_01_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        },
+        {
+          "path": "V139_02_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        },
+        {
+          "path": "V139_03_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        },
+        {
+          "path": "V139_04_BUNDLE_MANIFEST.json",
+          "patterns": [
+            "saved_state"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    },
+    "timeout_retry": {
+      "evidence": [
+        {
+          "path": "GIT_COMMIT_V83_37_TO_V83_40.txt",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_41_TO_V83_44.txt",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "GIT_COMMIT_V83_53_TO_V83_56.txt",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V83_37_TO_V83_40_ONE_CLICK.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V83_41_TO_V83_44_ONE_CLICK.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "INSTALL_AND_SAVE_V83_53_TO_V83_56_ONE_CLICK.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "OP4_05_TO_OP4_08_MANIFEST.json",
+          "patterns": [
+            "timeout"
+          ]
+        },
+        {
+          "path": "README_V76_2.txt",
+          "patterns": [
+            "timeout"
+          ]
+        },
+        {
+          "path": "RUN_V141_01_TO_V141_05_ULTRA_FAST.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_37_TO_V83_40_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_37_TO_V83_40_TRIGGER_CHAIN_RETRY_POLICY.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_41_TO_V83_44_RETRY_APPROVAL_SUPERVISED_REENTRY.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_41_TO_V83_44_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_53_TO_V83_56_RETRY_CYCLE_COMPLETION.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_53_TO_V83_56_TEST_AND_VERIFY.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "RUN_V83_69_TO_V83_72_OPERATOR_CONTROL_CENTER.ps1",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "V103_01_TO_V103_32_MANIFEST.json",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "V109_01_TO_V110_64_MANIFEST.json",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "V111_01_TO_V112_00_CONTROLLED_ALPACA_PAPER_ORDER_OPT_IN_MANIFEST.json",
+          "patterns": [
+            "retry"
+          ]
+        },
+        {
+          "path": "V116_01_TO_V117_00_PAPER_RUNTIME_OPERATIONAL_STABILITY_MANIFEST.json",
+          "patterns": [
+            "backoff"
+          ]
+        }
+      ],
+      "matched_pattern_count": 3,
+      "pattern_count": 3,
+      "required": true,
+      "status": "IMPLEMENTED_CANDIDATE"
+    }
+  },
+  "files_indexed": 11913,
+  "live_submission_enabled": false,
+  "missing_features": [],
+  "network_used": false,
+  "next_bundle_scope": {
+    "mandatory_features_omitted": [],
+    "must_complete": [
+      "asset_tradability",
+      "cancel_order",
+      "daily_reset",
+      "fill_sync",
+      "graceful_shutdown",
+      "kill_switch",
+      "limit_order",
+      "market_hours_scheduler",
+      "market_order",
+      "network_recovery",
+      "portfolio_sync",
+      "positions_read",
+      "rate_limit",
+      "replace_order",
+      "stale_order_detection"
+    ],
+    "reuse_candidates": [
+      "credential_manager",
+      "paper_endpoint_enforcement",
+      "account_read",
+      "open_orders_read",
+      "market_clock",
+      "order_submit",
+      "buy_sell",
+      "client_order_id",
+      "idempotency",
+      "order_status_sync",
+      "cash_equity_reconciliation",
+      "timeout_retry",
+      "state_checkpoint",
+      "crash_restart_recovery",
+      "audit_ledger",
+      "hash_integrity",
+      "long_run_qualification"
+    ]
+  },
+  "next_phase": "V461_TO_V470_ALPACA_PAPER_READ_AND_SAFETY",
+  "paper_submission_enabled": false,
+  "partial_features": [
+    "positions_read",
+    "asset_tradability",
+    "market_order",
+    "limit_order",
+    "cancel_order",
+    "replace_order",
+    "fill_sync",
+    "portfolio_sync",
+    "rate_limit",
+    "network_recovery",
+    "kill_switch",
+    "market_hours_scheduler",
+    "stale_order_detection",
+    "daily_reset",
+    "graceful_shutdown"
+  ],
+  "repository_root": "C:\\stock-bot",
+  "stage": "V460.64",
+  "state": "PAPER_BROKER_INTEGRATION_AUDIT_COMPLETE",
+  "status": "PASS"
+}

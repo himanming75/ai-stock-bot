@@ -1,0 +1,13 @@
+{
+  "bundle": "V451.01_TO_V460.64",
+  "purpose": "Paper Broker Integration Audit and Readiness Gate",
+  "mandatory_feature_count": 32,
+  "mandatory_features_omitted": [],
+  "network_used": false,
+  "broker_credentials_used": false,
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
