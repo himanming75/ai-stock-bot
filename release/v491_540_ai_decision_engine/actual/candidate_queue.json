@@ -1,0 +1,35 @@
+{
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "agreement_percent": "75.00",
+      "base_signal": "BUY",
+      "candidate_id": "candidate_001_SPY",
+      "confidence": "63.15395429832920463614157559",
+      "decision": "BUY",
+      "final_score": "63.15395429832920463614157559",
+      "missing_timeframes": [],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "rank": 1,
+      "raw_score": "12.16886349907178035341198644",
+      "reasons": [
+        "ALL_THRESHOLDS_PASSED"
+      ],
+      "risk_penalty": "0",
+      "status": "PASS",
+      "strategy_counts": {
+        "buy": 3,
+        "hold": 1,
+        "sell": 1,
+        "total": 5
+      },
+      "symbol": "SPY",
+      "timeframe_complete": true,
+      "timeframe_consensus": "BUY"
+    }
+  ],
+  "generated_at": "2026-08-05T20:00:45.967047+00:00",
+  "order_submission_enabled": false,
+  "order_ticket_created": false
+}

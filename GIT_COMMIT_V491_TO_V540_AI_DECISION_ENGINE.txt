@@ -1,0 +1,10 @@
+git add ai_decision_engine
+git add tools/run_v491_to_v540_ai_decision_engine.py
+git add tools/test_v491_to_v540_ai_decision_engine.py
+git add release/v491_540_ai_decision_engine
+git add RUN_V491_TO_V540_AI_DECISION_ENGINE.ps1
+git add RUN_V491_TO_V540_AI_DECISION_ENGINE_TEST.ps1
+git add V491_TO_V540_AI_DECISION_ENGINE_MANIFEST.json
+git add GIT_COMMIT_V491_TO_V540_AI_DECISION_ENGINE.txt
+git commit -m "Add V491-V540 AI decision engine"
+git push origin main

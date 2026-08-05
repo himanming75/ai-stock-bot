@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-08-05T20:00:45.967047+00:00",
+  "required_timeframes": [
+    "1m",
+    "5m",
+    "15m",
+    "60m"
+  ],
+  "results": [
+    {
+      "complete": true,
+      "consensus": "BUY",
+      "counts": {
+        "buy": 4,
+        "hold": 0,
+        "sell": 0
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "BUY",
+        "1m": "BUY",
+        "5m": "BUY",
+        "60m": "BUY"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "SPY"
+    },
+    {
+      "complete": true,
+      "consensus": "SELL",
+      "counts": {
+        "buy": 0,
+        "hold": 0,
+        "sell": 4
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "SELL",
+        "1m": "SELL",
+        "5m": "SELL",
+        "60m": "SELL"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "QQQ"
+    },
+    {
+      "complete": true,
+      "consensus": "HOLD",
+      "counts": {
+        "buy": 0,
+        "hold": 4,
+        "sell": 0
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "HOLD",
+        "1m": "HOLD",
+        "5m": "HOLD",
+        "60m": "HOLD"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "IWM"
+    }
+  ]
+}

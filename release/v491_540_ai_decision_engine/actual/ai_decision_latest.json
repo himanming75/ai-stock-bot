@@ -1,0 +1,204 @@
+{
+  "actual_ai_network_used": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_network_used": false,
+  "actual_order_submission_performed": false,
+  "actual_order_ticket_created": false,
+  "actual_paper_orders_submitted": 0,
+  "candidate_count": 1,
+  "candidate_queue": [
+    {
+      "agreement_percent": "75.00",
+      "base_signal": "BUY",
+      "candidate_id": "candidate_001_SPY",
+      "confidence": "63.15395429832920463614157559",
+      "decision": "BUY",
+      "final_score": "63.15395429832920463614157559",
+      "missing_timeframes": [],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "rank": 1,
+      "raw_score": "12.16886349907178035341198644",
+      "reasons": [
+        "ALL_THRESHOLDS_PASSED"
+      ],
+      "risk_penalty": "0",
+      "status": "PASS",
+      "strategy_counts": {
+        "buy": 3,
+        "hold": 1,
+        "sell": 1,
+        "total": 5
+      },
+      "symbol": "SPY",
+      "timeframe_complete": true,
+      "timeframe_consensus": "BUY"
+    }
+  ],
+  "controller_files_modified": false,
+  "decision_fingerprint": "36e3041a4193e6c304319e68b36e74002e2ff6721b915ed8adc0b23d1529d604",
+  "decisions": [
+    {
+      "agreement_percent": "75.00",
+      "base_signal": "BUY",
+      "confidence": "63.15395429832920463614157559",
+      "decision": "BUY",
+      "final_score": "63.15395429832920463614157559",
+      "missing_timeframes": [],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "raw_score": "12.16886349907178035341198644",
+      "reasons": [
+        "ALL_THRESHOLDS_PASSED"
+      ],
+      "risk_penalty": "0",
+      "status": "PASS",
+      "strategy_counts": {
+        "buy": 3,
+        "hold": 1,
+        "sell": 1,
+        "total": 5
+      },
+      "symbol": "SPY",
+      "timeframe_complete": true,
+      "timeframe_consensus": "BUY"
+    },
+    {
+      "agreement_percent": "66.66666666666666666666666667",
+      "base_signal": "SELL",
+      "confidence": "46.33718255890421019416495608",
+      "decision": "HOLD",
+      "final_score": "46.33718255890421019416495608",
+      "missing_timeframes": [],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "raw_score": "-5.372508829020857515276827447",
+      "reasons": [
+        "CONFIDENCE_BELOW_THRESHOLD"
+      ],
+      "risk_penalty": "0",
+      "status": "PASS",
+      "strategy_counts": {
+        "buy": 1,
+        "hold": 2,
+        "sell": 2,
+        "total": 5
+      },
+      "symbol": "QQQ",
+      "timeframe_complete": true,
+      "timeframe_consensus": "SELL"
+    },
+    {
+      "agreement_percent": "100",
+      "base_signal": "HOLD",
+      "confidence": "55.47099837189798634893594190",
+      "decision": "HOLD",
+      "final_score": "55.47099837189798634893594190",
+      "missing_timeframes": [],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "raw_score": "-0.2616657621655479716310788311",
+      "reasons": [
+        "STRATEGY_FUSION_HOLD"
+      ],
+      "risk_penalty": "0",
+      "status": "PASS",
+      "strategy_counts": {
+        "buy": 0,
+        "hold": 3,
+        "sell": 2,
+        "total": 5
+      },
+      "symbol": "IWM",
+      "timeframe_complete": true,
+      "timeframe_consensus": "HOLD"
+    }
+  ],
+  "generated_at": "2026-08-05T20:00:45.967047+00:00",
+  "next_fixed_development": "V541_TO_V590_PORTFOLIO_AND_RISK_INTELLIGENCE",
+  "risk_context": {
+    "alert_count": 0,
+    "portfolio_risk_score": "0.6304732876945514214471383723",
+    "risk_level": "NORMAL"
+  },
+  "runtime_files_modified": false,
+  "source_strategy_fingerprint": "29e626619051aa673e2114b84c531c8a6ba0aa4bb5cc2886cbdaffe6b3fb9e6f",
+  "source_strategy_status": "PASS",
+  "stage": "V491_TO_V540_AI_DECISION_ENGINE",
+  "status": "PASS",
+  "symbol_decision_count": 3,
+  "timeframe_results": [
+    {
+      "complete": true,
+      "consensus": "BUY",
+      "counts": {
+        "buy": 4,
+        "hold": 0,
+        "sell": 0
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "BUY",
+        "1m": "BUY",
+        "5m": "BUY",
+        "60m": "BUY"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "SPY"
+    },
+    {
+      "complete": true,
+      "consensus": "SELL",
+      "counts": {
+        "buy": 0,
+        "hold": 0,
+        "sell": 4
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "SELL",
+        "1m": "SELL",
+        "5m": "SELL",
+        "60m": "SELL"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "QQQ"
+    },
+    {
+      "complete": true,
+      "consensus": "HOLD",
+      "counts": {
+        "buy": 0,
+        "hold": 4,
+        "sell": 0
+      },
+      "missing_timeframes": [],
+      "observed": {
+        "15m": "HOLD",
+        "1m": "HOLD",
+        "5m": "HOLD",
+        "60m": "HOLD"
+      },
+      "required_timeframes": [
+        "1m",
+        "5m",
+        "15m",
+        "60m"
+      ],
+      "symbol": "IWM"
+    }
+  ]
+}

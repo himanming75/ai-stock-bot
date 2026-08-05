@@ -1,0 +1,9 @@
+# V491–V540 AI Decision Engine\n\n- V491: Strategy Evidence Intake\n- V492: Decision Input Validation\n- V493: Signal Normalization\n- V494: Symbol Grouping\n- V495: Signal Fusion\n- V496: Direction Mapping\n- V497: Conflict Detection\n- V498: Conflict Resolution\n- V499: Agreement Ratio\n- V500: Raw Score Intake\n- V501: Score Magnitude\n- V502: Confidence Core\n- V503: Agreement Weight\n- V504: Magnitude Weight\n- V505: Confidence Clamp\n- V506: Risk Context Intake\n- V507: Risk Penalty\n- V508: Risk-Level Guard\n- V509: Minimum Confidence\n- V510: Minimum Agreement\n- V511: BUY Decision\n- V512: SELL Decision\n- V513: HOLD Decision\n- V514: Decision Reasons\n- V515: Candidate Eligibility\n- V516: Candidate Queue\n- V517: Candidate Ranking\n- V518: Candidate Identifier\n- V519: Multi-Timeframe Contract\n- V520: 1-Minute Signal\n- V521: 5-Minute Signal\n- V522: 15-Minute Signal\n- V523: 60-Minute Signal\n- V524: Timeframe Completeness\n- V525: Timeframe Consensus\n- V526: Timeframe Conflict Guard\n- V527: Decision Fingerprint\n- V528: Risk Context Snapshot\n- V529: Decision Dashboard\n- V530: Candidate Dashboard\n- V531: Timeframe Dashboard\n- V532: Symbol Decision Ledger\n- V533: AI Decision Ledger\n- V534: Insufficient Input Guard\n- V535: AI Network Hard Disable\n- V536: Market Network Hard Disable\n- V537: Broker Write Hard Disable\n- V538: Order Ticket Separation\n- V539: Paper/Live Zero-Order Contract\n- V540: AI Decision Engine Readiness
+
+The engine is deterministic and offline. “AI” here means the decision
+orchestration layer that fuses strategy evidence, confidence, risk context,
+candidate ranking, and timeframe consensus. It does not call an external
+model, market API, broker API, or order-ticket generator.
+
+Missing evidence produces INSUFFICIENT_INPUT or HOLD rather than a fabricated
+decision. Every output preserves the zero-order and order-separation contract.

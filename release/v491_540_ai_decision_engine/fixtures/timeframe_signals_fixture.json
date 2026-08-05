@@ -1,0 +1,23 @@
+{
+  "fixture_only": true,
+  "symbols": {
+    "SPY": {
+      "1m": "BUY",
+      "5m": "BUY",
+      "15m": "BUY",
+      "60m": "BUY"
+    },
+    "QQQ": {
+      "1m": "SELL",
+      "5m": "SELL",
+      "15m": "SELL",
+      "60m": "SELL"
+    },
+    "IWM": {
+      "1m": "HOLD",
+      "5m": "HOLD",
+      "15m": "HOLD",
+      "60m": "HOLD"
+    }
+  }
+}
