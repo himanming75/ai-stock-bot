@@ -1,0 +1,26 @@
+{
+  "credential_readiness": {
+    "missing": [
+      "ETRADE_CONSUMER_KEY",
+      "ETRADE_CONSUMER_SECRET",
+      "ETRADE_ACCESS_TOKEN",
+      "ETRADE_ACCESS_SECRET"
+    ],
+    "present": {
+      "ETRADE_ACCESS_SECRET": false,
+      "ETRADE_ACCESS_TOKEN": false,
+      "ETRADE_CONSUMER_KEY": false,
+      "ETRADE_CONSUMER_SECRET": false
+    },
+    "ready": false,
+    "required_environment_variables": [
+      "ETRADE_CONSUMER_KEY",
+      "ETRADE_CONSUMER_SECRET",
+      "ETRADE_ACCESS_TOKEN",
+      "ETRADE_ACCESS_SECRET"
+    ],
+    "secret_values_exposed": false
+  },
+  "explicit_runner_included": true,
+  "status": "READY_BLOCKED_BY_ETRADE_KEY_ISSUANCE"
+}

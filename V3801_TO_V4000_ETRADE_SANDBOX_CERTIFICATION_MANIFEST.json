@@ -1,0 +1,14 @@
+{
+  "stage": "V3801_TO_V4000_ETRADE_SANDBOX_ACCOUNT_READ_CERTIFICATION",
+  "target_broker": "ETRADE_ONLY",
+  "default_validation_mode": "FIXTURE_AND_CONTRACT",
+  "expected_actual_status_without_keys": "READY_BLOCKED_BY_ETRADE_KEY_ISSUANCE",
+  "key_issuance_blocks_code_development": false,
+  "actual_sandbox_validation_deferred": true,
+  "explicit_actual_validation_runner_included": true,
+  "automatic_actual_validation_enabled": false,
+  "broker_write_enabled": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "V4001_TO_V4200_ETRADE_PRODUCTION_READ_ONLY_GUARD_AND_ACCOUNT_ROUTING"
+}

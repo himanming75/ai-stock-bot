@@ -1,0 +1,12 @@
+git add multi_broker_etrade_sandbox_cert
+git add tools/run_v3801_to_v4000_etrade_sandbox_certification.py
+git add tools/test_v3801_to_v4000_etrade_sandbox_certification.py
+git add tools/run_etrade_actual_sandbox_certification_explicit.py
+git add release/v3801_4000_etrade_sandbox_certification
+git add RUN_V3801_TO_V4000_ETRADE_SANDBOX_CERTIFICATION.ps1
+git add RUN_V3801_TO_V4000_ETRADE_SANDBOX_CERTIFICATION_TEST.ps1
+git add RUN_ETRADE_ACTUAL_SANDBOX_CERTIFICATION_EXPLICIT.ps1
+git add V3801_TO_V4000_ETRADE_SANDBOX_CERTIFICATION_MANIFEST.json
+git add GIT_COMMIT_V3801_TO_V4000_ETRADE_SANDBOX_CERTIFICATION.txt
+git commit -m "Add V3801-V4000 ETrade sandbox read certification"
+git push origin main

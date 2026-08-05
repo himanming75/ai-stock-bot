@@ -1,0 +1,44 @@
+{
+  "classification_examples": {
+    "401 OAuth token invalid": "AUTHENTICATION_OR_TOKEN",
+    "403 account restriction": "AUTHORIZATION_OR_ACCOUNT_RESTRICTION",
+    "503 unavailable": "ETRADE_SERVER_ERROR",
+    "network timeout": "NETWORK_OR_TIMEOUT"
+  },
+  "retry_policy": {
+    "AUTHENTICATION_OR_TOKEN": {
+      "action": "RENEW_OR_REAUTHORIZE",
+      "retry": false
+    },
+    "AUTHORIZATION_OR_ACCOUNT_RESTRICTION": {
+      "action": "CONTACT_ETRADE_SUPPORT",
+      "retry": false
+    },
+    "ETRADE_SERVER_ERROR": {
+      "backoff_seconds": [
+        5,
+        15,
+        45
+      ],
+      "max_attempts": 3,
+      "retry": true
+    },
+    "NETWORK_OR_TIMEOUT": {
+      "backoff_seconds": [
+        5,
+        15,
+        45
+      ],
+      "max_attempts": 3,
+      "retry": true
+    },
+    "RATE_LIMIT": {
+      "backoff_seconds": [
+        60,
+        180
+      ],
+      "max_attempts": 2,
+      "retry": true
+    }
+  }
+}

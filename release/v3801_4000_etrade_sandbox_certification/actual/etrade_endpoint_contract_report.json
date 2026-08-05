@@ -1,0 +1,37 @@
+{
+  "contracts": [
+    {
+      "endpoint": "ACCOUNT_LIST",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/list.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "BALANCE",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/balance.json?instType=BROKERAGE&realTimeNAV=true",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "PORTFOLIO",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/portfolio.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "ORDERS",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/orders.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    }
+  ],
+  "passed": true
+}

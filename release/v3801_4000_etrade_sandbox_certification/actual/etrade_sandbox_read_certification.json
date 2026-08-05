@@ -1,0 +1,163 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_sandbox_validation_status": "READY_BLOCKED_BY_ETRADE_KEY_ISSUANCE",
+  "automatic_actual_validation_enabled": false,
+  "certification_fingerprint": "59cb487bb6467a933d0043ad7c5762977a7005aca8adeb98baf50db7dfcca87a",
+  "credential_readiness": {
+    "missing": [
+      "ETRADE_CONSUMER_KEY",
+      "ETRADE_CONSUMER_SECRET",
+      "ETRADE_ACCESS_TOKEN",
+      "ETRADE_ACCESS_SECRET"
+    ],
+    "present": {
+      "ETRADE_ACCESS_SECRET": false,
+      "ETRADE_ACCESS_TOKEN": false,
+      "ETRADE_CONSUMER_KEY": false,
+      "ETRADE_CONSUMER_SECRET": false
+    },
+    "ready": false,
+    "required_environment_variables": [
+      "ETRADE_CONSUMER_KEY",
+      "ETRADE_CONSUMER_SECRET",
+      "ETRADE_ACCESS_TOKEN",
+      "ETRADE_ACCESS_SECRET"
+    ],
+    "secret_values_exposed": false
+  },
+  "deferred_external_validation": "RERUN_EXPLICIT_SANDBOX_CERTIFICATION_AFTER_KEY_ISSUANCE",
+  "endpoint_contracts": [
+    {
+      "endpoint": "ACCOUNT_LIST",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/list.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "BALANCE",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/balance.json?instType=BROKERAGE&realTimeNAV=true",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "PORTFOLIO",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/portfolio.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    },
+    {
+      "endpoint": "ORDERS",
+      "method": "GET",
+      "mutation_allowed": false,
+      "path_template": "/v1/accounts/{accountIdKey}/orders.json",
+      "payload_present": true,
+      "top_level_contract_passed": true
+    }
+  ],
+  "error_classification_examples": {
+    "401 OAuth token invalid": "AUTHENTICATION_OR_TOKEN",
+    "403 account restriction": "AUTHORIZATION_OR_ACCOUNT_RESTRICTION",
+    "503 unavailable": "ETRADE_SERVER_ERROR",
+    "network timeout": "NETWORK_OR_TIMEOUT"
+  },
+  "existing_alpaca_controller_modified": false,
+  "existing_market_polling_modified": false,
+  "explicit_actual_validation_runner_included": true,
+  "fixture_account": {
+    "account_id": "fixture-account-key",
+    "broker": "ETRADE",
+    "buying_power": "25000.5",
+    "cash": "25000.5",
+    "currency": "USD",
+    "equity": "100500.75",
+    "status": "ACTIVE"
+  },
+  "fixture_contract_passed": true,
+  "fixture_orders": [
+    {
+      "account_id": "fixture-account-key",
+      "broker": "ETRADE",
+      "filled_quantity": "10",
+      "order_id": "123456",
+      "quantity": "10",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "symbol": "SPY"
+    }
+  ],
+  "fixture_positions": [
+    {
+      "account_id": "fixture-account-key",
+      "average_price": "500.0",
+      "broker": "ETRADE",
+      "market_value": "5050.0",
+      "quantity": "10",
+      "symbol": "SPY",
+      "unrealized_pl": "50.0"
+    }
+  ],
+  "generated_at": "2026-08-05T22:28:32.495310+00:00",
+  "key_issuance_blocker": {
+    "active": true,
+    "blocks_actual_sandbox_read": true,
+    "blocks_code_development": false,
+    "owner": "ETRADE_OR_ACCOUNT_OPERATOR"
+  },
+  "next_fixed_development": "V4001_TO_V4200_ETRADE_PRODUCTION_READ_ONLY_GUARD_AND_ACCOUNT_ROUTING",
+  "requested_paths": [
+    "/v1/accounts/list.json",
+    "/v1/accounts/fixture-account-key/balance.json?instType=BROKERAGE&realTimeNAV=true",
+    "/v1/accounts/fixture-account-key/portfolio.json",
+    "/v1/accounts/fixture-account-key/orders.json"
+  ],
+  "retry_policy": {
+    "AUTHENTICATION_OR_TOKEN": {
+      "action": "RENEW_OR_REAUTHORIZE",
+      "retry": false
+    },
+    "AUTHORIZATION_OR_ACCOUNT_RESTRICTION": {
+      "action": "CONTACT_ETRADE_SUPPORT",
+      "retry": false
+    },
+    "ETRADE_SERVER_ERROR": {
+      "backoff_seconds": [
+        5,
+        15,
+        45
+      ],
+      "max_attempts": 3,
+      "retry": true
+    },
+    "NETWORK_OR_TIMEOUT": {
+      "backoff_seconds": [
+        5,
+        15,
+        45
+      ],
+      "max_attempts": 3,
+      "retry": true
+    },
+    "RATE_LIMIT": {
+      "backoff_seconds": [
+        60,
+        180
+      ],
+      "max_attempts": 2,
+      "retry": true
+    }
+  },
+  "stage": "V3801_TO_V4000_ETRADE_SANDBOX_ACCOUNT_READ_CERTIFICATION",
+  "status": "PASS",
+  "validation_mode": "FIXTURE_AND_CONTRACT"
+}
