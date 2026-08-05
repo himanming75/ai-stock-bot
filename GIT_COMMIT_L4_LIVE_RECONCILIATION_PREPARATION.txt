@@ -1,0 +1,3 @@
+git add live_reconciliation tools/run_l4_offline_qualification.py tools/test_l4_live_reconciliation_preparation.py tools/verify_l4_live_reconciliation_preparation.py release/l4_live_reconciliation_preparation RUN_L4_OFFLINE_QUALIFICATION.ps1 RUN_L4_TEST_AND_VERIFY.ps1 L4_LIVE_RECONCILIATION_PREPARATION_MANIFEST.json GIT_COMMIT_L4_LIVE_RECONCILIATION_PREPARATION.txt
+git commit -m "L4 add live reconciliation preparation"
+git push origin main

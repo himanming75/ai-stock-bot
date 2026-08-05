@@ -1,0 +1,80 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_live_reconciliation_allowed": false,
+  "actual_live_reconciliation_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "cash_reconciliation": {
+    "buying_power_delta": "0",
+    "cash_delta": "0",
+    "checks": {
+      "buying_power_within_tolerance": true,
+      "cash_within_tolerance": true
+    },
+    "drift_detected": false,
+    "failed": []
+  },
+  "gates": {
+    "actual_live_reconciliation_allowed": false,
+    "checks": {
+      "l1_pass": true,
+      "l2_actual_complete": false,
+      "l2_preparation_pass": true,
+      "l3_actual_complete": false,
+      "l3_preparation_pass": true,
+      "paper_certificate_present": false,
+      "paper_complete": false
+    },
+    "failed": [
+      "paper_complete",
+      "paper_certificate_present",
+      "l2_actual_complete",
+      "l3_actual_complete"
+    ]
+  },
+  "ledger_record": {
+    "drift_types": [],
+    "fill_key": "fixture-8de14f7c62bb4e07a9264e0188cc74ff",
+    "observed_at": "2026-08-05T05:39:58.169044+00:00",
+    "record_type": "LIVE_RECONCILIATION_DRY_RUN"
+  },
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "L4_ACTUAL_AFTER_L3_ACTUAL_MICRO_LIVE",
+  "order_reconciliation": {
+    "checks": {
+      "client_order_id_matches": true,
+      "side_matches": true,
+      "status_known": true,
+      "symbol_matches": true
+    },
+    "drift_detected": false,
+    "failed": []
+  },
+  "position_reconciliation": {
+    "details": [
+      {
+        "actual_qty": "0.01",
+        "expected_qty": "0.01",
+        "qty_matches": true,
+        "symbol": "SPY"
+      }
+    ],
+    "drift_detected": false
+  },
+  "repair_plan": {
+    "actions": [
+      "ACTIVATE_LIVE_KILL_SWITCH",
+      "BLOCK_NEW_LIVE_ORDERS",
+      "REFETCH_ACCOUNT_ORDERS_POSITIONS",
+      "VERIFY_FILL_LEDGER_AND_IDEMPOTENCY",
+      "REQUIRE_OPERATOR_APPROVAL_BEFORE_RESUME"
+    ],
+    "automatic_order_replay_enabled": false,
+    "automatic_position_mutation_enabled": false,
+    "automatic_repair_enabled": false,
+    "drift_types": []
+  },
+  "stage": "L4",
+  "state": "LIVE_RECONCILIATION_PREPARED",
+  "status": "PASS"
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "L4_PREPARATION",
+  "features": [
+    "Order State Reconciliation",
+    "Fill Duplicate Protection",
+    "Position Reconciliation",
+    "Cash Reconciliation",
+    "Buying Power Reconciliation",
+    "Drift Detection",
+    "Reconciliation Ledger",
+    "Manual Repair Plan"
+  ],
+  "actual_live_reconciliation_allowed": false,
+  "automatic_repair_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L4_ACTUAL_AFTER_L3_ACTUAL"
+}
