@@ -1,0 +1,8 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "alias": "paper_primary",
+  "broker_network_enabled": false,
+  "order_submission_enabled": false,
+  "status": "NOT_CONNECTED"
+}

@@ -1,0 +1,6 @@
+{
+  "max_daily_loss_percent": "1.00",
+  "max_daily_notional": "10.00",
+  "max_drawdown_percent": "3.00",
+  "max_single_position_percent": "20.00"
+}

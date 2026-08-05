@@ -1,0 +1,9 @@
+{
+  "enable_actual_submission": false,
+  "interval_seconds": 60,
+  "max_cycles": 10,
+  "profile": "READ_ONLY",
+  "symbols": [
+    "SPY"
+  ]
+}

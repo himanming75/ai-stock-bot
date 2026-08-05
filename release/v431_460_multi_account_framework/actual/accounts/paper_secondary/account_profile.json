@@ -1,0 +1,47 @@
+{
+  "account": {
+    "adapter_capabilities": {
+      "cancel_order": false,
+      "read_account": true,
+      "read_orders": true,
+      "read_positions": true,
+      "replace_order": false,
+      "submit_order": false
+    },
+    "alias": "paper_secondary",
+    "broker": "alpaca",
+    "broker_network_enabled": false,
+    "controller_profile": {
+      "enable_actual_submission": false,
+      "interval_seconds": 60,
+      "max_cycles": 10,
+      "profile": "READ_ONLY",
+      "symbols": [
+        "SPY"
+      ]
+    },
+    "credential_aliases": {
+      "base_url_env": "APCA_PAPER_SECONDARY_BASE_URL",
+      "key_id_env": "APCA_PAPER_SECONDARY_KEY_ID",
+      "secret_key_env": "APCA_PAPER_SECONDARY_SECRET_KEY"
+    },
+    "display_name": "Secondary Alpaca Paper",
+    "enabled": false,
+    "ledger_namespace": "accounts/paper_secondary",
+    "metadata": {
+      "connected": false,
+      "purpose": "disabled template"
+    },
+    "mode": "disabled",
+    "order_submission_enabled": false,
+    "risk_policy": {
+      "max_daily_loss_percent": "1.00",
+      "max_daily_notional": "10.00",
+      "max_drawdown_percent": "3.00",
+      "max_single_position_percent": "20.00"
+    }
+  },
+  "alias": "paper_secondary",
+  "blockers": [],
+  "status": "VALID"
+}

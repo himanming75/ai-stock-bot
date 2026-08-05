@@ -1,0 +1,72 @@
+{
+  "accounts": [
+    {
+      "alias": "paper_primary",
+      "display_name": "Primary Alpaca Paper",
+      "broker": "alpaca",
+      "mode": "paper",
+      "enabled": false,
+      "broker_network_enabled": false,
+      "order_submission_enabled": false,
+      "credential_aliases": {
+        "key_id_env": "APCA_PAPER_PRIMARY_KEY_ID",
+        "secret_key_env": "APCA_PAPER_PRIMARY_SECRET_KEY",
+        "base_url_env": "APCA_PAPER_PRIMARY_BASE_URL"
+      },
+      "risk_policy": {
+        "max_daily_loss_percent": "2.00",
+        "max_drawdown_percent": "5.00",
+        "max_single_position_percent": "25.00",
+        "max_daily_notional": "20.00"
+      },
+      "controller_profile": {
+        "profile": "READ_ONLY",
+        "symbols": [
+          "SPY",
+          "QQQ",
+          "IWM"
+        ],
+        "interval_seconds": 60,
+        "max_cycles": 10,
+        "enable_actual_submission": false
+      },
+      "metadata": {
+        "purpose": "future multi-account paper framework",
+        "connected": false
+      }
+    },
+    {
+      "alias": "paper_secondary",
+      "display_name": "Secondary Alpaca Paper",
+      "broker": "alpaca",
+      "mode": "disabled",
+      "enabled": false,
+      "broker_network_enabled": false,
+      "order_submission_enabled": false,
+      "credential_aliases": {
+        "key_id_env": "APCA_PAPER_SECONDARY_KEY_ID",
+        "secret_key_env": "APCA_PAPER_SECONDARY_SECRET_KEY",
+        "base_url_env": "APCA_PAPER_SECONDARY_BASE_URL"
+      },
+      "risk_policy": {
+        "max_daily_loss_percent": "1.00",
+        "max_drawdown_percent": "3.00",
+        "max_single_position_percent": "20.00",
+        "max_daily_notional": "10.00"
+      },
+      "controller_profile": {
+        "profile": "READ_ONLY",
+        "symbols": [
+          "SPY"
+        ],
+        "interval_seconds": 60,
+        "max_cycles": 10,
+        "enable_actual_submission": false
+      },
+      "metadata": {
+        "purpose": "disabled template",
+        "connected": false
+      }
+    }
+  ]
+}

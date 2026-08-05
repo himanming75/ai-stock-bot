@@ -1,0 +1,130 @@
+{
+  "account_count": 2,
+  "accounts": [
+    {
+      "account": {
+        "adapter_capabilities": {
+          "cancel_order": false,
+          "read_account": true,
+          "read_orders": true,
+          "read_positions": true,
+          "replace_order": false,
+          "submit_order": false
+        },
+        "alias": "paper_primary",
+        "broker": "alpaca",
+        "broker_network_enabled": false,
+        "controller_profile": {
+          "enable_actual_submission": false,
+          "interval_seconds": 60,
+          "max_cycles": 10,
+          "profile": "READ_ONLY",
+          "symbols": [
+            "SPY",
+            "QQQ",
+            "IWM"
+          ]
+        },
+        "credential_aliases": {
+          "base_url_env": "APCA_PAPER_PRIMARY_BASE_URL",
+          "key_id_env": "APCA_PAPER_PRIMARY_KEY_ID",
+          "secret_key_env": "APCA_PAPER_PRIMARY_SECRET_KEY"
+        },
+        "display_name": "Primary Alpaca Paper",
+        "enabled": false,
+        "ledger_namespace": "accounts/paper_primary",
+        "metadata": {
+          "connected": false,
+          "purpose": "future multi-account paper framework"
+        },
+        "mode": "paper",
+        "order_submission_enabled": false,
+        "risk_policy": {
+          "max_daily_loss_percent": "2.00",
+          "max_daily_notional": "20.00",
+          "max_drawdown_percent": "5.00",
+          "max_single_position_percent": "25.00"
+        }
+      },
+      "alias": "paper_primary",
+      "blockers": [],
+      "status": "VALID"
+    },
+    {
+      "account": {
+        "adapter_capabilities": {
+          "cancel_order": false,
+          "read_account": true,
+          "read_orders": true,
+          "read_positions": true,
+          "replace_order": false,
+          "submit_order": false
+        },
+        "alias": "paper_secondary",
+        "broker": "alpaca",
+        "broker_network_enabled": false,
+        "controller_profile": {
+          "enable_actual_submission": false,
+          "interval_seconds": 60,
+          "max_cycles": 10,
+          "profile": "READ_ONLY",
+          "symbols": [
+            "SPY"
+          ]
+        },
+        "credential_aliases": {
+          "base_url_env": "APCA_PAPER_SECONDARY_BASE_URL",
+          "key_id_env": "APCA_PAPER_SECONDARY_KEY_ID",
+          "secret_key_env": "APCA_PAPER_SECONDARY_SECRET_KEY"
+        },
+        "display_name": "Secondary Alpaca Paper",
+        "enabled": false,
+        "ledger_namespace": "accounts/paper_secondary",
+        "metadata": {
+          "connected": false,
+          "purpose": "disabled template"
+        },
+        "mode": "disabled",
+        "order_submission_enabled": false,
+        "risk_policy": {
+          "max_daily_loss_percent": "1.00",
+          "max_daily_notional": "10.00",
+          "max_drawdown_percent": "3.00",
+          "max_single_position_percent": "20.00"
+        }
+      },
+      "alias": "paper_secondary",
+      "blockers": [],
+      "status": "VALID"
+    }
+  ],
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "blocked_account_count": 0,
+  "broker_summary": {
+    "alpaca": {
+      "account_count": 2,
+      "network_enabled_count": 0,
+      "submission_enabled_count": 0,
+      "valid_count": 2
+    }
+  },
+  "controller_files_modified": false,
+  "credential_aliases_only": true,
+  "credential_values_stored": false,
+  "duplicate_aliases": [],
+  "generated_at": "2026-08-05T19:51:50.446243+00:00",
+  "global_blockers": [],
+  "global_broker_network_enabled": false,
+  "global_order_submission_enabled": false,
+  "next_fixed_development": "V461_TO_V490_STRATEGY_FRAMEWORK",
+  "registry_fingerprint": "f98c792d8d2ddf381131a9071cf3eda67df0a5dd3927dd4b554a9cf5984aa469",
+  "runtime_files_modified": false,
+  "stage": "V431_TO_V460_MULTI_ACCOUNT_FRAMEWORK",
+  "status": "PASS",
+  "valid_account_count": 2
+}

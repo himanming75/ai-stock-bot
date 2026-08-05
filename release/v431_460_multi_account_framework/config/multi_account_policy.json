@@ -1,0 +1,14 @@
+{
+  "policy_version": 1,
+  "maximum_accounts": 10,
+  "global_broker_network_enabled": false,
+  "global_order_submission_enabled": false,
+  "credential_values_may_be_persisted": false,
+  "live_mode_allowed": false,
+  "supported_brokers": [
+    "alpaca",
+    "etrade",
+    "ibkr",
+    "schwab"
+  ]
+}
