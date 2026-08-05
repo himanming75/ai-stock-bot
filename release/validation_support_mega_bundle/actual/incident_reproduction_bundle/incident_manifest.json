@@ -1,0 +1,28 @@
+{
+  "automatic_recovery_performed": false,
+  "automatic_retry_performed": false,
+  "created_at": "2026-08-05T08:15:15.609455+00:00",
+  "credentials_included": false,
+  "file_count": 3,
+  "files": [
+    {
+      "sha256": "c571ae359dcf9ca4c8a5ad1991c1702b6013e8f853af29142f530e7612ca03c2",
+      "size_bytes": 1969,
+      "snapshot": "p1_actual_environment_result.json",
+      "source": "release/p1_actual_environment_qualification/actual/p1_actual_environment_result.json"
+    },
+    {
+      "sha256": "f665fc3d580308d4f987136b6a48eecdf375df69ece48d74a766a9eefccb159f",
+      "size_bytes": 460,
+      "snapshot": "p1_actual_environment_certificate.json",
+      "source": "release/p1_actual_environment_qualification/actual/p1_actual_environment_certificate.json"
+    },
+    {
+      "sha256": "a7d4dbce8344681cf1131597d335f7535e50f60beea9cc9a3af03b5d6720fb79",
+      "size_bytes": 5072,
+      "snapshot": "r16_to_r20_result.json",
+      "source": "release/r16_to_r20_realtime_paper_ops/actual/r16_to_r20_result.json"
+    }
+  ],
+  "stage": "VALIDATION_INCIDENT_REPRODUCTION"
+}

@@ -1,0 +1,14 @@
+{
+  "actual_network_used_during_p1": false,
+  "actual_orders_submitted_during_p1": 0,
+  "certificate_stage": "P1_ACTUAL_ENVIRONMENT",
+  "eligible": true,
+  "failed": [],
+  "issued_at": "2026-08-05T08:07:46.339393+00:00",
+  "live_order_submission_allowed": false,
+  "live_validation_allowed": false,
+  "p1_actual_environment_validated": true,
+  "p2_actual_broker_read_allowed": true,
+  "p3_actual_paper_order_allowed": false,
+  "status": "PASS"
+}

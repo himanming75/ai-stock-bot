@@ -1,0 +1,3 @@
+git add validation_support tools/run_validation_support_mega_bundle.py tools/test_validation_support_mega_bundle.py tools/verify_validation_support_mega_bundle.py release/validation_support_mega_bundle RUN_VALIDATION_SUPPORT_MEGA_BUNDLE.ps1 RUN_VALIDATION_SUPPORT_TEST_AND_VERIFY.ps1 SHOW_VALIDATION_SUPPORT_STATUS.ps1 VALIDATION_SUPPORT_MEGA_BUNDLE_MANIFEST.json GIT_COMMIT_VALIDATION_SUPPORT_MEGA_BUNDLE.txt
+git commit -m "Add validation support diagnostics and audit bundle"
+git push origin main
