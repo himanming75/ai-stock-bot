@@ -1,0 +1,10 @@
+git add multi_broker_core
+git add tools/run_v3001_to_v3200_multi_broker_core.py
+git add tools/test_v3001_to_v3200_multi_broker_core.py
+git add release/v3001_3200_multi_broker_core
+git add RUN_V3001_TO_V3200_MULTI_BROKER_CORE.ps1
+git add RUN_V3001_TO_V3200_MULTI_BROKER_CORE_TEST.ps1
+git add V3001_TO_V3200_MULTI_BROKER_CORE_MANIFEST.json
+git add GIT_COMMIT_V3001_TO_V3200_MULTI_BROKER_CORE.txt
+git commit -m "Add V3001-V3200 multi broker core architecture"
+git push origin main

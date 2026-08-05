@@ -1,0 +1,60 @@
+{
+  "brokers": [
+    {
+      "account_read": true,
+      "broker": "ALPACA",
+      "extended_hours": true,
+      "fractional_shares": true,
+      "market_data_read": true,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": true,
+      "paper_trading": true,
+      "positions_read": true,
+      "streaming": true
+    },
+    {
+      "account_read": false,
+      "broker": "ETRADE",
+      "extended_hours": false,
+      "fractional_shares": false,
+      "market_data_read": false,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": false,
+      "paper_trading": false,
+      "positions_read": false,
+      "streaming": false
+    },
+    {
+      "account_read": false,
+      "broker": "IBKR",
+      "extended_hours": true,
+      "fractional_shares": true,
+      "market_data_read": false,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": false,
+      "paper_trading": true,
+      "positions_read": false,
+      "streaming": true
+    },
+    {
+      "account_read": true,
+      "broker": "MOCK",
+      "extended_hours": false,
+      "fractional_shares": true,
+      "market_data_read": false,
+      "options": false,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": true,
+      "paper_trading": true,
+      "positions_read": true,
+      "streaming": false
+    }
+  ]
+}

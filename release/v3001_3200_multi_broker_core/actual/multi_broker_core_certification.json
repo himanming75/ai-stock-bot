@@ -1,0 +1,100 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "cancel_blocked": true,
+  "canonical_symbol_example": "MOCK::EQUITY::SPY",
+  "certification_fingerprint": "f28612221586eae96ad2369652d19d80ce61662cc4c55aebf6f6368d7f98966b",
+  "credentials_loaded": false,
+  "existing_alpaca_controller_modified": false,
+  "generated_at": "2026-08-05T21:23:38.508381+00:00",
+  "implemented_brokers": [
+    "MOCK"
+  ],
+  "mock_account": {
+    "account_id": "MOCK-001",
+    "broker": "MOCK",
+    "buying_power": "150000",
+    "cash": "75000",
+    "currency": "USD",
+    "equity": "100000",
+    "status": "ACTIVE"
+  },
+  "mock_orders": [],
+  "mock_positions": [
+    {
+      "account_id": "MOCK-001",
+      "average_price": "500",
+      "broker": "MOCK",
+      "market_value": "5050",
+      "quantity": "10",
+      "symbol": "SPY",
+      "unrealized_pl": "50"
+    }
+  ],
+  "next_fixed_development": "V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION",
+  "registered_brokers": [
+    {
+      "account_read": true,
+      "broker": "ALPACA",
+      "extended_hours": true,
+      "fractional_shares": true,
+      "market_data_read": true,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": true,
+      "paper_trading": true,
+      "positions_read": true,
+      "streaming": true
+    },
+    {
+      "account_read": false,
+      "broker": "ETRADE",
+      "extended_hours": false,
+      "fractional_shares": false,
+      "market_data_read": false,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": false,
+      "paper_trading": false,
+      "positions_read": false,
+      "streaming": false
+    },
+    {
+      "account_read": false,
+      "broker": "IBKR",
+      "extended_hours": true,
+      "fractional_shares": true,
+      "market_data_read": false,
+      "options": true,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": false,
+      "paper_trading": true,
+      "positions_read": false,
+      "streaming": true
+    },
+    {
+      "account_read": true,
+      "broker": "MOCK",
+      "extended_hours": false,
+      "fractional_shares": true,
+      "market_data_read": false,
+      "options": false,
+      "order_cancel": false,
+      "order_submission": false,
+      "orders_read": true,
+      "paper_trading": true,
+      "positions_read": true,
+      "streaming": false
+    }
+  ],
+  "stage": "V3001_TO_V3200_MULTI_BROKER_CORE_ARCHITECTURE",
+  "status": "PASS",
+  "submit_blocked": true
+}
