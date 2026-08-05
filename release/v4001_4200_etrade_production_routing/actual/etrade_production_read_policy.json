@@ -1,0 +1,12 @@
+{
+  "allowed_account_id_keys": [
+    "individual-brokerage-key",
+    "stock-plan-key"
+  ],
+  "broker_write_enabled": false,
+  "default_account_id_key": "individual-brokerage-key",
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "production_read_enabled": false,
+  "require_explicit_environment_ack": true
+}

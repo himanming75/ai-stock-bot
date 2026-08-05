@@ -1,0 +1,27 @@
+{
+  "account_count": 2,
+  "currency": "USD",
+  "records": [
+    {
+      "account_id": "individual-brokerage-key",
+      "broker": "ETRADE",
+      "buying_power": "25000.50",
+      "cash": "25000.50",
+      "currency": "USD",
+      "equity": "100500.75",
+      "status": "ACTIVE"
+    },
+    {
+      "account_id": "stock-plan-key",
+      "broker": "ETRADE",
+      "buying_power": "500.00",
+      "cash": "500.00",
+      "currency": "USD",
+      "equity": "32500.00",
+      "status": "ACTIVE"
+    }
+  ],
+  "total_buying_power": "25500.50",
+  "total_cash": "25500.50",
+  "total_equity": "133000.75"
+}

@@ -1,0 +1,12 @@
+git add multi_broker_etrade_routing
+git add tools/run_v4001_to_v4200_etrade_production_routing.py
+git add tools/test_v4001_to_v4200_etrade_production_routing.py
+git add tools/run_etrade_production_read_explicit.py
+git add release/v4001_4200_etrade_production_routing
+git add RUN_V4001_TO_V4200_ETRADE_PRODUCTION_ROUTING.ps1
+git add RUN_V4001_TO_V4200_ETRADE_PRODUCTION_ROUTING_TEST.ps1
+git add RUN_ETRADE_PRODUCTION_READ_EXPLICIT.ps1
+git add V4001_TO_V4200_ETRADE_PRODUCTION_ROUTING_MANIFEST.json
+git add GIT_COMMIT_V4001_TO_V4200_ETRADE_PRODUCTION_ROUTING.txt
+git commit -m "Add V4001-V4200 ETrade production read routing"
+git push origin main

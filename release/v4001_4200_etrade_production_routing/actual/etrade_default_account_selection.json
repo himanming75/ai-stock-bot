@@ -1,0 +1,13 @@
+{
+  "selected": {
+    "account_id_key": "individual-brokerage-key",
+    "account_id_masked": "****6728",
+    "account_mode": "MARGIN",
+    "account_status": "ACTIVE",
+    "account_type": "INDIVIDUAL",
+    "alias": "PRIMARY_BROKERAGE",
+    "default": true,
+    "enabled": true,
+    "production_read_allowed": false
+  }
+}
