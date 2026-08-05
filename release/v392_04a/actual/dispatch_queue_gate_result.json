@@ -1,0 +1,81 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_dispatch_enabled": false,
+  "broker_write_enabled": false,
+  "dispatch_execution_allowed": false,
+  "duplicate_prevention_enabled": true,
+  "evaluation": {
+    "approved": false,
+    "checks": {
+      "broker_write_disabled": true,
+      "dispatch_execution_disabled": true,
+      "dispatch_id_present": true,
+      "dispatch_not_present": false,
+      "live_submission_disabled": true,
+      "paper_submission_disabled": true,
+      "preparation_approved": true,
+      "preparation_ready": true,
+      "preparation_stage_valid": true,
+      "preparation_status_pass": true,
+      "proposal_id_present": true,
+      "queue_entry_allowed": true,
+      "token_id_present": true
+    },
+    "failed": [
+      "dispatch_not_present"
+    ],
+    "queue_state": {
+      "entries": [
+        {
+          "dispatch_id": "dispatch-8e3307ad2829fd8f171f11a5",
+          "order_payload_hash": "1e665c62236ff6a55989be98b45ed0bcc4c88e259bfa138666f4391e1080457d",
+          "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e",
+          "proposal_id": "proposal-v392-001",
+          "queued_at": "2026-08-05T00:23:51.954796+00:00",
+          "sequence": 1,
+          "status": "QUEUED",
+          "target_environment": "PAPER",
+          "token_id": "d1c592f6daebb5c477c6f0329a2ef5e9285cd1ca42b929add59c84f4eaefc66b"
+        }
+      ],
+      "lock": {
+        "locked": false,
+        "locked_at": null,
+        "owner": ""
+      },
+      "queue_version": "V392.04A",
+      "updated_at": "2026-08-05T00:23:51.954796+00:00"
+    },
+    "queue_validation": {
+      "dispatch_ids": [
+        "dispatch-8e3307ad2829fd8f171f11a5"
+      ],
+      "entry_count": 1,
+      "errors": [],
+      "lock": {
+        "locked": false,
+        "locked_at": null,
+        "owner": ""
+      },
+      "sequence_numbers": [
+        1
+      ],
+      "valid": true
+    },
+    "required_action": "DO_NOT_ENQUEUE_DISPATCH",
+    "state": "DISPATCH_QUEUE_ENQUEUE_REJECTED"
+  },
+  "fifo_enforced": true,
+  "live_submission_enabled": false,
+  "next_phase": "V392_05A_QUEUE_INSPECTION_GATE",
+  "observed_at": "2026-08-05T00:23:57.788345+00:00",
+  "paper_endpoint_only": true,
+  "paper_submission_enabled": false,
+  "queue_entry_created": false,
+  "queue_inspection_allowed": false,
+  "queue_locking_enabled": true,
+  "stage": "V392.04A",
+  "state": "DISPATCH_QUEUE_GATE_BLOCKED",
+  "status": "PASS"
+}

@@ -1,0 +1,3 @@
+git add execution_authorization/dispatch_queue.py execution_authorization/dispatch_queue_guard.py tools/run_v392_04a.py tools/test_v392_04a.py tools/verify_v392_04a.py release/v392_04a RUN_V392_04A_DISPATCH_QUEUE_GATE.ps1 RUN_V392_04A_TEST_AND_VERIFY.ps1 V392_04A_MANIFEST.json GIT_COMMIT_V392_04A.txt
+git commit -m "V392.04A add dispatch queue gate"
+git push origin main
