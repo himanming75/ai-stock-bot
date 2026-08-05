@@ -1,0 +1,23 @@
+{
+  "stage": "BUNDLE_B_R11_TO_R13",
+  "included_fixed_stages": [
+    "R11_BROKER_ADAPTER_INTERFACE",
+    "R12_MULTI_ACCOUNT_ORCHESTRATOR",
+    "R13_CAPABILITY_MATRIX_ORDER_ROUTING"
+  ],
+  "brokers": {
+    "alpaca": "PREPARED_OFFLINE_ONLY",
+    "etrade": "INTERFACE_ONLY_NOT_CONNECTED",
+    "ibkr": "INTERFACE_ONLY_NOT_CONNECTED",
+    "schwab": "INTERFACE_ONLY_NOT_CONNECTED"
+  },
+  "multi_account_feature_removed": false,
+  "actual_broker_connections_performed": false,
+  "actual_network_used": false,
+  "actual_write_used": false,
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_bundle": "BUNDLE_C_R14_TO_R15_FINAL_OPERATIONS",
+  "roadmap_changed": false
+}

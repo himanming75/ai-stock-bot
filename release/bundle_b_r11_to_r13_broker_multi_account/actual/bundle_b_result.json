@@ -1,0 +1,422 @@
+{
+  "account_registry": {
+    "account_count": 4,
+    "accounts": [
+      {
+        "account_id": "alpaca-paper-primary",
+        "allocation_weight": "1.0",
+        "broker_id": "alpaca",
+        "broker_mode": "paper",
+        "credential_vault_mode": "paper",
+        "enabled": true,
+        "maximum_account_notional": "10",
+        "profile_name": "paper_ultra_short",
+        "tags": [
+          "primary",
+          "paper",
+          "validation"
+        ]
+      },
+      {
+        "account_id": "etrade-future-disabled",
+        "allocation_weight": "0.25",
+        "broker_id": "etrade",
+        "broker_mode": "paper",
+        "credential_vault_mode": "paper",
+        "enabled": false,
+        "maximum_account_notional": "10",
+        "profile_name": "paper_swing",
+        "tags": [
+          "future",
+          "interface-only"
+        ]
+      },
+      {
+        "account_id": "ibkr-future-disabled",
+        "allocation_weight": "0.25",
+        "broker_id": "ibkr",
+        "broker_mode": "paper",
+        "credential_vault_mode": "paper",
+        "enabled": false,
+        "maximum_account_notional": "10",
+        "profile_name": "paper_position",
+        "tags": [
+          "future",
+          "interface-only"
+        ]
+      },
+      {
+        "account_id": "schwab-live-disabled",
+        "allocation_weight": "0.10",
+        "broker_id": "schwab",
+        "broker_mode": "live",
+        "credential_vault_mode": "live",
+        "enabled": false,
+        "maximum_account_notional": "1",
+        "profile_name": "live_micro_locked",
+        "tags": [
+          "future",
+          "live",
+          "locked"
+        ]
+      }
+    ],
+    "checks": {
+      "account_ids_unique": true,
+      "accounts_present": true,
+      "all_accounts_valid": true,
+      "allocation_weight_total_safe": true,
+      "enabled_accounts_present": true,
+      "live_accounts_disabled_in_preparation": true
+    },
+    "enabled_account_count": 1,
+    "failed": [],
+    "valid": true
+  },
+  "actual_broker_connections_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_write_used": false,
+  "alpaca_connection_status": "PREPARED_OFFLINE_ONLY",
+  "automatic_order_submission_enabled": false,
+  "capability_matrix": {
+    "actual_network_enabled": false,
+    "actual_write_enabled": false,
+    "broker_count": 4,
+    "brokers": [
+      {
+        "actual_network_enabled": false,
+        "actual_write_enabled": false,
+        "broker_id": "alpaca",
+        "cancel": true,
+        "fractional_market": true,
+        "limit_orders": true,
+        "live_supported": true,
+        "market_orders": true,
+        "notional_market": true,
+        "paper_supported": true,
+        "read_account": true,
+        "read_orders": true,
+        "read_positions": true,
+        "replace": true
+      },
+      {
+        "actual_network_enabled": false,
+        "actual_write_enabled": false,
+        "broker_id": "etrade",
+        "cancel": false,
+        "fractional_market": false,
+        "limit_orders": false,
+        "live_supported": false,
+        "market_orders": false,
+        "notional_market": false,
+        "paper_supported": false,
+        "read_account": true,
+        "read_orders": true,
+        "read_positions": true,
+        "replace": false
+      },
+      {
+        "actual_network_enabled": false,
+        "actual_write_enabled": false,
+        "broker_id": "ibkr",
+        "cancel": false,
+        "fractional_market": false,
+        "limit_orders": false,
+        "live_supported": false,
+        "market_orders": false,
+        "notional_market": false,
+        "paper_supported": false,
+        "read_account": true,
+        "read_orders": true,
+        "read_positions": true,
+        "replace": false
+      },
+      {
+        "actual_network_enabled": false,
+        "actual_write_enabled": false,
+        "broker_id": "schwab",
+        "cancel": false,
+        "fractional_market": false,
+        "limit_orders": false,
+        "live_supported": false,
+        "market_orders": false,
+        "notional_market": false,
+        "paper_supported": false,
+        "read_account": true,
+        "read_orders": true,
+        "read_positions": true,
+        "replace": false
+      }
+    ],
+    "stage": "R13_BROKER_CAPABILITY_MATRIX"
+  },
+  "checks": {
+    "account_registry_valid": true,
+    "all_submit_flags_off": true,
+    "alpaca_route_preview_allowed": true,
+    "bundle_a_candidate_present": true,
+    "four_broker_adapters_registered": true,
+    "future_brokers_not_routed": true,
+    "network_unused": true,
+    "write_unused": true
+  },
+  "etrade_connection_status": "INTERFACE_ONLY_NOT_CONNECTED",
+  "failed": [],
+  "ibkr_connection_status": "INTERFACE_ONLY_NOT_CONNECTED",
+  "next_fixed_bundle": "BUNDLE_C_R14_TO_R15_FINAL_OPERATIONS",
+  "r11_broker_adapter_interface": "READY",
+  "r12_multi_account_orchestrator": "READY",
+  "r13_capability_matrix_order_routing": "READY",
+  "routing_results": [
+    {
+      "actual_broker_submission_allowed": false,
+      "actual_network_used": false,
+      "actual_write_used": false,
+      "allowed_route_count": 1,
+      "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+      "route_count": 4,
+      "routes": [
+        {
+          "account_id": "alpaca-paper-primary",
+          "account_validation": {
+            "checks": {
+              "account_id_present": true,
+              "allocation_weight_not_over_one": true,
+              "allocation_weight_positive": true,
+              "broker_id_present": true,
+              "broker_mode_valid": true,
+              "credential_mode_matches_broker_mode": true,
+              "maximum_account_notional_positive": true,
+              "profile_name_present": true
+            },
+            "failed": [],
+            "valid": true
+          },
+          "adapter_validation": {
+            "broker_submission_allowed": false,
+            "checks": {
+              "candidate_present": true,
+              "candidate_submit_flag_off": true,
+              "network_disabled": true,
+              "order_type_supported": true,
+              "side_valid": true,
+              "symbol_present": true,
+              "write_disabled": true
+            },
+            "failed": [],
+            "valid": true
+          },
+          "blockers": [],
+          "broker_id": "alpaca",
+          "broker_mode": "paper",
+          "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+          "gate": {
+            "actual_broker_submission_allowed": false,
+            "checks": {
+              "live_requires_paper_completion": true,
+              "live_requires_production_release": true,
+              "mode_valid": true,
+              "paper_routing_preview_allowed": true
+            },
+            "failed": [],
+            "routing_preview_allowed": true
+          },
+          "order_type": "market",
+          "requested_notional": "8.00",
+          "route_allowed": true,
+          "route_id": "r13-27cc5615ca39ab61e38e9847",
+          "routed_notional": "8.00",
+          "side": "buy",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        },
+        {
+          "account_id": "etrade-future-disabled",
+          "account_validation": {
+            "checks": {
+              "account_id_present": true,
+              "allocation_weight_not_over_one": true,
+              "allocation_weight_positive": true,
+              "broker_id_present": true,
+              "broker_mode_valid": true,
+              "credential_mode_matches_broker_mode": true,
+              "maximum_account_notional_positive": true,
+              "profile_name_present": true
+            },
+            "failed": [],
+            "valid": true
+          },
+          "adapter_validation": {
+            "broker_submission_allowed": false,
+            "checks": {
+              "adapter_connection_not_implemented": true,
+              "candidate_submit_flag_off": true,
+              "network_disabled": true,
+              "write_disabled": true
+            },
+            "failed": [
+              "BROKER_CONNECTION_NOT_IMPLEMENTED"
+            ],
+            "valid": false
+          },
+          "blockers": [
+            "ACCOUNT_DISABLED",
+            "BROKER_CONNECTION_NOT_IMPLEMENTED"
+          ],
+          "broker_id": "etrade",
+          "broker_mode": "paper",
+          "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+          "gate": {
+            "actual_broker_submission_allowed": false,
+            "checks": {
+              "live_requires_paper_completion": true,
+              "live_requires_production_release": true,
+              "mode_valid": true,
+              "paper_routing_preview_allowed": true
+            },
+            "failed": [],
+            "routing_preview_allowed": true
+          },
+          "order_type": "market",
+          "requested_notional": "8.00",
+          "route_allowed": false,
+          "route_id": "r13-8422d90ae262f333f4722ed9",
+          "routed_notional": "0",
+          "side": "buy",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        },
+        {
+          "account_id": "ibkr-future-disabled",
+          "account_validation": {
+            "checks": {
+              "account_id_present": true,
+              "allocation_weight_not_over_one": true,
+              "allocation_weight_positive": true,
+              "broker_id_present": true,
+              "broker_mode_valid": true,
+              "credential_mode_matches_broker_mode": true,
+              "maximum_account_notional_positive": true,
+              "profile_name_present": true
+            },
+            "failed": [],
+            "valid": true
+          },
+          "adapter_validation": {
+            "broker_submission_allowed": false,
+            "checks": {
+              "adapter_connection_not_implemented": true,
+              "candidate_submit_flag_off": true,
+              "network_disabled": true,
+              "write_disabled": true
+            },
+            "failed": [
+              "BROKER_CONNECTION_NOT_IMPLEMENTED"
+            ],
+            "valid": false
+          },
+          "blockers": [
+            "ACCOUNT_DISABLED",
+            "BROKER_CONNECTION_NOT_IMPLEMENTED"
+          ],
+          "broker_id": "ibkr",
+          "broker_mode": "paper",
+          "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+          "gate": {
+            "actual_broker_submission_allowed": false,
+            "checks": {
+              "live_requires_paper_completion": true,
+              "live_requires_production_release": true,
+              "mode_valid": true,
+              "paper_routing_preview_allowed": true
+            },
+            "failed": [],
+            "routing_preview_allowed": true
+          },
+          "order_type": "market",
+          "requested_notional": "8.00",
+          "route_allowed": false,
+          "route_id": "r13-e67a909d7bc3da4812ca13a4",
+          "routed_notional": "0",
+          "side": "buy",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        },
+        {
+          "account_id": "schwab-live-disabled",
+          "account_validation": {
+            "checks": {
+              "account_id_present": true,
+              "allocation_weight_not_over_one": true,
+              "allocation_weight_positive": true,
+              "broker_id_present": true,
+              "broker_mode_valid": true,
+              "credential_mode_matches_broker_mode": true,
+              "maximum_account_notional_positive": true,
+              "profile_name_present": true
+            },
+            "failed": [],
+            "valid": true
+          },
+          "adapter_validation": {
+            "broker_submission_allowed": false,
+            "checks": {
+              "adapter_connection_not_implemented": true,
+              "candidate_submit_flag_off": true,
+              "network_disabled": true,
+              "write_disabled": true
+            },
+            "failed": [
+              "BROKER_CONNECTION_NOT_IMPLEMENTED"
+            ],
+            "valid": false
+          },
+          "blockers": [
+            "ACCOUNT_DISABLED",
+            "BROKER_CONNECTION_NOT_IMPLEMENTED",
+            "BROKER_MODE_MISMATCH",
+            "live_requires_paper_completion",
+            "live_requires_production_release",
+            "paper_routing_preview_allowed"
+          ],
+          "broker_id": "schwab",
+          "broker_mode": "live",
+          "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+          "gate": {
+            "actual_broker_submission_allowed": false,
+            "checks": {
+              "live_requires_paper_completion": false,
+              "live_requires_production_release": false,
+              "mode_valid": true,
+              "paper_routing_preview_allowed": false
+            },
+            "failed": [
+              "paper_routing_preview_allowed",
+              "live_requires_paper_completion",
+              "live_requires_production_release"
+            ],
+            "routing_preview_allowed": false
+          },
+          "order_type": "market",
+          "requested_notional": "8.00",
+          "route_allowed": false,
+          "route_id": "r13-e03339c5fe8f0233b19d02ce",
+          "routed_notional": "0",
+          "side": "buy",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        }
+      ]
+    }
+  ],
+  "schwab_connection_status": "INTERFACE_ONLY_NOT_CONNECTED",
+  "stage": "BUNDLE_B_R11_TO_R13",
+  "state": "BROKER_MULTI_ACCOUNT_OFFLINE_QUALIFIED",
+  "status": "PASS"
+}

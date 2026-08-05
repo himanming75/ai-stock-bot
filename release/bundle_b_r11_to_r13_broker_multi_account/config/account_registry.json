@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "accounts": [
+    {
+      "account_id": "alpaca-paper-primary",
+      "broker_id": "alpaca",
+      "broker_mode": "paper",
+      "profile_name": "paper_ultra_short",
+      "enabled": true,
+      "allocation_weight": "1.0",
+      "maximum_account_notional": "10",
+      "credential_vault_mode": "paper",
+      "tags": [
+        "primary",
+        "paper",
+        "validation"
+      ]
+    },
+    {
+      "account_id": "etrade-future-disabled",
+      "broker_id": "etrade",
+      "broker_mode": "paper",
+      "profile_name": "paper_swing",
+      "enabled": false,
+      "allocation_weight": "0.25",
+      "maximum_account_notional": "10",
+      "credential_vault_mode": "paper",
+      "tags": [
+        "future",
+        "interface-only"
+      ]
+    },
+    {
+      "account_id": "ibkr-future-disabled",
+      "broker_id": "ibkr",
+      "broker_mode": "paper",
+      "profile_name": "paper_position",
+      "enabled": false,
+      "allocation_weight": "0.25",
+      "maximum_account_notional": "10",
+      "credential_vault_mode": "paper",
+      "tags": [
+        "future",
+        "interface-only"
+      ]
+    },
+    {
+      "account_id": "schwab-live-disabled",
+      "broker_id": "schwab",
+      "broker_mode": "live",
+      "profile_name": "live_micro_locked",
+      "enabled": false,
+      "allocation_weight": "0.10",
+      "maximum_account_notional": "1",
+      "credential_vault_mode": "live",
+      "tags": [
+        "future",
+        "live",
+        "locked"
+      ]
+    }
+  ]
+}
