@@ -1,0 +1,18 @@
+{
+  "stage": "V392.07A",
+  "package": "Release Token Gate",
+  "requires": "V392.06A Queue Release Authorization",
+  "signature": "HMAC-SHA256",
+  "token_ttl_seconds": 300,
+  "single_use": true,
+  "replay_protection_enabled": true,
+  "queue_mutation_enabled": false,
+  "automatic_release_enabled": false,
+  "dispatch_execution_enabled": false,
+  "paper_endpoint_only": true,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

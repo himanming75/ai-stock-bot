@@ -1,0 +1,21 @@
+{
+  "payload": {
+    "dispatch_id": "dispatch-8e3307ad2829fd8f171f11a5",
+    "expires_at": "2026-08-05T00:37:33.764080+00:00",
+    "head_entry_hash": "a7299ba9c582f30ca97fbd12bab2b506ea551d64c08c9ba97f5f0d8223d69cc2",
+    "issued_at": "2026-08-05T00:32:33.764080+00:00",
+    "nonce": "a611c3776275e0e1e5378be8792222a8",
+    "proposal_id": "proposal-v392-001",
+    "queue_hash": "d0f178e752264092ddf1cbeb3c15f0921a62231f918ac4ccb149e2ccffcd592f",
+    "release_authorized": true,
+    "release_id": "release-db1f14aa1fd49e14ee45c6d4",
+    "release_stage": "V392.06A",
+    "release_state": "QUEUE_RELEASE_AUTHORIZATION_READY",
+    "single_use": true,
+    "target_environment": "PAPER",
+    "token_id": "d1c592f6daebb5c477c6f0329a2ef5e9285cd1ca42b929add59c84f4eaefc66b",
+    "token_version": "V392.07A"
+  },
+  "release_token_id": "f803ce6752915ead3cdabfcb4d10f681b70318f87eef7e9753beeb130e5faed6",
+  "signature": "e61167dcc86459cba2f8bca5dc787988ffcf6ea38596caee1d5aa423bb326fa1"
+}
