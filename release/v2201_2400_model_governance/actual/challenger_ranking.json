@@ -1,0 +1,105 @@
+{
+  "items": [
+    {
+      "balanced_accuracy": 0.72,
+      "calibration_error": 0.11,
+      "eligible_for_promotion_review": true,
+      "fold_mean": 0.69,
+      "fold_scores": [
+        0.67,
+        0.7,
+        0.68,
+        0.71
+      ],
+      "fold_std": 0.01581139,
+      "governance_score": 0.61872566,
+      "max_drawdown": -0.09,
+      "model_id": "challenger_balanced_v1",
+      "overfit_gap": 0.04,
+      "rank": 1,
+      "sample_count": 120,
+      "sharpe_like": 1.25,
+      "stable": true,
+      "test_score": 0.69,
+      "threshold": 0.15,
+      "train_score": 0.73,
+      "turnover": 0.18,
+      "warnings": [],
+      "weights": {
+        "fundamental": 0.22,
+        "news": 0.18,
+        "options": 0.18,
+        "sector": 0.12,
+        "technical": 0.3
+      }
+    },
+    {
+      "balanced_accuracy": 0.68,
+      "calibration_error": 0.09,
+      "eligible_for_promotion_review": true,
+      "fold_mean": 0.65,
+      "fold_scores": [
+        0.64,
+        0.65,
+        0.66,
+        0.65
+      ],
+      "fold_std": 0.00707107,
+      "governance_score": 0.57908787,
+      "max_drawdown": -0.06,
+      "model_id": "challenger_conservative_v1",
+      "overfit_gap": 0.01,
+      "rank": 2,
+      "sample_count": 120,
+      "sharpe_like": 1.1,
+      "stable": true,
+      "test_score": 0.65,
+      "threshold": 0.25,
+      "train_score": 0.66,
+      "turnover": 0.12,
+      "warnings": [],
+      "weights": {
+        "fundamental": 0.3,
+        "news": 0.15,
+        "options": 0.15,
+        "sector": 0.15,
+        "technical": 0.25
+      }
+    },
+    {
+      "balanced_accuracy": 0.65,
+      "calibration_error": 0.17,
+      "eligible_for_promotion_review": false,
+      "fold_mean": 0.6125,
+      "fold_scores": [
+        0.55,
+        0.67,
+        0.6,
+        0.63
+      ],
+      "fold_std": 0.04380354,
+      "governance_score": 0.52348589,
+      "max_drawdown": -0.14,
+      "model_id": "challenger_technical_v1",
+      "overfit_gap": 0.2,
+      "rank": 3,
+      "sample_count": 120,
+      "sharpe_like": 1.05,
+      "stable": false,
+      "test_score": 0.61,
+      "threshold": 0.2,
+      "train_score": 0.81,
+      "turnover": 0.25,
+      "warnings": [
+        "OVERFIT_GAP_HIGH"
+      ],
+      "weights": {
+        "fundamental": 0.2,
+        "news": 0.1,
+        "options": 0.15,
+        "sector": 0.1,
+        "technical": 0.45
+      }
+    }
+  ]
+}

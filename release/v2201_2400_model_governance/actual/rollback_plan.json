@@ -1,0 +1,31 @@
+{
+  "automatic_rollback_enabled": false,
+  "rollback_applied": false,
+  "rollback_model_id": "unified_ai_v2000_baseline",
+  "rollback_ready": true,
+  "rollback_snapshot": {
+    "balanced_accuracy": 0.63,
+    "calibration_error": 0.14,
+    "fold_scores": [
+      0.59,
+      0.61,
+      0.6,
+      0.6
+    ],
+    "max_drawdown": -0.1,
+    "model_id": "unified_ai_v2000_baseline",
+    "sample_count": 120,
+    "sharpe_like": 0.95,
+    "test_score": 0.6,
+    "threshold": 0.22,
+    "train_score": 0.64,
+    "turnover": 0.2,
+    "weights": {
+      "fundamental": 0.22,
+      "news": 0.18,
+      "options": 0.18,
+      "sector": 0.12,
+      "technical": 0.3
+    }
+  }
+}

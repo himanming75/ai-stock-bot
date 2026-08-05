@@ -1,0 +1,10 @@
+{
+  "automatic_promotion_enabled": false,
+  "current_champion_id": "unified_ai_v2000_baseline",
+  "governance_score_improvement": 0.10143779,
+  "manual_approval_required": true,
+  "minimum_required_improvement": 0.03,
+  "promotion_applied": false,
+  "recommendation": "RECOMMEND_CHALLENGER_PROMOTION_REVIEW",
+  "recommended_challenger_id": "challenger_balanced_v1"
+}

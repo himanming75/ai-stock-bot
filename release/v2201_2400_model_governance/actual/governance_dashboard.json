@@ -1,0 +1,8 @@
+{
+  "automatic_promotion_enabled": false,
+  "automatic_rollback_enabled": false,
+  "candidate_count": 3,
+  "promotion_eligible_count": 2,
+  "recommendation": "RECOMMEND_CHALLENGER_PROMOTION_REVIEW",
+  "status": "PASS"
+}

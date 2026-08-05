@@ -1,0 +1,10 @@
+{
+  "minimum_sample_count": 50,
+  "minimum_test_score": 0.55,
+  "maximum_drawdown": 0.2,
+  "maximum_calibration_error": 0.2,
+  "minimum_promotion_improvement": 0.03,
+  "automatic_promotion_enabled": false,
+  "automatic_rollback_enabled": false,
+  "manual_approval_required": true
+}

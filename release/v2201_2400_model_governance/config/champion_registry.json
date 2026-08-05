@@ -1,0 +1,27 @@
+{
+  "champion": {
+    "model_id": "unified_ai_v2000_baseline",
+    "weights": {
+      "technical": 0.3,
+      "news": 0.18,
+      "fundamental": 0.22,
+      "sector": 0.12,
+      "options": 0.18
+    },
+    "threshold": 0.22,
+    "sample_count": 120,
+    "train_score": 0.64,
+    "test_score": 0.6,
+    "fold_scores": [
+      0.59,
+      0.61,
+      0.6,
+      0.6
+    ],
+    "sharpe_like": 0.95,
+    "balanced_accuracy": 0.63,
+    "max_drawdown": -0.1,
+    "calibration_error": 0.14,
+    "turnover": 0.2
+  }
+}

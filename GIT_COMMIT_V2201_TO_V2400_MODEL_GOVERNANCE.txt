@@ -1,0 +1,10 @@
+git add model_governance_optimization
+git add tools/run_v2201_to_v2400_model_governance.py
+git add tools/test_v2201_to_v2400_model_governance.py
+git add release/v2201_2400_model_governance
+git add RUN_V2201_TO_V2400_MODEL_GOVERNANCE.ps1
+git add RUN_V2201_TO_V2400_MODEL_GOVERNANCE_TEST.ps1
+git add V2201_TO_V2400_MODEL_GOVERNANCE_MANIFEST.json
+git add GIT_COMMIT_V2201_TO_V2400_MODEL_GOVERNANCE.txt
+git commit -m "Add V2201-V2400 model governance optimization"
+git push origin main

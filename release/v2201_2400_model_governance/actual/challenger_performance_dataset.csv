@@ -1,0 +1,4 @@
+balanced_accuracy,calibration_error,eligible_for_promotion_review,fold_mean,fold_scores,fold_std,governance_score,max_drawdown,model_id,overfit_gap,rank,sample_count,sharpe_like,stable,test_score,threshold,train_score,turnover,warnings,weights
+0.72,0.11,True,0.69,"[0.67, 0.7, 0.68, 0.71]",0.01581139,0.61872566,-0.09,challenger_balanced_v1,0.04,1,120,1.25,True,0.69,0.15,0.73,0.18,[],"{'technical': 0.3, 'news': 0.18, 'fundamental': 0.22, 'sector': 0.12, 'options': 0.18}"
+0.68,0.09,True,0.65,"[0.64, 0.65, 0.66, 0.65]",0.00707107,0.57908787,-0.06,challenger_conservative_v1,0.01,2,120,1.1,True,0.65,0.25,0.66,0.12,[],"{'technical': 0.25, 'news': 0.15, 'fundamental': 0.3, 'sector': 0.15, 'options': 0.15}"
+0.65,0.17,False,0.6125,"[0.55, 0.67, 0.6, 0.63]",0.04380354,0.52348589,-0.14,challenger_technical_v1,0.2,3,120,1.05,False,0.61,0.2,0.81,0.25,['OVERFIT_GAP_HIGH'],"{'technical': 0.45, 'news': 0.1, 'fundamental': 0.2, 'sector': 0.1, 'options': 0.15}"

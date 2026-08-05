@@ -1,0 +1,80 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "model_id": "challenger_balanced_v1",
+      "weights": {
+        "technical": 0.3,
+        "news": 0.18,
+        "fundamental": 0.22,
+        "sector": 0.12,
+        "options": 0.18
+      },
+      "threshold": 0.15,
+      "sample_count": 120,
+      "train_score": 0.73,
+      "test_score": 0.69,
+      "fold_scores": [
+        0.67,
+        0.7,
+        0.68,
+        0.71
+      ],
+      "sharpe_like": 1.25,
+      "balanced_accuracy": 0.72,
+      "max_drawdown": -0.09,
+      "calibration_error": 0.11,
+      "turnover": 0.18
+    },
+    {
+      "model_id": "challenger_technical_v1",
+      "weights": {
+        "technical": 0.45,
+        "news": 0.1,
+        "fundamental": 0.2,
+        "sector": 0.1,
+        "options": 0.15
+      },
+      "threshold": 0.2,
+      "sample_count": 120,
+      "train_score": 0.81,
+      "test_score": 0.61,
+      "fold_scores": [
+        0.55,
+        0.67,
+        0.6,
+        0.63
+      ],
+      "sharpe_like": 1.05,
+      "balanced_accuracy": 0.65,
+      "max_drawdown": -0.14,
+      "calibration_error": 0.17,
+      "turnover": 0.25
+    },
+    {
+      "model_id": "challenger_conservative_v1",
+      "weights": {
+        "technical": 0.25,
+        "news": 0.15,
+        "fundamental": 0.3,
+        "sector": 0.15,
+        "options": 0.15
+      },
+      "threshold": 0.25,
+      "sample_count": 120,
+      "train_score": 0.66,
+      "test_score": 0.65,
+      "fold_scores": [
+        0.64,
+        0.65,
+        0.66,
+        0.65
+      ],
+      "sharpe_like": 1.1,
+      "balanced_accuracy": 0.68,
+      "max_drawdown": -0.06,
+      "calibration_error": 0.09,
+      "turnover": 0.12
+    }
+  ]
+}
