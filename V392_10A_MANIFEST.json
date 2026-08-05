@@ -1,0 +1,16 @@
+{
+  "stage": "V392.10A",
+  "package": "Local Paper Dispatch Engine",
+  "requires": "V392.09A Local Dispatch Engine Preparation",
+  "local_submission_state": "ACCEPTED_FOR_SIMULATION",
+  "context_replay_protection_enabled": true,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "queue_mutation_enabled": false,
+  "automatic_dispatch_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

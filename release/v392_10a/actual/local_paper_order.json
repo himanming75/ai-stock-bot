@@ -1,0 +1,15 @@
+{
+  "broker_adapter": "NONE",
+  "context_id": "b75101e285361997c80e8fb2d19a281469d6731724795d45094d8df3f312bf42",
+  "created_at": "2026-08-05T00:42:32.341968+00:00",
+  "dispatch_id": "dispatch-8e3307ad2829fd8f171f11a5",
+  "estimated_notional": 1000,
+  "local_execution_id": "4bf355c0a9f48304a703efc35d6f443f8d1523b6d145613115075dfda5f23987",
+  "order_type": "MARKET",
+  "proposal_id": "proposal-v392-001",
+  "side": "BUY",
+  "submission_state": "ACCEPTED_FOR_SIMULATION",
+  "symbol": "AAPL",
+  "target_environment": "PAPER",
+  "time_in_force": "day"
+}
