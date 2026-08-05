@@ -1,0 +1,10 @@
+git add ai_execution_plan_bridge
+git add tools/run_ai_approved_decision_execution_plan_bridge.py
+git add tools/test_ai_approved_decision_execution_plan_bridge.py
+git add release/ai_execution_plan_bridge
+git add RUN_AI_APPROVED_DECISION_EXECUTION_PLAN_BRIDGE.ps1
+git add RUN_AI_APPROVED_DECISION_EXECUTION_PLAN_BRIDGE_TEST_AND_VERIFY.ps1
+git add AI_APPROVED_DECISION_EXECUTION_PLAN_BRIDGE_MANIFEST.json
+git add GIT_COMMIT_AI_APPROVED_DECISION_EXECUTION_PLAN_BRIDGE.txt
+git commit -m "Add AI approved decision execution plan bridge"
+git push origin main

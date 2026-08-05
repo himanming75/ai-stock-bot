@@ -1,0 +1,12 @@
+{
+  "default_reference_prices": {
+    "SPY": "630.00",
+    "QQQ": "565.00",
+    "IWM": "225.00"
+  },
+  "spread_bps": "2",
+  "volatility": "0.20",
+  "urgency": "0.50",
+  "maximum_order_notional": "5000",
+  "allow_fractional": true
+}

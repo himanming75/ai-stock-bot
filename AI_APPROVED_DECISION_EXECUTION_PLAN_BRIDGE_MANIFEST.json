@@ -1,0 +1,21 @@
+{
+  "stage": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE_MEGA_BUNDLE",
+  "features": [
+    "Approved bridge decision input",
+    "Approved notional to quantity",
+    "Execution Intelligence V2 integration",
+    "Limit or market decision",
+    "Limit price calculation",
+    "Slice count calculation",
+    "Expected slippage",
+    "Execution time limit",
+    "Dry-run execution snapshot"
+  ],
+  "actual_external_network_used": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_order_submission_performed": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_development": "EXECUTION_PLAN_TO_ORDER_TICKET_GENERATOR"
+}
