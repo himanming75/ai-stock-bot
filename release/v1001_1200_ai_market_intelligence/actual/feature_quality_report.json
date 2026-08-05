@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "blockers": [
+        "MISSING_FEATURE:macd",
+        "MISSING_FEATURE:macd_signal",
+        "MISSING_FEATURE:macd_histogram"
+      ],
+      "feature_count": 44,
+      "passed": false,
+      "symbol": "IWM",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "MISSING_FEATURE:macd",
+        "MISSING_FEATURE:macd_signal",
+        "MISSING_FEATURE:macd_histogram"
+      ],
+      "feature_count": 44,
+      "passed": false,
+      "symbol": "QQQ",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "MISSING_FEATURE:macd",
+        "MISSING_FEATURE:macd_signal",
+        "MISSING_FEATURE:macd_histogram"
+      ],
+      "feature_count": 44,
+      "passed": false,
+      "symbol": "SPY",
+      "warnings": []
+    }
+  ],
+  "status": "PARTIAL"
+}
