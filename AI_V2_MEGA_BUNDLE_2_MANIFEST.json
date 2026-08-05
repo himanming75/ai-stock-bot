@@ -1,0 +1,25 @@
+{
+  "stage": "AI_V2_MEGA_BUNDLE_2",
+  "included_features": [
+    "Stock Scanner",
+    "Technical Indicator Engine",
+    "Market Regime Detector",
+    "News Event Scoring Framework",
+    "Earnings Event Framework",
+    "Sector Rotation Analyzer",
+    "Watchlist Ranking",
+    "Strategy Explanation Engine",
+    "Dashboard 2.0 Data Model",
+    "Historical Data Adapter",
+    "Offline End To End Qualification"
+  ],
+  "external_news_api_used": false,
+  "llm_api_used": false,
+  "market_network_used": false,
+  "broker_network_used": false,
+  "broker_write_used": false,
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_bundle": "AI_V2_MEGA_BUNDLE_3_ADVANCED_RESEARCH_FINAL"
+}

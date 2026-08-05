@@ -1,0 +1,98 @@
+[
+  {
+    "earnings": {
+      "block_new_position": false,
+      "earnings_risk": "DISTANT",
+      "score": "0.5800"
+    },
+    "event_score": "0.7400",
+    "indicators": {
+      "atr_14": "2.6000",
+      "last_close": "198.0000",
+      "momentum_5": "0.0154",
+      "relative_volume": "1.1597",
+      "rsi_14": "100.0000",
+      "sma_20": "192.3000",
+      "sma_5": "196.8000",
+      "volatility_20": "0.0611"
+    },
+    "regime_multiplier": "1.0000",
+    "sector": "Technology",
+    "sector_score": "1.0000",
+    "symbol": "AAPL",
+    "technical_score": "0.5855",
+    "total_score": "0.6330"
+  },
+  {
+    "earnings": {
+      "block_new_position": false,
+      "earnings_risk": "UPCOMING",
+      "score": "0.5800"
+    },
+    "event_score": "0.6200",
+    "indicators": {
+      "atr_14": "2.6000",
+      "last_close": "408.0000",
+      "momentum_5": "0.0074",
+      "relative_volume": "1.1597",
+      "rsi_14": "100.0000",
+      "sma_20": "402.3000",
+      "sma_5": "406.8000",
+      "volatility_20": "0.0287"
+    },
+    "regime_multiplier": "1.0000",
+    "sector": "Technology",
+    "sector_score": "1.0000",
+    "symbol": "MSFT",
+    "technical_score": "0.6079",
+    "total_score": "0.6273"
+  },
+  {
+    "earnings": {
+      "block_new_position": false,
+      "earnings_risk": "DISTANT",
+      "score": "0.5800"
+    },
+    "event_score": "0.5900",
+    "indicators": {
+      "atr_14": "2.6000",
+      "last_close": "158.0000",
+      "momentum_5": "0.0194",
+      "relative_volume": "1.1597",
+      "rsi_14": "100.0000",
+      "sma_20": "152.3000",
+      "sma_5": "156.8000",
+      "volatility_20": "0.0778"
+    },
+    "regime_multiplier": "1.0000",
+    "sector": "Healthcare",
+    "sector_score": "0.9050",
+    "symbol": "XLV",
+    "technical_score": "0.5738",
+    "total_score": "0.5851"
+  },
+  {
+    "earnings": {
+      "block_new_position": false,
+      "earnings_risk": "NONE",
+      "score": "0.5000"
+    },
+    "event_score": "0.5300",
+    "indicators": {
+      "atr_14": "2.6000",
+      "last_close": "518.0000",
+      "momentum_5": "0.0058",
+      "relative_volume": "1.1597",
+      "rsi_14": "100.0000",
+      "sma_20": "512.3000",
+      "sma_5": "516.8000",
+      "volatility_20": "0.0225"
+    },
+    "regime_multiplier": "1.0000",
+    "sector": "Financials",
+    "sector_score": "0.7550",
+    "symbol": "SPY",
+    "technical_score": "0.6121",
+    "total_score": "0.5671"
+  }
+]

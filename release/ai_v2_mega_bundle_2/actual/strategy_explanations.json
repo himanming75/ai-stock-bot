@@ -1,0 +1,58 @@
+[
+  {
+    "decision_score": "0.6330",
+    "human_summary": "AAPL score 0.6330 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+    "llm_api_used": false,
+    "reasons": [
+      "PRICE_ABOVE_20_PERIOD_AVERAGE",
+      "POSITIVE_5_PERIOD_MOMENTUM",
+      "ABOVE_AVERAGE_VOLUME",
+      "BULL_MARKET_REGIME",
+      "POSITIVE_EVENT_BALANCE"
+    ],
+    "symbol": "AAPL",
+    "warnings": []
+  },
+  {
+    "decision_score": "0.6273",
+    "human_summary": "MSFT score 0.6273 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+    "llm_api_used": false,
+    "reasons": [
+      "PRICE_ABOVE_20_PERIOD_AVERAGE",
+      "POSITIVE_5_PERIOD_MOMENTUM",
+      "ABOVE_AVERAGE_VOLUME",
+      "BULL_MARKET_REGIME",
+      "POSITIVE_EVENT_BALANCE"
+    ],
+    "symbol": "MSFT",
+    "warnings": []
+  },
+  {
+    "decision_score": "0.5851",
+    "human_summary": "XLV score 0.5851 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+    "llm_api_used": false,
+    "reasons": [
+      "PRICE_ABOVE_20_PERIOD_AVERAGE",
+      "POSITIVE_5_PERIOD_MOMENTUM",
+      "ABOVE_AVERAGE_VOLUME",
+      "BULL_MARKET_REGIME",
+      "POSITIVE_EVENT_BALANCE"
+    ],
+    "symbol": "XLV",
+    "warnings": []
+  },
+  {
+    "decision_score": "0.5671",
+    "human_summary": "SPY score 0.5671 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+    "llm_api_used": false,
+    "reasons": [
+      "PRICE_ABOVE_20_PERIOD_AVERAGE",
+      "POSITIVE_5_PERIOD_MOMENTUM",
+      "ABOVE_AVERAGE_VOLUME",
+      "BULL_MARKET_REGIME",
+      "POSITIVE_EVENT_BALANCE"
+    ],
+    "symbol": "SPY",
+    "warnings": []
+  }
+]

@@ -1,0 +1,3 @@
+git add ai_intelligence tools/run_ai_v2_mega_bundle_2.py tools/test_ai_v2_mega_bundle_2.py tools/verify_ai_v2_mega_bundle_2.py release/ai_v2_mega_bundle_2 RUN_AI_V2_MEGA_BUNDLE_2.ps1 RUN_AI_V2_MEGA_BUNDLE_2_TEST_AND_VERIFY.ps1 AI_V2_MEGA_BUNDLE_2_MANIFEST.json GIT_COMMIT_AI_V2_MEGA_BUNDLE_2.txt
+git commit -m "AI V2 add intelligence platform mega bundle"
+git push origin main

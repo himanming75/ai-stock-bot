@@ -1,0 +1,276 @@
+{
+  "automatic_order_submission_enabled": false,
+  "broker_actions_available": false,
+  "dynamic_risk_decisions": [
+    {
+      "adjusted_notional": "7.20",
+      "base_notional": "10",
+      "blocked": false,
+      "blockers": [],
+      "correlation_multiplier": "0.8000",
+      "drawdown_multiplier": "0.9000",
+      "symbol": "AAPL",
+      "volatility_multiplier": "1.0000"
+    },
+    {
+      "adjusted_notional": "1.75",
+      "base_notional": "10",
+      "blocked": false,
+      "blockers": [],
+      "correlation_multiplier": "0.5000",
+      "drawdown_multiplier": "0.7000",
+      "symbol": "MSFT",
+      "volatility_multiplier": "0.5000"
+    }
+  ],
+  "generated_at": "2026-08-05T07:22:20.324313+00:00",
+  "learning_summary": {
+    "actual_model_training_performed": false,
+    "average_return_pct": "0.0030",
+    "maximum_drawdown": "1.0000",
+    "profit_factor": "7.0000",
+    "trade_count": 4,
+    "win_rate": "0.7500"
+  },
+  "market_regime": {
+    "allocation_multiplier": "1.00",
+    "breadth": "0.68",
+    "index_return_20": "0.06",
+    "regime": "BULL_TREND",
+    "trend_strength": "0.75",
+    "volatility_20": "0.11"
+  },
+  "portfolio_optimization": {
+    "actual_portfolio_modified": false,
+    "cash_weight": "0.2000",
+    "invested_weight": "0.8000",
+    "targets": [
+      {
+        "confidence": "0.9000",
+        "symbol": "AAPL",
+        "target_notional": "297.52",
+        "target_weight": "0.2975"
+      },
+      {
+        "confidence": "0.7200",
+        "symbol": "MSFT",
+        "target_notional": "238.02",
+        "target_weight": "0.2380"
+      },
+      {
+        "confidence": "0.8000",
+        "symbol": "SPY",
+        "target_notional": "264.46",
+        "target_weight": "0.2645"
+      }
+    ]
+  },
+  "read_only": true,
+  "schema_version": 2,
+  "stage": "AI_V2_DASHBOARD_2",
+  "strategy_explanations": [
+    {
+      "decision_score": "0.6330",
+      "human_summary": "AAPL score 0.6330 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+      "llm_api_used": false,
+      "reasons": [
+        "PRICE_ABOVE_20_PERIOD_AVERAGE",
+        "POSITIVE_5_PERIOD_MOMENTUM",
+        "ABOVE_AVERAGE_VOLUME",
+        "BULL_MARKET_REGIME",
+        "POSITIVE_EVENT_BALANCE"
+      ],
+      "symbol": "AAPL",
+      "warnings": []
+    },
+    {
+      "decision_score": "0.6273",
+      "human_summary": "MSFT score 0.6273 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+      "llm_api_used": false,
+      "reasons": [
+        "PRICE_ABOVE_20_PERIOD_AVERAGE",
+        "POSITIVE_5_PERIOD_MOMENTUM",
+        "ABOVE_AVERAGE_VOLUME",
+        "BULL_MARKET_REGIME",
+        "POSITIVE_EVENT_BALANCE"
+      ],
+      "symbol": "MSFT",
+      "warnings": []
+    },
+    {
+      "decision_score": "0.5851",
+      "human_summary": "XLV score 0.5851 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+      "llm_api_used": false,
+      "reasons": [
+        "PRICE_ABOVE_20_PERIOD_AVERAGE",
+        "POSITIVE_5_PERIOD_MOMENTUM",
+        "ABOVE_AVERAGE_VOLUME",
+        "BULL_MARKET_REGIME",
+        "POSITIVE_EVENT_BALANCE"
+      ],
+      "symbol": "XLV",
+      "warnings": []
+    },
+    {
+      "decision_score": "0.5671",
+      "human_summary": "SPY score 0.5671 in BULL_TREND regime; 5 supporting reasons and 0 warnings.",
+      "llm_api_used": false,
+      "reasons": [
+        "PRICE_ABOVE_20_PERIOD_AVERAGE",
+        "POSITIVE_5_PERIOD_MOMENTUM",
+        "ABOVE_AVERAGE_VOLUME",
+        "BULL_MARKET_REGIME",
+        "POSITIVE_EVENT_BALANCE"
+      ],
+      "symbol": "SPY",
+      "warnings": []
+    }
+  ],
+  "strategy_ranking": [
+    {
+      "historical_quality": "0.7238",
+      "regime_fit": "0.9000",
+      "risk_penalty": "0.1300",
+      "signal_quality": "0.8200",
+      "strategy_id": "momentum_v2",
+      "total_score": "0.7778"
+    },
+    {
+      "historical_quality": "0.7060",
+      "regime_fit": "0.6200",
+      "risk_penalty": "0.0900",
+      "signal_quality": "0.7000",
+      "strategy_id": "mean_reversion_v2",
+      "total_score": "0.6556"
+    },
+    {
+      "historical_quality": "0.5565",
+      "regime_fit": "0.7500",
+      "risk_penalty": "0.2200",
+      "signal_quality": "0.6500",
+      "strategy_id": "breakout_v2",
+      "total_score": "0.5923"
+    }
+  ],
+  "top_sectors": [
+    {
+      "breadth": "0.72",
+      "return_20": "0.08",
+      "return_5": "0.025",
+      "score": "1.0000",
+      "sector": "Technology"
+    },
+    {
+      "breadth": "0.61",
+      "return_20": "0.035",
+      "return_5": "0.010",
+      "score": "0.9050",
+      "sector": "Healthcare"
+    },
+    {
+      "breadth": "0.48",
+      "return_20": "0.015",
+      "return_5": "-0.005",
+      "score": "0.7550",
+      "sector": "Financials"
+    }
+  ],
+  "top_symbols": [
+    {
+      "earnings": {
+        "block_new_position": false,
+        "earnings_risk": "DISTANT",
+        "score": "0.5800"
+      },
+      "event_score": "0.7400",
+      "indicators": {
+        "atr_14": "2.6000",
+        "last_close": "198.0000",
+        "momentum_5": "0.0154",
+        "relative_volume": "1.1597",
+        "rsi_14": "100.0000",
+        "sma_20": "192.3000",
+        "sma_5": "196.8000",
+        "volatility_20": "0.0611"
+      },
+      "regime_multiplier": "1.0000",
+      "sector": "Technology",
+      "sector_score": "1.0000",
+      "symbol": "AAPL",
+      "technical_score": "0.5855",
+      "total_score": "0.6330"
+    },
+    {
+      "earnings": {
+        "block_new_position": false,
+        "earnings_risk": "UPCOMING",
+        "score": "0.5800"
+      },
+      "event_score": "0.6200",
+      "indicators": {
+        "atr_14": "2.6000",
+        "last_close": "408.0000",
+        "momentum_5": "0.0074",
+        "relative_volume": "1.1597",
+        "rsi_14": "100.0000",
+        "sma_20": "402.3000",
+        "sma_5": "406.8000",
+        "volatility_20": "0.0287"
+      },
+      "regime_multiplier": "1.0000",
+      "sector": "Technology",
+      "sector_score": "1.0000",
+      "symbol": "MSFT",
+      "technical_score": "0.6079",
+      "total_score": "0.6273"
+    },
+    {
+      "earnings": {
+        "block_new_position": false,
+        "earnings_risk": "DISTANT",
+        "score": "0.5800"
+      },
+      "event_score": "0.5900",
+      "indicators": {
+        "atr_14": "2.6000",
+        "last_close": "158.0000",
+        "momentum_5": "0.0194",
+        "relative_volume": "1.1597",
+        "rsi_14": "100.0000",
+        "sma_20": "152.3000",
+        "sma_5": "156.8000",
+        "volatility_20": "0.0778"
+      },
+      "regime_multiplier": "1.0000",
+      "sector": "Healthcare",
+      "sector_score": "0.9050",
+      "symbol": "XLV",
+      "technical_score": "0.5738",
+      "total_score": "0.5851"
+    },
+    {
+      "earnings": {
+        "block_new_position": false,
+        "earnings_risk": "NONE",
+        "score": "0.5000"
+      },
+      "event_score": "0.5300",
+      "indicators": {
+        "atr_14": "2.6000",
+        "last_close": "518.0000",
+        "momentum_5": "0.0058",
+        "relative_volume": "1.1597",
+        "rsi_14": "100.0000",
+        "sma_20": "512.3000",
+        "sma_5": "516.8000",
+        "volatility_20": "0.0225"
+      },
+      "regime_multiplier": "1.0000",
+      "sector": "Financials",
+      "sector_score": "0.7550",
+      "symbol": "SPY",
+      "technical_score": "0.6121",
+      "total_score": "0.5671"
+    }
+  ]
+}
