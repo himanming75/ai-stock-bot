@@ -1,0 +1,10 @@
+{
+  "derive_missing_watchdog_summary": true,
+  "normalize_parent_child_python_processes": true,
+  "automatic_runtime_modification_allowed": false,
+  "automatic_process_termination_allowed": false,
+  "automatic_lock_deletion_allowed": false,
+  "autonomous_submission_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}

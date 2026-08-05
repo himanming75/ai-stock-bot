@@ -1,0 +1,12 @@
+{
+  "autonomous_submission": false,
+  "certificate_id": "readiness_05b98ec1d60b5170d7a9ae71",
+  "generated_at": "2026-08-05T19:38:57.876038+00:00",
+  "live_orders_submitted": 0,
+  "normalized_blocker_count": 0,
+  "operational_blocker_count": 0,
+  "original_blocker_count": 0,
+  "paper_orders_submitted": 0,
+  "readiness_level": "OPERATIONALLY_READY_SUBMISSION_DISABLED",
+  "resolved_by_normalization_count": 0
+}

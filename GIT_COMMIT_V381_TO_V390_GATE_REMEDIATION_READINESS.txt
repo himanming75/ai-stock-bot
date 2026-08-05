@@ -1,0 +1,10 @@
+git add gate_remediation_readiness
+git add tools/run_v381_to_v390_gate_remediation_readiness.py
+git add tools/test_v381_to_v390_gate_remediation_readiness.py
+git add release/v381_390_gate_remediation_readiness
+git add RUN_V381_TO_V390_GATE_REMEDIATION_READINESS.ps1
+git add RUN_V381_TO_V390_GATE_REMEDIATION_READINESS_TEST.ps1
+git add V381_TO_V390_GATE_REMEDIATION_READINESS_MANIFEST.json
+git add GIT_COMMIT_V381_TO_V390_GATE_REMEDIATION_READINESS.txt
+git commit -m "Add V381-V390 gate remediation readiness certificate"
+git push origin main

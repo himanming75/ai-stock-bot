@@ -1,0 +1,11 @@
+{
+  "action": null,
+  "derived": true,
+  "generated_at": "2026-08-05T19:38:57.876038+00:00",
+  "original_summary_exists": true,
+  "restart_count": 0,
+  "runtime_files_modified": false,
+  "source": "watchdog_summary.json",
+  "status": "PASS",
+  "stop_reason": "CONTROLLER_COMPLETED"
+}
