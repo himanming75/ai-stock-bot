@@ -1,0 +1,3 @@
+git add execution_authorization/local_dispatch_release.py execution_authorization/local_dispatch_release_guard.py tools/run_v392_08a.py tools/test_v392_08a.py tools/verify_v392_08a.py release/v392_08a RUN_V392_08A_LOCAL_DISPATCH_RELEASE_GATE.ps1 RUN_V392_08A_TEST_AND_VERIFY.ps1 V392_08A_MANIFEST.json GIT_COMMIT_V392_08A.txt
+git commit -m "V392.08A add local dispatch release gate"
+git push origin main
