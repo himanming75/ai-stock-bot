@@ -1,0 +1,12 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_order_replay_enabled": false,
+  "last_cycle_number": 3,
+  "new_order_submission_allowed": false,
+  "reason": "OPERATOR_STOP",
+  "runtime_id": "paper-runtime-01",
+  "shutdown_at": "2026-08-05T05:23:54.288182+00:00",
+  "stage": "O4_GRACEFUL_SHUTDOWN",
+  "state": "SHUTDOWN_MARKED"
+}

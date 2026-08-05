@@ -1,0 +1,19 @@
+{
+  "stage": "O4",
+  "features": [
+    "Runtime Resume Plan",
+    "Operator Resume Checklist",
+    "Session Rotation Registry",
+    "Graceful Shutdown Marker",
+    "Next Day Resume Preparation",
+    "Daily JSON Report",
+    "Daily CSV Summary"
+  ],
+  "automatic_resume_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "live_activation_allowed": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}

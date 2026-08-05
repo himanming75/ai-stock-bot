@@ -1,0 +1,77 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "all_complete": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_resume_enabled": false,
+  "checklist": [
+    {
+      "complete": false,
+      "item": "Verify Alpaca Paper endpoint",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Verify fresh Paper API credentials are local only",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Review Kill Switch state",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Review open orders and positions",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Run P4 actual preflight",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Confirm no duplicate runtime lock or cycle",
+      "required": true
+    },
+    {
+      "complete": false,
+      "item": "Confirm operator-controlled resume",
+      "required": true
+    }
+  ],
+  "generated_at": "2026-08-05T05:23:44.132019+00:00",
+  "resume_plan": {
+    "actual_live_orders_submitted": 0,
+    "actual_paper_orders_submitted": 0,
+    "automatic_broker_restart_enabled": false,
+    "automatic_order_replay_enabled": false,
+    "automatic_resume_enabled": false,
+    "blockers": [
+      "p2_actual_validation_present",
+      "p3_actual_validation_present"
+    ],
+    "checks": {
+      "checkpoint_present": true,
+      "health_not_blocked": true,
+      "kill_switch_readable": true,
+      "p2_actual_validation_present": false,
+      "p3_actual_validation_present": false,
+      "scheduler_pass": true,
+      "watchdog_pass": true
+    },
+    "observed_at": "2026-08-05T05:23:44.132006+00:00",
+    "operator_review_required": true,
+    "required_sequence": [
+      "RUN_P4_ACTUAL_RUNTIME_PREFLIGHT",
+      "REVIEW_KILL_SWITCH_AND_CHECKPOINT",
+      "REVIEW_OPEN_ORDERS_AND_POSITIONS",
+      "CONFIRM_NO_DUPLICATE_CYCLE",
+      "START_NEW_RUNTIME_SESSION"
+    ],
+    "safe_to_prepare_resume": false,
+    "stage": "O4_RESUME_PLAN"
+  },
+  "stage": "O4_OPERATOR_CHECKLIST"
+}

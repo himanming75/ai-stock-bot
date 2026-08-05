@@ -1,0 +1,31 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_resume_enabled": false,
+  "blockers": [
+    "p2_actual_validation_present",
+    "p3_actual_validation_present"
+  ],
+  "checks": {
+    "checkpoint_present": true,
+    "health_not_blocked": true,
+    "kill_switch_readable": true,
+    "p2_actual_validation_present": false,
+    "p3_actual_validation_present": false,
+    "scheduler_pass": true,
+    "watchdog_pass": true
+  },
+  "observed_at": "2026-08-05T05:23:35.025942+00:00",
+  "operator_review_required": true,
+  "required_sequence": [
+    "RUN_P4_ACTUAL_RUNTIME_PREFLIGHT",
+    "REVIEW_KILL_SWITCH_AND_CHECKPOINT",
+    "REVIEW_OPEN_ORDERS_AND_POSITIONS",
+    "CONFIRM_NO_DUPLICATE_CYCLE",
+    "START_NEW_RUNTIME_SESSION"
+  ],
+  "safe_to_prepare_resume": false,
+  "stage": "O4_RESUME_PLAN"
+}

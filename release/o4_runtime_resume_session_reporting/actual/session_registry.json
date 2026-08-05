@@ -1,0 +1,37 @@
+{
+  "sessions": [
+    {
+      "automatic_broker_restart_enabled": false,
+      "automatic_order_replay_enabled": false,
+      "created_at": "2026-08-05T05:23:21.014016+00:00",
+      "prior_session_id": null,
+      "reason": "OPERATOR_PREPARED_SESSION",
+      "session_id": "session-2026-08-04-0001",
+      "session_number": 1,
+      "state": "PREPARED",
+      "trading_day": "2026-08-04"
+    },
+    {
+      "automatic_broker_restart_enabled": false,
+      "automatic_order_replay_enabled": false,
+      "created_at": "2026-08-05T05:23:26.042049+00:00",
+      "prior_session_id": "session-2026-08-04-0001",
+      "reason": "OPERATOR_PREPARED_SESSION",
+      "session_id": "session-2026-08-04-0002",
+      "session_number": 2,
+      "state": "PREPARED",
+      "trading_day": "2026-08-04"
+    },
+    {
+      "automatic_broker_restart_enabled": false,
+      "automatic_order_replay_enabled": false,
+      "created_at": "2026-08-05T05:23:48.632250+00:00",
+      "prior_session_id": "session-2026-08-04-0002",
+      "reason": "OPERATOR_PREPARED_SESSION",
+      "session_id": "session-2026-08-04-0003",
+      "session_number": 3,
+      "state": "PREPARED",
+      "trading_day": "2026-08-04"
+    }
+  ]
+}
