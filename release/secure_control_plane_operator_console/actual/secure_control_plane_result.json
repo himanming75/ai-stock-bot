@@ -1,0 +1,497 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_configuration_applied": false,
+  "actual_emergency_stop_activated": false,
+  "actual_external_network_used": false,
+  "actual_kill_switch_changed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_runtime_started": false,
+  "actual_runtime_stopped": false,
+  "actual_scheduler_changed": false,
+  "actual_strategy_change_performed": false,
+  "actual_worker_scale_changed": false,
+  "approval_inbox": "READY_PREVIEW_ONLY",
+  "approval_reviews": [
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-0397fb6db4accf03142f3973",
+      "reviewed_at": "2026-08-05T09:01:08.388215+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-91445f24e0da740672dabfa8",
+      "reviewed_at": "2026-08-05T09:01:08.397036+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-c3041e89ed57409dd36008e2",
+      "reviewed_at": "2026-08-05T09:01:08.401957+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-86665592ef26a51a7874461a",
+      "reviewed_at": "2026-08-05T09:01:08.414742+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-cd91fca87ef80e1a04ca158a",
+      "reviewed_at": "2026-08-05T09:01:08.419000+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-32e07fd52161824c809272b3",
+      "reviewed_at": "2026-08-05T09:01:08.425132+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-b88b07e1c59eb42eae78347b",
+      "reviewed_at": "2026-08-05T09:01:08.429727+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    },
+    {
+      "actual_approval_applied": false,
+      "actual_change_applied": false,
+      "comment": "Offline preview accepted; no change may be applied.",
+      "decision": "APPROVE_PREVIEW",
+      "request_id": "control-db26cf47dcc6666ec7611e2f",
+      "reviewed_at": "2026-08-05T09:01:08.433432+00:00",
+      "reviewer_id": "approver-safety",
+      "reviewer_role": "APPROVER"
+    }
+  ],
+  "audit_ledger": "READY",
+  "change_requests": [
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.388038+00:00",
+      "idempotency_key": "offline-control-1",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "automatic_order_submission_enabled": false,
+        "broker_mode": "paper",
+        "worker_count": 4,
+        "write_enabled": false
+      },
+      "reason": "Prepare a reviewed worker-count configuration change.",
+      "request_id": "control-0397fb6db4accf03142f3973",
+      "request_type": "CONFIGURATION_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "offline runtime configuration"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.396983+00:00",
+      "idempotency_key": "offline-control-2",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "target_state": "ENABLE_PREVIEW"
+      },
+      "reason": "Preview enabling momentum strategy.",
+      "request_id": "control-91445f24e0da740672dabfa8",
+      "request_type": "STRATEGY_STATE_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "momentum_v3"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.401847+00:00",
+      "idempotency_key": "offline-control-3",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "weight": 0.35
+      },
+      "reason": "Preview a bounded strategy weight change.",
+      "request_id": "control-c3041e89ed57409dd36008e2",
+      "request_type": "STRATEGY_WEIGHT_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "ensemble momentum weight"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.414643+00:00",
+      "idempotency_key": "offline-control-4",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "target_state": "START_PREVIEW"
+      },
+      "reason": "Preview runtime startup without starting it.",
+      "request_id": "control-86665592ef26a51a7874461a",
+      "request_type": "RUNTIME_STATE_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "paper runtime"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.418956+00:00",
+      "idempotency_key": "offline-control-5",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "worker_count": 4
+      },
+      "reason": "Preview worker pool scaling.",
+      "request_id": "control-cd91fca87ef80e1a04ca158a",
+      "request_type": "WORKER_SCALE_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "scanner worker pool"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.425071+00:00",
+      "idempotency_key": "offline-control-6",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "interval_seconds": 60
+      },
+      "reason": "Preview scheduler interval change.",
+      "request_id": "control-32e07fd52161824c809272b3",
+      "request_type": "SCHEDULER_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "scanner interval"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.429682+00:00",
+      "idempotency_key": "offline-control-7",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "target_state": "ACTIVATE_PREVIEW"
+      },
+      "reason": "Preview global kill switch activation.",
+      "request_id": "control-b88b07e1c59eb42eae78347b",
+      "request_type": "KILL_SWITCH_CHANGE",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "global trading kill switch"
+    },
+    {
+      "actual_configuration_applied": false,
+      "actual_emergency_stop_activated": false,
+      "actual_kill_switch_changed": false,
+      "actual_runtime_action_performed": false,
+      "actual_strategy_change_performed": false,
+      "created_at": "2026-08-05T09:01:08.433289+00:00",
+      "idempotency_key": "offline-control-8",
+      "operator_id": "operator-james",
+      "policy_pass": true,
+      "proposed_value": {
+        "target_state": "ACTIVATE_PREVIEW"
+      },
+      "reason": "Preview emergency runtime stop.",
+      "request_id": "control-db26cf47dcc6666ec7611e2f",
+      "request_type": "EMERGENCY_STOP_REQUEST",
+      "requires_separate_approver": true,
+      "state": "PENDING_PREVIEW",
+      "subject": "all paper runtime processes"
+    }
+  ],
+  "checks": {
+    "all_policies_pass": true,
+    "all_requests_pending_preview": true,
+    "all_reviews_not_applied": true,
+    "automatic_orders_off": true,
+    "broker_write_off": true,
+    "duplicate_request_suppressed": true,
+    "eight_confirmation_challenges": true,
+    "eight_preview_reviews": true,
+    "eight_requests_created": true,
+    "kill_switch_preview_only": true,
+    "live_trading_off": true,
+    "p2_pass": true,
+    "self_approval_rejected": true,
+    "sensitive_values_redacted": true,
+    "three_sessions_created": true,
+    "tokens_not_stored": true
+  },
+  "configuration_change_request": "READY_PREVIEW_ONLY",
+  "confirmation_challenges": [
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "87c83eee0f5e5379199d7d24",
+      "expires_in_seconds": 300,
+      "operation": "CONFIGURATION_CHANGE",
+      "request_id": "control-0397fb6db4accf03142f3973"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "e2bf4767d900a37d45b90a52",
+      "expires_in_seconds": 300,
+      "operation": "STRATEGY_STATE_CHANGE",
+      "request_id": "control-91445f24e0da740672dabfa8"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "8b1bb8f7c1639b0f8c1b3876",
+      "expires_in_seconds": 300,
+      "operation": "STRATEGY_WEIGHT_CHANGE",
+      "request_id": "control-c3041e89ed57409dd36008e2"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "255aea6d4a2b5f9055d66cac",
+      "expires_in_seconds": 300,
+      "operation": "RUNTIME_STATE_CHANGE",
+      "request_id": "control-86665592ef26a51a7874461a"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "9a0610946c3ff5743f88e38f",
+      "expires_in_seconds": 300,
+      "operation": "WORKER_SCALE_CHANGE",
+      "request_id": "control-cd91fca87ef80e1a04ca158a"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "863b4c8491a0e54e4d79b71b",
+      "expires_in_seconds": 300,
+      "operation": "SCHEDULER_CHANGE",
+      "request_id": "control-32e07fd52161824c809272b3"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "07e42278c027d114acad25d9",
+      "expires_in_seconds": 300,
+      "operation": "KILL_SWITCH_CHANGE",
+      "request_id": "control-b88b07e1c59eb42eae78347b"
+    },
+    {
+      "actual_change_applied": false,
+      "actual_confirmation_accepted": false,
+      "challenge_fingerprint": "b3623970b5e27f0ea75804d7",
+      "expires_in_seconds": 300,
+      "operation": "EMERGENCY_STOP_REQUEST",
+      "request_id": "control-db26cf47dcc6666ec7611e2f"
+    }
+  ],
+  "emergency_stop_control": "READY_PREVIEW_ONLY",
+  "failed": [],
+  "idempotency_protection": "READY",
+  "kill_switch_control": "READY_PREVIEW_ONLY",
+  "kill_switch_preview": {
+    "actual_kill_switch_changed": false,
+    "broker_cancel_attempted": false,
+    "current_actual_state": "UNCHANGED",
+    "network_used": false,
+    "preview_state": "ACTIVATE_PREVIEW",
+    "requested_state": "ACTIVATE_PREVIEW",
+    "runtime_stop_attempted": false
+  },
+  "next_fixed_offline_development": "RUNTIME_SERVICE_PACKAGING_AND_INSTALLATION_PREVIEW",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "operational_status": {
+    "automatic_order_submission_enabled": false,
+    "broker_write_enabled": false,
+    "collected_at": "2026-08-05T09:01:08.442054+00:00",
+    "live_trading_enabled": false,
+    "monitoring_status": "PASS",
+    "operational_resilience_status": "PASS",
+    "p2_status": "PASS",
+    "p2_validated": true,
+    "paper_endpoint": "https://paper-api.alpaca.markets",
+    "release_gate": "LOCKED",
+    "runtime_health": "PASS"
+  },
+  "operational_status_aggregation": "READY",
+  "operator_console": "READY_READ_ONLY",
+  "operator_sessions": [
+    {
+      "expires_at": "2026-08-05T09:31:08.385006+00:00",
+      "issued_at": "2026-08-05T09:01:08.385006+00:00",
+      "operator_id": "operator-james",
+      "raw_token_printed": false,
+      "raw_token_stored": false,
+      "role": "OPERATOR",
+      "session_active_in_runtime": false,
+      "token_fingerprint": "da0bc1a025d063df44142f83"
+    },
+    {
+      "expires_at": "2026-08-05T09:31:08.385374+00:00",
+      "issued_at": "2026-08-05T09:01:08.385374+00:00",
+      "operator_id": "approver-safety",
+      "raw_token_printed": false,
+      "raw_token_stored": false,
+      "role": "APPROVER",
+      "session_active_in_runtime": false,
+      "token_fingerprint": "d8c826f8afb339326dad8ac0"
+    },
+    {
+      "expires_at": "2026-08-05T09:31:08.385417+00:00",
+      "issued_at": "2026-08-05T09:01:08.385417+00:00",
+      "operator_id": "viewer-audit",
+      "raw_token_printed": false,
+      "raw_token_stored": false,
+      "role": "VIEWER",
+      "session_active_in_runtime": false,
+      "token_fingerprint": "db5e342c0f45d92ea145622c"
+    }
+  ],
+  "policy_results": [
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-0397fb6db4accf03142f3973"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-91445f24e0da740672dabfa8"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-c3041e89ed57409dd36008e2"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-86665592ef26a51a7874461a"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-cd91fca87ef80e1a04ca158a"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-32e07fd52161824c809272b3"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-b88b07e1c59eb42eae78347b"
+    },
+    {
+      "actual_change_allowed": false,
+      "actual_change_applied": false,
+      "blockers": [],
+      "policy_pass": true,
+      "preview_allowed": true,
+      "request_id": "control-db26cf47dcc6666ec7611e2f"
+    }
+  ],
+  "redaction_fixture": {
+    "api_key": "[REDACTED]",
+    "nested": {
+      "safe_value": "visible",
+      "secret_key": "[REDACTED]"
+    }
+  },
+  "role_permission_model": "READY",
+  "runtime_state_control": "READY_PREVIEW_ONLY",
+  "scheduler_control": "READY_PREVIEW_ONLY",
+  "sensitive_value_redaction": "READY",
+  "session_management": "READY_PREVIEW_ONLY",
+  "stage": "SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MEGA_BUNDLE",
+  "state": "OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "strategy_state_control": "READY_PREVIEW_ONLY",
+  "strategy_weight_control": "READY_PREVIEW_ONLY",
+  "two_step_confirmation": "READY_PREVIEW_ONLY",
+  "worker_scale_control": "READY_PREVIEW_ONLY"
+}

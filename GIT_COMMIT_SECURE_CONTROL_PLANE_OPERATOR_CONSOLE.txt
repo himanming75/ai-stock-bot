@@ -1,0 +1,3 @@
+git add secure_control_plane tools/run_secure_control_plane.py tools/run_secure_operator_console.py tools/test_secure_control_plane.py tools/verify_secure_control_plane.py release/secure_control_plane_operator_console RUN_SECURE_CONTROL_PLANE.ps1 RUN_SECURE_OPERATOR_CONSOLE.ps1 RUN_SECURE_CONTROL_PLANE_TEST_AND_VERIFY.ps1 SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MANIFEST.json GIT_COMMIT_SECURE_CONTROL_PLANE_OPERATOR_CONSOLE.txt
+git commit -m "Add secure control plane and operator console"
+git push origin main
