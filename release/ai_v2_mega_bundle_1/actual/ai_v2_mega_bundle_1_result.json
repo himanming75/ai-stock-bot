@@ -1,0 +1,113 @@
+{
+  "actual_broker_network_used": false,
+  "actual_broker_write_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_machine_learning_training_performed": false,
+  "actual_market_data_network_used": false,
+  "actual_news_data_used": false,
+  "actual_paper_orders_submitted": 0,
+  "ai_strategy_ensemble": "READY",
+  "automatic_order_submission_enabled": false,
+  "checks": {
+    "broker_network_off": true,
+    "broker_write_off": true,
+    "learning_records_created": true,
+    "model_training_not_claimed": true,
+    "orders_zero": true,
+    "portfolio_not_modified": true,
+    "portfolio_targets_created": true,
+    "ranking_descending": true,
+    "risk_adjusts_notional": true,
+    "risk_decisions_created": true,
+    "strategy_scores_created": true
+  },
+  "dynamic_risk_decisions": [
+    {
+      "adjusted_notional": "7.20",
+      "base_notional": "10",
+      "blocked": false,
+      "blockers": [],
+      "correlation_multiplier": "0.8000",
+      "drawdown_multiplier": "0.9000",
+      "symbol": "AAPL",
+      "volatility_multiplier": "1.0000"
+    },
+    {
+      "adjusted_notional": "1.75",
+      "base_notional": "10",
+      "blocked": false,
+      "blockers": [],
+      "correlation_multiplier": "0.5000",
+      "drawdown_multiplier": "0.7000",
+      "symbol": "MSFT",
+      "volatility_multiplier": "0.5000"
+    }
+  ],
+  "dynamic_risk_engine_v2": "READY",
+  "failed": [],
+  "learning_summary": {
+    "actual_model_training_performed": false,
+    "average_return_pct": "0.0030",
+    "maximum_drawdown": "1.0000",
+    "profit_factor": "7.0000",
+    "trade_count": 4,
+    "win_rate": "0.7500"
+  },
+  "next_fixed_bundle": "AI_V2_MEGA_BUNDLE_2_DATA_SCANNER_NEWS_DASHBOARD",
+  "performance_learning_ledger": "READY",
+  "portfolio_optimization": {
+    "actual_portfolio_modified": false,
+    "cash_weight": "0.2000",
+    "invested_weight": "0.8000",
+    "targets": [
+      {
+        "confidence": "0.9000",
+        "symbol": "AAPL",
+        "target_notional": "297.52",
+        "target_weight": "0.2975"
+      },
+      {
+        "confidence": "0.7200",
+        "symbol": "MSFT",
+        "target_notional": "238.02",
+        "target_weight": "0.2380"
+      },
+      {
+        "confidence": "0.8000",
+        "symbol": "SPY",
+        "target_notional": "264.46",
+        "target_weight": "0.2645"
+      }
+    ]
+  },
+  "portfolio_optimizer": "READY",
+  "stage": "AI_V2_MEGA_BUNDLE_1",
+  "state": "AI_STRATEGY_LEARNING_PORTFOLIO_RISK_OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "strategy_ranking": [
+    {
+      "historical_quality": "0.7238",
+      "regime_fit": "0.9000",
+      "risk_penalty": "0.1300",
+      "signal_quality": "0.8200",
+      "strategy_id": "momentum_v2",
+      "total_score": "0.7778"
+    },
+    {
+      "historical_quality": "0.7060",
+      "regime_fit": "0.6200",
+      "risk_penalty": "0.0900",
+      "signal_quality": "0.7000",
+      "strategy_id": "mean_reversion_v2",
+      "total_score": "0.6556"
+    },
+    {
+      "historical_quality": "0.5565",
+      "regime_fit": "0.7500",
+      "risk_penalty": "0.2200",
+      "signal_quality": "0.6500",
+      "strategy_id": "breakout_v2",
+      "total_score": "0.5923"
+    }
+  ]
+}
