@@ -1,0 +1,705 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "actual_runtime_activation_performed": false,
+  "automatic_order_submission_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "checks": {
+    "all_cycles_pass": true,
+    "candidate_created_each_cycle": true,
+    "live_orders_zero": true,
+    "network_off": true,
+    "paper_orders_zero": true,
+    "portfolio_not_modified": true,
+    "submission_off": true,
+    "three_cycles": true,
+    "write_off": true
+  },
+  "completed_cycle_count": 3,
+  "cycles": [
+    {
+      "actual_live_orders_submitted": 0,
+      "actual_paper_orders_submitted": 0,
+      "actual_portfolio_modified": false,
+      "actual_strategy_execution_enabled": false,
+      "automatic_order_submission_enabled": false,
+      "broker_network_enabled": false,
+      "broker_write_enabled": false,
+      "cycle_id": "cycle-7c712af01de74fcf81d9912993dd8dea",
+      "cycle_number": 1,
+      "horizon": "ultra_short",
+      "observed_at": "2026-08-05T06:56:34.233462+00:00",
+      "order_candidate_count": 1,
+      "order_candidates": [
+        {
+          "broker_mode": "paper",
+          "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+          "notional": "8.00",
+          "order_type": "market",
+          "reference_price": "200",
+          "side": "buy",
+          "strategy_id": "fixture_momentum_v1",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        }
+      ],
+      "profile_name": "paper_ultra_short",
+      "session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+      "signal_count": 3,
+      "signals": [
+        {
+          "allocation": {
+            "allocation_fraction": "0.8000",
+            "approved_notional": "8.00",
+            "blocked": false,
+            "blockers": [],
+            "requested_notional": "8.00",
+            "side": "buy",
+            "symbol": "AAPL"
+          },
+          "order_candidate": {
+            "broker_mode": "paper",
+            "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+            "notional": "8.00",
+            "order_type": "market",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "submit_allowed": false,
+            "symbol": "AAPL",
+            "time_in_force": "day"
+          },
+          "portfolio_preview": {
+            "actual_portfolio_modified": false,
+            "cash": "100000",
+            "gross_exposure": "8.00",
+            "positions": {},
+            "preview_only": true,
+            "symbol_exposure": {
+              "AAPL": "8.00"
+            }
+          },
+          "portfolio_validation": {
+            "actual_portfolio_modified": false,
+            "checks": {
+              "candidate_submit_flag_off": true,
+              "gross_exposure_within_limit": true,
+              "notional_positive": true,
+              "order_type_allowed": true,
+              "symbol_allowed": true,
+              "symbol_exposure_within_limit": true
+            },
+            "failed": [],
+            "projected_gross_exposure": "8.00",
+            "projected_symbol_exposure": "8.00",
+            "valid": true
+          },
+          "risk": {
+            "approved": true,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.80",
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "MSFT"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "400",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "SPY"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "500",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "SPY"
+          }
+        }
+      ],
+      "stage": "BUNDLE_A_R7_TO_R10",
+      "status": "PASS",
+      "strategy_execution_preview_only": true,
+      "strategy_id": "fixture_momentum_v1"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "actual_paper_orders_submitted": 0,
+      "actual_portfolio_modified": false,
+      "actual_strategy_execution_enabled": false,
+      "automatic_order_submission_enabled": false,
+      "broker_network_enabled": false,
+      "broker_write_enabled": false,
+      "cycle_id": "cycle-8bb261c13dfb47fd9c848b4ad8485f8f",
+      "cycle_number": 2,
+      "horizon": "ultra_short",
+      "observed_at": "2026-08-05T06:56:34.233672+00:00",
+      "order_candidate_count": 1,
+      "order_candidates": [
+        {
+          "broker_mode": "paper",
+          "candidate_id": "r10-1b3ae28140c64e2eb306cf9a",
+          "notional": "8.00",
+          "order_type": "market",
+          "reference_price": "200",
+          "side": "buy",
+          "strategy_id": "fixture_momentum_v1",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        }
+      ],
+      "profile_name": "paper_ultra_short",
+      "session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+      "signal_count": 3,
+      "signals": [
+        {
+          "allocation": {
+            "allocation_fraction": "0.8000",
+            "approved_notional": "8.00",
+            "blocked": false,
+            "blockers": [],
+            "requested_notional": "8.00",
+            "side": "buy",
+            "symbol": "AAPL"
+          },
+          "order_candidate": {
+            "broker_mode": "paper",
+            "candidate_id": "r10-1b3ae28140c64e2eb306cf9a",
+            "notional": "8.00",
+            "order_type": "market",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "submit_allowed": false,
+            "symbol": "AAPL",
+            "time_in_force": "day"
+          },
+          "portfolio_preview": {
+            "actual_portfolio_modified": false,
+            "cash": "100000",
+            "gross_exposure": "8.00",
+            "positions": {},
+            "preview_only": true,
+            "symbol_exposure": {
+              "AAPL": "8.00"
+            }
+          },
+          "portfolio_validation": {
+            "actual_portfolio_modified": false,
+            "checks": {
+              "candidate_submit_flag_off": true,
+              "gross_exposure_within_limit": true,
+              "notional_positive": true,
+              "order_type_allowed": true,
+              "symbol_allowed": true,
+              "symbol_exposure_within_limit": true
+            },
+            "failed": [],
+            "projected_gross_exposure": "8.00",
+            "projected_symbol_exposure": "8.00",
+            "valid": true
+          },
+          "risk": {
+            "approved": true,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.80",
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "MSFT"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "400",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "SPY"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "500",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "SPY"
+          }
+        }
+      ],
+      "stage": "BUNDLE_A_R7_TO_R10",
+      "status": "PASS",
+      "strategy_execution_preview_only": true,
+      "strategy_id": "fixture_momentum_v1"
+    },
+    {
+      "actual_live_orders_submitted": 0,
+      "actual_paper_orders_submitted": 0,
+      "actual_portfolio_modified": false,
+      "actual_strategy_execution_enabled": false,
+      "automatic_order_submission_enabled": false,
+      "broker_network_enabled": false,
+      "broker_write_enabled": false,
+      "cycle_id": "cycle-0fe6763a41594d0e920e7cc13b2a3f06",
+      "cycle_number": 3,
+      "horizon": "ultra_short",
+      "observed_at": "2026-08-05T06:56:34.233825+00:00",
+      "order_candidate_count": 1,
+      "order_candidates": [
+        {
+          "broker_mode": "paper",
+          "candidate_id": "r10-3de1cab5da1459c32fad1431",
+          "notional": "8.00",
+          "order_type": "market",
+          "reference_price": "200",
+          "side": "buy",
+          "strategy_id": "fixture_momentum_v1",
+          "submit_allowed": false,
+          "symbol": "AAPL",
+          "time_in_force": "day"
+        }
+      ],
+      "profile_name": "paper_ultra_short",
+      "session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+      "signal_count": 3,
+      "signals": [
+        {
+          "allocation": {
+            "allocation_fraction": "0.8000",
+            "approved_notional": "8.00",
+            "blocked": false,
+            "blockers": [],
+            "requested_notional": "8.00",
+            "side": "buy",
+            "symbol": "AAPL"
+          },
+          "order_candidate": {
+            "broker_mode": "paper",
+            "candidate_id": "r10-3de1cab5da1459c32fad1431",
+            "notional": "8.00",
+            "order_type": "market",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "submit_allowed": false,
+            "symbol": "AAPL",
+            "time_in_force": "day"
+          },
+          "portfolio_preview": {
+            "actual_portfolio_modified": false,
+            "cash": "100000",
+            "gross_exposure": "8.00",
+            "positions": {},
+            "preview_only": true,
+            "symbol_exposure": {
+              "AAPL": "8.00"
+            }
+          },
+          "portfolio_validation": {
+            "actual_portfolio_modified": false,
+            "checks": {
+              "candidate_submit_flag_off": true,
+              "gross_exposure_within_limit": true,
+              "notional_positive": true,
+              "order_type_allowed": true,
+              "symbol_allowed": true,
+              "symbol_exposure_within_limit": true
+            },
+            "failed": [],
+            "projected_gross_exposure": "8.00",
+            "projected_symbol_exposure": "8.00",
+            "valid": true
+          },
+          "risk": {
+            "approved": true,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "200",
+            "side": "buy",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.80",
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "MSFT"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "400",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "allocation": {
+            "allocation_fraction": "0.0000",
+            "approved_notional": "0",
+            "blocked": true,
+            "blockers": [
+              "HOLD_SIGNAL"
+            ],
+            "requested_notional": "2.00",
+            "side": "hold",
+            "symbol": "SPY"
+          },
+          "order_candidate": null,
+          "portfolio_preview": null,
+          "portfolio_validation": null,
+          "risk": {
+            "approved": false,
+            "broker_submission_allowed": false,
+            "checks": {
+              "broker_network_off": true,
+              "broker_write_off": true,
+              "daily_loss_within_limit": true,
+              "daily_order_count_available": true,
+              "market_gate_preserved": true,
+              "signal_valid": true,
+              "symbol_allowed": true
+            },
+            "failed": [],
+            "signal_validation": {
+              "checks": {
+                "reason_present": true,
+                "reference_price_positive": true,
+                "side_valid": true,
+                "strategy_id_present": true,
+                "strength_in_range": true,
+                "symbol_present": true
+              },
+              "failed": [],
+              "valid": true
+            }
+          },
+          "signal": {
+            "reason": "OFFLINE_DETERMINISTIC_FIXTURE",
+            "reference_price": "500",
+            "side": "hold",
+            "strategy_id": "fixture_momentum_v1",
+            "strength": "0.20",
+            "symbol": "SPY"
+          }
+        }
+      ],
+      "stage": "BUNDLE_A_R7_TO_R10",
+      "status": "PASS",
+      "strategy_execution_preview_only": true,
+      "strategy_id": "fixture_momentum_v1"
+    }
+  ],
+  "failed": [],
+  "next_fixed_bundle": "BUNDLE_B_R11_TO_R13_BROKER_MULTI_ACCOUNT",
+  "r10_strategy_plugin_framework": "READY",
+  "r7_runtime_orchestrator": "READY",
+  "r8_capital_allocation_engine": "READY",
+  "r9_portfolio_exposure_manager": "READY",
+  "stage": "BUNDLE_A_R7_TO_R10",
+  "state": "RUNTIME_CORE_OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "strategy_catalog": {
+    "dynamic_loading_enabled": false,
+    "strategies": [
+      {
+        "actual_strategy_execution_enabled": false,
+        "strategy_id": "fixture_momentum_v1",
+        "supported_horizons": [
+          "ultra_short",
+          "day",
+          "swing",
+          "position"
+        ]
+      }
+    ],
+    "strategy_count": 1,
+    "untrusted_plugin_execution_enabled": false
+  }
+}

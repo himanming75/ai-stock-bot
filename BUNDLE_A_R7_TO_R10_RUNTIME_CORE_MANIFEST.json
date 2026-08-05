@@ -1,0 +1,27 @@
+{
+  "stage": "BUNDLE_A_R7_TO_R10",
+  "included_fixed_stages": [
+    "R7_RUNTIME_ORCHESTRATOR",
+    "R8_CAPITAL_ALLOCATION_ENGINE",
+    "R9_PORTFOLIO_EXPOSURE_MANAGER",
+    "R10_STRATEGY_PLUGIN_FRAMEWORK"
+  ],
+  "pipeline": [
+    "SIGNAL",
+    "RISK",
+    "ALLOCATION",
+    "ORDER_CANDIDATE",
+    "PORTFOLIO_PREVIEW"
+  ],
+  "features_removed": false,
+  "allocation_feature_preserved": true,
+  "multi_account_field_preserved": true,
+  "actual_runtime_activation_performed": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_bundle": "BUNDLE_B_R11_TO_R13_BROKER_MULTI_ACCOUNT",
+  "roadmap_changed": false
+}
