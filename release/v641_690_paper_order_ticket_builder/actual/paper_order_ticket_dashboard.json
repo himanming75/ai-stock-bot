@@ -1,0 +1,10 @@
+{
+  "blocked_ticket_count": 0,
+  "eligible_plan_count": 0,
+  "generated_at": "2026-08-05T20:12:50.964255+00:00",
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "status": "INSUFFICIENT_INPUT",
+  "ticket_count": 0,
+  "valid_ticket_count": 0
+}

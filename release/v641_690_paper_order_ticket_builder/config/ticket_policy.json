@@ -1,0 +1,10 @@
+{
+  "max_ticket_notional": "500.00",
+  "limit_offset_bps": "5",
+  "extended_hours": false,
+  "paper_endpoint": "https://paper-api.alpaca.markets",
+  "broker_network_enabled": false,
+  "broker_write_allowed": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false
+}

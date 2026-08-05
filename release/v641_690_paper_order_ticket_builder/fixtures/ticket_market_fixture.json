@@ -1,0 +1,14 @@
+{
+  "fixture_only": true,
+  "symbols": {
+    "SPY": {
+      "latest_price": "500.00"
+    },
+    "QQQ": {
+      "latest_price": "450.00"
+    },
+    "IWM": {
+      "latest_price": "220.00"
+    }
+  }
+}

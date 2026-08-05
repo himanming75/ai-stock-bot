@@ -1,0 +1,10 @@
+git add paper_order_ticket_builder
+git add tools/run_v641_to_v690_paper_order_ticket_builder.py
+git add tools/test_v641_to_v690_paper_order_ticket_builder.py
+git add release/v641_690_paper_order_ticket_builder
+git add RUN_V641_TO_V690_PAPER_ORDER_TICKET_BUILDER.ps1
+git add RUN_V641_TO_V690_PAPER_ORDER_TICKET_BUILDER_TEST.ps1
+git add V641_TO_V690_PAPER_ORDER_TICKET_BUILDER_MANIFEST.json
+git add GIT_COMMIT_V641_TO_V690_PAPER_ORDER_TICKET_BUILDER.txt
+git commit -m "Add V641-V690 paper order ticket builder"
+git push origin main
