@@ -1,0 +1,23 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "controller_files_modified": false,
+  "eligible_symbol_count": 0,
+  "ensemble_bundle_fingerprint": "2fbf998b8a0020245da793a364ecf6be60913041c415fd3a1f5a660af3edc6ca",
+  "ensemble_record_count": 0,
+  "generated_at": "2026-08-05T20:52:28.331040+00:00",
+  "global_blockers": [
+    "FEATURE_RECORDS_EMPTY"
+  ],
+  "input_feature_count": 0,
+  "market_regime": "UNKNOWN",
+  "next_fixed_development": "V1401_TO_V1600_NEWS_EARNINGS_MACRO_INTELLIGENCE",
+  "ranked_ensemble_results": [],
+  "runtime_files_modified": false,
+  "stage": "V1201_TO_V1400_MULTI_STRATEGY_ENSEMBLE_ENGINE",
+  "status": "BLOCKED"
+}

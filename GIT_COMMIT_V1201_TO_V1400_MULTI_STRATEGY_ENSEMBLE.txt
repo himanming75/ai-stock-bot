@@ -1,0 +1,10 @@
+git add multi_strategy_ensemble
+git add tools/run_v1201_to_v1400_multi_strategy_ensemble.py
+git add tools/test_v1201_to_v1400_multi_strategy_ensemble.py
+git add release/v1201_1400_multi_strategy_ensemble
+git add RUN_V1201_TO_V1400_MULTI_STRATEGY_ENSEMBLE.ps1
+git add RUN_V1201_TO_V1400_MULTI_STRATEGY_ENSEMBLE_TEST.ps1
+git add V1201_TO_V1400_MULTI_STRATEGY_ENSEMBLE_MANIFEST.json
+git add GIT_COMMIT_V1201_TO_V1400_MULTI_STRATEGY_ENSEMBLE.txt
+git commit -m "Add V1201-V1400 multi strategy ensemble"
+git push origin main
