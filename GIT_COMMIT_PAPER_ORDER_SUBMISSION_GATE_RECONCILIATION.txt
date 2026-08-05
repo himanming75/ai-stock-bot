@@ -1,0 +1,12 @@
+git add paper_submission_gate
+git add tools/create_paper_submission_approval_token.py
+git add tools/run_paper_order_submission_gate.py
+git add tools/test_paper_order_submission_gate.py
+git add release/paper_submission_gate
+git add RUN_PAPER_SUBMISSION_GATE_TEST_ONLY.ps1
+git add CREATE_PAPER_SUBMISSION_APPROVAL_TOKEN.ps1
+git add RUN_ACTUAL_PAPER_SUBMISSION_WITH_NONCE.ps1
+git add PAPER_ORDER_SUBMISSION_GATE_RECONCILIATION_MANIFEST.json
+git add GIT_COMMIT_PAPER_ORDER_SUBMISSION_GATE_RECONCILIATION.txt
+git commit -m "Add paper order submission gate and reconciliation"
+git push origin main

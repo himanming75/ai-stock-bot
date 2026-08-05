@@ -1,0 +1,12 @@
+{
+  "maximum_total_orders": 1,
+  "maximum_order_notional": "100",
+  "maximum_quantity": "1",
+  "allowed_symbols": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "require_market_open": true,
+  "require_limit_order": true
+}
