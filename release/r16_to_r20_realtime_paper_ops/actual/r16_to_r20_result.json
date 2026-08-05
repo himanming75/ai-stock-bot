@@ -1,0 +1,146 @@
+{
+  "actual_broker_network_used": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_api_used": false,
+  "actual_order_dispatch_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_paper_session_started": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "automatic_runtime_start_enabled": false,
+  "checks": {
+    "automatic_replay_disabled": true,
+    "automatic_retry_disabled": true,
+    "automatic_start_disabled": true,
+    "broker_read_not_performed": true,
+    "dispatch_disabled": true,
+    "lifecycle_completed": true,
+    "market_clock_created": true,
+    "paper_session_pass": true,
+    "queue_created": true,
+    "scheduler_blocked_without_actuals": true,
+    "sync_preview_created": true
+  },
+  "failed": [],
+  "lifecycle_transitions": [
+    {
+      "actual_broker_status_read": false,
+      "actual_order_modified": false,
+      "automatic_order_replay_enabled": false,
+      "automatic_retry_enabled": false,
+      "new_state": "VALIDATED_PREVIEW",
+      "observed_at": "2026-08-05T08:03:29.085052+00:00",
+      "previous_state": "QUEUED_PREVIEW",
+      "queue_id": "r19-b70e568c216bf9d3bdcbd98e",
+      "reason": "OFFLINE_POLICY_VALIDATION",
+      "stage": "R20_ORDER_LIFECYCLE_MONITOR"
+    },
+    {
+      "actual_broker_status_read": false,
+      "actual_order_modified": false,
+      "automatic_order_replay_enabled": false,
+      "automatic_retry_enabled": false,
+      "new_state": "MONITORED_PREVIEW",
+      "observed_at": "2026-08-05T08:03:29.085949+00:00",
+      "previous_state": "VALIDATED_PREVIEW",
+      "queue_id": "r19-b70e568c216bf9d3bdcbd98e",
+      "reason": "OFFLINE_MONITORING_FIXTURE",
+      "stage": "R20_ORDER_LIFECYCLE_MONITOR"
+    },
+    {
+      "actual_broker_status_read": false,
+      "actual_order_modified": false,
+      "automatic_order_replay_enabled": false,
+      "automatic_retry_enabled": false,
+      "new_state": "COMPLETED_PREVIEW",
+      "observed_at": "2026-08-05T08:03:29.086883+00:00",
+      "previous_state": "MONITORED_PREVIEW",
+      "queue_id": "r19-b70e568c216bf9d3bdcbd98e",
+      "reason": "OFFLINE_LIFECYCLE_COMPLETE",
+      "stage": "R20_ORDER_LIFECYCLE_MONITOR"
+    }
+  ],
+  "market_clock": {
+    "actual_market_api_used": false,
+    "automatic_runtime_start_enabled": false,
+    "early_close": false,
+    "eastern_time": "2026-08-05T11:00:00-04:00",
+    "holiday": false,
+    "market_phase": "REGULAR",
+    "observed_at": "2026-08-05T15:00:00+00:00",
+    "regular_market_open": true,
+    "scheduler_execution_allowed": true,
+    "stage": "R17_MARKET_CLOCK",
+    "weekday_open": true
+  },
+  "next_fixed_action": "P2_P3_ACTUAL_VALIDATION_THEN_R16_ACTUAL_PAPER_SESSION",
+  "paper_session": {
+    "actual_session_started": false,
+    "automatic_order_submission_enabled": false,
+    "broker_network_enabled": false,
+    "broker_write_enabled": false,
+    "checks": {
+      "broker_network_disabled": true,
+      "broker_write_disabled": true,
+      "market_state_present": true,
+      "paper_mode": true,
+      "runtime_session_complete": true
+    },
+    "created_at": "2026-08-05T08:03:29.083132+00:00",
+    "failed": [],
+    "paper_session_id": "r16-bc0f22f68d1356b4ec6c1f17",
+    "runtime_session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+    "stage": "R16_PAPER_SESSION_COORDINATOR",
+    "state": "PAPER_SESSION_PREPARED",
+    "status": "PASS"
+  },
+  "queued_order": {
+    "account_id": "alpaca-paper-primary",
+    "candidate_id": "r10-3f00179d2aba6fc2ad1abfad",
+    "dispatch_allowed": false,
+    "notional": "8.00",
+    "order_type": "market",
+    "queue_id": "r19-b70e568c216bf9d3bdcbd98e",
+    "side": "buy",
+    "state": "QUEUED_PREVIEW",
+    "symbol": "AAPL",
+    "time_in_force": "day"
+  },
+  "r16_paper_session_coordinator": "READY",
+  "r17_market_clock_scheduler": "READY",
+  "r18_account_position_sync_preview": "READY",
+  "r19_safe_order_queue": "READY",
+  "r20_order_lifecycle_monitor": "READY",
+  "scheduler_policy": {
+    "actual_cycle_started": false,
+    "checks": {
+      "automatic_start_disabled": true,
+      "market_open": true,
+      "p2_validated": false,
+      "p3_validated": false
+    },
+    "cycle_preview_allowed": false,
+    "failed": [
+      "p2_validated",
+      "p3_validated"
+    ],
+    "operator_start_required": true,
+    "stage": "R17_SCHEDULER_POLICY"
+  },
+  "stage": "R16_TO_R20_REALTIME_PAPER_OPERATIONS_PREPARATION",
+  "state": "REALTIME_PAPER_OPERATIONS_OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "sync_preview": {
+    "account_differences": [],
+    "account_in_sync": true,
+    "actual_broker_read_performed": false,
+    "actual_local_state_modified": false,
+    "automatic_reconciliation_enabled": false,
+    "operator_review_required": false,
+    "position_differences": [],
+    "positions_in_sync": true,
+    "stage": "R18_ACCOUNT_POSITION_SYNC_PREVIEW"
+  }
+}

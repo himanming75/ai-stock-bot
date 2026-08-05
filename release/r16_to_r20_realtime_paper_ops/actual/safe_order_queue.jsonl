@@ -1,0 +1,1 @@
+{"account_id": "alpaca-paper-primary", "actual_dispatch_performed": false, "candidate_id": "r10-3f00179d2aba6fc2ad1abfad", "dispatch_allowed": false, "notional": "8.00", "order_type": "market", "queue_id": "r19-b70e568c216bf9d3bdcbd98e", "queued_at": "2026-08-05T08:03:29.084432+00:00", "side": "buy", "state": "QUEUED_PREVIEW", "symbol": "AAPL", "time_in_force": "day"}

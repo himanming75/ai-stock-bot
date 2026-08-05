@@ -1,0 +1,3 @@
+git add realtime_paper_ops tools/run_r16_to_r20.py tools/test_r16_to_r20.py tools/verify_r16_to_r20.py release/r16_to_r20_realtime_paper_ops RUN_R16_TO_R20.ps1 RUN_R16_TO_R20_TEST_AND_VERIFY.ps1 R16_TO_R20_MANIFEST.json GIT_COMMIT_R16_TO_R20.txt
+git commit -m "R16-R20 add real-time paper operations preparation"
+git push origin main
