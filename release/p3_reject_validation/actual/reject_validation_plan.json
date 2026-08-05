@@ -1,0 +1,27 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "blocked": false,
+  "blockers": [],
+  "client_order_id": "p3r-ff9085216207600bb248e668",
+  "created_at": "2026-08-05T18:04:12.390852+00:00",
+  "expected_http_statuses": [
+    400,
+    422
+  ],
+  "expected_reason": "QTY_AND_NOTIONAL_MUTUALLY_EXCLUSIVE",
+  "payload": {
+    "client_order_id": "p3r-ff9085216207600bb248e668",
+    "notional": "5",
+    "qty": "0.01",
+    "side": "buy",
+    "symbol": "SPY",
+    "time_in_force": "day",
+    "type": "market"
+  },
+  "plan_id": "p3reject_ff9085216207600bb248",
+  "stage": "P3_PAPER_REJECT_VALIDATION_PLAN"
+}

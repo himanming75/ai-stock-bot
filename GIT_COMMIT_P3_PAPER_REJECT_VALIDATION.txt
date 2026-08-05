@@ -1,0 +1,14 @@
+git add p3_reject_validation
+git add tools/create_p3_reject_validation_plan.py
+git add tools/create_p3_reject_approval_token.py
+git add tools/run_p3_paper_reject_validation.py
+git add tools/test_p3_paper_reject_validation.py
+git add release/p3_reject_validation
+git add RUN_P3_REJECT_VALIDATION_TEST_ONLY.ps1
+git add CREATE_P3_REJECT_VALIDATION_PLAN.ps1
+git add CREATE_P3_REJECT_APPROVAL_TOKEN.ps1
+git add RUN_ACTUAL_P3_PAPER_REJECT_WITH_NONCE.ps1
+git add P3_PAPER_REJECT_VALIDATION_MANIFEST.json
+git add GIT_COMMIT_P3_PAPER_REJECT_VALIDATION.txt
+git commit -m "Add P3 paper reject validation"
+git push origin main
