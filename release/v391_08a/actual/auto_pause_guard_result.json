@@ -1,0 +1,62 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_resume_enabled": false,
+  "broker_write_enabled": false,
+  "evaluation": {
+    "automatic_resume_allowed": false,
+    "blocking_sources": [],
+    "invalid_sources": [],
+    "manual_resume_required": false,
+    "pause_required": false,
+    "required_action": "CONTINUE_MONITORING",
+    "risk_operations_allowed": true,
+    "state": "AUTO_PAUSE_STANDBY",
+    "warning": false,
+    "warning_sources": []
+  },
+  "guard_results": {
+    "concentration": {
+      "risk_operations_allowed": true,
+      "state": "SYMBOL_CONCENTRATION_GUARD_ACTIVE",
+      "status": "PASS"
+    },
+    "daily_loss": {
+      "risk_operations_allowed": true,
+      "state": "DAILY_LOSS_GUARD_ACTIVE",
+      "status": "PASS"
+    },
+    "drawdown": {
+      "risk_operations_allowed": true,
+      "state": "MAX_DRAWDOWN_GUARD_ACTIVE",
+      "status": "PASS"
+    },
+    "exposure": {
+      "risk_operations_allowed": true,
+      "state": "TOTAL_EXPOSURE_GUARD_ACTIVE",
+      "status": "PASS"
+    },
+    "kill_switch": {
+      "risk_operations_allowed": true,
+      "state": "KILL_SWITCH_GUARD_STANDBY",
+      "status": "PASS"
+    },
+    "position": {
+      "risk_operations_allowed": true,
+      "state": "POSITION_SIZE_GUARD_ACTIVE",
+      "status": "PASS"
+    }
+  },
+  "live_submission_enabled": false,
+  "manual_resume_required": false,
+  "next_phase": "V391_09A_MANUAL_RESUME",
+  "observed_at": "2026-08-05T00:08:15.594118+00:00",
+  "paper_submission_enabled": false,
+  "pause_required": false,
+  "pause_state": "RUNNING",
+  "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e",
+  "risk_operations_allowed": true,
+  "stage": "V391.08A",
+  "state": "AUTO_PAUSE_GUARD_STANDBY",
+  "status": "PASS"
+}

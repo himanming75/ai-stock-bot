@@ -1,0 +1,34 @@
+{
+  "guard_results": {
+    "daily_loss": {
+      "state": "DAILY_LOSS_GUARD_ACTIVE",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    },
+    "drawdown": {
+      "state": "MAX_DRAWDOWN_GUARD_ACTIVE",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    },
+    "position": {
+      "state": "POSITION_SIZE_GUARD_ACTIVE",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    },
+    "exposure": {
+      "state": "TOTAL_EXPOSURE_GUARD_ACTIVE",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    },
+    "concentration": {
+      "state": "SYMBOL_CONCENTRATION_GUARD_ACTIVE",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    },
+    "kill_switch": {
+      "state": "KILL_SWITCH_GUARD_STANDBY",
+      "status": "PASS",
+      "risk_operations_allowed": true
+    }
+  }
+}
