@@ -1,0 +1,3 @@
+git add autonomous_risk_governor/integration.py autonomous_risk_governor/integration_guard.py tools/run_v391_10a.py tools/test_v391_10a.py tools/verify_v391_10a.py release/v391_10a RUN_V391_10A_RISK_GOVERNOR_INTEGRATION.ps1 RUN_V391_10A_TEST_AND_VERIFY.ps1 V391_10A_MANIFEST.json GIT_COMMIT_V391_10A.txt
+git commit -m "V391.10A integrate autonomous risk governor"
+git push origin main
