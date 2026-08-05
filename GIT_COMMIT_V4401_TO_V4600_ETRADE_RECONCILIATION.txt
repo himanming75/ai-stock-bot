@@ -1,0 +1,10 @@
+git add multi_broker_etrade_reconciliation
+git add tools/run_v4401_to_v4600_etrade_reconciliation.py
+git add tools/test_v4401_to_v4600_etrade_reconciliation.py
+git add release/v4401_4600_etrade_reconciliation
+git add RUN_V4401_TO_V4600_ETRADE_RECONCILIATION.ps1
+git add RUN_V4401_TO_V4600_ETRADE_RECONCILIATION_TEST.ps1
+git add V4401_TO_V4600_ETRADE_RECONCILIATION_MANIFEST.json
+git add GIT_COMMIT_V4401_TO_V4600_ETRADE_RECONCILIATION.txt
+git commit -m "Add V4401-V4600 ETrade reconciliation change detection"
+git push origin main

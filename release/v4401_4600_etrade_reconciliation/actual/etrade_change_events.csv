@@ -1,0 +1,15 @@
+event_type,severity,entity_type,entity_key,account_id,symbol,previous,current,delta,message
+ACCOUNT_EQUITY_CHANGED,WARNING,ACCOUNT,individual-brokerage-key,individual-brokerage-key,,100000,100500.75,500.75,equity changed for individual-brokerage-key
+ACCOUNT_CASH_CHANGED,WARNING,ACCOUNT,individual-brokerage-key,individual-brokerage-key,,25000,24500,-500,cash changed for individual-brokerage-key
+ACCOUNT_BUYING_POWER_CHANGED,WARNING,ACCOUNT,individual-brokerage-key,individual-brokerage-key,,25000,24500,-500,buying_power changed for individual-brokerage-key
+ACCOUNT_EQUITY_CHANGED,WARNING,ACCOUNT,stock-plan-key,stock-plan-key,,32000,32500,500,equity changed for stock-plan-key
+POSITION_CLOSED,WARNING,POSITION,individual-brokerage-key:QQQ,individual-brokerage-key,QQQ,"{""account_id"": ""individual-brokerage-key"", ""average_price"": ""450"", ""market_value"": ""1800"", ""quantity"": ""4"", ""symbol"": ""QQQ"", ""unrealized_pl"": ""0""}",,-4,Position closed: individual-brokerage-key:QQQ
+POSITION_QUANTITY_CHANGED,WARNING,POSITION,individual-brokerage-key:SPY,individual-brokerage-key,SPY,10,15,5,quantity changed for individual-brokerage-key:SPY
+POSITION_AVERAGE_PRICE_CHANGED,WARNING,POSITION,individual-brokerage-key:SPY,individual-brokerage-key,SPY,500,503.3333333333333333333333333,3.3333333333333333333333333,average_price changed for individual-brokerage-key:SPY
+POSITION_MARKET_VALUE_CHANGED,INFO,POSITION,individual-brokerage-key:SPY,individual-brokerage-key,SPY,5000,7575,2575,market_value changed for individual-brokerage-key:SPY
+POSITION_UNREALIZED_PL_CHANGED,INFO,POSITION,individual-brokerage-key:SPY,individual-brokerage-key,SPY,0,25,25,unrealized_pl changed for individual-brokerage-key:SPY
+POSITION_OPENED,WARNING,POSITION,stock-plan-key:SPY,stock-plan-key,SPY,,"{""account_id"": ""stock-plan-key"", ""average_price"": ""510"", ""market_value"": ""2525"", ""quantity"": ""5"", ""symbol"": ""SPY"", ""unrealized_pl"": ""-25""}",5,Position opened: stock-plan-key:SPY
+ORDER_STATUS_CHANGED,WARNING,ORDER,individual-brokerage-key:order-1,individual-brokerage-key,SPY,OPEN,FILLED,,Order status changed: OPEN -> FILLED
+ORDER_FILLED_QUANTITY_CHANGED,INFO,ORDER,individual-brokerage-key:order-1,individual-brokerage-key,SPY,0,10,10,Filled quantity changed for individual-brokerage-key:order-1
+ORDER_ADDED,INFO,ORDER,individual-brokerage-key:order-3,individual-brokerage-key,QQQ,,"{""account_id"": ""individual-brokerage-key"", ""filled_quantity"": ""0"", ""order_id"": ""order-3"", ""quantity"": ""4"", ""status"": ""OPEN"", ""symbol"": ""QQQ""}",,Order added: individual-brokerage-key:order-3
+ORDER_STATUS_CHANGED,WARNING,ORDER,stock-plan-key:order-2,stock-plan-key,SPY,OPEN,CANCELLED,,Order status changed: OPEN -> CANCELLED

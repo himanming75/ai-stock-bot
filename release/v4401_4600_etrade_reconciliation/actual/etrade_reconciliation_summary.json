@@ -1,0 +1,32 @@
+{
+  "change_count": 14,
+  "event_type_counts": {
+    "ACCOUNT_BUYING_POWER_CHANGED": 1,
+    "ACCOUNT_CASH_CHANGED": 1,
+    "ACCOUNT_EQUITY_CHANGED": 2,
+    "ORDER_ADDED": 1,
+    "ORDER_FILLED_QUANTITY_CHANGED": 1,
+    "ORDER_STATUS_CHANGED": 2,
+    "POSITION_AVERAGE_PRICE_CHANGED": 1,
+    "POSITION_CLOSED": 1,
+    "POSITION_MARKET_VALUE_CHANGED": 1,
+    "POSITION_OPENED": 1,
+    "POSITION_QUANTITY_CHANGED": 1,
+    "POSITION_UNREALIZED_PL_CHANGED": 1
+  },
+  "integrity": {
+    "current": {
+      "issues": [],
+      "passed": true
+    },
+    "previous": {
+      "issues": [],
+      "passed": true
+    }
+  },
+  "severity_counts": {
+    "INFO": 4,
+    "WARNING": 10
+  },
+  "status": "PASS"
+}

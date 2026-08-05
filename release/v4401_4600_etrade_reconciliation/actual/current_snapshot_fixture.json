@@ -1,0 +1,64 @@
+{
+  "accounts": [
+    {
+      "account_id": "individual-brokerage-key",
+      "broker": "ETRADE",
+      "buying_power": "24500",
+      "cash": "24500",
+      "equity": "100500.75",
+      "status": "ACTIVE"
+    },
+    {
+      "account_id": "stock-plan-key",
+      "broker": "ETRADE",
+      "buying_power": "500",
+      "cash": "500",
+      "equity": "32500",
+      "status": "ACTIVE"
+    }
+  ],
+  "orders": [
+    {
+      "account_id": "individual-brokerage-key",
+      "filled_quantity": "10",
+      "order_id": "order-1",
+      "quantity": "10",
+      "status": "FILLED",
+      "symbol": "SPY"
+    },
+    {
+      "account_id": "stock-plan-key",
+      "filled_quantity": "0",
+      "order_id": "order-2",
+      "quantity": "2",
+      "status": "CANCELLED",
+      "symbol": "SPY"
+    },
+    {
+      "account_id": "individual-brokerage-key",
+      "filled_quantity": "0",
+      "order_id": "order-3",
+      "quantity": "4",
+      "status": "OPEN",
+      "symbol": "QQQ"
+    }
+  ],
+  "positions": [
+    {
+      "account_id": "individual-brokerage-key",
+      "average_price": "503.3333333333333333333333333",
+      "market_value": "7575",
+      "quantity": "15",
+      "symbol": "SPY",
+      "unrealized_pl": "25"
+    },
+    {
+      "account_id": "stock-plan-key",
+      "average_price": "510",
+      "market_value": "2525",
+      "quantity": "5",
+      "symbol": "SPY",
+      "unrealized_pl": "-25"
+    }
+  ]
+}
