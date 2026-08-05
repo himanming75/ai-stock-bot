@@ -1,0 +1,9 @@
+{
+  "purpose": "P2 P3 P4 actual validation support",
+  "roadmap_stage_added": false,
+  "install_uses_network": false,
+  "install_submits_paper_orders": 0,
+  "install_submits_live_orders": 0,
+  "official_order_lookup": "/v2/orders:by_client_order_id",
+  "next_action": "Run during market hours with a fresh Paper API key"
+}
