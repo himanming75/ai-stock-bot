@@ -1,0 +1,7 @@
+{
+  "approval_phrase": "APPROVE_MANUAL_RISK_RESUME",
+  "requested_by": "operator",
+  "reason": "Risk conditions cleared and manually reviewed.",
+  "expires_at": "2030-01-01T00:00:00+00:00",
+  "automatic_resume": false
+}

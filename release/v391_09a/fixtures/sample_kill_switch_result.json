@@ -1,0 +1,8 @@
+{
+  "stage": "V391.07A",
+  "status": "PASS",
+  "state": "KILL_SWITCH_GUARD_STANDBY",
+  "evaluation": {
+    "kill_switch_active": false
+  }
+}
