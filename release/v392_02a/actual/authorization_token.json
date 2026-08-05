@@ -1,0 +1,20 @@
+{
+  "payload": {
+    "authorization_approved": true,
+    "authorization_stage": "V392.01A",
+    "authorization_state": "EXECUTION_AUTHORIZATION_APPROVED",
+    "expires_at": "2026-08-05T00:23:53.095257+00:00",
+    "issued_at": "2026-08-05T00:18:53.095257+00:00",
+    "nonce": "f96b4ce32a045e57c74c52c527ce9d85",
+    "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e",
+    "proposal_hash": "3129145ab880a8d8f297b18ae493a8a90d5bcbe15758c87a3ed341baf2e84fd6",
+    "proposal_id": "proposal-v392-001",
+    "proposal_side": "BUY",
+    "proposal_symbol": "AAPL",
+    "single_use": true,
+    "target_environment": "PAPER",
+    "token_version": "V392.02A"
+  },
+  "signature": "012e8209601e82306cda278fb53485931b4fc66c83084dd0530df7710b88d8e3",
+  "token_id": "d1c592f6daebb5c477c6f0329a2ef5e9285cd1ca42b929add59c84f4eaefc66b"
+}
