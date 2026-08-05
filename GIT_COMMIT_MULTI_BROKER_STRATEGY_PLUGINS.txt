@@ -1,0 +1,3 @@
+git add multi_broker_plugins tools/run_multi_broker_strategy_plugins.py tools/test_multi_broker_strategy_plugins.py tools/verify_multi_broker_strategy_plugins.py release/multi_broker_strategy_plugins RUN_MULTI_BROKER_STRATEGY_PLUGINS.ps1 RUN_MULTI_BROKER_STRATEGY_PLUGINS_TEST_AND_VERIFY.ps1 MULTI_BROKER_STRATEGY_PLUGINS_MANIFEST.json GIT_COMMIT_MULTI_BROKER_STRATEGY_PLUGINS.txt
+git commit -m "Add multi-broker and strategy plugin framework"
+git push origin main

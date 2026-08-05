@@ -1,0 +1,196 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_hot_swap_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_strategy_activation_performed": false,
+  "alpaca_adapter": "READY_INTERFACE_ONLY",
+  "broker_capabilities": [
+    {
+      "adapter_state": "READY_INTERFACE_ONLY",
+      "broker_id": "alpaca",
+      "fractional_supported": true,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": false,
+      "paper_supported": true,
+      "stop_orders_supported": true,
+      "streaming_supported": true
+    },
+    {
+      "adapter_state": "SKELETON_ONLY",
+      "broker_id": "etrade",
+      "fractional_supported": false,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": true,
+      "paper_supported": false,
+      "stop_orders_supported": true,
+      "streaming_supported": false
+    },
+    {
+      "adapter_state": "SKELETON_ONLY",
+      "broker_id": "ibkr",
+      "fractional_supported": true,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": false,
+      "paper_supported": true,
+      "stop_orders_supported": true,
+      "streaming_supported": true
+    },
+    {
+      "adapter_state": "READY_OFFLINE",
+      "broker_id": "mock",
+      "fractional_supported": true,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": false,
+      "paper_supported": true,
+      "stop_orders_supported": true,
+      "streaming_supported": false
+    },
+    {
+      "adapter_state": "SKELETON_ONLY",
+      "broker_id": "schwab",
+      "fractional_supported": true,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": true,
+      "paper_supported": false,
+      "stop_orders_supported": true,
+      "streaming_supported": true
+    },
+    {
+      "adapter_state": "SKELETON_ONLY",
+      "broker_id": "tradier",
+      "fractional_supported": false,
+      "limit_orders_supported": true,
+      "market_orders_supported": true,
+      "oauth_required": true,
+      "paper_supported": true,
+      "stop_orders_supported": true,
+      "streaming_supported": true
+    }
+  ],
+  "broker_capability_detection": "READY",
+  "checks": {
+    "all_broker_connects_blocked": true,
+    "all_signals_preview_only": true,
+    "five_strategies_registered": true,
+    "five_strategy_evaluations": true,
+    "hot_swap_not_performed": true,
+    "hot_swap_preview_ready": true,
+    "mock_account_ready": true,
+    "six_brokers_registered": true,
+    "version_upgrade_preview_ready": true
+  },
+  "common_broker_interface": "READY",
+  "etrade_adapter": "SKELETON_ONLY",
+  "failed": [],
+  "ibkr_adapter": "SKELETON_ONLY",
+  "mock_account_fixture": {
+    "account_id": "mock-account",
+    "broker_network_used": false,
+    "buying_power": "200000",
+    "cash": "100000",
+    "equity": "100000",
+    "status": "ACTIVE_FIXTURE"
+  },
+  "mock_broker_adapter": "READY_OFFLINE",
+  "next_fixed_development": "FEATURE_ENGINE_AND_AUTO_OPTIMIZATION_FRAMEWORK",
+  "plugin_registry": "READY",
+  "schwab_adapter": "SKELETON_ONLY",
+  "stage": "MULTI_BROKER_STRATEGY_PLUGIN_FRAMEWORK",
+  "state": "OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "strategy_evaluations": [
+    {
+      "order_created": false,
+      "score": "0.9000",
+      "signal": "BUY_PREVIEW",
+      "strategy_id": "breakout_v3"
+    },
+    {
+      "order_created": false,
+      "score": "0.6000",
+      "signal": "BUY_PREVIEW",
+      "strategy_id": "mean_reversion_v3"
+    },
+    {
+      "order_created": false,
+      "score": "0.7500",
+      "signal": "BUY_PREVIEW",
+      "strategy_id": "momentum_v3"
+    },
+    {
+      "order_created": false,
+      "score": "0.8000",
+      "signal": "BUY_PREVIEW",
+      "strategy_id": "scalping_v1"
+    },
+    {
+      "order_created": false,
+      "score": "0.7500",
+      "signal": "BUY_PREVIEW",
+      "strategy_id": "swing_v1"
+    }
+  ],
+  "strategy_hot_swap": "READY_PREVIEW_ONLY",
+  "strategy_hot_swap_preview": {
+    "actual_hot_swap_performed": false,
+    "actual_strategy_activation_performed": false,
+    "blockers": [],
+    "current_strategy": "momentum_v3",
+    "hot_swap_preview_allowed": true,
+    "operator_approval_required": true,
+    "target_strategy": "swing_v1"
+  },
+  "strategy_plugin_interface": "READY",
+  "strategy_plugins": [
+    {
+      "category": "BREAKOUT",
+      "plugin_state": "READY_OFFLINE",
+      "strategy_id": "breakout_v3",
+      "version": "3.0.0"
+    },
+    {
+      "category": "MEAN_REVERSION",
+      "plugin_state": "READY_OFFLINE",
+      "strategy_id": "mean_reversion_v3",
+      "version": "3.0.0"
+    },
+    {
+      "category": "TREND",
+      "plugin_state": "READY_OFFLINE",
+      "strategy_id": "momentum_v3",
+      "version": "3.0.0"
+    },
+    {
+      "category": "INTRADAY",
+      "plugin_state": "READY_OFFLINE",
+      "strategy_id": "scalping_v1",
+      "version": "1.0.0"
+    },
+    {
+      "category": "SWING",
+      "plugin_state": "READY_OFFLINE",
+      "strategy_id": "swing_v1",
+      "version": "1.0.0"
+    }
+  ],
+  "strategy_version_manager": "READY",
+  "strategy_version_preview": {
+    "actual_upgrade_performed": false,
+    "candidate_version": "3.0.0",
+    "current_version": "2.9.0",
+    "operator_approval_required": true,
+    "same_strategy": true,
+    "upgrade_preview_allowed": true,
+    "version_changed": true
+  },
+  "tradier_adapter": "SKELETON_ONLY"
+}
