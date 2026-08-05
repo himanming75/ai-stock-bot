@@ -1,0 +1,21 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "checks": {
+    "checkpoint_present": true,
+    "heartbeat_fresh_when_runtime_expected": true,
+    "heartbeat_present_when_runtime_expected": true,
+    "live_network_disabled": true,
+    "live_write_disabled": true
+  },
+  "failed": [],
+  "heartbeat_age_seconds": 1977.008018,
+  "maximum_heartbeat_age_seconds": 180,
+  "recovery_actions": [
+    "NO_RECOVERY_REQUIRED"
+  ],
+  "runtime_expected": false,
+  "stage": "O2_WATCHDOG",
+  "status": "PASS"
+}

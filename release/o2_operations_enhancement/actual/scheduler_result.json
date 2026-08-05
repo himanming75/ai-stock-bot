@@ -1,0 +1,31 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checkpoint": {
+    "blockers": [],
+    "cycle_id": "b8497952e85a63243a4aa147675a4a2da200a2e9dc84b6598290c613b5d9b0b6",
+    "cycle_number": 3,
+    "runtime_id": "p4-offline-qualification",
+    "stage": "P4",
+    "state": "P4_CYCLE_COMPLETE",
+    "updated_at": "2026-08-05T04:40:23.691834+00:00"
+  },
+  "checks": {
+    "cycle_interval_positive": true,
+    "fail_closed": true,
+    "market_open_required": true,
+    "maximum_cycles_positive": true,
+    "policy_present": true
+  },
+  "failed": [],
+  "observed_at": "2026-08-05T05:13:20.863797+00:00",
+  "policy": {
+    "cycle_interval_seconds": 60,
+    "fail_closed": true,
+    "maximum_cycles_per_session": 390,
+    "require_market_open": true,
+    "require_p2_actual_validation": true,
+    "require_p3_actual_validation": true
+  },
+  "stage": "O2_SCHEDULER_MONITOR",
+  "status": "PASS"
+}

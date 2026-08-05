@@ -1,0 +1,60 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "observed_at": "2026-08-05T05:13:21.136518+00:00",
+  "required_action": "OPERATOR_REVIEW_THEN_P4_PREFLIGHT",
+  "safe_to_auto_resume": false,
+  "sources": {
+    "p2_order_registry": {
+      "present": true,
+      "value": {
+        "client_order_ids": []
+      }
+    },
+    "p3_fill_registry": {
+      "present": false
+    },
+    "p4_checkpoint": {
+      "present": true,
+      "value": {
+        "blockers": [],
+        "cycle_id": "b8497952e85a63243a4aa147675a4a2da200a2e9dc84b6598290c613b5d9b0b6",
+        "cycle_number": 3,
+        "runtime_id": "p4-offline-qualification",
+        "stage": "P4",
+        "state": "P4_CYCLE_COMPLETE",
+        "updated_at": "2026-08-05T04:40:23.691834+00:00"
+      }
+    },
+    "p4_cycle_registry": {
+      "present": true,
+      "value": {
+        "cycles": {
+          "77553c296ea86d81569e77bbbb474c70d19f30471cc3f6428057420db4282643": {
+            "cycle_number": 2,
+            "reserved_at": "2026-08-05T04:40:23.616519+00:00",
+            "runtime_id": "p4-offline-qualification",
+            "state": "COMPLETE",
+            "trading_day": "2026-08-05"
+          },
+          "b8497952e85a63243a4aa147675a4a2da200a2e9dc84b6598290c613b5d9b0b6": {
+            "cycle_number": 3,
+            "reserved_at": "2026-08-05T04:40:23.666688+00:00",
+            "runtime_id": "p4-offline-qualification",
+            "state": "COMPLETE",
+            "trading_day": "2026-08-05"
+          },
+          "eb60863fc162076fa0f9b4a59694a44e3f1214dee6d3f31e61db874a163c9b39": {
+            "cycle_number": 1,
+            "reserved_at": "2026-08-05T04:40:23.571886+00:00",
+            "runtime_id": "p4-offline-qualification",
+            "state": "COMPLETE",
+            "trading_day": "2026-08-05"
+          }
+        }
+      }
+    }
+  },
+  "stage": "O2_RECOVERY"
+}

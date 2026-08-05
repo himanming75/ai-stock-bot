@@ -1,0 +1,33 @@
+{
+  "stage": "O2",
+  "features": [
+    "Dashboard V2",
+    "Quiet Browser Disconnect Handling",
+    "Runtime Metrics",
+    "Order History",
+    "Fill History",
+    "Position History",
+    "Equity History",
+    "PnL Summary",
+    "Win Rate",
+    "Average Profit",
+    "Average Loss",
+    "Maximum Drawdown",
+    "Watchdog",
+    "Heartbeat Age",
+    "Scheduler Monitor",
+    "Crash Recovery Snapshot",
+    "Restart Review",
+    "Discord Notification",
+    "Slack Notification",
+    "Telegram Notification",
+    "Email Notification"
+  ],
+  "notifications_enabled_by_default": false,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "live_activation_allowed": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}
