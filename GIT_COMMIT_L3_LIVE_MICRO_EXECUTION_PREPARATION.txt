@@ -1,0 +1,3 @@
+git add live_execution tools/run_l3_offline_qualification.py tools/test_l3_live_micro_execution_preparation.py tools/verify_l3_live_micro_execution_preparation.py release/l3_live_micro_execution_preparation RUN_L3_OFFLINE_QUALIFICATION.ps1 RUN_L3_TEST_AND_VERIFY.ps1 L3_LIVE_MICRO_EXECUTION_PREPARATION_MANIFEST.json GIT_COMMIT_L3_LIVE_MICRO_EXECUTION_PREPARATION.txt
+git commit -m "L3 add live micro execution preparation"
+git push origin main

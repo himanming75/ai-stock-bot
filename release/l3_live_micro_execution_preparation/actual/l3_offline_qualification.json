@@ -1,0 +1,75 @@
+{
+  "actual_live_execution_allowed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "dry_run": {
+    "accepted": true,
+    "broker_network_used": false,
+    "broker_submission_attempted": false,
+    "dry_run": true,
+    "payload": {
+      "client_order_id": "l3-20260805T053606-SPY-buy-5489be1aa3",
+      "notional": "1",
+      "side": "buy",
+      "symbol": "SPY",
+      "time_in_force": "day",
+      "type": "market"
+    },
+    "simulated_at": "2026-08-05T05:36:06.205461+00:00"
+  },
+  "gates": {
+    "actual_live_execution_allowed": false,
+    "checks": {
+      "l1_pass": true,
+      "l2_actual_live_read_complete": false,
+      "l2_preparation_pass": true,
+      "live_kill_switch_active": true,
+      "paper_certificate_present": false,
+      "paper_complete": false
+    },
+    "failed": [
+      "paper_complete",
+      "paper_certificate_present",
+      "l2_actual_live_read_complete"
+    ]
+  },
+  "ledger_record": {
+    "client_order_id": "l3-20260805T053606-SPY-buy-5489be1aa3",
+    "observed_at": "2026-08-05T05:36:06.205542+00:00",
+    "record_type": "LIVE_ORDER_DRY_RUN",
+    "request_hash": "f1a3f62fb918631bb632399922aa7308218d52a2b6c68dd71903a0d0f508a5b3",
+    "side": "buy",
+    "symbol": "SPY"
+  },
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "L3_ACTUAL_MICRO_LIVE_AFTER_P5_AND_L2_ACTUAL_QUALIFICATION",
+  "risk": {
+    "approved": true,
+    "checks": {
+      "daily_loss_limit": true,
+      "daily_order_limit": true,
+      "estimated_notional_positive": true,
+      "order_notional_within_limit": true,
+      "symbol_allowed": true
+    },
+    "failed": []
+  },
+  "rollback_plan": {
+    "actions": [
+      "ACTIVATE_LIVE_KILL_SWITCH",
+      "FETCH_ORDER_STATE",
+      "CANCEL_IF_CANCELABLE",
+      "RECONCILE_POSITION_AND_CASH",
+      "REQUIRE_OPERATOR_REVIEW"
+    ],
+    "automatic_order_replay_enabled": false,
+    "automatic_rollback_enabled": false,
+    "broker_order_id": "",
+    "client_order_id": "l3-20260805T053606-SPY-buy-5489be1aa3"
+  },
+  "stage": "L3",
+  "state": "LIVE_MICRO_EXECUTION_PREPARED",
+  "status": "PASS",
+  "submitted": false
+}

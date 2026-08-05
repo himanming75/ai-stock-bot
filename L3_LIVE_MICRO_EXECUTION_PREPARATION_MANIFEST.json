@@ -1,0 +1,22 @@
+{
+  "stage": "L3_PREPARATION",
+  "features": [
+    "Live Order Model",
+    "Live Client Order ID",
+    "Live Idempotency",
+    "Live Duplicate Protection",
+    "Micro Risk Authorization",
+    "Dry Run Transport",
+    "Live Dry Run Ledger",
+    "Cancel Preparation",
+    "Replace Preparation",
+    "Manual Rollback Plan"
+  ],
+  "actual_live_execution_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L3_ACTUAL_AFTER_P5_AND_L2_ACTUAL"
+}
