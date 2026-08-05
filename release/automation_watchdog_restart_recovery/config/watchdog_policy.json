@@ -1,0 +1,11 @@
+{
+  "controller_profile": "release/paper_automation_controller/config/read_only_profile.json",
+  "poll_interval_seconds": 5,
+  "maximum_restart_attempts": 3,
+  "restart_backoff_seconds": 5,
+  "stale_lock_seconds": 120,
+  "heartbeat_timeout_seconds": 120,
+  "crash_window_seconds": 600,
+  "stop_when_market_closed": true,
+  "actual_submission_allowed": false
+}

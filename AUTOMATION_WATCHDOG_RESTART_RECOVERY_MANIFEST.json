@@ -1,0 +1,19 @@
+{
+  "stage": "AUTOMATION_WATCHDOG_RESTART_RECOVERY",
+  "features": [
+    "Controller supervision",
+    "Exit-code detection",
+    "Bounded restart",
+    "Backoff",
+    "Crash-loop prevention",
+    "Stale lock cleanup",
+    "Checkpoint heartbeat",
+    "Market-close idle",
+    "Atomic state",
+    "Append-only ledger"
+  ],
+  "actual_submission_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "DAILY_SESSION_MANAGER_AND_STARTUP_AUTORUN"
+}

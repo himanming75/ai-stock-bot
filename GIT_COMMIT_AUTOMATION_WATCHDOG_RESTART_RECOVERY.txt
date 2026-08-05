@@ -1,0 +1,10 @@
+git add automation_watchdog
+git add tools/run_automation_watchdog_restart_recovery.py
+git add tools/test_automation_watchdog_restart_recovery.py
+git add release/automation_watchdog_restart_recovery
+git add RUN_AUTOMATION_WATCHDOG_RESTART_RECOVERY_TEST.ps1
+git add RUN_ACTUAL_AUTOMATION_WATCHDOG.ps1
+git add AUTOMATION_WATCHDOG_RESTART_RECOVERY_MANIFEST.json
+git add GIT_COMMIT_AUTOMATION_WATCHDOG_RESTART_RECOVERY.txt
+git commit -m "Add automation watchdog and restart recovery"
+git push origin main
