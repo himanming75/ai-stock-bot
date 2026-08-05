@@ -1,0 +1,116 @@
+{
+  "account_equity": 100000,
+  "risk_per_trade_pct": 0.01,
+  "maximum_position_pct": 0.25,
+  "allow_fractional_shares": true,
+  "minimum_notional": 1,
+  "kelly_fraction": 0.5,
+  "maximum_kelly_pct": 0.2,
+  "target_volatility": 0.2,
+  "minimum_volatility_multiplier": 0.25,
+  "maximum_volatility_multiplier": 1.0,
+  "default_sector_limit_pct": 0.3,
+  "sector_limits": {
+    "TECH": 0.25,
+    "HEALTH": 0.2
+  },
+  "maximum_portfolio_risk_pct": 0.03,
+  "current_drawdown_pct": 0.04,
+  "drawdown_tiers": [
+    {
+      "max_drawdown_pct": 0.03,
+      "multiplier": 1.0
+    },
+    {
+      "max_drawdown_pct": 0.06,
+      "multiplier": 0.75
+    },
+    {
+      "max_drawdown_pct": 0.1,
+      "multiplier": 0.5
+    }
+  ],
+  "correlation_threshold": 0.75,
+  "high_correlation_multiplier": 0.7,
+  "minimum_cash_reserve_pct": 0.1,
+  "maximum_cash_reserve_pct": 0.5,
+  "market_volatility": 0.35,
+  "high_volatility_threshold": 0.3,
+  "high_volatility_cash_add_pct": 0.1,
+  "cash_drawdown_threshold": 0.05,
+  "drawdown_cash_add_pct": 0.1,
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "sector": "TECH",
+      "reference_price": 180.5,
+      "stop_loss_pct": 0.05,
+      "proposed_weight": 0.232303
+    },
+    {
+      "symbol": "MSFT",
+      "sector": "TECH",
+      "reference_price": 525.25,
+      "stop_loss_pct": 0.04,
+      "proposed_weight": 0.2285
+    },
+    {
+      "symbol": "JNJ",
+      "sector": "HEALTH",
+      "reference_price": 168.4,
+      "stop_loss_pct": 0.03,
+      "proposed_weight": 0.177798
+    }
+  ],
+  "kelly_statistics": [
+    {
+      "symbol": "NVDA",
+      "win_rate": 0.58,
+      "average_win": 0.1,
+      "average_loss": 0.05
+    },
+    {
+      "symbol": "MSFT",
+      "win_rate": 0.62,
+      "average_win": 0.07,
+      "average_loss": 0.035
+    },
+    {
+      "symbol": "JNJ",
+      "win_rate": 0.55,
+      "average_win": 0.045,
+      "average_loss": 0.03
+    }
+  ],
+  "volatility_statistics": [
+    {
+      "symbol": "NVDA",
+      "annualized_volatility": 0.55
+    },
+    {
+      "symbol": "MSFT",
+      "annualized_volatility": 0.28
+    },
+    {
+      "symbol": "JNJ",
+      "annualized_volatility": 0.18
+    }
+  ],
+  "correlation_pairs": [
+    {
+      "symbol_a": "NVDA",
+      "symbol_b": "MSFT",
+      "correlation": 0.86
+    },
+    {
+      "symbol_a": "NVDA",
+      "symbol_b": "JNJ",
+      "correlation": 0.2
+    },
+    {
+      "symbol_a": "MSFT",
+      "symbol_b": "JNJ",
+      "correlation": 0.15
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+
+git add ai_risk_allocation/sector_exposure.py ai_risk_allocation/portfolio_risk_budget.py ai_risk_allocation/drawdown_scaling.py ai_risk_allocation/correlation_adjustment.py ai_risk_allocation/cash_reserve.py ai_risk_allocation/integrated_allocation.py ai_risk_allocation/allocation_qualification.py tools/run_v444_to_v450.py tools/test_v444_to_v450.py tools/verify_v444_to_v450.py release/v444_01 release/v445_01 release/v446_01 release/v447_01 release/v448_01 release/v449_01 release/v450_64 RUN_V444_TO_V450_ALLOCATION_COMPLETION.ps1 RUN_V444_TO_V450_TEST_AND_VERIFY.ps1 V444_TO_V450_MANIFEST.json GIT_COMMIT_V444_TO_V450.txt
+git commit -m "V444-V450 complete AI risk allocation pipeline"
+git push origin main

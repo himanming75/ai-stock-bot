@@ -1,0 +1,20 @@
+{
+  "bundle": "V444.01_TO_V450.64",
+  "features": [
+    "Sector Exposure Limits",
+    "Portfolio Risk Budget",
+    "Drawdown Scaling",
+    "Correlation Adjustment",
+    "Dynamic Cash Reserve",
+    "Integrated Allocation Engine",
+    "Allocation Qualification and Release"
+  ],
+  "requires": "V443.01",
+  "network_used": false,
+  "broker_credentials_used": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}
