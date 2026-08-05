@@ -1,0 +1,22 @@
+{
+  "stage": "R2_PREPARATION",
+  "features": [
+    "Disabled Runtime Task XML",
+    "Disabled Health Monitor Task XML",
+    "Disabled Daily Report Task XML",
+    "Production Gated Runtime Wrapper",
+    "Graceful Stop Request",
+    "Task Install Preview",
+    "Task Uninstall Preview"
+  ],
+  "task_registration_performed": false,
+  "windows_service_installed": false,
+  "start_on_boot_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "R2_ACTUAL_AFTER_R1_RELEASE_APPROVAL"
+}

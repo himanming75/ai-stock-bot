@@ -1,0 +1,60 @@
+{
+  "activation_gate": {
+    "automatic_activation_enabled": false,
+    "checks": {
+      "production_release_allowed": false,
+      "r1_release_certificate_present": true,
+      "r1_release_eligible": false
+    },
+    "failed": [
+      "r1_release_eligible",
+      "production_release_allowed"
+    ],
+    "windows_service_activation_allowed": false,
+    "windows_task_activation_allowed": false
+  },
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "checks": {
+    "all_tasks_disabled": true,
+    "automatic_restart_disabled": true,
+    "install_preview_present": true,
+    "runtime_wrapper_present": true,
+    "stop_script_present": true,
+    "three_task_templates_created": true,
+    "uninstall_script_present": true
+  },
+  "failed": [],
+  "generated_at": "2026-08-05T06:12:23.969645+00:00",
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "R2_ACTUAL_TASK_REGISTRATION_AFTER_R1_RELEASE_APPROVAL",
+  "stage": "R2",
+  "start_on_boot_enabled": false,
+  "state": "WINDOWS_DEPLOYMENT_PREPARATION_READY",
+  "status": "PASS",
+  "task_registration_performed": false,
+  "task_templates": [
+    {
+      "enabled": false,
+      "name": "AIStockBot-Runtime-DISABLED",
+      "path": "C:\\stock-bot\\release\\r2_windows_scheduler_service_preparation\\actual\\task_xml\\AIStockBot-Runtime-DISABLED.xml",
+      "restart_count": 0
+    },
+    {
+      "enabled": false,
+      "name": "AIStockBot-HealthMonitor-DISABLED",
+      "path": "C:\\stock-bot\\release\\r2_windows_scheduler_service_preparation\\actual\\task_xml\\AIStockBot-HealthMonitor-DISABLED.xml",
+      "restart_count": 0
+    },
+    {
+      "enabled": false,
+      "name": "AIStockBot-DailyReport-DISABLED",
+      "path": "C:\\stock-bot\\release\\r2_windows_scheduler_service_preparation\\actual\\task_xml\\AIStockBot-DailyReport-DISABLED.xml",
+      "restart_count": 0
+    }
+  ],
+  "windows_service_installed": false
+}

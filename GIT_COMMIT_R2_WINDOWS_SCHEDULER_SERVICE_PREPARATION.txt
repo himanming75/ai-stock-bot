@@ -1,0 +1,3 @@
+git add deployment/windows_tasks.py deployment/windows_gate.py deployment/windows_readiness.py tools/run_r2_windows_readiness.py tools/test_r2_windows_scheduler_service_preparation.py tools/verify_r2_windows_scheduler_service_preparation.py release/r2_windows_scheduler_service_preparation RUN_R2_RUNTIME_WRAPPER.ps1 STOP_R2_RUNTIME.ps1 PREVIEW_R2_TASK_INSTALL.ps1 UNINSTALL_R2_TASKS.ps1 RUN_R2_WINDOWS_READINESS.ps1 RUN_R2_TEST_AND_VERIFY.ps1 R2_WINDOWS_SCHEDULER_SERVICE_PREPARATION_MANIFEST.json GIT_COMMIT_R2_WINDOWS_SCHEDULER_SERVICE_PREPARATION.txt
+git commit -m "R2 add Windows scheduler and service preparation"
+git push origin main
