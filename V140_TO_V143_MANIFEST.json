@@ -1,0 +1,18 @@
+{
+  "stage": "V140_TO_V143_AI_OPERATIONS",
+  "included_versions": [
+    "V140_DASHBOARD_5",
+    "V141_HISTORICAL_AI_LAB",
+    "V142_STRATEGY_MARKETPLACE",
+    "V143_PORTFOLIO_INTELLIGENCE"
+  ],
+  "actual_market_network_used": false,
+  "actual_broker_network_used": false,
+  "actual_broker_write_used": false,
+  "automatic_order_submission_enabled": false,
+  "actual_strategy_activation_performed": false,
+  "actual_portfolio_modified": false,
+  "actual_orders_created": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0
+}

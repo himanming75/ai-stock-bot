@@ -1,0 +1,332 @@
+{
+  "actual_broker_network_used": false,
+  "actual_broker_write_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_network_used": false,
+  "actual_orders_created": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_portfolio_modified": false,
+  "actual_strategy_activation_performed": false,
+  "automatic_order_submission_enabled": false,
+  "checks": {
+    "ai_final_pass": true,
+    "dashboard_read_only": true,
+    "historical_lab_created": true,
+    "marketplace_created": true,
+    "operations_v2_pass": true,
+    "orders_not_created": true,
+    "performance_metrics_created": true,
+    "portfolio_intelligence_created": true,
+    "portfolio_not_modified": true,
+    "strategy_activation_not_performed": true
+  },
+  "failed": [],
+  "historical_ai_lab": {
+    "actual_research_execution_requested": false,
+    "actual_strategy_promotion_performed": false,
+    "champion_candidate": {
+      "score": "0.78",
+      "strategy_id": "momentum_v2"
+    },
+    "monte_carlo_risk_of_ruin": "0.0000",
+    "monte_carlo_simulations": 1000,
+    "optimization_leaders": [
+      {
+        "evaluation_count": 27,
+        "method": "GRID_SEARCH",
+        "parameters": {
+          "fast": 5,
+          "slow": 20,
+          "threshold": 0.6
+        },
+        "score": "1.0000"
+      },
+      {
+        "evaluation_count": 12,
+        "method": "RANDOM_SEARCH",
+        "parameters": {
+          "fast": 5,
+          "slow": 20,
+          "threshold": 0.8
+        },
+        "score": "0.9200"
+      }
+    ],
+    "promotion_eligible": true,
+    "walk_forward_positive_ratio": "1.0000",
+    "walk_forward_window_count": 4
+  },
+  "performance_metrics": {
+    "average_return": "0.002875",
+    "drawdown_curve": [
+      "0.0000",
+      "0.0000",
+      "0.0040",
+      "0.0000",
+      "0.0000",
+      "0.0020",
+      "0.0000",
+      "0.0000",
+      "0.0029"
+    ],
+    "equity_curve": [
+      "1000",
+      "1010",
+      "1006",
+      "1012",
+      "1015",
+      "1013",
+      "1022",
+      "1026",
+      "1023"
+    ],
+    "expectancy": "2.8750",
+    "losses": 3,
+    "maximum_drawdown": "0.0040",
+    "profit_factor": "3.5556",
+    "sharpe_ratio": "0.5314",
+    "trade_count": 8,
+    "win_rate": "0.6250",
+    "wins": 5
+  },
+  "portfolio_intelligence": {
+    "actual_orders_created": false,
+    "actual_portfolio_modified": false,
+    "average_absolute_correlation": "0.5710",
+    "concentration_index": "0.2650",
+    "correlation_matrix": [
+      {
+        "symbol": "AAPL",
+        "values": {
+          "AAPL": "1.0000",
+          "MSFT": "0.7200",
+          "SPY": "0.6500",
+          "XLV": "0.2800"
+        }
+      },
+      {
+        "symbol": "MSFT",
+        "values": {
+          "AAPL": "0.7200",
+          "MSFT": "1.0000",
+          "SPY": "0.6800",
+          "XLV": "0.3000"
+        }
+      },
+      {
+        "symbol": "SPY",
+        "values": {
+          "AAPL": "0.6500",
+          "MSFT": "0.6800",
+          "SPY": "1.0000",
+          "XLV": "0.5000"
+        }
+      },
+      {
+        "symbol": "XLV",
+        "values": {
+          "AAPL": "0.2800",
+          "MSFT": "0.3000",
+          "SPY": "0.5000",
+          "XLV": "1.0000"
+        }
+      }
+    ],
+    "diversification_score": "0.6126",
+    "position_count": 4,
+    "rebalance_preview": [
+      {
+        "current_weight": "0.3000",
+        "order_created": false,
+        "suggested_direction": "SELL",
+        "symbol": "AAPL",
+        "target_weight": "0.2500",
+        "weight_drift": "-0.0500"
+      },
+      {
+        "current_weight": "0.2500",
+        "order_created": false,
+        "suggested_direction": "HOLD",
+        "symbol": "MSFT",
+        "target_weight": "0.2500",
+        "weight_drift": "0.0000"
+      },
+      {
+        "current_weight": "0.3000",
+        "order_created": false,
+        "suggested_direction": "SELL",
+        "symbol": "SPY",
+        "target_weight": "0.2500",
+        "weight_drift": "-0.0500"
+      },
+      {
+        "current_weight": "0.1500",
+        "order_created": false,
+        "suggested_direction": "BUY",
+        "symbol": "XLV",
+        "target_weight": "0.2500",
+        "weight_drift": "0.1000"
+      }
+    ],
+    "sector_allocation": [
+      {
+        "breached": false,
+        "limit": "0.40",
+        "market_value": "300.00",
+        "sector": "Broad Market",
+        "weight": "0.3000"
+      },
+      {
+        "breached": false,
+        "limit": "0.30",
+        "market_value": "150.00",
+        "sector": "Healthcare",
+        "weight": "0.1500"
+      },
+      {
+        "breached": false,
+        "limit": "0.60",
+        "market_value": "550.00",
+        "sector": "Technology",
+        "weight": "0.5500"
+      }
+    ],
+    "sector_limit_breaches": [],
+    "total_market_value": "1000.00"
+  },
+  "read_only": true,
+  "schema_version": 5,
+  "stage": "V140_TO_V143_AI_OPERATIONS",
+  "status": "PASS",
+  "strategy_marketplace": {
+    "actual_strategy_activation_performed": false,
+    "configuration_preview_only": true,
+    "enabled_count": 2,
+    "strategies": [
+      {
+        "actual_activation_performed": false,
+        "category": "TREND",
+        "display_name": "Momentum V2",
+        "enabled": true,
+        "horizons": [
+          "ultra_short",
+          "day",
+          "swing"
+        ],
+        "priority": 1,
+        "recommended": true,
+        "research_score": "0.7778",
+        "risk_tier": "MEDIUM",
+        "strategy_id": "momentum_v2"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "MEAN_REVERSION",
+        "display_name": "Mean Reversion V2",
+        "enabled": true,
+        "horizons": [
+          "day",
+          "swing"
+        ],
+        "priority": 2,
+        "recommended": true,
+        "research_score": "0.6556",
+        "risk_tier": "MEDIUM",
+        "strategy_id": "mean_reversion_v2"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "BREAKOUT",
+        "display_name": "Breakout V2",
+        "enabled": false,
+        "horizons": [
+          "ultra_short",
+          "day"
+        ],
+        "priority": 3,
+        "recommended": false,
+        "research_score": "0.5923",
+        "risk_tier": "HIGH",
+        "strategy_id": "breakout_v2"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "INTRADAY",
+        "display_name": "Opening Range",
+        "enabled": false,
+        "horizons": [
+          "ultra_short",
+          "day"
+        ],
+        "priority": 4,
+        "recommended": false,
+        "research_score": "0.0000",
+        "risk_tier": "HIGH",
+        "strategy_id": "opening_range_v1"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "EVENT",
+        "display_name": "Gap Strategy",
+        "enabled": false,
+        "horizons": [
+          "ultra_short",
+          "day"
+        ],
+        "priority": 5,
+        "recommended": false,
+        "research_score": "0.0000",
+        "risk_tier": "HIGH",
+        "strategy_id": "gap_v1"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "TREND",
+        "display_name": "Trend Following",
+        "enabled": false,
+        "horizons": [
+          "swing",
+          "position"
+        ],
+        "priority": 6,
+        "recommended": false,
+        "research_score": "0.0000",
+        "risk_tier": "LOW",
+        "strategy_id": "trend_following_v1"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "INTRADAY",
+        "display_name": "Scalping",
+        "enabled": false,
+        "horizons": [
+          "ultra_short"
+        ],
+        "priority": 7,
+        "recommended": false,
+        "research_score": "0.0000",
+        "risk_tier": "VERY_HIGH",
+        "strategy_id": "scalping_v1"
+      },
+      {
+        "actual_activation_performed": false,
+        "category": "SWING",
+        "display_name": "Swing Strategy",
+        "enabled": false,
+        "horizons": [
+          "swing"
+        ],
+        "priority": 8,
+        "recommended": false,
+        "research_score": "0.0000",
+        "risk_tier": "MEDIUM",
+        "strategy_id": "swing_v1"
+      }
+    ],
+    "strategy_count": 8
+  },
+  "v140_dashboard_5": "READY",
+  "v141_historical_ai_lab": "READY",
+  "v142_strategy_marketplace": "READY",
+  "v143_portfolio_intelligence": "READY"
+}
