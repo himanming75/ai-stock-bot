@@ -1,0 +1,13 @@
+{
+  "stage": "V391.06A",
+  "package": "Symbol Concentration Guard",
+  "requires": "V391.01A Risk Policy Loader",
+  "maximum_symbol_exposure_pct": 0.1,
+  "warning_threshold_ratio": 0.8,
+  "automatic_resize_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}
