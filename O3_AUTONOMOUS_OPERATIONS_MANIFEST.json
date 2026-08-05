@@ -1,0 +1,24 @@
+{
+  "stage": "O3",
+  "features": [
+    "Runtime Health Score",
+    "Unified Session Timeline",
+    "Latency Statistics",
+    "Retry Counter",
+    "Timeout Counter",
+    "Rate Limit Counter",
+    "Authentication Counter",
+    "Network Error Counter",
+    "CPU Trend Ledger",
+    "Memory Trend Ledger",
+    "Crash Diagnostic Report",
+    "JSON Audit Export",
+    "CSV Timeline Export"
+  ],
+  "read_only": true,
+  "live_activation_allowed": false,
+  "automatic_order_replay_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}

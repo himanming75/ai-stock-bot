@@ -1,0 +1,106 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "errors": {
+    "counters": {
+      "authentication": 0,
+      "network": 0,
+      "rate_limit": 0,
+      "retry": 0,
+      "timeout": 0
+    },
+    "total_records_scanned": 2
+  },
+  "health": {
+    "actual_live_orders_submitted": 0,
+    "actual_paper_orders_submitted": 0,
+    "checks": {
+      "kill_switch_readable": true,
+      "live_activation_blocked": true,
+      "live_mode_disabled": true,
+      "live_network_disabled": true,
+      "live_write_disabled": true,
+      "paper_mode": true,
+      "scheduler_pass": true,
+      "watchdog_pass": true
+    },
+    "failed": [],
+    "maximum_score": 100,
+    "observed_at": "2026-08-05T05:18:59.652824+00:00",
+    "score": 100,
+    "stage": "O3_HEALTH_SCORE",
+    "state": "HEALTHY"
+  },
+  "latency": {
+    "average_ms": "0",
+    "maximum_ms": "0",
+    "minimum_ms": "0",
+    "p95_ms": "0",
+    "sample_count": 0
+  },
+  "observed_at": "2026-08-05T05:18:59.561146+00:00",
+  "platform": {
+    "python_version": "3.14.6",
+    "release": "11",
+    "system": "Windows"
+  },
+  "safety": {
+    "automatic_broker_restart_enabled": false,
+    "automatic_order_replay_enabled": false,
+    "live_network_enabled": false,
+    "live_write_enabled": false
+  },
+  "scheduler": {
+    "actual_live_orders_submitted": 0,
+    "checkpoint": {
+      "blockers": [],
+      "cycle_id": "b8497952e85a63243a4aa147675a4a2da200a2e9dc84b6598290c613b5d9b0b6",
+      "cycle_number": 3,
+      "runtime_id": "p4-offline-qualification",
+      "stage": "P4",
+      "state": "P4_CYCLE_COMPLETE",
+      "updated_at": "2026-08-05T04:40:23.691834+00:00"
+    },
+    "checks": {
+      "cycle_interval_positive": true,
+      "fail_closed": true,
+      "market_open_required": true,
+      "maximum_cycles_positive": true,
+      "policy_present": true
+    },
+    "failed": [],
+    "observed_at": "2026-08-05T05:18:59.653586+00:00",
+    "policy": {
+      "cycle_interval_seconds": 60,
+      "fail_closed": true,
+      "maximum_cycles_per_session": 390,
+      "require_market_open": true,
+      "require_p2_actual_validation": true,
+      "require_p3_actual_validation": true
+    },
+    "stage": "O2_SCHEDULER_MONITOR",
+    "status": "PASS"
+  },
+  "stage": "O3_DIAGNOSTICS",
+  "watchdog": {
+    "actual_live_orders_submitted": 0,
+    "automatic_broker_restart_enabled": false,
+    "automatic_order_replay_enabled": false,
+    "checks": {
+      "checkpoint_present": true,
+      "heartbeat_fresh_when_runtime_expected": true,
+      "heartbeat_present_when_runtime_expected": true,
+      "live_network_disabled": true,
+      "live_write_disabled": true
+    },
+    "failed": [],
+    "heartbeat_age_seconds": 2315.984196,
+    "maximum_heartbeat_age_seconds": 180,
+    "recovery_actions": [
+      "NO_RECOVERY_REQUIRED"
+    ],
+    "runtime_expected": false,
+    "stage": "O2_WATCHDOG",
+    "status": "PASS"
+  }
+}
