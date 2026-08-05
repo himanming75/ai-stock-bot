@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "confidence": 31.826257,
+      "decision_status": "BLOCKED_OR_OBSERVE",
+      "final_score": 0.06196499,
+      "final_signal": "HOLD_OR_NEUTRAL",
+      "rank": 1,
+      "reasoning": {
+        "blocker_explanation": [
+          "CONFIDENCE_BELOW_MINIMUM",
+          "FINAL_SIGNAL_NEUTRAL"
+        ],
+        "missing_input_explanation": [
+          "technical"
+        ],
+        "neutral_reasons": [
+          "technical is neutral for the candidate (score=0.000): price, momentum, volatility and strategy evidence"
+        ],
+        "opposing_reasons": [],
+        "reasoning_mode": "DETERMINISTIC_TEMPLATE_NO_EXTERNAL_LLM",
+        "summary": "QQQ: HOLD_OR_NEUTRAL with confidence 31.8%. Supporting components=4, opposing components=0, neutral components=1. Missing inputs reduced confidence: technical. Decision blockers: CONFIDENCE_BELOW_MINIMUM, FINAL_SIGNAL_NEUTRAL.",
+        "supporting_reasons": [
+          "news_earnings_macro supports the candidate (score=0.165): news sentiment, earnings and macro evidence",
+          "fundamental supports the candidate (score=0.506): valuation, quality, growth and balance-sheet evidence",
+          "sector supports the candidate (score=0.341): relative sector strength and rotation evidence",
+          "options supports the candidate (score=0.309): options positioning, volatility and event-risk evidence"
+        ]
+      },
+      "symbol": "QQQ"
+    },
+    {
+      "confidence": 24.106161,
+      "decision_status": "BLOCKED_OR_OBSERVE",
+      "final_score": 0.02047224,
+      "final_signal": "HOLD_OR_NEUTRAL",
+      "rank": 2,
+      "reasoning": {
+        "blocker_explanation": [
+          "CONFIDENCE_BELOW_MINIMUM",
+          "FINAL_SIGNAL_NEUTRAL"
+        ],
+        "missing_input_explanation": [
+          "technical"
+        ],
+        "neutral_reasons": [
+          "technical is neutral for the candidate (score=0.000): price, momentum, volatility and strategy evidence"
+        ],
+        "opposing_reasons": [],
+        "reasoning_mode": "DETERMINISTIC_TEMPLATE_NO_EXTERNAL_LLM",
+        "summary": "SPY: HOLD_OR_NEUTRAL with confidence 24.1%. Supporting components=4, opposing components=0, neutral components=1. Missing inputs reduced confidence: technical. Decision blockers: CONFIDENCE_BELOW_MINIMUM, FINAL_SIGNAL_NEUTRAL.",
+        "supporting_reasons": [
+          "news_earnings_macro supports the candidate (score=0.129): news sentiment, earnings and macro evidence",
+          "fundamental supports the candidate (score=0.522): valuation, quality, growth and balance-sheet evidence",
+          "sector supports the candidate (score=0.282): relative sector strength and rotation evidence",
+          "options supports the candidate (score=0.147): options positioning, volatility and event-risk evidence"
+        ]
+      },
+      "symbol": "SPY"
+    },
+    {
+      "confidence": 23.255249,
+      "decision_status": "BLOCKED_OR_OBSERVE",
+      "final_score": -0.20156709,
+      "final_signal": "HOLD_OR_NEUTRAL",
+      "rank": 3,
+      "reasoning": {
+        "blocker_explanation": [
+          "CONFIDENCE_BELOW_MINIMUM",
+          "FINAL_SIGNAL_NEUTRAL"
+        ],
+        "missing_input_explanation": [
+          "technical"
+        ],
+        "neutral_reasons": [
+          "technical is neutral for the candidate (score=0.000): price, momentum, volatility and strategy evidence",
+          "news_earnings_macro is neutral for the candidate (score=-0.008): news sentiment, earnings and macro evidence",
+          "sector is neutral for the candidate (score=0.029): relative sector strength and rotation evidence"
+        ],
+        "opposing_reasons": [
+          "options opposes the candidate (score=-0.123): options positioning, volatility and event-risk evidence"
+        ],
+        "reasoning_mode": "DETERMINISTIC_TEMPLATE_NO_EXTERNAL_LLM",
+        "summary": "IWM: HOLD_OR_NEUTRAL with confidence 23.3%. Supporting components=1, opposing components=1, neutral components=3. Missing inputs reduced confidence: technical. Decision blockers: CONFIDENCE_BELOW_MINIMUM, FINAL_SIGNAL_NEUTRAL.",
+        "supporting_reasons": [
+          "fundamental supports the candidate (score=0.464): valuation, quality, growth and balance-sheet evidence"
+        ]
+      },
+      "symbol": "IWM"
+    }
+  ]
+}

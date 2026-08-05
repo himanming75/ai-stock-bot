@@ -1,0 +1,10 @@
+git add unified_ai_decision_reasoning
+git add tools/run_v1801_to_v2000_unified_ai_decision.py
+git add tools/test_v1801_to_v2000_unified_ai_decision.py
+git add release/v1801_2000_unified_ai_decision
+git add RUN_V1801_TO_V2000_UNIFIED_AI_DECISION.ps1
+git add RUN_V1801_TO_V2000_UNIFIED_AI_DECISION_TEST.ps1
+git add V1801_TO_V2000_UNIFIED_AI_DECISION_MANIFEST.json
+git add GIT_COMMIT_V1801_TO_V2000_UNIFIED_AI_DECISION.txt
+git commit -m "Add V1801-V2000 unified AI decision reasoning"
+git push origin main

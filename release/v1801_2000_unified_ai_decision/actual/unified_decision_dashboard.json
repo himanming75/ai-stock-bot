@@ -1,0 +1,10 @@
+{
+  "allocation_count": 0,
+  "approved_candidate_count": 0,
+  "blocker_count": 0,
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "status": "PARTIAL_INPUT",
+  "symbol_decision_count": 3,
+  "warning_count": 1
+}
