@@ -1,0 +1,53 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "average_cost_supported": true,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "evaluation": {
+    "accounting_event": {},
+    "accounting_event_hash": "",
+    "approved": false,
+    "checks": {},
+    "failed": [
+      "simulator_ready",
+      "simulated_fill_created",
+      "fill_accounting_allowed"
+    ],
+    "portfolio_hash": "",
+    "portfolio_state": {
+      "cash": 100000.0,
+      "equity": 100000.0,
+      "portfolio_version": "V392.12A",
+      "positions": {},
+      "realized_pnl": 0.0,
+      "unrealized_pnl": 0.0
+    },
+    "replay_detected": false,
+    "required_action": "DO_NOT_UPDATE_PORTFOLIO",
+    "state": "FILL_ACCOUNTING_BLOCKED"
+  },
+  "live_submission_enabled": false,
+  "next_phase": "V392_13A_PAPER_PORTFOLIO_RECONCILIATION",
+  "observed_at": "2026-08-05T00:53:01.095304+00:00",
+  "paper_submission_enabled": false,
+  "partial_fill_accounting_supported": true,
+  "portfolio_reconciliation_allowed": false,
+  "portfolio_updated": false,
+  "prerequisite_checks": {
+    "broker_network_disabled": true,
+    "fill_accounting_allowed": false,
+    "live_submission_disabled": true,
+    "paper_submission_disabled": true,
+    "simulated_fill_created": false,
+    "simulator_ready": false,
+    "simulator_stage_valid": true,
+    "simulator_status_pass": true
+  },
+  "realized_pnl_supported": true,
+  "stage": "V392.12A",
+  "state": "FILL_ACCOUNTING_POSITION_UPDATE_BLOCKED",
+  "status": "PASS",
+  "unrealized_pnl_supported": true
+}

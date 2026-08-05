@@ -1,0 +1,16 @@
+{
+  "stage": "V392.12A",
+  "package": "Fill Accounting and Position Update",
+  "requires": "V392.11A Paper Execution Simulator",
+  "partial_fill_accounting_supported": true,
+  "average_cost_supported": true,
+  "realized_pnl_supported": true,
+  "unrealized_pnl_supported": true,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}
