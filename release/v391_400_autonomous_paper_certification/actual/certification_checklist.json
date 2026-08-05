@@ -1,9 +1,9 @@
 {
-  "certificate_id": "paper_cert_1f95d807b40f94f298de40ce",
+  "certificate_id": "paper_cert_95042f7eade12078e1f115dd",
   "checks": [
     {
       "details": {
-        "completed_cycles": 65,
+        "completed_cycles": 71,
         "minimum_cycles": 60
       },
       "name": "MINIMUM_CONTROLLER_CYCLES",

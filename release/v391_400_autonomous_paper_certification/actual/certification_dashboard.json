@@ -1,9 +1,9 @@
 {
-  "certificate_id": "paper_cert_1f95d807b40f94f298de40ce",
+  "certificate_id": "paper_cert_95042f7eade12078e1f115dd",
   "certification_level": "READ_ONLY_AUTONOMOUS_PAPER_CORE_CERTIFIED_PENDING_MARKET_LIFECYCLE_EVIDENCE",
-  "completed_cycles": 65,
+  "completed_cycles": 71,
   "failed_required_check_count": 0,
-  "generated_at": "2026-08-05T19:43:09.706325+00:00",
+  "generated_at": "2026-08-05T19:48:36.246051+00:00",
   "live_orders_submitted": 0,
   "paper_orders_submitted": 0,
   "paper_submission_enabled": false,
