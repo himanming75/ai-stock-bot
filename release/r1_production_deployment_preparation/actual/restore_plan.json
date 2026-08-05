@@ -1,0 +1,15 @@
+{
+  "automatic_order_replay_enabled": false,
+  "automatic_restore_enabled": false,
+  "required_sequence": [
+    "ACTIVATE_PAPER_AND_LIVE_KILL_SWITCHES",
+    "STOP_ALL_RUNTIMES",
+    "VERIFY_BACKUP_HASHES",
+    "RESTORE_STATE_TO_STAGING_DIRECTORY",
+    "COMPARE_OPEN_ORDERS_POSITIONS_AND_CASH",
+    "RUN_P4_OR_L5_PREFLIGHT_AS_APPLICABLE",
+    "REQUIRE_OPERATOR_APPROVAL",
+    "RESTART_WITH_NEW_SESSION_ID"
+  ],
+  "stage": "R1_RESTORE_PLAN"
+}

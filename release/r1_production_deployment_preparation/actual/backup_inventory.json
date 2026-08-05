@@ -1,0 +1,295 @@
+{
+  "automatic_restore_enabled": false,
+  "contains_credentials": false,
+  "file_count": 57,
+  "files": [
+    {
+      "path": "release/p1_broker_consolidation/actual/broker_consolidation_result.json",
+      "sha256": "281669abeb8988d86c1997ef7efaa2192188de407300c94480474dbf39e3c666",
+      "size_bytes": 5104
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/canonical_component_registry.json",
+      "sha256": "0416bf0bc90d9249f8485f51866258aeedbbe764e2fc32c4b94324a924c19fd0",
+      "size_bytes": 1653
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/compatibility_map.json",
+      "sha256": "1094e901a2b717a9caa4d0e26bf1918fe0e12486aa7da962f2b030fad806cf12",
+      "size_bytes": 518
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/consolidation_audit_ledger.jsonl",
+      "sha256": "860664fd47a421433cf6b4400c98e8f9be465b482557fb3b16981ad963818e95",
+      "size_bytes": 4102
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/deprecation_manifest.json",
+      "sha256": "eb45a60db9ddd57b494aaf1613920c9898c85dbc5402259610b7cbba30fd0300",
+      "size_bytes": 531
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/kill_switch.json",
+      "sha256": "1aa2d52660d75c825eac185990f7f5f4ed6570d48afd2c7b8c2202a87defebd5",
+      "size_bytes": 84
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/latest_p2_execution_result.json",
+      "sha256": "d15162ec9b36d91b91fbf4f2766f8ea6e6e909cb7e8f3d0f1bd2eeae2294b742",
+      "size_bytes": 1128
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/order_error_ledger.jsonl",
+      "sha256": "f23177c9ef9d3a0776db8f85e8affad583b69002fa3b0de4a9774df42a16444c",
+      "size_bytes": 2775
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/order_idempotency_registry.json",
+      "sha256": "24e79ba8c81a490738dfeb5a2a914bbaebfc40c09d2a82214764249555c98ce4",
+      "size_bytes": 32
+    },
+    {
+      "path": "release/p1_broker_consolidation/actual/runtime_checkpoint.json",
+      "sha256": "7a5bb35614ce842f15382532606367a1fae7eb82b2cdbc1b55650c838d0ce765",
+      "size_bytes": 289
+    },
+    {
+      "path": "release/p2_actual_paper_execution/actual/p2_offline_qualification.json",
+      "sha256": "f0a9aedaa887ce8580caff42b23ce0498eb06d86505635dbd89aad7469b27590",
+      "size_bytes": 786
+    },
+    {
+      "path": "release/p3_order_fill_portfolio_sync/actual/fill_ledger.jsonl",
+      "sha256": "9c26d890727da64af2599a1292c4aaf1c966f178ade42fddfc50ccad6d91968d",
+      "size_bytes": 404
+    },
+    {
+      "path": "release/p3_order_fill_portfolio_sync/actual/fill_registry.json",
+      "sha256": "d4182e13454ce71b72f6bdcdfd06feeaaa8388b7c70bf73142e4f27fe8a5f1e2",
+      "size_bytes": 485
+    },
+    {
+      "path": "release/p3_order_fill_portfolio_sync/actual/order_state_ledger.jsonl",
+      "sha256": "6fc00a18472698de6c5ef1151a67507eccc9d60d91a2f079775444fcb9eecb84",
+      "size_bytes": 324
+    },
+    {
+      "path": "release/p3_order_fill_portfolio_sync/actual/p3_sync_result.json",
+      "sha256": "e219c0b2e9769509ea09d049356dfa272b24b2a6d296eaff82ee0583a43b1426",
+      "size_bytes": 1014
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/cycle_ledger.jsonl",
+      "sha256": "e3a2a3ac63168d7137ec717bdffd5113e62212cf8d696348de6158cb407956f0",
+      "size_bytes": 2142
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/cycle_registry.json",
+      "sha256": "31ce8829d068b0c142e8657b11cad8874e91025bd2a4642d81ab169e8e794e15",
+      "size_bytes": 862
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/heartbeat.json",
+      "sha256": "11f4fb430da158920c0d7bcf801765d67986d6a82e7e189aa919447cecb0a803",
+      "size_bytes": 149
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/p4_actual_validation.json",
+      "sha256": "c2465e24b9daa524defc6a11a22895b3b2b1fcab23268cb83a660aa1a73aafca",
+      "size_bytes": 509
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/p4_runtime_result.json",
+      "sha256": "93658c1c74527384c1bf559f62d953275e3e82d081ac2e8a58f03a4a95e4dcfe",
+      "size_bytes": 468
+    },
+    {
+      "path": "release/p4_autonomous_paper_runtime/actual/runtime_checkpoint.json",
+      "sha256": "dcac3360d44cdb54ec19892e77e397ea63207e5ba274d03aee456b30c8935055",
+      "size_bytes": 278
+    },
+    {
+      "path": "release/p5_paper_long_run_qualification/actual/p5_qualification_result.json",
+      "sha256": "c300d411afa56ed36573e3cbd999c8c7649001e07857c53dbc13b90846e768ed",
+      "size_bytes": 1926
+    },
+    {
+      "path": "release/p5_paper_long_run_qualification/actual/qualification_checkpoint.json",
+      "sha256": "800bd841e72dbfcd0e7f51437279d936b5e02beb7ccfc80e4b8d51a55838de42",
+      "size_bytes": 562
+    },
+    {
+      "path": "release/operations_bundle/actual/l1_safety_preparation_result.json",
+      "sha256": "97bdbcdc425185d25c6677ee9ad7127397b8f03ef8dfea17cff8a83d08f676e4",
+      "size_bytes": 600
+    },
+    {
+      "path": "release/operations_bundle/actual/monitor_result.json",
+      "sha256": "93e5e718e40d7fdcc569219c03ecff47dc49a217c09dc5adcb7f1f66552ed981",
+      "size_bytes": 485
+    },
+    {
+      "path": "release/operations_bundle/actual/operations_events.jsonl",
+      "sha256": "7f967531356542f58ec9bc80132c6aa17dd800464b5e36f1a15034cf8a997bf6",
+      "size_bytes": 1114
+    },
+    {
+      "path": "release/o3_autonomous_operations/actual/diagnostic_report.json",
+      "sha256": "fc6e414a4c3ff038f424dfadfe99c349c1758f19b57725f7d595b0392cf9352d",
+      "size_bytes": 2998
+    },
+    {
+      "path": "release/o3_autonomous_operations/actual/export/o3_audit_export.json",
+      "sha256": "69e962e55ef200ee0f6b98cfc856433f80d370475f158dc4e16d6ce6a12d25af",
+      "size_bytes": 7754
+    },
+    {
+      "path": "release/o3_autonomous_operations/actual/export/o3_timeline_export.csv",
+      "sha256": "27cf04e4e7398ee4f0aa6edc70a252200c96421c4c7e5766510ec39ec583a881",
+      "size_bytes": 378
+    },
+    {
+      "path": "release/o3_autonomous_operations/actual/health_score.json",
+      "sha256": "6edeb784b59d8aa83b7ff327857f8a79dceb17ec6f2f18483601c19868467d8a",
+      "size_bytes": 527
+    },
+    {
+      "path": "release/o3_autonomous_operations/actual/resource_trends.jsonl",
+      "sha256": "d459a27393f3be9f7f4dbd34debaad41f83a1bce1e556411940b235942e89d7c",
+      "size_bytes": 298
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/graceful_shutdown_marker.json",
+      "sha256": "4eaaf7f9d58b10308119cf8d521160ea8d322e4ba9b1e303e23d9559c11aaff6",
+      "size_bytes": 383
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/operator_resume_checklist.json",
+      "sha256": "f633e25c843f46e70799ed725da0aad59c9e8b9d5c6027db0444489c488add7f",
+      "size_bytes": 2155
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/reports/2026-08-04_daily_report.json",
+      "sha256": "fd08a3a0b29f944eb0a1504be1346ad3016c89512cb441477b1e61f2795170a7",
+      "size_bytes": 4384
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/reports/2026-08-04_daily_summary.csv",
+      "sha256": "e7ea445563e3d1fb9f3d5f6c105d5cf1b80607e92f4155044f34a1c9994cc92d",
+      "size_bytes": 175
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/resume_plan.json",
+      "sha256": "65e3ebf37f53e2c9bbcf812b28c7ae758918b251c0ca97742aa4028ffd853dab",
+      "size_bytes": 952
+    },
+    {
+      "path": "release/o4_runtime_resume_session_reporting/actual/session_registry.json",
+      "sha256": "d2989164ffd6080584f4c8a709255b1ef2aa848c535e2868b5c721f927667a6b",
+      "size_bytes": 1233
+    },
+    {
+      "path": "release/l1_live_safety_boundary/actual/l1_result.json",
+      "sha256": "19bbe03d4a461dcee2e1a27ac48f1497a0983ae0e40e0589d01edef34ea7dbd3",
+      "size_bytes": 2208
+    },
+    {
+      "path": "release/l1_live_safety_boundary/actual/live_kill_switch.json",
+      "sha256": "b5ad08240cc2a22b8d6da08a657a84ff29c5362af3a575c4d0d2e288c36ec44d",
+      "size_bytes": 128
+    },
+    {
+      "path": "release/l2_live_read_only_preparation/actual/l2_offline_qualification.json",
+      "sha256": "5162f6323303a7692ba277bbc4428095e2e4302db5224f5e962a97624053fc17",
+      "size_bytes": 1320
+    },
+    {
+      "path": "release/l3_live_micro_execution_preparation/actual/idempotency_registry.json",
+      "sha256": "5235ceb990c005b4599c7be6477536594de51ad3decae65b9803b6f98484df6a",
+      "size_bytes": 252
+    },
+    {
+      "path": "release/l3_live_micro_execution_preparation/actual/l3_offline_qualification.json",
+      "sha256": "04471e93acc7e7ba456a30b7f696a3fe85ab85de408a999327ce93e0fe52e555",
+      "size_bytes": 2225
+    },
+    {
+      "path": "release/l3_live_micro_execution_preparation/actual/live_order_dry_run_ledger.jsonl",
+      "sha256": "c8dd0e8c8411e08c6b0632380233985c4d856b31df0f7feb8864e795107686b4",
+      "size_bytes": 795
+    },
+    {
+      "path": "release/l4_live_reconciliation_preparation/actual/fill_registry.json",
+      "sha256": "65639e5259df4204b362710b4955c2e1f8e3ed162af45b097b2c2936dfa917f1",
+      "size_bytes": 175
+    },
+    {
+      "path": "release/l4_live_reconciliation_preparation/actual/l4_offline_qualification.json",
+      "sha256": "e0c6a9992534d4d2e94b01aa4111d77347088cbd03ed4f772dc8fc7067b7c41b",
+      "size_bytes": 2219
+    },
+    {
+      "path": "release/l4_live_reconciliation_preparation/actual/reconciliation_ledger.jsonl",
+      "sha256": "b8031c4584beec98cf4278931d5f6f1cd2595a6f9ff3b95e9d0b3a0731b42531",
+      "size_bytes": 519
+    },
+    {
+      "path": "release/l5_live_autonomous_runtime_preparation/actual/cycle_ledger.jsonl",
+      "sha256": "b3800a1a78631ff440224e07554fbfb28aaa4b2acb9f8c6b42b629c5adcf5ba9",
+      "size_bytes": 2745
+    },
+    {
+      "path": "release/l5_live_autonomous_runtime_preparation/actual/cycle_registry.json",
+      "sha256": "3db990c4de16a82920780e3489c160be64ec14f7ab70b510fd4efdd96df658f9",
+      "size_bytes": 685
+    },
+    {
+      "path": "release/l5_live_autonomous_runtime_preparation/actual/heartbeat.json",
+      "sha256": "4503b8c8182ad078995afa766c237b46d4102b5223138d148efd39dc9bb4a9e4",
+      "size_bytes": 148
+    },
+    {
+      "path": "release/l5_live_autonomous_runtime_preparation/actual/l5_offline_qualification.json",
+      "sha256": "ff9eb970951a4dc8efce52c5cf933ee77492073270050344679245d7e28b4139",
+      "size_bytes": 1517
+    },
+    {
+      "path": "release/l5_live_autonomous_runtime_preparation/actual/runtime_checkpoint.json",
+      "sha256": "d26df2b959953f1f8872d495372987a534f45d53ad927c8e361fe19365ddfd25",
+      "size_bytes": 302
+    },
+    {
+      "path": "release/l6_live_long_run_qualification_preparation/actual/l6_offline_qualification.json",
+      "sha256": "785549073d6132ad958253039ad6fb48a83ef8d46c9d64fee78147a70fe59243",
+      "size_bytes": 6080
+    },
+    {
+      "path": "release/l6_live_long_run_qualification_preparation/actual/l6_preparation_certificate.json",
+      "sha256": "9ebab2dd701620752dc3e5703cccb1737bac2935f0a66d705dcb4adeb8ac4b87",
+      "size_bytes": 337
+    },
+    {
+      "path": "release/actual_validation_control_center/actual/actual_validation_report.json",
+      "sha256": "314d3f24cc013cc3c55b43a9296747fee546338ca330dceabc0cd64d26025713",
+      "size_bytes": 1783
+    },
+    {
+      "path": "release/actual_validation_control_center/actual/actual_validation_status.json",
+      "sha256": "ee132dd2acc699db3e96e339c11bf81a14d0fd8eefca7a7a2e53b152a91d0d1c",
+      "size_bytes": 792
+    },
+    {
+      "path": "release/actual_validation_control_center/actual/market_day_preflight.json",
+      "sha256": "18e75a50c53baff7f23ebac5c5fdd9c06655ff43fa6b0c70a254da6aa71b7939",
+      "size_bytes": 712
+    },
+    {
+      "path": "release/actual_validation_control_center/actual/paper_completion_certificate.json",
+      "sha256": "07ada564109f2bc6755830caa9113ad5f64ee0f7f57cbc75b7485c7985597bc0",
+      "size_bytes": 452
+    }
+  ],
+  "generated_at": "2026-08-05T06:06:46.711358+00:00",
+  "operator_review_required": true,
+  "stage": "R1_BACKUP_INVENTORY"
+}

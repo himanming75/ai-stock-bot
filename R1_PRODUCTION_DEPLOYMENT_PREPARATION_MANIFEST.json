@@ -1,0 +1,22 @@
+{
+  "stage": "R1_PREPARATION",
+  "features": [
+    "Immutable Release Manifest",
+    "Configuration Secret Audit",
+    "Backup Inventory",
+    "Manual Restore Plan",
+    "Retention Policy",
+    "Process Supervisor Policy",
+    "Actual Validation Gates",
+    "Production Release Certificate Gate"
+  ],
+  "production_release_allowed": false,
+  "start_on_boot_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}

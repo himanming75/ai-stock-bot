@@ -1,0 +1,28 @@
+{
+  "actual_live_orders_submitted": 0,
+  "automatic_activation_enabled": false,
+  "eligible": false,
+  "gates": {
+    "checks": {
+      "l2_actual_live_read": false,
+      "l3_actual_micro_live": false,
+      "l4_actual_reconciliation": false,
+      "l5_actual_runtime": false,
+      "l6_actual_long_run": false,
+      "paper_completion_certificate": false
+    },
+    "failed": [
+      "paper_completion_certificate",
+      "l2_actual_live_read",
+      "l3_actual_micro_live",
+      "l4_actual_reconciliation",
+      "l5_actual_runtime",
+      "l6_actual_long_run"
+    ],
+    "production_release_allowed": false
+  },
+  "generated_at": "2026-08-05T06:06:46.926532+00:00",
+  "production_release_allowed": false,
+  "stage": "PRODUCTION_RELEASE_CERTIFICATE",
+  "status": "BLOCKED"
+}

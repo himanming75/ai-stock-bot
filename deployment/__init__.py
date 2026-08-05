@@ -1,1 +1,1 @@
-"""Offline deployment packaging package."""
+"""Production deployment preparation. Activation remains blocked."""

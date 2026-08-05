@@ -1,0 +1,1003 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "backup_inventory": {
+    "automatic_restore_enabled": false,
+    "contains_credentials": false,
+    "file_count": 57,
+    "files": [
+      {
+        "path": "release/p1_broker_consolidation/actual/broker_consolidation_result.json",
+        "sha256": "281669abeb8988d86c1997ef7efaa2192188de407300c94480474dbf39e3c666",
+        "size_bytes": 5104
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/canonical_component_registry.json",
+        "sha256": "0416bf0bc90d9249f8485f51866258aeedbbe764e2fc32c4b94324a924c19fd0",
+        "size_bytes": 1653
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/compatibility_map.json",
+        "sha256": "1094e901a2b717a9caa4d0e26bf1918fe0e12486aa7da962f2b030fad806cf12",
+        "size_bytes": 518
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/consolidation_audit_ledger.jsonl",
+        "sha256": "860664fd47a421433cf6b4400c98e8f9be465b482557fb3b16981ad963818e95",
+        "size_bytes": 4102
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/deprecation_manifest.json",
+        "sha256": "eb45a60db9ddd57b494aaf1613920c9898c85dbc5402259610b7cbba30fd0300",
+        "size_bytes": 531
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/kill_switch.json",
+        "sha256": "1aa2d52660d75c825eac185990f7f5f4ed6570d48afd2c7b8c2202a87defebd5",
+        "size_bytes": 84
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/latest_p2_execution_result.json",
+        "sha256": "d15162ec9b36d91b91fbf4f2766f8ea6e6e909cb7e8f3d0f1bd2eeae2294b742",
+        "size_bytes": 1128
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/order_error_ledger.jsonl",
+        "sha256": "f23177c9ef9d3a0776db8f85e8affad583b69002fa3b0de4a9774df42a16444c",
+        "size_bytes": 2775
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/order_idempotency_registry.json",
+        "sha256": "24e79ba8c81a490738dfeb5a2a914bbaebfc40c09d2a82214764249555c98ce4",
+        "size_bytes": 32
+      },
+      {
+        "path": "release/p1_broker_consolidation/actual/runtime_checkpoint.json",
+        "sha256": "7a5bb35614ce842f15382532606367a1fae7eb82b2cdbc1b55650c838d0ce765",
+        "size_bytes": 289
+      },
+      {
+        "path": "release/p2_actual_paper_execution/actual/p2_offline_qualification.json",
+        "sha256": "f0a9aedaa887ce8580caff42b23ce0498eb06d86505635dbd89aad7469b27590",
+        "size_bytes": 786
+      },
+      {
+        "path": "release/p3_order_fill_portfolio_sync/actual/fill_ledger.jsonl",
+        "sha256": "9c26d890727da64af2599a1292c4aaf1c966f178ade42fddfc50ccad6d91968d",
+        "size_bytes": 404
+      },
+      {
+        "path": "release/p3_order_fill_portfolio_sync/actual/fill_registry.json",
+        "sha256": "d4182e13454ce71b72f6bdcdfd06feeaaa8388b7c70bf73142e4f27fe8a5f1e2",
+        "size_bytes": 485
+      },
+      {
+        "path": "release/p3_order_fill_portfolio_sync/actual/order_state_ledger.jsonl",
+        "sha256": "6fc00a18472698de6c5ef1151a67507eccc9d60d91a2f079775444fcb9eecb84",
+        "size_bytes": 324
+      },
+      {
+        "path": "release/p3_order_fill_portfolio_sync/actual/p3_sync_result.json",
+        "sha256": "e219c0b2e9769509ea09d049356dfa272b24b2a6d296eaff82ee0583a43b1426",
+        "size_bytes": 1014
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/cycle_ledger.jsonl",
+        "sha256": "e3a2a3ac63168d7137ec717bdffd5113e62212cf8d696348de6158cb407956f0",
+        "size_bytes": 2142
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/cycle_registry.json",
+        "sha256": "31ce8829d068b0c142e8657b11cad8874e91025bd2a4642d81ab169e8e794e15",
+        "size_bytes": 862
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/heartbeat.json",
+        "sha256": "11f4fb430da158920c0d7bcf801765d67986d6a82e7e189aa919447cecb0a803",
+        "size_bytes": 149
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/p4_actual_validation.json",
+        "sha256": "c2465e24b9daa524defc6a11a22895b3b2b1fcab23268cb83a660aa1a73aafca",
+        "size_bytes": 509
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/p4_runtime_result.json",
+        "sha256": "93658c1c74527384c1bf559f62d953275e3e82d081ac2e8a58f03a4a95e4dcfe",
+        "size_bytes": 468
+      },
+      {
+        "path": "release/p4_autonomous_paper_runtime/actual/runtime_checkpoint.json",
+        "sha256": "dcac3360d44cdb54ec19892e77e397ea63207e5ba274d03aee456b30c8935055",
+        "size_bytes": 278
+      },
+      {
+        "path": "release/p5_paper_long_run_qualification/actual/p5_qualification_result.json",
+        "sha256": "c300d411afa56ed36573e3cbd999c8c7649001e07857c53dbc13b90846e768ed",
+        "size_bytes": 1926
+      },
+      {
+        "path": "release/p5_paper_long_run_qualification/actual/qualification_checkpoint.json",
+        "sha256": "800bd841e72dbfcd0e7f51437279d936b5e02beb7ccfc80e4b8d51a55838de42",
+        "size_bytes": 562
+      },
+      {
+        "path": "release/operations_bundle/actual/l1_safety_preparation_result.json",
+        "sha256": "97bdbcdc425185d25c6677ee9ad7127397b8f03ef8dfea17cff8a83d08f676e4",
+        "size_bytes": 600
+      },
+      {
+        "path": "release/operations_bundle/actual/monitor_result.json",
+        "sha256": "93e5e718e40d7fdcc569219c03ecff47dc49a217c09dc5adcb7f1f66552ed981",
+        "size_bytes": 485
+      },
+      {
+        "path": "release/operations_bundle/actual/operations_events.jsonl",
+        "sha256": "7f967531356542f58ec9bc80132c6aa17dd800464b5e36f1a15034cf8a997bf6",
+        "size_bytes": 1114
+      },
+      {
+        "path": "release/o3_autonomous_operations/actual/diagnostic_report.json",
+        "sha256": "fc6e414a4c3ff038f424dfadfe99c349c1758f19b57725f7d595b0392cf9352d",
+        "size_bytes": 2998
+      },
+      {
+        "path": "release/o3_autonomous_operations/actual/export/o3_audit_export.json",
+        "sha256": "69e962e55ef200ee0f6b98cfc856433f80d370475f158dc4e16d6ce6a12d25af",
+        "size_bytes": 7754
+      },
+      {
+        "path": "release/o3_autonomous_operations/actual/export/o3_timeline_export.csv",
+        "sha256": "27cf04e4e7398ee4f0aa6edc70a252200c96421c4c7e5766510ec39ec583a881",
+        "size_bytes": 378
+      },
+      {
+        "path": "release/o3_autonomous_operations/actual/health_score.json",
+        "sha256": "6edeb784b59d8aa83b7ff327857f8a79dceb17ec6f2f18483601c19868467d8a",
+        "size_bytes": 527
+      },
+      {
+        "path": "release/o3_autonomous_operations/actual/resource_trends.jsonl",
+        "sha256": "d459a27393f3be9f7f4dbd34debaad41f83a1bce1e556411940b235942e89d7c",
+        "size_bytes": 298
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/graceful_shutdown_marker.json",
+        "sha256": "4eaaf7f9d58b10308119cf8d521160ea8d322e4ba9b1e303e23d9559c11aaff6",
+        "size_bytes": 383
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/operator_resume_checklist.json",
+        "sha256": "f633e25c843f46e70799ed725da0aad59c9e8b9d5c6027db0444489c488add7f",
+        "size_bytes": 2155
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/reports/2026-08-04_daily_report.json",
+        "sha256": "fd08a3a0b29f944eb0a1504be1346ad3016c89512cb441477b1e61f2795170a7",
+        "size_bytes": 4384
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/reports/2026-08-04_daily_summary.csv",
+        "sha256": "e7ea445563e3d1fb9f3d5f6c105d5cf1b80607e92f4155044f34a1c9994cc92d",
+        "size_bytes": 175
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/resume_plan.json",
+        "sha256": "65e3ebf37f53e2c9bbcf812b28c7ae758918b251c0ca97742aa4028ffd853dab",
+        "size_bytes": 952
+      },
+      {
+        "path": "release/o4_runtime_resume_session_reporting/actual/session_registry.json",
+        "sha256": "d2989164ffd6080584f4c8a709255b1ef2aa848c535e2868b5c721f927667a6b",
+        "size_bytes": 1233
+      },
+      {
+        "path": "release/l1_live_safety_boundary/actual/l1_result.json",
+        "sha256": "19bbe03d4a461dcee2e1a27ac48f1497a0983ae0e40e0589d01edef34ea7dbd3",
+        "size_bytes": 2208
+      },
+      {
+        "path": "release/l1_live_safety_boundary/actual/live_kill_switch.json",
+        "sha256": "b5ad08240cc2a22b8d6da08a657a84ff29c5362af3a575c4d0d2e288c36ec44d",
+        "size_bytes": 128
+      },
+      {
+        "path": "release/l2_live_read_only_preparation/actual/l2_offline_qualification.json",
+        "sha256": "5162f6323303a7692ba277bbc4428095e2e4302db5224f5e962a97624053fc17",
+        "size_bytes": 1320
+      },
+      {
+        "path": "release/l3_live_micro_execution_preparation/actual/idempotency_registry.json",
+        "sha256": "5235ceb990c005b4599c7be6477536594de51ad3decae65b9803b6f98484df6a",
+        "size_bytes": 252
+      },
+      {
+        "path": "release/l3_live_micro_execution_preparation/actual/l3_offline_qualification.json",
+        "sha256": "04471e93acc7e7ba456a30b7f696a3fe85ab85de408a999327ce93e0fe52e555",
+        "size_bytes": 2225
+      },
+      {
+        "path": "release/l3_live_micro_execution_preparation/actual/live_order_dry_run_ledger.jsonl",
+        "sha256": "c8dd0e8c8411e08c6b0632380233985c4d856b31df0f7feb8864e795107686b4",
+        "size_bytes": 795
+      },
+      {
+        "path": "release/l4_live_reconciliation_preparation/actual/fill_registry.json",
+        "sha256": "65639e5259df4204b362710b4955c2e1f8e3ed162af45b097b2c2936dfa917f1",
+        "size_bytes": 175
+      },
+      {
+        "path": "release/l4_live_reconciliation_preparation/actual/l4_offline_qualification.json",
+        "sha256": "e0c6a9992534d4d2e94b01aa4111d77347088cbd03ed4f772dc8fc7067b7c41b",
+        "size_bytes": 2219
+      },
+      {
+        "path": "release/l4_live_reconciliation_preparation/actual/reconciliation_ledger.jsonl",
+        "sha256": "b8031c4584beec98cf4278931d5f6f1cd2595a6f9ff3b95e9d0b3a0731b42531",
+        "size_bytes": 519
+      },
+      {
+        "path": "release/l5_live_autonomous_runtime_preparation/actual/cycle_ledger.jsonl",
+        "sha256": "b3800a1a78631ff440224e07554fbfb28aaa4b2acb9f8c6b42b629c5adcf5ba9",
+        "size_bytes": 2745
+      },
+      {
+        "path": "release/l5_live_autonomous_runtime_preparation/actual/cycle_registry.json",
+        "sha256": "3db990c4de16a82920780e3489c160be64ec14f7ab70b510fd4efdd96df658f9",
+        "size_bytes": 685
+      },
+      {
+        "path": "release/l5_live_autonomous_runtime_preparation/actual/heartbeat.json",
+        "sha256": "4503b8c8182ad078995afa766c237b46d4102b5223138d148efd39dc9bb4a9e4",
+        "size_bytes": 148
+      },
+      {
+        "path": "release/l5_live_autonomous_runtime_preparation/actual/l5_offline_qualification.json",
+        "sha256": "ff9eb970951a4dc8efce52c5cf933ee77492073270050344679245d7e28b4139",
+        "size_bytes": 1517
+      },
+      {
+        "path": "release/l5_live_autonomous_runtime_preparation/actual/runtime_checkpoint.json",
+        "sha256": "d26df2b959953f1f8872d495372987a534f45d53ad927c8e361fe19365ddfd25",
+        "size_bytes": 302
+      },
+      {
+        "path": "release/l6_live_long_run_qualification_preparation/actual/l6_offline_qualification.json",
+        "sha256": "785549073d6132ad958253039ad6fb48a83ef8d46c9d64fee78147a70fe59243",
+        "size_bytes": 6080
+      },
+      {
+        "path": "release/l6_live_long_run_qualification_preparation/actual/l6_preparation_certificate.json",
+        "sha256": "9ebab2dd701620752dc3e5703cccb1737bac2935f0a66d705dcb4adeb8ac4b87",
+        "size_bytes": 337
+      },
+      {
+        "path": "release/actual_validation_control_center/actual/actual_validation_report.json",
+        "sha256": "314d3f24cc013cc3c55b43a9296747fee546338ca330dceabc0cd64d26025713",
+        "size_bytes": 1783
+      },
+      {
+        "path": "release/actual_validation_control_center/actual/actual_validation_status.json",
+        "sha256": "ee132dd2acc699db3e96e339c11bf81a14d0fd8eefca7a7a2e53b152a91d0d1c",
+        "size_bytes": 792
+      },
+      {
+        "path": "release/actual_validation_control_center/actual/market_day_preflight.json",
+        "sha256": "18e75a50c53baff7f23ebac5c5fdd9c06655ff43fa6b0c70a254da6aa71b7939",
+        "size_bytes": 712
+      },
+      {
+        "path": "release/actual_validation_control_center/actual/paper_completion_certificate.json",
+        "sha256": "07ada564109f2bc6755830caa9113ad5f64ee0f7f57cbc75b7485c7985597bc0",
+        "size_bytes": 452
+      }
+    ],
+    "generated_at": "2026-08-05T06:06:46.711358+00:00",
+    "operator_review_required": true,
+    "stage": "R1_BACKUP_INVENTORY"
+  },
+  "configuration_audit": {
+    "checks": {
+      "cache_directories_excluded": true,
+      "large_generated_files_bounded": true,
+      "no_environment_secret_values_in_repository": true,
+      "paper_live_variable_names_separated": true,
+      "production_env_file_not_required": true,
+      "repository_files_scanned": true,
+      "virtual_environment_excluded": true
+    },
+    "excluded_directory_names": [
+      ".git",
+      ".idea",
+      ".mypy_cache",
+      ".pytest_cache",
+      ".ruff_cache",
+      ".venv",
+      ".vscode",
+      "__pycache__",
+      "build",
+      "dist",
+      "env",
+      "node_modules",
+      "venv"
+    ],
+    "exposed_secret_values": [],
+    "failed": [],
+    "maximum_text_file_size_bytes": 10485760,
+    "scanned_file_count": 12328,
+    "valid": true
+  },
+  "generated_at": "2026-08-05T06:06:46.713959+00:00",
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "R1_ACTUAL_RELEASE_REVIEW_AFTER_PAPER_AND_L2_TO_L6_ACTUAL",
+  "preparation_checks": {
+    "backup_inventory_created": true,
+    "configuration_audit_valid": true,
+    "release_manifest_valid": true,
+    "restore_plan_safe": true,
+    "retention_policy_valid": true,
+    "supervisor_fail_closed": true
+  },
+  "preparation_failed": [],
+  "production_gates": {
+    "checks": {
+      "l2_actual_live_read": false,
+      "l3_actual_micro_live": false,
+      "l4_actual_reconciliation": false,
+      "l5_actual_runtime": false,
+      "l6_actual_long_run": false,
+      "paper_completion_certificate": false
+    },
+    "failed": [
+      "paper_completion_certificate",
+      "l2_actual_live_read",
+      "l3_actual_micro_live",
+      "l4_actual_reconciliation",
+      "l5_actual_runtime",
+      "l6_actual_long_run"
+    ],
+    "production_release_allowed": false
+  },
+  "production_release_allowed": false,
+  "release_manifest": {
+    "file_count": 115,
+    "files": [
+      {
+        "path": "broker_integration/__init__.py",
+        "sha256": "1ff1c2bf83ee30ffc563ff029b82e3be39bea49c08ba0441eeb591367ba2ba86",
+        "size_bytes": 149
+      },
+      {
+        "path": "broker_integration/actual_validation.py",
+        "sha256": "9fcdce1578ff751c5eee376e23bb5ec7b71d1840a55634958a491966159b05a1",
+        "size_bytes": 6532
+      },
+      {
+        "path": "broker_integration/broker_integration_pipeline_v77_96_100.py",
+        "sha256": "3c499408cc802bfe41233bfe33e54094b32d6bd33d3edfe9754fd80da7de6599",
+        "size_bytes": 20415
+      },
+      {
+        "path": "broker_integration/cancel_replace.py",
+        "sha256": "24ff3f95d654891d9e394ddb0b80073065b21dbac9f793a6703927a4488176c8",
+        "size_bytes": 1692
+      },
+      {
+        "path": "broker_integration/client_order_id.py",
+        "sha256": "15160853b990bd398b55e586284889ef5d8a9d865bf5a9a743dbe772bd2beace",
+        "size_bytes": 548
+      },
+      {
+        "path": "broker_integration/compatibility.py",
+        "sha256": "cbd2f0acc8e4ea0e66827e14e434c3996074c535f21c101959cd56c2644ab79d",
+        "size_bytes": 351
+      },
+      {
+        "path": "broker_integration/execution_config.py",
+        "sha256": "83460741045c22b8d483ac223922016db4e604c88f89053fcff92147ad53bef1",
+        "size_bytes": 2801
+      },
+      {
+        "path": "broker_integration/execution_http.py",
+        "sha256": "0c39065ece1e43f9df4a90b5388eafc5543c42a136f9cb77e2a9eafeb250c387",
+        "size_bytes": 4373
+      },
+      {
+        "path": "broker_integration/execution_models.py",
+        "sha256": "54c39dfeda9b15a412f4f23892ac50c3b5505ff490ca4510bdab54b043cc182f",
+        "size_bytes": 3328
+      },
+      {
+        "path": "broker_integration/execution_service.py",
+        "sha256": "618ed75036fccbfe51e0ffbcc4f2a56cce8645abe90925ad524594a5683a30f9",
+        "size_bytes": 4127
+      },
+      {
+        "path": "broker_integration/idempotency.py",
+        "sha256": "e3e7cb1bd2d58e3305791f380837b3ba73bf38530ee69baa8a9c7521d0c7a41b",
+        "size_bytes": 1898
+      },
+      {
+        "path": "broker_integration/inspection.py",
+        "sha256": "994a5c10f14c53474d670d8d7e183b92c9ef0ca374e7502c58c05d91722ac43f",
+        "size_bytes": 857
+      },
+      {
+        "path": "broker_integration/io.py",
+        "sha256": "c64609536d0bc9d304d029cd44e421beba6fef2877bc77708de682b207dfad38",
+        "size_bytes": 345
+      },
+      {
+        "path": "broker_integration/market_data_http.py",
+        "sha256": "f8562cd956f548bf7dbc5bcb39e61cc19cb2868bb95ae8ec4a2d721ccbb8fbbe",
+        "size_bytes": 3142
+      },
+      {
+        "path": "broker_integration/p3_accounting.py",
+        "sha256": "935071ab6b7f8234a963c500b766b0a5c7aee4c5276903496431c001ebbb98b1",
+        "size_bytes": 2063
+      },
+      {
+        "path": "broker_integration/p3_fill_registry.py",
+        "sha256": "588944a6d836c05a66ac3f84f37545fc397b8ab8fe614b8ae2533f7d80795596",
+        "size_bytes": 1573
+      },
+      {
+        "path": "broker_integration/p3_models.py",
+        "sha256": "2e982e0b1a7ce06c589e2cccd87871f638638e88e55936e82f04782637ea7fab",
+        "size_bytes": 2083
+      },
+      {
+        "path": "broker_integration/p3_recovery.py",
+        "sha256": "b095d7419304d62fd7add00f86dba815ceb08f1024fe106e05a31d4ca7280b3a",
+        "size_bytes": 1481
+      },
+      {
+        "path": "broker_integration/p3_service.py",
+        "sha256": "e1bc8b621274b74e9a8acffbd0172e7530bafe6f4640f2f72451c43f1f09051f",
+        "size_bytes": 3546
+      },
+      {
+        "path": "broker_integration/p4_cycle_guard.py",
+        "sha256": "e1cc8947653e1c698d28644db6fcc6fb5d5011af2f701a14d4e412530c443737",
+        "size_bytes": 1679
+      },
+      {
+        "path": "broker_integration/p4_health.py",
+        "sha256": "790b1825b019b0b5a871bfde43872a6ce815ffe86ee0d572b9d2b3e8c65e778b",
+        "size_bytes": 1336
+      },
+      {
+        "path": "broker_integration/p4_lock.py",
+        "sha256": "dbb7bdfac5e3c873e78e315d3d5eaee8a7e498857fb123fb676f0ecaa4af1983",
+        "size_bytes": 1085
+      },
+      {
+        "path": "broker_integration/p4_offline_cycle.py",
+        "sha256": "bfff903e8cf8f437bb79f3f8d077c891cb7ae38b916675d1303848179cfcab94",
+        "size_bytes": 896
+      },
+      {
+        "path": "broker_integration/p4_paths.py",
+        "sha256": "7ca2b647a594067cb7ce819d5265c193b28ecadd5d28f885012bb1740940acc7",
+        "size_bytes": 1189
+      },
+      {
+        "path": "broker_integration/p4_runtime.py",
+        "sha256": "90be28d1a5927b567d5853e20c420bd8f87d78935b625b81851c66fa16bc9ffb",
+        "size_bytes": 8437
+      },
+      {
+        "path": "broker_integration/p4_runtime_models.py",
+        "sha256": "ad5279fd2b71bb1ffb907307f37f69c04eeaef514246f76595b9728f2065b707",
+        "size_bytes": 1700
+      },
+      {
+        "path": "broker_integration/p4_state.py",
+        "sha256": "ca919b46d394afe5c789a2f52975f435216ddf0ae7c9a4b4c5a1cc374771fe36",
+        "size_bytes": 1577
+      },
+      {
+        "path": "broker_integration/p5_checkpoint.py",
+        "sha256": "053381df12b871871140178770424af5dca7582f1f85b1a4a8ace9a1b16e591a",
+        "size_bytes": 492
+      },
+      {
+        "path": "broker_integration/p5_fault_matrix.py",
+        "sha256": "1868e5ddb67f52d5046040a830547423a5f5dbe2bd095a2593dd915a12eef49f",
+        "size_bytes": 845
+      },
+      {
+        "path": "broker_integration/p5_metrics.py",
+        "sha256": "f8df8f3180f2588192b9ada7868e19127b16d45761298ca18b04e20d1a3072e1",
+        "size_bytes": 1150
+      },
+      {
+        "path": "broker_integration/p5_models.py",
+        "sha256": "d46ba75d24552d5762c41288dc744b904c4ab6fc4509fa8fac8550aa6da5bdab",
+        "size_bytes": 2321
+      },
+      {
+        "path": "broker_integration/p5_paths.py",
+        "sha256": "e321105c1efdc5e0229202fbcee7a7496726f2db809d54505b342aafa4c328d2",
+        "size_bytes": 621
+      },
+      {
+        "path": "broker_integration/p5_qualification.py",
+        "sha256": "7fa3e110fab6d8ee13da1a6ab80019e021733224ddfa053d77100f2ea169541e",
+        "size_bytes": 4902
+      },
+      {
+        "path": "broker_integration/paths.py",
+        "sha256": "41326db6e5f263d50f4107add0c880c5a266203b32729f8b598829af44de0ae4",
+        "size_bytes": 1209
+      },
+      {
+        "path": "broker_integration/registry.py",
+        "sha256": "6693fa111104ac045a015529f58aa24905e6c376a3d5b315649b7e2663036710",
+        "size_bytes": 2750
+      },
+      {
+        "path": "broker_integration/safety_checks.py",
+        "sha256": "305f2d6faf8571881e3b1cf4bd5c1aa37e8122e5724f957267d5dbe18c7c26a9",
+        "size_bytes": 4266
+      },
+      {
+        "path": "operations/__init__.py",
+        "sha256": "9c01cd21b278da1f9c1eab0e8c302712ccb85f01892a760f9ecf03d427a3f418",
+        "size_bytes": 69
+      },
+      {
+        "path": "operations/audit_export.py",
+        "sha256": "591985806e6012168cd6c67d2604cc1b58a599c51f69e077009adc01d68817d5",
+        "size_bytes": 1807
+      },
+      {
+        "path": "operations/daily_reporting.py",
+        "sha256": "fc9facebbb844b59df1ae406bf772c6a1eb49165520ff9d890e8c417a73fd326",
+        "size_bytes": 2988
+      },
+      {
+        "path": "operations/dashboard.py",
+        "sha256": "f2607660773c671709c82872a68f041760c629172bcc7ff3ae3e91eddeedbd5b",
+        "size_bytes": 3805
+      },
+      {
+        "path": "operations/dashboard_v2.py",
+        "sha256": "f18c491126ff9a8351af6e531c4473a8ccd22cf7cea9a74637ef9bc1102d8e71",
+        "size_bytes": 6935
+      },
+      {
+        "path": "operations/diagnostics.py",
+        "sha256": "07ab2729f20b95d46516e8a50406a59a5ff53c4d0d8a8383fd384cf1e0ad9b20",
+        "size_bytes": 1296
+      },
+      {
+        "path": "operations/error_stats.py",
+        "sha256": "8739e829b060cc178d19f8ae5235883fbdafc72ea91dee91d83b93b0af000652",
+        "size_bytes": 1263
+      },
+      {
+        "path": "operations/graceful_shutdown.py",
+        "sha256": "97f044c8d3e0e58f8b86973df197131ea2c078cc4ff85f39f3ef95b5831d833b",
+        "size_bytes": 1041
+      },
+      {
+        "path": "operations/health_score.py",
+        "sha256": "6f8d6e00a0642d3883ff70665beb8930d0f1f59f857f22f187b95ed7acf21b42",
+        "size_bytes": 2109
+      },
+      {
+        "path": "operations/history.py",
+        "sha256": "654e36ff86a5ab0e6319d83cb5abd00efaca164d9b317bfe622439d891bed561",
+        "size_bytes": 3390
+      },
+      {
+        "path": "operations/jsonlog.py",
+        "sha256": "bb6a937fc0e6a79ce8688c87b638c9ef5b0603781877d1e2efd3e4942b55bdde",
+        "size_bytes": 1328
+      },
+      {
+        "path": "operations/l1_safety.py",
+        "sha256": "c0fa1828ba87a29db3bcb4584280bd030e2ae598ee16620ce533acc7808a2aae",
+        "size_bytes": 3244
+      },
+      {
+        "path": "operations/latency_stats.py",
+        "sha256": "c3d1baa726e508a1bc1e1abe200ae529583f7c247f52a2db177a2920f66270d5",
+        "size_bytes": 1890
+      },
+      {
+        "path": "operations/metrics.py",
+        "sha256": "6b7b1253d68ac8a1d28d6213ec5bbe8aaa371dafb8a78286d3a0590f23a0c87d",
+        "size_bytes": 2278
+      },
+      {
+        "path": "operations/monitor.py",
+        "sha256": "719ec73a4b96964689eeb491e1d078c93670c55cd9c770a51a108d15c6671177",
+        "size_bytes": 1948
+      },
+      {
+        "path": "operations/notifications.py",
+        "sha256": "cf2b391d72f98e66c64cdbed4668d19729d5d81e30ef55c8d8efab245f7394b0",
+        "size_bytes": 4943
+      },
+      {
+        "path": "operations/operator_checklist.py",
+        "sha256": "d04778cef0584da5bf05b1002845768c1407d8fdea4fd95e3daf4edf8c6daab9",
+        "size_bytes": 1992
+      },
+      {
+        "path": "operations/recovery.py",
+        "sha256": "b3b7cf184955f7e70a2e4ba4de0701a5ac051b7c54ddd98f09ee618471849348",
+        "size_bytes": 1792
+      },
+      {
+        "path": "operations/resource_trends.py",
+        "sha256": "3a3e3ce048c6a6c16da8792a8e04918253da5106ccd75329ff94755681e42f38",
+        "size_bytes": 971
+      },
+      {
+        "path": "operations/resume_manager.py",
+        "sha256": "dbc56f2084daaae49295c49cda2bc6b7b052cbd52758a8736a7a2df976daea65",
+        "size_bytes": 2691
+      },
+      {
+        "path": "operations/scheduler_monitor.py",
+        "sha256": "984870ce9b684371a18a40e956f4260a262d1deaf99e118a0cff1d9107e5c528",
+        "size_bytes": 1599
+      },
+      {
+        "path": "operations/session_rotation.py",
+        "sha256": "435b394762a5f3c61444a9178c5f2f5fad8dc0027424cdb4c4c3fc7a9189ff09",
+        "size_bytes": 1435
+      },
+      {
+        "path": "operations/status_reader.py",
+        "sha256": "06b69f4e2e00bc950f4432417b4849c81124c1e675fbd5d00e7c6fbc0759525d",
+        "size_bytes": 3156
+      },
+      {
+        "path": "operations/timeline.py",
+        "sha256": "cb7df26f22cf21e378711b683aedc2fa6c37d1983bc4d9567bc10f55ed4dc18c",
+        "size_bytes": 1746
+      },
+      {
+        "path": "operations/watchdog.py",
+        "sha256": "7a0c2f8ce8af6a0f6c5159c4684887fc3eb0312b0c79a3b7bc01a37ee2415549",
+        "size_bytes": 2731
+      },
+      {
+        "path": "live_safety/__init__.py",
+        "sha256": "af9d89a1788cb9a0e2414e58a88154bff5e8c6b1719ab4010bae8856ac97b977",
+        "size_bytes": 54
+      },
+      {
+        "path": "live_safety/boundary.py",
+        "sha256": "f50d00c5d0308fe8699d852befd8164447c23bbe098fbeaefa64bb053fc4ff88",
+        "size_bytes": 3449
+      },
+      {
+        "path": "live_safety/confirmation_gate.py",
+        "sha256": "0dcb65166ffebc968ef4fc2ffed890a5837a868c6c0842c180951d98d730d644",
+        "size_bytes": 779
+      },
+      {
+        "path": "live_safety/credential_guard.py",
+        "sha256": "445089bec697fe954771dbc8834e00e7161216eb577b09e8db3f59e8f6dfaafc",
+        "size_bytes": 1351
+      },
+      {
+        "path": "live_safety/kill_switch.py",
+        "sha256": "da72206a0faa77bbd2ccb26692146139bcb5648e8dc97a77d0540966ba624cab",
+        "size_bytes": 1084
+      },
+      {
+        "path": "live_safety/paper_completion_gate.py",
+        "sha256": "e8830a981e83bd7f62b0a3fa964e630e85d4f9533740b34c4269a071cc487666",
+        "size_bytes": 846
+      },
+      {
+        "path": "live_safety/risk_policy.py",
+        "sha256": "82b754d6dbdc672b5b24369e1911c66c7a13d244dc3e07a8425fe1701b0f2c52",
+        "size_bytes": 1400
+      },
+      {
+        "path": "live_read/__init__.py",
+        "sha256": "fe4e38c3fa5f3404b9674f456baf21daf732d28b58330dc97accc8469aa84bab",
+        "size_bytes": 63
+      },
+      {
+        "path": "live_read/adapter.py",
+        "sha256": "a85b85906726e0064ab1e951a3c07f486fadac1dd5583fd7dd974ce8f0c7b806",
+        "size_bytes": 1324
+      },
+      {
+        "path": "live_read/config.py",
+        "sha256": "3eeabdca33332a86081fcce451ddeb121b31fe1e3869f0f27fa8c332b4ed7ce0",
+        "size_bytes": 1321
+      },
+      {
+        "path": "live_read/gates.py",
+        "sha256": "007f749da8302b692647e2c7b27e7786bc64d1a31f1eccca5ac9ed3fc4b84e55",
+        "size_bytes": 1099
+      },
+      {
+        "path": "live_read/http_guard.py",
+        "sha256": "e4a5b2e2a5c0e39fca78b3516f8ffec64c63663531f98764b9efe266b2e8dc3b",
+        "size_bytes": 1077
+      },
+      {
+        "path": "live_read/normalizers.py",
+        "sha256": "34d7fe2ad7617567c56c3ea8de0e2706b4ff72709281915505636f8cd05f3902",
+        "size_bytes": 2297
+      },
+      {
+        "path": "live_read/service.py",
+        "sha256": "619ca4780a41bd8f80fc90f9d3a1190e3831b83657243174c247b55c71f4a059",
+        "size_bytes": 1606
+      },
+      {
+        "path": "live_execution/__init__.py",
+        "sha256": "cbab17783e81df25f2be5c4879439bd5d921d4554a25d6d3d62263675a876aaf",
+        "size_bytes": 76
+      },
+      {
+        "path": "live_execution/client_order_id.py",
+        "sha256": "cfe94eed6c13b5e10b7a827edab8994e2214b6dfc7b6e6d9afdcaf7fad4f7d57",
+        "size_bytes": 379
+      },
+      {
+        "path": "live_execution/dry_run.py",
+        "sha256": "d54447ceeb10054d6139f234c00b830998d8c2387765a59ef64852a52f2142ba",
+        "size_bytes": 969
+      },
+      {
+        "path": "live_execution/gates.py",
+        "sha256": "2a07cc7c1f5fe78090043d5c9a15a6b010f3f84cd8abf7d113d130d6b0f63ed2",
+        "size_bytes": 1437
+      },
+      {
+        "path": "live_execution/idempotency.py",
+        "sha256": "5be1db344b8738734b31fc6c459137edb5f064b3da098d471b14d3772a6dacd8",
+        "size_bytes": 853
+      },
+      {
+        "path": "live_execution/ledger.py",
+        "sha256": "ccc2dc0d0c7bb0b48bb0a543ed8982426f472483667ec201639594e7593fe542",
+        "size_bytes": 510
+      },
+      {
+        "path": "live_execution/models.py",
+        "sha256": "e29643553cfc2910ff7203757d534a31da1c828f5678b8deb84b9d5692a281a2",
+        "size_bytes": 2889
+      },
+      {
+        "path": "live_execution/risk.py",
+        "sha256": "6b13840892f38072934bbfd48632ecd8ba2fedc17adb310df531b87de8a86ebb",
+        "size_bytes": 962
+      },
+      {
+        "path": "live_execution/rollback.py",
+        "sha256": "80d8ba13b5dba8dd218f288bc06db8e2496f2336bbb5eb790cf33caeb2fef089",
+        "size_bytes": 547
+      },
+      {
+        "path": "live_execution/service.py",
+        "sha256": "bfbcd20c22f70090d001500dc185fe39a0bebda71324a3c9d35604470b74fdd9",
+        "size_bytes": 2807
+      },
+      {
+        "path": "live_reconciliation/__init__.py",
+        "sha256": "1b340538b4c7a9ecf22b65f305ec26097cd1d492782e37a84ca5958c054132f2",
+        "size_bytes": 53
+      },
+      {
+        "path": "live_reconciliation/drift.py",
+        "sha256": "f14089c2a96f24605dd4b1ef1a47d73360f3d4cbfbec8469aac22fe93515bc7a",
+        "size_bytes": 2535
+      },
+      {
+        "path": "live_reconciliation/fill_registry.py",
+        "sha256": "8fb558cb6c7656aff3f0ccfe9c76ba662fd87e881ab34081c4c395c14efbc31a",
+        "size_bytes": 814
+      },
+      {
+        "path": "live_reconciliation/gates.py",
+        "sha256": "1befece533d250db9b774b39bf984dcedcda6c83a221503693edd2dc7ec236d4",
+        "size_bytes": 1502
+      },
+      {
+        "path": "live_reconciliation/ledger.py",
+        "sha256": "f556f648ef3732d784f8fc7899f586e928f01a91c8f0557ce7172c089dc9308c",
+        "size_bytes": 535
+      },
+      {
+        "path": "live_reconciliation/models.py",
+        "sha256": "40d371355a0c55c0a5f8f440d4451eab2dcdb272c33843fcef60ff9a53a1489d",
+        "size_bytes": 1489
+      },
+      {
+        "path": "live_reconciliation/recovery.py",
+        "sha256": "70e4e0fd9d5294f4c26ecebdea72f702582334875f3a73550e22d4024fe0a193",
+        "size_bytes": 844
+      },
+      {
+        "path": "live_reconciliation/service.py",
+        "sha256": "f3c309d68125a37fd46db8bb990d5e079b42fa87a6297a460a9d7825e4115c48",
+        "size_bytes": 2847
+      },
+      {
+        "path": "live_runtime/__init__.py",
+        "sha256": "4f5010b83d53708a9644fe550847d1b64ae662fcebabb1f477f6a043cda0831f",
+        "size_bytes": 75
+      },
+      {
+        "path": "live_runtime/cycle_registry.py",
+        "sha256": "38959f8528564e8897dc801b6de2b51857dde9e38b43a160e82ce0f651230040",
+        "size_bytes": 818
+      },
+      {
+        "path": "live_runtime/gates.py",
+        "sha256": "40f7998973ed65c56ea0e48022cc9411caac30f3b3f0f3a8ac72a07598e6091b",
+        "size_bytes": 2093
+      },
+      {
+        "path": "live_runtime/ledger.py",
+        "sha256": "e546f5df77980dce7831e4794c5cdddaac0cc186c031cdce7b52220af9b5a031",
+        "size_bytes": 509
+      },
+      {
+        "path": "live_runtime/lock.py",
+        "sha256": "8c722735895bde038b9fa8fa9d2bcdba6985b4c8bb56394956ff10594fb49e89",
+        "size_bytes": 827
+      },
+      {
+        "path": "live_runtime/models.py",
+        "sha256": "4b62f1a694c76446657c764afd8396131574294c5396986dde0137a26c6e1453",
+        "size_bytes": 1218
+      },
+      {
+        "path": "live_runtime/runtime.py",
+        "sha256": "03e4ec9bd16c8fa408d8438e70e926d61fa6c125c51f4da9989e56652a5b9bf4",
+        "size_bytes": 2878
+      },
+      {
+        "path": "live_runtime/shutdown.py",
+        "sha256": "992d34eae41c2189c1feed7b05e97575d4ac886245537149fcf292d7220a2310",
+        "size_bytes": 760
+      },
+      {
+        "path": "live_runtime/state.py",
+        "sha256": "16d0652b49f6bdf3db8d63aad08cce9f9c0c061531f76ed175a0721b29cea522",
+        "size_bytes": 1183
+      },
+      {
+        "path": "live_qualification/__init__.py",
+        "sha256": "d7db1015138f1a2f3eb1cc778ecdfd51e7ae8af88c23b26146df71f79a9fe5c3",
+        "size_bytes": 79
+      },
+      {
+        "path": "live_qualification/audits.py",
+        "sha256": "c382b1781f1251fb561eff79c3113e71dd710d1f3ca74cf4a8e4cc6dc7295043",
+        "size_bytes": 2744
+      },
+      {
+        "path": "live_qualification/certificate.py",
+        "sha256": "f6b77148f18e2c58b4861204463a40698bf56dd90d850e912146a724ad0951c0",
+        "size_bytes": 900
+      },
+      {
+        "path": "live_qualification/continuity.py",
+        "sha256": "44c343b036ae5005fecb68187277a3171fc93d90d7fc949bf4ada7d18429d8b5",
+        "size_bytes": 2142
+      },
+      {
+        "path": "live_qualification/fault_matrix.py",
+        "sha256": "dd7032ac42fca46b6af291d40f9d91e263f664d9bbc26e440d07c7f9b68097a3",
+        "size_bytes": 944
+      },
+      {
+        "path": "live_qualification/gates.py",
+        "sha256": "e93c3bfba0cff5556725621e1f841d7efcc6e1cf0dfc13a30917b90b5ca3a79a",
+        "size_bytes": 2229
+      },
+      {
+        "path": "live_qualification/policy.py",
+        "sha256": "3130093cef459a015354c11196f3f04cbe445eefc693b7ef33f63eb22bef9974",
+        "size_bytes": 1466
+      },
+      {
+        "path": "live_qualification/service.py",
+        "sha256": "5fdd38e961ba582844b6c200151b1813e6d28e90da1e0f8167c9715c401cd613",
+        "size_bytes": 3548
+      },
+      {
+        "path": "validation_control/__init__.py",
+        "sha256": "7dc70e77904444cc3b2c01e481b3174b7668af9db79340e1f64da968429899d6",
+        "size_bytes": 75
+      },
+      {
+        "path": "validation_control/certificate.py",
+        "sha256": "80afafa1d6845eb023f56f0db439a4661dd17029327078303d0d5b6d069fdb12",
+        "size_bytes": 1280
+      },
+      {
+        "path": "validation_control/preflight.py",
+        "sha256": "d461bb88a06e93d8b3ea27bd038d6f12e3197aa0bb26f07ba0f181a82a693ee1",
+        "size_bytes": 2156
+      },
+      {
+        "path": "validation_control/report.py",
+        "sha256": "06defbc7a8682d73c454eb4630c6127820690fdc745c1ccf940bf6f8e748a33c",
+        "size_bytes": 994
+      },
+      {
+        "path": "validation_control/status.py",
+        "sha256": "1ba2e7086408f63d3f53ab2b12bf3ef3fa0a046720348dbe646e533902144566",
+        "size_bytes": 3171
+      }
+    ],
+    "generated_at": "2026-08-05T06:04:51.393054+00:00",
+    "immutable_after_production_approval": true,
+    "manifest_sha256": "3678f3b6bc150cace149a2c84d89e813a53d9a6948243c0c7f83e27cef0d409f",
+    "stage": "R1_RELEASE_MANIFEST",
+    "tracked_root_count": 9
+  },
+  "restore_plan": {
+    "automatic_order_replay_enabled": false,
+    "automatic_restore_enabled": false,
+    "required_sequence": [
+      "ACTIVATE_PAPER_AND_LIVE_KILL_SWITCHES",
+      "STOP_ALL_RUNTIMES",
+      "VERIFY_BACKUP_HASHES",
+      "RESTORE_STATE_TO_STAGING_DIRECTORY",
+      "COMPARE_OPEN_ORDERS_POSITIONS_AND_CASH",
+      "RUN_P4_OR_L5_PREFLIGHT_AS_APPLICABLE",
+      "REQUIRE_OPERATOR_APPROVAL",
+      "RESTART_WITH_NEW_SESSION_ID"
+    ],
+    "stage": "R1_RESTORE_PLAN"
+  },
+  "retention_policy": {
+    "checks": {
+      "audit_log_days_safe": true,
+      "backup_count_safe": true,
+      "daily_report_days_safe": true,
+      "rotate_size_safe": true,
+      "runtime_log_days_safe": true
+    },
+    "failed": [],
+    "policy": {
+      "audit_log_days": 365,
+      "backup_count": 14,
+      "daily_report_days": 365,
+      "rotate_max_bytes": 26214400,
+      "runtime_log_days": 30
+    },
+    "valid": true
+  },
+  "stage": "R1",
+  "start_on_boot_enabled": false,
+  "state": "PRODUCTION_DEPLOYMENT_PREPARATION_READY",
+  "status": "PASS",
+  "supervisor_policy": {
+    "automatic_broker_restart_enabled": false,
+    "automatic_order_replay_enabled": false,
+    "health_check_interval_seconds": 60,
+    "maximum_restart_attempts": 0,
+    "restart_requires": [
+      "OPERATOR_REVIEW",
+      "FRESH_PREFLIGHT",
+      "NO_DUPLICATE_RUNTIME_LOCK",
+      "NO_UNRECONCILED_BROKER_STATE"
+    ],
+    "shutdown_grace_seconds": 30,
+    "stage": "R1_PROCESS_SUPERVISOR_POLICY",
+    "start_on_boot_enabled": false,
+    "valid": true
+  }
+}

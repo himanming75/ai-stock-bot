@@ -1,0 +1,3 @@
+git add deployment/config_audit.py tools/test_r1a_deployment_audit_scan_performance.py RUN_R1A_HOTFIX_TEST.ps1 R1A_DEPLOYMENT_AUDIT_SCAN_PERFORMANCE_HOTFIX_MANIFEST.json GIT_COMMIT_R1A_DEPLOYMENT_AUDIT_SCAN_PERFORMANCE_HOTFIX.txt
+git commit -m "R1A bound deployment configuration audit scan"
+git push origin main

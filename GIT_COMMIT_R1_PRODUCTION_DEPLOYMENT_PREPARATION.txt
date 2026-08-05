@@ -1,0 +1,3 @@
+git add deployment tools/run_r1_deployment_readiness.py tools/run_r1_release_certificate.py tools/test_r1_production_deployment_preparation.py tools/verify_r1_production_deployment_preparation.py release/r1_production_deployment_preparation RUN_R1_DEPLOYMENT_READINESS.ps1 RUN_R1_RELEASE_CERTIFICATE.ps1 RUN_R1_TEST_AND_VERIFY.ps1 R1_PRODUCTION_DEPLOYMENT_PREPARATION_MANIFEST.json GIT_COMMIT_R1_PRODUCTION_DEPLOYMENT_PREPARATION.txt
+git commit -m "R1 add production deployment preparation"
+git push origin main

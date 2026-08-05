@@ -1,0 +1,23 @@
+{
+  "stage": "R1A",
+  "purpose": "Bound repository secret/configuration scan time",
+  "excluded_directories": [
+    ".git",
+    ".venv",
+    "venv",
+    "env",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    "node_modules",
+    "dist",
+    "build",
+    ".idea",
+    ".vscode"
+  ],
+  "maximum_text_file_size_bytes": 10485760,
+  "network_used": false,
+  "paper_orders_submitted": 0,
+  "live_orders_submitted": 0
+}
