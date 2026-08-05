@@ -1,0 +1,70 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_mode": "paper",
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "ended_at": "2026-08-05T06:49:32.546355+00:00",
+  "gate": {
+    "actual_broker_session_allowed": false,
+    "checks": {
+      "live_requires_paper_complete": true,
+      "live_requires_production_release": true,
+      "mode_valid": true,
+      "paper_preview_allowed": true
+    },
+    "failed": [],
+    "session_preview_allowed": true
+  },
+  "horizon": "ultra_short",
+  "policy": {
+    "checks": {
+      "automatic_broker_restart_off": true,
+      "automatic_order_replay_off": true,
+      "heartbeat_interval_positive": true,
+      "maximum_age_greater_than_interval": true,
+      "profile_snapshot_required": true,
+      "single_instance_required": true
+    },
+    "failed": [],
+    "valid": true
+  },
+  "profile_name": "paper_ultra_short",
+  "runtime_snapshot": {
+    "allocation_enabled": true,
+    "allowed_order_types": [
+      "market",
+      "limit"
+    ],
+    "allowed_symbols": [
+      "AAPL",
+      "MSFT",
+      "SPY"
+    ],
+    "automatic_order_submission_enabled": false,
+    "broker_mode": "paper",
+    "broker_network_enabled": false,
+    "broker_write_enabled": false,
+    "horizon": "ultra_short",
+    "multi_account_enabled": false,
+    "profile_enabled": true,
+    "profile_name": "paper_ultra_short",
+    "require_market_open": true,
+    "risk_limits": {
+      "maximum_daily_loss": "10",
+      "maximum_daily_orders": 3,
+      "maximum_gross_exposure": "30",
+      "maximum_order_notional": "10",
+      "maximum_symbol_exposure": "10"
+    },
+    "time_in_force": "day"
+  },
+  "runtime_snapshot_hash": "42396ca0dbd74fb6bb9fe88f76486413776cb26f1c44a2907971440415111374",
+  "session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+  "stage": "R6",
+  "started_at": "2026-08-05T06:49:32.540237+00:00",
+  "state": "PREVIEW_SESSION_COMPLETE"
+}

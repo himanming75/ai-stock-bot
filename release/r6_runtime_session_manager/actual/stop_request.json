@@ -1,0 +1,10 @@
+{
+  "automatic_order_replay_enabled": false,
+  "automatic_process_termination_enabled": false,
+  "new_order_submission_allowed": false,
+  "operator_review_required": true,
+  "reason": "OPERATOR_MANUAL_STOP_TEST",
+  "requested_at": "2026-08-05T06:49:45.669472+00:00",
+  "session_id": "r6-ddae6e713f62466a92847a744baa22c1",
+  "stage": "R6_STOP_REQUEST"
+}

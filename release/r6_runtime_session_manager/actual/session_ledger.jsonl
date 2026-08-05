@@ -1,0 +1,4 @@
+{"broker_network_used": false, "observed_at": "2026-08-05T06:49:27.239679+00:00", "order_submission_attempted": false, "profile_name": "paper_ultra_short", "record_type": "SESSION_CREATED", "session_id": "r6-5831a864c4734020be79286bf4914752"}
+{"broker_network_used": false, "observed_at": "2026-08-05T06:49:27.249623+00:00", "order_submission_attempted": false, "record_type": "SESSION_COMPLETED", "session_id": "r6-5831a864c4734020be79286bf4914752"}
+{"broker_network_used": false, "observed_at": "2026-08-05T06:49:32.544769+00:00", "order_submission_attempted": false, "profile_name": "paper_ultra_short", "record_type": "SESSION_CREATED", "session_id": "r6-ddae6e713f62466a92847a744baa22c1"}
+{"broker_network_used": false, "observed_at": "2026-08-05T06:49:32.547522+00:00", "order_submission_attempted": false, "record_type": "SESSION_COMPLETED", "session_id": "r6-ddae6e713f62466a92847a744baa22c1"}

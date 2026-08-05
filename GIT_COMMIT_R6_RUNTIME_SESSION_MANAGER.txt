@@ -1,0 +1,3 @@
+git add runtime_session tools/run_r6_session_preview.py tools/run_r6_resume_preview.py tools/run_r6_stop_request.py tools/test_r6_runtime_session_manager.py tools/verify_r6_runtime_session_manager.py release/r6_runtime_session_manager RUN_R6_SESSION_PREVIEW.ps1 RUN_R6_RESUME_PREVIEW.ps1 REQUEST_R6_STOP.ps1 RUN_R6_TEST_AND_VERIFY.ps1 R6_RUNTIME_SESSION_MANAGER_MANIFEST.json GIT_COMMIT_R6_RUNTIME_SESSION_MANAGER.txt
+git commit -m "R6 add runtime session manager"
+git push origin main

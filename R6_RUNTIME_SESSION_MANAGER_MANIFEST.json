@@ -1,0 +1,22 @@
+{
+  "stage": "R6_PREPARATION",
+  "features": [
+    "Session Lifecycle",
+    "Unique Session ID",
+    "Single Instance Lock",
+    "Profile Snapshot Hash",
+    "Heartbeat",
+    "Checkpoint",
+    "Session Ledger",
+    "Stop Request",
+    "Crash Resume Preview",
+    "Paper Live Gate"
+  ],
+  "automatic_order_replay_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}
