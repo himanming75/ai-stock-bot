@@ -1,0 +1,17 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "blocked": false,
+  "blockers": [],
+  "client_order_id": "p3c-fb09129866039893bc53d9e7",
+  "created_at": "2026-08-05T17:55:11.593479+00:00",
+  "idempotency_key": "fb09129866039893bc53d9e748a51af72a6ed1622640eae1c15bbb96e4e59566",
+  "notional": "5",
+  "plan_id": "p3cancel_fb09129866039893bc53",
+  "price_multiplier": "0.50",
+  "stage": "P3_PAPER_CANCEL_VALIDATION_PLAN",
+  "symbol": "SPY"
+}

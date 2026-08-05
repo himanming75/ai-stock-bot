@@ -1,0 +1,33 @@
+{
+  "stage": "P3_PAPER_CANCEL_VALIDATION",
+  "default_order": {
+    "symbol": "SPY",
+    "notional": "5",
+    "type": "limit",
+    "price_multiplier": "0.50",
+    "time_in_force": "day"
+  },
+  "safety_controls": [
+    "Exact Paper endpoint",
+    "$5 maximum notional",
+    "SPY QQQ IWM allowlist",
+    "Limit price no higher than 80% of latest trade",
+    "Market-open gate",
+    "Active account",
+    "Tradable and fractionable asset",
+    "Deterministic client_order_id",
+    "Duplicate prevention",
+    "One-use nonce token",
+    "Plan SHA256 binding",
+    "10-minute expiry",
+    "Cancel HTTP 204 required",
+    "Final canceled status required",
+    "Zero filled quantity required",
+    "Broker reconciliation"
+  ],
+  "submission_during_install": false,
+  "cancel_during_install": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_paper_orders_canceled_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}
