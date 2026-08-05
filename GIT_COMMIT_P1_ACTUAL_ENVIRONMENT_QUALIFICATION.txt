@@ -1,0 +1,3 @@
+git add actual_environment tools/run_p1_actual_environment_qualification.py tools/test_p1_actual_environment_qualification.py tools/verify_p1_actual_environment_qualification.py release/p1_actual_environment_qualification RUN_P1_ACTUAL_ENVIRONMENT_QUALIFICATION.ps1 RUN_P1_TEST_AND_VERIFY.ps1 SHOW_P1_ACTUAL_ENVIRONMENT_STATUS.ps1 P1_ACTUAL_ENVIRONMENT_QUALIFICATION_MANIFEST.json GIT_COMMIT_P1_ACTUAL_ENVIRONMENT_QUALIFICATION.txt
+git commit -m "P1 add actual environment qualification"
+git push origin main
