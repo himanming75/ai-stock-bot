@@ -1,0 +1,9 @@
+{
+  "loss_probability": 0.0,
+  "mean_cumulative_return": 0.76839962,
+  "median_cumulative_return": 0.76805026,
+  "p05_cumulative_return": 0.62326846,
+  "p95_cumulative_return": 0.90459378,
+  "seed": 42,
+  "simulation_count": 500
+}

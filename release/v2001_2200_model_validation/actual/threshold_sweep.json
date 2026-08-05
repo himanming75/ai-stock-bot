@@ -1,0 +1,247 @@
+{
+  "records": [
+    {
+      "classification": {
+        "accuracy": 0.93333333,
+        "balanced_accuracy": 0.92929293,
+        "count": 60,
+        "f1": 0.92307692,
+        "fn": 3,
+        "fp": 1,
+        "precision": 0.96,
+        "recall": 0.88888889,
+        "specificity": 0.96969697,
+        "threshold": 0.0,
+        "tn": 32,
+        "tp": 24
+      },
+      "performance": {
+        "average_return": 0.0096,
+        "cumulative_return": 0.77195246,
+        "maximum_drawdown": -0.001,
+        "profit_factor": 289.0,
+        "sharpe_like": 1.52221234,
+        "trade_count": 55,
+        "volatility": 0.00630661,
+        "win_rate": 0.96363636
+      },
+      "threshold": 0.0
+    },
+    {
+      "classification": {
+        "accuracy": 0.93333333,
+        "balanced_accuracy": 0.92929293,
+        "count": 60,
+        "f1": 0.92307692,
+        "fn": 3,
+        "fp": 1,
+        "precision": 0.96,
+        "recall": 0.88888889,
+        "specificity": 0.96969697,
+        "threshold": 0.05,
+        "tn": 32,
+        "tp": 24
+      },
+      "performance": {
+        "average_return": 0.0096,
+        "cumulative_return": 0.77195246,
+        "maximum_drawdown": -0.001,
+        "profit_factor": 289.0,
+        "sharpe_like": 1.52221234,
+        "trade_count": 55,
+        "volatility": 0.00630661,
+        "win_rate": 0.96363636
+      },
+      "threshold": 0.05
+    },
+    {
+      "classification": {
+        "accuracy": 0.88333333,
+        "balanced_accuracy": 0.87037037,
+        "count": 60,
+        "f1": 0.85106383,
+        "fn": 7,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.74074074,
+        "specificity": 1.0,
+        "threshold": 0.1,
+        "tn": 33,
+        "tp": 20
+      },
+      "performance": {
+        "average_return": 0.00905833,
+        "cumulative_return": 0.71544972,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 1.32469299,
+        "trade_count": 44,
+        "volatility": 0.00683806,
+        "win_rate": 1.0
+      },
+      "threshold": 0.1
+    },
+    {
+      "classification": {
+        "accuracy": 0.88333333,
+        "balanced_accuracy": 0.87037037,
+        "count": 60,
+        "f1": 0.85106383,
+        "fn": 7,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.74074074,
+        "specificity": 1.0,
+        "threshold": 0.15,
+        "tn": 33,
+        "tp": 20
+      },
+      "performance": {
+        "average_return": 0.00905833,
+        "cumulative_return": 0.71544972,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 1.32469299,
+        "trade_count": 44,
+        "volatility": 0.00683806,
+        "win_rate": 1.0
+      },
+      "threshold": 0.15
+    },
+    {
+      "classification": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.77777778,
+        "count": 60,
+        "f1": 0.71428571,
+        "fn": 12,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.55555556,
+        "specificity": 1.0,
+        "threshold": 0.2,
+        "tn": 33,
+        "tp": 15
+      },
+      "performance": {
+        "average_return": 0.007775,
+        "cumulative_return": 0.58881059,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 1.02131664,
+        "trade_count": 33,
+        "volatility": 0.00761272,
+        "win_rate": 1.0
+      },
+      "threshold": 0.2
+    },
+    {
+      "classification": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.77777778,
+        "count": 60,
+        "f1": 0.71428571,
+        "fn": 12,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.55555556,
+        "specificity": 1.0,
+        "threshold": 0.25,
+        "tn": 33,
+        "tp": 15
+      },
+      "performance": {
+        "average_return": 0.007775,
+        "cumulative_return": 0.58881059,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 1.02131664,
+        "trade_count": 33,
+        "volatility": 0.00761272,
+        "win_rate": 1.0
+      },
+      "threshold": 0.25
+    },
+    {
+      "classification": {
+        "accuracy": 0.71666667,
+        "balanced_accuracy": 0.68518519,
+        "count": 60,
+        "f1": 0.54054054,
+        "fn": 17,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.37037037,
+        "specificity": 1.0,
+        "threshold": 0.3,
+        "tn": 33,
+        "tp": 10
+      },
+      "performance": {
+        "average_return": 0.00575,
+        "cumulative_return": 0.40803685,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 0.73348659,
+        "trade_count": 22,
+        "volatility": 0.00783927,
+        "win_rate": 1.0
+      },
+      "threshold": 0.3
+    },
+    {
+      "classification": {
+        "accuracy": 0.71666667,
+        "balanced_accuracy": 0.68518519,
+        "count": 60,
+        "f1": 0.54054054,
+        "fn": 17,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.37037037,
+        "specificity": 1.0,
+        "threshold": 0.35,
+        "tn": 33,
+        "tp": 10
+      },
+      "performance": {
+        "average_return": 0.00575,
+        "cumulative_return": 0.40803685,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 0.73348659,
+        "trade_count": 22,
+        "volatility": 0.00783927,
+        "win_rate": 1.0
+      },
+      "threshold": 0.35
+    },
+    {
+      "classification": {
+        "accuracy": 0.63333333,
+        "balanced_accuracy": 0.59259259,
+        "count": 60,
+        "f1": 0.3125,
+        "fn": 22,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.18518519,
+        "specificity": 1.0,
+        "threshold": 0.4,
+        "tn": 33,
+        "tp": 5
+      },
+      "performance": {
+        "average_return": 0.00315833,
+        "cumulative_return": 0.20663634,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 0.46493479,
+        "trade_count": 11,
+        "volatility": 0.00679307,
+        "win_rate": 1.0
+      },
+      "threshold": 0.4
+    }
+  ]
+}

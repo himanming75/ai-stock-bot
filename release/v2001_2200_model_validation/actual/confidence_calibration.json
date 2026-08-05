@@ -1,0 +1,54 @@
+{
+  "brier_score": 0.33315208,
+  "buckets": [
+    {
+      "average_confidence": 0.48,
+      "calibration_gap": 0.08,
+      "count": 5,
+      "lower": 40,
+      "observed_positive_rate": 0.4,
+      "upper": 50
+    },
+    {
+      "average_confidence": 0.565,
+      "calibration_gap": 0.11045455,
+      "count": 11,
+      "lower": 50,
+      "observed_positive_rate": 0.45454545,
+      "upper": 60
+    },
+    {
+      "average_confidence": 0.65,
+      "calibration_gap": 0.19545455,
+      "count": 11,
+      "lower": 60,
+      "observed_positive_rate": 0.45454545,
+      "upper": 70
+    },
+    {
+      "average_confidence": 0.735,
+      "calibration_gap": 0.28045455,
+      "count": 11,
+      "lower": 70,
+      "observed_positive_rate": 0.45454545,
+      "upper": 80
+    },
+    {
+      "average_confidence": 0.82,
+      "calibration_gap": 0.36545455,
+      "count": 11,
+      "lower": 80,
+      "observed_positive_rate": 0.45454545,
+      "upper": 90
+    },
+    {
+      "average_confidence": 0.905,
+      "calibration_gap": 0.45045455,
+      "count": 11,
+      "lower": 90,
+      "observed_positive_rate": 0.45454545,
+      "upper": 100
+    }
+  ],
+  "expected_calibration_error": 0.26375
+}

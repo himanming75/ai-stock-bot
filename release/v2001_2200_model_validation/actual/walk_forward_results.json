@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "classification": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "count": 12,
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "threshold": 0.0,
+        "tn": 6,
+        "tp": 6
+      },
+      "fold": 1,
+      "performance": {
+        "average_return": 0.0105,
+        "cumulative_return": 0.13336197,
+        "maximum_drawdown": 0.0,
+        "profit_factor": "INF",
+        "sharpe_like": 2.04776559,
+        "trade_count": 11,
+        "volatility": 0.00512754,
+        "win_rate": 1.0
+      },
+      "test_count": 12,
+      "test_end": "2026-02-14T14:41:00Z",
+      "test_start": "2026-02-11T14:30:00Z",
+      "train_count": 30,
+      "train_end": "2026-02-10T14:29:00Z",
+      "train_start": "2026-02-01T14:00:00Z"
+    },
+    {
+      "classification": {
+        "accuracy": 0.91666667,
+        "balanced_accuracy": 0.92857143,
+        "count": 12,
+        "f1": 0.92307692,
+        "fn": 1,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.85714286,
+        "specificity": 1.0,
+        "threshold": 0.0,
+        "tn": 5,
+        "tp": 6
+      },
+      "fold": 2,
+      "performance": {
+        "average_return": 0.00841667,
+        "cumulative_return": 0.10554467,
+        "maximum_drawdown": -0.001,
+        "profit_factor": 102.0,
+        "sharpe_like": 1.321985,
+        "trade_count": 11,
+        "volatility": 0.00636669,
+        "win_rate": 0.90909091
+      },
+      "test_count": 12,
+      "test_end": "2026-02-18T14:53:00Z",
+      "test_start": "2026-02-15T14:42:00Z",
+      "train_count": 30,
+      "train_end": "2026-02-14T14:41:00Z",
+      "train_start": "2026-02-05T14:12:00Z"
+    }
+  ]
+}
