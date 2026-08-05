@@ -1,0 +1,8 @@
+{
+  "critical_signal_override": "FAILSAFE_BLOCKED",
+  "score_0_49": "FAILSAFE_BLOCKED",
+  "score_50_74": "READ_ONLY_SAFE_MODE",
+  "score_75_89": "READ_ONLY_DEGRADED",
+  "score_90_100": "READ_ONLY_NORMAL",
+  "write_allowed": false
+}

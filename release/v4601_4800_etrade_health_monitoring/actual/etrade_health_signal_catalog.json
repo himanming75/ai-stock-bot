@@ -1,0 +1,10 @@
+{
+  "signals": [
+    "OAUTH",
+    "LATENCY",
+    "ERROR_RATE",
+    "RATE_LIMIT",
+    "ACCOUNT_STATUS",
+    "SNAPSHOT_INTEGRITY"
+  ]
+}

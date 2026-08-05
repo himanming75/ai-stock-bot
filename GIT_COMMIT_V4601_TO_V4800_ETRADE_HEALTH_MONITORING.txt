@@ -1,0 +1,10 @@
+git add multi_broker_etrade_health
+git add tools/run_v4601_to_v4800_etrade_health_monitoring.py
+git add tools/test_v4601_to_v4800_etrade_health_monitoring.py
+git add release/v4601_4800_etrade_health_monitoring
+git add RUN_V4601_TO_V4800_ETRADE_HEALTH_MONITORING.ps1
+git add RUN_V4601_TO_V4800_ETRADE_HEALTH_MONITORING_TEST.ps1
+git add V4601_TO_V4800_ETRADE_HEALTH_MONITORING_MANIFEST.json
+git add GIT_COMMIT_V4601_TO_V4800_ETRADE_HEALTH_MONITORING.txt
+git commit -m "Add V4601-V4800 ETrade health monitoring failsafe routing"
+git push origin main

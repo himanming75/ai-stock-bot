@@ -1,0 +1,178 @@
+{
+  "broker_write": false,
+  "cases": [
+    {
+      "critical_signal_present": false,
+      "health_band": "HEALTHY",
+      "health_score": 100,
+      "name": "HEALTHY",
+      "routing_decision": {
+        "mode": "READ_ONLY_NORMAL",
+        "read_allowed": true,
+        "reason": "Health normal",
+        "recovery_required": false,
+        "write_allowed": false
+      },
+      "signals": [
+        {
+          "message": "OAuth session healthy",
+          "name": "OAUTH",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 25
+        },
+        {
+          "message": "420 ms",
+          "name": "LATENCY",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 15
+        },
+        {
+          "message": "5.00%",
+          "name": "ERROR_RATE",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 20
+        },
+        {
+          "message": "No rate limit",
+          "name": "RATE_LIMIT",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 10
+        },
+        {
+          "message": "ACTIVE",
+          "name": "ACCOUNT_STATUS",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 20
+        },
+        {
+          "message": "Snapshot valid",
+          "name": "SNAPSHOT_INTEGRITY",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "critical_signal_present": false,
+      "health_band": "DEGRADED",
+      "health_score": 84,
+      "name": "DEGRADED",
+      "routing_decision": {
+        "mode": "READ_ONLY_DEGRADED",
+        "read_allowed": true,
+        "reason": "Health acceptable with degraded monitoring",
+        "recovery_required": false,
+        "write_allowed": false
+      },
+      "signals": [
+        {
+          "message": "Token renewal required",
+          "name": "OAUTH",
+          "score": 70,
+          "status": "DEGRADED",
+          "weight": 25
+        },
+        {
+          "message": "1400 ms",
+          "name": "LATENCY",
+          "score": 75,
+          "status": "DEGRADED",
+          "weight": 15
+        },
+        {
+          "message": "20.00%",
+          "name": "ERROR_RATE",
+          "score": 75,
+          "status": "DEGRADED",
+          "weight": 20
+        },
+        {
+          "message": "No rate limit",
+          "name": "RATE_LIMIT",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 10
+        },
+        {
+          "message": "ACTIVE",
+          "name": "ACCOUNT_STATUS",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 20
+        },
+        {
+          "message": "Snapshot valid",
+          "name": "SNAPSHOT_INTEGRITY",
+          "score": 100,
+          "status": "HEALTHY",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "critical_signal_present": true,
+      "health_band": "CRITICAL",
+      "health_score": 5,
+      "name": "CRITICAL",
+      "routing_decision": {
+        "mode": "FAILSAFE_BLOCKED",
+        "read_allowed": false,
+        "reason": "Critical health condition detected",
+        "recovery_required": true,
+        "write_allowed": false
+      },
+      "signals": [
+        {
+          "message": "Access token revoked",
+          "name": "OAUTH",
+          "score": 0,
+          "status": "CRITICAL",
+          "weight": 25
+        },
+        {
+          "message": "4500 ms",
+          "name": "LATENCY",
+          "score": 10,
+          "status": "CRITICAL",
+          "weight": 15
+        },
+        {
+          "message": "80.00%",
+          "name": "ERROR_RATE",
+          "score": 0,
+          "status": "CRITICAL",
+          "weight": 20
+        },
+        {
+          "message": "Rate limit active",
+          "name": "RATE_LIMIT",
+          "score": 35,
+          "status": "UNHEALTHY",
+          "weight": 10
+        },
+        {
+          "message": "RESTRICTED",
+          "name": "ACCOUNT_STATUS",
+          "score": 0,
+          "status": "CRITICAL",
+          "weight": 20
+        },
+        {
+          "message": "Snapshot invalid",
+          "name": "SNAPSHOT_INTEGRITY",
+          "score": 0,
+          "status": "CRITICAL",
+          "weight": 10
+        }
+      ]
+    }
+  ],
+  "network_used": false,
+  "status": "PASS"
+}
