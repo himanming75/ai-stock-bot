@@ -1,0 +1,3 @@
+git add tools/test_p2_actual_paper_execution.py tools/run_p2_offline_qualification.py tools/verify_p2a1_hotfix.py RUN_P2A1_REGRESSION_HOTFIX_TEST_AND_VERIFY.ps1 release/p2a1_regression_hotfix P2A1_HOTFIX_MANIFEST.json GIT_COMMIT_P2A1_HOTFIX.txt
+git commit -m "P2A1 fix P2 regression compatibility"
+git push origin main

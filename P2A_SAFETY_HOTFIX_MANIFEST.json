@@ -1,0 +1,13 @@
+{
+  "hotfix": "P2A",
+  "parent_stage": "P2",
+  "reference_price_authorization_removed": true,
+  "limit_notional_source": "QTY_X_LIMIT_PRICE",
+  "market_quantity_source": "LATEST_TRADE_X_QTY_X_1.03",
+  "market_notional_source": "ORDER_NOTIONAL",
+  "sell_position_check_enabled": true,
+  "notional_sell_blocked": true,
+  "install_uses_network": false,
+  "install_submits_paper_orders": 0,
+  "actual_live_orders_submitted": 0
+}

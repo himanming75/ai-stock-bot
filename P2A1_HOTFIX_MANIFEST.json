@@ -1,0 +1,13 @@
+{
+  "hotfix": "P2A1",
+  "parent_stage": "P2",
+  "parent_hotfix": "P2A",
+  "issue": "P2 regression callers used removed reference_price argument",
+  "updated_files": [
+    "tools/test_p2_actual_paper_execution.py",
+    "tools/run_p2_offline_qualification.py"
+  ],
+  "network_used": false,
+  "paper_orders_submitted": 0,
+  "live_orders_submitted": 0
+}

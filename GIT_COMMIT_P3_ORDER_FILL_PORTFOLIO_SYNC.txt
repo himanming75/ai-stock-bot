@@ -1,0 +1,3 @@
+git add broker_integration/p3_models.py broker_integration/p3_fill_registry.py broker_integration/p3_accounting.py broker_integration/p3_service.py broker_integration/p3_recovery.py tools/run_p3_offline_sync.py tools/test_p3_order_fill_portfolio_sync.py tools/verify_p3_order_fill_portfolio_sync.py release/p3_order_fill_portfolio_sync RUN_P3_OFFLINE_TEST_AND_VERIFY.ps1 P3_ORDER_FILL_PORTFOLIO_SYNC_MANIFEST.json GIT_COMMIT_P3_ORDER_FILL_PORTFOLIO_SYNC.txt
+git commit -m "P3 add order fill portfolio synchronization"
+git push origin main

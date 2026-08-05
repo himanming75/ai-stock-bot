@@ -1,0 +1,3 @@
+git add broker_integration/market_data_http.py broker_integration/execution_models.py broker_integration/safety_checks.py broker_integration/execution_service.py tools/run_p2_actual_submit.py tools/test_p2a_notional_safety.py tools/run_p2a_hotfix_verify.py RUN_P2_ACTUAL_PAPER_ORDER.ps1 RUN_P2A_HOTFIX_TEST_AND_VERIFY.ps1 release/p2a_safety_hotfix P2A_SAFETY_HOTFIX_MANIFEST.json GIT_COMMIT_P2A_SAFETY_HOTFIX.txt
+git commit -m "P2A fix paper order notional and price safety"
+git push origin main

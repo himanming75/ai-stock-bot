@@ -1,0 +1,15 @@
+{
+  "fills": {
+    "dd304aa8f22e619516376d7c18593a8a160b8e60004f413d279996b1711378eb": {
+      "client_order_id": "p2-client-001",
+      "fill_key": "dd304aa8f22e619516376d7c18593a8a160b8e60004f413d279996b1711378eb",
+      "filled_at": "2026-08-05T13:30:01Z",
+      "filled_avg_price": "100",
+      "filled_qty": "5",
+      "order_id": "paper-order-001",
+      "registered_at": "2026-08-05T04:36:22.266471+00:00",
+      "side": "buy",
+      "symbol": "AAPL"
+    }
+  }
+}

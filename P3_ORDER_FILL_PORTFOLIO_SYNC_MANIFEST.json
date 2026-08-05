@@ -1,0 +1,26 @@
+{
+  "stage": "P3",
+  "purpose": "Order Fill Portfolio Sync",
+  "reuses": [
+    "paper_execution_lifecycle.engine",
+    "portfolio_sync_recovery.engine",
+    "broker_integration canonical state"
+  ],
+  "features": [
+    "Order State Normalization",
+    "Partial Fill Ledger",
+    "Full Fill Ledger",
+    "Duplicate Fill Protection",
+    "Position Reconciliation",
+    "Cash Reconciliation",
+    "Equity Reconciliation",
+    "Unknown State Blocking",
+    "Fail Closed New Order Permission",
+    "Recovery Checkpoint",
+    "Restart Safe Registry"
+  ],
+  "install_uses_network": false,
+  "install_submits_paper_orders": 0,
+  "install_submits_live_orders": 0,
+  "next_fixed_stage": "P4_AUTONOMOUS_PAPER_RUNTIME"
+}

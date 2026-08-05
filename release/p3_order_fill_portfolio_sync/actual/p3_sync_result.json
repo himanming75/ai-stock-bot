@@ -1,0 +1,35 @@
+{
+  "account_drifts": [],
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "duplicate_fill_count": 0,
+  "fail_closed": false,
+  "live_submission_enabled": false,
+  "new_fill_count": 1,
+  "new_order_submission_allowed": true,
+  "next_fixed_stage": "P4_AUTONOMOUS_PAPER_RUNTIME",
+  "normalized_orders": [
+    {
+      "client_order_id": "p2-client-001",
+      "filled_at": "2026-08-05T13:30:01Z",
+      "filled_avg_price": "100",
+      "filled_qty": "5",
+      "id": "paper-order-001",
+      "qty": "5",
+      "side": "buy",
+      "status": "filled",
+      "status_known": true,
+      "submitted_at": "2026-08-05T13:30:00Z",
+      "symbol": "AAPL"
+    }
+  ],
+  "observed_at": "2026-08-05T04:36:22.264428+00:00",
+  "paper_submission_enabled": false,
+  "position_drifts": [],
+  "reconciliation_passed": true,
+  "stage": "P3",
+  "state": "ORDER_FILL_PORTFOLIO_SYNC_READY",
+  "status": "PASS",
+  "unknown_order_states": []
+}

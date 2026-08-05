@@ -1,0 +1,23 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_network_used": false,
+  "actual_paper_orders_submitted": 0,
+  "buy_sell_supported": true,
+  "cancel_supported": true,
+  "client_order_id_enabled": true,
+  "fractional_market_supported": true,
+  "idempotency_enabled": true,
+  "kill_switch_required": true,
+  "limit_order_supported": true,
+  "market_order_supported": true,
+  "next_action": "RUN_EXPLICIT_ACTUAL_PAPER_ORDER_WHEN_MARKET_OPEN",
+  "notional_market_supported": true,
+  "offline_transport_only": true,
+  "paper_endpoint_enforced": true,
+  "reference_price_authorization_removed": true,
+  "replace_supported": true,
+  "sell_position_check_enabled": true,
+  "stage": "P2",
+  "state": "ACTUAL_ALPACA_PAPER_EXECUTION_OFFLINE_QUALIFIED",
+  "status": "PASS"
+}

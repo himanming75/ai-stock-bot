@@ -1,0 +1,3 @@
+git add broker_integration/execution_models.py broker_integration/client_order_id.py broker_integration/execution_config.py broker_integration/execution_http.py broker_integration/idempotency.py broker_integration/safety_checks.py broker_integration/execution_service.py broker_integration/cancel_replace.py tools/run_p2_offline_qualification.py tools/run_p2_actual_submit.py tools/test_p2_actual_paper_execution.py tools/verify_p2_offline_qualification.py release/p2_actual_paper_execution RUN_P2_OFFLINE_TEST_AND_QUALIFY.ps1 RUN_P2_ACTUAL_PAPER_ORDER.ps1 P2_ACTUAL_PAPER_EXECUTION_MANIFEST.json GIT_COMMIT_P2_ACTUAL_PAPER_EXECUTION.txt
+git commit -m "P2 add actual Alpaca paper execution safety"
+git push origin main
