@@ -1,0 +1,11 @@
+{
+  "dead_letter_count": 0,
+  "generated_at": "2026-08-05T20:37:34.532432+00:00",
+  "live_orders_submitted": 0,
+  "manual_recovery_count": 0,
+  "manual_retry_plan_count": 0,
+  "paper_orders_submitted": 0,
+  "recovery_input_count": 0,
+  "retry_input_count": 0,
+  "status": "PASS"
+}

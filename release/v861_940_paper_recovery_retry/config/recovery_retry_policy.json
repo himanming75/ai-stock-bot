@@ -1,0 +1,15 @@
+{
+  "maximum_attempts": 3,
+  "base_backoff_seconds": 5,
+  "maximum_backoff_seconds": 300,
+  "automatic_retry_enabled": false,
+  "automatic_recovery_enabled": false,
+  "require_reapproval": true,
+  "require_fresh_market_check": true,
+  "require_fresh_risk_check": true,
+  "require_fresh_idempotency_check": true,
+  "network_enabled": false,
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false
+}

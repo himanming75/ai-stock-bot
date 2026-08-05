@@ -1,0 +1,10 @@
+git add paper_recovery_retry
+git add tools/run_v861_to_v940_paper_recovery_retry.py
+git add tools/test_v861_to_v940_paper_recovery_retry.py
+git add release/v861_940_paper_recovery_retry
+git add RUN_V861_TO_V940_PAPER_RECOVERY_RETRY.ps1
+git add RUN_V861_TO_V940_PAPER_RECOVERY_RETRY_TEST.ps1
+git add V861_TO_V940_PAPER_RECOVERY_RETRY_MANIFEST.json
+git add GIT_COMMIT_V861_TO_V940_PAPER_RECOVERY_RETRY.txt
+git commit -m "Add V861-V940 paper recovery retry"
+git push origin main
