@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "account_key": "ALPACA_PAPER_PRIMARY",
+      "actual_connection_validated": true,
+      "alias": "Alpaca Paper",
+      "broker": "ALPACA",
+      "environment": "PAPER",
+      "kill_switch_active": false,
+      "metadata": {
+        "purpose": "STRATEGY_TESTING",
+        "submission_requires_separate_approval": true
+      },
+      "read_enabled": true,
+      "role": "PAPER_EXECUTION",
+      "strategy_execution_enabled": true,
+      "write_enabled": false
+    },
+    {
+      "account_key": "ETRADE_PRIMARY",
+      "actual_connection_validated": false,
+      "alias": "E*TRADE Primary",
+      "broker": "ETRADE",
+      "environment": "PRODUCTION",
+      "kill_switch_active": false,
+      "metadata": {
+        "key_issuance_pending": true,
+        "purpose": "ACTUAL_ASSET_VISIBILITY"
+      },
+      "read_enabled": true,
+      "role": "ACTUAL_READ_ONLY",
+      "strategy_execution_enabled": false,
+      "write_enabled": false
+    }
+  ],
+  "schema_version": 1
+}

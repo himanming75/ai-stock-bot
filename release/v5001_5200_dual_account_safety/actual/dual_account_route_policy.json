@@ -1,0 +1,8 @@
+{
+  "actual_account": "ETRADE_PRIMARY",
+  "broker_write_default": false,
+  "cross_broker_misrouting_blocked": true,
+  "etrade_read_only": true,
+  "paper_account": "ALPACA_PAPER_PRIMARY",
+  "paper_strategy_execution_only": true
+}

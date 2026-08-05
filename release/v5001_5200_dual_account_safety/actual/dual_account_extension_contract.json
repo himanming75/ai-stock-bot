@@ -1,0 +1,7 @@
+{
+  "additional_accounts_supported": true,
+  "additional_brokers_supported": true,
+  "existing_account_keys_immutable": true,
+  "registry_based": true,
+  "schema_version": 1
+}

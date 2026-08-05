@@ -1,0 +1,10 @@
+git add dual_account_safety
+git add tools/run_v5001_to_v5200_dual_account_safety.py
+git add tools/test_v5001_to_v5200_dual_account_safety.py
+git add release/v5001_5200_dual_account_safety
+git add RUN_V5001_TO_V5200_DUAL_ACCOUNT_SAFETY.ps1
+git add RUN_V5001_TO_V5200_DUAL_ACCOUNT_SAFETY_TEST.ps1
+git add V5001_TO_V5200_DUAL_ACCOUNT_SAFETY_MANIFEST.json
+git add GIT_COMMIT_V5001_TO_V5200_DUAL_ACCOUNT_SAFETY.txt
+git commit -m "Add V5001-V5200 dual account safety foundation"
+git push origin main

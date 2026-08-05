@@ -1,0 +1,7 @@
+{
+  "accounts": {
+    "ALPACA_PAPER_PRIMARY": false,
+    "ETRADE_PRIMARY": false
+  },
+  "global_kill_switch": false
+}
