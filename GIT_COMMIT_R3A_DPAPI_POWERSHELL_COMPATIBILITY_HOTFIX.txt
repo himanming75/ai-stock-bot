@@ -1,0 +1,3 @@
+git add CREATE_R3_CREDENTIAL_VAULT.ps1 IMPORT_R3_CREDENTIAL_ENVIRONMENT.ps1 deployment/credential_vault.py tools/test_r3a_dpapi_powershell_compatibility.py RUN_R3A_HOTFIX_TEST.ps1 R3A_DPAPI_POWERSHELL_COMPATIBILITY_HOTFIX_MANIFEST.json GIT_COMMIT_R3A_DPAPI_POWERSHELL_COMPATIBILITY_HOTFIX.txt
+git commit -m "R3A fix PowerShell DPAPI compatibility"
+git push origin main

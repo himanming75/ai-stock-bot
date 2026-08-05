@@ -1,0 +1,10 @@
+{
+  "stage": "R3A",
+  "purpose": "PowerShell compatible Windows DPAPI credential storage",
+  "removed_dependency": "Security.Cryptography.ProtectedData",
+  "replacement": "ConvertFrom-SecureString / ConvertTo-SecureString CurrentUser DPAPI",
+  "schema_version": 2,
+  "network_used": false,
+  "paper_orders_submitted": 0,
+  "live_orders_submitted": 0
+}
