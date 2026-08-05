@@ -1,0 +1,92 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "actual_runtime_activation_performed": false,
+  "automatic_order_submission_enabled": false,
+  "broker_mode": "paper",
+  "broker_network_used": false,
+  "broker_write_enabled": false,
+  "gate": {
+    "actual_runtime_activation_performed": false,
+    "automatic_order_submission_enabled": false,
+    "broker_mode": "paper",
+    "broker_network_enabled": false,
+    "broker_write_enabled": false,
+    "checks": {
+      "live_requires_paper_completion": true,
+      "live_requires_production_release": true,
+      "mode_valid": true,
+      "paper_mode_allowed_for_preview": true
+    },
+    "failed": [],
+    "preview_allowed": true,
+    "stage": "R5_RUNTIME_BRIDGE_GATE"
+  },
+  "horizon": "swing",
+  "order_router_binding": {
+    "allowed_order_types": [
+      "market",
+      "limit"
+    ],
+    "automatic_order_submission_enabled": false,
+    "broker_mode": "paper",
+    "broker_network_enabled": false,
+    "broker_write_enabled": false,
+    "require_market_open": true,
+    "time_in_force": "day"
+  },
+  "preview_allowed": false,
+  "profile_enabled": false,
+  "profile_name": "paper_swing",
+  "risk_binding": {
+    "broker_submission_enabled": false,
+    "maximum_daily_loss": "50",
+    "maximum_daily_orders": 3,
+    "maximum_gross_exposure": "250",
+    "maximum_order_notional": "50",
+    "maximum_symbol_exposure": "100",
+    "risk_enforcement_enabled": true
+  },
+  "runtime_configuration": {
+    "allocation_enabled": true,
+    "allowed_order_types": [
+      "market",
+      "limit"
+    ],
+    "allowed_symbols": [
+      "AAPL",
+      "MSFT",
+      "SPY"
+    ],
+    "automatic_order_submission_enabled": false,
+    "broker_mode": "paper",
+    "broker_network_enabled": false,
+    "broker_write_enabled": false,
+    "horizon": "swing",
+    "multi_account_enabled": false,
+    "profile_enabled": false,
+    "profile_name": "paper_swing",
+    "require_market_open": true,
+    "risk_limits": {
+      "maximum_daily_loss": "50",
+      "maximum_daily_orders": 3,
+      "maximum_gross_exposure": "250",
+      "maximum_order_notional": "50",
+      "maximum_symbol_exposure": "100"
+    },
+    "time_in_force": "day"
+  },
+  "stage": "R5_RUNTIME_BRIDGE_PREVIEW",
+  "status": "PASS",
+  "strategy_binding": {
+    "allocation_enabled": true,
+    "allowed_symbols": [
+      "AAPL",
+      "MSFT",
+      "SPY"
+    ],
+    "multi_account_enabled": false,
+    "strategy_execution_enabled": false,
+    "strategy_horizon": "swing"
+  }
+}

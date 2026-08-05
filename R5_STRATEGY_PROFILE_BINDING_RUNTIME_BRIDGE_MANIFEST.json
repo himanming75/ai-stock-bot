@@ -1,0 +1,24 @@
+{
+  "stage": "R5_PREPARATION",
+  "features": [
+    "Profile To Runtime Binding",
+    "Strategy Horizon Binding",
+    "Allowed Symbol Binding",
+    "Risk Limit Binding",
+    "Order Router Policy Binding",
+    "Allocation Setting Preserved",
+    "Multi Account Setting Preserved",
+    "Environment Preview",
+    "Paper Live Gate"
+  ],
+  "allocation_feature_removed": false,
+  "multi_account_feature_removed": false,
+  "actual_runtime_activation_performed": false,
+  "actual_environment_modified": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}
