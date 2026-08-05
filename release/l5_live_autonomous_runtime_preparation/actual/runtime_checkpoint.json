@@ -1,0 +1,9 @@
+{
+  "automatic_order_replay_enabled": false,
+  "cycle_id": "9f07c26b9c7c5317c804eb3faf313cd2d891b6ec221613933e4a12b72486978d",
+  "cycle_number": 3,
+  "runtime_id": "l5-offline-d1b2cfc7add7",
+  "stage": "L5",
+  "state": "L5_CYCLE_COMPLETE",
+  "updated_at": "2026-08-05T05:44:40.873496+00:00"
+}

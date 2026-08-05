@@ -1,0 +1,3 @@
+git add live_runtime tools/run_l5_offline_qualification.py tools/test_l5_live_autonomous_runtime_preparation.py tools/verify_l5_live_autonomous_runtime_preparation.py release/l5_live_autonomous_runtime_preparation RUN_L5_OFFLINE_QUALIFICATION.ps1 RUN_L5_TEST_AND_VERIFY.ps1 L5_LIVE_AUTONOMOUS_RUNTIME_PREPARATION_MANIFEST.json GIT_COMMIT_L5_LIVE_AUTONOMOUS_RUNTIME_PREPARATION.txt
+git commit -m "L5 add live autonomous runtime preparation"
+git push origin main

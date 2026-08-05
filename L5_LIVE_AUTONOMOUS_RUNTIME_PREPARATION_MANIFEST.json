@@ -1,0 +1,23 @@
+{
+  "stage": "L5_PREPARATION",
+  "features": [
+    "Single Instance Lock",
+    "Duplicate Cycle Protection",
+    "Market Gate",
+    "L1 L2 L3 L4 P5 Gates",
+    "Heartbeat",
+    "Checkpoint",
+    "Cycle Ledger",
+    "Fail Closed Runtime",
+    "Graceful Shutdown Support",
+    "Offline Multi Cycle Qualification"
+  ],
+  "actual_live_runtime_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L5_ACTUAL_AFTER_L4_ACTUAL"
+}
