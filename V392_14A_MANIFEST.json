@@ -1,0 +1,21 @@
+{
+  "stage": "V392.14A",
+  "package": "Autonomous Paper Cycle Orchestrator",
+  "requires": [
+    "V391 Risk Governor",
+    "V392.09A Dispatch Context",
+    "V392.10A Local Paper Dispatch",
+    "V392.11A Approved Fill Snapshot",
+    "V392.12A Fill Accounting",
+    "V392.13A Portfolio Reconciliation"
+  ],
+  "single_cycle_replay_protection_enabled": true,
+  "fail_closed_enabled": true,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

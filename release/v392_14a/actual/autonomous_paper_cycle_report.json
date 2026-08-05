@@ -1,0 +1,56 @@
+{
+  "accounting_event_hash": "7516b29c9acab81796db36e55b4e79c2d84400d101ff57013427bc2b699ed245",
+  "broker_adapter": "NONE",
+  "completed_at": "2026-08-05T01:06:25.774376+00:00",
+  "cycle_hash": "d9120c876ab8df2a5e3a4fc2e48482da75d70ddc4c241b4c72470b0dbd451860",
+  "cycle_id": "cycle-2fd965727394cc8d5826b250",
+  "cycle_state": "AUTONOMOUS_PAPER_CYCLE_COMPLETED",
+  "cycle_version": "V392.14A",
+  "portfolio_hash": "6164899d52a9653f77c813a49e2bb14833a1aac9d3e1e4f9bd65782216b69583",
+  "registry_hash": "5b254d171f051f64c451bbf11b7021bffc972d7d31809a8eab978cbd378e010b",
+  "stage_summaries": [
+    {
+      "name": "risk",
+      "result_hash": "7d6d63c168e8bda5e71922254b07a6e3c62e7720ffff474d56a53ce7b13fb7b7",
+      "stage": "V391.06A",
+      "state": "SYMBOL_CONCENTRATION_GUARD_ACTIVE",
+      "status": "PASS"
+    },
+    {
+      "name": "authorization",
+      "result_hash": "38e2ccf61addf1b08778fc758afddfe4b499b610b741ca2bf96157f05832e562",
+      "stage": "V392.09A",
+      "state": "LOCAL_DISPATCH_ENGINE_PREPARATION_READY",
+      "status": "PASS"
+    },
+    {
+      "name": "dispatch",
+      "result_hash": "4eb6b81068b61db4ff0fe7dbeffd3fadebb11bee76f8af759ff8fdada68eb353",
+      "stage": "V392.10A",
+      "state": "LOCAL_PAPER_DISPATCH_ENGINE_READY",
+      "status": "PASS"
+    },
+    {
+      "name": "simulation",
+      "result_hash": "fd1910ea25535bce29c9e8c0889bcd758f762c70c106f00cded9d824463f0187",
+      "stage": "V392.11A",
+      "state": "PAPER_EXECUTION_SIMULATOR_READY",
+      "status": "PASS"
+    },
+    {
+      "name": "accounting",
+      "result_hash": "6927ddb589c82e899fbb8d431307352e66a98fe175f3a94de47909bfc00fc823",
+      "stage": "V392.12A",
+      "state": "FILL_ACCOUNTING_POSITION_UPDATE_READY",
+      "status": "PASS"
+    },
+    {
+      "name": "reconciliation",
+      "result_hash": "2314cfef692046563299f4dace5461184669a5530fe61bea0b1d36eef9c8aca3",
+      "stage": "V392.13A",
+      "state": "PAPER_PORTFOLIO_RECONCILIATION_READY",
+      "status": "PASS"
+    }
+  ],
+  "target_environment": "LOCAL_PAPER"
+}
