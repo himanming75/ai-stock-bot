@@ -1,0 +1,47 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "execution_plans": [
+    {
+      "approved_notional": "3800.00",
+      "blocked": false,
+      "blockers": [],
+      "expected_slippage_bps": "11.00",
+      "limit_price": "565.11",
+      "order_type": "limit",
+      "quantity": "6.7256",
+      "reference_price": "565.00",
+      "side": "buy",
+      "slice_count": 3,
+      "symbol": "QQQ",
+      "time_limit_seconds": 120
+    },
+    {
+      "approved_notional": "3800.00",
+      "blocked": false,
+      "blockers": [],
+      "expected_slippage_bps": "11.00",
+      "limit_price": "630.13",
+      "order_type": "limit",
+      "quantity": "6.0317",
+      "reference_price": "630.00",
+      "side": "buy",
+      "slice_count": 3,
+      "symbol": "SPY",
+      "time_limit_seconds": 120
+    }
+  ],
+  "generated_at": "2026-08-05T18:18:09.560485+00:00",
+  "next_fixed_development": "EXECUTION_PLAN_TO_ORDER_TICKET_GENERATOR",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "ready_symbols": [
+    "QQQ",
+    "SPY"
+  ],
+  "stage": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE_MEGA_BUNDLE",
+  "status": "PASS"
+}

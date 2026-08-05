@@ -1,0 +1,16 @@
+﻿{
+    "name":  "READ_ONLY",
+    "symbols":  [
+                    "SPY",
+                    "QQQ",
+                    "IWM"
+                ],
+    "interval_seconds":  5,
+    "max_cycles":  2,
+    "stop_when_market_closed":  true,
+    "enable_market_pipeline":  true,
+    "enable_execution_planning":  true,
+    "enable_order_ticket_generation":  true,
+    "enable_actual_submission":  false,
+    "require_submission_approval_token":  true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "DEVELOPMENT",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "interval_seconds": 5,
+  "max_cycles": 1,
+  "stop_when_market_closed": false,
+  "enable_market_pipeline": false,
+  "enable_execution_planning": false,
+  "enable_order_ticket_generation": false,
+  "enable_actual_submission": false,
+  "require_submission_approval_token": true
+}

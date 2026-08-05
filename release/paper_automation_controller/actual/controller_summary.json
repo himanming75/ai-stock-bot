@@ -1,0 +1,97 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "completed_cycles": 2,
+  "generated_at": "2026-08-05T18:18:09.580867+00:00",
+  "last_cycle": {
+    "actual_broker_read_performed": true,
+    "actual_broker_write_performed": false,
+    "actual_external_network_used": true,
+    "actual_live_orders_submitted": 0,
+    "actual_order_submission_performed": false,
+    "actual_paper_orders_submitted": 0,
+    "completed_at": "2026-08-05T18:18:09.578248+00:00",
+    "cycle_id": "e6d14033a95a788f8df36085",
+    "cycle_number": 2,
+    "errors": [],
+    "execution_result": {
+      "execution_status": "PASS",
+      "ready_symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "ready_ticket_count": 6,
+      "ticket_status": "PASS"
+    },
+    "market_is_open": true,
+    "market_result": {
+      "account_equity": "100009.71",
+      "actual_broker_read_performed": true,
+      "actual_broker_write_performed": false,
+      "actual_external_network_used": true,
+      "actual_live_orders_submitted": 0,
+      "actual_order_submission_performed": false,
+      "actual_paper_orders_submitted": 0,
+      "approved_symbols": [],
+      "bridge_pipeline_status": "BLOCKED",
+      "closed_order_count": 7,
+      "completed_at": "2026-08-05T18:18:09.547819+00:00",
+      "coverage": {
+        "IWM": {
+          "bar_count": 30,
+          "covered": true,
+          "latest_timestamp": "2026-08-05T13:59:00Z"
+        },
+        "QQQ": {
+          "bar_count": 30,
+          "covered": true,
+          "latest_timestamp": "2026-08-05T13:58:00Z"
+        },
+        "SPY": {
+          "bar_count": 30,
+          "covered": true,
+          "latest_timestamp": "2026-08-05T13:58:00Z"
+        }
+      },
+      "cycle_number": 2,
+      "decision_pipeline_status": "BLOCKED",
+      "errors": {},
+      "market_is_open": true,
+      "market_pipeline_status": "PASS",
+      "open_order_count": 0,
+      "position_count": 2,
+      "raw_snapshot_sha256": "0728fba48f0c36620e7543366b66dd2fb1a24a36d21120be99687f258ed2f9ce",
+      "selected_symbols": [],
+      "started_at": "2026-08-05T18:18:06.755643+00:00",
+      "symbols_covered": 3,
+      "symbols_requested": 3
+    },
+    "profile": "READ_ONLY",
+    "started_at": "2026-08-05T18:18:06.755124+00:00"
+  },
+  "next_fixed_development": "AUTOMATION_WATCHDOG_RESTART_RECOVERY",
+  "next_market_validation": "FULL_SESSION_READ_ONLY_AUTOMATION_RUN",
+  "profile": {
+    "enable_actual_submission": false,
+    "enable_execution_planning": true,
+    "enable_market_pipeline": true,
+    "enable_order_ticket_generation": true,
+    "interval_seconds": 5,
+    "max_cycles": 2,
+    "name": "READ_ONLY",
+    "require_submission_approval_token": true,
+    "stop_when_market_closed": true,
+    "symbols": [
+      "SPY",
+      "QQQ",
+      "IWM"
+    ]
+  },
+  "resumed_from_cycle": 1,
+  "stage": "PAPER_AUTOMATION_CONTROLLER_AND_SCHEDULER",
+  "status": "PASS",
+  "stopped_reason": null,
+  "submission_mode": "SEPARATE_APPROVAL_TOKEN_ONLY"
+}
