@@ -1,0 +1,20 @@
+{
+  "stage": "P3_PARTIAL_FILL_HANDLING_VALIDATION",
+  "features": [
+    "Partial status recognition",
+    "Requested, filled and remaining quantity",
+    "Fill ratio",
+    "Average fill price",
+    "Filled notional",
+    "Position reconciliation",
+    "Overfill detection",
+    "Actual Paper order scanning",
+    "Per-cycle evidence",
+    "Append-only JSONL ledger"
+  ],
+  "actual_submission_required": false,
+  "broker_write_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "PAPER_AUTOMATION_CONTROLLER_AND_SCHEDULER"
+}

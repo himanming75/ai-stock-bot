@@ -1,0 +1,17 @@
+{
+  "account_equity": "100009.87",
+  "account_status": "ACTIVE",
+  "actual_broker_read_performed": true,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": true,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "cycle_number": 5,
+  "invalid_order_states": [],
+  "market_is_open": true,
+  "observed_at": "2026-08-05T18:09:21.916280+00:00",
+  "order_count": 7,
+  "partial_fill_count": 0,
+  "partial_fills": []
+}

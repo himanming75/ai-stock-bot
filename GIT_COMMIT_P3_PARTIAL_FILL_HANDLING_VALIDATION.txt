@@ -1,0 +1,10 @@
+git add partial_fill_validation
+git add tools/run_p3_partial_fill_handling_validation.py
+git add tools/test_p3_partial_fill_handling_validation.py
+git add release/partial_fill_validation
+git add RUN_P3_PARTIAL_FILL_VALIDATION_TEST.ps1
+git add RUN_ACTUAL_P3_PARTIAL_FILL_MONITOR.ps1
+git add P3_PARTIAL_FILL_HANDLING_VALIDATION_MANIFEST.json
+git add GIT_COMMIT_P3_PARTIAL_FILL_HANDLING_VALIDATION.txt
+git commit -m "Add P3 partial fill handling validation"
+git push origin main
