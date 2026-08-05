@@ -1,0 +1,10 @@
+git add paper_platform_certification
+git add tools/run_v941_to_v1000_end_to_end_certification.py
+git add tools/test_v941_to_v1000_end_to_end_certification.py
+git add release/v941_1000_end_to_end_certification
+git add RUN_V941_TO_V1000_END_TO_END_CERTIFICATION.ps1
+git add RUN_V941_TO_V1000_END_TO_END_CERTIFICATION_TEST.ps1
+git add V941_TO_V1000_END_TO_END_CERTIFICATION_MANIFEST.json
+git add GIT_COMMIT_V941_TO_V1000_END_TO_END_CERTIFICATION.txt
+git commit -m "Add V941-V1000 end-to-end paper certification"
+git push origin main

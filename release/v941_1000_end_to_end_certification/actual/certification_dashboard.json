@@ -1,0 +1,9 @@
+{
+  "blocker_count": 0,
+  "certificate_status": "CONDITIONALLY_READY",
+  "component_check_count": 7,
+  "component_pass_count": 7,
+  "market_validation_status": "PENDING_MARKET_VALIDATION",
+  "status": "PASS",
+  "warning_count": 0
+}

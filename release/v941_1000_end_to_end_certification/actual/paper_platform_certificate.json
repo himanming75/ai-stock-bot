@@ -1,0 +1,9 @@
+{
+  "certificate_status": "CONDITIONALLY_READY",
+  "certification_fingerprint": "2d253ab95ad516537b711de1d42e93d059344a1c0a6db378fb908adfe095402e",
+  "generated_at": "2026-08-05T20:40:26.689186+00:00",
+  "live_orders_submitted": 0,
+  "market_validation_pending": true,
+  "paper_orders_submitted": 0,
+  "system_build_status": "FEATURE_COMPLETE_AWAITING_MARKET_VALIDATION"
+}
