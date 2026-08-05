@@ -1,0 +1,73 @@
+{
+  "account": {
+    "account_id": "alpaca-paper-fixture",
+    "broker": "ALPACA",
+    "buying_power": "180000.00",
+    "cash": "90000.00",
+    "currency": "USD",
+    "equity": "100014.45",
+    "status": "ACTIVE"
+  },
+  "account_parity_passed": true,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "adapter": "ALPACA",
+  "cancel_blocked": true,
+  "certification_fingerprint": "c7fcef44f251c141dae81753ec84927c6e790d969c4a1f05c2958b18fd7e0e74",
+  "credential_provider_tested_without_real_credentials": true,
+  "existing_alpaca_controller_modified": false,
+  "existing_market_polling_modified": false,
+  "factory_implemented_brokers": [
+    "ALPACA",
+    "MOCK"
+  ],
+  "fixture_transport_used": true,
+  "generated_at": "2026-08-05T21:27:21.761311+00:00",
+  "next_fixed_development": "V3401_TO_V3600_ETRADE_ADAPTER_FOUNDATION",
+  "orders": [
+    {
+      "account_id": "alpaca-paper-fixture",
+      "broker": "ALPACA",
+      "filled_quantity": "5",
+      "order_id": "fixture-order-1",
+      "quantity": "5",
+      "side": "BUY",
+      "status": "FILLED",
+      "symbol": "SPY"
+    }
+  ],
+  "orders_parity_passed": true,
+  "positions": [
+    {
+      "account_id": "alpaca-paper-fixture",
+      "average_price": "500.00",
+      "broker": "ALPACA",
+      "market_value": "2525.00",
+      "quantity": "5",
+      "symbol": "SPY",
+      "unrealized_pl": "25.00"
+    },
+    {
+      "account_id": "alpaca-paper-fixture",
+      "average_price": "450.00",
+      "broker": "ALPACA",
+      "market_value": "1365.00",
+      "quantity": "3",
+      "symbol": "QQQ",
+      "unrealized_pl": "15.00"
+    }
+  ],
+  "positions_parity_passed": true,
+  "requested_paths": [
+    "/v2/account",
+    "/v2/positions",
+    "/v2/orders?status=all&limit=100&direction=desc"
+  ],
+  "stage": "V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION",
+  "status": "PASS",
+  "submit_blocked": true
+}

@@ -1,0 +1,10 @@
+git add multi_broker_alpaca
+git add tools/run_v3201_to_v3400_alpaca_adapter_extraction.py
+git add tools/test_v3201_to_v3400_alpaca_adapter_extraction.py
+git add release/v3201_3400_alpaca_adapter_extraction
+git add RUN_V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION.ps1
+git add RUN_V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION_TEST.ps1
+git add V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION_MANIFEST.json
+git add GIT_COMMIT_V3201_TO_V3400_ALPACA_ADAPTER_EXTRACTION.txt
+git commit -m "Add V3201-V3400 Alpaca read only adapter extraction"
+git push origin main

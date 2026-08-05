@@ -1,0 +1,14 @@
+{
+  "account_read": true,
+  "broker": "ALPACA",
+  "extended_hours": true,
+  "fractional_shares": true,
+  "market_data_read": false,
+  "options": true,
+  "order_cancel": false,
+  "order_submission": false,
+  "orders_read": true,
+  "paper_trading": true,
+  "positions_read": true,
+  "streaming": false
+}
