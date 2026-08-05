@@ -1,0 +1,509 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_model_training_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_rollback_performed": false,
+  "actual_strategy_parameters_changed": false,
+  "actual_strategy_promotion_performed": false,
+  "champion_candidate_preview": "READY",
+  "champion_preview": {
+    "actual_promotion_performed": false,
+    "candidate_score": "1.0000",
+    "current_score": "0.78",
+    "margin": "0.2200",
+    "operator_approval_required": true,
+    "promotion_eligible": true
+  },
+  "checks": {
+    "champion_preview_created": true,
+    "correlation_filter_dropped_one": true,
+    "dataset_created": true,
+    "dataset_fingerprint_valid": true,
+    "ensemble_created": true,
+    "five_features_selected": true,
+    "four_feature_rows": true,
+    "grid_27_evaluations": true,
+    "history_two_records": true,
+    "normalization_complete": true,
+    "orders_not_created": true,
+    "plugin_framework_pass": true,
+    "random_15_evaluations": true,
+    "rollback_preview_created": true
+  },
+  "correlation_filter": "READY",
+  "correlation_filter_result": {
+    "dropped": [
+      {
+        "correlated_with": "momentum_factor",
+        "feature": "trend_factor"
+      }
+    ],
+    "selected": [
+      "event_factor",
+      "liquidity_factor",
+      "momentum_factor",
+      "quality_factor",
+      "regime_factor",
+      "sector_factor"
+    ],
+    "threshold": "0.85"
+  },
+  "dataset_builder": "READY",
+  "dataset_summary": {
+    "dataset_fingerprint": "c1d57b0171a2b3df9dcf0f96e045e39d61988c10a9c2fb4e78963ff23b5ac336",
+    "feature_count": 5,
+    "row_count": 4
+  },
+  "ensemble_result": {
+    "contributions": [
+      {
+        "contribution": "0.9000",
+        "score": "0.9000",
+        "strategy_id": "breakout_v3",
+        "weight": "1"
+      },
+      {
+        "contribution": "0.6000",
+        "score": "0.6000",
+        "strategy_id": "mean_reversion_v3",
+        "weight": "1"
+      },
+      {
+        "contribution": "0.7500",
+        "score": "0.7500",
+        "strategy_id": "momentum_v3",
+        "weight": "1"
+      },
+      {
+        "contribution": "0.8000",
+        "score": "0.8000",
+        "strategy_id": "scalping_v1",
+        "weight": "1"
+      },
+      {
+        "contribution": "0.7500",
+        "score": "0.7500",
+        "strategy_id": "swing_v1",
+        "weight": "1"
+      }
+    ],
+    "ensemble_score": "0.7600",
+    "order_created": false,
+    "signal": "BUY_PREVIEW"
+  },
+  "ensemble_scoring": "READY",
+  "factor_engine": "READY",
+  "failed": [],
+  "feature_importance": "READY",
+  "feature_normalization": "READY",
+  "feature_selection": "READY",
+  "grid_optimization": "READY",
+  "grid_search": {
+    "actual_strategy_parameters_changed": false,
+    "best": {
+      "parameters": {
+        "lookback": 20,
+        "threshold": 0.7,
+        "weight": 1.0
+      },
+      "score": "1.0000"
+    },
+    "evaluation_count": 27,
+    "method": "GRID_SEARCH",
+    "results": [
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.7,
+          "weight": 1.0
+        },
+        "score": "1.0000"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.7,
+          "weight": 0.8
+        },
+        "score": "0.9600"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.7,
+          "weight": 1.2
+        },
+        "score": "0.9600"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.6,
+          "weight": 1.0
+        },
+        "score": "0.9200"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.8,
+          "weight": 1.0
+        },
+        "score": "0.9200"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.7,
+          "weight": 1.0
+        },
+        "score": "0.9000"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.7,
+          "weight": 1.0
+        },
+        "score": "0.9000"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.6,
+          "weight": 0.8
+        },
+        "score": "0.8800"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.6,
+          "weight": 1.2
+        },
+        "score": "0.8800"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.8,
+          "weight": 0.8
+        },
+        "score": "0.8800"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.8,
+          "weight": 1.2
+        },
+        "score": "0.8800"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.7,
+          "weight": 0.8
+        },
+        "score": "0.8600"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.7,
+          "weight": 1.2
+        },
+        "score": "0.8600"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.7,
+          "weight": 0.8
+        },
+        "score": "0.8600"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.7,
+          "weight": 1.2
+        },
+        "score": "0.8600"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.6,
+          "weight": 1.0
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.8,
+          "weight": 1.0
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.6,
+          "weight": 1.0
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.8,
+          "weight": 1.0
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.6,
+          "weight": 0.8
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.6,
+          "weight": 1.2
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.8,
+          "weight": 0.8
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.8,
+          "weight": 1.2
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.6,
+          "weight": 0.8
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.6,
+          "weight": 1.2
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.8,
+          "weight": 0.8
+        },
+        "score": "0.7800"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.8,
+          "weight": 1.2
+        },
+        "score": "0.7800"
+      }
+    ]
+  },
+  "market_regime_feature_set": "READY",
+  "next_fixed_development": "SHADOW_TRADING_AND_PRODUCTION_APPROVAL_FRAMEWORK",
+  "optimization_history": "READY",
+  "random_optimization": "READY",
+  "random_search": {
+    "actual_strategy_parameters_changed": false,
+    "best": {
+      "parameters": {
+        "lookback": 25,
+        "threshold": 0.75,
+        "weight": 1.0
+      },
+      "score": "0.9100"
+    },
+    "evaluation_count": 15,
+    "method": "RANDOM_SEARCH",
+    "results": [
+      {
+        "parameters": {
+          "lookback": 25,
+          "threshold": 0.75,
+          "weight": 1.0
+        },
+        "score": "0.9100"
+      },
+      {
+        "parameters": {
+          "lookback": 15,
+          "threshold": 0.65,
+          "weight": 0.8
+        },
+        "score": "0.8700"
+      },
+      {
+        "parameters": {
+          "lookback": 15,
+          "threshold": 0.65,
+          "weight": 1.2
+        },
+        "score": "0.8700"
+      },
+      {
+        "parameters": {
+          "lookback": 25,
+          "threshold": 0.65,
+          "weight": 0.8
+        },
+        "score": "0.8700"
+      },
+      {
+        "parameters": {
+          "lookback": 30,
+          "threshold": 0.75,
+          "weight": 1.0
+        },
+        "score": "0.8600"
+      },
+      {
+        "parameters": {
+          "lookback": 20,
+          "threshold": 0.85,
+          "weight": 1.2
+        },
+        "score": "0.8400"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.75,
+          "weight": 1.2
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.75,
+          "weight": 0.8
+        },
+        "score": "0.8200"
+      },
+      {
+        "parameters": {
+          "lookback": 15,
+          "threshold": 0.85,
+          "weight": 1.2
+        },
+        "score": "0.7900"
+      },
+      {
+        "parameters": {
+          "lookback": 15,
+          "threshold": 0.85,
+          "weight": 1.2
+        },
+        "score": "0.7900"
+      },
+      {
+        "parameters": {
+          "lookback": 25,
+          "threshold": 0.55,
+          "weight": 0.8
+        },
+        "score": "0.7900"
+      },
+      {
+        "parameters": {
+          "lookback": 25,
+          "threshold": 0.85,
+          "weight": 0.8
+        },
+        "score": "0.7900"
+      },
+      {
+        "parameters": {
+          "lookback": 15,
+          "threshold": 0.55,
+          "weight": 0.8
+        },
+        "score": "0.7900"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.85,
+          "weight": 1.2
+        },
+        "score": "0.7400"
+      },
+      {
+        "parameters": {
+          "lookback": 10,
+          "threshold": 0.85,
+          "weight": 0.8
+        },
+        "score": "0.7400"
+      }
+    ]
+  },
+  "rollback_preview": "READY",
+  "rollback_preview_result": {
+    "actual_rollback_performed": false,
+    "current_version": "ensemble_v1.1",
+    "operator_approval_required": true,
+    "rollback_preview_allowed": true,
+    "target_version": "ensemble_v1.0"
+  },
+  "selected_features": [
+    {
+      "feature": "momentum_factor",
+      "importance": "0.2200"
+    },
+    {
+      "feature": "quality_factor",
+      "importance": "0.1500"
+    },
+    {
+      "feature": "sector_factor",
+      "importance": "0.1200"
+    },
+    {
+      "feature": "liquidity_factor",
+      "importance": "0.1000"
+    },
+    {
+      "feature": "regime_factor",
+      "importance": "0.0800"
+    }
+  ],
+  "stage": "FEATURE_ENGINE_AUTO_OPTIMIZATION_FRAMEWORK",
+  "state": "OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "technical_feature_engine": "READY"
+}

@@ -1,0 +1,2 @@
+{"actual_promotion_performed": false, "best": {"parameters": {"lookback": 20, "threshold": 0.7, "weight": 1.0}, "score": "1.0000"}, "evaluation_count": 27, "method": "GRID_SEARCH", "recorded_at": "2026-08-05T08:31:03.782192+00:00", "strategy_id": "ensemble_v1"}
+{"actual_promotion_performed": false, "best": {"parameters": {"lookback": 25, "threshold": 0.75, "weight": 1.0}, "score": "0.9100"}, "evaluation_count": 15, "method": "RANDOM_SEARCH", "recorded_at": "2026-08-05T08:31:03.783543+00:00", "strategy_id": "ensemble_v1"}

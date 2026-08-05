@@ -1,0 +1,61 @@
+{
+  "actual_model_training_performed": false,
+  "created_at": "2026-08-05T08:31:03.779922+00:00",
+  "dataset_fingerprint": "c1d57b0171a2b3df9dcf0f96e045e39d61988c10a9c2fb4e78963ff23b5ac336",
+  "feature_count": 5,
+  "feature_names": [
+    "momentum_factor",
+    "quality_factor",
+    "sector_factor",
+    "liquidity_factor",
+    "regime_factor"
+  ],
+  "row_count": 4,
+  "rows": [
+    {
+      "features": {
+        "liquidity_factor": "0",
+        "momentum_factor": "1",
+        "quality_factor": "0",
+        "regime_factor": "0",
+        "sector_factor": "1"
+      },
+      "label": "1",
+      "symbol": "AAPL"
+    },
+    {
+      "features": {
+        "liquidity_factor": "0",
+        "momentum_factor": "0.2347962596409801378745478288",
+        "quality_factor": "0.7744293633042052763923813249",
+        "regime_factor": "0",
+        "sector_factor": "0.6666666666666666666666666667"
+      },
+      "label": "1",
+      "symbol": "MSFT"
+    },
+    {
+      "features": {
+        "liquidity_factor": "0",
+        "momentum_factor": "0",
+        "quality_factor": "1",
+        "regime_factor": "0",
+        "sector_factor": "0.3333333333333333333333333333"
+      },
+      "label": "0",
+      "symbol": "SPY"
+    },
+    {
+      "features": {
+        "liquidity_factor": "0",
+        "momentum_factor": "0.4544607934438442913019184181",
+        "quality_factor": "0.5584150671380259656602992309",
+        "regime_factor": "0",
+        "sector_factor": "0"
+      },
+      "label": "0",
+      "symbol": "XLV"
+    }
+  ],
+  "schema_version": 1
+}
