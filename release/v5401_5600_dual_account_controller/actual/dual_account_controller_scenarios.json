@@ -1,0 +1,157 @@
+{
+  "items": {
+    "account_killed": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": true,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "ACCOUNT_TEST_STOP",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 6
+    },
+    "account_release_blocked": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": true,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "ACCOUNT_TEST_STOP",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 6
+    },
+    "account_released": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": false,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "OPERATOR_RELEASE",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 7
+    },
+    "blocked_by_lock": {
+      "allowed": false,
+      "command": "TRANSITION_PROFILE",
+      "current_profile": "PAPER_TEST",
+      "previous_profile": "PAPER_TEST",
+      "reason": "PROFILE_LOCK_ACTIVE",
+      "sequence": 2,
+      "status": "BLOCKED"
+    },
+    "emergency_stopped": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": true,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "ALL_STOP",
+      "global_kill_switch": true,
+      "last_transition_reason": "CRITICAL_HEALTH_CONDITION",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 8
+    },
+    "etrade_blocked": {
+      "allowed": false,
+      "command": "TRANSITION_PROFILE",
+      "current_profile": "PAPER_TEST",
+      "previous_profile": "PAPER_TEST",
+      "reason": "UNSAFE_DIRECT_TRANSITION",
+      "sequence": 3,
+      "status": "BLOCKED"
+    },
+    "locked": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": false,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "PROFILE_LOCKED",
+      "last_transition_status": "PASS",
+      "profile_locked": true,
+      "sequence": 2
+    },
+    "paper_again": {
+      "allowed": true,
+      "command": "TRANSITION_PROFILE",
+      "current_profile": "PAPER_TEST",
+      "previous_profile": "ALL_STOP",
+      "reason": "RESTART_PAPER_TEST",
+      "sequence": 5,
+      "status": "PASS"
+    },
+    "restored_after_restart": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": true,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "ALL_STOP",
+      "global_kill_switch": true,
+      "last_transition_reason": "CRITICAL_HEALTH_CONDITION",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 8
+    },
+    "restored_default": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": true,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "ALL_STOP",
+      "global_kill_switch": true,
+      "last_transition_reason": "DEFAULT_SAFE_STATE",
+      "last_transition_status": "RESTORED_DEFAULT",
+      "profile_locked": false,
+      "sequence": 0
+    },
+    "stopped": {
+      "allowed": true,
+      "command": "TRANSITION_PROFILE",
+      "current_profile": "ALL_STOP",
+      "previous_profile": "PAPER_TEST",
+      "reason": "OPERATOR_STOP",
+      "sequence": 4,
+      "status": "PASS"
+    },
+    "to_paper": {
+      "allowed": true,
+      "command": "TRANSITION_PROFILE",
+      "current_profile": "PAPER_TEST",
+      "previous_profile": "ALL_STOP",
+      "reason": "START_PAPER_TEST",
+      "sequence": 1,
+      "status": "PASS"
+    },
+    "unlock_blocked": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": false,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "PROFILE_LOCKED",
+      "last_transition_status": "PASS",
+      "profile_locked": true,
+      "sequence": 2
+    },
+    "unlocked": {
+      "account_kill_switches": {
+        "ALPACA_PAPER_PRIMARY": false,
+        "ETRADE_PRIMARY": true
+      },
+      "active_profile": "PAPER_TEST",
+      "global_kill_switch": false,
+      "last_transition_reason": "PROFILE_UNLOCKED",
+      "last_transition_status": "PASS",
+      "profile_locked": false,
+      "sequence": 3
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dynamic_accounts_supported": true,
+  "dynamic_brokers_supported": true,
+  "profile_based": true,
+  "registry_based": true,
+  "state_schema_version": 1
+}

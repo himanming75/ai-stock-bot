@@ -1,0 +1,11 @@
+{
+  "active_accounts": [
+    "ALPACA_PAPER_PRIMARY",
+    "ETRADE_PRIMARY"
+  ],
+  "broker_write": false,
+  "etrade_key_issuance_pending": true,
+  "future_multi_account_extension_ready": true,
+  "future_multi_broker_extension_ready": true,
+  "stage_4_status": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "account_kill_switches": {
+    "ALPACA_PAPER_PRIMARY": true,
+    "ETRADE_PRIMARY": true
+  },
+  "active_profile": "ALL_STOP",
+  "global_kill_switch": true,
+  "last_transition_reason": "CRITICAL_HEALTH_CONDITION",
+  "last_transition_status": "PASS",
+  "profile_locked": false,
+  "sequence": 8
+}

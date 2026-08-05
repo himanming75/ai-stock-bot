@@ -1,0 +1,22 @@
+{
+  "account_kill_switches": {
+    "ALPACA_PAPER_PRIMARY": true,
+    "ETRADE_PRIMARY": true
+  },
+  "active_profile": "ALL_STOP",
+  "available_profiles": [
+    "ALL_STOP",
+    "DUAL_MONITOR",
+    "ETRADE_READ_ONLY",
+    "MAINTENANCE",
+    "PAPER_TEST"
+  ],
+  "broker_write_globally_enabled": false,
+  "etrade_actual_connection_validated": false,
+  "etrade_key_issuance_pending": true,
+  "global_kill_switch": true,
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "profile_locked": false,
+  "sequence": 8
+}
