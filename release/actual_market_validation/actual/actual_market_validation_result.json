@@ -1,0 +1,45 @@
+{
+  "account_summary": {
+    "buying_power": "399303.43",
+    "cash": "99391.5",
+    "currency": "USD",
+    "equity": "100012.01",
+    "status": "ACTIVE"
+  },
+  "actual_broker_read_performed": true,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": true,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "bridge_pipeline_status": "BLOCKED",
+  "clock": {
+    "is_open": true,
+    "next_close": "2026-08-05T16:00:00-04:00",
+    "next_open": "2026-08-06T09:30:00-04:00",
+    "timestamp": "2026-08-05T13:20:52.560347241-04:00"
+  },
+  "closed_order_count": 5,
+  "decision_pipeline_status": "BLOCKED",
+  "evidence_sha256": {
+    "actual_ai_decision_snapshot.json": "2d026f64f209f1a7103f7de7dbe1e8abcce6bdf93552798fc10d04d6e011a392",
+    "actual_bridge_snapshot.json": "e1f7512854970f2eb771b5addf2b40c88aa0c9b3642cdd1a7880e914115cbc38",
+    "actual_market_fusion_input.json": "2b3dfc09826b2a28b3c7f15c4b45d8d09e2a4e000d096cee5e794619b4cf8f31",
+    "actual_market_intelligence_snapshot.json": "459879a0d7d1e604b9ecb0817d69d9407be2c1eba82c11bcb11dd8fa6455c13f",
+    "alpaca_readonly_snapshot.json": "0f8e967e17e0d29101fcf2baa52ca92aa788f53a42ea6dc89e743aad561e6844"
+  },
+  "generated_at": "2026-08-05T17:20:54.094248+00:00",
+  "market_pipeline_status": "PASS",
+  "next_fixed_development": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE",
+  "next_market_validation": "READ_ONLY_POLLING_LONG_RUN",
+  "open_order_count": 0,
+  "position_count": 2,
+  "stage": "ACTUAL_MARKET_VALIDATION_READ_ONLY_MEGA_BUNDLE",
+  "status": "PASS",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "symbols_with_bars": 1
+}

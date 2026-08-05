@@ -1,0 +1,21 @@
+{
+  "stage": "ACTUAL_MARKET_VALIDATION_READ_ONLY_MEGA_BUNDLE",
+  "http_methods": [
+    "GET"
+  ],
+  "broker_write_allowed": false,
+  "order_submission_allowed": false,
+  "paper_orders_during_install": 0,
+  "live_orders_during_install": 0,
+  "scope": [
+    "clock",
+    "account",
+    "positions",
+    "orders",
+    "1-minute bars",
+    "market intelligence",
+    "AI selection",
+    "strategy risk portfolio bridge",
+    "evidence ledger"
+  ]
+}
