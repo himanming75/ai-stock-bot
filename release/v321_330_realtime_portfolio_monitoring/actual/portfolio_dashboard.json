@@ -1,0 +1,19 @@
+{
+  "broker_write": false,
+  "buying_power": "399292.74",
+  "cash": "99386.51",
+  "daily_pl": "-0.92019720149",
+  "daily_return_percent": "-0.0009200936891355337880776005204",
+  "equity": "100010.33",
+  "generated_at": "2026-08-05T19:05:56.390986+00:00",
+  "gross_exposure_percent": "0.6237558480208994410877356369",
+  "live_orders_submitted": 0,
+  "market_is_open": true,
+  "net_exposure_percent": "0.6237558480208994410877356369",
+  "paper_orders_submitted": 0,
+  "position_change_count": 0,
+  "position_count": 2,
+  "status": "PASS",
+  "total_unrealized_pl": "10.340283",
+  "warnings": []
+}

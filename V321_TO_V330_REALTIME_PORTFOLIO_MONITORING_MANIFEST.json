@@ -1,0 +1,21 @@
+{
+  "stage": "V321_TO_V330_REALTIME_PORTFOLIO_MONITORING",
+  "stages": [
+    "V321_ACCOUNT_SNAPSHOT",
+    "V322_POSITION_VALUATION",
+    "V323_UNREALIZED_PNL",
+    "V324_FILLED_ORDER_CASH_FLOW",
+    "V325_EQUITY_CASH_BUYING_POWER",
+    "V326_GROSS_NET_EXPOSURE",
+    "V327_POSITION_CHANGE_DETECTION",
+    "V328_DAILY_RETURN",
+    "V329_PORTFOLIO_LEDGERS",
+    "V330_DASHBOARD_SNAPSHOT"
+  ],
+  "controller_files_modified": false,
+  "actual_broker_read_allowed": true,
+  "actual_broker_write_allowed": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0,
+  "next_fixed_development": "V331_TO_V340_REALTIME_RISK_MONITORING"
+}

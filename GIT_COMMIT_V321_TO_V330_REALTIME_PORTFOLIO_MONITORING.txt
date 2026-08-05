@@ -1,0 +1,10 @@
+git add realtime_portfolio_monitoring
+git add tools/run_v321_to_v330_realtime_portfolio_monitoring.py
+git add tools/test_v321_to_v330_realtime_portfolio_monitoring.py
+git add release/v321_330_realtime_portfolio_monitoring
+git add RUN_V321_TO_V330_REALTIME_PORTFOLIO_MONITORING.ps1
+git add RUN_V321_TO_V330_REALTIME_PORTFOLIO_MONITORING_TEST.ps1
+git add V321_TO_V330_REALTIME_PORTFOLIO_MONITORING_MANIFEST.json
+git add GIT_COMMIT_V321_TO_V330_REALTIME_PORTFOLIO_MONITORING.txt
+git commit -m "Add V321-V330 realtime portfolio monitoring"
+git push origin main

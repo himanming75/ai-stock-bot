@@ -1,0 +1,20 @@
+{
+  "stages": {
+    "V321": "Account Snapshot",
+    "V322": "Position Valuation",
+    "V323": "Unrealized PnL",
+    "V324": "Filled Order Cash Flow",
+    "V325": "Equity Cash Buying Power",
+    "V326": "Gross and Net Exposure",
+    "V327": "Position Change Detection",
+    "V328": "Daily Return",
+    "V329": "Portfolio Ledgers",
+    "V330": "Dashboard Snapshot"
+  },
+  "default_interval_seconds": 60,
+  "default_max_cycles": 5,
+  "broker_read_allowed": true,
+  "broker_write_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}
