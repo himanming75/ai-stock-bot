@@ -1,0 +1,6 @@
+{
+  "actual_sandbox_network_validation_performed": false,
+  "next_user_action": "OBTAIN_ETRADE_SANDBOX_CONSUMER_KEY_AND_RUN_EXPLICIT_SANDBOX_READ",
+  "real_credentials_used": false,
+  "sandbox_adapter_builder_present": true
+}

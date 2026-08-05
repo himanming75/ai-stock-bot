@@ -1,0 +1,12 @@
+git add multi_broker_etrade_oauth
+git add tools/run_v3601_to_v3800_etrade_oauth_session.py
+git add tools/test_v3601_to_v3800_etrade_oauth_session.py
+git add tools/run_etrade_sandbox_read_explicit.py
+git add release/v3601_3800_etrade_oauth_session
+git add RUN_V3601_TO_V3800_ETRADE_OAUTH_SESSION.ps1
+git add RUN_V3601_TO_V3800_ETRADE_OAUTH_SESSION_TEST.ps1
+git add RUN_ETRADE_SANDBOX_READ_EXPLICIT.ps1
+git add V3601_TO_V3800_ETRADE_OAUTH_SESSION_MANIFEST.json
+git add GIT_COMMIT_V3601_TO_V3800_ETRADE_OAUTH_SESSION.txt
+git commit -m "Add V3601-V3800 ETrade OAuth session workflow"
+git push origin main

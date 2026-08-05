@@ -1,0 +1,8 @@
+{
+  "access_token_received": true,
+  "authorization_url_generated": true,
+  "callback_confirmed": true,
+  "renew_succeeded": true,
+  "request_token_received": true,
+  "revoke_succeeded": true
+}
