@@ -1,0 +1,204 @@
+{
+  "actual_live_long_run_allowed": false,
+  "actual_live_long_run_qualified": false,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_broker_restart_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "checkpoint_continuity": {
+    "checks": {
+      "auto_replay_off": true,
+      "checkpoint_present": true,
+      "cycle_id_present": true,
+      "cycle_number_positive": true,
+      "runtime_id_present": true,
+      "state_complete": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "checks": {
+    "checkpoint_continuity_passed": true,
+    "crash_resume_passed": true,
+    "drift_audit_passed": true,
+    "duplicate_cycle_audit_passed": true,
+    "failed_cycles_within_limit": true,
+    "fault_matrix_passed": true,
+    "heartbeat_continuity_passed": true,
+    "kill_switch_response_passed": true,
+    "policy_valid": true,
+    "required_cycles_met": true,
+    "resource_trend_audit_passed": true
+  },
+  "crash_resume_audit": {
+    "checks": {
+      "automatic_order_replay_disabled": true,
+      "checkpoint_preserved": true,
+      "duplicate_cycle_prevented": true,
+      "lock_released_or_reviewed": true,
+      "operator_review_required": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "drift_audit": {
+    "passed": true,
+    "record_count": 3,
+    "unresolved_drift_count": 0
+  },
+  "duplicate_cycle_audit": {
+    "cycle_count": 9,
+    "duplicate_count": 0,
+    "passed": true
+  },
+  "failed": [],
+  "failed_cycles": 0,
+  "fault_matrix": {
+    "failed_count": 0,
+    "fault_count": 10,
+    "passed": true,
+    "passed_count": 10,
+    "results": [
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "MARKET_CLOSED",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "LIVE_KILL_SWITCH_ACTIVE",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "DUPLICATE_CYCLE",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "HEARTBEAT_STALE",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "CHECKPOINT_MISSING",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "RECONCILIATION_DRIFT",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "NETWORK_UNAVAILABLE",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "BROKER_TIMEOUT",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "RATE_LIMIT",
+        "live_order_submission_allowed": false,
+        "passed": true
+      },
+      {
+        "automatic_order_replay_enabled": false,
+        "expected_action": "BLOCK_AND_REQUIRE_REVIEW",
+        "fault": "PROCESS_RESTART",
+        "live_order_submission_allowed": false,
+        "passed": true
+      }
+    ]
+  },
+  "gates": {
+    "actual_live_long_run_allowed": false,
+    "checks": {
+      "l1_pass": true,
+      "l2_actual_complete": false,
+      "l2_preparation_pass": true,
+      "l3_actual_complete": false,
+      "l3_preparation_pass": true,
+      "l4_actual_complete": false,
+      "l4_preparation_pass": true,
+      "l5_actual_complete": false,
+      "l5_preparation_pass": true,
+      "paper_certificate_present": false,
+      "paper_complete": false
+    },
+    "failed": [
+      "paper_complete",
+      "paper_certificate_present",
+      "l2_actual_complete",
+      "l3_actual_complete",
+      "l4_actual_complete",
+      "l5_actual_complete"
+    ]
+  },
+  "heartbeat_continuity": {
+    "maximum_gap_seconds_allowed": 300,
+    "maximum_gap_seconds_observed": 6.222734,
+    "passed": true,
+    "sample_count": 9
+  },
+  "kill_switch_response_audit": {
+    "live_order_submission_allowed": false,
+    "passed": true,
+    "response_actions": [
+      "BLOCK_NEW_LIVE_ORDERS",
+      "PRESERVE_CHECKPOINT",
+      "PRESERVE_RECONCILIATION_STATE",
+      "REQUIRE_OPERATOR_REVIEW"
+    ]
+  },
+  "live_complete": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "L6_ACTUAL_AFTER_L5_ACTUAL_RUNTIME",
+  "policy": {
+    "checks": {
+      "crash_resume_required": true,
+      "fail_closed": true,
+      "heartbeat_gap_positive": true,
+      "kill_switch_response_required": true,
+      "maximum_failed_cycles_nonnegative": true,
+      "required_cycles_positive": true,
+      "zero_duplicate_cycles_required": true,
+      "zero_unresolved_drift_required": true
+    },
+    "failed": [],
+    "valid": true
+  },
+  "production_release_allowed": false,
+  "qualified": true,
+  "resource_trend_audit": {
+    "cpu_samples_present": false,
+    "memory_samples_present": false,
+    "passed": true,
+    "sample_count": 2
+  },
+  "stage": "L6",
+  "state": "LIVE_LONG_RUN_PREPARATION_QUALIFIED",
+  "status": "PASS",
+  "successful_cycles": 3
+}

@@ -1,0 +1,10 @@
+{
+  "actual_live_long_run_qualified": false,
+  "actual_live_orders_submitted": 0,
+  "automatic_order_replay_enabled": false,
+  "generated_at": "2026-08-05T05:48:40.986681+00:00",
+  "live_complete": false,
+  "offline_preparation_qualified": true,
+  "production_release_allowed": false,
+  "stage": "L6_PREPARATION_CERTIFICATE"
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "L6_PREPARATION",
+  "features": [
+    "Long Run Policy",
+    "Stability Cycle Qualification",
+    "Fault Injection Matrix",
+    "Heartbeat Continuity Audit",
+    "Checkpoint Continuity Audit",
+    "Duplicate Cycle Audit",
+    "Resource Trend Audit",
+    "Drift Audit",
+    "Kill Switch Response Audit",
+    "Crash Resume Qualification",
+    "Offline Preparation Certificate"
+  ],
+  "actual_live_long_run_allowed": false,
+  "actual_live_long_run_qualified": false,
+  "live_complete": false,
+  "production_release_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "automatic_order_replay_enabled": false,
+  "automatic_broker_restart_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L6_ACTUAL_AFTER_L5_ACTUAL_RUNTIME"
+}
