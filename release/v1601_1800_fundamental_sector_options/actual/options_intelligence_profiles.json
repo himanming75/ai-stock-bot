@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "gamma_score": 0.2,
+      "options_event_risk": 0.487,
+      "options_score": 0.309025,
+      "options_signal": "BULLISH",
+      "positioning_score": 0.4655,
+      "symbol": "QQQ",
+      "volatility_bias_score": 0.015
+    },
+    {
+      "gamma_score": 0.12,
+      "options_event_risk": 0.414,
+      "options_score": 0.146975,
+      "options_signal": "NEUTRAL",
+      "positioning_score": 0.1945,
+      "symbol": "SPY",
+      "volatility_bias_score": 0.05
+    },
+    {
+      "gamma_score": -0.1,
+      "options_event_risk": 0.694,
+      "options_score": -0.12265,
+      "options_signal": "NEUTRAL",
+      "positioning_score": -0.135,
+      "symbol": "IWM",
+      "volatility_bias_score": -0.117
+    }
+  ]
+}

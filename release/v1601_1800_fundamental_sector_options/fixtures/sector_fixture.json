@@ -1,0 +1,38 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "sector": "Technology",
+      "return_1m": 0.035,
+      "return_3m": 0.075,
+      "return_6m": 0.13,
+      "relative_strength": 0.28,
+      "breadth": 0.62,
+      "earnings_revision": 0.18,
+      "fund_flow": 0.15,
+      "volatility": 0.23
+    },
+    {
+      "sector": "Broad Market",
+      "return_1m": 0.025,
+      "return_3m": 0.055,
+      "return_6m": 0.1,
+      "relative_strength": 0.15,
+      "breadth": 0.58,
+      "earnings_revision": 0.1,
+      "fund_flow": 0.1,
+      "volatility": 0.19
+    },
+    {
+      "sector": "Small Cap",
+      "return_1m": 0.012,
+      "return_3m": 0.03,
+      "return_6m": 0.05,
+      "relative_strength": -0.04,
+      "breadth": 0.48,
+      "earnings_revision": 0.02,
+      "fund_flow": -0.03,
+      "volatility": 0.29
+    }
+  ]
+}

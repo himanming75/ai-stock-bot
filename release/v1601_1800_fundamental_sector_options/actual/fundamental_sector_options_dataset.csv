@@ -1,0 +1,4 @@
+balance_sheet_score,composite_score,composite_signal,confidence,decision_eligible,fundamental_score,fundamental_signal,gamma_score,growth_score,options_event_risk,options_score,options_signal,positioning_score,quality_score,rank,sector,sector_rank,sector_score,shareholder_return_score,symbol,valuation_score,volatility_bias_score
+0.2625,0.42554781,BULLISH,74.894173,True,0.50633238,BULLISH,0.2,0.734,0.487,0.309025,BULLISH,0.4655,1.0,1,Technology,1,0.34104,0.186,QQQ,-0.09419048,0.015
+0.1575,0.387028,BULLISH,73.54598,True,0.52186,BULLISH,0.12,0.456,0.414,0.146975,NEUTRAL,0.1945,1.0,2,Broad Market,2,0.28244,0.187,SPY,0.296,0.05
+-0.0175,0.23803543,BULLISH,68.33124,True,0.46413714,BULLISH,-0.1,0.406,0.694,-0.12265,NEUTRAL,-0.135,0.694,3,Small Cap,3,0.02916,0.146,IWM,0.57942857,-0.117

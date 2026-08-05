@@ -1,0 +1,37 @@
+{
+  "records": [
+    {
+      "balance_sheet_score": 0.2625,
+      "fundamental_score": 0.50633238,
+      "fundamental_signal": "BULLISH",
+      "growth_score": 0.734,
+      "quality_score": 1.0,
+      "sector": "Technology",
+      "shareholder_return_score": 0.186,
+      "symbol": "QQQ",
+      "valuation_score": -0.09419048
+    },
+    {
+      "balance_sheet_score": 0.1575,
+      "fundamental_score": 0.52186,
+      "fundamental_signal": "BULLISH",
+      "growth_score": 0.456,
+      "quality_score": 1.0,
+      "sector": "Broad Market",
+      "shareholder_return_score": 0.187,
+      "symbol": "SPY",
+      "valuation_score": 0.296
+    },
+    {
+      "balance_sheet_score": -0.0175,
+      "fundamental_score": 0.46413714,
+      "fundamental_signal": "BULLISH",
+      "growth_score": 0.406,
+      "quality_score": 0.694,
+      "sector": "Small Cap",
+      "shareholder_return_score": 0.146,
+      "symbol": "IWM",
+      "valuation_score": 0.57942857
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "symbol": "QQQ",
+      "put_call_ratio": 0.78,
+      "iv_rank": 0.42,
+      "iv_percentile": 0.47,
+      "call_put_open_interest_ratio": 1.35,
+      "skew": 0.12,
+      "gamma_exposure": 0.2,
+      "expected_move": 0.025,
+      "max_pain_distance": 0.008,
+      "unusual_flow_score": 0.22
+    },
+    {
+      "symbol": "SPY",
+      "put_call_ratio": 0.9,
+      "iv_rank": 0.38,
+      "iv_percentile": 0.43,
+      "call_put_open_interest_ratio": 1.15,
+      "skew": 0.1,
+      "gamma_exposure": 0.12,
+      "expected_move": 0.018,
+      "max_pain_distance": 0.006,
+      "unusual_flow_score": 0.08
+    },
+    {
+      "symbol": "IWM",
+      "put_call_ratio": 1.08,
+      "iv_rank": 0.58,
+      "iv_percentile": 0.62,
+      "call_put_open_interest_ratio": 0.92,
+      "skew": 0.18,
+      "gamma_exposure": -0.1,
+      "expected_move": 0.035,
+      "max_pain_distance": 0.018,
+      "unusual_flow_score": -0.06
+    }
+  ]
+}

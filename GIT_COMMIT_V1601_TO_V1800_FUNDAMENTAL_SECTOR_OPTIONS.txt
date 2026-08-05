@@ -1,0 +1,10 @@
+git add fundamental_sector_options_intelligence
+git add tools/run_v1601_to_v1800_fundamental_sector_options.py
+git add tools/test_v1601_to_v1800_fundamental_sector_options.py
+git add release/v1601_1800_fundamental_sector_options
+git add RUN_V1601_TO_V1800_FUNDAMENTAL_SECTOR_OPTIONS.ps1
+git add RUN_V1601_TO_V1800_FUNDAMENTAL_SECTOR_OPTIONS_TEST.ps1
+git add V1601_TO_V1800_FUNDAMENTAL_SECTOR_OPTIONS_MANIFEST.json
+git add GIT_COMMIT_V1601_TO_V1800_FUNDAMENTAL_SECTOR_OPTIONS.txt
+git commit -m "Add V1601-V1800 fundamental sector options intelligence"
+git push origin main
