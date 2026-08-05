@@ -1,0 +1,3 @@
+git add broker_integration/p5_models.py broker_integration/p5_metrics.py broker_integration/p5_fault_matrix.py broker_integration/p5_checkpoint.py broker_integration/p5_qualification.py broker_integration/p5_paths.py tools/run_p5_offline_qualification.py tools/run_p5_actual_preflight.py tools/test_p5_paper_long_run_qualification.py tools/verify_p5_paper_long_run_qualification.py release/p5_paper_long_run_qualification RUN_P5_OFFLINE_TEST_AND_VERIFY.ps1 RUN_P5_ACTUAL_PREFLIGHT.ps1 P5_PAPER_LONG_RUN_QUALIFICATION_MANIFEST.json GIT_COMMIT_P5_PAPER_LONG_RUN_QUALIFICATION.txt
+git commit -m "P5 add paper long-run qualification"
+git push origin main

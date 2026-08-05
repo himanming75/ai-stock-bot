@@ -1,0 +1,27 @@
+{
+  "stage": "P5",
+  "purpose": "Paper Long-Run Qualification",
+  "offline_required_cycles": 1000,
+  "fault_matrix": [
+    "Duplicate Cycle Protection",
+    "Kill Switch",
+    "Market Closed",
+    "Unknown Order State",
+    "Position Drift",
+    "Account Drift",
+    "Partial Fill Deduplication",
+    "Restart Recovery",
+    "Single Instance Lock",
+    "Network Retry",
+    "Rate Limit",
+    "Graceful Shutdown",
+    "Next Day Resume"
+  ],
+  "offline_pass_does_not_equal_actual_paper_complete": true,
+  "paper_complete_during_install": false,
+  "live_complete_during_install": false,
+  "install_uses_network": false,
+  "install_submits_paper_orders": 0,
+  "install_submits_live_orders": 0,
+  "next_fixed_stage": "L1_ONLY_AFTER_ACTUAL_PAPER_QUALIFICATION"
+}

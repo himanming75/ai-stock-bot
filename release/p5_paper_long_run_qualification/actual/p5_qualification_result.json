@@ -1,0 +1,59 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_long_run_qualified": false,
+  "actual_paper_orders_submitted": 0,
+  "fault_matrix": {
+    "checks": {
+      "account_drift_blocks": true,
+      "duplicate_cycle_blocked": true,
+      "graceful_shutdown_releases_lock": true,
+      "kill_switch_blocks": true,
+      "market_closed_blocks": true,
+      "network_retry_policy_present": true,
+      "next_day_resume_supported": true,
+      "partial_fill_deduplicated": true,
+      "position_drift_blocks": true,
+      "rate_limit_policy_present": true,
+      "restart_checkpoint_restored": true,
+      "single_instance_lock_enforced": true,
+      "unknown_order_state_blocks": true
+    },
+    "failed": [],
+    "passed": true
+  },
+  "live_complete": false,
+  "metrics": {
+    "actual_live_orders_submitted": 0,
+    "actual_paper_orders_submitted": 0,
+    "consecutive_failures": 0,
+    "duplicate_cycles_blocked": 1,
+    "failed_cycles": 0,
+    "kill_switch_tests_passed": 1,
+    "market_close_tests_passed": 1,
+    "maximum_observed_consecutive_failures": 0,
+    "next_day_resume_tests_passed": 1,
+    "reconciliation_tests_passed": 1,
+    "restart_recoveries_passed": 0,
+    "successful_cycles": 1000,
+    "total_cycles": 1000
+  },
+  "next_fixed_stage": "L1_LIVE_SAFETY_BOUNDARY_AFTER_ACTUAL_PAPER_QUALIFICATION",
+  "paper_complete": false,
+  "qualification_checks": {
+    "consecutive_failures_within_limit": true,
+    "duplicate_protection": true,
+    "failed_cycles_within_limit": true,
+    "fault_matrix_passed": true,
+    "kill_switch_test": true,
+    "market_close_test": true,
+    "next_day_resume_test": true,
+    "reconciliation_test": true,
+    "required_cycles_completed": true,
+    "restart_recovery": true
+  },
+  "qualification_mode": "OFFLINE",
+  "qualified": true,
+  "stage": "P5",
+  "state": "PAPER_LONG_RUN_OFFLINE_QUALIFIED",
+  "status": "PASS"
+}

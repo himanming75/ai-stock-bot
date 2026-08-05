@@ -1,0 +1,20 @@
+{
+  "metrics": {
+    "actual_live_orders_submitted": 0,
+    "actual_paper_orders_submitted": 0,
+    "consecutive_failures": 0,
+    "duplicate_cycles_blocked": 1,
+    "failed_cycles": 0,
+    "kill_switch_tests_passed": 1,
+    "market_close_tests_passed": 1,
+    "maximum_observed_consecutive_failures": 0,
+    "next_day_resume_tests_passed": 1,
+    "reconciliation_tests_passed": 1,
+    "restart_recoveries_passed": 0,
+    "successful_cycles": 1000,
+    "total_cycles": 1000
+  },
+  "next_cycle": 1001,
+  "stage": "P5",
+  "state": "COMPLETE"
+}

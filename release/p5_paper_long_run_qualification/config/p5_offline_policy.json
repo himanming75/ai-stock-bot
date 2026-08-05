@@ -1,0 +1,11 @@
+{
+  "required_cycles": 1000,
+  "maximum_failed_cycles": 0,
+  "maximum_consecutive_failures": 0,
+  "require_restart_recovery": true,
+  "require_duplicate_protection": true,
+  "require_kill_switch_test": true,
+  "require_reconciliation_test": true,
+  "require_market_close_test": true,
+  "require_next_day_resume_test": true
+}
