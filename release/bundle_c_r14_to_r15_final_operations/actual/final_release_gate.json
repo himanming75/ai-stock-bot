@@ -1,0 +1,22 @@
+{
+  "automatic_activation_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "checks": {
+    "bundle_a_complete": true,
+    "bundle_b_complete": true,
+    "final_diagnostics_pass": true,
+    "paper_completion_certificate": false,
+    "production_release_certificate": false
+  },
+  "failed": [
+    "paper_completion_certificate",
+    "production_release_certificate"
+  ],
+  "production_candidate_ready": true,
+  "production_release_allowed": false,
+  "release_state": "BLOCKED",
+  "stage": "R15_FINAL_RELEASE_GATE",
+  "windows_task_registration_allowed": false
+}

@@ -1,0 +1,27 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "automatic_order_submission_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "checks": {
+    "bundle_a_network_off": true,
+    "bundle_a_orders_zero": true,
+    "bundle_a_pass": true,
+    "bundle_a_write_off": true,
+    "bundle_b_network_unused": true,
+    "bundle_b_orders_zero": true,
+    "bundle_b_pass": true,
+    "bundle_b_write_unused": true,
+    "free_disk_over_250mb": true,
+    "paper_vault_valid": true,
+    "r1_readiness_pass": true,
+    "r2_readiness_pass": true,
+    "r6_session_preview_complete": true
+  },
+  "failed": [],
+  "free_disk_bytes": 120248999936,
+  "observed_at": "2026-08-05T07:08:05.231445+00:00",
+  "stage": "R14_FINAL_DIAGNOSTICS",
+  "status": "PASS"
+}

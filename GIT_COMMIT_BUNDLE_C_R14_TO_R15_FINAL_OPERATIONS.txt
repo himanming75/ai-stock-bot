@@ -1,0 +1,3 @@
+git add final_operations tools/run_bundle_c_final_operations.py tools/test_bundle_c_final_operations.py tools/verify_bundle_c_final_operations.py release/bundle_c_r14_to_r15_final_operations RUN_BUNDLE_C_FINAL_OPERATIONS.ps1 RUN_BUNDLE_C_TEST_AND_VERIFY.ps1 SHOW_FINAL_PROJECT_STATUS.ps1 BUNDLE_C_R14_TO_R15_FINAL_OPERATIONS_MANIFEST.json GIT_COMMIT_BUNDLE_C_R14_TO_R15_FINAL_OPERATIONS.txt
+git commit -m "Bundle C add R14-R15 final operations"
+git push origin main

@@ -1,0 +1,25 @@
+{
+  "stage": "BUNDLE_C_R14_TO_R15",
+  "included_fixed_stages": [
+    "R14_FINAL_OPERATIONS_INTEGRATION",
+    "R15_PRODUCTION_CANDIDATE_RELEASE_GATE"
+  ],
+  "features": [
+    "Final Diagnostics",
+    "Cross Stage Integration Audit",
+    "SHA256 Release Manifest",
+    "Production Candidate Gate",
+    "Final Operations Report",
+    "Project Status Command"
+  ],
+  "development_bundles_complete_after_install": true,
+  "actual_release_performed": false,
+  "windows_task_registration_performed": false,
+  "actual_network_used": false,
+  "actual_write_used": false,
+  "automatic_order_submission_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_action": "RUN_P2_TO_P5_ACTUAL_PAPER_VALIDATION",
+  "roadmap_changed": false
+}
