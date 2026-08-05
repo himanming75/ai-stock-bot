@@ -1,0 +1,11 @@
+{
+  "proposal_id": "proposal-v392-001",
+  "proposal_hash": "__AUTO__",
+  "policy_hash": "__AUTO__",
+  "approval_phrase": "APPROVE_PAPER_EXECUTION_AUTHORIZATION",
+  "approved_by": "operator",
+  "reason": "Risk Governor passed and paper authorization reviewed.",
+  "expires_at": "2030-01-01T00:00:00+00:00",
+  "target_environment": "PAPER",
+  "automatic_authorization": false
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "V391.10A",
+  "status": "PASS",
+  "state": "RISK_GOVERNOR_INTEGRATION_READY",
+  "risk_governor_decision": "ALLOW",
+  "risk_operations_allowed": true,
+  "policy_hash": "471eb29e9a38a3af1fc1a74151e5e5628bc2a3edc4fd7f6e6682a62b3294e79e"
+}

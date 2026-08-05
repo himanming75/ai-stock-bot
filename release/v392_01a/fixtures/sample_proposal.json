@@ -1,0 +1,8 @@
+{
+  "proposal_id": "proposal-v392-001",
+  "symbol": "AAPL",
+  "side": "BUY",
+  "order_type": "MARKET",
+  "estimated_notional": 1000,
+  "submission_allowed": false
+}

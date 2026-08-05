@@ -1,0 +1,11 @@
+{
+  "stage": "V392.01A",
+  "mode": "EXECUTION_AUTHORIZATION_FOUNDATION",
+  "authorization_required": true,
+  "paper_endpoint_only": true,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "manual_approval_required": true,
+  "automatic_authorization_enabled": false,
+  "authorization_token_ttl_seconds": 300
+}
