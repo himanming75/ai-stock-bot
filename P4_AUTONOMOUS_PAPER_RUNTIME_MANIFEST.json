@@ -1,0 +1,31 @@
+{
+  "stage": "P4",
+  "purpose": "Autonomous Paper Runtime",
+  "reuses": [
+    "P1 canonical broker integration",
+    "P2 actual paper execution",
+    "P3 order fill portfolio sync"
+  ],
+  "features": [
+    "Single Instance Lock",
+    "Duplicate Cycle Protection",
+    "Market Clock Gate",
+    "P2 Actual Validation Gate",
+    "P3 Actual Validation Gate",
+    "Kill Switch Gate",
+    "Disk Space Health Check",
+    "Heartbeat",
+    "Checkpoint",
+    "Cycle Registry",
+    "Cycle Ledger",
+    "Fail Closed Runtime",
+    "Graceful Lock Release",
+    "Restart Safe State"
+  ],
+  "offline_qualification_cycles": 3,
+  "install_uses_network": false,
+  "install_submits_paper_orders": 0,
+  "install_submits_live_orders": 0,
+  "actual_runtime_enabled_during_install": false,
+  "next_fixed_stage": "P5_PAPER_LONG_RUN_QUALIFICATION"
+}

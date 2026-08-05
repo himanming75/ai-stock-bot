@@ -1,0 +1,8 @@
+{
+  "cycle_interval_seconds": 60,
+  "maximum_cycles_per_session": 390,
+  "require_market_open": true,
+  "require_p2_actual_validation": true,
+  "require_p3_actual_validation": true,
+  "fail_closed": true
+}

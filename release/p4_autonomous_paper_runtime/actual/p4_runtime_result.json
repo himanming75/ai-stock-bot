@@ -1,0 +1,15 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "blockers": [],
+  "broker_write_enabled": false,
+  "completed_cycle_count": 3,
+  "cycle_result_count": 3,
+  "live_submission_enabled": false,
+  "next_fixed_stage": "P5_PAPER_LONG_RUN_QUALIFICATION",
+  "paper_submission_enabled": false,
+  "runtime_id": "p4-offline-qualification",
+  "stage": "P4",
+  "state": "AUTONOMOUS_PAPER_RUNTIME_SESSION_COMPLETE",
+  "status": "PASS"
+}
