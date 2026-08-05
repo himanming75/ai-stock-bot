@@ -1,0 +1,198 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_emergency_stop_activated": false,
+  "actual_external_network_used": false,
+  "actual_fill_received": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_portfolio_modified": false,
+  "actual_production_approval_granted": false,
+  "actual_release_performed": false,
+  "actual_rollback_performed": false,
+  "approval_ledger": "READY",
+  "approval_queue_record": {
+    "actual_approval_granted": false,
+    "actual_change_applied": false,
+    "approval_id": "approval-88ee3a92c587473796be791f",
+    "approval_type": "PRODUCTION_RELEASE",
+    "created_at": "2026-08-05T08:36:46.974868+00:00",
+    "evidence": {
+      "feature_framework_status": "PASS",
+      "p2_validated": false,
+      "p3_validated": false,
+      "p4_validated": false,
+      "p5_validated": false,
+      "shadow_risk_state": "OK"
+    },
+    "state": "PENDING_PREVIEW",
+    "subject": "ensemble_v1.1"
+  },
+  "checks": {
+    "all_fills_simulated": true,
+    "all_orders_preview_only": true,
+    "approval_not_granted": true,
+    "approval_pending_preview": true,
+    "deployment_locked": true,
+    "emergency_stop_preview_only": true,
+    "feature_framework_pass": true,
+    "risk_metrics_created": true,
+    "rollback_not_performed": true,
+    "rollback_preview_ready": true,
+    "shadow_portfolio_created": true,
+    "three_shadow_fills": true,
+    "three_shadow_orders": true
+  },
+  "deployment_lock": "READY",
+  "deployment_lock_result": {
+    "actual_release_performed": false,
+    "blockers": [
+      "P2_NOT_VALIDATED",
+      "P3_NOT_VALIDATED",
+      "P4_NOT_VALIDATED",
+      "P5_NOT_VALIDATED"
+    ],
+    "operator_approval_required": true,
+    "production_release_allowed": false
+  },
+  "emergency_stop": "READY_PREVIEW_ONLY",
+  "emergency_stop_preview": {
+    "actual_emergency_stop_activated": false,
+    "broker_cancel_attempted": false,
+    "emergency_stop_state": "WOULD_ACTIVATE",
+    "network_used": false,
+    "requested": true
+  },
+  "failed": [],
+  "fill_simulation": "READY",
+  "latency_simulation": "READY",
+  "next_fixed_development": "AI_MONITORING_DASHBOARD_AND_MULTI_WORKER_FRAMEWORK",
+  "production_approval_queue": "READY_PREVIEW_ONLY",
+  "release_gate": "LOCKED",
+  "rollback_approval": "READY_PREVIEW_ONLY",
+  "rollback_approval_preview": {
+    "actual_rollback_approved": false,
+    "actual_rollback_performed": false,
+    "current_release": "ensemble_v1.1",
+    "reason": "SHADOW_REGRESSION_PREVIEW",
+    "rollback_approval_required": true,
+    "rollback_preview_allowed": true,
+    "target_release": "ensemble_v1.0"
+  },
+  "shadow_fills": [
+    {
+      "actual_broker_event_used": false,
+      "actual_fill_received": false,
+      "fill_price": "200.0500",
+      "fill_state": "FILLED_SHADOW",
+      "quantity": "4.998750",
+      "shadow_order_id": "shadow-6709b332d400d10345886c56",
+      "side": "buy",
+      "simulated_latency_ms": 125,
+      "simulated_slippage_bps": "2.5",
+      "symbol": "AAPL"
+    },
+    {
+      "actual_broker_event_used": false,
+      "actual_fill_received": false,
+      "fill_price": "500.1500",
+      "fill_state": "FILLED_SHADOW",
+      "quantity": "2.999100",
+      "shadow_order_id": "shadow-8cde43d0079c56e021f98ecd",
+      "side": "buy",
+      "simulated_latency_ms": 140,
+      "simulated_slippage_bps": "3.0",
+      "symbol": "MSFT"
+    },
+    {
+      "actual_broker_event_used": false,
+      "actual_fill_received": false,
+      "fill_price": "204.9590",
+      "fill_state": "FILLED_SHADOW",
+      "quantity": "2.439512",
+      "shadow_order_id": "shadow-5d52cdc87ce717339ed59126",
+      "side": "sell",
+      "simulated_latency_ms": 110,
+      "simulated_slippage_bps": "2.0",
+      "symbol": "AAPL"
+    }
+  ],
+  "shadow_order_intake": "READY",
+  "shadow_orders": [
+    {
+      "actual_order_created": false,
+      "latency_ms": 125,
+      "notional": "1000",
+      "reference_price": "200",
+      "shadow_order_id": "shadow-6709b332d400d10345886c56",
+      "side": "buy",
+      "slippage_bps": "2.5",
+      "strategy_id": "ensemble_v1",
+      "symbol": "AAPL"
+    },
+    {
+      "actual_order_created": false,
+      "latency_ms": 140,
+      "notional": "1500",
+      "reference_price": "500",
+      "shadow_order_id": "shadow-8cde43d0079c56e021f98ecd",
+      "side": "buy",
+      "slippage_bps": "3.0",
+      "strategy_id": "ensemble_v1",
+      "symbol": "MSFT"
+    },
+    {
+      "actual_order_created": false,
+      "latency_ms": 110,
+      "notional": "500",
+      "reference_price": "205",
+      "shadow_order_id": "shadow-5d52cdc87ce717339ed59126",
+      "side": "sell",
+      "slippage_bps": "2.0",
+      "strategy_id": "ensemble_v1",
+      "symbol": "AAPL"
+    }
+  ],
+  "shadow_pnl": "READY",
+  "shadow_portfolio": "READY",
+  "shadow_portfolio_snapshot": {
+    "actual_portfolio_modified": false,
+    "cash": "98000.00",
+    "equity": "100047.31",
+    "market_value": "2047.31",
+    "positions": [
+      {
+        "average_cost": "200.0500",
+        "market_price": "207.0000",
+        "market_value": "529.76",
+        "quantity": "2.559238",
+        "symbol": "AAPL",
+        "unrealized_pnl": "17.79"
+      },
+      {
+        "average_cost": "500.1500",
+        "market_price": "506.0000",
+        "market_value": "1517.54",
+        "quantity": "2.999100",
+        "symbol": "MSFT",
+        "unrealized_pnl": "17.54"
+      }
+    ],
+    "realized_pnl": "11.98",
+    "unrealized_pnl": "35.33"
+  },
+  "shadow_risk": {
+    "actual_risk_action_performed": false,
+    "average_downside_return": "0.000030",
+    "average_return": "0.000075",
+    "maximum_drawdown": "0.0000",
+    "risk_state": "OK"
+  },
+  "shadow_risk_metrics": "READY",
+  "shadow_trade_ledger": "READY",
+  "slippage_simulation": "READY",
+  "stage": "SHADOW_TRADING_PRODUCTION_APPROVAL_FRAMEWORK",
+  "state": "OFFLINE_QUALIFIED",
+  "status": "PASS"
+}

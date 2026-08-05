@@ -1,0 +1,3 @@
+git add shadow_production tools/run_shadow_trading_production_approval.py tools/test_shadow_trading_production_approval.py tools/verify_shadow_trading_production_approval.py release/shadow_trading_production_approval RUN_SHADOW_TRADING_PRODUCTION_APPROVAL.ps1 RUN_SHADOW_TRADING_PRODUCTION_APPROVAL_TEST_AND_VERIFY.ps1 SHADOW_TRADING_PRODUCTION_APPROVAL_MANIFEST.json GIT_COMMIT_SHADOW_TRADING_PRODUCTION_APPROVAL.txt
+git commit -m "Add shadow trading and production approval framework"
+git push origin main
