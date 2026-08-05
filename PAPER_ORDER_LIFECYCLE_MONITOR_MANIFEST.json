@@ -1,0 +1,21 @@
+{
+  "stage": "PAPER_ORDER_LIFECYCLE_MONITOR",
+  "features": [
+    "Read P3 client_order_id",
+    "Repeated order status polling",
+    "Known and terminal status recognition",
+    "Filled quantity reconciliation",
+    "Average fill price reconciliation",
+    "Broker order ID matching",
+    "Position reconciliation",
+    "Account equity and cash snapshots",
+    "Append-only lifecycle ledger",
+    "Per-cycle JSON evidence"
+  ],
+  "broker_write_allowed": false,
+  "order_submission_allowed": false,
+  "paper_orders_during_install": 0,
+  "live_orders_during_install": 0,
+  "next_market_validation": "P3_CANCEL_REJECT_PARTIAL_FILL_VALIDATION",
+  "next_fixed_development": "PAPER_AUTOMATION_CONTROLLER_AND_SCHEDULER"
+}

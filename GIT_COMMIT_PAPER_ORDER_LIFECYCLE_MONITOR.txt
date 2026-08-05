@@ -1,0 +1,10 @@
+git add paper_order_lifecycle
+git add tools/run_paper_order_lifecycle_monitor.py
+git add tools/test_paper_order_lifecycle_monitor.py
+git add release/paper_order_lifecycle
+git add RUN_PAPER_ORDER_LIFECYCLE_MONITOR.ps1
+git add RUN_PAPER_ORDER_LIFECYCLE_MONITOR_TEST.ps1
+git add PAPER_ORDER_LIFECYCLE_MONITOR_MANIFEST.json
+git add GIT_COMMIT_PAPER_ORDER_LIFECYCLE_MONITOR.txt
+git commit -m "Add paper order lifecycle monitor"
+git push origin main
