@@ -1,0 +1,7 @@
+{
+  "stage": "V392.11A",
+  "slippage_bps": 10,
+  "fill_ratio": 1.0,
+  "partial_fill_supported": true,
+  "broker_submission_enabled": false
+}

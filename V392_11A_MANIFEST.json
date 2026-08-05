@@ -1,0 +1,16 @@
+{
+  "stage": "V392.11A",
+  "package": "Paper Execution Simulator",
+  "requires": "V392.10A Local Paper Dispatch Engine",
+  "full_fill_supported": true,
+  "partial_fill_supported": true,
+  "no_fill_supported": true,
+  "slippage_supported": true,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "broker_write_enabled": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

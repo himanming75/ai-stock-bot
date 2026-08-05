@@ -1,0 +1,54 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_adapter_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "evaluation": {
+    "approved": false,
+    "checks": {
+      "available_quantity_nonnegative": true,
+      "broker_adapter_none": true,
+      "execution_not_simulated": false,
+      "fill_ratio_valid": true,
+      "local_execution_id_present": true,
+      "notional_positive": true,
+      "order_type_valid": true,
+      "paper_only": true,
+      "reference_price_positive": true,
+      "side_valid": true,
+      "slippage_bps_valid": true,
+      "submission_state_valid": true,
+      "symbol_matches": true
+    },
+    "failed": [
+      "execution_not_simulated"
+    ],
+    "fill_event": {},
+    "fill_event_hash": "",
+    "replay_detected": true,
+    "required_action": "DO_NOT_CREATE_FILL_EVENT",
+    "state": "PAPER_EXECUTION_SIMULATION_BLOCKED"
+  },
+  "fill_accounting_allowed": false,
+  "live_submission_enabled": false,
+  "next_phase": "V392_12A_FILL_ACCOUNTING_AND_POSITION_UPDATE",
+  "observed_at": "2026-08-05T00:45:16.264193+00:00",
+  "paper_submission_enabled": false,
+  "partial_fill_supported": true,
+  "prerequisite_checks": {
+    "broker_network_disabled": true,
+    "dispatch_accepted": true,
+    "dispatch_ready": true,
+    "dispatch_stage_valid": true,
+    "dispatch_status_pass": true,
+    "live_submission_disabled": true,
+    "paper_submission_disabled": true,
+    "simulator_allowed": true
+  },
+  "simulated_fill_created": false,
+  "slippage_supported": true,
+  "stage": "V392.11A",
+  "state": "PAPER_EXECUTION_SIMULATOR_BLOCKED",
+  "status": "PASS"
+}

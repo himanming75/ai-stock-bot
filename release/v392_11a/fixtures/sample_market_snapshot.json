@@ -1,0 +1,7 @@
+{
+  "symbol": "AAPL",
+  "reference_price": 200.0,
+  "available_quantity": 1000.0,
+  "source": "LOCAL_FIXTURE",
+  "external_market_data_used": false
+}
