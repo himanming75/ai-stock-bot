@@ -1,0 +1,13 @@
+{
+  "heartbeat_warning_seconds": 180,
+  "stale_lock_warning_seconds": 180,
+  "disk_warning_percent": 85,
+  "disk_critical_percent": 95,
+  "jsonl_tail_validation_limit": 5000,
+  "read_only_health_audit": true,
+  "delete_stale_lock": false,
+  "external_network_allowed": false,
+  "broker_write_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}

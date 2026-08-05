@@ -1,0 +1,18 @@
+{
+  "broker_write": false,
+  "controller_root_count": 2,
+  "critical_issue_count": 1,
+  "disk_used_percent": 88.29721236120413,
+  "duplicate_controller_detected": true,
+  "files_over_100mb": 2,
+  "generated_at": "2026-08-05T19:19:45.607919+00:00",
+  "health_score": 43,
+  "heartbeat_age_seconds": null,
+  "heartbeat_stale": true,
+  "invalid_json_count": 0,
+  "invalid_jsonl_count": 0,
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "status": "FAIL",
+  "warning_count": 4
+}

@@ -1,0 +1,10 @@
+git add system_health_monitoring
+git add tools/run_v351_to_v360_system_health_monitoring.py
+git add tools/test_v351_to_v360_system_health_monitoring.py
+git add release/v351_360_system_health_monitoring
+git add RUN_V351_TO_V360_SYSTEM_HEALTH_MONITORING.ps1
+git add RUN_V351_TO_V360_SYSTEM_HEALTH_MONITORING_TEST.ps1
+git add V351_TO_V360_SYSTEM_HEALTH_MONITORING_MANIFEST.json
+git add GIT_COMMIT_V351_TO_V360_SYSTEM_HEALTH_MONITORING.txt
+git commit -m "Add V351-V360 system health monitoring"
+git push origin main

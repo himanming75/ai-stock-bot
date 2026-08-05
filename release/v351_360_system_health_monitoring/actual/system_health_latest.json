@@ -1,0 +1,286 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "component_status": {
+    "controller": "PASS",
+    "controller_cycle": null,
+    "daily_session": "PASS",
+    "market_is_open": null,
+    "watchdog": "PASS"
+  },
+  "controller_lock": {
+    "action_performed": "NONE_READ_ONLY",
+    "age_seconds": 1304.5648927688599,
+    "exists": true,
+    "stale": true,
+    "warning_threshold_seconds": 180
+  },
+  "critical_issues": [
+    "DUPLICATE_CONTROLLER_ROOTS"
+  ],
+  "disk_health": {
+    "free_bytes": 116926599168,
+    "path": "C:\\stock-bot",
+    "total_bytes": 999134588928,
+    "used_bytes": 882207989760,
+    "used_percent": 88.29721236120413
+  },
+  "generated_at": "2026-08-05T19:19:45.607919+00:00",
+  "health_score": 43,
+  "heartbeat": {
+    "age_seconds": null,
+    "stale": true,
+    "value": null,
+    "warning_threshold_seconds": 180
+  },
+  "json_integrity": {
+    "checks": [
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\paper_automation_controller\\actual\\checkpoint.json",
+        "size_bytes": 2328,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\paper_automation_controller\\actual\\controller_summary.json",
+        "size_bytes": 3167,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\automation_watchdog_restart_recovery\\actual\\watchdog_state.json",
+        "size_bytes": 5449,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\automation_watchdog_restart_recovery\\actual\\watchdog_summary.json",
+        "size_bytes": 6293,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\daily_session_manager_startup_autorun\\actual\\daily_session_state.json",
+        "size_bytes": 6006,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\daily_session_manager_startup_autorun\\actual\\daily_session_summary.json",
+        "size_bytes": 5744,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\v321_330_realtime_portfolio_monitoring\\actual\\portfolio_monitor_latest.json",
+        "size_bytes": 2865,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\v331_340_realtime_risk_monitoring\\actual\\risk_monitor_latest.json",
+        "size_bytes": 2618,
+        "valid": true
+      },
+      {
+        "error": null,
+        "exists": true,
+        "path": "C:\\stock-bot\\release\\v341_350_performance_analytics\\actual\\performance_analytics_latest.json",
+        "size_bytes": 3420,
+        "valid": true
+      }
+    ],
+    "invalid_count": 0,
+    "missing_count": 0
+  },
+  "jsonl_integrity": {
+    "checks": [
+      {
+        "exists": true,
+        "invalid_line_count": 0,
+        "invalid_lines": [],
+        "line_count": 43,
+        "path": "C:\\stock-bot\\release\\paper_automation_controller\\actual\\controller_cycle_ledger.jsonl",
+        "size_bytes": 71789,
+        "valid": true
+      },
+      {
+        "exists": true,
+        "invalid_line_count": 0,
+        "invalid_lines": [],
+        "line_count": 2,
+        "path": "C:\\stock-bot\\release\\automation_watchdog_restart_recovery\\actual\\watchdog_ledger.jsonl",
+        "size_bytes": 10299,
+        "valid": true
+      },
+      {
+        "exists": true,
+        "invalid_line_count": 0,
+        "invalid_lines": [],
+        "line_count": 2,
+        "path": "C:\\stock-bot\\release\\daily_session_manager_startup_autorun\\actual\\daily_session_ledger.jsonl",
+        "size_bytes": 6687,
+        "valid": true
+      },
+      {
+        "exists": true,
+        "invalid_line_count": 0,
+        "invalid_lines": [],
+        "line_count": 53,
+        "path": "C:\\stock-bot\\release\\actual_market_polling_validation\\actual\\polling_ledger.jsonl",
+        "size_bytes": 56318,
+        "valid": true
+      }
+    ],
+    "invalid_count": 0,
+    "missing_count": 0
+  },
+  "next_fixed_development": "V361_TO_V370_NOTIFICATION_AND_ALERT_ROUTING",
+  "process_health": {
+    "child_interpreter_count": 1,
+    "duplicate_controller_detected": true,
+    "matching_process_count": 3,
+    "processes": [
+      {
+        "CommandLine": "\"C:\\stock-bot\\.venv\\Scripts\\python.exe\" .\\tools\\run_paper_automation_controller.py --profile release\\paper_automation_controller\\config\\read_only_profile.runtime.json",
+        "CreationDate": "/Date(1785956280841)/",
+        "Name": "python.exe",
+        "ParentProcessId": 2784,
+        "ProcessId": 15900
+      },
+      {
+        "CommandLine": "\"C:\\stock-bot\\.venv\\Scripts\\python.exe\" .\\tools\\run_paper_automation_controller.py --profile release\\paper_automation_controller\\config\\read_only_profile.runtime.json",
+        "CreationDate": "/Date(1785956280855)/",
+        "Name": "python.exe",
+        "ParentProcessId": 15900,
+        "ProcessId": 12076
+      },
+      {
+        "CommandLine": "powershell -NoProfile -Command \"Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'run_paper_automation_controller.py|automation_watchdog|daily_session_manager' } | Select-Object ProcessId,ParentProcessId,Name,CreationDate,CommandLine | ConvertTo-Json -Depth 3 -Compress\"",
+        "CreationDate": "/Date(1785957585804)/",
+        "Name": "powershell.exe",
+        "ParentProcessId": 16400,
+        "ProcessId": 16644
+      }
+    ],
+    "root_controller_count": 2
+  },
+  "repository_health": {
+    "file_count": 36435,
+    "files_over_100mb": [
+      {
+        "path": ".git\\objects\\pack\\pack-9ca374f31771e69f3b7e9369c42365d5c63b5611.pack",
+        "size_bytes": 138737018
+      },
+      {
+        "path": "release\\v120_final\\bundle\\AI_STOCK_BOT_V120_FINAL.zip",
+        "size_bytes": 129549011
+      }
+    ],
+    "largest_files": [
+      {
+        "path": ".git\\objects\\pack\\pack-9ca374f31771e69f3b7e9369c42365d5c63b5611.pack",
+        "size_bytes": 138737018
+      },
+      {
+        "path": "release\\v120_final\\bundle\\AI_STOCK_BOT_V120_FINAL.zip",
+        "size_bytes": 129549011
+      },
+      {
+        "path": ".git\\objects\\pack\\pack-4c0dae35ccbd321e28099b628b5c030179094c4f.pack",
+        "size_bytes": 66308744
+      },
+      {
+        "path": "release\\v105_33_to_v105_64\\bundle\\AI_STOCK_BOT_V105_FINAL_RELEASE_BUNDLE.zip",
+        "size_bytes": 65182341
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+        "size_bytes": 20405760
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "size_bytes": 20262912
+      },
+      {
+        "path": "release\\v77_12\\output\\recovery_bundle_v77_12.zip",
+        "size_bytes": 18633537
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\PIL\\_avif.cp314-win_amd64.pyd",
+        "size_bytes": 7890432
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\scipy\\optimize\\_highspy\\_core.cp314-win_amd64.pyd",
+        "size_bytes": 6708224
+      },
+      {
+        "path": "release\\v77_14\\output\\staging\\dist\\ai-stock-trading-bot-v30.0.0-final.zip",
+        "size_bytes": 5711355
+      },
+      {
+        "path": "dist\\ai-stock-trading-bot-v30.0.0-final.zip",
+        "size_bytes": 5711355
+      },
+      {
+        "path": "release\\v77_14\\output\\staging\\dist\\ai-stock-trading-bot-v29.6-release.zip",
+        "size_bytes": 5694269
+      },
+      {
+        "path": "dist\\ai-stock-trading-bot-v29.6-release.zip",
+        "size_bytes": 5694269
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp314-win_amd64.pyd",
+        "size_bytes": 5261824
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\scipy\\sparse\\_sparsetools.cp314-win_amd64.pyd",
+        "size_bytes": 4239360
+      },
+      {
+        "path": "output\\strategy_backtests\\execution_consistency\\AAPL_execution_consistency_20260725_225822.json",
+        "size_bytes": 3985755
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp314-win_amd64.pyd",
+        "size_bytes": 3904512
+      },
+      {
+        "path": ".venv\\Lib\\site-packages\\curl_cffi\\_wrapper.pyd",
+        "size_bytes": 3232768
+      },
+      {
+        "path": "release\\v77_14\\output\\staging\\models\\GOOGL_best_model.joblib",
+        "size_bytes": 2937407
+      },
+      {
+        "path": "models\\GOOGL_best_model.joblib",
+        "size_bytes": 2937407
+      }
+    ],
+    "total_bytes": 1028073453
+  },
+  "runtime_files_modified": false,
+  "stage": "V351_TO_V360_SYSTEM_HEALTH_MONITORING",
+  "status": "FAIL",
+  "warnings": [
+    "CONTROLLER_HEARTBEAT_STALE_OR_MISSING",
+    "CONTROLLER_LOCK_STALE",
+    "DISK_USAGE_HIGH",
+    "REPOSITORY_FILE_OVER_100MB"
+  ]
+}

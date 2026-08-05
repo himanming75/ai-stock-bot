@@ -1,0 +1,18 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "critical_issues": [
+    "DUPLICATE_CONTROLLER_ROOTS"
+  ],
+  "health_score": 43,
+  "next_fixed_development": "V361_TO_V370_NOTIFICATION_AND_ALERT_ROUTING",
+  "stage": "V351_TO_V360_SYSTEM_HEALTH_MONITORING",
+  "status": "FAIL",
+  "warnings": [
+    "CONTROLLER_HEARTBEAT_STALE_OR_MISSING",
+    "CONTROLLER_LOCK_STALE",
+    "DISK_USAGE_HIGH",
+    "REPOSITORY_FILE_OVER_100MB"
+  ]
+}
