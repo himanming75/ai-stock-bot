@@ -14,11 +14,11 @@ from paper_portfolio.guard import run_fill_accounting
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "--simulator-result",
-    default="release/v392_11a/actual/paper_execution_simulator_result.json",
+    default="release/v392_11a/actual/paper_execution_simulator_approved_snapshot.json",
 )
 parser.add_argument(
     "--fill-event",
-    default="release/v392_11a/actual/fill_event.json",
+    default="release/v392_11a/actual/fill_event_approved_snapshot.json",
 )
 parser.add_argument(
     "--portfolio-state",

@@ -1,0 +1,19 @@
+{
+  "cash": 99000.0,
+  "equity": 100000.000001,
+  "portfolio_version": "V392.12A",
+  "positions": {
+    "AAPL": {
+      "average_cost": 200.2,
+      "market_price": 200.2,
+      "market_value": 1000.000001,
+      "quantity": 4.995005,
+      "realized_pnl": 0.0,
+      "symbol": "AAPL",
+      "unrealized_pnl": 0.0
+    }
+  },
+  "realized_pnl": 0.0,
+  "unrealized_pnl": 0.0,
+  "updated_at": "2026-08-05T01:03:36.676218+00:00"
+}

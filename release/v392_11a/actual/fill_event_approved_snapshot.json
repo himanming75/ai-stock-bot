@@ -1,0 +1,23 @@
+{
+  "broker_adapter": "NONE",
+  "broker_order_id": null,
+  "created_at": "2026-08-05T00:45:11.382785+00:00",
+  "dispatch_id": "dispatch-8e3307ad2829fd8f171f11a5",
+  "fill_event_id": "bf28e3505cbb3a8f4f3722ee0f653ba9190055fdc4ee60b726e372c4939093c9",
+  "fill_event_version": "V392.11A",
+  "fill_price": 200.2,
+  "fill_state": "FILLED",
+  "filled_notional": 1000.0,
+  "filled_quantity": 4.995005,
+  "local_execution_id": "4bf355c0a9f48304a703efc35d6f443f8d1523b6d145613115075dfda5f23987",
+  "order_type": "MARKET",
+  "proposal_id": "proposal-v392-001",
+  "reference_price": 200.0,
+  "remaining_quantity": 0.0,
+  "requested_quantity": 4.995005,
+  "side": "BUY",
+  "simulated": true,
+  "slippage_bps": 10.0,
+  "symbol": "AAPL",
+  "target_environment": "PAPER"
+}

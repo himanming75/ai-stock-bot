@@ -1,0 +1,14 @@
+{
+  "hotfix": "V392.12A1",
+  "purpose": "Recover approved V392.11A Fill Event and create missing Paper Portfolio State",
+  "source_ledger": "release/v392_11a/actual/paper_execution_simulator_ledger.jsonl",
+  "result_snapshot": "release/v392_11a/actual/paper_execution_simulator_approved_snapshot.json",
+  "fill_snapshot": "release/v392_11a/actual/fill_event_approved_snapshot.json",
+  "replay_registry_modified": false,
+  "current_blocked_result_overwritten": false,
+  "broker_network_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_live_orders_submitted": 0
+}

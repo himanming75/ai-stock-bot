@@ -1,0 +1,3 @@
+git add tools/recover_v392_11a_approved_fill.py tools/run_v392_12a.py RUN_V392_12A1_APPROVED_FILL_RECOVERY.ps1 release/v392_11a/actual/paper_execution_simulator_approved_snapshot.json release/v392_11a/actual/fill_event_approved_snapshot.json release/v392_12a/actual release/v392_12a1_hotfix V392_12A1_HOTFIX_MANIFEST.json GIT_COMMIT_V392_12A1_HOTFIX.txt
+git commit -m "V392.12A1 recover approved fill for portfolio accounting"
+git push origin main

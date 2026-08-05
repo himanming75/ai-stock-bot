@@ -1,1 +1,18 @@
-{}
+{
+  "accounting_event_version": "V392.12A",
+  "average_cost_after": 200.2,
+  "average_cost_before": 0.0,
+  "cash_delta": -1000.0,
+  "created_at": "2026-08-05T01:03:36.676264+00:00",
+  "fill_event_id": "bf28e3505cbb3a8f4f3722ee0f653ba9190055fdc4ee60b726e372c4939093c9",
+  "fill_price": 200.2,
+  "fill_state": "FILLED",
+  "filled_notional": 1000.0,
+  "filled_quantity": 4.995005,
+  "portfolio_equity_after": 100000.000001,
+  "position_quantity_after": 4.995005,
+  "position_quantity_before": 0.0,
+  "realized_pnl_delta": 0.0,
+  "side": "BUY",
+  "symbol": "AAPL"
+}
