@@ -1,0 +1,13 @@
+{
+  "minimum_controller_cycles": 60,
+  "require_controller_errors_zero": true,
+  "require_broker_writes_zero": true,
+  "require_live_orders_zero": true,
+  "require_watchdog_pass": true,
+  "require_market_open_observation": true,
+  "market_close_auto_stop_is_market_dependent": true,
+  "next_day_autostart_is_market_dependent": true,
+  "autonomous_submission_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "V391_TO_V400_AUTONOMOUS_PAPER_CERTIFICATION",
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "controller_files_modified": false,
+  "runtime_files_modified": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "V401_TO_V410_APPROVAL_TOKEN_PAPER_AUTOMATION_ENABLEMENT",
+  "next_market_validation": "MARKET_CLOSE_AUTO_STOP_AND_NEXT_DAY_AUTOSTART"
+}

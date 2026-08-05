@@ -1,0 +1,10 @@
+git add autonomous_paper_certification
+git add tools/run_v391_to_v400_autonomous_paper_certification.py
+git add tools/test_v391_to_v400_autonomous_paper_certification.py
+git add release/v391_400_autonomous_paper_certification
+git add RUN_V391_TO_V400_AUTONOMOUS_PAPER_CERTIFICATION.ps1
+git add RUN_V391_TO_V400_AUTONOMOUS_PAPER_CERTIFICATION_TEST.ps1
+git add V391_TO_V400_AUTONOMOUS_PAPER_CERTIFICATION_MANIFEST.json
+git add GIT_COMMIT_V391_TO_V400_AUTONOMOUS_PAPER_CERTIFICATION.txt
+git commit -m "Add V391-V400 autonomous paper certification"
+git push origin main
