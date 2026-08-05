@@ -1,0 +1,38 @@
+{
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AI_MONITORING_DISTRIBUTED_RUNTIME_MANIFEST.json",
+      "sha256": "b961b1ac9daa2d8c7f6fcaeea03d43c7a7f368a50181030a9e29b0ebfd7e1821",
+      "size_bytes": 969
+    },
+    {
+      "path": "RUN_AI_MONITORING_DASHBOARD.ps1",
+      "sha256": "f39df3f57ce9db1f4b661d8536ec3815657f6c17bbb594e8f5e78ae47f0cadd6",
+      "size_bytes": 420
+    },
+    {
+      "path": "RUN_AI_MONITORING_DISTRIBUTED_RUNTIME.ps1",
+      "sha256": "f512c6ffc8c84f95b1af6d069484e4d8dd84e0983f3c51ddc3b2e3c5db16f75a",
+      "size_bytes": 328
+    },
+    {
+      "path": "RUN_SECURE_CONTROL_PLANE.ps1",
+      "sha256": "045e9e3b0a6bd7894a3595fee23497b00c1fac4cc052e5d9ad380b4a845c2d2b",
+      "size_bytes": 315
+    },
+    {
+      "path": "RUN_SECURE_OPERATOR_CONSOLE.ps1",
+      "sha256": "c2122db781992281689292d2d97acaa2b418f6cb87a3ebd857d4e171d88d5284",
+      "size_bytes": 420
+    },
+    {
+      "path": "SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MANIFEST.json",
+      "sha256": "d5f7c0995af936dbb0077d62f0b21e570ea6c000c4d1aa3c28bf5ca6d950a1ea",
+      "size_bytes": 1349
+    }
+  ],
+  "generated_at": "2026-08-05T09:07:02.962715+00:00",
+  "manifest_sha256": "7ac106a9b93ce9f1855514a105eb707713b13cf80e9fe021404a810c33d8e409",
+  "version": "offline-runtime-6.0.0"
+}

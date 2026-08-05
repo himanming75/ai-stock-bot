@@ -1,0 +1,3 @@
+git add runtime_deployment tools/run_runtime_service_deployment.py tools/run_dashboard6.py tools/test_runtime_service_deployment.py tools/verify_runtime_service_deployment.py release/runtime_service_deployment RUN_RUNTIME_SERVICE_DEPLOYMENT.ps1 RUN_DASHBOARD6.ps1 RUN_RUNTIME_SERVICE_DEPLOYMENT_TEST_AND_VERIFY.ps1 RUNTIME_SERVICE_DEPLOYMENT_DASHBOARD6_MANIFEST.json GIT_COMMIT_RUNTIME_SERVICE_DEPLOYMENT_DASHBOARD6.txt
+git commit -m "Add runtime service deployment and dashboard 6 framework"
+git push origin main

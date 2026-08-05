@@ -1,0 +1,247 @@
+{
+  "actual_backup_performed": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_lock_created": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_pid_written": false,
+  "actual_release_applied": false,
+  "actual_restore_performed": false,
+  "actual_rollback_performed": false,
+  "actual_runtime_started": false,
+  "actual_runtime_stopped": false,
+  "auto_restart_policy": "READY_PREVIEW_ONLY",
+  "automatic_restart_enabled": false,
+  "automatic_start_enabled": false,
+  "backup_plan": "READY_PREVIEW_ONLY",
+  "backup_plan_result": {
+    "actual_backup_performed": false,
+    "actual_files_copied": false,
+    "compression": "ZIP",
+    "destination": "release/runtime_service_deployment/actual/backup_preview",
+    "retention_count": 5,
+    "sources": [
+      "release",
+      "config",
+      "deployment",
+      "secure_control_plane",
+      "ai_monitoring_runtime"
+    ]
+  },
+  "build_manifest": "READY",
+  "build_manifest_result": {
+    "file_count": 6,
+    "files": [
+      {
+        "path": "AI_MONITORING_DISTRIBUTED_RUNTIME_MANIFEST.json",
+        "sha256": "b961b1ac9daa2d8c7f6fcaeea03d43c7a7f368a50181030a9e29b0ebfd7e1821",
+        "size_bytes": 969
+      },
+      {
+        "path": "RUN_AI_MONITORING_DASHBOARD.ps1",
+        "sha256": "f39df3f57ce9db1f4b661d8536ec3815657f6c17bbb594e8f5e78ae47f0cadd6",
+        "size_bytes": 420
+      },
+      {
+        "path": "RUN_AI_MONITORING_DISTRIBUTED_RUNTIME.ps1",
+        "sha256": "f512c6ffc8c84f95b1af6d069484e4d8dd84e0983f3c51ddc3b2e3c5db16f75a",
+        "size_bytes": 328
+      },
+      {
+        "path": "RUN_SECURE_CONTROL_PLANE.ps1",
+        "sha256": "045e9e3b0a6bd7894a3595fee23497b00c1fac4cc052e5d9ad380b4a845c2d2b",
+        "size_bytes": 315
+      },
+      {
+        "path": "RUN_SECURE_OPERATOR_CONSOLE.ps1",
+        "sha256": "c2122db781992281689292d2d97acaa2b418f6cb87a3ebd857d4e171d88d5284",
+        "size_bytes": 420
+      },
+      {
+        "path": "SECURE_CONTROL_PLANE_OPERATOR_CONSOLE_MANIFEST.json",
+        "sha256": "d5f7c0995af936dbb0077d62f0b21e570ea6c000c4d1aa3c28bf5ca6d950a1ea",
+        "size_bytes": 1349
+      }
+    ],
+    "generated_at": "2026-08-05T09:07:02.962715+00:00",
+    "manifest_sha256": "7ac106a9b93ce9f1855514a105eb707713b13cf80e9fe021404a810c33d8e409",
+    "version": "offline-runtime-6.0.0"
+  },
+  "bundle_integrity": {
+    "actual_sha256": "04e46070d998b4499284bf3a654b34d82f1985849ea55007aa406a46715bbe5e",
+    "expected_sha256": "04e46070d998b4499284bf3a654b34d82f1985849ea55007aa406a46715bbe5e",
+    "integrity_valid": true
+  },
+  "checks": {
+    "automatic_restart_off": true,
+    "backup_not_performed": true,
+    "build_manifest_created": true,
+    "bundle_created": true,
+    "bundle_integrity_valid": true,
+    "control_plane_pass": true,
+    "deployment_audit_created": true,
+    "diagnostics_created": true,
+    "lock_not_created": true,
+    "monitoring_pass": true,
+    "preinstall_pass": true,
+    "release_manifest_preview": true,
+    "resilience_pass": true,
+    "restore_not_performed": true,
+    "rollback_not_performed": true,
+    "runtime_health_pass": true,
+    "service_not_installed": true,
+    "service_not_started": true,
+    "service_preview_created": true,
+    "shutdown_preview_only": true,
+    "version_history_created": true
+  },
+  "dashboard_6": "READY_READ_ONLY",
+  "deployment_audit": "READY",
+  "deployment_manifest": "READY",
+  "diagnostics": {
+    "actual_external_network_used": false,
+    "actual_process_started": false,
+    "cpu_logical_count": 16,
+    "disk_free_bytes": 119777943552,
+    "disk_total_bytes": 999134588928,
+    "disk_used_bytes": 879356645376,
+    "memory_available_bytes": null,
+    "memory_detection_mode": "STANDARD_LIBRARY_LIMITED",
+    "memory_total_bytes": null,
+    "process_running": false,
+    "runtime_pid": null
+  },
+  "failed": [],
+  "graceful_shutdown": "READY_PREVIEW_ONLY",
+  "graceful_shutdown_preview": {
+    "actual_process_terminated": false,
+    "actual_shutdown_performed": false,
+    "steps": [
+      "STOP_ACCEPTING_NEW_TASKS",
+      "WAIT_FOR_ACTIVE_WORKERS",
+      "FLUSH_LEDGER_PREVIEW",
+      "WRITE_FINAL_HEALTH_PREVIEW",
+      "RELEASE_RUNTIME_LOCK_PREVIEW"
+    ],
+    "timeout_seconds": 30
+  },
+  "install_audit": "READY",
+  "lock_preview": {
+    "actual_lock_created": false,
+    "actual_pid_written": false,
+    "lock_path": "C:\\stock-bot\\release\\runtime_service_deployment\\actual\\runtime.lock",
+    "lock_present": false,
+    "pid_path": "C:\\stock-bot\\release\\runtime_service_deployment\\actual\\runtime.pid",
+    "pid_present": false,
+    "runtime_name": "AIStockBot-Runtime"
+  },
+  "next_fixed_offline_development": "FINAL_OFFLINE_RELEASE_CANDIDATE_AUDIT",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION",
+  "pid_lock_management": "READY_PREVIEW_ONLY",
+  "postinstall_verify": "READY",
+  "preinstall_audit": "READY",
+  "preinstall_result": {
+    "actual_install_performed": false,
+    "checks": {
+      ".venv/Scripts/python.exe": true,
+      "RUN_AI_MONITORING_DISTRIBUTED_RUNTIME.ps1": true,
+      "RUN_SECURE_CONTROL_PLANE.ps1": true,
+      "release/secure_control_plane_operator_console/actual/secure_control_plane_result.json": true
+    },
+    "failed": [],
+    "status": "PASS"
+  },
+  "release_bundle": {
+    "actual_install_performed": false,
+    "actual_release_applied": false,
+    "bundle_created_for_preview": true,
+    "bundle_path": "C:\\stock-bot\\release\\runtime_service_deployment\\actual\\preview_release_bundle.zip",
+    "bundle_sha256": "04e46070d998b4499284bf3a654b34d82f1985849ea55007aa406a46715bbe5e",
+    "bundle_size_bytes": 4207,
+    "file_count": 8
+  },
+  "release_manifest_result": {
+    "actual_release_applied": false,
+    "actual_runtime_started": false,
+    "actual_service_installed": false,
+    "build_manifest_sha256": "7ac106a9b93ce9f1855514a105eb707713b13cf80e9fe021404a810c33d8e409",
+    "created_at": "2026-08-05T09:07:02.962755+00:00",
+    "release_state": "PREVIEW_ONLY",
+    "release_version": "offline-runtime-6.0.0"
+  },
+  "release_version": "offline-runtime-6.0.0",
+  "release_zip_builder": "READY",
+  "restart_policy_preview": {
+    "actual_restart_performed": false,
+    "automatic_restart_enabled": false,
+    "delay_seconds": 60,
+    "maximum_restarts": 3,
+    "operator_approval_required": true,
+    "window_minutes": 30
+  },
+  "restore_preview": "READY_PREVIEW_ONLY",
+  "restore_preview_result": {
+    "actual_restore_performed": false,
+    "actual_target_modified": false,
+    "backup_path": "C:\\stock-bot\\release\\runtime_service_deployment\\actual\\preview_release_bundle.zip",
+    "restore_steps": [
+      "VERIFY_BACKUP_SHA256",
+      "STOP_RUNTIME_PREVIEW",
+      "RESTORE_TO_STAGING_PREVIEW",
+      "VERIFY_STAGING_PREVIEW",
+      "SWAP_DIRECTORIES_PREVIEW"
+    ],
+    "target_root": "C:\\stock-bot"
+  },
+  "rollback_history": "READY_PREVIEW_ONLY",
+  "rollback_preview": "READY_PREVIEW_ONLY",
+  "rollback_preview_result": {
+    "actual_release_changed": false,
+    "actual_rollback_performed": false,
+    "current_version": "offline-runtime-6.0.0",
+    "operator_approval_required": true,
+    "rollback_allowed_preview": true,
+    "target_version": "offline-runtime-5.0.0"
+  },
+  "runtime_audit": "READY",
+  "runtime_diagnostics": "READY",
+  "runtime_health": {
+    "actual_recovery_performed": false,
+    "checks": {
+      "broker_write_off": true,
+      "control_plane_pass": true,
+      "cpu_detected": true,
+      "disk_free_positive": true,
+      "monitoring_pass": true,
+      "orders_zero": true
+    },
+    "failed": [],
+    "status": "PASS"
+  },
+  "runtime_service_framework": "READY_PREVIEW_ONLY",
+  "service_preview": {
+    "automatic_restart_enabled": false,
+    "automatic_start_enabled": false,
+    "runtime_name": "AIStockBot-Runtime",
+    "service_id": "svc-d763372a1c6dae2b43b0bf6a",
+    "service_install_performed": false,
+    "service_remove_performed": false,
+    "service_start_performed": false,
+    "service_stop_performed": false,
+    "start_command": "powershell -ExecutionPolicy Bypass -File RUN_AI_MONITORING_DISTRIBUTED_RUNTIME.ps1",
+    "start_mode": "MANUAL_PREVIEW",
+    "stop_command": "powershell -ExecutionPolicy Bypass -File STOP_AI_STOCK_BOT_RUNTIME_PREVIEW.ps1"
+  },
+  "service_start_stop": "READY_PREVIEW_ONLY",
+  "sha256_checksum": "READY",
+  "stage": "RUNTIME_SERVICE_DEPLOYMENT_DASHBOARD6_MEGA_BUNDLE",
+  "state": "OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "version_history": "READY",
+  "version_manifest": "READY",
+  "windows_service_installed": false,
+  "worker_queue_process_health": "READY"
+}
