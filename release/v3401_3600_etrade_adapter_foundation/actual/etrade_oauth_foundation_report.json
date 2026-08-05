@@ -1,0 +1,11 @@
+{
+  "access_token_exchange_enabled": false,
+  "oauth_version": "1.0a",
+  "official_signature_vector_passed": true,
+  "production_base_url": "https://api.etrade.com",
+  "renew_enabled": false,
+  "request_token_exchange_enabled": false,
+  "revoke_enabled": false,
+  "sandbox_base_url": "https://apisb.etrade.com",
+  "signature_method": "HMAC-SHA1"
+}

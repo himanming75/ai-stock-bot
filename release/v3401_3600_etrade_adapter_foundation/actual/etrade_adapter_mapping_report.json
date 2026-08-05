@@ -1,0 +1,11 @@
+{
+  "account_mapping_passed": true,
+  "orders_mapping_passed": true,
+  "positions_mapping_passed": true,
+  "requested_paths": [
+    "/v1/accounts/list.json",
+    "/v1/accounts/fixture-account-key/balance.json?instType=BROKERAGE&realTimeNAV=true",
+    "/v1/accounts/fixture-account-key/portfolio.json",
+    "/v1/accounts/fixture-account-key/orders.json"
+  ]
+}

@@ -1,0 +1,10 @@
+git add multi_broker_etrade
+git add tools/run_v3401_to_v3600_etrade_adapter_foundation.py
+git add tools/test_v3401_to_v3600_etrade_adapter_foundation.py
+git add release/v3401_3600_etrade_adapter_foundation
+git add RUN_V3401_TO_V3600_ETRADE_ADAPTER_FOUNDATION.ps1
+git add RUN_V3401_TO_V3600_ETRADE_ADAPTER_FOUNDATION_TEST.ps1
+git add V3401_TO_V3600_ETRADE_ADAPTER_FOUNDATION_MANIFEST.json
+git add GIT_COMMIT_V3401_TO_V3600_ETRADE_ADAPTER_FOUNDATION.txt
+git commit -m "Add V3401-V3600 ETrade adapter foundation"
+git push origin main

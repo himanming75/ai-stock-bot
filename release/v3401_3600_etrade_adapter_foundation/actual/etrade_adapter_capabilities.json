@@ -1,0 +1,14 @@
+{
+  "account_read": true,
+  "broker": "ETRADE",
+  "extended_hours": false,
+  "fractional_shares": false,
+  "market_data_read": false,
+  "options": true,
+  "order_cancel": false,
+  "order_submission": false,
+  "orders_read": true,
+  "paper_trading": false,
+  "positions_read": true,
+  "streaming": false
+}
