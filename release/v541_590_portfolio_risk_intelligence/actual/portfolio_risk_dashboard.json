@@ -1,0 +1,22 @@
+{
+  "account_exposure": {
+    "cash": "80000.00",
+    "equity": "100000.00",
+    "gross_exposure": "5000.00",
+    "gross_exposure_percent": "5.00",
+    "net_exposure": "5000.00",
+    "net_exposure_percent": "5.00"
+  },
+  "blocked_allocation_count": 0,
+  "candidate_plan_count": 1,
+  "generated_at": "2026-08-05T20:04:46.719979+00:00",
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "ready_allocation_count": 1,
+  "risk_level": "NORMAL",
+  "sector_exposure": {
+    "ETF_SMALL_CAP": "5000.00"
+  },
+  "status": "PASS",
+  "total_ready_notional": "315.7697714916460231807078780"
+}

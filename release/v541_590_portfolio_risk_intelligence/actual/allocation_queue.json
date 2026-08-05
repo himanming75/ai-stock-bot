@@ -1,0 +1,31 @@
+{
+  "allocation_queue": [
+    {
+      "allocation_rank": 1,
+      "available_cash_after_reserve": "60000.0000",
+      "blockers": [],
+      "confidence": "63.15395429832920463614157559",
+      "correlation_conflicts": [],
+      "current_sector_exposure": "0",
+      "current_symbol_exposure": "0",
+      "max_order_notional": "500.00",
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "position_cap": "5000.0000",
+      "projected_sector_exposure": "315.7697714916460231807078780",
+      "projected_sector_percent": "0.3157697714916460231807078780",
+      "projected_symbol_exposure": "315.7697714916460231807078780",
+      "projected_symbol_percent": "0.3157697714916460231807078780",
+      "proposed_notional": "315.7697714916460231807078780",
+      "raw_risk_budget": "315.7697714916460231807078780",
+      "sector": "ETF_BROAD_MARKET",
+      "side": "BUY",
+      "status": "READY",
+      "symbol": "SPY"
+    }
+  ],
+  "generated_at": "2026-08-05T20:04:46.719979+00:00",
+  "order_submission_enabled": false,
+  "order_ticket_created": false,
+  "ready_allocation_count": 1
+}

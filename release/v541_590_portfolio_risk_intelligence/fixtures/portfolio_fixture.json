@@ -1,0 +1,12 @@
+{
+  "fixture_only": true,
+  "account_equity": "100000.00",
+  "cash": "80000.00",
+  "positions": [
+    {
+      "symbol": "IWM",
+      "market_value": "5000.00",
+      "sector": "ETF_SMALL_CAP"
+    }
+  ]
+}

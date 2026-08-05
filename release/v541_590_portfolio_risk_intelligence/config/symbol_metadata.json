@@ -1,0 +1,16 @@
+{
+  "symbols": {
+    "SPY": {
+      "sector": "ETF_BROAD_MARKET",
+      "asset_class": "US_EQUITY_ETF"
+    },
+    "QQQ": {
+      "sector": "ETF_TECH_GROWTH",
+      "asset_class": "US_EQUITY_ETF"
+    },
+    "IWM": {
+      "sector": "ETF_SMALL_CAP",
+      "asset_class": "US_EQUITY_ETF"
+    }
+  }
+}

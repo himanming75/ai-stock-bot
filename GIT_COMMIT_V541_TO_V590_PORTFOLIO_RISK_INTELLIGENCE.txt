@@ -1,0 +1,10 @@
+git add portfolio_risk_intelligence
+git add tools/run_v541_to_v590_portfolio_risk_intelligence.py
+git add tools/test_v541_to_v590_portfolio_risk_intelligence.py
+git add release/v541_590_portfolio_risk_intelligence
+git add RUN_V541_TO_V590_PORTFOLIO_RISK_INTELLIGENCE.ps1
+git add RUN_V541_TO_V590_PORTFOLIO_RISK_INTELLIGENCE_TEST.ps1
+git add V541_TO_V590_PORTFOLIO_RISK_INTELLIGENCE_MANIFEST.json
+git add GIT_COMMIT_V541_TO_V590_PORTFOLIO_RISK_INTELLIGENCE.txt
+git commit -m "Add V541-V590 portfolio risk intelligence"
+git push origin main

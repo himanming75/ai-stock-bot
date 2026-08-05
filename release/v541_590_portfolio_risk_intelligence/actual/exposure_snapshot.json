@@ -1,0 +1,17 @@
+{
+  "account_exposure": {
+    "cash": "80000.00",
+    "equity": "100000.00",
+    "gross_exposure": "5000.00",
+    "gross_exposure_percent": "5.00",
+    "net_exposure": "5000.00",
+    "net_exposure_percent": "5.00"
+  },
+  "generated_at": "2026-08-05T20:04:46.719979+00:00",
+  "sector_exposure": {
+    "ETF_SMALL_CAP": "5000.00"
+  },
+  "symbol_exposure": {
+    "IWM": "5000.00"
+  }
+}

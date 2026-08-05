@@ -1,0 +1,23 @@
+{
+  "base_risk_budget_percent": "0.50",
+  "max_single_position_percent": "5.00",
+  "max_order_notional": "500.00",
+  "minimum_cash_reserve_percent": "20.00",
+  "max_sector_exposure_percent": "35.00",
+  "maximum_pair_correlation": "0.85",
+  "max_daily_new_notional": "1000.00",
+  "allowed_risk_levels": [
+    "NORMAL"
+  ],
+  "risk_level_multiplier": {
+    "NORMAL": "1.00",
+    "WARNING": "0.50",
+    "CRITICAL": "0",
+    "UNKNOWN": "0"
+  },
+  "block_unknown_sector": true,
+  "market_network_enabled": false,
+  "broker_network_enabled": false,
+  "order_ticket_generation_enabled": false,
+  "order_submission_enabled": false
+}

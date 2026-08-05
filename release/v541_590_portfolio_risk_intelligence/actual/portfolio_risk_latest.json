@@ -1,0 +1,91 @@
+{
+  "account_exposure": {
+    "cash": "80000.00",
+    "equity": "100000.00",
+    "gross_exposure": "5000.00",
+    "gross_exposure_percent": "5.00",
+    "net_exposure": "5000.00",
+    "net_exposure_percent": "5.00"
+  },
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_network_used": false,
+  "actual_order_submission_performed": false,
+  "actual_order_ticket_created": false,
+  "actual_paper_orders_submitted": 0,
+  "all_candidate_plans": [
+    {
+      "allocation_rank": 1,
+      "available_cash_after_reserve": "60000.0000",
+      "blockers": [],
+      "confidence": "63.15395429832920463614157559",
+      "correlation_conflicts": [],
+      "current_sector_exposure": "0",
+      "current_symbol_exposure": "0",
+      "max_order_notional": "500.00",
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "position_cap": "5000.0000",
+      "projected_sector_exposure": "315.7697714916460231807078780",
+      "projected_sector_percent": "0.3157697714916460231807078780",
+      "projected_symbol_exposure": "315.7697714916460231807078780",
+      "projected_symbol_percent": "0.3157697714916460231807078780",
+      "proposed_notional": "315.7697714916460231807078780",
+      "raw_risk_budget": "315.7697714916460231807078780",
+      "sector": "ETF_BROAD_MARKET",
+      "side": "BUY",
+      "status": "READY",
+      "symbol": "SPY"
+    }
+  ],
+  "allocation_queue": [
+    {
+      "allocation_rank": 1,
+      "available_cash_after_reserve": "60000.0000",
+      "blockers": [],
+      "confidence": "63.15395429832920463614157559",
+      "correlation_conflicts": [],
+      "current_sector_exposure": "0",
+      "current_symbol_exposure": "0",
+      "max_order_notional": "500.00",
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "position_cap": "5000.0000",
+      "projected_sector_exposure": "315.7697714916460231807078780",
+      "projected_sector_percent": "0.3157697714916460231807078780",
+      "projected_symbol_exposure": "315.7697714916460231807078780",
+      "projected_symbol_percent": "0.3157697714916460231807078780",
+      "proposed_notional": "315.7697714916460231807078780",
+      "raw_risk_budget": "315.7697714916460231807078780",
+      "sector": "ETF_BROAD_MARKET",
+      "side": "BUY",
+      "status": "READY",
+      "symbol": "SPY"
+    }
+  ],
+  "blocked_allocation_count": 0,
+  "blocked_candidates": [],
+  "candidate_plan_count": 1,
+  "controller_files_modified": false,
+  "generated_at": "2026-08-05T20:04:46.719979+00:00",
+  "input_blockers": [],
+  "next_fixed_development": "V591_TO_V640_APPROVAL_AND_EXECUTION_PLANNING",
+  "portfolio_blockers": [],
+  "portfolio_intelligence_fingerprint": "b7bae5a756727f14e8287608b18bc2cd375bd2e84777234e9c34bd45975bf043",
+  "ready_allocation_count": 1,
+  "rebalance_orders_created": false,
+  "risk_level": "NORMAL",
+  "runtime_files_modified": false,
+  "sector_exposure": {
+    "ETF_SMALL_CAP": "5000.00"
+  },
+  "source_ai_decision_fingerprint": "36e3041a4193e6c304319e68b36e74002e2ff6721b915ed8adc0b23d1529d604",
+  "stage": "V541_TO_V590_PORTFOLIO_AND_RISK_INTELLIGENCE",
+  "status": "PASS",
+  "symbol_exposure": {
+    "IWM": "5000.00"
+  },
+  "total_ready_notional": "315.7697714916460231807078780"
+}

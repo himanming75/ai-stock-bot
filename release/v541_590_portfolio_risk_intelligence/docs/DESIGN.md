@@ -1,0 +1,9 @@
+# V541–V590 Portfolio & Risk Intelligence\n\n- V541: AI Candidate Intake\n- V542: Portfolio Snapshot Contract\n- V543: Account Equity Validation\n- V544: Cash Validation\n- V545: Position Inventory\n- V546: Gross Exposure\n- V547: Net Exposure\n- V548: Gross Exposure Percent\n- V549: Net Exposure Percent\n- V550: Symbol Exposure\n- V551: Sector Metadata\n- V552: Sector Exposure\n- V553: Unknown Sector Guard\n- V554: Correlation Matrix Contract\n- V555: Pair Correlation\n- V556: Correlation Conflict\n- V557: Risk Context Intake\n- V558: Risk-Level Multiplier\n- V559: Base Risk Budget\n- V560: Confidence-Adjusted Budget\n- V561: Cash Reserve\n- V562: Available Cash\n- V563: Single Position Cap\n- V564: Per-Order Notional Cap\n- V565: Daily New Notional Cap\n- V566: Candidate Sizing\n- V567: BUY Allocation Plan\n- V568: SELL Allocation Plan\n- V569: Blocked Candidate\n- V570: Sector Limit Guard\n- V571: Symbol Limit Guard\n- V572: Correlation Limit Guard\n- V573: Cash Limit Guard\n- V574: Risk-Level Guard\n- V575: Allocation Priority\n- V576: Allocation Rank\n- V577: Total Proposed Notional\n- V578: Portfolio Blocker Aggregation\n- V579: Exposure Snapshot\n- V580: Allocation Queue\n- V581: Blocked Queue\n- V582: Rebalance Readiness\n- V583: Rebalance Order Separation\n- V584: Portfolio Fingerprint\n- V585: Portfolio Risk Ledger\n- V586: Allocation Plan Ledger\n- V587: Portfolio Dashboard\n- V588: Insufficient Portfolio Input Guard\n- V589: Zero-Order Safety Contract\n- V590: Portfolio & Risk Intelligence Readiness
+
+This layer converts AI candidates into proposed portfolio allocations only.
+It never generates order tickets, rebalancing orders, or broker submissions.
+Fixture portfolio and correlation data are used for deterministic validation.
+
+Missing equity, cash, metadata, or portfolio evidence is never guessed.
+Instead, the relevant plan is blocked or the run is marked
+INSUFFICIENT_PORTFOLIO_INPUT.
