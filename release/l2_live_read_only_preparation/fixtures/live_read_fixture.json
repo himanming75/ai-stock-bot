@@ -1,0 +1,31 @@
+{
+  "account": {
+    "id": "live-account-fixture",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "cash": "1000",
+    "buying_power": "1000",
+    "equity": "1000",
+    "trading_blocked": false,
+    "account_blocked": false
+  },
+  "positions": [],
+  "orders": [],
+  "clock": {
+    "is_open": false,
+    "timestamp": "2026-08-05T00:00:00Z",
+    "next_open": "2026-08-05T13:30:00Z",
+    "next_close": "2026-08-05T20:00:00Z"
+  },
+  "assets": {
+    "SPY": {
+      "id": "asset-spy",
+      "symbol": "SPY",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true,
+      "marginable": true,
+      "shortable": true
+    }
+  }
+}

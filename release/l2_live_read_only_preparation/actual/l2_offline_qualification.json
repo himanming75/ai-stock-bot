@@ -1,0 +1,47 @@
+{
+  "account_id_present": true,
+  "account_status": "ACTIVE",
+  "actual_live_orders_submitted": 0,
+  "actual_live_read_allowed": false,
+  "actual_live_read_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "all_assets_tradable": true,
+  "asset_symbols": [
+    "SPY"
+  ],
+  "config": {
+    "checks": {
+      "attempts_safe": true,
+      "credentials_present_or_deferred": true,
+      "live_endpoint_valid": true,
+      "network_disabled": true,
+      "timeout_positive": true
+    },
+    "failed": [],
+    "valid": true
+  },
+  "gates": {
+    "actual_live_read_allowed": false,
+    "checks": {
+      "l1_pass": true,
+      "live_kill_switch_active": true,
+      "paper_certificate_present": false,
+      "paper_complete": false
+    },
+    "failed": [
+      "paper_complete",
+      "paper_certificate_present"
+    ]
+  },
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "market_open": false,
+  "mode": "OFFLINE_FIXTURE_LIVE_READ_ONLY_PREPARATION",
+  "next_fixed_stage": "L2_ACTUAL_LIVE_READ_ONLY_AFTER_P5_ACTUAL_PAPER_COMPLETION",
+  "open_order_count": 0,
+  "position_count": 0,
+  "snapshot_hash": "95c49f292d6af31060194e2d47383536641c774cebcf3eb5085e4b750ac6bd40",
+  "stage": "L2",
+  "state": "LIVE_READ_ONLY_PREPARATION_READY",
+  "status": "PASS"
+}

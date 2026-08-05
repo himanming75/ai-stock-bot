@@ -1,0 +1,21 @@
+{
+  "stage": "L2_PREPARATION",
+  "features": [
+    "Live Account Read Model",
+    "Live Positions Read Model",
+    "Live Open Orders Read Model",
+    "Live Market Clock Read Model",
+    "Live Asset Tradability Read Model",
+    "GET Only HTTP Guard",
+    "Live Endpoint Enforcement",
+    "Paper Completion Gate",
+    "Live Kill Switch Gate",
+    "Offline Fixture Qualification"
+  ],
+  "actual_live_read_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L2_ACTUAL_AFTER_P5_ACTUAL_PAPER_COMPLETION"
+}
