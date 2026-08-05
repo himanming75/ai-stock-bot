@@ -1,0 +1,25 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "actual_release_performed": false,
+  "automatic_order_submission_enabled": false,
+  "broker_network_enabled": false,
+  "broker_write_enabled": false,
+  "bundle_a_state": "RUNTIME_CORE_OFFLINE_QUALIFIED",
+  "bundle_b_state": "BROKER_MULTI_ACCOUNT_OFFLINE_QUALIFIED",
+  "generated_at": "2026-08-05T07:08:07.932483+00:00",
+  "next_fixed_action": "RUN_P2_TO_P5_ACTUAL_PAPER_VALIDATION",
+  "production_candidate_ready": true,
+  "production_release_allowed": false,
+  "r14_final_operations_integration": "READY",
+  "r15_production_candidate_gate": "READY",
+  "release_state": "BLOCKED",
+  "remaining_actual_validations": [
+    "paper_completion_certificate",
+    "production_release_certificate"
+  ],
+  "stage": "BUNDLE_C_R14_TO_R15",
+  "state": "FINAL_OPERATIONS_PREPARED",
+  "status": "PASS",
+  "windows_task_registration_performed": false
+}

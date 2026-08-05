@@ -1,0 +1,27 @@
+{
+  "automatic_order_replay_performed": false,
+  "automatic_recovery_performed": false,
+  "captured_file_count": 3,
+  "created_at": "2026-08-05T07:35:00.565718+00:00",
+  "files": [
+    {
+      "sha256": "b1d48c0e2216083b0cafc3fc21e8ff8af3ae611de319fa36e5594dae927d1dd9",
+      "size_bytes": 42074,
+      "snapshot_file": "ai_v2_final_result.json",
+      "source": "release/ai_v2_final/actual/ai_v2_final_result.json"
+    },
+    {
+      "sha256": "1e2311307951e861842820d1ef9c83be542efc133ee1cc203bd67e8d66c9e47e",
+      "size_bytes": 210,
+      "snapshot_file": "ai_v2_final_certificate.json",
+      "source": "release/ai_v2_final/actual/ai_v2_final_certificate.json"
+    },
+    {
+      "sha256": "f9241e49d0dc6b78957630cd390e1cb86c6e466ce6fc33dac35a17c545f751e6",
+      "size_bytes": 942,
+      "snapshot_file": "bundle_c_result.json",
+      "source": "release/bundle_c_r14_to_r15_final_operations/actual/bundle_c_result.json"
+    }
+  ],
+  "stage": "OPERATIONS_V2_INCIDENT_SNAPSHOT"
+}

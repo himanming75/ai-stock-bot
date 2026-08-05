@@ -1,0 +1,3 @@
+git add operations_v2 tools/run_operations_v2.py tools/run_operations_v2_dashboard.py tools/test_operations_v2.py tools/verify_operations_v2.py release/operations_v2 RUN_OPERATIONS_V2.ps1 RUN_OPERATIONS_V2_DASHBOARD.ps1 RUN_OPERATIONS_V2_TEST_AND_VERIFY.ps1 OPERATIONS_V2_MANIFEST.json GIT_COMMIT_OPERATIONS_V2.txt
+git commit -m "Add Operations V2 dashboard replay and audit bundle"
+git push origin main

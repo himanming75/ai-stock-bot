@@ -1,0 +1,21 @@
+{
+  "stage": "OPERATIONS_V2_MEGA_BUNDLE",
+  "features": [
+    "Dashboard 4.0",
+    "Data Quality Auditor",
+    "Historical Replay Simulator",
+    "Configuration Diff Auditor",
+    "Incident Snapshot Bundle",
+    "Daily Operator Report",
+    "CSV JSON Export",
+    "Read Only Local API",
+    "Offline Qualification"
+  ],
+  "actual_market_network_used": false,
+  "actual_broker_network_used": false,
+  "actual_broker_write_used": false,
+  "automatic_order_submission_enabled": false,
+  "actual_orders_created": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0
+}

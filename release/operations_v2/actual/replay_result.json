@@ -1,0 +1,223 @@
+{
+  "actual_orders_created": false,
+  "actual_portfolio_modified": false,
+  "broker_network_used": false,
+  "broker_write_used": false,
+  "ending_position_preview": 0,
+  "event_count": 21,
+  "events": [
+    {
+      "action": "BUY_PREVIEW",
+      "broker_write_used": false,
+      "fast_average": "114.4000",
+      "index": 19,
+      "order_created": false,
+      "price": "116.0",
+      "slow_average": "108.4000",
+      "timestamp": "2026-02-20"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "115.2000",
+      "index": 20,
+      "order_created": false,
+      "price": "116.8",
+      "slow_average": "109.2000",
+      "timestamp": "2026-02-21"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "116.0000",
+      "index": 21,
+      "order_created": false,
+      "price": "117.6",
+      "slow_average": "110.0000",
+      "timestamp": "2026-02-22"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "116.8000",
+      "index": 22,
+      "order_created": false,
+      "price": "118.4",
+      "slow_average": "110.8000",
+      "timestamp": "2026-02-23"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "117.6000",
+      "index": 23,
+      "order_created": false,
+      "price": "119.2",
+      "slow_average": "111.6000",
+      "timestamp": "2026-02-24"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "118.4000",
+      "index": 24,
+      "order_created": false,
+      "price": "120.0",
+      "slow_average": "112.4000",
+      "timestamp": "2026-02-25"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "118.9800",
+      "index": 25,
+      "order_created": false,
+      "price": "119.7",
+      "slow_average": "113.1450",
+      "timestamp": "2026-02-26"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "119.3400",
+      "index": 26,
+      "order_created": false,
+      "price": "119.4",
+      "slow_average": "113.8350",
+      "timestamp": "2026-02-27"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "119.4800",
+      "index": 27,
+      "order_created": false,
+      "price": "119.1",
+      "slow_average": "114.4700",
+      "timestamp": "2026-02-28"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "119.4000",
+      "index": 28,
+      "order_created": false,
+      "price": "118.8",
+      "slow_average": "115.0500",
+      "timestamp": "2026-02-29"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "119.1000",
+      "index": 29,
+      "order_created": false,
+      "price": "118.5",
+      "slow_average": "115.5750",
+      "timestamp": "2026-02-30"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "118.8000",
+      "index": 30,
+      "order_created": false,
+      "price": "118.2",
+      "slow_average": "116.0450",
+      "timestamp": "2026-02-31"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "118.5000",
+      "index": 31,
+      "order_created": false,
+      "price": "117.9",
+      "slow_average": "116.4600",
+      "timestamp": "2026-02-32"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "118.2000",
+      "index": 32,
+      "order_created": false,
+      "price": "117.6",
+      "slow_average": "116.8200",
+      "timestamp": "2026-02-33"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "117.9000",
+      "index": 33,
+      "order_created": false,
+      "price": "117.3",
+      "slow_average": "117.1250",
+      "timestamp": "2026-02-34"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "117.6000",
+      "index": 34,
+      "order_created": false,
+      "price": "117.0",
+      "slow_average": "117.3750",
+      "timestamp": "2026-02-35"
+    },
+    {
+      "action": "SELL_PREVIEW",
+      "broker_write_used": false,
+      "fast_average": "117.3000",
+      "index": 35,
+      "order_created": false,
+      "price": "116.7",
+      "slow_average": "117.5700",
+      "timestamp": "2026-02-36"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "117.0000",
+      "index": 36,
+      "order_created": false,
+      "price": "116.4",
+      "slow_average": "117.7100",
+      "timestamp": "2026-02-37"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "116.7000",
+      "index": 37,
+      "order_created": false,
+      "price": "116.1",
+      "slow_average": "117.7950",
+      "timestamp": "2026-02-38"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "116.4000",
+      "index": 38,
+      "order_created": false,
+      "price": "115.8",
+      "slow_average": "117.8250",
+      "timestamp": "2026-02-39"
+    },
+    {
+      "action": "HOLD",
+      "broker_write_used": false,
+      "fast_average": "116.1000",
+      "index": 39,
+      "order_created": false,
+      "price": "115.5",
+      "slow_average": "117.8000",
+      "timestamp": "2026-02-40"
+    }
+  ],
+  "realized_pnl_preview": "0.70",
+  "symbol": "AAPL",
+  "unrealized_pnl_preview": "0.00"
+}

@@ -1,0 +1,19 @@
+{
+  "bar_count": 40,
+  "checks": {
+    "bars_present": true,
+    "no_duplicate_timestamps": true,
+    "ohlc_valid": true,
+    "required_fields_present": true,
+    "timestamps_monotonic": true,
+    "volume_valid": true
+  },
+  "duplicate_timestamps": 0,
+  "failed": [],
+  "invalid_ohlc_rows": 0,
+  "invalid_volume_rows": 0,
+  "missing_field_rows": 0,
+  "non_monotonic_rows": 0,
+  "status": "PASS",
+  "symbol": "AAPL"
+}

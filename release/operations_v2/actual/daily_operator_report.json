@@ -1,0 +1,286 @@
+{
+  "automatic_order_submission_enabled": false,
+  "broker_actions_available": false,
+  "generated_at": "2026-08-05T07:35:00.566547+00:00",
+  "read_only": true,
+  "schema_version": 1,
+  "sections": {
+    "configuration_audit": {
+      "actual_configuration_modified": false,
+      "change_count": 0,
+      "changes": [],
+      "protected_change_count": 0,
+      "safe": true
+    },
+    "data_quality": {
+      "bar_count": 40,
+      "checks": {
+        "bars_present": true,
+        "no_duplicate_timestamps": true,
+        "ohlc_valid": true,
+        "required_fields_present": true,
+        "timestamps_monotonic": true,
+        "volume_valid": true
+      },
+      "duplicate_timestamps": 0,
+      "failed": [],
+      "invalid_ohlc_rows": 0,
+      "invalid_volume_rows": 0,
+      "missing_field_rows": 0,
+      "non_monotonic_rows": 0,
+      "status": "PASS",
+      "symbol": "AAPL"
+    },
+    "historical_replay": {
+      "actual_orders_created": false,
+      "actual_portfolio_modified": false,
+      "broker_network_used": false,
+      "broker_write_used": false,
+      "ending_position_preview": 0,
+      "event_count": 21,
+      "events": [
+        {
+          "action": "BUY_PREVIEW",
+          "broker_write_used": false,
+          "fast_average": "114.4000",
+          "index": 19,
+          "order_created": false,
+          "price": "116.0",
+          "slow_average": "108.4000",
+          "timestamp": "2026-02-20"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "115.2000",
+          "index": 20,
+          "order_created": false,
+          "price": "116.8",
+          "slow_average": "109.2000",
+          "timestamp": "2026-02-21"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "116.0000",
+          "index": 21,
+          "order_created": false,
+          "price": "117.6",
+          "slow_average": "110.0000",
+          "timestamp": "2026-02-22"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "116.8000",
+          "index": 22,
+          "order_created": false,
+          "price": "118.4",
+          "slow_average": "110.8000",
+          "timestamp": "2026-02-23"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "117.6000",
+          "index": 23,
+          "order_created": false,
+          "price": "119.2",
+          "slow_average": "111.6000",
+          "timestamp": "2026-02-24"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "118.4000",
+          "index": 24,
+          "order_created": false,
+          "price": "120.0",
+          "slow_average": "112.4000",
+          "timestamp": "2026-02-25"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "118.9800",
+          "index": 25,
+          "order_created": false,
+          "price": "119.7",
+          "slow_average": "113.1450",
+          "timestamp": "2026-02-26"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "119.3400",
+          "index": 26,
+          "order_created": false,
+          "price": "119.4",
+          "slow_average": "113.8350",
+          "timestamp": "2026-02-27"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "119.4800",
+          "index": 27,
+          "order_created": false,
+          "price": "119.1",
+          "slow_average": "114.4700",
+          "timestamp": "2026-02-28"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "119.4000",
+          "index": 28,
+          "order_created": false,
+          "price": "118.8",
+          "slow_average": "115.0500",
+          "timestamp": "2026-02-29"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "119.1000",
+          "index": 29,
+          "order_created": false,
+          "price": "118.5",
+          "slow_average": "115.5750",
+          "timestamp": "2026-02-30"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "118.8000",
+          "index": 30,
+          "order_created": false,
+          "price": "118.2",
+          "slow_average": "116.0450",
+          "timestamp": "2026-02-31"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "118.5000",
+          "index": 31,
+          "order_created": false,
+          "price": "117.9",
+          "slow_average": "116.4600",
+          "timestamp": "2026-02-32"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "118.2000",
+          "index": 32,
+          "order_created": false,
+          "price": "117.6",
+          "slow_average": "116.8200",
+          "timestamp": "2026-02-33"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "117.9000",
+          "index": 33,
+          "order_created": false,
+          "price": "117.3",
+          "slow_average": "117.1250",
+          "timestamp": "2026-02-34"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "117.6000",
+          "index": 34,
+          "order_created": false,
+          "price": "117.0",
+          "slow_average": "117.3750",
+          "timestamp": "2026-02-35"
+        },
+        {
+          "action": "SELL_PREVIEW",
+          "broker_write_used": false,
+          "fast_average": "117.3000",
+          "index": 35,
+          "order_created": false,
+          "price": "116.7",
+          "slow_average": "117.5700",
+          "timestamp": "2026-02-36"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "117.0000",
+          "index": 36,
+          "order_created": false,
+          "price": "116.4",
+          "slow_average": "117.7100",
+          "timestamp": "2026-02-37"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "116.7000",
+          "index": 37,
+          "order_created": false,
+          "price": "116.1",
+          "slow_average": "117.7950",
+          "timestamp": "2026-02-38"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "116.4000",
+          "index": 38,
+          "order_created": false,
+          "price": "115.8",
+          "slow_average": "117.8250",
+          "timestamp": "2026-02-39"
+        },
+        {
+          "action": "HOLD",
+          "broker_write_used": false,
+          "fast_average": "116.1000",
+          "index": 39,
+          "order_created": false,
+          "price": "115.5",
+          "slow_average": "117.8000",
+          "timestamp": "2026-02-40"
+        }
+      ],
+      "realized_pnl_preview": "0.70",
+      "symbol": "AAPL",
+      "unrealized_pnl_preview": "0.00"
+    },
+    "incident_snapshot": {
+      "automatic_order_replay_performed": false,
+      "automatic_recovery_performed": false,
+      "captured_file_count": 3,
+      "created_at": "2026-08-05T07:35:00.565718+00:00",
+      "files": [
+        {
+          "sha256": "b1d48c0e2216083b0cafc3fc21e8ff8af3ae611de319fa36e5594dae927d1dd9",
+          "size_bytes": 42074,
+          "snapshot_file": "ai_v2_final_result.json",
+          "source": "release/ai_v2_final/actual/ai_v2_final_result.json"
+        },
+        {
+          "sha256": "1e2311307951e861842820d1ef9c83be542efc133ee1cc203bd67e8d66c9e47e",
+          "size_bytes": 210,
+          "snapshot_file": "ai_v2_final_certificate.json",
+          "source": "release/ai_v2_final/actual/ai_v2_final_certificate.json"
+        },
+        {
+          "sha256": "f9241e49d0dc6b78957630cd390e1cb86c6e466ce6fc33dac35a17c545f751e6",
+          "size_bytes": 942,
+          "snapshot_file": "bundle_c_result.json",
+          "source": "release/bundle_c_r14_to_r15_final_operations/actual/bundle_c_result.json"
+        }
+      ],
+      "stage": "OPERATIONS_V2_INCIDENT_SNAPSHOT"
+    }
+  },
+  "stage": "OPERATIONS_V2_DAILY_REPORT"
+}
