@@ -1,0 +1,176 @@
+{
+  "external_delivery_performed": false,
+  "generated_at": "2026-08-05T08:21:36.915121+00:00",
+  "period": "WEEKLY",
+  "read_only": true,
+  "schema_version": 1,
+  "sections": {
+    "executive_summary": {
+      "dashboard_status": "PASS",
+      "live_orders_submitted": 0,
+      "operations_status": "PASS",
+      "paper_orders_submitted": 0,
+      "validation_status": "PASS"
+    },
+    "operations": {
+      "checks": {
+        "broker_actions_unavailable": true,
+        "config_safe": true,
+        "csv_export_created": true,
+        "daily_report_created": true,
+        "dashboard_read_only": true,
+        "data_quality_pass": true,
+        "incident_manifest_created": true,
+        "protected_changes_zero": true,
+        "replay_created": true,
+        "replay_orders_zero": true,
+        "submission_off": true
+      },
+      "status": "PASS"
+    },
+    "performance": {
+      "average_return": "0.002875",
+      "drawdown_curve": [
+        "0.0000",
+        "0.0000",
+        "0.0040",
+        "0.0000",
+        "0.0000",
+        "0.0020",
+        "0.0000",
+        "0.0000",
+        "0.0029"
+      ],
+      "equity_curve": [
+        "1000",
+        "1010",
+        "1006",
+        "1012",
+        "1015",
+        "1013",
+        "1022",
+        "1026",
+        "1023"
+      ],
+      "expectancy": "2.8750",
+      "losses": 3,
+      "maximum_drawdown": "0.0040",
+      "profit_factor": "3.5556",
+      "sharpe_ratio": "0.5314",
+      "trade_count": 8,
+      "win_rate": "0.6250",
+      "wins": 5
+    },
+    "portfolio": {
+      "actual_orders_created": false,
+      "actual_portfolio_modified": false,
+      "average_absolute_correlation": "0.5710",
+      "concentration_index": "0.2650",
+      "correlation_matrix": [
+        {
+          "symbol": "AAPL",
+          "values": {
+            "AAPL": "1.0000",
+            "MSFT": "0.7200",
+            "SPY": "0.6500",
+            "XLV": "0.2800"
+          }
+        },
+        {
+          "symbol": "MSFT",
+          "values": {
+            "AAPL": "0.7200",
+            "MSFT": "1.0000",
+            "SPY": "0.6800",
+            "XLV": "0.3000"
+          }
+        },
+        {
+          "symbol": "SPY",
+          "values": {
+            "AAPL": "0.6500",
+            "MSFT": "0.6800",
+            "SPY": "1.0000",
+            "XLV": "0.5000"
+          }
+        },
+        {
+          "symbol": "XLV",
+          "values": {
+            "AAPL": "0.2800",
+            "MSFT": "0.3000",
+            "SPY": "0.5000",
+            "XLV": "1.0000"
+          }
+        }
+      ],
+      "diversification_score": "0.6126",
+      "position_count": 4,
+      "rebalance_preview": [
+        {
+          "current_weight": "0.3000",
+          "order_created": false,
+          "suggested_direction": "SELL",
+          "symbol": "AAPL",
+          "target_weight": "0.2500",
+          "weight_drift": "-0.0500"
+        },
+        {
+          "current_weight": "0.2500",
+          "order_created": false,
+          "suggested_direction": "HOLD",
+          "symbol": "MSFT",
+          "target_weight": "0.2500",
+          "weight_drift": "0.0000"
+        },
+        {
+          "current_weight": "0.3000",
+          "order_created": false,
+          "suggested_direction": "SELL",
+          "symbol": "SPY",
+          "target_weight": "0.2500",
+          "weight_drift": "-0.0500"
+        },
+        {
+          "current_weight": "0.1500",
+          "order_created": false,
+          "suggested_direction": "BUY",
+          "symbol": "XLV",
+          "target_weight": "0.2500",
+          "weight_drift": "0.1000"
+        }
+      ],
+      "sector_allocation": [
+        {
+          "breached": false,
+          "limit": "0.40",
+          "market_value": "300.00",
+          "sector": "Broad Market",
+          "weight": "0.3000"
+        },
+        {
+          "breached": false,
+          "limit": "0.30",
+          "market_value": "150.00",
+          "sector": "Healthcare",
+          "weight": "0.1500"
+        },
+        {
+          "breached": false,
+          "limit": "0.60",
+          "market_value": "550.00",
+          "sector": "Technology",
+          "weight": "0.5500"
+        }
+      ],
+      "sector_limit_breaches": [],
+      "total_market_value": "1000.00"
+    },
+    "validation": {
+      "failed": [],
+      "next_fixed_action": "P2_ACTUAL_PAPER_BROKER_READ_VALIDATION",
+      "status": "PASS"
+    }
+  },
+  "stage": "AUTO_REPORT_SYSTEM"
+}

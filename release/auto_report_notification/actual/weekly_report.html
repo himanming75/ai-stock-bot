@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AI Stock Bot WEEKLY Report</title>
+<style>
+body{font-family:Arial,sans-serif;margin:32px;color:#17202a}
+header{border-bottom:2px solid #273746;margin-bottom:24px}
+section{page-break-inside:avoid;margin-bottom:24px}
+pre{background:#f4f6f7;padding:14px;white-space:pre-wrap}
+@media print{body{margin:12mm}}
+</style>
+</head>
+<body>
+<header>
+<h1>AI Stock Bot WEEKLY Report</h1>
+<p>Generated: 2026-08-05T08:21:36.915121+00:00</p>
+<p>Read-only offline report</p>
+</header>
+<section><h2>executive_summary</h2><pre>{
+  &quot;dashboard_status&quot;: &quot;PASS&quot;,
+  &quot;live_orders_submitted&quot;: 0,
+  &quot;operations_status&quot;: &quot;PASS&quot;,
+  &quot;paper_orders_submitted&quot;: 0,
+  &quot;validation_status&quot;: &quot;PASS&quot;
+}</pre></section><section><h2>performance</h2><pre>{
+  &quot;average_return&quot;: &quot;0.002875&quot;,
+  &quot;drawdown_curve&quot;: [
+    &quot;0.0000&quot;,
+    &quot;0.0000&quot;,
+    &quot;0.0040&quot;,
+    &quot;0.0000&quot;,
+    &quot;0.0000&quot;,
+    &quot;0.0020&quot;,
+    &quot;0.0000&quot;,
+    &quot;0.0000&quot;,
+    &quot;0.0029&quot;
+  ],
+  &quot;equity_curve&quot;: [
+    &quot;1000&quot;,
+    &quot;1010&quot;,
+    &quot;1006&quot;,
+    &quot;1012&quot;,
+    &quot;1015&quot;,
+    &quot;1013&quot;,
+    &quot;1022&quot;,
+    &quot;1026&quot;,
+    &quot;1023&quot;
+  ],
+  &quot;expectancy&quot;: &quot;2.8750&quot;,
+  &quot;losses&quot;: 3,
+  &quot;maximum_drawdown&quot;: &quot;0.0040&quot;,
+  &quot;profit_factor&quot;: &quot;3.5556&quot;,
+  &quot;sharpe_ratio&quot;: &quot;0.5314&quot;,
+  &quot;trade_count&quot;: 8,
+  &quot;win_rate&quot;: &quot;0.6250&quot;,
+  &quot;wins&quot;: 5
+}</pre></section><section><h2>portfolio</h2><pre>{
+  &quot;actual_orders_created&quot;: false,
+  &quot;actual_portfolio_modified&quot;: false,
+  &quot;average_absolute_correlation&quot;: &quot;0.5710&quot;,
+  &quot;concentration_index&quot;: &quot;0.2650&quot;,
+  &quot;correlation_matrix&quot;: [
+    {
+      &quot;symbol&quot;: &quot;AAPL&quot;,
+      &quot;values&quot;: {
+        &quot;AAPL&quot;: &quot;1.0000&quot;,
+        &quot;MSFT&quot;: &quot;0.7200&quot;,
+        &quot;SPY&quot;: &quot;0.6500&quot;,
+        &quot;XLV&quot;: &quot;0.2800&quot;
+      }
+    },
+    {
+      &quot;symbol&quot;: &quot;MSFT&quot;,
+      &quot;values&quot;: {
+        &quot;AAPL&quot;: &quot;0.7200&quot;,
+        &quot;MSFT&quot;: &quot;1.0000&quot;,
+        &quot;SPY&quot;: &quot;0.6800&quot;,
+        &quot;XLV&quot;: &quot;0.3000&quot;
+      }
+    },
+    {
+      &quot;symbol&quot;: &quot;SPY&quot;,
+      &quot;values&quot;: {
+        &quot;AAPL&quot;: &quot;0.6500&quot;,
+        &quot;MSFT&quot;: &quot;0.6800&quot;,
+        &quot;SPY&quot;: &quot;1.0000&quot;,
+        &quot;XLV&quot;: &quot;0.5000&quot;
+      }
+    },
+    {
+      &quot;symbol&quot;: &quot;XLV&quot;,
+      &quot;values&quot;: {
+        &quot;AAPL&quot;: &quot;0.2800&quot;,
+        &quot;MSFT&quot;: &quot;0.3000&quot;,
+        &quot;SPY&quot;: &quot;0.5000&quot;,
+        &quot;XLV&quot;: &quot;1.0000&quot;
+      }
+    }
+  ],
+  &quot;diversification_score&quot;: &quot;0.6126&quot;,
+  &quot;position_count&quot;: 4,
+  &quot;rebalance_preview&quot;: [
+    {
+      &quot;current_weight&quot;: &quot;0.3000&quot;,
+      &quot;order_created&quot;: false,
+      &quot;suggested_direction&quot;: &quot;SELL&quot;,
+      &quot;symbol&quot;: &quot;AAPL&quot;,
+      &quot;target_weight&quot;: &quot;0.2500&quot;,
+      &quot;weight_drift&quot;: &quot;-0.0500&quot;
+    },
+    {
+      &quot;current_weight&quot;: &quot;0.2500&quot;,
+      &quot;order_created&quot;: false,
+      &quot;suggested_direction&quot;: &quot;HOLD&quot;,
+      &quot;symbol&quot;: &quot;MSFT&quot;,
+      &quot;target_weight&quot;: &quot;0.2500&quot;,
+      &quot;weight_drift&quot;: &quot;0.0000&quot;
+    },
+    {
+      &quot;current_weight&quot;: &quot;0.3000&quot;,
+      &quot;order_created&quot;: false,
+      &quot;suggested_direction&quot;: &quot;SELL&quot;,
+      &quot;symbol&quot;: &quot;SPY&quot;,
+      &quot;target_weight&quot;: &quot;0.2500&quot;,
+      &quot;weight_drift&quot;: &quot;-0.0500&quot;
+    },
+    {
+      &quot;current_weight&quot;: &quot;0.1500&quot;,
+      &quot;order_created&quot;: false,
+      &quot;suggested_direction&quot;: &quot;BUY&quot;,
+      &quot;symbol&quot;: &quot;XLV&quot;,
+      &quot;target_weight&quot;: &quot;0.2500&quot;,
+      &quot;weight_drift&quot;: &quot;0.1000&quot;
+    }
+  ],
+  &quot;sector_allocation&quot;: [
+    {
+      &quot;breached&quot;: false,
+      &quot;limit&quot;: &quot;0.40&quot;,
+      &quot;market_value&quot;: &quot;300.00&quot;,
+      &quot;sector&quot;: &quot;Broad Market&quot;,
+      &quot;weight&quot;: &quot;0.3000&quot;
+    },
+    {
+      &quot;breached&quot;: false,
+      &quot;limit&quot;: &quot;0.30&quot;,
+      &quot;market_value&quot;: &quot;150.00&quot;,
+      &quot;sector&quot;: &quot;Healthcare&quot;,
+      &quot;weight&quot;: &quot;0.1500&quot;
+    },
+    {
+      &quot;breached&quot;: false,
+      &quot;limit&quot;: &quot;0.60&quot;,
+      &quot;market_value&quot;: &quot;550.00&quot;,
+      &quot;sector&quot;: &quot;Technology&quot;,
+      &quot;weight&quot;: &quot;0.5500&quot;
+    }
+  ],
+  &quot;sector_limit_breaches&quot;: [],
+  &quot;total_market_value&quot;: &quot;1000.00&quot;
+}</pre></section><section><h2>validation</h2><pre>{
+  &quot;failed&quot;: [],
+  &quot;next_fixed_action&quot;: &quot;P2_ACTUAL_PAPER_BROKER_READ_VALIDATION&quot;,
+  &quot;status&quot;: &quot;PASS&quot;
+}</pre></section><section><h2>operations</h2><pre>{
+  &quot;checks&quot;: {
+    &quot;broker_actions_unavailable&quot;: true,
+    &quot;config_safe&quot;: true,
+    &quot;csv_export_created&quot;: true,
+    &quot;daily_report_created&quot;: true,
+    &quot;dashboard_read_only&quot;: true,
+    &quot;data_quality_pass&quot;: true,
+    &quot;incident_manifest_created&quot;: true,
+    &quot;protected_changes_zero&quot;: true,
+    &quot;replay_created&quot;: true,
+    &quot;replay_orders_zero&quot;: true,
+    &quot;submission_off&quot;: true
+  },
+  &quot;status&quot;: &quot;PASS&quot;
+}</pre></section>
+</body>
+</html>

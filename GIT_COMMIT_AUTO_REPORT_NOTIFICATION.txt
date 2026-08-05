@@ -1,0 +1,3 @@
+git add reporting_notification tools/run_auto_report_notification.py tools/test_auto_report_notification.py tools/verify_auto_report_notification.py release/auto_report_notification RUN_AUTO_REPORT_NOTIFICATION.ps1 RUN_AUTO_REPORT_NOTIFICATION_TEST_AND_VERIFY.ps1 AUTO_REPORT_NOTIFICATION_MANIFEST.json GIT_COMMIT_AUTO_REPORT_NOTIFICATION.txt
+git commit -m "Add automatic reports and notification preview framework"
+git push origin main
