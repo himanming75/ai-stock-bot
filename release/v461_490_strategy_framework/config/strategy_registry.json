@@ -1,0 +1,53 @@
+{
+  "strategies": [
+    {
+      "name": "momentum",
+      "enabled": true,
+      "weight": "1.00",
+      "config": {
+        "lookback": 5
+      }
+    },
+    {
+      "name": "mean_reversion",
+      "enabled": true,
+      "weight": "0.75",
+      "config": {
+        "window": 5,
+        "threshold_percent": "0.50"
+      }
+    },
+    {
+      "name": "breakout",
+      "enabled": true,
+      "weight": "1.00",
+      "config": {
+        "window": 5
+      }
+    },
+    {
+      "name": "trend",
+      "enabled": true,
+      "weight": "1.25",
+      "config": {
+        "fast_window": 3,
+        "slow_window": 7
+      }
+    },
+    {
+      "name": "gap",
+      "enabled": true,
+      "weight": "0.50",
+      "config": {
+        "threshold_percent": "0.50"
+      }
+    }
+  ],
+  "voting": {
+    "minimum_combined_score": "5.00"
+  },
+  "market_network_enabled": false,
+  "broker_network_enabled": false,
+  "order_ticket_generation_enabled": false,
+  "order_submission_enabled": false
+}

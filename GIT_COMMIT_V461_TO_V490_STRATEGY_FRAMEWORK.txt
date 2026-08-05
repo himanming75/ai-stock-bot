@@ -1,0 +1,10 @@
+git add strategy_framework
+git add tools/run_v461_to_v490_strategy_framework.py
+git add tools/test_v461_to_v490_strategy_framework.py
+git add release/v461_490_strategy_framework
+git add RUN_V461_TO_V490_STRATEGY_FRAMEWORK.ps1
+git add RUN_V461_TO_V490_STRATEGY_FRAMEWORK_TEST.ps1
+git add V461_TO_V490_STRATEGY_FRAMEWORK_MANIFEST.json
+git add GIT_COMMIT_V461_TO_V490_STRATEGY_FRAMEWORK.txt
+git commit -m "Add V461-V490 strategy framework"
+git push origin main

@@ -1,0 +1,42 @@
+{
+  "blockers": [],
+  "strategies": [
+    {
+      "config": {
+        "lookback": 5
+      },
+      "name": "momentum",
+      "weight": "1.00"
+    },
+    {
+      "config": {
+        "threshold_percent": "0.50",
+        "window": 5
+      },
+      "name": "mean_reversion",
+      "weight": "0.75"
+    },
+    {
+      "config": {
+        "window": 5
+      },
+      "name": "breakout",
+      "weight": "1.00"
+    },
+    {
+      "config": {
+        "fast_window": 3,
+        "slow_window": 7
+      },
+      "name": "trend",
+      "weight": "1.25"
+    },
+    {
+      "config": {
+        "threshold_percent": "0.50"
+      },
+      "name": "gap",
+      "weight": "0.50"
+    }
+  ]
+}

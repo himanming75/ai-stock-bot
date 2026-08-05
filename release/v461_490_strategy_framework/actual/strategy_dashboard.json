@@ -1,0 +1,173 @@
+{
+  "broker_write": false,
+  "candidate_signal_count": 2,
+  "enabled_strategy_count": 5,
+  "generated_at": "2026-08-05T19:55:28.241704+00:00",
+  "live_orders_submitted": 0,
+  "order_ticket_created": false,
+  "paper_orders_submitted": 0,
+  "status": "PASS",
+  "strategy_health": [
+    {
+      "evaluation_count": 3,
+      "health_status": "PASS",
+      "insufficient_data_count": 0,
+      "pass_count": 3,
+      "strategy": "momentum"
+    },
+    {
+      "evaluation_count": 3,
+      "health_status": "PASS",
+      "insufficient_data_count": 0,
+      "pass_count": 3,
+      "strategy": "mean_reversion"
+    },
+    {
+      "evaluation_count": 3,
+      "health_status": "PASS",
+      "insufficient_data_count": 0,
+      "pass_count": 3,
+      "strategy": "breakout"
+    },
+    {
+      "evaluation_count": 3,
+      "health_status": "PASS",
+      "insufficient_data_count": 0,
+      "pass_count": 3,
+      "strategy": "trend"
+    },
+    {
+      "evaluation_count": 3,
+      "health_status": "PASS",
+      "insufficient_data_count": 0,
+      "pass_count": 3,
+      "strategy": "gap"
+    }
+  ],
+  "symbol_count": 3,
+  "symbol_decisions": [
+    {
+      "combined_score": "12.16886349907178035341198644",
+      "contributor_count": 5,
+      "contributors": [
+        {
+          "score": "31.21951219512195121951219512",
+          "signal": "BUY",
+          "strategy": "momentum",
+          "weight": "1.00"
+        },
+        {
+          "score": "13.81162478419336274697870708",
+          "signal": "SELL",
+          "strategy": "mean_reversion",
+          "weight": "0.75"
+        },
+        {
+          "score": "11.41769743101807802093244529",
+          "signal": "BUY",
+          "strategy": "breakout",
+          "weight": "1.00"
+        },
+        {
+          "score": "17.98511576626240352811466310",
+          "signal": "BUY",
+          "strategy": "trend",
+          "weight": "1.25"
+        },
+        {
+          "score": "0",
+          "signal": "HOLD",
+          "strategy": "gap",
+          "weight": "0.50"
+        }
+      ],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "signal": "BUY",
+      "status": "PASS",
+      "symbol": "SPY"
+    },
+    {
+      "combined_score": "-5.372508829020857515276827447",
+      "contributor_count": 5,
+      "contributors": [
+        {
+          "score": "16.12903225806451612903225806",
+          "signal": "SELL",
+          "strategy": "momentum",
+          "weight": "1.00"
+        },
+        {
+          "score": "5.704971475142624286878565607",
+          "signal": "BUY",
+          "strategy": "mean_reversion",
+          "weight": "0.75"
+        },
+        {
+          "score": "0",
+          "signal": "HOLD",
+          "strategy": "breakout",
+          "weight": "1.00"
+        },
+        {
+          "score": "9.860788863109048723897911717",
+          "signal": "SELL",
+          "strategy": "trend",
+          "weight": "1.25"
+        },
+        {
+          "score": "0",
+          "signal": "HOLD",
+          "strategy": "gap",
+          "weight": "0.50"
+        }
+      ],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "signal": "SELL",
+      "status": "PASS",
+      "symbol": "QQQ"
+    },
+    {
+      "combined_score": "-0.2616657621655479716310788311",
+      "contributor_count": 5,
+      "contributors": [
+        {
+          "score": "0.9990009990009990009990009990",
+          "signal": "SELL",
+          "strategy": "momentum",
+          "weight": "1.00"
+        },
+        {
+          "score": "0.3998400639744102359056377449",
+          "signal": "HOLD",
+          "strategy": "mean_reversion",
+          "weight": "0.75"
+        },
+        {
+          "score": "0",
+          "signal": "HOLD",
+          "strategy": "breakout",
+          "weight": "1.00"
+        },
+        {
+          "score": "0.1427959445951734970726829931",
+          "signal": "SELL",
+          "strategy": "trend",
+          "weight": "1.25"
+        },
+        {
+          "score": "0",
+          "signal": "HOLD",
+          "strategy": "gap",
+          "weight": "0.50"
+        }
+      ],
+      "order_submission_enabled": false,
+      "order_ticket_created": false,
+      "signal": "HOLD",
+      "status": "PASS",
+      "symbol": "IWM"
+    }
+  ]
+}
