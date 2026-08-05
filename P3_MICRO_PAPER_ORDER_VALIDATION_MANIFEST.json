@@ -1,0 +1,28 @@
+{
+  "stage": "P3_MICRO_PAPER_ORDER_VALIDATION",
+  "micro_order": {
+    "symbol_default": "SPY",
+    "notional_default": "5",
+    "side": "buy",
+    "type": "market",
+    "time_in_force": "day"
+  },
+  "safety_controls": [
+    "Paper endpoint exact match",
+    "$5 maximum notional",
+    "SPY QQQ IWM allowlist",
+    "Market open",
+    "Active account",
+    "Tradable and fractionable asset",
+    "Deterministic client_order_id",
+    "Duplicate prevention",
+    "One-use nonce token",
+    "Ticket SHA256 binding",
+    "10-minute expiration",
+    "Read-back reconciliation"
+  ],
+  "submission_during_install": false,
+  "submission_during_test": false,
+  "actual_paper_orders_submitted_during_build": 0,
+  "actual_live_orders_submitted_during_build": 0
+}

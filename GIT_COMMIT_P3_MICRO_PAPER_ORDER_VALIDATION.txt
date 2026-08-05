@@ -1,0 +1,14 @@
+git add p3_micro_paper
+git add tools/create_p3_micro_paper_ticket.py
+git add tools/create_p3_micro_approval_token.py
+git add tools/run_p3_micro_paper_validation.py
+git add tools/test_p3_micro_paper_validation.py
+git add release/p3_micro_paper
+git add RUN_P3_MICRO_PAPER_TEST_ONLY.ps1
+git add CREATE_P3_MICRO_TICKET.ps1
+git add CREATE_P3_MICRO_APPROVAL_TOKEN.ps1
+git add RUN_ACTUAL_P3_MICRO_PAPER_WITH_NONCE.ps1
+git add P3_MICRO_PAPER_ORDER_VALIDATION_MANIFEST.json
+git add GIT_COMMIT_P3_MICRO_PAPER_ORDER_VALIDATION.txt
+git commit -m "Add P3 micro paper order validation"
+git push origin main

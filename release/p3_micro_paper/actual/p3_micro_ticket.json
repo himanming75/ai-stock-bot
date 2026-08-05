@@ -1,0 +1,22 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "blocked": false,
+  "blockers": [],
+  "client_order_id": "p3m-5b8f7dbd8192e266ec27b8fa",
+  "created_at": "2026-08-05T17:46:18.751931+00:00",
+  "idempotency_key": "5b8f7dbd8192e266ec27b8fa379f57adc8b91e88e7a8a4e06bead08aa123ebb7",
+  "payload": {
+    "client_order_id": "p3m-5b8f7dbd8192e266ec27b8fa",
+    "notional": "5",
+    "side": "buy",
+    "symbol": "SPY",
+    "time_in_force": "day",
+    "type": "market"
+  },
+  "stage": "P3_MICRO_PAPER_TICKET",
+  "ticket_id": "p3micro_5b8f7dbd8192e266ec27"
+}
