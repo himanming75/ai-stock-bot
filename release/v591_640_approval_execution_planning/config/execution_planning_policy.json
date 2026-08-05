@@ -1,0 +1,20 @@
+{
+  "require_market_open": true,
+  "max_order_notional": "500.00",
+  "max_spread_bps": "25",
+  "minimum_daily_dollar_volume": "10000000",
+  "max_slippage_bps": "20",
+  "max_volatility_percent": "5.00",
+  "child_order_count": 3,
+  "default_order_type": "limit",
+  "time_in_force": "day",
+  "maximum_retry_attempts": 2,
+  "retry_backoff_seconds": 5,
+  "cancel_after_seconds": 120,
+  "maximum_replacements": 1,
+  "submission_enabled": false,
+  "broker_network_enabled": false,
+  "order_ticket_generation_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false
+}

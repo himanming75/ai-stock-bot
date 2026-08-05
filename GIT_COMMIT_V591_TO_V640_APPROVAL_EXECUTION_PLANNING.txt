@@ -1,0 +1,10 @@
+git add approval_execution_planning
+git add tools/run_v591_to_v640_approval_execution_planning.py
+git add tools/test_v591_to_v640_approval_execution_planning.py
+git add release/v591_640_approval_execution_planning
+git add RUN_V591_TO_V640_APPROVAL_EXECUTION_PLANNING.ps1
+git add RUN_V591_TO_V640_APPROVAL_EXECUTION_PLANNING_TEST.ps1
+git add V591_TO_V640_APPROVAL_EXECUTION_PLANNING_MANIFEST.json
+git add GIT_COMMIT_V591_TO_V640_APPROVAL_EXECUTION_PLANNING.txt
+git commit -m "Add V591-V640 approval execution planning"
+git push origin main

@@ -1,0 +1,26 @@
+{
+  "fixture_only": true,
+  "symbols": {
+    "SPY": {
+      "is_open": true,
+      "estimated_spread_bps": "2",
+      "estimated_slippage_bps": "3",
+      "average_daily_dollar_volume": "25000000000",
+      "volatility_percent": "1.20"
+    },
+    "QQQ": {
+      "is_open": true,
+      "estimated_spread_bps": "3",
+      "estimated_slippage_bps": "4",
+      "average_daily_dollar_volume": "18000000000",
+      "volatility_percent": "1.50"
+    },
+    "IWM": {
+      "is_open": true,
+      "estimated_spread_bps": "5",
+      "estimated_slippage_bps": "6",
+      "average_daily_dollar_volume": "4000000000",
+      "volatility_percent": "1.80"
+    }
+  }
+}
