@@ -1,0 +1,6 @@
+{
+  "dynamic_account_rows": true,
+  "dynamic_broker_rows": true,
+  "registry_driven": true,
+  "schema_version": 1
+}

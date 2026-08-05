@@ -1,0 +1,10 @@
+git add dual_account_operations
+git add tools/run_v5201_to_v5400_dual_account_operations.py
+git add tools/test_v5201_to_v5400_dual_account_operations.py
+git add release/v5201_5400_dual_account_operations
+git add RUN_V5201_TO_V5400_DUAL_ACCOUNT_OPERATIONS.ps1
+git add RUN_V5201_TO_V5400_DUAL_ACCOUNT_OPERATIONS_TEST.ps1
+git add V5201_TO_V5400_DUAL_ACCOUNT_OPERATIONS_MANIFEST.json
+git add GIT_COMMIT_V5201_TO_V5400_DUAL_ACCOUNT_OPERATIONS.txt
+git commit -m "Add V5201-V5400 dual account operations dashboard"
+git push origin main

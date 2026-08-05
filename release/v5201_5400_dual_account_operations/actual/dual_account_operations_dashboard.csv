@@ -1,0 +1,3 @@
+account_key,actual_connection_validated,alias,broker,cash,configured_read_allowed,configured_write_allowed,effective_read_allowed,effective_write_allowed,environment,equity,health_status,key_issuance_pending,kill_switch_required,role,strategy_execution_allowed,unrealized_pl
+ALPACA_PAPER_PRIMARY,True,Alpaca Paper,ALPACA,92000.00,True,False,True,False,PAPER,100014.45,HEALTHY,False,False,PAPER_EXECUTION,True,14.45
+ETRADE_PRIMARY,False,E*TRADE Primary,ETRADE,0,False,False,False,False,PRODUCTION,0,BLOCKED_PENDING_KEYS,True,True,ACTUAL_READ_ONLY,False,0

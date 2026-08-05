@@ -1,0 +1,235 @@
+{
+  "account_dashboard_ready": true,
+  "active_profile": "PAPER_TEST",
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_etrade_connection_validated": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "all_stop_profile_ready": true,
+  "broker_write_enabled": false,
+  "certification_fingerprint": "4de7ea2e5fa3a096225ca41416b2af6c37688aeff69a20e07979cf3eb1bbcb98",
+  "dashboard": {
+    "account_count": 2,
+    "accounts": [
+      {
+        "account_key": "ALPACA_PAPER_PRIMARY",
+        "actual_connection_validated": true,
+        "alias": "Alpaca Paper",
+        "broker": "ALPACA",
+        "cash": "92000.00",
+        "configured_read_allowed": true,
+        "configured_write_allowed": false,
+        "effective_read_allowed": true,
+        "effective_write_allowed": false,
+        "environment": "PAPER",
+        "equity": "100014.45",
+        "health_status": "HEALTHY",
+        "key_issuance_pending": false,
+        "kill_switch_required": false,
+        "role": "PAPER_EXECUTION",
+        "strategy_execution_allowed": true,
+        "unrealized_pl": "14.45"
+      },
+      {
+        "account_key": "ETRADE_PRIMARY",
+        "actual_connection_validated": false,
+        "alias": "E*TRADE Primary",
+        "broker": "ETRADE",
+        "cash": "0",
+        "configured_read_allowed": false,
+        "configured_write_allowed": false,
+        "effective_read_allowed": false,
+        "effective_write_allowed": false,
+        "environment": "PRODUCTION",
+        "equity": "0",
+        "health_status": "BLOCKED_PENDING_KEYS",
+        "key_issuance_pending": true,
+        "kill_switch_required": true,
+        "role": "ACTUAL_READ_ONLY",
+        "strategy_execution_allowed": false,
+        "unrealized_pl": "0"
+      }
+    ],
+    "active_profile": "PAPER_TEST",
+    "actual_account_count": 1,
+    "broker_write_globally_enabled": false,
+    "effective_read_account_count": 1,
+    "effective_write_account_count": 0,
+    "global_kill_switch": false,
+    "paper_account_count": 1
+  },
+  "dual_monitor_profile_ready": true,
+  "etrade_connection_validation_guard_ready": true,
+  "etrade_key_issuance_pending": true,
+  "etrade_read_only_profile_ready": true,
+  "existing_alpaca_controller_modified": false,
+  "existing_etrade_modules_modified": false,
+  "future_multi_account_dashboard_ready": true,
+  "future_multi_broker_dashboard_ready": true,
+  "generated_at": "2026-08-05T23:25:48.998065+00:00",
+  "loaded_runtime_profile": "PAPER_TEST",
+  "maintenance_profile_ready": true,
+  "next_fixed_development": "V5401_TO_V5600_DUAL_ACCOUNT_OPERATIONS_CONTROLLER_AND_FINAL_CERTIFICATION",
+  "operator_ack_guard_ready": true,
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "paper_test_profile_ready": true,
+  "profile_catalog": [
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Block all account read and write routes.",
+      "global_read_allowed": false,
+      "global_write_allowed": false,
+      "name": "ALL_STOP",
+      "operator_ack_required": false
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Monitor Alpaca Paper and E*TRADE together. All write routes are blocked.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "DUAL_MONITOR",
+      "operator_ack_required": true
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "E*TRADE actual account visibility only. Actual connection validation is required.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "ETRADE_READ_ONLY",
+      "operator_ack_required": true
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Configuration and health inspection only.",
+      "global_read_allowed": false,
+      "global_write_allowed": false,
+      "name": "MAINTENANCE",
+      "operator_ack_required": false
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": true,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Alpaca Paper monitoring and strategy testing. Order submission remains separately approved.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "PAPER_TEST",
+      "operator_ack_required": false
+    }
+  ],
+  "profile_count": 5,
+  "runtime_profile_store_ready": true,
+  "safe_profile_transition_ready": true,
+  "stage": "V5201_TO_V5400_DUAL_ACCOUNT_OPERATIONS_DASHBOARD_AND_POLICY_PROFILES",
+  "status": "PASS",
+  "transition_scenarios": {
+    "all_stop_to_etrade_validated": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "all_stop_to_etrade_without_ack": {
+      "allowed": false,
+      "reason": "OPERATOR_ACK_REQUIRED",
+      "status": "BLOCKED"
+    },
+    "all_stop_to_etrade_without_validation": {
+      "allowed": false,
+      "reason": "ETRADE_ACTUAL_CONNECTION_NOT_VALIDATED",
+      "status": "BLOCKED"
+    },
+    "all_stop_to_paper_test": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "paper_test_to_all_stop": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "paper_test_to_etrade_direct": {
+      "allowed": false,
+      "reason": "UNSAFE_DIRECT_TRANSITION",
+      "status": "BLOCKED"
+    }
+  },
+  "validation_mode": "FIXTURE_DUAL_ACCOUNT_OPERATIONS"
+}

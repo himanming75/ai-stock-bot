@@ -1,0 +1,119 @@
+{
+  "items": [
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Block all account read and write routes.",
+      "global_read_allowed": false,
+      "global_write_allowed": false,
+      "name": "ALL_STOP",
+      "operator_ack_required": false
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Monitor Alpaca Paper and E*TRADE together. All write routes are blocked.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "DUAL_MONITOR",
+      "operator_ack_required": true
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "E*TRADE actual account visibility only. Actual connection validation is required.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "ETRADE_READ_ONLY",
+      "operator_ack_required": true
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Configuration and health inspection only.",
+      "global_read_allowed": false,
+      "global_write_allowed": false,
+      "name": "MAINTENANCE",
+      "operator_ack_required": false
+    },
+    {
+      "account_policies": [
+        {
+          "account_key": "ALPACA_PAPER_PRIMARY",
+          "kill_switch_required": false,
+          "read_allowed": true,
+          "strategy_execution_allowed": true,
+          "write_allowed": false
+        },
+        {
+          "account_key": "ETRADE_PRIMARY",
+          "kill_switch_required": true,
+          "read_allowed": false,
+          "strategy_execution_allowed": false,
+          "write_allowed": false
+        }
+      ],
+      "description": "Alpaca Paper monitoring and strategy testing. Order submission remains separately approved.",
+      "global_read_allowed": true,
+      "global_write_allowed": false,
+      "name": "PAPER_TEST",
+      "operator_ack_required": false
+    }
+  ]
+}

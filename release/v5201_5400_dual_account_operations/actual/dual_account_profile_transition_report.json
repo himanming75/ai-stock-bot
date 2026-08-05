@@ -1,0 +1,34 @@
+{
+  "scenarios": {
+    "all_stop_to_etrade_validated": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "all_stop_to_etrade_without_ack": {
+      "allowed": false,
+      "reason": "OPERATOR_ACK_REQUIRED",
+      "status": "BLOCKED"
+    },
+    "all_stop_to_etrade_without_validation": {
+      "allowed": false,
+      "reason": "ETRADE_ACTUAL_CONNECTION_NOT_VALIDATED",
+      "status": "BLOCKED"
+    },
+    "all_stop_to_paper_test": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "paper_test_to_all_stop": {
+      "allowed": true,
+      "reason": "TRANSITION_APPROVED",
+      "status": "PASS"
+    },
+    "paper_test_to_etrade_direct": {
+      "allowed": false,
+      "reason": "UNSAFE_DIRECT_TRANSITION",
+      "status": "BLOCKED"
+    }
+  }
+}

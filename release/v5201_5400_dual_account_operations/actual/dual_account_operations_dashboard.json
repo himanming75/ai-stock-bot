@@ -1,0 +1,50 @@
+{
+  "account_count": 2,
+  "accounts": [
+    {
+      "account_key": "ALPACA_PAPER_PRIMARY",
+      "actual_connection_validated": true,
+      "alias": "Alpaca Paper",
+      "broker": "ALPACA",
+      "cash": "92000.00",
+      "configured_read_allowed": true,
+      "configured_write_allowed": false,
+      "effective_read_allowed": true,
+      "effective_write_allowed": false,
+      "environment": "PAPER",
+      "equity": "100014.45",
+      "health_status": "HEALTHY",
+      "key_issuance_pending": false,
+      "kill_switch_required": false,
+      "role": "PAPER_EXECUTION",
+      "strategy_execution_allowed": true,
+      "unrealized_pl": "14.45"
+    },
+    {
+      "account_key": "ETRADE_PRIMARY",
+      "actual_connection_validated": false,
+      "alias": "E*TRADE Primary",
+      "broker": "ETRADE",
+      "cash": "0",
+      "configured_read_allowed": false,
+      "configured_write_allowed": false,
+      "effective_read_allowed": false,
+      "effective_write_allowed": false,
+      "environment": "PRODUCTION",
+      "equity": "0",
+      "health_status": "BLOCKED_PENDING_KEYS",
+      "key_issuance_pending": true,
+      "kill_switch_required": true,
+      "role": "ACTUAL_READ_ONLY",
+      "strategy_execution_allowed": false,
+      "unrealized_pl": "0"
+    }
+  ],
+  "active_profile": "PAPER_TEST",
+  "actual_account_count": 1,
+  "broker_write_globally_enabled": false,
+  "effective_read_account_count": 1,
+  "effective_write_account_count": 0,
+  "global_kill_switch": false,
+  "paper_account_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "account_count": 2,
+  "active_profile": "PAPER_TEST",
+  "broker_write": false,
+  "effective_read_account_count": 1,
+  "effective_write_account_count": 0,
+  "etrade_key_issuance_pending": true,
+  "status": "PASS"
+}
