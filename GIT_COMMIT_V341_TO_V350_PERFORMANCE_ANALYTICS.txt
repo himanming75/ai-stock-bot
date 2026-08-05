@@ -1,0 +1,10 @@
+git add performance_analytics
+git add tools/run_v341_to_v350_performance_analytics.py
+git add tools/test_v341_to_v350_performance_analytics.py
+git add release/v341_350_performance_analytics
+git add RUN_V341_TO_V350_PERFORMANCE_ANALYTICS.ps1
+git add RUN_V341_TO_V350_PERFORMANCE_ANALYTICS_TEST.ps1
+git add V341_TO_V350_PERFORMANCE_ANALYTICS_MANIFEST.json
+git add GIT_COMMIT_V341_TO_V350_PERFORMANCE_ANALYTICS.txt
+git commit -m "Add V341-V350 performance analytics"
+git push origin main

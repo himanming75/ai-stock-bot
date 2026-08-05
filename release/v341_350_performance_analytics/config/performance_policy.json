@@ -1,0 +1,10 @@
+{
+  "annualization_periods": 252,
+  "risk_free_rate_percent": "0",
+  "minimum_observations_for_stable_metrics": 30,
+  "trade_level_statistics_require_realized_trade_ledger": true,
+  "external_network_allowed": false,
+  "broker_write_allowed": false,
+  "paper_submission_allowed": false,
+  "live_submission_allowed": false
+}

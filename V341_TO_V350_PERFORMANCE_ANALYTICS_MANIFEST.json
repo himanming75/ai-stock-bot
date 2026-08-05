@@ -1,0 +1,21 @@
+{
+  "stage": "V341_TO_V350_PERFORMANCE_ANALYTICS",
+  "stages": [
+    "V341_EQUITY_CURVE",
+    "V342_PERIOD_PNL_RETURNS",
+    "V343_PERIOD_AGGREGATION",
+    "V344_POSITIVE_NEGATIVE_PERIODS",
+    "V345_PROFIT_FACTOR_READINESS",
+    "V346_EXPECTANCY_READINESS",
+    "V347_CONSECUTIVE_STREAKS",
+    "V348_SHARPE_RATIO",
+    "V349_SORTINO_AND_DRAWDOWN",
+    "V350_PERFORMANCE_DASHBOARD_LEDGER"
+  ],
+  "controller_files_modified": false,
+  "external_network_used_during_build": false,
+  "broker_write_allowed": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0,
+  "next_fixed_development": "V351_TO_V360_SYSTEM_HEALTH_MONITORING"
+}

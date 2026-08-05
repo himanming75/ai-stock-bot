@@ -1,0 +1,20 @@
+{
+  "annualized_sharpe_ratio": "0",
+  "annualized_sortino_ratio": "0",
+  "broker_write": false,
+  "generated_at": "2026-08-05T19:16:07.004720+00:00",
+  "live_orders_submitted": 0,
+  "maximum_drawdown_percent": "0",
+  "observation_count": 2,
+  "paper_orders_submitted": 0,
+  "positive_period_rate_percent": "100",
+  "risk_level": "NORMAL",
+  "status": "PASS_WITH_WARNINGS",
+  "total_pnl": "0.02",
+  "total_return_percent": "0.00001999793821257028400371921655",
+  "trade_statistics_status": "INSUFFICIENT_REALIZED_TRADE_DATA",
+  "warnings": [
+    "LIMITED_SAMPLE_SIZE_FOR_RISK_ADJUSTED_METRICS",
+    "INSUFFICIENT_REALIZED_TRADE_DATA_FOR_WIN_RATE_PROFIT_FACTOR"
+  ]
+}
