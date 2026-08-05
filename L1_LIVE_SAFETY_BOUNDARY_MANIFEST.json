@@ -1,0 +1,25 @@
+{
+  "stage": "L1",
+  "features": [
+    "Credential Fingerprint Separation",
+    "Credential Redaction",
+    "Dedicated Live Kill Switch",
+    "Maximum Order Notional",
+    "Maximum Daily Orders",
+    "Maximum Daily Loss",
+    "Maximum Total Exposure",
+    "Maximum Position Count",
+    "Symbol Allowlist",
+    "Account Allowlist",
+    "Two Step Confirmation Gate",
+    "Paper Completion Gate",
+    "Paper Live Endpoint Separation"
+  ],
+  "live_read_only_allowed": false,
+  "live_activation_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "next_fixed_stage": "L2_AFTER_P5_ACTUAL_PAPER_COMPLETION"
+}

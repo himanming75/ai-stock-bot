@@ -1,0 +1,73 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "checks": {
+    "confirmation_gate_safe": true,
+    "credentials_safe": true,
+    "live_endpoint_valid": true,
+    "live_kill_switch_active": true,
+    "paper_completion_gate_present": true,
+    "paper_endpoint_valid": true,
+    "risk_policy_safe": true
+  },
+  "confirmation_gate": {
+    "checks": {
+      "confirmation_one_absent": true,
+      "confirmation_two_absent": true,
+      "live_network_disabled": true,
+      "live_write_disabled": true
+    },
+    "failed": [],
+    "live_activation_allowed": false,
+    "valid": true
+  },
+  "credentials": {
+    "checks": {
+      "live_key_present_or_deferred": true,
+      "live_secret_present_or_deferred": true,
+      "paper_key_present": true,
+      "paper_live_key_separated": true,
+      "paper_live_secret_separated": true,
+      "paper_secret_present": true,
+      "raw_credentials_not_returned": true
+    },
+    "failed": [],
+    "live_key_fingerprint": "",
+    "live_secret_fingerprint": "",
+    "paper_key_fingerprint": "034a2f2f5fad2b7d",
+    "paper_secret_fingerprint": "85bba018aec10ccf",
+    "valid": true
+  },
+  "failed": [],
+  "live_activation_allowed": false,
+  "live_kill_switch": {
+    "live_kill_switch_active": true,
+    "reason": "L1_DEFAULT_ACTIVE",
+    "updated_at": "2026-08-05T05:28:07.997093+00:00"
+  },
+  "live_network_enabled": false,
+  "live_read_only_allowed": false,
+  "live_write_enabled": false,
+  "next_fixed_stage": "L2_LIVE_READ_ONLY_QUALIFICATION_AFTER_PAPER_COMPLETE",
+  "paper_completion": {
+    "certificate_present": false,
+    "paper_complete": false,
+    "reason": "P5_ACTUAL_QUALIFICATION_MISSING"
+  },
+  "risk_policy": {
+    "checks": {
+      "allowed_account_ids_restricted": true,
+      "allowed_symbols_restricted": true,
+      "maximum_daily_loss_safe": true,
+      "maximum_daily_orders_safe": true,
+      "maximum_order_notional_safe": true,
+      "maximum_position_count_safe": true,
+      "maximum_total_exposure_safe": true
+    },
+    "failed": [],
+    "valid": true
+  },
+  "stage": "L1",
+  "state": "LIVE_SAFETY_BOUNDARY_PREPARED",
+  "status": "PASS"
+}
