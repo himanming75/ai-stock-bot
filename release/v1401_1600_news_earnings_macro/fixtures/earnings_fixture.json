@@ -1,0 +1,21 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "symbol": "QQQ",
+      "actual_eps": 1.08,
+      "expected_eps": 1.0,
+      "actual_revenue": 104.0,
+      "expected_revenue": 100.0,
+      "guidance_score": 0.2
+    },
+    {
+      "symbol": "IWM",
+      "actual_eps": 0.98,
+      "expected_eps": 1.0,
+      "actual_revenue": 99.0,
+      "expected_revenue": 100.0,
+      "guidance_score": -0.05
+    }
+  ]
+}

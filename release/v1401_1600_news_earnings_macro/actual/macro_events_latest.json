@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "actual": 2.9,
+      "event_type": "CPI",
+      "expected": 3.0,
+      "importance": 0.9,
+      "macro_score": 0.009,
+      "surprise": -0.03333333
+    },
+    {
+      "actual": 185000,
+      "event_type": "NFP",
+      "expected": 180000,
+      "importance": 0.8,
+      "macro_score": 0.004,
+      "surprise": 0.02777778
+    },
+    {
+      "actual": 4.5,
+      "event_type": "FED_RATE",
+      "expected": 4.5,
+      "importance": 1.0,
+      "macro_score": -0.0,
+      "surprise": 0.0
+    }
+  ]
+}

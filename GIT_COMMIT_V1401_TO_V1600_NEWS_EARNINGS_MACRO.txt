@@ -1,0 +1,10 @@
+git add news_earnings_macro_intelligence
+git add tools/run_v1401_to_v1600_news_earnings_macro.py
+git add tools/test_v1401_to_v1600_news_earnings_macro.py
+git add release/v1401_1600_news_earnings_macro
+git add RUN_V1401_TO_V1600_NEWS_EARNINGS_MACRO.ps1
+git add RUN_V1401_TO_V1600_NEWS_EARNINGS_MACRO_TEST.ps1
+git add V1401_TO_V1600_NEWS_EARNINGS_MACRO_MANIFEST.json
+git add GIT_COMMIT_V1401_TO_V1600_NEWS_EARNINGS_MACRO.txt
+git commit -m "Add V1401-V1600 news earnings macro intelligence"
+git push origin main

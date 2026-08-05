@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "headline": "ETF market shows strong growth as risk appetite improves",
+      "impact_score": 0.3192,
+      "importance": 0.6,
+      "sentiment_score": 0.38,
+      "source": "offline_fixture",
+      "summary": "Broad market participation remains constructive",
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "urgency_score": 0.0
+    },
+    {
+      "headline": "Small-cap outlook mixed as investors watch rates",
+      "impact_score": 0.0,
+      "importance": 0.5,
+      "sentiment_score": 0.0,
+      "source": "offline_fixture",
+      "summary": "No urgent event; sentiment remains neutral",
+      "symbols": [
+        "IWM"
+      ],
+      "urgency_score": 0.5
+    }
+  ]
+}

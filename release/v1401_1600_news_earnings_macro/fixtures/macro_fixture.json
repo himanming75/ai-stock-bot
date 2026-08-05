@@ -1,0 +1,23 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "event_type": "CPI",
+      "actual": 2.9,
+      "expected": 3.0,
+      "importance": 0.9
+    },
+    {
+      "event_type": "NFP",
+      "actual": 185000,
+      "expected": 180000,
+      "importance": 0.8
+    },
+    {
+      "event_type": "FED_RATE",
+      "actual": 4.5,
+      "expected": 4.5,
+      "importance": 1.0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "fixture_only": true,
+  "items": [
+    {
+      "headline": "ETF market shows strong growth as risk appetite improves",
+      "summary": "Broad market participation remains constructive",
+      "source": "offline_fixture",
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "importance": 0.6
+    },
+    {
+      "headline": "Small-cap outlook mixed as investors watch rates",
+      "summary": "No urgent event; sentiment remains neutral",
+      "source": "offline_fixture",
+      "symbols": [
+        "IWM"
+      ],
+      "importance": 0.5
+    }
+  ]
+}

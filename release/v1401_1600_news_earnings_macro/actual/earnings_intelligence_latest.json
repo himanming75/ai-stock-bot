@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "actual_eps": 1.08,
+      "actual_revenue": 104.0,
+      "earnings_label": "MIXED_OR_IN_LINE",
+      "earnings_score": 0.09,
+      "eps_surprise": 0.08,
+      "expected_eps": 1.0,
+      "expected_revenue": 100.0,
+      "guidance_score": 0.2,
+      "revenue_surprise": 0.04,
+      "symbol": "QQQ"
+    },
+    {
+      "actual_eps": 0.98,
+      "actual_revenue": 99.0,
+      "earnings_label": "MIXED_OR_IN_LINE",
+      "earnings_score": -0.0225,
+      "eps_surprise": -0.02,
+      "expected_eps": 1.0,
+      "expected_revenue": 100.0,
+      "guidance_score": -0.05,
+      "revenue_surprise": -0.01,
+      "symbol": "IWM"
+    }
+  ]
+}

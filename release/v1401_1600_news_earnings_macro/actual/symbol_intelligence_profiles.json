@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "confidence": 62.290341,
+      "earnings_event_count": 1,
+      "earnings_score": 0.09,
+      "event_risk": 0.072,
+      "intelligence_score": 0.16451704,
+      "intelligence_signal": "NEUTRAL",
+      "macro_score": 0.00418519,
+      "news_item_count": 1,
+      "news_score": 0.3192,
+      "rank": 1,
+      "symbol": "QQQ"
+    },
+    {
+      "confidence": 59.163259,
+      "earnings_event_count": 1,
+      "earnings_score": -0.0225,
+      "event_risk": 0.5,
+      "intelligence_score": -0.00816296,
+      "intelligence_signal": "NEUTRAL",
+      "macro_score": 0.00418519,
+      "news_item_count": 1,
+      "news_score": 0.0,
+      "rank": 2,
+      "symbol": "IWM"
+    },
+    {
+      "confidence": 45.570341,
+      "earnings_event_count": 0,
+      "earnings_score": 0.0,
+      "event_risk": 0.0,
+      "intelligence_score": 0.12851704,
+      "intelligence_signal": "NEUTRAL",
+      "macro_score": 0.00418519,
+      "news_item_count": 1,
+      "news_score": 0.3192,
+      "rank": 3,
+      "symbol": "SPY"
+    }
+  ]
+}
