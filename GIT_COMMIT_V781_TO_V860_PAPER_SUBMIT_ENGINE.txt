@@ -1,0 +1,10 @@
+git add paper_submit_engine
+git add tools/run_v781_to_v860_paper_submit_engine.py
+git add tools/test_v781_to_v860_paper_submit_engine.py
+git add release/v781_860_paper_submit_engine
+git add RUN_V781_TO_V860_PAPER_SUBMIT_ENGINE.ps1
+git add RUN_V781_TO_V860_PAPER_SUBMIT_ENGINE_TEST.ps1
+git add V781_TO_V860_PAPER_SUBMIT_ENGINE_MANIFEST.json
+git add GIT_COMMIT_V781_TO_V860_PAPER_SUBMIT_ENGINE.txt
+git commit -m "Add V781-V860 paper submit engine"
+git push origin main

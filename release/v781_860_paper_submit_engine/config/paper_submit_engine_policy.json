@@ -1,0 +1,8 @@
+{
+  "engine_mode": "dry_run",
+  "network_enabled": false,
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "paper_endpoint": "https://paper-api.alpaca.markets/v2/orders"
+}

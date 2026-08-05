@@ -1,0 +1,12 @@
+{
+  "fixture_only": true,
+  "default_response": {
+    "status_code": 201,
+    "body": {
+      "id": "simulated-paper-order-id",
+      "status": "accepted",
+      "simulation": true
+    }
+  },
+  "responses": {}
+}

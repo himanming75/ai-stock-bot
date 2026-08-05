@@ -1,0 +1,12 @@
+{
+  "blocked_count": 0,
+  "dry_run_ready_count": 0,
+  "engine_mode": "DRY_RUN_ONLY",
+  "generated_at": "2026-08-05T20:34:25.199695+00:00",
+  "input_item_count": 0,
+  "live_orders_submitted": 0,
+  "paper_orders_submitted": 0,
+  "recovery_queue_count": 0,
+  "retry_queue_count": 0,
+  "status": "PASS"
+}
