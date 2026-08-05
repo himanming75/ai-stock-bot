@@ -1,0 +1,19 @@
+{
+  "actual_training_data_written": false,
+  "feature_set_name": "core_market_features",
+  "features": [
+    "atr_14",
+    "event_score",
+    "regime_score",
+    "relative_volume",
+    "rsi_14",
+    "sma_20",
+    "sma_5"
+  ],
+  "fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+  "metadata": {
+    "source": "OFFLINE_FIXTURE_AND_HISTORICAL_ADAPTER"
+  },
+  "registered_at": "2026-08-05T07:29:25.587443+00:00",
+  "schema_version": 1
+}

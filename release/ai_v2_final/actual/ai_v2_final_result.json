@@ -1,0 +1,1524 @@
+{
+  "actual_bayesian_optimization_performed": false,
+  "actual_broker_network_used": false,
+  "actual_broker_write_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_llm_api_used": false,
+  "actual_machine_learning_training_performed": false,
+  "actual_market_network_used": false,
+  "actual_model_activation_performed": false,
+  "actual_news_api_used": false,
+  "actual_orders_created": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_portfolio_modified": false,
+  "actual_strategy_promotion_performed": false,
+  "ai_v2_release_candidate_ready": true,
+  "automatic_order_submission_enabled": false,
+  "champion_challenger": {
+    "actual_promotion_performed": false,
+    "challengers": [
+      {
+        "score": "0.66",
+        "strategy_id": "mean_reversion_v2"
+      },
+      {
+        "score": "0.59",
+        "strategy_id": "breakout_v2"
+      }
+    ],
+    "champion_candidate": {
+      "score": "0.78",
+      "strategy_id": "momentum_v2"
+    },
+    "operator_approval_required": true,
+    "promotion_eligible": true,
+    "promotion_margin": "0.1200"
+  },
+  "checks": {
+    "actual_promotion_not_performed": true,
+    "actual_rebalance_not_performed": true,
+    "actual_training_not_performed": true,
+    "attribution_created": true,
+    "bayesian_interface_ready": true,
+    "broker_actions_unavailable": true,
+    "bundle_1_pass": true,
+    "bundle_2_pass": true,
+    "champion_candidate_created": true,
+    "dashboard_read_only": true,
+    "dashboard_v3_created": true,
+    "drift_detection_created": true,
+    "feature_store_registered": true,
+    "grid_search_created": true,
+    "model_registry_registered": true,
+    "monte_carlo_1000": true,
+    "random_search_created": true,
+    "rebalance_preview_created": true,
+    "submission_off": true,
+    "upgrade_manifest_created": true,
+    "walk_forward_created": true
+  },
+  "dashboard_v3": {
+    "automatic_order_submission_enabled": false,
+    "broker_actions_available": false,
+    "generated_at": "2026-08-05T07:29:25.604665+00:00",
+    "model_activation_available": false,
+    "read_only": true,
+    "schema_version": 3,
+    "sections": {
+      "champion_challenger": {
+        "actual_promotion_performed": false,
+        "challengers": [
+          {
+            "score": "0.66",
+            "strategy_id": "mean_reversion_v2"
+          },
+          {
+            "score": "0.59",
+            "strategy_id": "breakout_v2"
+          }
+        ],
+        "champion_candidate": {
+          "score": "0.78",
+          "strategy_id": "momentum_v2"
+        },
+        "operator_approval_required": true,
+        "promotion_eligible": true,
+        "promotion_margin": "0.1200"
+      },
+      "drift_detection": {
+        "automatic_model_disable_enabled": false,
+        "features": [
+          {
+            "baseline": "2.5",
+            "current": "2.8",
+            "feature": "atr_14_mean",
+            "relative_drift": "0.1200",
+            "severity": "OK"
+          },
+          {
+            "baseline": "0.55",
+            "current": "0.58",
+            "feature": "event_score_mean",
+            "relative_drift": "0.0545",
+            "severity": "OK"
+          },
+          {
+            "baseline": "55",
+            "current": "60",
+            "feature": "rsi_14_mean",
+            "relative_drift": "0.0909",
+            "severity": "OK"
+          }
+        ],
+        "status": "OK",
+        "worst_relative_drift": "0.1200"
+      },
+      "feature_store": {
+        "actual_training_data_written": false,
+        "feature_set_name": "core_market_features",
+        "features": [
+          "atr_14",
+          "event_score",
+          "regime_score",
+          "relative_volume",
+          "rsi_14",
+          "sma_20",
+          "sma_5"
+        ],
+        "fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+        "metadata": {
+          "source": "OFFLINE_FIXTURE_AND_HISTORICAL_ADAPTER"
+        },
+        "registered_at": "2026-08-05T07:29:25.587443+00:00",
+        "schema_version": 1
+      },
+      "intelligence_bundle_2_summary": {
+        "market_regime": {
+          "allocation_multiplier": "1.00",
+          "breadth": "0.68",
+          "index_return_20": "0.06",
+          "regime": "BULL_TREND",
+          "trend_strength": "0.75",
+          "volatility_20": "0.11"
+        },
+        "scanner_ranking": [
+          {
+            "earnings": {
+              "block_new_position": false,
+              "earnings_risk": "DISTANT",
+              "score": "0.5800"
+            },
+            "event_score": "0.7400",
+            "indicators": {
+              "atr_14": "2.6000",
+              "last_close": "198.0000",
+              "momentum_5": "0.0154",
+              "relative_volume": "1.1597",
+              "rsi_14": "100.0000",
+              "sma_20": "192.3000",
+              "sma_5": "196.8000",
+              "volatility_20": "0.0611"
+            },
+            "regime_multiplier": "1.0000",
+            "sector": "Technology",
+            "sector_score": "1.0000",
+            "symbol": "AAPL",
+            "technical_score": "0.5855",
+            "total_score": "0.6330"
+          },
+          {
+            "earnings": {
+              "block_new_position": false,
+              "earnings_risk": "UPCOMING",
+              "score": "0.5800"
+            },
+            "event_score": "0.6200",
+            "indicators": {
+              "atr_14": "2.6000",
+              "last_close": "408.0000",
+              "momentum_5": "0.0074",
+              "relative_volume": "1.1597",
+              "rsi_14": "100.0000",
+              "sma_20": "402.3000",
+              "sma_5": "406.8000",
+              "volatility_20": "0.0287"
+            },
+            "regime_multiplier": "1.0000",
+            "sector": "Technology",
+            "sector_score": "1.0000",
+            "symbol": "MSFT",
+            "technical_score": "0.6079",
+            "total_score": "0.6273"
+          },
+          {
+            "earnings": {
+              "block_new_position": false,
+              "earnings_risk": "DISTANT",
+              "score": "0.5800"
+            },
+            "event_score": "0.5900",
+            "indicators": {
+              "atr_14": "2.6000",
+              "last_close": "158.0000",
+              "momentum_5": "0.0194",
+              "relative_volume": "1.1597",
+              "rsi_14": "100.0000",
+              "sma_20": "152.3000",
+              "sma_5": "156.8000",
+              "volatility_20": "0.0778"
+            },
+            "regime_multiplier": "1.0000",
+            "sector": "Healthcare",
+            "sector_score": "0.9050",
+            "symbol": "XLV",
+            "technical_score": "0.5738",
+            "total_score": "0.5851"
+          },
+          {
+            "earnings": {
+              "block_new_position": false,
+              "earnings_risk": "NONE",
+              "score": "0.5000"
+            },
+            "event_score": "0.5300",
+            "indicators": {
+              "atr_14": "2.6000",
+              "last_close": "518.0000",
+              "momentum_5": "0.0058",
+              "relative_volume": "1.1597",
+              "rsi_14": "100.0000",
+              "sma_20": "512.3000",
+              "sma_5": "516.8000",
+              "volatility_20": "0.0225"
+            },
+            "regime_multiplier": "1.0000",
+            "sector": "Financials",
+            "sector_score": "0.7550",
+            "symbol": "SPY",
+            "technical_score": "0.6121",
+            "total_score": "0.5671"
+          }
+        ]
+      },
+      "model_registry": {
+        "actual_model_activation_performed": false,
+        "actual_model_training_performed": false,
+        "algorithm": "DETERMINISTIC_WEIGHTED_SCORE",
+        "feature_fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+        "metrics": {
+          "monte_carlo_risk_of_ruin": "0.0000",
+          "walk_forward_positive_ratio": "1.0000"
+        },
+        "model_binary_present": false,
+        "model_fingerprint": "f0a208e0eb40e885014f05ea78a401ed769c1a1f2405f8b916c725fd0855819a",
+        "model_name": "strategy_ranker",
+        "model_version": "0.1.0",
+        "registered_at": "2026-08-05T07:29:25.589088+00:00"
+      },
+      "monte_carlo": {
+        "actual_capital_used": false,
+        "horizon": 60,
+        "median_ending_equity": "1.1938",
+        "median_maximum_drawdown": "0.0080",
+        "p05_ending_equity": "1.1324",
+        "p95_ending_equity": "1.2576",
+        "p95_maximum_drawdown": "0.0149",
+        "risk_of_ruin": "0.0000",
+        "simulation_count": 1000
+      },
+      "optimization": {
+        "bayesian_interface": {
+          "actual_bayesian_optimization_performed": false,
+          "backend_connected": false,
+          "interface_ready": true,
+          "supported_future_backends": [
+            "OPTUNA",
+            "SCIKIT_OPTIMIZE",
+            "CUSTOM_GAUSSIAN_PROCESS"
+          ]
+        },
+        "grid_search": {
+          "actual_strategy_parameters_changed": false,
+          "best": {
+            "parameters": {
+              "fast": 5,
+              "slow": 20,
+              "threshold": 0.6
+            },
+            "score": "1.0000"
+          },
+          "evaluation_count": 27,
+          "method": "GRID_SEARCH",
+          "results": [
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 20,
+                "threshold": 0.6
+              },
+              "score": "1.0000"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 20,
+                "threshold": 0.5
+              },
+              "score": "0.9600"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 20,
+                "threshold": 0.7
+              },
+              "score": "0.9600"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.6
+              },
+              "score": "0.9500"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 20,
+                "threshold": 0.6
+              },
+              "score": "0.9400"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.5
+              },
+              "score": "0.9100"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.7
+              },
+              "score": "0.9100"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 20,
+                "threshold": 0.6
+              },
+              "score": "0.9100"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 20,
+                "threshold": 0.5
+              },
+              "score": "0.9000"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 20,
+                "threshold": 0.7
+              },
+              "score": "0.9000"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 30,
+                "threshold": 0.6
+              },
+              "score": "0.9000"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 15,
+                "threshold": 0.6
+              },
+              "score": "0.8900"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 20,
+                "threshold": 0.5
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 20,
+                "threshold": 0.7
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 30,
+                "threshold": 0.5
+              },
+              "score": "0.8600"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 30,
+                "threshold": 0.7
+              },
+              "score": "0.8600"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 15,
+                "threshold": 0.6
+              },
+              "score": "0.8600"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 15,
+                "threshold": 0.5
+              },
+              "score": "0.8500"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 15,
+                "threshold": 0.7
+              },
+              "score": "0.8500"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 30,
+                "threshold": 0.6
+              },
+              "score": "0.8400"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 15,
+                "threshold": 0.5
+              },
+              "score": "0.8200"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 15,
+                "threshold": 0.7
+              },
+              "score": "0.8200"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 30,
+                "threshold": 0.6
+              },
+              "score": "0.8100"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 30,
+                "threshold": 0.5
+              },
+              "score": "0.8000"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 30,
+                "threshold": 0.7
+              },
+              "score": "0.8000"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 30,
+                "threshold": 0.5
+              },
+              "score": "0.7700"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 30,
+                "threshold": 0.7
+              },
+              "score": "0.7700"
+            }
+          ]
+        },
+        "random_search": {
+          "actual_strategy_parameters_changed": false,
+          "best": {
+            "parameters": {
+              "fast": 5,
+              "slow": 20,
+              "threshold": 0.8
+            },
+            "score": "0.9200"
+          },
+          "evaluation_count": 12,
+          "method": "RANDOM_SEARCH",
+          "results": [
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 20,
+                "threshold": 0.8
+              },
+              "score": "0.9200"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.5
+              },
+              "score": "0.9100"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 15,
+                "threshold": 0.6
+              },
+              "score": "0.8900"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.8
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 20,
+                "threshold": 0.5
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 15,
+                "threshold": 0.8
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 5,
+                "slow": 25,
+                "threshold": 0.8
+              },
+              "score": "0.8700"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 30,
+                "threshold": 0.6
+              },
+              "score": "0.8100"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 15,
+                "threshold": 0.8
+              },
+              "score": "0.8100"
+            },
+            {
+              "parameters": {
+                "fast": 8,
+                "slow": 30,
+                "threshold": 0.5
+              },
+              "score": "0.7700"
+            },
+            {
+              "parameters": {
+                "fast": 3,
+                "slow": 30,
+                "threshold": 0.8
+              },
+              "score": "0.7600"
+            },
+            {
+              "parameters": {
+                "fast": 10,
+                "slow": 30,
+                "threshold": 0.8
+              },
+              "score": "0.6700"
+            }
+          ]
+        }
+      },
+      "performance_attribution": {
+        "by_sector": [
+          {
+            "contribution_pct": "50.00",
+            "key": "Technology",
+            "pnl": "3.00"
+          },
+          {
+            "contribution_pct": "33.33",
+            "key": "Financials",
+            "pnl": "2.00"
+          },
+          {
+            "contribution_pct": "16.67",
+            "key": "Healthcare",
+            "pnl": "1.00"
+          }
+        ],
+        "by_strategy": [
+          {
+            "contribution_pct": "50.00",
+            "key": "momentum_v2",
+            "pnl": "3.00"
+          },
+          {
+            "contribution_pct": "50.00",
+            "key": "mean_reversion_v2",
+            "pnl": "3.00"
+          }
+        ],
+        "by_symbol": [
+          {
+            "contribution_pct": "66.67",
+            "key": "AAPL",
+            "pnl": "4.00"
+          },
+          {
+            "contribution_pct": "33.33",
+            "key": "SPY",
+            "pnl": "2.00"
+          },
+          {
+            "contribution_pct": "16.67",
+            "key": "XLV",
+            "pnl": "1.00"
+          },
+          {
+            "contribution_pct": "-16.67",
+            "key": "MSFT",
+            "pnl": "-1.00"
+          }
+        ],
+        "total_pnl": "6.00"
+      },
+      "rebalance_preview": {
+        "actual_orders_created": false,
+        "actual_portfolio_modified": false,
+        "rebalance_preview": [
+          {
+            "action": "BUY",
+            "current_weight": "0.25",
+            "order_created": false,
+            "suggested_notional": "50.00",
+            "symbol": "AAPL",
+            "target_weight": "0.30",
+            "weight_drift": "0.0500"
+          },
+          {
+            "action": "SELL",
+            "current_weight": "0.25",
+            "order_created": false,
+            "suggested_notional": "50.00",
+            "symbol": "CASH",
+            "target_weight": "0.20",
+            "weight_drift": "-0.0500"
+          },
+          {
+            "action": "SELL",
+            "current_weight": "0.30",
+            "order_created": false,
+            "suggested_notional": "60.00",
+            "symbol": "MSFT",
+            "target_weight": "0.24",
+            "weight_drift": "-0.0600"
+          },
+          {
+            "action": "BUY",
+            "current_weight": "0.20",
+            "order_created": false,
+            "suggested_notional": "60.00",
+            "symbol": "SPY",
+            "target_weight": "0.26",
+            "weight_drift": "0.0600"
+          }
+        ]
+      },
+      "rollback_preview": {
+        "actual_rollback_performed": false,
+        "current_version": "0.1.0",
+        "operator_approval_required": true,
+        "rollback_allowed": true,
+        "target_version": "0.0.9"
+      },
+      "walk_forward": {
+        "actual_strategy_promotion_performed": false,
+        "positive_test_windows": 4,
+        "positive_window_ratio": "1.0000",
+        "window_count": 4,
+        "windows": [
+          {
+            "test_end": 11,
+            "test_mean_return": "0.004750",
+            "test_positive": true,
+            "test_start": 8,
+            "train_end": 7,
+            "train_mean_return": "0.002875",
+            "train_start": 0,
+            "window": 1
+          },
+          {
+            "test_end": 15,
+            "test_mean_return": "0.002500",
+            "test_positive": true,
+            "test_start": 12,
+            "train_end": 11,
+            "train_mean_return": "0.003375",
+            "train_start": 4,
+            "window": 2
+          },
+          {
+            "test_end": 19,
+            "test_mean_return": "0.003000",
+            "test_positive": true,
+            "test_start": 16,
+            "train_end": 15,
+            "train_mean_return": "0.003625",
+            "train_start": 8,
+            "window": 3
+          },
+          {
+            "test_end": 23,
+            "test_mean_return": "0.001750",
+            "test_positive": true,
+            "test_start": 20,
+            "train_end": 19,
+            "train_mean_return": "0.002750",
+            "train_start": 12,
+            "window": 4
+          }
+        ]
+      }
+    },
+    "stage": "AI_V2_DASHBOARD_3"
+  },
+  "drift_detection": {
+    "automatic_model_disable_enabled": false,
+    "features": [
+      {
+        "baseline": "2.5",
+        "current": "2.8",
+        "feature": "atr_14_mean",
+        "relative_drift": "0.1200",
+        "severity": "OK"
+      },
+      {
+        "baseline": "0.55",
+        "current": "0.58",
+        "feature": "event_score_mean",
+        "relative_drift": "0.0545",
+        "severity": "OK"
+      },
+      {
+        "baseline": "55",
+        "current": "60",
+        "feature": "rsi_14_mean",
+        "relative_drift": "0.0909",
+        "severity": "OK"
+      }
+    ],
+    "status": "OK",
+    "worst_relative_drift": "0.1200"
+  },
+  "failed": [],
+  "feature_store": {
+    "actual_training_data_written": false,
+    "feature_set_name": "core_market_features",
+    "features": [
+      "atr_14",
+      "event_score",
+      "regime_score",
+      "relative_volume",
+      "rsi_14",
+      "sma_20",
+      "sma_5"
+    ],
+    "fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+    "metadata": {
+      "source": "OFFLINE_FIXTURE_AND_HISTORICAL_ADAPTER"
+    },
+    "registered_at": "2026-08-05T07:29:25.587443+00:00",
+    "schema_version": 1
+  },
+  "model_registry": {
+    "actual_model_activation_performed": false,
+    "actual_model_training_performed": false,
+    "algorithm": "DETERMINISTIC_WEIGHTED_SCORE",
+    "feature_fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+    "metrics": {
+      "monte_carlo_risk_of_ruin": "0.0000",
+      "walk_forward_positive_ratio": "1.0000"
+    },
+    "model_binary_present": false,
+    "model_fingerprint": "f0a208e0eb40e885014f05ea78a401ed769c1a1f2405f8b916c725fd0855819a",
+    "model_name": "strategy_ranker",
+    "model_version": "0.1.0",
+    "registered_at": "2026-08-05T07:29:25.589088+00:00"
+  },
+  "monte_carlo_simulation": {
+    "actual_capital_used": false,
+    "horizon": 60,
+    "median_ending_equity": "1.1938",
+    "median_maximum_drawdown": "0.0080",
+    "p05_ending_equity": "1.1324",
+    "p95_ending_equity": "1.2576",
+    "p95_maximum_drawdown": "0.0149",
+    "risk_of_ruin": "0.0000",
+    "simulation_count": 1000
+  },
+  "parameter_optimization": {
+    "bayesian_interface": {
+      "actual_bayesian_optimization_performed": false,
+      "backend_connected": false,
+      "interface_ready": true,
+      "supported_future_backends": [
+        "OPTUNA",
+        "SCIKIT_OPTIMIZE",
+        "CUSTOM_GAUSSIAN_PROCESS"
+      ]
+    },
+    "grid_search": {
+      "actual_strategy_parameters_changed": false,
+      "best": {
+        "parameters": {
+          "fast": 5,
+          "slow": 20,
+          "threshold": 0.6
+        },
+        "score": "1.0000"
+      },
+      "evaluation_count": 27,
+      "method": "GRID_SEARCH",
+      "results": [
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 20,
+            "threshold": 0.6
+          },
+          "score": "1.0000"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 20,
+            "threshold": 0.5
+          },
+          "score": "0.9600"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 20,
+            "threshold": 0.7
+          },
+          "score": "0.9600"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.6
+          },
+          "score": "0.9500"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 20,
+            "threshold": 0.6
+          },
+          "score": "0.9400"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.5
+          },
+          "score": "0.9100"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.7
+          },
+          "score": "0.9100"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 20,
+            "threshold": 0.6
+          },
+          "score": "0.9100"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 20,
+            "threshold": 0.5
+          },
+          "score": "0.9000"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 20,
+            "threshold": 0.7
+          },
+          "score": "0.9000"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 30,
+            "threshold": 0.6
+          },
+          "score": "0.9000"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 15,
+            "threshold": 0.6
+          },
+          "score": "0.8900"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 20,
+            "threshold": 0.5
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 20,
+            "threshold": 0.7
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 30,
+            "threshold": 0.5
+          },
+          "score": "0.8600"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 30,
+            "threshold": 0.7
+          },
+          "score": "0.8600"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 15,
+            "threshold": 0.6
+          },
+          "score": "0.8600"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 15,
+            "threshold": 0.5
+          },
+          "score": "0.8500"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 15,
+            "threshold": 0.7
+          },
+          "score": "0.8500"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 30,
+            "threshold": 0.6
+          },
+          "score": "0.8400"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 15,
+            "threshold": 0.5
+          },
+          "score": "0.8200"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 15,
+            "threshold": 0.7
+          },
+          "score": "0.8200"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 30,
+            "threshold": 0.6
+          },
+          "score": "0.8100"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 30,
+            "threshold": 0.5
+          },
+          "score": "0.8000"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 30,
+            "threshold": 0.7
+          },
+          "score": "0.8000"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 30,
+            "threshold": 0.5
+          },
+          "score": "0.7700"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 30,
+            "threshold": 0.7
+          },
+          "score": "0.7700"
+        }
+      ]
+    },
+    "random_search": {
+      "actual_strategy_parameters_changed": false,
+      "best": {
+        "parameters": {
+          "fast": 5,
+          "slow": 20,
+          "threshold": 0.8
+        },
+        "score": "0.9200"
+      },
+      "evaluation_count": 12,
+      "method": "RANDOM_SEARCH",
+      "results": [
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 20,
+            "threshold": 0.8
+          },
+          "score": "0.9200"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.5
+          },
+          "score": "0.9100"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 15,
+            "threshold": 0.6
+          },
+          "score": "0.8900"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.8
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 20,
+            "threshold": 0.5
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 15,
+            "threshold": 0.8
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 5,
+            "slow": 25,
+            "threshold": 0.8
+          },
+          "score": "0.8700"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 30,
+            "threshold": 0.6
+          },
+          "score": "0.8100"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 15,
+            "threshold": 0.8
+          },
+          "score": "0.8100"
+        },
+        {
+          "parameters": {
+            "fast": 8,
+            "slow": 30,
+            "threshold": 0.5
+          },
+          "score": "0.7700"
+        },
+        {
+          "parameters": {
+            "fast": 3,
+            "slow": 30,
+            "threshold": 0.8
+          },
+          "score": "0.7600"
+        },
+        {
+          "parameters": {
+            "fast": 10,
+            "slow": 30,
+            "threshold": 0.8
+          },
+          "score": "0.6700"
+        }
+      ]
+    }
+  },
+  "performance_attribution": {
+    "by_sector": [
+      {
+        "contribution_pct": "50.00",
+        "key": "Technology",
+        "pnl": "3.00"
+      },
+      {
+        "contribution_pct": "33.33",
+        "key": "Financials",
+        "pnl": "2.00"
+      },
+      {
+        "contribution_pct": "16.67",
+        "key": "Healthcare",
+        "pnl": "1.00"
+      }
+    ],
+    "by_strategy": [
+      {
+        "contribution_pct": "50.00",
+        "key": "momentum_v2",
+        "pnl": "3.00"
+      },
+      {
+        "contribution_pct": "50.00",
+        "key": "mean_reversion_v2",
+        "pnl": "3.00"
+      }
+    ],
+    "by_symbol": [
+      {
+        "contribution_pct": "66.67",
+        "key": "AAPL",
+        "pnl": "4.00"
+      },
+      {
+        "contribution_pct": "33.33",
+        "key": "SPY",
+        "pnl": "2.00"
+      },
+      {
+        "contribution_pct": "16.67",
+        "key": "XLV",
+        "pnl": "1.00"
+      },
+      {
+        "contribution_pct": "-16.67",
+        "key": "MSFT",
+        "pnl": "-1.00"
+      }
+    ],
+    "total_pnl": "6.00"
+  },
+  "portfolio_rebalance_preview": {
+    "actual_orders_created": false,
+    "actual_portfolio_modified": false,
+    "rebalance_preview": [
+      {
+        "action": "BUY",
+        "current_weight": "0.25",
+        "order_created": false,
+        "suggested_notional": "50.00",
+        "symbol": "AAPL",
+        "target_weight": "0.30",
+        "weight_drift": "0.0500"
+      },
+      {
+        "action": "SELL",
+        "current_weight": "0.25",
+        "order_created": false,
+        "suggested_notional": "50.00",
+        "symbol": "CASH",
+        "target_weight": "0.20",
+        "weight_drift": "-0.0500"
+      },
+      {
+        "action": "SELL",
+        "current_weight": "0.30",
+        "order_created": false,
+        "suggested_notional": "60.00",
+        "symbol": "MSFT",
+        "target_weight": "0.24",
+        "weight_drift": "-0.0600"
+      },
+      {
+        "action": "BUY",
+        "current_weight": "0.20",
+        "order_created": false,
+        "suggested_notional": "60.00",
+        "symbol": "SPY",
+        "target_weight": "0.26",
+        "weight_drift": "0.0600"
+      }
+    ]
+  },
+  "remaining_required_work": [
+    "P2_TO_P5_ACTUAL_PAPER_VALIDATION",
+    "LIVE_VALIDATION_L2_TO_L6",
+    "EXTERNAL_DATA_API_INTEGRATION_IF_DESIRED",
+    "ACTUAL_MODEL_TRAINING_AFTER_SUFFICIENT_DATA"
+  ],
+  "rollback_preview": {
+    "actual_rollback_performed": false,
+    "current_version": "0.1.0",
+    "operator_approval_required": true,
+    "rollback_allowed": true,
+    "target_version": "0.0.9"
+  },
+  "stage": "AI_V2_FINAL_MEGA_BUNDLE",
+  "state": "AI_V2_FINAL_OFFLINE_QUALIFIED",
+  "status": "PASS",
+  "upgrade_rollback_manifest": {
+    "actual_rollback_performed": false,
+    "actual_upgrade_performed": false,
+    "file_count": 30,
+    "files": [
+      {
+        "path": "ai_v2/__init__.py",
+        "sha256": "9a1a05d4c21447653d4be114d91864d2afc6423096b6888dcbf9bd5badd1ff2b",
+        "size_bytes": 45
+      },
+      {
+        "path": "ai_v2/ensemble.py",
+        "sha256": "238e592c290d94e91dcbba75e8cf940cb0b291ecbc2f5954fcf8972bad9d3026",
+        "size_bytes": 1996
+      },
+      {
+        "path": "ai_v2/learning.py",
+        "sha256": "385e86a7cebbd66ec4e84425981930ed7942ed3fad204b3df22adf810fedccc1",
+        "size_bytes": 3419
+      },
+      {
+        "path": "ai_v2/models.py",
+        "sha256": "e9d21049df79c1895a078efeae2dcf4ba49858b48ceab7d2001480594495d9b4",
+        "size_bytes": 1905
+      },
+      {
+        "path": "ai_v2/portfolio_optimizer.py",
+        "sha256": "9412b41847e65886ba5c1619d8a166d7c552ffcc0cade258c1c07a9832dcf975",
+        "size_bytes": 2398
+      },
+      {
+        "path": "ai_v2/risk_v2.py",
+        "sha256": "b421e36d8850243ded00dac6572ce1a49c3b4442086598dedafd134f38e5afb4",
+        "size_bytes": 2298
+      },
+      {
+        "path": "ai_v2/service.py",
+        "sha256": "eb01da6fb5f2ce74b890734254e65aa8cbca39ec8e0b79609be7e2b92f6a67b0",
+        "size_bytes": 5808
+      },
+      {
+        "path": "ai_intelligence/__init__.py",
+        "sha256": "863b3e0a151737a958359feeec948454338c43ea09ca773aa12e38376490d4e1",
+        "size_bytes": 57
+      },
+      {
+        "path": "ai_intelligence/dashboard_model.py",
+        "sha256": "107990f7cfc4b5c287421f5925be4e5e34ebd14e659e0156a4027ef6975d35bb",
+        "size_bytes": 1288
+      },
+      {
+        "path": "ai_intelligence/events.py",
+        "sha256": "13525e9c036d601e73abdb3a03c0c6a7611577b381bc825c767ae505f91feab6",
+        "size_bytes": 2821
+      },
+      {
+        "path": "ai_intelligence/explanation.py",
+        "sha256": "e6fcdce3f58c43268b2a835026113273db80b3bb4a39015c79f6df2120bdff3a",
+        "size_bytes": 1850
+      },
+      {
+        "path": "ai_intelligence/historical_adapter.py",
+        "sha256": "f263dd2c07aea5747ff978297e0d6c9d62652cbfc1129b74124f35f572724c31",
+        "size_bytes": 1158
+      },
+      {
+        "path": "ai_intelligence/indicators.py",
+        "sha256": "6cb9324eb9deb8e210aa43825ebcfbc4818632f502014097bf0efdecd4bf70cd",
+        "size_bytes": 2531
+      },
+      {
+        "path": "ai_intelligence/regime.py",
+        "sha256": "32684045f7aef69e96be5088969a9c669b6ba10698f285faf3b7407ea99d94a6",
+        "size_bytes": 1433
+      },
+      {
+        "path": "ai_intelligence/scanner.py",
+        "sha256": "1a06688a46f403b773eb43238b83930ddc6ea63642dfc062517766abc2d89d33",
+        "size_bytes": 2561
+      },
+      {
+        "path": "ai_intelligence/sector.py",
+        "sha256": "24b57745b5cbadf22e4f9924214bba6611e471bb6ecfef74ff98fb3a209fc147",
+        "size_bytes": 1214
+      },
+      {
+        "path": "ai_intelligence/service.py",
+        "sha256": "2d47b88715332522f1de180e3236a3391ec752f3a2f73e18cc277e38840e927d",
+        "size_bytes": 7158
+      },
+      {
+        "path": "ai_research_final/__init__.py",
+        "sha256": "e4203e1ab7a8dd2c956073c55b58cb3cfedc7e7789f2c50a65e8307483c90107",
+        "size_bytes": 68
+      },
+      {
+        "path": "ai_research_final/attribution.py",
+        "sha256": "783ac3d5273ad43a14b188aa45412940635c5f36c0e977d15b04ee90b0a0a5a4",
+        "size_bytes": 1748
+      },
+      {
+        "path": "ai_research_final/champion.py",
+        "sha256": "48843a20e917ec8f95706698496799a0f3be363a5322902615f3f9988592c607",
+        "size_bytes": 1226
+      },
+      {
+        "path": "ai_research_final/dashboard3.py",
+        "sha256": "6432a2b5c543899ba67fc1be0d77b5932d6d37fd10f03780ee01858dd61c999b",
+        "size_bytes": 569
+      },
+      {
+        "path": "ai_research_final/drift.py",
+        "sha256": "1b71740d76f88bcdbe5e3d44c61e8b3ed14b2dfcece0dfe873c118f2ee9b9023",
+        "size_bytes": 1538
+      },
+      {
+        "path": "ai_research_final/feature_store.py",
+        "sha256": "351290d6fec6a262d88c90f2eb93ebe867259027d1e7310b5cfd8299dd60e4ef",
+        "size_bytes": 1267
+      },
+      {
+        "path": "ai_research_final/model_registry.py",
+        "sha256": "9ea40a397eca3d36b34c6fa55111d18896bda7557aa3744c38a4b6707a2271d1",
+        "size_bytes": 1839
+      },
+      {
+        "path": "ai_research_final/monte_carlo.py",
+        "sha256": "4f7dcdb12daf823ef95b4be3a37714790e493736ac01050129920c3c9f8eb9f0",
+        "size_bytes": 2527
+      },
+      {
+        "path": "ai_research_final/optimizer.py",
+        "sha256": "faac401e0bd096552f7d67d938ccad6b52583fe876d6124faa8a4e1d11e24f95",
+        "size_bytes": 2505
+      },
+      {
+        "path": "ai_research_final/rebalancer.py",
+        "sha256": "20c53d14341fe699852d25a94f128a120492f41e6f6021893aa3bbae49130248",
+        "size_bytes": 1350
+      },
+      {
+        "path": "ai_research_final/service.py",
+        "sha256": "c7c445d0a2d56efb6fcd46338078e4be5703215583690e30c470dfdb45078241",
+        "size_bytes": 11474
+      },
+      {
+        "path": "ai_research_final/upgrade.py",
+        "sha256": "860f69193afaa633c1f6b695b722834661bec9c5626946a7e7478b8cf7b59579",
+        "size_bytes": 1303
+      },
+      {
+        "path": "ai_research_final/walk_forward.py",
+        "sha256": "0a6fdbadf6f0af7a6eab478a8e5ed645b3009e7eaa206d44239b5a8ffb0401e8",
+        "size_bytes": 1893
+      }
+    ],
+    "generated_at": "2026-08-05T07:29:25.604608+00:00",
+    "manifest_sha256": "34f81bdc76492ea8dd64a3238be52b9bc91480ddf1dbdad3093f0a256486df7e"
+  },
+  "walk_forward_validation": {
+    "actual_strategy_promotion_performed": false,
+    "positive_test_windows": 4,
+    "positive_window_ratio": "1.0000",
+    "window_count": 4,
+    "windows": [
+      {
+        "test_end": 11,
+        "test_mean_return": "0.004750",
+        "test_positive": true,
+        "test_start": 8,
+        "train_end": 7,
+        "train_mean_return": "0.002875",
+        "train_start": 0,
+        "window": 1
+      },
+      {
+        "test_end": 15,
+        "test_mean_return": "0.002500",
+        "test_positive": true,
+        "test_start": 12,
+        "train_end": 11,
+        "train_mean_return": "0.003375",
+        "train_start": 4,
+        "window": 2
+      },
+      {
+        "test_end": 19,
+        "test_mean_return": "0.003000",
+        "test_positive": true,
+        "test_start": 16,
+        "train_end": 15,
+        "train_mean_return": "0.003625",
+        "train_start": 8,
+        "window": 3
+      },
+      {
+        "test_end": 23,
+        "test_mean_return": "0.001750",
+        "test_positive": true,
+        "test_start": 20,
+        "train_end": 19,
+        "train_mean_return": "0.002750",
+        "train_start": 12,
+        "window": 4
+      }
+    ]
+  }
+}

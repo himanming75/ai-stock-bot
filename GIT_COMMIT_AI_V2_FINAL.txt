@@ -1,0 +1,3 @@
+git add ai_research_final tools/run_ai_v2_final.py tools/test_ai_v2_final.py tools/verify_ai_v2_final.py release/ai_v2_final RUN_AI_V2_FINAL.ps1 RUN_AI_V2_FINAL_TEST_AND_VERIFY.ps1 SHOW_AI_V2_FINAL_STATUS.ps1 AI_V2_FINAL_MANIFEST.json GIT_COMMIT_AI_V2_FINAL.txt
+git commit -m "AI V2 add final research and governance bundle"
+git push origin main

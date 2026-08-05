@@ -1,0 +1,8 @@
+{
+  "actual_live_release_allowed": false,
+  "certificate_stage": "AI_V2_FINAL_OFFLINE",
+  "eligible": true,
+  "live_validation_required": true,
+  "paper_validation_required": true,
+  "status": "PASS"
+}

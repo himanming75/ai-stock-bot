@@ -1,0 +1,15 @@
+{
+  "actual_model_activation_performed": false,
+  "actual_model_training_performed": false,
+  "algorithm": "DETERMINISTIC_WEIGHTED_SCORE",
+  "feature_fingerprint": "82718430963db36d2d1090f6b7af1047a2d5e623b347ac145ca983d23f5270cc",
+  "metrics": {
+    "monte_carlo_risk_of_ruin": "0.0000",
+    "walk_forward_positive_ratio": "1.0000"
+  },
+  "model_binary_present": false,
+  "model_fingerprint": "f0a208e0eb40e885014f05ea78a401ed769c1a1f2405f8b916c725fd0855819a",
+  "model_name": "strategy_ranker",
+  "model_version": "0.1.0",
+  "registered_at": "2026-08-05T07:29:25.589088+00:00"
+}
