@@ -1,0 +1,3 @@
+git add market_intelligence tools/run_market_intelligence_data_fusion.py tools/test_market_intelligence_data_fusion.py tools/verify_market_intelligence_data_fusion.py release/market_intelligence_data_fusion MARKET_INTELLIGENCE_DATA_FUSION_MANIFEST.json RUN_MARKET_INTELLIGENCE_DATA_FUSION.ps1 RUN_MARKET_INTELLIGENCE_DATA_FUSION_TEST_AND_VERIFY.ps1 GIT_COMMIT_MARKET_INTELLIGENCE_DATA_FUSION.txt
+git commit -m "Add market intelligence data fusion mega bundle"
+git push origin main

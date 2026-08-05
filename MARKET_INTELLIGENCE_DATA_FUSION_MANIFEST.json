@@ -1,0 +1,28 @@
+{
+  "stage": "MARKET_INTELLIGENCE_DATA_FUSION_MEGA_BUNDLE",
+  "features": [
+    "Unified market intelligence input model",
+    "Data freshness and confidence gate",
+    "Market regime classifier",
+    "Risk-on risk-off mode",
+    "Technical and momentum scoring",
+    "News sentiment scoring",
+    "Earnings scoring",
+    "Macro and rates scoring",
+    "Options scoring",
+    "Sector and liquidity scoring",
+    "Risk penalty",
+    "Symbol ranking",
+    "Trade bias",
+    "Dashboard-ready market context snapshot"
+  ],
+  "actual_external_network_used": false,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_order_submission_performed": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "validation_track_changed": false,
+  "next_fixed_development": "AI_SYMBOL_SELECTION_AND_DECISION_ORCHESTRATION",
+  "next_market_dependent_action": "P3_ACTUAL_PAPER_ORDER_VALIDATION"
+}
