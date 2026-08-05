@@ -1,0 +1,11 @@
+{
+  "blocker_count": 0,
+  "certificate_status": "CONDITIONALLY_CERTIFIED_AWAITING_LIVE_TECHNICAL_DATA",
+  "component_count": 7,
+  "contract_pass_count": 7,
+  "fixture_validated_count": 5,
+  "live_pending_count": 2,
+  "readiness_score_percent": 82.92,
+  "status": "PASS",
+  "warning_count": 3
+}

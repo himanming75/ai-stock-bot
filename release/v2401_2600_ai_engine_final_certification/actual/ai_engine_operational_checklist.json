@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-08-05T21:16:54.420274+00:00",
+  "items": [
+    {
+      "item": "AI component files present",
+      "status": "PASS"
+    },
+    {
+      "item": "Zero broker write contract",
+      "status": "PASS"
+    },
+    {
+      "item": "Zero order contract",
+      "status": "PASS"
+    },
+    {
+      "item": "Technical live data validation",
+      "status": "PENDING"
+    },
+    {
+      "item": "Fixture-based intelligence validation",
+      "status": "PASS"
+    },
+    {
+      "item": "Model promotion remains manual",
+      "status": "PASS"
+    },
+    {
+      "item": "Controller remains isolated",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+git add ai_engine_final_certification
+git add tools/run_v2401_to_v2600_ai_engine_final_certification.py
+git add tools/test_v2401_to_v2600_ai_engine_final_certification.py
+git add release/v2401_2600_ai_engine_final_certification
+git add RUN_V2401_TO_V2600_AI_ENGINE_FINAL_CERTIFICATION.ps1
+git add RUN_V2401_TO_V2600_AI_ENGINE_FINAL_CERTIFICATION_TEST.ps1
+git add V2401_TO_V2600_AI_ENGINE_FINAL_CERTIFICATION_MANIFEST.json
+git add GIT_COMMIT_V2401_TO_V2600_AI_ENGINE_FINAL_CERTIFICATION.txt
+git commit -m "Add V2401-V2600 AI engine final certification"
+git push origin main
