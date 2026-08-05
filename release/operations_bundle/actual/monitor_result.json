@@ -1,0 +1,18 @@
+{
+  "alerts": [],
+  "checks": {
+    "free_disk_over_250mb": true,
+    "kill_switch_state_readable": true,
+    "live_activation_blocked": true,
+    "live_mode_disabled": true
+  },
+  "free_disk_bytes": 120110518272,
+  "kill_switch_active": true,
+  "live_complete": false,
+  "observed_at": "2026-08-05T05:00:10.498532+00:00",
+  "p2_actual_validated": false,
+  "p3_actual_validated": false,
+  "p4_actual_validated": false,
+  "paper_complete": false,
+  "severity": "OK"
+}

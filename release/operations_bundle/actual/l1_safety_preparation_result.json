@@ -1,0 +1,21 @@
+{
+  "actual_live_orders_submitted": 0,
+  "checks": {
+    "live_confirmation_absent": true,
+    "live_daily_limit_safe": true,
+    "live_endpoint_valid": true,
+    "live_network_disabled": true,
+    "live_order_limit_safe": true,
+    "live_symbols_restricted": true,
+    "live_write_disabled": true,
+    "paper_endpoint_valid": true,
+    "paper_live_keys_separated": true
+  },
+  "failed": [],
+  "live_activation_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_completion_required": true,
+  "stage": "L1_PREPARATION",
+  "status": "PASS"
+}

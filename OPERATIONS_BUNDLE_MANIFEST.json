@@ -1,0 +1,27 @@
+{
+  "bundle": "OPERATIONS_DASHBOARD_MONITORING_LOGGING_L1_SAFETY",
+  "features": [
+    "Read Only Local Dashboard",
+    "Runtime Monitoring",
+    "Heartbeat Display",
+    "Checkpoint Display",
+    "P2 P3 P4 Validation Display",
+    "Kill Switch Display",
+    "Order Fill Drift Event Display",
+    "Structured JSONL Logging",
+    "Credential Redaction",
+    "Disk Space Health Check",
+    "Paper Live Mode Display",
+    "L1 Live Safety Preparation",
+    "Paper Live Credential Separation",
+    "Endpoint Separation",
+    "Live Risk Limits",
+    "Restricted Live Symbols"
+  ],
+  "live_activation_allowed": false,
+  "live_network_enabled": false,
+  "live_write_enabled": false,
+  "paper_orders_submitted_during_install": 0,
+  "live_orders_submitted_during_install": 0,
+  "roadmap_changed": false
+}
