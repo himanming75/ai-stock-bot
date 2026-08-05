@@ -1,0 +1,11 @@
+{
+  "stage": "P1",
+  "canonical_roles": 11,
+  "legacy_files_deleted": [],
+  "canonical_state_root": "release/p1_broker_consolidation/actual",
+  "kill_switch_initial_state": "ACTIVE",
+  "broker_write_enabled": false,
+  "paper_submission_enabled": false,
+  "live_submission_enabled": false,
+  "next_fixed_stage": "P2_ACTUAL_ALPACA_PAPER_EXECUTION"
+}

@@ -1,0 +1,17 @@
+{
+  "direct_imports_of_legacy_broker_modules": {
+    "classification": "DEPRECATED",
+    "deletion_planned": false,
+    "replacement": "broker_integration.registry"
+  },
+  "multiple_independent_state_roots": {
+    "classification": "DEPRECATED",
+    "deletion_planned": false,
+    "replacement": "broker_integration.paths.BrokerStatePaths"
+  },
+  "unqualified_broker_write_entrypoints": {
+    "classification": "DEPRECATED",
+    "deletion_planned": false,
+    "replacement": "P2 canonical execution gateway"
+  }
+}

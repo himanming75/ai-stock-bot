@@ -1,0 +1,135 @@
+{
+  "actual_live_orders_submitted": 0,
+  "actual_paper_orders_submitted": 0,
+  "broker_write_enabled": false,
+  "canonical_state_root": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual",
+  "checkpoint_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\runtime_checkpoint.json",
+  "consolidation_hash": "86f214c317fc0c8f6a9d6790d5c8042882f40044d3d29f429b37395b39082bee",
+  "fill_ledger_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\fill_ledger.jsonl",
+  "idempotency_registry_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\order_idempotency_registry.json",
+  "inspection": {
+    "canonical_components": {
+      "allocation_engine": {
+        "classification": "CANONICAL",
+        "module": "ai_risk_allocation.allocation_qualification",
+        "module_present": true,
+        "write_capable": false
+      },
+      "broker_read_adapter": {
+        "classification": "CANONICAL",
+        "module": "alpaca_paper_read.adapter",
+        "module_present": true,
+        "write_capable": false
+      },
+      "credential_and_endpoint_policy": {
+        "classification": "CANONICAL",
+        "module": "alpaca_paper_read.config",
+        "module_present": true,
+        "write_capable": false
+      },
+      "local_execution_authorization": {
+        "classification": "CANONICAL",
+        "module": "execution_authorization",
+        "module_present": true,
+        "write_capable": false
+      },
+      "local_paper_simulation": {
+        "classification": "CANONICAL",
+        "module": "paper_dispatch_engine",
+        "module_present": true,
+        "write_capable": false
+      },
+      "local_portfolio_accounting": {
+        "classification": "CANONICAL",
+        "module": "paper_portfolio",
+        "module_present": true,
+        "write_capable": false
+      },
+      "order_lifecycle_and_fill_observation": {
+        "classification": "CANONICAL",
+        "module": "paper_execution_lifecycle.engine",
+        "module_present": true,
+        "write_capable": false
+      },
+      "portfolio_sync_and_recovery_planning": {
+        "classification": "CANONICAL",
+        "module": "portfolio_sync_recovery.engine",
+        "module_present": true,
+        "write_capable": false
+      },
+      "pre_execution_safety_gateway": {
+        "classification": "CANONICAL",
+        "module": "broker_safe_execution.gateway",
+        "module_present": true,
+        "write_capable": false
+      },
+      "read_http_transport": {
+        "classification": "CANONICAL",
+        "module": "alpaca_paper_read.http_client",
+        "module_present": true,
+        "write_capable": false
+      },
+      "risk_governor": {
+        "classification": "CANONICAL",
+        "module": "autonomous_risk_governor",
+        "module_present": true,
+        "write_capable": false
+      }
+    },
+    "compatibility_components": {
+      "broker_safe_execution.sync": {
+        "canonical_role": "portfolio_sync_and_recovery_planning",
+        "classification": "COMPATIBILITY",
+        "module_present": true
+      },
+      "live_broker_readonly": {
+        "canonical_role": "broker_read_adapter",
+        "classification": "COMPATIBILITY",
+        "module_present": true
+      },
+      "paper_broker": {
+        "canonical_role": "broker_read_adapter",
+        "classification": "COMPATIBILITY",
+        "module_present": true
+      },
+      "paper_broker_adapter.boundary": {
+        "canonical_role": "pre_execution_safety_gateway",
+        "classification": "COMPATIBILITY",
+        "module_present": true
+      }
+    },
+    "consolidation_valid": true,
+    "deprecated_components": {
+      "direct_imports_of_legacy_broker_modules": {
+        "classification": "DEPRECATED",
+        "deletion_planned": false,
+        "replacement": "broker_integration.registry"
+      },
+      "multiple_independent_state_roots": {
+        "classification": "DEPRECATED",
+        "deletion_planned": false,
+        "replacement": "broker_integration.paths.BrokerStatePaths"
+      },
+      "unqualified_broker_write_entrypoints": {
+        "classification": "DEPRECATED",
+        "deletion_planned": false,
+        "replacement": "P2 canonical execution gateway"
+      }
+    },
+    "direct_write_authorizations": [],
+    "legacy_files_deleted": [],
+    "missing_required_roles": [],
+    "repository_root": "C:\\stock-bot"
+  },
+  "kill_switch_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\kill_switch.json",
+  "legacy_files_deleted": [],
+  "live_submission_enabled": false,
+  "next_fixed_stage": "P2_ACTUAL_ALPACA_PAPER_EXECUTION",
+  "observed_at": "2026-08-05T04:15:36.364159+00:00",
+  "order_ledger_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\order_ledger.jsonl",
+  "paper_submission_enabled": false,
+  "portfolio_state_path": "C:\\stock-bot\\release\\p1_broker_consolidation\\actual\\portfolio_state.json",
+  "stage": "P1",
+  "state": "BROKER_CONSOLIDATION_CANONICAL_PATH_READY",
+  "status": "PASS"
+}

@@ -1,0 +1,3 @@
+git add broker_integration tools/run_p1_broker_consolidation.py tools/test_p1_broker_consolidation.py tools/verify_p1_broker_consolidation.py release/p1_broker_consolidation RUN_P1_BROKER_CONSOLIDATION.ps1 RUN_P1_TEST_AND_VERIFY.ps1 P1_BROKER_CONSOLIDATION_MANIFEST.json GIT_COMMIT_P1_BROKER_CONSOLIDATION.txt
+git commit -m "P1 consolidate broker integration canonical paths"
+git push origin main

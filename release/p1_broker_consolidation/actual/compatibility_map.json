@@ -1,0 +1,18 @@
+{
+  "broker_safe_execution.sync": {
+    "canonical_role": "portfolio_sync_and_recovery_planning",
+    "classification": "COMPATIBILITY"
+  },
+  "live_broker_readonly": {
+    "canonical_role": "broker_read_adapter",
+    "classification": "COMPATIBILITY"
+  },
+  "paper_broker": {
+    "canonical_role": "broker_read_adapter",
+    "classification": "COMPATIBILITY"
+  },
+  "paper_broker_adapter.boundary": {
+    "canonical_role": "pre_execution_safety_gateway",
+    "classification": "COMPATIBILITY"
+  }
+}

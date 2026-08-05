@@ -1,0 +1,57 @@
+{
+  "allocation_engine": {
+    "classification": "CANONICAL",
+    "module": "ai_risk_allocation.allocation_qualification",
+    "write_capable": false
+  },
+  "broker_read_adapter": {
+    "classification": "CANONICAL",
+    "module": "alpaca_paper_read.adapter",
+    "write_capable": false
+  },
+  "credential_and_endpoint_policy": {
+    "classification": "CANONICAL",
+    "module": "alpaca_paper_read.config",
+    "write_capable": false
+  },
+  "local_execution_authorization": {
+    "classification": "CANONICAL",
+    "module": "execution_authorization",
+    "write_capable": false
+  },
+  "local_paper_simulation": {
+    "classification": "CANONICAL",
+    "module": "paper_dispatch_engine",
+    "write_capable": false
+  },
+  "local_portfolio_accounting": {
+    "classification": "CANONICAL",
+    "module": "paper_portfolio",
+    "write_capable": false
+  },
+  "order_lifecycle_and_fill_observation": {
+    "classification": "CANONICAL",
+    "module": "paper_execution_lifecycle.engine",
+    "write_capable": false
+  },
+  "portfolio_sync_and_recovery_planning": {
+    "classification": "CANONICAL",
+    "module": "portfolio_sync_recovery.engine",
+    "write_capable": false
+  },
+  "pre_execution_safety_gateway": {
+    "classification": "CANONICAL",
+    "module": "broker_safe_execution.gateway",
+    "write_capable": false
+  },
+  "read_http_transport": {
+    "classification": "CANONICAL",
+    "module": "alpaca_paper_read.http_client",
+    "write_capable": false
+  },
+  "risk_governor": {
+    "classification": "CANONICAL",
+    "module": "autonomous_risk_governor",
+    "write_capable": false
+  }
+}

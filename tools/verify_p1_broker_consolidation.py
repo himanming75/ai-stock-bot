@@ -1,0 +1,5 @@
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[1];r=json.loads((ROOT/'release/p1_broker_consolidation/actual/broker_consolidation_result.json').read_text(encoding='utf-8-sig'));i=r['inspection']
+checks={"stage":r.get("stage")=="P1","status":r.get("status")=="PASS","state":r.get("state")=="BROKER_CONSOLIDATION_CANONICAL_PATH_READY","valid":i.get("consolidation_valid") is True,"no_missing":i.get("missing_required_roles")==[],"no_writes":i.get("direct_write_authorizations")==[],"no_delete":r.get("legacy_files_deleted")==[],"hash":len(r.get("consolidation_hash",""))==64,"broker_write_off":r.get("broker_write_enabled") is False,"paper_zero":r.get("actual_paper_orders_submitted")==0,"live_zero":r.get("actual_live_orders_submitted")==0,"next_fixed":r.get("next_fixed_stage")=="P2_ACTUAL_ALPACA_PAPER_EXECUTION"}
+out={"verification_stage":"P1","verification_status":"PASS" if all(checks.values()) else "FAIL","checks":checks,"failed":[k for k,v in checks.items() if not v]};print(json.dumps(out,indent=2));raise SystemExit(0 if all(checks.values()) else 1)
