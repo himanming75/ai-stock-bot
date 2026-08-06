@@ -1,0 +1,10 @@
+{
+  "automatic_order_generation_enabled": false,
+  "automatic_rebalance_execution_enabled": false,
+  "daily_loss_limit": "0.03",
+  "max_correlation_group_weight": "0.25",
+  "max_position_weight": "0.15",
+  "max_sector_weight": "0.30",
+  "rebalance_threshold": "0.02",
+  "weekly_loss_limit": "0.06"
+}

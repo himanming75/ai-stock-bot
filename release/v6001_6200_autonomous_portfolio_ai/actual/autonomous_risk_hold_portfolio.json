@@ -1,0 +1,57 @@
+{
+  "allocatable_weight": "0.22",
+  "allocations": [
+    {
+      "action": "HOLD",
+      "constrained_by": [
+        "RISK_HOLD"
+      ],
+      "current_weight": "0.08",
+      "delta_weight": "0",
+      "reason": "LOSS_BUDGET_GUARD_ACTIVE",
+      "symbol": "NVDA",
+      "target_weight": "0.08"
+    },
+    {
+      "action": "HOLD",
+      "constrained_by": [
+        "RISK_HOLD"
+      ],
+      "current_weight": "0.07",
+      "delta_weight": "0",
+      "reason": "LOSS_BUDGET_GUARD_ACTIVE",
+      "symbol": "MSFT",
+      "target_weight": "0.07"
+    },
+    {
+      "action": "HOLD",
+      "constrained_by": [
+        "RISK_HOLD"
+      ],
+      "current_weight": "0.05",
+      "delta_weight": "0",
+      "reason": "LOSS_BUDGET_GUARD_ACTIVE",
+      "symbol": "JPM",
+      "target_weight": "0.05"
+    },
+    {
+      "action": "HOLD",
+      "constrained_by": [
+        "RISK_HOLD"
+      ],
+      "current_weight": "0.04",
+      "delta_weight": "0",
+      "reason": "LOSS_BUDGET_GUARD_ACTIVE",
+      "symbol": "XLE",
+      "target_weight": "0.04"
+    }
+  ],
+  "cash_target": "0.78",
+  "rebalance_required": false,
+  "risk_state": {
+    "daily_breached": true,
+    "new_entries_allowed": false,
+    "state": "RISK_HOLD",
+    "weekly_breached": true
+  }
+}

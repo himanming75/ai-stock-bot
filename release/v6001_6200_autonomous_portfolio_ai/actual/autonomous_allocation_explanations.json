@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "action": "INCREASE",
+      "constrained_by": [
+        "MAX_POSITION_WEIGHT"
+      ],
+      "current_weight": "0.08",
+      "delta_weight": "0.07",
+      "reason": "RISK_ADJUSTED_ALLOCATION",
+      "symbol": "NVDA",
+      "target_weight": "0.15"
+    },
+    {
+      "action": "INCREASE",
+      "constrained_by": [
+        "MAX_POSITION_WEIGHT",
+        "MAX_CORRELATION_GROUP_WEIGHT"
+      ],
+      "current_weight": "0.07",
+      "delta_weight": "0.03",
+      "reason": "RISK_ADJUSTED_ALLOCATION",
+      "symbol": "MSFT",
+      "target_weight": "0.10"
+    },
+    {
+      "action": "INCREASE",
+      "constrained_by": [],
+      "current_weight": "0.05",
+      "delta_weight": "0.0750083931023958492293605982",
+      "reason": "RISK_ADJUSTED_ALLOCATION",
+      "symbol": "JPM",
+      "target_weight": "0.1250083931023958492293605982"
+    },
+    {
+      "action": "DECREASE",
+      "constrained_by": [],
+      "current_weight": "0.04",
+      "delta_weight": "-0.04",
+      "reason": "NOT_ELIGIBLE_FOR_NEW_ALLOCATION",
+      "symbol": "XLE",
+      "target_weight": "0"
+    }
+  ]
+}

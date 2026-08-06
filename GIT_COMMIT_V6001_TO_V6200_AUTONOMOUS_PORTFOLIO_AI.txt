@@ -1,0 +1,10 @@
+git add autonomous_portfolio_ai
+git add tools/run_v6001_to_v6200_autonomous_portfolio_ai.py
+git add tools/test_v6001_to_v6200_autonomous_portfolio_ai.py
+git add release/v6001_6200_autonomous_portfolio_ai
+git add RUN_V6001_TO_V6200_AUTONOMOUS_PORTFOLIO_AI.ps1
+git add RUN_V6001_TO_V6200_AUTONOMOUS_PORTFOLIO_AI_TEST.ps1
+git add V6001_TO_V6200_AUTONOMOUS_PORTFOLIO_AI_MANIFEST.json
+git add GIT_COMMIT_V6001_TO_V6200_AUTONOMOUS_PORTFOLIO_AI.txt
+git commit -m "Add V6001-V6200 autonomous portfolio AI risk allocation"
+git push origin main
