@@ -1,0 +1,104 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "errors": [
+    {
+      "broker": "ETRADE",
+      "error": "FILE_NOT_FOUND"
+    }
+  ],
+  "generated_at": "2026-08-06T04:04:05.346062+00:00",
+  "issues": [],
+  "partial_success": true,
+  "portal_snapshot": {
+    "broker_cards": [
+      {
+        "account_count": 1,
+        "broker": "ALPACA",
+        "freshness": "FRESH",
+        "order_count": 1,
+        "position_count": 1,
+        "read_only": true,
+        "status": "CONNECTED",
+        "write_enabled": false
+      }
+    ],
+    "broker_write_enabled": false,
+    "errors": [
+      {
+        "broker": "ETRADE",
+        "error": "FILE_NOT_FOUND"
+      }
+    ],
+    "generated_at": "2026-08-06T04:04:05.346062+00:00",
+    "issues": [],
+    "mode": "READ_ONLY",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "overall_status": "DEGRADED",
+    "run_id": "sync_409a92651385aabb",
+    "totals": {
+      "accounts": 1,
+      "brokers": 1,
+      "errors": 1,
+      "orders": 1,
+      "positions": 1,
+      "reconciliation_issues": 0
+    }
+  },
+  "run_id": "sync_409a92651385aabb",
+  "snapshots": {
+    "ALPACA": {
+      "accounts": [
+        {
+          "account_id": "alpaca-1",
+          "broker": "ALPACA",
+          "buying_power": 100000,
+          "cash": 50000,
+          "equity": 52000,
+          "market_value": 2000
+        }
+      ],
+      "orders": [
+        {
+          "account_id": "alpaca-1",
+          "broker": "ALPACA",
+          "order_id": "a-1",
+          "status": "FILLED"
+        }
+      ],
+      "positions": [
+        {
+          "account_id": "alpaca-1",
+          "average_price": 180,
+          "broker": "ALPACA",
+          "quantity": 10,
+          "symbol": "AAPL"
+        }
+      ],
+      "quotes": []
+    }
+  },
+  "sources": [
+    {
+      "age_seconds": 0.050485,
+      "available": true,
+      "broker": "ALPACA",
+      "error": null,
+      "freshness": "FRESH",
+      "generated_at": "2026-08-06T04:04:05.295850+00:00",
+      "source_path": "release\\v8401_8600_broker_sync\\fixtures\\alpaca.json"
+    },
+    {
+      "age_seconds": null,
+      "available": false,
+      "broker": "ETRADE",
+      "error": "FILE_NOT_FOUND",
+      "freshness": "MISSING",
+      "generated_at": null,
+      "source_path": "release\\v8401_8600_broker_sync\\fixtures\\missing.json"
+    }
+  ],
+  "status": "PASS"
+}

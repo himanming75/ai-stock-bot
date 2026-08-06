@@ -1,0 +1,133 @@
+{
+  "broker_cards": [
+    {
+      "account_count": 1,
+      "broker": "ALPACA",
+      "freshness": "FRESH",
+      "order_count": 1,
+      "position_count": 1,
+      "read_only": true,
+      "status": "CONNECTED",
+      "write_enabled": false
+    },
+    {
+      "account_count": 1,
+      "broker": "ETRADE",
+      "freshness": "FRESH",
+      "order_count": 1,
+      "position_count": 1,
+      "read_only": true,
+      "status": "CONNECTED",
+      "write_enabled": false
+    }
+  ],
+  "broker_write_enabled": false,
+  "errors": [],
+  "generated_at": "2026-08-06T04:04:05.298329+00:00",
+  "issues": [
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": 20000.0,
+      "issue_type": "ACCOUNT_CASH_DIFFERENCE",
+      "left_value": 50000.0,
+      "message": "Account cash differs.",
+      "metadata": {},
+      "right_value": 30000.0,
+      "severity": "INFO",
+      "symbol": null
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": 70000.0,
+      "issue_type": "ACCOUNT_BUYING_POWER_DIFFERENCE",
+      "left_value": 100000.0,
+      "message": "Account buying_power differs.",
+      "metadata": {},
+      "right_value": 30000.0,
+      "severity": "INFO",
+      "symbol": null
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": 7000.0,
+      "issue_type": "ACCOUNT_EQUITY_DIFFERENCE",
+      "left_value": 52000.0,
+      "message": "Account equity differs.",
+      "metadata": {},
+      "right_value": 45000.0,
+      "severity": "INFO",
+      "symbol": null
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": -13000.0,
+      "issue_type": "ACCOUNT_MARKET_VALUE_DIFFERENCE",
+      "left_value": 2000.0,
+      "message": "Account market_value differs.",
+      "metadata": {},
+      "right_value": 15000.0,
+      "severity": "INFO",
+      "symbol": null
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": 10.0,
+      "issue_type": "POSITION_PRESENCE_MISMATCH",
+      "left_value": 10.0,
+      "message": "AAPL exists on only one broker.",
+      "metadata": {},
+      "right_value": 0,
+      "severity": "WARNING",
+      "symbol": "AAPL"
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": -2.0,
+      "issue_type": "POSITION_PRESENCE_MISMATCH",
+      "left_value": 0,
+      "message": "MSFT exists on only one broker.",
+      "metadata": {},
+      "right_value": 2.0,
+      "severity": "WARNING",
+      "symbol": "MSFT"
+    },
+    {
+      "account_id": null,
+      "broker_left": "ALPACA",
+      "broker_right": "ETRADE",
+      "difference": -1.0,
+      "issue_type": "OPEN_ORDER_COUNT_MISMATCH",
+      "left_value": 0,
+      "message": "Open order counts differ.",
+      "metadata": {},
+      "right_value": 1,
+      "severity": "INFO",
+      "symbol": null
+    }
+  ],
+  "mode": "READ_ONLY",
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "overall_status": "HEALTHY",
+  "run_id": "sync_980d3f29c8b8e1d4",
+  "totals": {
+    "accounts": 2,
+    "brokers": 2,
+    "errors": 0,
+    "orders": 2,
+    "positions": 2,
+    "reconciliation_issues": 7
+  }
+}

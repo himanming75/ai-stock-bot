@@ -1,0 +1,36 @@
+{
+  "broker_cards": [
+    {
+      "account_count": 1,
+      "broker": "ALPACA",
+      "freshness": "FRESH",
+      "order_count": 1,
+      "position_count": 1,
+      "read_only": true,
+      "status": "CONNECTED",
+      "write_enabled": false
+    }
+  ],
+  "broker_write_enabled": false,
+  "errors": [
+    {
+      "broker": "ETRADE",
+      "error": "FILE_NOT_FOUND"
+    }
+  ],
+  "generated_at": "2026-08-06T04:04:05.346062+00:00",
+  "issues": [],
+  "mode": "READ_ONLY",
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "overall_status": "DEGRADED",
+  "run_id": "sync_409a92651385aabb",
+  "totals": {
+    "accounts": 1,
+    "brokers": 1,
+    "errors": 1,
+    "orders": 1,
+    "positions": 1,
+    "reconciliation_issues": 0
+  }
+}

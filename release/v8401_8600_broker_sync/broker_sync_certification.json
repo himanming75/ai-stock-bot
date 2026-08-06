@@ -1,0 +1,447 @@
+{
+  "account_reconciliation_ready": true,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "cancel_blocked": true,
+  "certification_fingerprint": "4b166245c16e2717e694807e8eb8b5429b62fa56e5a90cb296821c5b17ef8055",
+  "file_loader_ready": true,
+  "fixture_result": {
+    "actual_broker_write_performed": false,
+    "actual_order_cancel_performed": false,
+    "actual_order_submission_performed": false,
+    "errors": [],
+    "generated_at": "2026-08-06T04:04:05.298329+00:00",
+    "issues": [
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": 20000.0,
+        "issue_type": "ACCOUNT_CASH_DIFFERENCE",
+        "left_value": 50000.0,
+        "message": "Account cash differs.",
+        "metadata": {},
+        "right_value": 30000.0,
+        "severity": "INFO",
+        "symbol": null
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": 70000.0,
+        "issue_type": "ACCOUNT_BUYING_POWER_DIFFERENCE",
+        "left_value": 100000.0,
+        "message": "Account buying_power differs.",
+        "metadata": {},
+        "right_value": 30000.0,
+        "severity": "INFO",
+        "symbol": null
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": 7000.0,
+        "issue_type": "ACCOUNT_EQUITY_DIFFERENCE",
+        "left_value": 52000.0,
+        "message": "Account equity differs.",
+        "metadata": {},
+        "right_value": 45000.0,
+        "severity": "INFO",
+        "symbol": null
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": -13000.0,
+        "issue_type": "ACCOUNT_MARKET_VALUE_DIFFERENCE",
+        "left_value": 2000.0,
+        "message": "Account market_value differs.",
+        "metadata": {},
+        "right_value": 15000.0,
+        "severity": "INFO",
+        "symbol": null
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": 10.0,
+        "issue_type": "POSITION_PRESENCE_MISMATCH",
+        "left_value": 10.0,
+        "message": "AAPL exists on only one broker.",
+        "metadata": {},
+        "right_value": 0,
+        "severity": "WARNING",
+        "symbol": "AAPL"
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": -2.0,
+        "issue_type": "POSITION_PRESENCE_MISMATCH",
+        "left_value": 0,
+        "message": "MSFT exists on only one broker.",
+        "metadata": {},
+        "right_value": 2.0,
+        "severity": "WARNING",
+        "symbol": "MSFT"
+      },
+      {
+        "account_id": null,
+        "broker_left": "ALPACA",
+        "broker_right": "ETRADE",
+        "difference": -1.0,
+        "issue_type": "OPEN_ORDER_COUNT_MISMATCH",
+        "left_value": 0,
+        "message": "Open order counts differ.",
+        "metadata": {},
+        "right_value": 1,
+        "severity": "INFO",
+        "symbol": null
+      }
+    ],
+    "partial_success": false,
+    "portal_snapshot": {
+      "broker_cards": [
+        {
+          "account_count": 1,
+          "broker": "ALPACA",
+          "freshness": "FRESH",
+          "order_count": 1,
+          "position_count": 1,
+          "read_only": true,
+          "status": "CONNECTED",
+          "write_enabled": false
+        },
+        {
+          "account_count": 1,
+          "broker": "ETRADE",
+          "freshness": "FRESH",
+          "order_count": 1,
+          "position_count": 1,
+          "read_only": true,
+          "status": "CONNECTED",
+          "write_enabled": false
+        }
+      ],
+      "broker_write_enabled": false,
+      "errors": [],
+      "generated_at": "2026-08-06T04:04:05.298329+00:00",
+      "issues": [
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": 20000.0,
+          "issue_type": "ACCOUNT_CASH_DIFFERENCE",
+          "left_value": 50000.0,
+          "message": "Account cash differs.",
+          "metadata": {},
+          "right_value": 30000.0,
+          "severity": "INFO",
+          "symbol": null
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": 70000.0,
+          "issue_type": "ACCOUNT_BUYING_POWER_DIFFERENCE",
+          "left_value": 100000.0,
+          "message": "Account buying_power differs.",
+          "metadata": {},
+          "right_value": 30000.0,
+          "severity": "INFO",
+          "symbol": null
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": 7000.0,
+          "issue_type": "ACCOUNT_EQUITY_DIFFERENCE",
+          "left_value": 52000.0,
+          "message": "Account equity differs.",
+          "metadata": {},
+          "right_value": 45000.0,
+          "severity": "INFO",
+          "symbol": null
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": -13000.0,
+          "issue_type": "ACCOUNT_MARKET_VALUE_DIFFERENCE",
+          "left_value": 2000.0,
+          "message": "Account market_value differs.",
+          "metadata": {},
+          "right_value": 15000.0,
+          "severity": "INFO",
+          "symbol": null
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": 10.0,
+          "issue_type": "POSITION_PRESENCE_MISMATCH",
+          "left_value": 10.0,
+          "message": "AAPL exists on only one broker.",
+          "metadata": {},
+          "right_value": 0,
+          "severity": "WARNING",
+          "symbol": "AAPL"
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": -2.0,
+          "issue_type": "POSITION_PRESENCE_MISMATCH",
+          "left_value": 0,
+          "message": "MSFT exists on only one broker.",
+          "metadata": {},
+          "right_value": 2.0,
+          "severity": "WARNING",
+          "symbol": "MSFT"
+        },
+        {
+          "account_id": null,
+          "broker_left": "ALPACA",
+          "broker_right": "ETRADE",
+          "difference": -1.0,
+          "issue_type": "OPEN_ORDER_COUNT_MISMATCH",
+          "left_value": 0,
+          "message": "Open order counts differ.",
+          "metadata": {},
+          "right_value": 1,
+          "severity": "INFO",
+          "symbol": null
+        }
+      ],
+      "mode": "READ_ONLY",
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false,
+      "overall_status": "HEALTHY",
+      "run_id": "sync_980d3f29c8b8e1d4",
+      "totals": {
+        "accounts": 2,
+        "brokers": 2,
+        "errors": 0,
+        "orders": 2,
+        "positions": 2,
+        "reconciliation_issues": 7
+      }
+    },
+    "run_id": "sync_980d3f29c8b8e1d4",
+    "snapshots": {
+      "ALPACA": {
+        "accounts": [
+          {
+            "account_id": "alpaca-1",
+            "broker": "ALPACA",
+            "buying_power": 100000,
+            "cash": 50000,
+            "equity": 52000,
+            "market_value": 2000
+          }
+        ],
+        "orders": [
+          {
+            "account_id": "alpaca-1",
+            "broker": "ALPACA",
+            "order_id": "a-1",
+            "status": "FILLED"
+          }
+        ],
+        "positions": [
+          {
+            "account_id": "alpaca-1",
+            "average_price": 180,
+            "broker": "ALPACA",
+            "quantity": 10,
+            "symbol": "AAPL"
+          }
+        ],
+        "quotes": []
+      },
+      "ETRADE": {
+        "accounts": [
+          {
+            "account_id": "etrade-1",
+            "broker": "ETRADE",
+            "buying_power": 30000,
+            "cash": 30000,
+            "equity": 45000,
+            "market_value": 15000
+          }
+        ],
+        "orders": [
+          {
+            "account_id": "etrade-1",
+            "broker": "ETRADE",
+            "order_id": "e-1",
+            "status": "OPEN"
+          }
+        ],
+        "positions": [
+          {
+            "account_id": "etrade-1",
+            "average_price": 400,
+            "broker": "ETRADE",
+            "quantity": 2,
+            "symbol": "MSFT"
+          }
+        ],
+        "quotes": []
+      }
+    },
+    "sources": [
+      {
+        "age_seconds": 0.016019,
+        "available": true,
+        "broker": "ALPACA",
+        "error": null,
+        "freshness": "FRESH",
+        "generated_at": "2026-08-06T04:04:05.295850+00:00",
+        "source_path": "release\\v8401_8600_broker_sync\\fixtures\\alpaca.json"
+      },
+      {
+        "age_seconds": 0.045872,
+        "available": true,
+        "broker": "ETRADE",
+        "error": null,
+        "freshness": "FRESH",
+        "generated_at": "2026-08-06T04:04:05.295850+00:00",
+        "source_path": "release\\v8401_8600_broker_sync\\fixtures\\etrade.json"
+      }
+    ],
+    "status": "PASS"
+  },
+  "freshness_detection_ready": true,
+  "jsonl_ledger_ready": true,
+  "next_fixed_development": "V8601_TO_V8800_UNIFIED_TRADING_PORTAL_AND_LIVE_MULTI_BROKER_DASHBOARD",
+  "order_reconciliation_ready": true,
+  "partial_result": {
+    "actual_broker_write_performed": false,
+    "actual_order_cancel_performed": false,
+    "actual_order_submission_performed": false,
+    "errors": [
+      {
+        "broker": "ETRADE",
+        "error": "FILE_NOT_FOUND"
+      }
+    ],
+    "generated_at": "2026-08-06T04:04:05.346062+00:00",
+    "issues": [],
+    "partial_success": true,
+    "portal_snapshot": {
+      "broker_cards": [
+        {
+          "account_count": 1,
+          "broker": "ALPACA",
+          "freshness": "FRESH",
+          "order_count": 1,
+          "position_count": 1,
+          "read_only": true,
+          "status": "CONNECTED",
+          "write_enabled": false
+        }
+      ],
+      "broker_write_enabled": false,
+      "errors": [
+        {
+          "broker": "ETRADE",
+          "error": "FILE_NOT_FOUND"
+        }
+      ],
+      "generated_at": "2026-08-06T04:04:05.346062+00:00",
+      "issues": [],
+      "mode": "READ_ONLY",
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false,
+      "overall_status": "DEGRADED",
+      "run_id": "sync_409a92651385aabb",
+      "totals": {
+        "accounts": 1,
+        "brokers": 1,
+        "errors": 1,
+        "orders": 1,
+        "positions": 1,
+        "reconciliation_issues": 0
+      }
+    },
+    "run_id": "sync_409a92651385aabb",
+    "snapshots": {
+      "ALPACA": {
+        "accounts": [
+          {
+            "account_id": "alpaca-1",
+            "broker": "ALPACA",
+            "buying_power": 100000,
+            "cash": 50000,
+            "equity": 52000,
+            "market_value": 2000
+          }
+        ],
+        "orders": [
+          {
+            "account_id": "alpaca-1",
+            "broker": "ALPACA",
+            "order_id": "a-1",
+            "status": "FILLED"
+          }
+        ],
+        "positions": [
+          {
+            "account_id": "alpaca-1",
+            "average_price": 180,
+            "broker": "ALPACA",
+            "quantity": 10,
+            "symbol": "AAPL"
+          }
+        ],
+        "quotes": []
+      }
+    },
+    "sources": [
+      {
+        "age_seconds": 0.050485,
+        "available": true,
+        "broker": "ALPACA",
+        "error": null,
+        "freshness": "FRESH",
+        "generated_at": "2026-08-06T04:04:05.295850+00:00",
+        "source_path": "release\\v8401_8600_broker_sync\\fixtures\\alpaca.json"
+      },
+      {
+        "age_seconds": null,
+        "available": false,
+        "broker": "ETRADE",
+        "error": "FILE_NOT_FOUND",
+        "freshness": "MISSING",
+        "generated_at": null,
+        "source_path": "release\\v8401_8600_broker_sync\\fixtures\\missing.json"
+      }
+    ],
+    "status": "PASS"
+  },
+  "partial_success_ready": true,
+  "portal_snapshot_ready": true,
+  "position_reconciliation_ready": true,
+  "stage": "V8401_TO_V8600_BROKER_SYNC_RECONCILIATION_AND_PORTAL_INTEGRATION",
+  "stale_detection_ready": true,
+  "status": "PASS",
+  "write_blocked": true
+}

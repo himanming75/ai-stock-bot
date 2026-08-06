@@ -1,0 +1,12 @@
+git add broker_sync
+git add tools/run_v8401_to_v8600_broker_sync.py
+git add tools/run_actual_multi_broker_sync.py
+git add tools/test_v8401_to_v8600_broker_sync.py
+git add release/v8401_8600_broker_sync
+git add RUN_V8401_TO_V8600_BROKER_SYNC_TEST.ps1
+git add RUN_V8401_TO_V8600_BROKER_SYNC.ps1
+git add RUN_ACTUAL_MULTI_BROKER_SYNC_READ_ONLY.ps1
+git add V8401_TO_V8600_BROKER_SYNC_MANIFEST.json
+git add GIT_COMMIT_V8401_TO_V8600_BROKER_SYNC.txt
+git commit -m "Add V8401-V8600 broker sync reconciliation portal integration"
+git push origin main
