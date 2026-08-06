@@ -1,0 +1,350 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "alpaca_adapter_ready": true,
+  "broker_factory_ready": true,
+  "cancel_blocked": true,
+  "capability_registry_ready": true,
+  "certification_fingerprint": "5adab4d8dfd096959312364747c05c2277ff3bea660e28aa51c3ab193ddf7445",
+  "etrade_adapter_ready": true,
+  "next_fixed_development": "V8401_TO_V8600_BROKER_SYNC_RECONCILIATION_AND_PORTAL_INTEGRATION",
+  "read_only_router_ready": true,
+  "snapshot": {
+    "accounts": [
+      {
+        "account_id": "alpaca-paper-fixture",
+        "account_id_masked": "PA****01",
+        "account_mode": "ACTIVE",
+        "account_type": "BROKERAGE",
+        "broker": "ALPACA",
+        "buying_power": 100000.0,
+        "cash": 50000.0,
+        "currency": "USD",
+        "environment": "PAPER",
+        "equity": 52000.0,
+        "market_value": 2000.0,
+        "raw": {
+          "account_number": "PA****01",
+          "buying_power": "100000",
+          "cash": "50000",
+          "equity": "52000",
+          "id": "alpaca-paper-fixture",
+          "long_market_value": "2000",
+          "status": "ACTIVE"
+        },
+        "read_only": true,
+        "status": "ACTIVE"
+      },
+      {
+        "account_id": "etrade-fixture",
+        "account_id_masked": "****1234",
+        "account_mode": "CASH",
+        "account_type": "INDIVIDUAL",
+        "broker": "ETRADE",
+        "buying_power": null,
+        "cash": null,
+        "currency": "USD",
+        "environment": "SANDBOX",
+        "equity": null,
+        "market_value": null,
+        "raw": {
+          "account_id_key": "etrade-fixture",
+          "account_id_masked": "****1234",
+          "account_mode": "CASH",
+          "account_type": "INDIVIDUAL",
+          "status": "ACTIVE"
+        },
+        "read_only": true,
+        "status": "ACTIVE"
+      }
+    ],
+    "broker_write_enabled": false,
+    "brokers": {
+      "ALPACA": {
+        "account_count": 1,
+        "capabilities": {
+          "accounts_read": true,
+          "crypto": true,
+          "extended_hours": true,
+          "fractional": true,
+          "market_clock_read": true,
+          "options": false,
+          "orders_read": true,
+          "positions_read": true,
+          "quotes_read": true,
+          "shorting": true,
+          "write_enabled": false
+        },
+        "order_count": 1,
+        "position_count": 1,
+        "quote_count": 1
+      },
+      "ETRADE": {
+        "account_count": 1,
+        "capabilities": {
+          "accounts_read": true,
+          "crypto": false,
+          "extended_hours": true,
+          "fractional": false,
+          "market_clock_read": false,
+          "options": true,
+          "orders_read": true,
+          "positions_read": true,
+          "quotes_read": true,
+          "shorting": true,
+          "write_enabled": false
+        },
+        "order_count": 1,
+        "position_count": 1,
+        "quote_count": 1
+      }
+    },
+    "mode": "READ_ONLY",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "orders": [
+      {
+        "account_id": "alpaca-paper-fixture",
+        "average_fill_price": 180.0,
+        "broker": "ALPACA",
+        "environment": "PAPER",
+        "executed_at": null,
+        "filled_quantity": 10.0,
+        "limit_price": 180.0,
+        "order_id": "alpaca-order-1",
+        "order_type": "limit",
+        "quantity": 10.0,
+        "raw": {
+          "filled_avg_price": "180",
+          "filled_qty": "10",
+          "id": "alpaca-order-1",
+          "limit_price": "180",
+          "qty": "10",
+          "side": "buy",
+          "status": "filled",
+          "symbol": "AAPL",
+          "time_in_force": "day",
+          "type": "limit"
+        },
+        "read_only": true,
+        "security_type": "EQ",
+        "side": "BUY",
+        "status": "filled",
+        "stop_price": null,
+        "submitted_at": null,
+        "symbol": "AAPL",
+        "time_in_force": "day"
+      },
+      {
+        "account_id": "etrade-fixture",
+        "average_fill_price": null,
+        "broker": "ETRADE",
+        "environment": "SANDBOX",
+        "executed_at": null,
+        "filled_quantity": 0.0,
+        "limit_price": 410.0,
+        "order_id": "101",
+        "order_type": "EQ",
+        "quantity": 2.0,
+        "raw": {
+          "detail": {
+            "Instrument": [
+              {
+                "Product": {
+                  "securityType": "EQ",
+                  "symbol": "MSFT"
+                },
+                "filledQuantity": 0,
+                "orderAction": "BUY",
+                "orderedQuantity": 2
+              }
+            ],
+            "limitPrice": 410,
+            "orderTerm": "GOOD_FOR_DAY",
+            "priceType": "LIMIT",
+            "status": "OPEN"
+          },
+          "instrument": {
+            "Product": {
+              "securityType": "EQ",
+              "symbol": "MSFT"
+            },
+            "filledQuantity": 0,
+            "orderAction": "BUY",
+            "orderedQuantity": 2
+          },
+          "order": {
+            "OrderDetail": [
+              {
+                "Instrument": [
+                  {
+                    "Product": {
+                      "securityType": "EQ",
+                      "symbol": "MSFT"
+                    },
+                    "filledQuantity": 0,
+                    "orderAction": "BUY",
+                    "orderedQuantity": 2
+                  }
+                ],
+                "limitPrice": 410,
+                "orderTerm": "GOOD_FOR_DAY",
+                "priceType": "LIMIT",
+                "status": "OPEN"
+              }
+            ],
+            "orderId": 101,
+            "orderType": "EQ"
+          }
+        },
+        "read_only": true,
+        "security_type": "EQ",
+        "side": "BUY",
+        "status": "OPEN",
+        "stop_price": null,
+        "submitted_at": null,
+        "symbol": "MSFT",
+        "time_in_force": "GOOD_FOR_DAY"
+      }
+    ],
+    "positions": [
+      {
+        "account_id": "alpaca-paper-fixture",
+        "average_price": 180.0,
+        "broker": "ALPACA",
+        "cost_basis": 1800.0,
+        "currency": "USD",
+        "day_pl": null,
+        "day_pl_percent": null,
+        "environment": "PAPER",
+        "market_price": 190.0,
+        "market_value": 1900.0,
+        "quantity": 10.0,
+        "raw": {
+          "avg_entry_price": "180",
+          "cost_basis": "1800",
+          "current_price": "190",
+          "market_value": "1900",
+          "qty": "10",
+          "side": "long",
+          "symbol": "AAPL",
+          "unrealized_pl": "100",
+          "unrealized_plpc": "0.0555"
+        },
+        "security_type": "EQ",
+        "side": "LONG",
+        "symbol": "AAPL",
+        "unrealized_pl": 100.0,
+        "unrealized_pl_percent": 0.0555
+      },
+      {
+        "account_id": "etrade-fixture",
+        "average_price": 400.0,
+        "broker": "ETRADE",
+        "cost_basis": 800.0,
+        "currency": "USD",
+        "day_pl": null,
+        "day_pl_percent": null,
+        "environment": "SANDBOX",
+        "market_price": 420.0,
+        "market_value": 840.0,
+        "quantity": 2.0,
+        "raw": {
+          "Product": {
+            "securityType": "EQ",
+            "symbol": "MSFT"
+          },
+          "Quick": {
+            "lastTrade": 420.0
+          },
+          "marketValue": 840,
+          "positionType": "LONG",
+          "pricePaid": 400,
+          "quantity": 2,
+          "totalCost": 800,
+          "totalGain": 40,
+          "totalGainPct": 5
+        },
+        "security_type": "EQ",
+        "side": "LONG",
+        "symbol": "MSFT",
+        "unrealized_pl": 40.0,
+        "unrealized_pl_percent": 5.0
+      }
+    ],
+    "quotes": [
+      {
+        "ask": 190.1,
+        "bid": 189.9,
+        "broker": "ALPACA",
+        "environment": "PAPER",
+        "high": null,
+        "last": 190.0,
+        "low": null,
+        "open": null,
+        "previous_close": null,
+        "raw": {
+          "ask_price": "190.1",
+          "bid_price": "189.9",
+          "last_price": "190",
+          "volume": "1000000"
+        },
+        "security_type": "EQ",
+        "status": "",
+        "symbol": "AAPL",
+        "timestamp": null,
+        "volume": 1000000.0
+      },
+      {
+        "ask": 420.1,
+        "bid": 419.9,
+        "broker": "ETRADE",
+        "environment": "SANDBOX",
+        "high": null,
+        "last": 420.0,
+        "low": null,
+        "open": null,
+        "previous_close": null,
+        "raw": {
+          "All": {
+            "ask": 420.1,
+            "bid": 419.9,
+            "lastTrade": 420,
+            "volume": 500000
+          },
+          "Product": {
+            "securityType": "EQ",
+            "symbol": "MSFT"
+          },
+          "quoteStatus": "REALTIME"
+        },
+        "security_type": "EQ",
+        "status": "REALTIME",
+        "symbol": "MSFT",
+        "timestamp": "",
+        "volume": 500000.0
+      }
+    ],
+    "totals": {
+      "accounts": 2,
+      "brokers": 2,
+      "orders": 2,
+      "positions": 2,
+      "quotes": 2
+    }
+  },
+  "stage": "V8201_TO_V8400_BROKER_ABSTRACTION_AND_UNIFIED_READ_ONLY_MODELS",
+  "status": "PASS",
+  "unified_snapshot_ready": true,
+  "universal_account_model_ready": true,
+  "universal_order_model_ready": true,
+  "universal_position_model_ready": true,
+  "universal_quote_model_ready": true,
+  "write_blocked": true
+}

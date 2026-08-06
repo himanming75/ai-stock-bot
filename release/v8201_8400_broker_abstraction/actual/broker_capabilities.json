@@ -1,0 +1,40 @@
+{
+  "ALPACA": {
+    "account_count": 1,
+    "capabilities": {
+      "accounts_read": true,
+      "crypto": true,
+      "extended_hours": true,
+      "fractional": true,
+      "market_clock_read": true,
+      "options": false,
+      "orders_read": true,
+      "positions_read": true,
+      "quotes_read": true,
+      "shorting": true,
+      "write_enabled": false
+    },
+    "order_count": 1,
+    "position_count": 1,
+    "quote_count": 1
+  },
+  "ETRADE": {
+    "account_count": 1,
+    "capabilities": {
+      "accounts_read": true,
+      "crypto": false,
+      "extended_hours": true,
+      "fractional": false,
+      "market_clock_read": false,
+      "options": true,
+      "orders_read": true,
+      "positions_read": true,
+      "quotes_read": true,
+      "shorting": true,
+      "write_enabled": false
+    },
+    "order_count": 1,
+    "position_count": 1,
+    "quote_count": 1
+  }
+}
