@@ -1,0 +1,10 @@
+{
+  "allowed_scopes": [
+    "workspace.read",
+    "audit.read",
+    "strategy.read",
+    "risk.read"
+  ],
+  "plaintext_stored": false,
+  "write_scopes_enabled": false
+}

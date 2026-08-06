@@ -1,0 +1,12 @@
+git add saas_security
+git add tools/run_v7401_to_v7600_saas_security.py
+git add tools/run_saas_security_server.py
+git add tools/test_v7401_to_v7600_saas_security.py
+git add release/v7401_7600_saas_security
+git add RUN_V7401_TO_V7600_SAAS_SECURITY.ps1
+git add RUN_V7401_TO_V7600_SAAS_SECURITY_TEST.ps1
+git add RUN_SAAS_SECURITY_LOCAL_SERVER.ps1
+git add V7401_TO_V7600_SAAS_SECURITY_MANIFEST.json
+git add GIT_COMMIT_V7401_TO_V7600_SAAS_SECURITY.txt
+git commit -m "Add V7401-V7600 SaaS security recovery and admin"
+git push origin main
