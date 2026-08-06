@@ -1,0 +1,10 @@
+{
+  "action": "BUY",
+  "automatic_promotion_performed": false,
+  "autonomous_state": "DECISION_READY",
+  "confidence": "0.86",
+  "order_submission_allowed": false,
+  "promotion_recommended": true,
+  "reason": "BEST_REGIME_FIT:BULL_TREND",
+  "selected_strategy_id": "MOMENTUM"
+}

@@ -1,0 +1,10 @@
+git add autonomous_ai_brain
+git add tools/run_v5601_to_v5800_autonomous_ai_brain.py
+git add tools/test_v5601_to_v5800_autonomous_ai_brain.py
+git add release/v5601_5800_autonomous_ai_brain
+git add RUN_V5601_TO_V5800_AUTONOMOUS_AI_BRAIN.ps1
+git add RUN_V5601_TO_V5800_AUTONOMOUS_AI_BRAIN_TEST.ps1
+git add V5601_TO_V5800_AUTONOMOUS_AI_BRAIN_MANIFEST.json
+git add GIT_COMMIT_V5601_TO_V5800_AUTONOMOUS_AI_BRAIN.txt
+git commit -m "Add V5601-V5800 autonomous AI brain strategy competition"
+git push origin main

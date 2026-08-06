@@ -1,0 +1,32 @@
+{
+  "critical_health": {
+    "action": "ALL_STOP",
+    "automatic_promotion_performed": false,
+    "autonomous_state": "FAILSAFE_BLOCKED",
+    "confidence": "0",
+    "order_submission_allowed": false,
+    "promotion_recommended": false,
+    "reason": "CRITICAL_SYSTEM_HEALTH",
+    "selected_strategy_id": null
+  },
+  "market_closed": {
+    "action": "WAIT",
+    "automatic_promotion_performed": false,
+    "autonomous_state": "MARKET_CLOSED",
+    "confidence": "0",
+    "order_submission_allowed": false,
+    "promotion_recommended": false,
+    "reason": "MARKET_NOT_OPEN",
+    "selected_strategy_id": null
+  },
+  "risk_hold": {
+    "action": "WAIT",
+    "automatic_promotion_performed": false,
+    "autonomous_state": "RISK_HOLD",
+    "confidence": "0",
+    "order_submission_allowed": false,
+    "promotion_recommended": false,
+    "reason": "DRAWDOWN_GUARD_ACTIVE",
+    "selected_strategy_id": null
+  }
+}

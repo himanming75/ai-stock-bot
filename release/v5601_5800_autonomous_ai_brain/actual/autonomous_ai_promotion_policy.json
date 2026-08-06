@@ -1,0 +1,7 @@
+{
+  "automatic_promotion_enabled": false,
+  "automatic_threshold_mutation_enabled": false,
+  "automatic_weight_mutation_enabled": false,
+  "manual_approval_required": true,
+  "recommendation_enabled": true
+}

@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "eligible": true,
+      "rank": 1,
+      "rejection_reasons": [],
+      "strategy_id": "MOMENTUM",
+      "total_score": "0.7465"
+    },
+    {
+      "eligible": true,
+      "rank": 2,
+      "rejection_reasons": [],
+      "strategy_id": "BREAKOUT",
+      "total_score": "0.5815"
+    },
+    {
+      "eligible": false,
+      "rank": 3,
+      "rejection_reasons": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "strategy_id": "SCALPING",
+      "total_score": "0.4265"
+    },
+    {
+      "eligible": false,
+      "rank": 4,
+      "rejection_reasons": [
+        "DRAWDOWN_RISK_TOO_HIGH",
+        "STABILITY_TOO_LOW"
+      ],
+      "strategy_id": "MEAN_REVERSION",
+      "total_score": "0.2725"
+    }
+  ]
+}
