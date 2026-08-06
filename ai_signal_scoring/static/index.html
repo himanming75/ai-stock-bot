@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Ensemble Scoring / AI 앙상블 점수</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside>
+    <h1>AI Stock Bot</h1>
+    <p>Ensemble Scoring<br>앙상블 점수</p>
+    <nav>
+      <button class="active">Overview / 전체 현황</button>
+      <button>Ranking / 종목 순위</button>
+      <button>Components / 구성 점수</button>
+      <button>Explainability / 판단 설명</button>
+      <button>Backtest / 백테스트</button>
+    </nav>
+    <div class="safe">
+      <strong>OFFLINE ONLY / 오프라인 전용</strong>
+      <span>Broker Write OFF / 브로커 주문 차단</span>
+      <span>Orders OFF / 주문 차단</span>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h2>AI Ensemble Scoring<br><small>AI 앙상블 점수 및 백테스트 연결</small></h2>
+        <p id="updated">Loading / 불러오는 중...</p>
+      </div>
+      <div id="overall" class="pill">LOADING</div>
+    </header>
+
+    <section id="summary" class="summary"></section>
+    <section id="ranking" class="ranking"></section>
+
+    <section class="grid">
+      <article class="panel">
+        <h3>Backtest Bridge / 백테스트 연결</h3>
+        <pre id="backtest"></pre>
+      </article>
+      <article class="panel">
+        <h3>Safety / 안전 상태</h3>
+        <pre id="safety"></pre>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h3>Full Bilingual Report / 전체 이중 언어 보고서</h3>
+      <pre id="report"></pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+{"action": "HOLD", "ai_score": 56.86, "broker_write_enabled": false, "ensemble_confidence": 43.96, "order_submission_enabled": false, "rank": 1, "suggested_position_percent": 2.5, "symbol": "SPY"}
+{"action": "BUY", "ai_score": 56.54, "broker_write_enabled": false, "ensemble_confidence": 35.5, "order_submission_enabled": false, "rank": 2, "suggested_position_percent": 1.51, "symbol": "AAPL"}
+{"action": "SELL", "ai_score": 33.56, "broker_write_enabled": false, "ensemble_confidence": 18.38, "order_submission_enabled": false, "rank": 3, "suggested_position_percent": 0.46, "symbol": "MSFT"}

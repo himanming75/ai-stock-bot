@@ -1,0 +1,12 @@
+git add ai_signal_scoring
+git add tools/run_v10401_to_v11000_ai_signal_scoring.py
+git add tools/run_ai_signal_scoring_dashboard.py
+git add tools/test_v10401_to_v11000_ai_signal_scoring.py
+git add release/v10401_11000_ai_signal_scoring
+git add RUN_V10401_TO_V11000_AI_SIGNAL_SCORING_TEST.ps1
+git add RUN_V10401_TO_V11000_AI_SIGNAL_SCORING.ps1
+git add RUN_AI_SIGNAL_SCORING_DASHBOARD.ps1
+git add V10401_TO_V11000_AI_SIGNAL_SCORING_MANIFEST.json
+git add GIT_COMMIT_V10401_TO_V11000_AI_SIGNAL_SCORING.txt
+git commit -m "Add V10401-V11000 AI scoring ensemble explainability backtest bridge"
+git push origin main
