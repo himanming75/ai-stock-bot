@@ -1,0 +1,27 @@
+{
+  "broker_write_enabled": false,
+  "channel": "WEB",
+  "created_at": "2026-08-06T04:38:18.588927+00:00",
+  "delivery_status": "NOT_SENT",
+  "discord_send_enabled": false,
+  "email_send_enabled": false,
+  "event_type": "PREMARKET_READY",
+  "external_network_enabled": false,
+  "message": {
+    "en": "All offline Phase 1 checks passed.",
+    "ko": "1\ub2e8\uacc4 \uc624\ud504\ub77c\uc778 \uac80\uc0ac\uac00 \ubaa8\ub450 \ud1b5\uacfc\ud588\uc2b5\ub2c8\ub2e4."
+  },
+  "mode": "PREVIEW_ONLY",
+  "notification_id": "notify_b181daf7dbf965f6",
+  "severity": "INFO",
+  "slack_send_enabled": false,
+  "status": "REVIEW_REQUIRED",
+  "status_i18n": {
+    "en": "Review Required",
+    "ko": "\uac80\ud1a0 \ud544\uc694"
+  },
+  "title": {
+    "en": "Premarket checks are ready",
+    "ko": "\uc7a5\uc804 \uac80\uc0ac\uac00 \uc900\ube44\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+  }
+}

@@ -1,0 +1,12 @@
+git add phase1_premarket_completion
+git add tools/run_v9201_to_v9800_phase1_premarket_completion.py
+git add tools/run_phase1_premarket_dashboard.py
+git add tools/test_v9201_to_v9800_phase1_premarket_completion.py
+git add release/v9201_9800_phase1_premarket_completion
+git add RUN_V9201_TO_V9800_PHASE1_PREMARKET_COMPLETION_TEST.ps1
+git add RUN_V9201_TO_V9800_PHASE1_PREMARKET_COMPLETION.ps1
+git add RUN_PHASE1_PREMARKET_COMPLETION_DASHBOARD.ps1
+git add V9201_TO_V9800_PHASE1_PREMARKET_COMPLETION_MANIFEST.json
+git add GIT_COMMIT_V9201_TO_V9800_PHASE1_PREMARKET_COMPLETION.txt
+git commit -m "Add V9201-V9800 Phase 1 premarket completion max bundle"
+git push origin main

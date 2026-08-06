@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1">
+  <title>Phase 1 Premarket Completion / 1단계 장전 완료</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside>
+    <h1>AI Stock Bot</h1>
+    <p>
+      Phase 1 Premarket Completion<br>
+      1단계 장전 완료
+    </p>
+    <nav>
+      <button class="active">
+        Overview / 전체 현황
+      </button>
+      <button>
+        Configuration / 설정
+      </button>
+      <button>
+        Runtime / 실행 환경
+      </button>
+      <button>
+        Session / 거래 세션
+      </button>
+      <button>
+        Health / 시스템 상태
+      </button>
+      <button>
+        Backup / 백업
+      </button>
+      <button>
+        Notifications / 알림
+      </button>
+    </nav>
+    <div class="safety">
+      <strong>
+        READ ONLY / 조회 전용
+      </strong>
+      <span>
+        Activation OFF / 활성화 차단
+      </span>
+      <span>
+        Broker Write OFF / 브로커 주문 차단
+      </span>
+      <span>
+        Orders OFF / 주문 차단
+      </span>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h2>
+          Phase 1 Premarket Completion<br>
+          <small>1단계 장전 완료</small>
+        </h2>
+        <p id="updated">
+          Loading / 불러오는 중...
+        </p>
+      </div>
+      <div id="overall" class="pill">
+        LOADING / 불러오는 중
+      </div>
+    </header>
+
+    <section id="cards" class="cards"></section>
+
+    <section class="grid">
+      <article class="panel">
+        <h3>
+          Session Automation<br>
+          <small>거래 세션 자동화</small>
+        </h3>
+        <pre id="session"></pre>
+      </article>
+      <article class="panel">
+        <h3>
+          Runtime Configuration Loader<br>
+          <small>실행 설정 로더</small>
+        </h3>
+        <pre id="runtime"></pre>
+      </article>
+      <article class="panel">
+        <h3>
+          Backup and Restore<br>
+          <small>백업 및 복원</small>
+        </h3>
+        <pre id="backup"></pre>
+      </article>
+      <article class="panel">
+        <h3>
+          Notification Preview<br>
+          <small>알림 미리보기</small>
+        </h3>
+        <pre id="notification"></pre>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h3>
+        Bilingual Completion Report<br>
+        <small>영어·한국어 완료 보고서</small>
+      </h3>
+      <pre id="report"></pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

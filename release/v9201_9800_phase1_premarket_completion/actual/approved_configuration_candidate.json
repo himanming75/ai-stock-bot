@@ -1,0 +1,53 @@
+{
+  "activation_status": "NOT_ACTIVATED",
+  "activation_status_i18n": {
+    "en": "Not Activated",
+    "ko": "\ud65c\uc131\ud654\ub418\uc9c0 \uc54a\uc74c"
+  },
+  "approval_note": "Offline candidate only.",
+  "approved_by": "CERTIFICATION",
+  "broker_write_enabled": false,
+  "candidate_id": "candidate_35de80a6e8b38185",
+  "configuration": {
+    "execution": {
+      "activation_enabled": false,
+      "broker_write_enabled": false,
+      "mode": "DRAFT_ONLY",
+      "order_submission_enabled": false
+    },
+    "profile": {
+      "cash_reserve_percent": 30,
+      "max_daily_loss_percent": 1,
+      "max_position_percent": 15,
+      "max_positions": 4
+    },
+    "profile_key": "BALANCED",
+    "strategies": {
+      "EMA": {
+        "enabled": true
+      },
+      "MACD": {
+        "enabled": false
+      },
+      "RSI": {
+        "enabled": true
+      }
+    },
+    "symbols": [
+      "SPY",
+      "QQQ",
+      "AAPL"
+    ]
+  },
+  "created_at": "2026-08-06T04:38:18.540728+00:00",
+  "draft_fingerprint": "0e31fca897417b5d8357429b9941c40a89a4cd0359222029f05d53f3b8d49067",
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "review_id": "review_134208c632c0d7c0",
+  "runtime_apply_enabled": false,
+  "status": "APPROVED_CANDIDATE",
+  "status_i18n": {
+    "en": "Approved Candidate",
+    "ko": "\uc2b9\uc778 \ud6c4\ubcf4"
+  }
+}

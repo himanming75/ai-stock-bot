@@ -1,0 +1,30 @@
+{
+  "broker_write_enabled": false,
+  "candidate_fingerprint": "df4db121fe5bfb2e01439be2949f7ae15e3ba2a25b80dc18e7d8b7b87931a53e",
+  "candidate_id": "candidate_35de80a6e8b38185",
+  "current_runtime_available": false,
+  "diff_summary": {
+    "enabled_strategies": [
+      "EMA",
+      "RSI"
+    ],
+    "profile_key": "BALANCED",
+    "symbol_count": 3
+  },
+  "generated_at": "2026-08-06T04:38:18.571448+00:00",
+  "mode": "HOT_RELOAD_PLAN_ONLY",
+  "order_submission_enabled": false,
+  "process_reload_enabled": false,
+  "runtime_apply_enabled": false,
+  "status": "READY",
+  "status_i18n": {
+    "en": "Ready",
+    "ko": "\uc900\ube44 \uc644\ub8cc"
+  },
+  "validation_checks": {
+    "activation_false": true,
+    "broker_write_false": true,
+    "candidate_status_valid": true,
+    "order_submission_false": true
+  }
+}

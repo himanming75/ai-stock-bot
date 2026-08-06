@@ -1,0 +1,31 @@
+{
+  "execution": {
+    "activation_enabled": false,
+    "broker_write_enabled": false,
+    "mode": "DRAFT_ONLY",
+    "order_submission_enabled": false
+  },
+  "profile": {
+    "cash_reserve_percent": 30,
+    "max_daily_loss_percent": 1,
+    "max_position_percent": 15,
+    "max_positions": 4
+  },
+  "profile_key": "BALANCED",
+  "strategies": {
+    "EMA": {
+      "enabled": true
+    },
+    "MACD": {
+      "enabled": false
+    },
+    "RSI": {
+      "enabled": true
+    }
+  },
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "AAPL"
+  ]
+}

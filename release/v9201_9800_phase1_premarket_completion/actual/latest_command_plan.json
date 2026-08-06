@@ -1,0 +1,21 @@
+{
+  "action": "GENERATE_REPORT",
+  "broker_write_enabled": false,
+  "command_id": "queue_f30e24058adcd397",
+  "created_at": "2026-08-06T04:38:18.583475+00:00",
+  "execution_status": "NOT_EXECUTED",
+  "mode": "QUEUE_PLAN_ONLY",
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "process_kill_enabled": false,
+  "process_start_enabled": false,
+  "process_stop_enabled": false,
+  "reason": "Certification fixture",
+  "requested_by": "CERTIFICATION",
+  "status": "REVIEW_REQUIRED",
+  "status_i18n": {
+    "en": "Review Required",
+    "ko": "\uac80\ud1a0 \ud544\uc694"
+  },
+  "task_scheduler_write_enabled": false
+}

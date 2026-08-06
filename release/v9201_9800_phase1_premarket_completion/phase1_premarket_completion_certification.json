@@ -1,0 +1,529 @@
+{
+  "actual_backup_executed": false,
+  "actual_broker_write_performed": false,
+  "actual_command_executed": false,
+  "actual_configuration_activated": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_notification_sent": false,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_process_started": false,
+  "actual_process_stopped": false,
+  "actual_restore_executed": false,
+  "actual_runtime_configuration_applied": false,
+  "approval_candidate": {
+    "activation_status": "NOT_ACTIVATED",
+    "activation_status_i18n": {
+      "en": "Not Activated",
+      "ko": "\ud65c\uc131\ud654\ub418\uc9c0 \uc54a\uc74c"
+    },
+    "approval_note": "Offline candidate only.",
+    "approved_by": "CERTIFICATION",
+    "broker_write_enabled": false,
+    "candidate_id": "candidate_35de80a6e8b38185",
+    "configuration": {
+      "execution": {
+        "activation_enabled": false,
+        "broker_write_enabled": false,
+        "mode": "DRAFT_ONLY",
+        "order_submission_enabled": false
+      },
+      "profile": {
+        "cash_reserve_percent": 30,
+        "max_daily_loss_percent": 1,
+        "max_position_percent": 15,
+        "max_positions": 4
+      },
+      "profile_key": "BALANCED",
+      "strategies": {
+        "EMA": {
+          "enabled": true
+        },
+        "MACD": {
+          "enabled": false
+        },
+        "RSI": {
+          "enabled": true
+        }
+      },
+      "symbols": [
+        "SPY",
+        "QQQ",
+        "AAPL"
+      ]
+    },
+    "created_at": "2026-08-06T04:38:18.540728+00:00",
+    "draft_fingerprint": "0e31fca897417b5d8357429b9941c40a89a4cd0359222029f05d53f3b8d49067",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "review_id": "review_134208c632c0d7c0",
+    "runtime_apply_enabled": false,
+    "status": "APPROVED_CANDIDATE",
+    "status_i18n": {
+      "en": "Approved Candidate",
+      "ko": "\uc2b9\uc778 \ud6c4\ubcf4"
+    }
+  },
+  "approval_candidate_ready": true,
+  "backup_plan": {
+    "action": "SNAPSHOT",
+    "broker_write_enabled": false,
+    "created_at": "2026-08-06T04:38:18.587845+00:00",
+    "destination": "release/backups/phase1_snapshot",
+    "estimated_file_count": 3,
+    "filesystem_delete_enabled": false,
+    "filesystem_write_enabled": false,
+    "mode": "DRY_RUN_ONLY",
+    "order_submission_enabled": false,
+    "plan_id": "backup_4f3f9a5c589b02cc",
+    "restore_enabled": false,
+    "rollback_enabled": false,
+    "source_paths": [
+      "release/trading_configuration/actual",
+      "release/paper_automation_controller/actual",
+      "release/actual_multi_broker_sync/actual"
+    ],
+    "status": "REVIEW_REQUIRED",
+    "status_i18n": {
+      "en": "Review Required",
+      "ko": "\uac80\ud1a0 \ud544\uc694"
+    }
+  },
+  "backup_restore_plan_ready": true,
+  "bilingual_report_ready": true,
+  "bilingual_ui_foundation_ready": true,
+  "certification_fingerprint": "d759e32657a530ff4ffc75707bb9edd2fb2924ce97e306d2ed21cb824458207f",
+  "command_plan_count": 6,
+  "command_queue_plan_ready": true,
+  "configuration_review": {
+    "activation_status": "NOT_ACTIVATED",
+    "activation_status_i18n": {
+      "en": "Not Activated",
+      "ko": "\ud65c\uc131\ud654\ub418\uc9c0 \uc54a\uc74c"
+    },
+    "created_at": "2026-08-06T04:38:18.522777+00:00",
+    "draft": {
+      "execution": {
+        "activation_enabled": false,
+        "broker_write_enabled": false,
+        "mode": "DRAFT_ONLY",
+        "order_submission_enabled": false
+      },
+      "profile": {
+        "cash_reserve_percent": 30,
+        "max_daily_loss_percent": 1,
+        "max_position_percent": 15,
+        "max_positions": 4
+      },
+      "profile_key": "BALANCED",
+      "strategies": {
+        "EMA": {
+          "enabled": true
+        },
+        "MACD": {
+          "enabled": false
+        },
+        "RSI": {
+          "enabled": true
+        }
+      },
+      "symbols": [
+        "SPY",
+        "QQQ",
+        "AAPL"
+      ]
+    },
+    "draft_fingerprint": "0e31fca897417b5d8357429b9941c40a89a4cd0359222029f05d53f3b8d49067",
+    "requested_by": "CERTIFICATION",
+    "review_id": "review_134208c632c0d7c0",
+    "safe_execution": {
+      "activation_enabled": false,
+      "broker_write_enabled": false,
+      "mode": "REVIEW_PACKAGE_ONLY",
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false
+    },
+    "status": "REVIEW_REQUIRED",
+    "status_i18n": {
+      "en": "Review Required",
+      "ko": "\uac80\ud1a0 \ud544\uc694"
+    }
+  },
+  "configuration_review_ready": true,
+  "health_score": {
+    "automatic_recovery_enabled": false,
+    "broker_write_enabled": false,
+    "components": {
+      "broker_latency": 100.0,
+      "cpu": 100.0,
+      "errors": 100.0,
+      "freshness": 100.0,
+      "memory": 100.0,
+      "polling": 100.0
+    },
+    "generated_at": "2026-08-06T04:38:18.586655+00:00",
+    "inputs": {
+      "broker_latency_ms": 210,
+      "cpu_percent": 22,
+      "error_count": 0,
+      "memory_growth_mb": 13,
+      "polling_delay_seconds": 31,
+      "stale_source_count": 0
+    },
+    "process_restart_enabled": false,
+    "score": 100.0,
+    "status": "READY",
+    "status_i18n": {
+      "en": "Ready",
+      "ko": "\uc900\ube44 \uc644\ub8cc"
+    }
+  },
+  "health_score_ready": true,
+  "hot_reload_plan_ready": true,
+  "market_open_wait_plan_ready": true,
+  "next_fixed_development": "PHASE2_AI_FEATURE_ENGINE_AND_SIGNAL_CANDIDATES",
+  "next_market_open_tasks": [
+    {
+      "en": "Validate actual Alpaca market clock and quote freshness.",
+      "ko": "\uc2e4\uc81c Alpaca \uc2dc\uc7a5 \uc2dc\uacc4\uc640 \uc2dc\uc138 \uc2e0\uc120\ub3c4\ub97c \uac80\uc99d\ud569\ub2c8\ub2e4."
+    },
+    {
+      "en": "Run intraday read-only polling and state-transition validation.",
+      "ko": "\uc7a5\uc911 \uc870\ud68c \uc804\uc6a9 Polling\uacfc \uc0c1\ud0dc \uc804\ud658\uc744 \uac80\uc99d\ud569\ub2c8\ub2e4."
+    },
+    {
+      "en": "Do not enable paper order submission until explicit approval.",
+      "ko": "\uba85\uc2dc\uc801 \uc2b9\uc778 \uc804\uc5d0\ub294 \ud398\uc774\ud37c \uc8fc\ubb38 \uc81c\ucd9c\uc744 \ud65c\uc131\ud654\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+    }
+  ],
+  "notification_preview": {
+    "broker_write_enabled": false,
+    "channel": "WEB",
+    "created_at": "2026-08-06T04:38:18.588927+00:00",
+    "delivery_status": "NOT_SENT",
+    "discord_send_enabled": false,
+    "email_send_enabled": false,
+    "event_type": "PREMARKET_READY",
+    "external_network_enabled": false,
+    "message": {
+      "en": "All offline Phase 1 checks passed.",
+      "ko": "1\ub2e8\uacc4 \uc624\ud504\ub77c\uc778 \uac80\uc0ac\uac00 \ubaa8\ub450 \ud1b5\uacfc\ud588\uc2b5\ub2c8\ub2e4."
+    },
+    "mode": "PREVIEW_ONLY",
+    "notification_id": "notify_b181daf7dbf965f6",
+    "severity": "INFO",
+    "slack_send_enabled": false,
+    "status": "REVIEW_REQUIRED",
+    "status_i18n": {
+      "en": "Review Required",
+      "ko": "\uac80\ud1a0 \ud544\uc694"
+    },
+    "title": {
+      "en": "Premarket checks are ready",
+      "ko": "\uc7a5\uc804 \uac80\uc0ac\uac00 \uc900\ube44\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+    }
+  },
+  "notification_preview_ready": true,
+  "report": {
+    "generated_at": "2026-08-06T04:38:18.591012+00:00",
+    "overall_status": "READY",
+    "overall_status_i18n": {
+      "en": "Ready",
+      "ko": "\uc900\ube44 \uc644\ub8cc"
+    },
+    "report_title": {
+      "en": "Phase 1 Premarket Completion Report",
+      "ko": "1\ub2e8\uacc4 \uc7a5\uc804 \uc644\ub8cc \ubcf4\uace0\uc11c"
+    },
+    "report_type": "PHASE1_PREMARKET_COMPLETION_REPORT",
+    "safety": {
+      "backup_restore_execution_enabled": false,
+      "broker_write_enabled": false,
+      "command_execution_enabled": false,
+      "configuration_activation_enabled": false,
+      "notification_delivery_enabled": false,
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false,
+      "process_start_enabled": false,
+      "process_stop_enabled": false,
+      "runtime_apply_enabled": false
+    },
+    "sections": {
+      "backup_restore": {
+        "data": {
+          "action": "SNAPSHOT",
+          "broker_write_enabled": false,
+          "created_at": "2026-08-06T04:38:18.587845+00:00",
+          "destination": "release/backups/phase1_snapshot",
+          "estimated_file_count": 3,
+          "filesystem_delete_enabled": false,
+          "filesystem_write_enabled": false,
+          "mode": "DRY_RUN_ONLY",
+          "order_submission_enabled": false,
+          "plan_id": "backup_4f3f9a5c589b02cc",
+          "restore_enabled": false,
+          "rollback_enabled": false,
+          "source_paths": [
+            "release/trading_configuration/actual",
+            "release/paper_automation_controller/actual",
+            "release/actual_multi_broker_sync/actual"
+          ],
+          "status": "REVIEW_REQUIRED",
+          "status_i18n": {
+            "en": "Review Required",
+            "ko": "\uac80\ud1a0 \ud544\uc694"
+          }
+        },
+        "title": {
+          "en": "Backup and Restore",
+          "ko": "\ubc31\uc5c5 \ubc0f \ubcf5\uc6d0"
+        }
+      },
+      "configuration": {
+        "data": {
+          "activation_status": "NOT_ACTIVATED",
+          "activation_status_i18n": {
+            "en": "Not Activated",
+            "ko": "\ud65c\uc131\ud654\ub418\uc9c0 \uc54a\uc74c"
+          },
+          "approval_note": "Offline candidate only.",
+          "approved_by": "CERTIFICATION",
+          "broker_write_enabled": false,
+          "candidate_id": "candidate_35de80a6e8b38185",
+          "configuration": {
+            "execution": {
+              "activation_enabled": false,
+              "broker_write_enabled": false,
+              "mode": "DRAFT_ONLY",
+              "order_submission_enabled": false
+            },
+            "profile": {
+              "cash_reserve_percent": 30,
+              "max_daily_loss_percent": 1,
+              "max_position_percent": 15,
+              "max_positions": 4
+            },
+            "profile_key": "BALANCED",
+            "strategies": {
+              "EMA": {
+                "enabled": true
+              },
+              "MACD": {
+                "enabled": false
+              },
+              "RSI": {
+                "enabled": true
+              }
+            },
+            "symbols": [
+              "SPY",
+              "QQQ",
+              "AAPL"
+            ]
+          },
+          "created_at": "2026-08-06T04:38:18.540728+00:00",
+          "draft_fingerprint": "0e31fca897417b5d8357429b9941c40a89a4cd0359222029f05d53f3b8d49067",
+          "order_cancel_enabled": false,
+          "order_submission_enabled": false,
+          "review_id": "review_134208c632c0d7c0",
+          "runtime_apply_enabled": false,
+          "status": "APPROVED_CANDIDATE",
+          "status_i18n": {
+            "en": "Approved Candidate",
+            "ko": "\uc2b9\uc778 \ud6c4\ubcf4"
+          }
+        },
+        "title": {
+          "en": "Configuration",
+          "ko": "\uc124\uc815"
+        }
+      },
+      "health_score": {
+        "data": {
+          "automatic_recovery_enabled": false,
+          "broker_write_enabled": false,
+          "components": {
+            "broker_latency": 100.0,
+            "cpu": 100.0,
+            "errors": 100.0,
+            "freshness": 100.0,
+            "memory": 100.0,
+            "polling": 100.0
+          },
+          "generated_at": "2026-08-06T04:38:18.586655+00:00",
+          "inputs": {
+            "broker_latency_ms": 210,
+            "cpu_percent": 22,
+            "error_count": 0,
+            "memory_growth_mb": 13,
+            "polling_delay_seconds": 31,
+            "stale_source_count": 0
+          },
+          "process_restart_enabled": false,
+          "score": 100.0,
+          "status": "READY",
+          "status_i18n": {
+            "en": "Ready",
+            "ko": "\uc900\ube44 \uc644\ub8cc"
+          }
+        },
+        "title": {
+          "en": "Health Score",
+          "ko": "\uc2dc\uc2a4\ud15c \uc0c1\ud0dc \uc810\uc218"
+        }
+      },
+      "notification_center": {
+        "data": {
+          "broker_write_enabled": false,
+          "channel": "WEB",
+          "created_at": "2026-08-06T04:38:18.588927+00:00",
+          "delivery_status": "NOT_SENT",
+          "discord_send_enabled": false,
+          "email_send_enabled": false,
+          "event_type": "PREMARKET_READY",
+          "external_network_enabled": false,
+          "message": {
+            "en": "All offline Phase 1 checks passed.",
+            "ko": "1\ub2e8\uacc4 \uc624\ud504\ub77c\uc778 \uac80\uc0ac\uac00 \ubaa8\ub450 \ud1b5\uacfc\ud588\uc2b5\ub2c8\ub2e4."
+          },
+          "mode": "PREVIEW_ONLY",
+          "notification_id": "notify_b181daf7dbf965f6",
+          "severity": "INFO",
+          "slack_send_enabled": false,
+          "status": "REVIEW_REQUIRED",
+          "status_i18n": {
+            "en": "Review Required",
+            "ko": "\uac80\ud1a0 \ud544\uc694"
+          },
+          "title": {
+            "en": "Premarket checks are ready",
+            "ko": "\uc7a5\uc804 \uac80\uc0ac\uac00 \uc900\ube44\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+          }
+        },
+        "title": {
+          "en": "Notification Center",
+          "ko": "\uc54c\ub9bc \uc13c\ud130"
+        }
+      },
+      "runtime_loader": {
+        "data": {
+          "broker_write_enabled": false,
+          "candidate_fingerprint": "df4db121fe5bfb2e01439be2949f7ae15e3ba2a25b80dc18e7d8b7b87931a53e",
+          "candidate_id": "candidate_35de80a6e8b38185",
+          "current_runtime_available": false,
+          "diff_summary": {
+            "enabled_strategies": [
+              "EMA",
+              "RSI"
+            ],
+            "profile_key": "BALANCED",
+            "symbol_count": 3
+          },
+          "generated_at": "2026-08-06T04:38:18.571448+00:00",
+          "mode": "HOT_RELOAD_PLAN_ONLY",
+          "order_submission_enabled": false,
+          "process_reload_enabled": false,
+          "runtime_apply_enabled": false,
+          "status": "READY",
+          "status_i18n": {
+            "en": "Ready",
+            "ko": "\uc900\ube44 \uc644\ub8cc"
+          },
+          "validation_checks": {
+            "activation_false": true,
+            "broker_write_false": true,
+            "candidate_status_valid": true,
+            "order_submission_false": true
+          }
+        },
+        "title": {
+          "en": "Runtime Configuration Loader",
+          "ko": "\uc2e4\ud589 \uc124\uc815 \ub85c\ub354"
+        }
+      },
+      "session_automation": {
+        "data": {
+          "automatic_start_enabled": false,
+          "automatic_stop_enabled": false,
+          "broker_write_enabled": false,
+          "controller_ready": true,
+          "current_state": "PREMARKET",
+          "execution_enabled": false,
+          "generated_at": "2026-08-06T04:38:18.585430+00:00",
+          "market_open_required": true,
+          "next_state": "READY",
+          "next_state_i18n": {
+            "en": "Ready",
+            "ko": "\uc900\ube44 \uc644\ub8cc"
+          },
+          "notes_en": "Premarket checks passed. Wait for market open validation.",
+          "notes_ko": "\uc7a5\uc804 \uac80\uc0ac\uac00 \ud1b5\uacfc\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc2dc\uc7a5 \uac1c\uc7a5 \uac80\uc99d\uc744 \uae30\ub2e4\ub9bd\ub2c8\ub2e4.",
+          "order_cancel_enabled": false,
+          "order_submission_enabled": false,
+          "planned_action": "WAIT_FOR_MARKET_OPEN"
+        },
+        "title": {
+          "en": "Session Automation",
+          "ko": "\uac70\ub798 \uc138\uc158 \uc790\ub3d9\ud654"
+        }
+      }
+    }
+  },
+  "runtime_loader_plan_ready": true,
+  "runtime_plan": {
+    "broker_write_enabled": false,
+    "candidate_fingerprint": "df4db121fe5bfb2e01439be2949f7ae15e3ba2a25b80dc18e7d8b7b87931a53e",
+    "candidate_id": "candidate_35de80a6e8b38185",
+    "current_runtime_available": false,
+    "diff_summary": {
+      "enabled_strategies": [
+        "EMA",
+        "RSI"
+      ],
+      "profile_key": "BALANCED",
+      "symbol_count": 3
+    },
+    "generated_at": "2026-08-06T04:38:18.571448+00:00",
+    "mode": "HOT_RELOAD_PLAN_ONLY",
+    "order_submission_enabled": false,
+    "process_reload_enabled": false,
+    "runtime_apply_enabled": false,
+    "status": "READY",
+    "status_i18n": {
+      "en": "Ready",
+      "ko": "\uc900\ube44 \uc644\ub8cc"
+    },
+    "validation_checks": {
+      "activation_false": true,
+      "broker_write_false": true,
+      "candidate_status_valid": true,
+      "order_submission_false": true
+    }
+  },
+  "session_plan": {
+    "automatic_start_enabled": false,
+    "automatic_stop_enabled": false,
+    "broker_write_enabled": false,
+    "controller_ready": true,
+    "current_state": "PREMARKET",
+    "execution_enabled": false,
+    "generated_at": "2026-08-06T04:38:18.585430+00:00",
+    "market_open_required": true,
+    "next_state": "READY",
+    "next_state_i18n": {
+      "en": "Ready",
+      "ko": "\uc900\ube44 \uc644\ub8cc"
+    },
+    "notes_en": "Premarket checks passed. Wait for market open validation.",
+    "notes_ko": "\uc7a5\uc804 \uac80\uc0ac\uac00 \ud1b5\uacfc\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc2dc\uc7a5 \uac1c\uc7a5 \uac80\uc99d\uc744 \uae30\ub2e4\ub9bd\ub2c8\ub2e4.",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "planned_action": "WAIT_FOR_MARKET_OPEN"
+  },
+  "session_state_machine_ready": true,
+  "stage": "V9201_TO_V9800_PHASE1_PREMARKET_COMPLETION_MAX_BUNDLE",
+  "status": "PASS"
+}
