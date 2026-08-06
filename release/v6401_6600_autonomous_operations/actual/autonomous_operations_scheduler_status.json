@@ -1,0 +1,22 @@
+{
+  "blocked": {
+    "market_open": true,
+    "next_stage": "PORTFOLIO_AI",
+    "state": "RUNNING"
+  },
+  "emergency": {
+    "market_open": true,
+    "next_stage": "MANUAL_REVIEW",
+    "state": "EMERGENCY_STOPPED"
+  },
+  "healthy": {
+    "market_open": true,
+    "next_stage": "CYCLE_COMPLETE",
+    "state": "RUNNING"
+  },
+  "market_closed": {
+    "market_open": false,
+    "next_stage": "MARKET_OPEN_CHECK",
+    "state": "WAITING_FOR_MARKET_OPEN"
+  }
+}

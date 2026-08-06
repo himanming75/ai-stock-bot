@@ -1,0 +1,10 @@
+git add autonomous_operations
+git add tools/run_v6401_to_v6600_autonomous_operations.py
+git add tools/test_v6401_to_v6600_autonomous_operations.py
+git add release/v6401_6600_autonomous_operations
+git add RUN_V6401_TO_V6600_AUTONOMOUS_OPERATIONS.ps1
+git add RUN_V6401_TO_V6600_AUTONOMOUS_OPERATIONS_TEST.ps1
+git add V6401_TO_V6600_AUTONOMOUS_OPERATIONS_MANIFEST.json
+git add GIT_COMMIT_V6401_TO_V6600_AUTONOMOUS_OPERATIONS.txt
+git commit -m "Add V6401-V6600 autonomous operations final orchestration"
+git push origin main

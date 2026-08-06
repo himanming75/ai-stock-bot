@@ -1,0 +1,7 @@
+{
+  "cycle_sequence": 4,
+  "emergency_stop": true,
+  "last_action": "ALL_STOP",
+  "last_cycle_id": "AUTO_CYCLE_000004",
+  "last_status": "EMERGENCY_STOP"
+}

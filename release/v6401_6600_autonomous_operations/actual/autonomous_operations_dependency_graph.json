@@ -1,0 +1,12 @@
+{
+  "order": [
+    "MARKET_DATA",
+    "AI_BRAIN",
+    "MULTI_AI_VOTING",
+    "RISK_ENGINE",
+    "PORTFOLIO_AI",
+    "BROKER_ADAPTER",
+    "SELF_LEARNING",
+    "LEDGER"
+  ]
+}

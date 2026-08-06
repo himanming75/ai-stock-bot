@@ -1,0 +1,19 @@
+{
+  "failure_states": [
+    "CLOSED",
+    "CLOSED",
+    "CLOSED",
+    "CLOSED",
+    "OPEN"
+  ],
+  "final": {
+    "allow_request": true,
+    "failure_count": 0,
+    "failure_threshold": 5,
+    "recovery_success_threshold": 2,
+    "state": "CLOSED",
+    "success_count": 0
+  },
+  "recovery_state_1": "HALF_OPEN",
+  "recovery_state_2": "CLOSED"
+}

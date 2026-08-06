@@ -1,0 +1,11 @@
+{
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "critical_broker_adapter": "ALL_STOP",
+  "critical_ledger": "ALL_STOP",
+  "critical_market_data": "ALL_STOP",
+  "critical_portfolio_ai": "ALL_STOP",
+  "critical_risk_engine": "ALL_STOP",
+  "market_closed": "WAIT",
+  "unhealthy_dependency": "WAIT"
+}
