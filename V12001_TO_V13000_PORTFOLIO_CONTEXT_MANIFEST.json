@@ -1,0 +1,34 @@
+{
+  "stage": "V12001_TO_V13000_PORTFOLIO_CONTEXT_CROSS_ASSET_CORRELATION_SIGNAL_FEEDBACK_MAX_BUNDLE",
+  "version_range": {
+    "from": "V12001",
+    "to": "V13000"
+  },
+  "base_commit": "f77d000b0ac1b52ab32051b24182d520b4d36bf5",
+  "features": [
+    "Portfolio context",
+    "Cross-asset Pearson correlation matrix",
+    "Concentration risk",
+    "Diversification state",
+    "Directional concentration",
+    "Portfolio risk score",
+    "Offline signal feedback",
+    "Calibration error",
+    "Directional accuracy",
+    "Feedback health",
+    "Offline performance analytics",
+    "English and Korean dashboard/report"
+  ],
+  "safety": {
+    "broker_write_enabled": false,
+    "order_submission_enabled": false,
+    "order_cancellation_enabled": false,
+    "position_allocation_enabled": false,
+    "automatic_model_update_enabled": false,
+    "live_learning_enabled": false,
+    "live_trading_enabled": false,
+    "paper_orders_during_build": 0,
+    "live_orders_during_build": 0
+  },
+  "targeted_git_add_only": true
+}

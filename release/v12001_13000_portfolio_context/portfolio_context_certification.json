@@ -1,0 +1,328 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_configuration_activated": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_learning_performed": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_data_requested": false,
+  "actual_model_weight_update_performed": false,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_position_allocation_performed": false,
+  "bilingual_report_ready": true,
+  "calibration_error_ready": true,
+  "certification_fingerprint": "fc7229854d5d2407f857b35b8ac2195ccf236fea9009a244af3696bd0e8f3d08",
+  "concentration_risk_ready": true,
+  "correlation_ledger_ready": true,
+  "correlation_matrix": {
+    "AAPL": {
+      "AAPL": 1.0,
+      "MSFT": -0.989245,
+      "NVDA": -0.570583,
+      "SPY": 0.703231
+    },
+    "MSFT": {
+      "AAPL": -0.989245,
+      "MSFT": 1.0,
+      "NVDA": 0.589872,
+      "SPY": -0.787227
+    },
+    "NVDA": {
+      "AAPL": -0.570583,
+      "MSFT": 0.589872,
+      "NVDA": 1.0,
+      "SPY": -0.718844
+    },
+    "SPY": {
+      "AAPL": 0.703231,
+      "MSFT": -0.787227,
+      "NVDA": -0.718844,
+      "SPY": 1.0
+    }
+  },
+  "correlation_matrix_ready": true,
+  "cross_asset_correlation_ready": true,
+  "cumulative_return_ready": true,
+  "directional_accuracy_ready": true,
+  "directional_concentration_ready": true,
+  "diversification_state_ready": true,
+  "feedback_health_ready": true,
+  "max_drawdown_ready": true,
+  "next_fixed_development": "V13001_PLUS_PORTFOLIO_OPTIMIZER_SCENARIO_STRESS_AND_CAPITAL_GUARDRAIL_SIMULATION",
+  "offline_feedback_ready": true,
+  "offline_performance_analytics_ready": true,
+  "performance": {
+    "average_return": 0.0015,
+    "count": 6,
+    "cumulative_return": 0.009028,
+    "max_drawdown": 0.00075,
+    "sharpe_candidate": 2.558409,
+    "volatility": 0.001436,
+    "win_rate": 0.666667
+  },
+  "portfolio_context": {
+    "analysis_only": true,
+    "average_absolute_correlation": 0.7265,
+    "capital_allocation_enabled": false,
+    "directional_concentration": 0.133611,
+    "diversification_state": "CONCENTRATED",
+    "pair_count": 6,
+    "pairs": [
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.989245,
+        "left": "AAPL",
+        "right": "MSFT"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.570583,
+        "left": "AAPL",
+        "right": "NVDA"
+      },
+      {
+        "classification": "POSITIVE",
+        "correlation": 0.703231,
+        "left": "AAPL",
+        "right": "SPY"
+      },
+      {
+        "classification": "POSITIVE",
+        "correlation": 0.589872,
+        "left": "MSFT",
+        "right": "NVDA"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.787227,
+        "left": "MSFT",
+        "right": "SPY"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.718844,
+        "left": "NVDA",
+        "right": "SPY"
+      }
+    ],
+    "portfolio_risk_level": "MEDIUM",
+    "portfolio_risk_score": 0.4597,
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "SPY"
+    ]
+  },
+  "portfolio_context_ready": true,
+  "portfolio_risk_score_ready": true,
+  "report": {
+    "performance": {
+      "average_return": 0.0015,
+      "count": 6,
+      "cumulative_return": 0.009028,
+      "max_drawdown": 0.00075,
+      "sharpe_candidate": 2.558409,
+      "volatility": 0.001436,
+      "win_rate": 0.666667
+    },
+    "portfolio_context": {
+      "analysis_only": true,
+      "average_absolute_correlation": 0.7265,
+      "capital_allocation_enabled": false,
+      "directional_concentration": 0.133611,
+      "diversification_state": "CONCENTRATED",
+      "diversification_state_i18n": {
+        "code": "CONCENTRATED",
+        "en": "Concentrated",
+        "ko": "집중"
+      },
+      "pair_count": 6,
+      "pairs": [
+        {
+          "classification": "NEGATIVE",
+          "correlation": -0.989245,
+          "left": "AAPL",
+          "right": "MSFT"
+        },
+        {
+          "classification": "NEGATIVE",
+          "correlation": -0.570583,
+          "left": "AAPL",
+          "right": "NVDA"
+        },
+        {
+          "classification": "POSITIVE",
+          "correlation": 0.703231,
+          "left": "AAPL",
+          "right": "SPY"
+        },
+        {
+          "classification": "POSITIVE",
+          "correlation": 0.589872,
+          "left": "MSFT",
+          "right": "NVDA"
+        },
+        {
+          "classification": "NEGATIVE",
+          "correlation": -0.787227,
+          "left": "MSFT",
+          "right": "SPY"
+        },
+        {
+          "classification": "NEGATIVE",
+          "correlation": -0.718844,
+          "left": "NVDA",
+          "right": "SPY"
+        }
+      ],
+      "portfolio_risk_level": "MEDIUM",
+      "portfolio_risk_level_i18n": {
+        "code": "MEDIUM",
+        "en": "Medium",
+        "ko": "중간"
+      },
+      "portfolio_risk_score": 0.4597,
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "SPY"
+      ]
+    },
+    "safety": {
+      "automatic_model_update_enabled": false,
+      "broker_write_enabled": false,
+      "live_learning_enabled": false,
+      "live_orders_during_build": 0,
+      "live_trading_enabled": false,
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "paper_orders_during_build": 0,
+      "position_allocation_enabled": false
+    },
+    "signal_feedback": {
+      "automatic_model_update_enabled": false,
+      "directional_accuracy": 0.75,
+      "feedback_health": "IMPROVING",
+      "feedback_health_i18n": {
+        "code": "IMPROVING",
+        "en": "Improving",
+        "ko": "개선"
+      },
+      "feedback_mode": "OFFLINE_OBSERVATION_ONLY",
+      "live_learning_enabled": false,
+      "mean_absolute_error": 0.012874,
+      "rows": [
+        {
+          "absolute_error": 0.016986,
+          "directional_hit": true,
+          "expected_return": 0.020986,
+          "feedback_adjustment": 0.032056,
+          "model_weight_update_enabled": false,
+          "original_confidence": 0.916359,
+          "realized_return": 0.004,
+          "symbol": "AAPL"
+        },
+        {
+          "absolute_error": 0.018153,
+          "directional_hit": true,
+          "expected_return": -0.020986,
+          "feedback_adjustment": 0.027389,
+          "model_weight_update_enabled": false,
+          "original_confidence": 0.916359,
+          "realized_return": -0.002833,
+          "symbol": "MSFT"
+        },
+        {
+          "absolute_error": 0.015525,
+          "directional_hit": true,
+          "expected_return": 0.019525,
+          "feedback_adjustment": 0.0379,
+          "model_weight_update_enabled": false,
+          "original_confidence": 0.655062,
+          "realized_return": 0.004,
+          "symbol": "NVDA"
+        },
+        {
+          "absolute_error": 0.000833,
+          "directional_hit": false,
+          "expected_return": 0.0,
+          "feedback_adjustment": 0.096667,
+          "model_weight_update_enabled": false,
+          "original_confidence": 0.625,
+          "realized_return": 0.000833,
+          "symbol": "SPY"
+        }
+      ]
+    },
+    "summary": {
+      "en": "Read-only portfolio concentration, cross-asset correlation, offline feedback, and performance analytics.",
+      "ko": "읽기 전용 포트폴리오 집중도, 자산 간 상관관계, 오프라인 피드백 및 성과 분석입니다."
+    },
+    "title": {
+      "en": "Portfolio Context and Signal Feedback Report",
+      "ko": "포트폴리오 컨텍스트 및 신호 피드백 보고서"
+    }
+  },
+  "sharpe_candidate_ready": true,
+  "signal_feedback": {
+    "automatic_model_update_enabled": false,
+    "directional_accuracy": 0.75,
+    "feedback_health": "IMPROVING",
+    "feedback_mode": "OFFLINE_OBSERVATION_ONLY",
+    "live_learning_enabled": false,
+    "mean_absolute_error": 0.012874,
+    "rows": [
+      {
+        "absolute_error": 0.016986,
+        "directional_hit": true,
+        "expected_return": 0.020986,
+        "feedback_adjustment": 0.032056,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.916359,
+        "realized_return": 0.004,
+        "symbol": "AAPL"
+      },
+      {
+        "absolute_error": 0.018153,
+        "directional_hit": true,
+        "expected_return": -0.020986,
+        "feedback_adjustment": 0.027389,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.916359,
+        "realized_return": -0.002833,
+        "symbol": "MSFT"
+      },
+      {
+        "absolute_error": 0.015525,
+        "directional_hit": true,
+        "expected_return": 0.019525,
+        "feedback_adjustment": 0.0379,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.655062,
+        "realized_return": 0.004,
+        "symbol": "NVDA"
+      },
+      {
+        "absolute_error": 0.000833,
+        "directional_hit": false,
+        "expected_return": 0.0,
+        "feedback_adjustment": 0.096667,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.625,
+        "realized_return": 0.000833,
+        "symbol": "SPY"
+      }
+    ]
+  },
+  "signal_feedback_ledger_ready": true,
+  "signal_feedback_ready": true,
+  "source_mode": "PREVIOUS_MULTI_TIMEFRAME_REPORT",
+  "stage": "V12001_TO_V13000_PORTFOLIO_CONTEXT_CROSS_ASSET_CORRELATION_SIGNAL_FEEDBACK_MAX_BUNDLE",
+  "status": "PASS",
+  "volatility_ready": true,
+  "win_rate_ready": true
+}

@@ -1,0 +1,40 @@
+V12001-V13000 LOCAL TEST RESULTS
+
+Command:
+python -m unittest tools.test_v12001_to_v13000_portfolio_context -v
+
+Exit Code: 0
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py", line 30820, in hydrate_crdt_from_proto
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_certification (tools.test_v12001_to_v13000_portfolio_context.Tests.test_certification) ... ok
+test_correlation_classification (tools.test_v12001_to_v13000_portfolio_context.Tests.test_correlation_classification) ... ok
+test_feedback (tools.test_v12001_to_v13000_portfolio_context.Tests.test_feedback) ... ok
+test_matrix (tools.test_v12001_to_v13000_portfolio_context.Tests.test_matrix) ... ok
+test_pearson (tools.test_v12001_to_v13000_portfolio_context.Tests.test_pearson) ... ok
+test_performance (tools.test_v12001_to_v13000_portfolio_context.Tests.test_performance) ... ok
+test_portfolio_context (tools.test_v12001_to_v13000_portfolio_context.Tests.test_portfolio_context) ... ok
+test_zero_action_contract (tools.test_v12001_to_v13000_portfolio_context.Tests.test_zero_action_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK
+
+
+Certification Run Exit Code: 0
+Certification Status: PASS
+Broker Write Performed: False
+Position Allocation Performed: False
+Model Weight Update Performed: False
+Live Learning Performed: False
+Paper Orders Submitted: 0
+Live Orders Submitted: 0

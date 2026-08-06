@@ -1,0 +1,149 @@
+{
+  "performance": {
+    "average_return": 0.0015,
+    "count": 6,
+    "cumulative_return": 0.009028,
+    "max_drawdown": 0.00075,
+    "sharpe_candidate": 2.558409,
+    "volatility": 0.001436,
+    "win_rate": 0.666667
+  },
+  "portfolio_context": {
+    "analysis_only": true,
+    "average_absolute_correlation": 0.7265,
+    "capital_allocation_enabled": false,
+    "directional_concentration": 0.133611,
+    "diversification_state": "CONCENTRATED",
+    "diversification_state_i18n": {
+      "code": "CONCENTRATED",
+      "en": "Concentrated",
+      "ko": "집중"
+    },
+    "pair_count": 6,
+    "pairs": [
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.989245,
+        "left": "AAPL",
+        "right": "MSFT"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.570583,
+        "left": "AAPL",
+        "right": "NVDA"
+      },
+      {
+        "classification": "POSITIVE",
+        "correlation": 0.703231,
+        "left": "AAPL",
+        "right": "SPY"
+      },
+      {
+        "classification": "POSITIVE",
+        "correlation": 0.589872,
+        "left": "MSFT",
+        "right": "NVDA"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.787227,
+        "left": "MSFT",
+        "right": "SPY"
+      },
+      {
+        "classification": "NEGATIVE",
+        "correlation": -0.718844,
+        "left": "NVDA",
+        "right": "SPY"
+      }
+    ],
+    "portfolio_risk_level": "MEDIUM",
+    "portfolio_risk_level_i18n": {
+      "code": "MEDIUM",
+      "en": "Medium",
+      "ko": "중간"
+    },
+    "portfolio_risk_score": 0.4597,
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "SPY"
+    ]
+  },
+  "safety": {
+    "automatic_model_update_enabled": false,
+    "broker_write_enabled": false,
+    "live_learning_enabled": false,
+    "live_orders_during_build": 0,
+    "live_trading_enabled": false,
+    "order_cancellation_enabled": false,
+    "order_submission_enabled": false,
+    "paper_orders_during_build": 0,
+    "position_allocation_enabled": false
+  },
+  "signal_feedback": {
+    "automatic_model_update_enabled": false,
+    "directional_accuracy": 0.75,
+    "feedback_health": "IMPROVING",
+    "feedback_health_i18n": {
+      "code": "IMPROVING",
+      "en": "Improving",
+      "ko": "개선"
+    },
+    "feedback_mode": "OFFLINE_OBSERVATION_ONLY",
+    "live_learning_enabled": false,
+    "mean_absolute_error": 0.012874,
+    "rows": [
+      {
+        "absolute_error": 0.016986,
+        "directional_hit": true,
+        "expected_return": 0.020986,
+        "feedback_adjustment": 0.032056,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.916359,
+        "realized_return": 0.004,
+        "symbol": "AAPL"
+      },
+      {
+        "absolute_error": 0.018153,
+        "directional_hit": true,
+        "expected_return": -0.020986,
+        "feedback_adjustment": 0.027389,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.916359,
+        "realized_return": -0.002833,
+        "symbol": "MSFT"
+      },
+      {
+        "absolute_error": 0.015525,
+        "directional_hit": true,
+        "expected_return": 0.019525,
+        "feedback_adjustment": 0.0379,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.655062,
+        "realized_return": 0.004,
+        "symbol": "NVDA"
+      },
+      {
+        "absolute_error": 0.000833,
+        "directional_hit": false,
+        "expected_return": 0.0,
+        "feedback_adjustment": 0.096667,
+        "model_weight_update_enabled": false,
+        "original_confidence": 0.625,
+        "realized_return": 0.000833,
+        "symbol": "SPY"
+      }
+    ]
+  },
+  "summary": {
+    "en": "Read-only portfolio concentration, cross-asset correlation, offline feedback, and performance analytics.",
+    "ko": "읽기 전용 포트폴리오 집중도, 자산 간 상관관계, 오프라인 피드백 및 성과 분석입니다."
+  },
+  "title": {
+    "en": "Portfolio Context and Signal Feedback Report",
+    "ko": "포트폴리오 컨텍스트 및 신호 피드백 보고서"
+  }
+}
