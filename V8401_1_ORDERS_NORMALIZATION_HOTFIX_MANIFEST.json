@@ -1,0 +1,17 @@
+{
+  "stage": "V8401_1_ACTUAL_MULTI_BROKER_SYNC_ORDERS_NORMALIZATION_HOTFIX",
+  "fixes": [
+    "Ignore primitive order values",
+    "Flatten mixed order lists",
+    "Extract nested ETrade Order objects",
+    "Guard reconciliation against non-dict values",
+    "Support alternate order status field names"
+  ],
+  "network_during_install": false,
+  "credentials_used_during_install": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "order_cancel_enabled": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0
+}

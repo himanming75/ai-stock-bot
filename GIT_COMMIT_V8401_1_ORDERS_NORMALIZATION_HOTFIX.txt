@@ -1,0 +1,9 @@
+git add broker_sync/normalization.py
+git add broker_sync/reconciliation.py
+git add tools/test_v8401_1_orders_normalization_hotfix.py
+git add RUN_V8401_1_ORDERS_NORMALIZATION_HOTFIX_TEST.ps1
+git add RUN_V8401_1_APPLY_AND_VALIDATE.ps1
+git add V8401_1_ORDERS_NORMALIZATION_HOTFIX_MANIFEST.json
+git add GIT_COMMIT_V8401_1_ORDERS_NORMALIZATION_HOTFIX.txt
+git commit -m "Fix actual multi broker order normalization"
+git push origin main
