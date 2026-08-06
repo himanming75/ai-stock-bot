@@ -1,0 +1,202 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "audit_after_restart_count": 5,
+  "audit_before_restart_count": 5,
+  "audit_log_ui_ready": true,
+  "authenticated_user": {
+    "created_at": "2026-08-06T01:11:57.937737+00:00",
+    "email": "owner@example.com",
+    "is_active": true,
+    "user_id": "usr_55541a169b49d166"
+  },
+  "billing_enabled": false,
+  "broker_credentials_stored": false,
+  "broker_metadata": {
+    "account_alias": "Primary Paper",
+    "broker": "ALPACA",
+    "connection_id": "broker_26909f1509f3",
+    "created_at": "2026-08-06T01:11:58.219794+00:00",
+    "credential_stored": 0,
+    "environment": "PAPER",
+    "read_only": 1,
+    "status": "METADATA_ONLY",
+    "workspace_id": "ws_7f9690a9a4cf2880",
+    "write_enabled": 0
+  },
+  "broker_metadata_form_ready": true,
+  "broker_write_enabled": false,
+  "certification_fingerprint": "aecdd4b7ea2899f045eef2dadae96c0e8fc1c1277fd6b8a5ee0caf71f124304b",
+  "cloud_deployment_enabled": false,
+  "database_path": "release\\v7201_7400_saas_persistence\\actual\\saas_persistence_fixture.db",
+  "database_type": "SQLITE",
+  "email_verification_enabled": false,
+  "expanded_api_ready": true,
+  "login_screen_ready": true,
+  "member_added": {
+    "created_at": "2026-08-06T01:11:58.209360+00:00",
+    "role": "VIEWER",
+    "user_id": "usr_d2bce2adbefd0a4b",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  },
+  "member_management_ready": true,
+  "mfa_enabled": false,
+  "next_fixed_development": "V7401_TO_V7600_SAAS_SECURITY_ACCOUNT_RECOVERY_AND_ADMIN",
+  "order_submission_enabled": false,
+  "password_reset_enabled": false,
+  "persistent_database_enabled": true,
+  "registration": {
+    "user": {
+      "created_at": "2026-08-06T01:11:57.937737+00:00",
+      "email": "owner@example.com",
+      "is_active": true,
+      "user_id": "usr_55541a169b49d166"
+    },
+    "workspace": {
+      "created_at": "2026-08-06T01:11:57.942395+00:00",
+      "name": "Persistent Workspace",
+      "owner_user_id": "usr_55541a169b49d166",
+      "plan": "FOUNDATION",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    }
+  },
+  "registration_screen_ready": true,
+  "restart_restore_ready": true,
+  "risk_form_ready": true,
+  "risk_settings": {
+    "automation_profile": "ALL_STOP",
+    "daily_loss_limit": 0.02,
+    "max_position_weight": 0.1,
+    "risk_profile": "CONSERVATIVE",
+    "selected_strategy": "MULTI_AI",
+    "updated_at": "2026-08-06T01:11:58.200482+00:00",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  },
+  "stage": "V7201_TO_V7400_SAAS_PERSISTENCE_EXPANDED_API_AND_USER_WORKFLOWS",
+  "status": "PASS",
+  "strategy_form_ready": true,
+  "strategy_settings": {
+    "automation_profile": "ALL_STOP",
+    "daily_loss_limit": 0.02,
+    "max_position_weight": 0.1,
+    "risk_profile": "CONSERVATIVE",
+    "selected_strategy": "MULTI_AI",
+    "updated_at": "2026-08-06T01:11:58.190292+00:00",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  },
+  "summary_after_restart": {
+    "broker_connections": [
+      {
+        "account_alias": "Primary Paper",
+        "broker": "ALPACA",
+        "connection_id": "broker_26909f1509f3",
+        "created_at": "2026-08-06T01:11:58.219794+00:00",
+        "credential_stored": 0,
+        "environment": "PAPER",
+        "read_only": 1,
+        "status": "METADATA_ONLY",
+        "workspace_id": "ws_7f9690a9a4cf2880",
+        "write_enabled": 0
+      }
+    ],
+    "broker_write_enabled": false,
+    "members": [
+      {
+        "email": "owner@example.com",
+        "role": "OWNER",
+        "user_id": "usr_55541a169b49d166",
+        "workspace_id": "ws_7f9690a9a4cf2880"
+      },
+      {
+        "email": "viewer@example.com",
+        "role": "VIEWER",
+        "user_id": "usr_d2bce2adbefd0a4b",
+        "workspace_id": "ws_7f9690a9a4cf2880"
+      }
+    ],
+    "membership": {
+      "created_at": "2026-08-06T01:11:57.942395+00:00",
+      "role": "OWNER",
+      "user_id": "usr_55541a169b49d166",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    },
+    "order_submission_enabled": false,
+    "settings": {
+      "automation_profile": "ALL_STOP",
+      "daily_loss_limit": 0.02,
+      "max_position_weight": 0.1,
+      "risk_profile": "CONSERVATIVE",
+      "selected_strategy": "MULTI_AI",
+      "updated_at": "2026-08-06T01:11:58.200482+00:00",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    },
+    "workspace": {
+      "created_at": "2026-08-06T01:11:57.942395+00:00",
+      "name": "Persistent Workspace",
+      "owner_user_id": "usr_55541a169b49d166",
+      "plan": "FOUNDATION",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    }
+  },
+  "summary_before_restart": {
+    "broker_connections": [
+      {
+        "account_alias": "Primary Paper",
+        "broker": "ALPACA",
+        "connection_id": "broker_26909f1509f3",
+        "created_at": "2026-08-06T01:11:58.219794+00:00",
+        "credential_stored": 0,
+        "environment": "PAPER",
+        "read_only": 1,
+        "status": "METADATA_ONLY",
+        "workspace_id": "ws_7f9690a9a4cf2880",
+        "write_enabled": 0
+      }
+    ],
+    "broker_write_enabled": false,
+    "members": [
+      {
+        "email": "owner@example.com",
+        "role": "OWNER",
+        "user_id": "usr_55541a169b49d166",
+        "workspace_id": "ws_7f9690a9a4cf2880"
+      },
+      {
+        "email": "viewer@example.com",
+        "role": "VIEWER",
+        "user_id": "usr_d2bce2adbefd0a4b",
+        "workspace_id": "ws_7f9690a9a4cf2880"
+      }
+    ],
+    "membership": {
+      "created_at": "2026-08-06T01:11:57.942395+00:00",
+      "role": "OWNER",
+      "user_id": "usr_55541a169b49d166",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    },
+    "order_submission_enabled": false,
+    "settings": {
+      "automation_profile": "ALL_STOP",
+      "daily_loss_limit": 0.02,
+      "max_position_weight": 0.1,
+      "risk_profile": "CONSERVATIVE",
+      "selected_strategy": "MULTI_AI",
+      "updated_at": "2026-08-06T01:11:58.200482+00:00",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    },
+    "workspace": {
+      "created_at": "2026-08-06T01:11:57.942395+00:00",
+      "name": "Persistent Workspace",
+      "owner_user_id": "usr_55541a169b49d166",
+      "plan": "FOUNDATION",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    }
+  },
+  "viewer_write_blocked": true,
+  "workspace_dashboard_ready": true,
+  "workspace_isolation_ready": true
+}

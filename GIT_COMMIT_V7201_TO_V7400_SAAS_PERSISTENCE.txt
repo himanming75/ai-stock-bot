@@ -1,0 +1,12 @@
+git add saas_persistence
+git add tools/run_v7201_to_v7400_saas_persistence.py
+git add tools/run_saas_persistence_server.py
+git add tools/test_v7201_to_v7400_saas_persistence.py
+git add release/v7201_7400_saas_persistence
+git add RUN_V7201_TO_V7400_SAAS_PERSISTENCE.ps1
+git add RUN_V7201_TO_V7400_SAAS_PERSISTENCE_TEST.ps1
+git add RUN_SAAS_PERSISTENCE_LOCAL_SERVER.ps1
+git add V7201_TO_V7400_SAAS_PERSISTENCE_MANIFEST.json
+git add GIT_COMMIT_V7201_TO_V7400_SAAS_PERSISTENCE.txt
+git commit -m "Add V7201-V7400 SaaS persistence and user workflows"
+git push origin main

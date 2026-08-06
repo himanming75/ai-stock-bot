@@ -1,0 +1,13 @@
+{
+  "endpoints": [
+    "POST /api/register",
+    "POST /api/login",
+    "POST /api/workspaces",
+    "POST /api/workspace/summary",
+    "POST /api/workspace/strategy",
+    "POST /api/workspace/risk",
+    "POST /api/workspace/member",
+    "POST /api/workspace/broker",
+    "POST /api/workspace/audit"
+  ]
+}

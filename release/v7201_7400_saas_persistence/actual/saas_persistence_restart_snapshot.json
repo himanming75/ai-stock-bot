@@ -1,0 +1,54 @@
+{
+  "broker_connections": [
+    {
+      "account_alias": "Primary Paper",
+      "broker": "ALPACA",
+      "connection_id": "broker_26909f1509f3",
+      "created_at": "2026-08-06T01:11:58.219794+00:00",
+      "credential_stored": 0,
+      "environment": "PAPER",
+      "read_only": 1,
+      "status": "METADATA_ONLY",
+      "workspace_id": "ws_7f9690a9a4cf2880",
+      "write_enabled": 0
+    }
+  ],
+  "broker_write_enabled": false,
+  "members": [
+    {
+      "email": "owner@example.com",
+      "role": "OWNER",
+      "user_id": "usr_55541a169b49d166",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    },
+    {
+      "email": "viewer@example.com",
+      "role": "VIEWER",
+      "user_id": "usr_d2bce2adbefd0a4b",
+      "workspace_id": "ws_7f9690a9a4cf2880"
+    }
+  ],
+  "membership": {
+    "created_at": "2026-08-06T01:11:57.942395+00:00",
+    "role": "OWNER",
+    "user_id": "usr_55541a169b49d166",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  },
+  "order_submission_enabled": false,
+  "settings": {
+    "automation_profile": "ALL_STOP",
+    "daily_loss_limit": 0.02,
+    "max_position_weight": 0.1,
+    "risk_profile": "CONSERVATIVE",
+    "selected_strategy": "MULTI_AI",
+    "updated_at": "2026-08-06T01:11:58.200482+00:00",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  },
+  "workspace": {
+    "created_at": "2026-08-06T01:11:57.942395+00:00",
+    "name": "Persistent Workspace",
+    "owner_user_id": "usr_55541a169b49d166",
+    "plan": "FOUNDATION",
+    "workspace_id": "ws_7f9690a9a4cf2880"
+  }
+}

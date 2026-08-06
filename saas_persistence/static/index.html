@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Stock Bot SaaS</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>AI Stock Bot SaaS</h1>
+      <p>Persistent multi-tenant control plane</p>
+    </div>
+    <div class="badge">Broker Write OFF</div>
+  </header>
+
+  <main>
+    <section class="card" id="authPanel">
+      <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="registerTab">Register</button>
+      </div>
+
+      <form id="loginForm">
+        <h2>Login</h2>
+        <input id="loginEmail" type="email" placeholder="Email" required>
+        <input id="loginPassword" type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="registerForm" class="hidden">
+        <h2>Create account</h2>
+        <input id="registerEmail" type="email" placeholder="Email" required>
+        <input id="registerPassword" type="password" placeholder="Password (10+ chars)" required>
+        <input id="workspaceName" placeholder="Workspace name" required>
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="authMessage"></p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="grid">
+        <div class="card">
+          <h2>Workspace</h2>
+          <select id="workspaceSelect"></select>
+          <button id="refreshButton">Refresh</button>
+        </div>
+
+        <div class="card">
+          <h2>Safety</h2>
+          <p><strong>Broker Write:</strong> OFF</p>
+          <p><strong>Order Submission:</strong> OFF</p>
+          <p><strong>Credential Storage:</strong> OFF</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <form class="card" id="strategyForm">
+          <h2>Strategy</h2>
+          <select id="strategy">
+            <option>MOMENTUM</option>
+            <option>BREAKOUT</option>
+            <option>MEAN_REVERSION</option>
+            <option>MULTI_AI</option>
+          </select>
+          <button type="submit">Save Strategy</button>
+        </form>
+
+        <form class="card" id="riskForm">
+          <h2>Risk Settings</h2>
+          <select id="riskProfile">
+            <option>CONSERVATIVE</option>
+            <option>MODERATE</option>
+            <option>AGGRESSIVE</option>
+          </select>
+          <label>Max position weight</label>
+          <input id="maxPositionWeight" type="number" min="0.01" max="0.20" step="0.01">
+          <label>Daily loss limit</label>
+          <input id="dailyLossLimit" type="number" min="0.005" max="0.05" step="0.005">
+          <button type="submit">Save Risk</button>
+        </form>
+      </div>
+
+      <div class="grid">
+        <form class="card" id="brokerForm">
+          <h2>Broker Metadata</h2>
+          <select id="broker">
+            <option>ALPACA</option>
+            <option>ETRADE</option>
+          </select>
+          <select id="environment">
+            <option>PAPER</option>
+            <option>SANDBOX</option>
+            <option>PRODUCTION</option>
+          </select>
+          <input id="accountAlias" placeholder="Account alias">
+          <button type="submit">Add Metadata</button>
+        </form>
+
+        <form class="card" id="memberForm">
+          <h2>Add Member</h2>
+          <input id="memberEmail" type="email" placeholder="Existing user email">
+          <select id="memberRole">
+            <option>VIEWER</option>
+            <option>TRADER</option>
+            <option>ADMIN</option>
+          </select>
+          <button type="submit">Add Member</button>
+        </form>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Workspace Summary</h2>
+          <pre id="summaryOutput"></pre>
+        </div>
+        <div class="card">
+          <h2>Audit Log</h2>
+          <button id="auditButton">Load Audit</button>
+          <pre id="auditOutput"></pre>
+        </div>
+      </div>
+
+      <p id="appMessage"></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
