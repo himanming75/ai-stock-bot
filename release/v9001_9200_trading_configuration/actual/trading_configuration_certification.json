@@ -1,0 +1,168 @@
+{
+  "activation_blocked": true,
+  "actual_broker_write_performed": false,
+  "actual_configuration_activated": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "aggressive_profile_ready": true,
+  "balanced_profile_ready": true,
+  "breakout_configuration_ready": true,
+  "capital_limit_ready": true,
+  "cash_reserve_ready": true,
+  "certification_fingerprint": "8b063886b8191b2cd6bf80e2475fb28ee42e8d8864f8fac28c091f4b567d34ce",
+  "conservative_profile_ready": true,
+  "default_port": 8770,
+  "draft_ledger_ready": true,
+  "draft_storage_ready": true,
+  "draft_validation_ready": true,
+  "ema_configuration_ready": true,
+  "extended_hours_permission_ready": true,
+  "fixture_saved": {
+    "account_scope": "ALL_READ_ONLY",
+    "activation_status": "NOT_ACTIVATED",
+    "approval_status": "REVIEW_REQUIRED",
+    "capital_limit": 0.0,
+    "created_at": "2026-08-06T04:27:35.487980+00:00",
+    "draft_id": "draft_03b1098ae4647024",
+    "execution": {
+      "activation_enabled": false,
+      "broker_write_enabled": false,
+      "mode": "DRAFT_ONLY",
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false
+    },
+    "profile": {
+      "allow_extended_hours": false,
+      "allow_short": false,
+      "cash_reserve_percent": 100.0,
+      "display_name": "Read-Only",
+      "max_daily_loss_percent": 0.0,
+      "max_position_percent": 0.0,
+      "max_positions": 0,
+      "risk_level": "NONE",
+      "trading_style": "MONITOR_ONLY"
+    },
+    "profile_key": "READ_ONLY",
+    "status": "DRAFT_SAVED",
+    "strategies": {
+      "BREAKOUT": {
+        "enabled": false,
+        "lookback_bars": 20,
+        "volume_multiplier": 1.5,
+        "weight": 1.0
+      },
+      "EMA": {
+        "enabled": true,
+        "fast_period": 9,
+        "slow_period": 21,
+        "weight": 1.0
+      },
+      "MACD": {
+        "enabled": false,
+        "fast_period": 12,
+        "signal_period": 9,
+        "slow_period": 26,
+        "weight": 1.0
+      },
+      "RSI": {
+        "enabled": true,
+        "overbought": 70,
+        "oversold": 30,
+        "period": 14,
+        "weight": 1.0
+      },
+      "VWAP": {
+        "deviation_percent": 1.0,
+        "enabled": false,
+        "weight": 1.0
+      }
+    },
+    "symbols": [
+      "SPY",
+      "QQQ"
+    ]
+  },
+  "fixture_validation": {
+    "activation_status": "NOT_ACTIVATED",
+    "draft": {
+      "account_scope": "ALL_READ_ONLY",
+      "capital_limit": 0.0,
+      "execution": {
+        "activation_enabled": false,
+        "broker_write_enabled": false,
+        "mode": "DRAFT_ONLY",
+        "order_cancel_enabled": false,
+        "order_submission_enabled": false
+      },
+      "profile": {
+        "allow_extended_hours": false,
+        "allow_short": false,
+        "cash_reserve_percent": 100.0,
+        "display_name": "Read-Only",
+        "max_daily_loss_percent": 0.0,
+        "max_position_percent": 0.0,
+        "max_positions": 0,
+        "risk_level": "NONE",
+        "trading_style": "MONITOR_ONLY"
+      },
+      "profile_key": "READ_ONLY",
+      "strategies": {
+        "BREAKOUT": {
+          "enabled": false,
+          "lookback_bars": 20,
+          "volume_multiplier": 1.5,
+          "weight": 1.0
+        },
+        "EMA": {
+          "enabled": true,
+          "fast_period": 9,
+          "slow_period": 21,
+          "weight": 1.0
+        },
+        "MACD": {
+          "enabled": false,
+          "fast_period": 12,
+          "signal_period": 9,
+          "slow_period": 26,
+          "weight": 1.0
+        },
+        "RSI": {
+          "enabled": true,
+          "overbought": 70,
+          "oversold": 30,
+          "period": 14,
+          "weight": 1.0
+        },
+        "VWAP": {
+          "deviation_percent": 1.0,
+          "enabled": false,
+          "weight": 1.0
+        }
+      },
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ]
+    },
+    "status": "VALID"
+  },
+  "macd_configuration_ready": true,
+  "maximum_daily_loss_ready": true,
+  "maximum_position_percent_ready": true,
+  "maximum_positions_ready": true,
+  "next_fixed_development": "V9201_TO_V9500_AI_STRATEGY_FEATURE_ENGINE_AND_SIGNAL_CANDIDATES",
+  "profile_presets_ready": true,
+  "read_only_profile_ready": true,
+  "responsive_gui_ready": true,
+  "rsi_configuration_ready": true,
+  "short_permission_ready": true,
+  "stage": "V9001_TO_V9200_PROFILE_STRATEGY_AND_RISK_CONFIGURATION_GUI",
+  "status": "PASS",
+  "symbol_universe_ready": true,
+  "unsafe_allocation_blocked": true,
+  "vwap_configuration_ready": true
+}

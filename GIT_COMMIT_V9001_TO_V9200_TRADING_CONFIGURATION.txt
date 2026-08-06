@@ -1,0 +1,12 @@
+git add trading_configuration
+git add tools/run_trading_configuration_gui.py
+git add tools/run_v9001_to_v9200_trading_configuration_certification.py
+git add tools/test_v9001_to_v9200_trading_configuration.py
+git add release/v9001_9200_trading_configuration
+git add RUN_V9001_TO_V9200_TRADING_CONFIGURATION_TEST.ps1
+git add RUN_V9001_TO_V9200_TRADING_CONFIGURATION_CERTIFICATION.ps1
+git add RUN_TRADING_CONFIGURATION_GUI.ps1
+git add V9001_TO_V9200_TRADING_CONFIGURATION_MANIFEST.json
+git add GIT_COMMIT_V9001_TO_V9200_TRADING_CONFIGURATION.txt
+git commit -m "Add V9001-V9200 profile strategy risk configuration GUI"
+git push origin main

@@ -1,0 +1,142 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  background: #edf2f7;
+  color: #172033;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+aside {
+  background: #163159;
+  color: white;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+}
+aside h1 { margin: 0; }
+aside p {
+  margin: 5px 0 28px;
+  opacity: .72;
+  font-size: 13px;
+}
+nav {
+  display: grid;
+  gap: 8px;
+}
+nav button {
+  background: transparent;
+  border: 0;
+  color: #dce8fb;
+  padding: 11px 13px;
+  text-align: left;
+  border-radius: 8px;
+}
+nav button.active {
+  background: #315681;
+}
+.safety {
+  margin-top: auto;
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #102441;
+  font-size: 12px;
+}
+.safety strong { color: #66dda0; }
+main { padding: 28px; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 { margin: 0; }
+header p {
+  color: #667085;
+  margin: 7px 0 0;
+}
+.pill {
+  background: #d9f5e6;
+  color: #08783e;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.panel {
+  background: white;
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 3px 15px rgba(20,35,55,.07);
+}
+.panel h3 { margin-top: 0; }
+.form-grid,
+.strategy-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.strategy-grid {
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+}
+.strategy {
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 14px;
+}
+label {
+  display: grid;
+  gap: 6px;
+  color: #5c6878;
+  font-size: 13px;
+}
+input, select {
+  border: 1px solid #ccd6e2;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+}
+.checks {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+.checks label {
+  display: flex;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  border: 0;
+  background: #245184;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.actions button:last-child {
+  background: #218157;
+}
+pre {
+  background: #f6f8fb;
+  border-radius: 8px;
+  padding: 13px;
+  overflow: auto;
+  max-height: 360px;
+}
+@media(max-width: 780px) {
+  body { display: block; }
+  aside { min-height: auto; }
+  .safety { margin-top: 20px; }
+  main { padding: 18px; }
+  .form-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,65 @@
+{
+  "account_scope": "ALL_READ_ONLY",
+  "activation_status": "NOT_ACTIVATED",
+  "approval_status": "REVIEW_REQUIRED",
+  "capital_limit": 0.0,
+  "created_at": "2026-08-06T04:27:35.487980+00:00",
+  "draft_id": "draft_03b1098ae4647024",
+  "execution": {
+    "activation_enabled": false,
+    "broker_write_enabled": false,
+    "mode": "DRAFT_ONLY",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false
+  },
+  "profile": {
+    "allow_extended_hours": false,
+    "allow_short": false,
+    "cash_reserve_percent": 100.0,
+    "display_name": "Read-Only",
+    "max_daily_loss_percent": 0.0,
+    "max_position_percent": 0.0,
+    "max_positions": 0,
+    "risk_level": "NONE",
+    "trading_style": "MONITOR_ONLY"
+  },
+  "profile_key": "READ_ONLY",
+  "status": "DRAFT_SAVED",
+  "strategies": {
+    "BREAKOUT": {
+      "enabled": false,
+      "lookback_bars": 20,
+      "volume_multiplier": 1.5,
+      "weight": 1.0
+    },
+    "EMA": {
+      "enabled": true,
+      "fast_period": 9,
+      "slow_period": 21,
+      "weight": 1.0
+    },
+    "MACD": {
+      "enabled": false,
+      "fast_period": 12,
+      "signal_period": 9,
+      "slow_period": 26,
+      "weight": 1.0
+    },
+    "RSI": {
+      "enabled": true,
+      "overbought": 70,
+      "oversold": 30,
+      "period": 14,
+      "weight": 1.0
+    },
+    "VWAP": {
+      "deviation_percent": 1.0,
+      "enabled": false,
+      "weight": 1.0
+    }
+  },
+  "symbols": [
+    "SPY",
+    "QQQ"
+  ]
+}
