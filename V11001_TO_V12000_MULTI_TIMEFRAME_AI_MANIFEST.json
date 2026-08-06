@@ -1,0 +1,51 @@
+{
+  "stage": "V11001_TO_V12000_MULTI_TIMEFRAME_AI_MARKET_REGIME_2_ADVANCED_CONFIDENCE_MAX_BUNDLE",
+  "version_range": {
+    "from": "V11001",
+    "to": "V12000"
+  },
+  "base_commit": "63e5239737605854a73ea976f95ab329791a3ad1",
+  "features": [
+    "1m, 3m, 5m, 15m, 30m, 1h, 1d analysis",
+    "Timeframe feature and signal engine",
+    "Timeframe consensus",
+    "Trend alignment",
+    "Market Regime 2.0",
+    "Strong Bull / Weak Bull / Range / Weak Bear / Strong Bear",
+    "Breakout / Fake Breakout / Gap Up / Gap Down",
+    "Probability / Expected Return / Expected Risk / Reward-Risk",
+    "Confidence calibration",
+    "English and Korean dashboard/report"
+  ],
+  "safety": {
+    "broker_write_enabled": false,
+    "order_submission_enabled": false,
+    "order_cancellation_enabled": false,
+    "position_allocation_enabled": false,
+    "live_trading_enabled": false,
+    "paper_orders_during_build": 0,
+    "live_orders_during_build": 0
+  },
+  "targeted_git_add_only": true,
+  "files": [
+    "RUN_MULTI_TIMEFRAME_AI_DASHBOARD.ps1",
+    "RUN_V11001_TO_V12000_MULTI_TIMEFRAME_AI.ps1",
+    "RUN_V11001_TO_V12000_MULTI_TIMEFRAME_AI_TEST.ps1",
+    "VERIFY_V11001_TO_V12000_MULTI_TIMEFRAME_AI.ps1",
+    "multi_timeframe_ai/__init__.py",
+    "multi_timeframe_ai/dashboard.py",
+    "multi_timeframe_ai/engine.py",
+    "multi_timeframe_ai/i18n.py",
+    "multi_timeframe_ai/io.py",
+    "multi_timeframe_ai/report.py",
+    "multi_timeframe_ai/service.py",
+    "tools/run_multi_timeframe_ai_dashboard.py",
+    "tools/run_v11001_to_v12000_multi_timeframe_ai.py",
+    "tools/test_v11001_to_v12000_multi_timeframe_ai.py",
+    "V11001_TO_V12000_MULTI_TIMEFRAME_AI_MANIFEST.json",
+    "GIT_COMMIT_V11001_TO_V12000_MULTI_TIMEFRAME_AI.txt",
+    "release/v11001_12000_multi_timeframe_ai/README.md",
+    "release/v11001_12000_multi_timeframe_ai/RELEASE_NOTES.md",
+    "release/v11001_12000_multi_timeframe_ai/TEST_RESULTS.txt"
+  ]
+}

@@ -1,0 +1,975 @@
+{
+  "analyses": [
+    {
+      "action": "BUY",
+      "action_i18n": {
+        "code": "BUY",
+        "en": "Buy",
+        "ko": "매수"
+      },
+      "broker_write_enabled": false,
+      "confidence_calibration": {
+        "calibrated_confidence": 0.916359,
+        "calibration_method": "ALIGNMENT_DISAGREEMENT_PENALTY_V2",
+        "raw_confidence": 0.916359
+      },
+      "consensus_score": 0.974678,
+      "dominant_structure": "BREAKOUT",
+      "dominant_structure_i18n": {
+        "code": "BREAKOUT",
+        "en": "Breakout",
+        "ko": "돌파"
+      },
+      "execution_mode": "ANALYSIS_ONLY",
+      "expected_return": 0.020986,
+      "expected_risk": 0.010282,
+      "live_trading_enabled": false,
+      "market_regime_2": "STRONG_BULL",
+      "market_regime_2_i18n": {
+        "code": "STRONG_BULL",
+        "en": "Strong Bull",
+        "ko": "강한 상승"
+      },
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "position_allocation_enabled": false,
+      "probability": 0.85253,
+      "rank": 1,
+      "reward_risk": 2.041048,
+      "symbol": "AAPL",
+      "timeframe_consensus": {
+        "alignment": 1.0,
+        "buy_weight": 1.0,
+        "disagreement": 0.0,
+        "hold_weight": 0,
+        "sell_weight": 0
+      },
+      "timeframes": [
+        {
+          "directional_score": 0.838266,
+          "expected_return": 0.016884,
+          "expected_risk": 0.009732,
+          "features": {
+            "atr_percent": 0.008392499999999999,
+            "close": 207.0295,
+            "close_vs_range": 0.797,
+            "ema_fast": 207.84933682000002,
+            "ema_slow": 206.20966318,
+            "follow_through": 0.0099,
+            "gap_percent": 0.0,
+            "momentum": 0.011880000000000002,
+            "rsi": 67.82,
+            "volume_ratio": 1.5445000000000002
+          },
+          "momentum_score": 0.9437,
+          "probability": 0.840418,
+          "regime": "STRONG_BULL",
+          "reward_risk": 1.734968,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "1m",
+          "trend_score": 0.9437,
+          "weight": 0.06
+        },
+        {
+          "directional_score": 0.914592,
+          "expected_return": 0.018718,
+          "expected_risk": 0.009801,
+          "features": {
+            "atr_percent": 0.008527499999999999,
+            "close": 207.3985,
+            "close_vs_range": 0.851,
+            "ema_fast": 208.36912498,
+            "ema_slow": 206.42787502000002,
+            "follow_through": 0.011700000000000002,
+            "gap_percent": 0.0,
+            "momentum": 0.014040000000000002,
+            "rsi": 71.06,
+            "volume_ratio": 1.6435000000000002
+          },
+          "momentum_score": 1.0,
+          "probability": 0.850694,
+          "regime": "STRONG_BULL",
+          "reward_risk": 1.909866,
+          "signal": "BUY",
+          "structure": "BREAKOUT",
+          "timeframe": "3m",
+          "trend_score": 1.0,
+          "weight": 0.08
+        },
+        {
+          "directional_score": 0.95376,
+          "expected_return": 0.019829,
+          "expected_risk": 0.009926,
+          "features": {
+            "atr_percent": 0.008662499999999998,
+            "close": 207.7675,
+            "close_vs_range": 0.905,
+            "ema_fast": 208.88944450000002,
+            "ema_slow": 206.64555550000003,
+            "follow_through": 0.013500000000000002,
+            "gap_percent": 0.0,
+            "momentum": 0.016200000000000003,
+            "rsi": 74.3,
+            "volume_ratio": 1.7425000000000002
+          },
+          "momentum_score": 1.0,
+          "probability": 0.854132,
+          "regime": "STRONG_BULL",
+          "reward_risk": 1.997633,
+          "signal": "BUY",
+          "structure": "BREAKOUT",
+          "timeframe": "5m",
+          "trend_score": 1.0,
+          "weight": 0.12
+        },
+        {
+          "directional_score": 0.98256,
+          "expected_return": 0.020905,
+          "expected_risk": 0.010151,
+          "features": {
+            "atr_percent": 0.008865,
+            "close": 208.321,
+            "close_vs_range": 0.9199999999999999,
+            "ema_fast": 209.67092008,
+            "ema_slow": 206.97107992,
+            "follow_through": 0.016200000000000003,
+            "gap_percent": 0.0,
+            "momentum": 0.019440000000000002,
+            "rsi": 79.16,
+            "volume_ratio": 1.891
+          },
+          "momentum_score": 1.0,
+          "probability": 0.854987,
+          "regime": "STRONG_BULL",
+          "reward_risk": 2.05949,
+          "signal": "BUY",
+          "structure": "BREAKOUT",
+          "timeframe": "15m",
+          "trend_score": 1.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 0.9984,
+          "expected_return": 0.021565,
+          "expected_risk": 0.010305,
+          "features": {
+            "atr_percent": 0.009,
+            "close": 208.69,
+            "close_vs_range": 0.9199999999999999,
+            "ema_fast": 210.19256800000002,
+            "ema_slow": 207.187432,
+            "follow_through": 0.018000000000000002,
+            "gap_percent": 0.0,
+            "momentum": 0.0216,
+            "rsi": 82.4,
+            "volume_ratio": 1.9900000000000002
+          },
+          "momentum_score": 1.0,
+          "probability": 0.855034,
+          "regime": "STRONG_BULL",
+          "reward_risk": 2.092778,
+          "signal": "BUY",
+          "structure": "BREAKOUT",
+          "timeframe": "30m",
+          "trend_score": 1.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 1.0,
+          "expected_return": 0.021924,
+          "expected_risk": 0.010473,
+          "features": {
+            "atr_percent": 0.009134999999999999,
+            "close": 209.059,
+            "close_vs_range": 0.9199999999999999,
+            "ema_fast": 210.71474727999998,
+            "ema_slow": 207.40325271999998,
+            "follow_through": 0.0198,
+            "gap_percent": 0.0,
+            "momentum": 0.023760000000000003,
+            "rsi": 85.64,
+            "volume_ratio": 2.0890000000000004
+          },
+          "momentum_score": 1.0,
+          "probability": 0.853517,
+          "regime": "STRONG_BULL",
+          "reward_risk": 2.093359,
+          "signal": "BUY",
+          "structure": "BREAKOUT",
+          "timeframe": "1h",
+          "trend_score": 1.0,
+          "weight": 0.18
+        },
+        {
+          "directional_score": 1.0,
+          "expected_return": 0.02241,
+          "expected_risk": 0.010729,
+          "features": {
+            "atr_percent": 0.0093375,
+            "close": 209.61249999999998,
+            "close_vs_range": 0.9199999999999999,
+            "ema_fast": 211.49901249999996,
+            "ema_slow": 207.72598749999997,
+            "follow_through": 0.0225,
+            "gap_percent": 0.014,
+            "momentum": 0.027,
+            "rsi": 90.5,
+            "volume_ratio": 2.2375
+          },
+          "momentum_score": 1.0,
+          "probability": 0.850986,
+          "regime": "STRONG_BULL",
+          "reward_risk": 2.088747,
+          "signal": "BUY",
+          "structure": "GAP_UP",
+          "timeframe": "1d",
+          "trend_score": 1.0,
+          "weight": 0.22
+        }
+      ],
+      "trend_alignment": 1.0
+    },
+    {
+      "action": "SELL",
+      "action_i18n": {
+        "code": "SELL",
+        "en": "Sell",
+        "ko": "매도"
+      },
+      "broker_write_enabled": false,
+      "confidence_calibration": {
+        "calibrated_confidence": 0.916359,
+        "calibration_method": "ALIGNMENT_DISAGREEMENT_PENALTY_V2",
+        "raw_confidence": 0.916359
+      },
+      "consensus_score": -0.974678,
+      "dominant_structure": "BREAKOUT",
+      "dominant_structure_i18n": {
+        "code": "BREAKOUT",
+        "en": "Breakout",
+        "ko": "돌파"
+      },
+      "execution_mode": "ANALYSIS_ONLY",
+      "expected_return": -0.020986,
+      "expected_risk": 0.010282,
+      "live_trading_enabled": false,
+      "market_regime_2": "STRONG_BEAR",
+      "market_regime_2_i18n": {
+        "code": "STRONG_BEAR",
+        "en": "Strong Bear",
+        "ko": "강한 하락"
+      },
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "position_allocation_enabled": false,
+      "probability": 0.85253,
+      "rank": 2,
+      "reward_risk": 2.041048,
+      "symbol": "MSFT",
+      "timeframe_consensus": {
+        "alignment": 1.0,
+        "buy_weight": 0,
+        "disagreement": 0.0,
+        "hold_weight": 0,
+        "sell_weight": 1.0
+      },
+      "timeframes": [
+        {
+          "directional_score": -0.838266,
+          "expected_return": -0.016884,
+          "expected_risk": 0.009732,
+          "features": {
+            "atr_percent": 0.008392499999999999,
+            "close": 415.842,
+            "close_vs_range": 0.20299999999999996,
+            "ema_fast": 414.19526568,
+            "ema_slow": 417.48873432,
+            "follow_through": -0.0099,
+            "gap_percent": 0.0,
+            "momentum": -0.011880000000000002,
+            "rsi": 32.18,
+            "volume_ratio": 1.5445000000000002
+          },
+          "momentum_score": -0.9437,
+          "probability": 0.840418,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 1.734968,
+          "signal": "SELL",
+          "structure": "NORMAL",
+          "timeframe": "1m",
+          "trend_score": -0.9437,
+          "weight": 0.06
+        },
+        {
+          "directional_score": -0.914592,
+          "expected_return": -0.018718,
+          "expected_risk": 0.009801,
+          "features": {
+            "atr_percent": 0.008527499999999999,
+            "close": 415.08599999999996,
+            "close_vs_range": 0.14899999999999997,
+            "ema_fast": 413.14339751999995,
+            "ema_slow": 417.02860247999996,
+            "follow_through": -0.011700000000000002,
+            "gap_percent": 0.0,
+            "momentum": -0.014040000000000002,
+            "rsi": 28.939999999999998,
+            "volume_ratio": 1.6435000000000002
+          },
+          "momentum_score": -1.0,
+          "probability": 0.850694,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 1.909866,
+          "signal": "SELL",
+          "structure": "BREAKOUT",
+          "timeframe": "3m",
+          "trend_score": -1.0,
+          "weight": 0.08
+        },
+        {
+          "directional_score": -0.95376,
+          "expected_return": -0.019829,
+          "expected_risk": 0.009926,
+          "features": {
+            "atr_percent": 0.008662499999999998,
+            "close": 414.33000000000004,
+            "close_vs_range": 0.09499999999999997,
+            "ema_fast": 412.0926180000001,
+            "ema_slow": 416.56738200000007,
+            "follow_through": -0.013500000000000002,
+            "gap_percent": 0.0,
+            "momentum": -0.016200000000000003,
+            "rsi": 25.7,
+            "volume_ratio": 1.7425000000000002
+          },
+          "momentum_score": -1.0,
+          "probability": 0.854132,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 1.997633,
+          "signal": "SELL",
+          "structure": "BREAKOUT",
+          "timeframe": "5m",
+          "trend_score": -1.0,
+          "weight": 0.12
+        },
+        {
+          "directional_score": -0.98256,
+          "expected_return": -0.020905,
+          "expected_risk": 0.010151,
+          "features": {
+            "atr_percent": 0.008865,
+            "close": 413.196,
+            "close_vs_range": 0.08000000000000002,
+            "ema_fast": 410.51848992000004,
+            "ema_slow": 415.87351008,
+            "follow_through": -0.016200000000000003,
+            "gap_percent": 0.0,
+            "momentum": -0.019440000000000002,
+            "rsi": 20.839999999999996,
+            "volume_ratio": 1.891
+          },
+          "momentum_score": -1.0,
+          "probability": 0.854987,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 2.05949,
+          "signal": "SELL",
+          "structure": "BREAKOUT",
+          "timeframe": "15m",
+          "trend_score": -1.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": -0.9984,
+          "expected_return": -0.021565,
+          "expected_risk": 0.010305,
+          "features": {
+            "atr_percent": 0.009,
+            "close": 412.44,
+            "close_vs_range": 0.08000000000000002,
+            "ema_fast": 409.470432,
+            "ema_slow": 415.40956800000004,
+            "follow_through": -0.018000000000000002,
+            "gap_percent": 0.0,
+            "momentum": -0.0216,
+            "rsi": 17.6,
+            "volume_ratio": 1.9900000000000002
+          },
+          "momentum_score": -1.0,
+          "probability": 0.855034,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 2.092778,
+          "signal": "SELL",
+          "structure": "BREAKOUT",
+          "timeframe": "30m",
+          "trend_score": -1.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": -1.0,
+          "expected_return": -0.021924,
+          "expected_risk": 0.010473,
+          "features": {
+            "atr_percent": 0.009134999999999999,
+            "close": 411.68399999999997,
+            "close_vs_range": 0.08000000000000002,
+            "ema_fast": 408.42346272,
+            "ema_slow": 414.94453727999996,
+            "follow_through": -0.0198,
+            "gap_percent": 0.0,
+            "momentum": -0.023760000000000003,
+            "rsi": 14.36,
+            "volume_ratio": 2.0890000000000004
+          },
+          "momentum_score": -1.0,
+          "probability": 0.853517,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 2.093359,
+          "signal": "SELL",
+          "structure": "BREAKOUT",
+          "timeframe": "1h",
+          "trend_score": -1.0,
+          "weight": 0.18
+        },
+        {
+          "directional_score": -1.0,
+          "expected_return": -0.02241,
+          "expected_risk": 0.010729,
+          "features": {
+            "atr_percent": 0.0093375,
+            "close": 410.55,
+            "close_vs_range": 0.08000000000000002,
+            "ema_fast": 406.85505,
+            "ema_slow": 414.24494999999996,
+            "follow_through": -0.0225,
+            "gap_percent": -0.013,
+            "momentum": -0.027,
+            "rsi": 9.5,
+            "volume_ratio": 2.2375
+          },
+          "momentum_score": -1.0,
+          "probability": 0.850986,
+          "regime": "STRONG_BEAR",
+          "reward_risk": 2.088747,
+          "signal": "SELL",
+          "structure": "GAP_DOWN",
+          "timeframe": "1d",
+          "trend_score": -1.0,
+          "weight": 0.22
+        }
+      ],
+      "trend_alignment": 1.0
+    },
+    {
+      "action": "BUY",
+      "action_i18n": {
+        "code": "BUY",
+        "en": "Buy",
+        "ko": "매수"
+      },
+      "broker_write_enabled": false,
+      "confidence_calibration": {
+        "calibrated_confidence": 0.655062,
+        "calibration_method": "ALIGNMENT_DISAGREEMENT_PENALTY_V2",
+        "raw_confidence": 0.655062
+      },
+      "consensus_score": 0.300623,
+      "dominant_structure": "NORMAL",
+      "dominant_structure_i18n": {
+        "code": "NORMAL",
+        "en": "Normal",
+        "ko": "일반"
+      },
+      "execution_mode": "ANALYSIS_ONLY",
+      "expected_return": 0.019525,
+      "expected_risk": 0.040324,
+      "live_trading_enabled": false,
+      "market_regime_2": "WEAK_BULL",
+      "market_regime_2_i18n": {
+        "code": "WEAK_BULL",
+        "en": "Weak Bull",
+        "ko": "약한 상승"
+      },
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "position_allocation_enabled": false,
+      "probability": 0.5,
+      "rank": 3,
+      "reward_risk": 0.484212,
+      "symbol": "NVDA",
+      "timeframe_consensus": {
+        "alignment": 1.0,
+        "buy_weight": 1.0,
+        "disagreement": 0.0,
+        "hold_weight": 0,
+        "sell_weight": 0
+      },
+      "timeframes": [
+        {
+          "directional_score": 0.176266,
+          "expected_return": 0.010651,
+          "expected_risk": 0.037766,
+          "features": {
+            "atr_percent": 0.0251775,
+            "close": 125.51562499999999,
+            "close_vs_range": 0.62375,
+            "ema_fast": 125.72272578124998,
+            "ema_slow": 125.30852421874998,
+            "follow_through": 0.004125,
+            "gap_percent": 0.0,
+            "momentum": 0.00495,
+            "rsi": 57.425,
+            "volume_ratio": 1.2268750000000002
+          },
+          "momentum_score": 0.131069,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.282025,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "1m",
+          "trend_score": 0.131069,
+          "weight": 0.06
+        },
+        {
+          "directional_score": 0.206696,
+          "expected_return": 0.012691,
+          "expected_risk": 0.038374,
+          "features": {
+            "atr_percent": 0.0255825,
+            "close": 125.609375,
+            "close_vs_range": 0.64625,
+            "ema_fast": 125.85431328124999,
+            "ema_slow": 125.36443671875,
+            "follow_through": 0.004875000000000001,
+            "gap_percent": 0.0,
+            "momentum": 0.005850000000000001,
+            "rsi": 58.775,
+            "volume_ratio": 1.268125
+          },
+          "momentum_score": 0.152448,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.330713,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "3m",
+          "trend_score": 0.152448,
+          "weight": 0.08
+        },
+        {
+          "directional_score": 0.236686,
+          "expected_return": 0.014762,
+          "expected_risk": 0.038981,
+          "features": {
+            "atr_percent": 0.025987499999999997,
+            "close": 125.703125,
+            "close_vs_range": 0.66875,
+            "ema_fast": 125.98595703125001,
+            "ema_slow": 125.42029296875,
+            "follow_through": 0.005625,
+            "gap_percent": 0.0,
+            "momentum": 0.00675,
+            "rsi": 60.125,
+            "volume_ratio": 1.309375
+          },
+          "momentum_score": 0.17316,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.378697,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "5m",
+          "trend_score": 0.17316,
+          "weight": 0.12
+        },
+        {
+          "directional_score": 0.28089,
+          "expected_return": 0.017929,
+          "expected_risk": 0.039892,
+          "features": {
+            "atr_percent": 0.026595,
+            "close": 125.84375,
+            "close_vs_range": 0.7025,
+            "ema_fast": 126.183528125,
+            "ema_slow": 125.50397187499999,
+            "follow_through": 0.006750000000000001,
+            "gap_percent": 0.0,
+            "momentum": 0.008100000000000001,
+            "rsi": 62.15,
+            "volume_ratio": 1.37125
+          },
+          "momentum_score": 0.203046,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.449424,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "15m",
+          "trend_score": 0.203046,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 0.309867,
+          "expected_return": 0.020079,
+          "expected_risk": 0.0405,
+          "features": {
+            "atr_percent": 0.027,
+            "close": 125.93750000000001,
+            "close_vs_range": 0.725,
+            "ema_fast": 126.3153125,
+            "ema_slow": 125.55968750000001,
+            "follow_through": 0.0075,
+            "gap_percent": 0.0,
+            "momentum": 0.009000000000000001,
+            "rsi": 63.5,
+            "volume_ratio": 1.4125
+          },
+          "momentum_score": 0.222222,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.495787,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "30m",
+          "trend_score": 0.222222,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 0.338469,
+          "expected_return": 0.022262,
+          "expected_risk": 0.041107,
+          "features": {
+            "atr_percent": 0.027404999999999995,
+            "close": 126.03125000000001,
+            "close_vs_range": 0.7475,
+            "ema_fast": 126.44715312500003,
+            "ema_slow": 125.61534687500001,
+            "follow_through": 0.00825,
+            "gap_percent": 0.0,
+            "momentum": 0.0099,
+            "rsi": 64.85,
+            "volume_ratio": 1.45375
+          },
+          "momentum_score": 0.240832,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.541551,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "1h",
+          "trend_score": 0.240832,
+          "weight": 0.18
+        },
+        {
+          "directional_score": 0.380707,
+          "expected_return": 0.025595,
+          "expected_risk": 0.042019,
+          "features": {
+            "atr_percent": 0.028012500000000003,
+            "close": 126.17187499999999,
+            "close_vs_range": 0.78125,
+            "ema_fast": 126.64501953124997,
+            "ema_slow": 125.69873046874999,
+            "follow_through": 0.009375,
+            "gap_percent": 0.0,
+            "momentum": 0.01125,
+            "rsi": 66.875,
+            "volume_ratio": 1.515625
+          },
+          "momentum_score": 0.267738,
+          "probability": 0.5,
+          "regime": "WEAK_BULL",
+          "reward_risk": 0.609131,
+          "signal": "BUY",
+          "structure": "NORMAL",
+          "timeframe": "1d",
+          "trend_score": 0.267738,
+          "weight": 0.22
+        }
+      ],
+      "trend_alignment": 1.0
+    },
+    {
+      "action": "HOLD",
+      "action_i18n": {
+        "code": "HOLD",
+        "en": "Hold",
+        "ko": "보유"
+      },
+      "broker_write_enabled": false,
+      "confidence_calibration": {
+        "calibrated_confidence": 0.625,
+        "calibration_method": "ALIGNMENT_DISAGREEMENT_PENALTY_V2",
+        "raw_confidence": 0.625
+      },
+      "consensus_score": 0.0,
+      "dominant_structure": "NORMAL",
+      "dominant_structure_i18n": {
+        "code": "NORMAL",
+        "en": "Normal",
+        "ko": "일반"
+      },
+      "execution_mode": "ANALYSIS_ONLY",
+      "expected_return": 0.0,
+      "expected_risk": 0.011948,
+      "live_trading_enabled": false,
+      "market_regime_2": "RANGE",
+      "market_regime_2_i18n": {
+        "code": "RANGE",
+        "en": "Range",
+        "ko": "횡보"
+      },
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "position_allocation_enabled": false,
+      "probability": 0.5,
+      "rank": 4,
+      "reward_risk": 0.0,
+      "symbol": "SPY",
+      "timeframe_consensus": {
+        "alignment": 1.0,
+        "buy_weight": 0,
+        "disagreement": 0.0,
+        "hold_weight": 1.0,
+        "sell_weight": 0
+      },
+      "timeframes": [
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01119,
+          "features": {
+            "atr_percent": 0.0074600000000000005,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "1m",
+          "trend_score": 0.0,
+          "weight": 0.06
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01137,
+          "features": {
+            "atr_percent": 0.00758,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "3m",
+          "trend_score": 0.0,
+          "weight": 0.08
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01155,
+          "features": {
+            "atr_percent": 0.007699999999999999,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "5m",
+          "trend_score": 0.0,
+          "weight": 0.12
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01182,
+          "features": {
+            "atr_percent": 0.00788,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "15m",
+          "trend_score": 0.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.012,
+          "features": {
+            "atr_percent": 0.008,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "30m",
+          "trend_score": 0.0,
+          "weight": 0.17
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01218,
+          "features": {
+            "atr_percent": 0.008119999999999999,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "1h",
+          "trend_score": 0.0,
+          "weight": 0.18
+        },
+        {
+          "directional_score": 0.0,
+          "expected_return": 0.0,
+          "expected_risk": 0.01245,
+          "features": {
+            "atr_percent": 0.0083,
+            "close": 550.0,
+            "close_vs_range": 0.5,
+            "ema_fast": 550.0,
+            "ema_slow": 550.0,
+            "follow_through": 0.0,
+            "gap_percent": 0.0,
+            "momentum": 0.0,
+            "rsi": 50.0,
+            "volume_ratio": 1.0
+          },
+          "momentum_score": 0.0,
+          "probability": 0.5,
+          "regime": "RANGE",
+          "reward_risk": 0.0,
+          "signal": "HOLD",
+          "structure": "NORMAL",
+          "timeframe": "1d",
+          "trend_score": 0.0,
+          "weight": 0.22
+        }
+      ],
+      "trend_alignment": 1.0
+    }
+  ],
+  "columns": {
+    "action": {
+      "en": "Action",
+      "ko": "신호"
+    },
+    "confidence": {
+      "en": "Calibrated Confidence",
+      "ko": "보정 신뢰도"
+    },
+    "expected_return": {
+      "en": "Expected Return",
+      "ko": "기대수익"
+    },
+    "expected_risk": {
+      "en": "Expected Risk",
+      "ko": "기대위험"
+    },
+    "probability": {
+      "en": "Probability",
+      "ko": "확률"
+    },
+    "regime": {
+      "en": "Regime",
+      "ko": "시장 국면"
+    },
+    "reward_risk": {
+      "en": "Reward/Risk",
+      "ko": "보상/위험"
+    },
+    "symbol": {
+      "en": "Symbol",
+      "ko": "종목"
+    }
+  },
+  "safety": {
+    "broker_write_enabled": false,
+    "live_orders_during_build": 0,
+    "live_trading_enabled": false,
+    "order_cancellation_enabled": false,
+    "order_submission_enabled": false,
+    "paper_orders_during_build": 0,
+    "position_allocation_enabled": false
+  },
+  "summary": {
+    "en": "Read-only analysis across 1m, 3m, 5m, 15m, 30m, 1h, and daily timeframes.",
+    "ko": "1분, 3분, 5분, 15분, 30분, 1시간, 일봉을 통합한 읽기 전용 분석입니다."
+  },
+  "title": {
+    "en": "Multi-Timeframe AI and Market Regime 2.0 Report",
+    "ko": "멀티 타임프레임 AI 및 시장 국면 2.0 보고서"
+  }
+}

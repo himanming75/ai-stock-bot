@@ -1,0 +1,13 @@
+git add multi_timeframe_ai
+git add tools/run_v11001_to_v12000_multi_timeframe_ai.py
+git add tools/run_multi_timeframe_ai_dashboard.py
+git add tools/test_v11001_to_v12000_multi_timeframe_ai.py
+git add release/v11001_12000_multi_timeframe_ai
+git add RUN_V11001_TO_V12000_MULTI_TIMEFRAME_AI_TEST.ps1
+git add RUN_V11001_TO_V12000_MULTI_TIMEFRAME_AI.ps1
+git add RUN_MULTI_TIMEFRAME_AI_DASHBOARD.ps1
+git add VERIFY_V11001_TO_V12000_MULTI_TIMEFRAME_AI.ps1
+git add V11001_TO_V12000_MULTI_TIMEFRAME_AI_MANIFEST.json
+git add GIT_COMMIT_V11001_TO_V12000_MULTI_TIMEFRAME_AI.txt
+git commit -m "Add V11001-V12000 multi-timeframe AI regime confidence engine"
+git push origin main
