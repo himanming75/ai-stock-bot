@@ -1,0 +1,13 @@
+git add portfolio_optimizer_ai
+git add tools/run_v13001_to_v14000_portfolio_optimizer.py
+git add tools/run_portfolio_optimizer_dashboard.py
+git add tools/test_v13001_to_v14000_portfolio_optimizer.py
+git add release/v13001_14000_portfolio_optimizer
+git add RUN_V13001_TO_V14000_PORTFOLIO_OPTIMIZER_TEST.ps1
+git add RUN_V13001_TO_V14000_PORTFOLIO_OPTIMIZER.ps1
+git add RUN_PORTFOLIO_OPTIMIZER_DASHBOARD.ps1
+git add VERIFY_V13001_TO_V14000_PORTFOLIO_OPTIMIZER.ps1
+git add V13001_TO_V14000_PORTFOLIO_OPTIMIZER_MANIFEST.json
+git add GIT_COMMIT_V13001_TO_V14000_PORTFOLIO_OPTIMIZER.txt
+git commit -m "Add V13001-V14000 portfolio optimizer stress guardrails"
+git push origin main

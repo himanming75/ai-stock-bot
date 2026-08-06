@@ -1,0 +1,28 @@
+{
+  "stage": "V13001_TO_V14000_PORTFOLIO_OPTIMIZER_SCENARIO_STRESS_CAPITAL_GUARDRAIL_SIMULATION_MAX_BUNDLE",
+  "version_range": {
+    "from": "V13001",
+    "to": "V14000"
+  },
+  "base_commit": "6db750f11eeba4ebe082faebfbc1d82be9c5b078",
+  "features": [
+    "Risk-adjusted candidate portfolio weights",
+    "Maximum symbol weight candidate cap",
+    "Normal / Correction / Sell-off scenarios",
+    "Volatility spike and correlation shock scenarios",
+    "Estimated drawdown",
+    "Capital guardrail simulation",
+    "English and Korean dashboard/report"
+  ],
+  "safety": {
+    "broker_write_enabled": false,
+    "order_submission_enabled": false,
+    "order_cancellation_enabled": false,
+    "position_allocation_enabled": false,
+    "capital_lock_enabled": false,
+    "live_trading_enabled": false,
+    "paper_orders_during_build": 0,
+    "live_orders_during_build": 0
+  },
+  "targeted_git_add_only": true
+}

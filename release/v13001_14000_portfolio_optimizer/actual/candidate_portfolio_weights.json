@@ -1,0 +1,13 @@
+{
+  "allocation_mode": "SIMULATION_ONLY",
+  "candidate_weights": {
+    "AAPL": 0.44847,
+    "MSFT": 0.44847,
+    "NVDA": 0.099911,
+    "SPY": 0.00315
+  },
+  "capital_allocation_enabled": false,
+  "max_symbol_weight": 0.35,
+  "order_generation_enabled": false,
+  "weight_sum": 1.000001
+}

@@ -1,0 +1,238 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_capital_lock_performed": false,
+  "actual_configuration_activated": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_data_requested": false,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_position_allocation_performed": false,
+  "bilingual_report_ready": true,
+  "candidate_weighting_ready": true,
+  "capital_guardrail_simulation_ready": true,
+  "certification_fingerprint": "d452f81247b8d6f07c4d6b1c502c9c496492cf4365cb82f9399d0842d30d8783",
+  "correction_scenario_ready": true,
+  "correlation_shock_scenario_ready": true,
+  "estimated_drawdown_ready": true,
+  "guardrail_ledger_ready": true,
+  "guardrails": {
+    "breaches": [
+      "MAX_SYMBOL_WEIGHT"
+    ],
+    "broker_write_enabled": false,
+    "capital_lock_enabled": false,
+    "enforcement_mode": "SIMULATION_ONLY",
+    "limits": {
+      "max_average_correlation": 0.85,
+      "max_estimated_drawdown": 0.12,
+      "max_stress_risk": 0.1,
+      "max_symbol_weight": 0.35
+    },
+    "observed": {
+      "average_absolute_correlation": 0.7265,
+      "largest_candidate_weight": 0.44847,
+      "worst_estimated_drawdown": 0.055626,
+      "worst_stress_risk": 0.042524
+    },
+    "status": "BLOCKED"
+  },
+  "max_correlation_guardrail_ready": true,
+  "max_drawdown_guardrail_ready": true,
+  "max_stress_risk_guardrail_ready": true,
+  "max_symbol_weight_cap_ready": true,
+  "next_fixed_development": "V14001_PLUS_EXECUTION_POLICY_SIMULATOR_REBALANCE_PLANNER_AND_RISK_BUDGET_ORCHESTRATION",
+  "normal_scenario_ready": true,
+  "optimizer": {
+    "allocation_mode": "SIMULATION_ONLY",
+    "candidate_weights": {
+      "AAPL": 0.44847,
+      "MSFT": 0.44847,
+      "NVDA": 0.099911,
+      "SPY": 0.00315
+    },
+    "capital_allocation_enabled": false,
+    "max_symbol_weight": 0.35,
+    "order_generation_enabled": false,
+    "weight_sum": 1.000001
+  },
+  "portfolio_optimizer_ready": true,
+  "report": {
+    "guardrails": {
+      "breaches": [
+        "MAX_SYMBOL_WEIGHT"
+      ],
+      "broker_write_enabled": false,
+      "capital_lock_enabled": false,
+      "enforcement_mode": "SIMULATION_ONLY",
+      "limits": {
+        "max_average_correlation": 0.85,
+        "max_estimated_drawdown": 0.12,
+        "max_stress_risk": 0.1,
+        "max_symbol_weight": 0.35
+      },
+      "observed": {
+        "average_absolute_correlation": 0.7265,
+        "largest_candidate_weight": 0.44847,
+        "worst_estimated_drawdown": 0.055626,
+        "worst_stress_risk": 0.042524
+      },
+      "status": "BLOCKED",
+      "status_i18n": {
+        "code": "BLOCKED",
+        "en": "Blocked",
+        "ko": "차단"
+      }
+    },
+    "optimizer": {
+      "allocation_mode": "SIMULATION_ONLY",
+      "candidate_weights": {
+        "AAPL": 0.44847,
+        "MSFT": 0.44847,
+        "NVDA": 0.099911,
+        "SPY": 0.00315
+      },
+      "capital_allocation_enabled": false,
+      "max_symbol_weight": 0.35,
+      "order_generation_enabled": false,
+      "weight_sum": 1.000001
+    },
+    "safety": {
+      "broker_write_enabled": false,
+      "capital_lock_enabled": false,
+      "live_orders_during_build": 0,
+      "live_trading_enabled": false,
+      "order_cancellation_enabled": false,
+      "order_submission_enabled": false,
+      "paper_orders_during_build": 0,
+      "position_allocation_enabled": false
+    },
+    "stress_results": [
+      {
+        "estimated_drawdown": 0.014717,
+        "portfolio_return": -0.001428,
+        "portfolio_risk": 0.013289,
+        "scenario": "NORMAL",
+        "scenario_i18n": {
+          "code": "NORMAL",
+          "en": "Normal",
+          "ko": "정상"
+        },
+        "shocked_correlation": 0.7265,
+        "simulation_only": true
+      },
+      {
+        "estimated_drawdown": 0.03208,
+        "portfolio_return": -0.00816,
+        "portfolio_risk": 0.02392,
+        "scenario": "CORRECTION",
+        "scenario_i18n": {
+          "code": "CORRECTION",
+          "en": "Correction",
+          "ko": "조정"
+        },
+        "shocked_correlation": 0.8465,
+        "simulation_only": true
+      },
+      {
+        "estimated_drawdown": 0.052559,
+        "portfolio_return": -0.01535,
+        "portfolio_risk": 0.037209,
+        "scenario": "SELL_OFF",
+        "scenario_i18n": {
+          "code": "SELL_OFF",
+          "en": "Sell-off",
+          "ko": "급락"
+        },
+        "shocked_correlation": 0.9765,
+        "simulation_only": true
+      },
+      {
+        "estimated_drawdown": 0.055626,
+        "portfolio_return": -0.013102,
+        "portfolio_risk": 0.042524,
+        "scenario": "VOLATILITY_SPIKE",
+        "scenario_i18n": {
+          "code": "VOLATILITY_SPIKE",
+          "en": "Volatility Spike",
+          "ko": "변동성 급등"
+        },
+        "shocked_correlation": 0.9065,
+        "simulation_only": true
+      },
+      {
+        "estimated_drawdown": 0.038356,
+        "portfolio_return": -0.01045,
+        "portfolio_risk": 0.027906,
+        "scenario": "CORRELATION_SHOCK",
+        "scenario_i18n": {
+          "code": "CORRELATION_SHOCK",
+          "en": "Correlation Shock",
+          "ko": "상관관계 충격"
+        },
+        "shocked_correlation": 1.0,
+        "simulation_only": true
+      }
+    ],
+    "summary": {
+      "en": "Simulation-only candidate weights, scenario stress testing, and capital guardrail evaluation.",
+      "ko": "시뮬레이션 전용 후보 비중, 시나리오 스트레스 테스트 및 자금 가드레일 평가입니다."
+    },
+    "title": {
+      "en": "Portfolio Optimizer and Stress Guardrail Report",
+      "ko": "포트폴리오 최적화 및 스트레스 가드레일 보고서"
+    }
+  },
+  "risk_adjusted_weighting_ready": true,
+  "scenario_stress_testing_ready": true,
+  "sell_off_scenario_ready": true,
+  "source_mode": "PREVIOUS_PORTFOLIO_AND_MULTI_TIMEFRAME_REPORTS",
+  "stage": "V13001_TO_V14000_PORTFOLIO_OPTIMIZER_SCENARIO_STRESS_CAPITAL_GUARDRAIL_SIMULATION_MAX_BUNDLE",
+  "status": "PASS",
+  "stress_ledger_ready": true,
+  "stress_results": [
+    {
+      "estimated_drawdown": 0.014717,
+      "portfolio_return": -0.001428,
+      "portfolio_risk": 0.013289,
+      "scenario": "NORMAL",
+      "shocked_correlation": 0.7265,
+      "simulation_only": true
+    },
+    {
+      "estimated_drawdown": 0.03208,
+      "portfolio_return": -0.00816,
+      "portfolio_risk": 0.02392,
+      "scenario": "CORRECTION",
+      "shocked_correlation": 0.8465,
+      "simulation_only": true
+    },
+    {
+      "estimated_drawdown": 0.052559,
+      "portfolio_return": -0.01535,
+      "portfolio_risk": 0.037209,
+      "scenario": "SELL_OFF",
+      "shocked_correlation": 0.9765,
+      "simulation_only": true
+    },
+    {
+      "estimated_drawdown": 0.055626,
+      "portfolio_return": -0.013102,
+      "portfolio_risk": 0.042524,
+      "scenario": "VOLATILITY_SPIKE",
+      "shocked_correlation": 0.9065,
+      "simulation_only": true
+    },
+    {
+      "estimated_drawdown": 0.038356,
+      "portfolio_return": -0.01045,
+      "portfolio_risk": 0.027906,
+      "scenario": "CORRELATION_SHOCK",
+      "shocked_correlation": 1.0,
+      "simulation_only": true
+    }
+  ],
+  "volatility_spike_scenario_ready": true
+}
