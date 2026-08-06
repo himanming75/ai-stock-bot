@@ -1,0 +1,95 @@
+{
+  "backups": [
+    {
+      "backup_path": "release\\v7601_7800_saas_operations\\actual\\backups\\saas_backup_20260806T012549Z.db",
+      "created_at": "2026-08-06T01:25:49.846489+00:00",
+      "sha256": "dec7ca80a720e6ca0e47d9acb143f4ea91b2aff0f845fda495cc3cc8b031878e",
+      "size_bytes": 8192
+    }
+  ],
+  "broker_write_enabled": false,
+  "metrics": {
+    "average_latency_ms": 9.0,
+    "backup_failure": 0,
+    "backup_success": 1,
+    "error_rate": 0.3333333333333333,
+    "errors_total": 1,
+    "notifications_created": 2,
+    "notifications_failed": 0,
+    "p50_latency_ms": 8.0,
+    "p95_latency_ms": 15.0,
+    "p99_latency_ms": 15.0,
+    "requests_total": 3,
+    "sample_count": 3
+  },
+  "notifications": [
+    {
+      "attempts": 0,
+      "body": "Watchdog restart count increased.",
+      "channel": "EMAIL",
+      "notification_id": "ntf_88ac7f8466622eb7",
+      "severity": "WARNING",
+      "status": "PENDING",
+      "subject": "Watchdog Restart"
+    },
+    {
+      "attempts": 0,
+      "body": "Daily paper session completed.",
+      "channel": "SLACK",
+      "notification_id": "ntf_0530ae94754f0670",
+      "severity": "INFO",
+      "status": "PENDING",
+      "subject": "Daily Session Complete"
+    }
+  ],
+  "order_submission_enabled": false,
+  "overall_status": "HEALTHY",
+  "recent_logs": [
+    {
+      "modified_at": 1785979549.7745376,
+      "path": "release\\v7601_7800_saas_operations\\actual\\runtime\\operations.log",
+      "size_bytes": 31
+    }
+  ],
+  "services": [
+    {
+      "heartbeat_age_seconds": 0.04,
+      "message": "MARKET_CLOSED",
+      "restart_count": 0,
+      "service_name": "MARKET_POLLING",
+      "status": "WAITING"
+    },
+    {
+      "heartbeat_age_seconds": 0.04,
+      "message": "OK",
+      "restart_count": 0,
+      "service_name": "PAPER_CONTROLLER",
+      "status": "RUNNING"
+    },
+    {
+      "heartbeat_age_seconds": 0.04,
+      "message": "OK",
+      "restart_count": 0,
+      "service_name": "SAAS_WEB",
+      "status": "RUNNING"
+    },
+    {
+      "heartbeat_age_seconds": 0.04,
+      "message": "OK",
+      "restart_count": 1,
+      "service_name": "WATCHDOG",
+      "status": "RUNNING"
+    }
+  ],
+  "system": {
+    "disk_free_bytes": 112671367168,
+    "disk_total_bytes": 999134588928,
+    "disk_used_bytes": 886463221760,
+    "disk_used_percent": 88.72310413265862,
+    "load_average_15m": 0.0,
+    "load_average_1m": 0.0,
+    "load_average_5m": 0.0,
+    "process_id": 18912,
+    "thread_count": 1
+  }
+}

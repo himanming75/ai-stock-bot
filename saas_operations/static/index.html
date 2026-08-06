@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Stock Bot Operations</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>AI Stock Bot SaaS</h1>
+    <p>Operations, observability and notifications</p>
+  </div>
+  <div class="safe">Broker Write OFF</div>
+</header>
+
+<main>
+  <section class="metrics">
+    <div class="card"><h3>Overall</h3><strong id="overall">Loading</strong></div>
+    <div class="card"><h3>Requests</h3><strong id="requests">0</strong></div>
+    <div class="card"><h3>Error Rate</h3><strong id="errors">0%</strong></div>
+    <div class="card"><h3>P95 Latency</h3><strong id="latency">0 ms</strong></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Services</h2>
+      <pre id="services"></pre>
+    </div>
+    <div class="card">
+      <h2>System</h2>
+      <pre id="system"></pre>
+    </div>
+    <div class="card">
+      <h2>Notification Queue</h2>
+      <pre id="notifications"></pre>
+    </div>
+    <div class="card">
+      <h2>Recent Logs</h2>
+      <pre id="logs"></pre>
+    </div>
+    <div class="card">
+      <h2>Backups</h2>
+      <pre id="backups"></pre>
+    </div>
+    <div class="card warning">
+      <h2>Safety</h2>
+      <p>External notifications: OFF</p>
+      <p>Service restart/stop: OFF</p>
+      <p>Broker credentials: OFF</p>
+      <p>Order submission: OFF</p>
+    </div>
+  </section>
+</main>
+<script>
+async function refresh() {
+  const result = await fetch("/api/dashboard");
+  const data = await result.json();
+  document.getElementById("overall").textContent =
+    data.overall_status;
+  document.getElementById("requests").textContent =
+    data.metrics.requests_total;
+  document.getElementById("errors").textContent =
+    (data.metrics.error_rate * 100).toFixed(2) + "%";
+  document.getElementById("latency").textContent =
+    data.metrics.p95_latency_ms.toFixed(1) + " ms";
+  document.getElementById("services").textContent =
+    JSON.stringify(data.services, null, 2);
+  document.getElementById("system").textContent =
+    JSON.stringify(data.system, null, 2);
+  document.getElementById("notifications").textContent =
+    JSON.stringify(data.notifications, null, 2);
+  document.getElementById("logs").textContent =
+    JSON.stringify(data.recent_logs, null, 2);
+  document.getElementById("backups").textContent =
+    JSON.stringify(data.backups, null, 2);
+}
+refresh();
+setInterval(refresh, 5000);
+</script>
+</body>
+</html>

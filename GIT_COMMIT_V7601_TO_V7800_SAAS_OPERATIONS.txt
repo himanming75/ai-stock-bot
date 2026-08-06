@@ -1,0 +1,12 @@
+git add saas_operations
+git add tools/run_v7601_to_v7800_saas_operations.py
+git add tools/run_saas_operations_server.py
+git add tools/test_v7601_to_v7800_saas_operations.py
+git add release/v7601_7800_saas_operations
+git add RUN_V7601_TO_V7800_SAAS_OPERATIONS.ps1
+git add RUN_V7601_TO_V7800_SAAS_OPERATIONS_TEST.ps1
+git add RUN_SAAS_OPERATIONS_LOCAL_SERVER.ps1
+git add V7601_TO_V7800_SAAS_OPERATIONS_MANIFEST.json
+git add GIT_COMMIT_V7601_TO_V7800_SAAS_OPERATIONS.txt
+git commit -m "Add V7601-V7800 SaaS operations observability notifications"
+git push origin main

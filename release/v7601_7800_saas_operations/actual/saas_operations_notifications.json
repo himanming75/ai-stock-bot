@@ -1,0 +1,23 @@
+{
+  "external_delivery_enabled": false,
+  "items": [
+    {
+      "attempts": 0,
+      "body": "Watchdog restart count increased.",
+      "channel": "EMAIL",
+      "notification_id": "ntf_88ac7f8466622eb7",
+      "severity": "WARNING",
+      "status": "PENDING",
+      "subject": "Watchdog Restart"
+    },
+    {
+      "attempts": 0,
+      "body": "Daily paper session completed.",
+      "channel": "SLACK",
+      "notification_id": "ntf_0530ae94754f0670",
+      "severity": "INFO",
+      "status": "PENDING",
+      "subject": "Daily Session Complete"
+    }
+  ]
+}
