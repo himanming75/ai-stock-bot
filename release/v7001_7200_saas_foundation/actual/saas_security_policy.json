@@ -1,0 +1,7 @@
+{
+  "credential_storage_enabled": false,
+  "mfa_enabled": false,
+  "password_algorithm": "PBKDF2-HMAC-SHA256",
+  "password_iterations": 210000,
+  "signed_sessions": true
+}

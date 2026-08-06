@@ -1,0 +1,116 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "audit_event_count": 4,
+  "audit_log_ready": true,
+  "authenticated_user": {
+    "email": "owner@example.com",
+    "is_active": true,
+    "user_id": "usr_3b73fde4e438fd7e"
+  },
+  "billing_enabled": false,
+  "broker_credentials_stored": false,
+  "broker_metadata": {
+    "account_alias": "Primary Paper",
+    "broker": "ALPACA",
+    "connection_id": "broker_b8fb3705dc9c",
+    "credential_stored": false,
+    "environment": "PAPER",
+    "read_only": true,
+    "status": "METADATA_ONLY",
+    "write_enabled": false
+  },
+  "broker_metadata_ready": true,
+  "broker_write_enabled": false,
+  "certification_fingerprint": "61ae434652e12a16344250c0dc0f5cc24d4456367419cace53cc6d81f086bbc9",
+  "cloud_deployment_enabled": false,
+  "email_verification_enabled": false,
+  "health_endpoint_ready": true,
+  "local_dashboard_ready": true,
+  "mfa_enabled": false,
+  "multi_tenant_database_enabled": false,
+  "next_fixed_development": "V7201_TO_V7400_SAAS_PERSISTENCE_API_AND_USER_WORKFLOWS",
+  "order_submission_enabled": false,
+  "owner_permissions_ready": true,
+  "password_hashing_ready": true,
+  "persistent_database_enabled": false,
+  "rbac_ready": true,
+  "registration": {
+    "user": {
+      "email": "owner@example.com",
+      "is_active": true,
+      "user_id": "usr_3b73fde4e438fd7e"
+    },
+    "workspace": {
+      "name": "Primary Trading Workspace",
+      "owner_user_id": "usr_3b73fde4e438fd7e",
+      "plan": "FOUNDATION",
+      "workspace_id": "ws_1fd39d4c669c5865"
+    }
+  },
+  "risk_configuration_ready": true,
+  "risk_settings": {
+    "automation_profile": "ALL_STOP",
+    "broker_connections": [],
+    "daily_loss_limit": 0.02,
+    "max_position_weight": 0.1,
+    "risk_profile": "CONSERVATIVE",
+    "selected_strategy": "MULTI_AI",
+    "workspace_id": "ws_1fd39d4c669c5865"
+  },
+  "signed_session_ready": true,
+  "stage": "V7001_TO_V7200_SAAS_FOUNDATION_AND_MULTI_TENANT_CONTROL_PLANE",
+  "status": "PASS",
+  "strategy_configuration_ready": true,
+  "strategy_settings": {
+    "automation_profile": "ALL_STOP",
+    "broker_connections": [],
+    "daily_loss_limit": 0.02,
+    "max_position_weight": 0.1,
+    "risk_profile": "CONSERVATIVE",
+    "selected_strategy": "MULTI_AI",
+    "workspace_id": "ws_1fd39d4c669c5865"
+  },
+  "viewer_read_only_ready": true,
+  "viewer_write_blocked": true,
+  "workspace_isolation_ready": true,
+  "workspace_summary": {
+    "broker_write_enabled": false,
+    "membership": {
+      "role": "OWNER",
+      "user_id": "usr_3b73fde4e438fd7e",
+      "workspace_id": "ws_1fd39d4c669c5865"
+    },
+    "order_submission_enabled": false,
+    "settings": {
+      "automation_profile": "ALL_STOP",
+      "broker_connections": [
+        {
+          "account_alias": "Primary Paper",
+          "broker": "ALPACA",
+          "connection_id": "broker_b8fb3705dc9c",
+          "credential_stored": false,
+          "environment": "PAPER",
+          "read_only": true,
+          "status": "METADATA_ONLY",
+          "write_enabled": false
+        }
+      ],
+      "daily_loss_limit": 0.02,
+      "max_position_weight": 0.1,
+      "risk_profile": "CONSERVATIVE",
+      "selected_strategy": "MULTI_AI",
+      "workspace_id": "ws_1fd39d4c669c5865"
+    },
+    "workspace": {
+      "name": "Primary Trading Workspace",
+      "owner_user_id": "usr_3b73fde4e438fd7e",
+      "plan": "FOUNDATION",
+      "workspace_id": "ws_1fd39d4c669c5865"
+    }
+  }
+}

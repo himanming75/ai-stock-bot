@@ -1,0 +1,9 @@
+{
+  "roles": [
+    "OWNER",
+    "ADMIN",
+    "TRADER",
+    "VIEWER"
+  ],
+  "viewer_write_blocked": true
+}

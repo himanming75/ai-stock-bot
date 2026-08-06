@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Stock Bot SaaS Foundation</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 980px; margin: 40px auto; padding: 0 20px; background: #f4f6f8; }
+    .card { background: white; border-radius: 12px; padding: 24px; margin: 16px 0; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; }
+    .metric { border:1px solid #ddd; border-radius:10px; padding:16px; }
+    .safe { font-weight:bold; }
+    code { background:#eee; padding:2px 6px; border-radius:5px; }
+  </style>
+</head>
+<body>
+  <h1>AI Stock Bot SaaS Foundation</h1>
+  <div class="card">
+    <h2>Foundation Status</h2>
+    <div class="grid">
+      <div class="metric"><strong>Authentication</strong><br>Ready</div>
+      <div class="metric"><strong>Workspace</strong><br>Ready</div>
+      <div class="metric"><strong>RBAC</strong><br>Ready</div>
+      <div class="metric"><strong>Audit Log</strong><br>Ready</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Safety</h2>
+    <p class="safe">Broker Write: OFF</p>
+    <p class="safe">Order Submission: OFF</p>
+    <p>Broker connections in this release store metadata only. Credentials are not collected.</p>
+  </div>
+  <div class="card">
+    <h2>Available API</h2>
+    <p><code>GET /health</code></p>
+    <p><code>POST /api/register</code></p>
+    <p><code>POST /api/login</code></p>
+    <p><code>POST /api/workspace/summary</code></p>
+  </div>
+</body>
+</html>

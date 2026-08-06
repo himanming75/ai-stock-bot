@@ -1,0 +1,4 @@
+{"action": "USER_REGISTERED", "details": {}, "recorded_at": "2026-08-06T01:04:39.305951+00:00", "user_id": "usr_3b73fde4e438fd7e", "workspace_id": "ws_1fd39d4c669c5865"}
+{"action": "STRATEGY_UPDATED", "details": {"strategy": "MULTI_AI"}, "recorded_at": "2026-08-06T01:04:39.389692+00:00", "user_id": "usr_3b73fde4e438fd7e", "workspace_id": "ws_1fd39d4c669c5865"}
+{"action": "RISK_UPDATED", "details": {"daily_loss_limit": 0.02, "max_position_weight": 0.1, "risk_profile": "CONSERVATIVE"}, "recorded_at": "2026-08-06T01:04:39.389739+00:00", "user_id": "usr_3b73fde4e438fd7e", "workspace_id": "ws_1fd39d4c669c5865"}
+{"action": "BROKER_METADATA_ADDED", "details": {"broker": "ALPACA", "environment": "PAPER"}, "recorded_at": "2026-08-06T01:04:39.389762+00:00", "user_id": "usr_3b73fde4e438fd7e", "workspace_id": "ws_1fd39d4c669c5865"}

@@ -1,0 +1,12 @@
+git add saas_foundation
+git add tools/run_v7001_to_v7200_saas_foundation.py
+git add tools/run_saas_foundation_server.py
+git add tools/test_v7001_to_v7200_saas_foundation.py
+git add release/v7001_7200_saas_foundation
+git add RUN_V7001_TO_V7200_SAAS_FOUNDATION.ps1
+git add RUN_V7001_TO_V7200_SAAS_FOUNDATION_TEST.ps1
+git add RUN_SAAS_FOUNDATION_LOCAL_SERVER.ps1
+git add V7001_TO_V7200_SAAS_FOUNDATION_MANIFEST.json
+git add GIT_COMMIT_V7001_TO_V7200_SAAS_FOUNDATION.txt
+git commit -m "Add V7001-V7200 SaaS foundation multi tenant control plane"
+git push origin main
