@@ -1,0 +1,13 @@
+{
+  "automatic_promotion_enabled": false,
+  "fields": [
+    "timestamp",
+    "previous_champion",
+    "challenger",
+    "score_improvement",
+    "reason",
+    "approved_by"
+  ],
+  "history_append_only": true,
+  "manual_approval_required": true
+}

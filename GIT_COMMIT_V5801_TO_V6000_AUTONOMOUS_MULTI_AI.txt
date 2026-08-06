@@ -1,0 +1,10 @@
+git add autonomous_multi_ai
+git add tools/run_v5801_to_v6000_autonomous_multi_ai.py
+git add tools/test_v5801_to_v6000_autonomous_multi_ai.py
+git add release/v5801_6000_autonomous_multi_ai
+git add RUN_V5801_TO_V6000_AUTONOMOUS_MULTI_AI.ps1
+git add RUN_V5801_TO_V6000_AUTONOMOUS_MULTI_AI_TEST.ps1
+git add V5801_TO_V6000_AUTONOMOUS_MULTI_AI_MANIFEST.json
+git add GIT_COMMIT_V5801_TO_V6000_AUTONOMOUS_MULTI_AI.txt
+git commit -m "Add V5801-V6000 autonomous multi AI champion challenger"
+git push origin main

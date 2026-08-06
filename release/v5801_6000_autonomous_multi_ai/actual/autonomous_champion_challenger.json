@@ -1,0 +1,27 @@
+{
+  "automatic_promotion_performed": false,
+  "challenger": {
+    "expected_return": "0.70",
+    "max_drawdown": "0.22",
+    "sharpe_ratio": "0.76",
+    "stability": "0.79",
+    "strategy_id": "BREAKOUT",
+    "trade_count": 320,
+    "win_rate": "0.68"
+  },
+  "challenger_score": "0.6200",
+  "champion": {
+    "expected_return": "0.58",
+    "max_drawdown": "0.24",
+    "sharpe_ratio": "0.62",
+    "stability": "0.72",
+    "strategy_id": "MOMENTUM",
+    "trade_count": 300,
+    "win_rate": "0.61"
+  },
+  "champion_score": "0.5340",
+  "eligible": true,
+  "improvement": "0.0860",
+  "promotion_recommended": true,
+  "reasons": []
+}

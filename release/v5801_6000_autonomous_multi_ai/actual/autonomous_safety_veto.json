@@ -1,0 +1,12 @@
+{
+  "consensus_ratio": "1",
+  "final_action": "WAIT",
+  "reason": "SAFETY_VETO_APPLIED",
+  "veto_applied": true,
+  "weighted_scores": {
+    "BUY": "0",
+    "SELL": "0",
+    "WAIT": "1"
+  },
+  "winning_score": "1"
+}

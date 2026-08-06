@@ -1,0 +1,64 @@
+{
+  "decision": {
+    "consensus_ratio": "0.6901579586877278250303766707",
+    "final_action": "BUY",
+    "reason": "WEIGHTED_CONSENSUS",
+    "veto_applied": false,
+    "weighted_scores": {
+      "BUY": "0.5680",
+      "SELL": "0",
+      "WAIT": "0.2550"
+    },
+    "winning_score": "0.5680"
+  },
+  "votes": [
+    {
+      "action": "BUY",
+      "confidence": "0.92",
+      "reason": "Trend slope and moving averages aligned",
+      "veto": false,
+      "voter_id": "TREND_AI",
+      "weight": "0.25"
+    },
+    {
+      "action": "BUY",
+      "confidence": "0.84",
+      "reason": "Relative volume expansion confirmed",
+      "veto": false,
+      "voter_id": "VOLUME_AI",
+      "weight": "0.15"
+    },
+    {
+      "action": "WAIT",
+      "confidence": "0.76",
+      "reason": "Risk acceptable but not ideal",
+      "veto": false,
+      "voter_id": "RISK_AI",
+      "weight": "0.25"
+    },
+    {
+      "action": "BUY",
+      "confidence": "0.88",
+      "reason": "Bull trend regime detected",
+      "veto": false,
+      "voter_id": "REGIME_AI",
+      "weight": "0.15"
+    },
+    {
+      "action": "BUY",
+      "confidence": "0.80",
+      "reason": "Portfolio concentration remains acceptable",
+      "veto": false,
+      "voter_id": "PORTFOLIO_AI",
+      "weight": "0.10"
+    },
+    {
+      "action": "WAIT",
+      "confidence": "0.65",
+      "reason": "Spread is acceptable but timing can improve",
+      "veto": false,
+      "voter_id": "EXECUTION_AI",
+      "weight": "0.10"
+    }
+  ]
+}

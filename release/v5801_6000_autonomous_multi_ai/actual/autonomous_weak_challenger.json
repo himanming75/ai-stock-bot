@@ -1,0 +1,31 @@
+{
+  "automatic_promotion_performed": false,
+  "challenger": {
+    "expected_return": "0.69",
+    "max_drawdown": "0.42",
+    "sharpe_ratio": "0.74",
+    "stability": "0.40",
+    "strategy_id": "SCALPING",
+    "trade_count": 30,
+    "win_rate": "0.71"
+  },
+  "challenger_score": "0.3920",
+  "champion": {
+    "expected_return": "0.58",
+    "max_drawdown": "0.24",
+    "sharpe_ratio": "0.62",
+    "stability": "0.72",
+    "strategy_id": "MOMENTUM",
+    "trade_count": 300,
+    "win_rate": "0.61"
+  },
+  "champion_score": "0.5340",
+  "eligible": false,
+  "improvement": "-0.1420",
+  "promotion_recommended": false,
+  "reasons": [
+    "INSUFFICIENT_CHALLENGER_EVIDENCE",
+    "CHALLENGER_DRAWDOWN_TOO_HIGH",
+    "CHALLENGER_STABILITY_TOO_LOW"
+  ]
+}
