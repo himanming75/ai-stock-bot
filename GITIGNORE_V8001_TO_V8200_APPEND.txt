@@ -1,0 +1,3 @@
+runtime/secrets/
+*.dpapi.json
+release/etrade_sandbox_live_read/actual/

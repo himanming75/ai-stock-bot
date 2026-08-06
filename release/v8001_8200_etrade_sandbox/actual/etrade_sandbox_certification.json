@@ -1,0 +1,40 @@
+{
+  "access_token_ready": true,
+  "account_list_ready": true,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "authorization_header_fixture": "OAuth oauth_callback=\"oob\", oauth_consumer_key=\"fixt...-key\", oauth_nonce=\"fixture-nonce\", oauth_signature=\"ZWRifhpH8gaWcsDkxC%2B08J3JQ5o%3D\", oauth_signature_method=\"HMAC-SHA1\", oauth_timestamp=\"1700000000\", oauth_version=\"1.0\"",
+  "authorization_url": "https://us.etrade.com/e/t/etws/authorize",
+  "authorization_url_ready": true,
+  "balance_ready": true,
+  "certification_fingerprint": "7f2578d78972fe08948187b41b0e1b78974701e61c261509a4ae17a9dac1ebc2",
+  "fixture_accounts": [
+    {
+      "account_id_key": "fixture-key",
+      "account_id_masked": "****1234",
+      "account_mode": "CASH",
+      "account_type": "INDIVIDUAL",
+      "institution_type": "BROKERAGE",
+      "status": "ACTIVE"
+    }
+  ],
+  "next_user_action": "RUN_ETRADE_SANDBOX_OAUTH_WIZARD",
+  "oauth1_hmac_sha1_ready": true,
+  "orders_read_ready": true,
+  "portfolio_ready": true,
+  "quote_ready": true,
+  "renew_ready": true,
+  "request_token_ready": true,
+  "revoke_ready": true,
+  "sandbox_api_base": "https://apisb.etrade.com/v1",
+  "stage": "V8001_TO_V8200_ETRADE_SANDBOX_OAUTH_READ_ONLY_INTEGRATION",
+  "status": "PASS",
+  "windows_dpapi_vault_ready": true,
+  "write_blocked": true
+}

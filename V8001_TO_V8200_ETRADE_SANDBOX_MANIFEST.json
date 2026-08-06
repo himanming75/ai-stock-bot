@@ -1,0 +1,21 @@
+{
+  "stage": "V8001_TO_V8200_ETRADE_SANDBOX_OAUTH_READ_ONLY_INTEGRATION",
+  "oauth1_hmac_sha1": true,
+  "windows_dpapi_vault": true,
+  "interactive_oauth_wizard": true,
+  "access_token_renew": true,
+  "access_token_revoke": true,
+  "account_list_read": true,
+  "balance_read": true,
+  "portfolio_read": true,
+  "orders_read": true,
+  "quote_read": true,
+  "write_endpoints_blocked": true,
+  "network_during_build": false,
+  "actual_credentials_used_during_build": false,
+  "broker_write_enabled": false,
+  "order_submission_enabled": false,
+  "order_cancel_enabled": false,
+  "paper_orders_during_build": 0,
+  "live_orders_during_build": 0
+}

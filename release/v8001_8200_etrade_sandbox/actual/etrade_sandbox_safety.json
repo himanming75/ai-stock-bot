@@ -1,0 +1,8 @@
+{
+  "broker_write_enabled": false,
+  "environment": "SANDBOX",
+  "network_during_certification": false,
+  "order_cancel_enabled": false,
+  "order_submission_enabled": false,
+  "read_only": true
+}
