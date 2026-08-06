@@ -1,0 +1,15 @@
+{
+  "cancel_at_period_end": false,
+  "current_period_end": "2026-09-05T03:26:14.560355+00:00",
+  "current_period_start": "2026-08-06T03:26:14.560355+00:00",
+  "external_charge_performed": false,
+  "external_customer_id": null,
+  "external_provider": null,
+  "external_subscription_id": null,
+  "monthly_price_usd": 99,
+  "plan": "PRO",
+  "status": "ACTIVE",
+  "subscription_id": "sub_23da4aae28a84c1c",
+  "trial_end": null,
+  "user_id": "usr_billing_fixture"
+}

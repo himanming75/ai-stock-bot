@@ -1,0 +1,19 @@
+{
+  "amount_due_usd": 99.0,
+  "amount_paid_usd": 0.0,
+  "due_at": "2026-08-13T03:26:14.560659+00:00",
+  "external_payment_performed": false,
+  "invoice_id": "inv_5da47da25a593515",
+  "issued_at": "2026-08-06T03:26:14.560659+00:00",
+  "line_items": [
+    {
+      "description": "PRO monthly plan",
+      "quantity": 1,
+      "unit_price_usd": 99.0
+    }
+  ],
+  "paid_at": null,
+  "status": "DRAFT",
+  "subscription_id": "sub_23da4aae28a84c1c",
+  "user_id": "usr_billing_fixture"
+}

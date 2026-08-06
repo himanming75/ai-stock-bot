@@ -1,0 +1,166 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_charge_performed": false,
+  "actual_external_network_used": false,
+  "actual_invoice_sent": false,
+  "actual_license_activation_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "broker_credentials_stored": false,
+  "broker_write_enabled": false,
+  "certification_fingerprint": "5dffb668a04f97146e698d863dffa40fe9ff8079ee0bfc482f12d05b4d54a8c1",
+  "cloud_deployment_performed": false,
+  "deployment_files": {
+    "files": {
+      "Dockerfile": true,
+      "deploy/.env.production.example": true,
+      "deploy/PRODUCTION_CHECKLIST.md": true,
+      "deploy/nginx.conf": true,
+      "docker-compose.yml": true
+    },
+    "valid": true
+  },
+  "docker_compose_ready": true,
+  "dockerfile_ready": true,
+  "environment_validation_ready": true,
+  "external_billing_network_enabled": false,
+  "feature_flags_ready": true,
+  "free_api_access": false,
+  "graceful_shutdown_design_ready": true,
+  "healthcheck_ready": true,
+  "https_configuration_ready": true,
+  "invalid_environment_blocked": true,
+  "invoice_fixture": {
+    "amount_due_usd": 99.0,
+    "amount_paid_usd": 0.0,
+    "due_at": "2026-08-13T03:26:14.560659+00:00",
+    "external_payment_performed": false,
+    "invoice_id": "inv_5da47da25a593515",
+    "issued_at": "2026-08-06T03:26:14.560659+00:00",
+    "line_items": [
+      {
+        "description": "PRO monthly plan",
+        "quantity": 1,
+        "unit_price_usd": 99.0
+      }
+    ],
+    "paid_at": null,
+    "status": "DRAFT",
+    "subscription_id": "sub_23da4aae28a84c1c",
+    "user_id": "usr_billing_fixture"
+  },
+  "license_fixture": {
+    "expires_at": "2027-08-06T03:26:14.560700+00:00",
+    "license_id": "lic_9c2ec24c8db14f68",
+    "license_key_hash": "ba8b6ccb20805015c5ce599309872b8164e712c73fc0e394a0969bc741886d14",
+    "machine_limit": 3,
+    "plaintext_storage_allowed": false,
+    "plan": "PRO",
+    "user_id": "usr_billing_fixture"
+  },
+  "license_plaintext_returned_once": true,
+  "license_plaintext_stored": false,
+  "next_fixed_development": "V8001_TO_V8200_SAAS_UNIFIED_PORTAL_TRADING_DASHBOARD_AND_BROKER_CONNECTION_UI",
+  "nginx_reverse_proxy_ready": true,
+  "order_submission_enabled": false,
+  "plans": {
+    "BASIC": {
+      "ai_requests_per_day": 100,
+      "api_access": false,
+      "backtests_per_month": 20,
+      "broker_limit": 2,
+      "monthly_price_usd": 29,
+      "paper_runtime_hours_per_month": 100,
+      "workspace_limit": 2
+    },
+    "ENTERPRISE": {
+      "ai_requests_per_day": 100000,
+      "api_access": true,
+      "backtests_per_month": 10000,
+      "broker_limit": 100,
+      "monthly_price_usd": 499,
+      "paper_runtime_hours_per_month": 100000,
+      "workspace_limit": 100
+    },
+    "FREE": {
+      "ai_requests_per_day": 20,
+      "api_access": false,
+      "backtests_per_month": 3,
+      "broker_limit": 1,
+      "monthly_price_usd": 0,
+      "paper_runtime_hours_per_month": 20,
+      "workspace_limit": 1
+    },
+    "PRO": {
+      "ai_requests_per_day": 1000,
+      "api_access": true,
+      "backtests_per_month": 200,
+      "broker_limit": 10,
+      "monthly_price_usd": 99,
+      "paper_runtime_hours_per_month": 1000,
+      "workspace_limit": 10
+    }
+  },
+  "pro_api_access": true,
+  "production_checklist": {
+    "broker_write_default": "OFF",
+    "csrf_protection": "REQUIRED",
+    "database_backup": "REQUIRED",
+    "database_migration": "REQUIRED",
+    "disaster_recovery_test": "REQUIRED",
+    "environment_variables": "REQUIRED",
+    "firewall": "REQUIRED",
+    "graceful_shutdown": "REQUIRED",
+    "health_check": "REQUIRED",
+    "https": "REQUIRED",
+    "log_rotation": "REQUIRED",
+    "monitoring": "REQUIRED",
+    "order_submission_default": "OFF",
+    "rate_limiting": "REQUIRED",
+    "reverse_proxy": "REQUIRED",
+    "secret_manager": "REQUIRED"
+  },
+  "stage": "V7801_TO_V8000_SAAS_BILLING_PLANS_AND_PRODUCTION_DEPLOYMENT_READINESS",
+  "status": "PASS",
+  "stripe_integration_enabled": false,
+  "subscription_fixture": {
+    "cancel_at_period_end": false,
+    "current_period_end": "2026-09-05T03:26:14.560355+00:00",
+    "current_period_start": "2026-08-06T03:26:14.560355+00:00",
+    "external_charge_performed": false,
+    "external_customer_id": null,
+    "external_provider": null,
+    "external_subscription_id": null,
+    "monthly_price_usd": 99,
+    "plan": "PRO",
+    "status": "ACTIVE",
+    "subscription_id": "sub_23da4aae28a84c1c",
+    "trial_end": null,
+    "user_id": "usr_billing_fixture"
+  },
+  "usage_checks": {
+    "ai_requests": {
+      "allowed": true,
+      "limit": 1000.0,
+      "metric": "ai_requests",
+      "remaining": 875.0,
+      "used": 125.0
+    },
+    "broker_count": {
+      "allowed": true,
+      "limit": 10.0,
+      "metric": "broker_count",
+      "remaining": 8.0,
+      "used": 2.0
+    },
+    "workspace_count": {
+      "allowed": true,
+      "limit": 10.0,
+      "metric": "workspace_count",
+      "remaining": 7.0,
+      "used": 3.0
+    }
+  },
+  "valid_environment_passed": true
+}

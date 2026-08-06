@@ -1,0 +1,38 @@
+{
+  "BASIC": {
+    "ai_requests_per_day": 100,
+    "api_access": false,
+    "backtests_per_month": 20,
+    "broker_limit": 2,
+    "monthly_price_usd": 29,
+    "paper_runtime_hours_per_month": 100,
+    "workspace_limit": 2
+  },
+  "ENTERPRISE": {
+    "ai_requests_per_day": 100000,
+    "api_access": true,
+    "backtests_per_month": 10000,
+    "broker_limit": 100,
+    "monthly_price_usd": 499,
+    "paper_runtime_hours_per_month": 100000,
+    "workspace_limit": 100
+  },
+  "FREE": {
+    "ai_requests_per_day": 20,
+    "api_access": false,
+    "backtests_per_month": 3,
+    "broker_limit": 1,
+    "monthly_price_usd": 0,
+    "paper_runtime_hours_per_month": 20,
+    "workspace_limit": 1
+  },
+  "PRO": {
+    "ai_requests_per_day": 1000,
+    "api_access": true,
+    "backtests_per_month": 200,
+    "broker_limit": 10,
+    "monthly_price_usd": 99,
+    "paper_runtime_hours_per_month": 1000,
+    "workspace_limit": 10
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "actual_charge_performed": false,
+  "broker_credentials_stored": false,
+  "broker_write_enabled": false,
+  "cloud_deployment_performed": false,
+  "live_orders": 0,
+  "order_submission_enabled": false,
+  "paper_orders": 0,
+  "stripe_enabled": false
+}

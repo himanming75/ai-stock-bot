@@ -1,0 +1,23 @@
+{
+  "ai_requests": {
+    "allowed": true,
+    "limit": 1000.0,
+    "metric": "ai_requests",
+    "remaining": 875.0,
+    "used": 125.0
+  },
+  "broker_count": {
+    "allowed": true,
+    "limit": 10.0,
+    "metric": "broker_count",
+    "remaining": 8.0,
+    "used": 2.0
+  },
+  "workspace_count": {
+    "allowed": true,
+    "limit": 10.0,
+    "metric": "workspace_count",
+    "remaining": 7.0,
+    "used": 3.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "broker_write_default": "OFF",
+  "csrf_protection": "REQUIRED",
+  "database_backup": "REQUIRED",
+  "database_migration": "REQUIRED",
+  "disaster_recovery_test": "REQUIRED",
+  "environment_variables": "REQUIRED",
+  "firewall": "REQUIRED",
+  "graceful_shutdown": "REQUIRED",
+  "health_check": "REQUIRED",
+  "https": "REQUIRED",
+  "log_rotation": "REQUIRED",
+  "monitoring": "REQUIRED",
+  "order_submission_default": "OFF",
+  "rate_limiting": "REQUIRED",
+  "reverse_proxy": "REQUIRED",
+  "secret_manager": "REQUIRED"
+}

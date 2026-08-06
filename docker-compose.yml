@@ -1,0 +1,43 @@
+services:
+  stockbot-saas:
+    build:
+      context: .
+    env_file:
+      - deploy/.env.production
+    ports:
+      - "127.0.0.1:8767:8767"
+    volumes:
+      - stockbot_runtime:/app/runtime
+    restart: unless-stopped
+    read_only: false
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8767/health', timeout=3)"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  nginx:
+    image: nginx:1.27-alpine
+    depends_on:
+      stockbot-saas:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./deploy/certs:/etc/nginx/certs:ro
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  stockbot_runtime:

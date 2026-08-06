@@ -1,0 +1,10 @@
+{
+  "files": {
+    "Dockerfile": true,
+    "deploy/.env.production.example": true,
+    "deploy/PRODUCTION_CHECKLIST.md": true,
+    "deploy/nginx.conf": true,
+    "docker-compose.yml": true
+  },
+  "valid": true
+}
