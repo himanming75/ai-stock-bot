@@ -1,0 +1,12 @@
+git add ai_feature_engine
+git add tools/run_v9801_to_v10400_ai_feature_signal.py
+git add tools/run_ai_feature_signal_dashboard.py
+git add tools/test_v9801_to_v10400_ai_feature_signal.py
+git add release/v9801_10400_ai_feature_signal
+git add RUN_V9801_TO_V10400_AI_FEATURE_SIGNAL_TEST.ps1
+git add RUN_V9801_TO_V10400_AI_FEATURE_SIGNAL.ps1
+git add RUN_AI_FEATURE_SIGNAL_DASHBOARD.ps1
+git add V9801_TO_V10400_AI_FEATURE_SIGNAL_MANIFEST.json
+git add GIT_COMMIT_V9801_TO_V10400_AI_FEATURE_SIGNAL.txt
+git commit -m "Add V9801-V10400 AI feature engine and signal candidates"
+git push origin main

@@ -1,0 +1,470 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_configuration_activated": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_market_data_requested": false,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "atr_ready": true,
+  "bilingual_reasoning_ready": true,
+  "bilingual_report_ready": true,
+  "bollinger_ready": true,
+  "buy_candidate_ready": true,
+  "candidate_action_map": {
+    "AAPL": "BUY",
+    "MSFT": "SELL",
+    "SPY": "HOLD"
+  },
+  "candidate_actions": [
+    "BUY",
+    "HOLD",
+    "SELL"
+  ],
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "action": "BUY",
+      "action_i18n": {
+        "en": "Buy Candidate",
+        "ko": "\ub9e4\uc218 \ud6c4\ubcf4"
+      },
+      "broker_write_enabled": false,
+      "confidence": 25.0,
+      "conflict_analysis": {
+        "conflict_count": 1,
+        "conflicts": [
+          {
+            "code": "BUY_WHILE_OVERBOUGHT",
+            "en": "Buy candidate conflicts with overbought RSI.",
+            "ko": "\ub9e4\uc218 \ud6c4\ubcf4\uc640 RSI \uacfc\ub9e4\uc218 \uc0c1\ud0dc\uac00 \ucda9\ub3cc\ud569\ub2c8\ub2e4."
+          }
+        ],
+        "has_conflict": true
+      },
+      "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+      "features": {
+        "atr14": 0.44999858729939524,
+        "atr_percent": 0.003515613963276538,
+        "bollinger_lower": 120.63860309186487,
+        "bollinger_middle": 124.67499999999959,
+        "bollinger_upper": 128.7113969081343,
+        "bollinger_width": 0.06475070235628205,
+        "close": 127.99999999999955,
+        "ema21": 124.4999999999996,
+        "ema9": 126.59999999999957,
+        "macd": 2.44999999999996,
+        "macd_histogram": 0.0,
+        "macd_signal": 2.44999999999996,
+        "momentum_5": 0.013861386138613652,
+        "rsi14": 100.0,
+        "volume_ratio": 1.056047197640118,
+        "vwap": 115.5129032258064
+      },
+      "order_submission_enabled": false,
+      "reasons": [
+        {
+          "en": "EMA 9 is above EMA 21.",
+          "ko": "EMA 9\uac00 EMA 21\ubcf4\ub2e4 \ub192\uc2b5\ub2c8\ub2e4."
+        },
+        {
+          "en": "RSI indicates an overbought condition.",
+          "ko": "RSI\uac00 \uacfc\ub9e4\uc218 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+        },
+        {
+          "en": "Price is above VWAP.",
+          "ko": "\uac00\uaca9\uc774 VWAP\ubcf4\ub2e4 \ub192\uc2b5\ub2c8\ub2e4."
+        },
+        {
+          "en": "Five-bar momentum is positive.",
+          "ko": "5\uac1c \ubd09 \ubaa8\uba58\ud140\uc774 \uc0c1\uc2b9 \ubc29\ud5a5\uc785\ub2c8\ub2e4."
+        }
+      ],
+      "regime": "REGIME_TRENDING",
+      "regime_i18n": {
+        "en": "Trending Market",
+        "ko": "\ucd94\uc138 \uc2dc\uc7a5"
+      },
+      "risk_gate": "PASS_READ_ONLY",
+      "score": 25.0,
+      "symbol": "AAPL",
+      "trend": "TREND_UP",
+      "trend_i18n": {
+        "en": "Uptrend",
+        "ko": "\uc0c1\uc2b9 \ucd94\uc138"
+      }
+    },
+    {
+      "action": "SELL",
+      "action_i18n": {
+        "en": "Sell Candidate",
+        "ko": "\ub9e4\ub3c4 \ud6c4\ubcf4"
+      },
+      "broker_write_enabled": false,
+      "confidence": 18.75,
+      "conflict_analysis": {
+        "conflict_count": 1,
+        "conflicts": [
+          {
+            "code": "SELL_WHILE_OVERSOLD",
+            "en": "Sell candidate conflicts with oversold RSI.",
+            "ko": "\ub9e4\ub3c4 \ud6c4\ubcf4\uc640 RSI \uacfc\ub9e4\ub3c4 \uc0c1\ud0dc\uac00 \ucda9\ub3cc\ud569\ub2c8\ub2e4."
+          }
+        ],
+        "has_conflict": true
+      },
+      "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+      "features": {
+        "atr14": 0.44999858729939524,
+        "atr_percent": 0.006249980379158228,
+        "bollinger_lower": 71.28860309186568,
+        "bollinger_middle": 75.3250000000004,
+        "bollinger_upper": 79.36139690813512,
+        "bollinger_width": 0.10717283526411411,
+        "close": 72.00000000000045,
+        "ema21": 75.5000000000004,
+        "ema9": 73.40000000000043,
+        "macd": -2.44999999999996,
+        "macd_histogram": 0.0,
+        "macd_signal": -2.44999999999996,
+        "momentum_5": -0.02372881355932155,
+        "rsi14": 0.0,
+        "volume_ratio": 1.056047197640118,
+        "vwap": 84.48709677419373
+      },
+      "order_submission_enabled": false,
+      "reasons": [
+        {
+          "en": "EMA 9 is below EMA 21.",
+          "ko": "EMA 9\uac00 EMA 21\ubcf4\ub2e4 \ub0ae\uc2b5\ub2c8\ub2e4."
+        },
+        {
+          "en": "RSI indicates an oversold condition.",
+          "ko": "RSI\uac00 \uacfc\ub9e4\ub3c4 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+        },
+        {
+          "en": "Price is below VWAP.",
+          "ko": "\uac00\uaca9\uc774 VWAP\ubcf4\ub2e4 \ub0ae\uc2b5\ub2c8\ub2e4."
+        },
+        {
+          "en": "Five-bar momentum is negative.",
+          "ko": "5\uac1c \ubd09 \ubaa8\uba58\ud140\uc774 \ud558\ub77d \ubc29\ud5a5\uc785\ub2c8\ub2e4."
+        },
+        {
+          "en": "Confidence was reduced because volatility is high.",
+          "ko": "\ubcc0\ub3d9\uc131\uc774 \ub192\uc544 \uc2e0\ub8b0\ub3c4\ub97c \ub0ae\ucdc4\uc2b5\ub2c8\ub2e4."
+        }
+      ],
+      "regime": "REGIME_VOLATILE",
+      "regime_i18n": {
+        "en": "Volatile Market",
+        "ko": "\uace0\ubcc0\ub3d9\uc131 \uc2dc\uc7a5"
+      },
+      "risk_gate": "PASS_READ_ONLY",
+      "score": -25.0,
+      "symbol": "MSFT",
+      "trend": "TREND_DOWN",
+      "trend_i18n": {
+        "en": "Downtrend",
+        "ko": "\ud558\ub77d \ucd94\uc138"
+      }
+    },
+    {
+      "action": "HOLD",
+      "action_i18n": {
+        "en": "Hold Candidate",
+        "ko": "\ubcf4\uc720 \ud6c4\ubcf4"
+      },
+      "broker_write_enabled": false,
+      "confidence": 20.0,
+      "conflict_analysis": {
+        "conflict_count": 0,
+        "conflicts": [],
+        "has_conflict": false
+      },
+      "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+      "features": {
+        "atr14": 0.19999999999998863,
+        "atr_percent": 0.0019999999999998864,
+        "bollinger_lower": 100.0,
+        "bollinger_middle": 100.0,
+        "bollinger_upper": 100.0,
+        "bollinger_width": 0.0,
+        "close": 100.0,
+        "ema21": 100.0,
+        "ema9": 100.0,
+        "macd": 0.0,
+        "macd_histogram": 0.0,
+        "macd_signal": 0.0,
+        "momentum_5": 0.0,
+        "rsi14": 100.0,
+        "volume_ratio": 1.0,
+        "vwap": 100.0
+      },
+      "order_submission_enabled": false,
+      "reasons": [
+        {
+          "en": "RSI indicates an overbought condition.",
+          "ko": "RSI\uac00 \uacfc\ub9e4\uc218 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+        }
+      ],
+      "regime": "REGIME_RANGE",
+      "regime_i18n": {
+        "en": "Range Market",
+        "ko": "\ubc15\uc2a4\uad8c \uc2dc\uc7a5"
+      },
+      "risk_gate": "PASS_READ_ONLY",
+      "score": -20.0,
+      "symbol": "SPY",
+      "trend": "TREND_SIDEWAYS",
+      "trend_i18n": {
+        "en": "Sideways",
+        "ko": "\ud6a1\ubcf4"
+      }
+    }
+  ],
+  "certification_fingerprint": "ac7eb5cf5b62dead8bc010fb3cf3db6f1f24aa8594135e68398751b80cda8e46",
+  "confidence_score_ready": true,
+  "conflict_detection_ready": true,
+  "ema_ready": true,
+  "hold_candidate_ready": true,
+  "macd_ready": true,
+  "market_regime_ready": true,
+  "momentum_ready": true,
+  "next_fixed_development": "PHASE2_AI_SIGNAL_SCORING_ENSEMBLE_EXPLAINABILITY_AND_BACKTEST_BRIDGE",
+  "ohlcv_normalization_ready": true,
+  "report": {
+    "candidates": [
+      {
+        "action": "BUY",
+        "action_i18n": {
+          "en": "Buy Candidate",
+          "ko": "\ub9e4\uc218 \ud6c4\ubcf4"
+        },
+        "broker_write_enabled": false,
+        "confidence": 25.0,
+        "conflict_analysis": {
+          "conflict_count": 1,
+          "conflicts": [
+            {
+              "code": "BUY_WHILE_OVERBOUGHT",
+              "en": "Buy candidate conflicts with overbought RSI.",
+              "ko": "\ub9e4\uc218 \ud6c4\ubcf4\uc640 RSI \uacfc\ub9e4\uc218 \uc0c1\ud0dc\uac00 \ucda9\ub3cc\ud569\ub2c8\ub2e4."
+            }
+          ],
+          "has_conflict": true
+        },
+        "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+        "features": {
+          "atr14": 0.44999858729939524,
+          "atr_percent": 0.003515613963276538,
+          "bollinger_lower": 120.63860309186487,
+          "bollinger_middle": 124.67499999999959,
+          "bollinger_upper": 128.7113969081343,
+          "bollinger_width": 0.06475070235628205,
+          "close": 127.99999999999955,
+          "ema21": 124.4999999999996,
+          "ema9": 126.59999999999957,
+          "macd": 2.44999999999996,
+          "macd_histogram": 0.0,
+          "macd_signal": 2.44999999999996,
+          "momentum_5": 0.013861386138613652,
+          "rsi14": 100.0,
+          "volume_ratio": 1.056047197640118,
+          "vwap": 115.5129032258064
+        },
+        "order_submission_enabled": false,
+        "reasons": [
+          {
+            "en": "EMA 9 is above EMA 21.",
+            "ko": "EMA 9\uac00 EMA 21\ubcf4\ub2e4 \ub192\uc2b5\ub2c8\ub2e4."
+          },
+          {
+            "en": "RSI indicates an overbought condition.",
+            "ko": "RSI\uac00 \uacfc\ub9e4\uc218 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+          },
+          {
+            "en": "Price is above VWAP.",
+            "ko": "\uac00\uaca9\uc774 VWAP\ubcf4\ub2e4 \ub192\uc2b5\ub2c8\ub2e4."
+          },
+          {
+            "en": "Five-bar momentum is positive.",
+            "ko": "5\uac1c \ubd09 \ubaa8\uba58\ud140\uc774 \uc0c1\uc2b9 \ubc29\ud5a5\uc785\ub2c8\ub2e4."
+          }
+        ],
+        "regime": "REGIME_TRENDING",
+        "regime_i18n": {
+          "en": "Trending Market",
+          "ko": "\ucd94\uc138 \uc2dc\uc7a5"
+        },
+        "risk_gate": "PASS_READ_ONLY",
+        "score": 25.0,
+        "symbol": "AAPL",
+        "trend": "TREND_UP",
+        "trend_i18n": {
+          "en": "Uptrend",
+          "ko": "\uc0c1\uc2b9 \ucd94\uc138"
+        }
+      },
+      {
+        "action": "SELL",
+        "action_i18n": {
+          "en": "Sell Candidate",
+          "ko": "\ub9e4\ub3c4 \ud6c4\ubcf4"
+        },
+        "broker_write_enabled": false,
+        "confidence": 18.75,
+        "conflict_analysis": {
+          "conflict_count": 1,
+          "conflicts": [
+            {
+              "code": "SELL_WHILE_OVERSOLD",
+              "en": "Sell candidate conflicts with oversold RSI.",
+              "ko": "\ub9e4\ub3c4 \ud6c4\ubcf4\uc640 RSI \uacfc\ub9e4\ub3c4 \uc0c1\ud0dc\uac00 \ucda9\ub3cc\ud569\ub2c8\ub2e4."
+            }
+          ],
+          "has_conflict": true
+        },
+        "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+        "features": {
+          "atr14": 0.44999858729939524,
+          "atr_percent": 0.006249980379158228,
+          "bollinger_lower": 71.28860309186568,
+          "bollinger_middle": 75.3250000000004,
+          "bollinger_upper": 79.36139690813512,
+          "bollinger_width": 0.10717283526411411,
+          "close": 72.00000000000045,
+          "ema21": 75.5000000000004,
+          "ema9": 73.40000000000043,
+          "macd": -2.44999999999996,
+          "macd_histogram": 0.0,
+          "macd_signal": -2.44999999999996,
+          "momentum_5": -0.02372881355932155,
+          "rsi14": 0.0,
+          "volume_ratio": 1.056047197640118,
+          "vwap": 84.48709677419373
+        },
+        "order_submission_enabled": false,
+        "reasons": [
+          {
+            "en": "EMA 9 is below EMA 21.",
+            "ko": "EMA 9\uac00 EMA 21\ubcf4\ub2e4 \ub0ae\uc2b5\ub2c8\ub2e4."
+          },
+          {
+            "en": "RSI indicates an oversold condition.",
+            "ko": "RSI\uac00 \uacfc\ub9e4\ub3c4 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+          },
+          {
+            "en": "Price is below VWAP.",
+            "ko": "\uac00\uaca9\uc774 VWAP\ubcf4\ub2e4 \ub0ae\uc2b5\ub2c8\ub2e4."
+          },
+          {
+            "en": "Five-bar momentum is negative.",
+            "ko": "5\uac1c \ubd09 \ubaa8\uba58\ud140\uc774 \ud558\ub77d \ubc29\ud5a5\uc785\ub2c8\ub2e4."
+          },
+          {
+            "en": "Confidence was reduced because volatility is high.",
+            "ko": "\ubcc0\ub3d9\uc131\uc774 \ub192\uc544 \uc2e0\ub8b0\ub3c4\ub97c \ub0ae\ucdc4\uc2b5\ub2c8\ub2e4."
+          }
+        ],
+        "regime": "REGIME_VOLATILE",
+        "regime_i18n": {
+          "en": "Volatile Market",
+          "ko": "\uace0\ubcc0\ub3d9\uc131 \uc2dc\uc7a5"
+        },
+        "risk_gate": "PASS_READ_ONLY",
+        "score": -25.0,
+        "symbol": "MSFT",
+        "trend": "TREND_DOWN",
+        "trend_i18n": {
+          "en": "Downtrend",
+          "ko": "\ud558\ub77d \ucd94\uc138"
+        }
+      },
+      {
+        "action": "HOLD",
+        "action_i18n": {
+          "en": "Hold Candidate",
+          "ko": "\ubcf4\uc720 \ud6c4\ubcf4"
+        },
+        "broker_write_enabled": false,
+        "confidence": 20.0,
+        "conflict_analysis": {
+          "conflict_count": 0,
+          "conflicts": [],
+          "has_conflict": false
+        },
+        "execution_mode": "SIGNAL_CANDIDATE_ONLY",
+        "features": {
+          "atr14": 0.19999999999998863,
+          "atr_percent": 0.0019999999999998864,
+          "bollinger_lower": 100.0,
+          "bollinger_middle": 100.0,
+          "bollinger_upper": 100.0,
+          "bollinger_width": 0.0,
+          "close": 100.0,
+          "ema21": 100.0,
+          "ema9": 100.0,
+          "macd": 0.0,
+          "macd_histogram": 0.0,
+          "macd_signal": 0.0,
+          "momentum_5": 0.0,
+          "rsi14": 100.0,
+          "volume_ratio": 1.0,
+          "vwap": 100.0
+        },
+        "order_submission_enabled": false,
+        "reasons": [
+          {
+            "en": "RSI indicates an overbought condition.",
+            "ko": "RSI\uac00 \uacfc\ub9e4\uc218 \uc0c1\ud0dc\ub97c \ub098\ud0c0\ub0c5\ub2c8\ub2e4."
+          }
+        ],
+        "regime": "REGIME_RANGE",
+        "regime_i18n": {
+          "en": "Range Market",
+          "ko": "\ubc15\uc2a4\uad8c \uc2dc\uc7a5"
+        },
+        "risk_gate": "PASS_READ_ONLY",
+        "score": -20.0,
+        "symbol": "SPY",
+        "trend": "TREND_SIDEWAYS",
+        "trend_i18n": {
+          "en": "Sideways",
+          "ko": "\ud6a1\ubcf4"
+        }
+      }
+    ],
+    "generated_at": "2026-08-06T04:47:58.146934+00:00",
+    "mode": "OFFLINE_SIGNAL_CANDIDATES_ONLY",
+    "report_title": {
+      "en": "AI Signal Candidate Report",
+      "ko": "AI \uc2e0\ud638 \ud6c4\ubcf4 \ubcf4\uace0\uc11c"
+    },
+    "report_type": "AI_SIGNAL_CANDIDATE_REPORT",
+    "safety": {
+      "broker_write_enabled": false,
+      "configuration_activation_enabled": false,
+      "live_trading_enabled": false,
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false
+    },
+    "summary": {
+      "buy_candidates": 1,
+      "hold_candidates": 1,
+      "sell_candidates": 1,
+      "total": 3
+    }
+  },
+  "risk_gate_ready": true,
+  "rsi_ready": true,
+  "sell_candidate_ready": true,
+  "signal_ledger_ready": true,
+  "stage": "V9801_TO_V10400_PHASE2_AI_FEATURE_ENGINE_SIGNAL_CANDIDATES_MAX_BUNDLE",
+  "status": "PASS",
+  "trend_classification_ready": true,
+  "volume_feature_ready": true,
+  "vwap_ready": true
+}

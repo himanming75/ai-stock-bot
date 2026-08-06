@@ -1,0 +1,18 @@
+{
+  "atr14": 0.19999999999998863,
+  "atr_percent": 0.0019999999999998864,
+  "bollinger_lower": 100.0,
+  "bollinger_middle": 100.0,
+  "bollinger_upper": 100.0,
+  "bollinger_width": 0.0,
+  "close": 100.0,
+  "ema21": 100.0,
+  "ema9": 100.0,
+  "macd": 0.0,
+  "macd_histogram": 0.0,
+  "macd_signal": 0.0,
+  "momentum_5": 0.0,
+  "rsi14": 100.0,
+  "volume_ratio": 1.0,
+  "vwap": 100.0
+}
