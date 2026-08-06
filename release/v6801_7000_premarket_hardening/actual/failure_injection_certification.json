@@ -1,0 +1,64 @@
+{
+  "scenarios": {
+    "BROKER_RATE_LIMIT": {
+      "critical": false,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "WAIT",
+      "process_killed": false,
+      "recovery_path": "EXPONENTIAL_BACKOFF",
+      "scenario": "BROKER_RATE_LIMIT",
+      "status": "PASS"
+    },
+    "CORRUPT_CHECKPOINT": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "SAFE_DEFAULT_RESTORE",
+      "scenario": "CORRUPT_CHECKPOINT",
+      "status": "PASS"
+    },
+    "LEDGER_WRITE_FAILURE": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "REPAIR_LEDGER",
+      "scenario": "LEDGER_WRITE_FAILURE",
+      "status": "PASS"
+    },
+    "MARKET_DATA_STALE": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "MANUAL_REVIEW",
+      "scenario": "MARKET_DATA_STALE",
+      "status": "PASS"
+    },
+    "NETWORK_TIMEOUT": {
+      "critical": false,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "WAIT",
+      "process_killed": false,
+      "recovery_path": "RETRY_BACKOFF",
+      "scenario": "NETWORK_TIMEOUT",
+      "status": "PASS"
+    },
+    "PROCESS_TERMINATION": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "WATCHDOG_RESTART",
+      "scenario": "PROCESS_TERMINATION",
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+Fix: tools/runtime_cleanup_v6801.py now inserts the repository root into sys.path before importing premarket_hardening.cleanup.
+Reason: standalone PowerShell execution did not inherit the unittest import path.

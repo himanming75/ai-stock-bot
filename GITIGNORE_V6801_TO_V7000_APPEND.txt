@@ -1,0 +1,16 @@
+# Append these lines to the existing .gitignore after review.
+# Existing tracked runtime files remain tracked until separately untracked.
+release/**/actual/cycle_*/
+release/**/actual/*.log
+release/**/actual/*_state.json
+release/**/actual/*_summary.json
+release/**/actual/*_snapshot.json
+release/**/actual/*_token.json
+release/**/actual/*_result.json
+release/**/actual/*.runtime.json
+release/**/actual/*.runtime.jsonl
+runtime/
+.runtime/
+*.runtime.log
+*.runtime.json
+*.runtime.jsonl

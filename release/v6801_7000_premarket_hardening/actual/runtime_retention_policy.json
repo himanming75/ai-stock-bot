@@ -1,0 +1,39 @@
+{
+  "rules": [
+    {
+      "category": "POLLING_CYCLE",
+      "compress_after_days": 1,
+      "pattern": "release/**/actual/cycle_*",
+      "protected": false,
+      "retention_days": 7
+    },
+    {
+      "category": "LEDGER",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*.jsonl",
+      "protected": false,
+      "retention_days": 30
+    },
+    {
+      "category": "RUNTIME_STATE",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*state*.json",
+      "protected": false,
+      "retention_days": 14
+    },
+    {
+      "category": "CHECKPOINT",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*checkpoint*.json",
+      "protected": true,
+      "retention_days": 14
+    },
+    {
+      "category": "RUNTIME_LOG",
+      "compress_after_days": 3,
+      "pattern": "release/**/actual/*.log",
+      "protected": false,
+      "retention_days": 14
+    }
+  ]
+}

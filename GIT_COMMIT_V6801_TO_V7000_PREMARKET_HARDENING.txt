@@ -1,0 +1,13 @@
+git add premarket_hardening
+git add tools/run_v6801_to_v7000_premarket_hardening.py
+git add tools/runtime_cleanup_v6801.py
+git add tools/test_v6801_to_v7000_premarket_hardening.py
+git add release/v6801_7000_premarket_hardening
+git add RUN_V6801_TO_V7000_PREMARKET_HARDENING.ps1
+git add RUN_V6801_TO_V7000_PREMARKET_HARDENING_TEST.ps1
+git add RUN_V6801_RUNTIME_CLEANUP_DRY_RUN.ps1
+git add V6801_TO_V7000_PREMARKET_HARDENING_MANIFEST.json
+git add GITIGNORE_V6801_TO_V7000_APPEND.txt
+git add GIT_COMMIT_V6801_TO_V7000_PREMARKET_HARDENING.txt
+git commit -m "Add V6801-V7000 phases 1-4 premarket hardening"
+git push origin main

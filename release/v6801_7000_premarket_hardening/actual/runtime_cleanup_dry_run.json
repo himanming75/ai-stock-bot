@@ -1,0 +1,22 @@
+{
+  "actions": [
+    {
+      "action": "DELETE",
+      "age_days": 10,
+      "category": "POLLING_CYCLE",
+      "dry_run": true,
+      "path": "release/actual_market_polling_validation/actual/cycle_0001/market_snapshot.json"
+    },
+    {
+      "action": "COMPRESS",
+      "age_days": 40,
+      "category": "LEDGER",
+      "dry_run": true,
+      "path": "release/watchdog/actual/watchdog_ledger.jsonl"
+    }
+  ],
+  "compress_count": 1,
+  "delete_count": 1,
+  "dry_run": true,
+  "protected_skipped": 1
+}

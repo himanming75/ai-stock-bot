@@ -1,0 +1,18 @@
+{
+  "access_token_created": true,
+  "account_read": {
+    "accounts": [
+      {
+        "account_id": "MOCK_ETRADE_PRIMARY",
+        "read_only": true,
+        "type": "BROKERAGE"
+      }
+    ],
+    "attempts": 3,
+    "status": "PASS"
+  },
+  "actual_credentials_used": false,
+  "request_token_created": true,
+  "write_blocked": true,
+  "write_calls": 1
+}

@@ -1,0 +1,199 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "certification_fingerprint": "53246736e2168f30513a0bdca2e9e9b63360eb883d88dc1107988467988b416f",
+  "cleanup_dry_run_ready": true,
+  "cleanup_plan": {
+    "actions": [
+      {
+        "action": "DELETE",
+        "age_days": 10,
+        "category": "POLLING_CYCLE",
+        "dry_run": true,
+        "path": "release/actual_market_polling_validation/actual/cycle_0001/market_snapshot.json"
+      },
+      {
+        "action": "COMPRESS",
+        "age_days": 40,
+        "category": "LEDGER",
+        "dry_run": true,
+        "path": "release/watchdog/actual/watchdog_ledger.jsonl"
+      }
+    ],
+    "compress_count": 1,
+    "delete_count": 1,
+    "dry_run": true,
+    "protected_skipped": 1
+  },
+  "compression_policy_ready": true,
+  "cpu_monitor_ready": true,
+  "cycle_gap_monitor_ready": true,
+  "etrade_mock": {
+    "access_token_created": true,
+    "account_read": {
+      "accounts": [
+        {
+          "account_id": "MOCK_ETRADE_PRIMARY",
+          "read_only": true,
+          "type": "BROKERAGE"
+        }
+      ],
+      "attempts": 3,
+      "status": "PASS"
+    },
+    "actual_credentials_used": false,
+    "request_token_created": true,
+    "write_blocked": true,
+    "write_calls": 1
+  },
+  "etrade_oauth_mock_ready": true,
+  "etrade_rate_limit_fixture_ready": true,
+  "etrade_retry_mock_ready": true,
+  "etrade_write_guard_ready": true,
+  "existing_order_paths_modified": false,
+  "failure_injection_ready": true,
+  "failure_injection_results": {
+    "BROKER_RATE_LIMIT": {
+      "critical": false,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "WAIT",
+      "process_killed": false,
+      "recovery_path": "EXPONENTIAL_BACKOFF",
+      "scenario": "BROKER_RATE_LIMIT",
+      "status": "PASS"
+    },
+    "CORRUPT_CHECKPOINT": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "SAFE_DEFAULT_RESTORE",
+      "scenario": "CORRUPT_CHECKPOINT",
+      "status": "PASS"
+    },
+    "LEDGER_WRITE_FAILURE": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "REPAIR_LEDGER",
+      "scenario": "LEDGER_WRITE_FAILURE",
+      "status": "PASS"
+    },
+    "MARKET_DATA_STALE": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "MANUAL_REVIEW",
+      "scenario": "MARKET_DATA_STALE",
+      "status": "PASS"
+    },
+    "NETWORK_TIMEOUT": {
+      "critical": false,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "WAIT",
+      "process_killed": false,
+      "recovery_path": "RETRY_BACKOFF",
+      "scenario": "NETWORK_TIMEOUT",
+      "status": "PASS"
+    },
+    "PROCESS_TERMINATION": {
+      "critical": true,
+      "disk_modified": false,
+      "network_used": false,
+      "observed_action": "ALL_STOP",
+      "process_killed": false,
+      "recovery_path": "WATCHDOG_RESTART",
+      "scenario": "PROCESS_TERMINATION",
+      "status": "PASS"
+    }
+  },
+  "generated_at": "2026-08-06T00:32:44.887652+00:00",
+  "gitignore_append_block": "\n# V6801-V7000 generated runtime outputs\nrelease/**/actual/cycle_*/\nrelease/**/actual/*.log\nrelease/**/actual/*_state.json\nrelease/**/actual/*_summary.json\nrelease/**/actual/*_snapshot.json\nrelease/**/actual/*_token.json\nrelease/**/actual/*_result.json\nrelease/**/actual/*.runtime.json\nrelease/**/actual/*.runtime.jsonl\nruntime/\n.runtime/\n*.runtime.log\n*.runtime.json\n*.runtime.jsonl\n",
+  "ledger_sequence_monitor_ready": true,
+  "log_rotation_policy_ready": true,
+  "long_run_monitor_fixture": {
+    "checks": {
+      "cpu_within_limit": true,
+      "cycles_increasing": true,
+      "exceptions_zero": true,
+      "ledger_increasing": true,
+      "memory_growth_within_limit": true,
+      "polling_delay_within_limit": true
+    },
+    "cycle_increase": 240,
+    "exception_count": 0,
+    "ledger_increase": 240,
+    "max_cpu_percent": "22",
+    "max_polling_delay_seconds": "31",
+    "memory_growth_mb": "13",
+    "sample_count": 3,
+    "status": "PASS"
+  },
+  "long_run_monitor_ready": true,
+  "market_open_required": false,
+  "memory_monitor_ready": true,
+  "multi_account_load_fixture_ready": true,
+  "multi_account_permission_validation_ready": true,
+  "multi_account_risk_profile_validation_ready": true,
+  "multi_account_validation": {
+    "account_count": 10,
+    "future_multi_account_ready": true,
+    "issues": [],
+    "status": "PASS",
+    "unique_account_count": 10
+  },
+  "next_user_action": "INSTALL_AND_RUN_BUNDLE_THEN_RUN_INTRADAY_VALIDATION_WHEN_MARKET_OPENS",
+  "restart_recovery_fixture_ready": true,
+  "runtime_git_separation_ready": true,
+  "runtime_policy_rules": [
+    {
+      "category": "POLLING_CYCLE",
+      "compress_after_days": 1,
+      "pattern": "release/**/actual/cycle_*",
+      "protected": false,
+      "retention_days": 7
+    },
+    {
+      "category": "LEDGER",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*.jsonl",
+      "protected": false,
+      "retention_days": 30
+    },
+    {
+      "category": "RUNTIME_STATE",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*state*.json",
+      "protected": false,
+      "retention_days": 14
+    },
+    {
+      "category": "CHECKPOINT",
+      "compress_after_days": 7,
+      "pattern": "release/**/actual/*checkpoint*.json",
+      "protected": true,
+      "retention_days": 14
+    },
+    {
+      "category": "RUNTIME_LOG",
+      "compress_after_days": 3,
+      "pattern": "release/**/actual/*.log",
+      "protected": false,
+      "retention_days": 14
+    }
+  ],
+  "stage": "V6801_TO_V7000_PHASES_1_TO_4_PREMARKET_HARDENING",
+  "status": "PASS",
+  "validation_mode": "OFFLINE_PREMARKET_HARDENING_FIXTURES"
+}

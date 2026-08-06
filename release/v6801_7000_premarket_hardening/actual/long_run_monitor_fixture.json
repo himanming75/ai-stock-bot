@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "cpu_within_limit": true,
+    "cycles_increasing": true,
+    "exceptions_zero": true,
+    "ledger_increasing": true,
+    "memory_growth_within_limit": true,
+    "polling_delay_within_limit": true
+  },
+  "cycle_increase": 240,
+  "exception_count": 0,
+  "ledger_increase": 240,
+  "max_cpu_percent": "22",
+  "max_polling_delay_seconds": "31",
+  "memory_growth_mb": "13",
+  "sample_count": 3,
+  "status": "PASS"
+}

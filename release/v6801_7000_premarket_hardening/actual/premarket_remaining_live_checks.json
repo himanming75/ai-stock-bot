@@ -1,0 +1,7 @@
+{
+  "actual_8_hour_session": "PENDING_MARKET_SESSION",
+  "broker_write": "DISABLED",
+  "etrade_real_oauth": "PENDING_CONSUMER_KEY",
+  "paper_end_of_day_shutdown": "PENDING_MARKET_CLOSE",
+  "paper_intraday_data_freshness": "PENDING_MARKET_OPEN"
+}
