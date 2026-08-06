@@ -1,0 +1,10 @@
+git add autonomous_final_certification
+git add tools/run_v6601_to_v6800_autonomous_final_certification.py
+git add tools/test_v6601_to_v6800_autonomous_final_certification.py
+git add release/v6601_6800_autonomous_final_certification
+git add RUN_V6601_TO_V6800_AUTONOMOUS_FINAL_CERTIFICATION.ps1
+git add RUN_V6601_TO_V6800_AUTONOMOUS_FINAL_CERTIFICATION_TEST.ps1
+git add V6601_TO_V6800_AUTONOMOUS_FINAL_CERTIFICATION_MANIFEST.json
+git add GIT_COMMIT_V6601_TO_V6800_AUTONOMOUS_FINAL_CERTIFICATION.txt
+git commit -m "Add V6601-V6800 autonomous platform final certification"
+git push origin main

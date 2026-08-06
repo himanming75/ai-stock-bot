@@ -1,0 +1,19 @@
+{
+  "minimum_hours": 8,
+  "monitor": [
+    "memory_growth",
+    "uncaught_exceptions",
+    "deadlocks",
+    "missed_cycles",
+    "ledger_integrity",
+    "watchdog_restarts",
+    "snapshot_freshness"
+  ],
+  "pass_conditions": {
+    "deadlocks": 0,
+    "memory_growth_per_hour_mb_max": 50,
+    "missed_cycles": 0,
+    "uncaught_exceptions": 0
+  },
+  "recommended_sessions": 3
+}

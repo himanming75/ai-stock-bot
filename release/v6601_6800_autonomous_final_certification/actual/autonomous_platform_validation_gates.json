@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "blocking_reason": "Requires open market",
+      "name": "PAPER_INTRADAY_DATA_FRESHNESS",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Requires long-running market session",
+      "name": "PAPER_MULTI_CYCLE_STABILITY",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Requires market close observation",
+      "name": "PAPER_END_OF_DAY_SHUTDOWN",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Sandbox Consumer Key unavailable",
+      "name": "ETRADE_SANDBOX_READ",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    },
+    {
+      "blocking_reason": "Production key and OAuth validation unavailable",
+      "name": "ETRADE_PRODUCTION_READ_ONLY",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    },
+    {
+      "blocking_reason": "Manual approval and separate future certification required",
+      "name": "LIVE_ORDER_ENABLEMENT",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    }
+  ]
+}

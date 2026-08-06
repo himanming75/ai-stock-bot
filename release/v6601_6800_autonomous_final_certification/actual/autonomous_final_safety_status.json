@@ -1,0 +1,8 @@
+{
+  "automatic_live_trading": false,
+  "automatic_order_generation": false,
+  "automatic_order_submission": false,
+  "broker_write": false,
+  "live_orders": 0,
+  "paper_orders": 0
+}

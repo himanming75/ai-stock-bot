@@ -1,0 +1,13 @@
+{
+  "ai_decision_generated": "VERIFY",
+  "broker_write_expected": false,
+  "cycle_counter_increasing": "VERIFY",
+  "fresh_1_minute_bars": "VERIFY",
+  "market_close_auto_stop": "VERIFY",
+  "market_open": "REQUIRED",
+  "market_pipeline": "PASS_REQUIRED",
+  "paper_orders_expected": 0,
+  "portfolio_target_generated": "VERIFY",
+  "snapshot_generation": "VERIFY",
+  "watchdog_healthy": "VERIFY"
+}

@@ -1,0 +1,209 @@
+{
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "automatic_live_trading_enabled": false,
+  "automatic_order_generation_enabled": false,
+  "automatic_order_submission_enabled": false,
+  "broker_write_enabled": false,
+  "certification_fingerprint": "fa99170854735e0ca2a0c4ccd5de489c90edb156d4f07bd873bfb76b9128c2e6",
+  "code_platform_status": "CODE_COMPLETE_LIVE_VALIDATION_PENDING",
+  "deployment_audit": {
+    "broker_credentials_required_for_default_run": false,
+    "broker_write_enabled": false,
+    "checksum_manifest_ready": true,
+    "git_branch_expected": "main",
+    "powershell_runner_ready": true,
+    "python_runtime_required": true,
+    "release_artifacts_ready": true,
+    "repository_root_expected": "C:\\stock-bot",
+    "restart_recovery_present": true,
+    "runtime_write_directories_required": true,
+    "startup_scheduler_present": true,
+    "watchdog_present": true,
+    "windows_supported": true
+  },
+  "deployment_audit_ready": true,
+  "etrade_key_handoff_ready": true,
+  "etrade_platform_status": "READ_ONLY_CODE_COMPLETE_KEY_PENDING",
+  "external_blockers": [
+    "MARKET_OPEN_REQUIRED_FOR_PAPER_VALIDATION",
+    "ETRADE_SANDBOX_CONSUMER_KEY_REQUIRED"
+  ],
+  "final_safety_audit_ready": true,
+  "generated_at": "2026-08-06T00:21:56.678270+00:00",
+  "live_validation_handoff_ready": true,
+  "long_run_test_plan_ready": true,
+  "manual_approval_required_for_any_write": true,
+  "next_fixed_development": "NO_NEW_CORE_DEVELOPMENT_REQUIRED_UNTIL_LIVE_VALIDATION_RESULTS",
+  "next_user_actions": [
+    "RUN_PAPER_INTRADAY_VALIDATION_WHEN_MARKET_OPENS",
+    "OBTAIN_ETRADE_SANDBOX_CONSUMER_KEY",
+    "RUN_MINIMUM_8_HOUR_LONG_DURATION_TEST"
+  ],
+  "paper_intraday_checklist_ready": true,
+  "paper_platform_status": "READY_FOR_INTRADAY_VALIDATION",
+  "pending_gate_count": 6,
+  "performance_audit": {
+    "actual_long_run_test_complete": false,
+    "checks": {
+      "ai_decision_latency": true,
+      "deadlocks": true,
+      "full_cycle_latency": true,
+      "ledger_latency": true,
+      "market_polling_cycle": true,
+      "memory_growth": true,
+      "missed_cycles": true,
+      "portfolio_latency": true,
+      "uncaught_exceptions": true
+    },
+    "fixture_performance_status": "PASS",
+    "observed_fixture_metrics": {
+      "ai_decision_latency_ms": 120,
+      "deadlocks": 0,
+      "full_cycle_latency_ms": 220,
+      "ledger_write_latency_ms": 8,
+      "market_polling_cycle_seconds": 30,
+      "memory_growth_per_hour_mb": 4,
+      "missed_cycles": 0,
+      "portfolio_allocation_latency_ms": 35,
+      "uncaught_exceptions": 0
+    },
+    "targets": {
+      "ai_decision_latency_ms_target": 500,
+      "deadlocks_allowed": 0,
+      "full_cycle_latency_ms_target": 1500,
+      "ledger_write_latency_ms_target": 100,
+      "market_polling_cycle_seconds_max": 30,
+      "memory_growth_per_hour_mb_max": 50,
+      "minimum_long_run_hours": 8,
+      "missed_cycles_allowed": 0,
+      "portfolio_allocation_latency_ms_target": 250,
+      "uncaught_exceptions_allowed": 0
+    }
+  },
+  "performance_targets_ready": true,
+  "phase_5_status": "STRUCTURALLY_COMPLETE",
+  "platform_readiness_checks": [
+    {
+      "blocking": true,
+      "evidence": "Historical and polling modules present",
+      "name": "MARKET_DATA_PIPELINE",
+      "next_action": "RUN_INTRADAY_LIVE_READ_VALIDATION",
+      "status": "PASS"
+    },
+    {
+      "blocking": true,
+      "evidence": "AI engine structural certification complete",
+      "name": "AI_ENGINE",
+      "next_action": "VALIDATE_WITH_FRESH_MARKET_DATA",
+      "status": "PASS"
+    },
+    {
+      "blocking": true,
+      "evidence": "Weighted voting and veto certification complete",
+      "name": "MULTI_AI_VOTING",
+      "next_action": "VALIDATE_INTRADAY_CONSISTENCY",
+      "status": "PASS"
+    },
+    {
+      "blocking": true,
+      "evidence": "Target allocation and risk limits certified",
+      "name": "PORTFOLIO_AI",
+      "next_action": "VALIDATE_WITH_ACTUAL_ACCOUNT_SNAPSHOT",
+      "status": "PASS"
+    },
+    {
+      "blocking": false,
+      "evidence": "Learning and explainability certification complete",
+      "name": "SELF_LEARNING",
+      "next_action": "COLLECT_REAL_PAPER_OUTCOMES",
+      "status": "PASS"
+    },
+    {
+      "blocking": true,
+      "evidence": "Dependency guard and emergency stop certified",
+      "name": "OPERATIONS_HEALTH",
+      "next_action": "RUN_LONG_DURATION_TEST",
+      "status": "PASS"
+    },
+    {
+      "blocking": true,
+      "evidence": "Code ready; market-hours validation pending",
+      "name": "ALPACA_PAPER_CONNECTION",
+      "next_action": "RUN_WHEN_MARKET_OPEN",
+      "status": "PENDING_INTRADAY_VALIDATION"
+    },
+    {
+      "blocking": false,
+      "evidence": "Read-only code ready; Consumer Key unavailable",
+      "name": "ETRADE_CONNECTION",
+      "next_action": "OBTAIN_SANDBOX_CONSUMER_KEY",
+      "status": "BLOCKED_BY_KEY_ISSUANCE"
+    },
+    {
+      "blocking": true,
+      "evidence": "Write routes disabled",
+      "name": "BROKER_WRITE",
+      "next_action": "KEEP_DISABLED",
+      "status": "DISABLED"
+    },
+    {
+      "blocking": true,
+      "evidence": "No executable order path enabled",
+      "name": "ORDER_SUBMISSION",
+      "next_action": "KEEP_DISABLED",
+      "status": "DISABLED"
+    }
+  ],
+  "stage": "V6601_TO_V6800_AUTONOMOUS_PLATFORM_FINAL_CERTIFICATION_AND_LIVE_VALIDATION_HANDOFF",
+  "status": "PASS",
+  "validation_gates": [
+    {
+      "blocking_reason": "Requires open market",
+      "name": "PAPER_INTRADAY_DATA_FRESHNESS",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Requires long-running market session",
+      "name": "PAPER_MULTI_CYCLE_STABILITY",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Requires market close observation",
+      "name": "PAPER_END_OF_DAY_SHUTDOWN",
+      "required_for_live": true,
+      "required_for_paper": true,
+      "status": "PENDING"
+    },
+    {
+      "blocking_reason": "Sandbox Consumer Key unavailable",
+      "name": "ETRADE_SANDBOX_READ",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    },
+    {
+      "blocking_reason": "Production key and OAuth validation unavailable",
+      "name": "ETRADE_PRODUCTION_READ_ONLY",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    },
+    {
+      "blocking_reason": "Manual approval and separate future certification required",
+      "name": "LIVE_ORDER_ENABLEMENT",
+      "required_for_live": true,
+      "required_for_paper": false,
+      "status": "BLOCKED"
+    }
+  ],
+  "validation_mode": "OFFLINE_FINAL_CERTIFICATION_AND_HANDOFF"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_long_run_test_complete": false,
+  "checks": {
+    "ai_decision_latency": true,
+    "deadlocks": true,
+    "full_cycle_latency": true,
+    "ledger_latency": true,
+    "market_polling_cycle": true,
+    "memory_growth": true,
+    "missed_cycles": true,
+    "portfolio_latency": true,
+    "uncaught_exceptions": true
+  },
+  "fixture_performance_status": "PASS",
+  "observed_fixture_metrics": {
+    "ai_decision_latency_ms": 120,
+    "deadlocks": 0,
+    "full_cycle_latency_ms": 220,
+    "ledger_write_latency_ms": 8,
+    "market_polling_cycle_seconds": 30,
+    "memory_growth_per_hour_mb": 4,
+    "missed_cycles": 0,
+    "portfolio_allocation_latency_ms": 35,
+    "uncaught_exceptions": 0
+  },
+  "targets": {
+    "ai_decision_latency_ms_target": 500,
+    "deadlocks_allowed": 0,
+    "full_cycle_latency_ms_target": 1500,
+    "ledger_write_latency_ms_target": 100,
+    "market_polling_cycle_seconds_max": 30,
+    "memory_growth_per_hour_mb_max": 50,
+    "minimum_long_run_hours": 8,
+    "missed_cycles_allowed": 0,
+    "portfolio_allocation_latency_ms_target": 250,
+    "uncaught_exceptions_allowed": 0
+  }
+}

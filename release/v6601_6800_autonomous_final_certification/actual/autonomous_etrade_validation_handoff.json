@@ -1,0 +1,11 @@
+{
+  "account_read": "PENDING",
+  "balance_read": "PENDING",
+  "consumer_key_available": false,
+  "order_submission_enabled": false,
+  "orders_read": "PENDING",
+  "positions_read": "PENDING",
+  "production_read_only": "PENDING",
+  "sandbox_oauth_complete": false,
+  "write_enabled": false
+}

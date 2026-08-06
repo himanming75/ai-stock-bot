@@ -1,0 +1,15 @@
+{
+  "broker_credentials_required_for_default_run": false,
+  "broker_write_enabled": false,
+  "checksum_manifest_ready": true,
+  "git_branch_expected": "main",
+  "powershell_runner_ready": true,
+  "python_runtime_required": true,
+  "release_artifacts_ready": true,
+  "repository_root_expected": "C:\\stock-bot",
+  "restart_recovery_present": true,
+  "runtime_write_directories_required": true,
+  "startup_scheduler_present": true,
+  "watchdog_present": true,
+  "windows_supported": true
+}
