@@ -1,0 +1,12 @@
+git add unified_trading_portal
+git add tools/run_unified_trading_portal.py
+git add tools/run_v8601_to_v8800_unified_portal_certification.py
+git add tools/test_v8601_to_v8800_unified_portal.py
+git add release/v8601_8800_unified_portal
+git add RUN_V8601_TO_V8800_UNIFIED_PORTAL_TEST.ps1
+git add RUN_V8601_TO_V8800_UNIFIED_PORTAL_CERTIFICATION.ps1
+git add RUN_UNIFIED_TRADING_PORTAL.ps1
+git add V8601_TO_V8800_UNIFIED_PORTAL_MANIFEST.json
+git add GIT_COMMIT_V8601_TO_V8800_UNIFIED_PORTAL.txt
+git commit -m "Add V8601-V8800 unified multi broker trading portal"
+git push origin main

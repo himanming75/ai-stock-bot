@@ -1,0 +1,209 @@
+# V8601–V8800 Unified Trading Portal & Live Multi-Broker Dashboard
+
+- V8601: Unified Trading Portal Package
+- V8602: Portal Data Loader
+- V8603: Sync Result Loader
+- V8604: Detail Collection Builder
+- V8605: Dashboard REST API
+- V8606: Accounts REST API
+- V8607: Positions REST API
+- V8608: Orders REST API
+- V8609: Reconciliation REST API
+- V8610: Health REST API
+- V8611: Read Only HTTP Server
+- V8612: Responsive Sidebar
+- V8613: Overview Screen
+- V8614: Broker Status Cards
+- V8615: Summary Metrics
+- V8616: Accounts Table
+- V8617: Positions Table
+- V8618: Orders Table
+- V8619: Reconciliation Issue View
+- V8620: Error View
+- V8621: Source Freshness View
+- V8622: Partial Success View
+- V8623: Empty Data State
+- V8624: Five Second Refresh
+- V8625: Manual Refresh
+- V8626: HTML Escaping
+- V8627: Mobile Layout
+- V8628: Port 8768
+- V8629: Offline Certification
+- V8630: Zero Order Contract
+- V8631: Unified Portal Milestone 31
+- V8632: Unified Portal Milestone 32
+- V8633: Unified Portal Milestone 33
+- V8634: Unified Portal Milestone 34
+- V8635: Unified Portal Milestone 35
+- V8636: Unified Portal Milestone 36
+- V8637: Unified Portal Milestone 37
+- V8638: Unified Portal Milestone 38
+- V8639: Unified Portal Milestone 39
+- V8640: Unified Portal Milestone 40
+- V8641: Unified Portal Milestone 41
+- V8642: Unified Portal Milestone 42
+- V8643: Unified Portal Milestone 43
+- V8644: Unified Portal Milestone 44
+- V8645: Unified Portal Milestone 45
+- V8646: Unified Portal Milestone 46
+- V8647: Unified Portal Milestone 47
+- V8648: Unified Portal Milestone 48
+- V8649: Unified Portal Milestone 49
+- V8650: Unified Portal Milestone 50
+- V8651: Unified Portal Milestone 51
+- V8652: Unified Portal Milestone 52
+- V8653: Unified Portal Milestone 53
+- V8654: Unified Portal Milestone 54
+- V8655: Unified Portal Milestone 55
+- V8656: Unified Portal Milestone 56
+- V8657: Unified Portal Milestone 57
+- V8658: Unified Portal Milestone 58
+- V8659: Unified Portal Milestone 59
+- V8660: Unified Portal Milestone 60
+- V8661: Unified Portal Milestone 61
+- V8662: Unified Portal Milestone 62
+- V8663: Unified Portal Milestone 63
+- V8664: Unified Portal Milestone 64
+- V8665: Unified Portal Milestone 65
+- V8666: Unified Portal Milestone 66
+- V8667: Unified Portal Milestone 67
+- V8668: Unified Portal Milestone 68
+- V8669: Unified Portal Milestone 69
+- V8670: Unified Portal Milestone 70
+- V8671: Unified Portal Milestone 71
+- V8672: Unified Portal Milestone 72
+- V8673: Unified Portal Milestone 73
+- V8674: Unified Portal Milestone 74
+- V8675: Unified Portal Milestone 75
+- V8676: Unified Portal Milestone 76
+- V8677: Unified Portal Milestone 77
+- V8678: Unified Portal Milestone 78
+- V8679: Unified Portal Milestone 79
+- V8680: Unified Portal Milestone 80
+- V8681: Unified Portal Milestone 81
+- V8682: Unified Portal Milestone 82
+- V8683: Unified Portal Milestone 83
+- V8684: Unified Portal Milestone 84
+- V8685: Unified Portal Milestone 85
+- V8686: Unified Portal Milestone 86
+- V8687: Unified Portal Milestone 87
+- V8688: Unified Portal Milestone 88
+- V8689: Unified Portal Milestone 89
+- V8690: Unified Portal Milestone 90
+- V8691: Unified Portal Milestone 91
+- V8692: Unified Portal Milestone 92
+- V8693: Unified Portal Milestone 93
+- V8694: Unified Portal Milestone 94
+- V8695: Unified Portal Milestone 95
+- V8696: Unified Portal Milestone 96
+- V8697: Unified Portal Milestone 97
+- V8698: Unified Portal Milestone 98
+- V8699: Unified Portal Milestone 99
+- V8700: Unified Portal Milestone 100
+- V8701: Unified Portal Milestone 101
+- V8702: Unified Portal Milestone 102
+- V8703: Unified Portal Milestone 103
+- V8704: Unified Portal Milestone 104
+- V8705: Unified Portal Milestone 105
+- V8706: Unified Portal Milestone 106
+- V8707: Unified Portal Milestone 107
+- V8708: Unified Portal Milestone 108
+- V8709: Unified Portal Milestone 109
+- V8710: Unified Portal Milestone 110
+- V8711: Unified Portal Milestone 111
+- V8712: Unified Portal Milestone 112
+- V8713: Unified Portal Milestone 113
+- V8714: Unified Portal Milestone 114
+- V8715: Unified Portal Milestone 115
+- V8716: Unified Portal Milestone 116
+- V8717: Unified Portal Milestone 117
+- V8718: Unified Portal Milestone 118
+- V8719: Unified Portal Milestone 119
+- V8720: Unified Portal Milestone 120
+- V8721: Unified Portal Milestone 121
+- V8722: Unified Portal Milestone 122
+- V8723: Unified Portal Milestone 123
+- V8724: Unified Portal Milestone 124
+- V8725: Unified Portal Milestone 125
+- V8726: Unified Portal Milestone 126
+- V8727: Unified Portal Milestone 127
+- V8728: Unified Portal Milestone 128
+- V8729: Unified Portal Milestone 129
+- V8730: Unified Portal Milestone 130
+- V8731: Unified Portal Milestone 131
+- V8732: Unified Portal Milestone 132
+- V8733: Unified Portal Milestone 133
+- V8734: Unified Portal Milestone 134
+- V8735: Unified Portal Milestone 135
+- V8736: Unified Portal Milestone 136
+- V8737: Unified Portal Milestone 137
+- V8738: Unified Portal Milestone 138
+- V8739: Unified Portal Milestone 139
+- V8740: Unified Portal Milestone 140
+- V8741: Unified Portal Milestone 141
+- V8742: Unified Portal Milestone 142
+- V8743: Unified Portal Milestone 143
+- V8744: Unified Portal Milestone 144
+- V8745: Unified Portal Milestone 145
+- V8746: Unified Portal Milestone 146
+- V8747: Unified Portal Milestone 147
+- V8748: Unified Portal Milestone 148
+- V8749: Unified Portal Milestone 149
+- V8750: Unified Portal Milestone 150
+- V8751: Unified Portal Milestone 151
+- V8752: Unified Portal Milestone 152
+- V8753: Unified Portal Milestone 153
+- V8754: Unified Portal Milestone 154
+- V8755: Unified Portal Milestone 155
+- V8756: Unified Portal Milestone 156
+- V8757: Unified Portal Milestone 157
+- V8758: Unified Portal Milestone 158
+- V8759: Unified Portal Milestone 159
+- V8760: Unified Portal Milestone 160
+- V8761: Unified Portal Milestone 161
+- V8762: Unified Portal Milestone 162
+- V8763: Unified Portal Milestone 163
+- V8764: Unified Portal Milestone 164
+- V8765: Unified Portal Milestone 165
+- V8766: Unified Portal Milestone 166
+- V8767: Unified Portal Milestone 167
+- V8768: Unified Portal Milestone 168
+- V8769: Unified Portal Milestone 169
+- V8770: Unified Portal Milestone 170
+- V8771: Unified Portal Milestone 171
+- V8772: Unified Portal Milestone 172
+- V8773: Unified Portal Milestone 173
+- V8774: Unified Portal Milestone 174
+- V8775: Unified Portal Milestone 175
+- V8776: Unified Portal Milestone 176
+- V8777: Unified Portal Milestone 177
+- V8778: Unified Portal Milestone 178
+- V8779: Unified Portal Milestone 179
+- V8780: Unified Portal Milestone 180
+- V8781: Unified Portal Milestone 181
+- V8782: Unified Portal Milestone 182
+- V8783: Unified Portal Milestone 183
+- V8784: Unified Portal Milestone 184
+- V8785: Unified Portal Milestone 185
+- V8786: Unified Portal Milestone 186
+- V8787: Unified Portal Milestone 187
+- V8788: Unified Portal Milestone 188
+- V8789: Unified Portal Milestone 189
+- V8790: Unified Portal Milestone 190
+- V8791: Unified Portal Milestone 191
+- V8792: Unified Portal Milestone 192
+- V8793: Unified Portal Milestone 193
+- V8794: Unified Portal Milestone 194
+- V8795: Unified Portal Milestone 195
+- V8796: Unified Portal Milestone 196
+- V8797: Unified Portal Milestone 197
+- V8798: V8798 Final Review
+- V8799: V8799 Final Review
+- V8800: V8800 Complete
+
+The portal reads the existing actual multi-broker sync output files and
+provides read-only HTTP APIs plus a responsive web dashboard.
+
+Default address: http://127.0.0.1:8768
+
+No endpoint submits, replaces, or cancels broker orders.

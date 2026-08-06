@@ -1,0 +1,80 @@
+{
+  "account_count": 2,
+  "account_table_ready": true,
+  "accounts_api_ready": true,
+  "actual_broker_read_performed": false,
+  "actual_broker_write_performed": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "broker_cards_ready": true,
+  "certification_fingerprint": "b25f6493146d7949d68ecabbb5701cd8b3493208c912da29fc2ef2557d07950f",
+  "dashboard_api_ready": true,
+  "dashboard_fixture": {
+    "broker_cards": [
+      {
+        "account_count": 1,
+        "broker": "ALPACA",
+        "freshness": "FRESH",
+        "order_count": 1,
+        "position_count": 1,
+        "read_only": true,
+        "status": "CONNECTED",
+        "write_enabled": false
+      },
+      {
+        "account_count": 1,
+        "broker": "ETRADE",
+        "freshness": "FRESH",
+        "order_count": 1,
+        "position_count": 1,
+        "read_only": true,
+        "status": "CONNECTED",
+        "write_enabled": false
+      }
+    ],
+    "broker_write_enabled": false,
+    "detail_counts": {
+      "accounts": 2,
+      "orders": 2,
+      "positions": 2,
+      "quotes": 0
+    },
+    "errors": [],
+    "generated_at": "2026-08-06T00:00:00+00:00",
+    "issues": [],
+    "mode": "READ_ONLY",
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "overall_status": "HEALTHY",
+    "run_id": "portal-fixture",
+    "totals": {
+      "accounts": 2,
+      "brokers": 2,
+      "errors": 0,
+      "orders": 2,
+      "positions": 2,
+      "reconciliation_issues": 1
+    }
+  },
+  "default_port": 8768,
+  "empty_state_ready": true,
+  "five_second_refresh_ready": true,
+  "issue_count": 1,
+  "issue_view_ready": true,
+  "next_fixed_development": "V8801_TO_V9000_PAPER_CONTROLLER_GUI_REST_API_AND_RUNTIME_COMMAND_CENTER",
+  "order_count": 2,
+  "order_table_ready": true,
+  "orders_api_ready": true,
+  "portal_http_server_ready": true,
+  "position_count": 2,
+  "position_table_ready": true,
+  "positions_api_ready": true,
+  "reconciliation_api_ready": true,
+  "responsive_ui_ready": true,
+  "stage": "V8601_TO_V8800_UNIFIED_TRADING_PORTAL_AND_LIVE_MULTI_BROKER_DASHBOARD",
+  "status": "PASS"
+}
