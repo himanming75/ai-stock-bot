@@ -1,0 +1,20 @@
+{
+  "automatic_changes_performed": false,
+  "champion_review": {
+    "automatic_change_performed": false,
+    "current_champion": "MOMENTUM",
+    "reason": "CHALLENGER_OUTPERFORMS_CHAMPION",
+    "recommendation": "REVIEW_CHANGE",
+    "recommended_champion": "BREAKOUT"
+  },
+  "generated_at": "2026-08-06T00:12:45.093885+00:00",
+  "healthy_strategies": [
+    "BREAKOUT",
+    "MOMENTUM"
+  ],
+  "report_type": "WEEKLY_LEARNING_REPORT",
+  "watch_strategies": [],
+  "weak_strategies": [
+    "MEAN_REVERSION"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "confidence": "0.91",
+  "factors": [
+    {
+      "name": "daily_loss_guard",
+      "value": "BREACHED"
+    },
+    {
+      "name": "weekly_loss_guard",
+      "value": "NORMAL"
+    }
+  ],
+  "final_action": "WAIT",
+  "human_summary": "WAIT NVDA: SAFETY_OVERRIDE:RISK_HOLD; confidence=0.91",
+  "reason": "SAFETY_OVERRIDE:RISK_HOLD",
+  "regime": "BULL_TREND",
+  "requested_action": "BUY",
+  "safety_state": "RISK_HOLD",
+  "strategy_id": "BREAKOUT",
+  "symbol": "NVDA"
+}

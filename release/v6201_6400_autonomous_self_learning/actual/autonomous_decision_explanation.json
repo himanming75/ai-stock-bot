@@ -1,0 +1,33 @@
+{
+  "confidence": "0.91",
+  "factors": [
+    {
+      "name": "multi_ai_score",
+      "value": "0.89"
+    },
+    {
+      "name": "portfolio_fit",
+      "value": "0.84"
+    },
+    {
+      "name": "risk_score",
+      "value": "0.81"
+    },
+    {
+      "name": "trend_score",
+      "value": "0.94"
+    },
+    {
+      "name": "volume_score",
+      "value": "0.88"
+    }
+  ],
+  "final_action": "BUY",
+  "human_summary": "BUY NVDA: BREAKOUT_DECISION_IN_BULL_TREND; confidence=0.91",
+  "reason": "BREAKOUT_DECISION_IN_BULL_TREND",
+  "regime": "BULL_TREND",
+  "requested_action": "BUY",
+  "safety_state": "NORMAL",
+  "strategy_id": "BREAKOUT",
+  "symbol": "NVDA"
+}

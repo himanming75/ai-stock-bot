@@ -1,0 +1,10 @@
+git add autonomous_self_learning
+git add tools/run_v6201_to_v6400_autonomous_self_learning.py
+git add tools/test_v6201_to_v6400_autonomous_self_learning.py
+git add release/v6201_6400_autonomous_self_learning
+git add RUN_V6201_TO_V6400_AUTONOMOUS_SELF_LEARNING.ps1
+git add RUN_V6201_TO_V6400_AUTONOMOUS_SELF_LEARNING_TEST.ps1
+git add V6201_TO_V6400_AUTONOMOUS_SELF_LEARNING_MANIFEST.json
+git add GIT_COMMIT_V6201_TO_V6400_AUTONOMOUS_SELF_LEARNING.txt
+git commit -m "Add V6201-V6400 autonomous self learning explainable AI"
+git push origin main

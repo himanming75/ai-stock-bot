@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "average_loss": "-0.004",
+      "average_return": "0.0125",
+      "average_win": "0.01642857142857142857142857143",
+      "max_drawdown": "0.008",
+      "profit_factor": "17.25",
+      "recommendations": [
+        "MAINTAIN_CURRENT_PARAMETERS"
+      ],
+      "sharpe_proxy": "1.323140310062407862822679829",
+      "stability": "0.8762307692307692307692307692",
+      "status": "HEALTHY",
+      "strategy_id": "BREAKOUT",
+      "trade_count": 26,
+      "weakness_reasons": [],
+      "win_rate": "0.8076923076923076923076923077"
+    },
+    {
+      "average_loss": "-0.02633333333333333333333333333",
+      "average_return": "-0.01825",
+      "average_win": "0.006",
+      "max_drawdown": "0.071462527144",
+      "profit_factor": "0.07594936708860759493670886076",
+      "recommendations": [
+        "COLLECT_MORE_TRADES",
+        "REVIEW_ENTRY_FILTER",
+        "TIGHTEN_LOSS_CONTROL",
+        "REDUCE_POSITION_SIZE",
+        "REVIEW_REGIME_FILTER"
+      ],
+      "sharpe_proxy": "-1.208139110185174381385551210",
+      "stability": "0.4690000000000000000000000000",
+      "status": "WEAK",
+      "strategy_id": "MEAN_REVERSION",
+      "trade_count": 4,
+      "weakness_reasons": [
+        "INSUFFICIENT_EVIDENCE",
+        "LOW_WIN_RATE",
+        "LOW_PROFIT_FACTOR",
+        "LOW_RISK_ADJUSTED_RETURN",
+        "LOW_STABILITY"
+      ],
+      "win_rate": "0.25"
+    },
+    {
+      "average_loss": "-0.005",
+      "average_return": "0.0075",
+      "average_win": "0.01210526315789473684210526316",
+      "max_drawdown": "0.009976",
+      "profit_factor": "6.571428571428571428571428571",
+      "recommendations": [
+        "MAINTAIN_CURRENT_PARAMETERS"
+      ],
+      "sharpe_proxy": "0.8654707925179592868237235212",
+      "stability": "0.8294230769230769230769230769",
+      "status": "HEALTHY",
+      "strategy_id": "MOMENTUM",
+      "trade_count": 26,
+      "weakness_reasons": [],
+      "win_rate": "0.7307692307692307692307692308"
+    }
+  ]
+}

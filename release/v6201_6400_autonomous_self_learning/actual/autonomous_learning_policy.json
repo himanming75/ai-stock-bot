@@ -1,0 +1,8 @@
+{
+  "automatic_champion_change_enabled": false,
+  "automatic_parameter_mutation_enabled": false,
+  "automatic_strategy_disable_enabled": false,
+  "automatic_voter_weight_learning_enabled": false,
+  "manual_approval_required": true,
+  "recommendation_only": true
+}
