@@ -1,0 +1,12 @@
+git add paper_command_center
+git add tools/run_paper_command_center.py
+git add tools/run_v8801_to_v9000_paper_command_center_certification.py
+git add tools/test_v8801_to_v9000_paper_command_center.py
+git add release/v8801_9000_paper_command_center
+git add RUN_V8801_TO_V9000_PAPER_COMMAND_CENTER_TEST.ps1
+git add RUN_V8801_TO_V9000_PAPER_COMMAND_CENTER_CERTIFICATION.ps1
+git add RUN_PAPER_RUNTIME_COMMAND_CENTER.ps1
+git add V8801_TO_V9000_PAPER_COMMAND_CENTER_MANIFEST.json
+git add GIT_COMMIT_V8801_TO_V9000_PAPER_COMMAND_CENTER.txt
+git commit -m "Add V8801-V9000 paper runtime command center"
+git push origin main

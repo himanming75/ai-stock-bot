@@ -1,0 +1,101 @@
+{
+  "actual_broker_write_performed": false,
+  "actual_credentials_used": false,
+  "actual_external_network_used": false,
+  "actual_live_orders_submitted": 0,
+  "actual_order_cancel_performed": false,
+  "actual_order_submission_performed": false,
+  "actual_paper_orders_submitted": 0,
+  "actual_process_started": false,
+  "actual_process_stopped": false,
+  "actual_task_scheduler_modified": false,
+  "audit_ledger_ready": true,
+  "certification_fingerprint": "9437b43b667bc1473eba94b2dcca565c75975a3268438b88cdc3fd89efabdc38",
+  "command_plan_api_ready": true,
+  "controller_summary_ready": true,
+  "daily_session_summary_ready": true,
+  "default_port": 8769,
+  "five_second_refresh_ready": true,
+  "fixture_plan_count": 5,
+  "fixture_status": {
+    "checkpoint": {
+      "_available": true,
+      "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\checkpoint.json",
+      "status": "VALID"
+    },
+    "controller": {
+      "available": true,
+      "state": "READY",
+      "summary": {
+        "_available": true,
+        "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\controller.json",
+        "cycle_count": 10,
+        "status": "READY"
+      }
+    },
+    "daily_session": {
+      "available": true,
+      "state": "WAITING",
+      "summary": {
+        "_available": true,
+        "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\daily.json",
+        "status": "WAITING"
+      }
+    },
+    "execution_plan": {
+      "_available": true,
+      "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\execution.json",
+      "mode": "READ_ONLY"
+    },
+    "generated_at": "2026-08-06T04:22:20.955093+00:00",
+    "mode": "READ_ONLY_COMMAND_PLANNING",
+    "order_tickets": {
+      "_available": true,
+      "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\tickets.json",
+      "ticket_count": 0
+    },
+    "overall_status": "READY",
+    "polling": {
+      "available": true,
+      "error": null,
+      "items": [
+        {
+          "cycle": 1,
+          "status": "PASS"
+        }
+      ],
+      "line_count": 1,
+      "path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\polling.jsonl"
+    },
+    "safety": {
+      "broker_write_enabled": false,
+      "command_execution_enabled": false,
+      "order_cancel_enabled": false,
+      "order_submission_enabled": false,
+      "process_start_enabled": false,
+      "process_stop_enabled": false,
+      "task_scheduler_write_enabled": false
+    },
+    "watchdog": {
+      "available": true,
+      "state": "HEALTHY",
+      "summary": {
+        "_available": true,
+        "_path": "release\\v8801_9000_paper_command_center\\actual\\fixtures\\watchdog.json",
+        "status": "HEALTHY"
+      }
+    }
+  },
+  "next_fixed_development": "V9001_TO_V9200_PROFILE_STRATEGY_AND_RISK_CONFIGURATION_GUI",
+  "pause_plan_ready": true,
+  "polling_tail_ready": true,
+  "responsive_gui_ready": true,
+  "resume_plan_ready": true,
+  "runtime_status_reader_ready": true,
+  "stage": "V8801_TO_V9000_PAPER_CONTROLLER_GUI_REST_API_AND_RUNTIME_COMMAND_CENTER",
+  "start_plan_ready": true,
+  "status": "PASS",
+  "stop_plan_ready": true,
+  "validate_plan_ready": true,
+  "watchdog_summary_ready": true
+}

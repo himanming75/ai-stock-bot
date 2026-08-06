@@ -1,0 +1,5 @@
+{"action": "START", "command_id": "cmd_47d3f4d50fcdd4a0", "created_at": "2026-08-06T04:22:20.955129+00:00", "execution_status": "NOT_EXECUTED", "mode": "DRY_RUN_ONLY", "requested_by": "CERTIFICATION"}
+{"action": "PAUSE", "command_id": "cmd_edd5190e438e4f73", "created_at": "2026-08-06T04:22:20.957348+00:00", "execution_status": "NOT_EXECUTED", "mode": "DRY_RUN_ONLY", "requested_by": "CERTIFICATION"}
+{"action": "RESUME", "command_id": "cmd_104308aac051b429", "created_at": "2026-08-06T04:22:20.959038+00:00", "execution_status": "NOT_EXECUTED", "mode": "DRY_RUN_ONLY", "requested_by": "CERTIFICATION"}
+{"action": "STOP", "command_id": "cmd_5aa8ad10b439b541", "created_at": "2026-08-06T04:22:20.960525+00:00", "execution_status": "NOT_EXECUTED", "mode": "DRY_RUN_ONLY", "requested_by": "CERTIFICATION"}
+{"action": "VALIDATE", "command_id": "cmd_ad8c27ddc972103f", "created_at": "2026-08-06T04:22:20.962809+00:00", "execution_status": "NOT_EXECUTED", "mode": "DRY_RUN_ONLY", "requested_by": "CERTIFICATION"}

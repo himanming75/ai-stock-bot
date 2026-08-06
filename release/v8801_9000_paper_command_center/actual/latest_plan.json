@@ -1,0 +1,19 @@
+{
+  "action": "VALIDATE",
+  "approval_status": "REVIEW_REQUIRED",
+  "command_id": "cmd_ad8c27ddc972103f",
+  "created_at": "2026-08-06T04:22:20.962809+00:00",
+  "execution_status": "NOT_EXECUTED",
+  "mode": "DRY_RUN_ONLY",
+  "planned_effect": "Prepare configuration validation request.",
+  "reason": "fixture",
+  "requested_by": "CERTIFICATION",
+  "safety": {
+    "broker_write_enabled": false,
+    "order_cancel_enabled": false,
+    "order_submission_enabled": false,
+    "process_execution_enabled": false,
+    "process_termination_enabled": false,
+    "windows_task_change_enabled": false
+  }
+}

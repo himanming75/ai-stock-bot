@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1">
+  <title>Paper Runtime Command Center</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside>
+    <h1>AI Stock Bot</h1>
+    <p>Paper Runtime Command Center</p>
+    <nav>
+      <button class="active">Runtime</button>
+      <button>Controller</button>
+      <button>Watchdog</button>
+      <button>Session</button>
+      <button>Polling</button>
+    </nav>
+    <div class="safe">
+      <strong>DRY RUN ONLY</strong>
+      <span>Command Execution OFF</span>
+      <span>Broker Write OFF</span>
+      <span>Orders OFF</span>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h2>Paper Runtime Command Center</h2>
+        <p id="updated">Loading...</p>
+      </div>
+      <div id="overall" class="pill">LOADING</div>
+    </header>
+
+    <section id="cards" class="cards"></section>
+
+    <section class="panel">
+      <h3>Command Plan</h3>
+      <p>
+        Buttons create reviewable DRY-RUN plans only.
+        They do not start or stop any process.
+      </p>
+      <div class="actions">
+        <button data-action="START">Start Plan</button>
+        <button data-action="PAUSE">Pause Plan</button>
+        <button data-action="RESUME">Resume Plan</button>
+        <button data-action="STOP">Stop Plan</button>
+        <button data-action="VALIDATE">
+          Validate Plan
+        </button>
+      </div>
+      <label>
+        Reason
+        <input id="reason"
+               placeholder="Optional note">
+      </label>
+      <pre id="plan">No command plan yet.</pre>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h3>Controller Summary</h3>
+        <pre id="controller"></pre>
+      </article>
+      <article class="panel">
+        <h3>Watchdog Summary</h3>
+        <pre id="watchdog"></pre>
+      </article>
+      <article class="panel">
+        <h3>Daily Session</h3>
+        <pre id="session"></pre>
+      </article>
+      <article class="panel">
+        <h3>Recent Polling</h3>
+        <pre id="polling"></pre>
+      </article>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
