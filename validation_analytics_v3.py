@@ -521,3 +521,236 @@ def main_report(root: Path):
         json.dumps(report,indent=2,default=str),encoding="utf-8"
     )
     return report
+
+# === PAPER_LIFECYCLE_DIAGNOSTICS_V1_4_EXTENSION ===
+
+def _rr_band_value(v):
+    x=f(v)
+    if x is None: return None
+    if x>=2.0: return "2.00+"
+    if x>=1.5: return "1.50-2.00"
+    if x>=1.25: return "1.25-1.50"
+    if x>=1.0: return "1.00-1.25"
+    return "<1.00"
+
+def _hold_band_value(v):
+    x=f(v)
+    if x is None: return None
+    if x<10: return "<10m"
+    if x<20: return "10-20m"
+    if x<30: return "20-30m"
+    return "30m+"
+
+def _entry_et_bucket(value):
+    dt=parse_dt(value)
+    if dt is None: return None
+    try:
+        from zoneinfo import ZoneInfo as _ZoneInfo
+        et=dt.astimezone(_ZoneInfo("America/New_York"))
+    except Exception:
+        et=dt
+    mins=et.hour*60+et.minute
+    if mins < 10*60+30: return "09:30-10:30_ET"
+    if mins < 12*60: return "10:30-12:00_ET"
+    if mins < 14*60: return "12:00-14:00_ET"
+    if mins < 15*60: return "14:00-15:00_ET"
+    return "15:00-16:00_ET"
+
+def _read_real_history_index(root: Path):
+    p=Path(root)/"runtime/real_historical_ingestion/alpaca_real_historical_1min.jsonl"
+    by=defaultdict(list)
+    if not p.exists():
+        return by
+    for row in read_jsonl(p):
+        symbol=str(row.get("symbol") or "").upper()
+        ts=parse_dt(row.get("timestamp"))
+        close=f(row.get("close")); high=f(row.get("high")); low=f(row.get("low"))
+        if symbol and ts and close is not None:
+            by[symbol].append((ts,close,high,low))
+    for symbol in by:
+        by[symbol].sort(key=lambda x:x[0])
+    return by
+
+def _trade_excursion(trade, history):
+    symbol=str(trade.get("symbol") or "").upper()
+    entry_dt=parse_dt(trade.get("entry_time_et") or trade.get("entry_time"))
+    exit_dt=parse_dt(trade.get("exit_time_et") or trade.get("exit_time"))
+    entry=f(trade.get("entry_price"))
+    if not symbol or entry_dt is None or exit_dt is None or entry in (None,0):
+        return {"mfe_pct":None,"mae_pct":None,"bars_observed":0}
+    highs=[]; lows=[]; bars=0
+    for ts,close,high,low in history.get(symbol,[]):
+        if ts < entry_dt: continue
+        if ts > exit_dt: break
+        bars+=1
+        highs.append(high if high is not None else close)
+        lows.append(low if low is not None else close)
+    if not highs or not lows:
+        return {"mfe_pct":None,"mae_pct":None,"bars_observed":bars}
+    mfe=max((x-entry)/entry for x in highs)
+    mae=min((x-entry)/entry for x in lows)
+    return {"mfe_pct":round(mfe,8),"mae_pct":round(mae,8),"bars_observed":bars}
+
+def _group_trade_metrics(rows, key_fn):
+    groups=defaultdict(list)
+    for r in rows:
+        key=key_fn(r)
+        p=pnl_from(r)
+        if key not in (None,"") and p is not None:
+            groups[str(key)].append(r)
+    out=[]
+    for key,items in groups.items():
+        pnls=[pnl_from(x) for x in items if pnl_from(x) is not None]
+        m=metric(pnls)
+        mfes=[f(x.get("mfe_pct")) for x in items if f(x.get("mfe_pct")) is not None]
+        maes=[f(x.get("mae_pct")) for x in items if f(x.get("mae_pct")) is not None]
+        holds=[f(x.get("hold_minutes")) for x in items if f(x.get("hold_minutes")) is not None]
+        out.append({
+            "group":key,
+            **m,
+            "average_mfe_pct":round(sum(mfes)/len(mfes),8) if mfes else None,
+            "average_mae_pct":round(sum(maes)/len(maes),8) if maes else None,
+            "average_hold_minutes":round(sum(holds)/len(holds),4) if holds else None,
+        })
+    out.sort(key=lambda x:(x["count"],x["total_pl"]),reverse=True)
+    return out
+
+def lifecycle_replay_diagnostics(root: Path):
+    root=Path(root)
+    replay_path=root/"runtime/real_market_multitimeframe_shadow/latest_paper_lifecycle_replay.json"
+    replay=read_json(replay_path) or {}
+    trades=replay.get("closed_trades",[]) if isinstance(replay,dict) else []
+    if not isinstance(trades,list):
+        trades=[]
+
+    history=_read_real_history_index(root)
+    enriched=[]
+    for raw in trades:
+        if not isinstance(raw,dict): continue
+        row=dict(raw)
+        row.update(_trade_excursion(row,history))
+        row["confidence_band"] = confidence_band_value(row.get("entry_confidence"))
+        row["reward_risk_band"] = _rr_band_value(row.get("entry_reward_risk"))
+        row["hold_band"] = _hold_band_value(row.get("hold_minutes"))
+        row["entry_time_bucket_et"] = _entry_et_bucket(row.get("entry_time_et"))
+        enriched.append(row)
+
+    pnls=[pnl_from(x) for x in enriched if pnl_from(x) is not None]
+    overall=metric(pnls)
+
+    breakdowns={
+        "symbol":_group_trade_metrics(enriched,lambda r:r.get("symbol")),
+        "exit_reason":_group_trade_metrics(enriched,lambda r:r.get("exit_reason")),
+        "entry_time_et":_group_trade_metrics(enriched,lambda r:r.get("entry_time_bucket_et")),
+        "confidence":_group_trade_metrics(enriched,lambda r:r.get("confidence_band")),
+        "reward_risk":_group_trade_metrics(enriched,lambda r:r.get("reward_risk_band")),
+        "hold_time":_group_trade_metrics(enriched,lambda r:r.get("hold_band")),
+    }
+
+    time_exit=[x for x in enriched if str(x.get("exit_reason") or "")=="TIME_EXIT"]
+    time_pnls=[pnl_from(x) for x in time_exit if pnl_from(x) is not None]
+    time_metrics=metric(time_pnls)
+    time_mfes=[f(x.get("mfe_pct")) for x in time_exit if f(x.get("mfe_pct")) is not None]
+    time_maes=[f(x.get("mae_pct")) for x in time_exit if f(x.get("mae_pct")) is not None]
+    time_analysis={
+        "trade_count":len(time_exit),
+        "metrics":time_metrics,
+        "average_mfe_pct":round(sum(time_mfes)/len(time_mfes),8) if time_mfes else None,
+        "average_mae_pct":round(sum(time_maes)/len(time_maes),8) if time_maes else None,
+        "positive_mfe_ge_take_profit_pct_count":sum(
+            1 for x in time_exit
+            if isinstance(f(x.get("mfe_pct")),(int,float))
+            and f(x.get("mfe_pct")) >= .008
+        ),
+        "mae_breached_stop_loss_pct_count":sum(
+            1 for x in time_exit
+            if isinstance(f(x.get("mae_pct")),(int,float))
+            and f(x.get("mae_pct")) <= -.005
+        ),
+    }
+
+    hypotheses=[]
+    if time_metrics.get("count",0)>=10 and isinstance(time_metrics.get("expectancy"),(int,float)):
+        if time_metrics["expectancy"]<0:
+            hypotheses.append({
+                "id":"REVIEW_MAX_HOLD_TIME_EXIT",
+                "status":"RESEARCH_CANDIDATE_ONLY",
+                "evidence":{
+                    "time_exit_count":time_metrics["count"],
+                    "time_exit_expectancy":time_metrics["expectancy"],
+                    "time_exit_profit_factor":time_metrics.get("profit_factor"),
+                    "average_mfe_pct":time_analysis.get("average_mfe_pct"),
+                    "average_mae_pct":time_analysis.get("average_mae_pct"),
+                },
+                "action":"Evaluate alternative max-hold values only in counterfactual research; do not change production.",
+            })
+    worst_symbols=sorted(
+        [x for x in breakdowns["symbol"] if isinstance(x.get("expectancy"),(int,float))],
+        key=lambda x:x["expectancy"]
+    )
+    if worst_symbols and worst_symbols[0]["count"]>=5 and worst_symbols[0]["expectancy"]<0:
+        hypotheses.append({
+            "id":"REVIEW_SYMBOL_FILTER",
+            "status":"RESEARCH_CANDIDATE_ONLY",
+            "evidence":{
+                "symbol":worst_symbols[0]["group"],
+                "count":worst_symbols[0]["count"],
+                "expectancy":worst_symbols[0]["expectancy"],
+                "profit_factor":worst_symbols[0].get("profit_factor"),
+            },
+            "action":"Test exclusion/down-weighting only in research replay; do not alter allowed_symbols.",
+        })
+
+    report={
+        "stage":"PAPER_LIFECYCLE_DIAGNOSTICS_V1_4",
+        "status":"PASS" if enriched else "COLLECTING_DATA",
+        "mode":"READ_ONLY_RESEARCH_DIAGNOSTICS",
+        "generated_at_utc":datetime.now(timezone.utc).isoformat(),
+        "source_replay":"runtime/real_market_multitimeframe_shadow/latest_paper_lifecycle_replay.json",
+        "closed_trade_count":len(enriched),
+        "overall_metrics":overall,
+        "breakdowns":breakdowns,
+        "time_exit_diagnostics":time_analysis,
+        "research_only_hypotheses":hypotheses,
+        "enriched_trades":enriched,
+        "interpretation":{
+            "mfe_mae_source":"real Alpaca historical 1-minute OHLC bars between simulated entry and exit",
+            "purpose":"diagnose the existing V1.3.1 historical Paper lifecycle replay without changing parameters",
+            "parameter_change_performed":False,
+            "automatic_promotion":False,
+        },
+        "contracts":{
+            "broker_write_performed":False,
+            "order_submission_performed":False,
+            "paper_task_modified":False,
+            "production_signal_report_modified":False,
+            "strategy_parameter_changed":False,
+            "risk_parameter_changed":False,
+            "automatic_parameter_optimization":False,
+            "live_auto_enable":False,
+        },
+    }
+    out=root/"runtime/paper_backtest_validation_analytics_v3"
+    out.mkdir(parents=True,exist_ok=True)
+    (out/"latest_lifecycle_diagnostics.json").write_text(
+        json.dumps(report,indent=2,default=str),encoding="utf-8"
+    )
+    return report
+
+_PRE_V14_MAIN_REPORT = main_report
+
+def main_report(root: Path):
+    report=_PRE_V14_MAIN_REPORT(root)
+    diag=lifecycle_replay_diagnostics(Path(root))
+    report["paper_lifecycle_historical_diagnostics"]=diag
+    report.setdefault("interpretation",{})["lifecycle_diagnostics_scope"] = (
+        "Research-only analysis of V1.3.1 historical lifecycle replay; no production parameter changes."
+    )
+    out=Path(root)/"runtime/paper_backtest_validation_analytics_v3"
+    out.mkdir(parents=True,exist_ok=True)
+    (out/"latest_validation_analytics.json").write_text(
+        json.dumps(report,indent=2,default=str),encoding="utf-8"
+    )
+    return report
+
+# === END PAPER_LIFECYCLE_DIAGNOSTICS_V1_4_EXTENSION ===
