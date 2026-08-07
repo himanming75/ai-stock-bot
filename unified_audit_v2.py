@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 from datetime import datetime, timezone
 import json
 from validation_analytics_v3 import main_report
@@ -28,6 +28,7 @@ def build(root):
     reliability=read_json(rt/"paper_operational_reliability_v2/latest_operational_reliability_report.json")
     watchdog=read_json(rt/"paper_operational_reliability_v2/watchdog_latest.json")
     analytics=main_report(root)
+    etrade_live=read_json(rt/"etrade_live_readiness_stage1/latest_etrade_live_readiness.json")
     baseline=analytics.get("validation_baseline",{}); base=max(0,int(baseline.get("baseline_closed_trade_count",0) or 0))
     validation_closed=closed[base:]
     events=[]
@@ -57,6 +58,7 @@ def build(root):
             "ai_outcome_metrics":ai_link.get("metrics",{}),
             "ai_linked_trades":ai_link.get("rows",[]),
             "live_readiness":analytics.get("live_readiness",{}),
+            "etrade_live_readiness":etrade_live,
             "reliability_health":reliability.get("health",{}),"watchdog":watchdog,
             "broker_snapshot":{"market_open":broker.get("market_open"),"position_count":broker.get("position_count",0),
                                "position_symbols":broker.get("position_symbols",[]),"open_order_count":broker.get("open_order_count",0),
@@ -65,3 +67,4 @@ def build(root):
     out=rt/"paper_unified_audit_v2"; out.mkdir(parents=True,exist_ok=True)
     (out/"latest_unified_trade_audit.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8")
     return report
+
