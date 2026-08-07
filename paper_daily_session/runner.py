@@ -19,6 +19,8 @@ LEDGER_REL = Path("runtime/paper_autonomous_daily_session/session_ledger.jsonl")
 LOCK_REL = Path("runtime/paper_autonomous_daily_session/session.lock")
 STOP_REL = Path("runtime/paper_autonomous_daily_session/STOP")
 LOG_REL = Path("runtime/paper_autonomous_daily_session/session.log")
+CLOSED_TRADES_REL = Path("runtime/paper_full_auto_lifecycle/closed_round_trips.jsonl")
+VALIDATION_BASELINE_REL = Path("runtime/paper_validation_2week_300/baseline.json")
 ORDER_SCRIPT = "RUN_ONE_PAPER_VALIDATION_ORDER_V14001_TO_V15000.ps1"
 
 
@@ -134,6 +136,34 @@ class PaperDailySessionRunner:
             raise RuntimeError("MAXIMUM_DAILY_ORDERS_INVALID")
         if not 0 < self.maximum_order_notional <= 100:
             raise RuntimeError("MAXIMUM_ORDER_NOTIONAL_INVALID")
+
+    def _validation_target_closed_trades(self) -> int:
+        try:
+            return max(0, int(os.getenv("PAPER_VALIDATION_TARGET_CLOSED_TRADES", "0")))
+        except (TypeError, ValueError):
+            return 0
+
+    def _closed_trade_line_count(self) -> int:
+        path = self.root / CLOSED_TRADES_REL
+        if not path.exists():
+            return 0
+        with path.open("r", encoding="utf-8-sig", errors="replace") as handle:
+            return sum(1 for line in handle if line.strip())
+
+    def _validation_baseline_closed_count(self) -> int:
+        raw = os.getenv("PAPER_VALIDATION_BASELINE_PATH", "").strip()
+        path = Path(raw) if raw else (self.root / VALIDATION_BASELINE_REL)
+        if not path.is_absolute():
+            path = self.root / path
+        if not path.exists():
+            raise RuntimeError("PAPER_VALIDATION_BASELINE_MISSING")
+        payload = json.loads(path.read_text(encoding="utf-8-sig"))
+        return max(0, int(payload.get("baseline_closed_trade_count", 0)))
+
+    def _validation_closed_trade_count(self) -> int:
+        if self._validation_target_closed_trades() <= 0:
+            return 0
+        return max(0, self._closed_trade_line_count() - self._validation_baseline_closed_count())
 
     def _client(self):
         try:
@@ -272,6 +302,32 @@ class PaperDailySessionRunner:
                         client,
                         minutes_to_close=clock["minutes_to_close"],
                     )
+
+                validation_target = self._validation_target_closed_trades()
+                validation_closed = self._validation_closed_trade_count()
+                if validation_target > 0:
+                    current_positions = list(client.get_all_positions())
+                    if validation_closed + len(current_positions) >= validation_target:
+                        if current_positions:
+                            self._status(
+                                "VALIDATION_TARGET_NEAR_MONITORING_POSITIONS",
+                                status="PASS",
+                                clock=clock,
+                                validation_closed_trades=validation_closed,
+                                validation_target_closed_trades=validation_target,
+                                open_position_count=len(current_positions),
+                                lifecycle=lifecycle,
+                            )
+                            time.sleep(self.poll_seconds)
+                            continue
+                        return self._status(
+                            "VALIDATION_TARGET_REACHED",
+                            status="PASS",
+                            clock=clock,
+                            validation_closed_trades=validation_closed,
+                            validation_target_closed_trades=validation_target,
+                            lifecycle=lifecycle,
+                        )
 
                 if (
                     clock["minutes_to_close"]

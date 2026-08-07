@@ -24,7 +24,7 @@ class Tests(unittest.TestCase):
         temp = tempfile.TemporaryDirectory()
         root = Path(temp.name)
 
-        policy = root / "release/smart_safe_trading_guard_1_0/config/guard_policy.json"
+        policy = root / "config/smart_safe_guard_policy.json"
         policy.parent.mkdir(parents=True, exist_ok=True)
         policy.write_text(json.dumps({
             "mode": "SHADOW",

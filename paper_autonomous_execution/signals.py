@@ -15,11 +15,15 @@ def select_candidate(
     allowed_symbols: tuple[str, ...],
     min_confidence: float,
     min_reward_risk: float,
+    excluded_symbols: tuple[str, ...] | set[str] = (),
 ) -> dict | None:
     eligible = []
+    excluded = {str(symbol).upper() for symbol in excluded_symbols}
     for item in candidates:
         symbol = str(item.get("symbol", "")).upper()
         action = str(item.get("action", "HOLD")).upper()
+        if symbol in excluded:
+            continue
         confidence = float(
             item.get("confidence_calibration", {}).get(
                 "calibrated_confidence", 0.0

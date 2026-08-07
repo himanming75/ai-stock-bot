@@ -1,0 +1,74 @@
+{
+  "validation_id": "PAPER_2WEEK_300_20260807",
+  "mode": "ALPACA_PAPER_ONLY",
+  "start_date": "2026-08-07",
+  "end_date": "2026-08-20",
+  "target_closed_trades": 300,
+  "minimum_trading_days": 10,
+  "daily_entry_caps": [
+    {
+      "day": 1,
+      "date": "2026-08-07",
+      "maximum_daily_entries": 15
+    },
+    {
+      "day": 2,
+      "date": "2026-08-10",
+      "maximum_daily_entries": 20
+    },
+    {
+      "day": 3,
+      "date": "2026-08-11",
+      "maximum_daily_entries": 25
+    },
+    {
+      "day": 4,
+      "date": "2026-08-12",
+      "maximum_daily_entries": 30
+    },
+    {
+      "day": 5,
+      "date": "2026-08-13",
+      "maximum_daily_entries": 35
+    },
+    {
+      "day": 6,
+      "date": "2026-08-14",
+      "maximum_daily_entries": 40
+    },
+    {
+      "day": 7,
+      "date": "2026-08-17",
+      "maximum_daily_entries": 45
+    },
+    {
+      "day": 8,
+      "date": "2026-08-18",
+      "maximum_daily_entries": 50
+    },
+    {
+      "day": 9,
+      "date": "2026-08-19",
+      "maximum_daily_entries": 50
+    },
+    {
+      "day": 10,
+      "date": "2026-08-20",
+      "maximum_daily_entries": 50
+    }
+  ],
+  "maximum_possible_entries": 360,
+  "hard_stop_at_closed_trades": 300,
+  "maximum_open_positions": 4,
+  "max_notional_per_order_effective": 25.0,
+  "live_review_gate": {
+    "automatic_live_enable": false,
+    "minimum_closed_trades": 300,
+    "minimum_trading_days": 10,
+    "minimum_profit_factor": 1.2,
+    "expectancy_must_be_positive": true,
+    "minimum_operational_health_score": 95,
+    "zero_live_orders_during_validation": true,
+    "zero_unresolved_execution_errors": true
+  }
+}

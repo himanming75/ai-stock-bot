@@ -85,11 +85,18 @@ class PaperAutonomousExecutionService:
             / "multi_timeframe_ai_report_bilingual.json"
         )
         candidates = load_signal_candidates(signal_path)
+        excluded_open_symbols = set()
+        if allow_submit:
+            try:
+                excluded_open_symbols = self.adapter.open_position_symbols()
+            except Exception:
+                excluded_open_symbols = set()
         selected = select_candidate(
             candidates,
             allowed_symbols=profile.allowed_symbols,
             min_confidence=profile.min_confidence,
             min_reward_risk=profile.min_reward_risk,
+            excluded_symbols=excluded_open_symbols,
         )
 
         now = datetime.now(timezone.utc)
@@ -100,6 +107,7 @@ class PaperAutonomousExecutionService:
             "cycle_id": cycle_id,
             "status": "NO_ACTION",
             "selected_candidate": selected,
+            "excluded_open_position_symbols": sorted(excluded_open_symbols),
             "allow_submit_requested": allow_submit,
             "paper_order_submitted": False,
             "live_order_submitted": False,

@@ -1,0 +1,15 @@
+{
+  "mode": "SHADOW",
+  "minimum_confidence": 0.8,
+  "minimum_consensus_score": 0.75,
+  "minimum_reward_risk": 1.5,
+  "maximum_order_notional": 100.0,
+  "maximum_daily_orders": 50,
+  "maximum_open_positions": 4,
+  "maximum_daily_loss": 50.0,
+  "maximum_consecutive_losses": 2,
+  "maximum_symbol_exposure": 500.0,
+  "minimum_minutes_to_close": 15,
+  "block_duplicate_symbol_buy": true,
+  "live_write_enabled": false
+}

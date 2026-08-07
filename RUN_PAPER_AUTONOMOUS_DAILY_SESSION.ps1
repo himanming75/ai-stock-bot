@@ -23,24 +23,32 @@ $env:ETRADE_LIVE_WRITE_ENABLED = "false"
 $env:ETRADE_LIVE_SUBMISSION_ENABLED = "false"
 $env:BROKER_WRITE_ENABLED = "false"
 
+$PlanPath = Join-Path $PSScriptRoot "config\paper_validation_2week_300.json"
+if(-not (Test-Path $PlanPath)) {
+    throw "PAPER 2-WEEK VALIDATION PLAN NOT FOUND"
+}
+$Plan = Get-Content $PlanPath -Raw | ConvertFrom-Json
+
 $Today = (Get-Date).Date
 $DateKey = $Today.ToString("yyyy-MM-dd")
+$DayPlan = $Plan.daily_entry_caps |
+    Where-Object { $_.date -eq $DateKey } |
+    Select-Object -First 1
 
-$Tier5Dates = @("2026-08-07","2026-08-10","2026-08-11")
-$Tier10Dates = @("2026-08-12","2026-08-13","2026-08-14")
+if(-not $DayPlan) {
+    Write-Host "PAPER VALIDATION WINDOW NOT ACTIVE FOR: $DateKey"
+    Write-Host "NO NEW PAPER ENTRY WILL BE SUBMITTED."
+    exit 0
+}
 
-if($Tier5Dates -contains $DateKey) {
-    $MaximumDailyOrders = 5
-}
-elseif($Tier10Dates -contains $DateKey) {
-    $MaximumDailyOrders = 10
-}
-elseif($Today -ge [datetime]"2026-08-17") {
-    $MaximumDailyOrders = 15
-}
-else {
-    $MaximumDailyOrders = 1
-}
+$MaximumDailyOrders = [int]$DayPlan.maximum_daily_entries
+$ValidationDay = [int]$DayPlan.day
+$ValidationTarget = [int]$Plan.target_closed_trades
+
+$env:PAPER_VALIDATION_TARGET_CLOSED_TRADES = "$ValidationTarget"
+$env:PAPER_VALIDATION_BASELINE_PATH = Join-Path `
+    $PSScriptRoot `
+    "runtime\paper_validation_2week_300\baseline.json"
 
 $MaximumOrderNotional = 100
 $PollSeconds = 60
@@ -52,6 +60,9 @@ New-Item -ItemType Directory -Path $AuditDir -Force | Out-Null
 $LaunchRecord = [ordered]@{
     timestamp = (Get-Date).ToUniversalTime().ToString("o")
     date = $DateKey
+    validation_id = $Plan.validation_id
+    validation_day = $ValidationDay
+    validation_target_closed_trades = $ValidationTarget
     broker = "ALPACA"
     paper_only = $true
     maximum_daily_orders = $MaximumDailyOrders
@@ -59,7 +70,7 @@ $LaunchRecord = [ordered]@{
     smart_safety_enforcement = $true
     maximum_daily_loss = 50
     maximum_consecutive_losses = 2
-    maximum_open_positions = 2
+    maximum_open_positions = 4
     maximum_symbol_exposure = 500
     duplicate_symbol_buy_blocked = $true
     etrade_live_write_enabled = $false
@@ -70,11 +81,13 @@ Add-Content -Path (Join-Path $AuditDir "launch_ledger.jsonl") `
 Write-Host "============================================"
 Write-Host "ALPACA PAPER AUTOTRADING"
 Write-Host "DATE: $DateKey"
-Write-Host "MAXIMUM DAILY PAPER ORDERS: $MaximumDailyOrders"
+Write-Host "VALIDATION DAY: $ValidationDay / 10"
+Write-Host "CLOSED TRADE TARGET: $ValidationTarget"
+Write-Host "MAXIMUM DAILY PAPER ENTRIES: $MaximumDailyOrders"
 Write-Host "MAXIMUM ORDER NOTIONAL: `$$MaximumOrderNotional"
 Write-Host "DAILY LOSS LIMIT: -`$50"
 Write-Host "CONSECUTIVE LOSS LIMIT: 2"
-Write-Host "MAXIMUM OPEN POSITIONS: 2"
+Write-Host "MAXIMUM OPEN POSITIONS: 4"
 Write-Host "MAXIMUM SYMBOL EXPOSURE: `$$500"
 Write-Host "DUPLICATE SYMBOL BUY: BLOCKED"
 Write-Host "ETRADE LIVE WRITE: OFF"

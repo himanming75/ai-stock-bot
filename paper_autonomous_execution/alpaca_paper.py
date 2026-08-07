@@ -50,6 +50,14 @@ class AlpacaPaperAdapter:
             "next_close": str(getattr(clock, "next_close", "")),
         }
 
+    def open_position_symbols(self) -> set[str]:
+        client = self._client()
+        return {
+            str(getattr(position, "symbol", "")).upper()
+            for position in client.get_all_positions()
+            if str(getattr(position, "symbol", "")).strip()
+        }
+
     def submit_market_notional(
         self,
         *,

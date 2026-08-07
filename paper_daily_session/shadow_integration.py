@@ -126,7 +126,7 @@ class DailySessionShadowGuard:
         last_equity = self._float(getattr(account, "last_equity", equity))
 
         result = SmartSafeTradingGuard(self.project_root).evaluate(
-            policy_path=self.project_root / "release/smart_safe_trading_guard_1_0/config/guard_policy.json",
+            policy_path=self.project_root / "config/smart_safe_guard_policy.json",
             candidate=candidate,
             account={
                 "status": (
