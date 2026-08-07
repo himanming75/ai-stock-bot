@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, time, timezone
 from collections import defaultdict
-import argparse, json, math, sys
+from zoneinfo import ZoneInfo
+import argparse, json, sys
 
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -12,16 +13,18 @@ if str(ROOT) not in sys.path:
 from multi_timeframe_ai.engine import analyze_symbol
 from paper_autonomous_execution.signals import select_candidate
 
-TIMEFRAMES={
+INTRADAY_TIMEFRAMES={
     "1m":1,
     "3m":3,
     "5m":5,
     "15m":15,
     "30m":30,
     "1h":60,
-    "1d":390,
 }
 ALLOWED=("AAPL","MSFT","NVDA","SPY")
+ET=ZoneInfo("America/New_York")
+REGULAR_OPEN=time(9,30)
+REGULAR_CLOSE=time(16,0)
 
 def ema(values,span):
     if not values:
@@ -47,41 +50,64 @@ def rsi(values,period=14):
     rs=ag/al
     return 100.0-(100.0/(1.0+rs))
 
-def aggregate(rows,n):
-    if not rows:
-        return []
-    out=[]
-    bucket=[]
+def parse_timestamp(value):
+    s=str(value).replace("Z","+00:00")
+    dt=datetime.fromisoformat(s)
+    if dt.tzinfo is None:
+        dt=dt.replace(tzinfo=timezone.utc)
+    return dt
+
+def regular_session_rows(rows):
+    sessions=defaultdict(list)
     for row in rows:
-        bucket.append(row)
-        if len(bucket)==n:
-            out.append({
-                "timestamp":bucket[-1]["timestamp"],
-                "open":bucket[0]["open"],
-                "high":max(x["high"] for x in bucket),
-                "low":min(x["low"] for x in bucket),
-                "close":bucket[-1]["close"],
-                "volume":sum(x["volume"] for x in bucket),
-            })
-            bucket=[]
-    if bucket:
-        out.append({
-            "timestamp":bucket[-1]["timestamp"],
-            "open":bucket[0]["open"],
-            "high":max(x["high"] for x in bucket),
-            "low":min(x["low"] for x in bucket),
-            "close":bucket[-1]["close"],
-            "volume":sum(x["volume"] for x in bucket),
-        })
+        dt=parse_timestamp(row["timestamp"]).astimezone(ET)
+        t=dt.time().replace(tzinfo=None)
+        if REGULAR_OPEN <= t <= REGULAR_CLOSE:
+            sessions[dt.date().isoformat()].append(row)
+    for day in sessions:
+        sessions[day].sort(key=lambda x:x["timestamp"])
+    return dict(sorted(sessions.items()))
+
+def aggregate_bucket(bucket):
+    return {
+        "timestamp":bucket[-1]["timestamp"],
+        "open":float(bucket[0]["open"]),
+        "high":max(float(x["high"]) for x in bucket),
+        "low":min(float(x["low"]) for x in bucket),
+        "close":float(bucket[-1]["close"]),
+        "volume":sum(float(x["volume"]) for x in bucket),
+    }
+
+def aggregate_intraday_by_session(sessions,n):
+    out=[]
+    for _,rows in sessions.items():
+        bucket=[]
+        for row in rows:
+            bucket.append(row)
+            if len(bucket)==n:
+                out.append(aggregate_bucket(bucket))
+                bucket=[]
+        # Deliberately discard an incomplete trailing bucket so that
+        # no timeframe crosses a trading-day boundary.
     return out
 
-def feature_from_bars(bars, tf):
+def aggregate_daily(sessions):
+    out=[]
+    for _,rows in sessions.items():
+        if not rows:
+            continue
+        out.append(aggregate_bucket(rows))
+    return out
+
+def feature_from_bars(bars,tf):
+    min_required=15 if tf=="1d" else 30
+    if len(bars)<min_required:
+        return None
+
     closes=[float(x["close"]) for x in bars]
     highs=[float(x["high"]) for x in bars]
     lows=[float(x["low"]) for x in bars]
     vols=[float(x["volume"]) for x in bars]
-    if len(closes)<30:
-        return None
 
     c=closes[-1]
     fast=ema(closes[-30:],8)
@@ -103,7 +129,6 @@ def feature_from_bars(bars, tf):
 
     rng=max(1e-12,highs[-1]-lows[-1])
     cvr=(c-lows[-1])/rng
-
     ft=(c/closes[-3]-1.0) if len(closes)>=3 and closes[-3] else 0.0
 
     return {
@@ -125,7 +150,8 @@ def load_real_rows(root):
         raise RuntimeError("Real historical dataset missing")
     by=defaultdict(list)
     for line in path.read_text(encoding="utf-8").splitlines():
-        if not line.strip(): continue
+        if not line.strip():
+            continue
         r=json.loads(line)
         by[str(r["symbol"]).upper()].append(r)
     for sym in by:
@@ -137,23 +163,52 @@ def build(root:Path):
     by=load_real_rows(root)
     analyses=[]
     feature_audit={}
+    rejected={}
 
     for symbol in ALLOWED:
         rows=by.get(symbol,[])
+        sessions=regular_session_rows(rows)
         features={}
         tf_meta={}
-        for tf,n in TIMEFRAMES.items():
-            bars=aggregate(rows,n)
+
+        for tf,n in INTRADAY_TIMEFRAMES.items():
+            bars=aggregate_intraday_by_session(sessions,n)
             feat=feature_from_bars(bars,tf)
+            tf_meta[tf]={
+                "aggregated_bars":len(bars),
+                "feature_ready":feat is not None,
+            }
             if feat is not None:
                 features[tf]=feat
-                tf_meta[tf]={"aggregated_bars":len(bars)}
-        if len(features)!=len(TIMEFRAMES):
+
+        daily=aggregate_daily(sessions)
+        daily_feat=feature_from_bars(daily,"1d")
+        tf_meta["1d"]={
+            "aggregated_bars":len(daily),
+            "trading_days":len(sessions),
+            "feature_ready":daily_feat is not None,
+        }
+        if daily_feat is not None:
+            features["1d"]=daily_feat
+
+        feature_audit[symbol]={
+            "source_minute_rows":len(rows),
+            "regular_session_days":len(sessions),
+            "timeframes":tf_meta,
+            "ready_timeframe_count":len(features),
+        }
+
+        if len(features)!=7:
+            rejected[symbol]={
+                "reason":"INCOMPLETE_SEVEN_TIMEFRAME_FEATURE_SET",
+                "ready_timeframes":sorted(features),
+                "missing_timeframes":sorted(set((*INTRADAY_TIMEFRAMES.keys(),"1d"))-set(features)),
+            }
             continue
+
         item=analyze_symbol(symbol,features)
         item["execution_mode"]="ANALYSIS_ONLY"
         analyses.append(item)
-        feature_audit[symbol]=tf_meta
 
     analyses.sort(
         key=lambda x:(
@@ -174,8 +229,10 @@ def build(root:Path):
     current_path=root/"release/v11001_12000_multi_timeframe_ai/actual/multi_timeframe_ai_report_bilingual.json"
     current={}
     if current_path.exists():
-        try: current=json.loads(current_path.read_text(encoding="utf-8-sig"))
-        except Exception: current={}
+        try:
+            current=json.loads(current_path.read_text(encoding="utf-8-sig"))
+        except Exception:
+            current={}
     current_analyses=current.get("analyses",[]) if isinstance(current,dict) else []
     current_selected=select_candidate(
         current_analyses if isinstance(current_analyses,list) else [],
@@ -188,18 +245,27 @@ def build(root:Path):
     out=root/"runtime/real_market_multitimeframe_shadow"
     out.mkdir(parents=True,exist_ok=True)
     shadow={
-        "stage":"REAL_MARKET_MULTI_TIMEFRAME_SHADOW_ADAPTER_V1",
-        "status":"PASS",
+        "stage":"REAL_MARKET_MULTI_TIMEFRAME_SHADOW_ADAPTER_V1_1",
+        "status":"PASS" if len(analyses)==len(ALLOWED) else "PARTIAL",
         "mode":"SHADOW_ANALYSIS_ONLY",
         "generated_at_utc":datetime.now(timezone.utc).isoformat(),
         "source_dataset":"runtime/real_historical_ingestion/alpaca_real_historical_1min.jsonl",
         "source_kind":"REAL_ALPACA_HISTORICAL_1MIN",
+        "resampling_contract":{
+            "timezone":"America/New_York",
+            "regular_session_only":True,
+            "regular_session":"09:30-16:00 ET",
+            "intraday_buckets_never_cross_session_boundary":True,
+            "daily_bar_is_one_regular_trading_session":True,
+            "daily_feature_minimum_trading_days":15,
+        },
         "canonical_engine":"multi_timeframe_ai.engine.analyze_symbol",
         "canonical_selector":"paper_autonomous_execution.signals.select_candidate",
         "allowed_symbols":list(ALLOWED),
         "thresholds":{"min_confidence":0.75,"min_reward_risk":1.0},
         "analyses":analyses,
         "feature_audit":feature_audit,
+        "rejected_symbols":rejected,
         "shadow_selected_candidate":selected,
         "current_fixture_selected_candidate":current_selected,
         "selection_matches":selected==current_selected,
@@ -210,7 +276,7 @@ def build(root:Path):
             "same_allowed_symbols":True,
             "same_input_source":False,
             "current_input_source":"OFFLINE_MULTI_TIMEFRAME_FIXTURE",
-            "shadow_input_source":"REAL_ALPACA_HISTORICAL_1MIN_AGGREGATED",
+            "shadow_input_source":"REAL_ALPACA_HISTORICAL_1MIN_SESSION_AWARE_RESAMPLED",
             "live_equivalence_asserted":False,
         },
         "contracts":{
@@ -223,7 +289,10 @@ def build(root:Path):
             "live_auto_enable":False,
         },
     }
-    (out/"latest_real_market_shadow.json").write_text(json.dumps(shadow,indent=2,default=str),encoding="utf-8")
+
+    (out/"latest_real_market_shadow.json").write_text(
+        json.dumps(shadow,indent=2,default=str),encoding="utf-8"
+    )
     with (out/"real_market_shadow_ledger.jsonl").open("a",encoding="utf-8") as h:
         h.write(json.dumps(shadow,default=str)+"\n")
     return shadow
