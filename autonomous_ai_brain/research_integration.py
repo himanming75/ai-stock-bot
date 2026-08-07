@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 from market_context_v16_v20.service import MarketContextIntelligence
 from market_regime_v66_v70.service import MarketRegimeEnvironmentPack
@@ -17,11 +17,9 @@ from ai_market_memory_v3.service import MarketMemoryExitIntelligence
 
 class AIResearchShadowIntegration:
     """
-    Read-only-to-trading orchestration layer.
-
-    Existing intelligence modules may write their own runtime reports/ledgers,
-    but this integration performs no broker writes, order submission, trading
-    configuration mutation, strategy promotion, or parameter mutation.
+    Existing-AI orchestration only.
+    No broker writes, no order submission, no trading-configuration mutation,
+    no automatic strategy promotion, and no parameter mutation.
     """
 
     MODULES: tuple[tuple[str, type], ...] = (
@@ -74,7 +72,6 @@ class AIResearchShadowIntegration:
                 "error": None,
             }
         except Exception as exc:
-            # Research failure must never stop or alter Paper execution.
             return {
                 "name": name,
                 "status": "ADVISORY_ERROR",
@@ -83,25 +80,24 @@ class AIResearchShadowIntegration:
                 "error": f"{type(exc).__name__}: {exc}",
             }
 
-    def _comparison(self, modules: dict[str, dict[str, Any]]) -> dict[str, Any]:
-        def result(name: str) -> dict[str, Any]:
-            row = modules.get(name, {})
-            payload = row.get("result", {})
-            return payload if isinstance(payload, dict) else {}
+    @staticmethod
+    def _module_result(modules: dict[str, dict[str, Any]], name: str) -> dict[str, Any]:
+        row = modules.get(name, {})
+        payload = row.get("result", {})
+        return payload if isinstance(payload, dict) else {}
 
-        context = result("market_context")
-        regime = result("market_regime")
-        ensemble = result("strategy_ensemble")
-        robustness = result("decision_robustness")
-        shadow = result("shadow_intelligence")
-        counter = result("counterfactual")
-        perf = result("performance_intelligence")
-        memory = result("market_memory_exit")
+    def _comparison(self, modules: dict[str, dict[str, Any]]) -> dict[str, Any]:
+        context = self._module_result(modules, "market_context")
+        regime = self._module_result(modules, "market_regime")
+        ensemble = self._module_result(modules, "strategy_ensemble")
+        robustness = self._module_result(modules, "decision_robustness")
+        shadow = self._module_result(modules, "shadow_intelligence")
+        counter = self._module_result(modules, "counterfactual")
+        perf = self._module_result(modules, "performance_intelligence")
+        memory = self._module_result(modules, "market_memory_exit")
 
         return {
             "market_context": self._extract(context, [
-                ("market_context_summary", "status"),
-                ("market_context_summary", "context"),
                 ("market_context_summary",),
             ]),
             "market_regime": self._extract(regime, [
@@ -117,6 +113,7 @@ class AIResearchShadowIntegration:
                 ("robustness_gate",),
             ]),
             "shadow_explanation": self._extract(shadow, [
+                ("explainable_ai_report",),
                 ("explainable_ai",),
                 ("v10_explainable_ai",),
             ]),
@@ -135,10 +132,45 @@ class AIResearchShadowIntegration:
             ]),
         }
 
+    def _normalized_decision(self, modules: dict[str, dict[str, Any]]) -> dict[str, Any]:
+        ensemble = self._module_result(modules, "strategy_ensemble")
+        regime = self._module_result(modules, "market_regime")
+        context = self._module_result(modules, "market_context")
+        robustness = self._module_result(modules, "decision_robustness")
+        shadow = self._module_result(modules, "shadow_intelligence")
+
+        candidate = ensemble.get("candidate", {}) if isinstance(ensemble, dict) else {}
+        ensemble_row = ensemble.get("ensemble", {}) if isinstance(ensemble, dict) else {}
+        regime_row = regime.get("v66_market_regime_classifier", {}) if isinstance(regime, dict) else {}
+        context_row = context.get("market_context_summary", {}) if isinstance(context, dict) else {}
+        gate = robustness.get("v35_robustness_gate", {}) if isinstance(robustness, dict) else {}
+        explain = shadow.get("explainable_ai_report", {}) if isinstance(shadow, dict) else {}
+
+        return {
+            "symbol": candidate.get("symbol"),
+            "original_side": candidate.get("side"),
+            "candidate_confidence": candidate.get("confidence"),
+            "candidate_consensus_score": candidate.get("consensus_score"),
+            "candidate_reward_risk": candidate.get("reward_risk"),
+            "ensemble_decision": ensemble_row.get("decision"),
+            "ensemble_weighted_score": ensemble_row.get("weighted_score"),
+            "ensemble_agreement_ratio": ensemble_row.get("agreement_ratio"),
+            "market_regime": regime_row.get("regime"),
+            "regime_confidence": regime_row.get("regime_confidence"),
+            "market_entry_context": context_row.get("market_entry_context"),
+            "robustness_status": gate.get("status"),
+            "robustness_passed_checks": gate.get("passed_checks"),
+            "robustness_total_checks": gate.get("total_checks"),
+            "explainable_headline": explain.get("headline"),
+            "positive_reasons": explain.get("positive_reasons", []),
+            "caution_reasons": explain.get("caution_reasons", []),
+            "enforced": False,
+            "order_effect": "NONE",
+        }
+
     def run(self) -> dict[str, Any]:
         module_rows = [self._run_module(name, cls) for name, cls in self.MODULES]
         module_map = {row["name"]: row for row in module_rows}
-
         advisory_errors = [
             {"name": row["name"], "error": row["error"]}
             for row in module_rows
@@ -152,6 +184,7 @@ class AIResearchShadowIntegration:
             "generated_at_utc": self._now(),
             "module_count": len(module_rows),
             "module_results": module_rows,
+            "normalized_decision": self._normalized_decision(module_map),
             "decision_comparison": self._comparison(module_map),
             "advisory_errors": advisory_errors,
             "contracts": {
