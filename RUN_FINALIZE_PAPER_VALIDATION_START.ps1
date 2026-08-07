@@ -111,6 +111,11 @@ Write-Host "[7/7] ENABLE PAPER AUTO-TRADING"
 Disable-ScheduledTask -TaskName "AIStockBot-PaperRoundtripValidationGate" -ErrorAction SilentlyContinue|Out-Null
 Enable-ScheduledTask -TaskName "AIStockBot-PaperAutonomousDailySession"|Out-Null
 
+# The daily trigger can pass before flattening finishes. Start immediately after flat confirmation.
+Start-ScheduledTask -TaskName "AIStockBot-PaperAutonomousDailySession"
+Start-Sleep -Seconds 2
+Write-Host "PAPER AUTO-TRADING IMMEDIATE START: REQUESTED"
+
 # Disable this finalizer so it does not run again after successful startup.
 Disable-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue|Out-Null
 
