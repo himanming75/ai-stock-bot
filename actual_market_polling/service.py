@@ -67,10 +67,19 @@ class ReadOnlyAlpaca:
                 "limit": str(limit),
                 "adjustment": "raw",
                 "feed": self.feed,
+                "sort": "desc",
             }
         )
         payload = self.get(f"{self.data}/v2/stocks/{symbol}/bars?{query}")
-        return payload.get("bars", [])
+        bars = payload.get("bars", [])
+
+        # Alpaca returns the newest bars first when sort=desc.
+        # The strategy calculations below expect chronological order,
+        # so normalize them back to oldest -> newest.
+        return sorted(
+            bars,
+            key=lambda bar: bar.get("t", ""),
+        )
 
 
 def build_record(symbol: str, bars: list[dict], all_returns: list[Decimal]) -> dict | None:
@@ -187,7 +196,10 @@ class ActualMarketPollingValidationService:
             "errors": errors,
         }
         raw_path = cycle_dir / "raw_readonly_snapshot.json"
-        raw_path.write_text(json.dumps(raw, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        raw_path.write_text(
+            json.dumps(raw, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
         fusion_path = cycle_dir / "fusion_input.json"
         fusion_path.write_text(
@@ -201,11 +213,17 @@ class ActualMarketPollingValidationService:
 
         if records:
             from market_intelligence.service import MarketIntelligenceFusionService
+
             market_path = cycle_dir / "market_snapshot.json"
-            market = MarketIntelligenceFusionService().run_file(fusion_path, market_path)
+            market = MarketIntelligenceFusionService().run_file(
+                fusion_path, market_path
+            )
             market_status = market.get("status", "BLOCKED")
 
-            from ai_decision_orchestration.service import AIDecisionOrchestrationService
+            from ai_decision_orchestration.service import (
+                AIDecisionOrchestrationService,
+            )
+
             policy_path = (
                 self.root
                 / "release/ai_symbol_selection_decision_orchestration/config/decision_policy.json"
@@ -215,11 +233,12 @@ class ActualMarketPollingValidationService:
                 market_path, policy_path, decision_path
             )
             decision_status = decision.get("status", "BLOCKED")
-            selected_symbols = decision.get("decision_orchestration", {}).get(
-                "selected_symbols", []
-            )
+            selected_symbols = decision.get(
+                "decision_orchestration", {}
+            ).get("selected_symbols", [])
 
             from ai_decision_bridge.service import DecisionBridgeService
+
             bridge_config = (
                 self.root
                 / "release/ai_decision_strategy_risk_portfolio_bridge/config/bridge_config.json"
@@ -229,9 +248,13 @@ class ActualMarketPollingValidationService:
                 decision_path, bridge_config, bridge_path
             )
             bridge_status = bridge.get("status", "BLOCKED")
-            approved_symbols = bridge.get("bridge", {}).get("approved_symbols", [])
+            approved_symbols = bridge.get("bridge", {}).get(
+                "approved_symbols", []
+            )
 
-        coverage_count = sum(1 for x in coverage.values() if x["covered"])
+        coverage_count = sum(
+            1 for x in coverage.values() if x["covered"]
+        )
         cycle = {
             "cycle_number": cycle_number,
             "started_at": started.isoformat(),
@@ -256,18 +279,30 @@ class ActualMarketPollingValidationService:
             "actual_order_submission_performed": False,
             "actual_paper_orders_submitted": 0,
             "actual_live_orders_submitted": 0,
-            "raw_snapshot_sha256": hashlib.sha256(raw_path.read_bytes()).hexdigest(),
+            "raw_snapshot_sha256": hashlib.sha256(
+                raw_path.read_bytes()
+            ).hexdigest(),
         }
-        with (self.output / "polling_ledger.jsonl").open("a", encoding="utf-8") as handle:
+        with (
+            self.output / "polling_ledger.jsonl"
+        ).open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(cycle, sort_keys=True) + "\n")
         return cycle
 
-    def run(self, symbols: list[str], interval_seconds: int, max_cycles: int) -> dict:
+    def run(
+        self,
+        symbols: list[str],
+        interval_seconds: int,
+        max_cycles: int,
+    ) -> dict:
         cycles = []
         for number in range(1, max_cycles + 1):
             cycle = self.run_cycle(symbols, number)
             cycles.append(cycle)
-            print(json.dumps(cycle, indent=2, sort_keys=True), flush=True)
+            print(
+                json.dumps(cycle, indent=2, sort_keys=True),
+                flush=True,
+            )
 
             if not cycle["market_is_open"]:
                 break
@@ -275,26 +310,40 @@ class ActualMarketPollingValidationService:
                 time.sleep(interval_seconds)
 
         coverage_pass_cycles = sum(
-            1 for cycle in cycles if cycle["symbols_covered"] == len(symbols)
+            1
+            for cycle in cycles
+            if cycle["symbols_covered"] == len(symbols)
         )
-        fatal_errors = sum(1 for cycle in cycles if cycle["errors"])
+        fatal_errors = sum(
+            1 for cycle in cycles if cycle["errors"]
+        )
         summary = {
             "stage": "ACTUAL_MARKET_COVERAGE_POLLING_VALIDATION_MEGA_BUNDLE",
-            "status": "PASS" if cycles and coverage_pass_cycles > 0 else "BLOCKED",
+            "status": (
+                "PASS"
+                if cycles and coverage_pass_cycles > 0
+                else "BLOCKED"
+            ),
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "symbols": symbols,
             "requested_cycles": max_cycles,
             "completed_cycles": len(cycles),
             "coverage_pass_cycles": coverage_pass_cycles,
             "cycles_with_errors": fatal_errors,
-            "market_closed_detected": bool(cycles and not cycles[-1]["market_is_open"]),
+            "market_closed_detected": bool(
+                cycles and not cycles[-1]["market_is_open"]
+            ),
             "last_cycle": cycles[-1] if cycles else None,
             "actual_broker_write_performed": False,
             "actual_order_submission_performed": False,
             "actual_paper_orders_submitted": 0,
             "actual_live_orders_submitted": 0,
-            "next_market_validation": "RESTART_RECOVERY_AND_MARKET_CLOSE_VALIDATION",
-            "next_fixed_development": "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE",
+            "next_market_validation": (
+                "RESTART_RECOVERY_AND_MARKET_CLOSE_VALIDATION"
+            ),
+            "next_fixed_development": (
+                "AI_APPROVED_DECISION_TO_EXECUTION_PLAN_BRIDGE"
+            ),
         }
         (self.output / "polling_summary.json").write_text(
             json.dumps(summary, indent=2, sort_keys=True) + "\n",

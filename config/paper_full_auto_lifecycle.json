@@ -1,0 +1,8 @@
+{
+  "take_profit_pct": 0.008,
+  "stop_loss_pct": 0.005,
+  "max_hold_minutes": 30,
+  "force_flat_before_close": true,
+  "fill_wait_seconds": 20,
+  "fill_poll_seconds": 2
+}
