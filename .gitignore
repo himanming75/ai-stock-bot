@@ -1,4 +1,4 @@
-# Python virtual environment
+﻿# Python virtual environment
 .venv/
 
 # Python temporary files
@@ -38,3 +38,10 @@ release/r3_secure_credential_storage/actual/r3_vault_status.json
 # Generated release bundles
 *.zip
 /release/v120_final/bundle/AI_STOCK_BOT_V120_FINAL.zip
+
+# BEGIN AI-STOCK-BOT GENERATED RUNTIME
+runtime/
+archive/
+release/**/actual/
+release/**/*.runtime.json
+# END AI-STOCK-BOT GENERATED RUNTIME
