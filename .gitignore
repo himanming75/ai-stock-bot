@@ -45,3 +45,10 @@ archive/
 release/**/actual/
 release/**/*.runtime.json
 # END AI-STOCK-BOT GENERATED RUNTIME
+
+# BEGIN V14001-V15000 GENERATED EVIDENCE
+release/v14001_15000_paper_autonomous_execution/actual/
+release/v14001_15000_paper_autonomous_execution/paper_autonomous_execution_certification.json
+release/v14001_15000_paper_autonomous_execution/paper_preflight.json
+release/v14001_15000_paper_autonomous_execution/TEST_RESULTS.txt
+# END V14001-V15000 GENERATED EVIDENCE

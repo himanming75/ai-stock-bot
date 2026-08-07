@@ -1,0 +1,18 @@
+{
+  "profile_name": "PAPER_AUTONOMOUS_VALIDATION_V1",
+  "paper_submission_enabled": true,
+  "live_submission_enabled": false,
+  "max_orders_per_session": 1,
+  "max_notional_per_order": 25.0,
+  "allowed_symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "SPY"
+  ],
+  "min_confidence": 0.75,
+  "min_reward_risk": 1.0,
+  "poll_seconds": 30,
+  "require_market_open": true,
+  "require_manual_arm_token": true
+}
