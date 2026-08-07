@@ -341,3 +341,183 @@ def main_report(root: Path):
     out=rt/"paper_backtest_validation_analytics_v3"; out.mkdir(parents=True,exist_ok=True)
     (out/"latest_validation_analytics.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8")
     return report
+
+
+# === AI_BACKTEST_ROBUSTNESS_MAXPACK_EXTENSION ===
+import math as _math
+
+def _percentile(xs, q):
+    if not xs:
+        return None
+    ys=sorted(xs)
+    i=max(0,min(len(ys)-1,int(round((len(ys)-1)*q))))
+    return ys[i]
+
+def wilson_win_rate_interval(wins, n, z=1.96):
+    if not n:
+        return {"low":None,"high":None,"n":0}
+    p=wins/n
+    den=1+(z*z)/n
+    center=(p+(z*z)/(2*n))/den
+    margin=(z*_math.sqrt((p*(1-p)/n)+((z*z)/(4*n*n))))/den
+    return {"low":round(max(0.0,center-margin),6),
+            "high":round(min(1.0,center+margin),6),"n":n}
+
+def bootstrap_expectancy_interval(pnls, simulations=2000, seed=20260807):
+    xs=[float(x) for x in pnls if x is not None]
+    if len(xs)<10:
+        return {"status":"INSUFFICIENT_DATA","available":len(xs),"minimum_required":10}
+    rng=random.Random(seed); means=[]; n=len(xs)
+    for _ in range(simulations):
+        means.append(sum(xs[rng.randrange(n)] for _ in range(n))/n)
+    return {"status":"PASS","simulations":simulations,
+            "expectancy_p05":round(_percentile(means,.05),8),
+            "expectancy_p50":round(_percentile(means,.50),8),
+            "expectancy_p95":round(_percentile(means,.95),8),
+            "probability_positive_expectancy":round(sum(1 for x in means if x>0)/len(means),6)}
+
+def walk_forward_stability(wf):
+    windows=(wf or {}).get("windows",[])
+    if not windows:
+        return {"status":"INSUFFICIENT_DATA","window_count":0}
+    oos=[]
+    positive=0
+    for w in windows:
+        m=(w or {}).get("oos_test_metrics",{})
+        e=m.get("expectancy")
+        if isinstance(e,(int,float)):
+            oos.append(e)
+            if e>0: positive+=1
+    if not oos:
+        return {"status":"INSUFFICIENT_DATA","window_count":len(windows)}
+    mean=sum(oos)/len(oos)
+    var=sum((x-mean)**2 for x in oos)/len(oos)
+    return {"status":"PASS","window_count":len(oos),
+            "positive_oos_window_rate":round(positive/len(oos),6),
+            "mean_oos_expectancy":round(mean,8),
+            "oos_expectancy_std":round(_math.sqrt(var),8),
+            "stable":positive/len(oos)>=0.60 and mean>0}
+
+def oos_degradation(oos):
+    if (oos or {}).get("status")!="PASS":
+        return {"status":"INSUFFICIENT_DATA"}
+    ins=(oos.get("in_sample") or {}).get("expectancy")
+    out=(oos.get("out_of_sample") or {}).get("expectancy")
+    if not isinstance(ins,(int,float)) or not isinstance(out,(int,float)):
+        return {"status":"INSUFFICIENT_DATA"}
+    if abs(ins)<1e-12:
+        ratio=None
+    else:
+        ratio=out/ins
+    return {"status":"PASS","in_sample_expectancy":ins,"oos_expectancy":out,
+            "oos_to_is_expectancy_ratio":round(ratio,6) if isinstance(ratio,float) else ratio,
+            "oos_positive":out>0,
+            "severe_degradation":bool(ins>0 and out<=0)}
+
+def linked_matrix_metrics(linked):
+    cells={}
+    for r in linked:
+        if not r.get("linked") or r.get("realized_pl") is None:
+            continue
+        reg=str(r.get("market_regime") or "UNKNOWN")
+        dec=str(r.get("ensemble_decision") or "UNKNOWN")
+        cells.setdefault((reg,dec),[]).append(float(r["realized_pl"]))
+    out=[]
+    for (reg,dec),pnls in cells.items():
+        m=metric(pnls)
+        out.append({"market_regime":reg,"ensemble_decision":dec,**m})
+    out.sort(key=lambda x:(x["count"],x["total_pl"]),reverse=True)
+    return out
+
+def shadow_edge_score(ai_metrics):
+    allow=(ai_metrics or {}).get("ai_allow_actual_trade_metrics",{}) or {}
+    skip=(ai_metrics or {}).get("ai_skip_actual_trade_metrics",{}) or {}
+    an=allow.get("count",0) or 0; sn=skip.get("count",0) or 0
+    ae=allow.get("expectancy"); se=skip.get("expectancy")
+    if an<10 or sn<10 or not isinstance(ae,(int,float)) or not isinstance(se,(int,float)):
+        return {"status":"COLLECTING_DATA","minimum_each_group":10,
+                "allow_count":an,"skip_count":sn}
+    edge=ae-se
+    return {"status":"PASS","allow_count":an,"skip_count":sn,
+            "allow_expectancy":ae,"skip_expectancy":se,
+            "expectancy_edge":round(edge,8),
+            "filtering_value_observed":edge>0}
+
+def data_sufficiency_grade(trade_count, linked_count, wf_windows):
+    score=0
+    if trade_count>=20: score+=1
+    if trade_count>=60: score+=1
+    if trade_count>=150: score+=1
+    if trade_count>=300: score+=1
+    if linked_count>=20: score+=1
+    if linked_count>=60: score+=1
+    if wf_windows>=3: score+=1
+    if wf_windows>=6: score+=1
+    grade=("A" if score>=7 else "B" if score>=5 else "C" if score>=3 else "D")
+    return {"grade":grade,"score":score,"max_score":8,
+            "trade_count":trade_count,"linked_trade_count":linked_count,
+            "walk_forward_windows":wf_windows}
+
+def research_readiness_scorecard(report):
+    pm=report.get("paper_trade_metrics",{}) or {}
+    pn=pm.get("count",0) or 0
+    ai=((report.get("ai_outcome_linkage") or {}).get("metrics") or {})
+    linked=ai.get("linked_trade_count",0) or 0
+    wf=report.get("paper_walk_forward",{}) or {}
+    wfs=walk_forward_stability(wf)
+    oos=oos_degradation(report.get("paper_oos",{}))
+    mc=report.get("paper_monte_carlo",{}) or {}
+    boot=report.get("paper_bootstrap_expectancy",{}) or {}
+    edge=report.get("shadow_ai_edge",{}) or {}
+    suff=data_sufficiency_grade(pn,linked,len(wf.get("windows",[]) or []))
+    checks={
+        "minimum_60_trades":pn>=60,
+        "target_300_trades":pn>=300,
+        "oos_expectancy_positive":oos.get("oos_positive") is True,
+        "walk_forward_stable":wfs.get("stable") is True,
+        "monte_carlo_positive_probability_ge_60pct":
+            isinstance(mc.get("probability_positive_final_pl"),(int,float)) and mc.get("probability_positive_final_pl")>=.60,
+        "bootstrap_positive_expectancy_probability_ge_60pct":
+            isinstance(boot.get("probability_positive_expectancy"),(int,float)) and boot.get("probability_positive_expectancy")>=.60,
+        "ai_shadow_links_60":linked>=60,
+        "shadow_filtering_value_observed":edge.get("filtering_value_observed") is True,
+    }
+    passed=sum(1 for v in checks.values() if v)
+    return {"status":"RESEARCH_READY" if passed>=6 and pn>=300 else "COLLECTING_DATA",
+            "passed_checks":passed,"total_checks":len(checks),
+            "checks":checks,"data_sufficiency":suff,
+            "automatic_strategy_promotion":False,
+            "automatic_parameter_change":False,
+            "order_path_effect":"NONE",
+            "interpretation":"Research-only scorecard. It cannot change Paper or Live trading."}
+
+_BASE_MAIN_REPORT_AI_ROBUSTNESS = main_report
+
+def main_report(root: Path):
+    report=_BASE_MAIN_REPORT_AI_ROBUSTNESS(root)
+    paper_rows,_=validation_rows(Path(root))
+    pnls=[pnl_from(x) for x in paper_rows if pnl_from(x) is not None]
+    pm=report.get("paper_trade_metrics",{}) or {}
+    report["paper_win_rate_wilson_95"]=wilson_win_rate_interval(pm.get("wins",0) or 0,pm.get("count",0) or 0)
+    report["paper_bootstrap_expectancy"]=bootstrap_expectancy_interval(pnls)
+    report["paper_walk_forward_stability"]=walk_forward_stability(report.get("paper_walk_forward",{}))
+    report["paper_oos_degradation"]=oos_degradation(report.get("paper_oos",{}))
+    linked=((report.get("ai_outcome_linkage") or {}).get("rows") or [])
+    ai_metrics=((report.get("ai_outcome_linkage") or {}).get("metrics") or {})
+    report["regime_decision_outcome_matrix"]=linked_matrix_metrics(linked)
+    report["shadow_ai_edge"]=shadow_edge_score(ai_metrics)
+    report["research_readiness_scorecard"]=research_readiness_scorecard(report)
+    report["robustness_contracts"]={
+        "broker_write_performed":False,
+        "order_submission_performed":False,
+        "strategy_parameter_changed":False,
+        "automatic_strategy_promotion":False,
+        "paper_decision_path_changed":False,
+        "live_auto_enable":False,
+    }
+    out=Path(root)/"runtime/paper_backtest_validation_analytics_v3"
+    out.mkdir(parents=True,exist_ok=True)
+    (out/"latest_validation_analytics.json").write_text(
+        json.dumps(report,indent=2,default=str),encoding="utf-8"
+    )
+    return report
