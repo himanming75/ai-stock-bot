@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Stock Bot Control Center</title>
+  <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>AI STOCK BOT CONTROL CENTER</h1>
+      <p>Alpaca Paper · E*TRADE Live Locked · Operator Dashboard 1.1</p>
+    </div>
+    <div class="status-pill" id="runtimeStatus">LOADING</div>
+  </header>
+
+  <main>
+    <section class="control-panel">
+      <button data-action="START">Start Paper</button>
+      <button data-action="PAUSE">Pause</button>
+      <button data-action="RESUME">Resume</button>
+      <button data-action="STOP">Stop</button>
+      <button class="danger" data-action="EMERGENCY_STOP">
+        Emergency Stop
+      </button>
+      <button class="warning" data-action="RESET_EMERGENCY_STOP">
+        Reset Stop
+      </button>
+    </section>
+
+    <section class="stage-bar">
+      <strong>Session Stage / 진행 단계:</strong>
+      <span id="sessionStage">LOADING</span>
+      <span id="sessionMessage"></span>
+    </section>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <span>Paper Broker</span>
+        <strong id="paperBroker">ALPACA</strong>
+      </article>
+      <article class="summary-card">
+        <span>Live Broker</span>
+        <strong id="liveBroker">ETRADE</strong>
+      </article>
+      <article class="summary-card">
+        <span>Live Write</span>
+        <strong class="off" id="liveWrite">OFF</strong>
+      </article>
+      <article class="summary-card">
+        <span>Emergency Stop</span>
+        <strong id="emergencyState">FALSE</strong>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>AI Candidates / AI 후보</h2>
+        <div class="table-wrap">
+          <table id="candidateTable">
+            <thead>
+              <tr>
+                <th>Symbol</th><th>Action</th><th>Confidence</th>
+                <th>Regime</th><th>R/R</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Watchlist / 감시 종목</h2>
+        <div id="watchlist" class="chips"></div>
+      </article>
+
+      <article class="card wide">
+        <h2>Orders / 주문</h2>
+        <div class="table-wrap">
+          <table id="orderTable">
+            <thead>
+              <tr>
+                <th>Cycle</th><th>Symbol</th><th>Side</th>
+                <th>Status</th><th>Paper</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>Fills / 체결</h2>
+        <pre id="fillsPanel"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Account / 계좌</h2>
+        <pre id="accountPanel"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Positions / 포지션</h2>
+        <pre id="positionsPanel"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Risk / 리스크</h2>
+        <pre id="riskPanel"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Paper Status / 모의투자</h2>
+        <pre id="paperPanel"></pre>
+      </article>
+
+      <article class="card full">
+        <h2>Phase Locks / 단계 고정</h2>
+        <div id="phasePanel" class="phase-grid"></div>
+      </article>
+
+      <article class="card full">
+        <h2>Recent Logs / 최근 로그</h2>
+        <pre id="logPanel"></pre>
+      </article>
+    </section>
+  </main>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
