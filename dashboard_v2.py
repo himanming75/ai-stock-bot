@@ -16,7 +16,7 @@ const fmt=v=>v===null||v===undefined?'-':v; const pct=v=>v===null||v===undefined
 const rows=xs=>(xs||[]).slice(0,12).map(x=>`<tr><td>${x.group||''}</td><td>${x.count??0}</td><td>${pct(x.win_rate)}</td><td>${fmt(x.profit_factor)}</td><td>${fmt(x.expectancy)}</td><td>${fmt(x.total_pl)}</td></tr>`).join('');
 async function L(){let d=await(await fetch('/api')).json(),p=d.validation_progress||{},m=d.validation_metrics||{},b=d.broker_snapshot||{},h=d.reliability_health||{},lr=d.live_readiness||{},pb=d.paper_vs_backtest||{},ai=d.ai_outcome_metrics||{},rs=d.ai_research_samples||{};
 let recent=(d.ai_linked_trades||[]).slice(-20).reverse().map(x=>`<tr><td>${x.trade_entry_time||''}</td><td>${x.symbol||''}</td><td>${x.ensemble_decision||''}</td><td>${x.market_regime||''}</td><td>${x.confidence_band||''}</td><td>${x.realized_pl??''}</td><td>${x.linked?'YES':'NO'}</td></tr>`).join('');
-let et=d.etrade_live_readiness||{}; let cls=lr.eligible?'ok':'warn';
+let et=d.etrade_live_readiness||{}; let et=d.etrade_live_readiness||{}; let cls=lr.eligible?'ok':'warn';
 document.getElementById('a').innerHTML=`
 <div class='g'>
 <div class='c'>Closed Trades<div class='b'>${p.closed_trades??0}/300</div><div class='s'>${p.closed_trade_target_progress_pct??0}%</div></div>
@@ -48,4 +48,5 @@ class H(BaseHTTPRequestHandler):
             x=HTML.encode(); self.send_response(200); self.send_header("Content-Type","text/html"); self.end_headers(); self.wfile.write(x)
     def log_message(self,*a): pass
 ThreadingHTTPServer(("127.0.0.1",8765),H).serve_forever()
+
 
