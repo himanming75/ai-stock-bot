@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from pathlib import Path
 from datetime import datetime, time, timezone
-from collections import defaultdict
+from collections import defaultdict, Counter
 from zoneinfo import ZoneInfo
-import argparse, json, sys
+import argparse, json, statistics, sys
 
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -25,6 +25,10 @@ ALLOWED=("AAPL","MSFT","NVDA","SPY")
 ET=ZoneInfo("America/New_York")
 REGULAR_OPEN=time(9,30)
 REGULAR_CLOSE=time(16,0)
+MIN_CONFIDENCE=0.75
+MIN_REWARD_RISK=1.0
+ROLLING_STEP_MINUTES=30
+FORWARD_HORIZONS=(15,30,60)
 
 def ema(values,span):
     if not values:
@@ -87,17 +91,10 @@ def aggregate_intraday_by_session(sessions,n):
             if len(bucket)==n:
                 out.append(aggregate_bucket(bucket))
                 bucket=[]
-        # Deliberately discard an incomplete trailing bucket so that
-        # no timeframe crosses a trading-day boundary.
     return out
 
 def aggregate_daily(sessions):
-    out=[]
-    for _,rows in sessions.items():
-        if not rows:
-            continue
-        out.append(aggregate_bucket(rows))
-    return out
+    return [aggregate_bucket(rows) for _,rows in sessions.items() if rows]
 
 def feature_from_bars(bars,tf):
     min_required=15 if tf=="1d" else 30
@@ -119,8 +116,7 @@ def feature_from_bars(bars,tf):
     trs=[]
     for i in range(max(1,len(closes)-14),len(closes)):
         prev=closes[i-1]
-        tr=max(highs[i]-lows[i],abs(highs[i]-prev),abs(lows[i]-prev))
-        trs.append(tr)
+        trs.append(max(highs[i]-lows[i],abs(highs[i]-prev),abs(lows[i]-prev)))
     atr=(sum(trs)/len(trs))/c if trs and c else 0.0
 
     day_gap=0.0
@@ -158,46 +154,41 @@ def load_real_rows(root):
         by[sym].sort(key=lambda x:x["timestamp"])
     return by
 
-def build(root:Path):
-    root=Path(root).resolve()
-    by=load_real_rows(root)
-    analyses=[]
-    feature_audit={}
-    rejected={}
+def build_features(rows):
+    sessions=regular_session_rows(rows)
+    features={}
+    meta={}
+    for tf,n in INTRADAY_TIMEFRAMES.items():
+        bars=aggregate_intraday_by_session(sessions,n)
+        feat=feature_from_bars(bars,tf)
+        meta[tf]={"aggregated_bars":len(bars),"feature_ready":feat is not None}
+        if feat is not None:
+            features[tf]=feat
 
+    daily=aggregate_daily(sessions)
+    dfeat=feature_from_bars(daily,"1d")
+    meta["1d"]={
+        "aggregated_bars":len(daily),
+        "trading_days":len(sessions),
+        "feature_ready":dfeat is not None,
+    }
+    if dfeat is not None:
+        features["1d"]=dfeat
+    return features,meta,len(sessions)
+
+def analyze_at_rows(by):
+    analyses=[]
+    audit={}
+    rejected={}
     for symbol in ALLOWED:
         rows=by.get(symbol,[])
-        sessions=regular_session_rows(rows)
-        features={}
-        tf_meta={}
-
-        for tf,n in INTRADAY_TIMEFRAMES.items():
-            bars=aggregate_intraday_by_session(sessions,n)
-            feat=feature_from_bars(bars,tf)
-            tf_meta[tf]={
-                "aggregated_bars":len(bars),
-                "feature_ready":feat is not None,
-            }
-            if feat is not None:
-                features[tf]=feat
-
-        daily=aggregate_daily(sessions)
-        daily_feat=feature_from_bars(daily,"1d")
-        tf_meta["1d"]={
-            "aggregated_bars":len(daily),
-            "trading_days":len(sessions),
-            "feature_ready":daily_feat is not None,
-        }
-        if daily_feat is not None:
-            features["1d"]=daily_feat
-
-        feature_audit[symbol]={
+        features,meta,days=build_features(rows)
+        audit[symbol]={
             "source_minute_rows":len(rows),
-            "regular_session_days":len(sessions),
-            "timeframes":tf_meta,
+            "regular_session_days":days,
+            "timeframes":meta,
             "ready_timeframe_count":len(features),
         }
-
         if len(features)!=7:
             rejected[symbol]={
                 "reason":"INCOMPLETE_SEVEN_TIMEFRAME_FEATURE_SET",
@@ -205,7 +196,6 @@ def build(root:Path):
                 "missing_timeframes":sorted(set((*INTRADAY_TIMEFRAMES.keys(),"1d"))-set(features)),
             }
             continue
-
         item=analyze_symbol(symbol,features)
         item["execution_mode"]="ANALYSIS_ONLY"
         analyses.append(item)
@@ -217,15 +207,16 @@ def build(root:Path):
         ),
         reverse=True,
     )
-
     selected=select_candidate(
         analyses,
         allowed_symbols=ALLOWED,
-        min_confidence=0.75,
-        min_reward_risk=1.0,
+        min_confidence=MIN_CONFIDENCE,
+        min_reward_risk=MIN_REWARD_RISK,
         excluded_symbols=(),
     )
+    return analyses,audit,rejected,selected
 
+def current_fixture_selection(root):
     current_path=root/"release/v11001_12000_multi_timeframe_ai/actual/multi_timeframe_ai_report_bilingual.json"
     current={}
     if current_path.exists():
@@ -233,19 +224,25 @@ def build(root:Path):
             current=json.loads(current_path.read_text(encoding="utf-8-sig"))
         except Exception:
             current={}
-    current_analyses=current.get("analyses",[]) if isinstance(current,dict) else []
-    current_selected=select_candidate(
-        current_analyses if isinstance(current_analyses,list) else [],
+    analyses=current.get("analyses",[]) if isinstance(current,dict) else []
+    return select_candidate(
+        analyses if isinstance(analyses,list) else [],
         allowed_symbols=ALLOWED,
-        min_confidence=0.75,
-        min_reward_risk=1.0,
+        min_confidence=MIN_CONFIDENCE,
+        min_reward_risk=MIN_REWARD_RISK,
         excluded_symbols=(),
     )
 
+def snapshot(root:Path):
+    root=Path(root).resolve()
+    by=load_real_rows(root)
+    analyses,audit,rejected,selected=analyze_at_rows(by)
+    current_selected=current_fixture_selection(root)
+
     out=root/"runtime/real_market_multitimeframe_shadow"
     out.mkdir(parents=True,exist_ok=True)
-    shadow={
-        "stage":"REAL_MARKET_MULTI_TIMEFRAME_SHADOW_ADAPTER_V1_1",
+    report={
+        "stage":"REAL_MARKET_MULTI_TIMEFRAME_SHADOW_ADAPTER_V1_2",
         "status":"PASS" if len(analyses)==len(ALLOWED) else "PARTIAL",
         "mode":"SHADOW_ANALYSIS_ONLY",
         "generated_at_utc":datetime.now(timezone.utc).isoformat(),
@@ -262,9 +259,9 @@ def build(root:Path):
         "canonical_engine":"multi_timeframe_ai.engine.analyze_symbol",
         "canonical_selector":"paper_autonomous_execution.signals.select_candidate",
         "allowed_symbols":list(ALLOWED),
-        "thresholds":{"min_confidence":0.75,"min_reward_risk":1.0},
+        "thresholds":{"min_confidence":MIN_CONFIDENCE,"min_reward_risk":MIN_REWARD_RISK},
         "analyses":analyses,
-        "feature_audit":feature_audit,
+        "feature_audit":audit,
         "rejected_symbols":rejected,
         "shadow_selected_candidate":selected,
         "current_fixture_selected_candidate":current_selected,
@@ -279,26 +276,182 @@ def build(root:Path):
             "shadow_input_source":"REAL_ALPACA_HISTORICAL_1MIN_SESSION_AWARE_RESAMPLED",
             "live_equivalence_asserted":False,
         },
-        "contracts":{
-            "current_signal_report_modified":False,
-            "paper_task_modified":False,
-            "broker_write_performed":False,
-            "order_submission_performed":False,
-            "strategy_parameter_changed":False,
-            "risk_parameter_changed":False,
-            "live_auto_enable":False,
-        },
+        "contracts":base_contracts(),
+    }
+    (out/"latest_real_market_shadow.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8")
+    with (out/"real_market_shadow_ledger.jsonl").open("a",encoding="utf-8") as h:
+        h.write(json.dumps(report,default=str)+"\n")
+    return report
+
+def base_contracts():
+    return {
+        "current_signal_report_modified":False,
+        "paper_task_modified":False,
+        "broker_write_performed":False,
+        "order_submission_performed":False,
+        "strategy_parameter_changed":False,
+        "risk_parameter_changed":False,
+        "live_auto_enable":False,
     }
 
-    (out/"latest_real_market_shadow.json").write_text(
-        json.dumps(shadow,indent=2,default=str),encoding="utf-8"
-    )
-    with (out/"real_market_shadow_ledger.jsonl").open("a",encoding="utf-8") as h:
-        h.write(json.dumps(shadow,default=str)+"\n")
-    return shadow
+def make_checkpoints(by):
+    # Use SPY as the liquid market-clock reference. Only checkpoints at 30-minute
+    # boundaries inside regular trading sessions are considered.
+    sessions=regular_session_rows(by.get("SPY",[]))
+    points=[]
+    for day,rows in sessions.items():
+        seen={}
+        for row in rows:
+            dt=parse_timestamp(row["timestamp"]).astimezone(ET)
+            mins=(dt.hour*60+dt.minute)-(9*60+30)
+            if mins < 0:
+                continue
+            if mins % ROLLING_STEP_MINUTES==0:
+                seen[dt.replace(second=0,microsecond=0).isoformat()]=dt
+        points.extend(seen.values())
+    return sorted(points)
+
+def truncate_by_checkpoint(by, checkpoint):
+    out={}
+    for symbol,rows in by.items():
+        kept=[]
+        for row in rows:
+            if parse_timestamp(row["timestamp"]).astimezone(ET) <= checkpoint:
+                kept.append(row)
+            else:
+                break
+        out[symbol]=kept
+    return out
+
+def price_at_or_after(rows, target_dt):
+    best=None
+    for row in rows:
+        dt=parse_timestamp(row["timestamp"]).astimezone(ET)
+        if dt >= target_dt:
+            best=(dt,float(row["close"]))
+            break
+    return best
+
+def rolling(root:Path):
+    root=Path(root).resolve()
+    by=load_real_rows(root)
+    checkpoints=make_checkpoints(by)
+    records=[]
+    eligible_checkpoints=0
+
+    for cp in checkpoints:
+        truncated=truncate_by_checkpoint(by,cp)
+        analyses,_,rejected,selected=analyze_at_rows(truncated)
+        if len(analyses)!=len(ALLOWED):
+            continue
+        eligible_checkpoints+=1
+
+        rec={
+            "checkpoint_et":cp.isoformat(),
+            "analysis_count":len(analyses),
+            "selected_candidate":selected,
+            "decision":"NO_ACTION" if selected is None else str(selected.get("side","")).upper(),
+            "symbol":None if selected is None else selected.get("symbol"),
+            "confidence":None if selected is None else selected.get("confidence"),
+            "reward_risk":None if selected is None else selected.get("reward_risk"),
+            "forward_outcomes":{},
+        }
+
+        if selected:
+            symbol=str(selected["symbol"]).upper()
+            side=str(selected["side"]).upper()
+            entry_data=price_at_or_after(by[symbol],cp)
+            if entry_data:
+                _,entry=entry_data
+                for horizon in FORWARD_HORIZONS:
+                    target=cp.replace(second=0,microsecond=0)
+                    from datetime import timedelta
+                    target=target+timedelta(minutes=horizon)
+                    future=price_at_or_after(by[symbol],target)
+                    if future:
+                        fdt,fprice=future
+                        raw=(fprice/entry)-1.0 if entry else 0.0
+                        signed=raw if side=="BUY" else -raw
+                        rec["forward_outcomes"][str(horizon)]={
+                            "entry_price":entry,
+                            "future_timestamp_et":fdt.isoformat(),
+                            "future_price":fprice,
+                            "raw_return":raw,
+                            "directional_return":signed,
+                            "directional_win":signed>0,
+                        }
+        records.append(rec)
+
+    decisions=Counter(r["decision"] for r in records)
+    selected_records=[r for r in records if r["selected_candidate"] is not None]
+
+    horizon_stats={}
+    for horizon in FORWARD_HORIZONS:
+        vals=[]
+        wins=0
+        for r in selected_records:
+            o=r["forward_outcomes"].get(str(horizon))
+            if not o:
+                continue
+            vals.append(float(o["directional_return"]))
+            wins+=1 if o["directional_win"] else 0
+        horizon_stats[str(horizon)]={
+            "sample_count":len(vals),
+            "win_count":wins,
+            "win_rate":(wins/len(vals)) if vals else None,
+            "average_directional_return":statistics.mean(vals) if vals else None,
+            "median_directional_return":statistics.median(vals) if vals else None,
+            "sum_equal_weight_directional_returns":sum(vals) if vals else None,
+            "pnl_equivalence_to_paper_lifecycle":"NOT_ASSERTED",
+        }
+
+    dates=sorted({r["checkpoint_et"][:10] for r in records})
+    report={
+        "stage":"REAL_MARKET_MULTI_TIMEFRAME_ROLLING_REPLAY_V1_2",
+        "status":"PASS",
+        "mode":"ROLLING_SHADOW_FORWARD_OUTCOME_DIAGNOSTIC",
+        "generated_at_utc":datetime.now(timezone.utc).isoformat(),
+        "source_dataset":"runtime/real_historical_ingestion/alpaca_real_historical_1min.jsonl",
+        "no_lookahead_contract":True,
+        "checkpoint_step_minutes":ROLLING_STEP_MINUTES,
+        "forward_horizons_minutes":list(FORWARD_HORIZONS),
+        "thresholds":{"min_confidence":MIN_CONFIDENCE,"min_reward_risk":MIN_REWARD_RISK},
+        "total_market_checkpoints":len(checkpoints),
+        "eligible_checkpoints":eligible_checkpoints,
+        "evaluated_checkpoints":len(records),
+        "trading_dates_evaluated":dates,
+        "decision_counts":dict(decisions),
+        "selected_signal_count":len(selected_records),
+        "no_action_count":decisions.get("NO_ACTION",0),
+        "signal_rate":(len(selected_records)/len(records)) if records else 0.0,
+        "signals_per_evaluated_day":(len(selected_records)/len(dates)) if dates else 0.0,
+        "projected_signals_per_10_days":((len(selected_records)/len(dates))*10.0) if dates else 0.0,
+        "horizon_stats":horizon_stats,
+        "records":records,
+        "interpretation_contract":{
+            "candidate_selection_equivalent_to_current_selector":True,
+            "analysis_engine_equivalent_to_current_engine":True,
+            "input_source_equivalent_to_current_production":False,
+            "paper_exit_lifecycle_replayed":False,
+            "paper_strategy_pnl_asserted":False,
+            "forward_outcomes_are_diagnostic_only":True,
+        },
+        "contracts":base_contracts(),
+    }
+
+    out=root/"runtime/real_market_multitimeframe_shadow"
+    out.mkdir(parents=True,exist_ok=True)
+    (out/"latest_rolling_replay.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8")
+    with (out/"rolling_replay_ledger.jsonl").open("a",encoding="utf-8") as h:
+        h.write(json.dumps({k:v for k,v in report.items() if k!="records"},default=str)+"\n")
+    return report
+
+def build(root:Path,mode="snapshot"):
+    return rolling(root) if mode=="rolling" else snapshot(root)
 
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--root",default=r"C:\stock-bot")
+    p.add_argument("--mode",choices=("snapshot","rolling"),default="snapshot")
     a=p.parse_args()
-    print(json.dumps(build(Path(a.root)),indent=2,default=str))
+    print(json.dumps(build(Path(a.root),a.mode),indent=2,default=str))
