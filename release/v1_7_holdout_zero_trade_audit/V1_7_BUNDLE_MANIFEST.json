@@ -1,0 +1,30 @@
+{
+  "stage": "V1.7",
+  "name": "Holdout Zero-Trade Root-Cause + Data/Signal Coverage Audit",
+  "target_repository": "himanming75/ai-stock-bot",
+  "target_branch": "main",
+  "baseline_commit_verified": "ab7efa0f8129298c33fecd752c2cfb4b0271e604",
+  "overlay_only": true,
+  "existing_engine_files_modified": [],
+  "new_files": [
+    "tools/audit_holdout_zero_trade_v1_7.py",
+    "tests/test_holdout_zero_trade_audit_v1_7.py",
+    "INSTALL_CHECK_V1_7.ps1",
+    "RUN_V1_7.ps1",
+    "VERIFY_V1_7.ps1",
+    "GIT_COMMIT_V1_7.txt",
+    "release/v1_7_holdout_zero_trade_audit/docs/V1.7_RELEASE.md",
+    "release/v1_7_holdout_zero_trade_audit/V1_7_BUNDLE_MANIFEST.json"
+  ],
+  "safety": {
+    "paper_runtime_modified": false,
+    "production_parameters_modified": false,
+    "broker_write": false,
+    "order_submission": false,
+    "duplicate_engine": false
+  },
+  "local_package_validation": {
+    "python_compile": "PASS",
+    "static_unit_tests": "PASS"
+  }
+}

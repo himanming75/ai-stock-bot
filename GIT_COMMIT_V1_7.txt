@@ -1,0 +1,19 @@
+cd C:\stock-bot
+
+git status --short
+
+git add `
+  tools/audit_holdout_zero_trade_v1_7.py `
+  tests/test_holdout_zero_trade_audit_v1_7.py `
+  INSTALL_CHECK_V1_7.ps1 `
+  RUN_V1_7.ps1 `
+  VERIFY_V1_7.ps1 `
+  GIT_COMMIT_V1_7.txt `
+  release/v1_7_holdout_zero_trade_audit/docs/V1.7_RELEASE.md `
+  release/v1_7_holdout_zero_trade_audit/V1_7_BUNDLE_MANIFEST.json
+
+git diff --cached --stat
+git diff --cached --check
+
+git commit -m "Add V1.7 holdout zero-trade root-cause coverage audit"
+git push origin main
