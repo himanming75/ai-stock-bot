@@ -818,10 +818,168 @@ def rolling_lifecycle(root: Path):
 
 # === END V1.3.1 EXTENSION ===
 
+# === V1.5 RESEARCH-ONLY COUNTERFACTUAL EXTENSION ===
+
+def _counterfactual_snapshot_files(root: Path):
+    out=root/"runtime/real_market_multitimeframe_shadow"
+    names=("latest_paper_lifecycle_replay.json","paper_lifecycle_closed_trades.jsonl","paper_lifecycle_replay_ledger.jsonl")
+    snap={}
+    for name in names:
+        p=out/name
+        snap[name]=p.read_bytes() if p.exists() else None
+    return snap
+
+def _counterfactual_restore_files(root: Path, snap):
+    out=root/"runtime/real_market_multitimeframe_shadow"
+    out.mkdir(parents=True,exist_ok=True)
+    for name,data in snap.items():
+        p=out/name
+        if data is None:
+            if p.exists(): p.unlink()
+        else:
+            p.write_bytes(data)
+
+def _variant_summary(name, report, changes):
+    p=report.get("portfolio",{}) if isinstance(report,dict) else {}
+    fz=report.get("validation_feasibility",{}) if isinstance(report,dict) else {}
+    return {
+        "scenario":name,
+        "changes":changes,
+        "closed_trades":p.get("closed_trades"),
+        "win_rate":p.get("win_rate"),
+        "total_pl":p.get("total_pl"),
+        "total_return_pct":p.get("total_return_pct"),
+        "profit_factor":p.get("profit_factor"),
+        "expectancy_per_trade":p.get("expectancy_per_trade"),
+        "max_drawdown_pct":p.get("max_drawdown_pct"),
+        "max_consecutive_losses":p.get("max_consecutive_losses"),
+        "average_hold_minutes":p.get("average_hold_minutes"),
+        "exit_reason_counts":p.get("exit_reason_counts",{}),
+        "projected_closed_trades_10_days":fz.get("projected_closed_trades_10_days"),
+        "projected_trading_days_for_300_closed_trades":fz.get("projected_trading_days_for_300_closed_trades"),
+    }
+
+def rolling_counterfactual(root: Path):
+    root=Path(root).resolve()
+    global ALLOWED, make_checkpoints, load_paper_lifecycle_contract
+
+    original_allowed=ALLOWED
+    original_make_checkpoints=make_checkpoints
+    original_load_contract=load_paper_lifecycle_contract
+    runtime_snap=_counterfactual_snapshot_files(root)
+
+    base_contract=original_load_contract(root)
+    scenarios=[
+        {"name":"BASELINE","allowed_symbols":original_allowed,"entry_cutoff_et":None,"max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"EXCLUDE_MSFT","allowed_symbols":tuple(x for x in original_allowed if x!="MSFT"),"entry_cutoff_et":None,"max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"NO_NEW_ENTRY_AFTER_14_ET","allowed_symbols":original_allowed,"entry_cutoff_et":"14:00","max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"EXCLUDE_MSFT_AND_NO_ENTRY_AFTER_14_ET","allowed_symbols":tuple(x for x in original_allowed if x!="MSFT"),"entry_cutoff_et":"14:00","max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"MAX_HOLD_20M","allowed_symbols":original_allowed,"entry_cutoff_et":None,"max_hold_minutes":20},
+        {"name":"MAX_HOLD_45M","allowed_symbols":original_allowed,"entry_cutoff_et":None,"max_hold_minutes":45},
+        {"name":"MAX_HOLD_60M","allowed_symbols":original_allowed,"entry_cutoff_et":None,"max_hold_minutes":60},
+    ]
+
+    results=[]
+    try:
+        for sc in scenarios:
+            ALLOWED=sc["allowed_symbols"]
+            cutoff=sc["entry_cutoff_et"]
+            if cutoff is None:
+                make_checkpoints=original_make_checkpoints
+            else:
+                hh,mm=[int(x) for x in cutoff.split(":")]
+                def _filtered_checkpoints(by, _hh=hh, _mm=mm):
+                    pts=original_make_checkpoints(by)
+                    return [p for p in pts if (p.hour,p.minute) < (_hh,_mm)]
+                make_checkpoints=_filtered_checkpoints
+
+            def _variant_contract(_root, _hold=int(sc["max_hold_minutes"])):
+                cfg=dict(original_load_contract(_root))
+                cfg["max_hold_minutes"]=_hold
+                return cfg
+            load_paper_lifecycle_contract=_variant_contract
+
+            report=rolling_lifecycle(root)
+            results.append(_variant_summary(sc["name"],report,{
+                "allowed_symbols":list(sc["allowed_symbols"]),
+                "entry_cutoff_et":cutoff,
+                "max_hold_minutes":sc["max_hold_minutes"],
+            }))
+    finally:
+        ALLOWED=original_allowed
+        make_checkpoints=original_make_checkpoints
+        load_paper_lifecycle_contract=original_load_contract
+        _counterfactual_restore_files(root,runtime_snap)
+
+    baseline=next((x for x in results if x["scenario"]=="BASELINE"),{})
+    base_pl=float(baseline.get("total_pl") or 0.0)
+    base_exp=float(baseline.get("expectancy_per_trade") or 0.0)
+    base_dd=float(baseline.get("max_drawdown_pct") or 0.0)
+    base_count=int(baseline.get("closed_trades") or 0)
+
+    for x in results:
+        x["delta_vs_baseline"]={
+            "total_pl":round(float(x.get("total_pl") or 0.0)-base_pl,8),
+            "expectancy_per_trade":round(float(x.get("expectancy_per_trade") or 0.0)-base_exp,8),
+            "max_drawdown_pct":round(float(x.get("max_drawdown_pct") or 0.0)-base_dd,8),
+            "closed_trades":int(x.get("closed_trades") or 0)-base_count,
+        }
+
+    def pf_num(v):
+        if v=="INF": return 999999.0
+        try: return float(v)
+        except Exception: return -999999.0
+
+    ranked=sorted(results,key=lambda x:(float(x.get("expectancy_per_trade") or -999999.0),pf_num(x.get("profit_factor")),float(x.get("total_pl") or -999999.0)),reverse=True)
+    top=ranked[0] if ranked else None
+    sufficient=bool(top and int(top.get("closed_trades") or 0)>=20 and top.get("scenario")!="BASELINE")
+
+    report={
+        "stage":"PAPER_LIFECYCLE_COUNTERFACTUAL_V1_5",
+        "status":"PASS",
+        "mode":"RESEARCH_ONLY_COUNTERFACTUAL",
+        "generated_at_utc":datetime.now(timezone.utc).isoformat(),
+        "baseline_scenario":"BASELINE",
+        "scenario_count":len(results),
+        "scenarios":results,
+        "ranking":[x["scenario"] for x in ranked],
+        "top_research_candidate":top,
+        "candidate_sample_gate":{"minimum_closed_trades":20,"top_candidate_meets_minimum":sufficient,"manual_review_required":True,"automatic_promotion":False},
+        "interpretation_contract":{
+            "same_canonical_analyze_symbol":True,
+            "same_canonical_select_candidate":True,
+            "same_historical_lifecycle_simulator":True,
+            "production_parameters_changed":False,
+            "production_allowed_symbols_changed":False,
+            "production_entry_cutoff_changed":False,
+            "production_max_hold_changed":False,
+            "counterfactual_only":True,
+            "overfitting_warning":"Single historical sample. Any apparent improvement requires out-of-sample / walk-forward confirmation before promotion."
+        },
+        "contracts":{
+            "paper_task_modified":False,
+            "broker_write_performed":False,
+            "order_submission_performed":False,
+            "strategy_parameter_changed":False,
+            "risk_parameter_changed":False,
+            "automatic_parameter_optimization":False,
+            "automatic_promotion":False,
+            "live_auto_enable":False,
+        },
+    }
+    out=root/"runtime/real_market_multitimeframe_shadow"
+    out.mkdir(parents=True,exist_ok=True)
+    (out/"latest_lifecycle_counterfactual_v1_5.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8")
+    with (out/"lifecycle_counterfactual_v1_5_ledger.jsonl").open("a",encoding="utf-8") as h:
+        h.write(json.dumps({k:v for k,v in report.items() if k!="scenarios"},default=str)+"\n")
+    return report
+
+# === END V1.5 COUNTERFACTUAL EXTENSION ===
+
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--root",default=r"C:\stock-bot")
-    p.add_argument("--mode",choices=("snapshot","rolling","lifecycle"),default="snapshot")
+    p.add_argument("--mode",choices=("snapshot","rolling","lifecycle","counterfactual"),default="snapshot")
     a=p.parse_args()
-    result = rolling_lifecycle(Path(a.root)) if a.mode=="lifecycle" else build(Path(a.root),a.mode)
+    result = rolling_counterfactual(Path(a.root)) if a.mode=="counterfactual" else (rolling_lifecycle(Path(a.root)) if a.mode=="lifecycle" else build(Path(a.root),a.mode))
     print(json.dumps(result,indent=2,default=str))

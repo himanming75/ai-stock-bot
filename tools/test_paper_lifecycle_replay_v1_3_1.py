@@ -9,7 +9,10 @@ class Tests(unittest.TestCase):
 
     def test_lifecycle_mode_present(self):
         self.assertIn("def rolling_lifecycle(", self.text)
-        self.assertIn('choices=("snapshot","rolling","lifecycle")', self.text)
+        self.assertRegex(
+            self.text,
+            r'choices=\([^)]*"lifecycle"[^)]*\)',
+        )
 
     def test_canonical_entry_contract(self):
         self.assertIn(
