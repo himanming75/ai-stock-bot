@@ -976,10 +976,78 @@ def rolling_counterfactual(root: Path):
 
 # === END V1.5 COUNTERFACTUAL EXTENSION ===
 
+# === V1.6 PRE-DISCOVERY HOLDOUT / WALK-FORWARD EXTENSION ===
+
+def _wf_scenario_definitions(base_contract):
+    return [
+        {"name":"BASELINE","allowed_symbols":("AAPL","MSFT","NVDA","SPY"),"entry_cutoff_et":None,"max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"EXCLUDE_MSFT","allowed_symbols":("AAPL","NVDA","SPY"),"entry_cutoff_et":None,"max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"NO_NEW_ENTRY_AFTER_14_ET","allowed_symbols":("AAPL","MSFT","NVDA","SPY"),"entry_cutoff_et":"14:00","max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"EXCLUDE_MSFT_AND_NO_ENTRY_AFTER_14_ET","allowed_symbols":("AAPL","NVDA","SPY"),"entry_cutoff_et":"14:00","max_hold_minutes":int(base_contract.get("max_hold_minutes",30))},
+        {"name":"MAX_HOLD_20M","allowed_symbols":("AAPL","MSFT","NVDA","SPY"),"entry_cutoff_et":None,"max_hold_minutes":20},
+        {"name":"MAX_HOLD_45M","allowed_symbols":("AAPL","MSFT","NVDA","SPY"),"entry_cutoff_et":None,"max_hold_minutes":45},
+        {"name":"MAX_HOLD_60M","allowed_symbols":("AAPL","MSFT","NVDA","SPY"),"entry_cutoff_et":None,"max_hold_minutes":60},
+    ]
+
+def _wf_eval_one_window(root: Path, scenario, window_dates):
+    global ALLOWED, make_checkpoints, load_paper_lifecycle_contract
+    orig_allowed,orig_make,orig_contract=ALLOWED,make_checkpoints,load_paper_lifecycle_contract
+    wanted=set(window_dates)
+    try:
+        ALLOWED=tuple(scenario["allowed_symbols"])
+        cutoff=scenario.get("entry_cutoff_et")
+        def _window_checkpoints(by):
+            pts=orig_make(by); out=[]
+            for p in pts:
+                if p.date().isoformat() not in wanted: continue
+                if cutoff:
+                    hh,mm=[int(x) for x in cutoff.split(":")]
+                    if (p.hour,p.minute) >= (hh,mm): continue
+                out.append(p)
+            return out
+        make_checkpoints=_window_checkpoints
+        def _contract(_root):
+            cfg=dict(orig_contract(_root)); cfg["max_hold_minutes"]=int(scenario["max_hold_minutes"]); return cfg
+        load_paper_lifecycle_contract=_contract
+        report=rolling_lifecycle(root); p=report.get("portfolio",{})
+        return {"closed_trades":int(p.get("closed_trades") or 0),"wins":int(p.get("wins") or 0),"losses":int(p.get("losses") or 0),"win_rate":p.get("win_rate"),"total_pl":float(p.get("total_pl") or 0.0),"profit_factor":p.get("profit_factor"),"expectancy_per_trade":p.get("expectancy_per_trade"),"max_drawdown_pct":p.get("max_drawdown_pct"),"max_consecutive_losses":p.get("max_consecutive_losses"),"exit_reason_counts":p.get("exit_reason_counts",{})}
+    finally:
+        ALLOWED,make_checkpoints,load_paper_lifecycle_contract=orig_allowed,orig_make,orig_contract
+
+def walkforward_oos(root: Path):
+    import os
+    root=Path(root).resolve(); discovery_start=os.environ.get("AI_STOCK_DISCOVERY_START_DATE","").strip()
+    if not discovery_start: raise RuntimeError("AI_STOCK_DISCOVERY_START_DATE is required")
+    by=load_real_rows(root); all_dates=sorted(regular_session_rows(by.get("SPY",[])).keys()); holdout=[d for d in all_dates if d < discovery_start]
+    if len(holdout)<25: raise RuntimeError(f"Insufficient pre-discovery trading dates: {len(holdout)}")
+    warmup=15; evaluable=holdout[warmup:]; size=5
+    windows=[evaluable[i:i+size] for i in range(0,len(evaluable),size) if len(evaluable[i:i+size])>=3]
+    if len(windows)<3: raise RuntimeError(f"Insufficient chronological holdout windows: {len(windows)}")
+    snap=_counterfactual_snapshot_files(root); scenarios=_wf_scenario_definitions(load_paper_lifecycle_contract(root)); results=[]
+    try:
+        for sc in scenarios:
+            wr=[]
+            for idx,dates in enumerate(windows,1): wr.append({"window_index":idx,"start_date":dates[0],"end_date":dates[-1],"trading_days":len(dates),**_wf_eval_one_window(root,sc,dates)})
+            trades=sum(x["closed_trades"] for x in wr); total_pl=sum(x["total_pl"] for x in wr); wins=sum(x["wins"] for x in wr); losses=sum(x["losses"] for x in wr)
+            pos_exp=sum(1 for x in wr if isinstance(x.get("expectancy_per_trade"),(int,float)) and x["expectancy_per_trade"]>0); pos_pl=sum(1 for x in wr if x["total_pl"]>0)
+            exps=[float(x["expectancy_per_trade"]) for x in wr if isinstance(x.get("expectancy_per_trade"),(int,float))]
+            summary={"window_count":len(wr),"closed_trades":trades,"wins":wins,"losses":losses,"win_rate":wins/trades if trades else None,"total_pl":total_pl,"weighted_expectancy_per_trade":total_pl/trades if trades else None,"median_window_expectancy":statistics.median(exps) if exps else None,"positive_pl_windows":pos_pl,"positive_expectancy_windows":pos_exp,"positive_pl_window_rate":pos_pl/len(wr),"positive_expectancy_window_rate":pos_exp/len(wr),"worst_window_pl":min((x["total_pl"] for x in wr),default=None),"best_window_pl":max((x["total_pl"] for x in wr),default=None),"worst_window_drawdown_pct":min((float(x["max_drawdown_pct"]) for x in wr if isinstance(x.get("max_drawdown_pct"),(int,float))),default=None)}
+            results.append({"scenario":sc["name"],"changes":{"allowed_symbols":list(sc["allowed_symbols"]),"entry_cutoff_et":sc["entry_cutoff_et"],"max_hold_minutes":sc["max_hold_minutes"]},"windows":wr,"summary":summary})
+    finally: _counterfactual_restore_files(root,snap)
+    b=next(x for x in results if x["scenario"]=="BASELINE")["summary"]
+    for x in results:
+        s=x["summary"]; s["delta_vs_baseline"]={"total_pl":round(s["total_pl"]-b["total_pl"],8),"weighted_expectancy_per_trade":round((s["weighted_expectancy_per_trade"] or 0)-(b["weighted_expectancy_per_trade"] or 0),8),"closed_trades":s["closed_trades"]-b["closed_trades"]}
+        checks={"minimum_closed_trades_40":s["closed_trades"]>=40,"minimum_windows_3":s["window_count"]>=3,"aggregate_expectancy_positive":isinstance(s["weighted_expectancy_per_trade"],(int,float)) and s["weighted_expectancy_per_trade"]>0,"positive_expectancy_windows_ge_60pct":s["positive_expectancy_window_rate"]>=.60,"aggregate_total_pl_positive":s["total_pl"]>0}; checks["passed_checks"]=sum(v is True for v in checks.values()); checks["total_checks"]=5; checks["status"]="PASS" if checks["passed_checks"]==5 else "REVIEW"; s["stability_gate"]=checks
+    ranked=sorted(results,key=lambda x:(x["summary"]["stability_gate"]["passed_checks"],float(x["summary"]["weighted_expectancy_per_trade"] or -999999),float(x["summary"]["total_pl"] or -999999)),reverse=True); top=ranked[0]
+    v15p=root/"runtime/real_market_multitimeframe_shadow/latest_lifecycle_counterfactual_v1_5.json"; v15=json.loads(v15p.read_text(encoding="utf-8")) if v15p.exists() else {}; v15top=(v15.get("top_research_candidate") or {}).get("scenario")
+    report={"stage":"PAPER_LIFECYCLE_WALKFORWARD_OOS_V1_6","status":"PASS","mode":"PRE_DISCOVERY_HOLDOUT_CHRONOLOGICAL_WINDOWS","generated_at_utc":datetime.now(timezone.utc).isoformat(),"discovery_start_date":discovery_start,"data_scope":{"all_trading_dates":len(all_dates),"pre_discovery_trading_dates":len(holdout),"feature_warmup_trading_days":warmup,"evaluable_holdout_dates":len(evaluable),"window_size_trading_days":size,"window_count":len(windows),"first_holdout_eval_date":evaluable[0] if evaluable else None,"last_holdout_eval_date":evaluable[-1] if evaluable else None},"scenario_results":results,"ranking":[x["scenario"] for x in ranked],"top_holdout_candidate":top,"v1_5_top_candidate":v15top,"v1_5_top_matches_holdout_top":v15top==top["scenario"],"promotion_gate":{"manual_review_required":True,"automatic_promotion":False,"production_change_allowed":False,"top_candidate_all_stability_checks_pass":top["summary"]["stability_gate"]["status"]=="PASS"},"contracts":{"paper_task_modified":False,"broker_write_performed":False,"order_submission_performed":False,"strategy_parameter_changed":False,"risk_parameter_changed":False,"automatic_parameter_optimization":False,"automatic_promotion":False,"live_auto_enable":False}}
+    out=root/"runtime/real_market_multitimeframe_shadow"; out.mkdir(parents=True,exist_ok=True); (out/"latest_walkforward_oos_v1_6.json").write_text(json.dumps(report,indent=2,default=str),encoding="utf-8"); return report
+# === END V1.6 EXTENSION ===
+
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--root",default=r"C:\stock-bot")
-    p.add_argument("--mode",choices=("snapshot","rolling","lifecycle","counterfactual"),default="snapshot")
+    p.add_argument("--mode",choices=("snapshot","rolling","lifecycle","counterfactual","walkforward"),default="snapshot")
     a=p.parse_args()
-    result = rolling_counterfactual(Path(a.root)) if a.mode=="counterfactual" else (rolling_lifecycle(Path(a.root)) if a.mode=="lifecycle" else build(Path(a.root),a.mode))
+    result = walkforward_oos(Path(a.root)) if a.mode=="walkforward" else (rolling_counterfactual(Path(a.root)) if a.mode=="counterfactual" else (rolling_lifecycle(Path(a.root)) if a.mode=="lifecycle" else build(Path(a.root),a.mode)))
     print(json.dumps(result,indent=2,default=str))
