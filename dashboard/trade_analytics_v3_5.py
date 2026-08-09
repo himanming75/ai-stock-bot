@@ -260,6 +260,20 @@ def build_trade_analytics(root: Path, status_payload):
 
     reconstruction_audit = getattr(collect_closed_trades, "last_reconstruction_audit", {"status":"NOT_RUN"})
 
+    import importlib.util
+    diagnostics_path = root / "dashboard" / "performance_diagnostics_v3_11.py"
+    diagnostics_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_performance_diagnostics_v3_11",
+        diagnostics_path,
+    )
+    if diagnostics_spec is None or diagnostics_spec.loader is None:
+        raise ModuleNotFoundError(str(diagnostics_path))
+    diagnostics_module = importlib.util.module_from_spec(diagnostics_spec)
+    diagnostics_spec.loader.exec_module(diagnostics_module)
+    diagnostics = diagnostics_module.build_performance_diagnostics(
+        list(reversed(numeric[-500:]))
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -277,6 +291,7 @@ def build_trade_analytics(root: Path, status_payload):
             "max_rows": 500,
             "read_only": True,
         },
+        "performance_diagnostics": diagnostics,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
