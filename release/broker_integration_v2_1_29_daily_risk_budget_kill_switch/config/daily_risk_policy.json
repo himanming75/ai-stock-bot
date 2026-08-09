@@ -1,0 +1,12 @@
+{
+  "policy_name": "V2.1.29_INITIAL_PAPER_VALIDATION_RISK_POLICY",
+  "max_completed_round_trips_per_day": 2,
+  "max_daily_gross_loss_usd": "5.00",
+  "max_consecutive_losses": 2,
+  "pnl_source": "V2.1.27_FILL_BASED_GROSS_PNL_BEFORE_FEES",
+  "notes": [
+    "Initial bounded Paper validation profile.",
+    "Risk is re-evaluated after every completed round-trip.",
+    "No live trading."
+  ]
+}

@@ -1,0 +1,23 @@
+def build_v2_1_29_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_29_DAILY_RISK_BUDGET_KILL_SWITCH",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "base_commit":"a67a2e0d",
+        "v2_1_28_continuous_session_reused":True,
+        "v2_1_27_completed_ledger_reused":True,
+        "one_round_trip_per_delegated_call":True,
+        "risk_rechecked_after_each_completed_round_trip":True,
+        "daily_trade_cap":True,
+        "daily_loss_budget":True,
+        "consecutive_loss_guard":True,
+        "manual_kill_switch":True,
+        "abnormal_session_fail_closed_kill":True,
+        "new_entry_engine_created":False,
+        "new_exit_engine_created":False,
+        "new_signal_engine_created":False,
+        "install_test_broker_network":False,
+        "install_test_paper_orders":0,
+        "install_test_live_orders":0,
+        "live_trading_enabled":False,
+        "next_stage":"V2.1.30_SESSION_CRASH_NETWORK_RESTART_RECOVERY",
+    }
