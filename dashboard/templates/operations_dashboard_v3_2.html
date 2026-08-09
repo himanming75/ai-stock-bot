@@ -26,12 +26,22 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <header>
 <div>
 <h1>AI Stock Bot Unified Operations Dashboard</h1>
-<div class="sub">Alpaca Paper · Read-only · V3.2</div>
+<div class="sub">Alpaca Paper · Read-only · V3.3 Health Layer</div>
 </div>
 <button onclick="load()">Refresh</button>
 </header>
 
 <main>
+<div class="section">
+<h3>Alerts / Health</h3>
+<div class="grid">
+<div class="card"><h2>Critical</h2><div id="alertCritical" class="big"></div></div>
+<div class="card"><h2>Warnings</h2><div id="alertWarning" class="big"></div></div>
+<div class="card"><h2>Info</h2><div id="alertInfo" class="big"></div></div>
+<div class="card"><h2>Alert Summary</h2><div id="alertSummary" class="note"></div></div>
+</div>
+</div>
+
 <div class="grid">
 <div class="card"><h2>System Health</h2><div id="health" class="big"></div><div id="git" class="note"></div></div>
 <div class="card"><h2>Runtime Gate</h2><div id="gate" class="big"></div><div id="gateD" class="note"></div></div>
@@ -105,6 +115,19 @@ function pct(v){
 async function load(){
   const d=await (await fetch('/api/status',{cache:'no-store'})).json();
 
+  let alerts=[];
+  if(String(d.health?.overall||'').includes('BLOCKED')) alerts.push(['CRITICAL','SYSTEM_BLOCKED',d.health.overall]);
+  if((d.runtime_gate?.successful_hooks??0)<(d.runtime_gate?.required_hooks??3)) alerts.push(['INFO','RUNTIME_GATE_WAITING',`Hooks ${d.runtime_gate?.successful_hooks??0}/${d.runtime_gate?.required_hooks??3}`]);
+  if((d.two_week?.completed_days??0)<(d.two_week?.required_days??10)) alerts.push(['INFO','TWO_WEEK_PROGRESS',`Validation ${d.two_week?.completed_days??0}/${d.two_week?.required_days??10}`]);
+  if(d.git?.available===false) alerts.push(['WARNING','GIT_UNAVAILABLE',d.git?.error||'Git unavailable']);
+  if(d.git?.synced===false) alerts.push(['WARNING','GIT_NOT_SYNCED','Local HEAD differs from origin/main']);
+  let critical=alerts.filter(x=>x[0]==='CRITICAL').length;
+  let warning=alerts.filter(x=>x[0]==='WARNING').length;
+  let info=alerts.filter(x=>x[0]==='INFO').length;
+  setv('alertCritical',critical,critical>0?'FAIL':'PASS');
+  setv('alertWarning',warning,warning>0?'WAIT':'PASS');
+  setv('alertInfo',info,'WAIT');
+  document.getElementById('alertSummary').textContent=alerts.map(x=>x[1]+': '+x[2]).join(' | ')||'No active alerts';
   setv('health',d.health.overall,d.health.overall);
   document.getElementById('git').textContent=`${d.git.branch} ${d.git.head_short} | origin ${d.git.origin_main_short}`;
 
