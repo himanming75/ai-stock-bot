@@ -592,6 +592,39 @@ def build_status(root: Path):
         payload["trade_analytics"] = {"status": "ISOLATED_ERROR", "historical": {"data_status": "INSUFFICIENT_DATA"}, "validation": {"data_status": "WAITING_FOR_VALIDATION_START"}, "by_symbol": [], "by_exit_reason": [], "daily": [], "recent_numeric_trades": [], "source_ledgers": [], "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False}}
         payload["trade_analytics_status"] = "ISOLATED_TRADE_ANALYTICS_ERROR: " + type(exc).__name__
 
+    try:
+        import sys
+        if str(root) not in sys.path:
+            sys.path.insert(0, str(root))
+        from broker_integration_v1.integrated_status import (
+            build_broker_integration_v1_status,
+        )
+        payload["broker_integration_v1"] = (
+            build_broker_integration_v1_status()
+        )
+        payload["broker_integration_v1_status"] = (
+            payload["broker_integration_v1"].get("status", "PASS")
+        )
+    except Exception as exc:
+        payload["broker_integration_v1"] = {
+            "status": "ISOLATED_ERROR",
+            "development_status": "ERROR",
+            "network_status": "LOCKED",
+            "live_trading_status": "LOCKED",
+            "contracts": {
+                "duplicate_broker_contract_created": False,
+                "duplicate_alpaca_market_data_stack_created": False,
+                "broker_network_used": False,
+                "broker_write_performed": False,
+                "order_submission_performed": False,
+                "live_trading_enabled": False,
+            },
+        }
+        payload["broker_integration_v1_status"] = (
+            "ISOLATED_BROKER_INTEGRATION_ERROR: "
+            + type(exc).__name__
+        )
+
     return payload
 
 
