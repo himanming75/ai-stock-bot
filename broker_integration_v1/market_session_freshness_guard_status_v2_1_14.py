@@ -1,0 +1,25 @@
+def build_v2_1_14_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_14_MARKET_SESSION_FRESHNESS_GUARD",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "regular_window_classifier_ready":True,
+        "holiday_open_claim_avoided":True,
+        "bar_freshness_guard_ready":True,
+        "future_timestamp_guard_ready":True,
+        "stale_signal_block_ready":True,
+        "v2_1_13_observer_compatible":True,
+        "etrade_oauth_from_stage":False,
+        "sandbox_preview_from_stage":False,
+        "sandbox_place_from_stage":False,
+        "broker_order_submission_from_stage":False,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+        "contracts":{
+            "duplicate_market_calendar_created":False,
+            "exchange_open_not_inferred_from_clock_only":True,
+            "duplicate_order_engine_created":False,
+            "duplicate_signal_engine_created":False,
+        },
+    }
