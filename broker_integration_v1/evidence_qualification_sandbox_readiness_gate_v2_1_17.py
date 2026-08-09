@@ -67,6 +67,12 @@ def qualify_evidence_row_v2_1_17(row):
     if row.get("evidence_only") is not True:
         reasons.append("EVIDENCE_ONLY_FLAG_NOT_TRUE")
 
+    if row.get("canonical_reward_risk_provenance_valid") is not True:
+        reasons.append("CANONICAL_REWARD_RISK_PROVENANCE_NOT_VALID")
+
+    if row.get("reward_risk_formula_recomputed") is not False:
+        reasons.append("REWARD_RISK_PROVENANCE_RECOMPUTE_NOT_ALLOWED")
+
     if int(row.get("broker_orders_submitted") or 0)!=0:
         reasons.append("SOURCE_ALREADY_SUBMITTED_BROKER_ORDER")
 
@@ -212,8 +218,8 @@ class EvidenceQualificationSandboxReadinessGateV2117:
         self.source_ledger=(
             self.root
             /"runtime"
-            /"fresh_eligible_signal_evidence_v2_1_16"
-            /"eligible_signal_evidence.jsonl"
+            /"canonical_reward_risk_provenance_v2_1_20"
+            /"enriched_evidence.jsonl"
         )
         self.runtime_dir=(
             self.root
