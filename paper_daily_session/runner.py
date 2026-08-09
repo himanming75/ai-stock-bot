@@ -252,6 +252,66 @@ class PaperDailySessionRunner:
             "stderr": (process.stderr or "")[-12000:],
         }
 
+
+    def _run_regime_shadow_cycle(self) -> dict[str, Any]:
+        script = self.root / "tools" / "run_regime_aware_shadow_v2_7.py"
+        audit_dir = self.root / "runtime" / "regime_aware_buy_shadow_v2_8_1"
+        audit_dir.mkdir(parents=True, exist_ok=True)
+        ledger = audit_dir / "hook_ledger.jsonl"
+
+        result: dict[str, Any] = {
+            "stage": "V2.8.1_REGIME_SHADOW_HOOK",
+            "timestamp_utc": utc_now(),
+            "mode": "READ_ONLY_SHADOW",
+            "script": str(script),
+            "attempted": False,
+            "exit_code": None,
+            "status": None,
+            "stdout_tail": "",
+            "stderr_tail": "",
+            "broker_write_performed": False,
+            "paper_order_submission_performed": False,
+            "live_order_submission_performed": False,
+            "primary_paper_flow_blocked": False,
+        }
+
+        try:
+            if not script.exists():
+                result["status"] = "SHADOW_SCRIPT_MISSING"
+            else:
+                result["attempted"] = True
+                process = subprocess.run(
+                    [
+                        sys.executable,
+                        str(script),
+                        "--root",
+                        str(self.root),
+                    ],
+                    cwd=self.root,
+                    capture_output=True,
+                    text=True,
+                    errors="replace",
+                    timeout=45,
+                    check=False,
+                )
+                result["exit_code"] = process.returncode
+                result["stdout_tail"] = (process.stdout or "")[-4000:]
+                result["stderr_tail"] = (process.stderr or "")[-4000:]
+                result["status"] = (
+                    "PASS"
+                    if process.returncode == 0
+                    else "SHADOW_NONZERO_ISOLATED"
+                )
+        except subprocess.TimeoutExpired as exc:
+            result["status"] = "SHADOW_TIMEOUT_ISOLATED"
+            result["stderr_tail"] = str(exc)
+        except Exception as exc:
+            result["status"] = "SHADOW_EXCEPTION_ISOLATED"
+            result["stderr_tail"] = str(exc)
+
+        append_jsonl(ledger, result)
+        return result
+
     def run(self) -> dict[str, Any]:
         self._acquire_lock()
         try:
@@ -274,6 +334,11 @@ class PaperDailySessionRunner:
                         "SESSION_STOPPED_BY_OPERATOR",
                         status="PASS",
                     )
+
+
+                # V2.8.2: read-only regime-aware shadow hook.
+                # Failure is intentionally isolated from primary Paper flow.
+                regime_shadow_v2_8_1 = self._run_regime_shadow_cycle()
 
                 clock = self._clock_data(client)
                 today_orders = self._today_orders(client)
