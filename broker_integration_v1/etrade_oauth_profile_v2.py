@@ -1,0 +1,13 @@
+ETRADE_OAUTH_PROFILE={
+    "request_token_url":"https://api.etrade.com/oauth/request_token",
+    "authorize_url":"https://us.etrade.com/e/t/etws/authorize",
+    "access_token_url":"https://api.etrade.com/oauth/access_token",
+    "renew_access_token_url":"https://api.etrade.com/oauth/renew_access_token",
+    "revoke_access_token_url":"https://api.etrade.com/oauth/revoke_access_token",
+    "oauth_version":"1.0a",
+    "signature_method":"HMAC-SHA1",
+    "default_callback":"oob",
+    "network_default":False,
+    "account_reads_only":True,
+    "order_writes_enabled":False,
+}

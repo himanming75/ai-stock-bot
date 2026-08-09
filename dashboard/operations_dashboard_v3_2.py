@@ -600,7 +600,7 @@ def build_status(root: Path):
             build_broker_integration_v1_status,
         )
         payload["broker_integration_v1"] = (
-            build_broker_integration_v1_status()
+            build_broker_integration_v1_status(root)
         )
         payload["broker_integration_v1_status"] = (
             payload["broker_integration_v1"].get("status", "PASS")

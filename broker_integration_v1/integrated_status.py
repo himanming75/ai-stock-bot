@@ -6,7 +6,9 @@ from .alpaca_existing_bridge import alpaca_reuse_certificate
 from .broker_registry import build_broker_registry
 from .live_safety_gateway import build_live_safety_gateway
 
-def build_broker_integration_v1_status():
+def build_broker_integration_v1_status(repo_root=None):
+    from .integrated_status_v2 import build_broker_integration_v2_status
+    v2=build_broker_integration_v2_status(repo_root)
     return {
         "stage":"BROKER_INTEGRATION_V1_BRIDGE",
         "status":"PASS_DEVELOPMENT_COMPLETE_NETWORK_LOCKED",
@@ -22,6 +24,7 @@ def build_broker_integration_v1_status():
         "etrade_auth_status":"NOT_CONFIGURED",
         "etrade_readonly_status":"FOUNDATION_READY",
         "live_trading_status":"LOCKED",
+        "v2_etrade_readonly_oauth": v2,
         "contracts":{
             "duplicate_broker_contract_created":False,
             "duplicate_alpaca_market_data_stack_created":False,
