@@ -1,0 +1,26 @@
+def build_v2_1_13_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_13_PERSISTENT_MARKET_OBSERVER",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "v2_1_12_end_to_end_plan_reused":True,
+        "canonical_gate_reused":True,
+        "eligible_signal_capture_ready":True,
+        "jsonl_observation_ledger_ready":True,
+        "latest_snapshot_ready":True,
+        "bounded_observation_loop":True,
+        "unchanged_stop_guard":True,
+        "etrade_oauth_from_stage":False,
+        "sandbox_preview_from_stage":False,
+        "sandbox_place_from_stage":False,
+        "broker_order_submission_from_stage":False,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+        "contracts":{
+            "duplicate_market_data_engine_created":False,
+            "duplicate_signal_engine_created":False,
+            "duplicate_gate_created":False,
+            "duplicate_order_engine_created":False,
+        },
+    }
