@@ -90,6 +90,28 @@ def collect_closed_trades(root: Path):
     rows, sources, seen = [], [], set()
     normalizer = _load_v3_6_normalizer(root)
 
+    import importlib.util
+    canonical_path = root / "dashboard" / "canonical_lifecycle_source_v3_8.py"
+    canonical_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_canonical_lifecycle_v3_8",
+        canonical_path,
+    )
+    if canonical_spec is None or canonical_spec.loader is None:
+        raise ModuleNotFoundError(str(canonical_path))
+    canonical_module = importlib.util.module_from_spec(canonical_spec)
+    canonical_spec.loader.exec_module(canonical_module)
+    canonical_trades = canonical_module.load_canonical_trades(root)
+
+    for trade in canonical_trades:
+        key = ("CANONICAL", trade.get("record_id"))
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append(trade)
+
+    if canonical_trades:
+        sources.append("runtime/paper_full_auto_lifecycle/closed_round_trips.jsonl")
+
     for path in _candidate_ledgers(root):
         rel = str(path.relative_to(root)).replace("\\", "/")
         source_used = False
@@ -109,6 +131,17 @@ def collect_closed_trades(root: Path):
             source_used = True
         if source_used:
             sources.append(rel)
+    canonical_rows = [
+        row for row in rows
+        if row.get("canonical_actual_round_trip")
+    ]
+
+    if canonical_rows:
+        rows = canonical_rows
+        sources = [
+            "runtime/paper_full_auto_lifecycle/closed_round_trips.jsonl"
+        ]
+
     rows.sort(key=lambda x: x["time"])
     import importlib.util
     reconstruction_path = root / "dashboard" / "cross_ledger_trade_reconstruction_v3_7.py"
@@ -212,6 +245,19 @@ def build_trade_analytics(root: Path, status_payload):
     numeric = [t for t in trades if t["pnl"] is not None]
     normalizer = _load_v3_6_normalizer(root)
     recovery_audit = normalizer.build_recovery_audit(trades)
+
+    import importlib.util
+    lifecycle_path = root / "dashboard" / "canonical_lifecycle_source_v3_8.py"
+    lifecycle_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_canonical_lifecycle_v3_8_status",
+        lifecycle_path,
+    )
+    if lifecycle_spec is None or lifecycle_spec.loader is None:
+        raise ModuleNotFoundError(str(lifecycle_path))
+    lifecycle_module = importlib.util.module_from_spec(lifecycle_spec)
+    lifecycle_spec.loader.exec_module(lifecycle_module)
+    lifecycle_discovery = lifecycle_module.build_lifecycle_discovery(root)
+
     reconstruction_audit = getattr(collect_closed_trades, "last_reconstruction_audit", {"status":"NOT_RUN"})
 
     return {
@@ -219,6 +265,7 @@ def build_trade_analytics(root: Path, status_payload):
         "historical": historical,
         "recovery_audit": recovery_audit,
         "cross_ledger_reconstruction": reconstruction_audit,
+        "canonical_lifecycle_discovery": lifecycle_discovery,
         "validation": {**validation, "data_status": validation_status, "start_date": validation_start},
         "by_symbol": _group_stats(trades, "symbol"),
         "by_exit_reason": _group_stats(trades, "reason"),
