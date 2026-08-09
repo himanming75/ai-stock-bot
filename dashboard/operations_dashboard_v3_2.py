@@ -482,8 +482,27 @@ def build_status(root: Path):
     payload = _build_status_v3_2(root)
 
     try:
-        from dashboard.visualization_v3_4 import build_visualization
-        payload["visualization"] = build_visualization(root, payload)
+        import importlib.util
+
+        module_path = root / "dashboard" / "visualization_v3_4.py"
+
+        spec = importlib.util.spec_from_file_location(
+            "ai_stock_bot_visualization_v3_4",
+            module_path,
+        )
+
+        if spec is None or spec.loader is None:
+            raise ModuleNotFoundError(
+                f"Unable to load visualization module: {module_path}"
+            )
+
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        payload["visualization"] = module.build_visualization(
+            root,
+            payload,
+        )
         payload["visualization_status"] = "PASS"
     except Exception as exc:
         payload["visualization"] = {
