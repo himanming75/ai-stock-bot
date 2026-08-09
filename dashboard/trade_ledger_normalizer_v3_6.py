@@ -63,6 +63,17 @@ def find_first(record, keys):
     return None, None
 
 
+def collect_identifier_values(record):
+    wanted={"order_id","client_order_id","trade_id","position_id","parent_order_id","execution_id","fill_id"}
+    result={}
+    for path,key,value in _walk(record):
+        normalized=key.lower()
+        if normalized not in wanted or value is None: continue
+        s=str(value).strip()
+        if s: result.setdefault(normalized,set()).add(s)
+    return {k:sorted(v) for k,v in result.items()}
+
+
 def find_numeric_pnl(record):
     priority = {
         "realized_pnl": 0,
@@ -139,6 +150,7 @@ def normalize_closed_trade(record, source):
             "pnl_path": pnl_path,
             "pnl_key": pnl_key,
             "pnl_recovered": pnl is not None,
+            "identifiers": collect_identifier_values(record),
         },
     }
 

@@ -110,6 +110,13 @@ def collect_closed_trades(root: Path):
         if source_used:
             sources.append(rel)
     rows.sort(key=lambda x: x["time"])
+    import importlib.util
+    reconstruction_path = root / "dashboard" / "cross_ledger_trade_reconstruction_v3_7.py"
+    spec = importlib.util.spec_from_file_location("ai_stock_bot_cross_ledger_v3_7", reconstruction_path)
+    if spec is None or spec.loader is None: raise ModuleNotFoundError(str(reconstruction_path))
+    module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+    rows, audit = module.reconstruct_missing_pnl(root, rows)
+    collect_closed_trades.last_reconstruction_audit = audit
     return rows, sorted(set(sources))
 
 
@@ -205,11 +212,13 @@ def build_trade_analytics(root: Path, status_payload):
     numeric = [t for t in trades if t["pnl"] is not None]
     normalizer = _load_v3_6_normalizer(root)
     recovery_audit = normalizer.build_recovery_audit(trades)
+    reconstruction_audit = getattr(collect_closed_trades, "last_reconstruction_audit", {"status":"NOT_RUN"})
 
     return {
         "status": historical["data_status"],
         "historical": historical,
         "recovery_audit": recovery_audit,
+        "cross_ledger_reconstruction": reconstruction_audit,
         "validation": {**validation, "data_status": validation_status, "start_date": validation_start},
         "by_symbol": _group_stats(trades, "symbol"),
         "by_exit_reason": _group_stats(trades, "reason"),
