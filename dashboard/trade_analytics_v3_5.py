@@ -302,6 +302,20 @@ def build_trade_analytics(root: Path, status_payload):
         readiness,
     )
 
+    stress_path = root / "dashboard" / "strategy_stress_test_v3_14.py"
+    stress_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_strategy_stress_test_v3_14",
+        stress_path,
+    )
+    if stress_spec is None or stress_spec.loader is None:
+        raise ModuleNotFoundError(str(stress_path))
+    stress_module = importlib.util.module_from_spec(stress_spec)
+    stress_spec.loader.exec_module(stress_module)
+    stress_test = stress_module.build_strategy_stress_test(
+        root,
+        list(reversed(numeric[-500:])),
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -322,6 +336,7 @@ def build_trade_analytics(root: Path, status_payload):
         "performance_diagnostics": diagnostics,
         "strategy_readiness": readiness,
         "readiness_history": readiness_history,
+        "strategy_stress_test": stress_test,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
