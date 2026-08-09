@@ -68,29 +68,34 @@ def _candidate_ledgers(root: Path):
     return [path for _, path in sorted(candidates, reverse=True)[:180]]
 
 
-def _normalize_closed_trade(record, source):
-    event = str(_first(record, EVENT_KEYS) or "")
-    if "CLOSED_TRADE" not in event.upper():
-        return None
-    return {
-        "time": str(_first(record, TIME_KEYS) or ""),
-        "symbol": str(_first(record, SYMBOL_KEYS) or "UNKNOWN"),
-        "side": str(_first(record, SIDE_KEYS) or ""),
-        "qty": _num(_first(record, QTY_KEYS)),
-        "pnl": _num(_first(record, PNL_KEYS)),
-        "reason": str(_first(record, REASON_KEYS) or "UNKNOWN"),
-        "record_id": str(_first(record, ID_KEYS) or ""),
-        "source": source,
-    }
+def _load_v3_6_normalizer(root: Path):
+    import importlib.util
+
+    module_path = root / "dashboard" / "trade_ledger_normalizer_v3_6.py"
+
+    spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_trade_ledger_normalizer_v3_6",
+        module_path,
+    )
+
+    if spec is None or spec.loader is None:
+        raise ModuleNotFoundError(f"Unable to load V3.6 normalizer: {module_path}")
+
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def collect_closed_trades(root: Path):
     rows, sources, seen = [], [], set()
+    normalizer = _load_v3_6_normalizer(root)
+
     for path in _candidate_ledgers(root):
         rel = str(path.relative_to(root)).replace("\\", "/")
         source_used = False
+
         for record in _read_jsonl(path):
-            trade = _normalize_closed_trade(record, rel)
+            trade = normalizer.normalize_closed_trade(record, rel)
             if trade is None:
                 continue
             if trade["record_id"]:
@@ -198,9 +203,13 @@ def build_trade_analytics(root: Path, status_payload):
         validation = _stats([])
         validation_status = "WAITING_FOR_VALIDATION_START"
     numeric = [t for t in trades if t["pnl"] is not None]
+    normalizer = _load_v3_6_normalizer(root)
+    recovery_audit = normalizer.build_recovery_audit(trades)
+
     return {
         "status": historical["data_status"],
         "historical": historical,
+        "recovery_audit": recovery_audit,
         "validation": {**validation, "data_status": validation_status, "start_date": validation_start},
         "by_symbol": _group_stats(trades, "symbol"),
         "by_exit_reason": _group_stats(trades, "reason"),
