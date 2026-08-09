@@ -1,0 +1,22 @@
+def build_v2_1_27_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_27_FINAL_EXIT_FILL_RECONCILIATION_ROUND_TRIP_LEDGER",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "base_commit":"4b8c4008",
+        "v2_1_23_entry_fill_reused":True,
+        "v2_1_25_exit_submission_reused":True,
+        "alpaca_paper_read_client_reused":True,
+        "paper_endpoint_enforced_by_existing_client":True,
+        "exit_fill_terminal_reconciliation":True,
+        "position_absence_after_full_exit_required":True,
+        "completed_round_trip_dedup":True,
+        "v2_1_26_state_completion_update":True,
+        "fill_based_gross_pnl":True,
+        "fees_claimed_in_pnl":False,
+        "new_broker_write_created":False,
+        "install_test_broker_network":False,
+        "install_test_paper_orders":0,
+        "install_test_live_orders":0,
+        "live_trading_enabled":False,
+        "next_stage":"V2.1.28_CONTINUOUS_MULTI_ROUND_TRIP_PAPER_SESSION",
+    }
