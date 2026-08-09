@@ -8,6 +8,8 @@ from .etrade_oauth_profile_v2 import ETRADE_OAUTH_PROFILE
 
 
 def build_broker_integration_v2_status(repo_root=None):
+    from .etrade_ai_signal_decision_status_v2_1_5 import build_etrade_ai_signal_decision_v2_1_5_status
+    ai_signal_decision=build_etrade_ai_signal_decision_v2_1_5_status()
     from .etrade_sandbox_bounded_multi_cycle_status_v2_1_4 import build_etrade_sandbox_bounded_multi_cycle_v2_1_4_status
     bounded_multi=build_etrade_sandbox_bounded_multi_cycle_v2_1_4_status()
     from .etrade_sandbox_autonomous_cycle_status_v2_1_3 import build_etrade_sandbox_autonomous_cycle_v2_1_3_status
@@ -56,6 +58,7 @@ def build_broker_integration_v2_status(repo_root=None):
         "place_ledger_v2_1_2": place_ledger,
         "autonomous_cycle_v2_1_3": autonomous_cycle,
         "bounded_multi_cycle_v2_1_4": bounded_multi,
+        "ai_signal_decision_v2_1_5": ai_signal_decision,
         "contracts":{
             "v1_bridge_reused":True,
             "canonical_v77_1_contract_reused":True,

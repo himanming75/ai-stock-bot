@@ -1,0 +1,26 @@
+def build_etrade_ai_signal_decision_v2_1_5_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_5_AI_SIGNAL_DECISION_BRIDGE",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "buy_sell_hold_normalization":True,
+        "confidence_gate":True,
+        "default_minimum_confidence":0.60,
+        "hold_blocks_order":True,
+        "low_confidence_blocks_order":True,
+        "bounded_signal_queue_maximum":3,
+        "v2_1_4_controller_reused":True,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+        "contracts":{
+            "ai_engine_v2_not_modified":True,
+            "strategy_profitability_not_invented":True,
+            "canonical_v2_1_3_signal_reused":True,
+            "v2_1_4_bounded_controller_reused":True,
+            "duplicate_order_engine_created":False,
+            "sandbox_only":True,
+            "real_money_moved_during_build":False,
+            "production_order_submission_performed":False,
+        },
+    }
