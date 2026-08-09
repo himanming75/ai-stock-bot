@@ -288,6 +288,20 @@ def build_trade_analytics(root: Path, status_payload):
         "performance_diagnostics": diagnostics,
     })
 
+    history_path = root / "dashboard" / "readiness_history_v3_13.py"
+    history_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_readiness_history_v3_13",
+        history_path,
+    )
+    if history_spec is None or history_spec.loader is None:
+        raise ModuleNotFoundError(str(history_path))
+    history_module = importlib.util.module_from_spec(history_spec)
+    history_spec.loader.exec_module(history_module)
+    readiness_history = history_module.build_history_summary(
+        root,
+        readiness,
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -307,6 +321,7 @@ def build_trade_analytics(root: Path, status_payload):
         },
         "performance_diagnostics": diagnostics,
         "strategy_readiness": readiness,
+        "readiness_history": readiness_history,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
