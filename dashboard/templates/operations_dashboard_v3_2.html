@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Stock Bot Unified Operations Dashboard</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#0b1118;color:#e6edf3}
+header{padding:16px 20px;background:#111820;border-bottom:1px solid #30363d;display:flex;justify-content:space-between;align-items:center}
+h1{font-size:22px;margin:0}.sub{font-size:12px;color:#8b949e;margin-top:4px}
+main{padding:16px;max-width:1600px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:14px}
+.card h2{font-size:12px;color:#8b949e;margin:0 0 8px;text-transform:uppercase}
+.big{font-size:24px;font-weight:700}.good{color:#3fb950}.wait{color:#d29922}.bad{color:#f85149}
+.section{margin-top:16px}.section h3{margin:0 0 8px;font-size:16px}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#161b22;border:1px solid #30363d}
+th,td{padding:8px;border-bottom:1px solid #30363d;text-align:left}th{color:#8b949e;background:#111820}
+button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12px;cursor:pointer}
+.note{font-size:11px;color:#8b949e;margin-top:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div>
+<h1>AI Stock Bot Unified Operations Dashboard</h1>
+<div class="sub">Alpaca Paper · Read-only · V3.2</div>
+</div>
+<button onclick="load()">Refresh</button>
+</header>
+
+<main>
+<div class="grid">
+<div class="card"><h2>System Health</h2><div id="health" class="big"></div><div id="git" class="note"></div></div>
+<div class="card"><h2>Runtime Gate</h2><div id="gate" class="big"></div><div id="gateD" class="note"></div></div>
+<div class="card"><h2>2-Week Validation</h2><div id="days" class="big"></div><div id="validation" class="note"></div></div>
+<div class="card"><h2>Account Equity</h2><div id="equity" class="big"></div><div id="cash" class="note"></div></div>
+<div class="card"><h2>Positions</h2><div id="positions" class="big"></div><div id="posSymbols" class="note"></div></div>
+<div class="card"><h2>Open Orders</h2><div id="orders" class="big"></div></div>
+<div class="card"><h2>Validation Closed Trades</h2><div id="vclosed" class="big"></div><div class="note">Current 10-day validation only</div></div>
+<div class="card"><h2>Historical Closed Trades</h2><div id="hclosed" class="big"></div><div class="note">All saved Paper history</div></div>
+</div>
+
+<div class="section two">
+<div>
+<h3>Current Positions</h3>
+<table>
+<thead><tr><th>Symbol</th><th>Qty</th><th>Avg Entry</th><th>Market Value</th><th>Unrealized P/L</th></tr></thead>
+<tbody id="positionRows"></tbody>
+</table>
+</div>
+
+<div>
+<h3>Open / Recent Orders</h3>
+<table>
+<thead><tr><th>Time</th><th>Symbol</th><th>Side</th><th>Qty</th><th>Status</th></tr></thead>
+<tbody id="orderRows"></tbody>
+</table>
+</div>
+</div>
+
+<div class="section">
+<h3>Performance</h3>
+<div class="grid">
+<div class="card"><h2>Historical Realized P/L</h2><div id="realized" class="big"></div></div>
+<div class="card"><h2>Win Rate</h2><div id="winrate" class="big"></div></div>
+<div class="card"><h2>Profit Factor</h2><div id="pf" class="big"></div></div>
+<div class="card"><h2>Shadow Signals / Outcomes</h2><div id="shadow" class="big"></div></div>
+</div>
+</div>
+
+<div class="section">
+<h3>Recent Timeline</h3>
+<table>
+<thead><tr><th>Time</th><th>Event</th><th>Symbol</th><th>Side</th><th>Qty</th><th>P/L</th><th>Reason</th></tr></thead>
+<tbody id="timeline"></tbody>
+</table>
+</div>
+
+<div class="note" id="sources"></div>
+</main>
+
+<script>
+function cls(s){
+  s=String(s||"");
+  if(s.includes("BLOCKED")||s.includes("FAIL"))return"bad";
+  if(s.includes("WAIT")||s.includes("ACTIVE")||s.includes("COLLECT"))return"wait";
+  return"good";
+}
+function setv(id,v,s){
+  let e=document.getElementById(id);
+  e.textContent=(v===null||v===undefined||v==="")?"-":v;
+  e.className="big "+cls(s||String(v));
+}
+function money(v){
+  if(v===null||v===undefined)return"-";
+  let n=Number(v);
+  return Number.isFinite(n)?'$'+n.toLocaleString(undefined,{maximumFractionDigits:2}):String(v);
+}
+function pct(v){
+  return v===null||v===undefined?'-':(100*Number(v)).toFixed(1)+'%';
+}
+async function load(){
+  const d=await (await fetch('/api/status',{cache:'no-store'})).json();
+
+  setv('health',d.health.overall,d.health.overall);
+  document.getElementById('git').textContent=`${d.git.branch} ${d.git.head_short} | origin ${d.git.origin_main_short}`;
+
+  setv('gate',d.runtime_gate.status,d.runtime_gate.status);
+  document.getElementById('gateD').textContent=`Hooks ${d.runtime_gate.successful_hooks}/${d.runtime_gate.required_hooks}`;
+
+  setv('days',`${d.two_week.completed_days}/${d.two_week.required_days}`,d.two_week.status);
+  document.getElementById('validation').textContent=d.two_week.status;
+
+  setv('equity',money(d.account.equity));
+  document.getElementById('cash').textContent=`Cash ${money(d.account.cash)} | Buying Power ${money(d.account.buying_power)}`;
+
+  setv('positions',d.positions.length);
+  document.getElementById('posSymbols').textContent=d.positions.map(x=>x.symbol).filter(Boolean).join(', ');
+
+  setv('orders',d.open_orders.length);
+  setv('vclosed',d.performance.validation_closed_trades);
+  setv('hclosed',d.performance.historical_closed_trades);
+  setv('realized',money(d.performance.historical_realized_pnl),d.performance.historical_realized_pnl<0?'FAIL':'PASS');
+  setv('winrate',pct(d.performance.win_rate));
+  setv('pf',d.performance.profit_factor===null?'-':Number(d.performance.profit_factor).toFixed(2));
+  setv('shadow',`${d.shadow.signal_count} / ${d.shadow.outcome_count}`);
+
+  document.getElementById('positionRows').innerHTML=d.positions.map(x=>`<tr><td>${x.symbol||''}</td><td>${x.qty??''}</td><td>${money(x.avg_entry_price)}</td><td>${money(x.market_value)}</td><td>${money(x.unrealized_pl)}</td></tr>`).join('');
+
+  document.getElementById('orderRows').innerHTML=d.open_orders.concat(d.recent_orders).slice(0,12).map(x=>`<tr><td>${x.time||''}</td><td>${x.symbol||''}</td><td>${x.side||''}</td><td>${x.qty??''}</td><td>${x.status||''}</td></tr>`).join('');
+
+  document.getElementById('timeline').innerHTML=d.timeline.map(x=>`<tr><td>${x.time||''}</td><td>${x.event||''}</td><td>${x.symbol||''}</td><td>${x.side||''}</td><td>${x.qty??''}</td><td>${x.pnl??''}</td><td>${x.reason||''}</td></tr>`).join('');
+
+  document.getElementById('sources').textContent='Runtime sources: '+d.data_sources.join(' | ');
+}
+load();
+setInterval(load,15000);
+</script>
+</body>
+</html>
