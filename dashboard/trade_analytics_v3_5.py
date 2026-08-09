@@ -316,6 +316,20 @@ def build_trade_analytics(root: Path, status_payload):
         list(reversed(numeric[-500:])),
     )
 
+    robustness_path = root / "dashboard" / "strategy_robustness_v3_15.py"
+    robustness_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_strategy_robustness_v3_15",
+        robustness_path,
+    )
+    if robustness_spec is None or robustness_spec.loader is None:
+        raise ModuleNotFoundError(str(robustness_path))
+    robustness_module = importlib.util.module_from_spec(robustness_spec)
+    robustness_spec.loader.exec_module(robustness_module)
+    robustness = robustness_module.build_strategy_robustness(
+        root,
+        list(reversed(numeric[-500:])),
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -337,6 +351,7 @@ def build_trade_analytics(root: Path, status_payload):
         "strategy_readiness": readiness,
         "readiness_history": readiness_history,
         "strategy_stress_test": stress_test,
+        "strategy_robustness": robustness,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
