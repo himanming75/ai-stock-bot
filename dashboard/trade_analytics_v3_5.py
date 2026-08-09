@@ -271,6 +271,12 @@ def build_trade_analytics(root: Path, status_payload):
         "by_exit_reason": _group_stats(trades, "reason"),
         "daily": _daily(trades),
         "recent_numeric_trades": list(reversed(numeric[-20:])),
+        "trade_details": list(reversed(numeric[-500:])),
+        "trade_detail_contract": {
+            "canonical_source_only_when_available": True,
+            "max_rows": 500,
+            "read_only": True,
+        },
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
