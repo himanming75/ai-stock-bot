@@ -143,7 +143,25 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <div class="note" id="analyticsStatus"></div>
 </div>
 
-<div class="section" id="etradeSandboxAutonomousV213Section">
+<div class="section" id="etradeSandboxBoundedV214Section">
+<h3>E*TRADE Sandbox Bounded Multi-Cycle V2.1.4 / E*TRADE 샌드박스 제한 반복 사이클 V2.1.4</h3>
+<div class="grid">
+<div class="card"><h2>Development / 개발</h2><div id="sb214Dev" class="big"></div></div>
+<div class="card"><h2>Max Cycles / 최대 사이클</h2><div id="sb214Max" class="big"></div></div>
+<div class="card"><h2>Duplicate Guard / 중복 신호 차단</h2><div id="sb214Dup" class="big"></div></div>
+<div class="card"><h2>Kill Switch / 긴급 중단</h2><div id="sb214Kill" class="big"></div></div>
+<div class="card"><h2>Unbounded Loop / 무한 반복</h2><div id="sb214Loop" class="big"></div></div>
+<div class="card"><h2>PROD Orders / PROD 주문</h2><div id="sb214Prod" class="big"></div></div>
+</div>
+<div class="note">
+Maximum 3 cycles / 최대 3회 |
+Cooldown enforced / 대기시간 적용 |
+Duplicate signals blocked / 중복 신호 차단 |
+Kill switch supported / 긴급 중단 지원 |
+Unlimited loop prohibited / 무한 반복 금지 |
+PROD orders remain locked / PROD 주문 계속 잠금
+</div>
+</div>\n<div class="section" id="etradeSandboxAutonomousV213Section">
 <h3>E*TRADE Sandbox Autonomous Cycle V2.1.3 / E*TRADE 샌드박스 자동 사이클 V2.1.3</h3>
 <div class="grid">
 <div class="card"><h2>Development / 개발</h2><div id="sb213Dev" class="big"></div></div>
@@ -1235,7 +1253,26 @@ function aiV2Meaning(status){
   if((status||'').includes('PASS'))return 'SOFTWARE READY / 소프트웨어 준비';
   return status||'-';
 }
-function loadSandboxAutoV213(d){
+function loadSandboxBoundedV214(d){
+ let s=((((d.broker_integration_v1||{}).v2_etrade_readonly_oauth||{}).bounded_multi_cycle_v2_1_4)||{});
+ setv('sb214Dev',s.development_status||'-',s.development_status==='COMPLETE'?'PASS':'WAIT');
+ setv('sb214Max',String(s.maximum_cycles||'-'));
+ setv('sb214Dup',s.duplicate_signal_guard?'ON':'OFF',s.duplicate_signal_guard?'PASS':'WAIT');
+ setv('sb214Kill',s.kill_switch_supported?'READY':'NO',s.kill_switch_supported?'PASS':'WAIT');
+ setv('sb214Loop',s.unbounded_loop_allowed?'ALLOWED':'BLOCKED',s.unbounded_loop_allowed?'FAIL':'PASS');
+ setv('sb214Prod',s.production_order_post_allowed?'UNLOCKED':'LOCKED','FAIL');
+}
+async function refreshSandboxBoundedV214(){
+ try{
+  let r=await fetch('/api/status',{cache:'no-store'});
+  let d=await r.json();
+  loadSandboxBoundedV214(d);
+ }catch(e){}
+}
+document.addEventListener('DOMContentLoaded',()=>{
+ refreshSandboxBoundedV214();
+ setInterval(refreshSandboxBoundedV214,30000);
+});\nfunction loadSandboxAutoV213(d){
  let s=((((d.broker_integration_v1||{}).v2_etrade_readonly_oauth||{}).autonomous_cycle_v2_1_3)||{});
  setv('sb213Dev',s.development_status||'-',s.development_status==='COMPLETE'?'PASS':'WAIT');
  setv('sb213Cycle',s.one_cycle_supported?'READY':'NO',s.one_cycle_supported?'PASS':'WAIT');
