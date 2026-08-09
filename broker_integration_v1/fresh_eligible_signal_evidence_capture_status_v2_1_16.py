@@ -1,0 +1,26 @@
+def build_v2_1_16_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_16_FRESH_ELIGIBLE_SIGNAL_EVIDENCE_CAPTURE",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "v2_1_15_observation_ledger_reused":True,
+        "fresh_only_filter":True,
+        "eligible_only_filter":True,
+        "fingerprint_deduplication":True,
+        "dedicated_evidence_ledger_ready":True,
+        "latest_evidence_snapshot_ready":True,
+        "market_data_fetch_from_stage":False,
+        "etrade_oauth_from_stage":False,
+        "sandbox_preview_from_stage":False,
+        "sandbox_place_from_stage":False,
+        "broker_order_submission_from_stage":False,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+        "contracts":{
+            "duplicate_observer_loop_created":False,
+            "duplicate_market_data_engine_created":False,
+            "duplicate_signal_engine_created":False,
+            "duplicate_order_engine_created":False,
+        },
+    }
