@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Stock Bot Unified Operations Dashboard</title>
+<title>AI Stock Bot Unified Operations Dashboard / 통합 운영 대시보드</title>
 <style>
 body{font-family:Arial,sans-serif;margin:0;background:#0b1118;color:#e6edf3}
 header{padding:16px 20px;background:#111820;border-bottom:1px solid #30363d;display:flex;justify-content:space-between;align-items:center}
@@ -37,105 +37,105 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <body>
 <header>
 <div>
-<h1>AI Stock Bot Unified Operations Dashboard</h1>
-<div class="sub">Alpaca Paper · Read-only · V3.5 Trade Analytics</div>
+<h1>AI Stock Bot Unified Operations Dashboard / 통합 운영 대시보드</h1>
+<div class="sub">Alpaca Paper · Read-only / 읽기 전용 · V3.9 Canonical Performance / 정식 성과 데이터</div>
 </div>
-<button onclick="load()">Refresh</button>
+<button onclick="load()">Refresh / 새로고침</button>
 </header>
 
 <main>
 <div class="section">
-<h3>Alerts / Health</h3>
+<h3>Alerts / Health · 알림 / 상태</h3>
 <div class="grid">
-<div class="card"><h2>Critical</h2><div id="alertCritical" class="big"></div></div>
-<div class="card"><h2>Warnings</h2><div id="alertWarning" class="big"></div></div>
-<div class="card"><h2>Info</h2><div id="alertInfo" class="big"></div></div>
-<div class="card"><h2>Alert Summary</h2><div id="alertSummary" class="note"></div></div>
+<div class="card"><h2>Critical / 긴급</h2><div id="alertCritical" class="big"></div></div>
+<div class="card"><h2>Warnings / 경고</h2><div id="alertWarning" class="big"></div></div>
+<div class="card"><h2>Info / 정보</h2><div id="alertInfo" class="big"></div></div>
+<div class="card"><h2>Alert Summary / 알림 요약</h2><div id="alertSummary" class="note"></div></div>
 </div>
 </div>
 
 <div class="grid">
-<div class="card"><h2>System Health</h2><div id="health" class="big"></div><div id="git" class="note"></div></div>
-<div class="card"><h2>Runtime Gate</h2><div id="gate" class="big"></div><div id="gateD" class="note"></div></div>
-<div class="card"><h2>2-Week Validation</h2><div id="days" class="big"></div><div id="validation" class="note"></div></div>
-<div class="card"><h2>Account Equity</h2><div id="equity" class="big"></div><div id="cash" class="note"></div></div>
-<div class="card"><h2>Positions</h2><div id="positions" class="big"></div><div id="posSymbols" class="note"></div></div>
-<div class="card"><h2>Open Orders</h2><div id="orders" class="big"></div></div>
-<div class="card"><h2>Validation Closed Trades</h2><div id="vclosed" class="big"></div><div class="note">Current 10-day validation only</div></div>
-<div class="card"><h2>Historical Closed Trades</h2><div id="hclosed" class="big"></div><div class="note">All saved Paper history</div></div>
+<div class="card"><h2>System Health / 시스템 상태</h2><div id="health" class="big"></div><div id="git" class="note"></div></div>
+<div class="card"><h2>Runtime Gate / 실행 검증 게이트</h2><div id="gate" class="big"></div><div id="gateD" class="note"></div></div>
+<div class="card"><h2>2-Week Validation / 2주 검증</h2><div id="days" class="big"></div><div id="validation" class="note"></div></div>
+<div class="card"><h2>Account Equity / 계좌 평가금액</h2><div id="equity" class="big"></div><div id="cash" class="note"></div></div>
+<div class="card"><h2>Positions / 보유 포지션</h2><div id="positions" class="big"></div><div id="posSymbols" class="note"></div></div>
+<div class="card"><h2>Open Orders / 미체결 주문</h2><div id="orders" class="big"></div></div>
+<div class="card"><h2>Validation Closed Trades / 검증 종료 거래</h2><div id="vclosed" class="big"></div><div class="note">Current 10-day validation only / 현재 10일 검증만</div></div>
+<div class="card"><h2>Historical Closed Trades / 누적 종료 거래</h2><div id="hclosed" class="big"></div><div class="note">All saved Paper history / 저장된 전체 페이퍼 기록</div></div>
 </div>
 
 <div class="section two">
 <div>
-<h3>Current Positions</h3>
+<h3>Current Positions / 현재 보유 포지션</h3>
 <table>
-<thead><tr><th>Symbol</th><th>Qty</th><th>Avg Entry</th><th>Market Value</th><th>Unrealized P/L</th></tr></thead>
+<thead><tr><th>Symbol / 종목</th><th>Qty / 수량</th><th>Avg Entry / 평균 진입가</th><th>Market Value / 평가금액</th><th>Unrealized P/L / 미실현손익</th></tr></thead>
 <tbody id="positionRows"></tbody>
 </table>
 </div>
 
 <div>
-<h3>Open / Recent Orders</h3>
+<h3>Open / Recent Orders · 미체결 / 최근 주문</h3>
 <table>
-<thead><tr><th>Time</th><th>Symbol</th><th>Side</th><th>Qty</th><th>Status</th></tr></thead>
+<thead><tr><th>Time / 시간</th><th>Symbol / 종목</th><th>Side / 매수·매도</th><th>Qty / 수량</th><th>Status / 상태</th></tr></thead>
 <tbody id="orderRows"></tbody>
 </table>
 </div>
 </div>
 
 <div class="section">
-<h3>Performance</h3>
+<h3>Performance / 성과</h3>
 <div class="grid">
-<div class="card"><h2>Historical Realized P/L</h2><div id="realized" class="big"></div></div>
-<div class="card"><h2>Win Rate</h2><div id="winrate" class="big"></div></div>
-<div class="card"><h2>Profit Factor</h2><div id="pf" class="big"></div></div>
-<div class="card"><h2>Shadow Signals / Outcomes</h2><div id="shadow" class="big"></div></div>
+<div class="card"><h2>Historical Realized P/L / 누적 실현손익</h2><div id="realized" class="big"></div></div>
+<div class="card"><h2>Win Rate / 승률</h2><div id="winrate" class="big"></div></div>
+<div class="card"><h2>Profit Factor / 수익 팩터</h2><div id="pf" class="big"></div></div>
+<div class="card"><h2>Shadow Signals / Outcomes · 섀도 신호 / 결과</h2><div id="shadow" class="big"></div></div>
 </div>
 </div>
 
 <div class="section">
-<h3>Visualization</h3>
+<h3>Visualization / 시각화</h3>
 <div class="two">
-<div><h3>Equity Curve</h3><div id="equityChart" class="chartbox"></div></div>
-<div><h3>Daily Realized P/L</h3><div id="pnlChart" class="chartbox"></div></div>
+<div><h3>Equity Curve / 계좌자산 곡선</h3><div id="equityChart" class="chartbox"></div></div>
+<div><h3>Daily Realized P/L / 일별 실현손익</h3><div id="pnlChart" class="chartbox"></div></div>
 </div>
 <div class="two" style="margin-top:12px">
-<div><h3>Position Allocation</h3><div id="allocationChart" class="card"></div></div>
-<div><h3>10-Day Validation Progress</h3><div id="validationChart" class="card"></div></div>
+<div><h3>Position Allocation / 포지션 비중</h3><div id="allocationChart" class="card"></div></div>
+<div><h3>10-Day Validation Progress / 10일 검증 진행</h3><div id="validationChart" class="card"></div></div>
 </div>
 <div class="grid" style="margin-top:12px">
-<div class="card"><h2>Current Unrealized P/L</h2><div id="vizUnrealized" class="big"></div></div>
-<div class="card"><h2>Equity History Points</h2><div id="vizEquityPoints" class="big"></div></div>
-<div class="card"><h2>Daily P/L Points</h2><div id="vizPnlPoints" class="big"></div></div>
-<div class="card"><h2>Visualization Status</h2><div id="vizStatus" class="note"></div></div>
+<div class="card"><h2>Current Unrealized P/L / 현재 미실현손익</h2><div id="vizUnrealized" class="big"></div></div>
+<div class="card"><h2>Equity History Points / 자산 기록 수</h2><div id="vizEquityPoints" class="big"></div></div>
+<div class="card"><h2>Daily P/L Points / 일별 손익 기록 수</h2><div id="vizPnlPoints" class="big"></div></div>
+<div class="card"><h2>Visualization Status / 시각화 상태</h2><div id="vizStatus" class="note"></div></div>
 </div>
 </div>
 <div class="section">
-<h3>Historical Performance & Trade Analytics</h3>
+<h3>Historical Performance & Trade Analytics / 누적 성과 및 거래 분석</h3>
 <div class="grid">
-<div class="card"><h2>Numeric Trades</h2><div id="analyticsTradeCount" class="big"></div><div id="analyticsObserved" class="note"></div></div>
-<div class="card"><h2>Net Realized P/L</h2><div id="analyticsNet" class="big"></div></div>
-<div class="card"><h2>Win Rate</h2><div id="analyticsWinRate" class="big"></div></div>
-<div class="card"><h2>Profit Factor</h2><div id="analyticsPF" class="big"></div></div>
-<div class="card"><h2>Average Trade</h2><div id="analyticsAvgTrade" class="big"></div></div>
-<div class="card"><h2>Average Win</h2><div id="analyticsAvgWin" class="big"></div></div>
-<div class="card"><h2>Average Loss</h2><div id="analyticsAvgLoss" class="big"></div></div>
-<div class="card"><h2>Max Realized Drawdown</h2><div id="analyticsDD" class="big"></div></div>
+<div class="card"><h2>Numeric Trades / 손익 계산 거래</h2><div id="analyticsTradeCount" class="big"></div><div id="analyticsObserved" class="note"></div></div>
+<div class="card"><h2>Net Realized P/L / 순실현손익</h2><div id="analyticsNet" class="big"></div></div>
+<div class="card"><h2>Win Rate / 승률</h2><div id="analyticsWinRate" class="big"></div></div>
+<div class="card"><h2>Profit Factor / 수익 팩터</h2><div id="analyticsPF" class="big"></div></div>
+<div class="card"><h2>Average Trade / 거래당 평균손익</h2><div id="analyticsAvgTrade" class="big"></div></div>
+<div class="card"><h2>Average Win / 평균 수익</h2><div id="analyticsAvgWin" class="big"></div></div>
+<div class="card"><h2>Average Loss / 평균 손실</h2><div id="analyticsAvgLoss" class="big"></div></div>
+<div class="card"><h2>Max Realized Drawdown / 최대 실현 낙폭</h2><div id="analyticsDD" class="big"></div></div>
 </div>
 <div class="two" style="margin-top:12px">
-<div><h3>Cumulative Realized P/L</h3><div id="analyticsCumulativeChart" class="chartbox"></div></div>
-<div><h3>Historical vs Validation</h3><table><thead><tr><th>Scope</th><th>Status</th><th>Trades</th><th>Net P/L</th><th>Win Rate</th><th>Profit Factor</th></tr></thead><tbody id="analyticsScopeRows"></tbody></table></div>
+<div><h3>Cumulative Realized P/L / 누적 실현손익</h3><div id="analyticsCumulativeChart" class="chartbox"></div></div>
+<div><h3>Historical vs Validation / 누적 vs 검증기간</h3><table><thead><tr><th>Scope / 구분</th><th>Status / 상태</th><th>Trades / 거래수</th><th>Net P/L / 순손익</th><th>Win Rate / 승률</th><th>Profit Factor / 수익 팩터</th></tr></thead><tbody id="analyticsScopeRows"></tbody></table></div>
 </div>
 <div class="two" style="margin-top:12px">
-<div><h3>By Symbol</h3><table><thead><tr><th>Symbol</th><th>Trades</th><th>Net P/L</th><th>Win Rate</th><th>PF</th></tr></thead><tbody id="analyticsSymbolRows"></tbody></table></div>
-<div><h3>By Exit Reason</h3><table><thead><tr><th>Reason</th><th>Trades</th><th>Net P/L</th><th>Win Rate</th><th>PF</th></tr></thead><tbody id="analyticsReasonRows"></tbody></table></div>
+<div><h3>By Symbol / 종목별</h3><table><thead><tr><th>Symbol / 종목</th><th>Trades / 거래수</th><th>Net P/L / 순손익</th><th>Win Rate / 승률</th><th>PF / 수익팩터</th></tr></thead><tbody id="analyticsSymbolRows"></tbody></table></div>
+<div><h3>By Exit Reason / 청산 사유별</h3><table><thead><tr><th>Reason / 사유</th><th>Trades / 거래수</th><th>Net P/L / 순손익</th><th>Win Rate / 승률</th><th>PF / 수익팩터</th></tr></thead><tbody id="analyticsReasonRows"></tbody></table></div>
 </div>
 <div class="note" id="analyticsStatus"></div>
 </div>
 <div class="section">
-<h3>Recent Timeline</h3>
+<h3>Recent Timeline / 최근 거래 흐름</h3>
 <table>
-<thead><tr><th>Time</th><th>Event</th><th>Symbol</th><th>Side</th><th>Qty</th><th>P/L</th><th>Reason</th></tr></thead>
+<thead><tr><th>Time / 시간</th><th>Event / 이벤트</th><th>Symbol / 종목</th><th>Side / 매수·매도</th><th>Qty / 수량</th><th>P/L / 손익</th><th>Reason / 사유</th></tr></thead>
 <tbody id="timeline"></tbody>
 </table>
 </div>
@@ -164,7 +164,7 @@ function pct(v){
   return v===null||v===undefined?'-':(100*Number(v)).toFixed(1)+'%';
 }
 function lineSvg(points,width=700,height=220){
-  if(!points||points.length<2)return '<div class="chart-empty">Not enough historical points yet</div>';
+  if(!points||points.length<2)return '<div class="chart-empty">Not enough historical points yet / 아직 기록이 부족합니다</div>';
   let vals=points.map(x=>Number(x.value)).filter(Number.isFinite);
   if(vals.length<2)return '<div class="chart-empty">No numeric history yet</div>';
   let lo=Math.min(...vals),hi=Math.max(...vals);
@@ -175,20 +175,20 @@ function lineSvg(points,width=700,height=220){
   return `<svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none"><line x1="${pad}" y1="${height-pad}" x2="${width-pad}" y2="${height-pad}" stroke="#30363d"/><polyline fill="none" stroke="#58a6ff" stroke-width="3" points="${poly}"/><text x="${pad}" y="14" fill="#8b949e" font-size="10">${hi.toFixed(2)}</text><text x="${pad}" y="${height-3}" fill="#8b949e" font-size="10">${lo.toFixed(2)}</text></svg>`;
 }
 function barSvg(points,width=700,height=220){
-  if(!points||points.length===0)return '<div class="chart-empty">No realized P/L points yet</div>';
+  if(!points||points.length===0)return '<div class="chart-empty">No realized P/L points yet / 아직 실현손익 기록이 없습니다</div>';
   let vals=points.map(x=>Number(x.value)).filter(Number.isFinite);
-  if(vals.length===0)return '<div class="chart-empty">No numeric P/L yet</div>';
+  if(vals.length===0)return '<div class="chart-empty">No numeric P/L yet / 아직 숫자 손익 데이터가 없습니다</div>';
   let max=Math.max(1,...vals.map(v=>Math.abs(v))),pad=18,zero=height/2;
   let bw=(width-pad*2)/vals.length;
   let bars=vals.map((v,i)=>{let h=(Math.abs(v)/max)*(height/2-pad);let x=pad+i*bw+2,y=v>=0?zero-h:zero;let fill=v>=0?'#3fb950':'#f85149';return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${Math.max(2,bw-4).toFixed(1)}" height="${h.toFixed(1)}" fill="${fill}"/>`;}).join('');
   return `<svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none"><line x1="${pad}" y1="${zero}" x2="${width-pad}" y2="${zero}" stroke="#8b949e"/>${bars}</svg>`;
 }
 function allocationHtml(rows){
-  if(!rows||rows.length===0)return '<div class="note">No position market values available</div>';
+  if(!rows||rows.length===0)return '<div class="note">No position market values available / 포지션 평가금액 데이터가 없습니다</div>';
   return rows.map(x=>`<div class="alloc-row"><div class="alloc-label">${x.symbol}</div><div class="alloc-track"><div class="alloc-fill" style="width:${(100*x.weight).toFixed(1)}%"></div></div><div class="alloc-pct">${(100*x.weight).toFixed(1)}%</div></div>`).join('');
 }
 function validationHtml(rows){
-  if(!rows||rows.length===0)return '<div class="note">Validation slots unavailable</div>';
+  if(!rows||rows.length===0)return '<div class="note">Validation slots unavailable / 검증 진행 데이터가 없습니다</div>';
   return `<div class="progress-row">${rows.map(x=>`<div class="progress-cell ${x.completed?'done':'waiting'}">D${x.day}</div>`).join('')}</div>`;
 }
 async function load(){

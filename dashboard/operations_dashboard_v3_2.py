@@ -537,6 +537,57 @@ def build_status(root: Path):
         analytics_spec.loader.exec_module(analytics_module)
         payload["trade_analytics"] = analytics_module.build_trade_analytics(root, payload)
         payload["trade_analytics_status"] = payload["trade_analytics"].get("status", "PASS")
+
+        # V3.9_CANONICAL_PERFORMANCE_UNIFICATION
+        analytics_historical = (
+            payload["trade_analytics"].get("historical") or {}
+        )
+        analytics_validation = (
+            payload["trade_analytics"].get("validation") or {}
+        )
+
+        payload["performance"] = {
+            "validation_closed_trades": int(
+                analytics_validation.get("numeric_trade_count", 0) or 0
+            ),
+            "historical_closed_trades": int(
+                analytics_historical.get("numeric_trade_count", 0) or 0
+            ),
+            "historical_realized_pnl": (
+                analytics_historical.get("net_realized_pnl")
+            ),
+            "win_rate": analytics_historical.get("win_rate"),
+            "profit_factor": analytics_historical.get("profit_factor"),
+            "canonical_source": True,
+            "source_ledger": (
+                (payload["trade_analytics"].get("source_ledgers") or [None])[0]
+            ),
+        }
+
+        canonical_daily = []
+        for item in payload["trade_analytics"].get("daily") or []:
+            value = item.get("net_realized_pnl")
+            if value is None:
+                continue
+            canonical_daily.append(
+                {
+                    "date": item.get("date"),
+                    "value": value,
+                }
+            )
+
+        payload.setdefault("visualization", {})
+        payload["visualization"]["daily_realized_pnl"] = canonical_daily[-30:]
+        payload["visualization"].setdefault("summary", {})
+        payload["visualization"]["summary"]["historical_realized_pnl"] = (
+            analytics_historical.get("net_realized_pnl")
+        )
+        payload["visualization"]["summary"]["daily_realized_point_count"] = len(
+            canonical_daily
+        )
+        payload["visualization"]["summary"]["closed_trade_numeric_pnl_count"] = int(
+            analytics_historical.get("numeric_trade_count", 0) or 0
+        )
     except Exception as exc:
         payload["trade_analytics"] = {"status": "ISOLATED_ERROR", "historical": {"data_status": "INSUFFICIENT_DATA"}, "validation": {"data_status": "WAITING_FOR_VALIDATION_START"}, "by_symbol": [], "by_exit_reason": [], "daily": [], "recent_numeric_trades": [], "source_ledgers": [], "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False}}
         payload["trade_analytics_status"] = "ISOLATED_TRADE_ANALYTICS_ERROR: " + type(exc).__name__
