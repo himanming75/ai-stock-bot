@@ -1,0 +1,9 @@
+{
+  "policy_name": "V2.1.30_INITIAL_RECOVERY_POLICY",
+  "broker_read_max_attempts": 3,
+  "broker_read_retry_seconds": 2,
+  "fail_closed_on_state_mismatch": true,
+  "fail_closed_on_broker_unavailable": true,
+  "paper_only": true,
+  "live_trading": false
+}
