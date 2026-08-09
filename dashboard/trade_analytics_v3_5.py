@@ -330,6 +330,20 @@ def build_trade_analytics(root: Path, status_payload):
         list(reversed(numeric[-500:])),
     )
 
+    regime_path = root / "dashboard" / "market_regime_analysis_v3_16.py"
+    regime_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_market_regime_analysis_v3_16",
+        regime_path,
+    )
+    if regime_spec is None or regime_spec.loader is None:
+        raise ModuleNotFoundError(str(regime_path))
+    regime_module = importlib.util.module_from_spec(regime_spec)
+    regime_spec.loader.exec_module(regime_module)
+    regime_analysis = regime_module.build_market_regime_analysis(
+        root,
+        list(reversed(numeric[-500:])),
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -352,6 +366,7 @@ def build_trade_analytics(root: Path, status_payload):
         "readiness_history": readiness_history,
         "strategy_stress_test": stress_test,
         "strategy_robustness": robustness,
+        "market_regime_analysis": regime_analysis,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
