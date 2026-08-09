@@ -48,7 +48,7 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <header>
 <div>
 <h1>AI Stock Bot Unified Operations Dashboard / 통합 운영 대시보드</h1>
-<div class="sub">Alpaca Paper · Read-only / 읽기 전용 · V3.17 Strategy Weakness Map / 전략 약점 지도</div>
+<div class="sub">Alpaca Paper · Read-only / 읽기 전용 · V3.18 AI Strategy Improvement Candidates / AI 전략 개선 후보</div>
 </div>
 <button onclick="load()">Refresh / 새로고침</button>
 </header>
@@ -143,6 +143,40 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <div class="note" id="analyticsStatus"></div>
 </div>
 
+<div class="section" id="improvementCandidatesSection">
+<h3>AI Strategy Improvement Candidates / AI 전략 개선 후보</h3>
+<div class="grid">
+<div class="card"><h2>Mode / 모드</h2><div id="impMode" class="big"></div></div>
+<div class="card"><h2>Total Candidates / 전체 후보</h2><div id="impCount" class="big"></div></div>
+<div class="card"><h2>Evidence Candidates / 증거 수집 후보</h2><div id="impEvidence" class="big"></div></div>
+<div class="card"><h2>Strategy Candidates / 전략 변경 후보</h2><div id="impStrategy" class="big"></div></div>
+</div>
+
+<div style="margin-top:12px">
+<h3>Top Candidates / 우선 개선 후보</h3>
+<div class="scroll-table">
+<table>
+<thead><tr>
+<th>Priority / 우선순위</th>
+<th>Proposal / 제안</th>
+<th>Target / 대상</th>
+<th>Source Weakness / 원인 약점</th>
+<th>Expected Effect / 예상 효과</th>
+<th>Required Validation / 필요 검증</th>
+<th>Executable / 실행 가능</th>
+</tr></thead>
+<tbody id="impRows"></tbody>
+</table>
+</div>
+</div>
+
+<div class="note">
+Proposal only / 제안 전용 |
+Auto Apply OFF / 자동 적용 없음 |
+Paper parameter change OFF / Paper 파라미터 변경 없음 |
+Live change OFF / 실거래 변경 없음
+</div>
+</div>
 <div class="section" id="weaknessMapSection">
 <h3>Strategy Weakness Map / 전략 약점 지도</h3>
 
@@ -1039,6 +1073,47 @@ async function refreshRegime(){
   }
 }
 document.addEventListener('DOMContentLoaded',()=>{refreshRegime();setInterval(refreshRegime,30000);});
+function loadImprovementCandidates(d){
+  let x=((d.trade_analytics||{}).strategy_improvement_candidates)||{};
+
+  setv('impMode',x.mode||'-');
+  setv('impCount',x.candidate_count??0);
+  setv('impEvidence',x.evidence_collection_candidate_count??0);
+  setv('impStrategy',x.strategy_change_candidate_count??0);
+
+  let rows=(x.top_candidates||[]).map(c=>`<tr>
+    <td>${c.priority_score??'-'}</td>
+    <td>${c.proposal_type||'-'}</td>
+    <td>${c.change_target||'-'}</td>
+    <td>${c.source_weakness_code||'-'}<div class="note">${c.weakness_type||'-'} / ${c.source_severity||'-'}</div></td>
+    <td>${c.expected_effect||'-'}</td>
+    <td>${c.required_validation||'-'}</td>
+    <td>${c.execution_eligible?'YES':'NO'}</td>
+  </tr>`).join('');
+
+  let table=document.getElementById('impRows');
+  if(table){
+    table.innerHTML=rows||'<tr><td colspan="7">No candidates / 후보 없음</td></tr>';
+  }
+}
+
+async function refreshImprovementCandidates(){
+  try{
+    let response=await fetch('/api/status',{cache:'no-store'});
+    let data=await response.json();
+    loadImprovementCandidates(data);
+  }catch(error){
+    let table=document.getElementById('impRows');
+    if(table){
+      table.innerHTML='<tr><td colspan="7">Improvement candidate load error / 개선 후보 로드 오류</td></tr>';
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  refreshImprovementCandidates();
+  setInterval(refreshImprovementCandidates,30000);
+});
 function weakSeverityClass(severity){
   if(severity==='CRITICAL')return 'FAIL';
   if(severity==='HIGH')return 'FAIL';

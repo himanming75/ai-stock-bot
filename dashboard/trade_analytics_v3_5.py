@@ -362,6 +362,17 @@ def build_trade_analytics(root: Path, status_payload):
         "market_regime_analysis": regime_analysis,
     })
 
+    improvement_path = root / "dashboard" / "strategy_improvement_candidates_v3_18.py"
+    improvement_spec = importlib.util.spec_from_file_location("ai_stock_bot_strategy_improvement_candidates_v3_18", improvement_path)
+    if improvement_spec is None or improvement_spec.loader is None:
+        raise ModuleNotFoundError(str(improvement_path))
+    improvement_module = importlib.util.module_from_spec(improvement_spec)
+    improvement_spec.loader.exec_module(improvement_module)
+    improvement_candidates = improvement_module.build_strategy_improvement_candidates({
+        "historical": historical,
+        "strategy_weakness_map": weakness_map,
+    })
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -386,6 +397,7 @@ def build_trade_analytics(root: Path, status_payload):
         "strategy_robustness": robustness,
         "market_regime_analysis": regime_analysis,
         "strategy_weakness_map": weakness_map,
+        "strategy_improvement_candidates": improvement_candidates,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
