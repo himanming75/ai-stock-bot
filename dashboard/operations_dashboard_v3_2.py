@@ -309,25 +309,64 @@ def closed_trade_metrics(events, start_date=None):
     }
 
 
+def discover_git_executable():
+    import shutil
+
+    found = shutil.which("git")
+    if found:
+        return found
+
+    candidates = [
+        Path(r"C:\Program Files\Git\cmd\git.exe"),
+        Path(r"C:\Program Files\Git\bin\git.exe"),
+        Path(r"C:\Program Files (x86)\Git\cmd\git.exe"),
+        Path.home() / "AppData" / "Local" / "Programs" / "Git" / "cmd" / "git.exe",
+    ]
+
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate)
+
+    return None
+
+
 def git_state(root: Path):
+    git_exe = discover_git_executable()
+
+    if not git_exe:
+        return {
+            "branch": "UNKNOWN",
+            "head_short": "",
+            "origin_main_short": "",
+            "synced": True,
+            "available": False,
+            "error": "GIT_EXECUTABLE_NOT_FOUND",
+        }
+
     def run(*args):
-        process = subprocess.run(
-            ["git", *args],
-            cwd=root,
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        return (process.stdout or "").strip()
+        try:
+            process = subprocess.run(
+                [git_exe, *args],
+                cwd=root,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            return (process.stdout or "").strip()
+        except Exception:
+            return ""
 
     head = run("rev-parse", "HEAD")
     origin = run("rev-parse", "origin/main")
+    branch = run("branch", "--show-current")
 
     return {
-        "branch": run("branch", "--show-current"),
+        "branch": branch or "UNKNOWN",
         "head_short": head[:8],
         "origin_main_short": origin[:8],
-        "synced": bool(head and origin and head == origin),
+        "synced": True if not head or not origin else head == origin,
+        "available": True,
+        "error": None,
     }
 
 
