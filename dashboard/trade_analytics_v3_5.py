@@ -344,6 +344,24 @@ def build_trade_analytics(root: Path, status_payload):
         list(reversed(numeric[-500:])),
     )
 
+    weakness_path = root / "dashboard" / "strategy_weakness_map_v3_17.py"
+    weakness_spec = importlib.util.spec_from_file_location(
+        "ai_stock_bot_strategy_weakness_map_v3_17",
+        weakness_path,
+    )
+    if weakness_spec is None or weakness_spec.loader is None:
+        raise ModuleNotFoundError(str(weakness_path))
+    weakness_module = importlib.util.module_from_spec(weakness_spec)
+    weakness_spec.loader.exec_module(weakness_module)
+    weakness_map = weakness_module.build_strategy_weakness_map({
+        "historical": historical,
+        "performance_diagnostics": diagnostics,
+        "strategy_readiness": readiness,
+        "strategy_stress_test": stress_test,
+        "strategy_robustness": robustness,
+        "market_regime_analysis": regime_analysis,
+    })
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -367,6 +385,7 @@ def build_trade_analytics(root: Path, status_payload):
         "strategy_stress_test": stress_test,
         "strategy_robustness": robustness,
         "market_regime_analysis": regime_analysis,
+        "strategy_weakness_map": weakness_map,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
