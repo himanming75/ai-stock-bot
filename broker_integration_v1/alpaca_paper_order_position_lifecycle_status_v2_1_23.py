@@ -1,0 +1,23 @@
+def build_v2_1_23_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_23_ALPACA_PAPER_ORDER_POSITION_LIFECYCLE_BRIDGE",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "base_commit":"78e27cff",
+        "v2_1_22_submission_reused":True,
+        "existing_paper_order_lifecycle_monitor_reused":True,
+        "existing_position_exit_rules_reused":True,
+        "stop_loss_policy_reused":True,
+        "take_profit_policy_reused":True,
+        "trailing_stop_policy_reused":True,
+        "maximum_holding_policy_reused":True,
+        "new_exit_strategy_created":False,
+        "broker_read_allowed_in_actual_monitor":True,
+        "broker_write_allowed_from_stage":False,
+        "entry_order_submission_from_stage":False,
+        "exit_order_submission_from_stage":False,
+        "install_test_broker_network":False,
+        "install_test_paper_orders":0,
+        "install_test_live_orders":0,
+        "live_trading_enabled":False,
+        "next_stage":"V2.1.24_PAPER_INTRADAY_AUTONOMOUS_SESSION_CONTROLLER",
+    }
