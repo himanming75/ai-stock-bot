@@ -1,0 +1,26 @@
+def build_etrade_current_market_data_signal_v2_1_7_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_7_CURRENT_MARKET_DATA_SIGNAL_BRIDGE",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "existing_market_data_engine_reused":"V102.01-V103.00",
+        "existing_indicator_engine_reused":"V79.66-V79.70",
+        "existing_signal_engine_reused":"V79.71-V79.75",
+        "v2_1_6_source_bridge_reused":True,
+        "v2_1_5_decision_gate_reused":True,
+        "current_readonly_market_data_source_ready":True,
+        "minimum_bars_per_symbol":3,
+        "network_opt_in_required":True,
+        "broker_order_submission_from_stage":False,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+        "contracts":{
+            "duplicate_market_data_engine_created":False,
+            "duplicate_indicator_engine_created":False,
+            "duplicate_signal_engine_created":False,
+            "existing_alpaca_parser_reused":True,
+            "existing_subscription_registry_reused":True,
+            "production_orders_locked":True,
+        },
+    }
