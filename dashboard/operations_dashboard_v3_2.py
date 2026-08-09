@@ -370,7 +370,7 @@ def git_state(root: Path):
     }
 
 
-def build_status(root: Path):
+def _build_status_v3_2(root: Path):
     v294 = read_json(root / FIXED["v294"])
     v30 = read_json(root / FIXED["v30"])
     shadow_snapshot = read_json(root / FIXED["shadow_snapshot"])
@@ -476,6 +476,36 @@ def build_status(root: Path):
             "production_selector_modified": False,
         },
     }
+
+
+def build_status(root: Path):
+    payload = _build_status_v3_2(root)
+
+    try:
+        from dashboard.visualization_v3_4 import build_visualization
+        payload["visualization"] = build_visualization(root, payload)
+        payload["visualization_status"] = "PASS"
+    except Exception as exc:
+        payload["visualization"] = {
+            "equity_history": [],
+            "daily_realized_pnl": [],
+            "generic_pnl_history": [],
+            "position_allocation": [],
+            "validation_slots": [],
+            "summary": {},
+            "contracts": {
+                "read_only": True,
+                "broker_network_used": False,
+                "broker_write_performed": False,
+                "order_submission_performed": False,
+                "production_parameter_modified": False,
+            },
+        }
+        payload["visualization_status"] = (
+            "ISOLATED_VISUALIZATION_ERROR: " + type(exc).__name__
+        )
+
+    return payload
 
 
 class Handler(BaseHTTPRequestHandler):
