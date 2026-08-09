@@ -24,13 +24,8 @@ def _safe_headers(headers):
     if headers is None:
         return {}
     allowed={
-        "content-type",
-        "date",
-        "server",
-        "x-request-id",
-        "x-ratelimit-limit",
-        "x-ratelimit-remaining",
-        "x-ratelimit-reset",
+        "content-type","date","server","x-request-id",
+        "x-ratelimit-limit","x-ratelimit-remaining","x-ratelimit-reset",
     }
     out={}
     for k,v in headers.items():
@@ -56,8 +51,7 @@ class AlpacaReadOnlyHistoricalBootstrapV218:
 
     @staticmethod
     def _parse_ts(value):
-        text=str(value)
-        dt=datetime.fromisoformat(text.replace("Z","+00:00"))
+        dt=datetime.fromisoformat(str(value).replace("Z","+00:00"))
         if dt.tzinfo is None:
             dt=dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
@@ -84,7 +78,7 @@ class AlpacaReadOnlyHistoricalBootstrapV218:
                 "APCA-API-KEY-ID":key,
                 "APCA-API-SECRET-KEY":secret,
                 "Accept":"application/json",
-                "User-Agent":"AI-Stock-Bot-V2.1.8.1-ReadOnlyBootstrap",
+                "User-Agent":"AI-Stock-Bot-V2.1.8.2-ReadOnlyBootstrap",
             },
             method="GET",
         )
@@ -94,18 +88,81 @@ class AlpacaReadOnlyHistoricalBootstrapV218:
                     response.getcode(),
                     json.loads(response.read().decode("utf-8")),
                     _safe_headers(response.headers),
-                    url,
                 )
         except HTTPError as exc:
-            try:
-                body=exc.read().decode("utf-8","replace")
-            except Exception:
-                body="<unable to read response body>"
+            body=exc.read().decode("utf-8","replace")
             raise AlpacaHistoricalBootstrapHTTPError(
                 exc.code,url,body,_safe_headers(exc.headers)
             ) from exc
         except URLError as exc:
-            raise RuntimeError(f"Alpaca historical bootstrap transport error: {exc.reason}") from exc
+            raise RuntimeError(
+                f"Alpaca historical bootstrap transport error: {exc.reason}"
+            ) from exc
+
+    def _fetch_symbol(
+        self,
+        key,
+        secret,
+        symbol,
+        bars_per_symbol,
+        start,
+        end,
+        max_pages=20,
+    ):
+        params={
+            "symbols":symbol,
+            "timeframe":"1Min",
+            "start":start.isoformat().replace("+00:00","Z"),
+            "end":end.isoformat().replace("+00:00","Z"),
+            "limit":1000,
+            "feed":self.feed,
+            "sort":"desc",
+        }
+
+        rows=[]
+        page_count=0
+        next_page_token=None
+        status=None
+        headers={}
+
+        while True:
+            page_params=dict(params)
+            if next_page_token:
+                page_params["page_token"]=next_page_token
+
+            status,payload,headers=self._request_page(
+                key,secret,page_params
+            )
+            page_count+=1
+
+            raw_bars=payload.get("bars") or {}
+            rows.extend(list(raw_bars.get(symbol) or []))
+
+            next_page_token=payload.get("next_page_token")
+
+            if len(rows)>=int(bars_per_symbol):
+                break
+            if not next_page_token:
+                break
+            if page_count>=int(max_pages):
+                break
+
+        rows.sort(key=lambda x:str(x["t"]))
+        selected=rows[-int(bars_per_symbol):]
+
+        return {
+            "bars":[self._to_bar(symbol,row) for row in selected],
+            "diagnostics":{
+                "http_status":status,
+                "safe_headers":headers,
+                "page_count":page_count,
+                "next_page_token_remaining":bool(next_page_token),
+                "raw_bar_count":len(rows),
+                "selected_bar_count":len(selected),
+                "first_timestamp":None if not rows else str(rows[0]["t"]),
+                "last_timestamp":None if not rows else str(rows[-1]["t"]),
+            },
+        }
 
     def fetch_recent_completed_bars(
         self,
@@ -125,90 +182,44 @@ class AlpacaReadOnlyHistoricalBootstrapV218:
         end=datetime.now(timezone.utc)-timedelta(minutes=2)
         start=end-timedelta(days=int(lookback_days))
 
-        params={
-            "symbols":",".join(symbols),
-            "timeframe":"1Min",
-            "start":start.isoformat().replace("+00:00","Z"),
-            "end":end.isoformat().replace("+00:00","Z"),
-            "limit":min(10000,max(100,int(bars_per_symbol)*len(symbols)*20)),
-            "feed":self.feed,
-            "sort":"desc",
-        }
-
-        all_rows={s:[] for s in symbols}
-        page_count=0
-        next_page_token=None
-        first_status=None
-        first_headers={}
-
-        while True:
-            page_params=dict(params)
-            if next_page_token:
-                page_params["page_token"]=next_page_token
-
-            status,payload,headers,url=self._request_page(
-                key,secret,page_params
-            )
-            page_count+=1
-            if first_status is None:
-                first_status=status
-                first_headers=headers
-
-            raw_bars=payload.get("bars") or {}
-            for symbol in symbols:
-                rows=list(raw_bars.get(symbol) or [])
-                all_rows[symbol].extend(rows)
-
-            next_page_token=payload.get("next_page_token")
-            if not next_page_token:
-                break
-
-            if all(len(all_rows[s])>=int(bars_per_symbol) for s in symbols):
-                break
-
-            if page_count>=20:
-                break
-
         result={}
         symbol_diagnostics={}
 
-        for symbol in symbols:
-            rows=all_rows[symbol]
-            rows.sort(key=lambda x:str(x["t"]))
-            selected=rows[-int(bars_per_symbol):]
-            result[symbol]=[self._to_bar(symbol,row) for row in selected]
+        print("ALPACA REST MODE: SYMBOL-SCOPED")
+        print("ALPACA REST FEED:",self.feed)
 
-            symbol_diagnostics[symbol]={
-                "raw_bar_count":len(rows),
-                "selected_bar_count":len(selected),
-                "first_timestamp":None if not rows else str(rows[0]["t"]),
-                "last_timestamp":None if not rows else str(rows[-1]["t"]),
-            }
+        for symbol in symbols:
+            fetched=self._fetch_symbol(
+                key,
+                secret,
+                symbol,
+                int(bars_per_symbol),
+                start,
+                end,
+            )
+            result[symbol]=fetched["bars"]
+            symbol_diagnostics[symbol]=fetched["diagnostics"]
+
+            d=fetched["diagnostics"]
+            print(
+                f"{symbol}: "
+                f"http={d['http_status']} "
+                f"pages={d['page_count']} "
+                f"raw={d['raw_bar_count']} "
+                f"selected={d['selected_bar_count']} "
+                f"next={d['next_page_token_remaining']} "
+                f"first={d['first_timestamp']} "
+                f"last={d['last_timestamp']}"
+            )
 
         self.last_diagnostics={
-            "http_status":first_status,
-            "safe_headers":first_headers,
-            "page_count":page_count,
-            "final_next_page_token_present":bool(next_page_token),
+            "mode":"SYMBOL_SCOPED",
             "feed":self.feed,
             "symbols":symbols,
             "requested_bars_per_symbol":int(bars_per_symbol),
             "lookback_days":int(lookback_days),
             "symbol_diagnostics":symbol_diagnostics,
         }
-
-        print("ALPACA REST HTTP STATUS:",first_status)
-        print("ALPACA REST FEED:",self.feed)
-        print("ALPACA REST PAGE COUNT:",page_count)
-        print("NEXT PAGE TOKEN REMAINING:",bool(next_page_token))
-        for symbol in symbols:
-            d=symbol_diagnostics[symbol]
-            print(
-                f"{symbol}: raw={d['raw_bar_count']} "
-                f"selected={d['selected_bar_count']} "
-                f"first={d['first_timestamp']} "
-                f"last={d['last_timestamp']}"
-            )
 
         missing={
             s:len(result.get(s,[]))
