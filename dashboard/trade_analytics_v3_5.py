@@ -373,6 +373,20 @@ def build_trade_analytics(root: Path, status_payload):
         "strategy_weakness_map": weakness_map,
     })
 
+    import sys
+    if str(root) not in sys.path:
+        sys.path.insert(0, str(root))
+    from ai_engine_v2.integrated_engine_v3_30 import build_integrated_ai_engine_v2
+
+    ai_engine_v2 = build_integrated_ai_engine_v2(
+        {
+            "historical": historical,
+            "market_regime_analysis": regime_analysis,
+            "strategy_improvement_candidates": improvement_candidates,
+        },
+        status_payload,
+    )
+
     return {
         "status": historical["data_status"],
         "historical": historical,
@@ -398,6 +412,7 @@ def build_trade_analytics(root: Path, status_payload):
         "market_regime_analysis": regime_analysis,
         "strategy_weakness_map": weakness_map,
         "strategy_improvement_candidates": improvement_candidates,
+        "ai_engine_v2": ai_engine_v2,
         "source_ledgers": sources,
         "contracts": {"read_only": True, "broker_network_used": False, "broker_write_performed": False, "order_submission_performed": False, "paper_runtime_modified": False, "production_parameter_modified": False, "production_selector_modified": False, "duplicate_engine_created": False},
     }
