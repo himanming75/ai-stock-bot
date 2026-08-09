@@ -1,0 +1,23 @@
+def build_v2_1_19_1_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_19_1_CANONICAL_PAPER_GATE_SEMANTIC_CORRECTION_AUDIT",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "development_status":"COMPLETE",
+        "generic_etrade_confidence":"0.60",
+        "generic_etrade_is_canonical_paper":False,
+        "canonical_paper_confidence":"0.75",
+        "canonical_paper_min_reward_risk":"1.0",
+        "canonical_reward_risk_required":True,
+        "missing_reward_risk_blocks_readiness":True,
+        "v2_1_17_qualification_corrected":True,
+        "legacy_zero_point_60_canonical_label_removed":True,
+        "downstream_false_ready_prevented":True,
+        "automatic_sandbox_execution_allowed":False,
+        "etrade_oauth_from_stage":False,
+        "sandbox_preview_from_stage":False,
+        "sandbox_place_from_stage":False,
+        "broker_order_submission_from_stage":False,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "profitability_validation":False,
+    }
