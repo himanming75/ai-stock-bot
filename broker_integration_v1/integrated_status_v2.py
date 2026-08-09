@@ -8,6 +8,8 @@ from .etrade_oauth_profile_v2 import ETRADE_OAUTH_PROFILE
 
 
 def build_broker_integration_v2_status(repo_root=None):
+    from .etrade_sandbox_order_status_v2_1 import build_etrade_sandbox_order_v2_1_status
+    sandbox_order=build_etrade_sandbox_order_v2_1_status()
     repo=Path(repo_root or ".")
     snapshot_path=repo/"runtime"/"etrade_readonly_v2"/"latest_readonly_snapshot.json"
     consumer_key_present=bool(os.environ.get("ETRADE_CONSUMER_KEY"))
@@ -44,6 +46,7 @@ def build_broker_integration_v2_status(repo_root=None):
         "live_trading_status":"LOCKED",
         "order_submission_status":"LOCKED",
         "cancel_replace_status":"LOCKED",
+        "sandbox_order_v2_1": sandbox_order,
         "contracts":{
             "v1_bridge_reused":True,
             "canonical_v77_1_contract_reused":True,

@@ -143,6 +143,23 @@ button{background:#238636;color:white;border:0;border-radius:6px;padding:8px 12p
 <div class="note" id="analyticsStatus"></div>
 </div>
 
+<div class="section" id="etradeSandboxOrderV21Section">
+<h3>E*TRADE Sandbox Order Simulation V2.1 / E*TRADE 샌드박스 주문 시뮬레이션 V2.1</h3>
+<div class="grid">
+<div class="card"><h2>Development / 개발</h2><div id="sb21Dev" class="big"></div></div>
+<div class="card"><h2>Environment / 환경</h2><div id="sb21Env" class="big"></div></div>
+<div class="card"><h2>Preview / 주문 미리보기</h2><div id="sb21Preview" class="big"></div></div>
+<div class="card"><h2>Place / 주문전송</h2><div id="sb21Place" class="big"></div></div>
+<div class="card"><h2>PROD Orders / PROD 주문</h2><div id="sb21Prod" class="big"></div></div>
+<div class="card"><h2>Profit Validation / 수익성 검증</h2><div id="sb21Profit" class="big"></div></div>
+</div>
+<div class="note">
+Sandbox only / 샌드박스 전용 |
+No real securities or money / 실제 증권·자금 이동 없음 |
+Preview before Place / Preview 후 Place |
+Production order POST remains blocked / PROD 주문 POST 계속 차단
+</div>
+</div>
 <div class="section" id="brokerIntegrationV2Section">
 <h3>Broker Integration V2 - E*TRADE Read-only OAuth / 브로커 연동 V2 - E*TRADE 읽기 전용 OAuth</h3>
 <div class="grid">
@@ -1184,6 +1201,26 @@ function aiV2Meaning(status){
   if((status||'').includes('PASS'))return 'SOFTWARE READY / 소프트웨어 준비';
   return status||'-';
 }
+function loadSandboxOrderV21(d){
+ let s=((((d.broker_integration_v1||{}).v2_etrade_readonly_oauth||{}).sandbox_order_v2_1)||{});
+ setv('sb21Dev',s.development_status||'-',s.development_status==='COMPLETE'?'PASS':'WAIT');
+ setv('sb21Env',s.environment||'-');
+ setv('sb21Preview',s.equity_preview_supported?'READY':'NO',s.equity_preview_supported?'PASS':'WAIT');
+ setv('sb21Place',s.equity_place_supported?'READY':'NO',s.equity_place_supported?'PASS':'WAIT');
+ setv('sb21Prod',s.production_order_post_allowed?'UNLOCKED':'LOCKED','FAIL');
+ setv('sb21Profit',s.strategy_profitability_validated?'VALIDATED':'NOT VALIDATED','WAIT');
+}
+async function refreshSandboxOrderV21(){
+ try{
+  let response=await fetch('/api/status',{cache:'no-store'});
+  let data=await response.json();
+  loadSandboxOrderV21(data);
+ }catch(error){}
+}
+document.addEventListener('DOMContentLoaded',()=>{
+ refreshSandboxOrderV21();
+ setInterval(refreshSandboxOrderV21,30000);
+});
 function loadBrokerIntegrationV2(d){
   let v=((d.broker_integration_v1||{}).v2_etrade_readonly_oauth)||{};
   let c=v.contracts||{};
