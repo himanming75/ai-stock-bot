@@ -1,0 +1,21 @@
+def build_v2_1_25_status():
+    return {
+        "stage":"BROKER_INTEGRATION_V2_1_25_ALPACA_PAPER_EXIT_EXECUTION_RECOVERY_GUARD",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "base_commit":"d29a37be",
+        "v2_1_23_exit_ready_required":True,
+        "existing_paper_service_preflight_reused":True,
+        "existing_paper_true_client_reused":True,
+        "alpaca_official_close_position_used":True,
+        "new_live_client_created":False,
+        "one_time_exit_fingerprint_guard":True,
+        "restart_recovery_ledger":True,
+        "already_closed_position_no_duplicate_exit":True,
+        "explicit_exit_confirmation_required":True,
+        "manual_paper_arm_still_required":True,
+        "install_test_broker_network":False,
+        "install_test_paper_exit_orders":0,
+        "install_test_live_orders":0,
+        "live_trading_enabled":False,
+        "next_stage":"V2.1.26_FULL_PAPER_ENTRY_EXIT_SESSION_INTEGRATION",
+    }
