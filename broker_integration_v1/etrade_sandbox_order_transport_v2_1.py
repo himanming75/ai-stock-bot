@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 from .etrade_oauth_signer import oauth_header
@@ -8,6 +9,14 @@ from .etrade_oauth_signer import oauth_header
 
 class SandboxOrderPolicyError(RuntimeError):
     pass
+
+
+class ETradeSandboxHTTPError(RuntimeError):
+    def __init__(self,status,url,response_body):
+        self.status=status
+        self.url=url
+        self.response_body=response_body
+        super().__init__(f"E*TRADE Sandbox HTTP {status}: {response_body}")
 
 
 class ETradeSandboxOrderTransport:
@@ -50,8 +59,15 @@ class ETradeSandboxOrderTransport:
             },
             method="POST",
         )
-        with urlopen(req,timeout=30) as response:
-            return json.loads(response.read().decode("utf-8"))
+        try:
+            with urlopen(req,timeout=30) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except HTTPError as exc:
+            try:
+                body=exc.read().decode("utf-8","replace")
+            except Exception:
+                body="<unable to read E*TRADE error response body>"
+            raise ETradeSandboxHTTPError(exc.code,url,body) from exc
 
 
 class FixtureSandboxOrderTransport:
