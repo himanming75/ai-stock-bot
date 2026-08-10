@@ -1,0 +1,27 @@
+def build_v2_2_3_status():
+    return {
+        "stage":
+            "AI_TRADING_ENGINE_V2_2_3_PERFORMANCE_SEGMENTATION_FEATURE_ATTRIBUTION",
+        "status":"PASS_DEVELOPMENT_COMPLETE",
+        "v2_2_2_labeled_outcomes_reused":True,
+        "overall_metrics":True,
+        "symbol_segmentation":True,
+        "market_regime_segmentation":True,
+        "structure_segmentation":True,
+        "confidence_segmentation":True,
+        "reward_risk_segmentation":True,
+        "alignment_segmentation":True,
+        "quality_score_segmentation":True,
+        "exit_reason_segmentation":True,
+        "profit_factor":True,
+        "expectancy":True,
+        "minimum_actionable_sample":5,
+        "json_report":True,
+        "markdown_report":True,
+        "threshold_change_enabled":False,
+        "execution_selector_modified":False,
+        "broker_network":False,
+        "paper_orders":0,
+        "live_orders":0,
+        "live_trading":False,
+    }
