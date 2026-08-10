@@ -88,7 +88,7 @@ class OneClickDailyPaperOperationV2131:
 
         if poll<1 or poll>300:
             raise RuntimeError("INVALID_MARKET_WAIT_POLL_SECONDS")
-        if max_wait<0 or max_wait>86400:
+        if max_wait<0 or max_wait>172800:
             raise RuntimeError("INVALID_MAX_MARKET_WAIT_SECONDS")
         if max_round_trips<1 or max_round_trips>3:
             raise RuntimeError("INVALID_MAX_ROUND_TRIPS")
