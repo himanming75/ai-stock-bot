@@ -1,0 +1,29 @@
+{
+  "stage": "V2.1.31.4_THRESHOLD_SENSITIVITY_SHADOW_AUDIT",
+  "confidence_thresholds": [
+    0.6,
+    0.65,
+    0.7,
+    0.75
+  ],
+  "min_reward_risk": 1.0,
+  "horizons_minutes": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "resolution_tolerance_minutes": 3,
+  "continuous_poll_seconds": 60,
+  "continuous_max_runtime_seconds": 28800,
+  "action_filter": [
+    "BUY",
+    "SELL"
+  ],
+  "actual_execution_threshold_unchanged": 0.75,
+  "actual_execution_threshold_modified": false,
+  "actual_selector_modified": false,
+  "broker_network_from_audit": false,
+  "orders_submitted": 0,
+  "live_trading": false
+}
