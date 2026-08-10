@@ -1,0 +1,87 @@
+$ErrorActionPreference="Stop"
+$Repo="C:\stock-bot"
+$Port=8770
+$HostAddr="127.0.0.1"
+$Runtime="$Repo\runtime\personal_operations_launcher"
+
+Set-Location $Repo
+New-Item -ItemType Directory -Force $Runtime | Out-Null
+
+Write-Host "=== PERSONAL AI STOCK BOT SAFE STOP ==="
+
+$Listener=Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
+    Select-Object -First 1
+
+if($Listener){
+    $Body=@{ action="save_operations_snapshot" } | ConvertTo-Json
+    try{
+        $Snap=Invoke-RestMethod `
+            -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+            -Method POST `
+            -ContentType "application/json" `
+            -Body $Body `
+            -TimeoutSec 15
+        if($Snap.ok){ Write-Host "Final Operations Snapshot: SAVED" }
+    }catch{
+        Write-Warning "Final snapshot failed: $($_.Exception.Message)"
+    }
+
+    # Capture scheduler PID before requesting stop.
+    $SchedulerPid=$null
+    try{
+        $Daily=Invoke-RestMethod -Uri "http://$HostAddr`:$Port/api/daily-ops" -TimeoutSec 5
+        if($Daily.scheduler.running){ $SchedulerPid=$Daily.scheduler.pid }
+    }catch{}
+
+    $Body=@{ action="stop_validation_scheduler" } | ConvertTo-Json
+    try{
+        $StopScheduler=Invoke-RestMethod `
+            -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+            -Method POST `
+            -ContentType "application/json" `
+            -Body $Body `
+            -TimeoutSec 15
+        if($StopScheduler.ok){ Write-Host "Validation Scheduler: STOP REQUESTED" }
+    }catch{
+        Write-Warning "Scheduler stop request failed: $($_.Exception.Message)"
+    }
+
+    # Wait until the scheduler process actually exits to prevent recovery race.
+    if($SchedulerPid){
+        $Deadline=(Get-Date).AddSeconds(12)
+        while((Get-Date) -lt $Deadline){
+            $Alive=Get-Process -Id $SchedulerPid -ErrorAction SilentlyContinue
+            if(-not $Alive){ break }
+            Start-Sleep -Milliseconds 500
+        }
+        $Alive=Get-Process -Id $SchedulerPid -ErrorAction SilentlyContinue
+        if($Alive){
+            Write-Warning "Scheduler PID $SchedulerPid did not exit within timeout."
+        }else{
+            Write-Host "Validation Scheduler PID ${SchedulerPid}: STOPPED"
+        }
+    }
+
+    $ControlCenterPid=$Listener.OwningProcess
+    try{
+        Stop-Process -Id $ControlCenterPid -Force
+        Write-Host "Control Center PID ${ControlCenterPid}: STOPPED"
+    }catch{
+        throw "CONTROL_CENTER_STOP_FAILED PID=$ControlCenterPid : $($_.Exception.Message)"
+    }
+}else{
+    Write-Host "Control Center: already stopped"
+}
+
+$State=[ordered]@{
+    stopped_at=(Get-Date).ToString("o")
+    port=$Port
+    control_center_running=$false
+    etrade="DEFERRED"
+    paper_orders_submitted_by_launcher=0
+    live_orders_submitted_by_launcher=0
+}
+$State | ConvertTo-Json -Depth 5 | Set-Content -Encoding UTF8 (Join-Path $Runtime "last_stop.json")
+
+Write-Host ""
+Write-Host "PERSONAL AI STOCK BOT: STOPPED SAFELY"

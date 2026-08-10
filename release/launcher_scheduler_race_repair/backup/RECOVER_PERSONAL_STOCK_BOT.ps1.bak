@@ -1,0 +1,109 @@
+$ErrorActionPreference="Stop"
+$Repo="C:\stock-bot"
+$Port=8770
+$HostAddr="127.0.0.1"
+$Runtime="$Repo\runtime\personal_operations_launcher"
+$StartScript="$Repo\START_PERSONAL_STOCK_BOT.ps1"
+
+Set-Location $Repo
+New-Item -ItemType Directory -Force $Runtime | Out-Null
+
+Write-Host "=== PERSONAL AI STOCK BOT RECOVERY ==="
+
+$Recovery=[ordered]@{
+    started_at=(Get-Date).ToString("o")
+    port=$Port
+    actions=@()
+    warnings=@()
+}
+
+# Check stale validation lock.
+$RunLock="$Repo\runtime\validation_auto_scheduler\RUN.lock"
+if(Test-Path $RunLock){
+    try{
+        $Lock=Get-Content $RunLock -Raw | ConvertFrom-Json
+        $Pid=[int]$Lock.pid
+        $Alive=$false
+        if($Pid -gt 0){
+            $Alive=Get-Process -Id $Pid -ErrorAction SilentlyContinue
+        }
+        if(-not $Alive){
+            Remove-Item $RunLock -Force
+            $Recovery.actions += "REMOVED_STALE_VALIDATION_RUN_LOCK"
+            Write-Host "Removed stale Validation RUN.lock"
+        }else{
+            $Recovery.warnings += "VALIDATION_RUN_ACTIVE_PID_$Pid"
+            Write-Host "Validation run lock belongs to active PID $Pid; preserved."
+        }
+    }catch{
+        $Recovery.warnings += "RUN_LOCK_PARSE_FAILED"
+    }
+}
+
+# Check 8770.
+$Listener=Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
+    Select-Object -First 1
+
+if(-not $Listener){
+    $Recovery.actions += "CONTROL_CENTER_RESTART"
+    Write-Host "Control Center not running. Starting..."
+    powershell -NoProfile -ExecutionPolicy Bypass -File $StartScript
+    if($LASTEXITCODE -ne 0){ throw "RECOVERY_START_FAILED" }
+}else{
+    Write-Host "Control Center listener exists. PID: $($Listener.OwningProcess)"
+}
+
+# Confirm API.
+try{
+    $Daily=Invoke-RestMethod -Uri "http://$HostAddr`:$Port/api/daily-ops" -TimeoutSec 5
+    $Recovery.actions += "DAILY_OPS_API_CONFIRMED"
+    Write-Host "Daily Ops API: OK"
+}catch{
+    throw "DAILY_OPS_API_UNAVAILABLE_AFTER_RECOVERY"
+}
+
+# Ensure scheduler is running.
+if(-not $Daily.scheduler.running){
+    $Body=@{ action="start_validation_scheduler" } | ConvertTo-Json
+    $Result=Invoke-RestMethod `
+        -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+        -Method POST `
+        -ContentType "application/json" `
+        -Body $Body `
+        -TimeoutSec 15
+    if($Result.ok){
+        $Recovery.actions += "VALIDATION_SCHEDULER_STARTED"
+        Write-Host "Validation Scheduler: STARTED"
+    }else{
+        $Recovery.warnings += "VALIDATION_SCHEDULER_START_FAILED"
+    }
+}else{
+    Write-Host "Validation Scheduler: already running"
+}
+
+# Save recovery snapshot.
+$Body=@{ action="save_operations_snapshot" } | ConvertTo-Json
+try{
+    $Snap=Invoke-RestMethod `
+        -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+        -Method POST `
+        -ContentType "application/json" `
+        -Body $Body `
+        -TimeoutSec 15
+    if($Snap.ok){
+        $Recovery.actions += "RECOVERY_SNAPSHOT_SAVED"
+        Write-Host "Recovery Operations Snapshot: SAVED"
+    }
+}catch{
+    $Recovery.warnings += "RECOVERY_SNAPSHOT_FAILED"
+}
+
+$Recovery["finished_at"]=(Get-Date).ToString("o")
+$Recovery["etrade"]="DEFERRED"
+$Recovery["paper_orders_submitted_by_recovery"]=0
+$Recovery["live_orders_submitted_by_recovery"]=0
+$Recovery | ConvertTo-Json -Depth 8 | Set-Content -Encoding UTF8 (Join-Path $Runtime "latest_recovery.json")
+
+Write-Host ""
+Write-Host "RECOVERY: PASS"
+Write-Host "Open: http://$HostAddr`:$Port"

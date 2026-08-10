@@ -1,0 +1,352 @@
+from __future__ import annotations
+from pathlib import Path
+from typing import Any
+import json
+import subprocess
+import sys
+import os
+
+def _read_json(path:Path)->dict[str,Any]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig",errors="replace"))
+    except Exception:
+        return {}
+
+def _run(root:Path,args:list[str],timeout:int=300)->dict[str,Any]:
+    try:
+        cp=subprocess.run(
+            args,
+            cwd=str(root),
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+        )
+        return {
+            "ok":cp.returncode==0,
+            "returncode":cp.returncode,
+            "stdout":(cp.stdout or "")[-16000:],
+            "stderr":(cp.stderr or "")[-8000:],
+        }
+    except subprocess.TimeoutExpired:
+        return {"ok":False,"error":"TIMEOUT","returncode":None}
+
+def _python(root:Path)->str:
+    p=root/".venv/Scripts/python.exe"
+    return str(p if p.exists() else Path(sys.executable))
+
+def _collector(root:Path)->dict[str,Any]:
+    base=root/"runtime/ai_continuous_shadow_learning_pipeline_v2_2_8"
+    state=_read_json(base/"collector_state.json")
+    latest=_read_json(base/"latest_pipeline_cycle.json")
+    return {
+        "installed":(root/"ai_engine_v2/continuous_shadow_learning_pipeline_v2_2_8.py").exists(),
+        "cycles_completed":state.get("cycles_completed",0),
+        "last_input_sha256":state.get("last_input_sha256"),
+        "last_cycle_status":state.get("last_cycle_status"),
+        "latest_cycle":latest,
+        "stop_requested":(base/"STOP").exists(),
+    }
+
+def _scorecard(root:Path)->dict[str,Any]:
+    return _read_json(
+        root/"runtime/ai_continuous_shadow_learning_pipeline_v2_2_8/latest_performance_scorecard.json"
+    )
+
+def _ml(root:Path)->dict[str,Any]:
+    ready=_read_json(root/"runtime/ai_ml_research_readiness_v2_2_13/latest_ml_research_readiness.json")
+    health=_read_json(root/"runtime/ai_ml_model_health_v2_2_16/latest_ml_model_health.json")
+    rec=_read_json(root/"runtime/ai_ml_research_recommendation_v2_2_22/latest_ml_research_recommendation.json")
+    outcomes=_read_json(root/"runtime/ai_ml_prediction_outcome_v2_2_12/latest_ml_prediction_outcome.json")
+    return {
+        "total_resolved_outcomes":outcomes.get("total_resolved_outcomes",0),
+        "waiting_for_future_marks":outcomes.get("waiting_for_future_marks",0),
+        "research_ready_horizons":ready.get("research_ready_horizons",[]),
+        "research_comparison_ready":bool(ready.get("research_comparison_ready",False)),
+        "readiness_block_reasons":ready.get("block_reasons",[]),
+        "model_health":health.get("model_health","NOT_AVAILABLE"),
+        "research_action":rec.get("recommended_research_action",health.get("research_action","WAIT")),
+        "research_comparison_allowed":bool(rec.get("research_comparison_allowed",False)),
+    }
+
+def _paper(root:Path)->dict[str,Any]:
+    candidates=[
+        root/"release/v161_01_to_v165_64/actual/paper_qualification_result.json",
+        root/"release/v291_01_to_v300_64/actual/paper_qualification_result.json",
+        root/"release/v321_01_to_v330_64/actual/long_run_qualification_result.json",
+    ]
+    for p in reversed(candidates):
+        row=_read_json(p)
+        if row:
+            passed=bool(
+                row.get("passed")
+                or row.get("qualification",{}).get("passed")
+                or row.get("qualified")
+            )
+            return {
+                "source":str(p.relative_to(root)).replace("\\","/"),
+                "passed":passed,
+                "raw":row,
+            }
+    # The Web Qualification API remains the source of truth for interactive recalc;
+    # absence here simply means there is no known persisted result path.
+    return {"source":None,"passed":False,"raw":{}}
+
+
+def _extract_date(value:Any)->str|None:
+    if not isinstance(value,str):
+        return None
+    s=value.strip()
+    if len(s)>=10 and s[4]=="-" and s[7]=="-":
+        return s[:10]
+    return None
+
+def _collect_dates_from_jsonl(path:Path)->set[str]:
+    dates=set()
+    if not path.exists():
+        return dates
+    try:
+        lines=path.read_text(encoding="utf-8",errors="replace").splitlines()
+    except Exception:
+        return dates
+    for line in lines:
+        if not line.strip():
+            continue
+        try:
+            row=json.loads(line)
+        except Exception:
+            continue
+        stack=[row]
+        while stack:
+            v=stack.pop()
+            if isinstance(v,dict):
+                for x in v.values():
+                    if isinstance(x,(dict,list)):
+                        stack.append(x)
+                    else:
+                        d=_extract_date(x)
+                        if d: dates.add(d)
+            elif isinstance(v,list):
+                stack.extend(v)
+    return dates
+
+def _validation_dates(root:Path)->list[str]:
+    paths=[
+        root/"runtime/final_round_trip_ledger_v2_1_27/completed_round_trips.jsonl",
+        root/"runtime/ai_continuous_shadow_learning_pipeline_v2_2_8/pipeline_cycle_ledger.jsonl",
+    ]
+    dates=set()
+    for p in paths:
+        dates.update(_collect_dates_from_jsonl(p))
+    return sorted(dates)
+
+def _progress(root:Path,ml:dict[str,Any],paper:dict[str,Any],blocks:dict[str,Any])->dict[str,Any]:
+    trading_target=10
+    resolved_target=200
+    dates=_validation_dates(root)
+    days=min(len(dates),trading_target)
+    resolved=int(ml.get("total_resolved_outcomes") or 0)
+    waiting=int(ml.get("waiting_for_future_marks") or 0)
+    day_pct=round(min(100.0,(days/trading_target)*100.0),1)
+    sample_pct=round(min(100.0,(resolved/resolved_target)*100.0),1)
+
+    gates={
+        "trading_days_target_met":days>=trading_target,
+        "resolved_outcomes_target_met":resolved>=resolved_target,
+        "ai_model_health_green":ml.get("model_health")=="GREEN",
+        "research_comparison_ready":bool(ml.get("research_comparison_ready")),
+        "paper_qualification_passed":bool(paper.get("passed")),
+    }
+
+    if not gates["trading_days_target_met"]:
+        next_milestone=f"COLLECT_{trading_target-days}_MORE_VALIDATION_DAY(S)"
+    elif not gates["resolved_outcomes_target_met"]:
+        next_milestone=f"RESOLVE_{resolved_target-resolved}_MORE_OUTCOME(S)"
+    elif not gates["ai_model_health_green"]:
+        next_milestone="WAIT_FOR_AI_MODEL_HEALTH_GREEN"
+    elif not gates["research_comparison_ready"]:
+        next_milestone="WAIT_FOR_RESEARCH_COMPARISON_READY"
+    elif not gates["paper_qualification_passed"]:
+        next_milestone="COMPLETE_PAPER_QUALIFICATION"
+    else:
+        next_milestone="MANUAL_RESEARCH_REVIEW_READY"
+
+    return {
+        "trading_days_target":trading_target,
+        "trading_days_completed":days,
+        "trading_days_remaining":max(0,trading_target-days),
+        "trading_day_progress_pct":day_pct,
+        "observed_validation_dates":dates,
+        "resolved_outcomes_target":resolved_target,
+        "resolved_outcomes":resolved,
+        "resolved_outcomes_remaining":max(0,resolved_target-resolved),
+        "resolved_progress_pct":sample_pct,
+        "waiting_for_future_marks":waiting,
+        "ai_health":ml.get("model_health","NOT_AVAILABLE"),
+        "paper_qualified":bool(paper.get("passed")),
+        "gates":gates,
+        "next_milestone":next_milestone,
+        "blockers":blocks.get("items",[]),
+        "synthetic_progress_used":False,
+        "future_outcomes_fabricated":False,
+    }
+
+def _blockers(scorecard:dict[str,Any],ml:dict[str,Any],paper:dict[str,Any])->dict[str,Any]:
+    blocks=[]
+    if not scorecard:
+        blocks.append("AI_SCORECARD_NOT_BUILT")
+    if not ml.get("research_comparison_ready"):
+        blocks.append("ML_RESEARCH_COMPARISON_NOT_READY")
+    if ml.get("model_health")!="GREEN":
+        blocks.append("AI_MODEL_HEALTH_NOT_GREEN")
+    if not paper.get("passed"):
+        blocks.append("PAPER_QUALIFICATION_NOT_COMPLETE")
+    return {
+        "count":len(blocks),
+        "items":blocks,
+        "next_action":"CONTINUE_DATA_COLLECTION" if blocks else "MANUAL_RESEARCH_REVIEW_READY",
+    }
+
+
+def _scheduler_status(root:Path)->dict[str,Any]:
+    try:
+        from validation_automation.scheduler import scheduler_status
+        return scheduler_status(root)
+    except Exception as exc:
+        return {
+            "running":False,
+            "error":f"{type(exc).__name__}: {exc}",
+            "config":{"morning_time":"07:30","post_market_time":"13:20"},
+        }
+
+def _history_status(root:Path)->dict[str,Any]:
+    try:
+        from validation_automation.scheduler import history_status
+        return history_status(root)
+    except Exception as exc:
+        return {"day_count":0,"recent":[],"latest":{},"error":f"{type(exc).__name__}: {exc}"}
+
+def get_payload(root:Path)->dict[str,Any]:
+    sc=_scorecard(root)
+    ml=_ml(root)
+    paper=_paper(root)
+    blocks=_blockers(sc,ml,paper)
+    return {
+        "collector":_collector(root),
+        "scorecard":sc,
+        "ml":ml,
+        "paper":paper,
+        "blockers":blocks,
+        "progress":_progress(root,ml,paper,blocks),
+        "scheduler":_scheduler_status(root),
+        "history":_history_status(root),
+        "safety":{
+            "etrade_used":False,
+            "broker_network_used_by_validation_lab":False,
+            "paper_engine_started_by_validation_lab":False,
+            "paper_orders_submitted_by_validation_lab":0,
+            "live_orders_submitted_by_validation_lab":0,
+            "automatic_strategy_change":False,
+            "automatic_threshold_change":False,
+            "automatic_model_promotion":False,
+            "live_trading_enabled":False,
+        },
+    }
+
+def _ai_once(root:Path)->dict[str,Any]:
+    py=_python(root)
+    return _run(root,[
+        py,"-m","ai_engine_v2.continuous_shadow_learning_pipeline_cli_v2_2_8",
+        "--root",str(root),"--mode","once","--force"
+    ],300)
+
+def _scorecard_run(root:Path)->dict[str,Any]:
+    py=_python(root)
+    return _run(root,[
+        py,"-m","ai_engine_v2.continuous_shadow_learning_pipeline_cli_v2_2_8",
+        "--root",str(root),"--mode","scorecard"
+    ],180)
+
+def _ml_refresh(root:Path)->dict[str,Any]:
+    scripts=[
+        "RUN_AI_TRADING_ENGINE_V2_2_12_ML_PREDICTION_OUTCOME.ps1",
+        "RUN_AI_TRADING_ENGINE_V2_2_13_ML_RESEARCH_READINESS.ps1",
+        "RUN_AI_TRADING_ENGINE_V2_2_14_ML_CONFIDENCE_CALIBRATION.ps1",
+        "RUN_AI_TRADING_ENGINE_V2_2_15_ML_FEATURE_DRIFT.ps1",
+        "RUN_AI_TRADING_ENGINE_V2_2_16_TO_V2_2_18_MODEL_HEALTH_BUNDLE.ps1",
+        "RUN_AI_TRADING_ENGINE_V2_2_19_TO_V2_2_22_RESEARCH_INTELLIGENCE_BUNDLE.ps1",
+    ]
+    rows=[]
+    for name in scripts:
+        path=root/name
+        if not path.exists():
+            rows.append({"script":name,"ok":False,"error":"NOT_INSTALLED"})
+            continue
+        r=_run(root,["powershell","-NoProfile","-ExecutionPolicy","Bypass","-File",str(path)],240)
+        rows.append({"script":name,**r})
+        if not r.get("ok"):
+            break
+    return {"ok":all(x.get("ok") for x in rows),"steps":rows}
+
+def action_payload(root:Path,body:dict[str,Any])->dict[str,Any]:
+    action=str(body.get("action",""))
+    if action=="start_auto_scheduler":
+        try:
+            from validation_automation.scheduler import start_scheduler
+            result=start_scheduler(root)
+        except Exception as exc:
+            result={"ok":False,"error":f"{type(exc).__name__}: {exc}"}
+    elif action=="stop_auto_scheduler":
+        try:
+            from validation_automation.scheduler import stop_scheduler
+            result=stop_scheduler(root)
+        except Exception as exc:
+            result={"ok":False,"error":f"{type(exc).__name__}: {exc}"}
+    elif action=="run_daily_snapshot_now":
+        try:
+            from validation_automation.scheduler import run_and_snapshot
+            result=run_and_snapshot(root,phase="manual")
+        except Exception as exc:
+            result={"ok":False,"error":f"{type(exc).__name__}: {exc}"}
+    elif action=="run_ai_evidence_once":
+        result=_ai_once(root)
+    elif action=="build_scorecard":
+        result=_scorecard_run(root)
+    elif action=="run_ml_outcome_refresh":
+        result=_ml_refresh(root)
+    elif action=="run_paper_qualification":
+        # Reuse the already existing Qualification center through its Python API.
+        try:
+            from web_controller.qualification_api import run_payload
+            result=run_payload(root)
+            result={"ok":True,"result":result}
+        except Exception as exc:
+            result={"ok":False,"error":f"{type(exc).__name__}: {exc}"}
+    elif action=="run_full_refresh":
+        steps=[]
+        for name,fn in [
+            ("AI_EVIDENCE",lambda:_ai_once(root)),
+            ("SCORECARD",lambda:_scorecard_run(root)),
+            ("ML_REFRESH",lambda:_ml_refresh(root)),
+        ]:
+            r=fn()
+            steps.append({"step":name,**r})
+            if not r.get("ok"):
+                return {
+                    "ok":False,"action":action,"steps":steps,
+                    "safety":get_payload(root)["safety"],
+                }
+        try:
+            from web_controller.qualification_api import run_payload
+            q=run_payload(root)
+            steps.append({"step":"PAPER_QUALIFICATION","ok":True,"result":q})
+        except Exception as exc:
+            steps.append({"step":"PAPER_QUALIFICATION","ok":False,"error":f"{type(exc).__name__}: {exc}"})
+        result={"ok":all(x.get("ok") for x in steps),"steps":steps}
+    else:
+        result={"ok":False,"error":"ACTION_NOT_ALLOWED","action":action}
+
+    result["action"]=action
+    result["safety"]=get_payload(root)["safety"]
+    return result

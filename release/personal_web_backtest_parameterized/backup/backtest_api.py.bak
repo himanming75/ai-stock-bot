@@ -1,0 +1,76 @@
+from __future__ import annotations
+from pathlib import Path
+from typing import Any
+import json
+
+from automated_backtest.dashboard import build_dashboard_payload
+from automated_backtest.engine import evaluate as run_existing_backtest
+from tools.discover_existing_backtest_and_build_feed import build as build_canonical_feed
+from tools.build_backtest_provenance_quality_gate import build as build_quality_gate
+
+
+def _load_json(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return {}
+
+
+def get_payload(root: Path) -> dict[str, Any]:
+    automated = build_dashboard_payload(root)
+    canonical = _load_json(
+        root/"runtime/canonical_backtest_feed/backtest_discovery_report.json"
+    )
+    quality = _load_json(
+        root/"runtime/backtest_provenance_quality_gate/latest_provenance_quality_report.json"
+    )
+    return {
+        "automated": automated,
+        "canonical": canonical,
+        "quality": quality,
+        "safety": {
+            "existing_backtest_engine_reused": True,
+            "new_backtest_engine_created": False,
+            "new_strategy_created": False,
+            "broker_write_enabled": False,
+            "order_submission_enabled": False,
+            "live_trading_enabled": False,
+            "external_network_enabled": False,
+            "actual_orders_submitted": 0,
+        },
+    }
+
+
+def action_payload(root: Path, body: dict[str, Any]) -> dict[str, Any]:
+    action = str(body.get("action", ""))
+    if action == "refresh_feed":
+        canonical = build_canonical_feed(root)
+        quality = build_quality_gate(root)
+        return {
+            "ok": True,
+            "action": action,
+            "canonical": canonical,
+            "quality": quality,
+            "actual_orders_submitted": 0,
+            "live_trading_enabled": False,
+        }
+    if action in {"run_existing", "run_existing_force"}:
+        result = run_existing_backtest(
+            root, force=(action == "run_existing_force")
+        )
+        return {
+            "ok": result.get("status") == "PASS",
+            "action": action,
+            "result": result,
+            "actual_orders_submitted": 0,
+            "live_trading_enabled": False,
+        }
+    return {
+        "ok": False,
+        "error": "ACTION_NOT_ALLOWED",
+        "action": action,
+        "actual_orders_submitted": 0,
+        "live_trading_enabled": False,
+    }

@@ -1,0 +1,158 @@
+from __future__ import annotations
+from pathlib import Path
+from typing import Any
+import importlib
+import json
+import os
+import subprocess
+from datetime import datetime, timezone
+
+def _safe_json(path:Path)->dict[str,Any]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig",errors="replace"))
+    except Exception:
+        return {}
+
+def _module_present(name:str)->bool:
+    try:
+        return importlib.util.find_spec(name) is not None
+    except Exception:
+        return False
+
+def _v2_1_10_status()->dict[str,Any]:
+    try:
+        from broker_integration_v1.eligible_signal_to_sandbox_bridge_status_v2_1_10 import build_v2_1_10_status
+        return build_v2_1_10_status()
+    except Exception as exc:
+        return {"status":"NOT_AVAILABLE","error_type":type(exc).__name__}
+
+def _recent_artifacts(root:Path)->list[dict[str,Any]]:
+    rows=[]
+    candidates=[]
+    for base in (root/"runtime",root/"release"):
+        if not base.exists():
+            continue
+        for p in base.rglob("*.json"):
+            low=str(p).lower()
+            if "etrade" in low or "broker_integration" in low or "threshold_sensitivity" in low:
+                try:
+                    stat=p.stat()
+                    candidates.append((stat.st_mtime,p,stat.st_size))
+                except OSError:
+                    pass
+    for mtime,p,size in sorted(candidates,reverse=True)[:25]:
+        try:
+            rel=str(p.relative_to(root)).replace("\\","/")
+        except Exception:
+            rel=str(p)
+        rows.append({
+            "path":rel,
+            "modified_utc":datetime.fromtimestamp(mtime,timezone.utc).isoformat(),
+            "size_bytes":size,
+        })
+    return rows
+
+def _audit_files(root:Path)->dict[str,Any]:
+    names=[
+        "START_V2_1_31_4_CAPTURE_AND_AUDIT.ps1",
+        "START_V2_1_31_4_CONTINUOUS_THRESHOLD_AUDIT.ps1",
+        "STOP_V2_1_31_4_CONTINUOUS_THRESHOLD_AUDIT.ps1",
+        "VERIFY_V2_1_31_4_THRESHOLD_SENSITIVITY_AUDIT.ps1",
+    ]
+    present={name:(root/name).exists() for name in names}
+    return {
+        "installed":all(present.values()),
+        "files":present,
+        "continuous_audit_default_started_by_web":False,
+    }
+
+def get_payload(root:Path)->dict[str,Any]:
+    v210=_v2_1_10_status()
+    audit=_audit_files(root)
+    return {
+        "stack":{
+            "broker_package_present":(root/"broker_integration_v1").exists(),
+            "v2_readonly_present":_module_present("broker_integration_v1.etrade_network_transport_v2"),
+            "oauth_flow_v2_present":_module_present("broker_integration_v1.etrade_oauth_flow_v2"),
+            "sandbox_order_transport_present":_module_present("broker_integration_v1.etrade_sandbox_order_transport_v2_1"),
+            "v2_1_10_present":_module_present("broker_integration_v1.eligible_signal_to_sandbox_bridge_v2_1_10"),
+            "v2_1_10_status":v210,
+        },
+        "credentials":{
+            "consumer_key_present":bool(os.environ.get("ETRADE_CONSUMER_KEY")),
+            "consumer_secret_present":bool(os.environ.get("ETRADE_CONSUMER_SECRET")),
+            "credential_values_exposed":False,
+            "token_persistence_requested_by_this_web_integration":False,
+        },
+        "audit":audit,
+        "recent_artifacts":_recent_artifacts(root),
+        "safety":{
+            "read_only_get_transport_available":_module_present("broker_integration_v1.etrade_network_transport_v2"),
+            "sandbox_only_bridge":bool(v210.get("sandbox_only",True)),
+            "production_order_post_allowed":False,
+            "live_trading_enabled":False,
+            "web_live_order_action_available":False,
+            "web_production_oauth_action_available":False,
+            "web_token_storage_added":False,
+            "actual_live_orders_submitted":0,
+        },
+    }
+
+def _run_ps1(root:Path,name:str,timeout:int=180)->dict[str,Any]:
+    path=root/name
+    if not path.exists():
+        return {"ok":False,"error":"SCRIPT_NOT_FOUND","script":name}
+    try:
+        cp=subprocess.run(
+            ["powershell","-NoProfile","-ExecutionPolicy","Bypass","-File",str(path)],
+            cwd=str(root),
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+        )
+        out=(cp.stdout or "")[-12000:]
+        err=(cp.stderr or "")[-6000:]
+        return {
+            "ok":cp.returncode==0,
+            "script":name,
+            "returncode":cp.returncode,
+            "stdout":out,
+            "stderr":err,
+            "production_order_post_allowed":False,
+            "live_trading_enabled":False,
+            "actual_live_orders_submitted":0,
+        }
+    except subprocess.TimeoutExpired:
+        return {
+            "ok":False,"error":"TIMEOUT","script":name,
+            "production_order_post_allowed":False,
+            "live_trading_enabled":False,
+            "actual_live_orders_submitted":0,
+        }
+
+def action_payload(root:Path,body:dict[str,Any])->dict[str,Any]:
+    action=str(body.get("action",""))
+    if action=="credential_preflight":
+        return {
+            "ok":True,
+            "action":action,
+            "consumer_key_present":bool(os.environ.get("ETRADE_CONSUMER_KEY")),
+            "consumer_secret_present":bool(os.environ.get("ETRADE_CONSUMER_SECRET")),
+            "credential_values_exposed":False,
+            "network_call_performed":False,
+            "order_call_performed":False,
+        }
+    if action=="run_v2_1_31_4_shadow_audit":
+        return _run_ps1(root,"START_V2_1_31_4_CAPTURE_AND_AUDIT.ps1",180)
+    if action=="verify_v2_1_31_4":
+        return _run_ps1(root,"VERIFY_V2_1_31_4_THRESHOLD_SENSITIVITY_AUDIT.ps1",180)
+    return {
+        "ok":False,
+        "error":"ACTION_NOT_ALLOWED",
+        "action":action,
+        "production_order_post_allowed":False,
+        "live_trading_enabled":False,
+        "actual_live_orders_submitted":0,
+    }

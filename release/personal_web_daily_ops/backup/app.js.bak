@@ -1,0 +1,99 @@
+const j=v=>JSON.stringify(v,null,2);
+function showTab(n){for(const x of ["dashboard","ai","strategy","paper","operations","qualification","live"])document.getElementById(x+"Tab").style.display=x===n?"block":"none";if(n==="ai")loadAI();if(n==="strategy")loadStrategy();if(n==="paper")loadPaper();if(n==="qualification")loadQualification();if(n==="live")loadLiveApproval()}
+function metric(l,v,c=""){return `<div class="card"><div class="label">${l}</div><div class="value ${c}">${v}</div></div>`}
+function table(el,rows){if(!rows||!rows.length){el.innerHTML="<tr><td>No data</td></tr>";return}const keys=Object.keys(rows[0]);el.innerHTML=`<tr>${keys.map(k=>`<th>${k}</th>`).join("")}</tr>`+rows.map(r=>`<tr>${keys.map(k=>`<td>${r[k]??""}</td>`).join("")}</tr>`).join("")}
+async function getDashboard(){return fetch("/api/dashboard").then(r=>r.json())}
+async function refresh(){const d=await getDashboard();statusBadge.textContent=d.emergency_stop?.enabled?"STOPPED":"READY";metrics.innerHTML=[metric("Release",d.release?.state),metric("Paper Equity",d.paper_account?.equity??"N/A"),metric("Market",d.market_open===true?"OPEN":"CLOSED"),metric("Risk",d.risk?.gate?.passed?"PASS":"BLOCKED"),metric("AI Health",d.ai?.model_health??"N/A"),metric("Live Orders",0,"ok")].join("");account.textContent=j(d.paper_account);risk.textContent=j(d.risk);cycle.textContent=j(d.orchestrator);stop.textContent=j(d.emergency_stop);table(positions,d.paper_positions);table(orders,d.paper_orders);logs.textContent=j(await fetch("/api/logs").then(r=>r.json()))}
+async function loadAI(){const d=await getDashboard();const a=d.ai||{};aiMetrics.innerHTML=[metric("Health",a.model_health??"N/A",a.model_health==="GREEN"?"ok":a.model_health==="RED"?"warn":""),metric("Action",a.research_action??"WAIT"),metric("Best Horizon",a.best_shadow_research_horizon??"N/A"),metric("Symbols",a.inference_symbol_count??0),metric("Resolved",a.resolved_outcomes??0),metric("Waiting",a.waiting_future_marks??0),metric("Drift",a.drift_status??"N/A"),metric("High Uncertainty",a.high_uncertainty_symbols??0)].join("");aiHealth.textContent=j({model_health:a.model_health,research_action:a.research_action,research_comparison_allowed:a.research_comparison_allowed,automatic_execution_change:a.automatic_execution_change,automatic_model_promotion:a.automatic_model_promotion});aiValidation.textContent=j({best_shadow_research_horizon:a.best_shadow_research_horizon,resolved_outcomes:a.resolved_outcomes,waiting_future_marks:a.waiting_future_marks,research_ready_horizons:a.research_ready_horizons,regime_outcomes:a.regime_outcomes,regime_interpretation_ready:a.regime_interpretation_ready});aiDrift.textContent=j({calibration_ready:a.calibration_ready,drift_status:a.drift_status,high_drift_features:a.high_drift_features,medium_drift_features:a.medium_drift_features});aiConsensus.textContent=j({consensus_symbol_count:a.consensus_symbol_count,high_uncertainty_symbols:a.high_uncertainty_symbols});aiDetails.textContent=j(a.details)}
+async function runAction(name){const r=await fetch("/api/action",{method:"POST",headers:{"Content-Type":"application/json"},body:j({name})});actionResult.textContent=j(await r.json());refresh()}
+async function setStop(enabled){const d=await fetch("/api/emergency-stop",{method:"POST",headers:{"Content-Type":"application/json"},body:j({enabled,reason:"WEB"})}).then(r=>r.json());actionResult.textContent=j(d);refresh()}
+
+let strategyLoaded=null;
+function strategyPayloadFromForm(){
+  const current=(strategyLoaded?.config)||{};
+  const existingStrategies=current.strategies||{};
+  return {
+    strategies:{
+      momentum:{enabled:strategyMomentum.checked,weight_pct:Number(existingStrategies.momentum?.weight_pct??50)},
+      mean_reversion:{enabled:strategyMeanReversion.checked,weight_pct:Number(existingStrategies.mean_reversion?.weight_pct??25)},
+      breakout:{enabled:strategyBreakout.checked,weight_pct:Number(existingStrategies.breakout?.weight_pct??25)}
+    },
+    symbols:strategySymbols.value.split(",").map(x=>x.trim().toUpperCase()).filter(Boolean),
+    risk:{
+      maximum_order_notional:Number(riskOrderNotional.value),
+      maximum_quantity:Number(riskMaxQty.value),
+      maximum_daily_orders:Number(riskDailyOrders.value),
+      maximum_daily_loss:Number(riskDailyLoss.value),
+      maximum_positions:Number(riskMaxPositions.value)
+    },
+    paper_only:true,
+    live_submission_enabled:false
+  };
+}
+function fillStrategyForm(cfg){
+  cfg=cfg||{};
+  const s=cfg.strategies||{}, r=cfg.risk||{};
+  strategyMomentum.checked=!!s.momentum?.enabled;
+  strategyMeanReversion.checked=!!s.mean_reversion?.enabled;
+  strategyBreakout.checked=!!s.breakout?.enabled;
+  strategySymbols.value=(cfg.symbols||[]).join(",");
+  riskOrderNotional.value=r.maximum_order_notional??250;
+  riskMaxQty.value=r.maximum_quantity??1;
+  riskDailyOrders.value=r.maximum_daily_orders??3;
+  riskDailyLoss.value=r.maximum_daily_loss??50;
+  riskMaxPositions.value=r.maximum_positions??3;
+}
+async function loadStrategy(){
+  const d=await fetch("/api/strategy-config",{cache:"no-store"}).then(r=>r.json());
+  strategyLoaded=d;
+  fillStrategyForm(d.config);
+  strategyCurrentConfig.textContent=j(d.config);
+  strategyRuntimePolicy.textContent=j(d.runtime_policy);
+  const ai=(await getDashboard()).ai||{};
+  strategyMetrics.innerHTML=[
+    metric("Mode",d.config?.paper_only?"PAPER ONLY":"UNKNOWN",d.config?.paper_only?"ok":"warn"),
+    metric("Live Submission",d.config?.live_submission_enabled?"ENABLED":"DISABLED",d.config?.live_submission_enabled?"warn":"ok"),
+    metric("Emergency Stop",d.emergency_stop?.enabled?"ON":"OFF",d.emergency_stop?.enabled?"warn":"ok"),
+    metric("AI Health",ai.model_health??"N/A"),
+    metric("AI Research",ai.research_comparison_allowed?"READY":"WAIT")
+  ].join("");
+  strategyAiRecommendation.textContent=j({
+    model_health:ai.model_health,
+    research_action:ai.research_action,
+    best_shadow_research_horizon:ai.best_shadow_research_horizon,
+    research_comparison_allowed:ai.research_comparison_allowed,
+    note:ai.research_comparison_allowed
+      ?"AI evidence is ready for manual research comparison. No automatic strategy change is performed."
+      :"Validation evidence is still accumulating. Keep current execution settings unchanged."
+  });
+}
+async function validateStrategy(){
+  const payload=strategyPayloadFromForm();
+  const r=await fetch("/api/strategy-config/validate",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+}
+async function saveStrategy(){
+  const payload=strategyPayloadFromForm();
+  const r=await fetch("/api/strategy-config/save",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+  if(r.ok)await loadStrategy();
+}
+async function restoreStrategy(){
+  const r=await fetch("/api/strategy-config/restore",{method:"POST"}).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+  if(r.ok)await loadStrategy();
+}
+
+async function loadPaper(){const d=await fetch("/api/paper-operations").then(r=>r.json());paperAccount.textContent=j(d.account)}
+async function paperAction(action){const r=await fetch("/api/paper-operations/action",{method:"POST",headers:{"Content-Type":"application/json"},body:j({action})});paperActionResult.textContent=j(await r.json())}
+async function operationJob(job){const r=await fetch("/api/operations-manager/job",{method:"POST",headers:{"Content-Type":"application/json"},body:j({job})});operationsResult.textContent=j(await r.json())}
+async function loadQualification(){const d=await fetch("/api/qualification").then(r=>r.json());qualificationMetrics.innerHTML=[metric("State",d.state,d.qualification?.passed?"ok":"warn"),metric("Trading Days",d.metrics?.trading_days??0),metric("Closed Trades",d.metrics?.closed_trades??0),metric("Win Rate",(d.metrics?.win_rate_pct??0)+"%"),metric("Live Orders",0,"ok")].join("");qualificationOverall.textContent=j(d.metrics);qualificationGate.textContent=j(d.qualification)}
+async function runQualification(){const r=await fetch("/api/qualification/run",{method:"POST"});qualificationResult.textContent=j(await r.json());loadQualification()}
+async function loadLiveApproval(){const d=await fetch("/api/live-approval").then(r=>r.json());liveMetrics.innerHTML=[metric("State",d.state,d.state==="LIVE_READ_ONLY_APPROVAL_READY"?"ok":"warn"),metric("Qualification",d.qualification_passed?"PASS":"BLOCKED",d.qualification_passed?"ok":"warn"),metric("Candidate",d.selected_candidate&&Object.keys(d.selected_candidate).length?"PRESENT":"NONE"),metric("Decision",d.approval_request?.decision),metric("Network Attempted",d.actual_live_network_attempted?"YES":"NO","ok"),metric("Live Orders",0,"ok")].join("");liveQualification.textContent=j({state:d.qualification_state,passed:d.qualification_passed});liveCredentials.textContent=j(d.credentials);liveComparison.textContent=j(d.paper_live_comparison);liveRequest.textContent=j(d.approval_request);liveSnapshot.textContent=j(d.live_read_only_snapshot)}
+async function refreshLiveApproval(){const r=await fetch("/api/live-approval/refresh",{method:"POST"});liveActionResult.textContent=j(await r.json());loadLiveApproval()}
+async function decideLive(decision){const r=await fetch("/api/live-approval/decision",{method:"POST",headers:{"Content-Type":"application/json"},body:j({decision,operator_note:liveOperatorNote.value})});liveActionResult.textContent=j(await r.json());loadLiveApproval()}
+refresh();setInterval(refresh,15000);

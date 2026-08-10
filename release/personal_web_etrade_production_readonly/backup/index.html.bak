@@ -1,0 +1,200 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Stock Bot</title><link rel="stylesheet" href="/style.css"></head><body><header><div><h1>AI Stock Bot</h1><p>Personal Paper Trading & AI Control Center</p></div><div id="statusBadge" class="badge">Loading</div></header><main>
+<nav class="tabs"><button onclick="showTab('dashboard')">Dashboard</button><button onclick="showTab('ai')">AI Engine</button><button onclick="showTab('strategy')">Strategies & Risk</button><button onclick="showTab('paper')">Paper Operations</button><button onclick="showTab('operations')">Scheduler & Recovery</button><button onclick="showTab('qualification')">Qualification</button><button onclick="showTab('live')">Live Approval</button><button onclick="showTab('backtest')">Backtest</button><button onclick="showTab('etrade')">E*TRADE</button></nav>
+<div id="dashboardTab">
+<section class="panel">
+  <h2>Today's Command Center</h2>
+  <section class="metrics" id="commandMetrics"></section>
+  <div class="buttons">
+    <button onclick="commandRefresh()">Refresh All</button>
+    <button onclick="showTab('ai')">AI Status</button>
+    <button onclick="showTab('strategy')">Strategy & Risk</button>
+    <button onclick="showTab('operations')">Daily Operations</button>
+    <button onclick="showTab('qualification')">Validation</button>
+    <button class="danger" onclick="setStop(true)">Emergency Stop ON</button>
+    <button class="safe" onclick="setStop(false)">Emergency Stop OFF</button>
+  </div>
+  <div id="commandMessage" class="note"></div>
+</section>
+<section class="grid">
+  <article class="panel"><h2>Today / 오늘</h2><pre id="commandToday"></pre></article>
+  <article class="panel"><h2>AI / AI 상태</h2><pre id="commandAI"></pre></article>
+  <article class="panel"><h2>Validation / 검증</h2><pre id="commandValidation"></pre></article>
+  <article class="panel"><h2>Safety / 안전</h2><pre id="commandSafety"></pre></article>
+</section>
+<section class="metrics" id="metrics"></section><section class="panel"><div class="buttons"><button onclick="runAction('run_v140')">Refresh V140</button><button class="danger" onclick="setStop(true)">Emergency Stop ON</button><button class="safe" onclick="setStop(false)">Emergency Stop OFF</button></div><pre id="actionResult"></pre></section><section class="grid"><article class="panel"><h2>Paper Account</h2><pre id="account"></pre></article><article class="panel"><h2>Risk</h2><pre id="risk"></pre></article><article class="panel"><h2>Cycle</h2><pre id="cycle"></pre></article><article class="panel"><h2>Emergency Stop</h2><pre id="stop"></pre></article></section><section class="panel"><h2>Positions</h2><table id="positions"></table></section><section class="panel"><h2>Orders</h2><table id="orders"></table></section><section class="panel"><h2>Logs</h2><pre id="logs"></pre></section></div>
+<div id="aiTab" style="display:none"><section class="metrics" id="aiMetrics"></section><section class="grid"><article class="panel"><h2>AI Health</h2><pre id="aiHealth"></pre></article><article class="panel"><h2>Validation</h2><pre id="aiValidation"></pre></article><article class="panel"><h2>Drift & Calibration</h2><pre id="aiDrift"></pre></article><article class="panel"><h2>Consensus & Uncertainty</h2><pre id="aiConsensus"></pre></article></section><section class="panel"><h2>AI Research Details</h2><pre id="aiDetails"></pre></section></div>
+<div id="strategyTab" style="display:none">
+<section class="metrics" id="strategyMetrics"></section>
+<section class="grid">
+  <article class="panel">
+    <h2>Strategies</h2>
+    <label><input type="checkbox" id="strategyMomentum"> Momentum</label><br>
+    <label><input type="checkbox" id="strategyMeanReversion"> Mean Reversion</label><br>
+    <label><input type="checkbox" id="strategyBreakout"> Breakout</label>
+  </article>
+  <article class="panel">
+    <h2>Symbols</h2>
+    <label>Symbols (comma separated)</label>
+    <input id="strategySymbols" style="width:100%" placeholder="AAPL,MSFT,SPY">
+    <div class="note">Maximum 20 symbols. Saved in Paper-only mode.</div>
+  </article>
+  <article class="panel">
+    <h2>Risk Limits</h2>
+    <label>Max order notional <input id="riskOrderNotional" type="number" min="1" step="1"></label><br>
+    <label>Max quantity <input id="riskMaxQty" type="number" min="1" step="1"></label><br>
+    <label>Max daily orders <input id="riskDailyOrders" type="number" min="1" step="1"></label><br>
+    <label>Max daily loss <input id="riskDailyLoss" type="number" min="1" step="1"></label><br>
+    <label>Max positions <input id="riskMaxPositions" type="number" min="1" step="1"></label>
+  </article>
+  <article class="panel">
+    <h2>AI Recommendation (Read Only)</h2>
+    <pre id="strategyAiRecommendation"></pre>
+  </article>
+</section>
+<section class="panel">
+  <div class="buttons">
+    <button onclick="validateStrategy()">Validate</button>
+    <button class="safe" onclick="saveStrategy()">Save Paper Settings</button>
+    <button onclick="restoreStrategy()">Restore Previous</button>
+    <button onclick="loadStrategy()">Reload</button>
+  </div>
+  <div class="note">Saving/restoring is blocked while Emergency Stop is ON. Live submission remains disabled.</div>
+  <pre id="strategyActionResult"></pre>
+</section>
+<section class="grid">
+  <article class="panel"><h2>Current Config</h2><pre id="strategyCurrentConfig"></pre></article>
+  <article class="panel"><h2>Runtime Policy</h2><pre id="strategyRuntimePolicy"></pre></article>
+</section>
+</div>
+<div id="paperTab" style="display:none"><section class="panel"><h2>Paper Operations</h2><button onclick="paperAction('refresh_real_paper')">Refresh Account</button><button onclick="paperAction('run_real_shadow')">Run Shadow</button><pre id="paperActionResult"></pre><pre id="paperAccount"></pre></section></div>
+<div id="operationsTab" style="display:none">
+<section class="metrics" id="opsMetrics"></section>
+<section class="panel">
+  <h2>Daily Operations</h2>
+  <div class="buttons">
+    <button onclick="operationJob('health_check')">Health Check</button>
+    <button onclick="operationJob('pre_market')">Pre-Market Check</button>
+    <button onclick="operationJob('intraday_shadow')">Run Intraday Shadow</button>
+    <button onclick="operationJob('post_market')">Post-Market Report</button>
+    <button onclick="operationJob('recovery_plan')">Recovery Plan</button>
+    <button onclick="loadOperations()">Reload</button>
+  </div>
+  <div class="note">Intraday Shadow is read/shadow only. Scheduled Paper order submission and Live submission remain disabled.</div>
+  <pre id="operationsResult"></pre>
+</section>
+<section class="grid">
+  <article class="panel">
+    <h2>Schedule Settings</h2>
+    <label><input type="checkbox" id="opsPreEnabled"> Pre-market enabled</label><br>
+    <label>Pre-market time <input type="time" id="opsPreTime"></label><br>
+    <label><input type="checkbox" id="opsIntraEnabled"> Intraday shadow enabled</label><br>
+    <label>Intraday time <input type="time" id="opsIntraTime"></label><br>
+    <label><input type="checkbox" id="opsPostEnabled"> Post-market enabled</label><br>
+    <label>Post-market time <input type="time" id="opsPostTime"></label><br>
+    <label>Health stale minutes <input type="number" id="opsHealthStale" min="5" max="1440"></label><br>
+    <label><input type="checkbox" id="opsDesktopNotify"> Desktop notifications</label><br>
+    <label><input type="checkbox" id="opsRestartFailure"> Restart on failure</label><br><br>
+    <button class="safe" onclick="saveOperations()">Save Schedule Settings</button>
+  </article>
+  <article class="panel"><h2>Health</h2><pre id="opsHealth"></pre></article>
+  <article class="panel"><h2>Recovery</h2><pre id="opsRecovery"></pre></article>
+  <article class="panel"><h2>Last Job</h2><pre id="opsLastJob"></pre></article>
+</section>
+<section class="grid">
+  <article class="panel"><h2>Safety</h2><pre id="opsSafety"></pre></article>
+  <article class="panel"><h2>Notifications</h2><pre id="opsNotifications"></pre></article>
+</section>
+</div>
+<div id="qualificationTab" style="display:none"><section class="metrics" id="qualificationMetrics"></section><section class="panel"><h2>Qualification</h2><button onclick="runQualification()">Recalculate</button><pre id="qualificationResult"></pre><pre id="qualificationOverall"></pre><pre id="qualificationGate"></pre></section></div>
+<div id="liveTab" style="display:none"><section class="metrics" id="liveMetrics"></section><section class="panel"><h2>Live Read-Only Approval Center</h2><button onclick="refreshLiveApproval()">Refresh Read-Only Review</button><div class="buttons"><button class="safe" onclick="decideLive('APPROVE')">Approve Review</button><button class="danger" onclick="decideLive('REJECT')">Reject</button></div><label>Operator note<input id="liveOperatorNote"></label><pre id="liveActionResult"></pre></section><section class="grid"><article class="panel"><h2>Qualification Gate</h2><pre id="liveQualification"></pre></article><article class="panel"><h2>Credentials</h2><pre id="liveCredentials"></pre></article><article class="panel"><h2>Paper vs Live</h2><pre id="liveComparison"></pre></article><article class="panel"><h2>Approval Request</h2><pre id="liveRequest"></pre></article></section><section class="panel"><h2>Live Read-Only Snapshot</h2><pre id="liveSnapshot"></pre></section></div>
+
+<div id="backtestTab" style="display:none">
+<section class="metrics" id="backtestMetrics"></section>
+<section class="panel">
+  <h2>Backtest Research Center</h2>
+  <div class="buttons">
+    <button onclick="backtestAction('refresh_feed')">Refresh Existing Backtest Feed</button>
+    <button onclick="backtestAction('run_existing')">Run Existing Automated Backtest</button>
+    <button onclick="backtestAction('run_existing_force')">Force Re-run Existing Backtest</button>
+    <button onclick="loadBacktest()">Reload</button>
+  </div>
+  <div class="note">Uses the existing V98 automated backtest framework and existing historical/backtest outputs. No new strategy or broker path is created.</div>
+  <pre id="backtestActionResult"></pre>
+</section>
+<section class="panel">
+  <h2>Parameterized Backtest</h2>
+  <div class="grid">
+    <article>
+      <label>Strategy</label>
+      <select id="btStrategy" style="width:100%"></select>
+    </article>
+    <article>
+      <label>Dataset</label>
+      <select id="btDataset" style="width:100%"></select>
+    </article>
+    <article>
+      <label>Window</label>
+      <select id="btWindow" style="width:100%"></select>
+    </article>
+    <article>
+      <label><input type="checkbox" id="btForce"> Force re-run / ignore cache</label>
+    </article>
+  </div>
+  <div class="buttons">
+    <button class="safe" onclick="runSelectedBacktest()">Run Selected Backtest</button>
+  </div>
+  <div class="note">The original V98 policy is backed up and restored automatically after the selected research run.</div>
+  <pre id="backtestSelectedResult"></pre>
+</section>
+<section class="grid">
+  <article class="panel"><h2>Automated Backtest</h2><pre id="backtestAutomated"></pre></article>
+  <article class="panel"><h2>Canonical Feed</h2><pre id="backtestCanonical"></pre></article>
+  <article class="panel"><h2>Quality Gate</h2><pre id="backtestQuality"></pre></article>
+  <article class="panel"><h2>Top Result</h2><pre id="backtestTop"></pre></article>
+</section>
+<section class="panel">
+  <h2>Rankings</h2>
+  <table id="backtestRankings"></table>
+</section>
+<section class="panel">
+  <h2>Current vs Candidate vs AI</h2>
+  <section class="metrics" id="comparisonMetrics"></section>
+  <section class="grid">
+    <article class="panel"><h2>Current Strategy</h2><pre id="comparisonCurrent"></pre></article>
+    <article class="panel"><h2>Backtest Candidate</h2><pre id="comparisonCandidate"></pre></article>
+    <article class="panel"><h2>AI Research State</h2><pre id="comparisonAI"></pre></article>
+    <article class="panel"><h2>Recommendation</h2><pre id="comparisonRecommendation"></pre></article>
+  </section>
+  <div class="note">Research comparison only. No strategy, threshold, risk, Paper execution, or Live execution setting is changed automatically.</div>
+</section>
+<section class="panel">
+  <h2>Safety Contract</h2>
+  <pre id="backtestSafety"></pre>
+</section>
+</div>
+
+<div id="etradeTab" style="display:none">
+<section class="metrics" id="etradeMetrics"></section>
+<section class="panel">
+  <h2>E*TRADE Integration Center</h2>
+  <div class="buttons">
+    <button onclick="loadEtrade()">Refresh Status</button>
+    <button onclick="etradeAction('credential_preflight')">Credential Preflight</button>
+    <button onclick="etradeAction('run_v2_1_31_4_shadow_audit')">Run V2.1.31.4 Shadow Audit</button>
+    <button onclick="etradeAction('verify_v2_1_31_4')">Verify V2.1.31.4</button>
+  </div>
+  <div class="note">This tab does not expose Production order POST. OAuth credential values are never returned to the browser.</div>
+  <pre id="etradeActionResult"></pre>
+</section>
+<section class="grid">
+  <article class="panel"><h2>Stack Status</h2><pre id="etradeStack"></pre></article>
+  <article class="panel"><h2>OAuth / Credentials</h2><pre id="etradeCredentials"></pre></article>
+  <article class="panel"><h2>V2.1.31.4</h2><pre id="etradeAudit"></pre></article>
+  <article class="panel"><h2>Safety Locks</h2><pre id="etradeSafety"></pre></article>
+</section>
+<section class="panel">
+  <h2>Recent E*TRADE Runtime Artifacts</h2>
+  <table id="etradeArtifacts"></table>
+</section>
+</div>
+</main><script src="/app.js"></script></body></html>

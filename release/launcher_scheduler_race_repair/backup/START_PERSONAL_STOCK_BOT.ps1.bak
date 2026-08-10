@@ -1,0 +1,123 @@
+﻿$ErrorActionPreference="Stop"
+$Repo="C:\stock-bot"
+$Port=8770
+$HostAddr="127.0.0.1"
+$Python="$Repo\.venv\Scripts\python.exe"
+$Runner="$Repo\tools\run_v141_01_to_v145_64.py"
+$Runtime="$Repo\runtime\personal_operations_launcher"
+
+Set-Location $Repo
+New-Item -ItemType Directory -Force $Runtime | Out-Null
+
+function Get-Listener {
+    Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
+        Select-Object -First 1
+}
+
+function Wait-HttpReady {
+    param([int]$Seconds=15)
+    $Deadline=(Get-Date).AddSeconds($Seconds)
+    while((Get-Date) -lt $Deadline){
+        try{
+            $r=Invoke-RestMethod -Uri "http://$HostAddr`:$Port/api/daily-ops" -TimeoutSec 2
+            if($r.system.control_center -eq "RUNNING"){ return $true }
+        }catch{}
+        Start-Sleep -Milliseconds 500
+    }
+    return $false
+}
+
+Write-Host "=== PERSONAL AI STOCK BOT START ==="
+
+if(-not (Test-Path $Python)){ throw "PYTHON_NOT_FOUND: $Python" }
+if(-not (Test-Path $Runner)){ throw "WEB_RUNNER_NOT_FOUND: $Runner" }
+
+$Listener=Get-Listener
+
+if($Listener){
+    Write-Host "Control Center already listening on port $Port. PID: $($Listener.OwningProcess)"
+}else{
+    $OutLog=Join-Path $Runtime "control_center_8770_stdout.log"
+    $ErrLog=Join-Path $Runtime "control_center_8770_stderr.log"
+
+    $Args=@(
+        "-B",
+        $Runner,
+        "--host",$HostAddr,
+        "--port","$Port"
+    )
+
+    $Proc=Start-Process `
+        -FilePath $Python `
+        -ArgumentList $Args `
+        -WorkingDirectory $Repo `
+        -RedirectStandardOutput $OutLog `
+        -RedirectStandardError $ErrLog `
+        -PassThru `
+        -WindowStyle Hidden
+
+    Write-Host "Starting Control Center PID: $($Proc.Id)"
+
+    if(-not (Wait-HttpReady -Seconds 20)){
+        throw "CONTROL_CENTER_START_TIMEOUT"
+    }
+
+    $Listener=Get-Listener
+    if($Listener){
+        Write-Host "Control Center READY. PID: $($Listener.OwningProcess)"
+    }
+}
+
+# Ensure Validation Scheduler is running through the already-existing safe API.
+$Body=@{ action="start_validation_scheduler" } | ConvertTo-Json
+
+try{
+    $SchedulerResult=Invoke-RestMethod `
+        -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+        -Method POST `
+        -ContentType "application/json" `
+        -Body $Body `
+        -TimeoutSec 15
+
+    if($SchedulerResult.ok){
+        Write-Host "Validation Scheduler: READY"
+    }else{
+        Write-Warning "Validation Scheduler did not start."
+    }
+}catch{
+    Write-Warning "Validation Scheduler API check failed: $($_.Exception.Message)"
+}
+
+# Save a startup operations snapshot without triggering any trading.
+$Body=@{ action="save_operations_snapshot" } | ConvertTo-Json
+try{
+    $Snap=Invoke-RestMethod `
+        -Uri "http://$HostAddr`:$Port/api/daily-ops/action" `
+        -Method POST `
+        -ContentType "application/json" `
+        -Body $Body `
+        -TimeoutSec 15
+    if($Snap.ok){ Write-Host "Startup Operations Snapshot: SAVED" }
+}catch{
+    Write-Warning "Startup snapshot could not be saved."
+}
+
+$State=[ordered]@{
+    started_at=(Get-Date).ToString("o")
+    host=$HostAddr
+    port=$Port
+    control_center_pid=(Get-Listener).OwningProcess
+    url="http://$HostAddr`:$Port"
+    etrade="DEFERRED"
+    paper_orders_submitted_by_launcher=0
+    live_orders_submitted_by_launcher=0
+}
+$State | ConvertTo-Json -Depth 5 | Set-Content -Encoding UTF8 (Join-Path $Runtime "launcher_state.json")
+
+Write-Host ""
+Write-Host "PERSONAL AI STOCK BOT: READY"
+Write-Host "Open: http://$HostAddr`:$Port"
+Write-Host "E*TRADE: DEFERRED"
+Write-Host "Paper orders from launcher: 0"
+Write-Host "Live orders from launcher: 0"
+

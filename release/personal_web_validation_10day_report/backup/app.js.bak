@@ -1,0 +1,390 @@
+const j=v=>JSON.stringify(v,null,2);
+function showTab(n){for(const x of ["dashboard","ai","strategy","paper","operations","qualification","live","backtest","etrade","validationlab"])document.getElementById(x+"Tab").style.display=x===n?"block":"none";if(n==="ai")loadAI();if(n==="strategy")loadStrategy();if(n==="paper")loadPaper();if(n==="operations")loadOperations();if(n==="qualification")loadQualification();if(n==="live")loadLiveApproval();if(n==="backtest")loadBacktest();if(n==="etrade")loadEtrade();if(n==="validationlab")loadValidationLab()}
+function metric(l,v,c=""){return `<div class="card"><div class="label">${l}</div><div class="value ${c}">${v}</div></div>`}
+function table(el,rows){if(!rows||!rows.length){el.innerHTML="<tr><td>No data</td></tr>";return}const keys=Object.keys(rows[0]);el.innerHTML=`<tr>${keys.map(k=>`<th>${k}</th>`).join("")}</tr>`+rows.map(r=>`<tr>${keys.map(k=>`<td>${r[k]??""}</td>`).join("")}</tr>`).join("")}
+async function getDashboard(){return fetch("/api/dashboard").then(r=>r.json())}
+
+async function loadCommandCenter(){
+  const d=await getDashboard();
+  let q={};
+  let o={};
+  try{q=await fetch("/api/qualification",{cache:"no-store"}).then(r=>r.json())}catch(e){}
+  try{o=await fetch("/api/operations-manager",{cache:"no-store"}).then(r=>r.json())}catch(e){}
+  const ai=d.ai||{};
+  const stop=!!d.emergency_stop?.enabled;
+  const riskPass=!!d.risk?.gate?.passed;
+  const market=(d.market_open===true?"OPEN":"CLOSED");
+  const validationPassed=!!q.qualification?.passed;
+  commandMetrics.innerHTML=[
+    metric("System",stop?"STOPPED":"READY",stop?"warn":"ok"),
+    metric("Market",market),
+    metric("Paper Equity",d.paper_account?.equity??"N/A"),
+    metric("Risk",riskPass?"PASS":"BLOCKED",riskPass?"ok":"warn"),
+    metric("AI Health",ai.model_health??"N/A",ai.model_health==="GREEN"?"ok":ai.model_health==="RED"?"warn":""),
+    metric("Validation",validationPassed?"PASS":"COLLECTING",validationPassed?"ok":""),
+    metric("Live Orders",d.safety?.actual_live_orders_submitted??0,"ok")
+  ].join("");
+  commandToday.textContent=j({
+    market,
+    equity:d.paper_account?.equity,
+    cash:d.paper_account?.cash,
+    buying_power:d.paper_account?.buying_power,
+    positions:(d.paper_positions||[]).length,
+    open_orders:(d.paper_orders||[]).filter(x=>!["filled","canceled","cancelled","rejected"].includes(String(x.status||"").toLowerCase())).length,
+    last_cycle:d.orchestrator?.cycle_id,
+    paper_orders_submitted:d.orchestrator?.paper_orders_submitted??0
+  });
+  commandAI.textContent=j({
+    model_health:ai.model_health,
+    research_action:ai.research_action,
+    best_horizon:ai.best_shadow_research_horizon,
+    resolved_outcomes:ai.resolved_outcomes,
+    waiting_future_marks:ai.waiting_future_marks,
+    drift_status:ai.drift_status,
+    research_comparison_allowed:ai.research_comparison_allowed
+  });
+  commandValidation.textContent=j({
+    state:q.state,
+    passed:validationPassed,
+    metrics:q.metrics,
+    qualification:q.qualification
+  });
+  commandSafety.textContent=j({
+    emergency_stop:d.emergency_stop,
+    risk_gate:d.risk?.gate,
+    local_bind_only:d.safety?.local_bind_only,
+    live_network_enabled:d.safety?.live_network_enabled,
+    live_submission_enabled:d.safety?.live_submission_enabled,
+    scheduled_paper_submission_enabled:o.safety?.scheduled_paper_order_submission_enabled,
+    actual_live_orders_submitted:d.safety?.actual_live_orders_submitted??0
+  });
+  let msg=[];
+  if(stop)msg.push("Emergency Stop is ON.");
+  if(!riskPass)msg.push("Risk gate is currently blocked.");
+  if(ai.model_health==="YELLOW")msg.push("AI validation is still accumulating; keep execution settings unchanged.");
+  if(!validationPassed)msg.push("Paper qualification is still collecting evidence.");
+  if(!msg.length)msg.push("No blocking dashboard alerts.");
+  commandMessage.textContent=msg.join(" ");
+}
+async function commandRefresh(){
+  await refresh();
+  await loadCommandCenter();
+}
+
+async function refresh(){const d=await getDashboard();statusBadge.textContent=d.emergency_stop?.enabled?"STOPPED":"READY";metrics.innerHTML=[metric("Release",d.release?.state),metric("Paper Equity",d.paper_account?.equity??"N/A"),metric("Market",d.market_open===true?"OPEN":"CLOSED"),metric("Risk",d.risk?.gate?.passed?"PASS":"BLOCKED"),metric("AI Health",d.ai?.model_health??"N/A"),metric("Live Orders",0,"ok")].join("");account.textContent=j(d.paper_account);risk.textContent=j(d.risk);cycle.textContent=j(d.orchestrator);stop.textContent=j(d.emergency_stop);table(positions,d.paper_positions);table(orders,d.paper_orders);logs.textContent=j(await fetch("/api/logs").then(r=>r.json()))}
+async function loadAI(){const d=await getDashboard();const a=d.ai||{};aiMetrics.innerHTML=[metric("Health",a.model_health??"N/A",a.model_health==="GREEN"?"ok":a.model_health==="RED"?"warn":""),metric("Action",a.research_action??"WAIT"),metric("Best Horizon",a.best_shadow_research_horizon??"N/A"),metric("Symbols",a.inference_symbol_count??0),metric("Resolved",a.resolved_outcomes??0),metric("Waiting",a.waiting_future_marks??0),metric("Drift",a.drift_status??"N/A"),metric("High Uncertainty",a.high_uncertainty_symbols??0)].join("");aiHealth.textContent=j({model_health:a.model_health,research_action:a.research_action,research_comparison_allowed:a.research_comparison_allowed,automatic_execution_change:a.automatic_execution_change,automatic_model_promotion:a.automatic_model_promotion});aiValidation.textContent=j({best_shadow_research_horizon:a.best_shadow_research_horizon,resolved_outcomes:a.resolved_outcomes,waiting_future_marks:a.waiting_future_marks,research_ready_horizons:a.research_ready_horizons,regime_outcomes:a.regime_outcomes,regime_interpretation_ready:a.regime_interpretation_ready});aiDrift.textContent=j({calibration_ready:a.calibration_ready,drift_status:a.drift_status,high_drift_features:a.high_drift_features,medium_drift_features:a.medium_drift_features});aiConsensus.textContent=j({consensus_symbol_count:a.consensus_symbol_count,high_uncertainty_symbols:a.high_uncertainty_symbols});aiDetails.textContent=j(a.details)}
+async function runAction(name){const r=await fetch("/api/action",{method:"POST",headers:{"Content-Type":"application/json"},body:j({name})});actionResult.textContent=j(await r.json());refresh()}
+async function setStop(enabled){const d=await fetch("/api/emergency-stop",{method:"POST",headers:{"Content-Type":"application/json"},body:j({enabled,reason:"WEB"})}).then(r=>r.json());actionResult.textContent=j(d);refresh()}
+
+let strategyLoaded=null;
+function strategyPayloadFromForm(){
+  const current=(strategyLoaded?.config)||{};
+  const existingStrategies=current.strategies||{};
+  return {
+    strategies:{
+      momentum:{enabled:strategyMomentum.checked,weight_pct:Number(existingStrategies.momentum?.weight_pct??50)},
+      mean_reversion:{enabled:strategyMeanReversion.checked,weight_pct:Number(existingStrategies.mean_reversion?.weight_pct??25)},
+      breakout:{enabled:strategyBreakout.checked,weight_pct:Number(existingStrategies.breakout?.weight_pct??25)}
+    },
+    symbols:strategySymbols.value.split(",").map(x=>x.trim().toUpperCase()).filter(Boolean),
+    risk:{
+      maximum_order_notional:Number(riskOrderNotional.value),
+      maximum_quantity:Number(riskMaxQty.value),
+      maximum_daily_orders:Number(riskDailyOrders.value),
+      maximum_daily_loss:Number(riskDailyLoss.value),
+      maximum_positions:Number(riskMaxPositions.value)
+    },
+    paper_only:true,
+    live_submission_enabled:false
+  };
+}
+function fillStrategyForm(cfg){
+  cfg=cfg||{};
+  const s=cfg.strategies||{}, r=cfg.risk||{};
+  strategyMomentum.checked=!!s.momentum?.enabled;
+  strategyMeanReversion.checked=!!s.mean_reversion?.enabled;
+  strategyBreakout.checked=!!s.breakout?.enabled;
+  strategySymbols.value=(cfg.symbols||[]).join(",");
+  riskOrderNotional.value=r.maximum_order_notional??250;
+  riskMaxQty.value=r.maximum_quantity??1;
+  riskDailyOrders.value=r.maximum_daily_orders??3;
+  riskDailyLoss.value=r.maximum_daily_loss??50;
+  riskMaxPositions.value=r.maximum_positions??3;
+}
+async function loadStrategy(){
+  const d=await fetch("/api/strategy-config",{cache:"no-store"}).then(r=>r.json());
+  strategyLoaded=d;
+  fillStrategyForm(d.config);
+  strategyCurrentConfig.textContent=j(d.config);
+  strategyRuntimePolicy.textContent=j(d.runtime_policy);
+  const ai=(await getDashboard()).ai||{};
+  strategyMetrics.innerHTML=[
+    metric("Mode",d.config?.paper_only?"PAPER ONLY":"UNKNOWN",d.config?.paper_only?"ok":"warn"),
+    metric("Live Submission",d.config?.live_submission_enabled?"ENABLED":"DISABLED",d.config?.live_submission_enabled?"warn":"ok"),
+    metric("Emergency Stop",d.emergency_stop?.enabled?"ON":"OFF",d.emergency_stop?.enabled?"warn":"ok"),
+    metric("AI Health",ai.model_health??"N/A"),
+    metric("AI Research",ai.research_comparison_allowed?"READY":"WAIT")
+  ].join("");
+  strategyAiRecommendation.textContent=j({
+    model_health:ai.model_health,
+    research_action:ai.research_action,
+    best_shadow_research_horizon:ai.best_shadow_research_horizon,
+    research_comparison_allowed:ai.research_comparison_allowed,
+    note:ai.research_comparison_allowed
+      ?"AI evidence is ready for manual research comparison. No automatic strategy change is performed."
+      :"Validation evidence is still accumulating. Keep current execution settings unchanged."
+  });
+}
+async function validateStrategy(){
+  const payload=strategyPayloadFromForm();
+  const r=await fetch("/api/strategy-config/validate",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+}
+async function saveStrategy(){
+  const payload=strategyPayloadFromForm();
+  const r=await fetch("/api/strategy-config/save",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+  if(r.ok)await loadStrategy();
+}
+async function restoreStrategy(){
+  const r=await fetch("/api/strategy-config/restore",{method:"POST"}).then(r=>r.json());
+  strategyActionResult.textContent=j(r);
+  if(r.ok)await loadStrategy();
+}
+
+
+async function loadBacktest(){
+  const d=await fetch("/api/backtest",{cache:"no-store"}).then(r=>r.json());
+  const a=d.automated||{}, ag=a.aggregation||{}, c=d.canonical||{}, q=d.quality||{};
+  const opts=d.options||{}, selected=d.latest_selected||{};
+  backtestMetrics.innerHTML=[
+    metric("State",a.automated_backtest_state??"NOT_AVAILABLE"),
+    metric("Strategies",a.strategy_count??0),
+    metric("Datasets",a.dataset_count??0),
+    metric("Jobs",a.job_count??0),
+    metric("Completed",ag.completed_count??0),
+    metric("Canonical Trades",c.canonical_trade_count??0),
+    metric("Curated Trades",q.curated_record_count??0),
+    metric("Live Orders",0,"ok")
+  ].join("");
+  backtestAutomated.textContent=j(a);
+  backtestCanonical.textContent=j(c);
+  backtestQuality.textContent=j(q);
+  backtestTop.textContent=j(ag.top_result||null);
+  table(backtestRankings,(ag.rankings||[]).slice(0,20));
+  backtestSafety.textContent=j(d.safety);
+  const fill=(el,rows,idKey,labelFn)=>{
+    const current=el.value;
+    el.innerHTML=(rows||[]).map(x=>`<option value="${x[idKey]}">${labelFn(x)}</option>`).join("");
+    if([...el.options].some(o=>o.value===current))el.value=current;
+  };
+  fill(btStrategy,opts.strategies,"strategy_id",x=>`${x.strategy_id} (${x.family})`);
+  fill(btDataset,opts.datasets,"dataset_id",x=>`${x.dataset_id} - ${x.symbol}`);
+  fill(btWindow,opts.windows,"window_id",x=>`${x.window_id} [${x.start_index}:${x.end_index}]`);
+  backtestSelectedResult.textContent=j(selected);
+  const cmp=d.comparison||{};
+  comparisonMetrics.innerHTML=[
+    metric("Decision",cmp.recommendation?.decision??"WAIT"),
+    metric("AI Health",cmp.ai?.model_health??"N/A"),
+    metric("AI Ready",cmp.ai?.research_comparison_allowed?"YES":"NO"),
+    metric("Candidate",cmp.candidate?.available?"AVAILABLE":"NONE"),
+    metric("Auto Apply","OFF","ok")
+  ].join("");
+  comparisonCurrent.textContent=j(cmp.current_strategy);
+  comparisonCandidate.textContent=j(cmp.candidate);
+  comparisonAI.textContent=j(cmp.ai);
+  comparisonRecommendation.textContent=j(cmp.recommendation);
+}
+async function runSelectedBacktest(){
+  const payload={
+    action:"run_selected",
+    strategy_id:btStrategy.value,
+    dataset_id:btDataset.value,
+    window_id:btWindow.value,
+    force:btForce.checked
+  };
+  const r=await fetch("/api/backtest/action",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  backtestActionResult.textContent=j(r);
+  await loadBacktest();
+}
+async function backtestAction(action){
+  const r=await fetch("/api/backtest/action",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j({action})
+  }).then(r=>r.json());
+  backtestActionResult.textContent=j(r);
+  await loadBacktest();
+}
+
+
+async function loadEtrade(){
+  const d=await fetch("/api/etrade",{cache:"no-store"}).then(r=>r.json());
+  etradeMetrics.innerHTML=[
+    metric("V2 Read-Only",d.stack?.v2_readonly_present?"PRESENT":"MISSING",d.stack?.v2_readonly_present?"ok":"warn"),
+    metric("V2.1.10 Bridge",d.stack?.v2_1_10_present?"PRESENT":"MISSING",d.stack?.v2_1_10_present?"ok":"warn"),
+    metric("V2.1.31.4 Audit",d.audit?.installed?"INSTALLED":"MISSING",d.audit?.installed?"ok":"warn"),
+    metric("Credentials",d.credentials?.consumer_key_present&&d.credentials?.consumer_secret_present?"PRESENT":"NOT SET"),
+    metric("Prod POST",d.safety?.production_order_post_allowed?"ENABLED":"LOCKED",d.safety?.production_order_post_allowed?"warn":"ok"),
+    metric("Live Trading",d.safety?.live_trading_enabled?"ENABLED":"LOCKED",d.safety?.live_trading_enabled?"warn":"ok")
+  ].join("");
+  etradeStack.textContent=j(d.stack);
+  etradeCredentials.textContent=j(d.credentials);
+  etradeAudit.textContent=j(d.audit);
+  etradeSafety.textContent=j(d.safety);
+  table(etradeArtifacts,d.recent_artifacts||[]);
+}
+async function etradeAction(action){
+  const r=await fetch("/api/etrade/action",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j({action})
+  }).then(r=>r.json());
+  etradeActionResult.textContent=j(r);
+  await loadEtrade();
+}
+
+
+async function loadValidationLab(){
+  const d=await fetch("/api/validation-lab",{cache:"no-store"}).then(r=>r.json());
+  const c=d.collector||{}, sc=d.scorecard||{}, ml=d.ml||{}, p=d.paper||{};
+  validationLabMetrics.innerHTML=[
+    metric("Collector Cycles",c.cycles_completed??0),
+    metric("Actual Outcomes",sc.champion_actual?.completed_outcomes??ml.total_resolved_outcomes??0),
+    metric("Shadow Completed",sc.challenger_shadow?.completed_counterfactual_round_trips??0),
+    metric("ML Ready",ml.research_comparison_ready?"YES":"NO",ml.research_comparison_ready?"ok":""),
+    metric("AI Health",ml.model_health??"N/A"),
+    metric("Paper Qualified",p.passed?"YES":"NO",p.passed?"ok":""),
+    metric("Live Orders",0,"ok")
+  ].join("");
+  validationLabCollector.textContent=j(c);
+  validationLabScorecard.textContent=j(sc);
+  validationLabML.textContent=j(ml);
+  validationLabPaper.textContent=j(p);
+  validationLabBlocks.textContent=j(d.blockers);
+  validationLabSafety.textContent=j(d.safety);
+  const pr=d.progress||{};
+  validationProgressMetrics.innerHTML=[
+    metric("Trading Days",`${pr.trading_days_completed??0}/${pr.trading_days_target??10}`),
+    metric("Day Progress",`${pr.trading_day_progress_pct??0}%`),
+    metric("Resolved",`${pr.resolved_outcomes??0}/${pr.resolved_outcomes_target??200}`),
+    metric("Sample Progress",`${pr.resolved_progress_pct??0}%`),
+    metric("AI Health",pr.ai_health??"N/A"),
+    metric("Paper Qualified",pr.paper_qualified?"YES":"NO",pr.paper_qualified?"ok":"")
+  ].join("");
+  validationProgressDays.textContent=j({
+    observed_dates:pr.observed_validation_dates,
+    completed:pr.trading_days_completed,
+    target:pr.trading_days_target,
+    remaining:pr.trading_days_remaining,
+    progress_pct:pr.trading_day_progress_pct
+  });
+  validationProgressSamples.textContent=j({
+    resolved_outcomes:pr.resolved_outcomes,
+    target:pr.resolved_outcomes_target,
+    remaining:pr.resolved_outcomes_remaining,
+    waiting_for_future_marks:pr.waiting_for_future_marks,
+    progress_pct:pr.resolved_progress_pct
+  });
+  validationProgressGates.textContent=j(pr.gates);
+  validationProgressNext.textContent=j({
+    next_milestone:pr.next_milestone,
+    blockers:pr.blockers
+  });
+  const sch=d.scheduler||{}, hist=d.history||{};
+  validationSchedulerMetrics.innerHTML=[
+    metric("Scheduler",sch.running?"RUNNING":"STOPPED",sch.running?"ok":""),
+    metric("Morning",sch.config?.morning_time??"07:30"),
+    metric("Post-Market",sch.config?.post_market_time??"13:20"),
+    metric("History Days",hist.day_count??0),
+    metric("Last Run",sch.last_run?.phase??"NONE"),
+    metric("Orders",0,"ok")
+  ].join("");
+  validationSchedulerStatus.textContent=j(sch);
+  validationLatestHistory.textContent=j(hist.latest||{});
+  table(validationHistoryTable,hist.recent||[]);
+}
+async function validationLabAction(action){
+  validationLabActionResult.textContent="Running...";
+  const r=await fetch("/api/validation-lab/action",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j({action})
+  }).then(r=>r.json());
+  validationLabActionResult.textContent=j(r);
+  await loadValidationLab();
+}
+
+async function loadPaper(){const d=await fetch("/api/paper-operations").then(r=>r.json());paperAccount.textContent=j(d.account)}
+async function paperAction(action){const r=await fetch("/api/paper-operations/action",{method:"POST",headers:{"Content-Type":"application/json"},body:j({action})});paperActionResult.textContent=j(await r.json())}
+let operationsLoaded=null;
+function fillOperationsForm(cfg){
+  cfg=cfg||{};
+  opsPreEnabled.checked=!!cfg.pre_market_check_enabled;
+  opsPreTime.value=cfg.pre_market_time||"06:20";
+  opsIntraEnabled.checked=!!cfg.intraday_shadow_enabled;
+  opsIntraTime.value=cfg.intraday_time||"07:00";
+  opsPostEnabled.checked=!!cfg.post_market_report_enabled;
+  opsPostTime.value=cfg.post_market_time||"13:10";
+  opsHealthStale.value=cfg.health_stale_minutes??30;
+  opsDesktopNotify.checked=cfg.desktop_notifications_enabled!==false;
+  opsRestartFailure.checked=!!cfg.restart_on_failure;
+}
+async function loadOperations(){
+  const d=await fetch("/api/operations-manager",{cache:"no-store"}).then(r=>r.json());
+  operationsLoaded=d;
+  fillOperationsForm(d.config);
+  const h=d.health||{}, s=d.safety||{};
+  opsMetrics.innerHTML=[
+    metric("Health",h.overall??h.status??"N/A"),
+    metric("Pre-Market",d.config?.pre_market_check_enabled?"ON":"OFF"),
+    metric("Intraday Shadow",d.config?.intraday_shadow_enabled?"ON":"OFF"),
+    metric("Post-Market",d.config?.post_market_report_enabled?"ON":"OFF"),
+    metric("Paper Submit",s.scheduled_paper_order_submission_enabled?"ON":"OFF",s.scheduled_paper_order_submission_enabled?"warn":"ok"),
+    metric("Live Submit",s.live_submission_enabled?"ON":"OFF",s.live_submission_enabled?"warn":"ok")
+  ].join("");
+  opsHealth.textContent=j(d.health);
+  opsRecovery.textContent=j(d.recovery);
+  opsLastJob.textContent=j(d.last_job);
+  opsSafety.textContent=j(d.safety);
+  opsNotifications.textContent=j(d.notifications);
+}
+function operationsPayloadFromForm(){
+  const c=(operationsLoaded?.config)||{};
+  return {
+    ...c,
+    pre_market_check_enabled:opsPreEnabled.checked,
+    pre_market_time:opsPreTime.value||"06:20",
+    intraday_shadow_enabled:opsIntraEnabled.checked,
+    intraday_time:opsIntraTime.value||"07:00",
+    post_market_report_enabled:opsPostEnabled.checked,
+    post_market_time:opsPostTime.value||"13:10",
+    health_stale_minutes:Number(opsHealthStale.value||30),
+    desktop_notifications_enabled:opsDesktopNotify.checked,
+    restart_on_failure:opsRestartFailure.checked,
+    automated_paper_submission_enabled:false,
+    paper_only:true,
+    live_submission_enabled:false
+  };
+}
+async function saveOperations(){
+  const payload=operationsPayloadFromForm();
+  const r=await fetch("/api/operations-manager/settings",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j(payload)
+  }).then(r=>r.json());
+  operationsResult.textContent=j(r);
+  if(r.ok)await loadOperations();
+}
+async function operationJob(job){
+  const r=await fetch("/api/operations-manager/job",{
+    method:"POST",headers:{"Content-Type":"application/json"},body:j({job})
+  }).then(r=>r.json());
+  operationsResult.textContent=j(r);
+  await loadOperations();
+}
+async function loadQualification(){const d=await fetch("/api/qualification").then(r=>r.json());qualificationMetrics.innerHTML=[metric("State",d.state,d.qualification?.passed?"ok":"warn"),metric("Trading Days",d.metrics?.trading_days??0),metric("Closed Trades",d.metrics?.closed_trades??0),metric("Win Rate",(d.metrics?.win_rate_pct??0)+"%"),metric("Live Orders",0,"ok")].join("");qualificationOverall.textContent=j(d.metrics);qualificationGate.textContent=j(d.qualification)}
+async function runQualification(){const r=await fetch("/api/qualification/run",{method:"POST"});qualificationResult.textContent=j(await r.json());loadQualification()}
+async function loadLiveApproval(){const d=await fetch("/api/live-approval").then(r=>r.json());liveMetrics.innerHTML=[metric("State",d.state,d.state==="LIVE_READ_ONLY_APPROVAL_READY"?"ok":"warn"),metric("Qualification",d.qualification_passed?"PASS":"BLOCKED",d.qualification_passed?"ok":"warn"),metric("Candidate",d.selected_candidate&&Object.keys(d.selected_candidate).length?"PRESENT":"NONE"),metric("Decision",d.approval_request?.decision),metric("Network Attempted",d.actual_live_network_attempted?"YES":"NO","ok"),metric("Live Orders",0,"ok")].join("");liveQualification.textContent=j({state:d.qualification_state,passed:d.qualification_passed});liveCredentials.textContent=j(d.credentials);liveComparison.textContent=j(d.paper_live_comparison);liveRequest.textContent=j(d.approval_request);liveSnapshot.textContent=j(d.live_read_only_snapshot)}
+async function refreshLiveApproval(){const r=await fetch("/api/live-approval/refresh",{method:"POST"});liveActionResult.textContent=j(await r.json());loadLiveApproval()}
+async function decideLive(decision){const r=await fetch("/api/live-approval/decision",{method:"POST",headers:{"Content-Type":"application/json"},body:j({decision,operator_note:liveOperatorNote.value})});liveActionResult.textContent=j(await r.json());loadLiveApproval()}
+refresh();loadCommandCenter();setInterval(refresh,15000);setInterval(loadCommandCenter,15000);

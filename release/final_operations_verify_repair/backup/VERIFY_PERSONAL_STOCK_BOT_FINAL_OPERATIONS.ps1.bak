@@ -1,0 +1,35 @@
+$ErrorActionPreference="Stop"
+$Repo="C:\stock-bot"
+Set-Location $Repo
+
+$Files=@(
+ "START_PERSONAL_STOCK_BOT.ps1",
+ "STOP_PERSONAL_STOCK_BOT.ps1",
+ "RECOVER_PERSONAL_STOCK_BOT.ps1",
+ "STATUS_PERSONAL_STOCK_BOT.ps1"
+)
+
+foreach($f in $Files){
+    if(-not (Test-Path (Join-Path $Repo $f))){
+        throw "MISSING FILE: $f"
+    }
+}
+
+$Start=Get-Content .\START_PERSONAL_STOCK_BOT.ps1 -Raw
+$Stop=Get-Content .\STOP_PERSONAL_STOCK_BOT.ps1 -Raw
+$Recover=Get-Content .\RECOVER_PERSONAL_STOCK_BOT.ps1 -Raw
+
+if($Start -match "submit_order|live_order|etrade.*production"){
+    throw "START SCRIPT CONTAINS DISALLOWED TRADING ACTION"
+}
+if($Stop -match "submit_order|live_order|etrade.*production"){
+    throw "STOP SCRIPT CONTAINS DISALLOWED TRADING ACTION"
+}
+if($Recover -match "submit_order|live_order|etrade.*production"){
+    throw "RECOVER SCRIPT CONTAINS DISALLOWED TRADING ACTION"
+}
+
+Write-Host "VERIFY: PASS"
+Write-Host "Launcher Paper Orders: 0"
+Write-Host "Launcher Live Orders: 0"
+Write-Host "E*TRADE: DEFERRED"

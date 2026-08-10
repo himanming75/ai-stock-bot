@@ -1,0 +1,332 @@
+from __future__ import annotations
+from pathlib import Path
+from typing import Any
+from datetime import datetime, timedelta
+import json
+import os
+import subprocess
+import sys
+import time
+
+CONFIG_DEFAULT={
+    "enabled":True,
+    "morning_time":"07:30",
+    "post_market_time":"13:20",
+    "weekdays_only":True,
+    "poll_seconds":30,
+    "catch_up_missed_runs":False,
+}
+
+def _runtime(root:Path)->Path:
+    p=root/"runtime/validation_auto_scheduler"
+    p.mkdir(parents=True,exist_ok=True)
+    return p
+
+def _history(root:Path)->Path:
+    p=root/"runtime/validation_daily_history"
+    p.mkdir(parents=True,exist_ok=True)
+    return p
+
+def _read_json(path:Path,default=None):
+    if not path.exists():
+        return {} if default is None else default
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return {} if default is None else default
+
+def _write_json(path:Path,value:dict[str,Any]):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    tmp=path.with_suffix(path.suffix+".tmp")
+    tmp.write_text(json.dumps(value,indent=2,sort_keys=True,default=str),encoding="utf-8")
+    os.replace(tmp,path)
+
+def load_config(root:Path)->dict[str,Any]:
+    path=_runtime(root)/"config.json"
+    cfg=dict(CONFIG_DEFAULT)
+    cfg.update(_read_json(path,{}))
+    if not path.exists():
+        _write_json(path,cfg)
+    elif "catch_up_missed_runs" not in _read_json(path,{}):
+        _write_json(path,cfg)
+    return cfg
+
+def _pid_alive(pid:int)->bool:
+    if pid<=0:
+        return False
+    try:
+        if os.name=="nt":
+            cp=subprocess.run(
+                ["tasklist","/FI",f"PID eq {pid}","/NH"],
+                capture_output=True,text=True,timeout=5
+            )
+            return str(pid) in (cp.stdout or "")
+        os.kill(pid,0)
+        return True
+    except Exception:
+        return False
+
+def _lock_path(root:Path)->Path:
+    return _runtime(root)/"RUN.lock"
+
+def _read_lock(root:Path)->dict[str,Any]:
+    return _read_json(_lock_path(root),{})
+
+def _acquire_lock(root:Path,phase:str)->tuple[bool,dict[str,Any]]:
+    path=_lock_path(root)
+    if path.exists():
+        lock=_read_lock(root)
+        pid=int(lock.get("pid") or 0)
+        if _pid_alive(pid):
+            return False,lock
+        try:
+            path.unlink()
+        except OSError:
+            return False,lock
+    lock={
+        "pid":os.getpid(),
+        "phase":phase,
+        "started_at_local":datetime.now().astimezone().isoformat(),
+    }
+    try:
+        fd=os.open(str(path),os.O_CREAT|os.O_EXCL|os.O_WRONLY)
+        with os.fdopen(fd,"w",encoding="utf-8") as f:
+            json.dump(lock,f,indent=2,sort_keys=True)
+        return True,lock
+    except FileExistsError:
+        return False,_read_lock(root)
+
+def _release_lock(root:Path):
+    path=_lock_path(root)
+    try:
+        if path.exists():
+            path.unlink()
+    except OSError:
+        pass
+
+def scheduler_status(root:Path)->dict[str,Any]:
+    rt=_runtime(root)
+    state=_read_json(rt/"state.json",{})
+    pid=int(state.get("pid") or 0)
+    running=_pid_alive(pid)
+    last_run=_read_json(rt/"last_run.json",{})
+    lock=_read_lock(root) if _lock_path(root).exists() else {}
+    return {
+        "running":running,
+        "pid":pid if running else None,
+        "config":load_config(root),
+        "last_run":last_run,
+        "active_validation_run":lock,
+        "stop_requested":(rt/"STOP").exists(),
+        "paper_engine_started":False,
+        "broker_network_used":False,
+        "orders_submitted":0,
+        "live_trading":False,
+    }
+
+def _compact_snapshot(payload:dict[str,Any],phase:str)->dict[str,Any]:
+    p=payload.get("progress") or {}
+    ml=payload.get("ml") or {}
+    paper=payload.get("paper") or {}
+    return {
+        "captured_at_local":datetime.now().astimezone().isoformat(),
+        "date":datetime.now().astimezone().date().isoformat(),
+        "phase":phase,
+        "trading_days_completed":p.get("trading_days_completed",0),
+        "trading_days_target":p.get("trading_days_target",10),
+        "resolved_outcomes":p.get("resolved_outcomes",0),
+        "resolved_outcomes_target":p.get("resolved_outcomes_target",200),
+        "waiting_for_future_marks":p.get("waiting_for_future_marks",0),
+        "ai_health":p.get("ai_health",ml.get("model_health","NOT_AVAILABLE")),
+        "research_comparison_ready":bool(ml.get("research_comparison_ready")),
+        "paper_qualified":bool(paper.get("passed")),
+        "next_milestone":p.get("next_milestone"),
+        "blockers":p.get("blockers",[]),
+        "synthetic_progress_used":False,
+        "future_outcomes_fabricated":False,
+        "paper_orders_submitted":0,
+        "live_orders_submitted":0,
+    }
+
+def save_snapshot(root:Path,payload:dict[str,Any],phase:str)->dict[str,Any]:
+    hist=_history(root)
+    snap=_compact_snapshot(payload,phase)
+    date=snap["date"]
+    day_path=hist/f"{date}.json"
+    day=_read_json(day_path,{"date":date,"runs":[]})
+    runs=list(day.get("runs") or [])
+    runs.append(snap)
+    day={"date":date,"runs":runs,"latest":snap}
+    _write_json(day_path,day)
+    _write_json(hist/"latest.json",snap)
+    with (hist/"history.jsonl").open("a",encoding="utf-8") as f:
+        f.write(json.dumps(snap,sort_keys=True)+"\n")
+    return snap
+
+def history_status(root:Path)->dict[str,Any]:
+    hist=_history(root)
+    days=[]
+    for p in sorted(hist.glob("????-??-??.json"),reverse=True)[:14]:
+        row=_read_json(p,{})
+        latest=row.get("latest") or {}
+        if latest:
+            days.append(latest)
+    return {
+        "day_count":len(list(hist.glob("????-??-??.json"))),
+        "recent":days,
+        "latest":_read_json(hist/"latest.json",{}),
+    }
+
+def run_and_snapshot(root:Path,phase:str)->dict[str,Any]:
+    acquired,lock=_acquire_lock(root,phase)
+    if not acquired:
+        return {
+            "ok":False,
+            "error":"VALIDATION_RUN_ALREADY_ACTIVE",
+            "active_run":lock,
+            "phase":phase,
+            "paper_engine_started":False,
+            "broker_network_used":False,
+            "orders_submitted":0,
+            "live_trading":False,
+        }
+    try:
+        from web_controller.validation_lab_api import action_payload,get_payload
+        result=action_payload(root,{"action":"run_full_refresh"})
+        payload=get_payload(root)
+        snap=save_snapshot(root,payload,phase)
+        last={
+            "ok":bool(result.get("ok")),
+            "phase":phase,
+            "finished_at_local":datetime.now().astimezone().isoformat(),
+            "snapshot":snap,
+        }
+        _write_json(_runtime(root)/"last_run.json",last)
+        return {
+            "ok":bool(result.get("ok")),
+            "phase":phase,
+            "snapshot":snap,
+            "full_refresh":result,
+            "paper_engine_started":False,
+            "broker_network_used":False,
+            "orders_submitted":0,
+            "live_trading":False,
+        }
+    finally:
+        _release_lock(root)
+
+def _spawn_flags():
+    if os.name!="nt":
+        return 0
+    return (
+        getattr(subprocess,"CREATE_NEW_PROCESS_GROUP",0)
+        | getattr(subprocess,"DETACHED_PROCESS",0)
+    )
+
+def _today() -> str:
+    return datetime.now().astimezone().date().isoformat()
+
+def _mark_past_slots_as_skipped(root:Path):
+    rt=_runtime(root)
+    cfg=load_config(root)
+    state=_read_json(rt/"state.json",{})
+    now=datetime.now().astimezone()
+    today=now.date().isoformat()
+    if not cfg.get("catch_up_missed_runs",False):
+        if now.strftime("%H:%M") >= str(cfg.get("morning_time","07:30")):
+            state.setdefault("last_morning_date",today)
+            state["morning_startup_skip"]=today
+        if now.strftime("%H:%M") >= str(cfg.get("post_market_time","13:20")):
+            state.setdefault("last_post_market_date",today)
+            state["post_market_startup_skip"]=today
+    _write_json(rt/"state.json",state)
+
+def start_scheduler(root:Path)->dict[str,Any]:
+    rt=_runtime(root)
+    st=scheduler_status(root)
+    if st.get("running"):
+        return {"ok":True,"already_running":True,"status":st}
+    stop=rt/"STOP"
+    if stop.exists():
+        stop.unlink()
+
+    # Do not retroactively run already-passed schedule slots on first start.
+    _mark_past_slots_as_skipped(root)
+
+    py=root/".venv/Scripts/python.exe"
+    if not py.exists():
+        py=Path(sys.executable)
+    log=rt/"scheduler.log"
+    with log.open("a",encoding="utf-8") as out:
+        proc=subprocess.Popen(
+            [str(py),"-B","-m","validation_automation.scheduler","--root",str(root),"--supervisor"],
+            cwd=str(root),
+            stdout=out,stderr=out,
+            stdin=subprocess.DEVNULL,
+            creationflags=_spawn_flags(),
+        )
+    state=_read_json(rt/"state.json",{})
+    state.update({"pid":proc.pid,"started_at_local":datetime.now().astimezone().isoformat()})
+    _write_json(rt/"state.json",state)
+    time.sleep(0.4)
+    return {"ok":True,"started":True,"status":scheduler_status(root)}
+
+def stop_scheduler(root:Path)->dict[str,Any]:
+    rt=_runtime(root)
+    (rt/"STOP").write_text("STOP_REQUESTED",encoding="ascii")
+    return {"ok":True,"stop_requested":True,"status":scheduler_status(root)}
+
+def _due(now:datetime,clock:str,last_key:str,state:dict[str,Any])->bool:
+    if now.strftime("%H:%M") < clock:
+        return False
+    today=now.date().isoformat()
+    return state.get(last_key)!=today
+
+def supervisor(root:Path):
+    rt=_runtime(root)
+    state=_read_json(rt/"state.json",{})
+    state["pid"]=os.getpid()
+    _write_json(rt/"state.json",state)
+    stop=rt/"STOP"
+    while not stop.exists():
+        now=datetime.now().astimezone()
+        cfg=load_config(root)
+        if cfg.get("enabled",True):
+            weekday_ok=(not cfg.get("weekdays_only",True)) or now.weekday()<5
+            if weekday_ok:
+                state=_read_json(rt/"state.json",{})
+                if _due(now,str(cfg.get("morning_time","07:30")),"last_morning_date",state):
+                    r=run_and_snapshot(root,"morning")
+                    if r.get("ok"):
+                        state["last_morning_date"]=now.date().isoformat()
+                        _write_json(rt/"state.json",state)
+
+                state=_read_json(rt/"state.json",{})
+                if _due(now,str(cfg.get("post_market_time","13:20")),"last_post_market_date",state):
+                    r=run_and_snapshot(root,"post_market")
+                    if r.get("ok"):
+                        state["last_post_market_date"]=now.date().isoformat()
+                        _write_json(rt/"state.json",state)
+
+        time.sleep(max(10,int(cfg.get("poll_seconds",30))))
+
+    state=_read_json(rt/"state.json",{})
+    state["stopped_at_local"]=datetime.now().astimezone().isoformat()
+    _write_json(rt/"state.json",state)
+
+def main():
+    import argparse
+    p=argparse.ArgumentParser()
+    p.add_argument("--root",default=r"C:\stock-bot")
+    p.add_argument("--supervisor",action="store_true")
+    p.add_argument("--run-now",action="store_true")
+    a=p.parse_args()
+    root=Path(a.root)
+    if a.supervisor:
+        supervisor(root); return 0
+    if a.run_now:
+        print(json.dumps(run_and_snapshot(root,"manual_cli"),indent=2,default=str)); return 0
+    print(json.dumps(scheduler_status(root),indent=2,default=str)); return 0
+
+if __name__=="__main__":
+    raise SystemExit(main())

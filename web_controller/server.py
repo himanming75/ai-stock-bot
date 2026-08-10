@@ -10,6 +10,10 @@ from web_controller.paper_api import get_payload as get_paper,run_payload as run
 from web_controller.operations_api import get_payload as get_operations,save_payload as save_operations,run_payload as run_operations,recovery_payload
 from web_controller.qualification_api import get_payload as get_qualification,run_payload as run_qualification
 from web_controller.live_approval_api import get_payload as get_live_approval,refresh_payload,decision_payload
+from web_controller.backtest_api import get_payload as get_backtest,action_payload as run_backtest_action
+from web_controller.etrade_api import get_payload as get_etrade,action_payload as run_etrade_action
+from web_controller.validation_lab_api import get_payload as get_validation_lab,action_payload as run_validation_lab_action
+from web_controller.daily_ops_api import get_payload as get_daily_ops,action_payload as run_daily_ops_action
 
 class ControllerHandler(BaseHTTPRequestHandler):
     root=Path.cwd();static_root=Path.cwd()/"web_controller/static"
@@ -25,7 +29,7 @@ class ControllerHandler(BaseHTTPRequestHandler):
         except Exception:return {}
     def do_GET(self):
         p=urlparse(self.path).path
-        routes={"/api/dashboard":lambda:build_dashboard(self.root),"/api/logs":lambda:get_logs(self.root),"/api/strategy-config":lambda:get_strategy(self.root),"/api/paper-operations":lambda:get_paper(self.root),"/api/operations-manager":lambda:get_operations(self.root),"/api/qualification":lambda:get_qualification(self.root),"/api/live-approval":lambda:get_live_approval(self.root)}
+        routes={"/api/dashboard":lambda:build_dashboard(self.root),"/api/logs":lambda:get_logs(self.root),"/api/strategy-config":lambda:get_strategy(self.root),"/api/paper-operations":lambda:get_paper(self.root),"/api/operations-manager":lambda:get_operations(self.root),"/api/qualification":lambda:get_qualification(self.root),"/api/live-approval":lambda:get_live_approval(self.root),"/api/backtest":lambda:get_backtest(self.root),"/api/etrade":lambda:get_etrade(self.root),"/api/validation-lab":lambda:get_validation_lab(self.root),"/api/daily-ops":lambda:get_daily_ops(self.root)}
         if p in routes:self._json(200,routes[p]());return
         file=self.static_root/("index.html" if p in {"/","/index.html"} else p.lstrip("/"))
         if not file.exists():self._json(404,{"error":"NOT_FOUND"});return
@@ -45,6 +49,10 @@ class ControllerHandler(BaseHTTPRequestHandler):
         elif p=="/api/qualification/run":r=run_qualification(self.root)
         elif p=="/api/live-approval/refresh":r=refresh_payload(self.root)
         elif p=="/api/live-approval/decision":r=decision_payload(self.root,b)
+        elif p=="/api/backtest/action":r=run_backtest_action(self.root,b)
+        elif p=="/api/etrade/action":r=run_etrade_action(self.root,b)
+        elif p=="/api/validation-lab/action":r=run_validation_lab_action(self.root,b)
+        elif p=="/api/daily-ops/action":r=run_daily_ops_action(self.root,b)
         else:self._json(404,{"error":"NOT_FOUND"});return
         self._json(200 if r.get("ok",True) else 409,r)
     def log_message(self,format,*args):print("[WEB]",format%args)
