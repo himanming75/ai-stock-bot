@@ -1,0 +1,46 @@
+{
+  "stage": "V2.2.10_ML_MODEL_TRAINING_VALIDATION",
+  "dataset_root": "runtime/ai_training_dataset_builder_v2_2_9/datasets",
+  "manifest": "runtime/ai_training_dataset_builder_v2_2_9/dataset_manifest.json",
+  "horizons_minutes": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "feature_columns": [
+    "return_1m_pct",
+    "return_5m_pct",
+    "return_15m_pct",
+    "close_vs_sma20_pct",
+    "rolling_volatility_20",
+    "volume_ratio_20",
+    "range_pct",
+    "rsi_14"
+  ],
+  "target_column": "target_direction",
+  "class_labels": [
+    "DOWN",
+    "FLAT",
+    "UP"
+  ],
+  "candidate_models": [
+    "dummy_prior",
+    "logistic_balanced",
+    "hist_gradient_boosting"
+  ],
+  "selection_metric": "mean_macro_f1_balanced_accuracy",
+  "minimum_validation_improvement_over_dummy": 0.01,
+  "max_train_rows_per_horizon": 250000,
+  "max_walk_forward_train_rows": 100000,
+  "max_walk_forward_eval_rows": 50000,
+  "walk_forward_folds": 2,
+  "walk_forward_embargo_market_dates": 1,
+  "random_seed": 42,
+  "test_set_used_for_selection": false,
+  "automatic_promotion": false,
+  "execution_selector_modified": false,
+  "broker_network": false,
+  "orders_submitted": 0,
+  "live_trading": false
+}
