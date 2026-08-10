@@ -13,8 +13,10 @@ if(-not (Test-Path "$MlVenv\Scripts\python.exe")){
 
 $MlPython="$MlVenv\Scripts\python.exe"
 
-$Check=& $MlPython -c "import sklearn, joblib, numpy; print('READY')" 2>$null
-if($LASTEXITCODE -ne 0){
+cmd /c """$MlPython"" -c ""import sklearn, joblib, numpy"" >nul 2>&1"
+$ProbeExit=$LASTEXITCODE
+
+if($ProbeExit -ne 0){
     Write-Host "Installing ML dependencies into .venv_ml only..."
     & $MlPython -m pip install --upgrade pip
     if($LASTEXITCODE -ne 0){throw "ML PIP UPGRADE FAILED"}
