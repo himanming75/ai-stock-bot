@@ -1,9 +1,10 @@
-﻿{
+{
   "policy_name": "V2.1.31_INITIAL_ONE_CLICK_DAILY_PAPER_OPERATION",
   "market_wait_poll_seconds": 60,
   "max_market_wait_seconds": 129600,
   "max_round_trips": 2,
   "session_interval_seconds": 30,
   "paper_only": true,
-  "live_trading": false
+  "live_trading": false,
+  "market_wait_broker_failure_grace_seconds": 1800
 }

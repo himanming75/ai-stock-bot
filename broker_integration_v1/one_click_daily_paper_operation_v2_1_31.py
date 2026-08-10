@@ -85,6 +85,9 @@ class OneClickDailyPaperOperationV2131:
         poll=int(row.get("market_wait_poll_seconds",60))
         max_wait=int(row.get("max_market_wait_seconds",64800))
         max_round_trips=int(row.get("max_round_trips",2))
+        broker_failure_grace=int(
+            row.get("market_wait_broker_failure_grace_seconds",1800)
+        )
 
         if poll<1 or poll>300:
             raise RuntimeError("INVALID_MARKET_WAIT_POLL_SECONDS")
@@ -92,12 +95,18 @@ class OneClickDailyPaperOperationV2131:
             raise RuntimeError("INVALID_MAX_MARKET_WAIT_SECONDS")
         if max_round_trips<1 or max_round_trips>3:
             raise RuntimeError("INVALID_MAX_ROUND_TRIPS")
+        if broker_failure_grace<0 or broker_failure_grace>7200:
+            raise RuntimeError(
+                "INVALID_MARKET_WAIT_BROKER_FAILURE_GRACE_SECONDS"
+            )
 
         return {
             **row,
             "market_wait_poll_seconds":poll,
             "max_market_wait_seconds":max_wait,
             "max_round_trips":max_round_trips,
+            "market_wait_broker_failure_grace_seconds":
+                broker_failure_grace,
         }
 
     def _append(self,row):
@@ -164,28 +173,69 @@ class OneClickDailyPaperOperationV2131:
     def _wait_for_market_open(self,recovery,policy):
         started=self._now()
         polls=[]
+        outage_started=None
+        broker_failure_events=0
 
         while True:
             snap_result=recovery.acquire_broker_snapshot()
+            now=self._now()
+            elapsed=max(0.0,(now-started).total_seconds())
+
             if (
                 snap_result.get("status")
                 !="PASS_PAPER_BROKER_RECOVERY_SNAPSHOT"
             ):
-                return {
-                    "status":"BLOCKED_MARKET_WAIT_BROKER_UNAVAILABLE",
-                    "polls":polls,
-                    "last_snapshot_result":snap_result,
-                    "broker_network_used":True,
-                }
+                broker_failure_events+=1
+                if outage_started is None:
+                    outage_started=now
+                outage_elapsed=max(
+                    0.0,(now-outage_started).total_seconds()
+                )
 
+                polls.append({
+                    "observed_at_utc":now.isoformat(),
+                    "broker_read_ok":False,
+                    "snapshot_status":snap_result.get("status"),
+                    "broker_failure_event":broker_failure_events,
+                    "broker_failure_elapsed_seconds":outage_elapsed,
+                    "elapsed_seconds":elapsed,
+                })
+
+                if elapsed>=policy["max_market_wait_seconds"]:
+                    return {
+                        "status":"STOPPED_MARKET_WAIT_TIMEOUT",
+                        "polls":polls,
+                        "broker_failure_events":broker_failure_events,
+                        "broker_network_used":True,
+                    }
+
+                if (
+                    outage_elapsed
+                    >=policy[
+                        "market_wait_broker_failure_grace_seconds"
+                    ]
+                ):
+                    return {
+                        "status":
+                            "BLOCKED_MARKET_WAIT_BROKER_UNAVAILABLE",
+                        "polls":polls,
+                        "last_snapshot_result":snap_result,
+                        "broker_failure_events":broker_failure_events,
+                        "broker_failure_elapsed_seconds":outage_elapsed,
+                        "broker_network_used":True,
+                    }
+
+                self.sleep_fn(policy["market_wait_poll_seconds"])
+                continue
+
+            outage_started=None
             snap=snap_result["snapshot"]
             clock=snap.get("clock") or {}
             is_open=bool(clock.get("is_open",False))
-            now=self._now()
-            elapsed=max(0.0,(now-started).total_seconds())
 
             polls.append({
                 "observed_at_utc":now.isoformat(),
+                "broker_read_ok":True,
                 "is_open":is_open,
                 "next_open":clock.get("next_open"),
                 "next_close":clock.get("next_close"),
@@ -196,6 +246,7 @@ class OneClickDailyPaperOperationV2131:
                 return {
                     "status":"PASS_MARKET_OPEN",
                     "polls":polls,
+                    "broker_failure_events":broker_failure_events,
                     "broker_network_used":True,
                 }
 
@@ -203,6 +254,7 @@ class OneClickDailyPaperOperationV2131:
                 return {
                     "status":"STOPPED_MARKET_WAIT_TIMEOUT",
                     "polls":polls,
+                    "broker_failure_events":broker_failure_events,
                     "broker_network_used":True,
                 }
 
@@ -269,6 +321,45 @@ class OneClickDailyPaperOperationV2131:
             self._append(row)
             return self._write_latest(row)
 
+        # Revalidate after overnight wait before any execution delegation.
+        post_open_recovery=recovery.reconcile()
+        if (
+            post_open_recovery.get("status")
+            !="PASS_RECOVERY_RECONCILIATION"
+        ):
+            risk.engage_kill_switch(
+                "V2_1_31_2_MARKET_OPEN_RECOVERY_RECHECK_FAIL_CLOSED"
+            )
+            row={
+                "status":"BLOCKED_MARKET_OPEN_RECOVERY_RECHECK",
+                "mode":"PAPER",
+                "startup_recovery":startup,
+                "pre_risk_status":pre_risk,
+                "market_wait":wait,
+                "post_open_recovery":post_open_recovery,
+                "kill_switch_engaged":True,
+                "paper_orders_submitted_from_stage":0,
+                "live_orders_submitted":0,
+            }
+            self._append(row)
+            return self._write_latest(row)
+
+        post_open_risk=risk.evaluate()
+        if not post_open_risk.get("trading_allowed",False):
+            row={
+                "status":"BLOCKED_MARKET_OPEN_RISK_RECHECK",
+                "mode":"PAPER",
+                "startup_recovery":startup,
+                "pre_risk_status":pre_risk,
+                "market_wait":wait,
+                "post_open_recovery":post_open_recovery,
+                "post_open_risk":post_open_risk,
+                "paper_orders_submitted_from_stage":0,
+                "live_orders_submitted":0,
+            }
+            self._append(row)
+            return self._write_latest(row)
+
         # V2.1.30 remains the single operational entry point for recovery +
         # existing daily-risk-guarded Paper trading.
         delegated=recovery.recover_and_resume(
@@ -297,6 +388,13 @@ class OneClickDailyPaperOperationV2131:
                 startup.get("recovery_action"),
             "market_wait_status":wait.get("status"),
             "market_wait_polls":len(wait.get("polls",[])),
+            "market_wait_broker_failure_events":
+                wait.get("broker_failure_events",0),
+            "post_open_recovery_status":
+                post_open_recovery.get("status"),
+            "post_open_recovery_action":
+                post_open_recovery.get("recovery_action"),
+            "post_open_risk_status":post_open_risk,
             "delegated_v2_1_30_status":delegated.get("status"),
             "delegated_stop_reason":
                 delegated.get("delegated_stop_reason"),
