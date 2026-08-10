@@ -1,0 +1,38 @@
+{
+  "stage": "V2.2.9_TRAINING_DATASET_BUILDER",
+  "source": "runtime/ai_fast_data_acceleration_v2_2_8/training_forward_labels.jsonl",
+  "horizons_minutes": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "feature_columns": [
+    "return_1m_pct",
+    "return_5m_pct",
+    "return_15m_pct",
+    "close_vs_sma20_pct",
+    "rolling_volatility_20",
+    "volume_ratio_20",
+    "range_pct",
+    "rsi_14"
+  ],
+  "metadata_columns": [
+    "timestamp",
+    "market_date",
+    "symbol",
+    "feed"
+  ],
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15,
+  "embargo_trading_days": 1,
+  "require_all_features": true,
+  "min_unique_market_dates": 12,
+  "min_rows_for_ready": 1000,
+  "direction_deadband_pct": 0.05,
+  "output_format": "csv",
+  "broker_network": false,
+  "orders_submitted": 0,
+  "live_trading": false
+}
